@@ -1,0 +1,10 @@
+// Cloudflare Workers deploy config: serves the static Astro build in dist/.
+// Used when Cloudflare builds this repo with `npx wrangler deploy`.
+{
+  "name": "8bitmap",
+  "compatibility_date": "2025-10-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}

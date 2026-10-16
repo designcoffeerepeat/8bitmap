@@ -25,13 +25,14 @@ In VS Code you can also press F5 (Run and Debug, "Development server") to start 
 
 ## Deploying
 
-Cloudflare Pages is connected to this GitHub repo. Every push to `main` deploys the live site,
-and every pull request gets its own preview URL. Build settings in Cloudflare:
+Cloudflare is connected to this GitHub repo. Every push to `main` deploys the live site.
+Cloudflare offers two setup screens and this repo works with either:
 
-- Framework preset: Astro
-- Build command: `npm run build`
-- Build output directory: `dist`
-- Node version comes from `.node-version` (22)
+- Workers (the default "Create" flow): build command `npm run build`, deploy command `npx wrangler deploy`.
+  `wrangler.jsonc` tells it to serve the `dist/` folder.
+- Pages: framework preset Astro, build command `npm run build`, build output directory `dist`.
+
+Node version comes from `.node-version` (22).
 
 ## Layout
 
