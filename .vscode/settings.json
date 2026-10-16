@@ -1,0 +1,8 @@
+{
+  "editor.formatOnSave": false,
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "files.exclude": { "**/.astro": true },
+  "search.exclude": { "**/dist": true, "**/node_modules": true },
+  "[astro]": { "editor.defaultFormatter": "astro-build.astro-vscode" }
+}

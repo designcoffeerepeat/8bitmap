@@ -1,0 +1,61 @@
+---
+// The whole app is one page: a full-bleed three.js voxel map with a HUD,
+// a list of today's events and an event card. All behaviour lives in
+// src/scripts/app.js, which Astro bundles (three.js included) at build time.
+import '../styles/global.css';
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>8-Bit NYC</title>
+<meta name="description" content="An 8-bit voxel map of New York City showing today's events.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap">
+</head>
+<body>
+
+<div id="map"></div>
+
+<header class="hud">
+  <div class="brand box">
+    <h1><img class="pin-ico" alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 19' shape-rendering='crispEdges'%3E%3Cpath fill='%23ed1c24' d='M4 0h5v1h2v1h1v2h1v5h-1v2h-1v1h-1v2H9v2H8v2H7v1H6v-1H5v-2H4v-2H3v-2H2v-1H1V9H0V4h1V2h1V1h2z'/%3E%3Cpath fill='%23ffffff' d='M5 4h3v1h1v3H8v1H5V8H4V5h1z'/%3E%3C/svg%3E">8-BIT <b>NYC</b></h1>
+    <p><span id="today-date">TODAY</span><span id="today-count">LOADING</span></p>
+  </div>
+  <nav class="chips" id="chips" aria-label="Filter by category"></nav>
+</header>
+
+<aside id="panel" aria-label="Today's events">
+  <button id="panel-toggle" type="button" aria-expanded="false" aria-controls="event-list"><span hidden>Toggle event list</span></button>
+  <div class="panel-head">
+    <h2>TODAY</h2>
+    <small>TAP A PIN OR A ROW</small>
+  </div>
+  <div class="list-wrap">
+    <ol id="event-list"></ol>
+    <button id="show-more" type="button" hidden>SHOW MORE</button>
+    <p id="status" class="empty" role="status"></p>
+  </div>
+  <p class="panel-foot">SAMPLE DATA. VENUES ARE REAL, EVENTS ARE PLACEHOLDERS UNTIL LIVE LISTINGS ARE CONNECTED.</p>
+</aside>
+
+<section id="detail" class="box" hidden aria-live="polite"></section>
+
+<div class="controls box" role="toolbar" aria-label="Map controls">
+  <button id="zoom-in" type="button" aria-label="Zoom in">+</button>
+  <button id="zoom-out" type="button" aria-label="Zoom out">-</button>
+  <button id="rot-l" type="button" aria-label="Rotate left">&lt;</button>
+  <button id="rot-r" type="button" aria-label="Rotate right">&gt;</button>
+  <button id="home" type="button" aria-label="Reset view">H</button>
+  <button id="pixel" type="button" aria-label="Change pixel size">PX<b>3X</b></button>
+</div>
+<p class="hint">DRAG TO MOVE · SCROLL TO ZOOM · RIGHT-DRAG TO TURN</p>
+
+<script>
+  import '../scripts/app.js';
+</script>
+</body>
+</html>

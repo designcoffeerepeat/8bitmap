@@ -1,0 +1,137 @@
+// Sample events for testing. Venues and coordinates are real places; the
+// events themselves are made up and always land on "today".
+
+const VENUES = {
+  msg: { name: 'Madison Square Garden', address: '4 Pennsylvania Plaza', neighborhood: 'Midtown', lat: 40.7505, lng: -73.9934 },
+  brooklynSteel: { name: 'Brooklyn Steel', address: '319 Frost St', neighborhood: 'East Williamsburg', lat: 40.7193, lng: -73.9389 },
+  barclays: { name: 'Barclays Center', address: '620 Atlantic Ave', neighborhood: 'Prospect Heights', lat: 40.6826, lng: -73.9754 },
+  lincoln: { name: 'Lincoln Center', address: '10 Lincoln Center Plaza', neighborhood: 'Upper West Side', lat: 40.7725, lng: -73.9835 },
+  moma: { name: 'MoMA', address: '11 W 53rd St', neighborhood: 'Midtown', lat: 40.7614, lng: -73.9776 },
+  apollo: { name: 'Apollo Theater', address: '253 W 125th St', neighborhood: 'Harlem', lat: 40.8100, lng: -73.9500 },
+  smalls: { name: 'Smalls Jazz Club', address: '183 W 10th St', neighborhood: 'West Village', lat: 40.7343, lng: -74.0027 },
+  comedyCellar: { name: 'Comedy Cellar', address: '117 MacDougal St', neighborhood: 'Greenwich Village', lat: 40.7302, lng: -74.0005 },
+  elsewhere: { name: 'Elsewhere', address: '599 Johnson Ave', neighborhood: 'Bushwick', lat: 40.7096, lng: -73.9233 },
+  shed: { name: 'The Shed', address: '545 W 30th St', neighborhood: 'Hudson Yards', lat: 40.7536, lng: -74.0023 },
+  smorgasburg: { name: 'Smorgasburg', address: '90 Kent Ave', neighborhood: 'Williamsburg', lat: 40.7215, lng: -73.9620 },
+  bbp: { name: 'Brooklyn Bridge Park, Pier 1', address: '2 Furman St', neighborhood: 'Brooklyn Heights', lat: 40.7003, lng: -73.9967 },
+  unionSq: { name: 'Union Square Greenmarket', address: 'E 17th St & Broadway', neighborhood: 'Union Square', lat: 40.7359, lng: -73.9906 },
+  summerstage: { name: 'Rumsey Playfield', address: 'Central Park at E 72nd St', neighborhood: 'Central Park', lat: 40.7718, lng: -73.9718 },
+  yankee: { name: 'Yankee Stadium', address: '1 E 161st St', neighborhood: 'Concourse', lat: 40.8296, lng: -73.9262 },
+  ps1: { name: 'MoMA PS1', address: '22-25 Jackson Ave', neighborhood: 'Long Island City', lat: 40.7455, lng: -73.9471 },
+  whitney: { name: 'Whitney Museum', address: '99 Gansevoort St', neighborhood: 'Meatpacking', lat: 40.7396, lng: -74.0089 },
+  bkMuseum: { name: 'Brooklyn Museum', address: '200 Eastern Pkwy', neighborhood: 'Prospect Heights', lat: 40.6712, lng: -73.9636 },
+  govIsland: { name: 'Governors Island', address: 'Soissons Landing', neighborhood: 'Governors Island', lat: 40.6895, lng: -74.0165 },
+  ifc: { name: 'IFC Center', address: '323 6th Ave', neighborhood: 'West Village', lat: 40.7310, lng: -74.0021 },
+  bowery: { name: 'Bowery Ballroom', address: '6 Delancey St', neighborhood: 'Lower East Side', lat: 40.7204, lng: -73.9935 },
+  libertyPark: { name: 'Liberty State Park', address: '200 Morris Pesin Dr', neighborhood: 'Jersey City', lat: 40.7020, lng: -74.0530 },
+  astoria: { name: 'Astoria Park', address: '19 19th St', neighborhood: 'Astoria', lat: 40.7790, lng: -73.9230 },
+  chelseaMkt: { name: 'Chelsea Market', address: '75 9th Ave', neighborhood: 'Chelsea', lat: 40.7424, lng: -74.0061 },
+};
+
+// [id, title, category, venue, start "HH:MM", end "HH:MM" | null, price [min,max] | null, blurb, details, tags]
+const SAMPLE = [
+  ['union-greenmarket', 'Union Square Greenmarket', 'food', 'unionSq', '08:00', '18:00', null,
+    'Upstate farms, apple cider donuts and the first squash of the season.',
+    'Over 100 regional farmers, fishers and bakers set up around the north and west sides of the park. Bring a bag; most stands take cards.', ['outdoors', 'free']],
+  ['whitney-pay-what', 'Biennial Gallery Talk', 'art', 'whitney', '11:00', '12:00', [0, 0],
+    'A 45-minute walk through the Biennial with one of the artists.',
+    'Meet in the lobby. Included with admission. Assistive listening devices are available at the front desk.', ['talk']],
+  ['smorgasburg', 'Smorgasburg Williamsburg', 'food', 'smorgasburg', '11:00', '18:00', null,
+    'Seventy-plus food stalls on the East River waterfront.',
+    'Expect lines for the ramen burger and the ube soft serve. Skyline views across the river; seating is first come, first served.', ['outdoors', 'free entry']],
+  ['bbp-pier-yoga', 'Sunset Yoga on Pier 1', 'community', 'bbp', '17:30', '18:30', null,
+    'All-levels flow with the Manhattan skyline as the backdrop.',
+    'Bring your own mat. Class runs rain or shine unless there is lightning; check the park feed for cancellations.', ['outdoors', 'free']],
+  ['govisland-bikes', 'Twilight Bike Loop', 'community', 'govIsland', '16:00', '19:00', [5, 5],
+    'Ferry over, rent a bike, and ride the island loop as the sun goes down.',
+    'Last ferry back to Manhattan leaves at 19:30. Ferry fare is separate from the bike rental.', ['outdoors']],
+  ['moma-friday', 'UNIQLO Friday Nights', 'art', 'moma', '17:30', '21:00', null,
+    'Free entry to the galleries for New York City residents.',
+    'Timed tickets are released online at noon. Galleries on floors 2, 4 and 5 stay open until 9 PM.', ['free', 'museum']],
+  ['ps1-warmup', 'Warm Up: Late Session', 'nightlife', 'ps1', '18:00', '23:00', [22, 22],
+    'Outdoor DJs in the PS1 courtyard, extended into autumn.',
+    'Three DJs across two stages. Cash bar, food trucks on Jackson Ave. 21+ after 9 PM.', ['dj', 'outdoors']],
+  ['chelsea-market-tasting', 'Natural Wine Tasting', 'food', 'chelseaMkt', '18:00', '20:00', [35, 35],
+    'Six pours from small producers in the Finger Lakes.',
+    'Hosted at the back of the concourse. Cheese plates included. ID required at the door.', ['21+']],
+  ['smalls-early', 'Early Set: Hard Bop Quartet', 'music', 'smalls', '19:30', '21:00', [25, 25],
+    'Straight-ahead jazz in the basement room on West 10th.',
+    'One drink minimum. Seating is first come, so arrive 20 minutes early for a spot near the stage.', ['jazz']],
+  ['knicks', 'Knicks vs. Celtics (Preseason)', 'sports', 'msg', '19:30', '22:00', [45, 380],
+    'Preseason rivalry night at the Garden.',
+    'Doors open 90 minutes before tip-off. Bag policy: small clutches only. Penn Station is directly underneath.', ['basketball']],
+  ['yankees', 'Postseason Watch Party', 'sports', 'yankee', '19:00', '23:00', [0, 0],
+    'The Great Hall screens the away game on the big board.',
+    'Free with RSVP. Concessions open on the main level. Take the 4, B or D to 161 St.', ['baseball', 'free']],
+  ['lincoln-philharmonic', 'NY Phil: Mahler 5', 'music', 'lincoln', '19:30', '21:30', [39, 165],
+    'The Philharmonic in Mahler\'s Fifth at David Geffen Hall.',
+    'Pre-concert talk at 6:45 PM in the Kenneth C. Griffin Sidewalk Studio. Runs about 75 minutes with no intermission.', ['classical']],
+  ['apollo-amateur', 'Amateur Night', 'music', 'apollo', '19:30', '22:00', [27, 70],
+    'The longest-running talent show in town. Rub the Tree of Hope.',
+    'Hosted live with the house band. The crowd decides who stays on stage, so come ready to cheer or boo.', ['live']],
+  ['ifc-midnight', 'Midnight Movie: Blade Runner', 'film', 'ifc', '23:45', null, [17, 17],
+    'The Final Cut on 35mm.',
+    'Single screening. Theater 1. Tickets online only; the box office opens at 11 PM.', ['35mm']],
+  ['comedy-cellar', 'Late Show Lineup', 'comedy', 'comedyCellar', '21:30', '23:00', [25, 25],
+    'Six comics, no headliner announced, as is tradition.',
+    'Two-item minimum. Phones are locked in pouches during the show.', ['stand-up']],
+  ['brooklyn-steel', 'Synth-Pop Night', 'music', 'brooklynSteel', '20:00', '23:30', [40, 55],
+    'A three-band bill in the old steel factory.',
+    'All ages. Doors at 7. The L to Graham Ave is the closest stop.', ['indie']],
+  ['elsewhere-rooftop', 'Rooftop Disco', 'nightlife', 'elsewhere', '22:00', null, [20, 30],
+    'House and disco on the Bushwick roof until close.',
+    '21+. Roof capacity is limited, so expect a line after midnight. The indoor rooms stay open late.', ['dj', '21+']],
+  ['bowery-ballroom', 'Indie Rock Showcase', 'music', 'bowery', '20:00', '23:00', [30, 30],
+    'Four up-and-coming bands on one of the city\'s best small stages.',
+    'Downstairs bar opens at 7. The J and Z stop at Bowery right outside.', ['indie']],
+  ['shed-installation', 'Light and Sound Installation', 'art', 'shed', '12:00', '22:00', [15, 15],
+    'An immersive room of light and sound in the McCourt.',
+    'Timed entry every 30 minutes. Recommended for ages 8 and up.', ['immersive']],
+  ['barclays-concert', 'Arena Tour: Opening Night', 'music', 'barclays', '20:00', '23:00', [79, 249],
+    'Big pop production, big screens, big singalong.',
+    'Doors at 6:30. The Atlantic Ave station connects nine subway lines.', ['pop']],
+  ['bk-museum-first', 'Late Gallery Hours', 'art', 'bkMuseum', '17:00', '22:00', null,
+    'Music, drawing workshops and galleries open late.',
+    'Free entry. Drawing materials provided in the Beaux-Arts Court.', ['free', 'museum']],
+  ['summerstage-closer', 'SummerStage Season Closer', 'music', 'summerstage', '18:00', '21:30', null,
+    'The last outdoor show of the year in Central Park.',
+    'Enter at E 69th St and Fifth Ave. Free; capacity is limited.', ['outdoors', 'free']],
+  ['liberty-park-run', 'Waterfront 5K', 'community', 'libertyPark', '09:00', '11:00', [20, 20],
+    'A flat 5K along the Hudson with Statue of Liberty views.',
+    'Bib pickup from 8 AM at the CRRNJ Terminal. Light rail stop: Liberty State Park.', ['running']],
+  ['astoria-film', 'Outdoor Screening: Moonstruck', 'film', 'astoria', '19:00', '21:00', null,
+    'Blankets, popcorn and a movie under the Hell Gate Bridge.',
+    'Bring a blanket or low chair. Screening starts at dusk.', ['outdoors', 'free']],
+];
+
+export default {
+  id: 'dummy',
+  name: 'Sample data',
+  url: 'https://example.com',
+
+  async fetchEvents({ date }) {
+    return SAMPLE.map(([id, title, category, venueKey, start, end, price, description, details, tags]) => ({
+      id,
+      title,
+      category,
+      start: atTime(date, start),
+      end: end ? atTime(date, end, start) : null,
+      venue: VENUES[venueKey],
+      price: price ? { min: price[0], max: price[1], currency: 'USD' } : null,
+      description,
+      details,
+      url: 'https://example.com/events/' + id,
+      tags,
+    }));
+  },
+};
+
+function atTime(date, hhmm, after) {
+  const [h, m] = hhmm.split(':').map(Number);
+  const d = new Date(date.getFullYear(), date.getMonth(), date.getDate(), h, m);
+  if (after) {
+    const [ah] = after.split(':').map(Number);
+    if (h < ah) d.setDate(d.getDate() + 1); // ends after midnight
+  }
+  return d.toISOString();
+}
