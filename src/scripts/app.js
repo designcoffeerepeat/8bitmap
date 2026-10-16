@@ -1,5 +1,5 @@
 import { createMap } from './map/renderer.js';
-import { loadEventsForDate } from './events/index.js';
+import { loadEventsForDate, SOURCES } from './events/index.js';
 import { CATEGORIES, CATEGORY_LABELS } from './events/schema.js';
 import { CATEGORY_COLORS } from './map/palette.js';
 import nycgovSource from './events/sources/nycgov.js';
@@ -9,6 +9,7 @@ const LIST_PAGE = 8;
 const state = {
   events: [],
   filter: 'all',
+  sources: new Set(), // publisher ids switched on in the Sources dropdown
   selected: null,
   showAll: false,
   detailsOpen: false,
@@ -26,6 +27,10 @@ const el = {
   sheet: $('#panel'),
   sheetToggle: $('#panel-toggle'),
   status: $('#status'),
+  srcBtn: $('#src-btn'),
+  srcMenu: $('#src-menu'),
+  srcList: $('#src-list'),
+  srcSummary: $('#src-summary'),
 };
 
 await document.fonts.load('8px "Press Start 2P"').catch(() => {});
@@ -47,7 +52,22 @@ if (snap) {
   const at = new Date(snap.fetchedAt).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' });
   $('.panel-foot').textContent = `LISTINGS FROM NYC.GOV EVENTS, UPDATED ${at} NYC TIME. ${snap.unplaced ? `${snap.unplaced} WITHOUT A MAPPABLE ADDRESS NOT SHOWN. ` : ''}EVENTS OUTSIDE THE MAP AREA ARE NOT SHOWN.`.toUpperCase();
 }
+// Every publisher with events today, plus any registered source that returned none.
+const publishers = new Map();
+for (const e of events) {
+  const p = publishers.get(e.publisher.id) ?? { ...e.publisher, count: 0 };
+  p.count++;
+  publishers.set(p.id, p);
+}
+for (const s of SOURCES) {
+  if (![...publishers.values()].some((p) => p.id === s.id) && !events.some((e) => e.source.id === s.id)) {
+    publishers.set(s.id, { id: s.id, name: s.name, url: s.url, count: 0 });
+  }
+}
+state.sources = new Set(publishers.keys());
+
 map.setEvents(events);
+renderSources();
 renderChips();
 render();
 
@@ -78,18 +98,71 @@ el.sheetToggle.addEventListener('click', () => {
   el.sheetToggle.setAttribute('aria-expanded', String(open));
 });
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && state.selected) select(null);
+  if (e.key !== 'Escape') return;
+  if (!el.srcMenu.hidden) {
+    toggleSources(false);
+    el.srcBtn.focus();
+  } else if (state.selected) select(null);
+});
+el.srcBtn.addEventListener('click', () => toggleSources(el.srcMenu.hidden));
+document.addEventListener('pointerdown', (e) => {
+  if (!el.srcMenu.hidden && !e.target.closest('.src-filter')) toggleSources(false);
+});
+$('#src-all').addEventListener('click', () => setSources([...publishers.keys()]));
+$('#src-none').addEventListener('click', () => setSources([]));
+el.srcList.addEventListener('change', (e) => {
+  const id = e.target.value;
+  if (e.target.checked) state.sources.add(id);
+  else state.sources.delete(id);
+  sourcesChanged();
 });
 
 // ---- rendering -------------------------------------------------------------
+function sourceEvents() {
+  return state.events.filter((e) => state.sources.has(e.publisher.id));
+}
+
 function visibleEvents() {
-  return state.filter === 'all' ? state.events : state.events.filter((e) => e.category === state.filter);
+  const list = sourceEvents();
+  return state.filter === 'all' ? list : list.filter((e) => e.category === state.filter);
+}
+
+function renderSources() {
+  el.srcList.innerHTML = [...publishers.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name)).map((p) => `
+    <li><label class="src-item">
+      <input type="checkbox" value="${esc(p.id)}"${state.sources.has(p.id) ? ' checked' : ''}><i aria-hidden="true"></i>${esc(p.name)}<span>${p.count}</span>
+    </label></li>`).join('');
+  const on = state.sources.size;
+  el.srcSummary.textContent = on === publishers.size ? 'ALL' : `${on}/${publishers.size}`;
+}
+
+function toggleSources(open) {
+  el.srcMenu.hidden = !open;
+  el.srcBtn.setAttribute('aria-expanded', String(open));
+}
+
+function setSources(ids) {
+  state.sources = new Set(ids);
+  renderSources();
+  sourcesChanged();
+}
+
+function sourcesChanged() {
+  const on = state.sources.size;
+  el.srcSummary.textContent = on === publishers.size ? 'ALL' : `${on}/${publishers.size}`;
+  // drop a category filter that no longer has any events
+  if (state.filter !== 'all' && !sourceEvents().some((e) => e.category === state.filter)) state.filter = 'all';
+  state.showAll = false;
+  if (state.selected && !visibleEvents().some((e) => e.id === state.selected)) select(null);
+  renderChips();
+  render();
 }
 
 function renderChips() {
   const counts = Object.fromEntries(CATEGORIES.map((c) => [c, 0]));
-  state.events.forEach((e) => counts[e.category]++);
-  const chips = [['all', 'All', state.events.length, '#ffffff'],
+  const pool = sourceEvents();
+  pool.forEach((e) => counts[e.category]++);
+  const chips = [['all', 'All', pool.length, '#ffffff'],
     ...CATEGORIES.filter((c) => counts[c]).map((c) => [c, CATEGORY_LABELS[c], counts[c], CATEGORY_COLORS[c]])];
   el.chips.innerHTML = chips.map(([id, label, n, col]) => `
     <button class="chip" type="button" data-cat="${id}" aria-pressed="${state.filter === id}" style="--cat:${col}">
@@ -122,7 +195,7 @@ function render() {
         <span class="ev-tags"><span class="tag">${CATEGORY_LABELS[e.category]}</span><span class="price">${fmtPrice(e)}</span></span>
       </button>
     </li>`;
-  }).join('') || '<li class="empty">No events in this category today.</li>';
+  }).join('') || `<li class="empty">${state.sources.size ? 'No events in this category today.' : 'No sources selected. Pick some under SOURCES.'}</li>`;
 
   el.list.querySelectorAll('.ev').forEach((b) => {
     b.addEventListener('click', () => select(b.dataset.id));

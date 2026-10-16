@@ -22,7 +22,8 @@
 //   description: string   short blurb shown in the list
 //   details:     string   longer text revealed by "Show more"
 //   url:         string   link to the original listing
-//   source:      { id: string, name: string, url: string }
+//   source:      { id: string, name: string, url: string }  the module that loaded it
+//   publisher:   { id: string, name: string, url: string }  who listed it; the Sources filter uses this
 //   tags:        string[]
 // }
 
@@ -64,6 +65,7 @@ export function normalizeEvent(raw, source) {
     details: raw.details ?? '',
     url: raw.url ?? source.url,
     source: { id: source.id, name: source.name, url: source.url },
+    publisher: raw.publisher?.id ? raw.publisher : { id: source.id, name: source.name, url: source.url },
     tags: raw.tags ?? [],
   };
 }

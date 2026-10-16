@@ -16,6 +16,9 @@ export default {
     if (!res.ok) throw new Error(`NYC.gov snapshot returned ${res.status}`);
     const snap = await res.json();
     this.snapshot = { date: snap.date, fetchedAt: snap.fetchedAt, unplaced: snap.unplaced?.length ?? 0 };
-    return snap.events;
+    // NYC.gov republishes NYC Parks listings; show those as their own source.
+    return snap.events.map((ev) => (/nycgovparks\.org/.test(ev.website ?? '')
+      ? { ...ev, publisher: { id: 'nycparks', name: 'NYC Parks', url: 'https://www.nycgovparks.org/events' } }
+      : ev));
   },
 };

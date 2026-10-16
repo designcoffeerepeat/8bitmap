@@ -76,6 +76,8 @@ snapshot covers, so an old snapshot shows that day's events rather than an empty
 
 Most listing sites block browser requests, so real sources should call a small backend that returns JSON.
 On Cloudflare Pages that can be a Pages Function in a `functions/` folder at the repo root.
+Each source shows up in the SOURCES dropdown on its own. A source can also set `publisher` on a record
+(as `nycgov.js` does for NYC Parks listings) to list it under a different name.
 Events outside the map bounds or not on the requested day are dropped automatically,
 and the same show listed on several sites is merged by title, venue and start time.
 
