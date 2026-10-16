@@ -1,0 +1,242 @@
+{
+ "source": {
+  "name": "The Skint",
+  "url": "https://theskint.com/"
+ },
+ "date": "2026-10-16",
+ "fetchedAt": "2026-10-16T18:08:00-04:00",
+ "events": [
+  {
+   "id": "manhattan-vintage-clothing-show-fall-edition-1016",
+   "title": "Manhattan Vintage Clothing Show: Fall Edition",
+   "category": "community",
+   "start": "2026-10-16T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Metropolitan Pavilion",
+    "address": "125 WEST 18 STREET, New York, NY, USA",
+    "neighborhood": "Chelsea",
+    "lat": 40.740559,
+    "lng": -73.995753
+   },
+   "price": {
+    "min": 20,
+    "max": 25,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "metropolitan pavilion (chelsea). $25 general, $20 students.",
+   "details": "fri thru mon:: metropolitan pavilion (chelsea). $25 general, $20 students.",
+   "url": "https://manhattanvintage.com/",
+   "tags": []
+  },
+  {
+   "id": "flop-house-comedy-club-1016",
+   "title": "Flop House Comedy Club",
+   "category": "comedy",
+   "start": "2026-10-16T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "362 Grand Street",
+    "address": "362 GRAND STREET, Brooklyn, NY, USA",
+    "neighborhood": "Williamsburg",
+    "lat": 40.712214,
+    "lng": -73.95578
+   },
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "nyc's friendliest indie comedy club—with great comics and a cozy atmosphere—has some incredible lineups this weekend! save 50% with promo code 'skint' on tickets to these shows at 362 grand street in williamsburg: friday...",
+   "details": "fri + sat (various times):: nyc's friendliest indie comedy club—with great comics and a cozy atmosphere—has some incredible lineups this weekend! save 50% with promo code 'skint' on tickets to these shows at 362 grand street in williamsburg: friday 8pm, 9:30pm, and 11pm; and the east village location is back at 201 allen st store 2 friday + saturday at 8:00pm. new: monthly member's pass ($20) to see as many shows as you want + happy hour drinks + secret drop in announcements!",
+   "url": "https://flophousecomedy.com",
+   "tags": []
+  },
+  {
+   "id": "trek-or-treat-a-star-trek-costume-party-1016",
+   "title": "Trek Or Treat – A Star Trek Costume Party",
+   "category": "film",
+   "start": "2026-10-16T18:00:00-04:00",
+   "end": "2026-10-16T21:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Mayday Space",
+    "address": "176 SAINT NICHOLAS' AVENUE, Brooklyn, NY, USA",
+    "neighborhood": "Bushwick",
+    "lat": 40.704117,
+    "lng": -73.916287
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "beam up to mayday space (bushwick) for a halloween-themed star trek meetup and costume party featuring spooky space screenings, behind the scenes footage, and a latinum prize for best-dressed fan. free admission.",
+   "details": "fri 6-9pm:: beam up to mayday space (bushwick) for a halloween-themed star trek meetup and costume party featuring spooky space screenings, behind the scenes footage, and a latinum prize for best-dressed fan. free admission.",
+   "url": "https://luma.com/fepmalso",
+   "tags": []
+  },
+  {
+   "id": "tale-storytelling-show-1016",
+   "title": "Tale Storytelling Show",
+   "category": "comedy",
+   "start": "2026-10-16T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Kgb Bar",
+    "address": "85 EAST 4 STREET, New York, NY, USA",
+    "neighborhood": "East Village",
+    "lat": 40.726592,
+    "lng": -73.989808
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "harmon leon ( this american life, the new yorker ) hosts an evening of performances by some of the city's best storytellers. tonight: annie tan, michael tedder, sean o'brien, and michele carlo, with music by pete mancini...",
+   "details": "fri 7pm:: harmon leon ( this american life, the new yorker ) hosts an evening of performances by some of the city's best storytellers. tonight: annie tan, michael tedder, sean o'brien, and michele carlo, with music by pete mancini. the red room at kgb bar (east village), save $10 on tickets with promo code 'discountskint' or if you mention the skint at the door. two-drink minimum.",
+   "url": "https://www.eventbrite.com/e/tale-nycs-finest-storytelling-tickets-2002382842986",
+   "tags": []
+  },
+  {
+   "id": "kweendom-1016",
+   "title": "Kweendom",
+   "category": "comedy",
+   "start": "2026-10-16T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Pete's Candy Store",
+    "address": "709 LORIMER STREET, Brooklyn, NY, USA",
+    "neighborhood": "Williamsburg",
+    "lat": 40.718099,
+    "lng": -73.95029
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "come out for the kweendom lgbtq+ comedy and storytelling show, featuring performances by jonah nigh, micaela fagan, justin covington, david perez, and sheri ciprane. hosted by bobby hankinson. pete's candy store (william...",
+   "details": "fri 7pm (monthly):: come out for the kweendom lgbtq+ comedy and storytelling show, featuring performances by jonah nigh, micaela fagan, justin covington, david perez, and sheri ciprane. hosted by bobby hankinson. pete's candy store (williamsburg), free admission (donations are welcome and will benefit immigration equality).",
+   "url": "https://www.eventbrite.com/e/kweendom-lgbtq-comedy-tickets-2003217169479",
+   "tags": []
+  },
+  {
+   "id": "three-day-champion-1016",
+   "title": "Three-day Champion",
+   "category": "comedy",
+   "start": "2026-10-16T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Caveat",
+    "address": "21 CLINTON STREET, New York, NY, USA",
+    "neighborhood": "LES",
+    "lat": 40.720766,
+    "lng": -73.984504
+   },
+   "price": {
+    "min": 18.76,
+    "max": 24,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "a comedic storytelling podcast wrapped inside a game show where comedian contestants are asked, 'if you were a three-day champion on a game show, what three stories about yourself would you choose to tell?' guests compet...",
+   "details": "fri 7pm:: a comedic storytelling podcast wrapped inside a game show where comedian contestants are asked, 'if you were a three-day champion on a game show, what three stories about yourself would you choose to tell?' guests compete to tell their favorite, funniest, most revealing anecdotes for bragging rights and prizes. hosted by christine walters with brian stack, moujan zolfaghari, ally ann hall, and emily flake. caveat (les), $18.76 with promo code '3dchamp' (reg. $24-25).",
+   "url": "https://caveat.nyc/events/three-day-champion-2026-10-16",
+   "tags": []
+  },
+  {
+   "id": "un-silent-film-the-general-1016",
+   "title": "(un)silent Film: The General",
+   "category": "film",
+   "start": "2026-10-16T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The New School's Tishman Auditorium",
+    "address": "63 5 AVENUE, New York, NY, USA",
+    "neighborhood": "Greenwich Village/union Square",
+    "lat": 40.735479,
+    "lng": -73.993506
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "the new school's college of performing arts presents a screening of buster keaton's 1926 silent classic the general , with an original score by carl davis performed live by students from the mannes school of music and th...",
+   "details": "fri 7:30pm:: the new school's college of performing arts presents a screening of buster keaton's 1926 silent classic the general , with an original score by carl davis performed live by students from the mannes school of music and the school of jazz and contemporary music. the new school's tishman auditorium (greenwich village/union square), free admission.",
+   "url": "https://event.newschool.edu/unsilentfilmthegeneral",
+   "tags": []
+  },
+  {
+   "id": "bitches-brew-comedy-show-1016",
+   "title": "Bitches Brew Comedy Show",
+   "category": "comedy",
+   "start": "2026-10-16T20:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Halyards",
+    "address": "406 3 AVENUE, Brooklyn, NY, USA",
+    "neighborhood": "Gowanus",
+    "lat": 40.673319,
+    "lng": -73.989864
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "this women-produced-and-hosted comedy show conjures up big laughs in the back room of halyards (gowanus). tonight's lineup includes laura laham, jess levin, jessie murphy, eric schmidt, vik pandya, and sean peecook. free...",
+   "details": "fri 8:30pm:: this women-produced-and-hosted comedy show conjures up big laughs in the back room of halyards (gowanus). tonight's lineup includes laura laham, jess levin, jessie murphy, eric schmidt, vik pandya, and sean peecook. free admission (a tip jar will be passed around at the end of the show).",
+   "url": "https://www.eventbrite.com/e/bitches-brew-free-comedy-stand-up-and-variety-show-tickets-172309360937",
+   "tags": []
+  },
+  {
+   "id": "nyc-magic-ensemble-1016",
+   "title": "Nyc Magic Ensemble",
+   "category": "community",
+   "start": "2026-10-16T21:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Caveat",
+    "address": "21 CLINTON STREET, New York, NY, USA",
+    "neighborhood": "LES",
+    "lat": 40.720766,
+    "lng": -73.984504
+   },
+   "price": {
+    "min": 18.76,
+    "max": 24,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "expect the unexpected as the nyc magic ensemble presents a night of magicians and mentalists at caveat (les). $18.76 with promo code 'theskint' (reg $24-30).",
+   "details": "fri 9:30pm:: expect the unexpected as the nyc magic ensemble presents a night of magicians and mentalists at caveat (les). $18.76 with promo code 'theskint' (reg $24-30).",
+   "url": "https://www.caveat.nyc/events/nyc-magic-ensemble-10-16-2026",
+   "tags": []
+  }
+ ],
+ "unplaced": [
+  {
+   "title": "frigid new york's annual days of the dead festival",
+   "where": "inspired by día de muertos, frigid new york presents two weeks of independent theatre and performances exploring themes of death, the afterlife, and halloween. ",
+   "url": "https://frigid.nyc/festivals/the-days-of-the-dead/"
+  },
+  {
+   "title": "the 24th annual open house new york weekend festival",
+   "where": "more than 300 locations across the five boroughs, including new buildings, historic landmarks, industrial spaces, private collections, and more will open their ",
+   "url": "https://ohny.org/festival"
+  },
+  {
+   "title": "free outdoor movie",
+   "where": "wicked at hudson yards public square and gardens.",
+   "url": "https://www.hudsonyardsnewyork.com/movie-nights"
+  },
+  {
+   "title": "funny pages: an evening of humorous readings",
+   "where": "comedy writers, authors, essayists, cartoonists, and comics share new things to make you laugh. hosted by zach zimmerman ( is it hot in here? ) and blythe rober",
+   "url": "https://ptknitwear.com/events/51615"
+  },
+  {
+   "title": "st. kilda",
+   "where": "drama league award nominee jody christopherson's one-woman 'scottish horror excursion with supernatural foley looping,' inspired by her nebraska roots, her scot",
+   "url": "https://www.cloudcity.nyc"
+  }
+ ]
+}

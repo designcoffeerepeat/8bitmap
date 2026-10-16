@@ -46,14 +46,17 @@ if (errors.length) el.status.textContent = `${errors.length} source(s) could not
 
 // The header shows the NYC day the listings cover, which can differ from the
 // viewer's own date.
-const snap = nycgovSource.snapshot;
+const snaps = SOURCES.filter((s) => s.snapshot);
+const snap = nycgovSource.snapshot ?? snaps[0]?.snapshot;
 const shownDay = snap ? new Date(`${snap.date}T12:00:00`) : today;
 el.date.textContent = shownDay
   .toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })
   .toUpperCase();
-if (snap) {
-  const at = new Date(snap.fetchedAt).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' });
-  $('.panel-foot').textContent = `LISTINGS FROM NYC.GOV EVENTS, UPDATED ${at} NYC TIME. ${snap.unplaced ? `${snap.unplaced} WITHOUT A MAPPABLE ADDRESS NOT SHOWN. ` : ''}EVENTS OUTSIDE THE MAP AREA ARE NOT SHOWN.`.toUpperCase();
+if (snaps.length) {
+  const latest = snaps.map((s) => s.snapshot.fetchedAt).sort().at(-1);
+  const at = new Date(latest).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' });
+  const unplaced = snaps.reduce((n, s) => n + s.snapshot.unplaced, 0);
+  $('.panel-foot').textContent = `LISTINGS FROM ${snaps.map((s) => s.name).join(', ')}, UPDATED ${at} NYC TIME. ${unplaced ? `${unplaced} WITHOUT A MAPPABLE ADDRESS NOT SHOWN. ` : ''}EVENTS OUTSIDE THE MAP AREA ARE NOT SHOWN.`.toUpperCase();
 }
 // Every publisher with events today, plus any registered source that returned none.
 const publishers = new Map();

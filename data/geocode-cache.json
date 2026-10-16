@@ -9,6 +9,12 @@
   "lat": 40.7694125,
   "lng": -73.98631499999999
  },
+ "100 Sutton St | Brooklyn": {
+  "label": "100 SUTTON STREET, Brooklyn, NY, USA",
+  "lat": 40.726577,
+  "lng": -73.940564
+ },
+ "100 sutton event space | Brooklyn": null,
  "102nd Street Field House in Riverside Park | Manhattan": {
   "label": "RIVERSIDE PARK, New York, NY, USA",
   "lat": 40.79097,
@@ -24,6 +30,11 @@
   "lat": 40.741518,
   "lng": -73.986485
  },
+ "125 W 18th St | Manhattan": {
+  "label": "125 WEST 18 STREET, New York, NY, USA",
+  "lat": 40.740559,
+  "lng": -73.995753
+ },
  "1250 E 229th St | Bronx": {
   "label": "1250 EAST 229 STREET, Bronx, NY, USA",
   "lat": 40.88289,
@@ -33,6 +44,11 @@
   "label": "1250 WARD AVENUE, Bronx, NY, USA",
   "lat": 40.830394,
   "lng": -73.877322
+ },
+ "145 W 46th St | Manhattan": {
+  "label": "145 WEST 46 STREET, New York, NY, USA",
+  "lat": 40.758259,
+  "lng": -73.983617
  },
  "1545 FLATBUSH AVENUE Brooklyn | Brooklyn": {
   "label": "1545 FLATBUSH AVENUE, Brooklyn, NY, USA",
@@ -44,33 +60,114 @@
   "lat": 40.652485,
   "lng": -73.978423
  },
+ "176 St Nicholas Ave | Brooklyn": {
+  "label": "176 SAINT NICHOLAS' AVENUE, Brooklyn, NY, USA",
+  "lat": 40.704117,
+  "lng": -73.916287
+ },
+ "21 Clinton St | Manhattan": {
+  "label": "21 CLINTON STREET, New York, NY, USA",
+  "lat": 40.720766,
+  "lng": -73.984504
+ },
  "2180 1st Avenue | Manhattan": {
   "label": "2180 1 AVENUE, New York, NY, USA",
   "lat": 40.793818,
   "lng": -73.936492
  },
+ "225 W 24th St | Manhattan": {
+  "label": "225 WEST 24 STREET, New York, NY, USA",
+  "lat": 40.74568,
+  "lng": -73.996356
+ },
  "35 AVENUE between 82 STREET and 81 STREET Queens | Queens": null,
+ "362 grand street | Brooklyn": {
+  "label": "362 GRAND STREET, Brooklyn, NY, USA",
+  "lat": 40.712214,
+  "lng": -73.95578
+ },
+ "375 vanderbilt ave | Brooklyn": {
+  "label": "375 VANDERBILT AVENUE, Brooklyn, NY, USA",
+  "lat": 40.68698,
+  "lng": -73.968388
+ },
+ "406 3rd Ave | Brooklyn": {
+  "label": "406 3 AVENUE, Brooklyn, NY, USA",
+  "lat": 40.673319,
+  "lng": -73.989864
+ },
  "43 Snyder Ave | Brooklyn": {
   "label": "43 SNYDER AVENUE, Brooklyn, NY, USA",
   "lat": 40.6491,
   "lng": -73.956312
+ },
+ "432 e 9th st | Manhattan": {
+  "label": "432 EAST 9 STREET, New York, NY, USA",
+  "lat": 40.727419,
+  "lng": -73.983431
  },
  "43rd Street and 1st Avenue in Bush Terminal Park | Brooklyn": {
   "label": "25 BUSH AVENUE, Staten Island, NY, USA",
   "lat": 40.636351,
   "lng": -74.158963
  },
+ "4th street cul-de-sac at washington park | Brooklyn": null,
+ "506 5th Ave | Brooklyn": {
+  "label": "506 5 AVENUE, Brooklyn, NY, USA",
+  "lat": 40.667219,
+  "lng": -73.988275
+ },
+ "514 Union St | Brooklyn": {
+  "label": "514 UNION STREET, Brooklyn, NY, USA",
+  "lat": 40.678538,
+  "lng": -73.98699
+ },
  "54 MacDonough St | Brooklyn": {
   "label": "54 MACDONOUGH STREET, Brooklyn, NY, USA",
   "lat": 40.680736,
   "lng": -73.943693
  },
+ "6 Wyckoff Ave | Brooklyn": {
+  "label": "6 WYCKOFF AVENUE, Brooklyn, NY, USA",
+  "lat": 40.706713,
+  "lng": -73.923506
+ },
  "60 STREET between 3 AVENUE and 4 AVENUE Brooklyn | Brooklyn": null,
  "61st Street between Laurel Hills & Queens Blvd | Queens": null,
+ "63 5th Ave | Manhattan": {
+  "label": "63 5 AVENUE, New York, NY, USA",
+  "lat": 40.735479,
+  "lng": -73.993506
+ },
+ "635 Sackett St | Brooklyn": {
+  "label": "635 SACKETT STREET, Brooklyn, NY, USA",
+  "lat": 40.678617,
+  "lng": -73.983416
+ },
+ "702 Union St | Brooklyn": {
+  "label": "702 UNION STREET, Brooklyn, NY, USA",
+  "lat": 40.675996,
+  "lng": -73.980133
+ },
+ "709 Lorimer St | Brooklyn": {
+  "label": "709 LORIMER STREET, Brooklyn, NY, USA",
+  "lat": 40.718099,
+  "lng": -73.95029
+ },
  "801 E 156th St | Bronx": {
   "label": "801 EAST 156 STREET, Bronx, NY, USA",
   "lat": 40.818103,
   "lng": -73.90423
+ },
+ "85 E 4th St | Manhattan": {
+  "label": "85 EAST 4 STREET, New York, NY, USA",
+  "lat": 40.726592,
+  "lng": -73.989808
+ },
+ "900 Fulton St | Brooklyn": {
+  "label": "900 FULTON STREET, Brooklyn, NY, USA",
+  "lat": 40.68286,
+  "lng": -73.965163
  },
  "Addabbo Playground in Tudor Park | Queens": null,
  "Arsenal in Central Park | Manhattan": null,
@@ -255,5 +352,191 @@
  "West 174 Street and Amsterdam Avenue in Highbridge Park | Manhattan": null,
  "West 87th Street Garden | Manhattan": null,
  "Williamsbridge Oval Recreation Center in Williamsbridge Oval Recreation Center | Bronx": null,
- "Wyckoff Farmhouse Museum in Fidler-Wyckoff House Park | Brooklyn": null
+ "Wyckoff Farmhouse Museum in Fidler-Wyckoff House Park | Brooklyn": null,
+ "corner: madison ave & e 23rd st | Manhattan": {
+  "label": "madison ave & e 23rd st",
+  "lat": 40.740847,
+  "lng": -73.986756
+ },
+ "corner: smith st & union st | Brooklyn": null,
+ "place: 100 sutton event space | Brooklyn": null,
+ "place: 11am and runs along avenue b | ": null,
+ "place: 4th street cul-de-sac at washington park | Brooklyn": null,
+ "place: and venues in gowanus | Brooklyn": null,
+ "place: barrow | Brooklyn": null,
+ "place: barrow's intense ny tasting room (industry city | Brooklyn": null,
+ "place: barrow's intense ny tasting room | Brooklyn": null,
+ "place: basketball/hockey court + john finley walk | Manhattan": null,
+ "place: beam up to mayday space | Brooklyn": null,
+ "place: broadway + 17th st | Manhattan": null,
+ "place: cloud city | Brooklyn": null,
+ "place: comes to cloud city | Brooklyn": null,
+ "place: crystal lake brooklyn | Brooklyn": null,
+ "place: expect the unexpected as the nyc magic ensemble presents a night of magicians and mentalists at caveat | Manhattan": null,
+ "place: gowanus metal bar lucky 13 saloon | ": null,
+ "place: gowanus | Brooklyn": null,
+ "place: heavy music and horror nostalgia | ": null,
+ "place: hudson yards public square and gardens | ": null,
+ "place: index space | Brooklyn": null,
+ "place: industry city | Brooklyn": {
+  "label": "INDUSTRY CITY, Brooklyn, NY, USA",
+  "lat": 40.65977,
+  "lng": -74.01058
+ },
+ "place: lincoln center | ": {
+  "label": "LINCOLN CENTER, New York, NY, USA",
+  "lat": 40.77272,
+  "lng": -73.98386
+ },
+ "place: lincoln center's david rubenstein atrium 10/18 | ": null,
+ "place: madison ave + e 23rd st to broadway + 17th st | Manhattan": null,
+ "place: magicians and mentalists at caveat | Manhattan": null,
+ "place: maria hernandez park | Brooklyn": {
+  "label": "MARIA HERNANDEZ PARK, Brooklyn, NY, USA",
+  "lat": 40.70317,
+  "lng": -73.92386
+ },
+ "place: nyc comedian kendall farrell tapes his first stand up special at littlefield | Brooklyn": null,
+ "place: p+t knitwear bookstore | Manhattan": null,
+ "place: secret pour | Brooklyn": null,
+ "place: show brain returns to maria hernandez park | Brooklyn": null,
+ "place: smith st + union st | Brooklyn": null,
+ "place: smith street between bergen + union | Brooklyn": null,
+ "place: st. mary the virgin | Manhattan": null,
+ "place: the church of st. mary the virgin | Manhattan": null,
+ "place: the new school's tishman auditorium | Manhattan": null,
+ "place: the red room at kgb bar | Manhattan": null,
+ "place: this women-focused dance party dedicated to heavy music and horror nostalgia | ": null,
+ "place: this women-produced-and-hosted comedy show conjures up big laughs in the back room of halyards | Brooklyn": null,
+ "place: under st. marks theatre | Manhattan": null,
+ "place: w 54th street between 9th + 10th aves | Manhattan": null,
+ "place: washington park | Brooklyn": null,
+ "place: washington square park | Manhattan": {
+  "label": "WASHINGTON SQUARE PARK, New York, NY, USA",
+  "lat": 40.73089,
+  "lng": -73.9976
+ },
+ "place: washington square park's garibaldi plaza | Manhattan": null,
+ "ra: 111 North 12th Street, Brooklyn, New York 11249, United States": {
+  "label": "111 NORTH 12 STREET, Brooklyn, NY, USA",
+  "lat": 40.722298,
+  "lng": -73.956734
+ },
+ "ra: 119 Ingraham Street, Brooklyn, NY 11237": {
+  "label": "119 INGRAHAM STREET, Brooklyn, NY, USA",
+  "lat": 40.707894,
+  "lng": -73.929192
+ },
+ "ra: 140 Stewart Ave, Brooklyn, NY 11237": {
+  "label": "140 STEWART AVENUE, Brooklyn, NY, USA",
+  "lat": 40.71071,
+  "lng": -73.9261
+ },
+ "ra: 153 Morgan Avenue": {
+  "label": "153 MORGAN AVENUE, Brooklyn, NY, USA",
+  "lat": 40.709394,
+  "lng": -73.933336
+ },
+ "ra: 191 Chrystie Street, New York, NY 10002": {
+  "label": "191 CHRYSTIE STREET, New York, NY, USA",
+  "lat": 40.722006,
+  "lng": -73.992275
+ },
+ "ra: 195 Morgan Ave, Brooklyn, NY 11237": {
+  "label": "195 MORGAN AVENUE, Brooklyn, NY, USA",
+  "lat": 40.71075,
+  "lng": -73.934165
+ },
+ "ra: 196 N 10th St, Brooklyn, NY, 11211": {
+  "label": "196 NORTH 10 STREET, Brooklyn, NY, USA",
+  "lat": 40.71854,
+  "lng": -73.955158
+ },
+ "ra: 2 Wyckoff Avenue; Brooklyn, NY 11237;": {
+  "label": "2 WYCKOFF AVENUE, Brooklyn, NY, USA",
+  "lat": 40.706772,
+  "lng": -73.923611
+ },
+ "ra: 232 Knickerbocker Ave, New York, 11237": {
+  "label": "232 KNICKERBOCKER AVENUE, Brooklyn, NY, USA",
+  "lat": 40.702811,
+  "lng": -73.925888
+ },
+ "ra: 250 W 26TH ST": {
+  "label": "250 WEST 26 STREET, New York, NY, USA",
+  "lat": 40.746609,
+  "lng": -73.996259
+ },
+ "ra: 2542 E Tremont Ave, Bronx, NY 10461,": {
+  "label": "2542 EAST TREMONT AVENUE, Bronx, NY, USA",
+  "lat": 40.842683,
+  "lng": -73.848975
+ },
+ "ra: 303 Saratoga Avenue, Brooklyn NY 11233": {
+  "label": "303 SARATOGA AVENUE, Brooklyn, NY, USA",
+  "lat": 40.67534,
+  "lng": -73.916367
+ },
+ "ra: 307 Meeker Ave, Brooklyn, NY 11211": {
+  "label": "400 MEEKER AVENUE, Brooklyn, NY, USA",
+  "lat": 40.7182,
+  "lng": -73.94687
+ },
+ "ra: 324 Grand St, New York, New York, 10002": {
+  "label": "324 GRAND STREET, New York, NY, USA",
+  "lat": 40.717284,
+  "lng": -73.990374
+ },
+ "ra: 366 Ten Eyck St, Brooklyn, NY 11206": {
+  "label": "7 TEN EYCK STREET, Brooklyn, NY, USA",
+  "lat": 40.709757,
+  "lng": -73.950503
+ },
+ "ra: 395 WYTHE AVE, BROOKLYN, NEW YORK": {
+  "label": "395 WYTHE AVENUE, Brooklyn, NY, USA",
+  "lat": 40.711144,
+  "lng": -73.966355
+ },
+ "ra: 50 Bowery, New York, NY 10013,": {
+  "label": "50 BOWERY, New York, NY, USA",
+  "lat": 40.715969,
+  "lng": -73.996746
+ },
+ "ra: 559 Lorimer St, Williamsburg, Brooklyn, NY 11211": {
+  "label": "559 LORIMER STREET, Brooklyn, NY, USA",
+  "lat": 40.713629,
+  "lng": -73.949497
+ },
+ "ra: 63 Grand St, Brooklyn, NY 11249,": {
+  "label": "63 GRAND STREET, Brooklyn, NY, USA",
+  "lat": 40.716105,
+  "lng": -73.964809
+ },
+ "ra: 70 Scott Ave Brooklyn, NY 11237": {
+  "label": "70 SCOTT AVENUE, Brooklyn, NY, USA",
+  "lat": 40.709868,
+  "lng": -73.922411
+ },
+ "ra: 8 Wyckoff Avenue, Brooklyn NY 11237": {
+  "label": "8 WYCKOFF AVENUE, Brooklyn, NY, USA",
+  "lat": 40.7066,
+  "lng": -73.923368
+ },
+ "ra: 90 Scott Ave, East Williamsburg, Brooklyn": {
+  "label": "90 SCOTT AVENUE, Brooklyn, NY, USA",
+  "lat": 40.710564,
+  "lng": -73.922686
+ },
+ "ra: 90 Wythe Ave, Brooklyn, NY 11249": {
+  "label": "90 WYTHE AVENUE, Brooklyn, NY, USA",
+  "lat": 40.721765,
+  "lng": -73.958345
+ },
+ "smith street between bergen and union | Brooklyn": null,
+ "w 54th street between 9th and 10th ave | Manhattan": {
+  "label": "w 54th street & 10th ave",
+  "lat": 40.7673585,
+  "lng": -73.98935750000001
+ },
+ "w 54th street between 9th and 10th aves | Manhattan": null
 }

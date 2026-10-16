@@ -1,0 +1,1552 @@
+{
+ "source": {
+  "name": "Resident Advisor",
+  "url": "https://ra.co/events/us/newyork"
+ },
+ "date": "2026-10-16",
+ "fetchedAt": "2026-10-16T18:07:58-04:00",
+ "events": [
+  {
+   "id": "2533892",
+   "title": "Juliana Huxtable / Anika Kunst / VILE / Pablo Bozzi / Byron Yeates / Kim Ann Foxman",
+   "category": "nightlife",
+   "start": "2026-10-16T22:30:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T07:00:00-04:00",
+   "venue": {
+    "name": "BASEMENT",
+    "address": "52-19 Flushing Ave., Maspeth, NY 11378 USA",
+    "neighborhood": "Maspeth",
+    "lat": 40.715679,
+    "lng": -73.914379
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Juliana Huxtable, Anika Kunst, VILE, Pablo Bozzi, Byron Yeates, Kim Ann Foxman",
+   "details": "",
+   "url": "https://ra.co/events/2533892",
+   "tags": []
+  },
+  {
+   "id": "2522240",
+   "title": "Focus: Disco with Inés, Lovie & Mark Grusane",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T06:00:00-04:00",
+   "venue": {
+    "name": "Nowadays",
+    "address": "56-06 Cooper Ave. Ridgewood, NY 11385 USA",
+    "neighborhood": "",
+    "lat": 40.692462,
+    "lng": -73.901536
+   },
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Inés (US), Lovie, Mark Grusane",
+   "details": "Genres: Disco",
+   "url": "https://ra.co/events/2522240",
+   "tags": [
+    "Disco"
+   ]
+  },
+  {
+   "id": "2541208",
+   "title": "DESCENDANTS with DJ TIRA, Danni Gato & More",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T05:00:00-04:00",
+   "venue": {
+    "name": "99 Scott Ave",
+    "address": "99 Scott Ave, Brooklyn, NY 11237",
+    "neighborhood": "Brooklyn",
+    "lat": 40.710505,
+    "lng": -73.923656
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Meedy, Danni Gato, pizzi, Val Fleury",
+   "details": "Genres: Gqom, Afro Tech",
+   "url": "https://ra.co/events/2541208",
+   "tags": [
+    "Gqom",
+    "Afro Tech"
+   ]
+  },
+  {
+   "id": "2527760",
+   "title": "Night & Day: Shed (LIVE), 1morning, LYDO, Juana, Kamran Sadeghi, Concrete Husband",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T14:00:00-04:00",
+   "venue": {
+    "name": "Signal",
+    "address": "175 Morgan Ave, Brooklyn, NY 11237",
+    "neighborhood": "Brooklyn",
+    "lat": 40.71005,
+    "lng": -73.933575
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Shed, 1morning, LYDO, Juana, Kamran Sadeghi, Concrete Husband",
+   "details": "",
+   "url": "https://ra.co/events/2527760",
+   "tags": []
+  },
+  {
+   "id": "2557425",
+   "title": "Bear Happy Hour at Rawhide",
+   "category": "nightlife",
+   "start": "2026-10-16T18:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-16T21:00:00-04:00",
+   "venue": {
+    "name": "Club Rawhide",
+    "address": "250 W 26TH ST",
+    "neighborhood": "",
+    "lat": 40.746609,
+    "lng": -73.996259
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://ra.co/events/2557425",
+   "tags": []
+  },
+  {
+   "id": "2513529",
+   "title": "Jan Blomqvist (Live), Parallelle, Kanykei",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Knockdown Center",
+    "address": "52-19 Flushing Ave., Queens, NY 11378 USA",
+    "neighborhood": "Queens",
+    "lat": 40.715679,
+    "lng": -73.914379
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Jan Blomqvist, Parallelle, Kanykei",
+   "details": "Genres: House",
+   "url": "https://ra.co/events/2513529",
+   "tags": [
+    "House"
+   ]
+  },
+  {
+   "id": "2538840",
+   "title": "Golden Record NYC x pregame x Chomp! Chomp! present Mike Servito, Haruka, Gee Dee & More ",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T08:00:00-04:00",
+   "venue": {
+    "name": "Green Room NYC",
+    "address": "195 Morgan Ave, Brooklyn, NY 11237",
+    "neighborhood": "Brooklyn",
+    "lat": 40.71075,
+    "lng": -73.934165
+   },
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Haruka (US), Timo Lee, Mike Servito, Armii1n, Gee Dee",
+   "details": "Genres: House, Tech House",
+   "url": "https://ra.co/events/2538840",
+   "tags": [
+    "House",
+    "Tech House"
+   ]
+  },
+  {
+   "id": "2542689",
+   "title": "feedbk with Meilgaarden and Amelia Holt, Second Contact",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "feedbk",
+    "address": "153 Morgan Avenue",
+    "neighborhood": "",
+    "lat": 40.709394,
+    "lng": -73.933336
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Meilgaarden, Amelia Holt, Second Contact",
+   "details": "Genres: Progressive House, Techno",
+   "url": "https://ra.co/events/2542689",
+   "tags": [
+    "Progressive House",
+    "Techno"
+   ]
+  },
+  {
+   "id": "2536777",
+   "title": "Phantasma: Joey Beltram, Volvox, Light Asylum(DJ Set) + Lenny Dee, FortifiedStructures",
+   "category": "nightlife",
+   "start": "2026-10-16T21:30:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T03:00:00-04:00",
+   "venue": {
+    "name": "Paragon",
+    "address": "990 Broadway Brooklyn, NY",
+    "neighborhood": "",
+    "lat": 40.696107,
+    "lng": -73.934068
+   },
+   "price": {
+    "min": 25,
+    "max": 25,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Joey Beltram, Volvox, Light Asylum, Lenny Dee, FortifiedStructures",
+   "details": "Genres: Techno, Gabber",
+   "url": "https://ra.co/events/2536777",
+   "tags": [
+    "Techno",
+    "Gabber"
+   ]
+  },
+  {
+   "id": "2542113",
+   "title": "12 Years of Good Room - DJ Holographic, 4AM NYC, Lee Cash & Perna (All Night)",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T05:00:00-04:00",
+   "venue": {
+    "name": "Good Room",
+    "address": "98 Meserole Ave, Brooklyn, NY 11222 USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.726945,
+    "lng": -73.952885
+   },
+   "price": {
+    "min": 15,
+    "max": 30,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: DJ Holographic, 4AM NYC, Lee Cash, Perna",
+   "details": "",
+   "url": "https://ra.co/events/2542113",
+   "tags": []
+  },
+  {
+   "id": "2532326",
+   "title": "D. Tiffany, Flørist / Gi Gi & adobeprincess / Very J",
+   "category": "nightlife",
+   "start": "2026-10-16T23:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "public records",
+    "address": "233 Butler St, Brooklyn, NY 11217, USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.682261,
+    "lng": -73.986378
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: D. Tiffany, Flørist, Gi Gi, adobeprincess, Very J",
+   "details": "Genres: Tech House, Minimal",
+   "url": "https://ra.co/events/2532326",
+   "tags": [
+    "Tech House",
+    "Minimal"
+   ]
+  },
+  {
+   "id": "2508103",
+   "title": "Marsolo, JACK MARLOW, Natalia Roth, Blaise Bracic, cutback! + friends: LILLE, Dylan Rhee",
+   "category": "nightlife",
+   "start": "2026-10-16T22:30:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Elsewhere",
+    "address": "599 Johnson Ave, Brooklyn, NY 11237 USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.70967,
+    "lng": -73.923279
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Marsolo, Natalia Roth, JACK MARLOW",
+   "details": "",
+   "url": "https://ra.co/events/2508103",
+   "tags": []
+  },
+  {
+   "id": "2536232",
+   "title": "Jean d'Armes, Lord Fascinator, Laura Lynn, Mr. Handyman - Dead Letter No.9",
+   "category": "nightlife",
+   "start": "2026-10-16T21:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Dead Letter No. 9",
+    "address": "63 Grand St, Brooklyn, NY 11249, USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.716105,
+    "lng": -73.964809
+   },
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Lord Fascinator, Laura Lynn",
+   "details": "Genres: House",
+   "url": "https://ra.co/events/2536232",
+   "tags": [
+    "House"
+   ]
+  },
+  {
+   "id": "2496368",
+   "title": "Fleetmac Wood",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "House of Yes",
+    "address": "2 Wyckoff Avenue; Brooklyn, NY 11237; USA",
+    "neighborhood": "",
+    "lat": 40.706772,
+    "lng": -73.923611
+   },
+   "price": {
+    "min": 20,
+    "max": 50,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Fleetmac Wood, Roxanne Roll, Alcala, Alex Oxley",
+   "details": "Genres: House, Disco",
+   "url": "https://ra.co/events/2496368",
+   "tags": [
+    "House",
+    "Disco"
+   ]
+  },
+  {
+   "id": "2556104",
+   "title": "Club Rawhide FRIDAY NIGHT 10.16.26 w/ Will Jack, Saia, Malcolm XL",
+   "category": "nightlife",
+   "start": "2026-10-16T21:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Club Rawhide",
+    "address": "250 W 26TH ST",
+    "neighborhood": "",
+    "lat": 40.746609,
+    "lng": -73.996259
+   },
+   "price": {
+    "min": 30,
+    "max": 30,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Will Jack, Saia, Malcolm XL",
+   "details": "Genres: Techno, House",
+   "url": "https://ra.co/events/2556104",
+   "tags": [
+    "Techno",
+    "House"
+   ]
+  },
+  {
+   "id": "2533376",
+   "title": "MIRCHI: Halla, Krithi, MAIYA",
+   "category": "nightlife",
+   "start": "2026-10-16T18:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-16T22:00:00-04:00",
+   "venue": {
+    "name": "Elsewhere",
+    "address": "599 Johnson Ave, Brooklyn, NY 11237 USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.70967,
+    "lng": -73.923279
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Krithi, MAIYA",
+   "details": "",
+   "url": "https://ra.co/events/2533376",
+   "tags": []
+  },
+  {
+   "id": "2559473",
+   "title": "The Sound of Muzik with O'SIMMIE & Jamira Estrada",
+   "category": "nightlife",
+   "start": "2026-10-16T15:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-16T18:00:00-04:00",
+   "venue": {
+    "name": "Silence Please",
+    "address": "132 Bowery Floor 2, New York, NY 10013",
+    "neighborhood": "Manhattan",
+    "lat": 40.72,
+    "lng": -73.99
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: O'SIMMIE, Jamira Estrada",
+   "details": "Genres: Downtempo, Experimental",
+   "url": "https://ra.co/events/2559473",
+   "tags": [
+    "Downtempo",
+    "Experimental"
+   ]
+  },
+  {
+   "id": "2538749",
+   "title": "Reggaeton on Houston - Latin & Reggaeton Party NYC",
+   "category": "nightlife",
+   "start": "2026-10-16T17:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T03:00:00-04:00",
+   "venue": {
+    "name": "San Antonios",
+    "address": "247 Eldridge St, New York, NY 10002, US",
+    "neighborhood": "Manhattan",
+    "lat": 40.72,
+    "lng": -73.99
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "Genres: Hip-Hop, Disco",
+   "url": "https://ra.co/events/2538749",
+   "tags": [
+    "Hip-Hop",
+    "Disco"
+   ]
+  },
+  {
+   "id": "2563242",
+   "title": "Fridays NYC",
+   "category": "nightlife",
+   "start": "2026-10-16T23:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Virgo",
+    "address": "324 Grand St, New York, New York, 10002",
+    "neighborhood": "",
+    "lat": 40.717284,
+    "lng": -73.990374
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "Genres: Club",
+   "url": "https://ra.co/events/2563242",
+   "tags": [
+    "Club"
+   ]
+  },
+  {
+   "id": "2553918",
+   "title": "Miss Parker & Pablo Romero",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Le Bain",
+    "address": "444 W 13th Street, New York, NY 10014",
+    "neighborhood": "Manhattan",
+    "lat": 40.741077,
+    "lng": -74.008285
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Miss Parker, Pablo Romero",
+   "details": "",
+   "url": "https://ra.co/events/2553918",
+   "tags": []
+  },
+  {
+   "id": "2553764",
+   "title": "Groove Therapy presents Jorge Caiado (Carpet & Snares / Lisbon)",
+   "category": "nightlife",
+   "start": "2026-10-16T21:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T03:00:00-04:00",
+   "venue": {
+    "name": "Honey's",
+    "address": "93 Scott Avenue, Brooklyn, NY 11237",
+    "neighborhood": "Brooklyn",
+    "lat": 40.710433,
+    "lng": -73.922995
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Jorge Caiado, Elkind, J.N.R., Sam Clark, Samuel Pojer",
+   "details": "Genres: House, Minimal Techno",
+   "url": "https://ra.co/events/2553764",
+   "tags": [
+    "House",
+    "Minimal Techno"
+   ]
+  },
+  {
+   "id": "2534508",
+   "title": "DR. GABBA w/ wev + HONEY B - tickets available on Venuepilot",
+   "category": "nightlife",
+   "start": "2026-10-16T23:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Market Hotel",
+    "address": "1140 Myrtle Avenue; Brooklyn, NY 11206; United States",
+    "neighborhood": "",
+    "lat": 40.697041,
+    "lng": -73.934711
+   },
+   "price": {
+    "min": 20,
+    "max": 30,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: DR. GABBA, wev (US), HONEY B",
+   "details": "Genres: House, Club",
+   "url": "https://ra.co/events/2534508",
+   "tags": [
+    "House",
+    "Club"
+   ]
+  },
+  {
+   "id": "2541651",
+   "title": "Refuge Friday: ÄGAPĒ with Adam X, Fran LF, Frankie Bones & Perc",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T09:00:00-04:00",
+   "venue": {
+    "name": "Refuge",
+    "address": "366 Ten Eyck St, Brooklyn, NY 11206",
+    "neighborhood": "Brooklyn",
+    "lat": 40.709757,
+    "lng": -73.950503
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Adam X, Fran LF, Frankie Bones, Perc, cotton",
+   "details": "",
+   "url": "https://ra.co/events/2541651",
+   "tags": []
+  },
+  {
+   "id": "2545152",
+   "title": "unmixed Panel: Music, Copyright & AI",
+   "category": "nightlife",
+   "start": "2026-10-16T19:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T00:00:00-04:00",
+   "venue": {
+    "name": "Signal",
+    "address": "175 Morgan Ave, Brooklyn, NY 11237",
+    "neighborhood": "Brooklyn",
+    "lat": 40.71005,
+    "lng": -73.933575
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Nhii",
+   "details": "",
+   "url": "https://ra.co/events/2545152",
+   "tags": []
+  },
+  {
+   "id": "2509818",
+   "title": "Marie Davidson (LIVE), Xeno & Oaklander (LIVE), Andi (DJ Set) (concert)",
+   "category": "nightlife",
+   "start": "2026-10-16T20:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T02:00:00-04:00",
+   "venue": {
+    "name": "Saint Vitus",
+    "address": "1120 Manhattan Ave, New York, NY 11222",
+    "neighborhood": "Manhattan",
+    "lat": 40.736783,
+    "lng": -73.955088
+   },
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Marie Davidson, Xeno & Oaklander, Andi",
+   "details": "Genres: Deep House, Electronica",
+   "url": "https://ra.co/events/2509818",
+   "tags": [
+    "Deep House",
+    "Electronica"
+   ]
+  },
+  {
+   "id": "2510939",
+   "title": "Rare Frequency Transmissions",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Mood Ring",
+    "address": "1260 Myrtle Ave, Brooklyn, NY 11221, USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.697726,
+    "lng": -73.926908
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Dynoman, Matük, Sevyn, Zara Dekho",
+   "details": "",
+   "url": "https://ra.co/events/2510939",
+   "tags": []
+  },
+  {
+   "id": "2544573",
+   "title": "Music On: Marco Carola, Franky Rizardo, Mason Collective",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Pacha New York",
+    "address": "140 Stewart Ave, Brooklyn, NY 11237",
+    "neighborhood": "Brooklyn",
+    "lat": 40.71071,
+    "lng": -73.9261
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Marco Carola, Franky Rizardo, Mason Collective",
+   "details": "",
+   "url": "https://ra.co/events/2544573",
+   "tags": []
+  },
+  {
+   "id": "2547896",
+   "title": "ARMANA KHAN presents: The Khanistan Tour NYC",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "The Chocolate Factory",
+    "address": "70 Scott Ave Brooklyn, NY 11237",
+    "neighborhood": "",
+    "lat": 40.709868,
+    "lng": -73.922411
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: ARMANA KHAN, Byrell The Great, Roman Sensation, OYYSTER, MAMICANA, BABEITSPURR",
+   "details": "Genres: Baile Funk, Latin Bass",
+   "url": "https://ra.co/events/2547896",
+   "tags": [
+    "Baile Funk",
+    "Latin Bass"
+   ]
+  },
+  {
+   "id": "2552243",
+   "title": "LIFE AFTER TRANCE: JUST DANCE HALLOWEEN EDITION with BARKADA NYC",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Metropolitan Bar",
+    "address": "559 Lorimer St, Williamsburg, Brooklyn, NY 11211",
+    "neighborhood": "Brooklyn",
+    "lat": 40.713629,
+    "lng": -73.949497
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Piscesprince, ASTER (DJ), hans bas, Kaleb Stryker",
+   "details": "Genres: Trance, Pop",
+   "url": "https://ra.co/events/2552243",
+   "tags": [
+    "Trance",
+    "Pop"
+   ]
+  },
+  {
+   "id": "2549163",
+   "title": "A 1000LTR JOINT - Ladies Free",
+   "category": "nightlife",
+   "start": "2026-10-16T21:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T03:30:00-04:00",
+   "venue": {
+    "name": "The Deep End",
+    "address": "1080 Wyckoff Ave, Ridgewood, NY 11385, USA",
+    "neighborhood": "Ridgewood",
+    "lat": 40.694385,
+    "lng": -73.902538
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: AG (1), SUCIA!, HOPESTARXX, Taaj Al Khaliq, KOOB",
+   "details": "Genres: Club, Ghetto Tech",
+   "url": "https://ra.co/events/2549163",
+   "tags": [
+    "Club",
+    "Ghetto Tech"
+   ]
+  },
+  {
+   "id": "2549962",
+   "title": "Loofy",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "SILO",
+    "address": "90 Scott Ave, East Williamsburg, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.710564,
+    "lng": -73.922686
+   },
+   "price": {
+    "min": 15,
+    "max": 15,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Loofy",
+   "details": "Genres: Tech House, Minimal",
+   "url": "https://ra.co/events/2549962",
+   "tags": [
+    "Tech House",
+    "Minimal"
+   ]
+  },
+  {
+   "id": "2549453",
+   "title": "scratch [3 YEAR PARTY]",
+   "category": "nightlife",
+   "start": "2026-10-16T22:30:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Nublu",
+    "address": "62 Avenue C, New York, NY 10009, USA",
+    "neighborhood": "Manhattan",
+    "lat": 40.722498,
+    "lng": -73.97973
+   },
+   "price": {
+    "min": 17.79,
+    "max": 17.79,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Beni Hana, Poolhaus, Jeny Michelle, Eric eric, Trader O",
+   "details": "Genres: House, Tech House",
+   "url": "https://ra.co/events/2549453",
+   "tags": [
+    "House",
+    "Tech House"
+   ]
+  },
+  {
+   "id": "2535414",
+   "title": "Natural Selections: Balam, Mona Matsuoka, Carlo Sine, Loren Berrier",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Jupiter Disco",
+    "address": "1237 Flushing Avenue, Brooklyn, NY 11237, USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.70813,
+    "lng": -73.923523
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Balam, Mona Matsuoka, Carlo Sine, Loren Berrier",
+   "details": "",
+   "url": "https://ra.co/events/2535414",
+   "tags": []
+  },
+  {
+   "id": "2544645",
+   "title": "DESCEND",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "El Cartel",
+    "address": "2542 E Tremont Ave, Bronx, NY 10461, USA",
+    "neighborhood": "Bronx",
+    "lat": 40.842683,
+    "lng": -73.848975
+   },
+   "price": {
+    "min": 10,
+    "max": 10,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "Genres: Techno",
+   "url": "https://ra.co/events/2544645",
+   "tags": [
+    "Techno"
+   ]
+  },
+  {
+   "id": "2555866",
+   "title": "SIMPULSO 015: with friedplatano, dj tbd + Sterling Juan Diaz",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Bossa Nova Civic Club",
+    "address": "1271 Myrtle Ave; Brooklyn, NY 11221; United States",
+    "neighborhood": "",
+    "lat": 40.697974,
+    "lng": -73.927965
+   },
+   "price": {
+    "min": 10,
+    "max": 10,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: friedplatano, Sterling Juan Diaz",
+   "details": "",
+   "url": "https://ra.co/events/2555866",
+   "tags": []
+  },
+  {
+   "id": "2524151",
+   "title": "Reggaeton Warehouse (21+)",
+   "category": "nightlife",
+   "start": "2026-10-16T23:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "The Brooklyn Monarch",
+    "address": "23 Meadow Street, Brooklyn, NY 11206 USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.71098,
+    "lng": -73.936304
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "Genres: Club, Reggaeton",
+   "url": "https://ra.co/events/2524151",
+   "tags": [
+    "Club",
+    "Reggaeton"
+   ]
+  },
+  {
+   "id": "2415027",
+   "title": "Friends In High Places feat. Alex Wann",
+   "category": "nightlife",
+   "start": "2026-10-16T17:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T00:00:00-04:00",
+   "venue": {
+    "name": "Westlight Rooftop at The William Vale",
+    "address": "111 North 12th Street, Brooklyn, New York 11249, United States",
+    "neighborhood": "",
+    "lat": 40.722298,
+    "lng": -73.956734
+   },
+   "price": {
+    "min": 29.99,
+    "max": 29.99,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Alex Wann",
+   "details": "Genres: Afro House",
+   "url": "https://ra.co/events/2415027",
+   "tags": [
+    "Afro House"
+   ]
+  },
+  {
+   "id": "2540811",
+   "title": "HYBRIDITY",
+   "category": "nightlife",
+   "start": "2026-10-16T19:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-16T22:00:00-04:00",
+   "venue": {
+    "name": "Mood Ring",
+    "address": "1260 Myrtle Ave, Brooklyn, NY 11221, USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.697726,
+    "lng": -73.926908
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Pacha DJ, Helix, Ah Dek",
+   "details": "",
+   "url": "https://ra.co/events/2540811",
+   "tags": []
+  },
+  {
+   "id": "2508292",
+   "title": "THE Y2K Parrty at the Legendary Mehanata NYC - 18",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Mehanata Bar",
+    "address": "113, Ludlow street",
+    "neighborhood": "",
+    "lat": 40.719444,
+    "lng": -73.988794
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "Genres: Reggaeton",
+   "url": "https://ra.co/events/2508292",
+   "tags": [
+    "Reggaeton"
+   ]
+  },
+  {
+   "id": "2543449",
+   "title": "Lesson 001: Jared Jackson & Stonie Blue",
+   "category": "nightlife",
+   "start": "2026-10-16T23:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T03:00:00-04:00",
+   "venue": {
+    "name": "SOBs",
+    "address": "204 Varick Street, New York, NY 10014-4810, USA",
+    "neighborhood": "Manhattan",
+    "lat": 40.728449,
+    "lng": -74.005124
+   },
+   "price": {
+    "min": 17,
+    "max": 30,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "Genres: Deep House, Afro House",
+   "url": "https://ra.co/events/2543449",
+   "tags": [
+    "Deep House",
+    "Afro House"
+   ]
+  },
+  {
+   "id": "2550264",
+   "title": "Horror Hi-Fi",
+   "category": "nightlife",
+   "start": "2026-10-16T22:30:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "The Onyx Room at House of Yes",
+    "address": "8 Wyckoff Avenue, Brooklyn NY 11237",
+    "neighborhood": "",
+    "lat": 40.7066,
+    "lng": -73.923368
+   },
+   "price": {
+    "min": 24,
+    "max": 24,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Alex Oxley, Alcala",
+   "details": "Genres: Electro, Italo Disco",
+   "url": "https://ra.co/events/2550264",
+   "tags": [
+    "Electro",
+    "Italo Disco"
+   ]
+  },
+  {
+   "id": "2552981",
+   "title": "Amber Valentine // ALL NIGHT LONG",
+   "category": "nightlife",
+   "start": "2026-10-16T21:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T03:00:00-04:00",
+   "venue": {
+    "name": "Gabriela",
+    "address": "90 Wythe Ave, Brooklyn, NY 11249",
+    "neighborhood": "Brooklyn",
+    "lat": 40.721765,
+    "lng": -73.958345
+   },
+   "price": {
+    "min": 0,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Amber Valentine",
+   "details": "Genres: Electro, Disco",
+   "url": "https://ra.co/events/2552981",
+   "tags": [
+    "Electro",
+    "Disco"
+   ]
+  },
+  {
+   "id": "2559578",
+   "title": "Mickey Perez (Public Service) presents Bebop Porú (Rsvp)",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Danger Danger",
+    "address": "232 Knickerbocker Ave, New York, 11237",
+    "neighborhood": "",
+    "lat": 40.702811,
+    "lng": -73.925888
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Mickey Perez",
+   "details": "Genres: House",
+   "url": "https://ra.co/events/2559578",
+   "tags": [
+    "House"
+   ]
+  },
+  {
+   "id": "2560805",
+   "title": "TELEMETRY Happy Hour Ft. Telesforo & Nugzze",
+   "category": "nightlife",
+   "start": "2026-10-16T21:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-16T23:00:00-04:00",
+   "venue": {
+    "name": "Bossa Nova Civic Club",
+    "address": "1271 Myrtle Ave; Brooklyn, NY 11221; United States",
+    "neighborhood": "",
+    "lat": 40.697974,
+    "lng": -73.927965
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Telesforo",
+   "details": "Genres: Minimal Techno",
+   "url": "https://ra.co/events/2560805",
+   "tags": [
+    "Minimal Techno"
+   ]
+  },
+  {
+   "id": "2543493",
+   "title": "Outer Heaven Records 002 Release Party: A.Wild",
+   "category": "nightlife",
+   "start": "2026-10-16T20:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Outer Heaven",
+    "address": "191 Chrystie Street, New York, NY 10002",
+    "neighborhood": "Manhattan",
+    "lat": 40.722006,
+    "lng": -73.992275
+   },
+   "price": {
+    "min": 50,
+    "max": 50,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: A.Wild, KOZLOW, Orson.NYC",
+   "details": "Genres: House, Acid",
+   "url": "https://ra.co/events/2543493",
+   "tags": [
+    "House",
+    "Acid"
+   ]
+  },
+  {
+   "id": "2557409",
+   "title": "Noema + Dero + Omer-S",
+   "category": "nightlife",
+   "start": "2026-10-16T21:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Moondog Hifi",
+    "address": "119 Ingraham Street, Brooklyn, NY 11237",
+    "neighborhood": "Brooklyn",
+    "lat": 40.707894,
+    "lng": -73.929192
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://ra.co/events/2557409",
+   "tags": []
+  },
+  {
+   "id": "2502677",
+   "title": "BEYOND THE STARDUST",
+   "category": "nightlife",
+   "start": "2026-10-16T19:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-16T20:00:00-04:00",
+   "venue": {
+    "name": "The Flea Theater",
+    "address": "20 Thomas St, New York, NY 10007",
+    "neighborhood": "Manhattan",
+    "lat": 40.72,
+    "lng": -74.01
+   },
+   "price": {
+    "min": 29.5,
+    "max": 55.5,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: The Illustrious Blacks",
+   "details": "Genres: House, Disco",
+   "url": "https://ra.co/events/2502677",
+   "tags": [
+    "House",
+    "Disco"
+   ]
+  },
+  {
+   "id": "2531520",
+   "title": "Medellin Fridays - Colombian Latin & Reggaeton Party NYC",
+   "category": "nightlife",
+   "start": "2026-10-16T17:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T03:00:00-04:00",
+   "venue": {
+    "name": "San Antonios",
+    "address": "247 Eldridge St, New York, NY 10002, US",
+    "neighborhood": "Manhattan",
+    "lat": 40.72,
+    "lng": -73.99
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "Genres: Reggaeton",
+   "url": "https://ra.co/events/2531520",
+   "tags": [
+    "Reggaeton"
+   ]
+  },
+  {
+   "id": "2541300",
+   "title": "TURN THAT OFF",
+   "category": "nightlife",
+   "start": "2026-10-16T21:30:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Jade",
+    "address": "4 Stuyvesant Ave, Brooklyn, NY 11221, USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.696593,
+    "lng": -73.934995
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "Genres: Techno, Pop",
+   "url": "https://ra.co/events/2541300",
+   "tags": [
+    "Techno",
+    "Pop"
+   ]
+  },
+  {
+   "id": "2549466",
+   "title": "ruzz.OS vol. 002",
+   "category": "nightlife",
+   "start": "2026-10-16T19:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T02:00:00-04:00",
+   "venue": {
+    "name": "OS NYC",
+    "address": "50 Bowery, New York, NY 10013, USA",
+    "neighborhood": "Manhattan",
+    "lat": 40.715969,
+    "lng": -73.996746
+   },
+   "price": {
+    "min": 23,
+    "max": 23,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "Genres: Electro, Dubstep",
+   "url": "https://ra.co/events/2549466",
+   "tags": [
+    "Electro",
+    "Dubstep"
+   ]
+  },
+  {
+   "id": "2535538",
+   "title": "AZ Chike",
+   "category": "nightlife",
+   "start": "2026-10-16T19:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-16T23:00:00-04:00",
+   "venue": {
+    "name": "SOBs",
+    "address": "204 Varick Street, New York, NY 10014-4810, USA",
+    "neighborhood": "Manhattan",
+    "lat": 40.728449,
+    "lng": -74.005124
+   },
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "Genres: Hip-Hop",
+   "url": "https://ra.co/events/2535538",
+   "tags": [
+    "Hip-Hop"
+   ]
+  },
+  {
+   "id": "2539129",
+   "title": "ARISE & SHINE: LIBRA EDITION with J.Sterling & DIGI",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "East River Bar",
+    "address": "97 South 6th Street; Brooklyn, NY 11211; United States",
+    "neighborhood": "",
+    "lat": 40.710492,
+    "lng": -73.965045
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "Genres: Disco, Funk / Soul",
+   "url": "https://ra.co/events/2539129",
+   "tags": [
+    "Disco",
+    "Funk / Soul"
+   ]
+  },
+  {
+   "id": "2490060",
+   "title": "#1 AVENIDA DE PERREO - Latin Reggaeton Rooftop Party",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Avenida NYC",
+    "address": "1 Pennsylvania Plaza, New York, NY 10119, USA",
+    "neighborhood": "Manhattan",
+    "lat": 40.75,
+    "lng": -73.99
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://ra.co/events/2490060",
+   "tags": []
+  },
+  {
+   "id": "2553827",
+   "title": "Drone Lab & VoicePlay + Open Projector",
+   "category": "nightlife",
+   "start": "2026-10-16T19:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-16T23:00:00-04:00",
+   "venue": {
+    "name": "Delight Factory",
+    "address": "303 Saratoga Avenue, Brooklyn NY 11233",
+    "neighborhood": "",
+    "lat": 40.67534,
+    "lng": -73.916367
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Bearded Twin",
+   "details": "Genres: Ambient, Drone",
+   "url": "https://ra.co/events/2553827",
+   "tags": [
+    "Ambient",
+    "Drone"
+   ]
+  },
+  {
+   "id": "2560787",
+   "title": "ANIMAL Friday Night w/ Kevin Aviance",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Animal",
+    "address": "307 Meeker Ave, Brooklyn, NY 11211",
+    "neighborhood": "Brooklyn",
+    "lat": 40.7182,
+    "lng": -73.94687
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Kevin Aviance",
+   "details": "Genres: House, Ballroom",
+   "url": "https://ra.co/events/2560787",
+   "tags": [
+    "House",
+    "Ballroom"
+   ]
+  },
+  {
+   "id": "2561799",
+   "title": "TRIP DON'T SLEEP: Martin Balladares / Auphoria B2B SAENZ / SAN VALENTIN",
+   "category": "nightlife",
+   "start": "2026-10-16T17:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "MAD Radio NYC",
+    "address": "395 WYTHE AVE, BROOKLYN, NEW YORK",
+    "neighborhood": "",
+    "lat": 40.711144,
+    "lng": -73.966355
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Martin Balladares, Auphoria",
+   "details": "",
+   "url": "https://ra.co/events/2561799",
+   "tags": []
+  },
+  {
+   "id": "2509623",
+   "title": "THE Y2K Parrty at the Legendary Mehanata NYC - 18",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Mehanata Bar",
+    "address": "113, Ludlow street",
+    "neighborhood": "",
+    "lat": 40.719444,
+    "lng": -73.988794
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "Genres: Reggaeton",
+   "url": "https://ra.co/events/2509623",
+   "tags": [
+    "Reggaeton"
+   ]
+  },
+  {
+   "id": "2415400",
+   "title": "Apollo Studio presents",
+   "category": "nightlife",
+   "start": "2026-10-16T23:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T06:00:00-04:00",
+   "venue": {
+    "name": "Apollo Studio",
+    "address": "72 Apollo St Brooklyn, NY 11222",
+    "neighborhood": "",
+    "lat": 40.72659,
+    "lng": -73.937716
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://ra.co/events/2415400",
+   "tags": []
+  },
+  {
+   "id": "2562705",
+   "title": "Bashment In BK",
+   "category": "nightlife",
+   "start": "2026-10-16T23:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Littlefield",
+    "address": "635 Sackett Street, Brooklyn, NY 11217",
+    "neighborhood": "Brooklyn",
+    "lat": 40.678501,
+    "lng": -73.983301
+   },
+   "price": {
+    "min": 10,
+    "max": 10,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "Genres: Dancehall",
+   "url": "https://ra.co/events/2562705",
+   "tags": [
+    "Dancehall"
+   ]
+  },
+  {
+   "id": "2559808",
+   "title": "Latin & Reggaeton Fridays - Latin & Reggaeton All Night",
+   "category": "nightlife",
+   "start": "2026-10-16T23:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Out Of Ordinary",
+    "address": "Out Of Ordinary NYC 48 West 21st Street",
+    "neighborhood": "",
+    "lat": 40.74,
+    "lng": -73.99
+   },
+   "price": {
+    "min": 0,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://ra.co/events/2559808",
+   "tags": []
+  },
+  {
+   "id": "2560802",
+   "title": "TinaZhOO – A Night with a Popstar",
+   "category": "nightlife",
+   "start": "2026-10-16T22:00:00-04:00",
+   "listedDay": "2026-10-16",
+   "end": "2026-10-17T04:00:00-04:00",
+   "venue": {
+    "name": "Oberon",
+    "address": "196 N 10th St, Brooklyn, NY, 11211",
+    "neighborhood": "Brooklyn",
+    "lat": 40.71854,
+    "lng": -73.955158
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Tasheff, porygon k",
+   "details": "Genres: Pop, Club",
+   "url": "https://ra.co/events/2560802",
+   "tags": [
+    "Pop",
+    "Club"
+   ]
+  }
+ ],
+ "unplaced": [
+  {
+   "title": "333 House × Sudden Logic present: Charlotte",
+   "address": null,
+   "url": "https://ra.co/events/2549234"
+  },
+  {
+   "title": "Motion Fridays Reloaded",
+   "address": "Level Astoria Nightclub 23-66 Steinway Street",
+   "url": "https://ra.co/events/2559739"
+  }
+ ]
+}

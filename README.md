@@ -47,14 +47,18 @@ src/scripts/map/renderer.js       three.js scene: voxel land and buildings, pins
 src/scripts/map/palette.js        colours for the city and for event categories
 src/scripts/events/schema.js      the one event shape every source maps into
 src/scripts/events/index.js       loads all sources, filters to today and the map area, de-duplicates, sorts
-src/scripts/events/sources/       one file per event source: nycgov.js (live), dummy.js (sample data, not loaded), template.js
-public/data/nycgov-events.json    NYC.gov events snapshot written by tools/fetch_nycgov.py
+src/scripts/events/sources/       one file per event source: nycgov.js, ra.js, skint.js (live), snapshot.js (shared reader),
+                                  dummy.js (sample data, not loaded), template.js
+public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
 public/                           other static files copied as-is (favicon)
 tools/fetch_nycgov.py             pulls one day of NYC.gov events and places them on the map
-data/geocode-cache.json           address lookups the fetch script reuses
+tools/fetch_ra.py                 pulls one night of Resident Advisor listings
+tools/fetch_skint.py              pulls The Skint's picks for one day from its roundup posts
+data/geocode-cache.json           address lookups the fetch scripts reuse
+data/venues.json                  street addresses for venues The Skint names without one
 ```
 
-## Refreshing the NYC.gov events
+## Refreshing the events
 
 The map shows a snapshot of one day's events. A GitHub Action (`.github/workflows/refresh-events.yml`) runs every `tools/fetch_*.py` and
 refreshes them every morning and midday New York time and pushes the new snapshot, which redeploys the site.
@@ -62,14 +66,34 @@ You can also run it from the repo's Actions tab (Run workflow), or by hand with 
 
 ```sh
 python3 tools/fetch_nycgov.py             # today in NYC
-python3 tools/fetch_nycgov.py 2026-10-17  # or a given day
+python3 tools/fetch_ra.py
+python3 tools/fetch_skint.py
+python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
 ```
+
+Run all three for the same day: each source only shows events on the day its own snapshot covers.
+
+### NYC.gov
 
 It reads the same Events Calendar API that https://www.nyc.gov/main/events/ uses, places NYC Parks events with the
 Parks Department's coordinates and everything else with NYC City Planning GeoSearch, and skips canceled events.
 Events with no usable address are listed under `unplaced` in the snapshot. The Parks feed refuses GitHub's servers,
 so every run that reaches it records each Parks venue in `data/parks-places.json`, which the scheduled refresh uses instead. The page header shows the day the
 snapshot covers, so an old snapshot shows that day's events rather than an empty map.
+
+### Resident Advisor
+
+`fetch_ra.py` reads the GraphQL endpoint behind https://ra.co/events/us/newyork. Most venues come with exact
+coordinates; ones with none or only a rough position are placed from their address with GeoSearch.
+A party that starts after midnight stays on the night RA lists it for.
+
+### The Skint
+
+`fetch_skint.py` reads The Skint's daily and weekend roundup posts through the site's WordPress API and picks out
+the listings for the day. The Skint names venues rather than addresses ("caveat (les)"), so a listing is placed from
+a street address or block in its text, from `data/venues.json`, or from a GeoSearch place with the same name (parks,
+landmarks). Everything else is listed under `unplaced`. Adding a venue's address to `data/venues.json` places it
+from then on. The text is free-form, so check the output now and then: prices and times are best guesses.
 
 ## Adding a real event source
 

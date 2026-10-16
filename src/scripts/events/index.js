@@ -8,9 +8,11 @@
 import { normalizeEvent } from './schema.js';
 import { inBounds, BOUNDS } from '../map/geo.js';
 import nycgovSource from './sources/nycgov.js';
+import raSource from './sources/ra.js';
+import skintSource from './sources/skint.js';
 
 // ./sources/dummy.js holds sample events for offline testing.
-export const SOURCES = [nycgovSource];
+export const SOURCES = [nycgovSource, raSource, skintSource];
 
 export async function loadEventsForDate(date = new Date()) {
   const results = await Promise.allSettled(
@@ -26,10 +28,11 @@ export async function loadEventsForDate(date = new Date()) {
     }
     // A snapshot source names the NYC day it covers; match on the listing's own
     // local date so the result does not depend on the viewer's time zone.
+    // `listedDay` keeps an after-midnight party on the night it is listed for.
     const day = r.value.s.snapshot?.date;
     for (const raw of r.value.rows) {
       const ev = normalizeEvent(raw, r.value.s);
-      const onDay = ev && (day ? ev.start.slice(0, 10) === day : sameDay(new Date(ev.start), date));
+      const onDay = ev && (day ? (raw.listedDay ?? ev.start.slice(0, 10)) === day : sameDay(new Date(ev.start), date));
       if (ev && onDay && inBounds(ev.venue.lat, ev.venue.lng)) events.push(ev);
     }
   }
