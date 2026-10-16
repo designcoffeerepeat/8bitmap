@@ -17,6 +17,8 @@
 //     lng:       number
 //   }
 //   price:       { min: number, max: number, currency: "USD" } or null for free
+//   priceUnknown: boolean  true when the listing gives no price
+//   allDay:      boolean
 //   description: string   short blurb shown in the list
 //   details:     string   longer text revealed by "Show more"
 //   url:         string   link to the original listing
@@ -56,6 +58,8 @@ export function normalizeEvent(raw, source) {
       lng,
     },
     price: raw.price ?? null,
+    priceUnknown: Boolean(raw.priceUnknown),
+    allDay: Boolean(raw.allDay),
     description: raw.description ?? '',
     details: raw.details ?? '',
     url: raw.url ?? source.url,

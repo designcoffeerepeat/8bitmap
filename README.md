@@ -47,9 +47,26 @@ src/scripts/map/renderer.js       three.js scene: voxel land and buildings, pins
 src/scripts/map/palette.js        colours for the city and for event categories
 src/scripts/events/schema.js      the one event shape every source maps into
 src/scripts/events/index.js       loads all sources, filters to today and the map area, de-duplicates, sorts
-src/scripts/events/sources/       one file per event source (dummy.js is sample data, template.js a starting point)
-public/                           static files copied as-is (favicon)
+src/scripts/events/sources/       one file per event source: nycgov.js (live), dummy.js (sample data, not loaded), template.js
+public/data/nycgov-events.json    NYC.gov events snapshot written by tools/fetch_nycgov.py
+public/                           other static files copied as-is (favicon)
+tools/fetch_nycgov.py             pulls one day of NYC.gov events and places them on the map
+data/geocode-cache.json           address lookups the fetch script reuses
 ```
+
+## Refreshing the NYC.gov events
+
+The map shows a snapshot of one day's events. To update it, run this with Python 3, then commit and push:
+
+```sh
+python3 tools/fetch_nycgov.py             # today in NYC
+python3 tools/fetch_nycgov.py 2026-10-17  # or a given day
+```
+
+It reads the same Events Calendar API that https://www.nyc.gov/main/events/ uses, places NYC Parks events with the
+Parks Department's coordinates and everything else with NYC City Planning GeoSearch, and skips canceled events.
+Events with no usable address are listed under `unplaced` in the snapshot. The page header shows the day the
+snapshot covers, so an old snapshot shows that day's events rather than an empty map.
 
 ## Adding a real event source
 

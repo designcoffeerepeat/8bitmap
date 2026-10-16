@@ -2,6 +2,7 @@ import { createMap } from './map/renderer.js';
 import { loadEventsForDate } from './events/index.js';
 import { CATEGORIES, CATEGORY_LABELS } from './events/schema.js';
 import { CATEGORY_COLORS } from './map/palette.js';
+import nycgovSource from './events/sources/nycgov.js';
 
 const LIST_PAGE = 8;
 
@@ -31,13 +32,21 @@ await document.fonts.load('8px "Press Start 2P"').catch(() => {});
 const map = createMap(el.map, { pixelSize: window.innerWidth < 700 ? 2 : 3 });
 
 const today = new Date();
-el.date.textContent = today
-  .toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })
-  .toUpperCase();
-
 const { events, errors } = await loadEventsForDate(today);
 state.events = events;
 if (errors.length) el.status.textContent = `${errors.length} source(s) could not be loaded.`;
+
+// The header shows the NYC day the listings cover, which can differ from the
+// viewer's own date.
+const snap = nycgovSource.snapshot;
+const shownDay = snap ? new Date(`${snap.date}T12:00:00`) : today;
+el.date.textContent = shownDay
+  .toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })
+  .toUpperCase();
+if (snap) {
+  const at = new Date(snap.fetchedAt).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' });
+  $('.panel-foot').textContent = `LISTINGS FROM NYC.GOV EVENTS, UPDATED ${at} NYC TIME. ${snap.unplaced ? `${snap.unplaced} WITHOUT A MAPPABLE ADDRESS NOT SHOWN. ` : ''}EVENTS OUTSIDE THE MAP AREA ARE NOT SHOWN.`.toUpperCase();
+}
 map.setEvents(events);
 renderChips();
 render();
@@ -107,10 +116,10 @@ function render() {
     return `
     <li>
       <button class="ev${e.id === state.selected ? ' is-selected' : ''}" type="button" data-id="${esc(e.id)}" style="--cat:${CATEGORY_COLORS[e.category]}">
-        <span class="ev-time">${fmtTime(e.start)}${live ? '<em>NOW</em>' : ''}</span>
+        <span class="ev-time">${e.allDay ? 'ALL DAY' : fmtTime(e.start)}${live ? '<em>NOW</em>' : ''}</span>
         <span class="ev-title">${esc(e.title)}</span>
-        <span class="ev-meta">${esc(e.venue.name)} · ${esc(e.venue.neighborhood)}</span>
-        <span class="ev-tags"><span class="tag">${CATEGORY_LABELS[e.category]}</span><span class="price">${fmtPrice(e.price)}</span></span>
+        <span class="ev-meta">${esc([e.venue.name, e.venue.neighborhood].filter(Boolean).join(' · '))}</span>
+        <span class="ev-tags"><span class="tag">${CATEGORY_LABELS[e.category]}</span><span class="price">${fmtPrice(e)}</span></span>
       </button>
     </li>`;
   }).join('') || '<li class="empty">No events in this category today.</li>';
@@ -138,9 +147,9 @@ function renderDetail() {
     <p class="d-cat"><i aria-hidden="true"></i>${CATEGORY_LABELS[e.category]}</p>
     <h2>${esc(e.title)}</h2>
     <dl>
-      <div><dt>WHEN</dt><dd>${fmtTime(e.start)}${e.end ? ` to ${fmtTime(e.end)}` : ''}</dd></div>
-      <div><dt>WHERE</dt><dd>${esc(e.venue.name)}<br><small>${esc(e.venue.address)}, ${esc(e.venue.neighborhood)}</small></dd></div>
-      <div><dt>PRICE</dt><dd>${fmtPrice(e.price)}</dd></div>
+      <div><dt>WHEN</dt><dd>${e.allDay ? 'All day' : `${fmtTime(e.start)}${e.end ? ` to ${fmtTime(e.end)}` : ''}`}</dd></div>
+      <div><dt>WHERE</dt><dd>${esc(e.venue.name)}<br><small>${esc([e.venue.address !== e.venue.name ? e.venue.address : '', e.venue.neighborhood].filter(Boolean).join(', '))}</small></dd></div>
+      <div><dt>PRICE</dt><dd>${fmtPrice(e)}</dd></div>
     </dl>
     <p class="d-blurb">${esc(e.description)}</p>
     <div class="d-more" ${state.detailsOpen ? '' : 'hidden'}>
@@ -178,9 +187,11 @@ function select(id, { fromMap = false } = {}) {
 
 // ---- formatting --------------------------------------------------------------
 function fmtTime(iso) {
-  return new Date(iso).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }).replace(' ', '');
+  return new Date(iso).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }).replace(' ', '');
 }
-function fmtPrice(p) {
+function fmtPrice(e) {
+  if (e.priceUnknown) return 'SEE LISTING';
+  const p = e.price;
   if (!p || (p.min === 0 && p.max === 0)) return 'FREE';
   return p.min === p.max ? `$${p.min}` : `$${p.min}-${p.max}`;
 }
