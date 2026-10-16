@@ -183,6 +183,16 @@ button, a { font: inherit; color: inherit; }
 #status:empty { display: none; }
 #detail:not([hidden]) ~ .hint { display: none; }
 
+/* teaser for the borough not on the map yet; sits above the hint, hidden while an event card is open */
+.soon {
+  position: fixed; left: 50%; transform: translateX(calc(-50% - var(--panel-w) / 2));
+  bottom: calc(40px + env(safe-area-inset-bottom, 0px));
+  margin: 0; padding: 8px 12px 7px; white-space: nowrap; pointer-events: none;
+  font: 9px/1 var(--font-pixel); letter-spacing: 1px; color: var(--ink);
+}
+.soon b { font-weight: 400; color: var(--coin); }
+#detail:not([hidden]) ~ .soon { display: none; }
+
 @media (max-width: 760px) {
   :root { --panel-w: 0px; }
   body { font-size: 19px; }
@@ -216,5 +226,6 @@ button, a { font: inherit; color: inherit; }
   .controls { right: max(16px, env(safe-area-inset-right, 0px)); bottom: auto; top: calc(130px + env(safe-area-inset-top, 0px)); grid-template-columns: 40px; }
   .controls #rot-l, .controls #rot-r, .controls #pixel { display: none; }
   .hint { display: none; }
+  .soon { transform: translateX(-50%); bottom: calc(80px + env(safe-area-inset-bottom, 0px)); font-size: 8px; }
 }
 @media (prefers-reduced-motion: reduce) { #panel { transition: none; } }
