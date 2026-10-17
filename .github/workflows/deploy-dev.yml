@@ -29,7 +29,14 @@ jobs:
       - run: npm run build
       - name: Deploy to 8bitmap-dev
         if: env.CLOUDFLARE_API_TOKEN != ''
-        run: npx wrangler deploy --name 8bitmap-dev
+        # Wrangler's own messages become annotations, since the job log isn't always at hand.
+        run: |
+          set -o pipefail
+          if ! npx wrangler deploy --name 8bitmap-dev 2>&1 | tee deploy.log; then
+            grep -v '^\s*$' deploy.log | tail -25 | sed 's/^/::error::/'
+            exit 1
+          fi
+          grep -o 'https://[^ ]*workers.dev' deploy.log | sed 's/^/::notice::Dev site: /' || true
       - name: Explain the missing token
         if: env.CLOUDFLARE_API_TOKEN == ''
         run: echo "::warning::Add the CLOUDFLARE_API_TOKEN repository secret to publish dev."
