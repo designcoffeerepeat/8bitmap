@@ -4,7 +4,7 @@
   "url": "https://donyc.com"
  },
  "date": "2026-10-17",
- "fetchedAt": "2026-10-17T08:24:23-04:00",
+ "fetchedAt": "2026-10-17T08:48:32-04:00",
  "events": [
   {
    "id": "emei-night-at-the-opera-tour-tickets",
@@ -3767,6 +3767,26 @@
    "tags": []
   },
   {
+   "id": "once-upon-a-time-in-harlem-tickets",
+   "title": "Once Upon a Time in Harlem",
+   "category": "music",
+   "start": "2026-10-17T13:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Film Society of Lincoln Center",
+    "address": "165 W 65th St, New York, 10023",
+    "neighborhood": "",
+    "lat": 40.77426,
+    "lng": -73.98426
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/17/once-upon-a-time-in-harlem-tickets",
+   "tags": []
+  },
+  {
    "id": "the-devils-tickets",
    "title": "The Devils",
    "category": "music",
@@ -5457,11 +5477,6 @@
    "title": "BroSis",
    "venue": "Looking for the address? Location is provided in the email confirmation sent from Eventbrite",
    "url": "https://donyc.com/events/2026/10/17/brosis-tickets"
-  },
-  {
-   "title": "Once Upon a Time in Harlem",
-   "venue": "Film Society of Lincoln Center",
-   "url": "https://donyc.com/events/2026/10/17/once-upon-a-time-in-harlem-tickets"
   },
   {
    "title": "CitySquash",
