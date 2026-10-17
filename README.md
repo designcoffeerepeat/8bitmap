@@ -128,4 +128,4 @@ and the same show listed on several sites is merged by title, venue and start ti
 
 - Shorelines, parks and islands are `[lat, lng]` polygons at the top of `geo.js`.
 - Skyline heights come from `PEAKS` in `geo.js` (centre, spread, height).
-- Tile size is `CELL` in `geo.js`; pixel chunkiness is the PX button (2x, 3x, 4x).
+- Tile size is `CELL` in `geo.js`; pixel chunkiness is the PX button (2x by default, then 3x, 4x).

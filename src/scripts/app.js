@@ -37,7 +37,7 @@ const el = {
 };
 
 await document.fonts.load('8px "Press Start 2P"').catch(() => {});
-const map = createMap(el.map, { pixelSize: window.innerWidth < 700 ? 2 : 3 });
+const map = createMap(el.map, { pixelSize: 2 });
 
 const today = new Date();
 const { events, errors } = await loadEventsForDate(today);
@@ -90,7 +90,7 @@ $('#rot-l').addEventListener('click', () => map.rotateBy(Math.PI / 4));
 $('#rot-r').addEventListener('click', () => map.rotateBy(-Math.PI / 4));
 $('#home').addEventListener('click', () => map.home());
 $('#pixel').addEventListener('click', (e) => {
-  const next = { 2: 3, 3: 4, 4: 2 }[map.pixelSize] ?? 3;
+  const next = { 2: 3, 3: 4, 4: 2 }[map.pixelSize] ?? 2;
   map.setPixelSize(next);
   e.currentTarget.querySelector('b').textContent = `${next}X`;
 });
