@@ -193,6 +193,7 @@ button, a { font: inherit; color: inherit; }
 #status:empty { display: none; }
 #detail:not([hidden]) ~ .hint { display: none; }
 
+
 @media (max-width: 760px) {
   :root { --panel-w: 0px; }
   body { font-size: 19px; }
