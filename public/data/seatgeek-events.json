@@ -4,7 +4,7 @@
   "url": "https://seatgeek.com/cities/new-york"
  },
  "date": "2026-10-17",
- "fetchedAt": "2026-10-17T11:44:59-04:00",
+ "fetchedAt": "2026-10-17T12:52:47-04:00",
  "events": [
   {
    "id": "18548591",
@@ -29,30 +29,6 @@
     "sports",
     "animal sports",
     "horse racing"
-   ]
-  },
-  {
-   "id": "18539484",
-   "title": "The Very Hungry Caterpillar Show",
-   "category": "community",
-   "start": "2026-10-17T12:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "DR2 Theatre",
-    "address": "103 East 15th Street, New York, NY 10003",
-    "neighborhood": "New York",
-    "lat": 40.7353,
-    "lng": -73.9894
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "family",
-   "details": "",
-   "url": "https://seatgeek.com/the-very-hungry-caterpillar-show-tickets/family/2026-10-17-12-pm/18539484",
-   "tags": [
-    "theater",
-    "family"
    ]
   },
   {
@@ -173,6 +149,150 @@
    ]
   },
   {
+   "id": "18539506",
+   "title": "The Very Hungry Caterpillar Show",
+   "category": "community",
+   "start": "2026-10-17T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "DR2 Theatre",
+    "address": "103 East 15th Street, New York, NY 10003",
+    "neighborhood": "New York",
+    "lat": 40.7353,
+    "lng": -73.9894
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "family",
+   "details": "",
+   "url": "https://seatgeek.com/the-very-hungry-caterpillar-show-tickets/family/2026-10-17-2-pm/18539506",
+   "tags": [
+    "theater",
+    "family"
+   ]
+  },
+  {
+   "id": "18221677",
+   "title": "Hadestown",
+   "category": "art",
+   "start": "2026-10-17T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Walter Kerr Theatre",
+    "address": "219 West 48th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7605,
+    "lng": -73.9857
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/hadestown-tickets/broadway/2026-10-17-2-pm/18221677",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18470249",
+   "title": "The Imaginary Invalid",
+   "category": "art",
+   "start": "2026-10-17T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Todd Haimes Theatre",
+    "address": "227 West 42nd Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7566,
+    "lng": -73.9883
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/the-imaginary-invalid-tickets/broadway/2026-10-17-2-pm/18470249",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18037665",
+   "title": "MJ - The Musical",
+   "category": "art",
+   "start": "2026-10-17T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Neil Simon Theatre",
+    "address": "250 West 52nd Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7632,
+    "lng": -73.9845
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/mj-the-musical-tickets/broadway/2026-10-17-2-pm/18037665",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18149418",
+   "title": "The Outsiders",
+   "category": "art",
+   "start": "2026-10-17T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Bernard B. Jacobs Theatre",
+    "address": "242 W. 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7586,
+    "lng": -73.9878
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/the-outsiders-1-tickets/broadway/2026-10-17-2-pm/18149418",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18091298",
+   "title": "Two Strangers (Carry a Cake Across New York)",
+   "category": "art",
+   "start": "2026-10-17T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Longacre Theatre",
+    "address": "220 West 48th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7605,
+    "lng": -73.9857
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/two-strangers-carry-a-cake-across-new-york-tickets/broadway/2026-10-17-2-pm/18091298",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
    "id": "18310047",
    "title": "Other Desert Cities",
    "category": "art",
@@ -220,54 +340,6 @@
    ]
   },
   {
-   "id": "18470249",
-   "title": "The Imaginary Invalid",
-   "category": "art",
-   "start": "2026-10-17T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Todd Haimes Theatre",
-    "address": "227 West 42nd Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7566,
-    "lng": -73.9883
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/the-imaginary-invalid-tickets/broadway/2026-10-17-2-pm/18470249",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18149418",
-   "title": "The Outsiders",
-   "category": "art",
-   "start": "2026-10-17T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Bernard B. Jacobs Theatre",
-    "address": "242 W. 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7586,
-    "lng": -73.9878
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/the-outsiders-1-tickets/broadway/2026-10-17-2-pm/18149418",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
    "id": "18526936",
    "title": "Slam Frank",
    "category": "art",
@@ -288,78 +360,6 @@
    "url": "https://seatgeek.com/slam-frank-tickets/theater/2026-10-17-2-pm/18526936",
    "tags": [
     "theater"
-   ]
-  },
-  {
-   "id": "18037665",
-   "title": "MJ - The Musical",
-   "category": "art",
-   "start": "2026-10-17T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Neil Simon Theatre",
-    "address": "250 West 52nd Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7632,
-    "lng": -73.9845
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/mj-the-musical-tickets/broadway/2026-10-17-2-pm/18037665",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18221677",
-   "title": "Hadestown",
-   "category": "art",
-   "start": "2026-10-17T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Walter Kerr Theatre",
-    "address": "219 West 48th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7605,
-    "lng": -73.9857
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/hadestown-tickets/broadway/2026-10-17-2-pm/18221677",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18091298",
-   "title": "Two Strangers (Carry a Cake Across New York)",
-   "category": "art",
-   "start": "2026-10-17T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Longacre Theatre",
-    "address": "220 West 48th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7605,
-    "lng": -73.9857
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/two-strangers-carry-a-cake-across-new-york-tickets/broadway/2026-10-17-2-pm/18091298",
-   "tags": [
-    "theater",
-    "broadway"
    ]
   },
   {
@@ -410,6 +410,29 @@
    ]
   },
   {
+   "id": "18390700",
+   "title": "School Girls: Or, The African Mean Girls",
+   "category": "art",
+   "start": "2026-10-17T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Samuel J. Friedman Theatre",
+    "address": "261 West 47th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7602,
+    "lng": -73.9868
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/school-girls-or-the-african-mean-girls-tickets/theater/2026-10-17-2-pm/18390700",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
    "id": "18313004",
    "title": "The Lost Boys",
    "category": "art",
@@ -428,6 +451,30 @@
    "description": "broadway",
    "details": "",
    "url": "https://seatgeek.com/the-lost-boys-tickets/broadway/2026-10-17-2-pm/18313004",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18411523",
+   "title": "Perfect Crime",
+   "category": "art",
+   "start": "2026-10-17T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Theater Center",
+    "address": "210 W. 50th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7615,
+    "lng": -73.9845
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/perfect-crime-tickets/broadway/2026-10-17-2-pm/18411523",
    "tags": [
     "theater",
     "broadway"
@@ -481,50 +528,169 @@
    ]
   },
   {
-   "id": "18390700",
-   "title": "School Girls: Or, The African Mean Girls",
+   "id": "18472624",
+   "title": "The Gazillion Bubble Show",
+   "category": "community",
+   "start": "2026-10-17T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New World Stages - Stage 2",
+    "address": "340 West 50th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7628,
+    "lng": -73.9874
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "family",
+   "details": "",
+   "url": "https://seatgeek.com/the-gazillion-bubble-show-tickets/family/2026-10-17-2-pm/18472624",
+   "tags": [
+    "theater",
+    "family"
+   ]
+  },
+  {
+   "id": "17958372",
+   "title": "Harry Potter and The Cursed Child",
    "category": "art",
    "start": "2026-10-17T14:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Samuel J. Friedman Theatre",
-    "address": "261 West 47th Street, New York, NY 10036",
+    "name": "Lyric Theatre - New York",
+    "address": "213 West 42nd Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7602,
-    "lng": -73.9868
+    "lat": 40.7565,
+    "lng": -73.9878
    },
    "price": null,
    "priceUnknown": true,
    "description": "theater",
    "details": "",
-   "url": "https://seatgeek.com/school-girls-or-the-african-mean-girls-tickets/theater/2026-10-17-2-pm/18390700",
+   "url": "https://seatgeek.com/harry-potter-and-the-cursed-child-tickets/theater/2026-10-17-2-pm/17958372",
    "tags": [
     "theater"
    ]
   },
   {
-   "id": "18411523",
-   "title": "Perfect Crime",
+   "id": "18528585",
+   "title": "New York City Ballet - All Balanchine I",
    "category": "art",
    "start": "2026-10-17T14:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "The Theater Center",
-    "address": "210 W. 50th Street, New York, NY 10019",
+    "name": "David H Koch Theater",
+    "address": "20 Lincoln Center Plaza, New York, NY 10023",
     "neighborhood": "New York",
-    "lat": 40.7615,
-    "lng": -73.9845
+    "lat": 40.772,
+    "lng": -73.9833
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "dance",
+   "details": "",
+   "url": "https://seatgeek.com/new-york-city-ballet-tickets/dance/2026-10-17-2-pm/18528585",
+   "tags": [
+    "theater",
+    "dance",
+    "dance"
+   ]
+  },
+  {
+   "id": "18324009",
+   "title": "Billy Crystal: 860",
+   "category": "art",
+   "start": "2026-10-17T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Imperial Theatre - NY",
+    "address": "249 West 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7588,
+    "lng": -73.9873
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/perfect-crime-tickets/broadway/2026-10-17-2-pm/18411523",
+   "url": "https://seatgeek.com/billy-crystal-860-tickets/broadway/2026-10-17-2-pm/18324009",
    "tags": [
     "theater",
     "broadway"
+   ]
+  },
+  {
+   "id": "18149176",
+   "title": "Operation Mincemeat",
+   "category": "art",
+   "start": "2026-10-17T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "John Golden Theatre",
+    "address": "252 West 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7589,
+    "lng": -73.9878
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/operation-mincemeat-tickets/theater/2026-10-17-2-pm/18149176",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18096012",
+   "title": "Maybe Happy Ending",
+   "category": "art",
+   "start": "2026-10-17T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Belasco Theatre - NY",
+    "address": "111 West 44th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7563,
+    "lng": -73.9836
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/maybe-happy-ending-tickets/broadway/2026-10-17-2-pm/18096012",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18286756",
+   "title": "The Play That Goes Wrong",
+   "category": "art",
+   "start": "2026-10-17T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New World Stages - Stage 4",
+    "address": "340 West 50th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7628,
+    "lng": -73.9874
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/the-play-that-goes-wrong-tickets/theater/2026-10-17-2-pm/18286756",
+   "tags": [
+    "theater"
    ]
   },
   {
@@ -548,6 +714,31 @@
    "url": "https://seatgeek.com/midnight-tickets/new-york-new-york-daryl-roth-theatre-2026-10-17-2-pm/concert/18426248",
    "tags": [
     "concert"
+   ]
+  },
+  {
+   "id": "18408235",
+   "title": "Jamie Allan's Amaze",
+   "category": "art",
+   "start": "2026-10-17T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New World Stages - Stage 5",
+    "address": "340 West 50th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7628,
+    "lng": -73.9874
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "entertainment",
+   "details": "",
+   "url": "https://seatgeek.com/jamie-allan-s-amaze-tickets/entertainment/2026-10-17-2-pm/18408235",
+   "tags": [
+    "theater",
+    "entertainment",
+    "entertainment"
    ]
   },
   {
@@ -595,197 +786,6 @@
    "tags": [
     "theater",
     "broadway"
-   ]
-  },
-  {
-   "id": "17958372",
-   "title": "Harry Potter and The Cursed Child",
-   "category": "art",
-   "start": "2026-10-17T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lyric Theatre - New York",
-    "address": "213 West 42nd Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7565,
-    "lng": -73.9878
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/harry-potter-and-the-cursed-child-tickets/theater/2026-10-17-2-pm/17958372",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18149176",
-   "title": "Operation Mincemeat",
-   "category": "art",
-   "start": "2026-10-17T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "John Golden Theatre",
-    "address": "252 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7589,
-    "lng": -73.9878
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/operation-mincemeat-tickets/theater/2026-10-17-2-pm/18149176",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18324009",
-   "title": "Billy Crystal: 860",
-   "category": "art",
-   "start": "2026-10-17T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Imperial Theatre - NY",
-    "address": "249 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7588,
-    "lng": -73.9873
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/billy-crystal-860-tickets/broadway/2026-10-17-2-pm/18324009",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18096012",
-   "title": "Maybe Happy Ending",
-   "category": "art",
-   "start": "2026-10-17T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Belasco Theatre - NY",
-    "address": "111 West 44th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7563,
-    "lng": -73.9836
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/maybe-happy-ending-tickets/broadway/2026-10-17-2-pm/18096012",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18472624",
-   "title": "The Gazillion Bubble Show",
-   "category": "community",
-   "start": "2026-10-17T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New World Stages - Stage 2",
-    "address": "340 West 50th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7628,
-    "lng": -73.9874
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "family",
-   "details": "",
-   "url": "https://seatgeek.com/the-gazillion-bubble-show-tickets/family/2026-10-17-2-pm/18472624",
-   "tags": [
-    "theater",
-    "family"
-   ]
-  },
-  {
-   "id": "18286756",
-   "title": "The Play That Goes Wrong",
-   "category": "art",
-   "start": "2026-10-17T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New World Stages - Stage 4",
-    "address": "340 West 50th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7628,
-    "lng": -73.9874
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/the-play-that-goes-wrong-tickets/theater/2026-10-17-2-pm/18286756",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18528585",
-   "title": "New York City Ballet - All Balanchine I",
-   "category": "art",
-   "start": "2026-10-17T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "David H Koch Theater",
-    "address": "20 Lincoln Center Plaza, New York, NY 10023",
-    "neighborhood": "New York",
-    "lat": 40.772,
-    "lng": -73.9833
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "dance",
-   "details": "",
-   "url": "https://seatgeek.com/new-york-city-ballet-tickets/dance/2026-10-17-2-pm/18528585",
-   "tags": [
-    "theater",
-    "dance",
-    "dance"
-   ]
-  },
-  {
-   "id": "18408235",
-   "title": "Jamie Allan's Amaze",
-   "category": "art",
-   "start": "2026-10-17T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New World Stages - Stage 5",
-    "address": "340 West 50th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7628,
-    "lng": -73.9874
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "entertainment",
-   "details": "",
-   "url": "https://seatgeek.com/jamie-allan-s-amaze-tickets/entertainment/2026-10-17-2-pm/18408235",
-   "tags": [
-    "theater",
-    "entertainment",
-    "entertainment"
    ]
   },
   {
@@ -837,30 +837,6 @@
    ]
   },
   {
-   "id": "18048731",
-   "title": "The Great Gatsby - The Musical",
-   "category": "art",
-   "start": "2026-10-17T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Broadway Theatre - New York",
-    "address": "1681 Broadway, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7632,
-    "lng": -73.9829
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/the-great-gatsby-the-musical-tickets/broadway/2026-10-17-2-pm/18048731",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
    "id": "18198716",
    "title": "& Juliet",
    "category": "art",
@@ -882,6 +858,29 @@
    "tags": [
     "theater",
     "broadway"
+   ]
+  },
+  {
+   "id": "18360874",
+   "title": "A Few Good Men",
+   "category": "art",
+   "start": "2026-10-17T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lincoln Center Theater - Vivian Beaumont Theater",
+    "address": "150 West 65th Street, New York, NY 10023",
+    "neighborhood": "New York",
+    "lat": 40.7736,
+    "lng": -73.984
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/a-few-good-men-tickets/theater/2026-10-17-2-pm/18360874",
+   "tags": [
+    "theater"
    ]
   },
   {
@@ -909,26 +908,27 @@
    ]
   },
   {
-   "id": "18360874",
-   "title": "A Few Good Men",
+   "id": "18048731",
+   "title": "The Great Gatsby - The Musical",
    "category": "art",
    "start": "2026-10-17T14:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Lincoln Center Theater - Vivian Beaumont Theater",
-    "address": "150 West 65th Street, New York, NY 10023",
+    "name": "Broadway Theatre - New York",
+    "address": "1681 Broadway, New York, NY 10019",
     "neighborhood": "New York",
-    "lat": 40.7736,
-    "lng": -73.984
+    "lat": 40.7632,
+    "lng": -73.9829
    },
    "price": null,
    "priceUnknown": true,
-   "description": "theater",
+   "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/a-few-good-men-tickets/theater/2026-10-17-2-pm/18360874",
+   "url": "https://seatgeek.com/the-great-gatsby-the-musical-tickets/broadway/2026-10-17-2-pm/18048731",
    "tags": [
-    "theater"
+    "theater",
+    "broadway"
    ]
   },
   {
@@ -1786,29 +1786,6 @@
    ]
   },
   {
-   "id": "18176400",
-   "title": "Milly Quezada with Miriam Cruz",
-   "category": "music",
-   "start": "2026-10-17T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lehman Center For The Performing Arts",
-    "address": "250 Bedford Park Boulevard West, Bronx, NY 10468",
-    "neighborhood": "Bronx",
-    "lat": 40.8749,
-    "lng": -73.8932
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/milly-quezada-tickets/bronx-new-york-lehman-center-for-the-performing-arts-2026-10-17-8-pm/concert/18176400",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
    "id": "18156928",
    "title": "Ghostbusters In Concert",
    "category": "film",
@@ -1856,28 +1833,26 @@
    ]
   },
   {
-   "id": "18104288",
-   "title": "Metropolitan Opera - Cosi Fan Tutte",
+   "id": "18176400",
+   "title": "Milly Quezada with Miriam Cruz",
    "category": "music",
    "start": "2026-10-17T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Metropolitan Opera House",
-    "address": "70 Lincoln Center Plaza, New York, NY 10023",
-    "neighborhood": "New York",
-    "lat": 40.7742,
-    "lng": -73.9843
+    "name": "Lehman Center For The Performing Arts",
+    "address": "250 Bedford Park Boulevard West, Bronx, NY 10468",
+    "neighborhood": "Bronx",
+    "lat": 40.8749,
+    "lng": -73.8932
    },
    "price": null,
    "priceUnknown": true,
-   "description": "opera",
+   "description": "concert",
    "details": "",
-   "url": "https://seatgeek.com/cosi-fan-tutte-tickets/opera/2026-10-17-8-pm/18104288",
+   "url": "https://seatgeek.com/milly-quezada-tickets/bronx-new-york-lehman-center-for-the-performing-arts-2026-10-17-8-pm/concert/18176400",
    "tags": [
-    "theater",
-    "classical",
-    "opera"
+    "concert"
    ]
   },
   {
@@ -1901,6 +1876,31 @@
    "url": "https://seatgeek.com/emei-tickets/new-york-new-york-sony-hall-2026-10-17-8-pm/concert/18217238",
    "tags": [
     "concert"
+   ]
+  },
+  {
+   "id": "18104288",
+   "title": "Metropolitan Opera - Cosi Fan Tutte",
+   "category": "music",
+   "start": "2026-10-17T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Metropolitan Opera House",
+    "address": "70 Lincoln Center Plaza, New York, NY 10023",
+    "neighborhood": "New York",
+    "lat": 40.7742,
+    "lng": -73.9843
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "opera",
+   "details": "",
+   "url": "https://seatgeek.com/cosi-fan-tutte-tickets/opera/2026-10-17-8-pm/18104288",
+   "tags": [
+    "theater",
+    "classical",
+    "opera"
    ]
   },
   {
@@ -2020,29 +2020,6 @@
    ]
   },
   {
-   "id": "18332796",
-   "title": "AVELLO",
-   "category": "music",
-   "start": "2026-10-17T22:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Chocolate Factory - Brooklyn",
-    "address": "70 Scott Ave, Brooklyn, NY 11237",
-    "neighborhood": "Brooklyn",
-    "lat": 40.709846,
-    "lng": -73.92243
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/avello-tickets/brooklyn-new-york-the-chocolate-factory-brooklyn-2026-10-17-10-pm/concert/18332796",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
    "id": "18251442",
    "title": "Intergalactic Gary with Amelia Holt (21+)",
    "category": "music",
@@ -2084,6 +2061,29 @@
    "description": "concert",
    "details": "",
    "url": "https://seatgeek.com/worship-tickets/brooklyn-new-york-brooklyn-storehouse-at-brooklyn-navy-yard-2026-10-17-10-pm/concert/18612453",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18332796",
+   "title": "AVELLO",
+   "category": "music",
+   "start": "2026-10-17T22:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Chocolate Factory - Brooklyn",
+    "address": "70 Scott Ave, Brooklyn, NY 11237",
+    "neighborhood": "Brooklyn",
+    "lat": 40.709846,
+    "lng": -73.92243
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/avello-tickets/brooklyn-new-york-the-chocolate-factory-brooklyn-2026-10-17-10-pm/concert/18332796",
    "tags": [
     "concert"
    ]
