@@ -101,6 +101,16 @@ button, a { font: inherit; color: inherit; }
 .src-item input:focus-visible + i { outline: 3px solid var(--coin); outline-offset: 2px; }
 .src-item span { margin-left: auto; color: var(--dim); font: 8px/1 var(--font-pixel); }
 
+/* category dropdown: phones only, replaces the chip row */
+.cat-filter { display: none; position: relative; flex: none; }
+.cat-btn b { font-weight: 400; color: var(--ink); }
+.cat-btn span { color: var(--coin); }
+.cat-btn[aria-expanded="true"] { border-color: var(--frame); }
+.cat-menu { position: absolute; top: calc(100% + 10px); right: 0; z-index: 5; width: 220px; padding: 8px; display: grid; gap: 4px; }
+.cat-menu[hidden] { display: none; }
+.cat-menu .chip { width: 100%; box-shadow: none; padding: 10px; }
+.cat-menu .chip span { margin-left: auto; }
+
 /* right panel */
 #panel {
   position: fixed; top: 0; right: 0; bottom: 0; width: var(--panel-w);
@@ -196,8 +206,8 @@ button, a { font: inherit; color: inherit; }
   .ad strong { font-size: 9px; }
   .chips { flex-wrap: nowrap; overflow-x: auto; width: 100%; padding-bottom: 6px; scrollbar-width: none; }
   .chip { flex: none; }
-  .filter-row { width: 100%; }
-  .filter-row .chips { flex: 1; min-width: 0; }
+  .filter-row .chips { display: none; }
+  .cat-filter { display: block; }
   .src-menu { width: min(260px, calc(100vw - 32px)); }
   #panel {
     top: auto; left: 0; width: auto; height: 46%;
