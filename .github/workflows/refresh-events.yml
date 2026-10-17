@@ -26,6 +26,8 @@ jobs:
           python-version: '3.12'
       - name: Fetch today's events from every source
         # A failing source keeps its previous file; the other sources still update.
+        env:
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
         run: |
           for f in tools/fetch_*.py; do
             echo "::group::$f"
