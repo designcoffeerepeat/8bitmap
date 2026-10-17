@@ -28,6 +28,9 @@ const el = {
   sheetToggle: $('#panel-toggle'),
   status: $('#status'),
   srcBtn: $('#src-btn'),
+  catBtn: $('#cat-btn'),
+  catMenu: $('#cat-menu'),
+  catSummary: $('#cat-summary'),
   srcMenu: $('#src-menu'),
   srcList: $('#src-list'),
   srcSummary: $('#src-summary'),
@@ -102,11 +105,22 @@ document.addEventListener('keydown', (e) => {
   if (!el.srcMenu.hidden) {
     toggleSources(false);
     el.srcBtn.focus();
+  } else if (!el.catMenu.hidden) {
+    toggleCategories(false);
+    el.catBtn.focus();
   } else if (state.selected) select(null);
 });
-el.srcBtn.addEventListener('click', () => toggleSources(el.srcMenu.hidden));
+el.srcBtn.addEventListener('click', () => {
+  toggleCategories(false);
+  toggleSources(el.srcMenu.hidden);
+});
+el.catBtn.addEventListener('click', () => {
+  toggleSources(false);
+  toggleCategories(el.catMenu.hidden);
+});
 document.addEventListener('pointerdown', (e) => {
   if (!el.srcMenu.hidden && !e.target.closest('.src-filter')) toggleSources(false);
+  if (!el.catMenu.hidden && !e.target.closest('.cat-filter')) toggleCategories(false);
 });
 $('#src-all').addEventListener('click', () => setSources([...publishers.keys()]));
 $('#src-none').addEventListener('click', () => setSources([]));
@@ -134,6 +148,11 @@ function renderSources() {
     </label></li>`).join('');
   const on = state.sources.size;
   el.srcSummary.textContent = on === publishers.size ? 'ALL' : `${on}/${publishers.size}`;
+}
+
+function toggleCategories(open) {
+  el.catMenu.hidden = !open;
+  el.catBtn.setAttribute('aria-expanded', String(open));
 }
 
 function toggleSources(open) {
@@ -164,15 +183,22 @@ function renderChips() {
   pool.forEach((e) => counts[e.category]++);
   const chips = [['all', 'All', pool.length, '#ffffff'],
     ...CATEGORIES.filter((c) => counts[c]).map((c) => [c, CATEGORY_LABELS[c], counts[c], CATEGORY_COLORS[c]])];
-  el.chips.innerHTML = chips.map(([id, label, n, col]) => `
+  const buttons = chips.map(([id, label, n, col]) => `
     <button class="chip" type="button" data-cat="${id}" aria-pressed="${state.filter === id}" style="--cat:${col}">
       <i aria-hidden="true"></i>${label}<span>${n}</span>
     </button>`).join('');
-  el.chips.querySelectorAll('.chip').forEach((b) => b.addEventListener('click', () => {
+  // Desktop shows the chips in a row; phones show the same buttons in the CATEGORY dropdown.
+  el.chips.innerHTML = buttons;
+  el.catMenu.innerHTML = buttons;
+  const current = chips.find(([id]) => id === state.filter) ?? chips[0];
+  el.catSummary.textContent = current[1].toUpperCase();
+  el.catBtn.style.setProperty('--cat', current[3]);
+  document.querySelectorAll('#chips .chip, #cat-menu .chip').forEach((b) => b.addEventListener('click', () => {
     state.filter = b.dataset.cat;
     state.showAll = false;
-    el.chips.querySelectorAll('.chip').forEach((c) => c.setAttribute('aria-pressed', String(c === b)));
+    toggleCategories(false);
     if (state.selected && !visibleEvents().some((e) => e.id === state.selected)) select(null);
+    renderChips();
     render();
   }));
 }
