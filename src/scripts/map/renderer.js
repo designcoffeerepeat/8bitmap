@@ -19,7 +19,7 @@ const color = (hex) => new THREE.Color(hex);
 const pick = (arr, r) => arr[Math.floor(r * arr.length) % arr.length];
 
 export function createMap(container, opts = {}) {
-  let pixelSize = opts.pixelSize ?? 3;
+  let pixelSize = opts.pixelSize ?? 2;
   const listeners = { select: [], hover: [] };
   const emit = (name, payload) => listeners[name].forEach((fn) => fn(payload));
 

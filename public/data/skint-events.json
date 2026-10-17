@@ -1,0 +1,357 @@
+{
+ "source": {
+  "name": "The Skint",
+  "url": "https://theskint.com/"
+ },
+ "date": "2026-10-17",
+ "fetchedAt": "2026-10-17T08:28:03-04:00",
+ "events": [
+  {
+   "id": "the-annual-washington-square-park-dog-halloween-costume-cont-1017",
+   "title": "The Annual Washington Square Park Dog Halloween Costume Contest",
+   "category": "community",
+   "start": "2026-10-17T10:00:00-04:00",
+   "end": "2026-10-17T12:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Washington Square Park",
+    "address": "WASHINGTON SQUARE PARK, New York, NY, USA",
+    "neighborhood": "Greenwich Village",
+    "lat": 40.73089,
+    "lng": -73.9976
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "washington square park's garibaldi plaza (greenwich village).",
+   "details": "sat 10am-12pm (the line to participate opens at 9:30am):: washington square park's garibaldi plaza (greenwich village).",
+   "url": "https://www.washingtonsqpark.org/events/2026-dog-halloween-costume-contest-2026-10-17",
+   "tags": []
+  },
+  {
+   "id": "manhattan-vintage-clothing-show-fall-edition-1017",
+   "title": "Manhattan Vintage Clothing Show: Fall Edition",
+   "category": "community",
+   "start": "2026-10-17T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Metropolitan Pavilion",
+    "address": "125 WEST 18 STREET, New York, NY, USA",
+    "neighborhood": "Chelsea",
+    "lat": 40.740559,
+    "lng": -73.995753
+   },
+   "price": {
+    "min": 20,
+    "max": 25,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "metropolitan pavilion (chelsea). $25 general, $20 students.",
+   "details": "fri thru mon:: metropolitan pavilion (chelsea). $25 general, $20 students.",
+   "url": "https://manhattanvintage.com/",
+   "tags": []
+  },
+  {
+   "id": "fifth-annual-national-indigenous-peoples-of-the-americas-par-1017",
+   "title": "Fifth Annual National Indigenous Peoples Of The Americas Parade",
+   "category": "community",
+   "start": "2026-10-17T10:00:00-04:00",
+   "end": "2026-10-17T14:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Madison Ave + E 23rd St To Broadway + 17th St",
+    "address": "madison ave & e 23rd st",
+    "neighborhood": "Flatiron",
+    "lat": 40.740847,
+    "lng": -73.986756
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "madison ave + e 23rd st to broadway + 17th st (flatiron).",
+   "details": "sat 10am-2pm (10am speakers, 12pm parade):: madison ave + e 23rd st to broadway + 17th st (flatiron).",
+   "url": "https://calendar.powwows.com/events/the-annual-national-indigenous-peoples-of-the-americas-parade/",
+   "tags": []
+  },
+  {
+   "id": "brownstone-boys-stoop-sale-1017",
+   "title": "Brownstone Boys Stoop Sale",
+   "category": "community",
+   "start": "2026-10-17T10:00:00-04:00",
+   "end": "2026-10-17T14:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "375 Vanderbilt Ave",
+    "address": "375 VANDERBILT AVENUE, Brooklyn, NY, USA",
+    "neighborhood": "Clinton Hill",
+    "lat": 40.68698,
+    "lng": -73.968388
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "375 vanderbilt ave (clinton hill).",
+   "details": "sat 10am-2pm:: 375 vanderbilt ave (clinton hill).",
+   "url": "https://thebrownstoneboys.substack.com/p/save-the-date-stoop-sale-is-coming",
+   "tags": []
+  },
+  {
+   "id": "the-annual-muddy-paws-rescue-block-party-1017",
+   "title": "The Annual Muddy Paws Rescue Block Party",
+   "category": "nightlife",
+   "start": "2026-10-17T10:00:00-04:00",
+   "end": "2026-10-17T17:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "W 54th Street Between 9th + 10th Aves",
+    "address": "w 54th street & 10th ave",
+    "neighborhood": "Hell's Kitchen",
+    "lat": 40.767359,
+    "lng": -73.989358
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "w 54th street between 9th + 10th aves (hell's kitchen).",
+   "details": "sat 10am-5pm:: w 54th street between 9th + 10th aves (hell's kitchen).",
+   "url": "https://www.muddypawsrescue.org/block-party",
+   "tags": []
+  },
+  {
+   "id": "collected-con-1017",
+   "title": "Collected Con",
+   "category": "community",
+   "start": "2026-10-17T10:00:00-04:00",
+   "end": "2026-10-17T18:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Industry City",
+    "address": "INDUSTRY CITY, Brooklyn, NY, USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.65977,
+    "lng": -74.01058
+   },
+   "price": {
+    "min": 15,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "industry city, brooklyn. $15 adv, $20 door.",
+   "details": "sat 10am-6:30pm:: industry city, brooklyn. $15 adv, $20 door.",
+   "url": "https://collectedcon.com/",
+   "tags": []
+  },
+  {
+   "id": "the-annual-brooklyn-synth-pedal-expo-1017",
+   "title": "The Annual Brooklyn Synth + Pedal Expo",
+   "category": "community",
+   "start": "2026-10-17T12:00:00-04:00",
+   "end": "2026-10-17T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "100 Sutton Event Space",
+    "address": "100 SUTTON STREET, Brooklyn, NY, USA",
+    "neighborhood": "Greenpoint",
+    "lat": 40.726577,
+    "lng": -73.940564
+   },
+   "price": {
+    "min": 10,
+    "max": 10,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "100 sutton event space (greenpoint). $10-25 admission.",
+   "details": "sat + sun (sat 12-6pm, sun 10:30am-5pm):: 100 sutton event space (greenpoint). $10-25 admission.",
+   "url": "https://delicious-audio.com/brooklyn-synth-pedal-expo/",
+   "tags": []
+  },
+  {
+   "id": "flop-house-comedy-club-1017",
+   "title": "Flop House Comedy Club",
+   "category": "comedy",
+   "start": "2026-10-17T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "362 Grand Street",
+    "address": "362 GRAND STREET, Brooklyn, NY, USA",
+    "neighborhood": "Williamsburg",
+    "lat": 40.712214,
+    "lng": -73.95578
+   },
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "nyc's friendliest indie comedy club—with great comics and a cozy atmosphere—has some incredible lineups this weekend! save 50% with promo code 'skint' on tickets to these shows at 362 grand street in williamsburg: friday...",
+   "details": "fri + sat (various times):: nyc's friendliest indie comedy club—with great comics and a cozy atmosphere—has some incredible lineups this weekend! save 50% with promo code 'skint' on tickets to these shows at 362 grand street in williamsburg: friday 8pm, 9:30pm, and 11pm; and the east village location is back at 201 allen st store 2 friday + saturday at 8:00pm. new: monthly member's pass ($20) to see as many shows as you want + happy hour drinks + secret drop in announcements!",
+   "url": "https://flophousecomedy.com",
+   "tags": []
+  },
+  {
+   "id": "free-show-brain-concert-1017",
+   "title": "Free Show Brain Concert",
+   "category": "music",
+   "start": "2026-10-17T14:00:00-04:00",
+   "end": "2026-10-17T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Maria Hernandez Park",
+    "address": "MARIA HERNANDEZ PARK, Brooklyn, NY, USA",
+    "neighborhood": "Bushwick",
+    "lat": 40.70317,
+    "lng": -73.92386
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "show brain returns to maria hernandez park (bushwick) with a free, all-ages concert featuring big girl, desert sharks, pop music fever dream, talon, and firstsex.",
+   "details": "sat 2-6pm:: show brain returns to maria hernandez park (bushwick) with a free, all-ages concert featuring big girl, desert sharks, pop music fever dream, talon, and firstsex.",
+   "url": "https://www.instagram.com/showbrain_/",
+   "tags": []
+  },
+  {
+   "id": "fun-gutter-1017",
+   "title": "Fun Gutter",
+   "category": "comedy",
+   "start": "2026-10-17T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Cobra Club",
+    "address": "6 WYCKOFF AVENUE, Brooklyn, NY, USA",
+    "neighborhood": "Bushwick",
+    "lat": 40.706713,
+    "lng": -73.923506
+   },
+   "price": {
+    "min": 10,
+    "max": 10,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "a party, show, and general check-in hosted by sasha von didkovsky, featuring standup from olivia carter, vannessa jackson, sean peecook, and michael abbe, plus live prank calls conducted by david dobbins. karaoke follows...",
+   "details": "sat 7:30pm:: a party, show, and general check-in hosted by sasha von didkovsky, featuring standup from olivia carter, vannessa jackson, sean peecook, and michael abbe, plus live prank calls conducted by david dobbins. karaoke follows the show. the cobra club (bushwick), free admission ($10 suggested donation at the door).",
+   "url": "https://partiful.com/e/TVGC4rrodcrXO3YhH3HH",
+   "tags": []
+  },
+  {
+   "id": "peoples-symphony-concerts-classical-music-series-quatuor-dan-1017",
+   "title": "Peoples' Symphony Concerts Classical Music Series: Quatuor Danel",
+   "category": "music",
+   "start": "2026-10-17T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The High School Of Fashion Industries",
+    "address": "225 WEST 24 STREET, New York, NY, USA",
+    "neighborhood": "Chelsea",
+    "lat": 40.74568,
+    "lng": -73.996356
+   },
+   "price": {
+    "min": 10,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "peoples' symphony concerts kicks off its 126th season with french/belgian quartet quatuor danel, performing works by beethoven, shostakovich, and weinberg. the high school of fashion industries (chelsea), $20 general, $1...",
+   "details": "sat 7:30pm:: peoples' symphony concerts kicks off its 126th season with french/belgian quartet quatuor danel, performing works by beethoven, shostakovich, and weinberg. the high school of fashion industries (chelsea), $20 general, $10 students.",
+   "url": "https://www.pscny.org/danel26",
+   "tags": []
+  },
+  {
+   "id": "new-york-repertory-orchestra-2026-27-season-1017",
+   "title": "New York Repertory Orchestra 2026-27 Season",
+   "category": "music",
+   "start": "2026-10-17T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Church Of St. Mary The Virgin",
+    "address": "145 WEST 46 STREET, New York, NY, USA",
+    "neighborhood": "Theater District",
+    "lat": 40.758259,
+    "lng": -73.983617
+   },
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "the all-volunteer, community-based orchestra is back with a new season of concerts, beginning tonight with a program that includes works by serge rachmaninoff, einojuhani rautavaara, and bohuslav martinů featuring sopran...",
+   "details": "sat 8pm (+ 12/5, 2/20, 4/3, 5/15):: the all-volunteer, community-based orchestra is back with a new season of concerts, beginning tonight with a program that includes works by serge rachmaninoff, einojuhani rautavaara, and bohuslav martinů featuring soprano kendra berentsen. the church of st. mary the virgin (theater district), free admission ($20 suggested donation).",
+   "url": "https://www.nyro.org/",
+   "tags": []
+  }
+ ],
+ "unplaced": [
+  {
+   "title": "36th annual tompkins square halloween dog parade",
+   "where": "'dog parade festival block' is on 6th st between avenues b and c; parade starts at 11am and runs along avenue b; note: registration to march is full, but no tic",
+   "url": "https://www.nydogparade.org/"
+  },
+  {
+   "title": "howl-o-ween dog parade",
+   "where": "smith st + union st (carroll gardens). note: this event is part of the smith street neighbors + makers fair listed below.",
+   "url": "https://www.eventbrite.com/e/howl-o-ween-dog-parade-october-17th-carroll-gardens-brooklyn-tickets-2000968080393"
+  },
+  {
+   "title": "hoboken's second citywide gate sale",
+   "where": "church square park and throughout hoboken, nj.",
+   "url": "https://www.hobokennj.gov/news/fall-citywide-gate-sale"
+  },
+  {
+   "title": "brooklyn pop-up x old stone house fall artisans bazaar + traditional makers fair",
+   "where": "4th street cul-de-sac at washington park (park slope).",
+   "url": "https://www.eventbrite.com/e/brooklyn-pop-up-osh-fall-artisans-bazaar-traditional-makers-fair-tickets-2002632772532"
+  },
+  {
+   "title": "smith street neighbors + makers fair",
+   "where": "smith street between bergen + union (carroll gardens).",
+   "url": "https://mossbklyn.com/upcoming-events"
+  },
+  {
+   "title": "good neighbors bake sale – supporting one love community fridge",
+   "where": "index space (greenpoint).",
+   "url": "https://partiful.com/e/hzkehMZ3N0Y5E02wCK7O"
+  },
+  {
+   "title": "a haunting in industry city, a horror art market",
+   "where": "barrow's intense ny tasting room (industry city, brooklyn).",
+   "url": "https://partiful.com/e/eQz64EX4bgfM89UI4HSR"
+  },
+  {
+   "title": "the annual smorgasburg diwali: festival of bites",
+   "where": "marsha p. johnson state park in williamsburg (sat), breeze hill in prospect park (sun).",
+   "url": "https://smorgasburg.com/ny-events"
+  },
+  {
+   "title": "frigid new york's annual days of the dead festival",
+   "where": "inspired by día de muertos, frigid new york presents two weeks of independent theatre and performances exploring themes of death, the afterlife, and halloween. ",
+   "url": "https://frigid.nyc/festivals/the-days-of-the-dead/"
+  },
+  {
+   "title": "the 24th annual open house new york weekend festival",
+   "where": "more than 300 locations across the five boroughs, including new buildings, historic landmarks, industrial spaces, private collections, and more will open their ",
+   "url": "https://ohny.org/festival"
+  },
+  {
+   "title": "30th annual gowanus open studios",
+   "where": "more than 400 artists, businesses, and venues in gowanus, brooklyn, open their doors across 90+ locations, including former factories and warehouses. free admis",
+   "url": "https://www.artsgowanus.org/"
+  },
+  {
+   "title": "brooklyn navy yard annual open house",
+   "where": "discover the brooklyn navy yard's 300-acre innovative campus during their annual open house, part of open house new york weekend. step inside the studios of bus",
+   "url": "https://bit.ly/3TY7Teo"
+  },
+  {
+   "title": "nü girl order presents: house of flies – a nu-metal + metalcore halloween party",
+   "where": "dress as your fav horror baddie and hit the dance floor at this women-focused dance party dedicated to heavy music and horror nostalgia. secret pour (bushwick /",
+   "url": "https://partiful.com/e/EaaJJxkCMVkUBYYDR6lM"
+  }
+ ]
+}
