@@ -28,6 +28,7 @@ jobs:
         # A failing source keeps its previous file; the other sources still update.
         env:
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+          SEATGEEK_CLIENT_ID: ${{ secrets.SEATGEEK_CLIENT_ID }}
         run: |
           for f in tools/fetch_*.py; do
             echo "::group::$f"
