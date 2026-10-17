@@ -258,6 +258,40 @@ export function createMap(container, opts = {}) {
     updateSpriteScales();
   });
 
+  // ---- HTML labels pinned to map positions -------------------------------------
+  // Crisp text at any size (neighborhood names, the Staten Island sign). Each is a
+  // plain element in a layer over the canvas, moved to its projected spot per frame.
+  const anchorLayer = document.createElement('div');
+  anchorLayer.className = 'map-anchors';
+  container.appendChild(anchorLayer);
+  const anchors = [];
+  const projected = new THREE.Vector3();
+  function addAnchor(text, lat, lng, { className = '', minZoom = 0, maxZoom = Infinity } = {}) {
+    const el = document.createElement('div');
+    el.className = `map-anchor ${className}`;
+    el.textContent = text;
+    el.hidden = true;
+    anchorLayer.appendChild(el);
+    const p = latLngToWorld(lat, lng);
+    anchors.push({ el, pos: new THREE.Vector3(p.x, groundTop(city, lat, lng) + 0.5, p.z), minZoom, maxZoom });
+    return el;
+  }
+  function placeAnchors() {
+    const w = canvas.clientWidth;
+    const h = canvas.clientHeight;
+    for (const a of anchors) {
+      let show = camera.zoom >= a.minZoom && camera.zoom <= a.maxZoom;
+      if (show) {
+        projected.copy(a.pos).project(camera);
+        const x = Math.round(((projected.x + 1) / 2) * w);
+        const y = Math.round(((1 - projected.y) / 2) * h);
+        show = x > -300 && x < w + 300 && y > -60 && y < h + 60;
+        if (show) a.el.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+      }
+      if (a.el.hidden === show) a.el.hidden = !show;
+    }
+  }
+
   // ---- loop -------------------------------------------------------------------
   const clock = new THREE.Clock();
   let waterTick = 0;
@@ -297,6 +331,7 @@ export function createMap(container, opts = {}) {
     }
 
     renderer.render(scene, camera);
+    placeAnchors();
     requestAnimationFrame(tick);
   }
 
@@ -307,6 +342,7 @@ export function createMap(container, opts = {}) {
 
   return {
     setEvents,
+    addAnchor,
     setVisible,
     focusEvent,
     select,
@@ -580,13 +616,13 @@ function buildBoats(world) {
 
 function buildLabels(world) {
   return LABELS.map((l) => {
-    const tex = makeLabelTexture(l.text, l.water, l.soon);
+    const tex = makeLabelTexture(l.text, l.water);
     const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, depthTest: false, transparent: true }));
     const p = latLngToWorld(l.lat, l.lng);
-    s.position.set(p.x, l.water || l.soon ? 0.5 : 9, p.z);
+    s.position.set(p.x, l.water ? 0.5 : 9, p.z);
     s.renderOrder = 5;
     s.userData.minZoom = l.water ? 1.4 : 0;
-    s.userData.maxZoom = l.water || l.soon ? 99 : 3.2;
+    s.userData.maxZoom = l.water ? 99 : 3.2;
     world.add(s);
     return s;
   });
@@ -669,7 +705,7 @@ function makePinTexture(catHex, state) {
   return canvasTexture(cv);
 }
 
-function makeLabelTexture(text, water, soon) {
+function makeLabelTexture(text, water) {
   const fontPx = 8;
   const cv = document.createElement('canvas');
   const ctx = cv.getContext('2d');
@@ -682,7 +718,7 @@ function makeLabelTexture(text, water, soon) {
   ctx.font = `${fontPx}px "Press Start 2P", monospace`;
   ctx.textBaseline = 'top';
   ctx.imageSmoothingEnabled = false;
-  const fg = soon ? '#ffd23f' : water ? '#e9fbff' : '#ffffff';
+  const fg = water ? '#e9fbff' : '#ffffff';
   const bg = water ? '#2a7fa8' : '#1d2340';
   // hard 1px outline, drawn by offsetting the text in 8 directions
   ctx.fillStyle = bg;

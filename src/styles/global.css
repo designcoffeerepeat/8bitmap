@@ -111,6 +111,19 @@ button, a { font: inherit; color: inherit; }
 .cat-menu .chip { width: 100%; box-shadow: none; padding: 10px; }
 .cat-menu .chip span { margin-left: auto; }
 
+/* text pinned to map positions (see addAnchor in renderer.js) */
+.map-anchors { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.map-anchor { position: absolute; left: 0; top: 0; white-space: pre; text-align: center; }
+.map-anchor[hidden] { display: none; }
+.hood {
+  font: 17px/1 var(--font-body); color: var(--ink); letter-spacing: .5px;
+  text-shadow: 1px 0 var(--night), -1px 0 var(--night), 0 1px var(--night), 0 -1px var(--night), 2px 2px 0 var(--night);
+}
+.soon-sign {
+  font: 8px/1.5 var(--font-pixel); color: var(--coin); letter-spacing: 1px;
+  text-shadow: 1px 0 var(--night), -1px 0 var(--night), 0 1px var(--night), 0 -1px var(--night), 1px 1px 0 var(--night), 2px 2px 0 var(--night);
+}
+
 /* right panel */
 #panel {
   position: fixed; top: 0; right: 0; bottom: 0; width: var(--panel-w);

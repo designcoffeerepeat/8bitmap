@@ -2,6 +2,7 @@ import { createMap } from './map/renderer.js';
 import { loadEventsForDate, SOURCES } from './events/index.js';
 import { CATEGORIES, CATEGORY_LABELS } from './events/schema.js';
 import { CATEGORY_COLORS } from './map/palette.js';
+import NEIGHBORHOODS from './map/neighborhoods.json';
 import nycgovSource from './events/sources/nycgov.js';
 
 const LIST_PAGE = 8;
@@ -38,6 +39,11 @@ const el = {
 
 await document.fonts.load('8px "Press Start 2P"').catch(() => {});
 const map = createMap(el.map, { pixelSize: 2 });
+
+// Official neighborhood names appear once you zoom in past the borough labels.
+for (const n of NEIGHBORHOODS) map.addAnchor(n.name, n.lat, n.lng, { className: 'hood', minZoom: 2.4 });
+// Staten Island is off the map to the south; this sign sits in the harbour until it is drawn.
+map.addAnchor('STATEN ISLAND\nCOMING SOON', 40.7045, -74.0225, { className: 'soon-sign' });
 
 const today = new Date();
 const { events, errors } = await loadEventsForDate(today);

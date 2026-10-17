@@ -27,6 +27,14 @@ In VS Code you can also press F5 (Run and Debug, "Development server") to start 
 
 ## Deploying
 
+Two branches:
+
+- `dev`: every change lands here first. Cloudflare builds it as a preview (see the Workers Builds
+  check on the commit in GitHub for its link) so it can be tested before going live.
+- `main`: the live site. Changes are merged from `dev` only after they are approved.
+  The scheduled events refresh also commits here.
+
+
 Cloudflare is connected to this GitHub repo. Every push to `main` deploys the live site.
 Cloudflare offers two setup screens and this repo works with either:
 
