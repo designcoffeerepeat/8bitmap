@@ -34,6 +34,7 @@ Two branches:
 - `main`: the live site. Changes are merged from `dev` only after they are approved.
   The scheduled events refresh also commits here.
 
+### Cloudflare
 
 Cloudflare is connected to this GitHub repo. Every push to `main` deploys the live site.
 Cloudflare offers two setup screens and this repo works with either:
