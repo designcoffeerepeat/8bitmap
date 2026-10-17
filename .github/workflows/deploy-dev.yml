@@ -27,18 +27,14 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - name: Describe the token without revealing it
-        if: env.CLOUDFLARE_API_TOKEN != ''
-        run: |
-          t="$CLOUDFLARE_API_TOKEN"
-          echo "::notice::Token shape: ${#t} characters, $(printf '%s' "$t" | tr -cd '[:space:]' | wc -c) spaces or line breaks, $(printf '%s' "$t" | tr -d '[:alnum:]_[:space:]-' | wc -c) other symbols, $(printf '%s' "$t" | grep -o '[[:alnum:]_-]\{20,\}' | wc -l) long word(s)"
       - name: Deploy to 8bitmap-dev
         if: env.CLOUDFLARE_API_TOKEN != ''
         # Wrangler's own messages become annotations, since the job log isn't always at hand.
         run: |
           set -o pipefail
-          # A pasted token often carries a trailing newline or space, which Cloudflare rejects.
-          export CLOUDFLARE_API_TOKEN="$(printf '%s' "$CLOUDFLARE_API_TOKEN" | tr -d '[:space:]')"
+          # The secret may hold Cloudflare's whole "verify" command rather than the bare token,
+          # so keep only the token itself: the one long run of letters, digits, _ and -.
+          export CLOUDFLARE_API_TOKEN="$(printf '%s' "$CLOUDFLARE_API_TOKEN" | grep -o '[[:alnum:]_-]\{30,\}' | tail -1)"
           if ! npx wrangler deploy --name 8bitmap-dev 2>&1 | tee deploy.log; then
             grep -v '^\s*$' deploy.log | tail -25 | sed 's/^/::error::/'
             exit 1
