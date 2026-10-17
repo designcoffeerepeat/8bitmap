@@ -27,6 +27,11 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      - name: Describe the token without revealing it
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        run: |
+          t="$CLOUDFLARE_API_TOKEN"
+          echo "::notice::Token shape: ${#t} characters, $(printf '%s' "$t" | tr -cd '[:space:]' | wc -c) spaces or line breaks, $(printf '%s' "$t" | tr -d '[:alnum:]_[:space:]-' | wc -c) other symbols, $(printf '%s' "$t" | grep -o '[[:alnum:]_-]\{20,\}' | wc -l) long word(s)"
       - name: Deploy to 8bitmap-dev
         if: env.CLOUDFLARE_API_TOKEN != ''
         # Wrangler's own messages become annotations, since the job log isn't always at hand.
