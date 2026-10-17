@@ -1,8 +1,18 @@
 {
+ "1 Helena Road, SI, NY in High Rock Park | Staten Island": {
+  "label": "3 HELENA ROAD, Staten Island, NY, USA",
+  "lat": 40.595162,
+  "lng": -74.111944
+ },
  "10 AVENUE between WEST 57 STREET and WEST 58 STREET Manhattan | Manhattan": {
   "label": "10 AVENUE & WEST 58 STREET",
   "lat": 40.7694125,
   "lng": -73.98631499999999
+ },
+ "102nd Street Field House in Riverside Park | Manhattan": {
+  "label": "RIVERSIDE PARK, New York, NY, USA",
+  "lat": 40.79097,
+  "lng": -73.98019
  },
  "108 W 146th St | Manhattan": {
   "label": "108 WEST 146 STREET, New York, NY, USA",
@@ -29,11 +39,26 @@
   "lat": 40.633422,
   "lng": -73.947959
  },
+ "171 E 4th Street | Brooklyn": {
+  "label": "4 EAST 4 STREET, Brooklyn, NY, USA",
+  "lat": 40.652485,
+  "lng": -73.978423
+ },
+ "2180 1st Avenue | Manhattan": {
+  "label": "2180 1 AVENUE, New York, NY, USA",
+  "lat": 40.793818,
+  "lng": -73.936492
+ },
  "35 AVENUE between 82 STREET and 81 STREET Queens | Queens": null,
  "43 Snyder Ave | Brooklyn": {
   "label": "43 SNYDER AVENUE, Brooklyn, NY, USA",
   "lat": 40.6491,
   "lng": -73.956312
+ },
+ "43rd Street and 1st Avenue in Bush Terminal Park | Brooklyn": {
+  "label": "25 BUSH AVENUE, Staten Island, NY, USA",
+  "lat": 40.636351,
+  "lng": -74.158963
  },
  "54 MacDonough St | Brooklyn": {
   "label": "54 MACDONOUGH STREET, Brooklyn, NY, USA",
@@ -47,14 +72,40 @@
   "lat": 40.818103,
   "lng": -73.90423
  },
+ "Addabbo Playground in Tudor Park | Queens": null,
+ "Arsenal in Central Park | Manhattan": null,
+ "Astoria Park | Queens": null,
+ "Athletic Field in Starlight Park | Bronx": null,
+ "Audubon Center at the Boathouse in Prospect Park | Brooklyn": null,
  "BLEECKER STREET between LEROY STREET and CARMINE STREET Manhattan | Manhattan": {
   "label": "BLEECKER STREET & LEROY STREET",
   "lat": 40.730992,
   "lng": -74.003102
  },
+ "BPL- Macon Library | Brooklyn": null,
+ "Baisley Pond Park House in Baisley Pond Park | Queens": null,
+ "Ballroom in Fort Hamilton Senior Recreation Center | Brooklyn": null,
+ "Boardwalk at Beach 60th Street in Rockaway Beach and Boardwalk | Queens": null,
+ "Bronx River Forest at Burke Bridge in Bronx Park | Bronx": null,
+ "Bronx River House in Starlight Park | Bronx": null,
+ "BronxWorks - Betances Community Center | Bronx": null,
+ "Brooklyn Bridge Park | Brooklyn": null,
  "Brooklyn Bridge: Brooklyn Bridge Pedestrian: 1 between Park Row (S) and Tillary Street Manhattan | Manhattan": null,
+ "Brooklyn Public Library - Bay Ridge | Brooklyn": null,
+ "Brooklyn Public Library - Brooklyn Heights in Cadman Plaza Park | Brooklyn": null,
+ "Bruckner Mott Haven Community Garden | Bronx": null,
+ "Canarsie Park House in Canarsie Park | Brooklyn": null,
  "Church parking lot, enter from Alameda Ave | Queens": null,
+ "Concrete Park Boat Launch in Concrete Plant Park | Bronx": null,
  "Conference House Museum in Conference House Park | Staten Island": null,
+ "Conference House Park | Staten Island": null,
+ "Dag Hammarskjold Plaza | Manhattan": null,
+ "Dance Room in Chelsea Recreation Center | Manhattan": null,
+ "Dance Room in Constance Baker Motley Recreation Center | Manhattan": null,
+ "Dance Room in Highbridge Recreation Center | Manhattan": null,
+ "Dance Room in St. John\u2019s Recreation Center | Brooklyn": null,
+ "De Matti Playground in De Matti Park | Staten Island": null,
+ "Dyckman Farmhouse Museum in Dyckman House Museum | Manhattan": null,
  "EAST 149 STREET between MORRIS AVENUE and PARK AVENUE Bronx | Bronx": null,
  "EAST 82 STREET between 1 AVENUE and YORK AVENUE Manhattan | Manhattan": {
   "label": "EAST 82 STREET & YORK AVENUE",
@@ -66,17 +117,42 @@
   "lat": 40.862864,
   "lng": -73.900521
  },
+ "ENY Youth Farm | Brooklyn": null,
+ "East 33rd Street and Avenue U | Brooklyn": null,
+ "East Fourth Street Community Garden | Brooklyn": null,
+ "Elton Street and Jamaica Avenue in Highland Park | Queens": null,
+ "Enslaved Burial Ground in Van Cortlandt Park | Bronx": null,
+ "Entrance - Lafayette Avenue and Morrison Avenue in Soundview Park | Bronx": null,
+ "Entrance to John Golden Park in John Golden Park | Queens": null,
+ "Family Community Garden | Manhattan": null,
  "Father Capodanno Blvd & Hunter Ave | Staten Island": null,
+ "Forest Avenue and Silver Lake Park Road in Silver Lake Park | Staten Island": null,
+ "Fort Totten Front Gate in Fort Totten Park | Queens": null,
+ "Fort Totten Park Visitors Center in Fort Totten Park | Queens": null,
+ "Front Lawn in De Matti Park | Staten Island": null,
+ "Gatehouse Garden | Manhattan": null,
+ "George Washington Carver Community Garden | Brooklyn": null,
+ "Grand Army Plaza Arch in Grand Army Plaza | Brooklyn": null,
+ "Gymnasium (Court) in Al Oerter Recreation Center | Queens": null,
+ "Gymnasium in Highbridge Recreation Center | Manhattan": null,
+ "Gymnasium in Lost Battalion Hall Recreation Center | Queens": null,
+ "H.H. Biddle House in Conference House Park | Staten Island": null,
+ "Hart To Hart Community Garden | Brooklyn": null,
+ "Herbert Von King Cultural Arts Center in Herbert Von King Cultural Arts Center | Brooklyn": null,
+ "Herbert Von King Park | Brooklyn": null,
  "ISHAM STREET between SEAMAN AVENUE and COOPER STREET Manhattan | Manhattan": {
   "label": "ISHAM STREET & COOPER STREET",
   "lat": 40.869201,
   "lng": -73.920812
  },
+ "Jane Bailey Memorial Garden | Brooklyn": null,
+ "John Golden Parking Lot in John Golden Park | Queens": null,
  "KNICKERBOCKER AVENUE between STARR STREET and SUYDAM STREET Brooklyn | Brooklyn": {
   "label": "KNICKERBOCKER AVENUE & STARR STREET",
   "lat": 40.702998,
   "lng": -73.92404
  },
+ "Kaiser Park Lawn 2 in Kaiser Park | Brooklyn": null,
  "LENOX AVENUE between WEST 117 STREET and WEST 118 STREET Manhattan | Manhattan": {
   "label": "LENOX AVENUE & WEST 117 STREET",
   "lat": 40.802074,
@@ -87,8 +163,24 @@
   "lat": 40.815036,
   "lng": -73.940643
  },
+ "Lawn Area in Springfield Park | Queens": null,
+ "Lawn Near 79th Street Entrance in Shore Park and Parkway | Brooklyn": null,
+ "Lawrence Cemetery | Queens": null,
+ "Maggies Magic Garden | Manhattan": null,
+ "Margaret Corbin Circle in Fort Tryon Park | Manhattan": null,
+ "Merchant's House Museum | Manhattan": null,
+ "Midland Beach Splash Plaza in Franklin D. Roosevelt Boardwalk and Beach | Staten Island": null,
+ "Multi-Use Room in Kissena Park | Queens": null,
+ "Multi-Use Room in St. James Recreation Center | Bronx": null,
  "NOSTRAND AVENUE between FLATBUSH AVENUE and GLENWOOD ROAD Brooklyn | Brooklyn": null,
+ "NYPL - Tompkins Square Library | Manhattan": null,
+ "Neighborhood Advisory Committee Community Garden | Bronx": null,
+ "Newhouse Center for Contemporary Art (Building C) in Snug Harbor Cultural Center | Staten Island": null,
+ "Newport Community Garden | Brooklyn": null,
+ "Northwest Corner Seating Area in Washington Square Park | Manhattan": null,
  "Off-Broadway | Manhattan": null,
+ "Old Stone House in Washington Park | Brooklyn": null,
+ "Outdoors at Faber Park Recreation Center in Faber Park Recreation Center | Staten Island": null,
  "PELHAM PARKWAY SOUTH between WILSON AVENUE and EASTCHESTER ROAD Bronx | Bronx": {
   "label": "PELHAM PARKWAY SOUTH & EASTCHESTER ROAD",
   "lat": 40.856662,
@@ -104,6 +196,12 @@
   "lat": 40.723169,
   "lng": -73.995655
  },
+ "Phoenix Community Garden | Brooklyn": null,
+ "Pier 35 in East River Waterfront Esplanade | Manhattan": null,
+ "Play Area in Arrochar Playground | Staten Island": null,
+ "Play Area in Levy Playground | Staten Island": null,
+ "Powell Street Garden | Brooklyn": null,
+ "Queens Community House Beacon @ PS 149 | Queens": null,
  "Queens Museum, Corona | Queens": null,
  "ROOSEVELT AVENUE between 103 STREET and 104 STREET Queens | Queens": null,
  "SCHENCK AVENUE between NEW LOTS AVENUE and LIVONIA AVENUE Brooklyn | Brooklyn": {
@@ -117,12 +215,24 @@
   "lat": 40.706753,
   "lng": -74.002937
  },
+ "Salt Marsh Nature Center in Marine Park | Brooklyn": null,
+ "Seaman Avenue and Isham Street Entrance in Inwood Hill Park | Manhattan": null,
+ "Section 2 Orchard Beach in Pelham Bay Park | Bronx": null,
  "Sparrow's Nest Community Garden | Queens": null,
+ "Spin Room in Lost Battalion Hall Recreation Center | Queens": null,
+ "St. Mary's Annual 5K Start | Bronx": null,
+ "Surfside Community Garden | Brooklyn": null,
  "TOWNSEND AVENUE between EAST 170 STREET and EAST 171 STREET Bronx | Bronx": {
   "label": "TOWNSEND AVENUE & EAST 170 STREET",
   "lat": 40.840002,
   "lng": -73.916388
  },
+ "The Amazing Garden | Brooklyn": null,
+ "Thomas Jefferson Park | Manhattan": null,
+ "Urban Farm in Randall's Island Park | Manhattan": null,
+ "Victory Field in Forest Park | Queens": null,
+ "Virtual/Online Events | Manhattan": null,
+ "Visitor Information Booth in Snug Harbor Cultural Center | Staten Island": null,
  "WEST 23 STREET between 8 AVENUE and 9 AVENUE Manhattan | Manhattan": {
   "label": "WEST 23 STREET & 8 AVENUE",
   "lat": 40.74552,
@@ -138,5 +248,12 @@
   "lat": 40.72721,
   "lng": -74.00096
  },
- "WEST MOSHOLU PARKWAY SOUTH between GOULDEN AVENUE and SEDGWICK AVENUE Bronx | Bronx": null
+ "WEST MOSHOLU PARKWAY SOUTH between GOULDEN AVENUE and SEDGWICK AVENUE Bronx | Bronx": null,
+ "Wagner College Pool - Spiro Sports Center | Staten Island": null,
+ "Wave Hill | Bronx": null,
+ "West 104th Street Garden | Manhattan": null,
+ "West 174 Street and Amsterdam Avenue in Highbridge Park | Manhattan": null,
+ "West 87th Street Garden | Manhattan": null,
+ "Williamsbridge Oval Recreation Center in Williamsbridge Oval Recreation Center | Bronx": null,
+ "Wyckoff Farmhouse Museum in Fidler-Wyckoff House Park | Brooklyn": null
 }
