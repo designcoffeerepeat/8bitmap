@@ -67,7 +67,8 @@ python3 tools/fetch_nycgov.py 2026-10-17  # or a given day
 
 It reads the same Events Calendar API that https://www.nyc.gov/main/events/ uses, places NYC Parks events with the
 Parks Department's coordinates and everything else with NYC City Planning GeoSearch, and skips canceled events.
-Events with no usable address are listed under `unplaced` in the snapshot. The page header shows the day the
+Events with no usable address are listed under `unplaced` in the snapshot. The Parks feed refuses GitHub's servers,
+so every run that reaches it records each Parks venue in `data/parks-places.json`, which the scheduled refresh uses instead. The page header shows the day the
 snapshot covers, so an old snapshot shows that day's events rather than an empty map.
 
 ## Adding a real event source

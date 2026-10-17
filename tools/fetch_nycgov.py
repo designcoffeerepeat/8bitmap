@@ -18,6 +18,7 @@ Usage:  python3 tools/fetch_nycgov.py [YYYY-MM-DD]     (default: today in NYC)
 
 import html
 import json
+import os
 import math
 import re
 import string
@@ -36,6 +37,10 @@ except Exception:  # pragma: no cover
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'public' / 'data' / 'nycgov-events.json'
 CACHE = ROOT / 'data' / 'geocode-cache.json'
+# Where each Parks event location sits, learnt whenever the Parks feed answers.
+# nycgovparks.org refuses requests from GitHub's servers, so the scheduled
+# refresh falls back to this to place Parks events at venues seen before.
+PLACES = ROOT / 'data' / 'parks-places.json'
 
 UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36'
 EVENTS_PAGE = 'https://www.nyc.gov/main/events/'
@@ -88,6 +93,8 @@ def parks_index():
         feed = get(PARKS_FEED)
     except Exception as e:
         print(f'  Parks feed unavailable: {e}', file=sys.stderr)
+        if os.environ.get('GITHUB_ACTIONS'):
+            print(f'::warning::Parks feed unavailable ({e}); placing Parks events from data/parks-places.json')
         return {}
     out = {}
     for row in feed if isinstance(feed, list) else []:
@@ -237,6 +244,7 @@ def main():
 
     parks = parks_index()
     cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
+    places = json.loads(PLACES.read_text()) if PLACES.exists() else {}
     events, unplaced, canceled = [], [], 0
     for ev in items:
         if ev.get('canceled') or str(ev.get('name', '')).upper().startswith('CANCELED'):
@@ -244,9 +252,14 @@ def main():
             continue
         boros = [BOROUGHS.get(b) for b in ev.get('boroughs') or [] if b in BOROUGHS]
         borough = boros[0] if len(boros) == 1 else ''
+        address = clean_address(ev.get('address'))
+        place_key = f'{address} | {borough}'
         pos = parks_lookup(parks, ev, day)
+        if pos and address:
+            places[place_key] = {'lat': pos['lat'], 'lng': pos['lng']}
+        if not pos and 'nycgovparks.org' in (ev.get('website') or ''):
+            pos = places.get(place_key)
         if not pos:
-            address = clean_address(ev.get('address'))
             if address and not re.search(r'check website|various|tba', address, re.I) and borough:
                 pos = geocode(address, borough, cache)
         if pos:
@@ -256,6 +269,15 @@ def main():
 
     CACHE.parent.mkdir(parents=True, exist_ok=True)
     CACHE.write_text(json.dumps(cache, indent=1, sort_keys=True))
+    PLACES.write_text(json.dumps(places, indent=1, sort_keys=True))
+
+    # Never swap today's snapshot for a thinner one (say, a run where the Parks
+    # feed was down); a new day always replaces yesterday's.
+    if OUT.exists():
+        old = json.loads(OUT.read_text())
+        if old.get('date') == day.isoformat() and len(old.get('events', [])) > len(events):
+            print(f'  kept the existing snapshot: it places {len(old["events"])} events, this run {len(events)}')
+            return
     OUT.write_text(json.dumps({
         'source': {'name': 'NYC.gov Events Calendar', 'url': EVENTS_PAGE},
         'date': day.isoformat(),
