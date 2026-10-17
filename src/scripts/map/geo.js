@@ -276,5 +276,5 @@ export const LABELS = [
   { text: 'EAST RIVER', lat: 40.7270, lng: -73.9680, water: true },
   { text: 'UPPER BAY', lat: 40.6650, lng: -74.0420, water: true },
   // Staten Island is off the map to the south; this sign sits in the harbour until it is drawn.
-  { text: 'STATEN ISLAND COMING SOON', lat: 40.7085, lng: -74.0290, soon: true },
+  { text: 'STATEN ISLAND\nCOMING SOON', lat: 40.7080, lng: -74.0200, soon: true },
 ];

@@ -674,9 +674,11 @@ function makeLabelTexture(text, water, soon) {
   const cv = document.createElement('canvas');
   const ctx = cv.getContext('2d');
   ctx.font = `${fontPx}px "Press Start 2P", monospace`;
-  const w = Math.ceil(ctx.measureText(text).width) + 6;
+  const lines = text.split('\n');
+  const lineH = fontPx + 4;
+  const w = Math.ceil(Math.max(...lines.map((l) => ctx.measureText(l).width))) + 6;
   cv.width = w;
-  cv.height = fontPx + 6;
+  cv.height = lineH * lines.length + 2;
   ctx.font = `${fontPx}px "Press Start 2P", monospace`;
   ctx.textBaseline = 'top';
   ctx.imageSmoothingEnabled = false;
@@ -684,11 +686,15 @@ function makeLabelTexture(text, water, soon) {
   const bg = water ? '#2a7fa8' : '#1d2340';
   // hard 1px outline, drawn by offsetting the text in 8 directions
   ctx.fillStyle = bg;
-  for (const [dx, dy] of [[-1, -1], [0, -1], [1, -1], [-1, 0], [1, 0], [-1, 1], [0, 1], [1, 1], [1, 2], [2, 2]]) {
-    ctx.fillText(text, 3 + dx, 3 + dy);
-  }
+  // lines are centred; a single line fills the canvas exactly as before
+  const xOf = (l) => 3 + Math.floor((w - 6 - ctx.measureText(l).width) / 2);
+  lines.forEach((l, i) => {
+    for (const [dx, dy] of [[-1, -1], [0, -1], [1, -1], [-1, 0], [1, 0], [-1, 1], [0, 1], [1, 1], [1, 2], [2, 2]]) {
+      ctx.fillText(l, xOf(l) + dx, 3 + i * lineH + dy);
+    }
+  });
   ctx.fillStyle = fg;
-  ctx.fillText(text, 3, 3);
+  lines.forEach((l, i) => ctx.fillText(l, xOf(l), 3 + i * lineH));
   // snap anti-aliased edges to solid pixels
   const img = ctx.getImageData(0, 0, cv.width, cv.height);
   for (let k = 3; k < img.data.length; k += 4) img.data[k] = img.data[k] > 110 ? 255 : 0;
