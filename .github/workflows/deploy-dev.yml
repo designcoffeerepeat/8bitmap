@@ -1,0 +1,35 @@
+# Publishes the dev branch to its own Worker, 8bitmap-dev, so changes can be tested
+# at https://8bitmap-dev.design-coffee-repeat.workers.dev before they reach main.
+# Needs the CLOUDFLARE_API_TOKEN repository secret (an "Edit Cloudflare Workers" token).
+name: Deploy dev
+
+on:
+  push:
+    branches: [dev]
+  workflow_dispatch: {}
+
+concurrency:
+  group: deploy-dev
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: d6042a3026e9b43a3cfb01f284dd5345
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Deploy to 8bitmap-dev
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        run: npx wrangler deploy --name 8bitmap-dev
+      - name: Explain the missing token
+        if: env.CLOUDFLARE_API_TOKEN == ''
+        run: echo "::warning::Add the CLOUDFLARE_API_TOKEN repository secret to publish dev."
