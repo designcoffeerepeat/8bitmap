@@ -11,6 +11,7 @@ Usage:  python3 tools/fetch_seatgeek.py [YYYY-MM-DD]     (default: today in NYC)
 
 import json
 import os
+import re
 import sys
 import time
 import urllib.parse
@@ -59,7 +60,8 @@ def to_raw(ev):
     price = {'min': round(lo), 'max': round(hi or lo), 'currency': 'USD'} if lo is not None else None
     return {
         'id': str(ev['id']),
-        'title': ev.get('title') or ev.get('short_title'),
+        # SeatGeek adds the city to most titles ('Hadestown - New York').
+        'title': re.sub(r'\s+-\s+New York$', '', ev.get('title') or ev.get('short_title') or ''),
         'category': category(ev),
         'start': start.isoformat(),
         'end': None,
