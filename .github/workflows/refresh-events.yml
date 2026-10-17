@@ -1,0 +1,45 @@
+# Pulls today's events from every source fetcher (tools/fetch_*.py) and commits the new snapshots.
+# The push to main makes Cloudflare rebuild, so the live map always shows the current NYC day.
+name: Refresh events
+
+on:
+  schedule:
+    # 08:30 and 16:30 UTC: early morning and midday in New York, all year round
+    - cron: '30 8,16 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-events
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch today's events from every source
+        # A failing source keeps its previous file; the other sources still update.
+        run: |
+          for f in tools/fetch_*.py; do
+            echo "::group::$f"
+            python3 "$f" || echo "::warning::$f failed"
+            echo "::endgroup::"
+          done
+      - name: Commit if anything changed
+        run: |
+          git add public/data data
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh events for $(TZ=America/New_York date +%F)"
+          git push

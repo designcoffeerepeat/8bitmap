@@ -56,7 +56,9 @@ data/geocode-cache.json           address lookups the fetch script reuses
 
 ## Refreshing the NYC.gov events
 
-The map shows a snapshot of one day's events. To update it, run this with Python 3, then commit and push:
+The map shows a snapshot of one day's events. A GitHub Action (`.github/workflows/refresh-events.yml`) runs every `tools/fetch_*.py` and
+refreshes them every morning and midday New York time and pushes the new snapshot, which redeploys the site.
+You can also run it from the repo's Actions tab (Run workflow), or by hand with Python 3, then commit and push:
 
 ```sh
 python3 tools/fetch_nycgov.py             # today in NYC
