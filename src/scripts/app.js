@@ -43,7 +43,7 @@ const map = createMap(el.map, { pixelSize: 2 });
 // Official neighborhood names appear once you zoom in past the borough labels.
 for (const n of NEIGHBORHOODS) map.addAnchor(n.name, n.lat, n.lng, { className: 'hood', minZoom: 2.4 });
 // Staten Island is off the map to the south; this sign sits in the harbour until it is drawn.
-map.addAnchor('STATEN ISLAND\nCOMING SOON', 40.7045, -74.0225, { className: 'soon-sign' });
+map.addAnchor('STATEN ISLAND\nCOMING SOON', 40.6725, -74.0420, { className: 'soon-sign' });
 
 const today = new Date();
 const { events, errors } = await loadEventsForDate(today);
