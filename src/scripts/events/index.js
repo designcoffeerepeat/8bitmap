@@ -10,9 +10,11 @@ import { inBounds, BOUNDS } from '../map/geo.js';
 import nycgovSource from './sources/nycgov.js';
 import raSource from './sources/ra.js';
 import skintSource from './sources/skint.js';
+import donycSource from './sources/donyc.js';
+import lumaSource from './sources/luma.js';
 
 // ./sources/dummy.js holds sample events for offline testing.
-export const SOURCES = [nycgovSource, raSource, skintSource];
+export const SOURCES = [nycgovSource, donycSource, raSource, skintSource, lumaSource];
 
 export async function loadEventsForDate(date = new Date()) {
   const results = await Promise.allSettled(
