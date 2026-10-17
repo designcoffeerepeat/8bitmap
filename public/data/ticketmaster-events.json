@@ -4,7 +4,7 @@
   "url": "https://www.ticketmaster.com/discover/new-york"
  },
  "date": "2026-10-17",
- "fetchedAt": "2026-10-17T10:43:48-04:00",
+ "fetchedAt": "2026-10-17T11:45:04-04:00",
  "events": [
   {
    "id": "LvZ18QrWTgeialOZ0E4-1",
@@ -187,29 +187,6 @@
    "tags": []
   },
   {
-   "id": "LvZ18Q-9tbOh8sZZvyVgs",
-   "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
-   "category": "community",
-   "start": "2026-10-17T10:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Balloon Museum NYC",
-    "address": "96 South Street, New York City",
-    "neighborhood": "New York City",
-    "lat": 40.70624,
-    "lng": -74.002277
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Miscellaneous / Family",
-   "details": "",
-   "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-tickets-Y5HV92?ref=ticketmaster",
-   "tags": [
-    "Family"
-   ]
-  },
-  {
    "id": "LvZ18QbKlF_lmuOZvOKEI",
    "title": "Museum of Chinese in America General Admission",
    "category": "community",
@@ -274,6 +251,29 @@
    "url": "https://www.ticketmaster.com/the-gazillion-bubble-show-new-york-new-york-10-17-2026/event/Z1r9uZruZqGZ1AvZo0o",
    "tags": [
     "Theatre"
+   ]
+  },
+  {
+   "id": "LvZ18Q-9tbOh8sZZvyVgg",
+   "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
+   "category": "community",
+   "start": "2026-10-17T11:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Balloon Museum NYC",
+    "address": "96 South Street, New York City",
+    "neighborhood": "New York City",
+    "lat": 40.70624,
+    "lng": -74.002277
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Miscellaneous / Family",
+   "details": "",
+   "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-tickets-Y5HV92?ref=ticketmaster",
+   "tags": [
+    "Family"
    ]
   },
   {

@@ -4,7 +4,7 @@
   "url": "https://dice.fm/browse/new_york-5bbf4db0f06331478e9b2c59"
  },
  "date": "2026-10-17",
- "fetchedAt": "2026-10-17T10:43:17-04:00",
+ "fetchedAt": "2026-10-17T11:44:33-04:00",
  "events": [
   {
    "id": "6a2c45536d1d2f0001af0f6e",
@@ -76,6 +76,30 @@
    "description": "",
    "details": "",
    "url": "https://dice.fm/event/6aa18f6ea873550001386c61",
+   "tags": []
+  },
+  {
+   "id": "6ad2bba17139940001792c79",
+   "title": "MARK DUMITRESCU  & VNUZ",
+   "category": "music",
+   "start": "2026-10-17T04:00:00-04:00",
+   "end": "2026-10-17T10:00:00-04:00",
+   "venue": {
+    "name": "LISTEN",
+    "address": "198 Randolph Street, Brooklyn, New York 11237, United States",
+    "neighborhood": "",
+    "lat": 40.709391,
+    "lng": -73.925171
+   },
+   "price": {
+    "min": 23,
+    "max": 23,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6ad2bba17139940001792c79",
    "tags": []
   },
   {
@@ -484,30 +508,6 @@
    "description": "Late-night house music",
    "details": "",
    "url": "https://dice.fm/event/6ab6bc0ab6643e000197624b",
-   "tags": []
-  },
-  {
-   "id": "6a42b4494c191e0001d6fb12",
-   "title": "Mixmag LAB ft. DJ Habibeats - LIM TIX STILL AVAIL IN COPY!",
-   "category": "music",
-   "start": "2026-10-17T23:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Webster Hall",
-    "address": "125 E 11th St, New York, NY 10003, USA",
-    "neighborhood": "",
-    "lat": 40.731777,
-    "lng": -73.989091
-   },
-   "price": {
-    "min": 55,
-    "max": 55,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "Party celebrating global sounds",
-   "details": "",
-   "url": "https://dice.fm/event/6a42b4494c191e0001d6fb12",
    "tags": []
   },
   {
@@ -1252,54 +1252,6 @@
    "description": "Euphoric queer trance, club cuts",
    "details": "",
    "url": "https://dice.fm/event/6a7f9523d7ee9c0001c9e456",
-   "tags": []
-  },
-  {
-   "id": "69fbaae18db5c9000103cbd5",
-   "title": "Above(Ten) After Dark At 1 Hotel",
-   "category": "nightlife",
-   "start": "2026-10-17T22:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Harriet's Lounge - 1 Hotel",
-    "address": "60 Furman Street, Brooklyn, New York 11201, United States",
-    "neighborhood": "",
-    "lat": 40.70228,
-    "lng": -73.995519
-   },
-   "price": {
-    "min": 18,
-    "max": 18,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "Intimate house with 360 views",
-   "details": "",
-   "url": "https://dice.fm/event/69fbaae18db5c9000103cbd5",
-   "tags": []
-  },
-  {
-   "id": "6aa2e4a01df9100001b9f8ed",
-   "title": "Polar Vortex (EDM x Techno) [21+]",
-   "category": "nightlife",
-   "start": "2026-10-17T23:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "The Meadows",
-    "address": "17 Meadow St, Brooklyn, NY 11206, USA",
-    "neighborhood": "",
-    "lat": 40.710886,
-    "lng": -73.936609
-   },
-   "price": {
-    "min": 0,
-    "max": 0,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "Underground synth, breakcore, driving techno",
-   "details": "",
-   "url": "https://dice.fm/event/6aa2e4a01df9100001b9f8ed",
    "tags": []
   },
   {
