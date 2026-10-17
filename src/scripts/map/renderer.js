@@ -580,13 +580,13 @@ function buildBoats(world) {
 
 function buildLabels(world) {
   return LABELS.map((l) => {
-    const tex = makeLabelTexture(l.text, l.water);
+    const tex = makeLabelTexture(l.text, l.water, l.soon);
     const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, depthTest: false, transparent: true }));
     const p = latLngToWorld(l.lat, l.lng);
-    s.position.set(p.x, l.water ? 0.5 : 9, p.z);
+    s.position.set(p.x, l.water || l.soon ? 0.5 : 9, p.z);
     s.renderOrder = 5;
     s.userData.minZoom = l.water ? 1.4 : 0;
-    s.userData.maxZoom = l.water ? 99 : 3.2;
+    s.userData.maxZoom = l.water || l.soon ? 99 : 3.2;
     world.add(s);
     return s;
   });
@@ -669,7 +669,7 @@ function makePinTexture(catHex, state) {
   return canvasTexture(cv);
 }
 
-function makeLabelTexture(text, water) {
+function makeLabelTexture(text, water, soon) {
   const fontPx = 8;
   const cv = document.createElement('canvas');
   const ctx = cv.getContext('2d');
@@ -680,7 +680,7 @@ function makeLabelTexture(text, water) {
   ctx.font = `${fontPx}px "Press Start 2P", monospace`;
   ctx.textBaseline = 'top';
   ctx.imageSmoothingEnabled = false;
-  const fg = water ? '#e9fbff' : '#ffffff';
+  const fg = soon ? '#ffd23f' : water ? '#e9fbff' : '#ffffff';
   const bg = water ? '#2a7fa8' : '#1d2340';
   // hard 1px outline, drawn by offsetting the text in 8 directions
   ctx.fillStyle = bg;
