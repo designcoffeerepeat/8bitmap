@@ -21,14 +21,20 @@ import urllib.parse
 from datetime import datetime
 from pathlib import Path
 
-from fetch_nycgov import CACHE, NYC, geocode, geosearch, get
+from fetch_nycgov import CACHE, NYC, dist_m, geosearch, get, intersection
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'public' / 'data' / 'permits-events.json'
 API = 'https://data.cityofnewyork.us/resource/tvpp-9vvx.json'
 PAGE = 'https://data.cityofnewyork.us/d/tvpp-9vvx'
-PUBLIC = re.compile(r'parade|festival|fair|street event|plaza|market|special event|athletic race|walk|run\b', re.I)
-SKIP = re.compile(r'production|sport\s*-|block party|filming|construction|religious|rally|press', re.I)
+# Permit types that are public events. Parks "Special Event" permits also cover
+# birthday picnics and lawn closures, so those need a public-sounding name.
+PUBLIC = re.compile(r'^(parade|street festival|single block festival|street event|plaza event|plaza partner event|'
+                    r'open street partner event|farmers market|sidewalk sale|athletic race)$', re.I)
+SPECIAL = re.compile(r'festival|\bfest\b|fair\b|market|grownyc|carnival|parade|concert|music|movie|film night|'
+                     r'halloween|fright|haunted|\b5k\b|\b10k\b|run\b|walk\b|yoga|dance|art\b|chalk|jam\b', re.I)
+PRIVATE = re.compile(r'birthday|shower|party|wedding|closure|construction|renovation|bbq|barbecue|picnic|'
+                     r'\btest|pick ?up|meeting|\bipo\b|disposal|popup line|^celebration$|^miscellaneous$|amplified|parks event|rain date|back ?up date', re.I)
 
 
 def fetch_day(day):
@@ -45,7 +51,7 @@ def fetch_day(day):
 
 def category(name, kind):
     t = f'{name} {kind}'.lower()
-    if re.search(r'market|food|taste', t):
+    if re.search(r'market|food|taste|grownyc|greenmarket', t):
         return 'food'
     if re.search(r'race|run\b|walk|bike|tour de', t):
         return 'sports'
@@ -56,22 +62,41 @@ def category(name, kind):
     return 'community'
 
 
+def street(s):
+    """'EAST   82 STREET' -> 'EAST 82nd STREET', which GeoSearch matches far better."""
+    def nth(m):
+        n = int(m.group(2))
+        return f"{m.group(1) or ''}{n}{'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')} "
+    s = re.sub(r'\s+', ' ', s).strip()
+    s = re.sub(r'^([EWNS])\.? (?=\d)', lambda m: {'E': 'EAST ', 'W': 'WEST ', 'N': 'NORTH ', 'S': 'SOUTH '}[m.group(1).upper()], s)
+    s = re.sub(r'(\d+)(?:st|nd|rd|th)\b', r'\1', s, flags=re.I)  # '32rd' typos; the suffix is added back below
+    return re.sub(r'^((?:EAST|WEST|NORTH|SOUTH|BEACH) )?(\d+) (?=STREET|AVENUE|PLACE|ROAD|DRIVE|TERRACE|LANE)', nth, s, flags=re.I)
+
+
 def place(location, borough, cache):
     """The first spot named in a permit location, placed on the map."""
     first = re.split(r',\s*(?=[A-Z0-9 ]+ between )|;', location)[0].strip()
-    if ' between ' in first.lower():
-        return geocode(re.sub(r'\bbetween\b', 'between', first, flags=re.I).replace(' AND ', ' and '), borough, cache)
+    # 'Greeley Square Plaza: Greeley Square (32/33 Broadway) Broadway between ...': the street is surer than the name.
+    if ':' in first and ' between ' in first.split(':', 1)[1].lower():
+        first = re.sub(r'^.*?\)\s*', '', first.split(':', 1)[1]).strip()
+    seg = (re.match(r'(.+?) between (.+?) and (.+)$', first, re.I)
+           or re.match(r'([^:]+?) - (.+?) to ([^:]+)', first))  # 'CHAUNCEY STREET - HOWARD AVENUE to SARATOGA AVENUE'
     name = first.split(':')[0].strip()
-    key = f'permit place: {name} | {borough}'
+    key = f'permit place: {first if seg else name} | {borough}'
     if key in cache:
         return cache[key]
     hit = None
     try:
-        for r in geosearch(f'{name}, {borough}', size=5):
+        if seg:
+            # One corner of the closed block is close enough, and half the lookups.
+            best = intersection(street(seg.group(1)), street(seg.group(2)), borough)
+            hit = best[1] if best and best[0] < 250 else None
+        else:
             norm = lambda s: re.sub(r'[^a-z0-9]+', ' ', s.lower()).strip()
-            if norm(r['label'].split(',')[0]) == norm(name):
-                hit = {k: r[k] for k in ('lat', 'lng', 'label')}
-                break
+            same = [r for r in geosearch(f'{name}, {borough}', size=5) if norm(r['label'].split(',')[0]) == norm(name)]
+            # GeoSearch sometimes has several far-apart points under one park name; skip those rather than guess.
+            if same and all(dist_m(same[0], r) < 1000 for r in same):
+                hit = {k: same[0][k] for k in ('lat', 'lng', 'label')}
     except Exception as e:
         print(f'  GeoSearch failed for "{name}": {e}', file=sys.stderr)
         return None
@@ -88,12 +113,15 @@ def main():
     events, unplaced, seen = [], [], set()
     for r in rows:
         name, kind = (r.get('event_name') or '').strip(), r.get('event_type') or ''
-        if not name or SKIP.search(kind) or not PUBLIC.search(kind) or (name, r.get('start_date_time')) in seen:
+        public = PUBLIC.match(kind.strip()) or (kind == 'Special Event' and SPECIAL.search(name))
+        if not name or not public or PRIVATE.search(name) or name.lower() in seen:
             continue
-        seen.add((name, r.get('start_date_time')))
+        seen.add(name.lower())
         borough = (r.get('event_borough') or '').strip()
         location = (r.get('event_location') or '').strip()
         pos = place(location, borough, cache) if location and borough else None
+        if len(seen) % 25 == 0:
+            CACHE.write_text(json.dumps(cache, indent=1, sort_keys=True))
         if not pos:
             unplaced.append({'title': name, 'address': location, 'url': PAGE})
             continue
@@ -105,6 +133,7 @@ def main():
             'category': category(name, kind),
             'start': start.isoformat(),
             'end': end.isoformat() if end and end.date() == start.date() else None,
+            'allDay': start.hour == 0 and start.minute == 0,
             'venue': {'name': string.capwords(location.split(' between ')[0].split(':')[0].lower()),
                       'address': string.capwords(location.lower()), 'neighborhood': borough,
                       'lat': round(pos['lat'], 6), 'lng': round(pos['lng'], 6)},

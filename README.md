@@ -47,7 +47,8 @@ src/scripts/map/renderer.js       three.js scene: voxel land and buildings, pins
 src/scripts/map/palette.js        colours for the city and for event categories
 src/scripts/events/schema.js      the one event shape every source maps into
 src/scripts/events/index.js       loads all sources, filters to today and the map area, de-duplicates, sorts
-src/scripts/events/sources/       one file per event source: nycgov.js, donyc.js, ra.js, skint.js, luma.js (live), snapshot.js (shared reader),
+src/scripts/events/sources/       one file per event source: nycgov.js, donyc.js, ra.js, skint.js, luma.js, permits.js,
+                                  ticketmaster.js (live), snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
 public/                           other static files copied as-is (favicon)
@@ -56,6 +57,8 @@ tools/fetch_donyc.py              pulls one day of doNYC listings and places eac
 tools/fetch_ra.py                 pulls one night of Resident Advisor listings
 tools/fetch_luma.py               pulls one day of Luma NYC events
 tools/fetch_skint.py              pulls The Skint's picks for one day from its roundup posts
+tools/fetch_permits.py            pulls one day of NYC permitted street events (street fairs, parades, greenmarkets)
+tools/fetch_ticketmaster.py       pulls one day of Ticketmaster events (needs TICKETMASTER_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
 data/venues.json                  street addresses for venues The Skint names without one
 ```
@@ -72,6 +75,8 @@ python3 tools/fetch_donyc.py
 python3 tools/fetch_ra.py
 python3 tools/fetch_skint.py
 python3 tools/fetch_luma.py
+python3 tools/fetch_permits.py
+TICKETMASTER_API_KEY=... python3 tools/fetch_ticketmaster.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
 ```
 
@@ -110,6 +115,21 @@ the listings for the day. The Skint names venues rather than addresses ("caveat 
 a street address or block in its text, from `data/venues.json`, or from a GeoSearch place with the same name (parks,
 landmarks). Everything else is listed under `unplaced`. Adding a venue's address to `data/venues.json` places it
 from then on. The text is free-form, so check the output now and then: prices and times are best guesses.
+
+### NYC Street Events
+
+`fetch_permits.py` reads the city's permitted event list on NYC Open Data (https://data.cityofnewyork.us/d/tvpp-9vvx).
+It keeps street fairs, parades, plaza and Open Streets events, greenmarkets and sidewalk sales, plus Parks
+permits whose names sound public (festivals, markets, 5Ks, movie nights), and skips sports bookings, film shoots,
+block parties and private parties. A closed block is placed at one of its corners with GeoSearch, a park or plaza by
+name; a name GeoSearch puts in several places is left unplaced. Permit times include setup, so some start early.
+
+### Ticketmaster
+
+`fetch_ticketmaster.py` reads the Discovery API (https://developer.ticketmaster.com) for events within 12 miles of
+Manhattan. It needs a free key (the Consumer Key under My Apps) in `TICKETMASTER_API_KEY`; the scheduled refresh
+reads it from a repository secret of that name. Without a key it skips the run and leaves the snapshot alone, and
+the map shows no Ticketmaster events until the first run that has one.
 
 ## Adding a real event source
 

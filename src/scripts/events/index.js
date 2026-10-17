@@ -12,9 +12,11 @@ import raSource from './sources/ra.js';
 import skintSource from './sources/skint.js';
 import donycSource from './sources/donyc.js';
 import lumaSource from './sources/luma.js';
+import permitsSource from './sources/permits.js';
+import ticketmasterSource from './sources/ticketmaster.js';
 
 // ./sources/dummy.js holds sample events for offline testing.
-export const SOURCES = [nycgovSource, donycSource, raSource, skintSource, lumaSource];
+export const SOURCES = [nycgovSource, donycSource, raSource, skintSource, lumaSource, permitsSource, ticketmasterSource];
 
 export async function loadEventsForDate(date = new Date()) {
   const results = await Promise.allSettled(
