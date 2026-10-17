@@ -94,9 +94,11 @@ def main():
     events, unplaced, seen = [], [], set()
     for ev in rows:
         venues = (ev.get('_embedded') or {}).get('venues') or []
-        if ev['id'] in seen:
+        # Timed-entry attractions list every slot ('Balloon Museum' every 15 minutes); keep the first of the day.
+        slot = (ev.get('name', '').strip().lower(), venues[0].get('id') if venues else None)
+        if ev['id'] in seen or slot in seen:
             continue
-        seen.add(ev['id'])
+        seen.update((ev['id'], slot))
         if venues and (venues[0].get('location') or {}).get('latitude'):
             events.append(to_raw(ev, day))
         else:
