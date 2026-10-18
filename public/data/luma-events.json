@@ -3,139 +3,103 @@
   "name": "Luma NYC",
   "url": "https://luma.com/nyc"
  },
- "date": "2026-10-17",
- "fetchedAt": "2026-10-17T12:52:39-04:00",
+ "date": "2026-10-18",
+ "fetchedAt": "2026-10-18T04:55:28-04:00",
  "events": [
   {
-   "id": "evt-CMQBTGMmpske1kt",
-   "title": "Tasting Notes Presented By Serviette & The Lighthouse",
-   "category": "food",
-   "start": "2026-10-17T11:00:00-04:00",
-   "end": "2026-10-17T18:00:00-04:00",
+   "id": "evt-UErINVCuMDzJ3mb",
+   "title": "SOFA RUN CLUB Ep. 1",
+   "category": "sports",
+   "start": "2026-10-18T10:00:00-04:00",
+   "end": "2026-10-18T12:00:00-04:00",
    "venue": {
-    "name": "The Lighthouse Campus",
-    "address": "The Lighthouse Campus, 58 Kent St, Brooklyn, NY 11222, USA",
-    "neighborhood": "Greenpoint",
-    "lat": 40.73036,
-    "lng": -73.958693
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the The Lighthouse calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/the-pfm7",
-   "tags": []
-  },
-  {
-   "id": "evt-pbuCdGCqkVtLY1U",
-   "title": "Black Ecologies: Land, Memory, and the More-than-Human",
-   "category": "community",
-   "start": "2026-10-17T12:00:00-04:00",
-   "end": "2026-10-17T16:00:00-04:00",
-   "venue": {
-    "name": "The Arts Center at Governors Island (Building 110)",
-    "address": "The Arts Center at Governors Island (Building 110), 110 Andes Rd, New York, NY 10004, USA",
-    "neighborhood": "Governors Island",
-    "lat": 40.692705,
-    "lng": -74.016411
+    "name": "SOFACLUB CANNABIS",
+    "address": "SOFACLUB CANNABIS, 229 Avenue B, New York, NY 10009, USA",
+    "neighborhood": "Alphabet City",
+    "lat": 40.72917,
+    "lng": -73.978028
    },
    "price": null,
    "priceUnknown": false,
    "description": "From the Personal calendar on Luma",
    "details": "",
-   "url": "https://luma.com/o8mdgnsy",
+   "url": "https://luma.com/v9cdv1wz",
    "tags": []
   },
   {
-   "id": "evt-eJqGZCbxARjYO7K",
-   "title": "Fall Book Crawl",
+   "id": "evt-VwFtKCeF5bFxQFI",
+   "title": "Reading Club: Aristotle's Ethics",
    "category": "art",
-   "start": "2026-10-17T12:00:00-04:00",
-   "end": "2026-10-17T15:00:00-04:00",
+   "start": "2026-10-18T11:00:00-04:00",
+   "end": "2026-10-18T14:00:00-04:00",
    "venue": {
-    "name": "Cooper Hewitt, Smithsonian Design Museum",
-    "address": "Cooper Hewitt, Smithsonian Design Museum, 2 E 91st St, New York, NY 10128, USA",
-    "neighborhood": "Carnegie Hill",
-    "lat": 40.784396,
-    "lng": -73.957873
+    "name": "167 E Broadway",
+    "address": "167 E Broadway, New York, NY 10002, USA",
+    "neighborhood": "Lower Manhattan",
+    "lat": 40.713718,
+    "lng": -73.989872
    },
    "price": {
-    "min": 15,
-    "max": 15,
+    "min": 25,
+    "max": 25,
     "currency": "USD"
    },
    "priceUnknown": false,
-   "description": "From the Lit Club NYC Calendar calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/iycz744t",
-   "tags": []
-  },
-  {
-   "id": "evt-15p086LkX5EG4rp",
-   "title": "Online Pre-Registration Is Now Closed — Walk-Ins Welcome! 线上预注册关闭，欢迎直接去会场相见！ 🎉「2026 GCC Fall Festival 仲秋游园会」",
-   "category": "community",
-   "start": "2026-10-17T12:00:00-04:00",
-   "end": "2026-10-17T16:00:00-04:00",
-   "venue": {
-    "name": "Kissena Corridor Park",
-    "address": "Kissena Corridor Park, 47-67 Colden St, Flushing, NY 11355, USA",
-    "neighborhood": "Flushing",
-    "lat": 40.747293,
-    "lng": -73.820545
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Glow Cultural Center calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/jtz0butt",
-   "tags": []
-  },
-  {
-   "id": "evt-fYNKEkdF02KEjpB",
-   "title": "Van Alen Fall Fest 2026",
-   "category": "community",
-   "start": "2026-10-17T12:00:00-04:00",
-   "end": "2026-10-17T16:00:00-04:00",
-   "venue": {
-    "name": "Van Alen Institute",
-    "address": "Van Alen Institute, 303 Bond St, Brooklyn, NY 11231, USA",
-    "neighborhood": "Gowanus",
-    "lat": 40.680037,
-    "lng": -73.989224
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Van Alen Institute calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/0rca9qf1",
-   "tags": []
-  },
-  {
-   "id": "evt-gHRGQA6xsjHvNiC",
-   "title": "New York Philosophy Club: Peripatetics",
-   "category": "community",
-   "start": "2026-10-17T13:00:00-04:00",
-   "end": "2026-10-17T14:30:00-04:00",
-   "venue": {
-    "name": "Plaza Street West & Grand Army Plaza",
-    "address": "Plaza Street West & Grand Army Plaza, Plaza St W & Grand Army Plz, Brooklyn, NY 11238, USA",
-    "neighborhood": "Brooklyn",
-    "lat": 40.67266,
-    "lng": -73.970447
-   },
-   "price": null,
-   "priceUnknown": false,
    "description": "From the The New York Philosophy Club calendar on Luma",
    "details": "",
-   "url": "https://luma.com/aevknxcu",
+   "url": "https://luma.com/ngy6mc11",
    "tags": []
   },
   {
-   "id": "evt-ACxdlCJuDlGAFHz",
-   "title": "Ugly Duckling x Butter Girl 'home' cafe",
+   "id": "evt-NTeNgRWVy5KMyR4",
+   "title": "The Pop-Up Care Shop x City Girls Who Care Clothing Crawl",
    "category": "community",
-   "start": "2026-10-17T14:00:00-04:00",
-   "end": "2026-10-17T17:00:00-04:00",
+   "start": "2026-10-18T11:30:00-04:00",
+   "end": "2026-10-18T13:00:00-04:00",
+   "venue": {
+    "name": "Think Coffee",
+    "address": "Think Coffee, 248 Mercer St, New York, NY 10012, USA",
+    "neighborhood": "Lower Manhattan",
+    "lat": 40.728338,
+    "lng": -73.995286
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the City Girls Who Care calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/helch8ju",
+   "tags": []
+  },
+  {
+   "id": "evt-1JShHuzUFGWW57n",
+   "title": "precious plushie taxidermy",
+   "category": "community",
+   "start": "2026-10-18T12:00:00-04:00",
+   "end": "2026-10-18T15:00:00-04:00",
+   "venue": {
+    "name": "haricot vert's dreamworld",
+    "address": "haricot vert's dreamworld, 119 N 1st St, Brooklyn, NY 11249, USA",
+    "neighborhood": "Williamsburg",
+    "lat": 40.715536,
+    "lng": -73.961955
+   },
+   "price": {
+    "min": 38,
+    "max": 38,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "From the welcome to the craftnook calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/utagve9p",
+   "tags": []
+  },
+  {
+   "id": "evt-qHN5X2dSmKEh8k3",
+   "title": "new interfaces 007",
+   "category": "community",
+   "start": "2026-10-18T13:00:00-04:00",
+   "end": "2026-10-18T16:00:00-04:00",
    "venue": {
     "name": "Verci Flatiron",
     "address": "Verci Flatiron, 45 E 20th St, New York, NY 10003, USA",
@@ -144,86 +108,60 @@
     "lng": -73.988356
    },
    "price": null,
-   "priceUnknown": true,
-   "description": "From the Ugly Duckling calendar on Luma",
+   "priceUnknown": false,
+   "description": "From the new interfaces calendar on Luma",
    "details": "",
-   "url": "https://luma.com/c2093o7l",
+   "url": "https://luma.com/72ze84s3",
    "tags": []
   },
   {
-   "id": "evt-ozte5pptXywk8vF",
-   "title": "Gotham Watch Club Presents Stollenwurm - Rarely Seen",
-   "category": "community",
-   "start": "2026-10-17T17:00:00-04:00",
-   "end": "2026-10-17T22:00:00-04:00",
+   "id": "evt-C8Y9JGHJBvq7vzt",
+   "title": "First Light:AAPI Film Festival",
+   "category": "film",
+   "start": "2026-10-18T15:00:00-04:00",
+   "end": "2026-10-18T20:00:00-04:00",
    "venue": {
-    "name": "LOFT39",
-    "address": "LOFT39, 38 W 39th St, New York, NY 10018, USA",
-    "neighborhood": "Midtown South",
-    "lat": 40.752163,
-    "lng": -73.98422
+    "name": "telos.haus",
+    "address": "telos.haus, 303 Ten Eyck St, Brooklyn, NY 11206, USA",
+    "neighborhood": "East Williamsburg",
+    "lat": 40.711596,
+    "lng": -73.93697
    },
-   "price": null,
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
    "priceUnknown": false,
    "description": "From the Personal calendar on Luma",
    "details": "",
-   "url": "https://luma.com/gmxezun4",
+   "url": "https://luma.com/2m962gar",
    "tags": []
   },
   {
-   "id": "evt-AQM7NgsMxXCNVsb",
-   "title": "Make it Good Showcase",
-   "category": "community",
-   "start": "2026-10-17T19:00:00-04:00",
-   "end": "2026-10-17T21:00:00-04:00",
+   "id": "evt-FtXM3pSPiF2INVN",
+   "title": "Girls Girls Club: Victoria's Secret FASHION SHOW WATCH PARTY",
+   "category": "nightlife",
+   "start": "2026-10-18T18:30:00-04:00",
+   "end": "2026-10-18T21:30:00-04:00",
    "venue": {
-    "name": "Goodside Studios",
-    "address": "Goodside Studios, 329 Broome St, New York, NY 10002, USA",
-    "neighborhood": "Bowery",
-    "lat": 40.718999,
-    "lng": -73.993934
+    "name": "Virgin Hotels New York City",
+    "address": "Virgin Hotels New York City, 1227 Broadway, New York, NY 10001, USA",
+    "neighborhood": "Midtown Manhattan",
+    "lat": 40.746606,
+    "lng": -73.988791
    },
    "price": {
-    "min": 40,
-    "max": 40,
+    "min": 80,
+    "max": 80,
     "currency": "USD"
    },
    "priceUnknown": false,
-   "description": "From the Goodside Events calendar on Luma",
+   "description": "From the Girls Girls Club calendar on Luma",
    "details": "",
-   "url": "https://luma.com/asftfpae",
-   "tags": []
-  },
-  {
-   "id": "evt-iEc2kP4206GEAou",
-   "title": "Halloween Comedy Show | Harlem's In Living Color",
-   "category": "comedy",
-   "start": "2026-10-17T20:00:00-04:00",
-   "end": "2026-10-17T22:30:00-04:00",
-   "venue": {
-    "name": "74 W 120th St",
-    "address": "74 W 120th St, New York, NY 10027, USA",
-    "neighborhood": "Central Harlem",
-    "lat": 40.804111,
-    "lng": -73.947132
-   },
-   "price": {
-    "min": 17,
-    "max": 17,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "From the Harlem Art House Collective calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/ub77cryv",
+   "url": "https://luma.com/girls-kvpo",
    "tags": []
   }
  ],
- "unplaced": [
-  {
-   "title": "Print Esoteric PDFs Exchange #2",
-   "address": "address shown to guests only",
-   "url": "https://luma.com/ktqxk65m"
-  }
- ]
+ "unplaced": []
 }
