@@ -4,28 +4,8 @@
   "url": "https://luma.com/nyc"
  },
  "date": "2026-10-18",
- "fetchedAt": "2026-10-18T04:55:28-04:00",
+ "fetchedAt": "2026-10-18T12:56:01-04:00",
  "events": [
-  {
-   "id": "evt-UErINVCuMDzJ3mb",
-   "title": "SOFA RUN CLUB Ep. 1",
-   "category": "sports",
-   "start": "2026-10-18T10:00:00-04:00",
-   "end": "2026-10-18T12:00:00-04:00",
-   "venue": {
-    "name": "SOFACLUB CANNABIS",
-    "address": "SOFACLUB CANNABIS, 229 Avenue B, New York, NY 10009, USA",
-    "neighborhood": "Alphabet City",
-    "lat": 40.72917,
-    "lng": -73.978028
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Personal calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/v9cdv1wz",
-   "tags": []
-  },
   {
    "id": "evt-VwFtKCeF5bFxQFI",
    "title": "Reading Club: Aristotle's Ethics",
@@ -127,15 +107,31 @@
     "lat": 40.711596,
     "lng": -73.93697
    },
-   "price": {
-    "min": 20,
-    "max": 20,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
+   "price": null,
+   "priceUnknown": true,
    "description": "From the Personal calendar on Luma",
    "details": "",
    "url": "https://luma.com/2m962gar",
+   "tags": []
+  },
+  {
+   "id": "evt-lYJKhkny5H9kbEL",
+   "title": "Upcycled, Recycled, Vintage and One of a Kind Only Art Wearables by the McCannon Studio.",
+   "category": "art",
+   "start": "2026-10-18T16:00:00-04:00",
+   "end": "2026-10-18T18:00:00-04:00",
+   "venue": {
+    "name": "Fridman Gallery",
+    "address": "Fridman Gallery, 169 Bowery, New York, NY 10002, USA",
+    "neighborhood": "Lower Manhattan",
+    "lat": 40.719853,
+    "lng": -73.993769
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Personal calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/cqhwyh4n",
    "tags": []
   },
   {

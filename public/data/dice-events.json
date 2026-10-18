@@ -4,12 +4,12 @@
   "url": "https://dice.fm/browse/new_york-5bbf4db0f06331478e9b2c59"
  },
  "date": "2026-10-18",
- "fetchedAt": "2026-10-18T04:54:55-04:00",
+ "fetchedAt": "2026-10-18T12:55:50-04:00",
  "events": [
   {
    "id": "6ac3bcdb7577c3000123e527",
    "title": "Tiki Disco in The Ruins",
-   "category": "nightlife",
+   "category": "music",
    "start": "2026-10-18T14:00:00-04:00",
    "end": "2026-10-18T22:00:00-04:00",
    "venue": {
@@ -31,51 +31,27 @@
    "tags": []
   },
   {
-   "id": "6ad2b04a3a74340001034db1",
-   "title": "AMNESIA Black Coffee Afterparty",
+   "id": "6aa05c04e4467200014e4849",
+   "title": "Open Air Season Closing ft. Marco Carola, PAWSA",
    "category": "music",
-   "start": "2026-10-18T04:00:00-04:00",
-   "end": "2026-10-18T10:00:00-04:00",
+   "start": "2026-10-18T20:00:00-04:00",
+   "end": null,
    "venue": {
-    "name": "LISTEN",
-    "address": "198 Randolph Street, Brooklyn, New York 11237, United States",
+    "name": "Pacha New York",
+    "address": "140 Stewart Avenue, Brooklyn, New York 11237, United States",
     "neighborhood": "",
-    "lat": 40.709391,
-    "lng": -73.925171
+    "lat": 40.71071,
+    "lng": -73.9261
    },
    "price": {
-    "min": 25,
-    "max": 25,
+    "min": 95,
+    "max": 95,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://dice.fm/event/6ad2b04a3a74340001034db1",
-   "tags": []
-  },
-  {
-   "id": "6abefacbab36d000014b5a46",
-   "title": "Carnaval NYC",
-   "category": "music",
-   "start": "2026-10-18T09:00:00-04:00",
-   "end": "2026-10-18T13:00:00-04:00",
-   "venue": {
-    "name": "Maria Hernandez Park",
-    "address": "P33G+7F, Brooklyn, New York 11237",
-    "neighborhood": "",
-    "lat": 40.70317,
-    "lng": -73.92386
-   },
-   "price": {
-    "min": 0,
-    "max": 0,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://dice.fm/event/6abefacbab36d000014b5a46",
+   "url": "https://dice.fm/event/6aa05c04e4467200014e4849",
    "tags": []
   },
   {
@@ -244,294 +220,6 @@
    "description": "",
    "details": "",
    "url": "https://dice.fm/event/6ac3cc29068dfd0001af42f3",
-   "tags": []
-  },
-  {
-   "id": "6aa1cd787b78cf00017a8f50",
-   "title": "The Atrium: Soul Summit All Day Long",
-   "category": "nightlife",
-   "start": "2026-10-18T16:00:00-04:00",
-   "end": "2026-10-18T22:00:00-04:00",
-   "venue": {
-    "name": "Public Records",
-    "address": "233 Butler St, Brooklyn, NY 11217, USA",
-    "neighborhood": "",
-    "lat": 40.682176,
-    "lng": -73.98639
-   },
-   "price": {
-    "min": 24,
-    "max": 24,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "Infectious house and funk",
-   "details": "",
-   "url": "https://dice.fm/event/6aa1cd787b78cf00017a8f50",
-   "tags": []
-  },
-  {
-   "id": "6aca51e521d66800017851f6",
-   "title": "eMCee: A Clockwork Orange",
-   "category": "nightlife",
-   "start": "2026-10-18T17:00:00-04:00",
-   "end": "2026-10-18T23:45:00-04:00",
-   "venue": {
-    "name": "Moondog HiFi",
-    "address": "119 Ingraham Street, Brooklyn, New York 11237, United States",
-    "neighborhood": "",
-    "lat": 40.707894,
-    "lng": -73.929192
-   },
-   "price": {
-    "min": 0,
-    "max": 0,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://dice.fm/event/6aca51e521d66800017851f6",
-   "tags": []
-  },
-  {
-   "id": "6aba8cbf4e758200015e531c",
-   "title": "BUCKAROO",
-   "category": "nightlife",
-   "start": "2026-10-18T17:00:00-04:00",
-   "end": "2026-10-18T18:00:00-04:00",
-   "venue": {
-    "name": "Desert 5 Spot NY",
-    "address": "94 Wythe Avenue, Brooklyn, New York 11249, United States",
-    "neighborhood": "",
-    "lat": 40.721688,
-    "lng": -73.958429
-   },
-   "price": {
-    "min": 13,
-    "max": 13,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "Line dance foundations for beginners",
-   "details": "",
-   "url": "https://dice.fm/event/6aba8cbf4e758200015e531c",
-   "tags": []
-  },
-  {
-   "id": "6a84a31b53e76b0001e265b9",
-   "title": "The Ritual w/ Anané & Louie Vega @ H0L0",
-   "category": "nightlife",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "H0l0",
-    "address": "1090 Wyckoff Ave, Queens, NY 11385, USA",
-    "neighborhood": "",
-    "lat": 40.694228,
-    "lng": -73.902251
-   },
-   "price": {
-    "min": 25,
-    "max": 25,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "Rhythmic house, afternoon into evening",
-   "details": "",
-   "url": "https://dice.fm/event/6a84a31b53e76b0001e265b9",
-   "tags": []
-  },
-  {
-   "id": "6aa05c04e4467200014e4849",
-   "title": "Open Air Season Closing ft. Marco Carola, PAWSA",
-   "category": "nightlife",
-   "start": "2026-10-18T20:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Pacha New York",
-    "address": "140 Stewart Avenue, Brooklyn, New York 11237, United States",
-    "neighborhood": "",
-    "lat": 40.71071,
-    "lng": -73.9261
-   },
-   "price": {
-    "min": 95,
-    "max": 95,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://dice.fm/event/6aa05c04e4467200014e4849",
-   "tags": []
-  },
-  {
-   "id": "6aa178c6f8c5bf0001fb2db5",
-   "title": "Loco Carnaval:  Lohrasp Kansara, Angie Ocampo, Aries and Fomore",
-   "category": "nightlife",
-   "start": "2026-10-18T23:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Somewhere Nowhere NYC",
-    "address": "112 W 25th St, New York, NY 10001, USA",
-    "neighborhood": "",
-    "lat": 40.74431,
-    "lng": -73.992745
-   },
-   "price": {
-    "min": 33,
-    "max": 33,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://dice.fm/event/6aa178c6f8c5bf0001fb2db5",
-   "tags": []
-  },
-  {
-   "id": "6aceceae55542e0001528143",
-   "title": "Bodega b2b Psymon GT / Tucci / 1KeepUHating",
-   "category": "nightlife",
-   "start": "2026-10-18T23:30:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "SILO Brooklyn ",
-    "address": "90 Scott Ave, Brooklyn, NY 11237, USA",
-    "neighborhood": "",
-    "lat": 40.710564,
-    "lng": -73.922686
-   },
-   "price": {
-    "min": 28,
-    "max": 28,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://dice.fm/event/6aceceae55542e0001528143",
-   "tags": []
-  },
-  {
-   "id": "6a736857041d0900014ae58e",
-   "title": "Sunday Afterglow (skate)",
-   "category": "nightlife",
-   "start": "2026-10-18T12:00:00-04:00",
-   "end": "2026-10-18T18:00:00-04:00",
-   "venue": {
-    "name": "Xanadu",
-    "address": "262 Starr Street, Brooklyn, New York 11237, United States",
-    "neighborhood": "",
-    "lat": 40.706435,
-    "lng": -73.921458
-   },
-   "price": {
-    "min": 13,
-    "max": 13,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "Chill house, disco, and pop",
-   "details": "",
-   "url": "https://dice.fm/event/6a736857041d0900014ae58e",
-   "tags": []
-  },
-  {
-   "id": "6aba8b044479fc000191445b",
-   "title": "BUCK WILD",
-   "category": "nightlife",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": "2026-10-18T22:00:00-04:00",
-   "venue": {
-    "name": "Desert 5 Spot NY",
-    "address": "94 Wythe Avenue, Brooklyn, New York 11249, United States",
-    "neighborhood": "",
-    "lat": 40.721688,
-    "lng": -73.958429
-   },
-   "price": {
-    "min": 21,
-    "max": 21,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "Ultimate line dance party",
-   "details": "",
-   "url": "https://dice.fm/event/6aba8b044479fc000191445b",
-   "tags": []
-  },
-  {
-   "id": "6ac832e50f52a40001a95a71",
-   "title": "DIEGO GARCIA TERRY IARUSCI EQ B2B SCARLET",
-   "category": "nightlife",
-   "start": "2026-10-18T20:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "LISTEN",
-    "address": "198 Randolph Street, Brooklyn, New York 11237, United States",
-    "neighborhood": "",
-    "lat": 40.709391,
-    "lng": -73.925171
-   },
-   "price": {
-    "min": 28,
-    "max": 28,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://dice.fm/event/6ac832e50f52a40001a95a71",
-   "tags": []
-  },
-  {
-   "id": "6abbca37bab59e0001c5b40d",
-   "title": "Sunday Skate Club: Back to the 90s edition feat. DJ Yoda (Live AV Set), Dio Garcia | Club Flush: Vinyl Break Radio (skate)",
-   "category": "nightlife",
-   "start": "2026-10-18T20:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Xanadu",
-    "address": "262 Starr Street, Brooklyn, New York 11237, United States",
-    "neighborhood": "",
-    "lat": 40.706435,
-    "lng": -73.921458
-   },
-   "price": {
-    "min": 19,
-    "max": 19,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "Groovy disco, R&B, heavy bass",
-   "details": "",
-   "url": "https://dice.fm/event/6abbca37bab59e0001c5b40d",
-   "tags": []
-  },
-  {
-   "id": "6a90a61c02c6070001a38515",
-   "title": "KARAOKE NIGHT",
-   "category": "nightlife",
-   "start": "2026-10-18T22:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Cassette",
-    "address": "68-38 Forest Avenue, Storefront B, Ridgewood, New York 11385, United States",
-    "neighborhood": "",
-    "lat": 40.70261,
-    "lng": -73.901214
-   },
-   "price": {
-    "min": 0,
-    "max": 0,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://dice.fm/event/6a90a61c02c6070001a38515",
    "tags": []
   },
   {
@@ -751,11 +439,5 @@
    "tags": []
   }
  ],
- "unplaced": [
-  {
-   "title": "JESSXO, espurr, Brooke Steele, steele deficiency",
-   "venue": "Jupiter Disco",
-   "url": "https://dice.fm/event/6acfc6d3e5ae0c0001995680"
-  }
- ]
+ "unplaced": []
 }

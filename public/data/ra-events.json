@@ -4,7 +4,7 @@
   "url": "https://ra.co/events/us/newyork"
  },
  "date": "2026-10-18",
- "fetchedAt": "2026-10-18T05:00:37-04:00",
+ "fetchedAt": "2026-10-18T12:56:06-04:00",
  "events": [
   {
    "id": "2503332",
@@ -145,10 +145,10 @@
    "price": null,
    "priceUnknown": true,
    "description": "Lineup: Cecilio, Paolo Mosca",
-   "details": "Genres: Trance, Minimal",
+   "details": "Genres: House, Minimal",
    "url": "https://ra.co/events/2542693",
    "tags": [
-    "Trance",
+    "House",
     "Minimal"
    ]
   },
@@ -418,34 +418,6 @@
    ]
   },
   {
-   "id": "2554851",
-   "title": "Mister Sister",
-   "category": "nightlife",
-   "start": "2026-10-18T22:00:00-04:00",
-   "listedDay": "2026-10-18",
-   "end": "2026-10-19T04:00:00-04:00",
-   "venue": {
-    "name": "Bossa Nova Civic Club",
-    "address": "1271 Myrtle Ave; Brooklyn, NY 11221; United States",
-    "neighborhood": "",
-    "lat": 40.697974,
-    "lng": -73.927965
-   },
-   "price": {
-    "min": 10,
-    "max": 10,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "Lineup: Meilgaarden, Ian Crane",
-   "details": "Genres: Progressive House, Tech House",
-   "url": "https://ra.co/events/2554851",
-   "tags": [
-    "Progressive House",
-    "Tech House"
-   ]
-  },
-  {
    "id": "2558669",
    "title": "TIKI AFTERS w JDH",
    "category": "nightlife",
@@ -471,6 +443,34 @@
    "tags": [
     "House",
     "Acid"
+   ]
+  },
+  {
+   "id": "2554851",
+   "title": "Mister Sister",
+   "category": "nightlife",
+   "start": "2026-10-18T22:00:00-04:00",
+   "listedDay": "2026-10-18",
+   "end": "2026-10-19T04:00:00-04:00",
+   "venue": {
+    "name": "Bossa Nova Civic Club",
+    "address": "1271 Myrtle Ave; Brooklyn, NY 11221; United States",
+    "neighborhood": "",
+    "lat": 40.697974,
+    "lng": -73.927965
+   },
+   "price": {
+    "min": 10,
+    "max": 10,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Byron Yeates, Ian Crane, Meilgaarden",
+   "details": "Genres: Progressive House, Tech House",
+   "url": "https://ra.co/events/2554851",
+   "tags": [
+    "Progressive House",
+    "Tech House"
    ]
   },
   {
