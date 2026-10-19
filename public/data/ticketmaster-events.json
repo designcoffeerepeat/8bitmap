@@ -4,7 +4,7 @@
   "url": "https://www.ticketmaster.com/discover/new-york"
  },
  "date": "2026-10-19",
- "fetchedAt": "2026-10-19T05:09:50-04:00",
+ "fetchedAt": "2026-10-19T13:02:23-04:00",
  "events": [
   {
    "id": "LvZ18QrWTgeialOZ0E4-1",
@@ -78,29 +78,6 @@
    ]
   },
   {
-   "id": "LvZ18QEC-33sYJhRiNb-d",
-   "title": "The Banksy Museum New York!",
-   "category": "art",
-   "start": "2026-10-19T10:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Banksy Museum New York",
-    "address": "277 Canal St, New York",
-    "neighborhood": "New York",
-    "lat": 40.719603,
-    "lng": -74.001358
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Fine Art",
-   "details": "",
-   "url": "https://www.universe.com/events/the-banksy-museum-new-york-tickets-5PKNY0?ref=ticketmaster",
-   "tags": [
-    "Fine Art"
-   ]
-  },
-  {
    "id": "LvZ18Qk4nbbEibYZvnO2D",
    "title": "Banksy Museum - Flexiticket",
    "category": "art",
@@ -124,10 +101,33 @@
    ]
   },
   {
-   "id": "LvZ18Q-9tbOh8sZZvyVUs",
+   "id": "LvZ18QEC-33sYJhRiNb-7",
+   "title": "The Banksy Museum New York!",
+   "category": "art",
+   "start": "2026-10-19T10:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Banksy Museum New York",
+    "address": "277 Canal St, New York",
+    "neighborhood": "New York",
+    "lat": 40.719603,
+    "lng": -74.001358
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Fine Art",
+   "details": "",
+   "url": "https://www.universe.com/events/the-banksy-museum-new-york-tickets-5PKNY0?ref=ticketmaster",
+   "tags": [
+    "Fine Art"
+   ]
+  },
+  {
+   "id": "LvZ18Q-9tbOh8sZZvyVUD",
    "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
    "category": "community",
-   "start": "2026-10-19T10:00:00-04:00",
+   "start": "2026-10-19T12:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -905,13 +905,13 @@
     "lng": -74.00065
    },
    "price": {
-    "min": 38,
-    "max": 55,
+    "min": 0,
+    "max": 0,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "Music / R&B",
-   "details": "$20 Minimum Per PersonFull Bar & Dinner MenuNO REFUNDS OR EXCHANGES.All seating is first come, first served. Bar Area seating is limited and first come first served. When all available seats are occupied, the remaining bar area is standing room only.Table Seating is all ages, Bar Area is 21+. Bar Area tickets for patrons under 21 will not be honored. Group Reservations:Groups larger than 8 must purchase a group package at club@bluenote.net, or by calling 212.475.8592.Groups larger than 8 without a group package will be subject to group surcharges added to your bill. Groups arriving late or separately are not guaranteed to be seated together. All seating is first come, first served. Arrive early for best seats.We are not affiliated with any third-party ticket sellers. Tickets purchased directly through our official website or TicketWeb are the only authorized sources. We cannot guarantee the validity of tickets purchased through unauthorized sources. To protect against fraud and unauthorized ticket sales, management may require verification of the original purchase method, including presenting the credit card used for purchase and matching photo identification upon entry.",
+   "details": "$20 Minimum Per Person Full Bar & Dinner Menu NO REFUNDS OR EXCHANGES. All seating is first come, first served. Bar Area seating is limited and first come first served. When all available seats are occupied, the remaining bar area is standing room only. Table Seating is all ages, Bar Area is 21+. Bar Area tickets for patrons under 21 will not be honored. Group Reservations: Groups larger than 8 must purchase a group package at club@bluenote.net, or by calling 212.475.8592. Groups larger than 8 without a group package will be subject to group surcharges added to your bill. Groups arriving late or separately are not guaranteed to be seated together. All seating is first come, first served. Arrive early for best seats. We are not affiliated with any third-party ticket sellers. Tickets purchased directly through our official website or TicketWeb are the only authorized sources. We cannot guarantee the validity of tickets purchased through unauthorized sources. To protect against fraud and unauthorized ticket sales, management may require verification of the original purchase method, including presenting the credit card used for purchase and matching photo identification upon entry.",
    "url": "https://www.ticketweb.com/event/amber-mark-blue-note-jazz-club-tickets/14292404",
    "tags": [
     "R&B"
@@ -1206,6 +1206,29 @@
    "description": "Sports / Baseball",
    "details": "CLASSIC TOUR ENTRANCE: Classic Tour guests will enter through the Hard Rock Cafe adjacent to Gate 6 (corner of 161st St. and River Ave.) Please arrive 15 minutes prior to designated tour start time. Knowledgeable and passionate guides lead each sixty (60)-minute Classic Tour. Classic Tours and Lunch Combo: Enjoy lunch at the Hard Rock Cafe Yankee Stadium as part of your visit. Vouchers include tax & gratuity. Please note: Vouchers may be redeemed at the Hard Rock Cafe Yankee Stadium prior to or following your selected tour time. The Hard Rock Café opens at 11 a.m. daily. View menus at yankees.com/tours. The Yankees reserve the right to cancel all or part of any tour. ALL tour dates, times, locations and routes are subject to change without notice.",
    "url": "https://www.ticketmaster.com/classic-tour-at-yankee-stadium-bronx-new-york-10-19-2026/event/1D006374BDE7607F",
+   "tags": [
+    "Baseball"
+   ]
+  },
+  {
+   "id": "G5vVZbMKYa6aU",
+   "title": "Glimpse of Greatness",
+   "category": "sports",
+   "start": "2026-10-19T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Yankee Stadium",
+    "address": "1 East 161st Street, Bronx",
+    "neighborhood": "Bronx",
+    "lat": 40.828524,
+    "lng": -73.927626
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Sports / Baseball",
+   "details": "TOUR ENTRANCE: Guests will enter through the Hard Rock Cafe adjacent to Gate 6 (corner of 161st St. and River Ave). Glimpse of Greatness offers a quick peek inside Yankee Stadium's treasured New York Yankees Museum presented by Bank of America. This self-guided experience allows guests to explore the museum at their leisure. Knowledgeable tour guides will be on-hand to share stories about exhibit content and displayed memorabilia. Entry available 11:30 a.m. - 3:00 p.m. Schedule and availability may vary due to ballpark-wide events. IMPORTANT: Glimpse of Greatness does not offer any field visibility or interior views of Yankee Stadium. The Yankees reserve the right to cancel all or part of any tour. ALL tour dates, times, locations and routes are subject to change without notice.",
+   "url": "https://www.ticketmaster.com/glimpse-of-greatness-bronx-new-york-10-19-2026/event/1D006374F0247276",
    "tags": [
     "Baseball"
    ]

@@ -4,7 +4,7 @@
   "url": "https://seatgeek.com/cities/new-york"
  },
  "date": "2026-10-19",
- "fetchedAt": "2026-10-19T05:09:41-04:00",
+ "fetchedAt": "2026-10-19T13:02:21-04:00",
  "events": [
   {
    "id": "18542895",
@@ -51,6 +51,29 @@
    "url": "https://seatgeek.com/gwen-tickets/new-york-new-york-mercury-lounge-new-york-2026-10-19-6-pm/concert/18405662",
    "tags": [
     "concert"
+   ]
+  },
+  {
+   "id": "17924805",
+   "title": "Drunk Dracula",
+   "category": "art",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Ruby Theatre",
+    "address": "35 W 39th St, New York, NY 10018",
+    "neighborhood": "New York",
+    "lat": 40.7527,
+    "lng": -73.9841
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/drunk-dracula-tickets/theater/2026-10-19-7-pm/17924805",
+   "tags": [
+    "theater"
    ]
   },
   {
@@ -126,54 +149,6 @@
    ]
   },
   {
-   "id": "18187804",
-   "title": "Chicago - The Musical",
-   "category": "art",
-   "start": "2026-10-19T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Ambassador Theatre - New York",
-    "address": "219 West 49th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7613,
-    "lng": -73.985
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/chicago-the-musical-tickets/broadway/2026-10-19-7-pm/18187804",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18009725",
-   "title": "The Great Gatsby - The Musical",
-   "category": "art",
-   "start": "2026-10-19T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Broadway Theatre - New York",
-    "address": "1681 Broadway, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7632,
-    "lng": -73.9829
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/the-great-gatsby-the-musical-tickets/broadway/2026-10-19-7-pm/18009725",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
    "id": "18286768",
    "title": "The Play That Goes Wrong",
    "category": "art",
@@ -220,6 +195,54 @@
    ]
   },
   {
+   "id": "18009725",
+   "title": "The Great Gatsby - The Musical",
+   "category": "art",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Broadway Theatre - New York",
+    "address": "1681 Broadway, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7632,
+    "lng": -73.9829
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/the-great-gatsby-the-musical-tickets/broadway/2026-10-19-7-pm/18009725",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18187804",
+   "title": "Chicago - The Musical",
+   "category": "art",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Ambassador Theatre - New York",
+    "address": "219 West 49th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7613,
+    "lng": -73.985
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/chicago-the-musical-tickets/broadway/2026-10-19-7-pm/18187804",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
    "id": "18408244",
    "title": "Jamie Allan's Amaze",
    "category": "art",
@@ -242,6 +265,29 @@
     "theater",
     "entertainment",
     "entertainment"
+   ]
+  },
+  {
+   "id": "18258770",
+   "title": "Lifehouse",
+   "category": "music",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Warsaw",
+    "address": "261 Driggs Ave, Brooklyn, NY 11222",
+    "neighborhood": "Brooklyn",
+    "lat": 40.7226,
+    "lng": -73.9484
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/lifehouse-tickets/brooklyn-new-york-warsaw-2026-10-19-7-pm/concert/18258770",
+   "tags": [
+    "concert"
    ]
   },
   {
@@ -269,49 +315,27 @@
    ]
   },
   {
-   "id": "18258770",
-   "title": "Lifehouse",
-   "category": "music",
-   "start": "2026-10-19T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Warsaw",
-    "address": "261 Driggs Ave, Brooklyn, NY 11222",
-    "neighborhood": "Brooklyn",
-    "lat": 40.7226,
-    "lng": -73.9484
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/lifehouse-tickets/brooklyn-new-york-warsaw-2026-10-19-7-pm/concert/18258770",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "17924805",
-   "title": "Drunk Dracula",
+   "id": "18411402",
+   "title": "Singfeld! A Musical About Nothing!",
    "category": "art",
-   "start": "2026-10-19T19:00:00-04:00",
+   "start": "2026-10-19T19:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "The Ruby Theatre",
-    "address": "35 W 39th St, New York, NY 10018",
+    "name": "The Theater Center",
+    "address": "210 W. 50th Street, New York, NY 10019",
     "neighborhood": "New York",
-    "lat": 40.7527,
-    "lng": -73.9841
+    "lat": 40.7615,
+    "lng": -73.9845
    },
    "price": null,
    "priceUnknown": true,
-   "description": "theater",
+   "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/drunk-dracula-tickets/theater/2026-10-19-7-pm/17924805",
+   "url": "https://seatgeek.com/singfeld-a-musical-about-nothing-tickets/broadway/2026-10-19-7-30-pm/18411402",
    "tags": [
-    "theater"
+    "theater",
+    "broadway"
    ]
   },
   {
@@ -339,30 +363,6 @@
    ]
   },
   {
-   "id": "18411402",
-   "title": "Singfeld! A Musical About Nothing!",
-   "category": "art",
-   "start": "2026-10-19T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Theater Center",
-    "address": "210 W. 50th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7615,
-    "lng": -73.9845
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/singfeld-a-musical-about-nothing-tickets/broadway/2026-10-19-7-30-pm/18411402",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
    "id": "18361770",
    "title": "Andy Cohen - Englewood",
    "category": "art",
@@ -384,6 +384,29 @@
    "tags": [
     "theater",
     "literary"
+   ]
+  },
+  {
+   "id": "18267413",
+   "title": "AJ McLean",
+   "category": "music",
+   "start": "2026-10-19T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Bowl - NY",
+    "address": "61 Wythe Avenue, Brooklyn, NY 11249",
+    "neighborhood": "Brooklyn",
+    "lat": 40.7219,
+    "lng": -73.9574
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/a-j-mclean-tickets/brooklyn-new-york-brooklyn-bowl-ny-2026-10-19-8-pm/concert/18267413",
+   "tags": [
+    "concert"
    ]
   },
   {
@@ -477,29 +500,6 @@
    "description": "concert",
    "details": "",
    "url": "https://seatgeek.com/toad-the-wet-sprocket-tickets/new-york-new-york-sony-hall-2026-10-19-8-pm/concert/18283828",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18267413",
-   "title": "AJ McLean",
-   "category": "music",
-   "start": "2026-10-19T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Brooklyn Bowl - NY",
-    "address": "61 Wythe Avenue, Brooklyn, NY 11249",
-    "neighborhood": "Brooklyn",
-    "lat": 40.7219,
-    "lng": -73.9574
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/a-j-mclean-tickets/brooklyn-new-york-brooklyn-bowl-ny-2026-10-19-8-pm/concert/18267413",
    "tags": [
     "concert"
    ]

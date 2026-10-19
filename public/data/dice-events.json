@@ -4,7 +4,7 @@
   "url": "https://dice.fm/browse/new_york-5bbf4db0f06331478e9b2c59"
  },
  "date": "2026-10-19",
- "fetchedAt": "2026-10-19T05:08:32-04:00",
+ "fetchedAt": "2026-10-19T13:01:59-04:00",
  "events": [
   {
    "id": "6a91f3923fb32f00015c5637",
@@ -196,6 +196,30 @@
    "description": "",
    "details": "",
    "url": "https://dice.fm/event/6ab172e7a23a210001b7e7f7",
+   "tags": []
+  },
+  {
+   "id": "6acfe8409caad400016b77ca",
+   "title": "Funny Moms",
+   "category": "comedy",
+   "start": "2026-10-19T20:00:00-04:00",
+   "end": "2026-10-19T22:00:00-04:00",
+   "venue": {
+    "name": "C'mon Everybody",
+    "address": "325 Franklin Ave, Brooklyn, NY 11238, USA",
+    "neighborhood": "",
+    "lat": 40.688309,
+    "lng": -73.956821
+   },
+   "price": {
+    "min": 33,
+    "max": 33,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6acfe8409caad400016b77ca",
    "tags": []
   },
   {
