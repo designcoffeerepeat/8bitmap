@@ -35,7 +35,7 @@ jobs:
           # The secret may hold Cloudflare's whole "verify" command rather than the bare token,
           # so keep only the token itself: the one long run of letters, digits, _ and -.
           export CLOUDFLARE_API_TOKEN="$(printf '%s' "$CLOUDFLARE_API_TOKEN" | grep -o '[[:alnum:]_-]\{30,\}' | tail -1)"
-          if ! npx wrangler deploy --name 8bitmap-dev 2>&1 | tee deploy.log; then
+          if ! npx wrangler deploy --name 8bitmap-dev --var SITE:dev 2>&1 | tee deploy.log; then
             grep -v '^\s*$' deploy.log | tail -25 | sed 's/^/::error::/'
             exit 1
           fi
