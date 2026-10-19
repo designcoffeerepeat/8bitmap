@@ -21,7 +21,7 @@
 //   allDay:      boolean
 //   description: string   short blurb shown in the list
 //   details:     string   longer text revealed by "Show more"
-//   url:         string   link to the original listing
+//   url:         string|null  link to the original listing; null hides the LISTING button
 //   source:      { id: string, name: string, url: string }  the module that loaded it
 //   publisher:   { id: string, name: string, url: string }  who listed it; the Sources filter uses this
 //   tags:        string[]
@@ -63,7 +63,7 @@ export function normalizeEvent(raw, source) {
     allDay: Boolean(raw.allDay),
     description: raw.description ?? '',
     details: raw.details ?? '',
-    url: raw.url ?? source.url,
+    url: raw.url === undefined ? source.url : raw.url,
     source: { id: source.id, name: source.name, url: source.url },
     publisher: raw.publisher?.id ? raw.publisher : { id: source.id, name: source.name, url: source.url },
     tags: raw.tags ?? [],

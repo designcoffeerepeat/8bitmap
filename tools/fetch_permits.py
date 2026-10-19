@@ -123,7 +123,7 @@ def main():
         if len(seen) % 25 == 0:
             CACHE.write_text(json.dumps(cache, indent=1, sort_keys=True))
         if not pos:
-            unplaced.append({'title': name, 'address': location, 'url': PAGE})
+            unplaced.append({'title': name, 'address': location})
             continue
         start = datetime.fromisoformat(r['start_date_time'][:19]).replace(tzinfo=NYC)
         end = datetime.fromisoformat(r['end_date_time'][:19]).replace(tzinfo=NYC) if r.get('end_date_time') else None
@@ -141,7 +141,7 @@ def main():
             'priceUnknown': False,  # street events are free to attend
             'description': kind,
             'details': f"Permit from {r['event_agency']}." if r.get('event_agency') else '',
-            'url': PAGE,
+            'url': None,  # permits have no page of their own; a dataset link would not help
             'tags': [kind] if kind else [],
         })
     CACHE.write_text(json.dumps(cache, indent=1, sort_keys=True))

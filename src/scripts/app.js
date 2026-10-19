@@ -267,7 +267,7 @@ function renderDetail() {
     </div>
     <div class="d-actions">
       <button type="button" class="btn" id="detail-more" aria-expanded="${state.detailsOpen}">${state.detailsOpen ? 'SHOW LESS' : 'SHOW MORE'}</button>
-      <a class="btn" href="${esc(e.url)}" target="_blank" rel="noopener">LISTING</a>
+      ${e.url ? `<a class="btn" href="${esc(e.url)}" target="_blank" rel="noopener">LISTING</a>` : ''}
       <a class="btn" href="${maps}" target="_blank" rel="noopener">DIRECTIONS</a>
     </div>`;
   $('#detail-close').addEventListener('click', () => select(null));
