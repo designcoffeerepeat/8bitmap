@@ -36,7 +36,9 @@ Two branches:
 
 ### Cloudflare
 
-Cloudflare is connected to this GitHub repo. Every push to `main` deploys the live site.
+The live site is published by `.github/workflows/deploy-live.yml` on every push to `main` and after each events
+refresh, with the same `CLOUDFLARE_API_TOKEN` secret the dev workflow uses. Cloudflare's own GitHub connection
+(Workers Builds) can stay connected or be turned off; it no longer decides what live shows.
 Cloudflare offers two setup screens and this repo works with either:
 
 - Workers (the default "Create" flow): build command `npm run build`, deploy command `npx wrangler deploy`.
