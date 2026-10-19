@@ -150,6 +150,11 @@
   "lat": 40.680736,
   "lng": -73.943693
  },
+ "579 Metropolitan Ave | Brooklyn": {
+  "label": "579 METROPOLITAN AVENUE, Brooklyn, NY, USA",
+  "lat": 40.714299,
+  "lng": -73.949742
+ },
  "6 Wyckoff Ave | Brooklyn": {
   "label": "6 WYCKOFF AVENUE, Brooklyn, NY, USA",
   "lat": 40.706713,
@@ -204,6 +209,7 @@
  "Amboy Street Garden | Brooklyn": null,
  "Arsenal in Central Park | Manhattan": null,
  "Astoria Park | Queens": null,
+ "Athletic Courts in Torsney Playground | Queens": null,
  "Athletic Field in Starlight Park | Bronx": null,
  "Audubon Center at the Boathouse in Prospect Park | Brooklyn": null,
  "BLEECKER STREET between LEROY STREET and CARMINE STREET Manhattan | Manhattan": {
@@ -215,6 +221,7 @@
  "BROADWAY between WEST 113 STREET and WEST 116 STREET Manhattan | Manhattan": null,
  "Baisley Pond Park House in Baisley Pond Park | Queens": null,
  "Ballroom in Fort Hamilton Senior Recreation Center | Brooklyn": null,
+ "Bartow Community Center - Room 31 | Bronx": null,
  "Bayside Historical Society in Fort Totten Park | Queens": null,
  "Between 38th & 39th Streets | Brooklyn": null,
  "Between 78th & 79th Streets | Queens": null,
@@ -226,6 +233,8 @@
  "Brooklyn Bridge: Brooklyn Bridge Pedestrian: 1 between Park Row (S) and Tillary Street Manhattan | Manhattan": null,
  "Brooklyn Public Library - Bay Ridge | Brooklyn": null,
  "Brooklyn Public Library - Brooklyn Heights in Cadman Plaza Park | Brooklyn": null,
+ "Brooklyn Public Library- Gerritsen Beach | Brooklyn": null,
+ "Brownsville Neighborhood Health Action Center | Brooklyn": null,
  "Bruckner Mott Haven Community Garden | Bronx": null,
  "CARROLL STREET between SMITH STREET and COURT STREET Brooklyn | Brooklyn": null,
  "CORTELYOU ROAD between RUGBY ROAD and ARGYLE ROAD Brooklyn | Brooklyn": {
@@ -236,6 +245,7 @@
  "Canarsie Park House in Canarsie Park | Brooklyn": null,
  "Carmine Carro Community Center in Marine Park | Brooklyn": null,
  "Church parking lot, enter from Alameda Ave | Queens": null,
+ "Classroom A - Small in Lost Battalion Hall Recreation Center | Queens": null,
  "Concrete Park Boat Launch in Concrete Plant Park | Bronx": null,
  "Conference House Museum in Conference House Park | Staten Island": null,
  "Conference House Park | Staten Island": null,
@@ -274,6 +284,7 @@
  "Ecology Park | Brooklyn": null,
  "Elton Street and Jamaica Avenue in Highland Park | Queens": null,
  "Enslaved Burial Ground in Van Cortlandt Park | Bronx": null,
+ "Entrance - 215th Place and 33rd Road in Crocheron Park | Queens": null,
  "Entrance - Lafayette Avenue and Morrison Avenue in Soundview Park | Bronx": null,
  "Entrance to John Golden Park in John Golden Park | Queens": null,
  "FDR DRIVE between BATTERY PARK UNDERPASS and HARLEM RIVER DRIVE Manhattan | Manhattan": null,
@@ -287,6 +298,7 @@
  "Garden Peoples Garden in Riverside Park | Manhattan": null,
  "Gatehouse Garden | Manhattan": null,
  "George Washington Carver Community Garden | Brooklyn": null,
+ "Governors Island | Manhattan": null,
  "Grand Army Plaza Arch in Grand Army Plaza | Brooklyn": null,
  "Greenbelt Nature Center in Blood Root Valley | Staten Island": null,
  "Gymnasium (Court) in Al Oerter Recreation Center | Queens": null,
@@ -294,6 +306,7 @@
  "Gymnasium in Lost Battalion Hall Recreation Center | Queens": null,
  "H.H. Biddle House in Conference House Park | Staten Island": null,
  "Hart To Hart Community Garden | Brooklyn": null,
+ "Herald Square | Manhattan": null,
  "Herbert Von King Cultural Arts Center in Herbert Von King Cultural Arts Center | Brooklyn": null,
  "Herbert Von King Park | Brooklyn": null,
  "INDEPENDENCE AVENUE between WEST 246 STREET and WEST 239 STREET Bronx | Bronx": {
@@ -335,16 +348,21 @@
  "Lawn Near 79th Street Entrance in Shore Park and Parkway | Brooklyn": null,
  "Lawrence Cemetery | Queens": null,
  "Maggies Magic Garden | Manhattan": null,
+ "Marcus Garvey Park | Manhattan": null,
  "Margaret Corbin Circle in Fort Tryon Park | Manhattan": null,
  "Merchant's House Museum | Manhattan": null,
  "Midland Beach Splash Plaza in Franklin D. Roosevelt Boardwalk and Beach | Staten Island": null,
  "Mount Morris Fire Watchtower in Marcus Garvey Park | Manhattan": null,
+ "Multi-Use Room - 2nd Fl in Sorrentino Recreation Center | Queens": null,
+ "Multi-Use Room C in McCarren Play Center | Brooklyn": null,
+ "Multi-Use Room in Asser Levy Recreation Center | Manhattan": null,
  "Multi-Use Room in Kissena Park | Queens": null,
  "Multi-Use Room in St. James Recreation Center | Bronx": null,
  "Multi-Use Room in Williamsbridge Oval Recreation Center | Bronx": null,
  "NOSTRAND AVENUE between FLATBUSH AVENUE and GLENWOOD ROAD Brooklyn | Brooklyn": null,
  "NYPL - Tompkins Square Library | Manhattan": null,
  "Neighborhood Advisory Committee Community Garden | Bronx": null,
+ "New York Public Library - Morningside Heights Branch | Manhattan": null,
  "Newhouse Center for Contemporary Art (Building C) in Snug Harbor Cultural Center | Staten Island": null,
  "Newport Community Garden | Brooklyn": null,
  "Northwest Corner Seating Area in Washington Square Park | Manhattan": null,
@@ -374,6 +392,7 @@
  "Powell Street Garden | Brooklyn": null,
  "Powers St. Community Garden | Brooklyn": null,
  "Prospect Farm | Brooklyn": null,
+ "P\u00e9tanque Court in Washington Square Park | Manhattan": null,
  "QUEENS BOULEVARD between 69 ROAD and 70 AVENUE Queens | Queens": {
   "label": "QUEENS BOULEVARD & 69 ROAD",
   "lat": 40.723892,
@@ -381,8 +400,10 @@
  },
  "Queens Community House Beacon @ PS 149 | Queens": null,
  "Queens Museum, Corona | Queens": null,
+ "Queens Public Library - Bayside | Queens": null,
  "ROOSEVELT AVENUE between 103 STREET and 104 STREET Queens | Queens": null,
  "Ralph Ellison Plaza | Manhattan": null,
+ "Ryan Health- Chelsea Clinton Community Health Center | Manhattan": null,
  "SCHENCK AVENUE between NEW LOTS AVENUE and LIVONIA AVENUE Brooklyn | Brooklyn": {
   "label": "SCHENCK AVENUE & LIVONIA AVENUE",
   "lat": 40.666208,
@@ -400,6 +421,7 @@
  "Sparrow's Nest Community Garden | Queens": null,
  "Spin Room in Lost Battalion Hall Recreation Center | Queens": null,
  "St. Mary's Annual 5K Start | Bronx": null,
+ "Sunnyside Community Services | Queens": null,
  "Surfside Community Garden | Brooklyn": null,
  "TOWNSEND AVENUE between EAST 170 STREET and EAST 171 STREET Bronx | Bronx": {
   "label": "TOWNSEND AVENUE & EAST 170 STREET",
@@ -491,6 +513,11 @@
   "label": "31 CHAMBERS STREET, New York, NY, USA",
   "lat": 40.713591,
   "lng": -74.004239
+ },
+ "dice: 13572": {
+  "label": "603 WEST 44 STREET, New York, NY, USA",
+  "lat": 40.762369,
+  "lng": -73.997612
  },
  "dice: 13619": {
   "label": "63 GRAND STREET, Brooklyn, NY, USA",
@@ -841,6 +868,12 @@
   "lat": 40.688666,
   "lng": -73.979088
  },
+ "donyc: /venues/bric-house-media-center": {
+  "address": "647 Fulton Street, Brooklyn, 11217",
+  "label": "647 FULTON STREET, Brooklyn, NY, USA",
+  "lat": 40.688666,
+  "lng": -73.979088
+ },
  "donyc: /venues/brooklyn-art-haus": {
   "address": "24 Marcy Avenue, New York City, 11211",
   "label": "24 MARCY AVENUE, Brooklyn, NY, USA",
@@ -946,6 +979,15 @@
   "lat": 40.662995,
   "lng": -73.998142
  },
+ "donyc: /venues/dave-buster-s-atlantic-center-mall": {
+  "address": "625 Atlantic Ave. Suite 311, Brooklyn, 11217",
+  "label": "625 ATLANTIC AVENUE, Brooklyn, NY, USA",
+  "lat": 40.684289,
+  "lng": -73.975513
+ },
+ "donyc: /venues/dave-buster-s-islandia": null,
+ "donyc: /venues/dave-buster-s-pelham-manor": null,
+ "donyc: /venues/dave-buster-s-westbury": null,
  "donyc: /venues/david-rubenstein-atrium-lincoln-center": null,
  "donyc: /venues/delight-factory": {
   "address": "303 Saratoga Ave, Brooklyn, 11233",
@@ -1014,6 +1056,12 @@
   "lat": 40.707802,
   "lng": -73.944041
  },
+ "donyc: /venues/film-forum": {
+  "address": "209 W Houston St, New York, 10014",
+  "label": "209 WEST HOUSTON STREET, New York, NY, USA",
+  "lat": 40.728219,
+  "lng": -74.004492
+ },
  "donyc: /venues/film-society-of-lincoln-center": {
   "address": "165 W 65th St, New York, 10023",
   "label": "165 WEST 65 STREET, New York, NY, USA",
@@ -1027,6 +1075,7 @@
   "lng": -73.992988
  },
  "donyc: /venues/flagstar-at-westbury-music-fair": null,
+ "donyc: /venues/flatiron-district": null,
  "donyc: /venues/flop-house-comedy-club": {
   "address": "362 Grand St., Brooklyn, 11211",
   "label": "362 GRAND STREET, Brooklyn, NY, USA",
@@ -1057,6 +1106,12 @@
   "label": "GOVERNORS ISLAND, New York, NY, USA",
   "lat": 40.68874,
   "lng": -74.01914
+ },
+ "donyc: /venues/greenlight-bookstore-in-fort-greene": {
+  "address": "686 Fulton St, Brooklyn, 11217",
+  "label": "686 FULTON STREET, Brooklyn, NY, USA",
+  "lat": 40.68605,
+  "lng": -73.974694
  },
  "donyc: /venues/groove": {
   "address": "125 MacDougal St, New York, 10012",
@@ -1186,6 +1241,12 @@
   "lat": 40.874614,
   "lng": -73.892839
  },
+ "donyc: /venues/lincoln-center": {
+  "address": "70 Lincoln Center Plaza, New York, 10023",
+  "label": "70 LINCOLN CENTER, New York, NY, USA",
+  "lat": 40.774239,
+  "lng": -73.984373
+ },
  "donyc: /venues/lincoln-center-presents": {
   "address": "61 West 62nd Street, New York, 10023",
   "label": "61 WEST 62 STREET, New York, NY, USA",
@@ -1272,6 +1333,12 @@
   "lng": -73.926906
  },
  "donyc: /venues/moonzescope": null,
+ "donyc: /venues/moxy-east-village": {
+  "address": "112 E 11th St, New York, 10003",
+  "label": "112 EAST 11 STREET, New York, NY, USA",
+  "lat": 40.731406,
+  "lng": -73.989445
+ },
  "donyc: /venues/muse-paintbar-tribeca": {
   "address": "329 Greenwich St, New York, 10013",
   "label": "329 GREENWICH STREET, New York, NY, USA",
@@ -1374,6 +1441,12 @@
   "lat": 40.679224,
   "lng": -74.012128
  },
+ "donyc: /venues/platform-by-jbf": {
+  "address": "25 11th Ave, New York, NY 10011,, New York, 10011",
+  "label": "25 11 AVENUE, New York, NY, USA",
+  "lat": 40.74344,
+  "lng": -74.009904
+ },
  "donyc: /venues/prospect-park-bandshell": {
   "address": "95 Prospect Park West, Brooklyn, 11215",
   "label": "95 PROSPECT PARK WEST, Brooklyn, NY, USA",
@@ -1386,6 +1459,12 @@
   "label": "233 BUTLER STREET, Brooklyn, NY, USA",
   "lat": 40.682176,
   "lng": -73.98639
+ },
+ "donyc: /venues/purgatory": {
+  "address": "675 Central Ave, Brooklyn, 11207",
+  "label": "675 CENTRAL AVENUE, Brooklyn, NY, USA",
+  "lat": 40.687233,
+  "lng": -73.905733
  },
  "donyc: /venues/qed": {
   "address": "27-16 23rd Avenue, Queens, New York 11105, Queens, 11105",
@@ -1410,6 +1489,12 @@
   "label": "30 ROCKEFELLER PLAZA, New York, NY, USA",
   "lat": 40.759149,
   "lng": -73.979598
+ },
+ "donyc: /venues/roulette": {
+  "address": "509 Atlantic Ave, Brooklyn, 11217",
+  "label": "509 ATLANTIC AVENUE, Brooklyn, NY, USA",
+  "lat": 40.685676,
+  "lng": -73.980738
  },
  "donyc: /venues/rpm-underground": {
   "address": "244 W 54th Street, New York, 10019",
@@ -1619,6 +1704,13 @@
   "lng": -73.984931
  },
  "donyc: /venues/the-high-line": null,
+ "donyc: /venues/the-italian-educational-cultural-center": null,
+ "donyc: /venues/the-juilliard-school": {
+  "address": "155 West 65th Street, New York",
+  "label": "155 WEST 65 STREET, New York, NY, USA",
+  "lat": 40.773823,
+  "lng": -73.98315
+ },
  "donyc: /venues/the-kosciuszko-foundation": {
   "address": "15 East 65th Street, New York, 10065",
   "label": "15 EAST 65 STREET, New York, NY, USA",
@@ -1643,6 +1735,12 @@
   "label": "15 GRAMERCY PARK SOUTH, New York, NY, USA",
   "lat": 40.737632,
   "lng": -73.98683
+ },
+ "donyc: /venues/the-new-york-public-library-for-the-performing-arts": {
+  "address": "40 Lincoln Center Plaza (entrance at 111 Amsterdam Ave between W 64th & W 65th Sts), New York, 10023",
+  "label": "40 Lincoln Center Plaza (entrance at 111 Amsterdam Ave between W 64th & W 65th Sts)",
+  "lat": 40.77355,
+  "lng": -73.9845
  },
  "donyc: /venues/the-palace-theatre-in-stamford": {
   "address": "61 Atlantic Street, Stamford, 06901",
@@ -1716,11 +1814,29 @@
   "lat": 40.705556,
   "lng": -73.92234
  },
+ "donyc: /venues/the-tank-theater": {
+  "address": "312 W 36th St, New York, 10036",
+  "label": "312 WEST 36 STREET, New York, NY, USA",
+  "lat": 40.753583,
+  "lng": -73.99328
+ },
  "donyc: /venues/the-town-hall": {
   "address": "123 West 43rd Street, New York, 10036",
   "label": "123 WEST 43 STREET, New York, NY, USA",
   "lat": 40.756087,
   "lng": -73.984389
+ },
+ "donyc: /venues/the-triad-theater": {
+  "address": "158 W. 72nd St. 2nd Floor, New York, 10023",
+  "label": "158 WEST 72 STREET, New York, NY, USA",
+  "lat": 40.778021,
+  "lng": -73.980994
+ },
+ "donyc: /venues/the-twisted-spine": {
+  "address": "306 Grand Street, Brooklyn, 11211",
+  "label": "306 GRAND STREET, Brooklyn, NY, USA",
+  "lat": 40.712753,
+  "lng": -73.957289
  },
  "donyc: /venues/the-vogel-at-count-basie-center-for-the-arts": {
   "address": "99 Monmouth Street, Red Bank, 07701",
@@ -1729,6 +1845,7 @@
   "lng": -74.009434
  },
  "donyc: /venues/the-westbury": null,
+ "donyc: /venues/the-wood-shop": null,
  "donyc: /venues/the-yard": null,
  "donyc: /venues/theater-at-madison-square-garden": {
   "address": "4 Pennsylvania Plaza, New York, 10001",
@@ -1825,6 +1942,11 @@
   "lat": 40.769237000000004,
   "lng": -73.9869605
  },
+ "permit place: 103 EAST  161 STREET between RIVER AVENUE and GERARD AVENUE | Bronx": {
+  "label": "103 EAST 161 STREET & RIVER AVENUE",
+  "lat": 40.827368,
+  "lng": -73.925876
+ },
  "permit place: 11 MADISON AVENUE | Manhattan": null,
  "permit place: 14 AVENUE between CLINTONVILLE STREET and 150 STREET | Queens": {
   "label": "14th AVENUE & CLINTONVILLE STREET",
@@ -1846,6 +1968,7 @@
   "lat": 40.763459,
   "lng": -73.922186
  },
+ "permit place: 34 AVENUE between 77 STREET and 78 STREET | Queens": null,
  "permit place: 34 AVENUE between 93 STREET and 94 STREET | Queens": null,
  "permit place: 35 AVENUE between 82 STREET and 81 STREET | Queens": null,
  "permit place: 37 AVENUE between 78 STREET and 79 STREET | Queens": null,
@@ -1912,10 +2035,20 @@
   "lat": 40.77878,
   "lng": -73.9231
  },
+ "permit place: Avenue C Plaza MCDONALD AVENUE between AVENUE C and CHURCH AVENUE | Brooklyn": {
+  "label": "Avenue C Plaza MCDONALD AVENUE & AVENUE C",
+  "lat": 40.640614,
+  "lng": -73.978691
+ },
  "permit place: BLEECKER STREET between LEROY STREET and CARMINE STREET | Manhattan": {
   "label": "BLEECKER STREET & LEROY STREET",
   "lat": 40.730992,
   "lng": -74.003102
+ },
+ "permit place: BORDEN AVENUE between CENTER BLVD and 2ND STREET | Queens": {
+  "label": "BORDEN AVENUE & CENTER BLVD",
+  "lat": 40.741935,
+  "lng": -73.9591465
  },
  "permit place: BROADWAY between WEST   43 STREET and WEST   44 STREET | Manhattan": null,
  "permit place: BROADWAY between WEST   73 STREET and WEST   74 STREET | Manhattan": null,
@@ -2017,6 +2150,7 @@
   "lat": 40.717504,
   "lng": -74.009369
  },
+ "permit place: Diversity Plaza 37 Road between Broadway and 74 Street | Queens": null,
  "permit place: EAST    4 STREET between BOWERY and 2 AVENUE | Manhattan": {
   "label": "EAST 4th STREET & BOWERY",
   "lat": 40.726556,
@@ -2042,6 +2176,7 @@
   "lat": 40.740847,
   "lng": -73.986756
  },
+ "permit place: EAST   47 STREET between 2 AVENUE and 1 AVENUE | Manhattan": null,
  "permit place: EAST   82 STREET between 1 AVENUE and YORK AVENUE | Manhattan": null,
  "permit place: EAST  110 STREET between LEX AVENUE and PARK AVENUE | Manhattan": null,
  "permit place: EAST  182 STREET between VALENTINE AVENUE and RYER AVENUE | Bronx": {
@@ -2104,6 +2239,11 @@
   "label": "GRAND FERRY PARK, Brooklyn, NY, USA",
   "lat": 40.71672,
   "lng": -73.96691
+ },
+ "permit place: HART STREET between BROADWAY and STUYVESANT AVENUE | Brooklyn": {
+  "label": "HART STREET & BROADWAY",
+  "lat": 40.6948105,
+  "lng": -73.9306645
  },
  "permit place: Hart Playground | Queens": null,
  "permit place: Hawkins Park | Bronx": {
@@ -2391,6 +2531,11 @@
   "lat": 40.74552,
   "lng": -73.99791
  },
+ "permit place: WEST   28 STREET between 11 AVENUE and 10 AVENUE | Manhattan": {
+  "label": "WEST 28th STREET & 11th AVENUE",
+  "lat": 40.752264,
+  "lng": -74.006236
+ },
  "permit place: WEST   83 STREET between CPW and COLUMBUS AVENUE | Manhattan": {
   "label": "WEST 83rd STREET & CPW",
   "lat": 40.783341,
@@ -2665,6 +2810,11 @@
   "label": "559 LORIMER STREET, Brooklyn, NY, USA",
   "lat": 40.713629,
   "lng": -73.949497
+ },
+ "ra: 603 W 44th St, New York, NY 10036": {
+  "label": "603 WEST 44 STREET, New York, NY, USA",
+  "lat": 40.762369,
+  "lng": -73.997612
  },
  "ra: 63 Grand St, Brooklyn, NY 11249,": {
   "label": "63 GRAND STREET, Brooklyn, NY, USA",

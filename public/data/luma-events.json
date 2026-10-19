@@ -3,161 +3,50 @@
   "name": "Luma NYC",
   "url": "https://luma.com/nyc"
  },
- "date": "2026-10-18",
- "fetchedAt": "2026-10-18T12:56:01-04:00",
+ "date": "2026-10-19",
+ "fetchedAt": "2026-10-19T05:08:57-04:00",
  "events": [
   {
-   "id": "evt-VwFtKCeF5bFxQFI",
-   "title": "Reading Club: Aristotle's Ethics",
-   "category": "art",
-   "start": "2026-10-18T11:00:00-04:00",
-   "end": "2026-10-18T14:00:00-04:00",
-   "venue": {
-    "name": "167 E Broadway",
-    "address": "167 E Broadway, New York, NY 10002, USA",
-    "neighborhood": "Lower Manhattan",
-    "lat": 40.713718,
-    "lng": -73.989872
-   },
-   "price": {
-    "min": 25,
-    "max": 25,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "From the The New York Philosophy Club calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/ngy6mc11",
-   "tags": []
-  },
-  {
-   "id": "evt-NTeNgRWVy5KMyR4",
-   "title": "The Pop-Up Care Shop x City Girls Who Care Clothing Crawl",
+   "id": "evt-jg5k6eKUAQoTGv6",
+   "title": "Warm Start: An Evening at Othership (Hosted by STRV, Sponsored by RevenueCat)",
    "category": "community",
-   "start": "2026-10-18T11:30:00-04:00",
-   "end": "2026-10-18T13:00:00-04:00",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": "2026-10-19T20:15:00-04:00",
    "venue": {
-    "name": "Think Coffee",
-    "address": "Think Coffee, 248 Mercer St, New York, NY 10012, USA",
-    "neighborhood": "Lower Manhattan",
-    "lat": 40.728338,
-    "lng": -73.995286
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the City Girls Who Care calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/helch8ju",
-   "tags": []
-  },
-  {
-   "id": "evt-1JShHuzUFGWW57n",
-   "title": "precious plushie taxidermy",
-   "category": "community",
-   "start": "2026-10-18T12:00:00-04:00",
-   "end": "2026-10-18T15:00:00-04:00",
-   "venue": {
-    "name": "haricot vert's dreamworld",
-    "address": "haricot vert's dreamworld, 119 N 1st St, Brooklyn, NY 11249, USA",
-    "neighborhood": "Williamsburg",
-    "lat": 40.715536,
-    "lng": -73.961955
-   },
-   "price": {
-    "min": 38,
-    "max": 38,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "From the welcome to the craftnook calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/utagve9p",
-   "tags": []
-  },
-  {
-   "id": "evt-qHN5X2dSmKEh8k3",
-   "title": "new interfaces 007",
-   "category": "community",
-   "start": "2026-10-18T13:00:00-04:00",
-   "end": "2026-10-18T16:00:00-04:00",
-   "venue": {
-    "name": "Verci Flatiron",
-    "address": "Verci Flatiron, 45 E 20th St, New York, NY 10003, USA",
+    "name": "Othership Flatiron",
+    "address": "Othership Flatiron, 23 W 20th St, New York, NY 10011, USA",
     "neighborhood": "Midtown Manhattan",
-    "lat": 40.738784,
-    "lng": -73.988356
+    "lat": 40.740402,
+    "lng": -73.992441
    },
    "price": null,
    "priceUnknown": false,
-   "description": "From the new interfaces calendar on Luma",
+   "description": "From the STRV calendar on Luma",
    "details": "",
-   "url": "https://luma.com/72ze84s3",
-   "tags": []
-  },
-  {
-   "id": "evt-C8Y9JGHJBvq7vzt",
-   "title": "First Light:AAPI Film Festival",
-   "category": "film",
-   "start": "2026-10-18T15:00:00-04:00",
-   "end": "2026-10-18T20:00:00-04:00",
-   "venue": {
-    "name": "telos.haus",
-    "address": "telos.haus, 303 Ten Eyck St, Brooklyn, NY 11206, USA",
-    "neighborhood": "East Williamsburg",
-    "lat": 40.711596,
-    "lng": -73.93697
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "From the Personal calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/2m962gar",
-   "tags": []
-  },
-  {
-   "id": "evt-lYJKhkny5H9kbEL",
-   "title": "Upcycled, Recycled, Vintage and One of a Kind Only Art Wearables by the McCannon Studio.",
-   "category": "art",
-   "start": "2026-10-18T16:00:00-04:00",
-   "end": "2026-10-18T18:00:00-04:00",
-   "venue": {
-    "name": "Fridman Gallery",
-    "address": "Fridman Gallery, 169 Bowery, New York, NY 10002, USA",
-    "neighborhood": "Lower Manhattan",
-    "lat": 40.719853,
-    "lng": -73.993769
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Personal calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/cqhwyh4n",
-   "tags": []
-  },
-  {
-   "id": "evt-FtXM3pSPiF2INVN",
-   "title": "Girls Girls Club: Victoria's Secret FASHION SHOW WATCH PARTY",
-   "category": "nightlife",
-   "start": "2026-10-18T18:30:00-04:00",
-   "end": "2026-10-18T21:30:00-04:00",
-   "venue": {
-    "name": "Virgin Hotels New York City",
-    "address": "Virgin Hotels New York City, 1227 Broadway, New York, NY 10001, USA",
-    "neighborhood": "Midtown Manhattan",
-    "lat": 40.746606,
-    "lng": -73.988791
-   },
-   "price": {
-    "min": 80,
-    "max": 80,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "From the Girls Girls Club calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/girls-kvpo",
+   "url": "https://luma.com/strv-f4ju",
    "tags": []
   }
  ],
- "unplaced": []
+ "unplaced": [
+  {
+   "title": "Jev Jam Sesh",
+   "address": "address shown to guests only",
+   "url": "https://luma.com/3ebxgceb"
+  },
+  {
+   "title": "Claude & Chill for Founders & Creators",
+   "address": "address shown to guests only",
+   "url": "https://luma.com/claude-and-chill-oct19"
+  },
+  {
+   "title": "Fireside Chat w. CMO @ Revolve (Divya Mathur) at Maxwell Social 🍸",
+   "address": "address shown to guests only",
+   "url": "https://luma.com/MGMaxwellOctober"
+  },
+  {
+   "title": "Pudu: NYC Film Salon",
+   "address": "address shown to guests only",
+   "url": "https://luma.com/waz5d50j"
+  }
+ ]
 }

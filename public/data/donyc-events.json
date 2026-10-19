@@ -3,14 +3,34 @@
   "name": "doNYC",
   "url": "https://donyc.com"
  },
- "date": "2026-10-18",
- "fetchedAt": "2026-10-18T12:56:01-04:00",
+ "date": "2026-10-19",
+ "fetchedAt": "2026-10-19T05:08:57-04:00",
  "events": [
+  {
+   "id": "toad-the-wet-sprocket-rings-the-acoustic-tour-tickets",
+   "title": "Toad The Wet Sprocket - Rings: The Acoustic Tour",
+   "category": "music",
+   "start": "2026-10-19T20:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Sony Hall",
+    "address": "235 W 46th St, New York, 10026",
+    "neighborhood": "",
+    "lat": 40.75965,
+    "lng": -73.987
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/toad-the-wet-sprocket-rings-the-acoustic-tour-tickets",
+   "tags": []
+  },
   {
    "id": "the-ridgewood-asylum-2026-nyc-haunted-house-tickets",
    "title": "The Ridgewood Asylum 2026 - NYC Haunted House",
    "category": "comedy",
-   "start": "2026-10-18T20:00:00-04:00",
+   "start": "2026-10-19T20:00:00-04:00",
    "end": null,
    "venue": {
     "name": "The Ridgewood Asylum",
@@ -27,50 +47,30 @@
    "tags": []
   },
   {
-   "id": "cannons-caroline-kingsbury-tickets",
-   "title": "Cannons, Caroline Kingsbury",
+   "id": "earl-sweatshirt-mike-home-on-the-range-tour-2026-tickets",
+   "title": "Earl Sweatshirt & MIKE Home on the Range Tour 2026",
    "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
+   "start": "2026-10-19T19:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "Brooklyn Steel",
-    "address": "319 Frost Street, Brooklyn, 11222",
+    "name": "Brooklyn Paramount",
+    "address": "385 Flatbush Ave Ext, Brooklyn, NY 11201, Brooklyn, 11201",
     "neighborhood": "",
-    "lat": 40.719401,
-    "lng": -73.938748
+    "lat": 40.690311,
+    "lng": -73.980934
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/cannons-caroline-kingsbury-tickets",
-   "tags": []
-  },
-  {
-   "id": "mercury-maid-tickets1",
-   "title": "Mercury Maid",
-   "category": "music",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Cafe Wha?",
-    "address": "115 Macdougal St, New York, 10012",
-    "neighborhood": "",
-    "lat": 40.730198,
-    "lng": -74.000717
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/mercury-maid-tickets1",
+   "url": "https://donyc.com/events/2026/10/19/earl-sweatshirt-mike-home-on-the-range-tour-2026-tickets",
    "tags": []
   },
   {
    "id": "fish-tickets",
    "title": "FISH",
    "category": "art",
-   "start": "2026-10-18T19:00:00-04:00",
+   "start": "2026-10-19T19:00:00-04:00",
    "end": null,
    "venue": {
     "name": "WP Theater",
@@ -87,50 +87,30 @@
    "tags": []
   },
   {
-   "id": "the-cafe-wha-house-band-tickets",
-   "title": "The Cafe Wha? House Band",
+   "id": "aj-mclean-presents-alexander-james-the-better-man-tour-matt-bloyd-dj-gab-wright-tickets",
+   "title": "AJ McLean presents Alexander James : The Better Man Tour, Matt Bloyd, DJ Gab Wright",
    "category": "music",
-   "start": "2026-10-18T21:00:00-04:00",
+   "start": "2026-10-19T20:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "Cafe Wha?",
-    "address": "115 Macdougal St, New York, 10012",
+    "name": "Brooklyn Bowl",
+    "address": "61 Wythe Avenue, Brooklyn, 11249",
     "neighborhood": "",
-    "lat": 40.730198,
-    "lng": -74.000717
+    "lat": 40.721767,
+    "lng": -73.957234
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-cafe-wha-house-band-tickets",
+   "url": "https://donyc.com/events/2026/10/19/aj-mclean-presents-alexander-james-the-better-man-tour-matt-bloyd-dj-gab-wright-tickets",
    "tags": []
   },
   {
-   "id": "the-cafe-wha-house-band-tickets-kez63ly",
-   "title": "The Cafe Wha? House Band",
+   "id": "amber-mark-tickets",
+   "title": "Amber Mark",
    "category": "music",
-   "start": "2026-10-18T22:30:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Cafe Wha?",
-    "address": "115 Macdougal St, New York, 10012",
-    "neighborhood": "",
-    "lat": 40.730198,
-    "lng": -74.000717
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-cafe-wha-house-band-tickets-kez63ly",
-   "tags": []
-  },
-  {
-   "id": "robert-glasper-og-acoustic-piano-trio-tickets",
-   "title": "Robert Glasper Og Acoustic Piano Trio",
-   "category": "music",
-   "start": "2026-10-18T20:00:00-04:00",
+   "start": "2026-10-19T20:00:00-04:00",
    "end": null,
    "venue": {
     "name": "Blue Note Jazz Club",
@@ -143,474 +123,14 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/robert-glasper-og-acoustic-piano-trio-tickets",
+   "url": "https://donyc.com/events/2026/10/19/amber-mark-tickets",
    "tags": []
   },
   {
-   "id": "aziz-ansari-tickets",
-   "title": "Aziz Ansari",
+   "id": "michelle-buteau-tickets",
+   "title": "Michelle Buteau",
    "category": "comedy",
-   "start": "2026-10-18T19:30:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Beacon Theatre",
-    "address": "2124 Broadway, New York, 10023",
-    "neighborhood": "",
-    "lat": 40.780522,
-    "lng": -73.980818
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/aziz-ansari-tickets",
-   "tags": []
-  },
-  {
-   "id": "kendall-farrell-standup-comedy-special-taping-tickets",
-   "title": "Kendall Farrell: Standup Comedy Special Taping",
-   "category": "comedy",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": "2026-10-18T22:30:00-04:00",
-   "venue": {
-    "name": "Littlefield",
-    "address": "635 Sacket St, Brooklyn, 11217",
-    "neighborhood": "",
-    "lat": 40.680306,
-    "lng": -73.979702
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/kendall-farrell-standup-comedy-special-taping-tickets",
-   "tags": []
-  },
-  {
-   "id": "the-damned-final-damnation-50-tickets",
-   "title": "The Damned - Final Damnation 50",
-   "category": "music",
-   "start": "2026-10-18T20:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "The Paramount",
-    "address": "370 New York Ave, Huntington, 11743",
-    "neighborhood": "",
-    "lat": 40.666874,
-    "lng": -73.948252
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-damned-final-damnation-50-tickets",
-   "tags": []
-  },
-  {
-   "id": "growing-ryan-sawyer-shaker-ensemble-tickets",
-   "title": "Growing, Ryan Sawyer Shaker Ensemble",
-   "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Union Pool",
-    "address": "484 Union Avenue, Brooklyn, 11211",
-    "neighborhood": "",
-    "lat": 40.715004,
-    "lng": -73.951552
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/growing-ryan-sawyer-shaker-ensemble-tickets",
-   "tags": []
-  },
-  {
-   "id": "tiki-disco-in-the-ruins-tickets",
-   "title": "Tiki Disco in The Ruins",
-   "category": "music",
-   "start": "2026-10-18T14:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Ruins at Knockdown Center",
-    "address": "52-19 Flushing Avenue, Maspeth, 11378",
-    "neighborhood": "",
-    "lat": 40.7156,
-    "lng": -73.91418
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/tiki-disco-in-the-ruins-tickets",
-   "tags": []
-  },
-  {
-   "id": "rebecca-black-exhibitionism-on-tour-tickets",
-   "title": "Rebecca Black – Exhibitionism on Tour",
-   "category": "music",
-   "start": "2026-10-18T19:30:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Webster Hall",
-    "address": "125 E. 11th Street, New York, 10003",
-    "neighborhood": "",
-    "lat": 40.731777,
-    "lng": -73.989091
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/rebecca-black-exhibitionism-on-tour-tickets",
-   "tags": []
-  },
-  {
-   "id": "the-suitcase-junket-tickets",
-   "title": "The Suitcase Junket",
-   "category": "music",
-   "start": "2026-10-18T20:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Mercury Lounge",
-    "address": "217 E Houston St, New York, 10002",
-    "neighborhood": "",
-    "lat": 40.722069,
-    "lng": -73.986801
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-suitcase-junket-tickets",
-   "tags": []
-  },
-  {
-   "id": "plini-an-unnameable-desire-north-american-tour-tickets",
-   "title": "Plini - An Unnameable Desire North American Tour",
-   "category": "music",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Irving Plaza",
-    "address": "17 Irving Place, New York, 10003",
-    "neighborhood": "",
-    "lat": 40.734928,
-    "lng": -73.988455
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/plini-an-unnameable-desire-north-american-tour-tickets",
-   "tags": []
-  },
-  {
-   "id": "sunday-afterglow-skate-tickets",
-   "title": "Sunday Afterglow (skate)",
-   "category": "community",
-   "start": "2026-10-18T12:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Xanadu",
-    "address": "262 Starr St, Brooklyn, NY 11237, Brooklyn, 11237",
-    "neighborhood": "",
-    "lat": 40.706435,
-    "lng": -73.921458
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/sunday-afterglow-skate-tickets",
-   "tags": []
-  },
-  {
-   "id": "skaterobics-all-experience-levels-instructional-class-tickets",
-   "title": "Skaterobics - All Experience Levels Instructional Class",
-   "category": "community",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Xanadu",
-    "address": "262 Starr St, Brooklyn, NY 11237, Brooklyn, 11237",
-    "neighborhood": "",
-    "lat": 40.706435,
-    "lng": -73.921458
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/skaterobics-all-experience-levels-instructional-class-tickets",
-   "tags": []
-  },
-  {
-   "id": "sunday-skate-club-back-to-the-90s-edition-feat-dj-yoda-live-av-set-dio-garcia-club-flush-vinyl-break-radio-skate-tickets",
-   "title": "Sunday Skate Club: Back to the 90s edition feat. DJ Yoda (Live AV Set), Dio Garcia | Club Flush: Vinyl Break Radio (skate)",
-   "category": "community",
-   "start": "2026-10-18T20:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Xanadu",
-    "address": "262 Starr St, Brooklyn, NY 11237, Brooklyn, 11237",
-    "neighborhood": "",
-    "lat": 40.706435,
-    "lng": -73.921458
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/sunday-skate-club-back-to-the-90s-edition-feat-dj-yoda-live-av-set-dio-garcia-club-flush-vinyl-break-radio-skate-tickets",
-   "tags": []
-  },
-  {
-   "id": "he-is-legend-with-in-angles-excide-tickets",
-   "title": "He is Legend with In Angles, Excide, The Phoenix Within",
-   "category": "music",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "The Meadows",
-    "address": "17 Meadow Street, Brooklyn, 11206",
-    "neighborhood": "",
-    "lat": 40.710886,
-    "lng": -73.936609
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/he-is-legend-with-in-angles-excide-tickets",
-   "tags": []
-  },
-  {
-   "id": "ida-tickets",
-   "title": "Ida",
-   "category": "community",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": "2026-10-18T22:00:00-04:00",
-   "venue": {
-    "name": "Elsewhere",
-    "address": "599 Johnson Ave, Brooklyn , 11237",
-    "neighborhood": "",
-    "lat": 40.709451,
-    "lng": -73.923221
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/ida-tickets",
-   "tags": []
-  },
-  {
-   "id": "open-air-season-closing-ft-marco-carola-pawsa-tickets",
-   "title": "Open Air Season Closing ft. Marco Carola, PAWSA",
-   "category": "music",
-   "start": "2026-10-18T20:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Pacha NYC",
-    "address": "140 Stewart Ave, Brooklyn, 11237",
-    "neighborhood": "",
-    "lat": 40.71071,
-    "lng": -73.9261
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/open-air-season-closing-ft-marco-carola-pawsa-tickets",
-   "tags": []
-  },
-  {
-   "id": "spy-tickets",
-   "title": "Spy",
-   "category": "music",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Saint Vitus Bar",
-    "address": "1120 Manhattan Ave, Brooklyn, 11222",
-    "neighborhood": "",
-    "lat": 40.736797,
-    "lng": -73.955019
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/spy-tickets",
-   "tags": []
-  },
-  {
-   "id": "nickcheo-the-tour-the-movie-tickets",
-   "title": "@NICKCHEO the *TOUR* the *MOVIE*",
-   "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "The Bowery Ballroom",
-    "address": "6 Delancey St, New York, 10002",
-    "neighborhood": "",
-    "lat": 40.720445,
-    "lng": -73.993338
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/nickcheo-the-tour-the-movie-tickets",
-   "tags": []
-  },
-  {
-   "id": "billy-jones-way-block-party-tickets",
-   "title": "Billy Jones Way Block Party",
-   "category": "music",
-   "start": "2026-10-18T17:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Baby's All Right",
-    "address": "146 Broadway, Brooklyn, 11211",
-    "neighborhood": "",
-    "lat": 40.709994,
-    "lng": -73.963495
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/billy-jones-way-block-party-tickets",
-   "tags": []
-  },
-  {
-   "id": "gabriel-alegria-afro-peruvian-sextet-from-lima-with-love-tickets-tickets",
-   "title": "GABRIEL ALEGRIA AFRO-PERUVIAN SEXTET FROM LIMA WITH LOVE Tickets",
-   "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Nublu 151",
-    "address": "151 Avenue C, New York, 10009",
-    "neighborhood": "",
-    "lat": 40.725664,
-    "lng": -73.978033
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/gabriel-alegria-afro-peruvian-sextet-from-lima-with-love-tickets-tickets",
-   "tags": []
-  },
-  {
-   "id": "simrit-tickets",
-   "title": "Simrit",
-   "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "The Gramercy Theatre",
-    "address": "127 East 23rd Street, New York, 10010",
-    "neighborhood": "",
-    "lat": 40.739896,
-    "lng": -73.984931
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/simrit-tickets",
-   "tags": []
-  },
-  {
-   "id": "peelingflesh-tickets",
-   "title": "PeelingFlesh",
-   "category": "music",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Warsaw",
-    "address": "261 Driggs Ave, Brooklyn, 11222",
-    "neighborhood": "",
-    "lat": 40.722416,
-    "lng": -73.948306
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/peelingflesh-tickets",
-   "tags": []
-  },
-  {
-   "id": "kiki-kramer-hannah-hannah-rubyblue-damin-tyler-tickets",
-   "title": "Kiki Kramer | Hannah Hannah | Rubyblue | Damin Tyler",
-   "category": "music",
-   "start": "2026-10-18T21:30:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Bowery Palace",
-    "address": "327 Bowery, New York, 10012",
-    "neighborhood": "",
-    "lat": 40.725712,
-    "lng": -73.991683
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/kiki-kramer-hannah-hannah-rubyblue-damin-tyler-tickets",
-   "tags": []
-  },
-  {
-   "id": "the-atrium-soul-summit-all-day-long-tickets",
-   "title": "The Atrium: Soul Summit All Day Long",
-   "category": "community",
-   "start": "2026-10-18T16:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Public Records",
-    "address": "233 Butler Street, Brookyln, 11217",
-    "neighborhood": "",
-    "lat": 40.682176,
-    "lng": -73.98639
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-atrium-soul-summit-all-day-long-tickets",
-   "tags": []
-  },
-  {
-   "id": "max-hoffman-dogs-downstate-joanie-tickets",
-   "title": "Max Hoffman | Dogs Downstate | Joanie",
-   "category": "music",
-   "start": "2026-10-18T18:30:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Bowery Palace",
-    "address": "327 Bowery, New York, 10012",
-    "neighborhood": "",
-    "lat": 40.725712,
-    "lng": -73.991683
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/max-hoffman-dogs-downstate-joanie-tickets",
-   "tags": []
-  },
-  {
-   "id": "johnny-pemberton-tickets",
-   "title": "Johnny Pemberton",
-   "category": "comedy",
-   "start": "2026-10-18T19:30:00-04:00",
+   "start": "2026-10-19T19:30:00-04:00",
    "end": null,
    "venue": {
     "name": "The Bell House",
@@ -623,34 +143,174 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/johnny-pemberton-tickets",
+   "url": "https://donyc.com/events/2026/10/19/michelle-buteau-tickets",
    "tags": []
   },
   {
-   "id": "the-pioneers-tickets",
-   "title": "The Pioneers",
+   "id": "adam-rubenstein-tickets",
+   "title": "Adam Rubenstein",
    "category": "music",
-   "start": "2026-10-18T22:00:00-04:00",
+   "start": "2026-10-19T18:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "Terra Blues",
-    "address": "149 Bleecker St, New York, 10012",
+    "name": "Mercury Lounge",
+    "address": "217 E Houston St, New York, 10002",
     "neighborhood": "",
-    "lat": 40.72847,
-    "lng": -73.99923
+    "lat": 40.722069,
+    "lng": -73.986801
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-pioneers-tickets",
+   "url": "https://donyc.com/events/2026/10/19/adam-rubenstein-tickets",
    "tags": []
   },
   {
-   "id": "st-john-s-red-storm-men-s-basketball-v-rutgers-exhibition-tickets",
-   "title": "St. John's Red Storm Men's Basketball v. Rutgers (Exhibition)",
+   "id": "lifehouse-best-of-acoustic-tickets",
+   "title": "Lifehouse - Best Of Acoustic",
+   "category": "music",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Warsaw",
+    "address": "261 Driggs Ave, Brooklyn, 11222",
+    "neighborhood": "",
+    "lat": 40.722416,
+    "lng": -73.948306
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/lifehouse-best-of-acoustic-tickets",
+   "tags": []
+  },
+  {
+   "id": "daikaiju-tickets",
+   "title": "Daikaiju with Best Dressed Ghost and Fin Swimmer",
+   "category": "music",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "The Meadows",
+    "address": "17 Meadow Street, Brooklyn, 11206",
+    "neighborhood": "",
+    "lat": 40.710886,
+    "lng": -73.936609
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/daikaiju-tickets",
+   "tags": []
+  },
+  {
+   "id": "jam-session-hosted-by-adam-ray-tickets",
+   "title": "Jam Session Hosted By Adam Ray",
+   "category": "music",
+   "start": "2026-10-19T23:45:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Smalls Jazz Club",
+    "address": "183 West 10th Street, New York, 10014",
+    "neighborhood": "",
+    "lat": 40.734396,
+    "lng": -74.002705
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/jam-session-hosted-by-adam-ray-tickets",
+   "tags": []
+  },
+  {
+   "id": "the-cabaret-burlesque-presents-code-red-tickets",
+   "title": "The Cabaret Burlesque presents: Code Red",
+   "category": "music",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Berlin",
+    "address": "25 Avenue A, New York",
+    "neighborhood": "",
+    "lat": 40.723009,
+    "lng": -73.986054
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/the-cabaret-burlesque-presents-code-red-tickets",
+   "tags": []
+  },
+  {
+   "id": "mitch-wood-tickets",
+   "title": "Mitch Wood",
+   "category": "comedy",
+   "start": "2026-10-19T19:30:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "The Gramercy Theatre",
+    "address": "127 East 23rd Street, New York, 10010",
+    "neighborhood": "",
+    "lat": 40.739896,
+    "lng": -73.984931
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/mitch-wood-tickets",
+   "tags": []
+  },
+  {
+   "id": "rev-vince-anderson-the-love-choir-tickets",
+   "title": "Rev. Vince Anderson & The Love Choir!",
+   "category": "music",
+   "start": "2026-10-19T20:30:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Union Pool",
+    "address": "484 Union Avenue, Brooklyn, 11211",
+    "neighborhood": "",
+    "lat": 40.715004,
+    "lng": -73.951552
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/rev-vince-anderson-the-love-choir-tickets",
+   "tags": []
+  },
+  {
+   "id": "siichaq-suddenly-kay-keels-heart-department-tickets",
+   "title": "Siichaq | Suddenly | Kay Keels | Heart Department",
+   "category": "music",
+   "start": "2026-10-19T20:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Bowery Palace",
+    "address": "327 Bowery, New York, 10012",
+    "neighborhood": "",
+    "lat": 40.725712,
+    "lng": -73.991683
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/siichaq-suddenly-kay-keels-heart-department-tickets",
+   "tags": []
+  },
+  {
+   "id": "new-york-rangers-vs-anaheim-ducks-tickets",
+   "title": "New York Rangers vs. Anaheim Ducks",
    "category": "sports",
-   "start": "2026-10-18T12:00:00-04:00",
+   "start": "2026-10-19T19:00:00-04:00",
    "end": null,
    "venue": {
     "name": "Madison Square Garden",
@@ -663,14 +323,34 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/st-john-s-red-storm-men-s-basketball-v-rutgers-exhibition-tickets",
+   "url": "https://donyc.com/events/2026/10/19/new-york-rangers-vs-anaheim-ducks-tickets",
    "tags": []
   },
   {
-   "id": "the-7th-annual-danny-awards-tickets",
-   "title": "The 7th Annual Danny Awards",
+   "id": "eric-alexander-quartet-tickets",
+   "title": "Eric Alexander Quartet",
    "category": "music",
-   "start": "2026-10-18T16:00:00-04:00",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Smalls Jazz Club",
+    "address": "183 West 10th Street, New York, 10014",
+    "neighborhood": "",
+    "lat": 40.734396,
+    "lng": -74.002705
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/eric-alexander-quartet-tickets",
+   "tags": []
+  },
+  {
+   "id": "drama-queen-tickets",
+   "title": "Drama Queen",
+   "category": "music",
+   "start": "2026-10-19T20:00:00-04:00",
    "end": null,
    "venue": {
     "name": "The Town Hall",
@@ -683,174 +363,14 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-7th-annual-danny-awards-tickets",
+   "url": "https://donyc.com/events/2026/10/19/drama-queen-tickets",
    "tags": []
   },
   {
-   "id": "boney-james-tickets",
-   "title": "Boney James",
+   "id": "mike-clark-quartet-tickets",
+   "title": "Mike Clark Quartet",
    "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "The Vogel at Count Basie Center for the Arts",
-    "address": "99 Monmouth Street, Red Bank, 07701",
-    "neighborhood": "",
-    "lat": 40.681012,
-    "lng": -74.009434
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/boney-james-tickets",
-   "tags": []
-  },
-  {
-   "id": "bossa-nova-sunset-live-band-happy-hour-tickets",
-   "title": "Bossa Nova Sunset: Live Band & Happy Hour",
-   "category": "music",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "SOB's",
-    "address": "204 Varick Street, New York, 10014",
-    "neighborhood": "",
-    "lat": 40.728219,
-    "lng": -74.004492
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/bossa-nova-sunset-live-band-happy-hour-tickets",
-   "tags": []
-  },
-  {
-   "id": "the-number-twelve-looks-like-you-kaonashi-differences-tickets",
-   "title": "The Number Twelve Looks Like You, Kaonashi, Differences",
-   "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "TV Eye",
-    "address": "1647 Weirfield, Ridgewood, 11385",
-    "neighborhood": "",
-    "lat": 40.697919,
-    "lng": -73.905335
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-number-twelve-looks-like-you-kaonashi-differences-tickets",
-   "tags": []
-  },
-  {
-   "id": "kranium-tickets",
-   "title": "Kranium",
-   "category": "music",
-   "start": "2026-10-18T20:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Sony Hall",
-    "address": "235 W 46th St, New York, 10026",
-    "neighborhood": "",
-    "lat": 40.75965,
-    "lng": -73.987
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/kranium-tickets",
-   "tags": []
-  },
-  {
-   "id": "fallen-angels-a-night-of-pleasure-dance-vengeance-tickets",
-   "title": "Fallen Angels: A Night Of Pleasure, Dance & Vengeance",
-   "category": "community",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "3 Dollar Bill",
-    "address": "260 Meserole St, Brooklyn, 11206",
-    "neighborhood": "",
-    "lat": 40.708294,
-    "lng": -73.937971
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/fallen-angels-a-night-of-pleasure-dance-vengeance-tickets",
-   "tags": []
-  },
-  {
-   "id": "tobin-miller-eddie-stone-carla-oakerson-nick-tilleli-jason-choi-more-tickets",
-   "title": "Tobin Miller, Eddie Stone, Carla Oakerson, Nick Tilleli, Jason Choi, more!",
-   "category": "comedy",
-   "start": "2026-10-18T20:00:00-04:00",
-   "end": "2026-10-18T22:00:00-04:00",
-   "venue": {
-    "name": "Comic Strip Live NYC",
-    "address": "1568 Second Ave., New York, 10028",
-    "neighborhood": "",
-    "lat": 40.774819,
-    "lng": -73.953569
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/tobin-miller-eddie-stone-carla-oakerson-nick-tilleli-jason-choi-more-tickets",
-   "tags": []
-  },
-  {
-   "id": "the-distance-from-here-michael-james-freedman-arts-gowanus-open-studios-tickets",
-   "title": "The Distance from Here - Michael James Freedman - Arts Gowanus Open Studios",
-   "category": "comedy",
-   "start": "2026-10-18T12:00:00-04:00",
-   "end": "2026-10-18T15:00:00-04:00",
-   "venue": {
-    "name": "Littlefield",
-    "address": "635 Sacket St, Brooklyn, 11217",
-    "neighborhood": "",
-    "lat": 40.680306,
-    "lng": -73.979702
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-distance-from-here-michael-james-freedman-arts-gowanus-open-studios-tickets",
-   "tags": []
-  },
-  {
-   "id": "new-york-school-of-burlesque-tickets",
-   "title": "New York School of Burlesque",
-   "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Drom",
-    "address": "85 Ave A, New York, 10009",
-    "neighborhood": "",
-    "lat": 40.725329,
-    "lng": -73.984453
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/new-york-school-of-burlesque-tickets",
-   "tags": []
-  },
-  {
-   "id": "the-luminous-black-quintet-tickets",
-   "title": "The Luminous Black Quintet",
-   "category": "music",
-   "start": "2026-10-18T21:00:00-04:00",
+   "start": "2026-10-19T21:00:00-04:00",
    "end": null,
    "venue": {
     "name": "Smalls Jazz Club",
@@ -863,35 +383,75 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-luminous-black-quintet-tickets",
+   "url": "https://donyc.com/events/2026/10/19/mike-clark-quartet-tickets",
    "tags": []
   },
   {
-   "id": "brunch-brittany-ann-tranbaugh-tickets",
-   "title": "Brunch: Brittany Ann Tranbaugh",
+   "id": "elanor-moss-jana-horn-tickets",
+   "title": "Elanor Moss, Jana Horn",
    "category": "music",
-   "start": "2026-10-18T12:00:00-04:00",
+   "start": "2026-10-19T19:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "Daryl's House",
-    "address": "130 Route 22, Pawling, 12564",
+    "name": "Night Club 101",
+    "address": "101 Avenue A, New York, NY 10009, New York, 10009",
     "neighborhood": "",
-    "lat": 40.662995,
-    "lng": -73.998142
+    "lat": 40.725862,
+    "lng": -73.984038
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/brunch-brittany-ann-tranbaugh-tickets",
+   "url": "https://donyc.com/events/2026/10/19/elanor-moss-jana-horn-tickets",
    "tags": []
   },
   {
-   "id": "the-get-down-with-dj-e-n-tickets",
-   "title": "The Get Down with DJ E.N",
+   "id": "sergio-tabanico-w-esteban-castro-joe-dyson-dion-kerr-tickets",
+   "title": "Sergio Tabanico w/Esteban Castro | Joe Dyson | Dion Kerr",
+   "category": "music",
+   "start": "2026-10-19T21:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Lunatico",
+    "address": "486 Halsey Street, Brooklyn, 11233",
+    "neighborhood": "",
+    "lat": 40.683398,
+    "lng": -73.934682
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/sergio-tabanico-w-esteban-castro-joe-dyson-dion-kerr-tickets",
+   "tags": []
+  },
+  {
+   "id": "t-blues-band-mack-crenshaw-tickets",
+   "title": "T Blues Band | Mack / Crenshaw",
+   "category": "music",
+   "start": "2026-10-19T22:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Terra Blues",
+    "address": "149 Bleecker St, New York, 10012",
+    "neighborhood": "",
+    "lat": 40.72847,
+    "lng": -73.99923
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/t-blues-band-mack-crenshaw-tickets",
+   "tags": []
+  },
+  {
+   "id": "mondays-in-the-club-with-lance-tickets",
+   "title": "Mondays in the Club with Lance",
    "category": "community",
-   "start": "2026-10-18T16:00:00-04:00",
-   "end": "2026-10-18T20:00:00-04:00",
+   "start": "2026-10-19T21:30:00-04:00",
+   "end": "2026-10-19T23:59:00-04:00",
    "venue": {
     "name": "Club Cumming",
     "address": "505 East 6th Street, New York, 10009",
@@ -903,34 +463,14 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-get-down-with-dj-e-n-tickets",
+   "url": "https://donyc.com/events/2026/10/19/mondays-in-the-club-with-lance-tickets",
    "tags": []
   },
   {
-   "id": "bywater-call-tickets",
-   "title": "Bywater Call",
+   "id": "immigration-crossing-borders-navigating-identities-tickets",
+   "title": "Immigration: Crossing Borders, Navigating Identities",
    "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Daryl's House",
-    "address": "130 Route 22, Pawling, 12564",
-    "neighborhood": "",
-    "lat": 40.662995,
-    "lng": -73.998142
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/bywater-call-tickets",
-   "tags": []
-  },
-  {
-   "id": "my-hero-academiain-concert-tickets",
-   "title": "My Hero Academiain Concert",
-   "category": "music",
-   "start": "2026-10-18T15:00:00-04:00",
+   "start": "2026-10-19T17:00:00-04:00",
    "end": null,
    "venue": {
     "name": "New Jersey Performing Arts Center",
@@ -943,14 +483,34 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/my-hero-academiain-concert-tickets",
+   "url": "https://donyc.com/events/2026/10/19/immigration-crossing-borders-navigating-identities-tickets",
    "tags": []
   },
   {
-   "id": "join-the-webb-tickets",
-   "title": "Join the Webb",
+   "id": "adam-niewood-quartet-tickets",
+   "title": "Adam Niewood Quartet",
    "category": "music",
-   "start": "2026-10-18T16:00:00-04:00",
+   "start": "2026-10-19T18:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Smalls Jazz Club",
+    "address": "183 West 10th Street, New York, 10014",
+    "neighborhood": "",
+    "lat": 40.734396,
+    "lng": -74.002705
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/adam-niewood-quartet-tickets",
+   "tags": []
+  },
+  {
+   "id": "karaoke-mondays-tickets",
+   "title": "Karaoke Mondays",
+   "category": "music",
+   "start": "2026-10-19T20:30:00-04:00",
    "end": null,
    "venue": {
     "name": "Alphaville",
@@ -963,54 +523,114 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/join-the-webb-tickets",
+   "url": "https://donyc.com/events/2026/10/19/karaoke-mondays-tickets",
    "tags": []
   },
   {
-   "id": "spoken-wordz-the-hispanic-heritage-month-showcase-open-mic-tickets",
-   "title": "Spoken Wordz: The Hispanic Heritage Month Showcase & Open Mic",
+   "id": "mike-ledonne-quartet-tickets",
+   "title": "Mike Ledonne Quartet",
+   "category": "music",
+   "start": "2026-10-19T21:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Smalls Jazz Club",
+    "address": "183 West 10th Street, New York, 10014",
+    "neighborhood": "",
+    "lat": 40.734396,
+    "lng": -74.002705
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/mike-ledonne-quartet-tickets",
+   "tags": []
+  },
+  {
+   "id": "mongo-w-drugula-big-kiss-waah-tickets",
+   "title": "Mongo w/ Drugula, Big Kiss + WAAH",
+   "category": "music",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": "2026-10-19T23:30:00-04:00",
+   "venue": {
+    "name": "The Broadway",
+    "address": "1272 Broadway, Brooklyn, 11221",
+    "neighborhood": "",
+    "lat": 40.690903,
+    "lng": -73.924947
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/mongo-w-drugula-big-kiss-waah-tickets",
+   "tags": []
+  },
+  {
+   "id": "alison-stiel-maria-mirenzi-the-level-tickets",
+   "title": "Alison Stiel, Maria Mirenzi, The Level",
+   "category": "music",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Sleepwalk",
+    "address": "251 Bushwick Ave, Brooklyn, NY, 11206",
+    "neighborhood": "",
+    "lat": 40.707337,
+    "lng": -73.939539
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/alison-stiel-maria-mirenzi-the-level-tickets",
+   "tags": []
+  },
+  {
+   "id": "eric-neumann-neu-material-tickets",
+   "title": "Eric Neumann: Neu Material",
    "category": "comedy",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": "2026-10-18T22:00:00-04:00",
-   "venue": {
-    "name": "Lovejoys",
-    "address": "412 Troutman Street, Brooklyn, 11237",
-    "neighborhood": "",
-    "lat": 40.706642,
-    "lng": -73.92243
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/spoken-wordz-the-hispanic-heritage-month-showcase-open-mic-tickets",
-   "tags": []
-  },
-  {
-   "id": "jack-o-lantern-carving-contest-tickets",
-   "title": "Jack O Lantern Carving Contest",
-   "category": "music",
-   "start": "2026-10-18T18:00:00-04:00",
+   "start": "2026-10-19T21:15:00-04:00",
    "end": null,
    "venue": {
-    "name": "Alphaville",
-    "address": "140 Wilson Ave, Brooklyn, 11237",
+    "name": "New York Comedy Club Midtown",
+    "address": "241 E 24th St, New York, 10010",
     "neighborhood": "",
-    "lat": 40.700494,
-    "lng": -73.925859
+    "lat": 40.73896,
+    "lng": -73.980785
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/jack-o-lantern-carving-contest-tickets",
+   "url": "https://donyc.com/events/2026/10/19/eric-neumann-neu-material-tickets",
    "tags": []
   },
   {
-   "id": "cori-the-grass-fed-blues-julia-raye-carmen-costello-nathalie-miller-tickets",
-   "title": "Cori & The Grass Fed Blues / Julia Raye / Carmen Costello / Nathalie Miller",
+   "id": "downstairs-karaoke-free-tickets",
+   "title": "DOWNSTAIRS: Karaoke (Free!)",
    "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
+   "start": "2026-10-19T22:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Purgatory",
+    "address": "675 Central Ave, Brooklyn, 11207",
+    "neighborhood": "",
+    "lat": 40.687233,
+    "lng": -73.905733
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/downstairs-karaoke-free-tickets",
+   "tags": []
+  },
+  {
+   "id": "marlow-shields-sophie-stewart-tbd-tickets",
+   "title": "Marlow Shields / Sophie Stewart / TBD",
+   "category": "music",
+   "start": "2026-10-19T19:00:00-04:00",
    "end": null,
    "venue": {
     "name": "Arlene's Grocery",
@@ -1023,294 +643,34 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/cori-the-grass-fed-blues-julia-raye-carmen-costello-nathalie-miller-tickets",
+   "url": "https://donyc.com/events/2026/10/19/marlow-shields-sophie-stewart-tbd-tickets",
    "tags": []
   },
   {
-   "id": "boobees-live-a-variety-show-tickets",
-   "title": "Boobees Live: A Variety Show",
+   "id": "marc-ribot-quartet-hurry-red-telephone-album-release-tickets",
+   "title": "Marc Ribot Quartet: Hurry Red Telephone (Album Release)",
    "category": "music",
-   "start": "2026-10-18T19:30:00-04:00",
+   "start": "2026-10-19T20:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "Alphaville",
-    "address": "140 Wilson Ave, Brooklyn, 11237",
+    "name": "Roulette",
+    "address": "509 Atlantic Ave, Brooklyn, 11217",
     "neighborhood": "",
-    "lat": 40.700494,
-    "lng": -73.925859
+    "lat": 40.685676,
+    "lng": -73.980738
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/boobees-live-a-variety-show-tickets",
-   "tags": []
-  },
-  {
-   "id": "smalls-afternoon-jam-session-hosted-by-ryo-sasaki-tickets",
-   "title": "Smalls Afternoon Jam Session Hosted by Ryo Sasaki",
-   "category": "music",
-   "start": "2026-10-18T14:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Smalls Jazz Club",
-    "address": "183 West 10th Street, New York, 10014",
-    "neighborhood": "",
-    "lat": 40.734396,
-    "lng": -74.002705
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/smalls-afternoon-jam-session-hosted-by-ryo-sasaki-tickets",
-   "tags": []
-  },
-  {
-   "id": "tyler-henderson-quintet-tickets",
-   "title": "Tyler Henderson Quintet",
-   "category": "music",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Smalls Jazz Club",
-    "address": "183 West 10th Street, New York, 10014",
-    "neighborhood": "",
-    "lat": 40.734396,
-    "lng": -74.002705
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/tyler-henderson-quintet-tickets",
-   "tags": []
-  },
-  {
-   "id": "katie-boyle-live-special-taping-tickets",
-   "title": "Katie Boyle Live Special Taping",
-   "category": "comedy",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "New York Comedy Club Upper West Side",
-    "address": "236 W 78th Street, New York, 10024",
-    "neighborhood": "",
-    "lat": 40.782823,
-    "lng": -73.980169
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/katie-boyle-live-special-taping-tickets",
-   "tags": []
-  },
-  {
-   "id": "thisholy-rodeo-heavy-feather-and-the-magic-word-reanimators-proofreader-tickets",
-   "title": "thisHOLY rodeo!, Heavy Feather and the Magic Word, Reanimators, proofreader",
-   "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": "2026-10-18T23:30:00-04:00",
-   "venue": {
-    "name": "The Broadway",
-    "address": "1272 Broadway, Brooklyn, 11221",
-    "neighborhood": "",
-    "lat": 40.690903,
-    "lng": -73.924947
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/thisholy-rodeo-heavy-feather-and-the-magic-word-reanimators-proofreader-tickets",
-   "tags": []
-  },
-  {
-   "id": "katie-boyle-live-special-taping-tickets-xmrokwx",
-   "title": "Katie Boyle Live Special Taping",
-   "category": "comedy",
-   "start": "2026-10-18T20:30:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "New York Comedy Club Upper West Side",
-    "address": "236 W 78th Street, New York, 10024",
-    "neighborhood": "",
-    "lat": 40.782823,
-    "lng": -73.980169
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/katie-boyle-live-special-taping-tickets-xmrokwx",
-   "tags": []
-  },
-  {
-   "id": "native-nursery-at-under-the-k-bridge-park-tickets",
-   "title": "Native Nursery",
-   "category": "music",
-   "start": "2026-10-18T10:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Under The 'K' Bridge",
-    "address": "19 Bridgewater St, Brooklyn, 11222",
-    "neighborhood": "",
-    "lat": 40.726932,
-    "lng": -73.935192
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/native-nursery-at-under-the-k-bridge-park-tickets",
-   "tags": []
-  },
-  {
-   "id": "pop-rock-of-the-80s-tribute-to-cyndi-lauper-pat-benatar-lisa-stansfield-tickets",
-   "title": "Pop Rock of The 80s: Tribute to Cyndi Lauper, Pat Benatar & Lisa Stansfield",
-   "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": "2026-10-18T20:30:00-04:00",
-   "venue": {
-    "name": "Groove",
-    "address": "125 MacDougal St, New York, 10012",
-    "neighborhood": "",
-    "lat": 40.73061,
-    "lng": -74.000228
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/pop-rock-of-the-80s-tribute-to-cyndi-lauper-pat-benatar-lisa-stansfield-tickets",
-   "tags": []
-  },
-  {
-   "id": "giovannie-and-the-hired-guns-tickets",
-   "title": "Giovannie and the Hired Guns",
-   "category": "music",
-   "start": "2026-10-18T22:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Night Club 101",
-    "address": "101 Avenue A, New York, NY 10009, New York, 10009",
-    "neighborhood": "",
-    "lat": 40.725862,
-    "lng": -73.984038
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/giovannie-and-the-hired-guns-tickets",
-   "tags": []
-  },
-  {
-   "id": "garden-club-under-the-k-bridge-park-tickets",
-   "title": "Garden Club",
-   "category": "music",
-   "start": "2026-10-18T10:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Under The 'K' Bridge",
-    "address": "19 Bridgewater St, Brooklyn, 11222",
-    "neighborhood": "",
-    "lat": 40.726932,
-    "lng": -73.935192
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/garden-club-under-the-k-bridge-park-tickets",
-   "tags": []
-  },
-  {
-   "id": "matinee-with-ry-daddy-tickets",
-   "title": "Matinee with Ry Daddy",
-   "category": "comedy",
-   "start": "2026-10-18T17:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "New York Comedy Club Midtown",
-    "address": "241 E 24th St, New York, 10010",
-    "neighborhood": "",
-    "lat": 40.73896,
-    "lng": -73.980785
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/matinee-with-ry-daddy-tickets",
-   "tags": []
-  },
-  {
-   "id": "pelosi-and-pianists-repertory-and-new-works-tickets",
-   "title": "Pelosi and Pianists: Repertory and New Works",
-   "category": "music",
-   "start": "2026-10-18T18:30:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Kaufman Music Center",
-    "address": "129 West 67th St. (btw Broadway and Amsterdam), New York",
-    "neighborhood": "",
-    "lat": 40.774886,
-    "lng": -73.983792
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/pelosi-and-pianists-repertory-and-new-works-tickets",
-   "tags": []
-  },
-  {
-   "id": "dani-offline-lover-s-discourse-live-tickets",
-   "title": "Dani Offline - Lover's Discourse Live",
-   "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Night Club 101",
-    "address": "101 Avenue A, New York, NY 10009, New York, 10009",
-    "neighborhood": "",
-    "lat": 40.725862,
-    "lng": -73.984038
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/dani-offline-lover-s-discourse-live-tickets",
-   "tags": []
-  },
-  {
-   "id": "le-carrousel-tickets",
-   "title": "Le Carrousel",
-   "category": "community",
-   "start": "2026-10-18T10:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Bryant Park",
-    "address": "BRYANT PARK, New York, NY, USA",
-    "neighborhood": "",
-    "lat": 40.75382,
-    "lng": -73.98373
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/le-carrousel-tickets",
+   "url": "https://donyc.com/events/2026/10/19/marc-ribot-quartet-hurry-red-telephone-album-release-tickets",
    "tags": []
   },
   {
    "id": "bryant-park-shop-tickets",
    "title": "Bryant Park Shop",
    "category": "community",
-   "start": "2026-10-18T10:00:00-04:00",
+   "start": "2026-10-19T10:00:00-04:00",
    "end": null,
    "venue": {
     "name": "Bryant Park",
@@ -1323,34 +683,74 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/bryant-park-shop-tickets",
+   "url": "https://donyc.com/events/2026/10/19/bryant-park-shop-tickets",
    "tags": []
   },
   {
-   "id": "sunday-songwriter-s-open-mic-every-week-at-lucinda-s-tickets",
-   "title": "Sunday Songwriter's Open Mic Every Week at Lucinda's",
-   "category": "music",
-   "start": "2026-10-18T12:00:00-04:00",
+   "id": "le-carrousel-tickets",
+   "title": "Le Carrousel",
+   "category": "community",
+   "start": "2026-10-19T10:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "Lucinda’s",
-    "address": "169 Avenue A, New York, 10009",
+    "name": "Bryant Park",
+    "address": "BRYANT PARK, New York, NY, USA",
     "neighborhood": "",
-    "lat": 40.728342,
-    "lng": -73.982191
+    "lat": 40.75382,
+    "lng": -73.98373
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/sunday-songwriter-s-open-mic-every-week-at-lucinda-s-tickets",
+   "url": "https://donyc.com/events/2026/10/19/le-carrousel-tickets",
    "tags": []
   },
   {
-   "id": "vocalist-jam-in-the-cafe-tickets",
-   "title": "Vocalist Jam in the Cafe",
+   "id": "park-tour-tickets",
+   "title": "Park Tour",
+   "category": "community",
+   "start": "2026-10-19T11:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Bryant Park",
+    "address": "BRYANT PARK, New York, NY, USA",
+    "neighborhood": "",
+    "lat": 40.75382,
+    "lng": -73.98373
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/park-tour-tickets",
+   "tags": []
+  },
+  {
+   "id": "juggling-class-tickets",
+   "title": "Juggling Class",
+   "category": "community",
+   "start": "2026-10-19T12:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Bryant Park",
+    "address": "BRYANT PARK, New York, NY, USA",
+    "neighborhood": "",
+    "lat": 40.75382,
+    "lng": -73.98373
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/juggling-class-tickets",
+   "tags": []
+  },
+  {
+   "id": "afternoon-jam-in-the-cafe-tickets",
+   "title": "Afternoon Jam in the Cafe",
    "category": "music",
-   "start": "2026-10-18T14:00:00-04:00",
+   "start": "2026-10-19T14:00:00-04:00",
    "end": null,
    "venue": {
     "name": "Smalls Jazz Club",
@@ -1363,34 +763,14 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/vocalist-jam-in-the-cafe-tickets",
+   "url": "https://donyc.com/events/2026/10/19/afternoon-jam-in-the-cafe-tickets",
    "tags": []
   },
   {
-   "id": "aida-cuevas-flor-de-toloache-an-exquisite-night-of-women-in-mariachi-tickets",
-   "title": "Aida Cuevas & Flor de Toloache - An exquisite night of women in Mariachi!",
-   "category": "music",
-   "start": "2026-10-18T16:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Lehman Center for the Performing Arts",
-    "address": "250 Bedford Park Boulevard West, Bronx, 10468",
-    "neighborhood": "",
-    "lat": 40.874614,
-    "lng": -73.892839
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/aida-cuevas-flor-de-toloache-an-exquisite-night-of-women-in-mariachi-tickets",
-   "tags": []
-  },
-  {
-   "id": "nyc-sketchfest-katerra-borkowski-comedy-the-bronte-sisterz-tickets",
-   "title": "NYC Sketchfest: Katerra Borkowski Comedy | The Brontë Sisterz",
+   "id": "monday-open-mic-w-obi-o-brien-tickets",
+   "title": "Monday OPEN MIC! w/ Obi O’Brien",
    "category": "comedy",
-   "start": "2026-10-18T16:30:00-04:00",
+   "start": "2026-10-19T16:30:00-04:00",
    "end": null,
    "venue": {
     "name": "The PIT Loft",
@@ -1403,14 +783,94 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/nyc-sketchfest-katerra-borkowski-comedy-the-bronte-sisterz-tickets",
+   "url": "https://donyc.com/events/2026/10/19/monday-open-mic-w-obi-o-brien-tickets",
    "tags": []
   },
   {
-   "id": "down-bad-comedy-show-tickets",
-   "title": "Down Bad Comedy Show",
+   "id": "spike-wilner-trio-tickets",
+   "title": "Spike Wilner Trio",
+   "category": "music",
+   "start": "2026-10-19T18:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Smalls Jazz Club",
+    "address": "183 West 10th Street, New York, 10014",
+    "neighborhood": "",
+    "lat": 40.734396,
+    "lng": -74.002705
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/spike-wilner-trio-tickets",
+   "tags": []
+  },
+  {
+   "id": "6pm-weekday-open-mics-eastville-comedy-tickets",
+   "title": "6PM Weekday Open Mics @ Eastville Comedy",
    "category": "comedy",
-   "start": "2026-10-18T17:00:00-04:00",
+   "start": "2026-10-19T18:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Eastville Comedy Club",
+    "address": "487 Atlantic Ave, Brooklyn, 11217",
+    "neighborhood": "",
+    "lat": 40.685915,
+    "lng": -73.981622
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/6pm-weekday-open-mics-eastville-comedy-tickets",
+   "tags": []
+  },
+  {
+   "id": "monday-funday-tickets",
+   "title": "Monday Funday!!!",
+   "category": "comedy",
+   "start": "2026-10-19T18:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "The PIT Loft",
+    "address": "154 W. 29th St, New York, 10001",
+    "neighborhood": "",
+    "lat": 40.747369,
+    "lng": -73.992295
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/monday-funday-tickets",
+   "tags": []
+  },
+  {
+   "id": "elanor-moss-tickets",
+   "title": "Elanor Moss",
+   "category": "music",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Night Club 101",
+    "address": "101 Avenue A, New York, NY 10009, New York, 10009",
+    "neighborhood": "",
+    "lat": 40.725862,
+    "lng": -73.984038
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/elanor-moss-tickets",
+   "tags": []
+  },
+  {
+   "id": "a-true-york-comedy-experience-tickets-pb5lee9",
+   "title": "A True York Comedy Experience",
+   "category": "comedy",
+   "start": "2026-10-19T19:00:00-04:00",
    "end": null,
    "venue": {
     "name": "St. Marks Comedy Club",
@@ -1423,114 +883,54 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/down-bad-comedy-show-tickets",
+   "url": "https://donyc.com/events/2026/10/19/a-true-york-comedy-experience-tickets-pb5lee9",
    "tags": []
   },
   {
-   "id": "comedy-mob-open-mic-tickets",
-   "title": "Comedy Mob Open Mic",
-   "category": "comedy",
-   "start": "2026-10-18T17:30:00-04:00",
+   "id": "a-tale-of-two-sisters-tickets",
+   "title": "A Tale of Two Sisters",
+   "category": "film",
+   "start": "2026-10-19T19:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "NEW YORK COMEDY CLUB EAST VILLAGE",
-    "address": "85 East 4th St, New York,  10003",
+    "name": "Alamo Drafthouse",
+    "address": "445 Albee Square West, Brooklyn, 11201",
     "neighborhood": "",
-    "lat": 40.726592,
-    "lng": -73.989808
+    "lat": 40.69107,
+    "lng": -73.982873
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/comedy-mob-open-mic-tickets",
+   "url": "https://donyc.com/events/2026/10/19/a-tale-of-two-sisters-tickets",
    "tags": []
   },
   {
-   "id": "grad-show-level-1-stand-up-griggs-tickets",
-   "title": "GRAD SHOW | Level 1 Stand-Up Griggs",
-   "category": "comedy",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "The PIT Loft",
-    "address": "154 W. 29th St, New York, 10001",
-    "neighborhood": "",
-    "lat": 40.747369,
-    "lng": -73.992295
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/grad-show-level-1-stand-up-griggs-tickets",
-   "tags": []
-  },
-  {
-   "id": "joie-bianco-quartet-tickets",
-   "title": "Joie Bianco Quartet",
+   "id": "jevaughn-bogard-abstract-sounds-tickets-tickets",
+   "title": "Jevaughn Bogard & Abstract Sounds Tickets",
    "category": "music",
-   "start": "2026-10-18T18:00:00-04:00",
+   "start": "2026-10-19T19:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "Smalls Jazz Club",
-    "address": "183 West 10th Street, New York, 10014",
+    "name": "Nublu 151",
+    "address": "151 Avenue C, New York, 10009",
     "neighborhood": "",
-    "lat": 40.734396,
-    "lng": -74.002705
+    "lat": 40.725664,
+    "lng": -73.978033
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/joie-bianco-quartet-tickets",
+   "url": "https://donyc.com/events/2026/10/19/jevaughn-bogard-abstract-sounds-tickets-tickets",
    "tags": []
   },
   {
-   "id": "nyc-sketchfest-2026-digital-hour-tickets",
-   "title": "NYC Sketchfest 2026: Digital Hour",
+   "id": "brooklyn-power-hour-now-on-a-new-night-tickets",
+   "title": "Brooklyn Power Hour NOW ON A NEW NIGHT!",
    "category": "comedy",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "The PIT Loft",
-    "address": "154 W. 29th St, New York, 10001",
-    "neighborhood": "",
-    "lat": 40.747369,
-    "lng": -73.992295
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/nyc-sketchfest-2026-digital-hour-tickets",
-   "tags": []
-  },
-  {
-   "id": "nyc-sketchfest-2026-digital-sketch-hour-tickets",
-   "title": "NYC Sketchfest 2026: Digital Sketch Hour",
-   "category": "comedy",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "The PIT Loft",
-    "address": "154 W. 29th St, New York, 10001",
-    "neighborhood": "",
-    "lat": 40.747369,
-    "lng": -73.992295
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/nyc-sketchfest-2026-digital-sketch-hour-tickets",
-   "tags": []
-  },
-  {
-   "id": "blaq-ron-in-brooklyn-tickets",
-   "title": "Blaq Ron in Brooklyn!",
-   "category": "comedy",
-   "start": "2026-10-18T18:00:00-04:00",
+   "start": "2026-10-19T19:30:00-04:00",
    "end": null,
    "venue": {
     "name": "Eastville Comedy Club",
@@ -1543,14 +943,14 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/blaq-ron-in-brooklyn-tickets",
+   "url": "https://donyc.com/events/2026/10/19/brooklyn-power-hour-now-on-a-new-night-tickets",
    "tags": []
   },
   {
-   "id": "the-sketch-jam-tickets",
-   "title": "The SKETCH Jam",
+   "id": "house-party-tickets",
+   "title": "House Party",
    "category": "comedy",
-   "start": "2026-10-18T18:30:00-04:00",
+   "start": "2026-10-19T20:00:00-04:00",
    "end": null,
    "venue": {
     "name": "The PIT Loft",
@@ -1563,174 +963,14 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-sketch-jam-tickets",
+   "url": "https://donyc.com/events/2026/10/19/house-party-tickets",
    "tags": []
   },
   {
-   "id": "the-number-12-looks-like-you-kaonashi-differences-tickets",
-   "title": "The Number 12 Looks Like You, Kaonashi, Differences",
-   "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "TV Eye",
-    "address": "1647 Weirfield, Ridgewood, 11385",
-    "neighborhood": "",
-    "lat": 40.697919,
-    "lng": -73.905335
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-number-12-looks-like-you-kaonashi-differences-tickets",
-   "tags": []
-  },
-  {
-   "id": "mike-rodriguez-quintet-tickets",
-   "title": "Mike Rodriguez Quintet",
-   "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Smalls Jazz Club",
-    "address": "183 West 10th Street, New York, 10014",
-    "neighborhood": "",
-    "lat": 40.734396,
-    "lng": -74.002705
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/mike-rodriguez-quintet-tickets",
-   "tags": []
-  },
-  {
-   "id": "my-dead-wedding-tickets",
-   "title": "My Dead Wedding",
-   "category": "comedy",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Upright Citizens Brigade (UCB)",
-    "address": "242 E 14th Street, New York City, 10003",
-    "neighborhood": "",
-    "lat": 40.732299,
-    "lng": -73.98547
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/my-dead-wedding-tickets",
-   "tags": []
-  },
-  {
-   "id": "new-york-comedy-club-presents-tickets",
+   "id": "new-york-comedy-club-presents-tickets-ovbj9kg",
    "title": "New York Comedy Club Presents",
    "category": "comedy",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "New York Comedy Club Midtown",
-    "address": "241 E 24th St, New York, 10010",
-    "neighborhood": "",
-    "lat": 40.73896,
-    "lng": -73.980785
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/new-york-comedy-club-presents-tickets",
-   "tags": []
-  },
-  {
-   "id": "ck-records-artist-spotlight-tickets",
-   "title": "CK Records Artist Spotlight",
-   "category": "community",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Brooklyn Art Haus",
-    "address": "24 Marcy Avenue, New York City, 11211",
-    "neighborhood": "",
-    "lat": 40.713467,
-    "lng": -73.954949
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/ck-records-artist-spotlight-tickets",
-   "tags": []
-  },
-  {
-   "id": "sunday-night-comedy-tickets",
-   "title": "Sunday Night Comedy",
-   "category": "comedy",
-   "start": "2026-10-18T19:30:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Eastville Comedy Club",
-    "address": "487 Atlantic Ave, Brooklyn, 11217",
-    "neighborhood": "",
-    "lat": 40.685915,
-    "lng": -73.981622
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/sunday-night-comedy-tickets",
-   "tags": []
-  },
-  {
-   "id": "nyc-sketchfest-2026-face-tape-no-forks-given-tickets",
-   "title": "NYC Sketchfest 2026: Face Tape | No Forks Given",
-   "category": "comedy",
-   "start": "2026-10-18T19:30:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "The PIT Loft",
-    "address": "154 W. 29th St, New York, 10001",
-    "neighborhood": "",
-    "lat": 40.747369,
-    "lng": -73.992295
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/nyc-sketchfest-2026-face-tape-no-forks-given-tickets",
-   "tags": []
-  },
-  {
-   "id": "slippery-tickets",
-   "title": "Slippery",
-   "category": "community",
-   "start": "2026-10-18T20:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "The Slipper Room",
-    "address": "167 Orchard Street, New York, 10002",
-    "neighborhood": "",
-    "lat": 40.721348,
-    "lng": -73.988734
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/slippery-tickets",
-   "tags": []
-  },
-  {
-   "id": "yerrrlywood-tickets",
-   "title": "Yerrrlywood",
-   "category": "comedy",
-   "start": "2026-10-18T20:00:00-04:00",
+   "start": "2026-10-19T20:00:00-04:00",
    "end": null,
    "venue": {
     "name": "NEW YORK COMEDY CLUB EAST VILLAGE",
@@ -1743,74 +983,34 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/yerrrlywood-tickets",
+   "url": "https://donyc.com/events/2026/10/19/new-york-comedy-club-presents-tickets-ovbj9kg",
    "tags": []
   },
   {
-   "id": "the-sunday-jam-tickets",
-   "title": "The SUNDAY JAM",
+   "id": "the-peter-stewart-show-with-matt-pavich-tickets",
+   "title": "The Peter Stewart Show! With Matt Pavich!",
    "category": "comedy",
-   "start": "2026-10-18T20:00:00-04:00",
-   "end": null,
+   "start": "2026-10-19T20:00:00-04:00",
+   "end": "2026-10-19T22:00:00-04:00",
    "venue": {
-    "name": "The PIT Loft",
-    "address": "154 W. 29th St, New York, 10001",
+    "name": "Comic Strip Live NYC",
+    "address": "1568 Second Ave., New York, 10028",
     "neighborhood": "",
-    "lat": 40.747369,
-    "lng": -73.992295
+    "lat": 40.774819,
+    "lng": -73.953569
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-sunday-jam-tickets",
+   "url": "https://donyc.com/events/2026/10/19/the-peter-stewart-show-with-matt-pavich-tickets",
    "tags": []
   },
   {
-   "id": "beanie-babe-comedy-october-18-2026-tickets",
-   "title": "Beanie Babe Comedy - October 18, 2026",
-   "category": "comedy",
-   "start": "2026-10-18T20:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Young Ethels",
-    "address": "506 5th Ave, Brooklyn, 11215",
-    "neighborhood": "",
-    "lat": 40.667219,
-    "lng": -73.988275
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/beanie-babe-comedy-october-18-2026-tickets",
-   "tags": []
-  },
-  {
-   "id": "from-new-orleans-bad-penny-pleasuremakers-tickets",
-   "title": "From New Orleans, Bad Penny Pleasuremakers!",
+   "id": "random-strangers-jam-tickets",
+   "title": "Random Strangers Jam",
    "category": "music",
-   "start": "2026-10-18T20:00:00-04:00",
-   "end": "2026-10-18T22:30:00-04:00",
-   "venue": {
-    "name": "St. Mazie",
-    "address": "345 Grand St., Brooklyn, 11211",
-    "neighborhood": "",
-    "lat": 40.712601,
-    "lng": -73.955827
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/from-new-orleans-bad-penny-pleasuremakers-tickets",
-   "tags": []
-  },
-  {
-   "id": "allison-young-tickets",
-   "title": "Allison Young",
-   "category": "music",
-   "start": "2026-10-18T20:00:00-04:00",
+   "start": "2026-10-19T20:00:00-04:00",
    "end": null,
    "venue": {
     "name": "Shrine",
@@ -1823,54 +1023,14 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/allison-young-tickets",
+   "url": "https://donyc.com/events/2026/10/19/random-strangers-jam-tickets",
    "tags": []
   },
   {
-   "id": "faculty-lounge-tickets",
-   "title": "Faculty Lounge",
-   "category": "comedy",
-   "start": "2026-10-18T20:15:00-04:00",
-   "end": "2026-10-18T21:45:00-04:00",
-   "venue": {
-    "name": "Eris Deep Space",
-    "address": "167 Graham Ave, Brooklyn, 11206",
-    "neighborhood": "",
-    "lat": 40.707802,
-    "lng": -73.944041
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/faculty-lounge-tickets",
-   "tags": []
-  },
-  {
-   "id": "the-black-soul-experience-tickets",
-   "title": "The Black Soul Experience",
+   "id": "ed-cherry-trio-tickets",
+   "title": "Ed Cherry Trio",
    "category": "music",
-   "start": "2026-10-18T21:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Groove",
-    "address": "125 MacDougal St, New York, 10012",
-    "neighborhood": "",
-    "lat": 40.73061,
-    "lng": -74.000228
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-black-soul-experience-tickets",
-   "tags": []
-  },
-  {
-   "id": "tyler-henderson-quartet-tickets",
-   "title": "Tyler Henderson Quartet",
-   "category": "music",
-   "start": "2026-10-18T21:00:00-04:00",
+   "start": "2026-10-19T21:00:00-04:00",
    "end": null,
    "venue": {
     "name": "Smalls Jazz Club",
@@ -1883,74 +1043,34 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/tyler-henderson-quartet-tickets",
+   "url": "https://donyc.com/events/2026/10/19/ed-cherry-trio-tickets",
    "tags": []
   },
   {
-   "id": "vanisha-gould-quartet-tickets",
-   "title": "Vanisha Gould Quartet",
-   "category": "music",
-   "start": "2026-10-18T21:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Smalls Jazz Club",
-    "address": "183 West 10th Street, New York, 10014",
-    "neighborhood": "",
-    "lat": 40.734396,
-    "lng": -74.002705
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/vanisha-gould-quartet-tickets",
-   "tags": []
-  },
-  {
-   "id": "new-york-comedy-club-presents-tickets-lwdzv93",
-   "title": "New York Comedy Club Presents",
+   "id": "a-true-york-comedy-experience-tickets",
+   "title": "A True York Comedy Experience",
    "category": "comedy",
-   "start": "2026-10-18T21:15:00-04:00",
+   "start": "2026-10-19T21:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "New York Comedy Club Midtown",
-    "address": "241 E 24th St, New York, 10010",
+    "name": "St. Marks Comedy Club",
+    "address": "12 St. Marks Place, New York, 10003",
     "neighborhood": "",
-    "lat": 40.73896,
-    "lng": -73.980785
+    "lat": 40.729008,
+    "lng": -73.989313
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/new-york-comedy-club-presents-tickets-lwdzv93",
-   "tags": []
-  },
-  {
-   "id": "the-2nd-annual-character-bowl-tickets",
-   "title": "The 2nd Annual Character Bowl",
-   "category": "comedy",
-   "start": "2026-10-18T21:30:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "The PIT Loft",
-    "address": "154 W. 29th St, New York, 10001",
-    "neighborhood": "",
-    "lat": 40.747369,
-    "lng": -73.992295
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-2nd-annual-character-bowl-tickets",
+   "url": "https://donyc.com/events/2026/10/19/a-true-york-comedy-experience-tickets",
    "tags": []
   },
   {
    "id": "new-jokes-newbies-tickets",
    "title": "New Jokes & Newbies",
    "category": "comedy",
-   "start": "2026-10-18T21:45:00-04:00",
+   "start": "2026-10-19T21:45:00-04:00",
    "end": null,
    "venue": {
     "name": "NEW YORK COMEDY CLUB EAST VILLAGE",
@@ -1963,14 +1083,14 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/new-jokes-newbies-tickets",
+   "url": "https://donyc.com/events/2026/10/19/new-jokes-newbies-tickets",
    "tags": []
   },
   {
    "id": "jam-in-the-cafe-tickets",
    "title": "Jam in the Cafe",
    "category": "music",
-   "start": "2026-10-18T22:00:00-04:00",
+   "start": "2026-10-19T22:00:00-04:00",
    "end": null,
    "venue": {
     "name": "Smalls Jazz Club",
@@ -1983,54 +1103,34 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/jam-in-the-cafe-tickets",
+   "url": "https://donyc.com/events/2026/10/19/jam-in-the-cafe-tickets",
    "tags": []
   },
   {
-   "id": "nyc-sketchfest-2026-pinky-promise-tickets",
-   "title": "NYC Sketchfest 2026: Pinky Promise",
-   "category": "comedy",
-   "start": "2026-10-18T22:00:00-04:00",
+   "id": "vinyl-after-hours-tickets",
+   "title": "Vinyl After Hours",
+   "category": "music",
+   "start": "2026-10-19T23:30:00-04:00",
    "end": null,
    "venue": {
-    "name": "The PIT Loft",
-    "address": "154 W. 29th St, New York, 10001",
+    "name": "Smalls Jazz Club",
+    "address": "183 West 10th Street, New York, 10014",
     "neighborhood": "",
-    "lat": 40.747369,
-    "lng": -73.992295
+    "lat": 40.734396,
+    "lng": -74.002705
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/nyc-sketchfest-2026-pinky-promise-tickets",
+   "url": "https://donyc.com/events/2026/10/19/vinyl-after-hours-tickets",
    "tags": []
   },
   {
-   "id": "karaoke-night-tickets-qed1p9r",
-   "title": "Karaoke Night",
+   "id": "dj-awesome-tickets",
+   "title": "DJ Awesome",
    "category": "music",
-   "start": "2026-10-18T22:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Cassette",
-    "address": "68-38 Forest Avenue, Queens, 11385",
-    "neighborhood": "",
-    "lat": 40.70261,
-    "lng": -73.901214
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/karaoke-night-tickets-qed1p9r",
-   "tags": []
-  },
-  {
-   "id": "omar-edwards-the-new-york-jazz-gypsies-tickets",
-   "title": "Omar Edwards & the New York Jazz Gypsies",
-   "category": "music",
-   "start": "2026-10-18T22:00:00-04:00",
+   "start": "2026-10-20T00:00:00-04:00",
    "end": null,
    "venue": {
     "name": "Shrine",
@@ -2043,114 +1143,14 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/omar-edwards-the-new-york-jazz-gypsies-tickets",
-   "tags": []
-  },
-  {
-   "id": "the-black-soul-experience-tickets-mejw0xz",
-   "title": "The Black Soul Experience",
-   "category": "music",
-   "start": "2026-10-18T23:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Groove",
-    "address": "125 MacDougal St, New York, 10012",
-    "neighborhood": "",
-    "lat": 40.73061,
-    "lng": -74.000228
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-black-soul-experience-tickets-mejw0xz",
-   "tags": []
-  },
-  {
-   "id": "loco-carnaval-tba-tickets",
-   "title": "Loco Carnaval: TBA",
-   "category": "community",
-   "start": "2026-10-18T23:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Somewhere Nowhere",
-    "address": "112 W 25th St., New York, NY , 10001",
-    "neighborhood": "",
-    "lat": 40.74431,
-    "lng": -73.992745
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/loco-carnaval-tba-tickets",
-   "tags": []
-  },
-  {
-   "id": "loco-carnaval-lohrasp-kansara-angie-ocampo-aries-and-fomore-tickets",
-   "title": "Loco Carnaval: Lohrasp Kansara, Angie Ocampo, Aries and Fomore",
-   "category": "community",
-   "start": "2026-10-18T23:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Somewhere Nowhere",
-    "address": "112 W 25th St., New York, NY , 10001",
-    "neighborhood": "",
-    "lat": 40.74431,
-    "lng": -73.992745
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/loco-carnaval-lohrasp-kansara-angie-ocampo-aries-and-fomore-tickets",
-   "tags": []
-  },
-  {
-   "id": "nyc-sketchfest-2026-24-hour-festival-tickets",
-   "title": "NYC Sketchfest 2026: 24 Hour Festival",
-   "category": "comedy",
-   "start": "2026-10-18T23:30:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "The PIT Loft",
-    "address": "154 W. 29th St, New York, 10001",
-    "neighborhood": "",
-    "lat": 40.747369,
-    "lng": -73.992295
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/nyc-sketchfest-2026-24-hour-festival-tickets",
-   "tags": []
-  },
-  {
-   "id": "profit-the-dj-tickets",
-   "title": "Profit the DJ",
-   "category": "music",
-   "start": "2026-10-19T00:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Shrine",
-    "address": "2271 Adam Clayton Powell Junior Boulevard, New York, 10030",
-    "neighborhood": "",
-    "lat": 40.814279,
-    "lng": -73.944025
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/19/profit-the-dj-tickets",
+   "url": "https://donyc.com/events/2026/10/20/dj-awesome-tickets",
    "tags": []
   },
   {
    "id": "rpms-all-inclusive-football-sundays-tickets",
    "title": "RPM'S ALL-INCLUSIVE FOOTBALL SUNDAYS",
    "category": "sports",
-   "start": "2026-10-18T12:30:00-04:00",
+   "start": "2026-10-19T12:30:00-04:00",
    "end": null,
    "venue": {
     "name": "RPM Underground",
@@ -2167,11 +1167,11 @@
    "tags": []
   },
   {
-   "id": "private-charter-on-yacht-manhattan-aiany-architecture-tickets",
-   "title": "PRIVATE CHARTER on Yacht MANHATTAN - AIANY Architecture",
+   "id": "grand-palisades-fall-foliage-cruise-tickets",
+   "title": "Grand Palisades Fall Foliage Cruise",
    "category": "community",
-   "start": "2026-10-18T09:00:00-04:00",
-   "end": "2026-10-18T11:00:00-04:00",
+   "start": "2026-10-19T09:45:00-04:00",
+   "end": "2026-10-19T11:45:00-04:00",
    "venue": {
     "name": "Chelsea Piers",
     "address": "CHELSEA PIERS, New York, NY, USA",
@@ -2183,235 +1183,15 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/private-charter-on-yacht-manhattan-aiany-architecture-tickets",
-   "tags": []
-  },
-  {
-   "id": "fall-foliage-brunch-cruise-tickets",
-   "title": "Fall Foliage Brunch Cruise",
-   "category": "community",
-   "start": "2026-10-18T10:00:00-04:00",
-   "end": "2026-10-18T12:30:00-04:00",
-   "venue": {
-    "name": "Chelsea Piers",
-    "address": "CHELSEA PIERS, New York, NY, USA",
-    "neighborhood": "",
-    "lat": 40.7456,
-    "lng": -74.00997
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/fall-foliage-brunch-cruise-tickets",
-   "tags": []
-  },
-  {
-   "id": "nyc-statue-day-sail-aboard-adirondack-tickets",
-   "title": "NYC Statue Day Sail aboard Adirondack",
-   "category": "community",
-   "start": "2026-10-18T10:15:00-04:00",
-   "end": "2026-10-18T12:00:00-04:00",
-   "venue": {
-    "name": "Chelsea Piers",
-    "address": "CHELSEA PIERS, New York, NY, USA",
-    "neighborhood": "",
-    "lat": 40.7456,
-    "lng": -74.00997
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/nyc-statue-day-sail-aboard-adirondack-tickets",
-   "tags": []
-  },
-  {
-   "id": "cms-kids-building-blocks-of-music-tickets",
-   "title": "CMS Kids: Building Blocks of Music",
-   "category": "music",
-   "start": "2026-10-18T11:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Chamber Music Society of Lincoln Center",
-    "address": "1941 Broadway, New York, 10023",
-    "neighborhood": "",
-    "lat": 40.773823,
-    "lng": -73.98315
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/cms-kids-building-blocks-of-music-tickets",
-   "tags": []
-  },
-  {
-   "id": "noguchi-museum-x-ikenobo-40-years-in-new-york-a-living-tradition-of-flowers-and-space-tickets",
-   "title": "Noguchi Museum × Ikenobo: 40 Years in New York — A Living Tradition of Flowers and Space",
-   "category": "community",
-   "start": "2026-10-18T11:00:00-04:00",
-   "end": "2026-10-18T17:00:00-04:00",
-   "venue": {
-    "name": "Noguchi Museum",
-    "address": "9-01 33rd Road (at Vernon Boulevard), Long Island City, 11106",
-    "neighborhood": "",
-    "lat": 40.766809,
-    "lng": -73.938091
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/noguchi-museum-x-ikenobo-40-years-in-new-york-a-living-tradition-of-flowers-and-space-tickets",
-   "tags": []
-  },
-  {
-   "id": "fall-foliage-cruise-aboard-full-moon-from-chelsea-piers-tickets",
-   "title": "Fall Foliage Cruise aboard Full Moon from Chelsea Piers",
-   "category": "community",
-   "start": "2026-10-18T11:00:00-04:00",
-   "end": "2026-10-18T13:30:00-04:00",
-   "venue": {
-    "name": "Chelsea Piers",
-    "address": "CHELSEA PIERS, New York, NY, USA",
-    "neighborhood": "",
-    "lat": 40.7456,
-    "lng": -74.00997
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/fall-foliage-cruise-aboard-full-moon-from-chelsea-piers-tickets",
-   "tags": []
-  },
-  {
-   "id": "fall-foliage-cruise-aboard-kingston-tickets",
-   "title": "Fall Foliage Cruise aboard Kingston",
-   "category": "community",
-   "start": "2026-10-18T11:15:00-04:00",
-   "end": "2026-10-18T13:45:00-04:00",
-   "venue": {
-    "name": "Chelsea Piers",
-    "address": "CHELSEA PIERS, New York, NY, USA",
-    "neighborhood": "",
-    "lat": 40.7456,
-    "lng": -74.00997
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/fall-foliage-cruise-aboard-kingston-tickets",
-   "tags": []
-  },
-  {
-   "id": "private-charter-on-yacht-manhattan-tickets",
-   "title": "PRIVATE CHARTER on Yacht MANHATTAN",
-   "category": "community",
-   "start": "2026-10-18T11:45:00-04:00",
-   "end": "2026-10-18T14:45:00-04:00",
-   "venue": {
-    "name": "Chelsea Piers",
-    "address": "CHELSEA PIERS, New York, NY, USA",
-    "neighborhood": "",
-    "lat": 40.7456,
-    "lng": -74.00997
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/private-charter-on-yacht-manhattan-tickets",
-   "tags": []
-  },
-  {
-   "id": "plaza-tickets",
-   "title": "Plaza",
-   "category": "music",
-   "start": "2026-10-18T13:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Lincoln Center Presents",
-    "address": "61 West 62nd Street, New York, 10023",
-    "neighborhood": "",
-    "lat": 40.771127,
-    "lng": -73.982835
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/plaza-tickets",
-   "tags": []
-  },
-  {
-   "id": "once-upon-a-time-in-harlem-tickets",
-   "title": "Once Upon a Time in Harlem",
-   "category": "music",
-   "start": "2026-10-18T13:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Film Society of Lincoln Center",
-    "address": "165 W 65th St, New York, 10023",
-    "neighborhood": "",
-    "lat": 40.77426,
-    "lng": -73.98426
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/once-upon-a-time-in-harlem-tickets",
-   "tags": []
-  },
-  {
-   "id": "the-devils-tickets",
-   "title": "The Devils",
-   "category": "music",
-   "start": "2026-10-18T13:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Film Society of Lincoln Center",
-    "address": "165 W 65th St, New York, 10023",
-    "neighborhood": "",
-    "lat": 40.77426,
-    "lng": -73.98426
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-devils-tickets",
-   "tags": []
-  },
-  {
-   "id": "private-charter-on-schooner-adirondack-tickets",
-   "title": "PRIVATE CHARTER on Schooner ADIRONDACK",
-   "category": "community",
-   "start": "2026-10-18T13:00:00-04:00",
-   "end": "2026-10-18T15:00:00-04:00",
-   "venue": {
-    "name": "Chelsea Piers",
-    "address": "CHELSEA PIERS, New York, NY, USA",
-    "neighborhood": "",
-    "lat": 40.7456,
-    "lng": -74.00997
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/private-charter-on-schooner-adirondack-tickets",
+   "url": "https://donyc.com/events/2026/10/19/grand-palisades-fall-foliage-cruise-tickets",
    "tags": []
   },
   {
    "id": "aiany-architecture-boat-tour-tickets",
    "title": "AIANY Architecture Boat Tour",
    "category": "community",
-   "start": "2026-10-18T13:45:00-04:00",
-   "end": "2026-10-18T16:30:00-04:00",
+   "start": "2026-10-19T10:00:00-04:00",
+   "end": "2026-10-19T13:15:00-04:00",
    "venue": {
     "name": "Chelsea Piers",
     "address": "CHELSEA PIERS, New York, NY, USA",
@@ -2423,95 +1203,35 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/aiany-architecture-boat-tour-tickets",
+   "url": "https://donyc.com/events/2026/10/19/aiany-architecture-boat-tour-tickets",
    "tags": []
   },
   {
-   "id": "creation-stories-and-all-the-important-importants-tickets",
-   "title": "creation stories and all the important importants",
+   "id": "lincoln-center-tours-tickets",
+   "title": "Lincoln Center Tours",
    "category": "music",
-   "start": "2026-10-18T14:00:00-04:00",
+   "start": "2026-10-19T10:15:00-04:00",
    "end": null,
    "venue": {
-    "name": "Lincoln Center Theater",
-    "address": "150 West 65th Street, New York, 10023",
+    "name": "Lincoln Center",
+    "address": "70 Lincoln Center Plaza, New York, 10023",
     "neighborhood": "",
-    "lat": 40.77355,
-    "lng": -73.9845
+    "lat": 40.774239,
+    "lng": -73.984373
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/creation-stories-and-all-the-important-importants-tickets",
+   "url": "https://donyc.com/events/2026/10/19/lincoln-center-tours-tickets",
    "tags": []
   },
   {
-   "id": "the-afternoon-tease-burlesque-brunch-tickets",
-   "title": "The Afternoon Tease: Burlesque Brunch",
+   "id": "statue-skyline-sightseeing-cruise-tickets",
+   "title": "Statue & Skyline Sightseeing Cruise",
    "category": "community",
-   "start": "2026-10-18T14:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Duane Park",
-    "address": "166 Duane St, New York, 10013",
-    "neighborhood": "",
-    "lat": 40.716746,
-    "lng": -74.009449
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-afternoon-tease-burlesque-brunch-tickets",
-   "tags": []
-  },
-  {
-   "id": "prompt-n-pour-guided-journaling-experience-tickets",
-   "title": "Prompt n’ Pour: Guided Journaling Experience",
-   "category": "comedy",
-   "start": "2026-10-18T14:00:00-04:00",
-   "end": "2026-10-18T17:00:00-04:00",
-   "venue": {
-    "name": "56 Bogart St",
-    "address": "56 Bogart St, Brooklyn, 11206",
-    "neighborhood": "",
-    "lat": 40.705796,
-    "lng": -73.933143
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/prompt-n-pour-guided-journaling-experience-tickets",
-   "tags": []
-  },
-  {
-   "id": "afternoon-jazz-tickets",
-   "title": "afternoon Jazz",
-   "category": "music",
-   "start": "2026-10-18T14:00:00-04:00",
-   "end": "2026-10-18T16:30:00-04:00",
-   "venue": {
-    "name": "St. Mazie",
-    "address": "345 Grand St., Brooklyn, 11211",
-    "neighborhood": "",
-    "lat": 40.712601,
-    "lng": -73.955827
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/afternoon-jazz-tickets",
-   "tags": []
-  },
-  {
-   "id": "afternoon-fall-foliage-lunch-cruise-aboard-manhattan-tickets",
-   "title": "Afternoon Fall Foliage Lunch Cruise aboard Manhattan",
-   "category": "community",
-   "start": "2026-10-18T14:25:00-04:00",
-   "end": "2026-10-18T16:25:00-04:00",
+   "start": "2026-10-19T11:00:00-04:00",
+   "end": "2026-10-19T12:30:00-04:00",
    "venue": {
     "name": "Chelsea Piers",
     "address": "CHELSEA PIERS, New York, NY, USA",
@@ -2523,75 +1243,135 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/afternoon-fall-foliage-lunch-cruise-aboard-manhattan-tickets",
+   "url": "https://donyc.com/events/2026/10/19/statue-skyline-sightseeing-cruise-tickets",
    "tags": []
   },
   {
-   "id": "wordout-theater-presents-un-reality-sunday-program-tickets",
-   "title": "WordOut Theater Presents: un/reality — Sunday Program",
-   "category": "comedy",
-   "start": "2026-10-18T14:30:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Caveat",
-    "address": "21 Clinton Street, New York, 10002",
-    "neighborhood": "",
-    "lat": 40.720766,
-    "lng": -73.984504
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/wordout-theater-presents-un-reality-sunday-program-tickets",
-   "tags": []
-  },
-  {
-   "id": "adrian-danchig-waring-farewell-tickets",
-   "title": "Adrian Danchig-Waring Farewell",
+   "id": "macbeth-tickets",
+   "title": "Macbeth",
    "category": "music",
-   "start": "2026-10-18T15:00:00-04:00",
+   "start": "2026-10-19T13:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "New York City Ballet",
-    "address": "20 Lincoln Center Plaza, New York, 10023",
+    "name": "Film Society of Lincoln Center",
+    "address": "165 W 65th St, New York, 10023",
     "neighborhood": "",
-    "lat": 40.771801,
-    "lng": -73.983769
+    "lat": 40.77426,
+    "lng": -73.98426
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/adrian-danchig-waring-farewell-tickets",
+   "url": "https://donyc.com/events/2026/10/19/macbeth-tickets",
    "tags": []
   },
   {
-   "id": "selected-shorts-on-tour-stissing-center-for-arts-and-culture-pine-plains-new-york-tickets",
-   "title": "Selected Shorts on Tour: Stissing Center for Arts and Culture, Pine Plains, New York",
+   "id": "once-upon-a-time-in-harlem-tickets",
+   "title": "Once Upon a Time in Harlem",
    "category": "music",
-   "start": "2026-10-18T15:00:00-04:00",
+   "start": "2026-10-19T13:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "Symphony Space",
-    "address": "2537 Broadway, New York, 10025",
+    "name": "Film Society of Lincoln Center",
+    "address": "165 W 65th St, New York, 10023",
     "neighborhood": "",
-    "lat": 40.793907,
-    "lng": -73.972888
+    "lat": 40.77426,
+    "lng": -73.98426
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/selected-shorts-on-tour-stissing-center-for-arts-and-culture-pine-plains-new-york-tickets",
+   "url": "https://donyc.com/events/2026/10/19/once-upon-a-time-in-harlem-tickets",
    "tags": []
   },
   {
-   "id": "rolling-meadows-tickets",
-   "title": "Rolling Meadows",
+   "id": "nyc-statue-day-sail-aboard-adirondack-tickets",
+   "title": "NYC Statue Day Sail aboard Adirondack",
+   "category": "community",
+   "start": "2026-10-19T13:45:00-04:00",
+   "end": "2026-10-19T15:30:00-04:00",
+   "venue": {
+    "name": "Chelsea Piers",
+    "address": "CHELSEA PIERS, New York, NY, USA",
+    "neighborhood": "",
+    "lat": 40.7456,
+    "lng": -74.00997
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/nyc-statue-day-sail-aboard-adirondack-tickets",
+   "tags": []
+  },
+  {
+   "id": "mini-studio-production-tickets",
+   "title": "Mini Studio Production",
+   "category": "music",
+   "start": "2026-10-19T14:00:00-04:00",
+   "end": "2026-10-19T17:00:00-04:00",
+   "venue": {
+    "name": "BRIC House Media Center",
+    "address": "647 Fulton Street, Brooklyn, 11217",
+    "neighborhood": "",
+    "lat": 40.688666,
+    "lng": -73.979088
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/mini-studio-production-tickets",
+   "tags": []
+  },
+  {
+   "id": "mini-studio-production-tickets-xm3nwp7",
+   "title": "Mini Studio Production",
+   "category": "community",
+   "start": "2026-10-19T14:00:00-04:00",
+   "end": "2026-10-19T17:00:00-04:00",
+   "venue": {
+    "name": "BRIC",
+    "address": "647 Fulton St., Brooklyn, 11217",
+    "neighborhood": "",
+    "lat": 40.688666,
+    "lng": -73.979088
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/mini-studio-production-tickets-xm3nwp7",
+   "tags": []
+  },
+  {
+   "id": "statue-skyline-cruise-aboard-yacht-kingston-tickets",
+   "title": "Statue & Skyline Cruise Aboard Yacht Kingston",
+   "category": "community",
+   "start": "2026-10-19T14:15:00-04:00",
+   "end": "2026-10-19T15:45:00-04:00",
+   "venue": {
+    "name": "Chelsea Piers",
+    "address": "CHELSEA PIERS, New York, NY, USA",
+    "neighborhood": "",
+    "lat": 40.7456,
+    "lng": -74.00997
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/statue-skyline-cruise-aboard-yacht-kingston-tickets",
+   "tags": []
+  },
+  {
+   "id": "autumn-brook-tickets",
+   "title": "Autumn Brook",
    "category": "art",
-   "start": "2026-10-18T15:00:00-04:00",
-   "end": "2026-10-18T17:00:00-04:00",
+   "start": "2026-10-19T15:00:00-04:00",
+   "end": "2026-10-19T17:00:00-04:00",
    "venue": {
     "name": "Muse Paintbar - Tribeca",
     "address": "329 Greenwich St, New York, 10013",
@@ -2603,135 +1383,15 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/rolling-meadows-tickets",
+   "url": "https://donyc.com/events/2026/10/19/autumn-brook-tickets",
    "tags": []
   },
   {
-   "id": "eerie-embers-tickets",
-   "title": "Eerie Embers",
-   "category": "art",
-   "start": "2026-10-18T15:00:00-04:00",
-   "end": "2026-10-18T17:00:00-04:00",
-   "venue": {
-    "name": "Muse Paintbar - Tribeca",
-    "address": "329 Greenwich St, New York, 10013",
-    "neighborhood": "",
-    "lat": 40.71769,
-    "lng": -74.010278
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/eerie-embers-tickets",
-   "tags": []
-  },
-  {
-   "id": "1926-the-polish-declarations-of-admiration-and-friendship-for-the-us-tickets",
-   "title": "1926: The Polish Declarations of Admiration and Friendship for the US",
-   "category": "comedy",
-   "start": "2026-10-18T15:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "The Kosciuszko Foundation",
-    "address": "15 East 65th Street, New York, 10065",
-    "neighborhood": "",
-    "lat": 40.767746,
-    "lng": -73.969084
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/1926-the-polish-declarations-of-admiration-and-friendship-for-the-us-tickets",
-   "tags": []
-  },
-  {
-   "id": "norman-calvo-beyond-the-norm-tickets",
-   "title": "Norman Calvo: Beyond the Norm",
-   "category": "music",
-   "start": "2026-10-18T15:00:00-04:00",
-   "end": "2026-10-18T16:00:00-04:00",
-   "venue": {
-    "name": "Don't Tell Mama NYC",
-    "address": "343 west 46th Street, New York, 10036",
-    "neighborhood": "",
-    "lat": 40.76063,
-    "lng": -73.989477
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/norman-calvo-beyond-the-norm-tickets",
-   "tags": []
-  },
-  {
-   "id": "liora-michelle-songbirds-of-the-silver-screen-tickets",
-   "title": "Liora Michelle: Songbirds of the Silver Screen",
-   "category": "music",
-   "start": "2026-10-18T16:00:00-04:00",
-   "end": "2026-10-18T17:00:00-04:00",
-   "venue": {
-    "name": "Don't Tell Mama NYC",
-    "address": "343 west 46th Street, New York, 10036",
-    "neighborhood": "",
-    "lat": 40.76063,
-    "lng": -73.989477
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/liora-michelle-songbirds-of-the-silver-screen-tickets",
-   "tags": []
-  },
-  {
-   "id": "adam-falcon-and-alex-radus-duo-in-concert-tickets",
-   "title": "Adam Falcon and Alex Radus Duo In Concert",
-   "category": "music",
-   "start": "2026-10-18T16:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "First Unitarian Church",
-    "address": "116 Pierrepont St., Brooklyn",
-    "neighborhood": "",
-    "lat": 40.695015,
-    "lng": -73.992988
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/adam-falcon-and-alex-radus-duo-in-concert-tickets",
-   "tags": []
-  },
-  {
-   "id": "vinyl-open-deck-record-fair-tickets",
-   "title": "Vinyl Open Deck & Record Fair",
+   "id": "private-charter-on-yacht-manhattan-tickets",
+   "title": "PRIVATE CHARTER on Yacht MANHATTAN",
    "category": "community",
-   "start": "2026-10-18T16:00:00-04:00",
-   "end": "2026-10-18T22:00:00-04:00",
-   "venue": {
-    "name": "Friends and Lovers",
-    "address": "641 Classon Avenue, Brooklyn, 11238",
-    "neighborhood": "",
-    "lat": 40.678566,
-    "lng": -73.958539
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/vinyl-open-deck-record-fair-tickets",
-   "tags": []
-  },
-  {
-   "id": "sunset-cocktail-cruise-aboard-yacht-kingston-tickets",
-   "title": "Sunset Cocktail Cruise aboard Yacht Kingston",
-   "category": "community",
-   "start": "2026-10-18T16:55:00-04:00",
-   "end": "2026-10-18T18:25:00-04:00",
+   "start": "2026-10-19T15:30:00-04:00",
+   "end": "2026-10-19T17:00:00-04:00",
    "venue": {
     "name": "Chelsea Piers",
     "address": "CHELSEA PIERS, New York, NY, USA",
@@ -2743,34 +1403,134 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/sunset-cocktail-cruise-aboard-yacht-kingston-tickets",
+   "url": "https://donyc.com/events/2026/10/19/private-charter-on-yacht-manhattan-tickets",
    "tags": []
   },
   {
-   "id": "mendelssohn-s-b-minor-piano-quartet-tickets",
-   "title": "Mendelssohn's B-minor Piano Quartet",
-   "category": "music",
-   "start": "2026-10-18T17:00:00-04:00",
-   "end": null,
+   "id": "private-charter-on-schooner-adirondack-tickets",
+   "title": "PRIVATE CHARTER on Schooner ADIRONDACK",
+   "category": "community",
+   "start": "2026-10-19T16:15:00-04:00",
+   "end": "2026-10-19T18:15:00-04:00",
    "venue": {
-    "name": "Chamber Music Society of Lincoln Center",
-    "address": "1941 Broadway, New York, 10023",
+    "name": "Chelsea Piers",
+    "address": "CHELSEA PIERS, New York, NY, USA",
     "neighborhood": "",
-    "lat": 40.773823,
-    "lng": -73.98315
+    "lat": 40.7456,
+    "lng": -74.00997
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/mendelssohn-s-b-minor-piano-quartet-tickets",
+   "url": "https://donyc.com/events/2026/10/19/private-charter-on-schooner-adirondack-tickets",
    "tags": []
   },
   {
-   "id": "armenian-power-hour-tickets",
-   "title": "Armenian Power Hour",
+   "id": "private-charter-on-yacht-manhattan-ii-tickets",
+   "title": "PRIVATE CHARTER on Yacht MANHATTAN II",
+   "category": "community",
+   "start": "2026-10-19T17:00:00-04:00",
+   "end": "2026-10-19T19:00:00-04:00",
+   "venue": {
+    "name": "Chelsea Piers",
+    "address": "CHELSEA PIERS, New York, NY, USA",
+    "neighborhood": "",
+    "lat": 40.7456,
+    "lng": -74.00997
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/private-charter-on-yacht-manhattan-ii-tickets",
+   "tags": []
+  },
+  {
+   "id": "jhrts-short-film-showcase-tickets",
+   "title": "JHRTS Short Film Showcase",
+   "category": "community",
+   "start": "2026-10-19T17:00:00-04:00",
+   "end": "2026-10-19T20:00:00-04:00",
+   "venue": {
+    "name": "Starr Bar",
+    "address": "214 Starr Street, Brooklyn, 11237",
+    "neighborhood": "",
+    "lat": 40.704982,
+    "lng": -73.922909
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/jhrts-short-film-showcase-tickets",
+   "tags": []
+  },
+  {
+   "id": "sunset-cruise-on-yacht-manhattan-tickets",
+   "title": "Sunset Cruise on Yacht Manhattan",
+   "category": "community",
+   "start": "2026-10-19T17:30:00-04:00",
+   "end": "2026-10-19T19:00:00-04:00",
+   "venue": {
+    "name": "Chelsea Piers",
+    "address": "CHELSEA PIERS, New York, NY, USA",
+    "neighborhood": "",
+    "lat": 40.7456,
+    "lng": -74.00997
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/sunset-cruise-on-yacht-manhattan-tickets",
+   "tags": []
+  },
+  {
+   "id": "audition-essentials-in-person-tickets",
+   "title": "Audition Essentials, in-person",
+   "category": "music",
+   "start": "2026-10-19T18:00:00-04:00",
+   "end": "2026-10-19T21:00:00-04:00",
+   "venue": {
+    "name": "BRIC House Media Center",
+    "address": "647 Fulton Street, Brooklyn, 11217",
+    "neighborhood": "",
+    "lat": 40.688666,
+    "lng": -73.979088
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/audition-essentials-in-person-tickets",
+   "tags": []
+  },
+  {
+   "id": "audition-essentials-in-person-tickets-70xaqv0",
+   "title": "Audition Essentials, in-person",
+   "category": "community",
+   "start": "2026-10-19T18:00:00-04:00",
+   "end": "2026-10-19T21:00:00-04:00",
+   "venue": {
+    "name": "BRIC",
+    "address": "647 Fulton St., Brooklyn, 11217",
+    "neighborhood": "",
+    "lat": 40.688666,
+    "lng": -73.979088
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/audition-essentials-in-person-tickets-70xaqv0",
+   "tags": []
+  },
+  {
+   "id": "open-mic-free-tickets",
+   "title": "Open Mic (FREE)",
    "category": "comedy",
-   "start": "2026-10-18T17:00:00-04:00",
+   "start": "2026-10-19T18:00:00-04:00",
    "end": null,
    "venue": {
     "name": "QED",
@@ -2783,75 +1543,35 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/armenian-power-hour-tickets",
+   "url": "https://donyc.com/events/2026/10/19/open-mic-free-tickets",
    "tags": []
   },
   {
-   "id": "ekep-nkwelle-tickets",
-   "title": "Ekep Nkwelle",
+   "id": "the-devils-tickets",
+   "title": "The Devils",
    "category": "music",
-   "start": "2026-10-18T17:00:00-04:00",
+   "start": "2026-10-19T18:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "Jazz at Lincoln Center",
-    "address": "10 Columbus Circle, New York, 10019",
+    "name": "Film Society of Lincoln Center",
+    "address": "165 W 65th St, New York, 10023",
     "neighborhood": "",
-    "lat": 40.768554,
-    "lng": -73.983181
+    "lat": 40.77426,
+    "lng": -73.98426
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/ekep-nkwelle-tickets",
+   "url": "https://donyc.com/events/2026/10/19/the-devils-tickets",
    "tags": []
   },
   {
-   "id": "room-full-of-strangers-with-chris-turner-work-in-progress-tickets",
-   "title": "Room Full of Strangers with Chris Turner (Work in Progress)",
+   "id": "the-cait-jones-trio-jazz-cruise-tickets",
+   "title": "The Cait Jones Trio Jazz Cruise",
    "category": "community",
-   "start": "2026-10-18T17:00:00-04:00",
-   "end": "2026-10-18T18:30:00-04:00",
-   "venue": {
-    "name": "Union Hall",
-    "address": "702 Union Street, Brooklyn, Brooklyn, 11215",
-    "neighborhood": "",
-    "lat": 40.675996,
-    "lng": -73.980133
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/room-full-of-strangers-with-chris-turner-work-in-progress-tickets",
-   "tags": []
-  },
-  {
-   "id": "comedy-spillage-returns-to-slate-during-its-10-year-anniversary-celebration-on-10-18-tickets",
-   "title": "Comedy Spillage Returns to Slate During Its 10 Year Anniversary Celebration on 10/18",
-   "category": "comedy",
-   "start": "2026-10-18T17:00:00-04:00",
-   "end": "2026-10-18T22:30:00-04:00",
-   "venue": {
-    "name": "Slate",
-    "address": "54 West 21st St., New York",
-    "neighborhood": "",
-    "lat": 40.741185,
-    "lng": -73.993219
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/comedy-spillage-returns-to-slate-during-its-10-year-anniversary-celebration-on-10-18-tickets",
-   "tags": []
-  },
-  {
-   "id": "sunset-sail-aboard-the-schooner-adirondack-tickets",
-   "title": "Sunset Sail aboard the Schooner Adirondack",
-   "category": "community",
-   "start": "2026-10-18T17:00:00-04:00",
-   "end": "2026-10-18T19:00:00-04:00",
+   "start": "2026-10-19T18:00:00-04:00",
+   "end": "2026-10-19T19:30:00-04:00",
    "venue": {
     "name": "Chelsea Piers",
     "address": "CHELSEA PIERS, New York, NY, USA",
@@ -2863,115 +1583,15 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/sunset-sail-aboard-the-schooner-adirondack-tickets",
-   "tags": []
-  },
-  {
-   "id": "lost-futures-music-from-sci-fi-cyberpunk-cinema-tickets",
-   "title": "Lost Futures: Music from Sci-fi & Cyberpunk Cinema",
-   "category": "community",
-   "start": "2026-10-18T17:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "The Red Pavilion",
-    "address": "1241 Flushing Ave, Brooklyn, 11237",
-    "neighborhood": "",
-    "lat": 40.708234,
-    "lng": -73.923588
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/lost-futures-music-from-sci-fi-cyberpunk-cinema-tickets",
-   "tags": []
-  },
-  {
-   "id": "tarot-tonic-tickets",
-   "title": "Tarot & Tonic",
-   "category": "comedy",
-   "start": "2026-10-18T17:00:00-04:00",
-   "end": "2026-10-18T20:00:00-04:00",
-   "venue": {
-    "name": "Bananas",
-    "address": "174 1st Ave, New York, 10009",
-    "neighborhood": "",
-    "lat": 40.729024,
-    "lng": -73.983875
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/tarot-tonic-tickets",
-   "tags": []
-  },
-  {
-   "id": "sunset-cruise-on-yacht-manhattan-tickets",
-   "title": "Sunset Cruise on Yacht Manhattan",
-   "category": "community",
-   "start": "2026-10-18T17:15:00-04:00",
-   "end": "2026-10-18T18:45:00-04:00",
-   "venue": {
-    "name": "Chelsea Piers",
-    "address": "CHELSEA PIERS, New York, NY, USA",
-    "neighborhood": "",
-    "lat": 40.7456,
-    "lng": -74.00997
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/sunset-cruise-on-yacht-manhattan-tickets",
-   "tags": []
-  },
-  {
-   "id": "classic-cocktails-statue-skyline-cruise-aboard-yacht-manhattan-tickets",
-   "title": "Classic Cocktails, Statue & Skyline Cruise aboard Yacht Manhattan",
-   "category": "community",
-   "start": "2026-10-18T17:15:00-04:00",
-   "end": "2026-10-18T18:45:00-04:00",
-   "venue": {
-    "name": "Chelsea Piers",
-    "address": "CHELSEA PIERS, New York, NY, USA",
-    "neighborhood": "",
-    "lat": 40.7456,
-    "lng": -74.00997
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/classic-cocktails-statue-skyline-cruise-aboard-yacht-manhattan-tickets",
-   "tags": []
-  },
-  {
-   "id": "spank-welcome-to-midday-charlotte-cj-fight-to-the-death-tickets",
-   "title": "SPANK: Welcome to Midday & Charlotte & CJ Fight to The Death",
-   "category": "comedy",
-   "start": "2026-10-18T17:30:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Upright Citizens Brigade (UCB)",
-    "address": "242 E 14th Street, New York City, 10003",
-    "neighborhood": "",
-    "lat": 40.732299,
-    "lng": -73.98547
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/spank-welcome-to-midday-charlotte-cj-fight-to-the-death-tickets",
+   "url": "https://donyc.com/events/2026/10/19/the-cait-jones-trio-jazz-cruise-tickets",
    "tags": []
   },
   {
    "id": "evening-jazz-cruise-aboard-manhattan-tickets",
    "title": "Evening Jazz Cruise Aboard Manhattan",
    "category": "community",
-   "start": "2026-10-18T17:30:00-04:00",
-   "end": "2026-10-18T19:00:00-04:00",
+   "start": "2026-10-19T18:00:00-04:00",
+   "end": "2026-10-19T19:30:00-04:00",
    "venue": {
     "name": "Chelsea Piers",
     "address": "CHELSEA PIERS, New York, NY, USA",
@@ -2983,175 +1603,75 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/evening-jazz-cruise-aboard-manhattan-tickets",
+   "url": "https://donyc.com/events/2026/10/19/evening-jazz-cruise-aboard-manhattan-tickets",
    "tags": []
   },
   {
-   "id": "beyond-the-velvet-rope-tickets",
-   "title": "Beyond the Velvet Rope",
+   "id": "sunset-cocktail-cruise-aboard-yacht-kingston-tickets",
+   "title": "Sunset Cocktail Cruise aboard Yacht Kingston",
    "category": "community",
-   "start": "2026-10-18T18:00:00-04:00",
+   "start": "2026-10-19T18:15:00-04:00",
+   "end": "2026-10-19T19:45:00-04:00",
+   "venue": {
+    "name": "Chelsea Piers",
+    "address": "CHELSEA PIERS, New York, NY, USA",
+    "neighborhood": "",
+    "lat": 40.7456,
+    "lng": -74.00997
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/sunset-cocktail-cruise-aboard-yacht-kingston-tickets",
+   "tags": []
+  },
+  {
+   "id": "nuyorican-bowery-slam-tickets",
+   "title": "Nuyorican Bowery Slam",
+   "category": "community",
+   "start": "2026-10-19T18:30:00-04:00",
    "end": null,
    "venue": {
-    "name": "Duane Park",
-    "address": "166 Duane St, New York, 10013",
+    "name": "Nuyorican Poets Cafe",
+    "address": "236 E. 3rd St., New York, 10009",
     "neighborhood": "",
-    "lat": 40.716746,
-    "lng": -74.009449
+    "lat": 40.721996,
+    "lng": -73.98179
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/beyond-the-velvet-rope-tickets",
+   "url": "https://donyc.com/events/2026/10/19/nuyorican-bowery-slam-tickets",
    "tags": []
   },
   {
-   "id": "tides-tapas-at-sunset-on-yacht-manhattan-tickets",
-   "title": "Tides & Tapas at Sunset on Yacht Manhattan",
+   "id": "collab-dinner-the-lebanese-table-edy-s-grocer-x-sawa-x-lebnani-tickets",
+   "title": "Collab Dinner: The Lebanese Table: Edy’s Grocer x Sawa x Lebnani",
    "category": "community",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": "2026-10-18T19:30:00-04:00",
+   "start": "2026-10-19T18:30:00-04:00",
+   "end": null,
    "venue": {
-    "name": "Chelsea Piers",
-    "address": "CHELSEA PIERS, New York, NY, USA",
+    "name": "PLATFORM by JBF",
+    "address": "25 11th Ave, New York, NY 10011,, New York, 10011",
     "neighborhood": "",
-    "lat": 40.7456,
-    "lng": -74.00997
+    "lat": 40.74344,
+    "lng": -74.009904
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/tides-tapas-at-sunset-on-yacht-manhattan-tickets",
+   "url": "https://donyc.com/events/2026/10/19/collab-dinner-the-lebanese-table-edy-s-grocer-x-sawa-x-lebnani-tickets",
    "tags": []
   },
   {
-   "id": "leather-political-education-reading-series-tickets",
-   "title": "Leather Political Education Reading Series",
+   "id": "molly-ledbetter-improv-level-1-class-show-wednesday-section-tickets",
+   "title": "Molly Ledbetter Improv Level 1 Class Show (Wednesday Section)",
    "category": "comedy",
-   "start": "2026-10-18T18:00:00-04:00",
-   "end": "2026-10-18T20:00:00-04:00",
-   "venue": {
-    "name": "Hive Mind Books",
-    "address": "219 Irving Ave, Brooklyn, 11237",
-    "neighborhood": "",
-    "lat": 40.7011,
-    "lng": -73.917518
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/leather-political-education-reading-series-tickets",
-   "tags": []
-  },
-  {
-   "id": "jeweled-skyline-tickets",
-   "title": "Jeweled Skyline",
-   "category": "art",
-   "start": "2026-10-18T18:30:00-04:00",
-   "end": "2026-10-18T20:30:00-04:00",
-   "venue": {
-    "name": "Muse Paintbar - Tribeca",
-    "address": "329 Greenwich St, New York, 10013",
-    "neighborhood": "",
-    "lat": 40.71769,
-    "lng": -74.010278
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/jeweled-skyline-tickets",
-   "tags": []
-  },
-  {
-   "id": "paint-your-pet-tickets",
-   "title": "Paint Your Pet",
-   "category": "art",
-   "start": "2026-10-18T18:30:00-04:00",
-   "end": "2026-10-18T21:30:00-04:00",
-   "venue": {
-    "name": "Muse Paintbar - Tribeca",
-    "address": "329 Greenwich St, New York, 10013",
-    "neighborhood": "",
-    "lat": 40.71769,
-    "lng": -74.010278
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/paint-your-pet-tickets",
-   "tags": []
-  },
-  {
-   "id": "sara-hennessey-s-stand-up-level-1-class-show-tuesday-section-tickets",
-   "title": "Sara Hennessey's Stand Up Level 1 Class Show (Tuesday Section)",
-   "category": "comedy",
-   "start": "2026-10-18T18:30:00-04:00",
-   "end": "2026-10-18T20:15:00-04:00",
-   "venue": {
-    "name": "Eris Mainstage",
-    "address": "167 Graham Ave, Brooklyn, 11206",
-    "neighborhood": "",
-    "lat": 40.707802,
-    "lng": -73.944041
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/sara-hennessey-s-stand-up-level-1-class-show-tuesday-section-tickets",
-   "tags": []
-  },
-  {
-   "id": "herman-melville-the-howling-infinite-how-do-eras-of-profound-crisis-inspire-art-literature-tickets",
-   "title": "\"Herman Melville & the Howling Infinite: How do Eras of Profound Crisis Inspire Art & Literature?\"",
-   "category": "community",
-   "start": "2026-10-18T18:30:00-04:00",
-   "end": "2026-10-18T20:30:00-04:00",
-   "venue": {
-    "name": "Quick Eternity",
-    "address": "22 Peck Slip, New York, 10038",
-    "neighborhood": "",
-    "lat": 40.70805,
-    "lng": -74.002078
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/herman-melville-the-howling-infinite-how-do-eras-of-profound-crisis-inspire-art-literature-tickets",
-   "tags": []
-  },
-  {
-   "id": "verse4verse-drag-poetry-tickets",
-   "title": "Verse4Verse: Drag + Poetry",
-   "category": "community",
-   "start": "2026-10-18T18:30:00-04:00",
-   "end": "2026-10-18T21:00:00-04:00",
-   "venue": {
-    "name": "Dada",
-    "address": "6047 Myrtle Ave, Queens, New York, 11385",
-    "neighborhood": "",
-    "lat": 40.700801,
-    "lng": -73.896651
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/verse4verse-drag-poetry-tickets",
-   "tags": []
-  },
-  {
-   "id": "julian-hernandez-s-improv-level-3-class-show-tickets",
-   "title": "Julian Hernandez's Improv Level 3 Class Show",
-   "category": "comedy",
-   "start": "2026-10-18T18:45:00-04:00",
-   "end": "2026-10-18T20:00:00-04:00",
+   "start": "2026-10-19T18:45:00-04:00",
+   "end": "2026-10-19T20:15:00-04:00",
    "venue": {
     "name": "Brooklyn Comedy Collective Pig Pen",
     "address": "144 Boerum St, Brooklyn, 11206",
@@ -3163,54 +1683,74 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/julian-hernandez-s-improv-level-3-class-show-tickets",
+   "url": "https://donyc.com/events/2026/10/19/molly-ledbetter-improv-level-1-class-show-wednesday-section-tickets",
    "tags": []
   },
   {
-   "id": "new-tricks-tickets",
-   "title": "New Tricks",
-   "category": "comedy",
-   "start": "2026-10-18T19:00:00-04:00",
+   "id": "juilliard-jazz-ensembles-tickets",
+   "title": "Juilliard Jazz Ensembles",
+   "category": "music",
+   "start": "2026-10-19T19:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "QED",
-    "address": "27-16 23rd Avenue, Queens, New York 11105, Queens, 11105",
+    "name": "The Juilliard School",
+    "address": "155 West 65th Street, New York",
     "neighborhood": "",
-    "lat": 40.775556,
-    "lng": -73.914942
+    "lat": 40.773823,
+    "lng": -73.98315
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/new-tricks-tickets",
+   "url": "https://donyc.com/events/2026/10/19/juilliard-jazz-ensembles-tickets",
    "tags": []
   },
   {
-   "id": "bns-fundraiser-tickets",
-   "title": "BNS Fundraiser",
-   "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": "2026-10-18T22:00:00-04:00",
+   "id": "jazz-jam-a-monthly-open-mic-tickets",
+   "title": "Jazz Jam: A Monthly Open Mic",
+   "category": "community",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": "2026-10-19T21:00:00-04:00",
    "venue": {
-    "name": "Mama Tried",
-    "address": "787 3rd Avenue, brooklyn, 11232",
+    "name": "Don't Tell Mama",
+    "address": "343 W. 46th St., New York",
     "neighborhood": "",
-    "lat": 40.660519,
-    "lng": -74.000777
+    "lat": 40.76063,
+    "lng": -73.989477
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/bns-fundraiser-tickets",
+   "url": "https://donyc.com/events/2026/10/19/jazz-jam-a-monthly-open-mic-tickets",
    "tags": []
   },
   {
-   "id": "robby-hecht-antje-duvekot-tickets",
-   "title": "Robby Hecht & Antje Duvekot",
+   "id": "david-doc-french-acoustic-tickets",
+   "title": "David “Doc” French Acoustic",
    "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Terra Blues",
+    "address": "149 Bleecker St, New York, 10012",
+    "neighborhood": "",
+    "lat": 40.72847,
+    "lng": -73.99923
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/david-doc-french-acoustic-tickets",
+   "tags": []
+  },
+  {
+   "id": "the-marvelous-manhattan-mandolins-tickets",
+   "title": "The Marvelous Manhattan Mandolins",
+   "category": "music",
+   "start": "2026-10-19T19:00:00-04:00",
    "end": null,
    "venue": {
     "name": "The Bitter End",
@@ -3223,135 +1763,415 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/robby-hecht-antje-duvekot-tickets",
+   "url": "https://donyc.com/events/2026/10/19/the-marvelous-manhattan-mandolins-tickets",
    "tags": []
   },
   {
-   "id": "100th-anniversary-of-f-w-murnau-s-faust-new-live-score-by-igor-yachmenov-tickets",
-   "title": "100th anniversary of F.W.Murnau’s Faust – New Live Score by Igor Yachmenov",
-   "category": "music",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": null,
+   "id": "burnt-sienna-hues-tickets",
+   "title": "Burnt Sienna Hues",
+   "category": "art",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": "2026-10-19T21:15:00-04:00",
    "venue": {
-    "name": "Berlin",
-    "address": "25 Avenue A, New York",
+    "name": "Muse Paintbar - Tribeca",
+    "address": "329 Greenwich St, New York, 10013",
     "neighborhood": "",
-    "lat": 40.723009,
-    "lng": -73.986054
+    "lat": 40.71769,
+    "lng": -74.010278
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/100th-anniversary-of-f-w-murnau-s-faust-new-live-score-by-igor-yachmenov-tickets",
+   "url": "https://donyc.com/events/2026/10/19/burnt-sienna-hues-tickets",
    "tags": []
   },
   {
-   "id": "clocked-off-tickets",
-   "title": "Clocked Off",
+   "id": "juilliard-jazz-ensembles-jazz-music-of-the-1970s-don-pullen-charles-tolliver-john-hicks-and-thad-jones-tickets",
+   "title": "Juilliard Jazz Ensembles | Jazz Music of the 1970s: Don Pullen, Charles Tolliver, John Hicks, and Thad Jones",
+   "category": "music",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "The Juilliard School",
+    "address": "155 West 65th Street, New York",
+    "neighborhood": "",
+    "lat": 40.773823,
+    "lng": -73.98315
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/juilliard-jazz-ensembles-jazz-music-of-the-1970s-don-pullen-charles-tolliver-john-hicks-and-thad-jones-tickets",
+   "tags": []
+  },
+  {
+   "id": "the-improvised-shakespeare-company-tickets",
+   "title": "The Improvised Shakespeare Company®",
+   "category": "music",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Symphony Space",
+    "address": "2537 Broadway, New York, 10025",
+    "neighborhood": "",
+    "lat": 40.793907,
+    "lng": -73.972888
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/the-improvised-shakespeare-company-tickets",
+   "tags": []
+  },
+  {
+   "id": "juilliard-jazz-ensembles-jazz-music-of-the-1970-s-don-pulley-charles-tolliver-john-hicks-and-thad-jones-tickets",
+   "title": "Juilliard Jazz Ensembles: Jazz Music of the 1970’s: Don Pulley, Charles Tolliver, John Hicks and Thad Jones",
+   "category": "music",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Jazz at Lincoln Center",
+    "address": "10 Columbus Circle, New York, 10019",
+    "neighborhood": "",
+    "lat": 40.768554,
+    "lng": -73.983181
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/juilliard-jazz-ensembles-jazz-music-of-the-1970-s-don-pulley-charles-tolliver-john-hicks-and-thad-jones-tickets",
+   "tags": []
+  },
+  {
+   "id": "and-scene-tickets",
+   "title": "And Scene",
    "category": "comedy",
-   "start": "2026-10-18T19:00:00-04:00",
-   "end": "2026-10-18T20:30:00-04:00",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": null,
    "venue": {
-    "name": "Flop House Comedy Club",
-    "address": "362 Grand St., Brooklyn, 11211",
+    "name": "Caveat",
+    "address": "21 Clinton Street, New York, 10002",
     "neighborhood": "",
-    "lat": 40.712214,
-    "lng": -73.95578
+    "lat": 40.720766,
+    "lng": -73.984504
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/clocked-off-tickets",
+   "url": "https://donyc.com/events/2026/10/19/and-scene-tickets",
    "tags": []
   },
   {
-   "id": "the-comeback-cabaret-tickets",
-   "title": "The Comeback Cabaret",
+   "id": "maude-night-golden-hour-pamela-tickets",
+   "title": "MAUDE NIGHT: Golden Hour & Pamela",
+   "category": "comedy",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Upright Citizens Brigade (UCB)",
+    "address": "242 E 14th Street, New York City, 10003",
+    "neighborhood": "",
+    "lat": 40.732299,
+    "lng": -73.98547
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/maude-night-golden-hour-pamela-tickets",
+   "tags": []
+  },
+  {
+   "id": "tor-nightfire-5th-anniversary-party-tickets",
+   "title": "Tor Nightfire 5th Anniversary Party!",
    "category": "community",
-   "start": "2026-10-18T19:30:00-04:00",
-   "end": "2026-10-18T21:00:00-04:00",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": "2026-10-19T21:00:00-04:00",
    "venue": {
-    "name": "Don't Tell Mama",
-    "address": "343 W. 46th St., New York",
+    "name": "The Twisted Spine",
+    "address": "306 Grand Street, Brooklyn, 11211",
     "neighborhood": "",
-    "lat": 40.76063,
-    "lng": -73.989477
+    "lat": 40.712753,
+    "lng": -73.957289
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-comeback-cabaret-tickets",
+   "url": "https://donyc.com/events/2026/10/19/tor-nightfire-5th-anniversary-party-tickets",
    "tags": []
   },
   {
-   "id": "moving-body-ndash-moving-image-tickets",
-   "title": "Moving Body – Moving Image",
+   "id": "lament-for-the-land-monumentality-identity-and-innovation-in-martha-graham-s-american-document-tickets",
+   "title": "Lament for the Land: Monumentality, Identity, and Innovation in Martha Graham’s American Document",
    "category": "music",
-   "start": "2026-10-18T19:30:00-04:00",
+   "start": "2026-10-19T19:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "Lincoln Center Presents",
-    "address": "61 West 62nd Street, New York, 10023",
+    "name": "The New York Public Library for the Performing Arts",
+    "address": "40 Lincoln Center Plaza (entrance at 111 Amsterdam Ave between W 64th & W 65th Sts), New York, 10023",
     "neighborhood": "",
-    "lat": 40.771127,
-    "lng": -73.982835
+    "lat": 40.77355,
+    "lng": -73.9845
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/moving-body-ndash-moving-image-tickets",
+   "url": "https://donyc.com/events/2026/10/19/lament-for-the-land-monumentality-identity-and-innovation-in-martha-graham-s-american-document-tickets",
    "tags": []
   },
   {
-   "id": "nosferatu-a-symphony-of-horror-1922-with-live-cello-score-tickets",
-   "title": "Nosferatu: A Symphony of Horror (1922) with Live Cello Score",
+   "id": "easy-paradise-open-mic-private-curtain-tickets",
+   "title": "Easy Paradise Open Mic @ Private Curtain",
    "category": "community",
-   "start": "2026-10-18T19:30:00-04:00",
+   "start": "2026-10-19T19:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "The Red Pavilion",
-    "address": "1241 Flushing Ave, Brooklyn, 11237",
+    "name": "KGB Bar",
+    "address": "85 east 4th street, New York, 10003",
     "neighborhood": "",
-    "lat": 40.708234,
-    "lng": -73.923588
+    "lat": 40.726592,
+    "lng": -73.989808
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/nosferatu-a-symphony-of-horror-1922-with-live-cello-score-tickets",
+   "url": "https://donyc.com/events/2026/10/19/easy-paradise-open-mic-private-curtain-tickets",
    "tags": []
   },
   {
-   "id": "artifact-an-experimental-music-series-tickets",
-   "title": "ARTIFACT - An Experimental Music Series",
+   "id": "little-beast-tickets",
+   "title": "Little Beast",
+   "category": "community",
+   "start": "2026-10-19T19:00:00-04:00",
+   "end": "2026-10-19T20:30:00-04:00",
+   "venue": {
+    "name": "The Tank Theater",
+    "address": "312 W 36th St, New York, 10036",
+    "neighborhood": "",
+    "lat": 40.753583,
+    "lng": -73.99328
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/little-beast-tickets",
+   "tags": []
+  },
+  {
+   "id": "juilliard-jazz-ensembles-jazz-music-of-the-1970-s-don-pullen-charles-tolliver-john-hicks-and-thad-jones-tickets",
+   "title": "Juilliard Jazz Ensembles: Jazz Music of the 1970’s: Don Pullen, Charles Tolliver, John Hicks and Thad Jones",
    "category": "music",
-   "start": "2026-10-18T19:30:00-04:00",
+   "start": "2026-10-19T19:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "Sleepwalk",
-    "address": "251 Bushwick Ave, Brooklyn, NY, 11206",
+    "name": "Jazz at Lincoln Center",
+    "address": "10 Columbus Circle, New York, 10019",
     "neighborhood": "",
-    "lat": 40.707337,
-    "lng": -73.939539
+    "lat": 40.768554,
+    "lng": -73.983181
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/artifact-an-experimental-music-series-tickets",
+   "url": "https://donyc.com/events/2026/10/19/juilliard-jazz-ensembles-jazz-music-of-the-1970-s-don-pullen-charles-tolliver-john-hicks-and-thad-jones-tickets",
    "tags": []
   },
   {
-   "id": "disasterpiece-movie-night-tickets",
-   "title": "Disasterpiece Movie Night",
+   "id": "drawing-from-a-distance-tickets",
+   "title": "Drawing from a Distance",
    "category": "community",
-   "start": "2026-10-18T20:00:00-04:00",
-   "end": "2026-10-18T23:59:00-04:00",
+   "start": "2026-10-19T19:30:00-04:00",
+   "end": "2026-10-19T21:00:00-04:00",
+   "venue": {
+    "name": "Noguchi Museum",
+    "address": "9-01 33rd Road (at Vernon Boulevard), Long Island City, 11106",
+    "neighborhood": "",
+    "lat": 40.766809,
+    "lng": -73.938091
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/drawing-from-a-distance-tickets",
+   "tags": []
+  },
+  {
+   "id": "juilliard-orchestra-conducted-by-jeffrey-milarsky-tickets",
+   "title": "Juilliard Orchestra Conducted by Jeffrey Milarsky",
+   "category": "music",
+   "start": "2026-10-19T19:30:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "The Juilliard School",
+    "address": "155 West 65th Street, New York",
+    "neighborhood": "",
+    "lat": 40.773823,
+    "lng": -73.98315
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/juilliard-orchestra-conducted-by-jeffrey-milarsky-tickets",
+   "tags": []
+  },
+  {
+   "id": "what-makes-it-great-tchaikovskys-violin-concerto-tickets",
+   "title": "What Makes It Great? Tchaikovskys Violin Concerto",
+   "category": "music",
+   "start": "2026-10-19T19:30:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Kaufman Music Center",
+    "address": "129 West 67th St. (btw Broadway and Amsterdam), New York",
+    "neighborhood": "",
+    "lat": 40.774886,
+    "lng": -73.983792
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/what-makes-it-great-tchaikovskys-violin-concerto-tickets",
+   "tags": []
+  },
+  {
+   "id": "shawn-gude-with-kim-phillips-fein-tickets",
+   "title": "Shawn Gude with Kim Phillips-Fein",
+   "category": "community",
+   "start": "2026-10-19T19:30:00-04:00",
+   "end": "2026-10-19T20:30:00-04:00",
+   "venue": {
+    "name": "Greenlight Bookstore in Fort Greene",
+    "address": "686 Fulton St, Brooklyn, 11217",
+    "neighborhood": "",
+    "lat": 40.68605,
+    "lng": -73.974694
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/shawn-gude-with-kim-phillips-fein-tickets",
+   "tags": []
+  },
+  {
+   "id": "cindy-of-arc-pre-midterms-martyrs-with-benefits-mini-tour-tickets",
+   "title": "CINDY OF ARC Pre-Midterms/Martyrs with Benefits Mini-Tour",
+   "category": "community",
+   "start": "2026-10-19T19:30:00-04:00",
+   "end": "2026-10-19T21:00:00-04:00",
+   "venue": {
+    "name": "The Triad Theater",
+    "address": "158 W. 72nd St. 2nd Floor, New York, 10023",
+    "neighborhood": "",
+    "lat": 40.778021,
+    "lng": -73.980994
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/cindy-of-arc-pre-midterms-martyrs-with-benefits-mini-tour-tickets",
+   "tags": []
+  },
+  {
+   "id": "frankenstein-s-baby-tickets",
+   "title": "Frankenstein's Baby",
+   "category": "community",
+   "start": "2026-10-19T19:30:00-04:00",
+   "end": "2026-10-19T21:00:00-04:00",
+   "venue": {
+    "name": "Union Hall",
+    "address": "702 Union Street, Brooklyn, Brooklyn, 11215",
+    "neighborhood": "",
+    "lat": 40.675996,
+    "lng": -73.980133
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/frankenstein-s-baby-tickets",
+   "tags": []
+  },
+  {
+   "id": "good-eggs-presented-by-mark-normand-gary-vider-matt-ruby-tickets",
+   "title": "Good Eggs Presented by Mark Normand, Gary Vider, Matt Ruby",
+   "category": "comedy",
+   "start": "2026-10-19T19:30:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "New York Comedy Club Upper West Side",
+    "address": "236 W 78th Street, New York, 10024",
+    "neighborhood": "",
+    "lat": 40.782823,
+    "lng": -73.980169
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/good-eggs-presented-by-mark-normand-gary-vider-matt-ruby-tickets",
+   "tags": []
+  },
+  {
+   "id": "movie-trivia-tickets",
+   "title": "Movie Trivia",
+   "category": "music",
+   "start": "2026-10-19T19:30:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Cassette",
+    "address": "68-38 Forest Avenue, Queens, 11385",
+    "neighborhood": "",
+    "lat": 40.70261,
+    "lng": -73.901214
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/movie-trivia-tickets",
+   "tags": []
+  },
+  {
+   "id": "mazzoli-s-lincoln-in-the-bardo-tickets",
+   "title": "Mazzoli's Lincoln in the Bardo",
+   "category": "music",
+   "start": "2026-10-19T20:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "The Metropolitan Opera",
+    "address": "30 Lincoln Center, New York, 10023",
+    "neighborhood": "",
+    "lat": 40.772499,
+    "lng": -73.989247
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/mazzoli-s-lincoln-in-the-bardo-tickets",
+   "tags": []
+  },
+  {
+   "id": "the-fort90-broadcast-system-presents-fort90-tv-tickets",
+   "title": "the FORT90 BROADCAST SYSTEM presents: FORT90 TV",
+   "category": "community",
+   "start": "2026-10-19T20:00:00-04:00",
+   "end": null,
    "venue": {
     "name": "Wonderville",
     "address": "1186 Broadway Brooklyn, New York, Brooklyn, 11221",
@@ -3363,15 +2183,115 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/disasterpiece-movie-night-tickets",
+   "url": "https://donyc.com/events/2026/10/19/the-fort90-broadcast-system-presents-fort90-tv-tickets",
    "tags": []
   },
   {
-   "id": "guess-who-tickets",
-   "title": "Guess who",
-   "category": "comedy",
-   "start": "2026-10-18T20:00:00-04:00",
+   "id": "the-scout-q-a-with-filmmaker-paula-gonzalez-nasser-and-star-mimi-davila-co-presented-by-the-future-of-film-is-female-tickets",
+   "title": "THE SCOUT Q&A with Filmmaker Paula González-Nasser and Star Mimi Davila, Co-presented by The Future of Film Is Female",
+   "category": "film",
+   "start": "2026-10-19T20:00:00-04:00",
    "end": null,
+   "venue": {
+    "name": "Film Forum",
+    "address": "209 W Houston St, New York, 10014",
+    "neighborhood": "",
+    "lat": 40.728219,
+    "lng": -74.004492
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/the-scout-q-a-with-filmmaker-paula-gonzalez-nasser-and-star-mimi-davila-co-presented-by-the-future-of-film-is-female-tickets",
+   "tags": []
+  },
+  {
+   "id": "unzipped-q-a-with-subject-isaac-mizrahi-director-douglas-keeve-executive-producer-nina-santisi-tickets",
+   "title": "UNZIPPED Q&A with Subject Isaac Mizrahi, Director Douglas Keeve & Executive Producer Nina Santisi",
+   "category": "film",
+   "start": "2026-10-19T20:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Film Forum",
+    "address": "209 W Houston St, New York, 10014",
+    "neighborhood": "",
+    "lat": 40.728219,
+    "lng": -74.004492
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/unzipped-q-a-with-subject-isaac-mizrahi-director-douglas-keeve-executive-producer-nina-santisi-tickets",
+   "tags": []
+  },
+  {
+   "id": "ashes-and-diamonds-introduced-by-bogdan-klich-charge-d-affaires-ad-interim-of-the-republic-of-poland-to-the-u-s-and-jakub-swi-ti",
+   "title": "ASHES AND DIAMONDS Introduced by Bogdan Klich, Chargé d’Affaires ad interim of the Republic of Poland to the U.S., and Jakub Swi",
+   "category": "film",
+   "start": "2026-10-19T20:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Film Forum",
+    "address": "209 W Houston St, New York, 10014",
+    "neighborhood": "",
+    "lat": 40.728219,
+    "lng": -74.004492
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/ashes-and-diamonds-introduced-by-bogdan-klich-charge-d-affaires-ad-interim-of-the-republic-of-poland-to-the-u-s-and-jakub-swi-ti",
+   "tags": []
+  },
+  {
+   "id": "the-women-1939-post-film-conversation-with-author-and-actress-illeana-douglas-and-film-forum-repertory-artistic-director-bruce-t",
+   "title": "THE WOMEN (1939) Post-film conversation with author and actress Illeana Douglas and Film Forum Repertory Artistic Director Bruce",
+   "category": "film",
+   "start": "2026-10-19T20:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Film Forum",
+    "address": "209 W Houston St, New York, 10014",
+    "neighborhood": "",
+    "lat": 40.728219,
+    "lng": -74.004492
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/the-women-1939-post-film-conversation-with-author-and-actress-illeana-douglas-and-film-forum-repertory-artistic-director-bruce-t",
+   "tags": []
+  },
+  {
+   "id": "burlesque-bingo-stripped-at-alphabet-bar-tickets",
+   "title": "Burlesque Bingo - Stripped at Alphabet Bar",
+   "category": "community",
+   "start": "2026-10-19T20:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Moxy East Village",
+    "address": "112 E 11th St, New York, 10003",
+    "neighborhood": "",
+    "lat": 40.731406,
+    "lng": -73.989445
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/burlesque-bingo-stripped-at-alphabet-bar-tickets",
+   "tags": []
+  },
+  {
+   "id": "williamsburg-comedy-club-flop-house-tickets",
+   "title": "Williamsburg Comedy Club @ Flop House",
+   "category": "comedy",
+   "start": "2026-10-19T20:00:00-04:00",
+   "end": "2026-10-19T21:30:00-04:00",
    "venue": {
     "name": "Flop House Comedy Club",
     "address": "362 Grand St., Brooklyn, 11211",
@@ -3383,55 +2303,115 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/guess-who-tickets",
+   "url": "https://donyc.com/events/2026/10/19/williamsburg-comedy-club-flop-house-tickets",
    "tags": []
   },
   {
-   "id": "jam-session-with-kings-county-swing-tickets",
-   "title": "Jam session with Kings County Swing",
-   "category": "music",
-   "start": "2026-10-18T20:00:00-04:00",
-   "end": "2026-10-18T22:30:00-04:00",
+   "id": "my-undesirable-friends-part-ii-exile-introduction-by-filmmaker-julia-loktev-tickets",
+   "title": "MY UNDESIRABLE FRIENDS: PART II – EXILE Introduction by Filmmaker Julia Loktev",
+   "category": "film",
+   "start": "2026-10-19T20:10:00-04:00",
+   "end": null,
    "venue": {
-    "name": "St. Mazie",
-    "address": "345 Grand St., Brooklyn, 11211",
+    "name": "Film Forum",
+    "address": "209 W Houston St, New York, 10014",
     "neighborhood": "",
-    "lat": 40.712601,
-    "lng": -73.955827
+    "lat": 40.728219,
+    "lng": -74.004492
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/jam-session-with-kings-county-swing-tickets",
+   "url": "https://donyc.com/events/2026/10/19/my-undesirable-friends-part-ii-exile-introduction-by-filmmaker-julia-loktev-tickets",
    "tags": []
   },
   {
-   "id": "chris-manley-s-clown-level-2-class-show-tickets",
-   "title": "Chris Manley's Clown Level 2 Class Show",
-   "category": "comedy",
-   "start": "2026-10-18T20:15:00-04:00",
-   "end": "2026-10-18T21:45:00-04:00",
+   "id": "my-undesirable-friends-part-ii-exile-q-a-with-filmmaker-julia-loktev-and-subjects-ksenia-mironova-valeria-ratnikova-tickets",
+   "title": "MY UNDESIRABLE FRIENDS: PART II – EXILE Q&A with Filmmaker Julia Loktev and Subjects Ksenia Mironova & Valeria Ratnikova",
+   "category": "film",
+   "start": "2026-10-19T20:10:00-04:00",
+   "end": null,
    "venue": {
-    "name": "Eris Mainstage",
-    "address": "167 Graham Ave, Brooklyn, 11206",
+    "name": "Film Forum",
+    "address": "209 W Houston St, New York, 10014",
     "neighborhood": "",
-    "lat": 40.707802,
-    "lng": -73.944041
+    "lat": 40.728219,
+    "lng": -74.004492
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/chris-manley-s-clown-level-2-class-show-tickets",
+   "url": "https://donyc.com/events/2026/10/19/my-undesirable-friends-part-ii-exile-q-a-with-filmmaker-julia-loktev-and-subjects-ksenia-mironova-valeria-ratnikova-tickets",
    "tags": []
   },
   {
-   "id": "maya-sharma-s-improv-level-2-class-show-tickets",
-   "title": "Maya Sharma's Improv Level 2 Class Show",
+   "id": "once-upon-a-time-in-harlem-sneak-preview-and-q-a-with-filmmaker-david-greaves-co-producer-liani-greaves-tickets",
+   "title": "ONCE UPON A TIME IN HARLEM Sneak Preview and Q&A with Filmmaker David Greaves & Co-Producer Liani Greaves",
+   "category": "film",
+   "start": "2026-10-19T20:10:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Film Forum",
+    "address": "209 W Houston St, New York, 10014",
+    "neighborhood": "",
+    "lat": 40.728219,
+    "lng": -74.004492
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/once-upon-a-time-in-harlem-sneak-preview-and-q-a-with-filmmaker-david-greaves-co-producer-liani-greaves-tickets",
+   "tags": []
+  },
+  {
+   "id": "once-upon-a-time-in-harlem-q-a-with-filmmaker-david-greaves-producer-liani-greaves-tickets",
+   "title": "ONCE UPON A TIME IN HARLEM Q&A with Filmmaker David Greaves & Producer Liani Greaves",
+   "category": "film",
+   "start": "2026-10-19T20:10:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Film Forum",
+    "address": "209 W Houston St, New York, 10014",
+    "neighborhood": "",
+    "lat": 40.728219,
+    "lng": -74.004492
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/once-upon-a-time-in-harlem-q-a-with-filmmaker-david-greaves-producer-liani-greaves-tickets",
+   "tags": []
+  },
+  {
+   "id": "sweet-rush-post-film-conversation-with-star-pawel-szajda-tickets",
+   "title": "SWEET RUSH Post-film conversation with star Paweł Szajda",
+   "category": "film",
+   "start": "2026-10-19T20:10:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Film Forum",
+    "address": "209 W Houston St, New York, 10014",
+    "neighborhood": "",
+    "lat": 40.728219,
+    "lng": -74.004492
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/sweet-rush-post-film-conversation-with-star-pawel-szajda-tickets",
+   "tags": []
+  },
+  {
+   "id": "kenny-park-yi-s-improv-level-1-class-show-tickets",
+   "title": "Kenny Park Yi's Improv Level 1 Class Show",
    "category": "comedy",
-   "start": "2026-10-18T20:15:00-04:00",
-   "end": "2026-10-18T21:45:00-04:00",
+   "start": "2026-10-19T20:15:00-04:00",
+   "end": "2026-10-19T21:45:00-04:00",
    "venue": {
     "name": "Brooklyn Comedy Collective Pig Pen",
     "address": "144 Boerum St, Brooklyn, 11206",
@@ -3443,107 +2423,67 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/maya-sharma-s-improv-level-2-class-show-tickets",
+   "url": "https://donyc.com/events/2026/10/19/kenny-park-yi-s-improv-level-1-class-show-tickets",
    "tags": []
   },
   {
-   "id": "ladies-mic-free-tickets",
-   "title": "Ladies' Mic (FREE)",
-   "category": "comedy",
-   "start": "2026-10-18T20:30:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "QED",
-    "address": "27-16 23rd Avenue, Queens, New York 11105, Queens, 11105",
-    "neighborhood": "",
-    "lat": 40.775556,
-    "lng": -73.914942
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/ladies-mic-free-tickets",
-   "tags": []
-  },
-  {
-   "id": "the-d-word-drag-tickets",
-   "title": "The D Word (Drag!)",
-   "category": "comedy",
-   "start": "2026-10-18T20:30:00-04:00",
-   "end": "2026-10-18T23:30:00-04:00",
-   "venue": {
-    "name": "HENRIETTA HUDSON",
-    "address": "438 Hudson St, NEW YORK, 10014",
-    "neighborhood": "",
-    "lat": 40.731141,
-    "lng": -74.006437
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/the-d-word-drag-tickets",
-   "tags": []
-  },
-  {
-   "id": "lummie-spann-quintet-tickets",
-   "title": "Lummie Spann Quintet",
-   "category": "music",
-   "start": "2026-10-18T21:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Smalls Jazz Club",
-    "address": "183 West 10th Street, New York, 10014",
-    "neighborhood": "",
-    "lat": 40.734396,
-    "lng": -74.002705
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/lummie-spann-quintet-tickets",
-   "tags": []
-  },
-  {
-   "id": "ronnie-burrage-holographic-principle-tickets",
-   "title": "Ronnie Burrage Holographic Principle",
-   "category": "music",
-   "start": "2026-10-18T21:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Lunatico",
-    "address": "486 Halsey Street, Brooklyn, 11233",
-    "neighborhood": "",
-    "lat": 40.683398,
-    "lng": -73.934682
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/18/ronnie-burrage-holographic-principle-tickets",
-   "tags": []
-  },
-  {
-   "id": "nocturna-9bn-pirates-circuit-party-tickets",
-   "title": "NOCTURNA @9BN \"Pirates\" Circuit Party",
+   "id": "monday-sip-tickets",
+   "title": "Monday SIP",
    "category": "community",
-   "start": "2026-10-18T22:00:00-04:00",
+   "start": "2026-10-19T21:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "9 Bob Note",
-    "address": "270 Meserole St, Brooklyn, 11206",
+    "name": "Dave & Buster's - Atlantic Center Mall",
+    "address": "625 Atlantic Ave. Suite 311, Brooklyn, 11217",
     "neighborhood": "",
-    "lat": 40.708294,
-    "lng": -73.937971
+    "lat": 40.684289,
+    "lng": -73.975513
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://donyc.com/events/2026/10/18/nocturna-9bn-pirates-circuit-party-tickets",
+   "url": "https://donyc.com/events/2026/10/19/monday-sip-tickets",
+   "tags": []
+  },
+  {
+   "id": "the-improvised-shakespeare-company-tickets-ebnxqep",
+   "title": "The Improvised Shakespeare Company®",
+   "category": "music",
+   "start": "2026-10-19T21:15:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Symphony Space",
+    "address": "2537 Broadway, New York, 10025",
+    "neighborhood": "",
+    "lat": 40.793907,
+    "lng": -73.972888
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/the-improvised-shakespeare-company-tickets-ebnxqep",
+   "tags": []
+  },
+  {
+   "id": "new-york-comedy-club-presents-tickets-vmzvonm",
+   "title": "New York Comedy Club Presents",
+   "category": "comedy",
+   "start": "2026-10-19T22:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "New York Comedy Club Upper West Side",
+    "address": "236 W 78th Street, New York, 10024",
+    "neighborhood": "",
+    "lat": 40.782823,
+    "lng": -73.980169
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/19/new-york-comedy-club-presents-tickets-vmzvonm",
    "tags": []
   }
  ],
@@ -3554,94 +2494,49 @@
    "url": "https://donyc.com/events/2026/9/15/paranormal-activity-on-broadway-tickets"
   },
   {
-   "title": "Peace, Love & Pumpkins",
-   "venue": "Bethel Woods",
-   "url": "https://donyc.com/events/2026/10/18/peace-love-pumpkins-tickets"
-  },
-  {
-   "title": "Spooky Sunday Crafting For Adults : Sip & Craft",
-   "venue": "Bethel Woods",
-   "url": "https://donyc.com/events/2026/10/18/spooky-sunday-crafting-for-adults-sip-craft-tickets"
-  },
-  {
-   "title": "PBR Team Series: NY Maverick Days",
-   "venue": "UBS Arena",
-   "url": "https://donyc.com/events/2026/10/18/pbr-teams-tickets"
-  },
-  {
-   "title": "Trick-or-Treat Box at Peace, Love & Pumpkins",
-   "venue": "Bethel Woods",
-   "url": "https://donyc.com/events/2026/10/18/trick-or-treat-box-at-peace-love-pumpkins-tickets"
+   "title": "Ghost Tours of The Music Hall 2026",
+   "venue": "Tarrytown Music Hall",
+   "url": "https://donyc.com/events/2026/10/19/ghost-tours-of-the-music-hall-2026-tickets"
   },
   {
    "title": "Ghost Tours of The Music Hall 2026",
    "venue": "Tarrytown Music Hall",
-   "url": "https://donyc.com/events/2026/10/18/ghost-tours-of-the-music-hall-2026-tickets"
+   "url": "https://donyc.com/events/2026/10/19/ghost-tours-of-the-music-hall-2026-tickets-mmjjzon"
   },
   {
-   "title": "Family Jam & Friends",
-   "venue": "Crown Hill Theater",
-   "url": "https://donyc.com/events/2026/10/18/family-jam-friends-tickets"
+   "title": "In Jest, Fliora, Shimmering, Thorns in the Mouth of God, Dead and Violated",
+   "venue": "The Wood Shop",
+   "url": "https://donyc.com/events/2026/10/19/in-jest-fliora-shimmering-thorns-in-the-mouth-of-god-dead-and-violated-tickets"
   },
   {
-   "title": "The Knights with Pianist Emanual Ax",
-   "venue": "Tilles Center for the Performing Arts",
-   "url": "https://donyc.com/events/2026/10/18/the-knights-with-pianist-emanual-ax-tickets"
+   "title": "Military Mondays",
+   "venue": "Dave & Buster's - Islandia",
+   "url": "https://donyc.com/events/2026/10/19/military-mondays-tickets"
   },
   {
-   "title": "New York Giants vs. New Orleans Saints",
-   "venue": "MetLife Stadium",
-   "url": "https://donyc.com/events/2026/10/18/new-york-giants-vs-new-orleans-saints-tickets"
-  },
-  {
-   "title": "Annual Fall Benefit for The Paramount's Education & Outreach Programs",
-   "venue": "Paramount Hudson Valley Theater",
-   "url": "https://donyc.com/events/2026/10/18/annual-fall-benefit-for-the-paramount-s-education-outreach-programs-tickets"
-  },
-  {
-   "title": "Park Haven",
-   "venue": "Looking for the address? Location is provided in the email confirmation sent from Eventbrite",
-   "url": "https://donyc.com/events/2026/10/18/park-haven-tickets"
-  },
-  {
-   "title": "Exploring Dutch Lower Manhattan: From New Amsterdam to New York City",
-   "venue": "Staten Island Ferry",
-   "url": "https://donyc.com/events/2026/10/18/exploring-dutch-lower-manhattan-from-new-amsterdam-to-new-york-city-tickets"
+   "title": "Military Mondays",
+   "venue": "Dave & Buster's - Westbury",
+   "url": "https://donyc.com/events/2026/10/19/military-mondays-tickets-kelk0al"
   },
   {
    "title": "Food Tour - Stroll Through Hell's Kitchen",
    "venue": "Cozymeal",
-   "url": "https://donyc.com/events/2026/10/18/food-tour-stroll-through-hell-s-kitchen-tickets"
+   "url": "https://donyc.com/events/2026/10/19/food-tour-stroll-through-hell-s-kitchen-tickets"
   },
   {
-   "title": "Nyc Fall Bazaar Hosted By Malik Made",
-   "venue": "Moonzescope",
-   "url": "https://donyc.com/events/2026/10/18/nyc-fall-bazaar-hosted-by-malik-made-tickets"
+   "title": "New Beginnings: The Italian Immigrant Experience",
+   "venue": "The Italian Educational & Cultural Center",
+   "url": "https://donyc.com/events/2026/10/19/new-beginnings-the-italian-immigrant-experience-tickets"
   },
   {
-   "title": "NYC Singles Speed Dating (40s-50s)",
-   "venue": "The Westbury",
-   "url": "https://donyc.com/events/2026/10/18/nyc-singles-speed-dating-40s-50s-tickets"
+   "title": "Lectures on Tap-\"Friction-Maxxing: How to Manage in a Frictionless World\"",
+   "venue": "Flatiron District",
+   "url": "https://donyc.com/events/2026/10/19/lectures-on-tap-friction-maxxing-how-to-manage-in-a-frictionless-world-tickets"
   },
   {
-   "title": "Noo Arts Tours at Kingsland",
-   "venue": "Looking for the address? Location is provided in the email confirmation sent from Eventbrite",
-   "url": "https://donyc.com/events/2026/10/18/noo-arts-tours-at-kingsland-tickets"
-  },
-  {
-   "title": "LOCnificent 2026",
-   "venue": "ATOLYE NYC",
-   "url": "https://donyc.com/events/2026/10/18/locnificent-2026-tickets"
-  },
-  {
-   "title": "QTWOC Authentic Connection",
-   "venue": "35 Meadow St",
-   "url": "https://donyc.com/events/2026/10/18/qtwoc-authentic-connection-tickets"
-  },
-  {
-   "title": "Program:",
-   "venue": "Touro College & University System",
-   "url": "https://donyc.com/events/2026/10/18/program-tickets"
+   "title": "Monday SIP",
+   "venue": "Dave & Buster's - Pelham Manor",
+   "url": "https://donyc.com/events/2026/10/19/monday-sip-tickets-nlgy6bq"
   }
  ]
 }
