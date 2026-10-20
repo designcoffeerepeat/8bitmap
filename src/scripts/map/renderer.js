@@ -730,10 +730,11 @@ function makePinTexture(catHex, state) {
   cv.width = w * scale;
   cv.height = h * scale;
   const ctx = cv.getContext('2d');
-  const body = state === 'selected' ? PALETTE.pinHi : PALETTE.pin;
-  const shade = state === 'selected' ? '#cfc3a8' : PALETTE.pinDark;
+  // the whole pin wears its category colour; a selected pin gets a cream eye
+  const body = catHex;
+  const shade = '#' + color(catHex).multiplyScalar(0.7).getHexString();
   const outline = state === 'idle' ? PALETTE.navy : '#ffffff';
-  const fills = { X: outline, R: body, D: shade, C: catHex };
+  const fills = { X: outline, R: body, D: shade, C: state === 'selected' ? PALETTE.pinHi : body };
   PIN.forEach((line, y) => {
     [...line].forEach((ch, x) => {
       if (!fills[ch]) return;
@@ -777,7 +778,7 @@ function makeLabelTexture(text, water) {
   ctx.textBaseline = 'top';
   ctx.imageSmoothingEnabled = false;
   const fg = PALETTE.cream;
-  const bg = water ? '#1446a0' : PALETTE.navy;
+  const bg = water ? PALETTE.cobalt : PALETTE.navy;
   // hard 1px outline, drawn by offsetting the text in 8 directions
   ctx.fillStyle = bg;
   // lines are centred; a single line fills the canvas exactly as before

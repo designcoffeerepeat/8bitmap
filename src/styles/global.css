@@ -202,7 +202,7 @@ button, a { font: inherit; color: inherit; }
 .controls #pixel { font-size: 7px; gap: 3px; }
 .controls #pixel b { font-weight: 400; color: var(--coin); }
 .controls #pixel:hover b { color: var(--night); }
-.hint { position: fixed; left: 50%; transform: translateX(calc(-50% - var(--panel-w) / 2)); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); font: 7px/1 var(--font-pixel); color: var(--ink); opacity: .7; letter-spacing: 1px; pointer-events: none; white-space: nowrap; }
+.hint { position: fixed; left: 50%; transform: translateX(calc(-50% - var(--panel-w) / 2)); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); font: 7px/1 var(--font-pixel); color: var(--night); opacity: .85; letter-spacing: 1px; pointer-events: none; white-space: nowrap; }
 #status:empty { display: none; }
 #detail:not([hidden]) ~ .hint { display: none; }
 

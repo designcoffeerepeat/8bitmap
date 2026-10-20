@@ -1,5 +1,5 @@
 // One palette for the whole city, taken from a three colour isometric NYC poster:
-// cobalt water and shadow faces, bright orange fronts, warm cream ground and roofs,
+// light blue water, cobalt shadow faces, bright orange fronts, warm cream ground and roofs,
 // all drawn with navy ink lines.
 const COBALT = '#0a3a8c';
 const ORANGE = '#f35507';
@@ -11,10 +11,10 @@ export const PALETTE = {
   orange: ORANGE,
   cream: CREAM,
   navy: NAVY,
-  sky: '#06317a',
-  water: ['#0a3a8c', '#0c3e93'],
-  waterShore: '#1446a0',
-  waterGlint: CREAM,
+  sky: '#9fe6fa',
+  water: ['#aeeeff', '#b8f1ff'],
+  waterShore: '#94def5',
+  waterGlint: '#ffffff',
   land: { manhattan: CREAM, bronx: '#ece3d0', li: '#eee5d3', nj: '#e9dfcb', island: CREAM },
   landSide: '#1d4796',
   sand: '#f5efe2',
@@ -32,18 +32,16 @@ export const PALETTE = {
   high: [ORANGE, ORANGE, CREAM, ORANGE],
   glass: COBALT,
   liberty: COBALT,
-  pin: ORANGE,
-  pinDark: '#b93d00',
   pinHi: CREAM,
 };
 
 export const CATEGORY_COLORS = {
   music: '#ff5c8a',
   art: '#b98cff',
-  food: '#ffd23f',
-  comedy: '#fff27a',
+  food: '#ffb347',
+  comedy: '#ffe14d',
   sports: '#4dd2ff',
-  nightlife: '#ff9a6b',
+  nightlife: '#ff7b4d',
   community: '#6ee07a',
   film: '#ffffff',
 };
