@@ -11,6 +11,8 @@
     "not_found_handling": "404-page",
     "run_worker_first": true
   },
+  // Lets the contact form (POST /api/contact in worker/index.js) send email from 8bit.nyc.
+  "send_email": [{ "name": "MAIL" }],
   "vars": {
     "SITE": "live",
     "SITE_PASSWORD": "8bit01",
