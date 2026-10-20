@@ -182,8 +182,9 @@ def category(ev):
     rules = [
         ('film', r'movie|film|screening'),
         ('food', r'greenmarket|farmers? market|farm stand|market\b|tasting'),
-        ('art', r'exhibit|gallery|museum|art\b|arts\b|studio|dendrology|wreath|cultural|off-broadway'),
-        ('music', r'concert|music|jazz|band\b'),
+        ('art', r'exhibit|gallery|museum|art\b|arts\b|studio|dendrology|wreath|cultural|opening reception'),
+        ('music', r'concert|music(?!al)|jazz|band\b'),
+        ('theater', r'theater\b|theatre\b|broadway|musical\b|opera\b|ballet|dance performance|shakespeare'),
         ('comedy', r'comedy|stand-?up'),
         ('sports', r'swim team|running|race\b|basketball|soccer|tennis'),
         ('nightlife', r'ghost tour|fright|spooky|hallowscream|camping'),
@@ -192,6 +193,18 @@ def category(ev):
         if re.search(rx, text):
             return cat
     return 'community'
+
+
+def venue_category(venue, fallback='community'):
+    """For a listing with no usable category: a museum or gallery is art, a stage is theater."""
+    v = venue.lower()
+    if re.search(r'cinema|movie theat', v):
+        return 'film'
+    if re.search(r'museum|gallery|galerie|kunsthalle', v):
+        return 'art'
+    if re.search(r'theat(er|re)\b|playhouse|broadway', v):
+        return 'theater'
+    return fallback
 
 
 def strip_html(s):

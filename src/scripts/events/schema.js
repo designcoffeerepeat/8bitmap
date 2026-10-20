@@ -27,11 +27,12 @@
 //   tags:        string[]
 // }
 
-export const CATEGORIES = ['music', 'art', 'food', 'comedy', 'sports', 'nightlife', 'community', 'film'];
+export const CATEGORIES = ['music', 'art', 'theater', 'food', 'comedy', 'sports', 'nightlife', 'community', 'film'];
 
 export const CATEGORY_LABELS = {
   music: 'Music',
   art: 'Art',
+  theater: 'Theater',
   food: 'Food',
   comedy: 'Comedy',
   sports: 'Sports',

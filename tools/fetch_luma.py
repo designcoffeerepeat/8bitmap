@@ -49,8 +49,9 @@ def fetch_day(day):
 def category(name):
     t = name.lower()
     rules = [('film', r'film|screening|movie'), ('comedy', r'comedy|stand-?up|improv'),
-             ('music', r'concert|music|\bdj\b|jazz|live set'), ('food', r'tasting|dinner|brunch|coffee|wine|food|supper'),
-             ('art', r'\bart\b|gallery|exhibit|museum|design|book|reading|poetry'),
+             ('music', r'concert|music(?!al)|\bdj\b|jazz|live set'), ('food', r'tasting|dinner|brunch|coffee|wine|food|supper'),
+             ('theater', r'theater|theatre|\bplay\b|musical\b'),
+             ('art', r'\bart\b|gallery|exhibit|museum|opening reception|design|book|reading|poetry'),
              ('nightlife', r'party|happy hour|rave|club night|afterparty'),
              ('sports', r'\brun\b|run club|yoga|climb|pickleball|soccer|basketball|fitness')]
     for cat, rx in rules:

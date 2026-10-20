@@ -18,14 +18,14 @@ import urllib.parse
 from datetime import datetime
 from pathlib import Path
 
-from fetch_nycgov import NYC, get
+from fetch_nycgov import NYC, get, venue_category
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'public' / 'data' / 'seatgeek-events.json'
 API = 'https://api.seatgeek.com/2/events'
 PAGE = 'https://seatgeek.com/cities/new-york'
-CATEGORIES = {'concert': 'music', 'music_festival': 'music', 'comedy': 'comedy', 'theater': 'art', 'broadway_tickets_national': 'art',
-              'classical': 'music', 'dance_performance_tour': 'art', 'film': 'film', 'sports': 'sports', 'family': 'community'}
+CATEGORIES = {'concert': 'music', 'music_festival': 'music', 'comedy': 'comedy', 'theater': 'theater', 'broadway_tickets_national': 'theater',
+              'classical': 'music', 'dance_performance_tour': 'theater', 'film': 'film', 'sports': 'sports', 'family': 'community'}
 
 
 def fetch_day(day, client_id):
@@ -49,7 +49,7 @@ def category(ev):
             return CATEGORIES[n]
         if 'sport' in n or n.endswith(('baseball', 'basketball', 'football', 'hockey', 'soccer')):
             return 'sports'
-    return 'community'
+    return venue_category((ev.get('venue') or {}).get('name', ''))
 
 
 def to_raw(ev):

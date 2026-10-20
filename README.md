@@ -165,6 +165,13 @@ secret of that name. Without one it skips the run, like Ticketmaster.
 so on). Those pages list events in date order but cannot be paged further from outside the app, so a very busy
 category may be cut short. Venues are placed from their street address with GeoSearch and cached.
 
+### Categories
+
+Each fetcher maps its source's own labels into the map's categories (`CATEGORIES` in `src/scripts/events/schema.js`).
+Theater covers plays, musicals, opera and dance; art covers museums, galleries, exhibits and openings. When a
+listing has no usable label, `venue_category()` in `tools/fetch_nycgov.py` decides from the venue name: a museum or
+gallery is art, a theater or playhouse is theater, a cinema is film.
+
 ## Adding a real event source
 
 1. Copy `src/scripts/events/sources/template.js` to a new file and fill in `fetchEvents({ date, bounds })`.

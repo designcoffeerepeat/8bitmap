@@ -25,7 +25,7 @@ OUT = ROOT / 'public' / 'data' / 'dice-events.json'
 SITE = 'https://dice.fm'
 BROWSE = f'{SITE}/browse/new_york-5bbf4db0f06331478e9b2c59'
 CATEGORIES = {'music:gig': 'music', 'music:dj': 'nightlife', 'music:party': 'nightlife', 'culture:comedy': 'comedy',
-              'culture:theatre': 'art', 'culture:film': 'film', 'culture:sport': 'sports', 'culture:art': 'art',
+              'culture:theatre': 'theater', 'culture:film': 'film', 'culture:sport': 'sports', 'culture:art': 'art',
               'culture:food': 'food'}
 
 
