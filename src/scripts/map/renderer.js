@@ -516,7 +516,7 @@ function buildBuildings(world, city, landmarkCells) {
       if (r() < 0.25) boxes.push([x + jx, GROUND_H + height + h2, z + jz, 0.08, 0.9, 0.08, '#e8eef9']);
     } else if (h > 2 && r() < 0.1) {
       // rooftop water tower, very New York
-      boxes.push([x + jx + 0.15, GROUND_H + height, z + jz - 0.1, 0.22, 0.3, 0.22, '#9b6b47']);
+      boxes.push([x + jx + 0.15, GROUND_H + height, z + jz - 0.1, 0.22, 0.3, 0.22, '#8f8a82']);
     }
   }
   const mesh = instanced(boxes.length);
@@ -555,7 +555,7 @@ function buildLandmarks(world, city) {
     wtc: [[1.1, 12, 1.1, PALETTE.glass], [0.8, 3, 0.8, '#8fb8e8'], [0.5, 1, 0.5, '#c5d6f2'], [0.08, 4, 0.08, '#e8eef9']],
     esb: [[1.2, 3, 1.2, '#d8cfbd'], [1, 6, 1, '#e3dccd'], [0.75, 1.6, 0.75, '#d8cfbd'], [0.45, 1.2, 0.45, '#efe9dc'], [0.2, 0.8, 0.2, '#d8cfbd'], [0.07, 2.4, 0.07, '#ffffff']],
     chrysler: [[1, 7.5, 1, '#c9d2e3'], [0.75, 1.2, 0.75, '#e8eef9'], [0.55, 0.9, 0.55, '#f4f7fd'], [0.35, 0.7, 0.35, '#e8eef9'], [0.06, 2, 0.06, '#ffffff']],
-    liberty: [[1, 0.6, 1, '#c9b48a'], [0.55, 0.9, 0.55, '#bda57a'], [0.35, 1.3, 0.35, PALETTE.liberty], [0.22, 0.4, 0.22, PALETTE.liberty]],
+    liberty: [[1, 0.6, 1, '#d6d2ca'], [0.55, 0.9, 0.55, '#c8c3ba'], [0.35, 1.3, 0.35, PALETTE.liberty], [0.22, 0.4, 0.22, PALETTE.liberty]],
   };
   const parts = [];
   for (const l of LANDMARKS) {
@@ -569,7 +569,7 @@ function buildLandmarks(world, city) {
       }
       if (l.id === 'liberty') {
         parts.push([p.x + 0.15, y - 0.4, p.z, 0.08, 0.8, 0.08, PALETTE.liberty]); // raised arm
-        parts.push([p.x + 0.15, y + 0.4, p.z, 0.16, 0.2, 0.16, '#ffd23f']); // torch
+        parts.push([p.x + 0.15, y + 0.4, p.z, 0.16, 0.2, 0.16, '#ece8e1']); // torch
       }
     } else if (l.id === 'yankee') {
       parts.push([p.x, GROUND_H, p.z, 2.4, 0.15, 2.4, '#5bbd5b']);
