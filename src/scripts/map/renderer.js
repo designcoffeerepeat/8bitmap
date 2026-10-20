@@ -379,61 +379,6 @@ function lambert(opts = {}) {
   return new THREE.MeshLambertMaterial({ flatShading: true, ...opts });
 }
 
-// Flat poster shading in the style of a screen print: no lighting, just a fixed
-// colour per face. Roofs take `top`, the faces looking along x take the instance
-// colour and the faces looking along z take `side`. With `instanceTop` the roof
-// takes the instance colour instead (used for the ground). `ink` draws a navy
-// outline around every face, a constant width on screen, that fades out on
-// faces too small to carry it.
-function poster({ top = PALETTE.cream, side = PALETTE.cobalt, ink = true, instanceTop = false } = {}) {
-  return new THREE.ShaderMaterial({
-    defines: { INSTANCE_TOP: instanceTop ? 1 : 0, INK: ink ? 1 : 0 },
-    uniforms: {
-      uTop: { value: color(top) },
-      uSide: { value: color(side) },
-      uInk: { value: color(PALETTE.navy) },
-    },
-    vertexShader: /* glsl */ `
-      varying vec3 vRole;
-      varying vec2 vFaceUv;
-      varying vec3 vInst;
-      void main() {
-        vRole = normal;
-        vFaceUv = uv;
-        vInst = vec3(1.0);
-        #ifdef USE_INSTANCING_COLOR
-          vInst = instanceColor;
-        #endif
-        vec4 p = vec4(position, 1.0);
-        #ifdef USE_INSTANCING
-          p = instanceMatrix * p;
-        #endif
-        gl_Position = projectionMatrix * modelViewMatrix * p;
-      }`,
-    fragmentShader: /* glsl */ `
-      uniform vec3 uTop;
-      uniform vec3 uSide;
-      uniform vec3 uInk;
-      varying vec3 vRole;
-      varying vec2 vFaceUv;
-      varying vec3 vInst;
-      void main() {
-        vec3 c;
-        if (vRole.y > 0.5) c = INSTANCE_TOP == 1 ? vInst : uTop;
-        else if (abs(vRole.x) > 0.5) c = INSTANCE_TOP == 1 ? uSide : vInst;
-        else c = uSide;
-        #if INK == 1
-          vec2 fw = max(fwidth(vFaceUv), vec2(1e-5));
-          vec2 px = min(vFaceUv, 1.0 - vFaceUv) / fw; // distance to the face edge in pixels
-          float size = min(1.0 / fw.x, 1.0 / fw.y);    // the face's smaller side in pixels
-          if (size > 4.0 && min(px.x, px.y) < 1.0) c = uInk;
-        #endif
-        gl_FragColor = vec4(c, 1.0);
-        #include <colorspace_fragment>
-      }`,
-  });
-}
-
 function instanced(count, material = lambert()) {
   const geo = new THREE.BoxGeometry(1, 1, 1);
   geo.translate(0, 0.5, 0); // base at y = 0
@@ -455,10 +400,10 @@ function place(mesh, idx, x, y, z, sx, sy, sz, hex, rotY = 0) {
 
 // A thick slab under the map so the city reads as a diorama.
 function buildBase(world) {
-  const slab = new THREE.Mesh(new THREE.BoxGeometry(COLS + 2, 4, ROWS + 2), new THREE.MeshBasicMaterial({ color: PALETTE.navy }));
+  const slab = new THREE.Mesh(new THREE.BoxGeometry(COLS + 2, 4, ROWS + 2), lambert({ color: '#2b335e' }));
   slab.position.y = -2.05;
   world.add(slab);
-  const rim = new THREE.Mesh(new THREE.BoxGeometry(COLS + 2.6, 0.6, ROWS + 2.6), new THREE.MeshBasicMaterial({ color: '#0a1d45' }));
+  const rim = new THREE.Mesh(new THREE.BoxGeometry(COLS + 2.6, 0.6, ROWS + 2.6), lambert({ color: '#151a33' }));
   rim.position.y = -4.2;
   world.add(rim);
 }
@@ -469,7 +414,7 @@ function buildWater(world, city) {
     const c0 = color(PALETTE.water[0]);
     const c1 = color(PALETTE.water[1]);
     const cs = color(PALETTE.waterShore);
-    const cw = color(PALETTE.waterGlint);
+    const cw = color('#ffffff');
     const r = rng(77 + frame);
     for (let row = 0; row < ROWS; row++) {
       for (let col = 0; col < COLS; col++) {
@@ -478,7 +423,7 @@ function buildWater(world, city) {
         const ti = ((ROWS - 1 - row) * COLS + col) * 4;
         let c = (col + row + frame) % 4 === 0 ? c1 : c0;
         if (city.shore[i]) c = (col + row + frame) % 2 ? cs : c1;
-        else if (r() < 0.004) c = cw; // glints
+        else if (r() < 0.0025) c = cw; // glints
         const lin = c.clone().convertLinearToSRGB();
         data[ti] = lin.r * 255; data[ti + 1] = lin.g * 255; data[ti + 2] = lin.b * 255; data[ti + 3] = 255;
       }
@@ -490,7 +435,7 @@ function buildWater(world, city) {
     tex.needsUpdate = true;
     return tex;
   });
-  const mesh = new THREE.Mesh(new THREE.PlaneGeometry(COLS, ROWS), new THREE.MeshBasicMaterial({ map: textures[0] }));
+  const mesh = new THREE.Mesh(new THREE.PlaneGeometry(COLS, ROWS), lambert({ map: textures[0] }));
   mesh.rotation.x = -Math.PI / 2;
   mesh.position.y = 0;
   world.add(mesh);
@@ -503,7 +448,7 @@ function buildLand(world, city) {
     const t = city.type[i];
     if (t === T.LAND || t === T.PARK || t === T.AIRPORT) cells.push(i);
   }
-  const mesh = instanced(cells.length, poster({ side: PALETTE.landSide, ink: false, instanceTop: true }));
+  const mesh = instanced(cells.length);
   const r = rng(5);
   cells.forEach((i, k) => {
     const { x, z } = cellPos(i);
@@ -524,7 +469,7 @@ function buildLand(world, city) {
   const parkCells = cells.filter((i) => city.type[i] === T.PARK);
   const treeR = rng(9);
   const trees = parkCells.filter(() => treeR() < 0.5);
-  const tm = instanced(trees.length, poster({ top: '#ffffff' }));
+  const tm = instanced(trees.length);
   trees.forEach((i, k) => {
     const { x, z } = cellPos(i);
     const s = 0.35 + treeR() * 0.25;
@@ -562,22 +507,20 @@ function buildBuildings(world, city, landmarkCells) {
     const row = Math.floor(i / COLS);
     const blockSeed = rng(Math.floor(col / 3) * 7919 + Math.floor(row / 3) * 104729)();
     const hex = pick(band, r() < 0.6 ? blockSeed : r());
-    // a quarter turn swaps which visible face is orange and which is cobalt
-    const turn = r() < 0.2 ? Math.PI / 2 : 0;
-    boxes.push([x + jx, GROUND_H, z + jz, fp, height, fp, hex, turn]);
+    boxes.push([x + jx, GROUND_H, z + jz, fp, height, fp, hex]);
     // tall towers get a setback and sometimes a mast
     if (h > 7) {
       const fp2 = fp * (0.55 + r() * 0.2);
       const h2 = height * (0.15 + r() * 0.2);
-      boxes.push([x + jx, GROUND_H + height, z + jz, fp2, h2, fp2, r() < 0.5 ? hex : PALETTE.cream, turn]);
-      if (r() < 0.25) boxes.push([x + jx, GROUND_H + height + h2, z + jz, 0.08, 0.9, 0.08, PALETTE.cream]);
+      boxes.push([x + jx, GROUND_H + height, z + jz, fp2, h2, fp2, r() < 0.5 ? hex : PALETTE.glass]);
+      if (r() < 0.25) boxes.push([x + jx, GROUND_H + height + h2, z + jz, 0.08, 0.9, 0.08, '#e8eef9']);
     } else if (h > 2 && r() < 0.1) {
       // rooftop water tower, very New York
-      boxes.push([x + jx + 0.15, GROUND_H + height, z + jz - 0.1, 0.22, 0.3, 0.22, PALETTE.orange]);
+      boxes.push([x + jx + 0.15, GROUND_H + height, z + jz - 0.1, 0.22, 0.3, 0.22, '#9b6b47']);
     }
   }
-  const mesh = instanced(boxes.length, poster());
-  boxes.forEach((b, k) => place(mesh, k, b[0], b[1], b[2], b[3], b[4], b[5], b[6], b[7] ?? 0));
+  const mesh = instanced(boxes.length);
+  boxes.forEach((b, k) => place(mesh, k, b[0], b[1], b[2], b[3], b[4], b[5], b[6]));
   mesh.instanceColor.needsUpdate = true;
   world.add(mesh);
 }
@@ -600,7 +543,7 @@ function buildBridges(world) {
       }
     }
   }
-  const mesh = instanced(parts.length, poster());
+  const mesh = instanced(parts.length);
   parts.forEach((p, k) => place(mesh, k, p[0], p[1], p[2], p[3], p[4], p[5], p[6], p[7]));
   mesh.instanceColor.needsUpdate = true;
   world.add(mesh);
@@ -609,11 +552,10 @@ function buildBridges(world) {
 function buildLandmarks(world, city) {
   const stacks = {
     // [footprint x, height, footprint z, colour], stacked bottom to top
-    // the poster draws these cream with an orange or cobalt shadow side
-    wtc: [[1.1, 12, 1.1, PALETTE.cream], [0.8, 3, 0.8, PALETTE.orange], [0.5, 1, 0.5, PALETTE.cream], [0.08, 4, 0.08, PALETTE.cream]],
-    esb: [[1.2, 3, 1.2, PALETTE.orange], [1, 6, 1, PALETTE.cream], [0.75, 1.6, 0.75, PALETTE.orange], [0.45, 1.2, 0.45, PALETTE.cream], [0.2, 0.8, 0.2, PALETTE.orange], [0.07, 2.4, 0.07, PALETTE.cream]],
-    chrysler: [[1, 7.5, 1, PALETTE.orange], [0.75, 1.2, 0.75, PALETTE.cream], [0.55, 0.9, 0.55, PALETTE.orange], [0.35, 0.7, 0.35, PALETTE.cream], [0.06, 2, 0.06, PALETTE.cream]],
-    liberty: [[1, 0.6, 1, PALETTE.cream], [0.55, 0.9, 0.55, PALETTE.orange], [0.35, 1.3, 0.35, PALETTE.liberty], [0.22, 0.4, 0.22, PALETTE.liberty]],
+    wtc: [[1.1, 12, 1.1, PALETTE.glass], [0.8, 3, 0.8, '#8fb8e8'], [0.5, 1, 0.5, '#c5d6f2'], [0.08, 4, 0.08, '#e8eef9']],
+    esb: [[1.2, 3, 1.2, '#d8cfbd'], [1, 6, 1, '#e3dccd'], [0.75, 1.6, 0.75, '#d8cfbd'], [0.45, 1.2, 0.45, '#efe9dc'], [0.2, 0.8, 0.2, '#d8cfbd'], [0.07, 2.4, 0.07, '#ffffff']],
+    chrysler: [[1, 7.5, 1, '#c9d2e3'], [0.75, 1.2, 0.75, '#e8eef9'], [0.55, 0.9, 0.55, '#f4f7fd'], [0.35, 0.7, 0.35, '#e8eef9'], [0.06, 2, 0.06, '#ffffff']],
+    liberty: [[1, 0.6, 1, '#c9b48a'], [0.55, 0.9, 0.55, '#bda57a'], [0.35, 1.3, 0.35, PALETTE.liberty], [0.22, 0.4, 0.22, PALETTE.liberty]],
   };
   const parts = [];
   for (const l of LANDMARKS) {
@@ -627,19 +569,19 @@ function buildLandmarks(world, city) {
       }
       if (l.id === 'liberty') {
         parts.push([p.x + 0.15, y - 0.4, p.z, 0.08, 0.8, 0.08, PALETTE.liberty]); // raised arm
-        parts.push([p.x + 0.15, y + 0.4, p.z, 0.16, 0.2, 0.16, PALETTE.orange]); // torch
+        parts.push([p.x + 0.15, y + 0.4, p.z, 0.16, 0.2, 0.16, '#ffd23f']); // torch
       }
     } else if (l.id === 'yankee') {
-      parts.push([p.x, GROUND_H, p.z, 2.4, 0.15, 2.4, PALETTE.park[0]]);
+      parts.push([p.x, GROUND_H, p.z, 2.4, 0.15, 2.4, '#5bbd5b']);
       for (const [dx, dz, sx, sz] of [[0, -1.1, 2.6, 0.4], [0, 1.1, 2.6, 0.4], [-1.1, 0, 0.4, 2.6], [1.1, 0, 0.4, 2.6]]) {
-        parts.push([p.x + dx, GROUND_H, p.z + dz, sx, 0.9, sz, PALETTE.orange]);
+        parts.push([p.x + dx, GROUND_H, p.z + dz, sx, 0.9, sz, '#f2f2f2']);
       }
     } else if (l.id === 'unisphere') {
-      parts.push([p.x, GROUND_H, p.z, 1.8, 1.1, 1.4, PALETTE.cream]);
-      parts.push([p.x, GROUND_H + 1.1, p.z, 1.5, 0.12, 1.1, PALETTE.orange]);
+      parts.push([p.x, GROUND_H, p.z, 1.8, 1.1, 1.4, '#8a4b32']);
+      parts.push([p.x, GROUND_H + 1.1, p.z, 1.5, 0.12, 1.1, '#6d3a26']);
     }
   }
-  const mesh = instanced(parts.length, poster());
+  const mesh = instanced(parts.length);
   parts.forEach((b, k) => place(mesh, k, b[0], b[1], b[2], b[3], b[4], b[5], b[6]));
   mesh.instanceColor.needsUpdate = true;
   world.add(mesh);
@@ -647,18 +589,18 @@ function buildLandmarks(world, city) {
 
 function buildBoats(world) {
   const routes = [
-    { from: [40.7005, -74.0135], to: [40.6450, -74.0600], hex: PALETTE.orange, size: [0.9, 0.35, 0.45], speed: 0.05 }, // Staten Island Ferry
-    { from: [40.7050, -73.9990], to: [40.7600, -73.9550], hex: PALETTE.cream, size: [0.6, 0.3, 0.3], speed: 0.07 }, // East River ferry
-    { from: [40.7800, -74.0060], to: [40.7100, -74.0230], hex: PALETTE.cream, size: [0.7, 0.3, 0.35], speed: 0.04 }, // Hudson
+    { from: [40.7005, -74.0135], to: [40.6450, -74.0600], hex: '#ff8a1f', size: [0.9, 0.35, 0.45], speed: 0.05 }, // Staten Island Ferry
+    { from: [40.7050, -73.9990], to: [40.7600, -73.9550], hex: '#ffffff', size: [0.6, 0.3, 0.3], speed: 0.07 }, // East River ferry
+    { from: [40.7800, -74.0060], to: [40.7100, -74.0230], hex: '#f2f2f2', size: [0.7, 0.3, 0.35], speed: 0.04 }, // Hudson
   ];
   return routes.map((rt, idx) => {
     const a = latLngToWorld(rt.from[0], rt.from[1]);
     const b = latLngToWorld(rt.to[0], rt.to[1]);
     const ang = Math.atan2(-(b.z - a.z), b.x - a.x);
     const g = new THREE.Group();
-    const hull = new THREE.Mesh(new THREE.BoxGeometry(...rt.size), new THREE.MeshBasicMaterial({ color: rt.hex }));
+    const hull = new THREE.Mesh(new THREE.BoxGeometry(...rt.size), lambert({ color: rt.hex }));
     hull.position.y = rt.size[1] / 2;
-    const cabin = new THREE.Mesh(new THREE.BoxGeometry(rt.size[0] * 0.5, rt.size[1] * 0.8, rt.size[2] * 0.7), new THREE.MeshBasicMaterial({ color: '#ffffff' }));
+    const cabin = new THREE.Mesh(new THREE.BoxGeometry(rt.size[0] * 0.5, rt.size[1] * 0.8, rt.size[2] * 0.7), lambert({ color: '#ffffff' }));
     cabin.position.y = rt.size[1] * 1.3;
     g.add(hull, cabin);
     g.rotation.y = ang;
@@ -730,10 +672,10 @@ function makePinTexture(catHex, state) {
   cv.width = w * scale;
   cv.height = h * scale;
   const ctx = cv.getContext('2d');
-  // the whole pin wears its category colour; a selected pin gets a cream eye
+  // the whole pin wears its category colour; a selected pin gets a gold eye
   const body = catHex;
   const shade = '#' + color(catHex).multiplyScalar(0.7).getHexString();
-  const outline = state === 'idle' ? PALETTE.navy : '#ffffff';
+  const outline = state === 'idle' ? '#1d2340' : '#ffffff';
   const fills = { X: outline, R: body, D: shade, C: state === 'selected' ? PALETTE.pinHi : body };
   PIN.forEach((line, y) => {
     [...line].forEach((ch, x) => {
@@ -751,7 +693,7 @@ function makePinTexture(catHex, state) {
       for (let x = 0; x < cv.width; x++) {
         const k = (y * cv.width + x) * 4;
         if (!a(x, y) && (a(x + 1, y) || a(x - 1, y) || a(x, y + 1) || a(x, y - 1))) {
-          out.data[k] = 17; out.data[k + 1] = 44; out.data[k + 2] = 98; out.data[k + 3] = 255;
+          out.data[k] = 29; out.data[k + 1] = 35; out.data[k + 2] = 64; out.data[k + 3] = 255;
         }
       }
     }
@@ -777,8 +719,8 @@ function makeLabelTexture(text, water) {
   ctx.font = `${fontPx}px "Press Start 2P", monospace`;
   ctx.textBaseline = 'top';
   ctx.imageSmoothingEnabled = false;
-  const fg = PALETTE.cream;
-  const bg = water ? PALETTE.cobalt : PALETTE.navy;
+  const fg = water ? '#e9fbff' : '#ffffff';
+  const bg = water ? '#2a7fa8' : '#1d2340';
   // hard 1px outline, drawn by offsetting the text in 8 directions
   ctx.fillStyle = bg;
   // lines are centred; a single line fills the canvas exactly as before
