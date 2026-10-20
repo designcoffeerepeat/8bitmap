@@ -52,6 +52,7 @@ button, a { font: inherit; color: inherit; }
 .brand h1 { margin: 0; font: 18px/1 var(--font-pixel); letter-spacing: 1px; display: flex; align-items: center; gap: 10px; }
 .brand h1 .pin-ico { width: 13px; height: 19px; image-rendering: pixelated; }
 .brand h1 b { color: var(--coin); font-weight: 400; }
+.brand h1 .dev-tag { font: 9px/1 var(--font-pixel); font-style: normal; color: var(--night); background: var(--coin); padding: 3px 4px 2px; }
 .brand p { margin: 0; font: 9px/1.4 var(--font-pixel); color: var(--dim); letter-spacing: 1px; }
 .brand p span + span::before { content: " · "; }
 

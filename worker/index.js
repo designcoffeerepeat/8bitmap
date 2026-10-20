@@ -43,7 +43,8 @@ export default {
     }
 
     if (PUBLIC_PATHS.has(path) || readCookie(request, COOKIE) === token) {
-      return env.ASSETS.fetch(request);
+      const res = await env.ASSETS.fetch(request);
+      return isDev ? markDev(res) : res;
     }
 
     if (!isDev && path === '/') {
@@ -56,6 +57,15 @@ export default {
     return new Response('Password required', { status: 401 });
   },
 };
+
+// On dev, "DEV" goes into the page title and the brand box so the two sites are easy to tell apart.
+function markDev(res) {
+  if (!(res.headers.get('Content-Type') || '').includes('text/html')) return res;
+  return new HTMLRewriter()
+    .on('title', { element: (el) => el.append(' DEV') })
+    .on('.brand h1', { element: (el) => el.append('<em class="dev-tag">DEV</em>', { html: true }) })
+    .transform(res);
+}
 
 // The cookie holds a hash of the password, so changing SITE_PASSWORD logs everyone out.
 async function tokenFor(password) {
