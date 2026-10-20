@@ -1,7 +1,7 @@
 // Edge gate in front of the static Astro build (dist/, bound as ASSETS).
 // One shared password (SITE_PASSWORD) unlocks the map on both workers:
 //   live (SITE=live, the default): visitors without the cookie see the coming soon page at /,
-//     with a link to the dev site; every other path asks for the password.
+//     with a link to log in; every other path asks for the password.
 //   dev (SITE=dev, set by the deploy-dev workflow): every path asks for the password.
 // This keeps the map private for now; it is a shared password, not per-person accounts.
 
@@ -48,7 +48,7 @@ export default {
     }
 
     if (!isDev && path === '/') {
-      return html(comingSoonPage({ devUrl: env.DEV_URL }));
+      return html(comingSoonPage());
     }
 
     if (request.method === 'GET' || request.method === 'HEAD') {
@@ -169,8 +169,7 @@ const HEAD = `<meta charset="utf-8">
 
 const BRAND = `<h1><img alt="" src="${PIN}">8-BIT <b>NYC</b></h1>`;
 
-function comingSoonPage({ devUrl }) {
-  const dev = devUrl ? escapeHtml(devUrl) : '/login';
+function comingSoonPage() {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -183,8 +182,7 @@ ${HEAD}
   ${BRAND}
   <h2>COMING SOON<span class="blink" aria-hidden="true">_</span></h2>
   <p>A pixel map of New York City with everything happening today, pinned block by block.</p>
-  <a class="btn" href="${dev}">ENTER DEV SITE</a>
-  <p class="small">PASSWORD REQUIRED<br>ALREADY HAVE IT? <a href="/login">LOG IN HERE</a></p>
+  <p class="small">HAVE THE PASSWORD? <a href="/login">LOG IN HERE</a></p>
 </main>
 </body>
 </html>`;
