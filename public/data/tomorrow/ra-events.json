@@ -1,0 +1,415 @@
+{
+ "source": {
+  "name": "Resident Advisor",
+  "url": "https://ra.co/events/us/newyork"
+ },
+ "date": "2026-10-21",
+ "fetchedAt": "2026-10-20T19:19:29-04:00",
+ "events": [
+  {
+   "id": "2555009",
+   "title": "PARALLELS",
+   "category": "nightlife",
+   "start": "2026-10-21T22:00:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-22T04:00:00-04:00",
+   "venue": {
+    "name": "H0L0",
+    "address": "1090 Wyckoff Ave, Queens, NY 11385, United States",
+    "neighborhood": "Queens",
+    "lat": 40.694552,
+    "lng": -73.902307
+   },
+   "price": {
+    "min": 15,
+    "max": 15,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: JEK G, Pablo Vitale, a.gar, R-DNA, Fritz Ta",
+   "details": "Genres: Techno",
+   "url": "https://ra.co/events/2555009",
+   "tags": [
+    "Techno"
+   ]
+  },
+  {
+   "id": "2549226",
+   "title": "Community Hole",
+   "category": "nightlife",
+   "start": "2026-10-21T22:00:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-22T04:00:00-04:00",
+   "venue": {
+    "name": "Bossa Nova Civic Club",
+    "address": "1271 Myrtle Ave; Brooklyn, NY 11221; United States",
+    "neighborhood": "",
+    "lat": 40.697974,
+    "lng": -73.927965
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Vesolo, SWIMMIE, Subcultures, Brutal Twink",
+   "details": "Genres: Breakbeat, Electro",
+   "url": "https://ra.co/events/2549226",
+   "tags": [
+    "Breakbeat",
+    "Electro"
+   ]
+  },
+  {
+   "id": "2552212",
+   "title": "Chess.irl X Stop1",
+   "category": "nightlife",
+   "start": "2026-10-21T19:00:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-22T01:00:00-04:00",
+   "venue": {
+    "name": "Honey's",
+    "address": "93 Scott Avenue, Brooklyn, NY 11237",
+    "neighborhood": "Brooklyn",
+    "lat": 40.710433,
+    "lng": -73.922995
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Amelia Holt, SOFIYA V, Kettle, Rila, Iggy Nuclear, Conduit",
+   "details": "Genres: House, Ambient",
+   "url": "https://ra.co/events/2552212",
+   "tags": [
+    "House",
+    "Ambient"
+   ]
+  },
+  {
+   "id": "2563441",
+   "title": "DANCE DANCE DANCE",
+   "category": "nightlife",
+   "start": "2026-10-21T22:00:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-22T04:00:00-04:00",
+   "venue": {
+    "name": "Le Bain",
+    "address": "444 W 13th Street, New York, NY 10014",
+    "neighborhood": "Manhattan",
+    "lat": 40.741077,
+    "lng": -74.008285
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: DJ Moma, Eli Escobar",
+   "details": "",
+   "url": "https://ra.co/events/2563441",
+   "tags": []
+  },
+  {
+   "id": "2541040",
+   "title": "Open Decks with STEEN and MatchMyFreq Society",
+   "category": "nightlife",
+   "start": "2026-10-21T19:00:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-22T02:00:00-04:00",
+   "venue": {
+    "name": "SILO",
+    "address": "90 Scott Ave, East Williamsburg, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.710564,
+    "lng": -73.922686
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: STEEN",
+   "details": "Genres: Techno, House",
+   "url": "https://ra.co/events/2541040",
+   "tags": [
+    "Techno",
+    "House"
+   ]
+  },
+  {
+   "id": "2540594",
+   "title": "LUSH: Joopiter, Stevo Blaque, Indigo Heaven",
+   "category": "nightlife",
+   "start": "2026-10-21T19:00:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-22T02:00:00-04:00",
+   "venue": {
+    "name": "Jupiter Disco",
+    "address": "1237 Flushing Avenue, Brooklyn, NY 11237, USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.70813,
+    "lng": -73.923523
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Joopiter, Stevo Blaque, Indigo Heaven",
+   "details": "",
+   "url": "https://ra.co/events/2540594",
+   "tags": []
+  },
+  {
+   "id": "2554854",
+   "title": "Italo Kiss: Italo Disco and Euro Electronica",
+   "category": "nightlife",
+   "start": "2026-10-21T21:30:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-22T02:00:00-04:00",
+   "venue": {
+    "name": "Danger Danger",
+    "address": "232 Knickerbocker Ave, New York, 11237",
+    "neighborhood": "",
+    "lat": 40.702811,
+    "lng": -73.925888
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Justin Denaro",
+   "details": "Genres: Italo Disco",
+   "url": "https://ra.co/events/2554854",
+   "tags": [
+    "Italo Disco"
+   ]
+  },
+  {
+   "id": "2556507",
+   "title": "Bounce Project",
+   "category": "nightlife",
+   "start": "2026-10-21T22:00:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-22T02:00:00-04:00",
+   "venue": {
+    "name": "Mood Ring",
+    "address": "1260 Myrtle Ave, Brooklyn, NY 11221, USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.697726,
+    "lng": -73.926908
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Bella Hex, Abril IRL, LoKho",
+   "details": "",
+   "url": "https://ra.co/events/2556507",
+   "tags": []
+  },
+  {
+   "id": "2492948",
+   "title": "Sonosphere: Episodic Memory, Olivia Mancuso, Kris Harris",
+   "category": "nightlife",
+   "start": "2026-10-21T19:00:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-21T23:59:00-04:00",
+   "venue": {
+    "name": "Sleepwalk",
+    "address": "251 Bushwick Avenue, Brooklyn, NY, 11211",
+    "neighborhood": "Brooklyn",
+    "lat": 40.714464,
+    "lng": -73.942319
+   },
+   "price": {
+    "min": 14.73,
+    "max": 14.73,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "Genres: Pop, Electronica",
+   "url": "https://ra.co/events/2492948",
+   "tags": [
+    "Pop",
+    "Electronica"
+   ]
+  },
+  {
+   "id": "2544446",
+   "title": "The Pink Rambo",
+   "category": "nightlife",
+   "start": "2026-10-21T21:00:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-22T02:00:00-04:00",
+   "venue": {
+    "name": "The Sultan Room",
+    "address": "234 Starr St. Brooklyn, NY 11237",
+    "neighborhood": "",
+    "lat": 40.705586,
+    "lng": -73.922342
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Nina Moss, Hard Boiled Babe",
+   "details": "Genres: Tech House, Disco",
+   "url": "https://ra.co/events/2544446",
+   "tags": [
+    "Tech House",
+    "Disco"
+   ]
+  },
+  {
+   "id": "2543377",
+   "title": "Playback 0040",
+   "category": "nightlife",
+   "start": "2026-10-21T18:00:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-21T22:00:00-04:00",
+   "venue": {
+    "name": "Bar Laika",
+    "address": "224 Greene Ave Brooklyn, New York",
+    "neighborhood": "",
+    "lat": 40.687003,
+    "lng": -73.962088
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: Solpara",
+   "details": "Genres: Downtempo",
+   "url": "https://ra.co/events/2543377",
+   "tags": [
+    "Downtempo"
+   ]
+  },
+  {
+   "id": "2543496",
+   "title": "Out The Bag: Choukroun b2b Monk",
+   "category": "nightlife",
+   "start": "2026-10-21T20:00:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-22T03:00:00-04:00",
+   "venue": {
+    "name": "Outer Heaven",
+    "address": "191 Chrystie Street, New York, NY 10002",
+    "neighborhood": "Manhattan",
+    "lat": 40.722006,
+    "lng": -73.992275
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Lineup: Monk (2)",
+   "details": "",
+   "url": "https://ra.co/events/2543496",
+   "tags": []
+  },
+  {
+   "id": "2550033",
+   "title": "BEYOND THE STARDUST",
+   "category": "nightlife",
+   "start": "2026-10-21T19:00:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-21T20:30:00-04:00",
+   "venue": {
+    "name": "The Flea Theater",
+    "address": "20 Thomas St, New York, NY 10007",
+    "neighborhood": "Manhattan",
+    "lat": 40.72,
+    "lng": -74.01
+   },
+   "price": {
+    "min": 55.5,
+    "max": 55.5,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Lineup: The Illustrious Blacks",
+   "details": "Genres: House, Disco",
+   "url": "https://ra.co/events/2550033",
+   "tags": [
+    "House",
+    "Disco"
+   ]
+  },
+  {
+   "id": "2558057",
+   "title": "SOB's presents: Celia Cruz Birthday Tribute",
+   "category": "nightlife",
+   "start": "2026-10-21T18:00:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-21T22:00:00-04:00",
+   "venue": {
+    "name": "SOBs",
+    "address": "204 Varick Street, New York, NY 10014-4810, USA",
+    "neighborhood": "Manhattan",
+    "lat": 40.728449,
+    "lng": -74.005124
+   },
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://ra.co/events/2558057",
+   "tags": []
+  },
+  {
+   "id": "2560656",
+   "title": "Wednesday JAmZZ: Adam Aronesty Trio",
+   "category": "nightlife",
+   "start": "2026-10-21T19:00:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-21T23:59:00-04:00",
+   "venue": {
+    "name": "Moondog Hifi",
+    "address": "119 Ingraham Street, Brooklyn, NY 11237",
+    "neighborhood": "Brooklyn",
+    "lat": 40.707894,
+    "lng": -73.929192
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "Genres: Jazz",
+   "url": "https://ra.co/events/2560656",
+   "tags": [
+    "Jazz"
+   ]
+  },
+  {
+   "id": "2563525",
+   "title": "Tropico Beats",
+   "category": "nightlife",
+   "start": "2026-10-21T17:00:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-22T00:00:00-04:00",
+   "venue": {
+    "name": "MAD Radio NYC",
+    "address": "395 WYTHE AVE, BROOKLYN, NEW YORK",
+    "neighborhood": "",
+    "lat": 40.711144,
+    "lng": -73.966355
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://ra.co/events/2563525",
+   "tags": []
+  }
+ ],
+ "unplaced": [
+  {
+   "title": "AMBIENT MUSIC (For Regeneration & Connection)",
+   "address": null,
+   "url": "https://ra.co/events/2551089"
+  }
+ ]
+}

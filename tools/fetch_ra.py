@@ -17,10 +17,10 @@ import urllib.request
 from datetime import datetime
 from pathlib import Path
 
-from fetch_nycgov import CACHE, NYC, UA, geosearch
+from fetch_nycgov import CACHE, DATA, NYC, UA, geosearch
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / 'public' / 'data' / 'ra-events.json'
+OUT = DATA / 'ra-events.json'
 GRAPHQL = 'https://ra.co/graphql'
 PAGE = 'https://ra.co/events/us/newyork'
 AREA_NYC = 8

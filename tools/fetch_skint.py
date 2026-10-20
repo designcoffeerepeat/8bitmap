@@ -24,10 +24,10 @@ import urllib.parse
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-from fetch_nycgov import CACHE, NYC, geocode, geosearch, get, intersection
+from fetch_nycgov import CACHE, DATA, NYC, geocode, geosearch, get, intersection
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / 'public' / 'data' / 'skint-events.json'
+OUT = DATA / 'skint-events.json'
 VENUES = ROOT / 'data' / 'venues.json'
 API = 'https://theskint.com/wp-json/wp/v2/posts'
 SITE = 'https://theskint.com/'

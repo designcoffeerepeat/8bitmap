@@ -14,6 +14,7 @@ const state = {
   selected: null,
   showAll: false,
   detailsOpen: false,
+  tomorrow: false, // the header date switches between today's and tomorrow's listings
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -35,6 +36,7 @@ const el = {
   srcMenu: $('#src-menu'),
   srcList: $('#src-list'),
   srcSummary: $('#src-summary'),
+  listTitle: $('#list-title'),
 };
 
 await document.fonts.load('8px "Press Start 2P"').catch(() => {});
@@ -45,43 +47,13 @@ for (const n of NEIGHBORHOODS) map.addAnchor(n.name, n.lat, n.lng, { className: 
 // Staten Island is off the map to the south; this sign sits in the harbour until it is drawn.
 map.addAnchor('STATEN ISLAND\nCOMING SOON', 40.6725, -74.0420, { className: 'soon-sign' });
 
-const today = new Date();
-const { events, errors } = await loadEventsForDate(today);
-state.events = events;
-if (errors.length) el.status.textContent = `${errors.length} source(s) could not be loaded.`;
+// Every publisher with events on the shown day, plus any registered source that returned none.
+let publishers = new Map();
+// The NYC day today's listings cover (YYYY-MM-DD); tomorrow is the day after it.
+let todayDay = null;
+let loading = 0;
 
-// The header shows the NYC day the listings cover, which can differ from the
-// viewer's own date.
-const snaps = SOURCES.filter((s) => s.snapshot);
-const snap = nycgovSource.snapshot ?? snaps[0]?.snapshot;
-const shownDay = snap ? new Date(`${snap.date}T12:00:00`) : today;
-el.date.textContent = shownDay
-  .toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })
-  .toUpperCase();
-if (snaps.length) {
-  const latest = snaps.map((s) => s.snapshot.fetchedAt).sort().at(-1);
-  const at = new Date(latest).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' });
-  const unplaced = snaps.reduce((n, s) => n + s.snapshot.unplaced, 0);
-  $('.panel-foot').textContent = `LISTINGS FROM ${snaps.map((s) => s.name).join(', ')}, UPDATED ${at} NYC TIME. ${unplaced ? `${unplaced} WITHOUT A MAPPABLE ADDRESS NOT SHOWN. ` : ''}EVENTS OUTSIDE THE MAP AREA ARE NOT SHOWN.`.toUpperCase();
-}
-// Every publisher with events today, plus any registered source that returned none.
-const publishers = new Map();
-for (const e of events) {
-  const p = publishers.get(e.publisher.id) ?? { ...e.publisher, count: 0 };
-  p.count++;
-  publishers.set(p.id, p);
-}
-for (const s of SOURCES) {
-  if (![...publishers.values()].some((p) => p.id === s.id) && !events.some((e) => e.source.id === s.id)) {
-    publishers.set(s.id, { id: s.id, name: s.name, url: s.url, count: 0 });
-  }
-}
-state.sources = new Set(publishers.keys());
-
-map.setEvents(events);
-renderSources();
-renderChips();
-render();
+await loadDay(false);
 
 map.on('select', (id) => select(id, { fromMap: true }));
 map.on('hover', (id) => {
@@ -90,6 +62,7 @@ map.on('hover', (id) => {
 });
 
 // ---- controls ----------------------------------------------------------
+el.date.addEventListener('click', () => loadDay(!state.tomorrow));
 $('#zoom-in').addEventListener('click', () => map.zoomBy(1.5));
 $('#zoom-out').addEventListener('click', () => map.zoomBy(1 / 1.5));
 $('#rot-l').addEventListener('click', () => map.rotateBy(Math.PI / 4));
@@ -139,6 +112,78 @@ el.srcList.addEventListener('change', (e) => {
   else state.sources.delete(id);
   sourcesChanged();
 });
+
+// ---- loading a day -----------------------------------------------------------
+// Swaps every pin, list row and count for the chosen day's events.
+async function loadDay(tomorrow) {
+  const run = ++loading;
+  el.count.textContent = 'LOADING';
+  el.date.disabled = true;
+  const day = tomorrow ? nextDay(todayDay ?? nycToday()) : null;
+  const { events, errors } = await loadEventsForDate(tomorrow ? new Date(Date.now() + 864e5) : new Date(), { tomorrow, day });
+  if (run !== loading) return;
+  el.date.disabled = false;
+
+  state.tomorrow = tomorrow;
+  state.events = events;
+  el.status.textContent = errors.length ? `${errors.length} source(s) could not be loaded.` : '';
+
+  // The header shows the NYC day the listings cover, which can differ from the
+  // viewer's own date.
+  const snaps = SOURCES.filter((s) => s.snapshot);
+  const snap = nycgovSource.snapshot ?? snaps[0]?.snapshot;
+  if (!tomorrow) todayDay = snap?.date ?? nycToday();
+  const shownDay = tomorrow ? day : todayDay;
+  const label = new Date(`${shownDay}T12:00:00`).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }).toUpperCase();
+  el.date.innerHTML = tomorrow ? `<b aria-hidden="true">&lt;</b>${label}` : `${label}<b aria-hidden="true">&gt;</b>`;
+  el.date.setAttribute('aria-label', `${label}. Show ${tomorrow ? 'today' : 'tomorrow'}'s events`);
+  el.date.title = tomorrow ? 'Back to today' : "See tomorrow's events";
+  el.date.setAttribute('aria-pressed', String(tomorrow));
+  el.listTitle.textContent = tomorrow ? 'TOMORROW' : 'TODAY';
+  const foot = $('.panel-foot');
+  if (snaps.length) {
+    const latest = snaps.map((s) => s.snapshot.fetchedAt).sort().at(-1);
+    const at = new Date(latest).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' });
+    const unplaced = snaps.reduce((n, s) => n + s.snapshot.unplaced, 0);
+    foot.textContent = `LISTINGS FROM ${snaps.map((s) => s.name).join(', ')}, UPDATED ${at} NYC TIME. ${unplaced ? `${unplaced} WITHOUT A MAPPABLE ADDRESS NOT SHOWN. ` : ''}EVENTS OUTSIDE THE MAP AREA ARE NOT SHOWN.`.toUpperCase();
+  } else if (tomorrow) {
+    foot.textContent = "TOMORROW'S LISTINGS ARE NOT IN YET. THEY ARRIVE WITH THE NEXT SCHEDULED UPDATE.";
+  }
+
+  // Keep any source the viewer switched off switched off on the other day.
+  const off = new Set([...publishers.keys()].filter((id) => !state.sources.has(id)));
+  publishers = new Map();
+  for (const e of events) {
+    const p = publishers.get(e.publisher.id) ?? { ...e.publisher, count: 0 };
+    p.count++;
+    publishers.set(p.id, p);
+  }
+  for (const s of SOURCES) {
+    if (![...publishers.values()].some((p) => p.id === s.id) && !events.some((e) => e.source.id === s.id)) {
+      publishers.set(s.id, { id: s.id, name: s.name, url: s.url, count: 0 });
+    }
+  }
+  state.sources = new Set([...publishers.keys()].filter((id) => !off.has(id)));
+
+  state.selected = null;
+  state.detailsOpen = false;
+  state.showAll = false;
+  map.select(null);
+  map.setEvents(events);
+  renderSources();
+  if (state.filter !== 'all' && !sourceEvents().some((e) => e.category === state.filter)) state.filter = 'all';
+  renderChips();
+  render();
+}
+
+function nycToday() {
+  return new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+}
+function nextDay(ymd) {
+  const d = new Date(`${ymd}T12:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + 1);
+  return d.toISOString().slice(0, 10);
+}
 
 // ---- rendering -------------------------------------------------------------
 function sourceEvents() {
@@ -215,7 +260,7 @@ function renderChips() {
 function render() {
   const list = visibleEvents();
   map.setVisible(list.map((e) => e.id));
-  el.count.textContent = `${list.length} ${list.length === 1 ? 'EVENT' : 'EVENTS'} TODAY`;
+  el.count.textContent = `${list.length} ${list.length === 1 ? 'EVENT' : 'EVENTS'} ${state.tomorrow ? 'TOMORROW' : 'TODAY'}`;
 
   const shown = state.showAll ? list : list.slice(0, LIST_PAGE);
   const now = Date.now();
@@ -230,7 +275,7 @@ function render() {
         <span class="ev-tags"><span class="tag">${CATEGORY_LABELS[e.category]}</span><span class="price">${fmtPrice(e)}</span></span>
       </button>
     </li>`;
-  }).join('') || `<li class="empty">${state.sources.size ? 'No events in this category today.' : 'No sources selected. Pick some under SOURCES.'}</li>`;
+  }).join('') || `<li class="empty">${!state.events.length && state.tomorrow ? "Tomorrow's listings are not in yet." : state.sources.size ? `No events in this category ${state.tomorrow ? 'tomorrow' : 'today'}.` : 'No sources selected. Pick some under SOURCES.'}</li>`;
 
   el.list.querySelectorAll('.ev').forEach((b) => {
     b.addEventListener('click', () => select(b.dataset.id));

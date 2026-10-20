@@ -24,10 +24,10 @@ import time
 from datetime import datetime
 from pathlib import Path
 
-from fetch_nycgov import CACHE, NYC, get
+from fetch_nycgov import CACHE, DATA, NYC, get
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / 'public' / 'data' / 'artwrld-events.json'
+OUT = DATA / 'artwrld-events.json'
 SITE = 'https://www.artwrld.com'
 PAGE = '/city/new-york/openings'
 EXHIBITIONS = '/city/new-york/exhibitions'
