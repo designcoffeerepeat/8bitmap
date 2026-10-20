@@ -66,7 +66,7 @@ src/scripts/map/palette.js        colours for the city and for event categories
 src/scripts/events/schema.js      the one event shape every source maps into
 src/scripts/events/index.js       loads all sources, filters to today and the map area, de-duplicates, sorts
 src/scripts/events/sources/       one file per event source: nycgov.js, donyc.js, ra.js, skint.js, luma.js, permits.js,
-                                  ticketmaster.js, seatgeek.js, dice.js (live), snapshot.js (shared reader),
+                                  ticketmaster.js, seatgeek.js, dice.js, artwrld.js (live), snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
 public/                           other static files copied as-is (favicon)
@@ -79,6 +79,7 @@ tools/fetch_permits.py            pulls one day of NYC permitted street events (
 tools/fetch_ticketmaster.py       pulls one day of Ticketmaster events (needs TICKETMASTER_API_KEY)
 tools/fetch_seatgeek.py           pulls one day of SeatGeek events (needs SEATGEEK_CLIENT_ID)
 tools/fetch_dice.py               pulls one day of DICE New York events
+tools/fetch_artwrld.py            pulls the day's gallery and museum openings from Artwrld
 data/geocode-cache.json           address lookups the fetch scripts reuse
 data/venues.json                  street addresses for venues The Skint names without one
 ```
@@ -99,6 +100,7 @@ python3 tools/fetch_permits.py
 TICKETMASTER_API_KEY=... python3 tools/fetch_ticketmaster.py
 SEATGEEK_CLIENT_ID=... python3 tools/fetch_seatgeek.py
 python3 tools/fetch_dice.py
+python3 tools/fetch_artwrld.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
 ```
 
@@ -171,6 +173,14 @@ Each fetcher maps its source's own labels into the map's categories (`CATEGORIES
 Theater covers plays, musicals, opera and dance; art covers museums, galleries, exhibits and openings. When a
 listing has no usable label, `venue_category()` in `tools/fetch_nycgov.py` decides from the venue name: a museum or
 gallery is art, a theater or playhouse is theater, a cinema is film.
+
+### Artwrld
+
+`fetch_artwrld.py` reads Artwrld's New York openings page (https://www.artwrld.com/city/new-york/openings), which
+lists the coming week's gallery and museum exhibition openings with each gallery's coordinates. Openings on the day
+are kept as art. The reception time comes from the listing or the exhibition's own page; an opening with no time
+is shown all day. Only the title, gallery, dates and a link are kept. The page only lists upcoming openings, so a
+past day comes back empty.
 
 ## Adding a real event source
 

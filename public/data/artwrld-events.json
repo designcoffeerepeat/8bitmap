@@ -1,0 +1,57 @@
+{
+ "source": {
+  "name": "Artwrld",
+  "url": "https://www.artwrld.com/city/new-york/openings"
+ },
+ "date": "2026-10-20",
+ "fetchedAt": "2026-10-20T14:47:56-04:00",
+ "events": [
+  {
+   "id": "81359",
+   "title": "ARLENE BAKER: SILK SCREENS To SILK SPACES",
+   "category": "art",
+   "start": "2026-10-20T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Noho M55 Gallery",
+    "address": "",
+    "neighborhood": "Chelsea",
+    "lat": 40.75156,
+    "lng": -74.00418
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Exhibition opening, on view until Nov 7",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/silk-screens-to-silk-spaces",
+   "tags": [
+    "opening"
+   ]
+  },
+  {
+   "id": "85478",
+   "title": "A Seven-Day Show",
+   "category": "art",
+   "start": "2026-10-20T18:00:00-04:00",
+   "end": "2026-10-20T20:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Hole, Bowery",
+    "address": "",
+    "neighborhood": "Lower East Side / East Village",
+    "lat": 40.7251,
+    "lng": -73.9927
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Exhibition opening, on view until Oct 27",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/a-seven-day-show-the-hole",
+   "tags": [
+    "opening"
+   ]
+  }
+ ],
+ "unplaced": []
+}

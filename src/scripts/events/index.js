@@ -16,9 +16,10 @@ import permitsSource from './sources/permits.js';
 import ticketmasterSource from './sources/ticketmaster.js';
 import seatgeekSource from './sources/seatgeek.js';
 import diceSource from './sources/dice.js';
+import artwrldSource from './sources/artwrld.js';
 
 // ./sources/dummy.js holds sample events for offline testing.
-export const SOURCES = [nycgovSource, donycSource, raSource, skintSource, lumaSource, permitsSource, ticketmasterSource, seatgeekSource, diceSource];
+export const SOURCES = [nycgovSource, donycSource, raSource, skintSource, lumaSource, permitsSource, ticketmasterSource, seatgeekSource, diceSource, artwrldSource];
 
 export async function loadEventsForDate(date = new Date()) {
   const results = await Promise.allSettled(
