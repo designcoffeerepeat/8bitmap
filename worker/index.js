@@ -4,10 +4,31 @@
 //     with a link to the dev site; every other path asks for the password.
 //   dev (SITE=dev, set by the deploy-dev workflow): every path asks for the password.
 // This keeps the map private for now; it is a shared password, not per-person accounts.
+// It also handles the contact form (POST /api/contact, open to everyone) and marks pages for
+// visitors who need to be asked about cookies (EU, EEA, UK, Switzerland) so analytics waits for a yes.
+
+import { EmailMessage } from 'cloudflare:email';
 
 const COOKIE = '8bm_auth';
 const MAX_AGE = 60 * 60 * 24 * 30; // stay logged in for 30 days
 const PUBLIC_PATHS = new Set(['/favicon.svg', '/robots.txt']);
+
+// Countries where analytics cookies need consent first: the EU, the rest of the EEA, the UK and Switzerland.
+const CONSENT_COUNTRIES = new Set([
+  'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU',
+  'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'GB', 'CH',
+]);
+
+// Contact form topics: Ad/Event Inquiry is for sales@, the rest for info@. Cloudflare can only send a
+// Worker's email to verified destination addresses, so each copy goes straight to the inboxes those
+// two addresses forward to (keep these in step with email-worker/index.js), marked with the address it was for.
+const INBOXES = ['8bitnyc@proton.me', 'martin+8bitnyc@3h-i.com', 'peter+8bitnyc@3h-i.com'];
+const TOPICS = {
+  general: { label: 'General Questions', to: 'info@8bit.nyc', inboxes: INBOXES },
+  comments: { label: 'Comments', to: 'info@8bit.nyc', inboxes: INBOXES },
+  ad: { label: 'Ad/Event Inquiry', to: 'sales@8bit.nyc', inboxes: INBOXES },
+};
+const FORM_FROM = 'website@8bit.nyc';
 
 export default {
   async fetch(request, env) {
@@ -15,6 +36,12 @@ export default {
     const path = url.pathname;
     const isDev = env.SITE === 'dev';
     const token = await tokenFor(env.SITE_PASSWORD || '');
+    const askConsent = needsConsent(request);
+    const analytics = !askConsent || readCookie(request, '8bm_consent') === 'yes';
+
+    if (path === '/api/contact') {
+      return request.method === 'POST' ? contact(request, env, url) : json({ error: 'Use POST.' }, 405);
+    }
 
     if (path === '/login' && request.method === 'POST') {
       const form = await request.formData();
@@ -28,11 +55,11 @@ export default {
           },
         });
       }
-      return html(loginPage({ next, error: true, isDev }), 401);
+      return html(loginPage({ next, error: true, isDev, analytics }), 401);
     }
 
     if (path === '/login') {
-      return html(loginPage({ next: safeNext(url.searchParams.get('next')), isDev }));
+      return html(loginPage({ next: safeNext(url.searchParams.get('next')), isDev, analytics }));
     }
 
     if (path === '/logout') {
@@ -43,12 +70,11 @@ export default {
     }
 
     if (PUBLIC_PATHS.has(path) || readCookie(request, COOKIE) === token) {
-      const res = await env.ASSETS.fetch(request);
-      return isDev ? markDev(res) : res;
+      return decorate(await env.ASSETS.fetch(request), { isDev, askConsent });
     }
 
     if (!isDev && path === '/') {
-      return html(comingSoonPage({ devUrl: env.DEV_URL }));
+      return html(comingSoonPage({ devUrl: env.DEV_URL, analytics }));
     }
 
     if (request.method === 'GET' || request.method === 'HEAD') {
@@ -58,13 +84,105 @@ export default {
   },
 };
 
-// On dev, "DEV" goes into the page title and the brand box so the two sites are easy to tell apart.
-function markDev(res) {
-  if (!(res.headers.get('Content-Type') || '').includes('text/html')) return res;
-  return new HTMLRewriter()
-    .on('title', { element: (el) => el.append(' DEV') })
-    .on('.brand h1', { element: (el) => el.append('<em class="dev-tag">DEV</em>', { html: true }) })
-    .transform(res);
+// HTML pages get data-consent="required" on <html> for visitors who must be asked about cookies,
+// which keeps Google Analytics off until they accept (see src/pages/index.astro).
+// On dev, "DEV" also goes into the page title and the brand box so the two sites are easy to tell apart.
+function decorate(res, { isDev, askConsent }) {
+  if (!(res.headers.get('Content-Type') || '').includes('text/html') || (!isDev && !askConsent)) return res;
+  let rewriter = new HTMLRewriter();
+  if (askConsent) rewriter = rewriter.on('html', { element: (el) => el.setAttribute('data-consent', 'required') });
+  if (isDev) {
+    rewriter = rewriter
+      .on('title', { element: (el) => el.append(' DEV') })
+      .on('.brand h1', { element: (el) => el.append('<em class="dev-tag">DEV</em>', { html: true }) });
+  }
+  const out = rewriter.transform(res);
+  // the page differs by country now, so no shared caches
+  const headers = new Headers(out.headers);
+  headers.set('Cache-Control', 'private, no-cache');
+  return new Response(out.body, { status: out.status, statusText: out.statusText, headers });
+}
+
+function needsConsent(request) {
+  const country = request.cf?.country || request.headers.get('CF-IPCountry') || '';
+  return CONSENT_COUNTRIES.has(country.toUpperCase());
+}
+
+// POST /api/contact with JSON { topic, name, email, message, website }; website is a honeypot.
+async function contact(request, env, url) {
+  const origin = request.headers.get('Origin');
+  if (origin && origin !== url.origin) return json({ error: 'Not allowed.' }, 403);
+  let data;
+  try {
+    data = await request.json();
+  } catch {
+    return json({ error: 'Something went wrong. Please try again.' }, 400);
+  }
+  const field = (key, max) => String(data?.[key] ?? '').trim().slice(0, max);
+  const topic = TOPICS[field('topic', 20)] || TOPICS.general;
+  const name = field('name', 100).replace(/[\r\n]+/g, ' ');
+  const email = field('email', 200);
+  const message = field('message', 5000);
+  if (field('website', 200)) return json({ ok: true }); // a bot filled in the hidden field: pretend it worked
+  if (!name || !message) return json({ error: 'Please fill in your name and a message.' }, 400);
+  if (!/^[^\s@<>",;]+@[^\s@<>",;]+\.[^\s@<>",;]+$/.test(email)) return json({ error: 'Please check your email address.' }, 400);
+  if (!env.MAIL) return json({ error: 'The contact form is not set up yet.' }, 503);
+
+  const subject = `[${topic.to}] ${topic.label} from ${name}`;
+  const body = [
+    `Topic: ${topic.label}`,
+    `For: ${topic.to}`,
+    `Name: ${name}`,
+    `Email: ${email}`,
+    `Sent from: ${url.host}`,
+    '',
+    message,
+    '',
+    '--',
+    `Sent with the contact form on ${url.host}. Reply to this email to answer ${name}.`,
+  ].join('\r\n');
+
+  const results = await Promise.allSettled(topic.inboxes.map((inbox) =>
+    env.MAIL.send(new EmailMessage(FORM_FROM, inbox, mime({ to: inbox, replyTo: email, subject, body, route: topic.to })))));
+  results.forEach((r, i) => r.status === 'rejected' && console.error(`Contact mail to ${topic.inboxes[i]} failed:`, r.reason));
+  if (!results.some((r) => r.status === 'fulfilled')) {
+    return json({ error: 'Your message could not be sent right now.' }, 502);
+  }
+  return json({ ok: true });
+}
+
+function mime({ to, replyTo, subject, body, route }) {
+  return [
+    `From: 8-Bit NYC Website <${FORM_FROM}>`,
+    `To: ${to}`,
+    `Reply-To: ${replyTo}`,
+    `Subject: ${encodeHeader(subject)}`,
+    `Date: ${new Date().toUTCString()}`,
+    `Message-ID: <${crypto.randomUUID()}@8bit.nyc>`,
+    `X-8bit-Route: ${route}`,
+    'MIME-Version: 1.0',
+    'Content-Type: text/plain; charset=utf-8',
+    'Content-Transfer-Encoding: base64',
+    '',
+    base64(body).replace(/.{76}/g, '$&\r\n'),
+  ].join('\r\n');
+}
+
+function encodeHeader(text) {
+  return /^[\x20-\x7e]*$/.test(text) ? text : `=?UTF-8?B?${base64(text)}?=`;
+}
+
+function base64(text) {
+  let bin = '';
+  for (const b of new TextEncoder().encode(text)) bin += String.fromCharCode(b);
+  return btoa(bin);
+}
+
+function json(data, status = 200) {
+  return new Response(JSON.stringify(data), {
+    status,
+    headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' },
+  });
 }
 
 // The cookie holds a hash of the password, so changing SITE_PASSWORD logs everyone out.
@@ -101,16 +219,17 @@ function html(body, status = 200) {
 
 const PIN = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 19' shape-rendering='crispEdges'%3E%3Cpath fill='%23ed1c24' d='M4 0h5v1h2v1h1v2h1v5h-1v2h-1v1h-1v2H9v2H8v2H7v1H6v-1H5v-2H4v-2H3v-2H2v-1H1V9H0V4h1V2h1V1h2z'/%3E%3Cpath fill='%23ffffff' d='M5 4h3v1h1v3H8v1H5V8H4V5h1z'/%3E%3C/svg%3E`;
 
-// Same Google Analytics tag as src/pages/index.astro.
-const HEAD = `<meta charset="utf-8">
-<!-- Google Analytics -->
+// Same Google Analytics tag as src/pages/index.astro, left out for visitors who have not accepted cookies.
+const GA = `<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TRZEWQT50E"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-TRZEWQT50E');
-</script>
+</script>`;
+
+const HEAD = `<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -169,12 +288,13 @@ const HEAD = `<meta charset="utf-8">
 
 const BRAND = `<h1><img alt="" src="${PIN}">8-BIT <b>NYC</b></h1>`;
 
-function comingSoonPage({ devUrl }) {
+function comingSoonPage({ devUrl, analytics }) {
   const dev = devUrl ? escapeHtml(devUrl) : '/login';
   return `<!doctype html>
 <html lang="en">
 <head>
 ${HEAD}
+${analytics ? GA : ''}
 <title>8-Bit NYC: Coming Soon</title>
 <meta name="description" content="An 8-bit voxel map of New York City showing today's events. Coming soon.">
 </head>
@@ -190,11 +310,12 @@ ${HEAD}
 </html>`;
 }
 
-function loginPage({ next, error = false, isDev }) {
+function loginPage({ next, error = false, isDev, analytics }) {
   return `<!doctype html>
 <html lang="en">
 <head>
 ${HEAD}
+${analytics ? GA : ''}
 <meta name="robots" content="noindex">
 <title>8-Bit NYC: Log In</title>
 </head>

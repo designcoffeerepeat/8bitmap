@@ -110,7 +110,7 @@ el.sheetToggle.addEventListener('click', () => {
   el.sheetToggle.setAttribute('aria-expanded', String(open));
 });
 document.addEventListener('keydown', (e) => {
-  if (e.key !== 'Escape') return;
+  if (e.key !== 'Escape' || document.querySelector('dialog[open]')) return;
   if (!el.srcMenu.hidden) {
     toggleSources(false);
     el.srcBtn.focus();

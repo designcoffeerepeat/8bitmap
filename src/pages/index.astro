@@ -2,19 +2,38 @@
 // The whole app is one page: a full-bleed three.js voxel map with a HUD,
 // a list of today's events and an event card. All behaviour lives in
 // src/scripts/app.js, which Astro bundles (three.js included) at build time.
+// The site menu, its modals (contact, privacy, terms) and the cookie banner live
+// in src/scripts/site.js, so they work before the map has loaded.
 import '../styles/global.css';
+import PrivacyPolicy from '../components/PrivacyPolicy.astro';
+import Terms from '../components/Terms.astro';
 ---
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<!-- Google Analytics -->
-<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-TRZEWQT50E"></script>
+<!-- Google Analytics. For visitors from the EU, EEA, UK and Switzerland (the edge worker sets
+     data-consent="required" on <html>) it waits for a yes in the cookie banner; see src/scripts/site.js. -->
 <script is:inline>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-TRZEWQT50E');
+  window.loadAnalytics = function () {
+    if (window.loadAnalytics.done) return;
+    window.loadAnalytics.done = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-TRZEWQT50E';
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag('config', 'G-TRZEWQT50E');
+  };
+  (function () {
+    // ?consent=eu previews the banner from anywhere.
+    var required = document.documentElement.dataset.consent === 'required' || /[?&]consent=eu\b/.test(location.search);
+    var choice = (document.cookie.match(/(?:^|; )8bm_consent=(yes|no)/) || [])[1] || null;
+    window.siteConsent = { required: required, choice: choice };
+    if (!required || choice === 'yes') window.loadAnalytics();
+  })();
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>8-Bit NYC</title>
@@ -31,13 +50,25 @@ import '../styles/global.css';
 <header class="hud">
   <div class="hud-top">
   <div class="brand box">
+    <div class="brand-row">
     <h1><img class="pin-ico" alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 19' shape-rendering='crispEdges'%3E%3Cpath fill='%23ed1c24' d='M4 0h5v1h2v1h1v2h1v5h-1v2h-1v1h-1v2H9v2H8v2H7v1H6v-1H5v-2H4v-2H3v-2H2v-1H1V9H0V4h1V2h1V1h2z'/%3E%3Cpath fill='%23ffffff' d='M5 4h3v1h1v3H8v1H5V8H4V5h1z'/%3E%3C/svg%3E">8-BIT <b>NYC</b></h1>
+    <button class="menu-btn" id="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu">
+      <svg viewBox="0 0 7 6" aria-hidden="true" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h7v1H0zM0 2.5h7v1H0zM0 5h7v1H0z"/></svg>
+    </button>
+    </div>
+    <nav class="site-menu box" id="site-menu" aria-label="Site" hidden>
+      <a href="#contact" data-modal="contact">CONTACT</a>
+      <a href="#privacy" data-modal="privacy">PRIVACY POLICY</a>
+      <a href="#terms" data-modal="terms">TERMS AND CONDITIONS</a>
+      <button type="button" id="cookie-settings" hidden>COOKIE SETTINGS</button>
+    </nav>
     <p><span id="today-date">TODAY</span><span id="today-count">LOADING</span></p>
   </div>
-  <aside class="ad box" aria-label="Advertisement">
+  <!-- Empty ad slot: opens the contact form on Ad/Event Inquiry. A booked ad replaces it with an <a class="ad box">. -->
+  <button class="ad box is-empty" id="ad-slot" type="button" aria-label="Advertise your ad or event here: contact us">
     <small>AD</small>
     <strong>YOUR AD/EVENT HERE</strong>
-  </aside>
+  </button>
   </div>
   <div class="filter-row">
     <div class="src-filter">
@@ -83,11 +114,64 @@ import '../styles/global.css';
   <button id="zoom-out" type="button" aria-label="Zoom out">-</button>
   <button id="rot-l" type="button" aria-label="Rotate left">&lt;</button>
   <button id="rot-r" type="button" aria-label="Rotate right">&gt;</button>
-  <button id="home" type="button" aria-label="Reset view">H</button>
+  <button id="home" type="button" aria-label="Reset view" title="Reset view">
+    <svg class="reset-ico" viewBox="0 0 10 11" aria-hidden="true" shape-rendering="crispEdges"><path fill="currentColor" d="M6 0h1v1H6zM6 1h2v1H6zM2 2h7v1H2zM1 3h1v1H1zM6 3h2v1H6zM0 4h1v1H0zM6 4h1v1H6zM0 5h1v1H0zM0 6h1v1H0zM9 6h1v1H9zM0 7h1v1H0zM9 7h1v1H9zM0 8h1v1H0zM9 8h1v1H9zM1 9h1v1H1zM8 9h1v1H8zM2 10h6v1H2z"/></svg>
+  </button>
   <button id="pixel" type="button" aria-label="Change pixel size">PX<b>2X</b></button>
 </div>
 <p class="hint">DRAG TO MOVE · SCROLL TO ZOOM · RIGHT-DRAG TO TURN</p>
 
+
+<dialog class="modal box" id="modal-contact" aria-labelledby="contact-title">
+  <div class="modal-head"><h2 id="contact-title">CONTACT</h2><button class="modal-close" type="button" aria-label="Close">X</button></div>
+  <div class="modal-body">
+    <form id="contact-form" novalidate>
+      <p class="form-intro">Questions, comments or a listing that looks wrong? Send us a note.</p>
+      <label for="cf-topic">TOPIC</label>
+      <select id="cf-topic" name="topic" required>
+        <option value="general">General Questions</option>
+        <option value="comments">Comments</option>
+        <option value="ad">Ad/Event Inquiry</option>
+      </select>
+      <div class="ad-info" id="ad-info" hidden>
+        <p><b>ADVERTISE ON THE MAP.</b> The banner next to the 8-BIT NYC header is open for ads and featured events. Tell us what you want to promote, the dates you have in mind and a link, and we will reply with options and rates.</p>
+      </div>
+      <label for="cf-name">NAME</label>
+      <input id="cf-name" name="name" type="text" autocomplete="name" maxlength="100" required>
+      <label for="cf-email">EMAIL</label>
+      <input id="cf-email" name="email" type="email" autocomplete="email" maxlength="200" required>
+      <label for="cf-message">MESSAGE</label>
+      <textarea id="cf-message" name="message" rows="5" maxlength="5000" required></textarea>
+      <!-- left empty by people, filled in by spam bots -->
+      <div class="hp" aria-hidden="true"><label for="cf-website">WEBSITE</label><input id="cf-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <p class="form-status" id="cf-status" role="status"></p>
+      <button class="btn btn-go" type="submit">SEND</button>
+      <p class="form-note">Ad/Event Inquiries go to sales@8bit.nyc, everything else to info@8bit.nyc. See our <a href="#privacy" data-modal="privacy">Privacy Policy</a>.</p>
+    </form>
+  </div>
+</dialog>
+
+<dialog class="modal box" id="modal-privacy" aria-labelledby="privacy-title">
+  <div class="modal-head"><h2 id="privacy-title">PRIVACY POLICY</h2><button class="modal-close" type="button" aria-label="Close">X</button></div>
+  <div class="modal-body legal"><PrivacyPolicy /></div>
+</dialog>
+
+<dialog class="modal box" id="modal-terms" aria-labelledby="terms-title">
+  <div class="modal-head"><h2 id="terms-title">TERMS AND CONDITIONS</h2><button class="modal-close" type="button" aria-label="Close">X</button></div>
+  <div class="modal-body legal"><Terms /></div>
+</dialog>
+
+<section class="consent box" id="consent" aria-label="Cookie consent" hidden>
+  <p>We use Google Analytics cookies to see how the map is used. They stay off unless you say yes. <a href="#privacy" data-modal="privacy">Privacy Policy</a></p>
+  <div class="consent-actions">
+    <button class="btn" type="button" data-consent="no">NO THANKS</button>
+    <button class="btn btn-go" type="button" data-consent="yes">ACCEPT</button>
+  </div>
+</section>
+
+<script>
+  import '../scripts/site.js';
+</script>
 <script>
   import '../scripts/app.js';
 </script>
