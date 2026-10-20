@@ -89,7 +89,7 @@ function html(body, status = 200) {
   });
 }
 
-const PIN = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 19' shape-rendering='crispEdges'%3E%3Cpath fill='%23ed1c24' d='M4 0h5v1h2v1h1v2h1v5h-1v2h-1v1h-1v2H9v2H8v2H7v1H6v-1H5v-2H4v-2H3v-2H2v-1H1V9H0V4h1V2h1V1h2z'/%3E%3Cpath fill='%23ffffff' d='M5 4h3v1h1v3H8v1H5V8H4V5h1z'/%3E%3C/svg%3E`;
+const PIN = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 19' shape-rendering='crispEdges'%3E%3Cpath fill='%23f35507' d='M4 0h5v1h2v1h1v2h1v5h-1v2h-1v1h-1v2H9v2H8v2H7v1H6v-1H5v-2H4v-2H3v-2H2v-1H1V9H0V4h1V2h1V1h2z'/%3E%3Cpath fill='%23f0e8d7' d='M5 4h3v1h1v3H8v1H5V8H4V5h1z'/%3E%3C/svg%3E`;
 
 // Same Google Analytics tag as src/pages/index.astro.
 const HEAD = `<meta charset="utf-8">
@@ -108,8 +108,8 @@ const HEAD = `<meta charset="utf-8">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap">
 <style>
   :root {
-    --night: #1d2340; --night-2: #2b335e; --ink: #f4f1ff; --dim: #a9aed8;
-    --frame: #ffffff; --coin: #ffd23f; --pin: #ed1c24;
+    --night: #112c62; --night-2: #1d4796; --ink: #f0e8d7; --dim: #a9b8dc;
+    --frame: #f0e8d7; --coin: #f35507; --pin: #f35507;
     --font-pixel: "Press Start 2P", "Courier New", monospace;
     --font-body: "VT323", "Courier New", monospace;
     color-scheme: dark;

@@ -1,37 +1,49 @@
-// One palette for the whole city, borrowed from 16-bit overworld maps:
-// pastel towers, sandy shores, bright bay water.
+// One palette for the whole city, taken from a three colour isometric NYC poster:
+// cobalt water and shadow faces, bright orange fronts, warm cream ground and roofs,
+// all drawn with navy ink lines.
+const COBALT = '#0a3a8c';
+const ORANGE = '#f35507';
+const CREAM = '#f0e8d7';
+const NAVY = '#112c62';
+
 export const PALETTE = {
-  sky: '#1d2340',
-  water: ['#4fb8dc', '#57c0e2'],
-  waterShore: '#8ddcf0',
-  land: { manhattan: '#e9dcc0', bronx: '#e4d6b4', li: '#e7d9b6', nj: '#e2d5b2', island: '#e9dcc0' },
-  landSide: '#b9895a',
-  sand: '#f3e0a6',
-  park: ['#5bbd5b', '#52b152'],
-  tree: ['#2f8f4e', '#3aa35a', '#277a43'],
-  airport: '#c9c9cf',
-  runway: '#6d6f7c',
-  bridge: '#8c8fa3',
-  bridgeTower: '#5a5d72',
-  // building colours, grouped by how tall the tile is
-  street: '#b8b0a6',
-  low: ['#f4a7a3', '#f7cfa1', '#f2b9c8', '#f6e3a8', '#e7a98f', '#f7cfa1', '#d9c4ef'],
-  mid: ['#e98a95', '#c4b3ef', '#f1b07a', '#9fcdea', '#f5d07e', '#ef9fb3'],
-  high: ['#8fb8e8', '#b6c6ec', '#e8eef9', '#7aa3d9', '#c5d6f2', '#f0a3b5'],
-  glass: '#6f97d6',
-  liberty: '#6fc7a4',
-  pin: '#ed1c24',
-  pinDark: '#9e0f15',
-  pinHi: '#ffd23f',
+  cobalt: COBALT,
+  orange: ORANGE,
+  cream: CREAM,
+  navy: NAVY,
+  sky: '#06317a',
+  water: ['#0a3a8c', '#0c3e93'],
+  waterShore: '#1446a0',
+  waterGlint: CREAM,
+  land: { manhattan: CREAM, bronx: '#ece3d0', li: '#eee5d3', nj: '#e9dfcb', island: CREAM },
+  landSide: '#1d4796',
+  sand: '#f5efe2',
+  park: ['#e6dcc4', '#e1d6bc'],
+  tree: ['#fbf7ee', '#f5efe2', '#ffffff'],
+  airport: '#ddd3bf',
+  runway: NAVY,
+  bridge: CREAM,
+  bridgeTower: ORANGE,
+  // the colour of each building's lit side face, grouped by how tall the tile is;
+  // roofs are always cream and the other side is always cobalt
+  street: '#e2d7c1',
+  low: [ORANGE, ORANGE, ORANGE, CREAM, ORANGE],
+  mid: [ORANGE, ORANGE, ORANGE, CREAM],
+  high: [ORANGE, ORANGE, CREAM, ORANGE],
+  glass: COBALT,
+  liberty: COBALT,
+  pin: ORANGE,
+  pinDark: '#b93d00',
+  pinHi: CREAM,
 };
 
 export const CATEGORY_COLORS = {
   music: '#ff5c8a',
   art: '#b98cff',
-  food: '#ffb347',
-  comedy: '#ffe14d',
+  food: '#ffd23f',
+  comedy: '#fff27a',
   sports: '#4dd2ff',
-  nightlife: '#ff7b4d',
+  nightlife: '#ff9a6b',
   community: '#6ee07a',
-  film: '#f0f0f0',
+  film: '#ffffff',
 };

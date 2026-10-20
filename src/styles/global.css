@@ -2,13 +2,13 @@
    today's list docked right (a bottom sheet on phones), event card bottom-left.
    Single dark arcade look by design; the map supplies the colour. */
 :root {
-  --night: #1d2340;     /* page + dialogue box ground */
-  --night-2: #2b335e;   /* raised rows */
-  --ink: #f4f1ff;       /* text */
-  --dim: #a9aed8;       /* secondary text */
-  --frame: #ffffff;     /* pixel borders */
-  --coin: #ffd23f;      /* accent: selection, focus */
-  --pin: #ed1c24;       /* map pin red */
+  --night: #112c62;     /* page + dialogue box ground */
+  --night-2: #1d4796;   /* raised rows */
+  --ink: #f0e8d7;       /* text */
+  --dim: #a9b8dc;       /* secondary text */
+  --frame: #f0e8d7;     /* pixel borders */
+  --coin: #f35507;      /* accent: selection, focus */
+  --pin: #f35507;       /* map pin orange */
   --font-pixel: "Press Start 2P", "Courier New", monospace;
   --font-body: "VT323", "Courier New", monospace;
   --panel-w: 360px;
