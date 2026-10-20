@@ -178,9 +178,10 @@ def category(text):
     rules = [
         ('film', r'movie|film|screening|cinema'),
         ('comedy', r'comedy|comedian|stand-?up|improv|storytell'),
-        ('music', r'concert|music|jazz|orchestra|band\b|dj\b|symphony|quartet|choir'),
+        ('music', r'concert|music(?!al)|jazz|orchestra|band\b|dj\b|symphony|quartet|choir'),
+        ('theater', r'theatre|theater|broadway|play\b|musical\b|opera\b|ballet|shakespeare'),
         ('food', r'food|bake sale|tasting|market\b|smorgasburg|wine|beer'),
-        ('art', r'art\b|arts\b|gallery|exhibit|museum|open studios|theatre|theater|play\b|reading'),
+        ('art', r'art\b|arts\b|gallery|exhibit|museum|open studios|opening reception|reading'),
         ('nightlife', r'party|dance|karaoke'),
         ('sports', r'race\b|run\b|basketball|soccer|shuffleboard'),
     ]

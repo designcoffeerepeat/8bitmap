@@ -28,6 +28,7 @@ export const PALETTE = {
 export const CATEGORY_COLORS = {
   music: '#ff5c8a',
   art: '#b98cff',
+  theater: '#4f6bff',
   food: '#ffb347',
   comedy: '#ffe14d',
   sports: '#4dd2ff',

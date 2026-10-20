@@ -18,14 +18,16 @@ import urllib.parse
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from fetch_nycgov import NYC, get
+from fetch_nycgov import NYC, get, venue_category
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'public' / 'data' / 'ticketmaster-events.json'
 API = 'https://app.ticketmaster.com/discovery/v2/events.json'
 PAGE = 'https://www.ticketmaster.com/discover/new-york'
 CENTER, RADIUS_MI = '40.73,-73.96', 12
-CATEGORIES = {'Music': 'music', 'Sports': 'sports', 'Arts & Theatre': 'art', 'Film': 'film'}
+CATEGORIES = {'Music': 'music', 'Sports': 'sports', 'Arts & Theatre': 'theater', 'Film': 'film'}
+# Arts & Theatre genres that are visual art or talks rather than a stage show.
+ART_GENRES = {'Fine Art', 'Multimedia', 'Literary', 'Cultural'}
 
 
 def fetch_day(day, key):
@@ -68,7 +70,9 @@ def to_raw(ev, day):
     return {
         'id': ev['id'],
         'title': ev['name'],
-        'category': 'comedy' if genre == 'Comedy' else CATEGORIES.get(seg, 'community'),
+        'category': ('comedy' if genre == 'Comedy' else 'music' if genre == 'Classical'
+                     else 'art' if seg == 'Arts & Theatre' and genre in ART_GENRES
+                     else CATEGORIES.get(seg) or venue_category(v.get('name', ''))),
         'start': start.isoformat(),
         'end': None,
         'allDay': all_day,

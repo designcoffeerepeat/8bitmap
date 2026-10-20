@@ -18,14 +18,21 @@ import time
 from datetime import datetime
 from pathlib import Path
 
-from fetch_nycgov import CACHE, NYC, geosearch, get, intersection
+from fetch_nycgov import CACHE, NYC, geosearch, get, intersection, venue_category
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'public' / 'data' / 'donyc-events.json'
 SITE = 'https://donyc.com'
-CATEGORIES = {'music': 'music', 'art': 'art', 'arts': 'art', 'theatre': 'art', 'theater': 'art', 'comedy': 'comedy',
+CATEGORIES = {'music': 'music', 'art': 'art', 'arts': 'art', 'theatre': 'theater', 'theater': 'theater', 'comedy': 'comedy',
               'food': 'food', 'food-drink': 'food', 'sports': 'sports', 'film': 'film', 'nightlife': 'nightlife',
               'dance': 'nightlife', 'party': 'nightlife'}
+
+
+
+def category(cat, venue):
+    """doNYC files plays under arts too, so a show at a theater is theater."""
+    c = CATEGORIES.get(cat)
+    return venue_category(venue, c or 'community') if c in (None, 'art') else c
 
 
 def page(path):
@@ -55,7 +62,7 @@ def listings(day):
                 out.append({'url': SITE + link.group(1), 'path': link.group(1), 'title': text(title.group(1)),
                             'venue_path': venue.group(1), 'venue': text(venue.group(2)),
                             'start': start.group(1), 'end': end.group(1) if end else None,
-                            'category': CATEGORIES.get(cat.group(1) if cat else '', 'community')})
+                            'category': category(cat.group(1) if cat else '', text(venue.group(2)))})
         n += 1
         time.sleep(0.3)
     return out

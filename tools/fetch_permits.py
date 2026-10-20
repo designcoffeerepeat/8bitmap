@@ -57,7 +57,11 @@ def category(name, kind):
         return 'sports'
     if re.search(r'music|concert|jazz', t):
         return 'music'
-    if re.search(r'art|film|theater|theatre|dance', t):
+    if re.search(r'theater|theatre|shakespeare', t):
+        return 'theater'
+    if re.search(r'film', t):
+        return 'film'
+    if re.search(r'art\b|arts\b|dance', t):
         return 'art'
     return 'community'
 

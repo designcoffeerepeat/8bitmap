@@ -4,7 +4,7 @@
   "url": "https://dice.fm/browse/new_york-5bbf4db0f06331478e9b2c59"
  },
  "date": "2026-10-20",
- "fetchedAt": "2026-10-20T13:01:53-04:00",
+ "fetchedAt": "2026-10-20T14:31:16-04:00",
  "events": [
   {
    "id": "6ace8999f5091000014e58cf",
@@ -202,7 +202,7 @@
    "id": "6ad108479fcdc30001e737c1",
    "title": "Slat & Co. with TIDES Trio",
    "category": "music",
-   "start": "2026-10-20T22:00:00-04:00",
+   "start": "2026-10-20T21:00:00-04:00",
    "end": null,
    "venue": {
     "name": "Sleepwalk",
@@ -364,6 +364,30 @@
    "description": "",
    "details": "",
    "url": "https://dice.fm/event/6ad50a57aadbc900016466a7",
+   "tags": []
+  },
+  {
+   "id": "6ad788c81a4b6900012a9be1",
+   "title": "Deep Meditation Sound Exploratory",
+   "category": "community",
+   "start": "2026-10-20T18:30:00-04:00",
+   "end": "2026-10-20T19:30:00-04:00",
+   "venue": {
+    "name": "Surya Sound Temple",
+    "address": "101 Wyckoff Avenue Unit 1H, Brooklyn, New York 11237, United States",
+    "neighborhood": "",
+    "lat": 40.704802,
+    "lng": -73.919562
+   },
+   "price": {
+    "min": 50,
+    "max": 50,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6ad788c81a4b6900012a9be1",
    "tags": []
   },
   {
