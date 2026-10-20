@@ -31,9 +31,7 @@ query GET_EVENT_LISTINGS($filters: FilterInputDtoInput, $pageSize: Int, $page: I
     totalResults
     data {
       event {
-        id title startTime endTime contentUrl cost
-        genres { name }
-        artists { name }
+        id title startTime endTime contentUrl
         venue { name address location { latitude longitude } }
       }
     }
@@ -92,21 +90,8 @@ def local_iso(naive):
     return datetime.fromisoformat(naive[:19]).replace(tzinfo=NYC).isoformat()
 
 
-def price(cost):
-    nums = [float(n) for n in re.findall(r'\d+(?:\.\d+)?', cost or '')]
-    if re.search(r'\bfree\b', cost or '', re.I) and not nums:
-        return None, False
-    if not nums:
-        return None, True
-    lo, hi = min(nums), max(nums)
-    return {'min': round(lo) if lo.is_integer() else lo, 'max': round(hi) if hi.is_integer() else hi, 'currency': 'USD'}, False
-
-
 def to_raw(ev, day, pos):
     v = ev['venue'] or {}
-    p, unknown = price(ev.get('cost'))
-    artists = [a['name'] for a in ev.get('artists') or []]
-    genres = [g['name'] for g in ev.get('genres') or []]
     neighborhood = ''
     m = re.search(r',\s*([^,]+?),\s*NY\b', v.get('address') or '')
     if m:
@@ -122,12 +107,8 @@ def to_raw(ev, day, pos):
         'end': local_iso(ev.get('endTime')),
         'venue': {'name': v.get('name') or 'Venue TBA', 'address': v.get('address') or '', 'neighborhood': neighborhood,
                   'lat': round(pos['lat'], 6), 'lng': round(pos['lng'], 6)},
-        'price': p,
-        'priceUnknown': unknown,
-        'description': f"Lineup: {', '.join(artists)}" if artists else '',
-        'details': f"Genres: {', '.join(genres)}" if genres else '',
+        # Only the title, time and a link back to RA are kept (no lineup, price or genres).
         'url': f"https://ra.co{ev['contentUrl']}",
-        'tags': genres,
     }
 
 

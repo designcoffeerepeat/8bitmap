@@ -12,4 +12,6 @@ export default snapshotSource({
   name: 'The Skint',
   url: 'https://theskint.com/',
   file: 'skint-events.json',
+  // Shown as title, time and a link back to The Skint only.
+  listingOnly: true,
 });

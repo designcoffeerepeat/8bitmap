@@ -183,7 +183,14 @@ button, a { font: inherit; color: inherit; }
 .d-more p { margin: 0 0 8px; color: var(--ink); }
 .d-more .d-tags span { color: var(--coin); }
 .d-more .d-src { color: var(--dim); font-size: 17px; }
+.d-src { margin: 0 0 10px; color: var(--dim); font-size: 17px; }
 .d-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+/* SeatGeek's mark in their brand coral wherever their data is shown */
+.sg-logo { display: grid; place-items: center; width: 36px; height: 36px; margin-left: auto; padding: 2px; background: #fff; }
+.sg-logo svg { width: 100%; height: 100%; fill: #ff5b49; }
+.sg-logo:hover { background: var(--coin); }
+.sg-mark { margin-left: auto; margin-right: 8px; width: 16px; height: 16px; padding: 1px; background: #fff; }
+.sg-mark svg { display: block; width: 100%; height: 100%; fill: #ff5b49; }
 .btn {
   padding: 9px 10px 8px; cursor: pointer; text-decoration: none;
   font: 8px/1 var(--font-pixel); background: var(--night-2); border: 3px solid var(--frame);
