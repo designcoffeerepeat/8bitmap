@@ -69,6 +69,7 @@ src/scripts/events/sources/       one file per event source: nycgov.js, donyc.js
                                   ticketmaster.js, seatgeek.js, dice.js, artwrld.js (live), snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
+public/data/tomorrow/*.json       the same snapshots for the next NYC day (EVENTS_DIR=public/data/tomorrow)
 public/                           other static files copied as-is (favicon)
 tools/fetch_nycgov.py             pulls one day of NYC.gov events and places them on the map
 tools/fetch_donyc.py              pulls one day of doNYC listings and places each venue once
@@ -86,7 +87,7 @@ data/venues.json                  street addresses for venues The Skint names wi
 
 ## Refreshing the events
 
-The map shows a snapshot of one day's events. A GitHub Action (`.github/workflows/refresh-events.yml`) runs every `tools/fetch_*.py` and
+The map shows a snapshot of one day's events; clicking the date in the header switches to tomorrow's. A GitHub Action (`.github/workflows/refresh-events.yml`) runs every `tools/fetch_*.py`, once for today and once for tomorrow, and
 refreshes them every morning and midday New York time and pushes the new snapshot, which redeploys the site.
 You can also run it from the repo's Actions tab (Run workflow), or by hand with Python 3, then commit and push:
 
@@ -102,6 +103,7 @@ SEATGEEK_CLIENT_ID=... python3 tools/fetch_seatgeek.py
 python3 tools/fetch_dice.py
 python3 tools/fetch_artwrld.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
+EVENTS_DIR=public/data/tomorrow python3 tools/fetch_nycgov.py 2026-10-18  # tomorrow's snapshot, as the Action writes it
 ```
 
 Run them all for the same day: each source only shows events on the day its own snapshot covers.

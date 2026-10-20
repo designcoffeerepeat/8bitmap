@@ -21,10 +21,10 @@ import urllib.parse
 from datetime import datetime
 from pathlib import Path
 
-from fetch_nycgov import CACHE, NYC, dist_m, geosearch, get, intersection
+from fetch_nycgov import CACHE, DATA, NYC, dist_m, geosearch, get, intersection
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / 'public' / 'data' / 'permits-events.json'
+OUT = DATA / 'permits-events.json'
 API = 'https://data.cityofnewyork.us/resource/tvpp-9vvx.json'
 PAGE = 'https://data.cityofnewyork.us/d/tvpp-9vvx'
 # Permit types that are public events. Parks "Special Event" permits also cover

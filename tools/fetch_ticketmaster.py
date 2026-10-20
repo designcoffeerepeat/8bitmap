@@ -18,10 +18,10 @@ import urllib.parse
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from fetch_nycgov import NYC, get, venue_category
+from fetch_nycgov import DATA, NYC, get, venue_category
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / 'public' / 'data' / 'ticketmaster-events.json'
+OUT = DATA / 'ticketmaster-events.json'
 API = 'https://app.ticketmaster.com/discovery/v2/events.json'
 PAGE = 'https://www.ticketmaster.com/discover/new-york'
 CENTER, RADIUS_MI = '40.73,-73.96', 12

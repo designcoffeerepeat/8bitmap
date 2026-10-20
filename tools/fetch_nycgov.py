@@ -35,7 +35,11 @@ except Exception:  # pragma: no cover
     NYC = timezone(timedelta(hours=-4))
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / 'public' / 'data' / 'nycgov-events.json'
+# Snapshots land in public/data; the refresh workflow sets EVENTS_DIR=public/data/tomorrow
+# for its second pass, which fetches the next NYC day.
+DATA = ROOT / os.environ.get('EVENTS_DIR', 'public/data')
+DATA.mkdir(parents=True, exist_ok=True)
+OUT = DATA / 'nycgov-events.json'
 CACHE = ROOT / 'data' / 'geocode-cache.json'
 # Where each Parks event location sits, learnt whenever the Parks feed answers.
 # nycgovparks.org refuses requests from GitHub's servers, so the scheduled
