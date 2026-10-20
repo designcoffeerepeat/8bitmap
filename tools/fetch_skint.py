@@ -191,22 +191,6 @@ def category(text):
     return 'community'
 
 
-def price(text, free_default):
-    # Promo savings are not prices ('save $10 with promo code ...').
-    t = re.sub(r'save \$\d+(?:\.\d+)?|\$\d+(?:\.\d+)? off', '', text.lower())
-    if re.search(r'free admission|\bfree\b(?! drink| popcorn| pizza| snacks)', t) and '$' not in t.split('free')[0][-40:]:
-        if not re.search(r'\$\d', t):
-            return None, False
-    nums = [float(n) for n in re.findall(r'\$(\d+(?:\.\d+)?)', t)]
-    if nums:
-        lo, hi = min(nums), max(nums)
-        fmt = lambda x: int(x) if x.is_integer() else x
-        return {'min': fmt(lo), 'max': fmt(hi), 'currency': 'USD'}, False
-    if free_default:
-        return None, False
-    return None, True
-
-
 # ---- placing listings -------------------------------------------------------
 
 def venue_options(rest):
@@ -299,7 +283,6 @@ def place(name, boro, venues, cache):
 
 def listings(post, rng, day):
     content = post['content']['rendered']
-    free_default = False
     for para in re.findall(r'<p[^>]*>(.*?)</p>', content, re.S):
         text = strip(para)
         if not text:
@@ -310,10 +293,7 @@ def listings(post, rng, day):
         prefix = strip(para[:b.start()])
         title = strip(b.group(1))
         if not prefix:
-            # Section header such as 'cultural fests ... (free admission, unless noted otherwise):'
-            free_default = 'free admission, unless noted' in text.lower()
-            if re.fullmatch(r'(monday|tuesday|wednesday|thursday|friday|saturday|sunday|ongoing)', text.lower()):
-                free_default = False
+            # Section header such as 'cultural fests ...:'
             continue
         prefix = re.sub(r'^[^a-z0-9]*(sponsored\s*:\s*)?', '', prefix.lower()).strip()
         if not re.match(r'(mon|tue|wed|thu|fri|sat|sun|daily|\d{1,2}/\d{1,2})', prefix):
@@ -336,7 +316,6 @@ def listings(post, rng, day):
             'start': start,
             'end': end,
             'link': link or post['link'],
-            'free_default': free_default,
         }
 
 
@@ -369,25 +348,19 @@ def main():
                 if pos:
                     break
             if not pos:
-                unplaced.append({'title': li['title'], 'where': li['rest'][:160], 'url': li['link']})
+                unplaced.append({'title': li['title'], 'url': li['link']})
                 continue
-            p, unknown = price(li['rest'], li['free_default'])
-            desc = li['rest']
             events.append({
                 'id': re.sub(r'[^a-z0-9]+', '-', li['title'].lower()).strip('-')[:60] + f'-{day:%m%d}',
                 'title': titled(li['title']),
-                'category': category(f"{li['title']} {desc}"),
+                'category': category(f"{li['title']} {li['rest']}"),
                 'start': iso(day, li['start'] or (0, 0)),
                 'end': iso(day, li['end']) if li['end'] and li['start'] and li['end'] > li['start'] else None,
                 'allDay': li['start'] is None,
                 'venue': {'name': titled(vname), 'address': pos.get('label', ''),
                           'neighborhood': hood.upper() if len(hood) <= 3 else titled(hood), 'lat': round(pos['lat'], 6), 'lng': round(pos['lng'], 6)},
-                'price': p,
-                'priceUnknown': unknown,
-                'description': desc[:220] + ('...' if len(desc) > 220 else ''),
-                'details': f"{li['prefix']}: {desc}",
+                # Only the title, time and a link are kept; The Skint's write-up and price stay on their site.
                 'url': li['link'],
-                'tags': [],
             })
 
     CACHE.write_text(json.dumps(cache, indent=1, sort_keys=True))
