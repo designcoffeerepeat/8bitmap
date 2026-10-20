@@ -17,10 +17,10 @@ import urllib.parse
 from datetime import datetime
 from pathlib import Path
 
-from fetch_nycgov import NYC, get
+from fetch_nycgov import DATA, NYC, get
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / 'public' / 'data' / 'luma-events.json'
+OUT = DATA / 'luma-events.json'
 API = 'https://api.lu.ma/discover/get-paginated-events'
 PAGE = 'https://luma.com/nyc'
 PLACE_NYC = 'discplace-Izx1rQVSh8njYpP'

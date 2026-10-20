@@ -18,10 +18,10 @@ import time
 from datetime import datetime
 from pathlib import Path
 
-from fetch_nycgov import CACHE, NYC, geosearch, get, intersection, venue_category
+from fetch_nycgov import CACHE, DATA, NYC, geosearch, get, intersection, venue_category
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / 'public' / 'data' / 'donyc-events.json'
+OUT = DATA / 'donyc-events.json'
 SITE = 'https://donyc.com'
 CATEGORIES = {'music': 'music', 'art': 'art', 'arts': 'art', 'theatre': 'theater', 'theater': 'theater', 'comedy': 'comedy',
               'food': 'food', 'food-drink': 'food', 'sports': 'sports', 'film': 'film', 'nightlife': 'nightlife',
