@@ -1,5 +1,6 @@
 # Publishes the dev branch to its own Worker, 8bitmap-dev, so changes can be tested
 # at https://8bitmap-dev.design-coffee-repeat.workers.dev before they reach main.
+# The dev site has its own password (SITE_PASSWORD below); live keeps the one in wrangler.jsonc.
 # Needs the CLOUDFLARE_API_TOKEN repository secret (an "Edit Cloudflare Workers" token).
 name: Deploy dev
 
@@ -35,7 +36,7 @@ jobs:
           # The secret may hold Cloudflare's whole "verify" command rather than the bare token,
           # so keep only the token itself: the one long run of letters, digits, _ and -.
           export CLOUDFLARE_API_TOKEN="$(printf '%s' "$CLOUDFLARE_API_TOKEN" | grep -o '[[:alnum:]_-]\{30,\}' | tail -1)"
-          if ! npx wrangler deploy --name 8bitmap-dev --var SITE:dev 2>&1 | tee deploy.log; then
+          if ! npx wrangler deploy --name 8bitmap-dev --var SITE:dev --var SITE_PASSWORD:alpha8bit01 2>&1 | tee deploy.log; then
             grep -v '^\s*$' deploy.log | tail -25 | sed 's/^/::error::/'
             exit 1
           fi
