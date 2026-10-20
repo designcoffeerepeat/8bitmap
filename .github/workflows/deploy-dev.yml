@@ -27,7 +27,10 @@ jobs:
           node-version-file: .node-version
           cache: npm
       - run: npm ci
+      # PUBLIC_SITE=dev keeps the sources that live leaves out (src/scripts/events/live.js).
       - run: npm run build
+        env:
+          PUBLIC_SITE: dev
       - name: Deploy to 8bitmap-dev
         if: env.CLOUDFLARE_API_TOKEN != ''
         # Wrangler's own messages become annotations, since the job log isn't always at hand.
