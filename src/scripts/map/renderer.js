@@ -672,11 +672,11 @@ function makePinTexture(catHex, state) {
   cv.width = w * scale;
   cv.height = h * scale;
   const ctx = cv.getContext('2d');
-  // the whole pin wears its category colour; a selected pin gets a gold eye
+  // the whole pin wears its category colour; a selected pin gets a dark eye of the same colour
   const body = catHex;
   const shade = '#' + color(catHex).multiplyScalar(0.7).getHexString();
   const outline = state === 'idle' ? '#1d2340' : '#ffffff';
-  const fills = { X: outline, R: body, D: shade, C: state === 'selected' ? PALETTE.pinHi : body };
+  const fills = { X: outline, R: body, D: shade, C: state === 'selected' ? '#' + color(catHex).multiplyScalar(0.4).getHexString() : body };
   PIN.forEach((line, y) => {
     [...line].forEach((ch, x) => {
       if (!fills[ch]) return;
