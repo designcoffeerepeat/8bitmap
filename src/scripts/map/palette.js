@@ -4,7 +4,7 @@ export const PALETTE = {
   sky: '#1d2340',
   water: ['#4fb8dc', '#57c0e2'],
   waterShore: '#8ddcf0',
-  land: { manhattan: '#e9dcc0', bronx: '#e4d6b4', li: '#e7d9b6', nj: '#e2d5b2', island: '#e9dcc0' },
+  land: { manhattan: '#f5efe2', bronx: '#f5efe2', li: '#f5efe2', nj: '#f5efe2', island: '#f5efe2' },
   landSide: '#b9895a',
   sand: '#f3e0a6',
   park: ['#5bbd5b', '#52b152'],
