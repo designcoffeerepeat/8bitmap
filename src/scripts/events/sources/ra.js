@@ -11,4 +11,6 @@ export default snapshotSource({
   name: 'Resident Advisor',
   url: 'https://ra.co/events/us/newyork',
   file: 'ra-events.json',
+  // Shown as title, time and a link back to RA only.
+  listingOnly: true,
 });

@@ -25,6 +25,7 @@
 //   source:      { id: string, name: string, url: string }  the module that loaded it
 //   publisher:   { id: string, name: string, url: string }  who listed it; the Sources filter uses this
 //   tags:        string[]
+//   listingOnly: boolean  true when the source only allows title, time and a link
 // }
 
 export const CATEGORIES = ['music', 'art', 'theater', 'food', 'comedy', 'sports', 'nightlife', 'community', 'film'];
@@ -68,6 +69,7 @@ export function normalizeEvent(raw, source) {
     source: { id: source.id, name: source.name, url: source.url },
     publisher: raw.publisher?.id ? raw.publisher : { id: source.id, name: source.name, url: source.url },
     tags: raw.tags ?? [],
+    listingOnly: Boolean(source.listingOnly),
   };
 }
 
