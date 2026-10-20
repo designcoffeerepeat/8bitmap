@@ -4,7 +4,7 @@
   "url": "https://dice.fm/browse/new_york-5bbf4db0f06331478e9b2c59"
  },
  "date": "2026-10-20",
- "fetchedAt": "2026-10-20T05:04:00-04:00",
+ "fetchedAt": "2026-10-20T13:01:53-04:00",
  "events": [
   {
    "id": "6ace8999f5091000014e58cf",
@@ -388,6 +388,30 @@
    "description": "",
    "details": "",
    "url": "https://dice.fm/event/6ac81b03c2c5950001a008e2",
+   "tags": []
+  },
+  {
+   "id": "6ad7884c33ec2f0001788018",
+   "title": "Art of Tabla - Immersive Hand & Finger Drumming Experience",
+   "category": "community",
+   "start": "2026-10-20T17:00:00-04:00",
+   "end": "2026-10-20T18:00:00-04:00",
+   "venue": {
+    "name": "Surya Sound Temple",
+    "address": "101 Wyckoff Avenue Unit 1H, Brooklyn, New York 11237, United States",
+    "neighborhood": "",
+    "lat": 40.704802,
+    "lng": -73.919562
+   },
+   "price": {
+    "min": 33,
+    "max": 33,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6ad7884c33ec2f0001788018",
    "tags": []
   }
  ],

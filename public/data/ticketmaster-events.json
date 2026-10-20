@@ -4,7 +4,7 @@
   "url": "https://www.ticketmaster.com/discover/new-york"
  },
  "date": "2026-10-20",
- "fetchedAt": "2026-10-20T05:06:18-04:00",
+ "fetchedAt": "2026-10-20T13:02:09-04:00",
  "events": [
   {
    "id": "LvZ18QrWTgeialOZ0E4-1",
@@ -51,29 +51,6 @@
    ]
   },
   {
-   "id": "LvZ18QEC-33sYJhRiNb-p",
-   "title": "The Banksy Museum New York!",
-   "category": "art",
-   "start": "2026-10-20T10:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Banksy Museum New York",
-    "address": "277 Canal St, New York",
-    "neighborhood": "New York",
-    "lat": 40.719603,
-    "lng": -74.001358
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Fine Art",
-   "details": "",
-   "url": "https://www.universe.com/events/the-banksy-museum-new-york-tickets-5PKNY0?ref=ticketmaster",
-   "tags": [
-    "Fine Art"
-   ]
-  },
-  {
    "id": "LvZ18Qk4nbbEibYZvnO2H",
    "title": "Banksy Museum - Flexiticket",
    "category": "art",
@@ -97,10 +74,33 @@
    ]
   },
   {
-   "id": "LvZ18Q-9tbOh8sZZvyVM3",
+   "id": "LvZ18QEC-33sYJhRiNb-b",
+   "title": "The Banksy Museum New York!",
+   "category": "art",
+   "start": "2026-10-20T11:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Banksy Museum New York",
+    "address": "277 Canal St, New York",
+    "neighborhood": "New York",
+    "lat": 40.719603,
+    "lng": -74.001358
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Fine Art",
+   "details": "",
+   "url": "https://www.universe.com/events/the-banksy-museum-new-york-tickets-5PKNY0?ref=ticketmaster",
+   "tags": [
+    "Fine Art"
+   ]
+  },
+  {
+   "id": "LvZ18Q-9tbOh8sZZvyVMj",
    "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
    "category": "community",
-   "start": "2026-10-20T10:00:00-04:00",
+   "start": "2026-10-20T12:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
