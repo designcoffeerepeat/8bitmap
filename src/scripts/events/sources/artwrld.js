@@ -1,7 +1,7 @@
-// Artwrld New York openings (https://www.artwrld.com/city/new-york/openings).
+// Artwrld New York (https://www.artwrld.com/city/new-york/openings).
 //
-// tools/fetch_artwrld.py reads the openings page, keeps the gallery and museum
-// exhibitions that open on the day (with the reception time when one is given)
+// tools/fetch_artwrld.py reads the openings, exhibitions and events pages, keeps
+// the day's gallery openings, the museum shows on view and the day's art events,
 // and writes public/data/artwrld-events.json.
 
 import { snapshotSource } from './snapshot.js';

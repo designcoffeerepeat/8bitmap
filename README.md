@@ -79,7 +79,7 @@ tools/fetch_permits.py            pulls one day of NYC permitted street events (
 tools/fetch_ticketmaster.py       pulls one day of Ticketmaster events (needs TICKETMASTER_API_KEY)
 tools/fetch_seatgeek.py           pulls one day of SeatGeek events (needs SEATGEEK_CLIENT_ID)
 tools/fetch_dice.py               pulls one day of DICE New York events
-tools/fetch_artwrld.py            pulls the day's gallery and museum openings from Artwrld
+tools/fetch_artwrld.py            pulls the day's gallery openings, museum shows and art events from Artwrld
 data/geocode-cache.json           address lookups the fetch scripts reuse
 data/venues.json                  street addresses for venues The Skint names without one
 ```
@@ -176,11 +176,13 @@ gallery is art, a theater or playhouse is theater, a cinema is film.
 
 ### Artwrld
 
-`fetch_artwrld.py` reads Artwrld's New York openings page (https://www.artwrld.com/city/new-york/openings), which
-lists the coming week's gallery and museum exhibition openings with each gallery's coordinates. Openings on the day
-are kept as art. The reception time comes from the listing or the exhibition's own page; an opening with no time
-is shown all day. Only the title, gallery, dates and a link are kept. The page only lists upcoming openings, so a
-past day comes back empty.
+`fetch_artwrld.py` reads three of Artwrld's New York pages, and everything it keeps is art:
+the openings page (https://www.artwrld.com/city/new-york/openings) for gallery and museum exhibitions that open on
+the day, with the reception time from the listing or the exhibition's own page (no time means all day); the
+exhibitions page for museum shows on view that day, shown all day (gallery shows are left out, there are hundreds);
+and the events page for talks and performances on the day. Museums are matched by name (`MUSEUM` in the script) and
+placed once from one of their exhibition pages, then remembered in `data/geocode-cache.json`. Only the title, venue,
+dates and a link are kept. Openings and events are only listed ahead of time, so a past day comes back mostly empty.
 
 ## Adding a real event source
 
