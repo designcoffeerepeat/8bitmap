@@ -1,0 +1,7 @@
+// Email-only Worker for 8bit.nyc: Email Routing rules send mail here, and it forwards a copy to each inbox.
+{
+  "name": "8bitnyc-mail",
+  "main": "index.js",
+  "compatibility_date": "2025-10-01",
+  "workers_dev": false
+}

@@ -1,0 +1,35 @@
+# Publishes the 8bit.nyc email forwarding Worker (email-worker/) when it changes.
+name: Deploy email worker
+
+on:
+  push:
+    branches: [dev, main]
+    paths: ['email-worker/**', '.github/workflows/deploy-email-worker.yml']
+  workflow_dispatch: {}
+
+concurrency:
+  group: deploy-email-worker
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: d6042a3026e9b43a3cfb01f284dd5345
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+      - name: Deploy 8bitnyc-mail
+        working-directory: email-worker
+        run: |
+          set -o pipefail
+          # The secret may hold Cloudflare's whole "verify" command, so keep only the token itself.
+          export CLOUDFLARE_API_TOKEN="$(printf '%s' "$CLOUDFLARE_API_TOKEN" | grep -o '[[:alnum:]_-]\{30,\}' | tail -1)"
+          if ! npx --yes wrangler@4 deploy 2>&1 | tee deploy.log; then
+            grep -v '^\s*$' deploy.log | tail -25 | sed 's/^/::error::/'
+            exit 1
+          fi
