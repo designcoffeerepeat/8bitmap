@@ -3,15 +3,15 @@
   "name": "NYC Street Events",
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
- "date": "2026-10-19",
- "fetchedAt": "2026-10-19T13:02:20-04:00",
+ "date": "2026-10-20",
+ "fetchedAt": "2026-10-20T05:06:08-04:00",
  "events": [
   {
    "id": "972601",
    "title": "Free Yoga Classes",
    "category": "community",
-   "start": "2026-10-19T00:00:00-04:00",
-   "end": "2026-10-19T09:00:00-04:00",
+   "start": "2026-10-20T00:00:00-04:00",
+   "end": "2026-10-20T09:00:00-04:00",
    "allDay": true,
    "venue": {
     "name": "Astoria Park",
@@ -30,18 +30,87 @@
    ]
   },
   {
-   "id": "979705",
-   "title": "Project Street Beat - Keith Haring Foundation Mobile Health Center Community Event",
-   "category": "community",
-   "start": "2026-10-19T07:00:00-04:00",
-   "end": "2026-10-19T18:30:00-04:00",
+   "id": "945282",
+   "title": "GrowNYC @ Poe Park",
+   "category": "food",
+   "start": "2026-10-20T06:00:00-04:00",
+   "end": "2026-10-20T17:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "103 East 161 Street",
-    "address": "103 East 161 Street Between River Avenue And Gerard Avenue",
+    "name": "Poe Park",
+    "address": "Poe Park: Permit Area 1 - Paved Oval",
     "neighborhood": "Bronx",
-    "lat": 40.827368,
-    "lng": -73.925876
+    "lat": 40.8648,
+    "lng": -73.89461
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
+   "id": "945276",
+   "title": "GrowNYC @ Joyce Kilmer",
+   "category": "food",
+   "start": "2026-10-20T06:00:00-04:00",
+   "end": "2026-10-20T19:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Joyce Kilmer Park",
+    "address": "Joyce Kilmer Park: Picnic Or Passive Event/open Lawn",
+    "neighborhood": "Bronx",
+    "lat": 40.82853,
+    "lng": -73.92266
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
+   "id": "974105",
+   "title": "The Friends of WNYC Transmitter Park Present Community Yoga",
+   "category": "community",
+   "start": "2026-10-20T06:30:00-04:00",
+   "end": "2026-10-20T08:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Wnyc Transmitter Park",
+    "address": "Wnyc Transmitter Park: Lawn",
+    "neighborhood": "Brooklyn",
+    "lat": 40.72984,
+    "lng": -73.96079
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
+   "id": "981302",
+   "title": "Street Health Outreach and Wellness",
+   "category": "community",
+   "start": "2026-10-20T07:30:00-04:00",
+   "end": "2026-10-20T17:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "East 147 Street",
+    "address": "East 147 Street Between Willis Avenue And Bergen Avenue",
+    "neighborhood": "Bronx",
+    "lat": 40.8144,
+    "lng": -73.91846
    },
    "price": null,
    "priceUnknown": false,
@@ -53,34 +122,126 @@
    ]
   },
   {
-   "id": "981289",
-   "title": "Street Health Outreach and Wellness",
-   "category": "community",
-   "start": "2026-10-19T07:30:00-04:00",
-   "end": "2026-10-19T17:00:00-04:00",
+   "id": "911516",
+   "title": "Lincoln Hospital Greenmarket Tues  Friday",
+   "category": "food",
+   "start": "2026-10-20T08:00:00-04:00",
+   "end": "2026-10-20T17:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Hart Street",
-    "address": "Hart Street Between Broadway And Stuyvesant Avenue",
-    "neighborhood": "Brooklyn",
-    "lat": 40.694811,
-    "lng": -73.930665
+    "name": "East 149 Street",
+    "address": "East 149 Street Between Morris Avenue And Park Avenue",
+    "neighborhood": "Bronx",
+    "lat": 40.818974,
+    "lng": -73.923094
    },
    "price": null,
    "priceUnknown": false,
-   "description": "Street Event",
+   "description": "Farmers Market",
    "details": "Permit from Street Activity Permit Office.",
    "url": null,
    "tags": [
-    "Street Event"
+    "Farmers Market"
+   ]
+  },
+  {
+   "id": "911520",
+   "title": "Elmhurst Greenmarket Tuesday",
+   "category": "food",
+   "start": "2026-10-20T08:00:00-04:00",
+   "end": "2026-10-20T17:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "41 Avenue",
+    "address": "41 Avenue Between 80 Street And 81 Street",
+    "neighborhood": "Queens",
+    "lat": 40.746262,
+    "lng": -73.88511
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farmers Market",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Farmers Market"
+   ]
+  },
+  {
+   "id": "911525",
+   "title": "Ft Washington Greenmarket Tuesday",
+   "category": "food",
+   "start": "2026-10-20T08:00:00-04:00",
+   "end": "2026-10-20T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Ft Washington Avenue",
+    "address": "Ft Washington Avenue Between West 168 Street And West 169 Street",
+    "neighborhood": "Manhattan",
+    "lat": 40.8407,
+    "lng": -73.94163
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farmers Market",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Farmers Market"
+   ]
+  },
+  {
+   "id": "911528",
+   "title": "Poe Park Greenmarket Tuesday",
+   "category": "food",
+   "start": "2026-10-20T08:00:00-04:00",
+   "end": "2026-10-20T17:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "East 192 Street",
+    "address": "East 192 Street Between Grand Concourse And Valentine Avenue",
+    "neighborhood": "Bronx",
+    "lat": 40.863941,
+    "lng": -73.895401
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farmers Market",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Farmers Market"
+   ]
+  },
+  {
+   "id": "922197",
+   "title": "La Familia Verde Farmers Market",
+   "category": "food",
+   "start": "2026-10-20T08:00:00-04:00",
+   "end": "2026-10-20T16:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Walter Gladwin Park",
+    "address": "Walter Gladwin Park: Walter Gladwin Park",
+    "neighborhood": "Bronx",
+    "lat": 40.84527,
+    "lng": -73.89524
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
    ]
   },
   {
    "id": "978290",
    "title": "Immigrant Culture Month at Avenue C Plaza Extension - September",
    "category": "community",
-   "start": "2026-10-19T08:00:00-04:00",
-   "end": "2026-10-19T19:30:00-04:00",
+   "start": "2026-10-20T08:00:00-04:00",
+   "end": "2026-10-20T19:30:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Avenue C Plaza",
@@ -99,64 +260,18 @@
    ]
   },
   {
-   "id": "982170",
-   "title": "DOT Partner Pell Open Streets Events",
-   "category": "art",
-   "start": "2026-10-19T09:00:00-04:00",
-   "end": "2026-10-19T16:00:00-04:00",
+   "id": "933295",
+   "title": "WSP Food Market",
+   "category": "food",
+   "start": "2026-10-20T09:00:00-04:00",
+   "end": "2026-10-20T21:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Pell Street",
-    "address": "Pell Street Between Bowery And Mott Street",
+    "name": "Washington Square Park",
+    "address": "Washington Square Park: Wash Sq West Sidewalks",
     "neighborhood": "Manhattan",
-    "lat": 40.714641,
-    "lng": -73.997505
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Open Street Partner Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Open Street Partner Event"
-   ]
-  },
-  {
-   "id": "982153",
-   "title": "Knicks Celebration",
-   "category": "community",
-   "start": "2026-10-19T11:30:00-04:00",
-   "end": "2026-10-19T13:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Borden Avenue",
-    "address": "Borden Avenue Between Center Blvd And 2nd Street",
-    "neighborhood": "Queens",
-    "lat": 40.741935,
-    "lng": -73.959147
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "972377",
-   "title": "Valence Fall Fest",
-   "category": "community",
-   "start": "2026-10-19T16:00:00-04:00",
-   "end": "2026-10-19T19:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Flushing Meadows Corona Park",
-    "address": "Flushing Meadows Corona Park: Around The Unisphere",
-    "neighborhood": "Queens",
-    "lat": 40.74726,
-    "lng": -73.84333
+    "lat": 40.73089,
+    "lng": -73.9976
    },
    "price": null,
    "priceUnknown": false,
@@ -168,18 +283,18 @@
    ]
   },
   {
-   "id": "981418",
-   "title": "Wella Production Parking",
+   "id": "980021",
+   "title": "Overland Entertainment - 21G - People Inc.",
    "category": "community",
-   "start": "2026-10-19T16:00:00-04:00",
-   "end": "2026-10-19T21:00:00-04:00",
+   "start": "2026-10-20T09:00:00-04:00",
+   "end": null,
    "allDay": false,
    "venue": {
-    "name": "West 28 Street",
-    "address": "West 28 Street Between 11 Avenue And 10 Avenue, 11 Avenue Between West 28 Street And West 29 Street, West 28 Street Between 11 Avenue And 10 Avenue, 11 Avenue Between West 28 Street And West 29 Street",
+    "name": "Greene Street",
+    "address": "Greene Street Between Canal Street And Grand Street",
     "neighborhood": "Manhattan",
-    "lat": 40.752264,
-    "lng": -74.006236
+    "lat": 40.720596,
+    "lng": -74.002873
    },
    "price": null,
    "priceUnknown": false,
@@ -191,15 +306,15 @@
    ]
   },
   {
-   "id": "923514",
-   "title": "Yoga Series Weekdays",
-   "category": "community",
-   "start": "2026-10-19T17:30:00-04:00",
-   "end": "2026-10-19T19:00:00-04:00",
+   "id": "923511",
+   "title": "Kid's Concert with Mike Messer",
+   "category": "music",
+   "start": "2026-10-20T10:00:00-04:00",
+   "end": "2026-10-20T11:30:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Bella Abzug Park",
-    "address": "Bella Abzug Park : Block 2 (between 34th Street & 35th Street)",
+    "address": "Bella Abzug Park : Block 1 (between 33rd Street & 34th Street)",
     "neighborhood": "Manhattan",
     "lat": 40.75564,
     "lng": -74.00056
@@ -214,18 +329,18 @@
    ]
   },
   {
-   "id": "921690",
-   "title": "Shape Up NYC: Yoga",
-   "category": "community",
-   "start": "2026-10-19T18:00:00-04:00",
-   "end": "2026-10-19T19:30:00-04:00",
+   "id": "964037",
+   "title": "Little Maestros Music Class",
+   "category": "music",
+   "start": "2026-10-20T10:00:00-04:00",
+   "end": "2026-10-20T14:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Crocheron Park",
-    "address": "Crocheron Park: Crocheron Park",
-    "neighborhood": "Queens",
-    "lat": 40.77153,
-    "lng": -73.76755
+    "name": "Madison Square Park",
+    "address": "Madison Square Park: Cherry Lawn",
+    "neighborhood": "Manhattan",
+    "lat": 40.74225,
+    "lng": -73.98798
    },
    "price": null,
    "priceUnknown": false,
@@ -235,40 +350,94 @@
    "tags": [
     "Special Event"
    ]
+  },
+  {
+   "id": "982030",
+   "title": "Soccer Streets 44th St PS 131",
+   "category": "community",
+   "start": "2026-10-20T10:00:00-04:00",
+   "end": "2026-10-20T13:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "44 Street",
+    "address": "44 Street Between Fort Hamilton Parkway And 12 Avenue",
+    "neighborhood": "Brooklyn",
+    "lat": 40.641035,
+    "lng": -73.9927
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
+   ]
+  },
+  {
+   "id": "982200",
+   "title": "Knicks Celebration",
+   "category": "community",
+   "start": "2026-10-20T11:00:00-04:00",
+   "end": "2026-10-20T14:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "West 42 Street",
+    "address": "West 42 Street Between 5 Avenue And 6 Avenue",
+    "neighborhood": "Manhattan",
+    "lat": 40.753202,
+    "lng": -73.98225
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
+   ]
   }
  ],
  "unplaced": [
   {
-   "title": "Union Square Greenmarket",
-   "address": "Union Square Park: North Plaza"
+   "title": "Green Market",
+   "address": "Bowling Green: Subway Plaza (Cobblestone)"
   },
   {
-   "title": "Tienda de Pueblo",
-   "address": "34 AVENUE between 77 STREET and 78 STREET"
+   "title": "GrowNYC @ Columbus Park",
+   "address": "Columbus Park: Columbus Park"
+  },
+  {
+   "title": "GrowNYC @ Bowling Green Park",
+   "address": "Bowling Green: Bowling Green"
+  },
+  {
+   "title": "HHFM Mt. Eden Market",
+   "address": "Mount Eden Malls: Mount Eden Malls"
+  },
+  {
+   "title": "HHFM McKinley Square Market",
+   "address": "McKinley Square: McKinley Square"
   },
   {
    "title": "Afterschool Fun",
    "address": "34 AVENUE between 93 STREET and 94 STREET"
   },
   {
-   "title": "Diversity Plaza Durga Puja 2026",
-   "address": "Diversity Plaza: Diversity Plaza 37 Road between Broadway and 74 Street"
+   "title": "Grass Roots Farmers Market",
+   "address": "Jackie Robinson Park: Sidewalk"
   },
   {
    "title": "SAIL Structure at Lou Gehrig Plaza",
    "address": "Lou Gehrig Plaza: Lou Gehrig Plaza E. 161st Street between Walton Ave and Grand Concourse"
   },
   {
-   "title": "Music Performances and Fitness Classes and Circus Arts",
-   "address": "Greeley Square Plaza: Greeley Square (32/33 Broadway) Broadway between W. 32rd Street and W. 33rd Street"
-  },
-  {
    "title": "Boombox in Jamaica",
    "address": "PARSONS BOULEVARD between JAMAICA AVENUE and ARCHER AVENUE"
   },
   {
-   "title": "Street Co-Naming",
-   "address": "EAST   47 STREET between 2 AVENUE and 1 AVENUE"
+   "title": "Chess on Underhill Plaza",
+   "address": "Underhill Avenue Plaza: Underhill Avenue Plaza Underhill Ave between Atlantic Ave and Pacific St"
   }
  ]
 }

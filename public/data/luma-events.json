@@ -3,50 +3,160 @@
   "name": "Luma NYC",
   "url": "https://luma.com/nyc"
  },
- "date": "2026-10-19",
- "fetchedAt": "2026-10-19T13:02:13-04:00",
+ "date": "2026-10-20",
+ "fetchedAt": "2026-10-20T05:04:38-04:00",
  "events": [
   {
-   "id": "evt-jg5k6eKUAQoTGv6",
-   "title": "Warm Start: An Evening at Othership (Hosted by STRV, Sponsored by RevenueCat)",
-   "category": "community",
-   "start": "2026-10-19T19:00:00-04:00",
-   "end": "2026-10-19T20:15:00-04:00",
+   "id": "evt-XwPWUlDoLbjKA61",
+   "title": "Pickleball Social by Noise & RevenueCat",
+   "category": "sports",
+   "start": "2026-10-20T09:00:00-04:00",
+   "end": "2026-10-20T12:00:00-04:00",
    "venue": {
-    "name": "Othership Flatiron",
-    "address": "Othership Flatiron, 23 W 20th St, New York, NY 10011, USA",
-    "neighborhood": "Midtown Manhattan",
-    "lat": 40.740402,
-    "lng": -73.992441
+    "name": "CityPickle Times Square",
+    "address": "CityPickle Times Square, 1501 Broadway 8th Floor, New York, NY 10036, USA",
+    "neighborhood": "Theater District",
+    "lat": 40.757131,
+    "lng": -73.987117
    },
    "price": null,
    "priceUnknown": false,
-   "description": "From the STRV calendar on Luma",
+   "description": "From the Noise Events calendar on Luma",
    "details": "",
-   "url": "https://luma.com/strv-f4ju",
+   "url": "https://luma.com/yqj0w6ql",
+   "tags": []
+  },
+  {
+   "id": "evt-cMXn0ZWyfGUNSdz",
+   "title": "(IN) PRACTICE: Poetry, Community & Art as Advocacy with Joel Leon",
+   "category": "art",
+   "start": "2026-10-20T17:00:00-04:00",
+   "end": "2026-10-20T19:00:00-04:00",
+   "venue": {
+    "name": "The Lighthouse Campus",
+    "address": "The Lighthouse Campus, 58 Kent St, Brooklyn, NY 11222, USA",
+    "neighborhood": "Greenpoint",
+    "lat": 40.73036,
+    "lng": -73.958693
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the The Lighthouse calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/the-jb5w",
+   "tags": []
+  },
+  {
+   "id": "evt-zJ7oHoEuT4SLW5C",
+   "title": "Cycol Gallery, Wait And Hope Foundation, and One Love Art Present: Monochrome",
+   "category": "art",
+   "start": "2026-10-20T18:00:00-04:00",
+   "end": "2026-10-22T20:00:00-04:00",
+   "venue": {
+    "name": "Cycol Gallery",
+    "address": "Cycol Gallery, 91 Allen St, New York, NY 10002, USA",
+    "neighborhood": "Lower East Side",
+    "lat": 40.718597,
+    "lng": -73.991038
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Personal calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/do25ffxm",
+   "tags": []
+  },
+  {
+   "id": "evt-rFjHRgf96II0kQC",
+   "title": "NY Knicks Season Opener Watch Party",
+   "category": "nightlife",
+   "start": "2026-10-20T18:00:00-04:00",
+   "end": "2026-10-20T21:00:00-04:00",
+   "venue": {
+    "name": "Jungle Bird",
+    "address": "Jungle Bird, 174 8th Ave, New York, NY 10011, USA",
+    "neighborhood": "Chelsea",
+    "lat": 40.742604,
+    "lng": -74.000177
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the All Things Advertising Networking Events calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/allthings-1dk6",
+   "tags": []
+  },
+  {
+   "id": "evt-fO43xJx6libItsf",
+   "title": "October Future Self Series- Design Your Career",
+   "category": "art",
+   "start": "2026-10-20T18:00:00-04:00",
+   "end": "2026-10-20T20:00:00-04:00",
+   "venue": {
+    "name": "Fabrik DUMBO",
+    "address": "Fabrik DUMBO, 20 Jay St Suite 218, Brooklyn, NY 11201, USA",
+    "neighborhood": "Dumbo",
+    "lat": 40.704006,
+    "lng": -73.986679
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Personal calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/hns6wzcp",
+   "tags": []
+  },
+  {
+   "id": "evt-GWxPnX92bO4JaAP",
+   "title": "Informal Proofs 006 | David Moy & Karyn Nakamura",
+   "category": "community",
+   "start": "2026-10-20T18:30:00-04:00",
+   "end": "2026-10-20T20:30:00-04:00",
+   "venue": {
+    "name": "Threes Brewing Greenpoint",
+    "address": "Threes Brewing Greenpoint, Threes Brewing, 113 Franklin St, Brooklyn, NY 11222, USA",
+    "neighborhood": "Greenpoint",
+    "lat": 40.730432,
+    "lng": -73.957817
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Informal Proofs calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/ag30mu0c",
    "tags": []
   }
  ],
  "unplaced": [
   {
-   "title": "Jev Jam Sesh",
+   "title": "TikTok Level Up: Apps & Gaming Ads Workshop",
    "address": "address shown to guests only",
-   "url": "https://luma.com/3ebxgceb"
+   "url": "https://luma.com/ttappny"
   },
   {
-   "title": "Claude & Chill for Founders & Creators",
+   "title": "🧗🏽‍♂️Climb the Paywall w/ App Founders (by An Nayal, RevenueCat and Braavo Capital)",
    "address": "address shown to guests only",
-   "url": "https://luma.com/claude-and-chill-oct19"
+   "url": "https://luma.com/mnc3hgpf"
   },
   {
-   "title": "Fireside Chat w. CMO @ Revolve (Divya Mathur) at Maxwell Social 🍸",
+   "title": "Claude Code Workshop with Provectus - New York City",
    "address": "address shown to guests only",
-   "url": "https://luma.com/MGMaxwellOctober"
+   "url": "https://luma.com/claude-code-workshop-nyc-oct-20"
   },
   {
-   "title": "Pudu: NYC Film Salon",
+   "title": "GTM Intelligence: AI Night with Ramp + MeritFirst",
    "address": "address shown to guests only",
-   "url": "https://luma.com/waz5d50j"
+   "url": "https://luma.com/ramp-meritfirst-gtm-ai"
+  },
+  {
+   "title": "AI Agents Build Day with Genspark",
+   "address": "address shown to guests only",
+   "url": "https://luma.com/genspark-build"
+  },
+  {
+   "title": "Inside the Loop with Mercor: RL Environments, Benchmarks, and Evals",
+   "address": "address shown to guests only",
+   "url": "https://luma.com/kkfmhwzj"
   }
  ]
 }
