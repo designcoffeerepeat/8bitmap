@@ -8,12 +8,6 @@ on:
   push:
     branches: [dev]
   workflow_dispatch: {}
-  # Pushes made by the refresh workflow don't trigger other workflows, so republish after it runs on dev.
-  # (GitHub reads workflow_run triggers from the default branch, so this takes effect once it is on main.)
-  workflow_run:
-    workflows: [Refresh events]
-    types: [completed]
-    branches: [dev]
 
 concurrency:
   group: deploy-dev
@@ -28,8 +22,6 @@ jobs:
       CLOUDFLARE_ACCOUNT_ID: d6042a3026e9b43a3cfb01f284dd5345
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: dev
       - uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
