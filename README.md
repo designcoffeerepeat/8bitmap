@@ -109,6 +109,7 @@ tools/fetch_dice.py               pulls one day of DICE New York events
 tools/fetch_artwrld.py            pulls the day's gallery openings, museum shows and art events from Artwrld
 tools/fetch_artrabbit.py          pulls the day's New York opening receptions from ArtRabbit
 tools/fetch_artguide.py           pulls the day's New York opening receptions from Artforum artguide
+tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, Smalls, comedy clubs)
 tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
 tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
@@ -130,6 +131,7 @@ python3 tools/fetch_dice.py
 python3 tools/fetch_artwrld.py
 python3 tools/fetch_artrabbit.py
 python3 tools/fetch_artguide.py
+python3 tools/fetch_venues.py
 python3 tools/fetch_greenmarkets.py
 NPS_API_KEY=... python3 tools/fetch_nps.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
@@ -229,6 +231,18 @@ time, so the script reads them against the London date. Only the title, venue, r
 New York listings whose opening reception is on the day, as art, with the venue's coordinates, neighborhood and
 reception hours from the listing. Some openings also appear on Artwrld or ArtRabbit under a slightly different
 title, so the same reception can show up twice.
+
+### Venue calendars
+
+`fetch_venues.py` reads the schedules venues publish on their own websites, one reader per site, so a site that is
+down or changes its pages only loses that venue: Film Forum's week of showtimes, Nitehawk's day pages for
+Williamsburg and Prospect Park, the today-and-tomorrow sets on SmallsLIVE (Smalls, Mezzrow and Jazzcultural), the
+schema.org event data on New York Comedy Club's and Eastville Comedy Club's calendars, St. Marks Comedy Club's
+calendar page and The PIT's month calendar. A film is one event at its first showing, with the day's showtimes in its
+description. Each event names its venue as its publisher, so venues are listed one by one in the Sources dropdown.
+Venues are placed once from the street address in `VENUES` and remembered in `data/geocode-cache.json`. Adding a venue
+means a reader function, an entry in `VENUES` and a place in `READERS`. Only title, time, price when given and a link
+are kept.
 
 ## Adding a real event source
 

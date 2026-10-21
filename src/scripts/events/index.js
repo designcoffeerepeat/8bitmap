@@ -16,12 +16,13 @@ import diceSource from './sources/dice.js';
 import artwrldSource from './sources/artwrld.js';
 import artguideSource from './sources/artguide.js';
 import artrabbitSource from './sources/artrabbit.js';
+import venuesSource from './sources/venues.js';
 import greenmarketsSource from './sources/greenmarkets.js';
 import npsSource from './sources/nps.js';
 import { LIVE_HIDDEN } from './live.js';
 
 // ./sources/dummy.js holds sample events for offline testing.
-const ALL_SOURCES = [nycgovSource, lumaSource, permitsSource, ticketmasterSource, seatgeekSource, diceSource, artwrldSource, artguideSource, artrabbitSource, greenmarketsSource, npsSource];
+const ALL_SOURCES = [nycgovSource, lumaSource, permitsSource, ticketmasterSource, seatgeekSource, diceSource, artwrldSource, artguideSource, artrabbitSource, venuesSource, greenmarketsSource, npsSource];
 
 // Live builds (anything not built with PUBLIC_SITE=dev) leave out the sources in ./live.js.
 const IS_DEV = import.meta.env.PUBLIC_SITE === 'dev';
