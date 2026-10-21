@@ -4,7 +4,7 @@
   "url": "https://filmforum.org/"
  },
  "date": "2026-10-21",
- "fetchedAt": "2026-10-21T16:46:44-04:00",
+ "fetchedAt": "2026-10-21T16:57:22-04:00",
  "events": [
   {
    "id": "film-forum-202610211215-once-upon-a-time-in-harlem",
@@ -1310,6 +1310,88 @@
     "id": "venue-the-pit",
     "name": "The PIT",
     "url": "https://thepit-nyc.com/"
+   }
+  },
+  {
+   "id": "qed-202610211800-open-mic-free-w-5-bar-purchase-",
+   "title": "Open Mic (Free w/ $5 Bar Purchase!)",
+   "category": "comedy",
+   "start": "2026-10-21T18:00:00-04:00",
+   "end": "2026-10-21T19:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "QED",
+    "address": "27-16 23rd Avenue",
+    "neighborhood": "",
+    "lat": 40.775556,
+    "lng": -73.914942
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://qedastoria.com/products/open-mic-free-monday-mic?event=2026-10-21T18:00:00",
+   "tags": [],
+   "publisher": {
+    "id": "venue-qed",
+    "name": "QED",
+    "url": "https://qedastoria.com/"
+   }
+  },
+  {
+   "id": "qed-202610212115-open-mic-free-w-5-bar-purchase-",
+   "title": "Open Mic (Free w/ $5 Bar Purchase!)",
+   "category": "comedy",
+   "start": "2026-10-21T21:15:00-04:00",
+   "end": "2026-10-21T22:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "QED",
+    "address": "27-16 23rd Avenue",
+    "neighborhood": "",
+    "lat": 40.775556,
+    "lng": -73.914942
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://qedastoria.com/products/open-mic-free-monday-mic?event=2026-10-21T21:15:00",
+   "tags": [],
+   "publisher": {
+    "id": "venue-qed",
+    "name": "QED",
+    "url": "https://qedastoria.com/"
+   }
+  },
+  {
+   "id": "qed-202610211930-rec-presents-the-kite-to-camden-live-vid",
+   "title": "REC presents: The KITE TO CAMDEN Live Video Album",
+   "category": "comedy",
+   "start": "2026-10-21T19:30:00-04:00",
+   "end": "2026-10-21T21:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "QED",
+    "address": "27-16 23rd Avenue",
+    "neighborhood": "",
+    "lat": 40.775556,
+    "lng": -73.914942
+   },
+   "price": {
+    "min": 15,
+    "max": 15,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://qedastoria.com/products/rec-presents-the-kite-to-camden-live-video-album",
+   "tags": [],
+   "publisher": {
+    "id": "venue-qed",
+    "name": "QED",
+    "url": "https://qedastoria.com/"
    }
   }
  ],

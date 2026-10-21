@@ -1,5 +1,5 @@
 // Venues' own calendars: Film Forum, Nitehawk, Smalls, Mezzrow, Jazzcultural, New York Comedy Club,
-// Eastville Comedy Club, St. Marks Comedy Club and The PIT.
+// Eastville Comedy Club, St. Marks Comedy Club, The PIT and QED.
 //
 // tools/fetch_venues.py reads each venue's schedule from its own website, places the venue
 // from its address and writes public/data/venues-events.json. Each event names its venue as

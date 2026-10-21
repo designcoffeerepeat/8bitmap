@@ -14,6 +14,7 @@ venue shows up on its own in the Sources dropdown.
   Eastville Comedy Club the calendar's event data
   St. Marks Comedy Club the calendar page
   The PIT               the month calendar on https://thepit-nyc.com/calendar/
+  QED                   the calendar its shop's events app serves (https://qedastoria.com/apps/events/calendar)
 
 Venues are placed once from their street address with GeoSearch and remembered
 in data/geocode-cache.json.
@@ -48,6 +49,7 @@ VENUES = {
     'Eastville Comedy Club': ('487 Atlantic Avenue, Brooklyn', 'https://www.eastvillecomedy.com/'),
     'St. Marks Comedy Club': ('12 St Marks Place, Manhattan', 'https://www.stmarkscomedyclub.com/'),
     'The PIT': ('154 West 29th Street, Manhattan', 'https://thepit-nyc.com/'),
+    'QED': ('27-16 23rd Avenue, Queens', 'https://qedastoria.com/'),
 }
 
 
@@ -220,7 +222,28 @@ def pit(day):
     return out
 
 
-READERS = [film_forum, nitehawk, smalls, nycc, eastville, st_marks, pit]
+def qed(day):
+    # QED's calendar page loads its shows from the Evey events app behind its Shopify shop.
+    nxt = day + timedelta(days=1)
+    data = get('https://api.eveyevents.com/production-v2/storefront/calendar?shop=qed-astoria.myshopify.com'
+               f'&startDate={day}&endDate={nxt}&currentDate={day}&lang=en')
+    out = []
+    for e in data.get('schedule') or []:
+        start = datetime.fromisoformat(e['start'].replace('Z', '+00:00')).astimezone(NYC)
+        if start.date() != day:
+            continue
+        end = datetime.fromisoformat(e['end'].replace('Z', '+00:00')).astimezone(NYC) if e.get('end') else None
+        src = e.get('source_data') or {}
+        lo, hi = src.get('min_price'), src.get('max_price')
+        # Free shows list a placeholder 'ticket' with a made-up price, so only believe ordinary prices.
+        price = {'min': round(lo), 'max': round(hi or lo), 'currency': 'USD'} if isinstance(lo, (int, float)) and 0 < lo <= 200 else None
+        out.append(event('QED', html.unescape(e.get('title', '')).strip(), start,
+                         (e.get('url') or VENUES['QED'][1]).replace('http://', 'https://'), 'comedy',
+                         end=end if end and end > start else None, price=price))
+    return out
+
+
+READERS = [film_forum, nitehawk, smalls, nycc, eastville, st_marks, pit, qed]
 
 
 def place(venue, cache):

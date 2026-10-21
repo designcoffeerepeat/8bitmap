@@ -3,6 +3,8 @@
 doNYC, Resident Advisor and The Skint were taken off the map on 2026-10-21 (MK's call), because none of them has
 agreed to be listed. Their code is kept here so any of them can come back if they say yes.
 
+Only bring one back when MK asks for that source by name. A general "release" of dev to live never restores them.
+
 Nothing here runs: the refresh only runs `tools/fetch_*.py`, and the map only loads sources listed in
 `src/scripts/events/index.js`.
 

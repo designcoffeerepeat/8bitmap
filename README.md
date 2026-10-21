@@ -109,7 +109,7 @@ tools/fetch_dice.py               pulls one day of DICE New York events
 tools/fetch_artwrld.py            pulls the day's gallery openings, museum shows and art events from Artwrld
 tools/fetch_artrabbit.py          pulls the day's New York opening receptions from ArtRabbit
 tools/fetch_artguide.py           pulls the day's New York opening receptions from Artforum artguide
-tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, Smalls, comedy clubs)
+tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, Smalls, QED, comedy clubs)
 tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
 tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
@@ -238,7 +238,7 @@ title, so the same reception can show up twice.
 down or changes its pages only loses that venue: Film Forum's week of showtimes, Nitehawk's day pages for
 Williamsburg and Prospect Park, the today-and-tomorrow sets on SmallsLIVE (Smalls, Mezzrow and Jazzcultural), the
 schema.org event data on New York Comedy Club's and Eastville Comedy Club's calendars, St. Marks Comedy Club's
-calendar page and The PIT's month calendar. A film is one event at its first showing, with the day's showtimes in its
+calendar page, The PIT's month calendar and QED's calendar (served by its shop's Evey events app). A film is one event at its first showing, with the day's showtimes in its
 description. Each event names its venue as its publisher, so venues are listed one by one in the Sources dropdown.
 Venues are placed once from the street address in `VENUES` and remembered in `data/geocode-cache.json`. Adding a venue
 means a reader function, an entry in `VENUES` and a place in `READERS`. Only title, time, price when given and a link
