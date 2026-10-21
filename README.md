@@ -85,7 +85,8 @@ src/styles/global.css             all styles (arcade look, mobile bottom sheet)
 src/scripts/app.js                UI: filters, Today list, event card, map controls
 src/scripts/site.js               site menu, Contact / Privacy / Terms modals, ad slot, cookie banner
 src/components/                   Privacy Policy and Terms texts
-src/scripts/map/geo.js            NYC tile grid: shorelines, parks, bridges, skyline peaks, lat/lng to tile
+src/scripts/map/geo.js            NYC tile grid: parks, beaches, bridges, skyline peaks, lat/lng to tile
+src/scripts/map/land.json         land tiles for all five boroughs and the land around them (tools/build_land.py)
 src/scripts/map/renderer.js       three.js scene: voxel land and buildings, pins, labels, camera, picking
 src/scripts/map/palette.js        colours for the city and for event categories
 src/scripts/events/schema.js      the one event shape every source maps into
@@ -271,6 +272,9 @@ and the same show listed on several sites is merged by title, venue and start ti
 
 ## Tuning the map
 
-- Shorelines, parks and islands are `[lat, lng]` polygons at the top of `geo.js`.
+- Shorelines and the map's edges come from `tools/build_land.py`, which turns the city's borough boundaries
+  and the census county shapes around them into `src/scripts/map/land.json`. The map covers all five boroughs;
+  change `BOUNDS` there and rerun it (`python3 tools/build_land.py`) to move the edges.
+- Parks, airports, beaches and small islands are `[lat, lng]` polygons at the top of `geo.js`.
 - Skyline heights come from `PEAKS` in `geo.js` (centre, spread, height).
-- Tile size is `CELL` in `geo.js`; pixel chunkiness is the PX button (2x by default, then 3x, 4x).
+- Tile size is `CELL` in `tools/build_land.py`; pixel chunkiness is the PX button (2x by default, then 3x, 4x).

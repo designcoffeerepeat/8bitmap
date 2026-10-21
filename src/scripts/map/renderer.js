@@ -40,7 +40,7 @@ export function createMap(container, opts = {}) {
   controls.enableDamping = !REDUCED_MOTION;
   controls.dampingFactor = 0.12;
   controls.screenSpacePanning = false;
-  controls.minZoom = 0.7;
+  controls.minZoom = 0.25; // far enough out to see all five boroughs
   controls.maxZoom = 7;
   controls.minPolarAngle = 0.45;
   controls.maxPolarAngle = 1.1;
@@ -259,7 +259,7 @@ export function createMap(container, opts = {}) {
   });
 
   // ---- HTML labels pinned to map positions -------------------------------------
-  // Crisp text at any size (neighborhood names, the Staten Island sign). Each is a
+  // Crisp text at any size (neighborhood names). Each is a
   // plain element in a layer over the canvas, moved to its projected spot per frame.
   const anchorLayer = document.createElement('div');
   anchorLayer.className = 'map-anchors';
@@ -446,21 +446,47 @@ function buildLand(world, city) {
   const cells = [];
   for (let i = 0; i < city.type.length; i++) {
     const t = city.type[i];
-    if (t === T.LAND || t === T.PARK || t === T.AIRPORT) cells.push(i);
+    if (t === T.LAND || t === T.PARK || t === T.AIRPORT || t === T.BEACH) cells.push(i);
   }
-  const mesh = instanced(cells.length);
+  // The ground tops are one flat texture at GROUND_H, one pixel per tile. Only tiles whose
+  // sides can be seen (on the shore or the map's edge) and the odd raised park tile are
+  // real boxes, which keeps the whole city to a few thousand boxes of ground.
+  const data = new Uint8Array(COLS * ROWS * 4);
+  const sides = [];
   const r = rng(5);
-  cells.forEach((i, k) => {
-    const { x, z } = cellPos(i);
+  for (const i of cells) {
     const col = i % COLS;
     const row = Math.floor(i / COLS);
     const t = city.type[i];
     let hex = PALETTE.land[city.area[i]] ?? PALETTE.land.li;
     if (t === T.PARK) hex = (col + row) % 3 === 0 ? PALETTE.park[1] : PALETTE.park[0];
+    if (t === T.BEACH) hex = PALETTE.sand;
     if (t === T.AIRPORT) hex = (col - row) % 5 === 0 || (col + 2 * row) % 7 === 0 ? PALETTE.runway : PALETTE.airport;
     if (t === T.LAND && city.street[i]) hex = PALETTE.street;
-    if (t === T.LAND && touchesWater(city, col, row) && city.height[i] === 0) hex = PALETTE.sand;
-    place(mesh, k, x, 0, z, 1, GROUND_H + (r() < 0.04 && t === T.PARK ? 0.1 : 0), 1, hex);
+    const shore = touchesWater(city, col, row);
+    if (t === T.LAND && shore && city.height[i] === 0) hex = PALETTE.sand;
+    const ti = ((ROWS - 1 - row) * COLS + col) * 4;
+    const c = color(hex).convertLinearToSRGB();
+    data[ti] = c.r * 255; data[ti + 1] = c.g * 255; data[ti + 2] = c.b * 255; data[ti + 3] = 255;
+    const bump = r() < 0.04 && t === T.PARK ? 0.1 : 0;
+    const edge = col === 0 || row === 0 || col === COLS - 1 || row === ROWS - 1;
+    // boxes stop just under the texture so the two never fight over the same pixels
+    if (shore || edge || bump) sides.push([i, GROUND_H + bump - (bump ? 0 : 0.01), hex]);
+  }
+  const tex = new THREE.DataTexture(data, COLS, ROWS);
+  tex.magFilter = THREE.NearestFilter;
+  tex.minFilter = THREE.NearestFilter;
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.needsUpdate = true;
+  const top = new THREE.Mesh(new THREE.PlaneGeometry(COLS, ROWS), lambert({ map: tex, alphaTest: 0.5 }));
+  top.rotation.x = -Math.PI / 2;
+  top.position.y = GROUND_H;
+  world.add(top);
+
+  const mesh = instanced(sides.length);
+  sides.forEach(([i, h, hex], k) => {
+    const { x, z } = cellPos(i);
+    place(mesh, k, x, 0, z, 1, h, 1, hex);
   });
   mesh.instanceColor.needsUpdate = true;
   world.add(mesh);
@@ -556,6 +582,8 @@ function buildLandmarks(world, city) {
     esb: [[1.2, 3, 1.2, '#d8cfbd'], [1, 6, 1, '#e3dccd'], [0.75, 1.6, 0.75, '#d8cfbd'], [0.45, 1.2, 0.45, '#efe9dc'], [0.2, 0.8, 0.2, '#d8cfbd'], [0.07, 2.4, 0.07, '#ffffff']],
     chrysler: [[1, 7.5, 1, '#c9d2e3'], [0.75, 1.2, 0.75, '#e8eef9'], [0.55, 0.9, 0.55, '#f4f7fd'], [0.35, 0.7, 0.35, '#e8eef9'], [0.06, 2, 0.06, '#ffffff']],
     liberty: [[1, 0.6, 1, '#d6d2ca'], [0.55, 0.9, 0.55, '#c8c3ba'], [0.35, 1.3, 0.35, PALETTE.liberty], [0.22, 0.4, 0.22, PALETTE.liberty]],
+    globe: [[1.6, 0.15, 1.6, '#9fcdea'], [0.15, 0.6, 0.15, '#8c8fa3'], [0.9, 0.35, 0.9, '#c9d2e3'], [1.4, 0.45, 1.4, '#c9d2e3'], [1.5, 0.45, 1.5, '#dbe2ee'], [1.1, 0.35, 1.1, '#c9d2e3'], [0.5, 0.2, 0.5, '#c9d2e3']],
+    parachute: [[1, 0.3, 1, '#d94a3a'], [0.3, 5.5, 0.3, '#d94a3a'], [1.6, 0.3, 1.6, '#d94a3a'], [0.9, 0.4, 0.9, '#e8eef9'], [0.08, 1, 0.08, '#ffffff']],
   };
   const parts = [];
   for (const l of LANDMARKS) {
@@ -571,11 +599,19 @@ function buildLandmarks(world, city) {
         parts.push([p.x + 0.15, y - 0.4, p.z, 0.08, 0.8, 0.08, PALETTE.liberty]); // raised arm
         parts.push([p.x + 0.15, y + 0.4, p.z, 0.16, 0.2, 0.16, '#ece8e1']); // torch
       }
-    } else if (l.id === 'yankee') {
+    } else if (l.id === 'yankee' || l.id === 'citi') {
       parts.push([p.x, GROUND_H, p.z, 2.4, 0.15, 2.4, '#5bbd5b']);
       for (const [dx, dz, sx, sz] of [[0, -1.1, 2.6, 0.4], [0, 1.1, 2.6, 0.4], [-1.1, 0, 0.4, 2.6], [1.1, 0, 0.4, 2.6]]) {
         parts.push([p.x + dx, GROUND_H, p.z + dz, sx, 0.9, sz, '#f2f2f2']);
       }
+    } else if (l.id === 'wheel') {
+      // a ring of cars standing on two legs, facing the boardwalk
+      for (let k = 0; k < 12; k++) {
+        const a = (k / 12) * Math.PI * 2;
+        parts.push([p.x + Math.cos(a) * 1.3, GROUND_H + 1.6 + Math.sin(a) * 1.3, p.z, 0.4, 0.4, 0.3, k % 2 ? '#ff5c8a' : '#ffe14d']);
+      }
+      parts.push([p.x, GROUND_H, p.z, 0.25, 1.7, 0.25, '#f2f2f2']);
+      parts.push([p.x, GROUND_H, p.z, 1.6, 0.2, 0.5, '#5a5d72']);
     } else if (l.id === 'unisphere') {
       parts.push([p.x, GROUND_H, p.z, 1.8, 1.1, 1.4, '#8a4b32']);
       parts.push([p.x, GROUND_H + 1.1, p.z, 1.5, 0.12, 1.1, '#6d3a26']);
@@ -589,7 +625,7 @@ function buildLandmarks(world, city) {
 
 function buildBoats(world) {
   const routes = [
-    { from: [40.7005, -74.0135], to: [40.6450, -74.0600], hex: '#ff8a1f', size: [0.9, 0.35, 0.45], speed: 0.05 }, // Staten Island Ferry
+    { from: [40.7005, -74.0135], to: [40.6460, -74.0690], hex: '#ff8a1f', size: [0.9, 0.35, 0.45], speed: 0.05 }, // Staten Island Ferry
     { from: [40.7050, -73.9990], to: [40.7600, -73.9550], hex: '#ffffff', size: [0.6, 0.3, 0.3], speed: 0.07 }, // East River ferry
     { from: [40.7800, -74.0060], to: [40.7100, -74.0230], hex: '#f2f2f2', size: [0.7, 0.3, 0.35], speed: 0.04 }, // Hudson
   ];
