@@ -8,9 +8,6 @@
 import { normalizeEvent } from './schema.js';
 import { inBounds, BOUNDS, LANDMARKS } from '../map/geo.js';
 import nycgovSource from './sources/nycgov.js';
-import raSource from './sources/ra.js';
-import skintSource from './sources/skint.js';
-import donycSource from './sources/donyc.js';
 import lumaSource from './sources/luma.js';
 import permitsSource from './sources/permits.js';
 import ticketmasterSource from './sources/ticketmaster.js';
@@ -24,7 +21,7 @@ import npsSource from './sources/nps.js';
 import { LIVE_HIDDEN } from './live.js';
 
 // ./sources/dummy.js holds sample events for offline testing.
-const ALL_SOURCES = [nycgovSource, donycSource, raSource, skintSource, lumaSource, permitsSource, ticketmasterSource, seatgeekSource, diceSource, artwrldSource, artguideSource, artrabbitSource, greenmarketsSource, npsSource];
+const ALL_SOURCES = [nycgovSource, lumaSource, permitsSource, ticketmasterSource, seatgeekSource, diceSource, artwrldSource, artguideSource, artrabbitSource, greenmarketsSource, npsSource];
 
 // Live builds (anything not built with PUBLIC_SITE=dev) leave out the sources in ./live.js.
 const IS_DEV = import.meta.env.PUBLIC_SITE === 'dev';

@@ -73,7 +73,7 @@ and Cookie Settings in the menu lets them change it. Add `?consent=eu` to the UR
 
 ### Sources shown on dev only
 
-`src/scripts/events/live.js` lists sources (currently Resident Advisor, The Skint and doNYC) that only dev shows. The
+`src/scripts/events/live.js` lists sources (currently none) that only dev shows. The
 dev workflow builds with `PUBLIC_SITE=dev`; any other build is a live build, which leaves those sources out of the
 map and drops their snapshot files (today's and tomorrow's) from `dist/`. Their fetchers keep running, so dev stays current.
 
@@ -91,19 +91,17 @@ src/scripts/map/renderer.js       three.js scene: voxel land and buildings, pins
 src/scripts/map/palette.js        colours for the city and for event categories
 src/scripts/events/schema.js      the one event shape every source maps into
 src/scripts/events/index.js       loads all sources, filters to today and the map area, de-duplicates, sorts
-src/scripts/events/sources/       one file per event source: nycgov.js, donyc.js, ra.js, skint.js, luma.js, permits.js,
+src/scripts/events/sources/       one file per event source: nycgov.js, luma.js, permits.js,
                                   ticketmaster.js, seatgeek.js, dice.js, artwrld.js, artrabbit.js,
                                   artguide.js (live), greenmarkets.js, nps.js,
                                   snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
 public/data/tomorrow/*.json       the same snapshots for the next NYC day (EVENTS_DIR=public/data/tomorrow)
+parked/                           doNYC, Resident Advisor and The Skint, removed until they agree to be listed
 public/                           other static files copied as-is (favicon)
 tools/fetch_nycgov.py             pulls one day of NYC.gov events and places them on the map
-tools/fetch_donyc.py              pulls one day of doNYC listings and places each venue once
-tools/fetch_ra.py                 pulls one night of Resident Advisor listings
 tools/fetch_luma.py               pulls one day of Luma NYC events
-tools/fetch_skint.py              pulls The Skint's picks for one day from its roundup posts
 tools/fetch_permits.py            pulls one day of NYC permitted street events (street fairs, parades, greenmarkets)
 tools/fetch_ticketmaster.py       pulls one day of Ticketmaster events (needs TICKETMASTER_API_KEY)
 tools/fetch_seatgeek.py           pulls one day of SeatGeek events (needs SEATGEEK_CLIENT_ID)
@@ -114,7 +112,6 @@ tools/fetch_artguide.py           pulls the day's New York opening receptions fr
 tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
 tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
-data/venues.json                  street addresses for venues The Skint names without one
 ```
 
 ## Refreshing the events
@@ -125,9 +122,6 @@ You can also run it from the repo's Actions tab (Run workflow), or by hand with 
 
 ```sh
 python3 tools/fetch_nycgov.py             # today in NYC
-python3 tools/fetch_donyc.py
-python3 tools/fetch_ra.py
-python3 tools/fetch_skint.py
 python3 tools/fetch_luma.py
 python3 tools/fetch_permits.py
 TICKETMASTER_API_KEY=... python3 tools/fetch_ticketmaster.py
@@ -152,31 +146,10 @@ Events with no usable address are listed under `unplaced` in the snapshot. The P
 so every run that reaches it records each Parks venue in `data/parks-places.json`, which the scheduled refresh uses instead. The page header shows the day the
 snapshot covers, so an old snapshot shows that day's events rather than an empty map.
 
-### doNYC
-
-`fetch_donyc.py` reads doNYC's day pages (https://donyc.com/events/2026/10/17). Listings have no coordinates, so
-the script reads each venue's street address once from one of its event pages and places it with GeoSearch, or by
-name for parks and landmarks. Venues are remembered in `data/geocode-cache.json`, so the first run takes a few
-minutes and later runs only look up new venues. The day pages do not show prices.
-
-### Resident Advisor
-
-`fetch_ra.py` reads the GraphQL endpoint behind https://ra.co/events/us/newyork. Most venues come with exact
-coordinates; ones with none or only a rough position are placed from their address with GeoSearch.
-A party that starts after midnight stays on the night RA lists it for.
-
 ### Luma
 
 `fetch_luma.py` reads the discover API behind https://luma.com/nyc. Events come with coordinates. Hosts can keep an
 address for registered guests only, and Luma then gives a shifted position, so those events are left off the map.
-
-### The Skint
-
-`fetch_skint.py` reads The Skint's daily and weekend roundup posts through the site's WordPress API and picks out
-the listings for the day. The Skint names venues rather than addresses ("caveat (les)"), so a listing is placed from
-a street address or block in its text, from `data/venues.json`, or from a GeoSearch place with the same name (parks,
-landmarks). Everything else is listed under `unplaced`. Adding a venue's address to `data/venues.json` places it
-from then on. The text is free-form, so check the output now and then: prices and times are best guesses.
 
 ### NYC Street Events
 
