@@ -334,7 +334,7 @@ export const LABELS = [
   { text: 'JERSEY CITY', lat: 40.7250, lng: -74.0550 },
   { text: 'STATEN ISLAND', lat: 40.5850, lng: -74.1450 },
   { text: 'CONEY ISLAND', lat: 40.5790, lng: -73.9800 },
-  { text: 'THE ROCKAWAYS', lat: 40.5900, lng: -73.8100 },
+  { text: 'THE ROCKAWAYS', lat: 40.5760, lng: -73.8350 },
   { text: 'FLUSHING', lat: 40.7620, lng: -73.8250 },
   { text: 'JAMAICA', lat: 40.7020, lng: -73.7950 },
   { text: 'HUDSON RIVER', lat: 40.7900, lng: -74.0010, water: true },
