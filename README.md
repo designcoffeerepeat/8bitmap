@@ -73,7 +73,7 @@ and Cookie Settings in the menu lets them change it. Add `?consent=eu` to the UR
 
 ### Sources shown on dev only
 
-`src/scripts/events/live.js` lists sources (currently Resident Advisor and The Skint) that only dev shows. The
+`src/scripts/events/live.js` lists sources (currently Resident Advisor, The Skint and doNYC) that only dev shows. The
 dev workflow builds with `PUBLIC_SITE=dev`; any other build is a live build, which leaves those sources out of the
 map and drops their snapshot files (today's and tomorrow's) from `dist/`. Their fetchers keep running, so dev stays current.
 
