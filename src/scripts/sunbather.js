@@ -12,7 +12,8 @@ const VOX = 0.045; // world units per voxel, which makes him about a third of a 
 const WALK = 4.5; // voxels per second
 const STRIDE = 0.55; // seconds per pair of steps
 const GAP = 6.8; // voxels between where he lays the towel and where he sits on it
-const REDUCED_MOTION = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+const IN_VIEW = 0.6; // the beach has to be this close to the middle of the screen (1 = the edge)
+const SETTLE = 0.4; // seconds at full zoom before he sets off, so a pinch or scroll has finished
 
 const C = {
   skin: '#a8612f', shade: '#864a22', thong: '#141418', shades: '#1d2340',
@@ -25,6 +26,7 @@ export function initSunbather(map) {
   let scene = null;
   const ndc = new THREE.Vector3();
   const spot = new THREE.Vector3(SPOT.x, SAND, SPOT.z);
+  let held = 0; // how long the beach has been in view at full zoom
 
   map.onFrame((dt) => {
     const atMax = map.zoom >= map.maxZoom * 0.98;
@@ -37,9 +39,13 @@ export function initSunbather(map) {
       }
       return;
     }
-    if (!atMax) return;
     ndc.copy(spot).project(map.camera);
-    if (Math.abs(ndc.x) < 0.85 && Math.abs(ndc.y) < 0.85) scene = startScene(map);
+    const inView = Math.abs(ndc.x) < IN_VIEW && Math.abs(ndc.y) < IN_VIEW;
+    held = atMax && inView ? held + dt : 0;
+    if (held >= SETTLE) {
+      held = 0;
+      scene = startScene(map);
+    }
   });
 }
 
@@ -74,7 +80,7 @@ function startScene(map) {
   T.lie = T.sit + 0.7;
   T.done = T.lie + 0.9;
 
-  let t = REDUCED_MOTION ? T.done : 0;
+  let t = 0;
   const ease = (a, b) => THREE.MathUtils.smoothstep(t, a, b);
   const lerp = THREE.MathUtils.lerp;
 
