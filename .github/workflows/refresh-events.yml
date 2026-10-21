@@ -1,5 +1,8 @@
 # Pulls today's and tomorrow's events from every source fetcher (tools/fetch_*.py) and commits the new snapshots.
 # The push to main makes Cloudflare rebuild, so the live map always shows the current NYC day.
+# The schedule refreshes both main and dev; a manual run refreshes the branch it is started on.
+# A push made with the workflow's own token does not start other workflows, so a run on dev
+# starts the Deploy dev workflow itself.
 name: Refresh events
 
 on:
@@ -10,6 +13,7 @@ on:
 
 permissions:
   contents: write
+  actions: write # lets a run on dev start Deploy dev
 
 concurrency:
   group: refresh-events
@@ -19,8 +23,15 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    strategy:
+      max-parallel: 1
+      fail-fast: false
+      matrix:
+        branch: ${{ github.event_name == 'schedule' && fromJSON('["main", "dev"]') || fromJSON(format('["{0}"]', github.ref_name)) }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ matrix.branch }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -49,6 +60,7 @@ jobs:
             echo "::endgroup::"
           done
       - name: Commit if anything changed
+        id: commit
         run: |
           git add public/data data
           if git diff --cached --quiet; then
@@ -59,3 +71,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Refresh events for $(TZ=America/New_York date +%F)"
           git push
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+      - name: Rebuild the dev site with the new snapshots
+        if: matrix.branch == 'dev' && steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-dev.yml --ref dev
