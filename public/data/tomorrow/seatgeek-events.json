@@ -4,7 +4,7 @@
   "url": "https://seatgeek.com/cities/new-york"
  },
  "date": "2026-10-21",
- "fetchedAt": "2026-10-20T20:22:53-04:00",
+ "fetchedAt": "2026-10-20T20:39:37-04:00",
  "events": [
   {
    "id": "18310053",
@@ -578,26 +578,27 @@
    ]
   },
   {
-   "id": "18297282",
-   "title": "Sienna Spiro",
-   "category": "music",
+   "id": "18262639",
+   "title": "The Lion King",
+   "category": "theater",
    "start": "2026-10-21T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Brooklyn Paramount",
-    "address": "385 Flatbush Ave. Extension, Brooklyn, NY 11201",
-    "neighborhood": "Brooklyn",
-    "lat": 40.6917,
-    "lng": -73.9815
+    "name": "Minskoff Theatre",
+    "address": "200 West 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7579,
+    "lng": -73.9862
    },
    "price": null,
    "priceUnknown": true,
-   "description": "concert",
+   "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/sienna-spiro-tickets/brooklyn-new-york-brooklyn-paramount-2026-10-21-7-pm/concert/18297282",
+   "url": "https://seatgeek.com/the-lion-king-tickets/broadway/2026-10-21-7-pm/18262639",
    "tags": [
-    "concert"
+    "theater",
+    "broadway"
    ]
   },
   {
@@ -625,27 +626,26 @@
    ]
   },
   {
-   "id": "18262639",
-   "title": "The Lion King",
-   "category": "theater",
+   "id": "18297282",
+   "title": "Sienna Spiro",
+   "category": "music",
    "start": "2026-10-21T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Minskoff Theatre",
-    "address": "200 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7579,
-    "lng": -73.9862
+    "name": "Brooklyn Paramount",
+    "address": "385 Flatbush Ave. Extension, Brooklyn, NY 11201",
+    "neighborhood": "Brooklyn",
+    "lat": 40.6917,
+    "lng": -73.9815
    },
    "price": null,
    "priceUnknown": true,
-   "description": "broadway",
+   "description": "concert",
    "details": "",
-   "url": "https://seatgeek.com/the-lion-king-tickets/broadway/2026-10-21-7-pm/18262639",
+   "url": "https://seatgeek.com/sienna-spiro-tickets/brooklyn-new-york-brooklyn-paramount-2026-10-21-7-pm/concert/18297282",
    "tags": [
-    "theater",
-    "broadway"
+    "concert"
    ]
   },
   {
@@ -718,29 +718,6 @@
    ]
   },
   {
-   "id": "18286775",
-   "title": "The Play That Goes Wrong",
-   "category": "theater",
-   "start": "2026-10-21T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New World Stages - Stage 4",
-    "address": "340 West 50th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7628,
-    "lng": -73.9874
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/the-play-that-goes-wrong-tickets/theater/2026-10-21-7-pm/18286775",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
    "id": "18083149",
    "title": "Six the Musical",
    "category": "theater",
@@ -783,6 +760,29 @@
    "description": "theater",
    "details": "",
    "url": "https://seatgeek.com/aladdin-tickets/theater/2026-10-21-7-pm/18260408",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18286775",
+   "title": "The Play That Goes Wrong",
+   "category": "theater",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New World Stages - Stage 4",
+    "address": "340 West 50th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7628,
+    "lng": -73.9874
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/the-play-that-goes-wrong-tickets/theater/2026-10-21-7-pm/18286775",
    "tags": [
     "theater"
    ]
