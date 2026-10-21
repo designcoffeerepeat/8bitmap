@@ -3,8 +3,51 @@
   "name": "Artforum artguide",
   "url": "https://artguide.artforum.com/cities/new-york/"
  },
- "date": "2026-10-20",
- "fetchedAt": "2026-10-20T20:36:22-04:00",
- "events": [],
+ "date": "2026-10-21",
+ "fetchedAt": "2026-10-21T13:06:38-04:00",
+ "events": [
+  {
+   "id": "1336277",
+   "title": "Eunha Kim: Are We Home Yet?",
+   "category": "art",
+   "start": "2026-10-21T18:00:00-04:00",
+   "end": "2026-10-21T20:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "FLOHAUS Gallery",
+    "address": "",
+    "neighborhood": "Midtown",
+    "lat": 40.753968,
+    "lng": -73.989269
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Opening reception",
+   "details": "",
+   "url": "https://artguide.artforum.com/venue/flowing-space-8440/exhibition/eunha-kim-are-we-home-yet-1336277/",
+   "tags": []
+  },
+  {
+   "id": "1336275",
+   "title": "Curran Hatleberg: River’s Dream, 2010-2020",
+   "category": "art",
+   "start": "2026-10-21T18:00:00-04:00",
+   "end": "2026-10-21T20:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Higher Pictures",
+    "address": "",
+    "neighborhood": "Brooklyn",
+    "lat": 40.703443,
+    "lng": -73.990946
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Opening reception",
+   "details": "",
+   "url": "https://artguide.artforum.com/venue/higher-pictures-2124/exhibition/curran-hatleberg-rivers-dream-2010-2020-1336275/",
+   "tags": []
+  }
+ ],
  "unplaced": []
 }

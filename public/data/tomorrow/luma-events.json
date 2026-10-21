@@ -3,160 +3,174 @@
   "name": "Luma NYC",
   "url": "https://luma.com/nyc"
  },
- "date": "2026-10-21",
- "fetchedAt": "2026-10-20T20:39:32-04:00",
+ "date": "2026-10-22",
+ "fetchedAt": "2026-10-21T13:10:23-04:00",
  "events": [
   {
-   "id": "evt-heTu9wrNlIirk1G",
-   "title": "Squarespace Circle Day 2026 (In-Person)",
+   "id": "evt-VFMn9TqCqA3BJ1O",
+   "title": "Early Access Shopping Night at ALO Madison Ave",
    "category": "community",
-   "start": "2026-10-21T09:30:00-04:00",
-   "end": "2026-10-21T17:30:00-04:00",
+   "start": "2026-10-22T16:00:00-04:00",
+   "end": "2026-10-22T19:00:00-04:00",
    "venue": {
-    "name": "8 Clarkson St",
-    "address": "8 Clarkson St, New York, NY 10014, USA",
+    "name": "1144 Madison Ave",
+    "address": "1144 Madison Ave, New York, NY 10028, USA",
     "neighborhood": "Manhattan",
-    "lat": 40.729227,
-    "lng": -74.005758
+    "lat": 40.780066,
+    "lng": -73.959598
    },
    "price": null,
    "priceUnknown": false,
-   "description": "From the Squarespace Circle calendar on Luma",
+   "description": "From the ALO calendar on Luma",
    "details": "",
-   "url": "https://luma.com/circle-day-2026-in-person",
+   "url": "https://luma.com/38sntlh9",
    "tags": []
   },
   {
-   "id": "evt-DkcUT4ijLY01sTK",
-   "title": "Net 30 - applied AI summit on the future of finance",
+   "id": "evt-46vCzkJVI8Hqutz",
+   "title": "Figma agent: Builder night (Thursday, October 22)",
    "category": "community",
-   "start": "2026-10-21T17:00:00-04:00",
-   "end": "2026-10-21T20:30:00-04:00",
+   "start": "2026-10-22T18:00:00-04:00",
+   "end": "2026-10-22T21:00:00-04:00",
    "venue": {
-    "name": "The Times Center",
-    "address": "The Times Center, 242 W 41st St, New York, NY 10036, USA",
-    "neighborhood": "Theater District",
-    "lat": 40.755749,
-    "lng": -73.989563
+    "name": "Figma NYC",
+    "address": "Figma NYC, 27 W 23rd St, New York, NY 10010, USA",
+    "neighborhood": "Flatiron District",
+    "lat": 40.742232,
+    "lng": -73.990626
    },
    "price": null,
    "priceUnknown": false,
-   "description": "From the Monk calendar on Luma",
+   "description": "From the Figma for Education calendar on Luma",
    "details": "",
-   "url": "https://luma.com/3tto5407",
+   "url": "https://luma.com/xl3tvp2w",
    "tags": []
   },
   {
-   "id": "evt-AHWbSD7K3Q7FzPA",
-   "title": "Built in Person: How Great Companies Scale IRL",
+   "id": "evt-pFp8YTKhqdBsNwG",
+   "title": "Nanonite Social: NYC Nanotechnology Meetup",
    "category": "community",
-   "start": "2026-10-21T18:00:00-04:00",
-   "end": "2026-10-21T20:30:00-04:00",
+   "start": "2026-10-22T18:00:00-04:00",
+   "end": "2026-10-22T21:00:00-04:00",
    "venue": {
-    "name": "Corgi Cafe",
-    "address": "Corgi Cafe, 121 E 27th St, New York, NY 10016, USA",
-    "neighborhood": "Rose Hill",
-    "lat": 40.742401,
-    "lng": -73.983429
+    "name": "Harlem Tavern",
+    "address": "Harlem Tavern, 2153 Frederick Douglass Blvd, New York, NY 10026, USA",
+    "neighborhood": "Central Harlem",
+    "lat": 40.804759,
+    "lng": -73.955479
    },
    "price": null,
    "priceUnknown": false,
-   "description": "From the Corgi NYC calendar on Luma",
+   "description": "From the Nanotech NYC calendar on Luma",
    "details": "",
-   "url": "https://luma.com/corginyc-ervo",
+   "url": "https://luma.com/hhl725g4",
    "tags": []
   },
   {
-   "id": "evt-iHrLMN2Rksj0oEC",
-   "title": "BRC x New Balance",
+   "id": "evt-Mhu0MM7WcH2hVNl",
+   "title": "Undefined + EvolveDigital / Oct 22nd 2026",
    "category": "community",
-   "start": "2026-10-21T19:00:00-04:00",
-   "end": "2026-10-21T20:30:00-04:00",
+   "start": "2026-10-22T18:00:00-04:00",
+   "end": "2026-10-22T21:00:00-04:00",
    "venue": {
-    "name": "Brooklyn Running Company",
-    "address": "Brooklyn Running Company, 480 Bergen St, Brooklyn, NY 11217, USA",
+    "name": "Automattic",
+    "address": "Automattic, 166 Crosby St, New York, NY 10012, USA",
+    "neighborhood": "NoHo",
+    "lat": 40.725873,
+    "lng": -73.995401
+   },
+   "price": {
+    "min": 10,
+    "max": 10,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "From the Undefined by Design Systems House calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/undefined-20261022",
+   "tags": []
+  },
+  {
+   "id": "evt-GQBD8K0iNDTa2pH",
+   "title": "Transit Techies #39 | Phil Cline (Swiftly) and Joe Puccio (Sidewalk, formerly WalkNYC)",
+   "category": "community",
+   "start": "2026-10-22T18:30:00-04:00",
+   "end": "2026-10-22T20:30:00-04:00",
+   "venue": {
+    "name": "370 Jay St",
+    "address": "370 Jay St, Brooklyn, NY 11201, USA",
+    "neighborhood": "Downtown Brooklyn",
+    "lat": 40.693144,
+    "lng": -73.987447
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Center for Urban Science + Progress • Events calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/nyu-bo74",
+   "tags": []
+  },
+  {
+   "id": "evt-eBrDWPhXVdVLPlT",
+   "title": "Startup Scaries",
+   "category": "community",
+   "start": "2026-10-22T19:00:00-04:00",
+   "end": "2026-10-22T23:00:00-04:00",
+   "venue": {
+    "name": "25 Kent Ave",
+    "address": "25 Kent Ave, Brooklyn, NY 11249, USA",
     "neighborhood": "Brooklyn",
-    "lat": 40.680666,
-    "lng": -73.975468
+    "lat": 40.723034,
+    "lng": -73.957541
    },
    "price": null,
    "priceUnknown": false,
-   "description": "From the Personal calendar on Luma",
+   "description": "From the Fonzi, NYC AI Engineers calendar on Luma",
    "details": "",
-   "url": "https://luma.com/cu82batg",
-   "tags": []
-  },
-  {
-   "id": "evt-BsmcOi27AxagBFs",
-   "title": "Philosophy Club x Dead Letter #9",
-   "category": "community",
-   "start": "2026-10-21T19:00:00-04:00",
-   "end": "2026-10-21T22:00:00-04:00",
-   "venue": {
-    "name": "Dead Letter No. 9",
-    "address": "Dead Letter No. 9, 63 Grand St, Brooklyn, NY 11249, USA",
-    "neighborhood": "Williamsburg",
-    "lat": 40.716096,
-    "lng": -73.964839
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the The New York Philosophy Club calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/ivsqpgf8",
-   "tags": []
-  },
-  {
-   "id": "evt-DLA4eAbqZ6g0ABA",
-   "title": "The New York Philosophy Club: Williamsburg",
-   "category": "community",
-   "start": "2026-10-21T19:00:00-04:00",
-   "end": "2026-10-21T22:00:00-04:00",
-   "venue": {
-    "name": "McCarren Parkhouse",
-    "address": "McCarren Parkhouse, 855 Lorimer St, Brooklyn, NY 11222, USA",
-    "neighborhood": "Williamsburg",
-    "lat": 40.722,
-    "lng": -73.9519
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the The New York Philosophy Club calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/fmh7jclh",
-   "tags": []
-  },
-  {
-   "id": "evt-WiW3klcHyXYbmAH",
-   "title": "THE RESIDENCY ONE YEAR ANNIVERSARY",
-   "category": "community",
-   "start": "2026-10-21T19:00:00-04:00",
-   "end": "2026-10-21T21:00:00-04:00",
-   "venue": {
-    "name": "130 Madison St",
-    "address": "130 Madison St, New York, NY 10002, USA",
-    "neighborhood": "Two Bridges",
-    "lat": 40.712082,
-    "lng": -73.993776
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Personal calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/v2j45fa3",
+   "url": "https://luma.com/fonzinyc-va2l",
    "tags": []
   }
  ],
  "unplaced": [
   {
-   "title": "Robots That Care Summit",
+   "title": "Coffee & Apple Ads Masterclass: Maximum ROI, End to End",
    "address": "address shown to guests only",
-   "url": "https://luma.com/8fobi9xw"
+   "url": "https://luma.com/06hgn26s"
   },
   {
-   "title": "You Can See Everything Private Screening - Presented by Concentrate AI × RRE Ventures",
+   "title": "Build Your First App with Replit!",
    "address": "address shown to guests only",
-   "url": "https://luma.com/yshtx07x"
+   "url": "https://luma.com/c1bw96zu"
+  },
+  {
+   "title": "Double Diamond ⬩ October 2026",
+   "address": "address shown to guests only",
+   "url": "https://luma.com/double-diamond-oct-2026"
+  },
+  {
+   "title": "Honcho x Variant Happy Hour - NYC agent builders",
+   "address": "address shown to guests only",
+   "url": "https://luma.com/honcho-soho"
+  },
+  {
+   "title": "Pixel Eight x Ramp: Designer Pit Stop",
+   "address": "address shown to guests only",
+   "url": "https://luma.com/apps4s2v"
+  },
+  {
+   "title": "A/B or Not to Be",
+   "address": "address shown to guests only",
+   "url": "https://luma.com/v63nd8d9"
+  },
+  {
+   "title": "Scaling AI Deployments",
+   "address": "address shown to guests only",
+   "url": "https://luma.com/scalingaideployments"
+  },
+  {
+   "title": "game night.",
+   "address": "address shown to guests only",
+   "url": "https://luma.com/umr9k0ee"
   }
  ]
 }

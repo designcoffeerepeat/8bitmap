@@ -3,102 +3,158 @@
   "name": "The Skint",
   "url": "https://theskint.com/"
  },
- "date": "2026-10-20",
- "fetchedAt": "2026-10-20T20:37:54-04:00",
+ "date": "2026-10-21",
+ "fetchedAt": "2026-10-21T13:08:17-04:00",
  "events": [
   {
-   "id": "sugar-we-re-hoein-down-halloween-edition-line-dancing-x-emo--1020",
-   "title": "Sugar, We're Hoein Down: Halloween Edition Line Dancing X Emo Night",
-   "category": "nightlife",
-   "start": "2026-10-20T19:00:00-04:00",
-   "end": "2026-10-20T23:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "3 Dollar Bill",
-    "address": "3 BILL SICKLICK PLACE, New York, NY, USA",
-    "neighborhood": "Bushwick",
-    "lat": 40.715604,
-    "lng": -73.984428
-   },
-   "url": "https://www.instagram.com/yallternativerodeo/p/DeKNY_AO8Vt/"
-  },
-  {
-   "id": "miller-theater-s-pop-up-concert-series-1020",
-   "title": "Miller Theater's Pop-up Concert Series",
-   "category": "music",
-   "start": "2026-10-20T18:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Columbia University",
-    "address": "COLUMBIA UNIVERSITY, New York, NY, USA",
-    "neighborhood": "Morningside Heights",
-    "lat": 40.80866,
-    "lng": -73.96152
-   },
-   "url": "https://www.millertheatre.com/events/conrad-tao-piano"
-  },
-  {
-   "id": "scientific-controversies-octopus-umwelt-1020",
-   "title": "Scientific Controversies: Octopus Umwelt",
-   "category": "food",
-   "start": "2026-10-20T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Pioneer Works",
-    "address": "159 PIONEER STREET, Brooklyn, NY, USA",
-    "neighborhood": "Red Hook",
-    "lat": 40.679224,
-    "lng": -74.012128
-   },
-   "url": "https://pioneerworks.org/programs/scientific-controversies-octopus-umwelt"
-  },
-  {
-   "id": "the-moth-storyslam-1020",
-   "title": "The Moth Storyslam",
+   "id": "econlol-an-economics-themed-comedy-show-1021",
+   "title": "Econlol: An Economics-themed Comedy Show",
    "category": "comedy",
-   "start": "2026-10-20T20:00:00-04:00",
+   "start": "2026-10-21T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "The Bell House",
-    "address": "149 7 STREET, Brooklyn, NY, USA",
-    "neighborhood": "Gowanus",
-    "lat": 40.673739,
-    "lng": -73.991677
+    "name": "Caveat",
+    "address": "21 CLINTON STREET, New York, NY, USA",
+    "neighborhood": "LES",
+    "lat": 40.720766,
+    "lng": -73.984504
    },
-   "url": "https://www.themoth.org/tickets/magic-18"
+   "url": "https://caveat.nyc/events/econ-lol-2026-10-21"
+  },
+  {
+   "id": "our-wicked-lady-presents-90s-cover-band-night-1021",
+   "title": "Our Wicked Lady Presents: '90s Cover Band Night",
+   "category": "music",
+   "start": "2026-10-21T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Bowl",
+    "address": "61 WYTHE AVENUE, Brooklyn, NY, USA",
+    "neighborhood": "Williamsburg",
+    "lat": 40.721767,
+    "lng": -73.957234
+   },
+   "url": "https://www.brooklynbowl.com/brooklyn/events/detail/our-wicked-lady-presents-90-s-cover-night-k7vgf_3cjhr6a"
+  },
+  {
+   "id": "what-s-the-worst-that-could-happen-a-comedy-show-ouija-board-1021",
+   "title": "What's The Worst That Could Happen? A Comedy Show: Ouija Board Edition",
+   "category": "comedy",
+   "start": "2026-10-21T21:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Halyards",
+    "address": "406 3 AVENUE, Brooklyn, NY, USA",
+    "neighborhood": "Gowanus",
+    "lat": 40.673319,
+    "lng": -73.989864
+   },
+   "url": "https://www.eventbrite.com/e/ouija-board-edition-of-whats-the-worst-that-could-happen-a-comedy-show-tickets-2003312079357"
+  },
+  {
+   "id": "fantastic-fiction-at-kgb-1021",
+   "title": "Fantastic Fiction At Kgb",
+   "category": "art",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Kgb Bar",
+    "address": "85 EAST 4 STREET, New York, NY, USA",
+    "neighborhood": "East Village",
+    "lat": 40.726592,
+    "lng": -73.989808
+   },
+   "url": "https://www.kgbfantasticfiction.org"
+  },
+  {
+   "id": "peer-revue-1021",
+   "title": "Peer Revue",
+   "category": "comedy",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Caveat",
+    "address": "21 CLINTON STREET, New York, NY, USA",
+    "neighborhood": "LES",
+    "lat": 40.720766,
+    "lng": -73.984504
+   },
+   "url": "https://caveat.nyc/events/peer-revue-10-14-2026"
+  },
+  {
+   "id": "free-outdoor-movie-1021",
+   "title": "Free Outdoor Movie",
+   "category": "film",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Prospect Park",
+    "address": "PROSPECT PARK, Brooklyn, NY, USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.66138,
+    "lng": -73.96963
+   },
+   "url": "https://www.nycgovparks.org/events/2026/10/14/movie-under-the-stars-practical-magic-1998"
   }
  ],
  "unplaced": [
   {
-   "title": "astronomy on tap: 'the dark night' edition",
-   "url": "https://astronomyontap.org/event/astronomy-on-tap-nyc-180-the-dark-night/"
+   "title": "kitchen sink theatre company presents the rocky horror picture show",
+   "url": "https://www.eventbrite.com/e/the-rocky-horror-picture-show-360-tickets-2001969179708"
   },
   {
-   "title": "brooklyn books + booze",
-   "url": "https://randeedawn.com/bonus/brooklyn-books-booze/"
+   "title": "the best american short stories 2026 : selected shorts with viet thanh nguyen",
+   "url": "https://www.symphonyspace.org/events/selected-shorts-the-best-american-short-stories-2026-with-viet-thanh-nguyen?utm_source=Skint+Newsletter&utm_medium=Newsletter&utm_campaign=Shorts+BASS+2026+Skint+Ad&utm_id=Shorts+BASS+2026+Skint+Ad"
   },
   {
-   "title": "contemporaneous ensemble / recap percussion / mantra percussion present: 'seeing in the dark'",
-   "url": "https://www.contemporaneous.org/upcoming-events/2026/10/seeing-in-the-dark"
+   "title": "taylor swift, 'love story,' and the ancient roman art of writing about love – with nyu's david levene",
+   "url": "https://www.92ny.org/event/david-levene-reading-roman-elegy-through-taylor-swift?utm_source=theskint&utm_medium=cpc&utm_campaign=swift&utm_content=swift"
   },
   {
-   "title": "free outdoor movie",
-   "url": "https://rooftopfilms.com/event/jennifers-body/"
+   "title": "adam wade: live in new york",
+   "url": "https://tickets.frigid.nyc/event/6897:476/"
   },
   {
-   "title": "astronomy live: exploring cosmic building blocks",
-   "url": "https://www.amnh.org/calendar/cosmic-building-blocks"
+   "title": "artists + beers",
+   "url": "https://www.instagram.com/p/DeZj5IhRG7z/"
   },
   {
-   "title": "creative showcase vol. 7",
-   "url": "https://luma.com/index-2wit"
+   "title": "aesop's sound fables presents",
+   "url": "https://www.aesopssoundfables.com/upcoming"
   },
   {
-   "title": "sixth annual queer spooky shorts",
-   "url": "https://www.tososnyc.org/"
+   "title": "taste of science presents: 'under pressure: decoding the weather machine'",
+   "url": "https://tasteofscience.org/new-york-events/2026/10/21/under-pressure"
+  },
+  {
+   "title": "love, sex, + magic: comedy variety show",
+   "url": "https://clubcummingnyc.com/schedule/2026/10/21/love-sex-amp-magic-a-comedy-variety-show"
+  },
+  {
+   "title": "the monster high mash: a monster high drag party",
+   "url": "https://dice.fm/event/yoqrax-the-monster-high-mash-a-monster-high-drag-party-21st-oct-cmon-everybody-new-york-tickets"
+  },
+  {
+   "title": "jonathan ames: a past without pictures",
+   "url": "https://www.bklynlibrary.org/calendar/jonathan-ames-past-library-for-arts-culture-20261014-0630pm"
+  },
+  {
+   "title": "baby shoes comedy",
+   "url": "https://www.instagram.com/babyshoescomedy"
+  },
+  {
+   "title": "infinite good times movie club: 'the house that carpenter built: part 2 of 3' edition",
+   "url": "https://partiful.com/u/wZCECUp5fKLAfaG7Oki2"
+  },
+  {
+   "title": "sunnyside horror society",
+   "url": "https://www.instagram.com/sunnysidehorrorsociety/p/DeANwg8p88o/"
   }
  ]
 }
