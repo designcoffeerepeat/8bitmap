@@ -1,4 +1,4 @@
-// Site chrome outside the map: the menu in the title box, the Contact / Privacy / Terms
+// Site chrome outside the map: the menu in the title box (including LAUNCH MONSTER), the Contact / Privacy / Terms
 // modals, the empty ad slot (opens Contact on Ad/Event Inquiry) and the cookie banner.
 // Loaded on its own so it works while the map and events are still loading.
 
@@ -21,6 +21,13 @@ document.addEventListener('keydown', (e) => {
     toggleMenu(false);
     menuBtn.focus();
   }
+});
+
+// LAUNCH MONSTER: src/scripts/monster.js picks this up once the map is ready.
+$('#launch-monster').addEventListener('click', () => {
+  toggleMenu(false);
+  window.monsterQueued = true;
+  window.dispatchEvent(new Event('monster:launch'));
 });
 
 // ---- modals ----------------------------------------------------------------------
