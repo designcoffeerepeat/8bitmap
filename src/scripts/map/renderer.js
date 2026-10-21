@@ -91,7 +91,7 @@ export function createMap(container, opts = {}) {
   buildBase(world);
   const waterFrames = buildWater(world, city);
   buildLand(world, city);
-  buildBuildings(world, city, landmarkCells);
+  const roofs = buildBuildings(world, city, landmarkCells);
   buildBridges(world);
   buildLandmarks(world, city);
   const boats = buildBoats(world);
@@ -386,6 +386,8 @@ export function createMap(container, opts = {}) {
     onFrame(fn) { frameHooks.add(fn); return () => frameHooks.delete(fn); },
     // ground height at a world position (water and bridges sit near 0.3)
     groundAt: (x, z) => groundTopCell(city, Math.floor(x + COLS / 2), Math.floor(z + ROWS / 2)),
+    // the building on a tile: { x, z, size, top, bare } (bare means nothing stands on its roof)
+    rooftop(col, row) { return roofs.get(row * COLS + col) ?? null; },
     // where the ray under a screen point crosses the level y, in world space
     rayToHeight(clientX, clientY, y) {
       const rect = canvas.getBoundingClientRect();
@@ -574,6 +576,7 @@ function touchesWater(city, col, row) {
 function buildBuildings(world, city, landmarkCells) {
   const r = rng(42);
   const boxes = [];
+  const roofs = new Map();
   for (let i = 0; i < city.height.length; i++) {
     const h = city.height[i];
     if (!h || city.type[i] !== T.LAND || landmarkCells.has(i)) continue;
@@ -589,14 +592,18 @@ function buildBuildings(world, city, landmarkCells) {
     const blockSeed = rng(Math.floor(col / 3) * 7919 + Math.floor(row / 3) * 104729)();
     const hex = pick(band, r() < 0.6 ? blockSeed : r());
     boxes.push([x + jx, GROUND_H, z + jz, fp, height, fp, hex]);
+    const roof = { x: x + jx, z: z + jz, size: fp, top: GROUND_H + height, bare: true };
+    roofs.set(i, roof);
     // tall towers get a setback and sometimes a mast
     if (h > 7) {
+      roof.bare = false;
       const fp2 = fp * (0.55 + r() * 0.2);
       const h2 = height * (0.15 + r() * 0.2);
       boxes.push([x + jx, GROUND_H + height, z + jz, fp2, h2, fp2, r() < 0.5 ? hex : PALETTE.glass]);
       if (r() < 0.25) boxes.push([x + jx, GROUND_H + height + h2, z + jz, 0.08, 0.9, 0.08, '#e8eef9']);
     } else if (h > 2 && r() < 0.1) {
       // rooftop water tower, very New York
+      roof.bare = false;
       boxes.push([x + jx + 0.15, GROUND_H + height, z + jz - 0.1, 0.22, 0.3, 0.22, '#8f8a82']);
     }
   }
@@ -604,6 +611,7 @@ function buildBuildings(world, city, landmarkCells) {
   boxes.forEach((b, k) => place(mesh, k, b[0], b[1], b[2], b[3], b[4], b[5], b[6]));
   mesh.instanceColor.needsUpdate = true;
   world.add(mesh);
+  return roofs;
 }
 
 function buildBridges(world) {
