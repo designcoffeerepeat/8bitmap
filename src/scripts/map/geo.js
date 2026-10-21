@@ -311,9 +311,12 @@ export function buildCity() {
 }
 
 // Landmarks get their own hand-built meshes in the renderer.
+// `clear` empties the tiles within that many tiles of the centre for a bigger model;
+// `low` caps the buildings within that many tiles so a short landmark still shows.
 export const LANDMARKS = [
   { id: 'wtc', name: 'One World Trade', lat: 40.7127, lng: -74.0134 },
   { id: 'esb', name: 'Empire State', lat: 40.7484, lng: -73.9857 },
+  { id: 'msg', name: 'Madison Square Garden', lat: 40.7505, lng: -73.9935, clear: 1, low: 4.5 },
   { id: 'chrysler', name: 'Chrysler Building', lat: 40.7516, lng: -73.9755 },
   { id: 'liberty', name: 'Statue of Liberty', lat: 40.6892, lng: -74.0445 },
   { id: 'yankee', name: 'Yankee Stadium', lat: 40.8296, lng: -73.9262 },

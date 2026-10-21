@@ -11,6 +11,8 @@ import { PALETTE, CATEGORY_COLORS } from './palette.js';
 
 const GROUND_H = 0.35;
 const LEVEL_H = 0.4;
+// Roof height of landmarks that clear their neighbouring tiles; pins there sit on top.
+const LANDMARK_TOP = { msg: 3.5 };
 const VIEW_HEIGHT = 70; // world units visible top to bottom at zoom 1
 const HOME = { lat: 40.738, lng: -73.975, zoom: 1.15 };
 const REDUCED_MOTION = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
@@ -53,6 +55,7 @@ export function createMap(container, opts = {}) {
   scene.add(sun);
 
   const city = buildCity();
+  city.landmarkTop = new Map();
   const world = new THREE.Group();
   scene.add(world);
 
@@ -60,7 +63,29 @@ export function createMap(container, opts = {}) {
   const landmarkCells = new Set();
   for (const l of LANDMARKS) {
     const { col, row } = latLngToCell(l.lat, l.lng);
-    landmarkCells.add(Math.floor(row) * COLS + Math.floor(col));
+    const r = l.clear ?? 0;
+    for (let dr = -r; dr <= r; dr++) {
+      for (let dc = -r; dc <= r; dc++) {
+        const c = Math.floor(col) + dc;
+        const w = Math.floor(row) + dr;
+        if (Math.hypot(c + 0.5 - col, w + 0.5 - row) > r + 0.5) continue;
+        landmarkCells.add(w * COLS + c);
+        // pins on a cleared tile sit on the landmark's roof
+        if (l.clear) city.landmarkTop.set(w * COLS + c, GROUND_H + LANDMARK_TOP[l.id]);
+      }
+    }
+    if (l.low) {
+      const r2 = Math.ceil(l.low);
+      for (let dr = -r2; dr <= r2; dr++) {
+        for (let dc = -r2; dc <= r2; dc++) {
+          const c = Math.floor(col) + dc;
+          const w = Math.floor(row) + dr;
+          const d = Math.hypot(c + 0.5 - col, w + 0.5 - row);
+          // step the neighbours down towards the landmark
+          if (d <= l.low) city.height[w * COLS + c] = Math.min(city.height[w * COLS + c], Math.round(2 + d * 1.5));
+        }
+      }
+    }
   }
 
   buildBase(world);
@@ -395,6 +420,7 @@ function groundTopCell(city, c, r) {
   if (c < 0 || r < 0 || c >= COLS || r >= ROWS) return 0.2;
   const i = r * COLS + c;
   if (city.type[i] === T.WATER || city.type[i] === T.BRIDGE) return 0.3;
+  if (city.landmarkTop?.has(i)) return city.landmarkTop.get(i);
   return GROUND_H + city.height[i] * LEVEL_H;
 }
 
@@ -641,13 +667,36 @@ function buildLandmarks(world, city) {
       }
       parts.push([p.x, GROUND_H, p.z, 0.25, 1.7, 0.25, '#f2f2f2']);
       parts.push([p.x, GROUND_H, p.z, 1.6, 0.2, 0.5, '#5a5d72']);
+    } else if (l.id === 'msg') {
+      // Madison Square Garden: a round drum on the Penn Station block, turned to the street grid
+      const grid = -0.5;
+      parts.push([p.x, GROUND_H, p.z, 3, 0.4, 2, '#9a968e', grid]); // Penn Plaza podium
+      // the drum is a pixel circle: thin strips whose width follows the curve
+      const drum = (y, r, h, hex) => {
+        for (let k = -3.5; k <= 3.5; k++) {
+          const dz = (k / 4) * r;
+          const w = 2 * Math.sqrt(Math.max(0, r * r - dz * dz)) + 0.1;
+          parts.push([p.x, y, p.z + dz, w, h, (r / 4) + 0.02, hex]);
+        }
+      };
+      drum(GROUND_H + 0.4, 1, 2.3, '#d6d0c4'); // facade
+      drum(GROUND_H + 2.7, 1.04, 0.4, '#4a4d63'); // dark crown band
+      drum(GROUND_H + 3.1, 0.9, 0.25, '#e8eef9'); // roof
+      drum(GROUND_H + 3.35, 0.55, 0.15, '#c9d2e3'); // roof dome
+      // light ribs around the drum
+      for (let k = 0; k < 16; k++) {
+        const a = (k / 16) * Math.PI * 2;
+        parts.push([p.x + Math.cos(a) * 1.07, GROUND_H + 0.4, p.z + Math.sin(a) * 1.07, 0.12, 2.3, 0.12, '#f4f1ea']);
+      }
+      // the red MSG sign facing 7th Ave
+      parts.push([p.x + Math.cos(grid) * 1.12, GROUND_H + 1.3, p.z - Math.sin(grid) * 1.12, 0.14, 0.7, 0.9, '#d94a3a', grid]);
     } else if (l.id === 'unisphere') {
       parts.push([p.x, GROUND_H, p.z, 1.8, 1.1, 1.4, '#8a4b32']);
       parts.push([p.x, GROUND_H + 1.1, p.z, 1.5, 0.12, 1.1, '#6d3a26']);
     }
   }
   const mesh = instanced(parts.length);
-  parts.forEach((b, k) => place(mesh, k, b[0], b[1], b[2], b[3], b[4], b[5], b[6]));
+  parts.forEach((b, k) => place(mesh, k, b[0], b[1], b[2], b[3], b[4], b[5], b[6], b[7]));
   mesh.instanceColor.needsUpdate = true;
   world.add(mesh);
 }

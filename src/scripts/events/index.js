@@ -6,7 +6,7 @@
 // See ./sources/template.js.
 
 import { normalizeEvent } from './schema.js';
-import { inBounds, BOUNDS } from '../map/geo.js';
+import { inBounds, BOUNDS, LANDMARKS } from '../map/geo.js';
 import nycgovSource from './sources/nycgov.js';
 import raSource from './sources/ra.js';
 import skintSource from './sources/skint.js';
@@ -54,12 +54,25 @@ export async function loadEventsForDate(date = new Date(), { tomorrow = false, d
     }
     for (const raw of r.value.rows) {
       const ev = normalizeEvent(raw, r.value.s);
+      if (ev) snapToLandmark(ev);
       const onDay = ev && (day ? (raw.listedDay ?? ev.start.slice(0, 10)) === day : sameDay(new Date(ev.start), date));
       if (ev && onDay && inBounds(ev.venue.lat, ev.venue.lng)) events.push(ev);
     }
   }
 
   return { events: dedupe(events).sort((a, b) => new Date(a.start) - new Date(b.start)), errors };
+}
+
+// Listing sites place big venues a block or two apart; pin them onto the landmark model.
+const VENUE_LANDMARKS = [
+  { id: 'msg', match: /madison square garden|hulu theat(er|re)|\b(2|4|two|four) penn(sylvania)? plaza\b/i },
+];
+
+function snapToLandmark(ev) {
+  const text = `${ev.venue.name} ${ev.venue.address}`;
+  const hit = VENUE_LANDMARKS.find((v) => v.match.test(text));
+  const l = hit && LANDMARKS.find((m) => m.id === hit.id);
+  if (l) Object.assign(ev.venue, { lat: l.lat, lng: l.lng });
 }
 
 function sameDay(a, b) {
