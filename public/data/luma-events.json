@@ -4,28 +4,8 @@
   "url": "https://luma.com/nyc"
  },
  "date": "2026-10-20",
- "fetchedAt": "2026-10-20T14:31:03-04:00",
+ "fetchedAt": "2026-10-20T20:18:42-04:00",
  "events": [
-  {
-   "id": "evt-cMXn0ZWyfGUNSdz",
-   "title": "(IN) PRACTICE: Poetry, Community & Art as Advocacy with Joel Leon",
-   "category": "art",
-   "start": "2026-10-20T17:00:00-04:00",
-   "end": "2026-10-20T19:00:00-04:00",
-   "venue": {
-    "name": "The Lighthouse Campus",
-    "address": "The Lighthouse Campus, 58 Kent St, Brooklyn, NY 11222, USA",
-    "neighborhood": "Greenpoint",
-    "lat": 40.73036,
-    "lng": -73.958693
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the The Lighthouse calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/the-jb5w",
-   "tags": []
-  },
   {
    "id": "evt-zJ7oHoEuT4SLW5C",
    "title": "Cycol Gallery, Wait And Hope Foundation, and One Love Art Present: Monochrome",
@@ -47,6 +27,26 @@
    "tags": []
   },
   {
+   "id": "evt-SqdsSBaD3yGkNYY",
+   "title": "Figma agent: Builder night (Tuesday, October 20)",
+   "category": "community",
+   "start": "2026-10-20T18:00:00-04:00",
+   "end": "2026-10-20T21:00:00-04:00",
+   "venue": {
+    "name": "Figma NYC",
+    "address": "Figma NYC, 27 W 23rd St, New York, NY 10010, USA",
+    "neighborhood": "Flatiron District",
+    "lat": 40.742232,
+    "lng": -73.990626
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Figma for Education calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/uuo7sc2e",
+   "tags": []
+  },
+  {
    "id": "evt-rFjHRgf96II0kQC",
    "title": "NY Knicks Season Opener Watch Party",
    "category": "nightlife",
@@ -64,26 +64,6 @@
    "description": "From the All Things Advertising Networking Events calendar on Luma",
    "details": "",
    "url": "https://luma.com/allthings-1dk6",
-   "tags": []
-  },
-  {
-   "id": "evt-fO43xJx6libItsf",
-   "title": "October Future Self Series- Design Your Career",
-   "category": "art",
-   "start": "2026-10-20T18:00:00-04:00",
-   "end": "2026-10-20T20:00:00-04:00",
-   "venue": {
-    "name": "Fabrik DUMBO",
-    "address": "Fabrik DUMBO, 20 Jay St Suite 218, Brooklyn, NY 11201, USA",
-    "neighborhood": "Dumbo",
-    "lat": 40.704006,
-    "lng": -73.986679
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Personal calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/hns6wzcp",
    "tags": []
   },
   {
@@ -108,11 +88,6 @@
   }
  ],
  "unplaced": [
-  {
-   "title": "Claude Code Workshop with Provectus - New York City",
-   "address": "address shown to guests only",
-   "url": "https://luma.com/claude-code-workshop-nyc-oct-20"
-  },
   {
    "title": "GTM Intelligence: AI Night with Ramp + MeritFirst",
    "address": "address shown to guests only",
