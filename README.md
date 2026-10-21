@@ -71,6 +71,12 @@ Visitors from the EU, EEA, UK and Switzerland (by Cloudflare's country) get `dat
 which keeps Google Analytics off until they accept in the cookie banner. Their choice is the `8bm_consent` cookie,
 and Cookie Settings in the menu lets them change it. Add `?consent=eu` to the URL to see the banner from anywhere.
 
+### Sources shown on dev only
+
+`src/scripts/events/live.js` lists sources (currently Resident Advisor and The Skint) that only dev shows. The
+dev workflow builds with `PUBLIC_SITE=dev`; any other build is a live build, which leaves those sources out of the
+map and drops their snapshot files (today's and tomorrow's) from `dist/`. Their fetchers keep running, so dev stays current.
+
 ## Layout
 
 ```

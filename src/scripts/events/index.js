@@ -17,9 +17,14 @@ import ticketmasterSource from './sources/ticketmaster.js';
 import seatgeekSource from './sources/seatgeek.js';
 import diceSource from './sources/dice.js';
 import artwrldSource from './sources/artwrld.js';
+import { LIVE_HIDDEN } from './live.js';
 
 // ./sources/dummy.js holds sample events for offline testing.
-export const SOURCES = [nycgovSource, donycSource, raSource, skintSource, lumaSource, permitsSource, ticketmasterSource, seatgeekSource, diceSource, artwrldSource];
+const ALL_SOURCES = [nycgovSource, donycSource, raSource, skintSource, lumaSource, permitsSource, ticketmasterSource, seatgeekSource, diceSource, artwrldSource];
+
+// Live builds (anything not built with PUBLIC_SITE=dev) leave out the sources in ./live.js.
+const IS_DEV = import.meta.env.PUBLIC_SITE === 'dev';
+export const SOURCES = IS_DEV ? ALL_SOURCES : ALL_SOURCES.filter((s) => !LIVE_HIDDEN.includes(s.id));
 
 // `tomorrow` reads the next-day snapshots; `day` (YYYY-MM-DD) then drops any
 // snapshot left over from an earlier run that covers some other day.
