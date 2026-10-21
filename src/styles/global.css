@@ -331,3 +331,25 @@ button, a { font: inherit; color: inherit; }
   .consent-actions .btn { flex: 1; }
 }
 @media (prefers-reduced-motion: reduce) { #panel { transition: none; } }
+
+/* Monster easter egg (src/scripts/monster.js): banner, and the health bar over its head */
+.monster-on .map-canvas { cursor: crosshair; }
+.monster-on .hint { display: none; }
+.monster-hud {
+  position: fixed; z-index: 3; left: 50%; transform: translateX(calc(-50% - var(--panel-w) / 2));
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px)); padding: 10px 10px 10px 16px;
+  display: flex; gap: 14px; align-items: center; white-space: nowrap;
+}
+.monster-hud p { margin: 0; font: 9px/1.4 var(--font-pixel); letter-spacing: 1px; color: var(--dim); }
+.monster-hud b { font-weight: 400; color: var(--pin); }
+.monster-x { flex: none; width: 26px; height: 26px; cursor: pointer; font: 9px/1 var(--font-pixel); background: var(--night-2); border: 0; }
+.monster-x:hover { background: var(--pin); }
+.monster-hp { position: absolute; left: 0; top: 0; pointer-events: none; display: flex; align-items: center; gap: 6px; }
+.monster-hp[hidden] { display: none; }
+.monster-hp span { font: 7px/1 var(--font-pixel); letter-spacing: 1px; color: var(--ink); text-shadow: 1px 1px 0 var(--night), -1px -1px 0 var(--night), 1px -1px 0 var(--night), -1px 1px 0 var(--night); }
+.monster-hp i { display: block; width: 72px; height: 10px; padding: 2px; background: var(--night); border: 2px solid var(--frame); }
+.monster-hp b { display: block; height: 100%; width: 100%; background: #6ee07a; }
+.monster-hp.is-low b { background: var(--pin); }
+@media (max-width: 760px) {
+  .monster-hud { left: 16px; right: 16px; transform: none; bottom: calc(76px + env(safe-area-inset-bottom, 0px)); justify-content: space-between; }
+}

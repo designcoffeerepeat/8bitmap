@@ -21,6 +21,7 @@ const pick = (arr, r) => arr[Math.floor(r * arr.length) % arr.length];
 export function createMap(container, opts = {}) {
   let pixelSize = opts.pixelSize ?? 2;
   const listeners = { select: [], hover: [] };
+  const frameHooks = new Set(); // extra scene actors (the monster easter egg) step here each frame
   const emit = (name, payload) => listeners[name].forEach((fn) => fn(payload));
 
   const canvas = document.createElement('canvas');
@@ -329,6 +330,7 @@ export function createMap(container, opts = {}) {
       }
       for (const b of boats) b.update(t);
     }
+    for (const fn of frameHooks) fn(dt, t);
 
     renderer.render(scene, camera);
     placeAnchors();
@@ -352,6 +354,30 @@ export function createMap(container, opts = {}) {
     home: () => home(true),
     setPixelSize,
     on(name, fn) { listeners[name].push(fn); },
+    // ---- hooks for things that move around the scene (see src/scripts/monster.js) ----
+    world,
+    camera,
+    canvas,
+    onFrame(fn) { frameHooks.add(fn); return () => frameHooks.delete(fn); },
+    // ground height at a world position (water and bridges sit near 0.3)
+    groundAt: (x, z) => groundTopCell(city, Math.floor(x + COLS / 2), Math.floor(z + ROWS / 2)),
+    // where the ray under a screen point crosses the level y, in world space
+    rayToHeight(clientX, clientY, y) {
+      const rect = canvas.getBoundingClientRect();
+      ndc.set(((clientX - rect.left) / rect.width) * 2 - 1, -((clientY - rect.top) / rect.height) * 2 + 1);
+      raycaster.setFromCamera(ndc, camera);
+      const r = raycaster.ray;
+      if (Math.abs(r.direction.y) < 1e-4) return null;
+      return r.at((y - r.origin.y) / r.direction.y, new THREE.Vector3());
+    },
+    // a world position in CSS pixels relative to the map container
+    toScreen(v) {
+      projected.copy(v).project(camera);
+      return { x: ((projected.x + 1) / 2) * canvas.clientWidth, y: ((1 - projected.y) / 2) * canvas.clientHeight, behind: projected.z > 1 };
+    },
+    flyTo: (target, zoom) => flyTo(target, THREE.MathUtils.clamp(zoom ?? camera.zoom, controls.minZoom, controls.maxZoom)),
+    get target() { return controls.target.clone(); },
+    get zoom() { return camera.zoom; },
     get pixelSize() { return pixelSize; },
   };
 }
@@ -361,8 +387,10 @@ export function createMap(container, opts = {}) {
 
 function groundTop(city, lat, lng) {
   const { col, row } = latLngToCell(lat, lng);
-  const c = Math.floor(col);
-  const r = Math.floor(row);
+  return groundTopCell(city, Math.floor(col), Math.floor(row));
+}
+
+function groundTopCell(city, c, r) {
   if (c < 0 || r < 0 || c >= COLS || r >= ROWS) return 0.2;
   const i = r * COLS + c;
   if (city.type[i] === T.WATER || city.type[i] === T.BRIDGE) return 0.3;
