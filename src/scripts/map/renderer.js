@@ -13,6 +13,10 @@ const GROUND_H = 0.35;
 const LEVEL_H = 0.4;
 // Roof height of landmarks that clear their neighbouring tiles; pins there sit on top.
 const LANDMARK_TOP = { msg: 3.5 };
+// Zoomed out, pins stand on their spots (sharing a tile fans them out a little). From
+// SPREAD_FROM they ease apart on screen and are fully spread by SPREAD_FULL (max zoom is 7).
+const SPREAD_FROM = 4;
+const SPREAD_FULL = 5.5;
 // Pin spacing in render pixels, measured between the heads of the 13 px wide pins.
 const PIN_GAP = 14; // pins at different places just touch
 const SAME_GAP = 11; // pins at the same place overlap a little
@@ -105,7 +109,7 @@ export function createMap(container, opts = {}) {
   // ---- pins -------------------------------------------------------------
   const pinGroup = new THREE.Group();
   world.add(pinGroup);
-  let pins = []; // { sprite, event, anchor, spot, baseY, order, phase }
+  let pins = []; // { sprite, event, anchor, fan, spot, baseY, order, phase }
   let visibleVersion = 0;
   let hovered = null;
   let selected = null;
@@ -121,19 +125,25 @@ export function createMap(container, opts = {}) {
     pinGroup.clear();
     pins = [];
     const spots = []; // one per place; events within ~30 m of each other share it
+    const used = new Map();
     for (const ev of events) {
       const p = latLngToWorld(ev.venue.lat, ev.venue.lng);
+      const cellKey = `${Math.floor(p.x)},${Math.floor(p.z)}`;
+      const n = used.get(cellKey) ?? 0;
+      used.set(cellKey, n + 1);
+      // fan out events that land on the same tile
+      const fan = new THREE.Vector3(n ? Math.cos(n * 2.1) * 0.9 : 0, 0, n ? Math.sin(n * 2.1) * 0.9 : 0);
       let spot = spots.findIndex((q) => Math.hypot(q.x - p.x, q.z - p.z) < SAME_SPOT);
       if (spot < 0) spot = spots.push(p) - 1;
       const baseY = groundTop(city, ev.venue.lat, ev.venue.lng) + 0.2;
       const mat = new THREE.SpriteMaterial({ map: pinTexture(ev.category, 'idle'), depthTest: false, transparent: true });
       const sprite = new THREE.Sprite(mat);
       sprite.center.set(0.5, 0);
-      sprite.position.set(p.x, baseY, p.z);
+      sprite.position.set(p.x + fan.x, baseY, p.z + fan.z);
       sprite.renderOrder = 10;
       sprite.userData.eventId = ev.id;
       pinGroup.add(sprite);
-      pins.push({ sprite, event: ev, anchor: sprite.position.clone(), spot, baseY, order: 10, phase: Math.random() * Math.PI * 2 });
+      pins.push({ sprite, event: ev, anchor: new THREE.Vector3(p.x, baseY, p.z), fan, spot, baseY, order: 10, phase: Math.random() * Math.PI * 2 });
     }
     layoutKey = '';
     refreshPinStates();
@@ -149,7 +159,7 @@ export function createMap(container, opts = {}) {
   }
 
   // Pins are drawn at a fixed pixel size, so whether two of them collide depends on the view.
-  // Whenever the zoom or angle changes they are spread out on screen: pins at different places
+  // Zoomed in close (see SPREAD_FROM) they are spread out on screen: pins at different places
   // are pushed apart until their heads just touch, and pins at the same place huddle together,
   // overlapping a little. Panning moves everything alike, so it needs no new layout.
   let layoutKey = '';
@@ -161,6 +171,16 @@ export function createMap(container, opts = {}) {
     const key = [camera.zoom, q.x, q.y, q.z, q.w].map((n) => n.toFixed(4)).join() + `|${rw}x${rh}|${visibleVersion}`;
     if (key === layoutKey) return;
     layoutKey = key;
+    const t = THREE.MathUtils.clamp((camera.zoom - SPREAD_FROM) / (SPREAD_FULL - SPREAD_FROM), 0, 1);
+    if (t === 0) {
+      for (const pin of pins) {
+        pin.sprite.position.copy(pin.anchor).add(pin.fan);
+        pin.baseY = pin.sprite.position.y;
+        pin.order = 10;
+      }
+      refreshPinStates();
+      return;
+    }
     const wpp = worldPerPixel();
     right.setFromMatrixColumn(camera.matrixWorld, 0);
     up.setFromMatrixColumn(camera.matrixWorld, 1);
@@ -215,9 +235,9 @@ export function createMap(container, opts = {}) {
     }
     for (const p of pts) {
       // whole render pixels keep the sprites crisp
-      const dx = Math.round(p.x - p.ox) * wpp;
-      const dy = -Math.round(p.y - p.oy) * wpp;
-      p.pin.sprite.position.copy(p.pin.anchor).addScaledVector(right, dx).addScaledVector(up, dy);
+      const dx = Math.round((p.x - p.ox) * t) * wpp;
+      const dy = -Math.round((p.y - p.oy) * t) * wpp;
+      p.pin.sprite.position.copy(p.pin.anchor).addScaledVector(p.pin.fan, 1 - t).addScaledVector(right, dx).addScaledVector(up, dy);
       p.pin.baseY = p.pin.sprite.position.y;
       // pins lower on screen are drawn over the ones behind them
       p.pin.order = 10 + p.y / rh;
