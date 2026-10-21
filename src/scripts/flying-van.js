@@ -1,4 +1,4 @@
-// Flying van easter egg. Zoom all the way in on the Lower East Side and a white Sprinter van
+// Flying van easter egg. Zoom all the way in on the Lower East Side and a black Sprinter van
 // on tiny flapping wings cruises in and circles the neighbourhood. On the roof a chill guy
 // in a black hoodie and sunglasses kicks back in a lawn chair next to his Bernedoodle.
 // Zooming back out to about the default view clears it so it flies in again next time.
@@ -14,7 +14,7 @@ const SPEED = 0.65; // world units per second
 const VOX = 0.045; // world units per voxel, the same scale as the Brighton Beach sunbather
 
 const C = {
-  van: '#f4f4f2', vanShade: '#d9d9de', glass: '#2b3f63', tyre: '#22232b', trim: '#8c8fa3',
+  van: '#2a2b31', vanShade: '#3d3f48', glass: '#4f6f9f', tyre: '#0c0c0f', trim: '#8c8fa3',
   grille: '#3b3f57', light: '#fff3a0', tail: '#ed1c24',
   wing: '#ffffff', feather: '#dedad2',
   frame: '#c9c9cf', web: ['#3aa35a', '#ffffff'],
