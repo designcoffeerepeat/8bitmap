@@ -52,6 +52,23 @@ Node version comes from `.node-version` (22).
 On live, visitors without the password see a coming soon page at `/` with a link to `/login`; on dev every page asks for the password first. Logging in sets a cookie for 30 days, and
 `/logout` clears it. To open the site to everyone later, remove `main` and the `vars` from `wrangler.jsonc`.
 This is a shared password to keep the map private for now, not a real account system.
+Keep `worker/index.js` itself when opening the site up: it also runs the contact form and the cookie consent check below.
+
+### Contact form, legal pages and cookie consent
+
+The menu in the title box opens Contact, Privacy Policy and Terms and Conditions as modals
+(`src/scripts/site.js`; the texts are `src/components/PrivacyPolicy.astro` and `src/components/Terms.astro`).
+Each can be linked to directly as `/#contact`, `/#privacy` or `/#terms`. The empty ad slot opens Contact
+on Ad/Event Inquiry.
+
+The form posts to `/api/contact` in `worker/index.js`, which sends it with the `MAIL` send_email binding
+from website@8bit.nyc. Ad/Event Inquiry is for sales@8bit.nyc and the other topics for info@8bit.nyc; Cloudflare
+only lets a Worker send to verified destination addresses, so the worker emails the inboxes behind those
+addresses directly (`TOPICS` and `INBOXES`, kept in step with `email-worker/index.js`), with the address in the subject.
+
+Visitors from the EU, EEA, UK and Switzerland (by Cloudflare's country) get `data-consent="required"` on the page,
+which keeps Google Analytics off until they accept in the cookie banner. Their choice is the `8bm_consent` cookie,
+and Cookie Settings in the menu lets them change it. Add `?consent=eu` to the URL to see the banner from anywhere.
 
 ### Sources shown on dev only
 
@@ -65,6 +82,8 @@ map and drops their snapshot files (today's and tomorrow's) from `dist/`. Their 
 src/pages/index.astro             page shell and HUD markup
 src/styles/global.css             all styles (arcade look, mobile bottom sheet)
 src/scripts/app.js                UI: filters, Today list, event card, map controls
+src/scripts/site.js               site menu, Contact / Privacy / Terms modals, ad slot, cookie banner
+src/components/                   Privacy Policy and Terms texts
 src/scripts/map/geo.js            NYC tile grid: shorelines, parks, bridges, skyline peaks, lat/lng to tile
 src/scripts/map/renderer.js       three.js scene: voxel land and buildings, pins, labels, camera, picking
 src/scripts/map/palette.js        colours for the city and for event categories
