@@ -18,10 +18,10 @@ import urllib.parse
 from datetime import datetime
 from pathlib import Path
 
-from fetch_nycgov import NYC, get, venue_category
+from fetch_nycgov import DATA, NYC, get, venue_category
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / 'public' / 'data' / 'seatgeek-events.json'
+OUT = DATA / 'seatgeek-events.json'
 API = 'https://api.seatgeek.com/2/events'
 PAGE = 'https://seatgeek.com/cities/new-york'
 CATEGORIES = {'concert': 'music', 'music_festival': 'music', 'comedy': 'comedy', 'theater': 'theater', 'broadway_tickets_national': 'theater',

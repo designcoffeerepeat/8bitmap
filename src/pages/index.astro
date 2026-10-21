@@ -62,7 +62,7 @@ import Terms from '../components/Terms.astro';
       <a href="#terms" data-modal="terms">TERMS AND CONDITIONS</a>
       <button type="button" id="cookie-settings" hidden>COOKIE SETTINGS</button>
     </nav>
-    <p><span id="today-date">TODAY</span><span id="today-count">LOADING</span></p>
+    <p><button id="today-date" class="day-btn" type="button" aria-pressed="false">TODAY</button><span id="today-count">LOADING</span></p>
   </div>
   <!-- Empty ad slot: opens the contact form on Ad/Event Inquiry. A booked ad replaces it with an <a class="ad box">. -->
   <button class="ad box is-empty" id="ad-slot" type="button" aria-label="Advertise your ad or event here: contact us">
@@ -93,10 +93,10 @@ import Terms from '../components/Terms.astro';
   </div>
 </header>
 
-<aside id="panel" aria-label="Today's events">
+<aside id="panel" aria-label="Events">
   <button id="panel-toggle" type="button" aria-expanded="false" aria-controls="event-list"><span hidden>Toggle event list</span></button>
   <div class="panel-head">
-    <h2>TODAY</h2>
+    <h2 id="list-title">TODAY</h2>
     <small>TAP A PIN OR A ROW</small>
   </div>
   <div class="list-wrap">

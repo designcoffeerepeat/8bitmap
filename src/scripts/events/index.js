@@ -17,13 +17,20 @@ import ticketmasterSource from './sources/ticketmaster.js';
 import seatgeekSource from './sources/seatgeek.js';
 import diceSource from './sources/dice.js';
 import artwrldSource from './sources/artwrld.js';
+import { LIVE_HIDDEN } from './live.js';
 
 // ./sources/dummy.js holds sample events for offline testing.
-export const SOURCES = [nycgovSource, donycSource, raSource, skintSource, lumaSource, permitsSource, ticketmasterSource, seatgeekSource, diceSource, artwrldSource];
+const ALL_SOURCES = [nycgovSource, donycSource, raSource, skintSource, lumaSource, permitsSource, ticketmasterSource, seatgeekSource, diceSource, artwrldSource];
 
-export async function loadEventsForDate(date = new Date()) {
+// Live builds (anything not built with PUBLIC_SITE=dev) leave out the sources in ./live.js.
+const IS_DEV = import.meta.env.PUBLIC_SITE === 'dev';
+export const SOURCES = IS_DEV ? ALL_SOURCES : ALL_SOURCES.filter((s) => !LIVE_HIDDEN.includes(s.id));
+
+// `tomorrow` reads the next-day snapshots; `day` (YYYY-MM-DD) then drops any
+// snapshot left over from an earlier run that covers some other day.
+export async function loadEventsForDate(date = new Date(), { tomorrow = false, day: onlyDay = null } = {}) {
   const results = await Promise.allSettled(
-    SOURCES.map((s) => s.fetchEvents({ date, bounds: BOUNDS }).then((rows) => ({ s, rows }))),
+    SOURCES.map((s) => s.fetchEvents({ date, bounds: BOUNDS, tomorrow }).then((rows) => ({ s, rows }))),
   );
 
   const events = [];
@@ -37,6 +44,10 @@ export async function loadEventsForDate(date = new Date()) {
     // local date so the result does not depend on the viewer's time zone.
     // `listedDay` keeps an after-midnight party on the night it is listed for.
     const day = r.value.s.snapshot?.date;
+    if (onlyDay && day !== onlyDay) {
+      r.value.s.snapshot = null;
+      continue;
+    }
     for (const raw of r.value.rows) {
       const ev = normalizeEvent(raw, r.value.s);
       const onDay = ev && (day ? (raw.listedDay ?? ev.start.slice(0, 10)) === day : sameDay(new Date(ev.start), date));

@@ -55,7 +55,15 @@ button, a { font: inherit; color: inherit; }
 .brand h1 b { color: var(--coin); font-weight: 400; }
 .brand h1 .dev-tag { font: 9px/1 var(--font-pixel); font-style: normal; color: var(--night); background: var(--coin); padding: 3px 4px 2px; }
 .brand p { margin: 0; font: 9px/1.4 var(--font-pixel); color: var(--dim); letter-spacing: 1px; }
-.brand p span + span::before { content: " · "; }
+.brand p #today-count::before { content: " · "; }
+/* the header date: click to switch between today's and tomorrow's events */
+.day-btn {
+  font: inherit; letter-spacing: inherit; color: var(--ink); background: none; border: 0; padding: 0; cursor: pointer;
+  text-decoration: underline dotted var(--dim); text-underline-offset: 3px;
+}
+.day-btn b { font-weight: 400; color: var(--coin); margin: 0 4px; }
+.day-btn:hover { color: var(--coin); }
+.day-btn:disabled { cursor: progress; }
 
 /* hamburger in the title box and its menu (Contact, Privacy Policy, Terms) */
 .menu-btn {
@@ -203,7 +211,14 @@ button, a { font: inherit; color: inherit; }
 .d-more p { margin: 0 0 8px; color: var(--ink); }
 .d-more .d-tags span { color: var(--coin); }
 .d-more .d-src { color: var(--dim); font-size: 17px; }
+.d-src { margin: 0 0 10px; color: var(--dim); font-size: 17px; }
 .d-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+/* SeatGeek's mark in their brand coral wherever their data is shown */
+.sg-logo { display: grid; place-items: center; width: 36px; height: 36px; margin-left: auto; padding: 2px; background: #fff; }
+.sg-logo svg { width: 100%; height: 100%; fill: #ff5b49; }
+.sg-logo:hover { background: var(--coin); }
+.sg-mark { margin-left: auto; margin-right: 8px; width: 16px; height: 16px; padding: 1px; background: #fff; }
+.sg-mark svg { display: block; width: 100%; height: 100%; fill: #ff5b49; }
 .btn {
   padding: 9px 10px 8px; cursor: pointer; text-decoration: none;
   font: 8px/1 var(--font-pixel); background: var(--night-2); border: 3px solid var(--frame);

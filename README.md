@@ -47,10 +47,9 @@ Node version comes from `.node-version` (22).
 
 ### Password and coming soon page
 
-`worker/index.js` runs in front of the static build on both Workers. It reads three vars from `wrangler.jsonc`:
-`SITE_PASSWORD` (the shared password, currently `8bit01`), `SITE` (`live`, or `dev` from the dev workflow) and
-`DEV_URL`. On live, visitors without the password see a coming soon page at `/` with a link to the dev site and a
-link to `/login`; on dev every page asks for the password first. Logging in sets a cookie for 30 days, and
+`worker/index.js` runs in front of the static build on both Workers. It reads two vars from `wrangler.jsonc`:
+`SITE_PASSWORD` (the shared password, currently `8bit01`) and `SITE` (`live`, or `dev` from the dev workflow).
+On live, visitors without the password see a coming soon page at `/` with a link to `/login`; on dev every page asks for the password first. Logging in sets a cookie for 30 days, and
 `/logout` clears it. To open the site to everyone later, remove `main` and the `vars` from `wrangler.jsonc`.
 This is a shared password to keep the map private for now, not a real account system.
 Keep `worker/index.js` itself when opening the site up: it also runs the contact form and the cookie consent check below.
@@ -71,6 +70,12 @@ Visitors from the EU, EEA, UK and Switzerland (by Cloudflare's country) get `dat
 which keeps Google Analytics off until they accept in the cookie banner. Their choice is the `8bm_consent` cookie,
 and Cookie Settings in the menu lets them change it. Add `?consent=eu` to the URL to see the banner from anywhere.
 
+### Sources shown on dev only
+
+`src/scripts/events/live.js` lists sources (currently Resident Advisor and The Skint) that only dev shows. The
+dev workflow builds with `PUBLIC_SITE=dev`; any other build is a live build, which leaves those sources out of the
+map and drops their snapshot files (today's and tomorrow's) from `dist/`. Their fetchers keep running, so dev stays current.
+
 ## Layout
 
 ```
@@ -88,6 +93,7 @@ src/scripts/events/sources/       one file per event source: nycgov.js, donyc.js
                                   ticketmaster.js, seatgeek.js, dice.js, artwrld.js (live), snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
+public/data/tomorrow/*.json       the same snapshots for the next NYC day (EVENTS_DIR=public/data/tomorrow)
 public/                           other static files copied as-is (favicon)
 tools/fetch_nycgov.py             pulls one day of NYC.gov events and places them on the map
 tools/fetch_donyc.py              pulls one day of doNYC listings and places each venue once
@@ -105,7 +111,7 @@ data/venues.json                  street addresses for venues The Skint names wi
 
 ## Refreshing the events
 
-The map shows a snapshot of one day's events. A GitHub Action (`.github/workflows/refresh-events.yml`) runs every `tools/fetch_*.py` and
+The map shows a snapshot of one day's events; clicking the date in the header switches to tomorrow's. A GitHub Action (`.github/workflows/refresh-events.yml`) runs every `tools/fetch_*.py`, once for today and once for tomorrow, and
 refreshes them every morning and midday New York time and pushes the new snapshot, which redeploys the site.
 You can also run it from the repo's Actions tab (Run workflow), or by hand with Python 3, then commit and push:
 
@@ -121,6 +127,7 @@ SEATGEEK_CLIENT_ID=... python3 tools/fetch_seatgeek.py
 python3 tools/fetch_dice.py
 python3 tools/fetch_artwrld.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
+EVENTS_DIR=public/data/tomorrow python3 tools/fetch_nycgov.py 2026-10-18  # tomorrow's snapshot, as the Action writes it
 ```
 
 Run them all for the same day: each source only shows events on the day its own snapshot covers.

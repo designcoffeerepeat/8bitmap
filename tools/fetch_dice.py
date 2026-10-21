@@ -18,10 +18,10 @@ import time
 from datetime import datetime
 from pathlib import Path
 
-from fetch_nycgov import CACHE, NYC, geosearch, get
+from fetch_nycgov import CACHE, DATA, NYC, geosearch, get
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / 'public' / 'data' / 'dice-events.json'
+OUT = DATA / 'dice-events.json'
 SITE = 'https://dice.fm'
 BROWSE = f'{SITE}/browse/new_york-5bbf4db0f06331478e9b2c59'
 CATEGORIES = {'music:gig': 'music', 'music:dj': 'nightlife', 'music:party': 'nightlife', 'culture:comedy': 'comedy',

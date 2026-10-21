@@ -1,4 +1,4 @@
-# Pulls today's events from every source fetcher (tools/fetch_*.py) and commits the new snapshots.
+# Pulls today's and tomorrow's events from every source fetcher (tools/fetch_*.py) and commits the new snapshots.
 # The push to main makes Cloudflare rebuild, so the live map always shows the current NYC day.
 name: Refresh events
 
@@ -33,6 +33,19 @@ jobs:
           for f in tools/fetch_*.py; do
             echo "::group::$f"
             python3 "$f" || echo "::warning::$f failed"
+            echo "::endgroup::"
+          done
+      - name: Fetch tomorrow's events from every source
+        # Written to public/data/tomorrow/ for the TOMORROW view (click the date in the header).
+        env:
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+          SEATGEEK_CLIENT_ID: ${{ secrets.SEATGEEK_CLIENT_ID }}
+          EVENTS_DIR: public/data/tomorrow
+        run: |
+          day="$(TZ=America/New_York date -d tomorrow +%F)"
+          for f in tools/fetch_*.py; do
+            echo "::group::$f $day"
+            python3 "$f" "$day" || echo "::warning::$f failed for $day"
             echo "::endgroup::"
           done
       - name: Commit if anything changed
