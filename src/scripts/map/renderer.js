@@ -13,6 +13,11 @@ const GROUND_H = 0.35;
 const LEVEL_H = 0.4;
 // Roof height of landmarks that clear their neighbouring tiles; pins there sit on top.
 const LANDMARK_TOP = { msg: 3.5 };
+// Pin spacing in render pixels, measured between the heads of the 13 px wide pins.
+const PIN_GAP = 14; // pins at different places just touch
+const SAME_GAP = 11; // pins at the same place overlap a little
+const MAX_SHIFT = 42; // furthest a pin moves from its true spot; past this crowds may still overlap
+const SAME_SPOT = 0.25; // tiles (~30 m): closer than this counts as the same place
 const VIEW_HEIGHT = 70; // world units visible top to bottom at zoom 1
 const HOME = { lat: 40.738, lng: -73.975, zoom: 1.15 };
 const REDUCED_MOTION = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
@@ -100,7 +105,8 @@ export function createMap(container, opts = {}) {
   // ---- pins -------------------------------------------------------------
   const pinGroup = new THREE.Group();
   world.add(pinGroup);
-  let pins = []; // { sprite, event, baseY, phase }
+  let pins = []; // { sprite, event, anchor, spot, baseY, order, phase }
+  let visibleVersion = 0;
   let hovered = null;
   let selected = null;
   const pinTextures = new Map();
@@ -114,25 +120,22 @@ export function createMap(container, opts = {}) {
   function setEvents(events) {
     pinGroup.clear();
     pins = [];
-    const used = new Map();
+    const spots = []; // one per place; events within ~30 m of each other share it
     for (const ev of events) {
       const p = latLngToWorld(ev.venue.lat, ev.venue.lng);
-      const cellKey = `${Math.floor(p.x)},${Math.floor(p.z)}`;
-      const n = used.get(cellKey) ?? 0;
-      used.set(cellKey, n + 1);
-      // fan out events that land on the same tile
-      const ox = n ? Math.cos(n * 2.1) * 0.9 : 0;
-      const oz = n ? Math.sin(n * 2.1) * 0.9 : 0;
+      let spot = spots.findIndex((q) => Math.hypot(q.x - p.x, q.z - p.z) < SAME_SPOT);
+      if (spot < 0) spot = spots.push(p) - 1;
       const baseY = groundTop(city, ev.venue.lat, ev.venue.lng) + 0.2;
       const mat = new THREE.SpriteMaterial({ map: pinTexture(ev.category, 'idle'), depthTest: false, transparent: true });
       const sprite = new THREE.Sprite(mat);
       sprite.center.set(0.5, 0);
-      sprite.position.set(p.x + ox, baseY, p.z + oz);
+      sprite.position.set(p.x, baseY, p.z);
       sprite.renderOrder = 10;
       sprite.userData.eventId = ev.id;
       pinGroup.add(sprite);
-      pins.push({ sprite, event: ev, baseY, phase: Math.random() * Math.PI * 2 });
+      pins.push({ sprite, event: ev, anchor: sprite.position.clone(), spot, baseY, order: 10, phase: Math.random() * Math.PI * 2 });
     }
+    layoutKey = '';
     refreshPinStates();
     updateSpriteScales();
   }
@@ -141,13 +144,91 @@ export function createMap(container, opts = {}) {
     for (const pin of pins) {
       const state = pin.event.id === selected ? 'selected' : pin.event.id === hovered ? 'hover' : 'idle';
       pin.sprite.material.map = pinTexture(pin.event.category, state);
-      pin.sprite.renderOrder = state === 'idle' ? 10 : 20;
+      pin.sprite.renderOrder = state === 'idle' ? pin.order : 20;
     }
+  }
+
+  // Pins are drawn at a fixed pixel size, so whether two of them collide depends on the view.
+  // Whenever the zoom or angle changes they are spread out on screen: pins at different places
+  // are pushed apart until their heads just touch, and pins at the same place huddle together,
+  // overlapping a little. Panning moves everything alike, so it needs no new layout.
+  let layoutKey = '';
+  const right = new THREE.Vector3();
+  const up = new THREE.Vector3();
+  function layoutPins() {
+    camera.updateMatrixWorld();
+    const q = camera.quaternion;
+    const key = [camera.zoom, q.x, q.y, q.z, q.w].map((n) => n.toFixed(4)).join() + `|${rw}x${rh}|${visibleVersion}`;
+    if (key === layoutKey) return;
+    layoutKey = key;
+    const wpp = worldPerPixel();
+    right.setFromMatrixColumn(camera.matrixWorld, 0);
+    up.setFromMatrixColumn(camera.matrixWorld, 1);
+    const shown = pins.filter((p) => p.sprite.visible);
+    // screen spots in render pixels, y down; pins sharing a place start on a small spiral
+    const seen = new Map();
+    const pts = shown.map((pin, i) => {
+      projected.copy(pin.anchor).project(camera);
+      const k = seen.get(pin.spot) ?? 0;
+      seen.set(pin.spot, k + 1);
+      const ox = ((projected.x + 1) / 2) * rw;
+      const oy = ((1 - projected.y) / 2) * rh;
+      return { pin, i, ox, oy, x: ox + Math.cos(k * 2.4) * 2 * Math.sqrt(k), y: oy + Math.sin(k * 2.4) * 2 * Math.sqrt(k) };
+    });
+    for (let iter = 0; iter < 40; iter++) {
+      const grid = new Map();
+      for (const p of pts) {
+        const g = `${Math.floor(p.x / PIN_GAP)},${Math.floor(p.y / PIN_GAP)}`;
+        if (!grid.has(g)) grid.set(g, []);
+        grid.get(g).push(p);
+      }
+      let moved = false;
+      for (const a of pts) {
+        const gx = Math.floor(a.x / PIN_GAP);
+        const gy = Math.floor(a.y / PIN_GAP);
+        for (let dx = -1; dx <= 1; dx++) {
+          for (let dy = -1; dy <= 1; dy++) {
+            for (const b of grid.get(`${gx + dx},${gy + dy}`) ?? []) {
+              if (b.i <= a.i) continue; // each pair once
+              const need = a.pin.spot === b.pin.spot ? SAME_GAP : PIN_GAP;
+              let ux = b.x - a.x;
+              let uy = b.y - a.y;
+              let d = Math.hypot(ux, uy);
+              if (d >= need) continue;
+              if (d < 1e-3) { ux = 1; uy = 0; d = 1; } else { ux /= d; uy /= d; }
+              const push = (need - Math.max(d, 1e-3)) / 2;
+              a.x -= ux * push; a.y -= uy * push;
+              b.x += ux * push; b.y += uy * push;
+              moved = true;
+            }
+          }
+        }
+      }
+      for (const p of pts) {
+        const d = Math.hypot(p.x - p.ox, p.y - p.oy);
+        if (d > MAX_SHIFT) {
+          p.x = p.ox + ((p.x - p.ox) * MAX_SHIFT) / d;
+          p.y = p.oy + ((p.y - p.oy) * MAX_SHIFT) / d;
+        }
+      }
+      if (!moved) break;
+    }
+    for (const p of pts) {
+      // whole render pixels keep the sprites crisp
+      const dx = Math.round(p.x - p.ox) * wpp;
+      const dy = -Math.round(p.y - p.oy) * wpp;
+      p.pin.sprite.position.copy(p.pin.anchor).addScaledVector(right, dx).addScaledVector(up, dy);
+      p.pin.baseY = p.pin.sprite.position.y;
+      // pins lower on screen are drawn over the ones behind them
+      p.pin.order = 10 + p.y / rh;
+    }
+    refreshPinStates();
   }
 
   function setVisible(ids) {
     const set = ids ? new Set(ids) : null;
     for (const pin of pins) pin.sprite.visible = !set || set.has(pin.event.id);
+    visibleVersion++;
   }
 
   // ---- sizing ------------------------------------------------------------
@@ -218,7 +299,7 @@ export function createMap(container, opts = {}) {
   function focusEvent(id, zoom) {
     const pin = pins.find((p) => p.event.id === id);
     if (!pin) return;
-    const target = new THREE.Vector3(pin.sprite.position.x, 0, pin.sprite.position.z);
+    const target = new THREE.Vector3(pin.anchor.x, 0, pin.anchor.z);
     flyTo(target, Math.max(camera.zoom, zoom ?? 2.6));
   }
 
@@ -338,6 +419,7 @@ export function createMap(container, opts = {}) {
       if (flight.t >= 1) flight = null;
     }
     controls.update();
+    layoutPins();
 
     if (!REDUCED_MOTION) {
       waterTick += dt;
