@@ -1,5 +1,5 @@
 // Sunbather easter egg. Zoom all the way in on Brighton Beach and a tiny bald, tanned man
-// in a thong walks out onto the sand, spreads his towel and lies down to sunbathe. He stays
+// in a black thong walks out onto the sand, spreads his towel and lies down to sunbathe. He stays
 // there until the map zooms back out, which sends him home so the scene plays again next time.
 
 import * as THREE from 'three';
@@ -15,7 +15,7 @@ const GAP = 6.8; // voxels between where he lays the towel and where he sits on 
 const REDUCED_MOTION = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
 const C = {
-  skin: '#c97b45', shade: '#a8612f', shine: '#eaa46c', thong: '#ed1c24', shades: '#1d2340',
+  skin: '#a8612f', shade: '#864a22', thong: '#141418', shades: '#1d2340',
   towel: ['#4dd2ff', '#ffffff', '#ffd23f', '#ffffff'],
 };
 
@@ -196,7 +196,6 @@ function buildMan() {
   box(upper, 2.2, 2.7, 1.2, 0, 1.75, 0, C.skin);
   box(upper, 1.6, 1.1, 0.3, 0, 1.2, 0.65, C.skin); // a bit of a belly
   box(upper, 1.6, 1.6, 1.6, 0, 3.9, 0, C.skin);
-  box(upper, 1.2, 0.25, 1.2, 0, 4.8, 0, C.shine); // the bald spot catches the sun
   box(upper, 1.5, 0.35, 0.2, 0, 4.0, 0.85, C.shades);
 
   const arms = [-1, 1].map((side) => {
