@@ -6,6 +6,7 @@
 // See ./sources/template.js.
 
 import { normalizeEvent } from './schema.js';
+import { preferSeatGeek } from './overlap.js';
 import { inBounds, BOUNDS, LANDMARKS } from '../map/geo.js';
 import nycgovSource from './sources/nycgov.js';
 import lumaSource from './sources/luma.js';
@@ -58,7 +59,7 @@ export async function loadEventsForDate(date = new Date(), { tomorrow = false, d
     }
   }
 
-  return { events: dedupe(events).sort((a, b) => new Date(a.start) - new Date(b.start)), errors };
+  return { events: dedupe(preferSeatGeek(events)).sort((a, b) => new Date(a.start) - new Date(b.start)), errors };
 }
 
 // Listing sites place big venues a block or two apart; pin them onto the landmark model.
