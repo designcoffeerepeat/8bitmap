@@ -109,7 +109,7 @@ tools/fetch_dice.py               pulls one day of DICE New York events
 tools/fetch_artwrld.py            pulls the day's gallery openings, museum shows and art events from Artwrld
 tools/fetch_artrabbit.py          pulls the day's New York opening receptions from ArtRabbit
 tools/fetch_artguide.py           pulls the day's New York opening receptions from Artforum artguide
-tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, Smalls, QED, comedy clubs)
+tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, Smalls, comedy clubs, bar trivia)
 tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
 tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
@@ -237,12 +237,17 @@ title, so the same reception can show up twice.
 `fetch_venues.py` reads the schedules venues publish on their own websites, one reader per site, so a site that is
 down or changes its pages only loses that venue: Film Forum's week of showtimes, Nitehawk's day pages for
 Williamsburg and Prospect Park, the today-and-tomorrow sets on SmallsLIVE (Smalls, Mezzrow and Jazzcultural), the
-schema.org event data on New York Comedy Club's and Eastville Comedy Club's calendars, St. Marks Comedy Club's
-calendar page, The PIT's month calendar and QED's calendar (served by its shop's Evey events app). A film is one event at its first showing, with the day's showtimes in its
-description. Each event names its venue as its publisher, so venues are listed one by one in the Sources dropdown.
-Venues are placed once from the street address in `VENUES` and remembered in `data/geocode-cache.json`. Adding a venue
-means a reader function, an entry in `VENUES` and a place in `READERS`. Only title, time, price when given and a link
-are kept.
+schema.org event data on New York Comedy Club's and Eastville Comedy Club's calendars, The PIT's month calendar,
+Other Half Brewing's NYC taproom events, and NYC Trivia League's weekly list of bar trivia and bingo nights (each
+bar placed from the coordinates on its listing page). A film is one event at its first showing, with the day's
+showtimes in its description. Each event names its venue as its publisher (trivia nights name NYC Trivia League),
+so they are listed one by one in the Sources dropdown. Venues are placed once from the street address in `VENUES`
+and remembered in `data/geocode-cache.json`. Adding a venue means a reader function, an entry in `VENUES` and a
+place in `READERS`. Only title, time, price when given and a link are kept.
+
+Check a site's terms of use before adding it. St. Marks Comedy Club, QED, McNally Jackson and Apple forbid automated
+access, so they are left out; Geeks Who Drink, The Strand, Greenlight, Barnes & Noble, Film at Lincoln Center,
+Juilliard, BRIC and The Public Theater turn automated visits away.
 
 ## Adding a real event source
 
