@@ -4,28 +4,8 @@
   "url": "https://donyc.com"
  },
  "date": "2026-10-22",
- "fetchedAt": "2026-10-21T05:10:40-04:00",
+ "fetchedAt": "2026-10-21T13:05:58-04:00",
  "events": [
-  {
-   "id": "the-ridgewood-asylum-2026-nyc-haunted-house-tickets",
-   "title": "The Ridgewood Asylum 2026 - NYC Haunted House",
-   "category": "comedy",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "The Ridgewood Asylum",
-    "address": "1080 Wyckoff Ave, Ridgewood, 11385",
-    "neighborhood": "",
-    "lat": 40.69422,
-    "lng": -73.902797
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/9/the-ridgewood-asylum-2026-nyc-haunted-house-tickets",
-   "tags": []
-  },
   {
    "id": "the-avalanches-tickets",
    "title": "The Avalanches",
@@ -44,6 +24,26 @@
    "description": "",
    "details": "",
    "url": "https://donyc.com/events/2026/10/22/the-avalanches-tickets",
+   "tags": []
+  },
+  {
+   "id": "the-ridgewood-asylum-2026-nyc-haunted-house-tickets",
+   "title": "The Ridgewood Asylum 2026 - NYC Haunted House",
+   "category": "comedy",
+   "start": "2026-10-22T20:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "The Ridgewood Asylum",
+    "address": "1080 Wyckoff Ave, Ridgewood, 11385",
+    "neighborhood": "",
+    "lat": 40.69422,
+    "lng": -73.902797
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/9/the-ridgewood-asylum-2026-nyc-haunted-house-tickets",
    "tags": []
   },
   {
@@ -287,6 +287,26 @@
    "tags": []
   },
   {
+   "id": "all-ages-open-skate-skate-tickets",
+   "title": "All-Ages Open Skate (skate)",
+   "category": "community",
+   "start": "2026-10-22T18:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Xanadu",
+    "address": "262 Starr St, Brooklyn, NY 11237, Brooklyn, 11237",
+    "neighborhood": "",
+    "lat": 40.706435,
+    "lng": -73.921458
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/22/all-ages-open-skate-skate-tickets",
+   "tags": []
+  },
+  {
    "id": "after-tickets",
    "title": "After",
    "category": "music",
@@ -304,6 +324,26 @@
    "description": "",
    "details": "",
    "url": "https://donyc.com/events/2026/10/22/after-tickets",
+   "tags": []
+  },
+  {
+   "id": "goth-sk8-halloween-ft-gargoyle-live-llora-nightvvitch-skate-tickets",
+   "title": "Goth SK8 Halloween ft. Gargoyle (Live), Llora , NIGHTVVITCH(skate)",
+   "category": "community",
+   "start": "2026-10-22T20:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Xanadu",
+    "address": "262 Starr St, Brooklyn, NY 11237, Brooklyn, 11237",
+    "neighborhood": "",
+    "lat": 40.706435,
+    "lng": -73.921458
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/22/goth-sk8-halloween-ft-gargoyle-live-llora-nightvvitch-skate-tickets",
    "tags": []
   },
   {
@@ -344,46 +384,6 @@
    "description": "",
    "details": "",
    "url": "https://donyc.com/events/2026/10/22/center-mid-tickets",
-   "tags": []
-  },
-  {
-   "id": "all-ages-open-skate-skate-tickets",
-   "title": "All-Ages Open Skate (skate)",
-   "category": "community",
-   "start": "2026-10-22T18:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Xanadu",
-    "address": "262 Starr St, Brooklyn, NY 11237, Brooklyn, 11237",
-    "neighborhood": "",
-    "lat": 40.706435,
-    "lng": -73.921458
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/22/all-ages-open-skate-skate-tickets",
-   "tags": []
-  },
-  {
-   "id": "goth-sk8-halloween-ft-gargoyle-live-llora-nightvvitch-skate-tickets",
-   "title": "Goth SK8 Halloween ft. Gargoyle (Live), Llora , NIGHTVVITCH(skate)",
-   "category": "community",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "Xanadu",
-    "address": "262 Starr St, Brooklyn, NY 11237, Brooklyn, 11237",
-    "neighborhood": "",
-    "lat": 40.706435,
-    "lng": -73.921458
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/22/goth-sk8-halloween-ft-gargoyle-live-llora-nightvvitch-skate-tickets",
    "tags": []
   },
   {
@@ -687,6 +687,26 @@
    "tags": []
   },
   {
+   "id": "little-big-town-tickets",
+   "title": "Little Big Town",
+   "category": "music",
+   "start": "2026-10-22T19:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "New Jersey Performing Arts Center",
+    "address": "1 Center St, Newark, 07102",
+    "neighborhood": "",
+    "lat": 40.84379,
+    "lng": -73.78915
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/22/little-big-town-tickets",
+   "tags": []
+  },
+  {
    "id": "glimpse-of-greatness-tickets",
    "title": "Glimpse of Greatness",
    "category": "sports",
@@ -844,26 +864,6 @@
    "description": "",
    "details": "",
    "url": "https://donyc.com/events/2026/10/22/bar-side-r-b-deep-cuts-only-tickets",
-   "tags": []
-  },
-  {
-   "id": "little-big-town-tickets",
-   "title": "Little Big Town",
-   "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "New Jersey Performing Arts Center",
-    "address": "1 Center St, Newark, 07102",
-    "neighborhood": "",
-    "lat": 40.84379,
-    "lng": -73.78915
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://donyc.com/events/2026/10/22/little-big-town-tickets",
    "tags": []
   },
   {
@@ -3687,6 +3687,26 @@
    "tags": []
   },
   {
+   "id": "the-oort-cloud-review-launch-private-curtain-tickets",
+   "title": "The Oort Cloud Review Launch @ Private Curtain",
+   "category": "community",
+   "start": "2026-10-22T19:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "KGB Bar",
+    "address": "85 east 4th street, New York, 10003",
+    "neighborhood": "",
+    "lat": 40.726592,
+    "lng": -73.989808
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/22/the-oort-cloud-review-launch-private-curtain-tickets",
+   "tags": []
+  },
+  {
    "id": "private-charter-on-yacht-manhattan-ii-tickets",
    "title": "PRIVATE CHARTER on Yacht MANHATTAN II",
    "category": "community",
@@ -4327,6 +4347,26 @@
    "tags": []
   },
   {
+   "id": "bite-me-drag-show-tickets",
+   "title": "Bite Me! Drag Show",
+   "category": "community",
+   "start": "2026-10-22T21:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Starr Bar",
+    "address": "214 Starr Street, Brooklyn, 11237",
+    "neighborhood": "",
+    "lat": 40.704982,
+    "lng": -73.922909
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/22/bite-me-drag-show-tickets",
+   "tags": []
+  },
+  {
    "id": "creatures-of-the-night-tickets",
    "title": "Creatures of the night",
    "category": "community",
@@ -4344,6 +4384,26 @@
    "description": "",
    "details": "",
    "url": "https://donyc.com/events/2026/10/22/creatures-of-the-night-tickets",
+   "tags": []
+  },
+  {
+   "id": "organizer-happy-hour-tickets",
+   "title": "Organizer Happy Hour",
+   "category": "community",
+   "start": "2026-10-22T22:00:00-04:00",
+   "end": "2026-10-22T23:00:00-04:00",
+   "venue": {
+    "name": "Starr Bar",
+    "address": "214 Starr Street, Brooklyn, 11237",
+    "neighborhood": "",
+    "lat": 40.704982,
+    "lng": -73.922909
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://donyc.com/events/2026/10/22/organizer-happy-hour-tickets",
    "tags": []
   },
   {

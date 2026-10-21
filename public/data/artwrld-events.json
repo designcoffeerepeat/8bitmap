@@ -4,7 +4,7 @@
   "url": "https://www.artwrld.com/city/new-york/openings"
  },
  "date": "2026-10-21",
- "fetchedAt": "2026-10-21T05:07:28-04:00",
+ "fetchedAt": "2026-10-21T13:03:30-04:00",
  "events": [
   {
    "id": "85000",
@@ -53,6 +53,29 @@
    ]
   },
   {
+   "id": "85998",
+   "title": "Laia Abril: On Rape and Institutional Failure",
+   "category": "art",
+   "start": "2026-10-21T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "International Center of Photography",
+    "address": "",
+    "neighborhood": "Lower East Side / East Village",
+    "lat": 40.7188,
+    "lng": -73.989
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jan 11",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/laia-abril-on-rape-and-institutional-failure",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
    "id": "85872",
    "title": "Saya Woolfalk: The WoodsWoman Method",
    "category": "art",
@@ -71,6 +94,29 @@
    "description": "Museum exhibition, on view until Mar 28",
    "details": "",
    "url": "https://www.artwrld.com/exhibit/saya-woolfalk-the-woodswoman-method",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "85997",
+   "title": "Siena: The Art of Bronze, 1450–1500",
+   "category": "art",
+   "start": "2026-10-21T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "The Frick Collection",
+    "address": "",
+    "neighborhood": "Uptown",
+    "lat": 40.77108,
+    "lng": -73.96738
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jan 18",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/siena-the-art-of-bronze-1450-1500",
    "tags": [
     "exhibition"
    ]
@@ -117,6 +163,29 @@
    "description": "Museum exhibition, on view until Jan 3",
    "details": "",
    "url": "https://www.artwrld.com/exhibit/tone",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "86011",
+   "title": "I'm So Happy You Are Here: Japanese Women Photographers from the 1950s to Now",
+   "category": "art",
+   "start": "2026-10-21T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "International Center of Photography",
+    "address": "",
+    "neighborhood": "Lower East Side / East Village",
+    "lat": 40.7188,
+    "lng": -73.989
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jan 11",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/im-so-happy-you-are-here-japanese-women-photographers-from-the-1950s-to-now",
    "tags": [
     "exhibition"
    ]
@@ -301,6 +370,29 @@
    "description": "Museum exhibition",
    "details": "",
    "url": "https://www.artwrld.com/exhibit/teresa-margolles-1",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "86005",
+   "title": "Screens Series: Umi Ishihara",
+   "category": "art",
+   "start": "2026-10-21T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "New Museum",
+    "address": "",
+    "neighborhood": "Lower East Side / East Village",
+    "lat": 40.72233,
+    "lng": -73.99289
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jan 31",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/screens-series-umi-ishihara",
    "tags": [
     "exhibition"
    ]
@@ -646,75 +738,6 @@
    "description": "Museum exhibition, on view until Dec 30",
    "details": "",
    "url": "https://www.artwrld.com/exhibit/lifelong-studio-exhibition-transcending-the-formabstract-figurative-painting-bronx-museum",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "85755",
-   "title": "Laia Abril: On Rape and Institutional Failure",
-   "category": "art",
-   "start": "2026-10-21T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "International Center of Photography",
-    "address": "",
-    "neighborhood": "Lower East Side / East Village",
-    "lat": 40.7188,
-    "lng": -73.989
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jan 11",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/laia-abril-on-rape-and-institutional-failure",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "79216",
-   "title": "I'm So Happy You Are Here: Japanese Women Photographers from the 1950s to Now",
-   "category": "art",
-   "start": "2026-10-21T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "International Center of Photography",
-    "address": "",
-    "neighborhood": "Lower East Side / East Village",
-    "lat": 40.7188,
-    "lng": -73.989
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jan 11",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/im-so-happy-you-are-here-japanese-women-photographers-from-the-1950s-to-now",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "79220",
-   "title": "Siena: The Art of Bronze, 1450–1500",
-   "category": "art",
-   "start": "2026-10-21T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "The Frick Collection",
-    "address": "",
-    "neighborhood": "Uptown",
-    "lat": 40.77108,
-    "lng": -73.96738
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jan 18",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/siena-the-art-of-bronze-1450-1500",
    "tags": [
     "exhibition"
    ]
@@ -1175,29 +1198,6 @@
    "description": "Museum exhibition, on view until Jan 3",
    "details": "",
    "url": "https://www.artwrld.com/exhibit/beyond-the-margins-bronx-museum-teens-activate-the-permanent-collection",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "84904",
-   "title": "Screens Series: Umi Ishihara",
-   "category": "art",
-   "start": "2026-10-21T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "New Museum",
-    "address": "",
-    "neighborhood": "Lower East Side / East Village",
-    "lat": 40.72233,
-    "lng": -73.99289
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jan 31",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/screens-series-umi-ishihara",
    "tags": [
     "exhibition"
    ]

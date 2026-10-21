@@ -4,8 +4,71 @@
   "url": "https://artguide.artforum.com/cities/new-york/"
  },
  "date": "2026-10-22",
- "fetchedAt": "2026-10-21T05:08:11-04:00",
+ "fetchedAt": "2026-10-21T13:04:24-04:00",
  "events": [
+  {
+   "id": "1337104",
+   "title": "FlucT: Tough on the Tongue",
+   "category": "art",
+   "start": "2026-10-22T18:00:00-04:00",
+   "end": "2026-10-22T21:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "OCDChinatown",
+    "address": "",
+    "neighborhood": "Downtown",
+    "lat": 40.713649,
+    "lng": -73.994112
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Opening reception",
+   "details": "",
+   "url": "https://artguide.artforum.com/venue/ocdchinatown-5277/exhibition/fluct-tough-on-the-tongue-1337104/",
+   "tags": []
+  },
+  {
+   "id": "1337094",
+   "title": "Teruko Yokoi: Seasons",
+   "category": "art",
+   "start": "2026-10-22T18:00:00-04:00",
+   "end": "2026-10-22T20:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hollis Taggart",
+    "address": "",
+    "neighborhood": "Chelsea",
+    "lat": 40.750219,
+    "lng": -74.003695
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Opening reception",
+   "details": "",
+   "url": "https://artguide.artforum.com/venue/hollis-taggart-3367/exhibition/teruko-yokoi-seasons-1337094/",
+   "tags": []
+  },
+  {
+   "id": "1337087",
+   "title": "Bill Buchman: Infinite Oasis",
+   "category": "art",
+   "start": "2026-10-22T18:00:00-04:00",
+   "end": "2026-10-22T20:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Collective Z",
+    "address": "",
+    "neighborhood": "Downtown",
+    "lat": 40.719004,
+    "lng": -73.99373
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Opening reception",
+   "details": "",
+   "url": "https://artguide.artforum.com/venue/collective-z-386510/exhibition/bill-buchman-infinite-oasis-1337087/",
+   "tags": []
+  },
   {
    "id": "1336863",
    "title": "Angela Fang Zibres and Koh Ysob: Me & My Plurals:",

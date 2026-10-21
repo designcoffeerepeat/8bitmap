@@ -4,7 +4,7 @@
   "url": "https://www.ticketmaster.com/discover/new-york"
  },
  "date": "2026-10-21",
- "fetchedAt": "2026-10-21T05:07:57-04:00",
+ "fetchedAt": "2026-10-21T13:04:08-04:00",
  "events": [
   {
    "id": "LvZ18QrWTgeialOZ0E4-1",
@@ -97,29 +97,6 @@
    ]
   },
   {
-   "id": "LvZ18Q-9tbOh8sZZvyVMS",
-   "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
-   "category": "art",
-   "start": "2026-10-21T10:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Balloon Museum NYC",
-    "address": "96 South Street, New York City",
-    "neighborhood": "New York City",
-    "lat": 40.70624,
-    "lng": -74.002277
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Miscellaneous / Family",
-   "details": "",
-   "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-tickets-Y5HV92?ref=ticketmaster",
-   "tags": [
-    "Family"
-   ]
-  },
-  {
    "id": "LvZ18QbKlF_lmuOZvOKEt",
    "title": "Museum of Chinese in America General Admission",
    "category": "art",
@@ -141,26 +118,26 @@
    "tags": []
   },
   {
-   "id": "Z7r9jZ1A7PNvK",
-   "title": "Other Desert Cities",
-   "category": "theater",
-   "start": "2026-10-21T13:00:00-04:00",
+   "id": "LvZ18Q-9tbOh8sZZvyVMW",
+   "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
+   "category": "art",
+   "start": "2026-10-21T12:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Hudson Theatre -NY",
-    "address": "145 W. 44th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
+    "name": "Balloon Museum NYC",
+    "address": "96 South Street, New York City",
+    "neighborhood": "New York City",
+    "lat": 40.70624,
+    "lng": -74.002277
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Arts & Theatre / Performance Art",
+   "description": "Miscellaneous / Family",
    "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PNvK",
+   "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-tickets-Y5HV92?ref=ticketmaster",
    "tags": [
-    "Performance Art"
+    "Family"
    ]
   },
   {
@@ -184,29 +161,6 @@
    "url": "https://www.ticketmaster.com/mj-new-york-new-york-10-21-2026/event/Z1r9uZrrZbpZ1Av0pxF",
    "tags": [
     "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7xFuO",
-   "title": "MJ (NY)",
-   "category": "theater",
-   "start": "2026-10-21T13:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Neil Simon Theatre",
-    "address": "250 West 52nd St., New York",
-    "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Miscellaneous",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7xFuO",
-   "tags": [
-    "Miscellaneous"
    ]
   },
   {
@@ -1389,6 +1343,29 @@
    "tags": []
   },
   {
+   "id": "Z7r9jZ1A7PNv3",
+   "title": "Other Desert Cities",
+   "category": "theater",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Hudson Theatre -NY",
+    "address": "145 W. 44th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Performance Art",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PNv3",
+   "tags": [
+    "Performance Art"
+   ]
+  },
+  {
    "id": "Z7r9jZ1A7Pgvd",
    "title": "Ron Carter",
    "category": "music",
@@ -1725,6 +1702,29 @@
    "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7rfJZ",
    "tags": [
     "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7xFud",
+   "title": "MJ (NY)",
+   "category": "theater",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Neil Simon Theatre",
+    "address": "250 West 52nd St., New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Miscellaneous",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7xFud",
+   "tags": [
+    "Miscellaneous"
    ]
   },
   {
