@@ -51,6 +51,7 @@
   "lat": 40.830394,
   "lng": -73.877322
  },
+ "14 AVENUE between 49 STREET and 50 STREET Brooklyn | Brooklyn": null,
  "145 W 46th St | Manhattan": {
   "label": "145 WEST 46 STREET, New York, NY, USA",
   "lat": 40.758259,
@@ -239,6 +240,11 @@
   "lat": 40.726592,
   "lng": -73.989808
  },
+ "89 SOUTH STREET Manhattan | Manhattan": {
+  "label": "89 SOUTH STREET, New York, NY, USA",
+  "lat": 40.705523,
+  "lng": -74.001567
+ },
  "900 Fulton St | Brooklyn": {
   "label": "900 FULTON STREET, Brooklyn, NY, USA",
   "lat": 40.68286,
@@ -250,6 +256,11 @@
   "lng": -73.962565
  },
  "92ny | Manhattan": null,
+ "AVENUE OF AMERICAS between CARMINE STREET and WEST 3 STREET Manhattan | Manhattan": {
+  "label": "AVENUE OF AMERICAS & CARMINE STREET",
+  "lat": 40.730644,
+  "lng": -74.002024
+ },
  "Addabbo Playground in Tudor Park | Queens": null,
  "Alley Pond Adventure Course in Alley Pond Park | Queens": null,
  "Amboy Street Garden | Brooklyn": null,
@@ -257,6 +268,7 @@
  "Arsenal in Central Park | Manhattan": null,
  "Arts and Crafts Room in Greenbelt Recreation Center | Staten Island": null,
  "Astoria Park | Queens": null,
+ "Astoria Pool Deck in Astoria Park | Queens": null,
  "Athletic Courts in Torsney Playground | Queens": null,
  "Athletic Field in Starlight Park | Bronx": null,
  "Audubon Center at the Boathouse in Prospect Park | Brooklyn": null,
@@ -284,6 +296,7 @@
  "Brooklyn Bridge: Brooklyn Bridge Pedestrian: 1 between Park Row (S) and Tillary Street Manhattan | Manhattan": null,
  "Brooklyn Public Library - Bay Ridge | Brooklyn": null,
  "Brooklyn Public Library - Brooklyn Heights in Cadman Plaza Park | Brooklyn": null,
+ "Brooklyn Public Library - Park Slope | Brooklyn": null,
  "Brooklyn Public Library- Gerritsen Beach | Brooklyn": null,
  "Brownsville Neighborhood Health Action Center | Brooklyn": null,
  "Bruckner Mott Haven Community Garden | Bronx": null,
@@ -325,7 +338,10 @@
  "Dance Room in Thomas Jefferson Recreation Center | Manhattan": null,
  "De Matti Playground in De Matti Park | Staten Island": null,
  "DeMatti Park Fieldhouse in De Matti Park | Staten Island": null,
+ "Driggs Avenue and Lorimer Street in McCarren Park | Brooklyn": null,
  "Dyckman Farmhouse Museum in Dyckman House Museum | Manhattan": null,
+ "EAST 104 STREET between THIRD AVENUE and SECOND AVENUE Manhattan | Manhattan": null,
+ "EAST 115 STREET - PARK AVENUE to PARK AVENUE: EAST 115 STREET - PARK AVENUE to PARK AVENUE Manhattan | Manhattan": null,
  "EAST 125 STREET between PARK AVENUE and LEXINGTON AVENUE Manhattan | Manhattan": null,
  "EAST 149 STREET between MORRIS AVENUE and PARK AVENUE Bronx | Bronx": null,
  "EAST 192 STREET between GRAND CONCOURSE and VALENTINE AVENUE Bronx | Bronx": {
@@ -379,9 +395,11 @@
  "Governors Island | Manhattan": null,
  "Grand Army Plaza Arch in Grand Army Plaza | Brooklyn": null,
  "Greenbelt Nature Center in Blood Root Valley | Staten Island": null,
+ "Greenbelt Recreation Center in Greenbelt Recreation Center | Staten Island": null,
  "Gymnasium (Court) in Al Oerter Recreation Center | Queens": null,
  "Gymnasium in Gertrude Ederle Recreation Center | Manhattan": null,
  "Gymnasium in Highbridge Recreation Center | Manhattan": null,
+ "Gymnasium in Hunts Point Recreation Center | Bronx": null,
  "Gymnasium in Lost Battalion Hall Recreation Center | Queens": null,
  "Gymnasium in St. John\u2019s Recreation Center | Brooklyn": null,
  "H.H. Biddle House in Conference House Park | Staten Island": null,
@@ -389,6 +407,7 @@
  "Herald Square | Manhattan": null,
  "Herbert Von King Cultural Arts Center in Herbert Von King Cultural Arts Center | Brooklyn": null,
  "Herbert Von King Park | Brooklyn": null,
+ "Hillel Place,\\nKenilworth Place to Flatbush Avenue | Brooklyn": null,
  "Howard Garden | Brooklyn": null,
  "INDEPENDENCE AVENUE between WEST 246 STREET and WEST 239 STREET Bronx | Bronx": {
   "label": "INDEPENDENCE AVENUE & WEST 246 STREET",
@@ -440,6 +459,7 @@
  "Multi-Use Room - 2nd Fl in Sorrentino Recreation Center | Queens": null,
  "Multi-Use Room A in Detective Keith L. Williams Field House | Queens": null,
  "Multi-Use Room A in McCarren Play Center | Brooklyn": null,
+ "Multi-Use Room B in Detective Keith L. Williams Field House | Queens": null,
  "Multi-Use Room C in McCarren Play Center | Brooklyn": null,
  "Multi-Use Room in Asser Levy Recreation Center | Manhattan": null,
  "Multi-Use Room in Greenbelt Recreation Center | Staten Island": null,
@@ -452,6 +472,7 @@
  "NYC Department of Health and Mental Hygiene- Bedford-Stuyvesant Center | Brooklyn": null,
  "NYC Department of Health and Mental Hygiene- East Harlem Neighborhood Health Action Center | Manhattan": null,
  "NYPL - George Bruce | Manhattan": null,
+ "NYPL - Spuyten Duyvil | Bronx": null,
  "NYPL - Tompkins Square Library | Manhattan": null,
  "NYPL- Bloomingdale Library | Manhattan": null,
  "Neighborhood Advisory Committee Community Garden | Bronx": null,
@@ -467,6 +488,7 @@
  "Outdoors at Faber Park Recreation Center in Faber Park Recreation Center | Staten Island": null,
  "P.S. 361 Beacon - Woodside on the Move | Queens": null,
  "P.S. 55 in Lieutenant John H. Martinson Playground | Staten Island": null,
+ "P.S./I.S. 109 | Brooklyn": null,
  "PELHAM PARKWAY SOUTH between WILSON AVENUE and EASTCHESTER ROAD Bronx | Bronx": {
   "label": "PELHAM PARKWAY SOUTH & EASTCHESTER ROAD",
   "lat": 40.856662,
@@ -487,7 +509,9 @@
  "Pier 35 in East River Waterfront Esplanade | Manhattan": null,
  "Pier 6 in Brooklyn Bridge Park | Brooklyn": null,
  "Play Area in Arrochar Playground | Staten Island": null,
+ "Play Area in Bloomingdale Playground | Manhattan": null,
  "Play Area in Levy Playground | Staten Island": null,
+ "Poe Park: Permit Area 1 - Paved Oval Bronx | Bronx": null,
  "Powell Street Garden | Brooklyn": null,
  "Powers St. Community Garden | Brooklyn": null,
  "Prospect Farm | Brooklyn": null,
@@ -500,8 +524,11 @@
  "Queens Community House Beacon @ PS 149 | Queens": null,
  "Queens Museum, Corona | Queens": null,
  "Queens Public Library - Bayside | Queens": null,
+ "Queens Public Library - Broadway | Queens": null,
  "Queens Public Library - Corona | Queens": null,
+ "Queens Public Library - East Elmhurst | Queens": null,
  "Queens Public Library - Seaside | Queens": null,
+ "Queens Public Library - Sunnyside | Queens": null,
  "Queensbridge Park House in Queensbridge Park | Queens": null,
  "ROOSEVELT AVENUE between 103 STREET and 104 STREET Queens | Queens": null,
  "Ralph Ellison Plaza | Manhattan": null,
@@ -525,6 +552,7 @@
  "Samuel Seabury Playground | Manhattan": null,
  "Seaman Avenue and Isham Street Entrance in Inwood Hill Park | Manhattan": null,
  "Section 2 Orchard Beach in Pelham Bay Park | Bronx": null,
+ "Snug Harbor | Staten Island": null,
  "Sol Lain Playground in Sol Lain Plgd | Manhattan": null,
  "Sonia Sotomayor Community Center | Bronx": null,
  "Soundview Park, Bronx in Soundview Park | Bronx": null,
@@ -540,14 +568,22 @@
  },
  "The Amazing Garden | Brooklyn": null,
  "The Cottage in Fort Tryon Park | Manhattan": null,
+ "The High Line | Manhattan": null,
  "Thomas Jefferson Park | Manhattan": null,
+ "United Nations Ave South Entrance in Flushing Meadows Corona Park | Queens": null,
  "Urban Farm in Randall's Island Park | Manhattan": null,
+ "VCPA Learning Garden in Van Cortlandt Park | Bronx": null,
  "Van Cortlandt Golf House in Van Cortlandt Park | Bronx": null,
  "Van Cortlandt Nature Center in Van Cortlandt Park | Bronx": null,
  "Victory Boulevard and Alberta Avenue in Sylvan Grove Cemetery | Staten Island": null,
  "Victory Field in Forest Park | Queens": null,
  "Virtual/Online Events | Manhattan": null,
  "Visitor Information Booth in Snug Harbor Cultural Center | Staten Island": null,
+ "WEST 175 STREET between BROADWAY and WADSWORTH AVENUE Manhattan | Manhattan": {
+  "label": "WEST 175 STREET & WADSWORTH AVENUE",
+  "lat": 40.845874,
+  "lng": -73.938206
+ },
  "WEST 23 STREET between 8 AVENUE and 9 AVENUE Manhattan | Manhattan": {
   "label": "WEST 23 STREET & 8 AVENUE",
   "lat": 40.74552,
@@ -791,6 +827,7 @@
   "lat": 40.678168,
   "lng": -73.983509
  },
+ "dice: 17961": null,
  "dice: 18078": {
   "label": "101 WYCKOFF AVENUE, Brooklyn, NY, USA",
   "lat": 40.704802,
@@ -1102,6 +1139,12 @@
   "lng": -73.986054
  },
  "donyc: /venues/bethel-woods": null,
+ "donyc: /venues/bibliotheque-nyc": {
+  "address": "54 Mercer St, NYC, 10013",
+  "label": "54 MERCER STREET, New York, NY, USA",
+  "lat": 40.721712,
+  "lng": -74.00053
+ },
  "donyc: /venues/bierwax": {
   "address": "556 Vanderbilt Ave., Brooklyn, 11238",
   "label": "556 VANDERBILT AVENUE, Brooklyn, NY, USA",
@@ -1120,6 +1163,7 @@
   "lat": 40.718857,
   "lng": -74.011849
  },
+ "donyc: /venues/bourbon-street": null,
  "donyc: /venues/bowery-palace": {
   "address": "327 Bowery, New York, 10012",
   "label": "327 BOWERY, New York, NY, USA",
@@ -1173,6 +1217,12 @@
   "label": "385 FLATBUSH AVENUE X, Brooklyn, NY, USA",
   "lat": 40.690311,
   "lng": -73.980934
+ },
+ "donyc: /venues/brooklyn-public-library": {
+  "address": "10 Grand Army Plz, New York, 11238",
+  "label": "10 GRAND ARMY PLAZA, Brooklyn, NY, USA",
+  "lat": 40.6724,
+  "lng": -73.96809
  },
  "donyc: /venues/brooklyn-steel": {
   "address": "319 Frost Street, Brooklyn, 11222",
@@ -1338,6 +1388,12 @@
   "lat": 40.685915,
   "lng": -73.981622
  },
+ "donyc: /venues/el-museo-del-barrio": {
+  "address": "EL MUSEO DEL BARRIO, New York, NY, USA",
+  "label": "EL MUSEO DEL BARRIO, New York, NY, USA",
+  "lat": 40.793115,
+  "lng": -73.951396
+ },
  "donyc: /venues/elsewhere": {
   "address": "599 Johnson Ave, Brooklyn , 11237",
   "label": "599 JOHNSON AVENUE, Brooklyn, NY, USA",
@@ -1445,11 +1501,18 @@
   "lng": -73.994108
  },
  "donyc: /venues/hard-rock-hotel-casino": null,
+ "donyc: /venues/hello-market": null,
  "donyc: /venues/henrietta-hudson": {
   "address": "438 Hudson St, NEW YORK, 10014",
   "label": "438 HUDSON STREET, New York, NY, USA",
   "lat": 40.731141,
   "lng": -74.006437
+ },
+ "donyc: /venues/henry-street-settlement": {
+  "address": "265 Henry St, New York",
+  "label": "265 HENRY STREET, New York, NY, USA",
+  "lat": 40.714022,
+  "lng": -73.98451
  },
  "donyc: /venues/high-school-of-fashion-industries": {
   "address": "225 W 24th St, New York, 10011",
@@ -1488,6 +1551,7 @@
   "lat": 40.734928,
   "lng": -73.988455
  },
+ "donyc: /venues/ishq": null,
  "donyc: /venues/j-hood-wright-park": {
   "address": "J HOOD WRIGHT PARK, New York, NY, USA",
   "label": "J HOOD WRIGHT PARK, New York, NY, USA",
@@ -1555,6 +1619,7 @@
   "lat": 40.7156,
   "lng": -73.91418
  },
+ "donyc: /venues/le-du-s-wines": null,
  "donyc: /venues/le-poisson-rouge": {
   "address": "158 Bleecker Street, New York, 10012",
   "label": "158 BLEECKER STREET, New York, NY, USA",
@@ -1729,6 +1794,19 @@
   "lat": 40.782823,
   "lng": -73.980169
  },
+ "donyc: /venues/new-york-hilton-midtown": {
+  "address": "1335 Avenue of the Americas, New York, 10019",
+  "label": "1335 AVENUE OF THE AMERICAS, New York, NY, USA",
+  "lat": 40.762461,
+  "lng": -73.979696
+ },
+ "donyc: /venues/new-york-philharmonic": null,
+ "donyc: /venues/new-york-transit-museum": {
+  "address": "99 Schermerhorn Street, Brooklyn",
+  "label": "99 SCHERMERHORN STREET, Brooklyn, NY, USA",
+  "lat": 40.690802,
+  "lng": -73.990001
+ },
  "donyc: /venues/night-club-101": {
   "address": "101 Avenue A, New York, NY 10009, New York, 10009",
   "label": "101 AVENUE A, New York, NY, USA",
@@ -1787,6 +1865,12 @@
   "lat": 40.730478,
   "lng": -73.985896
  },
+ "donyc: /venues/paramount-hotel": {
+  "address": "235 W 46th St, New York, NY 10036, New York, 10036",
+  "label": "235 WEST 46 STREET, New York, NY, USA",
+  "lat": 40.75965,
+  "lng": -73.987
+ },
  "donyc: /venues/paramount-hudson-valley-theater": null,
  "donyc: /venues/parker-s-at-thompson-central-park": null,
  "donyc: /venues/peoples-symphony-concerts": null,
@@ -1814,6 +1898,7 @@
   "lat": 40.679224,
   "lng": -74.012128
  },
+ "donyc: /venues/piragua-art-space": null,
  "donyc: /venues/platform-by-jbf": {
   "address": "25 11th Ave, New York, NY 10011,, New York, 10011",
   "label": "25 11 AVENUE, New York, NY, USA",
@@ -1833,6 +1918,12 @@
   "label": "233 BUTLER STREET, Brooklyn, NY, USA",
   "lat": 40.682176,
   "lng": -73.98639
+ },
+ "donyc: /venues/pulsion-institute": {
+  "address": "321 West 44th Street, Suite 510, New York, 10036",
+  "label": "321 WEST 44 STREET, New York, NY, USA",
+  "lat": 40.75928,
+  "lng": -73.989735
  },
  "donyc: /venues/purgatory": {
   "address": "675 Central Ave, Brooklyn, 11207",
@@ -1870,6 +1961,8 @@
   "lat": 40.757778,
   "lng": -73.992548
  },
+ "donyc: /venues/reforesters-laboratory": null,
+ "donyc: /venues/revision-lounge": null,
  "donyc: /venues/rough-trade-nyc": {
   "address": "30 Rockefeller Plaza 6th Avenue, Manhattan, 10112",
   "label": "30 ROCKEFELLER PLAZA, New York, NY, USA",
@@ -2097,6 +2190,12 @@
   "lat": 40.746458,
   "lng": -73.988073
  },
+ "donyc: /venues/the-folly": {
+  "address": "92 West Houston Street, New York, 10012",
+  "label": "92 WEST HOUSTON STREET, New York, NY, USA",
+  "lat": 40.727298,
+  "lng": -73.999977
+ },
  "donyc: /venues/the-gramercy-theatre": {
   "address": "127 East 23rd Street, New York, 10010",
   "label": "127 EAST 23 STREET, New York, NY, USA",
@@ -2202,6 +2301,12 @@
   "lat": 40.721348,
   "lng": -73.988734
  },
+ "donyc: /venues/the-speakeasy-at-the-gin-mill": {
+  "address": "442 Amsterdam Ave, New York, 10024",
+  "label": "442 AMSTERDAM AVENUE, New York, NY, USA",
+  "lat": 40.784762,
+  "lng": -73.977524
+ },
  "donyc: /venues/the-stephen-talkhouse": {
   "address": "161 Main Street, Amagansett",
   "label": "161 MAIN STREET, Staten Island, NY, USA",
@@ -2274,6 +2379,13 @@
  "donyc: /venues/thinkchinatown-s-studio": null,
  "donyc: /venues/tilles-center-for-the-performing-arts": null,
  "donyc: /venues/touro-college-university-system": null,
+ "donyc: /venues/trans-pecos": {
+  "address": "915 Wyckoff Ave., Brooklyn",
+  "label": "915 WYCKOFF AVENUE, Ridgewood, NY, USA",
+  "lat": 40.697066,
+  "lng": -73.906218
+ },
+ "donyc: /venues/tribeca": null,
  "donyc: /venues/tribeca-360": {
   "address": "10 Desbrosses St, New York, 10013",
   "label": "10 DESBROSSES STREET, New York, NY, USA",
@@ -2317,6 +2429,12 @@
   "lat": 40.846457,
   "lng": -73.937867
  },
+ "donyc: /venues/untitled": {
+  "address": "3 Freeman Alley, New York, 11001",
+  "label": "3 FREEMAN ALLEY, New York, NY, USA",
+  "lat": 40.721914,
+  "lng": -73.992909
+ },
  "donyc: /venues/upright-citizens-brigade-ucb": {
   "address": "242 E 14th Street, New York City, 10003",
   "label": "242 EAST 14 STREET, New York, NY, USA",
@@ -2328,6 +2446,12 @@
   "label": "647 FULTON STREET, Brooklyn, NY, USA",
   "lat": 40.688666,
   "lng": -73.979088
+ },
+ "donyc: /venues/venue-5-2-a-at-industry-city": {
+  "address": "33 35th St., Brooklyn, 11232",
+  "label": "33 35 STREET, Brooklyn, NY, USA",
+  "lat": 40.657125,
+  "lng": -74.006418
  },
  "donyc: /venues/vip-restaurant-jsq": null,
  "donyc: /venues/virtual": null,
@@ -2348,6 +2472,12 @@
   "label": "201 WEST 75 STREET, New York, NY, USA",
   "lat": 40.780889,
   "lng": -73.980396
+ },
+ "donyc: /venues/wild-east-brewing": {
+  "address": "623 Sackett Street, Brooklyn, 11217",
+  "label": "623 SACKETT STREET, Brooklyn, NY, USA",
+  "lat": 40.678617,
+  "lng": -73.983416
  },
  "donyc: /venues/williamsburg": null,
  "donyc: /venues/wonderville": {
@@ -2403,6 +2533,11 @@
   "lat": 40.76504,
   "lng": -73.9975
  },
+ "permit place: 14 AVENUE between 49 STREET and 50 STREET | Brooklyn": {
+  "label": "14th AVENUE & 49th STREET",
+  "lat": 40.6342415,
+  "lng": -73.991154
+ },
  "permit place: 14 AVENUE between CLINTONVILLE STREET and 150 STREET | Queens": {
   "label": "14th AVENUE & CLINTONVILLE STREET",
   "lat": 40.78919,
@@ -2418,6 +2553,11 @@
   "label": "2nd AVENUE & EAST 32nd STREET",
   "lat": 40.7428265,
   "lng": -73.9780805
+ },
+ "permit place: 28TH ST between QUEENS  PLAZA SOUTH and 42ND ROAD | Queens": {
+  "label": "28 ST & QUEENS PLAZA SOUTH",
+  "lat": 40.750556,
+  "lng": -73.93862250000001
  },
  "permit place: 31 AVENUE - 33 STREET to 35 STREET: 31 AVENUE - 33 STREET to 35 STREET | Queens": {
   "label": "31st AVENUE & 33rd STREET",
@@ -2443,6 +2583,11 @@
   "label": "450 ST ANN'S AVENUE & EAST 147th STREET",
   "lat": 40.812947,
   "lng": -73.914243
+ },
+ "permit place: 46 STREET between QUEENS BOULEVARD and GREENPOINT AVENUE | Queens": {
+  "label": "46th STREET & QUEENS BOULEVARD",
+  "lat": 40.743489499999995,
+  "lng": -73.9181705
  },
  "permit place: 4TH STREET between FIFTH AVENUE  and DEAD END | Brooklyn": {
   "label": "4th STREET & FIFTH AVENUE",
@@ -2485,10 +2630,20 @@
   "lat": 40.756888,
   "lng": -73.991493
  },
+ "permit place: 89 SOUTH STREET | Manhattan": {
+  "label": "89 SOUTH STREET, New York, NY, USA",
+  "lat": 40.705523,
+  "lng": -74.001567
+ },
  "permit place: ALBEMARLE ROAD - MARLBOROUGH ROAD to ARGYLE ROAD: ALBEMARLE ROAD - MARLBOROUGH ROAD to ARGYLE ROAD | Brooklyn": {
   "label": "ALBEMARLE ROAD & MARLBOROUGH ROAD",
   "lat": 40.646922,
   "lng": -73.965771
+ },
+ "permit place: AVENUE OF AMERICAS between CARMINE STREET and WEST    3 STREET | Manhattan": {
+  "label": "AVENUE OF AMERICAS & CARMINE STREET",
+  "lat": 40.730644,
+  "lng": -74.002024
  },
  "permit place: Abingdon Square | Manhattan": {
   "label": "ABINGDON SQUARE, New York, NY, USA",
@@ -2539,6 +2694,11 @@
   "label": "BELLA ABZUG PARK, New York, NY, USA",
   "lat": 40.75564,
   "lng": -74.00056
+ },
+ "permit place: Betsy Head Park | Brooklyn": {
+  "label": "BETSY HEAD PARK, Brooklyn, NY, USA",
+  "lat": 40.6627,
+  "lng": -73.91334
  },
  "permit place: Bowling Green | Manhattan": null,
  "permit place: Bowne Playground | Queens": {
@@ -2622,6 +2782,11 @@
   "lat": 40.72902,
   "lng": -73.76467
  },
+ "permit place: DELANCEY STREET between CHRYSTIE STREET and FORSYTH STREET | Manhattan": {
+  "label": "DELANCEY STREET & CHRYSTIE STREET",
+  "lat": 40.719861,
+  "lng": -73.993322
+ },
  "permit place: DIVISION STREET between PIKE STREET and ORCHARD STREET | Manhattan": {
   "label": "DIVISION STREET & PIKE STREET",
   "lat": 40.714248,
@@ -2653,6 +2818,11 @@
   "lat": 40.726556,
   "lng": -73.991328
  },
+ "permit place: EAST    4 STREET between BOWERY and SECOND AVENUE | Manhattan": {
+  "label": "EAST 4th STREET & BOWERY",
+  "lat": 40.726556,
+  "lng": -73.991328
+ },
  "permit place: EAST    6 STREET between AVENUE B and AVENUE C | Manhattan": {
   "label": "EAST 6th STREET & AVENUE B",
   "lat": 40.724152,
@@ -2680,7 +2850,10 @@
  },
  "permit place: EAST   47 STREET between 2 AVENUE and 1 AVENUE | Manhattan": null,
  "permit place: EAST   82 STREET between 1 AVENUE and YORK AVENUE | Manhattan": null,
+ "permit place: EAST   88 STREET between 5 AVENUE and MADISON AVENUE | Manhattan": null,
+ "permit place: EAST  104 STREET between THIRD AVENUE and SECOND AVENUE | Manhattan": null,
  "permit place: EAST  110 STREET between LEX AVENUE and PARK AVENUE | Manhattan": null,
+ "permit place: EAST  113 STREET between DEAD END and 2 AVENUE | Manhattan": null,
  "permit place: EAST  125 STREET between PARK AVENUE and LEXINGTON AVENUE | Manhattan": null,
  "permit place: EAST  144 STREET between CANAL PLACE and RIDER AVENUE | Bronx": {
   "label": "EAST 144th STREET & CANAL PLACE",
@@ -2697,6 +2870,11 @@
   "lat": 40.818974499999996,
   "lng": -73.92309399999999
  },
+ "permit place: EAST  174 STREET between MORRISON AVENUE and STRATFORD AVENUE | Bronx": {
+  "label": "EAST 174th STREET & MORRISON AVENUE",
+  "lat": 40.8337575,
+  "lng": -73.8752765
+ },
  "permit place: EAST  182 STREET between VALENTINE AVENUE and RYER AVENUE | Bronx": {
   "label": "EAST 182nd STREET & VALENTINE AVENUE",
   "lat": 40.855056,
@@ -2706,6 +2884,11 @@
   "label": "EAST 192nd STREET & GRAND CONCOURSE",
   "lat": 40.863941,
   "lng": -73.895401
+ },
+ "permit place: EAST 115 STREET - PARK AVENUE to PARK AVENUE: EAST 115 STREET - PARK AVENUE to PARK AVENUE | Manhattan": {
+  "label": "EAST 115th STREET & PARK AVENUE",
+  "lat": 40.798673,
+  "lng": -73.94334
  },
  "permit place: EAST 4 STREET - BOWERY to 2 AVENUE: EAST 4 STREET - BOWERY to 2 AVENUE | Manhattan": {
   "label": "EAST 4th STREET & BOWERY",
@@ -2795,6 +2978,11 @@
   "lat": 40.68513,
   "lng": -73.8858
  },
+ "permit place: Hillel Plaza Hillel pl between kenilworth pl and Flatbush ave | Brooklyn": {
+  "label": "Hillel Plaza Hillel pl & kenilworth pl",
+  "lat": 40.632268,
+  "lng": -73.94873
+ },
  "permit place: ISHAM STREET between SEAMAN AVENUE and COOPER STREET | Manhattan": {
   "label": "ISHAM STREET & SEAMAN AVENUE",
   "lat": 40.8694345,
@@ -2821,6 +3009,7 @@
   "lng": -73.871094
  },
  "permit place: Jackie Robinson Park | Manhattan": null,
+ "permit place: Jitu Weusi Plaza Putnam Ave between Fulton Street and Grand Ave | Brooklyn": null,
  "permit place: Johnny Hartman Square | Manhattan": {
   "label": "JOHNNY HARTMAN SQUARE, New York, NY, USA",
   "lat": 40.82409,
@@ -3030,6 +3219,7 @@
   "lat": 40.79097,
   "lng": -73.98019
  },
+ "permit place: Roberto Clemente Plaza 3 AVENUE between EAST  148 STREET and WILLIS AVENUE | Bronx": null,
  "permit place: Rose Street / Pearl Street Avenue of the Finest Avenue of the Finest between Rose Street and Spruce Street | Manhattan": null,
  "permit place: SAINT FELIX STREET between FULTON STREET and DEKALB AVENUE | Brooklyn": null,
  "permit place: SCHENCK AVENUE between NEW LOTS AVENUE and LIVONIA AVENUE | Brooklyn": {
@@ -3094,6 +3284,11 @@
   "lat": 40.9,
   "lng": -73.89222
  },
+ "permit place: WALL STREET between WILLIAM STREET and HANOVER STREET | Manhattan": {
+  "label": "WALL STREET & WILLIAM STREET",
+  "lat": 40.706208,
+  "lng": -74.009922
+ },
  "permit place: WEST   23 STREET between 8 AVENUE and 9 AVENUE | Manhattan": {
   "label": "WEST 23rd STREET & 8th AVENUE",
   "lat": 40.74552,
@@ -3125,6 +3320,7 @@
   "lng": -73.955751
  },
  "permit place: WEST  134 STREET between BROADWAY and AMSTERDAM AVENUE | Manhattan": null,
+ "permit place: WEST  175 STREET between BROADWAY and WADSWORTH AVENUE | Manhattan": null,
  "permit place: WEST HOUSTON STREET between THOMPSON STREET and MACDOUGAL STREET | Manhattan": {
   "label": "WEST HOUSTON STREET & THOMPSON STREET",
   "lat": 40.72721,
@@ -3173,10 +3369,13 @@
  },
  "place: 100 sutton event space | Brooklyn": null,
  "place: 11am and runs along avenue b | ": null,
+ "place: 2am | ": null,
  "place: 4th street cul-de-sac at washington park | Brooklyn": null,
+ "place: 9 | ": null,
  "place: 92ny | Manhattan": null,
  "place: a.r.t./new york theatres | Manhattan": null,
  "place: all night skate | Brooklyn": null,
+ "place: and international street bands to indoor and outdoor venues and parks across manhattan | Brooklyn": null,
  "place: and venues in gowanus | Brooklyn": null,
  "place: artists + beers | ": null,
  "place: astronomy on tap | ": null,
@@ -3190,6 +3389,8 @@
  "place: brooklyn art haus | Brooklyn": null,
  "place: brooklyn public library for arts + culture | Brooklyn": null,
  "place: c'mon everybody | Brooklyn": null,
+ "place: carefully crafted storytelling at ucb | Manhattan": null,
+ "place: cccadi il\u00e9 oyin | Manhattan": null,
  "place: cheetah quila hosts an all-monster high-themed drag party at c'mon everybody | Brooklyn": null,
  "place: cloud city | Brooklyn": null,
  "place: club cumming | Manhattan": null,
@@ -3199,10 +3400,13 @@
   "lng": -73.96152
  },
  "place: come along on this spectacular journey of literature in performance at symphony space | Manhattan": null,
+ "place: comedian kevin maher and a lineup of pop-culture aficionados return to nitehawk cinema | Brooklyn": null,
  "place: comes to cloud city | Brooklyn": null,
  "place: crystal lake brooklyn | Brooklyn": null,
  "place: dekalb market hall | Brooklyn": null,
  "place: expect the unexpected as the nyc magic ensemble presents a night of magicians and mentalists at caveat | Manhattan": null,
+ "place: expect the unexpected as the nyc magic ensemble presents a night of magicians and mentalists at young ethel's | Brooklyn": null,
+ "place: footlight underground at the windjammer | Queens": null,
  "place: for a night of readings and discussion at kgb bar | Manhattan": null,
  "place: gansevoort plaza | Manhattan": null,
  "place: gowanus metal bar lucky 13 saloon | ": null,
@@ -3211,15 +3415,21 @@
  "place: hear established and up-and-coming authors of different genres read from their current works every third tuesday of the month at barrow | Brooklyn": null,
  "place: hear established and up-and-coming authors of different genres read from their current works every third tuesday of the month at barrow's intense tasting room | Brooklyn": null,
  "place: heavy music and horror nostalgia | ": null,
+ "place: hoppy humor straight from the barrel cellar at wild east brewing co | Brooklyn": null,
  "place: hudson yards public square and gardens | ": null,
  "place: index space | Brooklyn": null,
+ "place: indoor and outdoor venues and parks across manhattan | Brooklyn": null,
  "place: industry city | Brooklyn": {
   "label": "INDUSTRY CITY, Brooklyn, NY, USA",
   "lat": 40.65977,
   "lng": -74.01058
  },
+ "place: international center of photography | Manhattan": null,
+ "place: jaywalker at new york distilling co | Brooklyn": null,
  "place: jennifer | Manhattan": null,
  "place: jennifer's body at gansevoort plaza | Manhattan": null,
+ "place: julia whitehouse serves up an evening of carefully crafted storytelling at ucb | Manhattan": null,
+ "place: landline comedy serves up pints of hoppy humor straight from the barrel cellar at wild east brewing co | Brooklyn": null,
  "place: lincoln center | ": {
   "label": "LINCOLN CENTER, New York, NY, USA",
   "lat": 40.77272,
@@ -3235,11 +3445,23 @@
   "lat": 40.70317,
   "lng": -73.92386
  },
+ "place: mccarren park | Brooklyn": {
+  "label": "MCCARREN PARK, Brooklyn, NY, USA",
+  "lat": 40.72022,
+  "lng": -73.95065
+ },
  "place: miller theatre at columbia university | Manhattan": null,
+ "place: moma ps1 | Queens": null,
  "place: natural history for a journey from the chemical building blocks found | ": null,
+ "place: new york distilling co | ": null,
+ "place: new york distilling co | Brooklyn": null,
+ "place: nitehawk cinema | Brooklyn": null,
  "place: nyc comedian kendall farrell tapes his first stand up special at littlefield | Brooklyn": null,
  "place: p+t knitwear bookstore | Manhattan": null,
+ "place: parkside lounge | Manhattan": null,
  "place: performance at symphony space | Manhattan": null,
+ "place: photography | Manhattan": null,
+ "place: pop-culture aficionados return to nitehawk cinema | Brooklyn": null,
  "place: practical magic at prospect park | Brooklyn": null,
  "place: professional scientists and educators\u2014plus themed games and other cosmic fun | ": null,
  "place: prospect park | Brooklyn": {
@@ -3249,27 +3471,32 @@
  },
  "place: returns to the bell house | Brooklyn": null,
  "place: roulette intermedium | Brooklyn": null,
+ "place: rubulad | Brooklyn": null,
  "place: ryan | Manhattan": null,
  "place: ryan's daughter pub | Manhattan": null,
  "place: sanger hall | Queens": null,
  "place: secret pour | Brooklyn": null,
  "place: show brain returns to maria hernandez park | Brooklyn": null,
+ "place: sinners at mccarren park | Brooklyn": null,
  "place: smith st + union st | Brooklyn": null,
  "place: smith street between bergen + union | Brooklyn": null,
  "place: somethin' else in dekalb market hall | Brooklyn": null,
  "place: st. mary the virgin | Manhattan": null,
  "place: stone circle theater | Queens": null,
  "place: symphony space | Manhattan": null,
+ "place: telephone room | Brooklyn": null,
  "place: the american museum of natural history for a journey from the chemical building blocks found | ": null,
  "place: the church of st. mary the virgin | Manhattan": null,
  "place: the month at barrow | Brooklyn": null,
  "place: the month at barrow's intense tasting room | Brooklyn": null,
  "place: the new school's tishman auditorium | Manhattan": null,
  "place: the red room at kgb bar | Manhattan": null,
+ "place: the windjammer | Queens": null,
  "place: this night about weather science | ": null,
  "place: this pecha kucha-style forum | ": null,
  "place: this women-focused dance party dedicated to heavy music and horror nostalgia | ": null,
  "place: this women-produced-and-hosted comedy show conjures up big laughs in the back room of halyards | Brooklyn": null,
+ "place: ucb | Manhattan": null,
  "place: under st. marks theater | Manhattan": null,
  "place: under st. marks theatre | Manhattan": null,
  "place: w 54th street between 9th + 10th aves | Manhattan": null,
@@ -3281,8 +3508,21 @@
   "lng": -73.9976
  },
  "place: washington square park's garibaldi plaza | Manhattan": null,
+ "place: wild east brewing co | ": null,
+ "place: wild east brewing co | Brooklyn": null,
  "place: with yaddo | Brooklyn": null,
  "place: with yaddo's elaina richardson at brooklyn public library for arts + culture | Brooklyn": null,
+ "place: xanadu | Brooklyn": null,
+ "ra: 1 ingraham st, Brooklyn NY, 11206": {
+  "label": "1 INGRAHAM STREET, Brooklyn, NY, USA",
+  "lat": 40.707026,
+  "lng": -73.933483
+ },
+ "ra: 10 Theatre Alley, New York, NY 10038": {
+  "label": "10 THEATER ALLEY, New York, NY, USA",
+  "lat": 40.71115,
+  "lng": -74.00696
+ },
  "ra: 11-01 43rd Avenue, Long Island City, NYC": {
   "label": "11-01 43 AVENUE, Long Island City, NY, USA",
   "lat": 40.752015,
@@ -3393,6 +3633,11 @@
   "lat": 40.710858,
   "lng": -73.922424
  },
+ "ra: 26 Bridge Street, Brooklyn, NY 11201": {
+  "label": "26 BRIDGE STREET, Brooklyn, NY, USA",
+  "lat": 40.703971,
+  "lng": -73.984909
+ },
  "ra: 262 Starr St, Brooklyn, NY 11237": {
   "label": "262 STARR STREET, Brooklyn, NY, USA",
   "lat": 40.706435,
@@ -3463,6 +3708,11 @@
   "lat": 40.762369,
   "lng": -73.997612
  },
+ "ra: 623 Manhattan Ave, Brooklyn, NY 11222": {
+  "label": "623 MANHATTAN AVENUE, Brooklyn, NY, USA",
+  "lat": 40.723604,
+  "lng": -73.950954
+ },
  "ra: 63 Grand St, Brooklyn, NY 11249,": {
   "label": "63 GRAND STREET, Brooklyn, NY, USA",
   "lat": 40.716105,
@@ -3472,6 +3722,11 @@
   "label": "650 SACKETT STREET, Brooklyn, NY, USA",
   "lat": 40.678168,
   "lng": -73.983509
+ },
+ "ra: 683 Grand Street Brooklyn NY 11211": {
+  "label": "683 GRAND STREET, Brooklyn, NY, USA",
+  "lat": 40.711751,
+  "lng": -73.945213
  },
  "ra: 70 Scott Ave Brooklyn, NY 11237": {
   "label": "70 SCOTT AVENUE, Brooklyn, NY, USA",

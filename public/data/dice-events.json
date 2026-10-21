@@ -3,39 +3,111 @@
   "name": "DICE",
   "url": "https://dice.fm/browse/new_york-5bbf4db0f06331478e9b2c59"
  },
- "date": "2026-10-20",
- "fetchedAt": "2026-10-20T20:41:25-04:00",
+ "date": "2026-10-21",
+ "fetchedAt": "2026-10-21T05:07:38-04:00",
  "events": [
   {
-   "id": "6a567859a0db8c00017df232",
-   "title": "The Courettes • The Dracu-Las • Todd-O-Phonic Todd",
+   "id": "6abd6218c989d200013a0557",
+   "title": "OUT OF LINE: NYC'S NEWEST LINE DANCE PARTY",
    "category": "music",
-   "start": "2026-10-20T19:00:00-04:00",
-   "end": "2026-10-20T23:00:00-04:00",
+   "start": "2026-10-21T18:30:00-04:00",
+   "end": "2026-10-21T21:30:00-04:00",
    "venue": {
-    "name": "Union Pool",
-    "address": "484 Union Ave, Brooklyn, NY 11211, USA",
+    "name": "Pianos: The Mezzanine",
+    "address": "158 Ludlow St, New York, NY 10002, USA",
     "neighborhood": "",
-    "lat": 40.715004,
-    "lng": -73.951552
+    "lat": 40.721012,
+    "lng": -73.987622
    },
    "price": {
-    "min": 30,
-    "max": 30,
+    "min": 14,
+    "max": 14,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://dice.fm/event/6a567859a0db8c00017df232",
+   "url": "https://dice.fm/event/6abd6218c989d200013a0557",
    "tags": []
   },
   {
-   "id": "6aa458de6b039600011ea4a9",
-   "title": "Breaking Sound NYC at Brooklyn Music Kitchen 10/20",
+   "id": "6a8e42167aa292000116d186",
+   "title": "The Workshop A Cappella",
    "category": "music",
-   "start": "2026-10-20T19:30:00-04:00",
-   "end": "2026-10-20T23:30:00-04:00",
+   "start": "2026-10-21T18:30:00-04:00",
+   "end": "2026-10-21T22:30:00-04:00",
+   "venue": {
+    "name": "DROM",
+    "address": "85 Avenue A, New York, NY 10009, USA",
+    "neighborhood": "",
+    "lat": 40.725329,
+    "lng": -73.984453
+   },
+   "price": {
+    "min": 29,
+    "max": 29,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Bold, high-energy pop bangers",
+   "details": "",
+   "url": "https://dice.fm/event/6a8e42167aa292000116d186",
+   "tags": []
+  },
+  {
+   "id": "6ace8bc5df23390001135d1e",
+   "title": "Wednesday JAmZZ: Adam Aronesty Trio",
+   "category": "music",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": "2026-10-21T23:45:00-04:00",
+   "venue": {
+    "name": "Moondog HiFi",
+    "address": "119 Ingraham Street, Brooklyn, New York 11237, United States",
+    "neighborhood": "",
+    "lat": 40.707894,
+    "lng": -73.929192
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6ace8bc5df23390001135d1e",
+   "tags": []
+  },
+  {
+   "id": "6ace5065c629dc0001a8ab2e",
+   "title": "CAPE FADE // HEADCHECK // TULIP AVE // COMPLY",
+   "category": "music",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": "2026-10-21T23:00:00-04:00",
+   "venue": {
+    "name": "Gold Sounds",
+    "address": "44 Wilson Ave, Brooklyn, NY 11237, USA",
+    "neighborhood": "",
+    "lat": 40.702633,
+    "lng": -73.929618
+   },
+   "price": {
+    "min": 15,
+    "max": 15,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6ace5065c629dc0001a8ab2e",
+   "tags": []
+  },
+  {
+   "id": "6ac93668c5cdbb00014a805c",
+   "title": "Featured Artist of the Week: Zada",
+   "category": "music",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": "2026-10-21T23:00:00-04:00",
    "venue": {
     "name": "Brooklyn Music Kitchen",
     "address": "177 Vanderbilt Avenue, Brooklyn, New York 11205, United States",
@@ -44,22 +116,214 @@
     "lng": -73.96947
    },
    "price": {
-    "min": 23,
-    "max": 23,
+    "min": 11,
+    "max": 11,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://dice.fm/event/6aa458de6b039600011ea4a9",
+   "url": "https://dice.fm/event/6ac93668c5cdbb00014a805c",
    "tags": []
   },
   {
-   "id": "6ac42e6de902670001c01fea",
-   "title": "Prophet II, Continental Shelf, and Slackmagic",
+   "id": "6ac5b118094e770001e51ee7",
+   "title": "LAND, Aaron Fern",
    "category": "music",
-   "start": "2026-10-20T20:00:00-04:00",
-   "end": "2026-10-20T23:30:00-04:00",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": "2026-10-21T22:00:00-04:00",
+   "venue": {
+    "name": "ALPHAVILLE",
+    "address": "140 Wilson Ave, New York, New York 11237",
+    "neighborhood": "",
+    "lat": 40.700494,
+    "lng": -73.925859
+   },
+   "price": {
+    "min": 13,
+    "max": 13,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6ac5b118094e770001e51ee7",
+   "tags": []
+  },
+  {
+   "id": "6abac3990afa8e000105180a",
+   "title": "Swapmeet • Baby Wave",
+   "category": "music",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": "2026-10-21T23:00:00-04:00",
+   "venue": {
+    "name": "Union Pool",
+    "address": "484 Union Ave, Brooklyn, NY 11211, USA",
+    "neighborhood": "",
+    "lat": 40.715004,
+    "lng": -73.951552
+   },
+   "price": {
+    "min": 24,
+    "max": 24,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6abac3990afa8e000105180a",
+   "tags": []
+  },
+  {
+   "id": "6ab2ddebc13dc800017aa702",
+   "title": "Louis Prince, Maximilian Gordon, Justin Strauss [DJ]",
+   "category": "music",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": "2026-10-21T22:00:00-04:00",
+   "venue": {
+    "name": "Public Records",
+    "address": "233 Butler St, Brooklyn, NY 11217, USA",
+    "neighborhood": "",
+    "lat": 40.682176,
+    "lng": -73.98639
+   },
+   "price": {
+    "min": 27,
+    "max": 27,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6ab2ddebc13dc800017aa702",
+   "tags": []
+  },
+  {
+   "id": "6aad4d523a157d0001b0b7e0",
+   "title": "Leanne Gallati, Waterfall Strainer, Yaely",
+   "category": "music",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": "2026-10-21T22:00:00-04:00",
+   "venue": {
+    "name": "The Sultan Room Rooftop",
+    "address": "234 Starr St, Brooklyn, NY 11237, USA",
+    "neighborhood": "",
+    "lat": 40.705556,
+    "lng": -73.92234
+   },
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Upbeat pop and rock",
+   "details": "",
+   "url": "https://dice.fm/event/6aad4d523a157d0001b0b7e0",
+   "tags": []
+  },
+  {
+   "id": "6aaaa73642951e0001fbc10f",
+   "title": "Animal Collective Performs Feels Live",
+   "category": "music",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": "2026-10-21T23:00:00-04:00",
+   "venue": {
+    "name": "Knockdown Center",
+    "address": "52-19 Flushing Ave, Maspeth, NY 11378, USA",
+    "neighborhood": "",
+    "lat": 40.7156,
+    "lng": -73.91418
+   },
+   "price": {
+    "min": 68,
+    "max": 68,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6aaaa73642951e0001fbc10f",
+   "tags": []
+  },
+  {
+   "id": "6a865459fcb8130001317907",
+   "title": "Olivia And The Lovers with K!ng $lut and Ghost Tour",
+   "category": "music",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": "2026-10-21T22:30:00-04:00",
+   "venue": {
+    "name": "Pianos: Showroom",
+    "address": "158 Ludlow St, New York, NY 10002, USA",
+    "neighborhood": "",
+    "lat": 40.721012,
+    "lng": -73.987622
+   },
+   "price": {
+    "min": 17,
+    "max": 17,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6a865459fcb8130001317907",
+   "tags": []
+  },
+  {
+   "id": "6a4eb3cd0470280001ad6a1b",
+   "title": "Sonosphere: Episodic Memory, Olivia Mancuso, Kris Harris",
+   "category": "music",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": "2026-10-21T22:00:00-04:00",
+   "venue": {
+    "name": "Sleepwalk",
+    "address": "251 Bushwick Avenue, Brooklyn, New York 11206, United States",
+    "neighborhood": "",
+    "lat": 40.707337,
+    "lng": -73.939539
+   },
+   "price": {
+    "min": 15,
+    "max": 15,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Hazy electronica, live saxophone loops",
+   "details": "",
+   "url": "https://dice.fm/event/6a4eb3cd0470280001ad6a1b",
+   "tags": []
+  },
+  {
+   "id": "6a9730371ac7ec00017d9510",
+   "title": "LOBSTER TOOTH RECORDS PRESENTS: QWAM, WILD LAWN, GOLD ROGER, KING BUG",
+   "category": "music",
+   "start": "2026-10-21T19:30:00-04:00",
+   "end": "2026-10-21T22:30:00-04:00",
+   "venue": {
+    "name": "Cassette",
+    "address": "68-38 Forest Avenue, Storefront B, Ridgewood, New York 11385, United States",
+    "neighborhood": "",
+    "lat": 40.70261,
+    "lng": -73.901214
+   },
+   "price": {
+    "min": 18,
+    "max": 18,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6a9730371ac7ec00017d9510",
+   "tags": []
+  },
+  {
+   "id": "6ac7cf0f5c1ce700010263ac",
+   "title": "Alex Julia w/ Already Late, Hurricane Holly, and Reya Flowers",
+   "category": "music",
+   "start": "2026-10-21T20:00:00-04:00",
+   "end": "2026-10-21T23:30:00-04:00",
    "venue": {
     "name": "Purgatory",
     "address": "675 Central Ave, Brooklyn, NY 11207, USA",
@@ -75,21 +339,45 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://dice.fm/event/6ac42e6de902670001c01fea",
+   "url": "https://dice.fm/event/6ac7cf0f5c1ce700010263ac",
    "tags": []
   },
   {
-   "id": "6a720313c0f4f40001bbdf4e",
-   "title": "Peter & the Master Keys",
+   "id": "6a075e766ecf2f0001ba8df4",
+   "title": "LEGENDARY LOCALS - Open Mic night every Wednesday",
    "category": "music",
-   "start": "2026-10-20T20:00:00-04:00",
-   "end": "2026-10-20T23:00:00-04:00",
+   "start": "2026-10-21T20:00:00-04:00",
+   "end": null,
    "venue": {
-    "name": "MAD Bar & Lounge",
-    "address": "22 East 38th Street, New York City, New York 10016, United States",
+    "name": "Brooklyn Music Kitchen",
+    "address": "177 Vanderbilt Avenue, Brooklyn, New York 11205, United States",
     "neighborhood": "",
-    "lat": 40.749975,
-    "lng": -73.980939
+    "lat": 40.692646,
+    "lng": -73.96947
+   },
+   "price": {
+    "min": 11,
+    "max": 11,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Stage performances with house band",
+   "details": "",
+   "url": "https://dice.fm/event/6a075e766ecf2f0001ba8df4",
+   "tags": []
+  },
+  {
+   "id": "6aadc0dd444a3800018aa1f7",
+   "title": "Date Nite: Vinyl Happy Hour",
+   "category": "nightlife",
+   "start": "2026-10-21T18:00:00-04:00",
+   "end": "2026-10-21T22:00:00-04:00",
+   "venue": {
+    "name": "Sleepwalk",
+    "address": "251 Bushwick Avenue, Brooklyn, New York 11206, United States",
+    "neighborhood": "",
+    "lat": 40.707337,
+    "lng": -73.939539
    },
    "price": {
     "min": 0,
@@ -97,16 +385,16 @@
     "currency": "USD"
    },
    "priceUnknown": false,
-   "description": "Rootsy soul, jazz classics, blues",
+   "description": "Vintage vibes, global grooves",
    "details": "",
-   "url": "https://dice.fm/event/6a720313c0f4f40001bbdf4e",
+   "url": "https://dice.fm/event/6aadc0dd444a3800018aa1f7",
    "tags": []
   },
   {
-   "id": "6ab77153d3d20600014c16ac",
-   "title": "Open Decks w/ Steen & Solarsonic Soundsystem",
+   "id": "6aae32fe0a37b4000196fcde",
+   "title": "Open Decks w/ Steen and MatchMyFreq Society",
    "category": "nightlife",
-   "start": "2026-10-20T19:00:00-04:00",
+   "start": "2026-10-21T19:00:00-04:00",
    "end": null,
    "venue": {
     "name": "SILO Brooklyn ",
@@ -121,47 +409,23 @@
     "currency": "USD"
    },
    "priceUnknown": false,
-   "description": "House, techno, 15,000 watt sound",
+   "description": "Ego-free house and techno",
    "details": "",
-   "url": "https://dice.fm/event/6ab77153d3d20600014c16ac",
+   "url": "https://dice.fm/event/6aae32fe0a37b4000196fcde",
    "tags": []
   },
   {
-   "id": "6ab69ed485733c00018e0397",
-   "title": "Nebula Tuesdays",
+   "id": "6ab7e175a820210001d68461",
+   "title": "AFROBEATS SOCIALS",
    "category": "nightlife",
-   "start": "2026-10-20T23:00:00-04:00",
+   "start": "2026-10-21T17:00:00-04:00",
    "end": null,
    "venue": {
-    "name": "Nebula",
-    "address": "135 W 41st St, New York, NY 10036, USA",
+    "name": "Acoustik Garden Lounge",
+    "address": "1515 Atlantic Avenue, Brooklyn, New York 11213, United States",
     "neighborhood": "",
-    "lat": 40.754987,
-    "lng": -73.985635
-   },
-   "price": {
-    "min": 22,
-    "max": 22,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://dice.fm/event/6ab69ed485733c00018e0397",
-   "tags": []
-  },
-  {
-   "id": "6a97a25d4d7687000143388a",
-   "title": "Wild Card Comedy Free Every Tuesday",
-   "category": "comedy",
-   "start": "2026-10-20T20:30:00-04:00",
-   "end": null,
-   "venue": {
-    "name": "ALPHAVILLE",
-    "address": "140 Wilson Ave, New York, New York 11237",
-    "neighborhood": "",
-    "lat": 40.700494,
-    "lng": -73.925859
+    "lat": 40.678095,
+    "lng": -73.938833
    },
    "price": {
     "min": 0,
@@ -169,41 +433,161 @@
     "currency": "USD"
    },
    "priceUnknown": false,
-   "description": "Standup showcase with surprise pop-ins",
+   "description": "",
    "details": "",
-   "url": "https://dice.fm/event/6a97a25d4d7687000143388a",
+   "url": "https://dice.fm/event/6ab7e175a820210001d68461",
    "tags": []
   },
   {
-   "id": "6ad50a57aadbc900016466a7",
-   "title": "KNICKS WATCH PARTY",
+   "id": "6aba87c304871f0001931612",
+   "title": "BABY BUCK",
+   "category": "nightlife",
+   "start": "2026-10-21T18:00:00-04:00",
+   "end": "2026-10-21T21:00:00-04:00",
+   "venue": {
+    "name": "Desert 5 Spot NY",
+    "address": "94 Wythe Avenue, Brooklyn, New York 11249, United States",
+    "neighborhood": "",
+    "lat": 40.721688,
+    "lng": -73.958429
+   },
+   "price": {
+    "min": 21,
+    "max": 21,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Beginner line dancing with tacos",
+   "details": "",
+   "url": "https://dice.fm/event/6aba87c304871f0001931612",
+   "tags": []
+  },
+  {
+   "id": "6ab2dc5da3414e0001a80bb2",
+   "title": "The Pink Rambo",
+   "category": "nightlife",
+   "start": "2026-10-21T21:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "The Sultan Room",
+    "address": "234 Starr St, Brooklyn, NY 11237, USA",
+    "neighborhood": "",
+    "lat": 40.705556,
+    "lng": -73.92234
+   },
+   "price": {
+    "min": 14,
+    "max": 14,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Textured melodies and progressive breakbeats",
+   "details": "",
+   "url": "https://dice.fm/event/6ab2dc5da3414e0001a80bb2",
+   "tags": []
+  },
+  {
+   "id": "6ac56a045278150001ce1bdc",
+   "title": "The Monster High Mash: A Monster High Drag Party",
+   "category": "nightlife",
+   "start": "2026-10-21T22:30:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "C'mon Everybody",
+    "address": "325 Franklin Ave, Brooklyn, NY 11238, USA",
+    "neighborhood": "",
+    "lat": 40.688309,
+    "lng": -73.956821
+   },
+   "price": {
+    "min": 13,
+    "max": 13,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6ac56a045278150001ce1bdc",
+   "tags": []
+  },
+  {
+   "id": "6ac56893520d0a000176ad2b",
+   "title": "GUILTY PLEASURES",
+   "category": "theater",
+   "start": "2026-10-21T19:30:00-04:00",
+   "end": "2026-10-21T22:00:00-04:00",
+   "venue": {
+    "name": "C'mon Everybody",
+    "address": "325 Franklin Ave, Brooklyn, NY 11238, USA",
+    "neighborhood": "",
+    "lat": 40.688309,
+    "lng": -73.956821
+   },
+   "price": {
+    "min": 13,
+    "max": 13,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6ac56893520d0a000176ad2b",
+   "tags": []
+  },
+  {
+   "id": "6ab2b8f008af180001953b07",
+   "title": "Skaterobics - All Experience Levels Instructional Class",
    "category": "sports",
-   "start": "2026-10-20T19:00:00-04:00",
-   "end": null,
+   "start": "2026-10-21T18:00:00-04:00",
+   "end": "2026-10-21T20:00:00-04:00",
    "venue": {
-    "name": "Althea's Hideaway NYC",
-    "address": "603 West 44th Street, New York City, New York 10036, United States",
+    "name": "Xanadu",
+    "address": "262 Starr Street, Brooklyn, New York 11237, United States",
     "neighborhood": "",
-    "lat": 40.762369,
-    "lng": -73.997612
+    "lat": 40.706435,
+    "lng": -73.921458
    },
    "price": {
-    "min": 0,
-    "max": 0,
+    "min": 24,
+    "max": 24,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://dice.fm/event/6ad50a57aadbc900016466a7",
+   "url": "https://dice.fm/event/6ab2b8f008af180001953b07",
    "tags": []
   },
   {
-   "id": "6a89033740dab90001d6a6b9",
-   "title": "DOWNSTAIRS: Level Up! Video Game Club",
+   "id": "6ab17197692a6a00013b7bbc",
+   "title": "Wednesday on Wheels ft. DJ Big Bob (skate)",
+   "category": "sports",
+   "start": "2026-10-21T20:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Xanadu",
+    "address": "262 Starr Street, Brooklyn, New York 11237, United States",
+    "neighborhood": "",
+    "lat": 40.706435,
+    "lng": -73.921458
+   },
+   "price": {
+    "min": 19,
+    "max": 19,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Disco, funk, R&B, and hip-hop",
+   "details": "",
+   "url": "https://dice.fm/event/6ab17197692a6a00013b7bbc",
+   "tags": []
+  },
+  {
+   "id": "6ab8711b69344700019f357d",
+   "title": "DOWNSTAIRS: Night of Fire J-Fashoween",
    "category": "community",
-   "start": "2026-10-20T19:00:00-04:00",
-   "end": "2026-10-20T21:00:00-04:00",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": "2026-10-21T23:00:00-04:00",
    "venue": {
     "name": "Purgatory",
     "address": "675 Central Ave, Brooklyn, NY 11207, USA",
@@ -217,11 +601,113 @@
     "currency": "USD"
    },
    "priceUnknown": false,
-   "description": "Indie arcades, CRTs, and tournaments",
+   "description": "Cosplays, makeup, and spooky vibes",
    "details": "",
-   "url": "https://dice.fm/event/6a89033740dab90001d6a6b9",
+   "url": "https://dice.fm/event/6ab8711b69344700019f357d",
+   "tags": []
+  },
+  {
+   "id": "6ad7884b33ec2f0001cc0ecb",
+   "title": "Art of Tabla - Immersive Hand & Finger Drumming Experience",
+   "category": "community",
+   "start": "2026-10-21T17:00:00-04:00",
+   "end": "2026-10-21T18:00:00-04:00",
+   "venue": {
+    "name": "Surya Sound Temple",
+    "address": "101 Wyckoff Avenue Unit 1H, Brooklyn, New York 11237, United States",
+    "neighborhood": "",
+    "lat": 40.704802,
+    "lng": -73.919562
+   },
+   "price": {
+    "min": 33,
+    "max": 33,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6ad7884b33ec2f0001cc0ecb",
+   "tags": []
+  },
+  {
+   "id": "6ad788c81a4b6900012a9be2",
+   "title": "Deep Meditation Sound Exploratory",
+   "category": "community",
+   "start": "2026-10-21T18:30:00-04:00",
+   "end": "2026-10-21T19:30:00-04:00",
+   "venue": {
+    "name": "Surya Sound Temple",
+    "address": "101 Wyckoff Avenue Unit 1H, Brooklyn, New York 11237, United States",
+    "neighborhood": "",
+    "lat": 40.704802,
+    "lng": -73.919562
+   },
+   "price": {
+    "min": 50,
+    "max": 50,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6ad788c81a4b6900012a9be2",
+   "tags": []
+  },
+  {
+   "id": "6aa6a71237f62900013f1227",
+   "title": "Drew Ryder Smith: Live Podcast",
+   "category": "community",
+   "start": "2026-10-21T18:00:00-04:00",
+   "end": "2026-10-21T19:00:00-04:00",
+   "venue": {
+    "name": "The Sharp Notes",
+    "address": "1 Garden State Plaza Boulevard, Paramus, New Jersey 07652, United States",
+    "neighborhood": "",
+    "lat": 40.702773,
+    "lng": -74.013351
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6aa6a71237f62900013f1227",
+   "tags": []
+  },
+  {
+   "id": "6aabd6d39399d30001054485",
+   "title": "The Universe Of Lonnie Liston Smith with Lovie, Michael Millions & Landon Schroder ['Cosmic Echo'], Crates of the Ancestors [DJ]",
+   "category": "music",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": "2026-10-21T22:00:00-04:00",
+   "venue": {
+    "name": "Public Records",
+    "address": "233 Butler St, Brooklyn, NY 11217, USA",
+    "neighborhood": "",
+    "lat": 40.682176,
+    "lng": -73.98639
+   },
+   "price": {
+    "min": 24,
+    "max": 24,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Biographical listening session",
+   "details": "",
+   "url": "https://dice.fm/event/6aabd6d39399d30001054485",
    "tags": []
   }
  ],
- "unplaced": []
+ "unplaced": [
+  {
+   "title": "LUSH: Joopiter, Stevo Blaque, Indigo Heaven",
+   "venue": "Jupiter Disco",
+   "url": "https://dice.fm/event/6ad688d6a42bf50001d3880f"
+  }
+ ]
 }

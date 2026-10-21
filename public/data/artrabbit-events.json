@@ -3,8 +3,51 @@
   "name": "ArtRabbit",
   "url": "https://www.artrabbit.com/all-listings/united-states/new-york"
  },
- "date": "2026-10-20",
- "fetchedAt": "2026-10-20T20:41:05-04:00",
- "events": [],
+ "date": "2026-10-21",
+ "fetchedAt": "2026-10-21T05:07:24-04:00",
+ "events": [
+  {
+   "id": "4821950",
+   "title": "Eunha Kim: Are We Home Yet?",
+   "category": "art",
+   "start": "2026-10-21T18:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "FLOHAUS Gallery",
+    "address": "",
+    "neighborhood": "",
+    "lat": 40.753957,
+    "lng": -73.989272
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Opening reception",
+   "details": "",
+   "url": "https://www.artrabbit.com/events/eunha-kim-are-we-home-yet",
+   "tags": []
+  },
+  {
+   "id": "4693067",
+   "title": "Winsor & Newton’s Global Art Mail New York Exhibition",
+   "category": "art",
+   "start": "2026-10-21T18:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Drawing Room Williamsburg",
+    "address": "",
+    "neighborhood": "",
+    "lat": 40.720788,
+    "lng": -73.95777
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Opening reception",
+   "details": "",
+   "url": "https://www.artrabbit.com/events/winsor-newtons-global-art-mail-new-york-exhibition",
+   "tags": []
+  }
+ ],
  "unplaced": []
 }

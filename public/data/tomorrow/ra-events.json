@@ -3,16 +3,80 @@
   "name": "Resident Advisor",
   "url": "https://ra.co/events/us/newyork"
  },
- "date": "2026-10-21",
- "fetchedAt": "2026-10-20T20:45:13-04:00",
+ "date": "2026-10-22",
+ "fetchedAt": "2026-10-21T05:13:23-04:00",
  "events": [
   {
-   "id": "2555009",
-   "title": "PARALLELS",
+   "id": "2499099",
+   "title": "1tbsp All Night",
    "category": "nightlife",
-   "start": "2026-10-21T22:00:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-22T04:00:00-04:00",
+   "start": "2026-10-22T21:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T03:00:00-04:00",
+   "venue": {
+    "name": "Nowadays",
+    "address": "56-06 Cooper Ave. Ridgewood, NY 11385 USA",
+    "neighborhood": "",
+    "lat": 40.692462,
+    "lng": -73.901536
+   },
+   "url": "https://ra.co/events/2499099"
+  },
+  {
+   "id": "2530989",
+   "title": "Joiah Invites: Alex Neri b2b Paolo Mosca, Cecilio",
+   "category": "nightlife",
+   "start": "2026-10-22T22:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T04:00:00-04:00",
+   "venue": {
+    "name": "Signal",
+    "address": "175 Morgan Ave, Brooklyn, NY 11237",
+    "neighborhood": "Brooklyn",
+    "lat": 40.71005,
+    "lng": -73.933575
+   },
+   "url": "https://ra.co/events/2530989"
+  },
+  {
+   "id": "2547783",
+   "title": "Ultra Violet, La Máquina del Tiempo - Dead Letter No.9",
+   "category": "nightlife",
+   "start": "2026-10-22T20:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T02:00:00-04:00",
+   "venue": {
+    "name": "Dead Letter No. 9",
+    "address": "63 Grand St, Brooklyn, NY 11249, USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.716105,
+    "lng": -73.964809
+   },
+   "url": "https://ra.co/events/2547783"
+  },
+  {
+   "id": "2542694",
+   "title": "feedbk with Rasaaq, Hugo",
+   "category": "nightlife",
+   "start": "2026-10-22T19:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T04:00:00-04:00",
+   "venue": {
+    "name": "feedbk",
+    "address": "153 Morgan Avenue",
+    "neighborhood": "",
+    "lat": 40.709394,
+    "lng": -73.933336
+   },
+   "url": "https://ra.co/events/2542694"
+  },
+  {
+   "id": "2553897",
+   "title": "SUBLIMINA",
+   "category": "nightlife",
+   "start": "2026-10-22T21:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T04:00:00-04:00",
    "venue": {
     "name": "H0L0",
     "address": "1090 Wyckoff Ave, Queens, NY 11385, United States",
@@ -20,63 +84,79 @@
     "lat": 40.694552,
     "lng": -73.902307
    },
-   "url": "https://ra.co/events/2555009"
+   "url": "https://ra.co/events/2553897"
   },
   {
-   "id": "2549226",
-   "title": "Community Hole",
+   "id": "2556102",
+   "title": "CODED Thursdays 10.22.26 w/ Ryan Farr, itsbenjamin",
    "category": "nightlife",
-   "start": "2026-10-21T22:00:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-22T04:00:00-04:00",
+   "start": "2026-10-22T21:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T02:00:00-04:00",
    "venue": {
-    "name": "Bossa Nova Civic Club",
-    "address": "1271 Myrtle Ave; Brooklyn, NY 11221; United States",
+    "name": "Club Rawhide",
+    "address": "250 W 26TH ST",
     "neighborhood": "",
-    "lat": 40.697974,
-    "lng": -73.927965
+    "lat": 40.746609,
+    "lng": -73.996259
    },
-   "url": "https://ra.co/events/2549226"
+   "url": "https://ra.co/events/2556102"
   },
   {
-   "id": "2552212",
-   "title": "Chess.irl X Stop1",
+   "id": "2556123",
+   "title": "Echo Chamber S1.E04: Sinai Sound System feat. Lasai",
    "category": "nightlife",
-   "start": "2026-10-21T19:00:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-22T01:00:00-04:00",
+   "start": "2026-10-22T22:30:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T02:30:00-04:00",
    "venue": {
-    "name": "Honey's",
-    "address": "93 Scott Avenue, Brooklyn, NY 11237",
+    "name": "public records",
+    "address": "233 Butler St, Brooklyn, NY 11217, USA",
     "neighborhood": "Brooklyn",
-    "lat": 40.710433,
-    "lng": -73.922995
+    "lat": 40.682261,
+    "lng": -73.986378
    },
-   "url": "https://ra.co/events/2552212"
+   "url": "https://ra.co/events/2556123"
   },
   {
-   "id": "2563441",
-   "title": "DANCE DANCE DANCE",
+   "id": "2562810",
+   "title": "THURSDAYS NYC",
    "category": "nightlife",
-   "start": "2026-10-21T22:00:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-22T04:00:00-04:00",
+   "start": "2026-10-22T22:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T04:00:00-04:00",
    "venue": {
-    "name": "Le Bain",
-    "address": "444 W 13th Street, New York, NY 10014",
-    "neighborhood": "Manhattan",
-    "lat": 40.741077,
-    "lng": -74.008285
+    "name": "Virgo",
+    "address": "324 Grand St, New York, New York, 10002",
+    "neighborhood": "",
+    "lat": 40.717284,
+    "lng": -73.990374
    },
-   "url": "https://ra.co/events/2563441"
+   "url": "https://ra.co/events/2562810"
   },
   {
-   "id": "2541040",
-   "title": "Open Decks with STEEN and MatchMyFreq Society",
+   "id": "2541774",
+   "title": "Reggaeton on Houston - Latin & Reggaeton Party NYC",
    "category": "nightlife",
-   "start": "2026-10-21T19:00:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-22T02:00:00-04:00",
+   "start": "2026-10-22T17:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T03:00:00-04:00",
+   "venue": {
+    "name": "San Antonios",
+    "address": "247 Eldridge St, New York, NY 10002, US",
+    "neighborhood": "Manhattan",
+    "lat": 40.72,
+    "lng": -73.99
+   },
+   "url": "https://ra.co/events/2541774"
+  },
+  {
+   "id": "2549165",
+   "title": "BUSH DÜF (Full Venue Event, Free with RSVP)",
+   "category": "nightlife",
+   "start": "2026-10-22T22:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T04:00:00-04:00",
    "venue": {
     "name": "SILO",
     "address": "90 Scott Ave, East Williamsburg, Brooklyn",
@@ -84,15 +164,79 @@
     "lat": 40.710564,
     "lng": -73.922686
    },
-   "url": "https://ra.co/events/2541040"
+   "url": "https://ra.co/events/2549165"
   },
   {
-   "id": "2540594",
-   "title": "LUSH: Joopiter, Stevo Blaque, Indigo Heaven",
+   "id": "2540916",
+   "title": "School Nite: Isabella Lovestory, B0YG1RL, Ali RQ (DJ)",
    "category": "nightlife",
-   "start": "2026-10-21T19:00:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-22T02:00:00-04:00",
+   "start": "2026-10-22T19:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T23:00:00-04:00",
+   "venue": {
+    "name": "MoMA PS1",
+    "address": "22-25 Jackson Avenue; Long Island City, NY 11101; United States",
+    "neighborhood": "",
+    "lat": 40.745469,
+    "lng": -73.947108
+   },
+   "url": "https://ra.co/events/2540916"
+  },
+  {
+   "id": "2549316",
+   "title": "Redirect: S'aint Panic, Elle Dee, Arvin T, KORBEAT, okocz, skoglund, Byld",
+   "category": "nightlife",
+   "start": "2026-10-22T22:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T04:00:00-04:00",
+   "venue": {
+    "name": "Good Room",
+    "address": "98 Meserole Ave, Brooklyn, NY 11222 USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.726945,
+    "lng": -73.952885
+   },
+   "url": "https://ra.co/events/2549316"
+  },
+  {
+   "id": "2548087",
+   "title": "Wife Inspection",
+   "category": "nightlife",
+   "start": "2026-10-22T19:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T04:00:00-04:00",
+   "venue": {
+    "name": "Bossa Nova Civic Club",
+    "address": "1271 Myrtle Ave; Brooklyn, NY 11221; United States",
+    "neighborhood": "",
+    "lat": 40.697974,
+    "lng": -73.927965
+   },
+   "url": "https://ra.co/events/2548087"
+  },
+  {
+   "id": "2549969",
+   "title": "ROMANCE w Eli Escobar",
+   "category": "nightlife",
+   "start": "2026-10-22T22:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T03:00:00-04:00",
+   "venue": {
+    "name": "Gabriela",
+    "address": "90 Wythe Ave, Brooklyn, NY 11249",
+    "neighborhood": "Brooklyn",
+    "lat": 40.721765,
+    "lng": -73.958345
+   },
+   "url": "https://ra.co/events/2549969"
+  },
+  {
+   "id": "2540597",
+   "title": "Footsteps: Blvck Truffle, N.B Rhythm, Majii",
+   "category": "nightlife",
+   "start": "2026-10-22T22:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T02:00:00-04:00",
    "venue": {
     "name": "Jupiter Disco",
     "address": "1237 Flushing Avenue, Brooklyn, NY 11237, USA",
@@ -100,31 +244,31 @@
     "lat": 40.70813,
     "lng": -73.923523
    },
-   "url": "https://ra.co/events/2540594"
+   "url": "https://ra.co/events/2540597"
   },
   {
-   "id": "2554854",
-   "title": "Italo Kiss: Italo Disco and Euro Electronica",
+   "id": "2561891",
+   "title": "CLOSE FRIENDS",
    "category": "nightlife",
-   "start": "2026-10-21T21:30:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-22T02:00:00-04:00",
+   "start": "2026-10-22T22:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T04:00:00-04:00",
    "venue": {
-    "name": "Danger Danger",
-    "address": "232 Knickerbocker Ave, New York, 11237",
-    "neighborhood": "",
-    "lat": 40.702811,
-    "lng": -73.925888
+    "name": "Le Bain",
+    "address": "444 W 13th Street, New York, NY 10014",
+    "neighborhood": "Manhattan",
+    "lat": 40.741077,
+    "lng": -74.008285
    },
-   "url": "https://ra.co/events/2554854"
+   "url": "https://ra.co/events/2561891"
   },
   {
-   "id": "2556507",
-   "title": "Bounce Project",
+   "id": "2555024",
+   "title": "Creatures of the night",
    "category": "nightlife",
-   "start": "2026-10-21T22:00:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-22T02:00:00-04:00",
+   "start": "2026-10-22T22:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T03:00:00-04:00",
    "venue": {
     "name": "Mood Ring",
     "address": "1260 Myrtle Ave, Brooklyn, NY 11221, USA",
@@ -132,111 +276,15 @@
     "lat": 40.697726,
     "lng": -73.926908
    },
-   "url": "https://ra.co/events/2556507"
+   "url": "https://ra.co/events/2555024"
   },
   {
-   "id": "2492948",
-   "title": "Sonosphere: Episodic Memory, Olivia Mancuso, Kris Harris",
+   "id": "2563801",
+   "title": "Vin Gioffre + Courtney K",
    "category": "nightlife",
-   "start": "2026-10-21T19:00:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-21T23:59:00-04:00",
-   "venue": {
-    "name": "Sleepwalk",
-    "address": "251 Bushwick Avenue, Brooklyn, NY, 11211",
-    "neighborhood": "Brooklyn",
-    "lat": 40.714464,
-    "lng": -73.942319
-   },
-   "url": "https://ra.co/events/2492948"
-  },
-  {
-   "id": "2544446",
-   "title": "The Pink Rambo",
-   "category": "nightlife",
-   "start": "2026-10-21T21:00:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-22T02:00:00-04:00",
-   "venue": {
-    "name": "The Sultan Room",
-    "address": "234 Starr St. Brooklyn, NY 11237",
-    "neighborhood": "",
-    "lat": 40.705586,
-    "lng": -73.922342
-   },
-   "url": "https://ra.co/events/2544446"
-  },
-  {
-   "id": "2543377",
-   "title": "Playback 0040",
-   "category": "nightlife",
-   "start": "2026-10-21T18:00:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-21T22:00:00-04:00",
-   "venue": {
-    "name": "Bar Laika",
-    "address": "224 Greene Ave Brooklyn, New York",
-    "neighborhood": "",
-    "lat": 40.687003,
-    "lng": -73.962088
-   },
-   "url": "https://ra.co/events/2543377"
-  },
-  {
-   "id": "2543496",
-   "title": "Out The Bag: Choukroun b2b Monk",
-   "category": "nightlife",
-   "start": "2026-10-21T20:00:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-22T03:00:00-04:00",
-   "venue": {
-    "name": "Outer Heaven",
-    "address": "191 Chrystie Street, New York, NY 10002",
-    "neighborhood": "Manhattan",
-    "lat": 40.722006,
-    "lng": -73.992275
-   },
-   "url": "https://ra.co/events/2543496"
-  },
-  {
-   "id": "2550033",
-   "title": "BEYOND THE STARDUST",
-   "category": "nightlife",
-   "start": "2026-10-21T19:00:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-21T20:30:00-04:00",
-   "venue": {
-    "name": "The Flea Theater",
-    "address": "20 Thomas St, New York, NY 10007",
-    "neighborhood": "Manhattan",
-    "lat": 40.72,
-    "lng": -74.01
-   },
-   "url": "https://ra.co/events/2550033"
-  },
-  {
-   "id": "2558057",
-   "title": "SOB's presents: Celia Cruz Birthday Tribute",
-   "category": "nightlife",
-   "start": "2026-10-21T18:00:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-21T22:00:00-04:00",
-   "venue": {
-    "name": "SOBs",
-    "address": "204 Varick Street, New York, NY 10014-4810, USA",
-    "neighborhood": "Manhattan",
-    "lat": 40.728449,
-    "lng": -74.005124
-   },
-   "url": "https://ra.co/events/2558057"
-  },
-  {
-   "id": "2560656",
-   "title": "Wednesday JAmZZ: Adam Aronesty Trio",
-   "category": "nightlife",
-   "start": "2026-10-21T19:00:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-21T23:59:00-04:00",
+   "start": "2026-10-22T20:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T02:00:00-04:00",
    "venue": {
     "name": "Moondog Hifi",
     "address": "119 Ingraham Street, Brooklyn, NY 11237",
@@ -244,15 +292,63 @@
     "lat": 40.707894,
     "lng": -73.929192
    },
-   "url": "https://ra.co/events/2560656"
+   "url": "https://ra.co/events/2563801"
   },
   {
-   "id": "2563525",
-   "title": "Tropico Beats",
+   "id": "2556415",
+   "title": "Dance NYC - NEW YORKERS FOR DANCE",
    "category": "nightlife",
-   "start": "2026-10-21T17:00:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-22T00:00:00-04:00",
+   "start": "2026-10-22T18:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T21:00:00-04:00",
+   "venue": {
+    "name": "26 Bridge",
+    "address": "26 Bridge Street, Brooklyn, NY 11201",
+    "neighborhood": "Brooklyn",
+    "lat": 40.703971,
+    "lng": -73.984909
+   },
+   "url": "https://ra.co/events/2556415"
+  },
+  {
+   "id": "2566032",
+   "title": "Mind Cargo: Grace & Titino, Dj female",
+   "category": "nightlife",
+   "start": "2026-10-22T21:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T03:00:00-04:00",
+   "venue": {
+    "name": "Mansions",
+    "address": "46-63 Metropolitan Ave, Queens, NY, 11385, USA",
+    "neighborhood": "Queens",
+    "lat": 40.713999,
+    "lng": -73.921355
+   },
+   "url": "https://ra.co/events/2566032"
+  },
+  {
+   "id": "2538109",
+   "title": "Brooklyn Experimental Electronic Music Group October Artist Showcase",
+   "category": "nightlife",
+   "start": "2026-10-22T19:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-22T23:00:00-04:00",
+   "venue": {
+    "name": "Wonderville",
+    "address": "1186 Broadway, Brooklyn, NY 11221, USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.692392,
+    "lng": -73.927463
+   },
+   "url": "https://ra.co/events/2538109"
+  },
+  {
+   "id": "2563526",
+   "title": "Pierrot & Friends",
+   "category": "nightlife",
+   "start": "2026-10-22T17:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T02:00:00-04:00",
    "venue": {
     "name": "MAD Radio NYC",
     "address": "395 WYTHE AVE, BROOKLYN, NEW YORK",
@@ -260,14 +356,254 @@
     "lat": 40.711144,
     "lng": -73.966355
    },
-   "url": "https://ra.co/events/2563525"
+   "url": "https://ra.co/events/2563526"
+  },
+  {
+   "id": "2563809",
+   "title": "CLÜBSESSION VOL. 15: SPIN 2 SIN",
+   "category": "nightlife",
+   "start": "2026-10-22T20:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T02:00:00-04:00",
+   "venue": {
+    "name": "Mehanata Bar",
+    "address": "113, Ludlow street",
+    "neighborhood": "",
+    "lat": 40.719444,
+    "lng": -73.988794
+   },
+   "url": "https://ra.co/events/2563809"
+  },
+  {
+   "id": "2560321",
+   "title": "HELL IN A CELL",
+   "category": "nightlife",
+   "start": "2026-10-22T22:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T04:00:00-04:00",
+   "venue": {
+    "name": "ErF Studios",
+    "address": "1 ingraham st, Brooklyn NY, 11206",
+    "neighborhood": "",
+    "lat": 40.707026,
+    "lng": -73.933483
+   },
+   "url": "https://ra.co/events/2560321"
+  },
+  {
+   "id": "2552175",
+   "title": "Yoder Album Release Show feat. Smugly Ugly, C.W. Headley, & angel gabri",
+   "category": "nightlife",
+   "start": "2026-10-22T19:30:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-22T23:30:00-04:00",
+   "venue": {
+    "name": "Gold Sounds",
+    "address": "44 Wilson Ave, Brooklyn, New York City",
+    "neighborhood": "",
+    "lat": 40.702624,
+    "lng": -73.929611
+   },
+   "url": "https://ra.co/events/2552175"
+  },
+  {
+   "id": "2562783",
+   "title": "Soft Violence feat. Valley Latini & Friends",
+   "category": "nightlife",
+   "start": "2026-10-22T21:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T02:00:00-04:00",
+   "venue": {
+    "name": "Danger Danger",
+    "address": "232 Knickerbocker Ave, New York, 11237",
+    "neighborhood": "",
+    "lat": 40.702811,
+    "lng": -73.925888
+   },
+   "url": "https://ra.co/events/2562783"
+  },
+  {
+   "id": "2557090",
+   "title": "Casa del Halloween - Reggaeton Party Cocktail Bar",
+   "category": "nightlife",
+   "start": "2026-10-22T17:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T03:00:00-04:00",
+   "venue": {
+    "name": "San Antonios",
+    "address": "247 Eldridge St, New York, NY 10002, US",
+    "neighborhood": "Manhattan",
+    "lat": 40.72,
+    "lng": -73.99
+   },
+   "url": "https://ra.co/events/2557090"
+  },
+  {
+   "id": "2557286",
+   "title": "SOB's presents: Bar-Side R&B: Deep Cuts Only",
+   "category": "nightlife",
+   "start": "2026-10-22T22:30:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T03:00:00-04:00",
+   "venue": {
+    "name": "SOBs",
+    "address": "204 Varick Street, New York, NY 10014-4810, USA",
+    "neighborhood": "Manhattan",
+    "lat": 40.728449,
+    "lng": -74.005124
+   },
+   "url": "https://ra.co/events/2557286"
+  },
+  {
+   "id": "2543497",
+   "title": "Pregame presents: Burchan b2b Ryan King",
+   "category": "nightlife",
+   "start": "2026-10-22T20:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T04:00:00-04:00",
+   "venue": {
+    "name": "Outer Heaven",
+    "address": "191 Chrystie Street, New York, NY 10002",
+    "neighborhood": "Manhattan",
+    "lat": 40.722006,
+    "lng": -73.992275
+   },
+   "url": "https://ra.co/events/2543497"
+  },
+  {
+   "id": "2545308",
+   "title": "Support Women DJs Open Decks",
+   "category": "nightlife",
+   "start": "2026-10-22T19:30:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T00:30:00-04:00",
+   "venue": {
+    "name": "Delirium",
+    "address": "286 Meserole, Brooklyn, NY 11206, United States",
+    "neighborhood": "Brooklyn",
+    "lat": 40.708497,
+    "lng": -73.936611
+   },
+   "url": "https://ra.co/events/2545308"
+  },
+  {
+   "id": "2550056",
+   "title": "BEYOND THE STARDUST",
+   "category": "nightlife",
+   "start": "2026-10-22T19:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-22T20:30:00-04:00",
+   "venue": {
+    "name": "The Flea Theater",
+    "address": "20 Thomas St, New York, NY 10007",
+    "neighborhood": "Manhattan",
+    "lat": 40.72,
+    "lng": -74.01
+   },
+   "url": "https://ra.co/events/2550056"
+  },
+  {
+   "id": "2565768",
+   "title": "Yalla Yalla",
+   "category": "nightlife",
+   "start": "2026-10-22T20:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T02:00:00-04:00",
+   "venue": {
+    "name": "Althea's Rooftop",
+    "address": "603 W 44th St, New York, NY 10036",
+    "neighborhood": "Manhattan",
+    "lat": 40.762369,
+    "lng": -73.997612
+   },
+   "url": "https://ra.co/events/2565768"
+  },
+  {
+   "id": "2540213",
+   "title": "Juliana: USA Tour en New York",
+   "category": "nightlife",
+   "start": "2026-10-22T18:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-22T22:00:00-04:00",
+   "venue": {
+    "name": "SOBs",
+    "address": "204 Varick Street, New York, NY 10014-4810, USA",
+    "neighborhood": "Manhattan",
+    "lat": 40.728449,
+    "lng": -74.005124
+   },
+   "url": "https://ra.co/events/2540213"
+  },
+  {
+   "id": "2545966",
+   "title": "Rendezvous Grooves Open decks",
+   "category": "nightlife",
+   "start": "2026-10-22T21:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T02:00:00-04:00",
+   "venue": {
+    "name": "Idle Mind Tavern",
+    "address": "623 Manhattan Ave, Brooklyn, NY 11222",
+    "neighborhood": "Brooklyn",
+    "lat": 40.723604,
+    "lng": -73.950954
+   },
+   "url": "https://ra.co/events/2545966"
+  },
+  {
+   "id": "2565105",
+   "title": "CLUB DAMAGE: INDIE SLEAZE",
+   "category": "nightlife",
+   "start": "2026-10-22T19:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T01:00:00-04:00",
+   "venue": {
+    "name": "Friends & Lovers",
+    "address": "641 Classon Avenue Brooklyn NY",
+    "neighborhood": "",
+    "lat": 40.678534,
+    "lng": -73.958435
+   },
+   "url": "https://ra.co/events/2565105"
+  },
+  {
+   "id": "2565458",
+   "title": "Into:Haven",
+   "category": "nightlife",
+   "start": "2026-10-22T23:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T04:00:00-04:00",
+   "venue": {
+    "name": "Haven Lounge",
+    "address": "683 Grand Street Brooklyn NY 11211",
+    "neighborhood": "",
+    "lat": 40.711751,
+    "lng": -73.945213
+   },
+   "url": "https://ra.co/events/2565458"
+  },
+  {
+   "id": "2565910",
+   "title": "A&A (ITA)",
+   "category": "nightlife",
+   "start": "2026-10-22T22:00:00-04:00",
+   "listedDay": "2026-10-22",
+   "end": "2026-10-23T04:00:00-04:00",
+   "venue": {
+    "name": "Laissez Faire",
+    "address": "10 Theatre Alley, New York, NY 10038",
+    "neighborhood": "Manhattan",
+    "lat": 40.71115,
+    "lng": -74.00696
+   },
+   "url": "https://ra.co/events/2565910"
   }
  ],
  "unplaced": [
   {
-   "title": "AMBIENT MUSIC (For Regeneration & Connection)",
+   "title": "Music Through the eyes of Ashes57",
    "address": null,
-   "url": "https://ra.co/events/2551089"
+   "url": "https://ra.co/events/2537974"
   }
  ]
 }

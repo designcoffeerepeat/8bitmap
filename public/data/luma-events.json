@@ -3,80 +3,160 @@
   "name": "Luma NYC",
   "url": "https://luma.com/nyc"
  },
- "date": "2026-10-20",
- "fetchedAt": "2026-10-20T20:41:34-04:00",
+ "date": "2026-10-21",
+ "fetchedAt": "2026-10-21T05:07:50-04:00",
  "events": [
   {
-   "id": "evt-zJ7oHoEuT4SLW5C",
-   "title": "Cycol Gallery, Wait And Hope Foundation, and One Love Art Present: Monochrome",
-   "category": "art",
-   "start": "2026-10-20T18:00:00-04:00",
-   "end": "2026-10-22T20:00:00-04:00",
+   "id": "evt-heTu9wrNlIirk1G",
+   "title": "Squarespace Circle Day 2026 (In-Person)",
+   "category": "community",
+   "start": "2026-10-21T09:30:00-04:00",
+   "end": "2026-10-21T17:30:00-04:00",
    "venue": {
-    "name": "Cycol Gallery",
-    "address": "Cycol Gallery, 91 Allen St, New York, NY 10002, USA",
-    "neighborhood": "Lower East Side",
-    "lat": 40.718597,
-    "lng": -73.991038
+    "name": "8 Clarkson St",
+    "address": "8 Clarkson St, New York, NY 10014, USA",
+    "neighborhood": "Manhattan",
+    "lat": 40.729227,
+    "lng": -74.005758
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Squarespace Circle calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/circle-day-2026-in-person",
+   "tags": []
+  },
+  {
+   "id": "evt-DkcUT4ijLY01sTK",
+   "title": "Net 30 - applied AI summit on the future of finance",
+   "category": "community",
+   "start": "2026-10-21T17:00:00-04:00",
+   "end": "2026-10-21T20:30:00-04:00",
+   "venue": {
+    "name": "The Times Center",
+    "address": "The Times Center, 242 W 41st St, New York, NY 10036, USA",
+    "neighborhood": "Theater District",
+    "lat": 40.755749,
+    "lng": -73.989563
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Monk calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/3tto5407",
+   "tags": []
+  },
+  {
+   "id": "evt-AHWbSD7K3Q7FzPA",
+   "title": "Built in Person: How Great Companies Scale IRL",
+   "category": "community",
+   "start": "2026-10-21T18:00:00-04:00",
+   "end": "2026-10-21T20:30:00-04:00",
+   "venue": {
+    "name": "Corgi Cafe",
+    "address": "Corgi Cafe, 121 E 27th St, New York, NY 10016, USA",
+    "neighborhood": "Rose Hill",
+    "lat": 40.742401,
+    "lng": -73.983429
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Corgi NYC calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/corginyc-ervo",
+   "tags": []
+  },
+  {
+   "id": "evt-iHrLMN2Rksj0oEC",
+   "title": "BRC x New Balance",
+   "category": "community",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": "2026-10-21T20:30:00-04:00",
+   "venue": {
+    "name": "Brooklyn Running Company",
+    "address": "Brooklyn Running Company, 480 Bergen St, Brooklyn, NY 11217, USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.680666,
+    "lng": -73.975468
    },
    "price": null,
    "priceUnknown": false,
    "description": "From the Personal calendar on Luma",
    "details": "",
-   "url": "https://luma.com/do25ffxm",
+   "url": "https://luma.com/cu82batg",
    "tags": []
   },
   {
-   "id": "evt-SqdsSBaD3yGkNYY",
-   "title": "Figma agent: Builder night (Tuesday, October 20)",
+   "id": "evt-BsmcOi27AxagBFs",
+   "title": "Philosophy Club x Dead Letter #9",
    "category": "community",
-   "start": "2026-10-20T18:00:00-04:00",
-   "end": "2026-10-20T21:00:00-04:00",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": "2026-10-21T22:00:00-04:00",
    "venue": {
-    "name": "Figma NYC",
-    "address": "Figma NYC, 27 W 23rd St, New York, NY 10010, USA",
-    "neighborhood": "Flatiron District",
-    "lat": 40.742232,
-    "lng": -73.990626
+    "name": "Dead Letter No. 9",
+    "address": "Dead Letter No. 9, 63 Grand St, Brooklyn, NY 11249, USA",
+    "neighborhood": "Williamsburg",
+    "lat": 40.716096,
+    "lng": -73.964839
    },
    "price": null,
    "priceUnknown": false,
-   "description": "From the Figma for Education calendar on Luma",
+   "description": "From the The New York Philosophy Club calendar on Luma",
    "details": "",
-   "url": "https://luma.com/uuo7sc2e",
+   "url": "https://luma.com/ivsqpgf8",
    "tags": []
   },
   {
-   "id": "evt-rFjHRgf96II0kQC",
-   "title": "NY Knicks Season Opener Watch Party",
-   "category": "nightlife",
-   "start": "2026-10-20T18:00:00-04:00",
-   "end": "2026-10-20T21:00:00-04:00",
+   "id": "evt-DLA4eAbqZ6g0ABA",
+   "title": "The New York Philosophy Club: Williamsburg",
+   "category": "community",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": "2026-10-21T22:00:00-04:00",
    "venue": {
-    "name": "Jungle Bird",
-    "address": "Jungle Bird, 174 8th Ave, New York, NY 10011, USA",
-    "neighborhood": "Chelsea",
-    "lat": 40.742604,
-    "lng": -74.000177
+    "name": "McCarren Parkhouse",
+    "address": "McCarren Parkhouse, 855 Lorimer St, Brooklyn, NY 11222, USA",
+    "neighborhood": "Williamsburg",
+    "lat": 40.722,
+    "lng": -73.9519
    },
    "price": null,
    "priceUnknown": false,
-   "description": "From the All Things Advertising Networking Events calendar on Luma",
+   "description": "From the The New York Philosophy Club calendar on Luma",
    "details": "",
-   "url": "https://luma.com/allthings-1dk6",
+   "url": "https://luma.com/fmh7jclh",
+   "tags": []
+  },
+  {
+   "id": "evt-WiW3klcHyXYbmAH",
+   "title": "THE RESIDENCY ONE YEAR ANNIVERSARY",
+   "category": "community",
+   "start": "2026-10-21T19:00:00-04:00",
+   "end": "2026-10-21T21:00:00-04:00",
+   "venue": {
+    "name": "130 Madison St",
+    "address": "130 Madison St, New York, NY 10002, USA",
+    "neighborhood": "Two Bridges",
+    "lat": 40.712082,
+    "lng": -73.993776
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Personal calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/v2j45fa3",
    "tags": []
   }
  ],
  "unplaced": [
   {
-   "title": "AI Agents Build Day with Genspark",
+   "title": "Robots That Care Summit",
    "address": "address shown to guests only",
-   "url": "https://luma.com/genspark-build"
+   "url": "https://luma.com/8fobi9xw"
   },
   {
-   "title": "Inside the Loop with Mercor: RL Environments, Benchmarks, and Evals",
+   "title": "You Can See Everything Private Screening - Presented by Concentrate AI × RRE Ventures",
    "address": "address shown to guests only",
-   "url": "https://luma.com/kkfmhwzj"
+   "url": "https://luma.com/yshtx07x"
   }
  ]
 }
