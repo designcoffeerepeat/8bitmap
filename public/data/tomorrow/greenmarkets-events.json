@@ -1,0 +1,379 @@
+{
+ "source": {
+  "name": "NYC Farmers Markets",
+  "url": "https://data.cityofnewyork.us/d/8vwk-6iz2"
+ },
+ "date": "2026-10-22",
+ "fetchedAt": "2026-10-21T16:26:06-04:00",
+ "events": [
+  {
+   "id": "bronxworks-farm-stand",
+   "title": "BronxWorks Farm Stand",
+   "category": "food",
+   "start": "2026-10-22T10:00:00-04:00",
+   "end": "2026-10-22T14:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "BronxWorks Farm Stand",
+    "address": "1130 Grand Concourse",
+    "neighborhood": "Bronx",
+    "lat": 40.832759,
+    "lng": -73.919296
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farm stand",
+   "details": "Open Thursday, 10 a.m.-2 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  },
+  {
+   "id": "harvest-home-mt-eden-malls-farmers-market",
+   "title": "Harvest Home Mt. Eden Malls Farmers Market",
+   "category": "food",
+   "start": "2026-10-22T08:00:00-04:00",
+   "end": "2026-10-22T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Harvest Home Mt. Eden Malls Farmers Market",
+    "address": "Mt. Eden & Morris Aves. (Claremont Park)",
+    "neighborhood": "Bronx",
+    "lat": 40.8429,
+    "lng": -73.909558
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farmers market",
+   "details": "Open Tuesday & Thursday, 8 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  },
+  {
+   "id": "harvest-home-st-mary-s-park-farm-stand",
+   "title": "Harvest Home St. Mary's Park Farm Stand",
+   "category": "food",
+   "start": "2026-10-22T08:00:00-04:00",
+   "end": "2026-10-22T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Harvest Home St. Mary's Park Farm Stand",
+    "address": "E. 149th St. & Eagle Ave. (St. Mary's Park)",
+    "neighborhood": "Bronx",
+    "lat": 40.8139,
+    "lng": -73.911812
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farm stand",
+   "details": "Open Thursday, 8 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  },
+  {
+   "id": "riverdale-neighborhood-house-youth-market",
+   "title": "Riverdale Neighborhood House Youth Market",
+   "category": "food",
+   "start": "2026-10-22T14:30:00-04:00",
+   "end": "2026-10-22T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Riverdale Neighborhood House Youth Market",
+    "address": "5521 Mosholu Ave.",
+    "neighborhood": "Bronx",
+    "lat": 40.903039,
+    "lng": -73.90375
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farmers market",
+   "details": "Open Thursday, 2:30 p.m. - 6 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  },
+  {
+   "id": "boro-park-greenmarket",
+   "title": "Boro Park Greenmarket",
+   "category": "food",
+   "start": "2026-10-22T08:00:00-04:00",
+   "end": "2026-10-22T14:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Boro Park Greenmarket",
+    "address": "14th Ave. bet. 49th & 50th Sts",
+    "neighborhood": "Brooklyn",
+    "lat": 40.633285,
+    "lng": -73.990548
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farmers market",
+   "details": "Open Thursday, 8 a.m. - 2 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  },
+  {
+   "id": "harvest-home-brower-park-farm-stand",
+   "title": "Harvest Home Brower Park Farm Stand",
+   "category": "food",
+   "start": "2026-10-22T08:00:00-04:00",
+   "end": "2026-10-22T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Harvest Home Brower Park Farm Stand",
+    "address": "Brooklyn Ave. & Prospect Pl.",
+    "neighborhood": "Brooklyn",
+    "lat": 40.674,
+    "lng": -73.944544
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farm stand",
+   "details": "Open Thursday, 8 a.m - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  },
+  {
+   "id": "opp-hub-farmstand",
+   "title": "Opp Hub Farmstand",
+   "category": "food",
+   "start": "2026-10-22T14:00:00-04:00",
+   "end": "2026-10-22T17:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Opp Hub Farmstand",
+    "address": "1390 Pennsylvania Ave",
+    "neighborhood": "Brooklyn",
+    "lat": 40.647788,
+    "lng": -73.881704
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farmers market",
+   "details": "Open Thursday, 2 - 5 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  },
+  {
+   "id": "saratoga-farm-stand",
+   "title": "Saratoga Farm Stand",
+   "category": "food",
+   "start": "2026-10-22T10:00:00-04:00",
+   "end": "2026-10-22T14:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Saratoga Farm Stand",
+    "address": "1965-1971 Fulton St.",
+    "neighborhood": "Brooklyn",
+    "lat": 40.678562,
+    "lng": -8e-05
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farm stand",
+   "details": "Open Tuesday-Saturday, 10 a.m. - 2 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  },
+  {
+   "id": "175th-street-greenmarket",
+   "title": "175th Street Greenmarket",
+   "category": "food",
+   "start": "2026-10-22T08:00:00-04:00",
+   "end": "2026-10-22T16:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "175th Street Greenmarket",
+    "address": "W. 175th St. bet. Wadsworth Ave. & Broadway",
+    "neighborhood": "Manhattan",
+    "lat": 40.845948,
+    "lng": -73.937811
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farmers market",
+   "details": "Open Thursday, 8 a.m. - 4p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  },
+  {
+   "id": "columbia-greenmarket",
+   "title": "Columbia Greenmarket",
+   "category": "food",
+   "start": "2026-10-22T08:00:00-04:00",
+   "end": "2026-10-22T16:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Columbia Greenmarket",
+    "address": "Broadway & W. 114th St.",
+    "neighborhood": "Manhattan",
+    "lat": 40.807145,
+    "lng": -73.964265
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farmers market",
+   "details": "Open Thursday & Sunday, 8 a.m. - 4 p.m.. Open year round. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  },
+  {
+   "id": "harvest-home-east-harlem-farmers-market",
+   "title": "Harvest Home East Harlem Farmers Market",
+   "category": "food",
+   "start": "2026-10-22T08:00:00-04:00",
+   "end": "2026-10-22T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Harvest Home East Harlem Farmers Market",
+    "address": "E. 104th St. & 3rd Ave.",
+    "neighborhood": "Manhattan",
+    "lat": 40.7903,
+    "lng": -73.945635
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farmers market",
+   "details": "Open Thursday, 8 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  },
+  {
+   "id": "tucker-square-greenmarket",
+   "title": "Tucker Square Greenmarket",
+   "category": "food",
+   "start": "2026-10-22T08:00:00-04:00",
+   "end": "2026-10-22T16:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Tucker Square Greenmarket",
+    "address": "W 66th St. & Broadway",
+    "neighborhood": "Manhattan",
+    "lat": 40.773709,
+    "lng": -73.98196
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farmers market",
+   "details": "Open Thursday & Saturday, 8 a.m. - 4 p.m.. Open year round. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  },
+  {
+   "id": "uptown-good-food-farm-stand-csa",
+   "title": "Uptown Good Food Farm Stand & CSA",
+   "category": "food",
+   "start": "2026-10-22T16:00:00-04:00",
+   "end": "2026-10-22T19:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Uptown Good Food Farm Stand & CSA",
+    "address": "330 St. Nicholas Ave.",
+    "neighborhood": "Manhattan",
+    "lat": 40.81172,
+    "lng": -73.951795
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farm stand",
+   "details": "Open Thursday, 4 p.m. - 7 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  },
+  {
+   "id": "far-rock-farm-stand",
+   "title": "Far Rock Farm Stand",
+   "category": "food",
+   "start": "2026-10-22T10:00:00-04:00",
+   "end": "2026-10-22T14:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Far Rock Farm Stand",
+    "address": "45-55 Beach Channel Dr.",
+    "neighborhood": "Queens",
+    "lat": 40.595572,
+    "lng": -73.777001
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farm stand",
+   "details": "Open Tuesday-Saturday, 10 a.m. - 2 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  },
+  {
+   "id": "queens-county-farm-museum-farm-stand",
+   "title": "Queens County Farm Museum Farm Stand",
+   "category": "food",
+   "start": "2026-10-22T10:00:00-04:00",
+   "end": "2026-10-22T16:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Queens County Farm Museum Farm Stand",
+    "address": "73-50 Little Neck Pkwy",
+    "neighborhood": "Queens",
+    "lat": 40.748163,
+    "lng": -73.719431
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farm stand",
+   "details": "Open Wednesday - Sunday, 10 a.m. - 4 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  },
+  {
+   "id": "heritage-farm-stand-compost-demonstration-site",
+   "title": "Heritage Farm Stand (Compost Demonstration Site)",
+   "category": "food",
+   "start": "2026-10-22T15:30:00-04:00",
+   "end": "2026-10-22T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Heritage Farm Stand (Compost Demonstration Site)",
+    "address": "1000 Richmond Terrace (compost demonstration site)",
+    "neighborhood": "Staten Island",
+    "lat": 40.645075,
+    "lng": -74.104753
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farm stand",
+   "details": "Open Thursday & Saturday, 3:30 p.m. - 6 p.m. (Thursday); 9 a.m. - 12 p.m. (Saturday). Seasonal market. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  }
+ ],
+ "unplaced": []
+}

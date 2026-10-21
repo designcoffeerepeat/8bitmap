@@ -123,7 +123,22 @@ def clean_address(a):
     return re.sub(r'\s+', ' ', html.unescape(a or '').replace('\\/', '/')).strip()
 
 
+NYC_ZIP = ('100', '101', '102', '103', '104', '110', '111', '112', '113', '114', '116')
+
+
+def outside_nyc(text):
+    """True when an address ends in a ZIP or names a state outside the city. GeoSearch only
+    knows NYC, so it would match the same street name in the wrong place (Newark's
+    1 Center St became one in the Bronx)."""
+    if re.search(r'\b(NJ|New Jersey|CT|Connecticut)\b', text):
+        return True
+    z = re.search(r'[ ,](\d{5})(?:-\d{4})?(?:,?\s*(?:USA|United States))?\s*$', text)
+    return bool(z) and not z.group(1).startswith(NYC_ZIP)
+
+
 def geosearch(text, focus=None, size=1):
+    if outside_nyc(text):
+        return []
     params = {'text': text, 'size': size}
     if focus:
         params['focus.point.lat'], params['focus.point.lon'] = focus

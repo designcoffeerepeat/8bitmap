@@ -4,6 +4,10 @@ import { CATEGORIES, CATEGORY_LABELS } from './events/schema.js';
 import { CATEGORY_COLORS } from './map/palette.js';
 import NEIGHBORHOODS from './map/neighborhoods.json';
 import nycgovSource from './events/sources/nycgov.js';
+import { initMonster } from './monster.js';
+import { initSunbather } from './sunbather.js';
+import { initFlyingVan } from './flying-van.js';
+import { initRooftopGrill } from './rooftop-grill.js';
 
 const LIST_PAGE = 8;
 
@@ -48,8 +52,14 @@ const map = createMap(el.map, { pixelSize: 2 });
 
 // Official neighborhood names appear once you zoom in past the borough labels.
 for (const n of NEIGHBORHOODS) map.addAnchor(n.name, n.lat, n.lng, { className: 'hood', minZoom: 2.4 });
-// Staten Island is off the map to the south; this sign sits in the harbour until it is drawn.
-map.addAnchor('STATEN ISLAND\nCOMING SOON', 40.6725, -74.0420, { className: 'soon-sign' });
+
+// The monster easter egg (site menu, or by itself after two minutes).
+initMonster(map);
+// Full-zoom easter eggs: a sunbather on Brighton Beach, a flying van over the Lower East Side
+// and a rooftop cookout on the Upper West Side.
+initSunbather(map);
+initFlyingVan(map);
+initRooftopGrill(map);
 
 // Every publisher with events on the shown day, plus any registered source that returned none.
 let publishers = new Map();

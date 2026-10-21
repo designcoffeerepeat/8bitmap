@@ -4,7 +4,7 @@
   "url": "https://dice.fm/browse/new_york-5bbf4db0f06331478e9b2c59"
  },
  "date": "2026-10-21",
- "fetchedAt": "2026-10-21T13:03:46-04:00",
+ "fetchedAt": "2026-10-21T16:24:00-04:00",
  "events": [
   {
    "id": "6abd6218c989d200013a0557",
@@ -92,8 +92,8 @@
     "lng": -73.929618
    },
    "price": {
-    "min": 15,
-    "max": 15,
+    "min": 18,
+    "max": 18,
     "currency": "USD"
    },
    "priceUnknown": false,
@@ -628,30 +628,6 @@
    "description": "",
    "details": "",
    "url": "https://dice.fm/event/6ad788c81a4b6900012a9be2",
-   "tags": []
-  },
-  {
-   "id": "6aa6a71237f62900013f1227",
-   "title": "Drew Ryder Smith: Live Podcast",
-   "category": "community",
-   "start": "2026-10-21T18:00:00-04:00",
-   "end": "2026-10-21T19:00:00-04:00",
-   "venue": {
-    "name": "The Sharp Notes",
-    "address": "1 Garden State Plaza Boulevard, Paramus, New Jersey 07652, United States",
-    "neighborhood": "",
-    "lat": 40.702773,
-    "lng": -74.013351
-   },
-   "price": {
-    "min": 0,
-    "max": 0,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://dice.fm/event/6aa6a71237f62900013f1227",
    "tags": []
   },
   {

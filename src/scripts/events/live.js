@@ -3,4 +3,5 @@
 // source's snapshots are public/data/<id>-events.json and public/data/tomorrow/<id>-events.json,
 // which astro.config.mjs also drops from the live build. The dev workflow builds with
 // PUBLIC_SITE=dev to keep them.
-export const LIVE_HIDDEN = ['ra', 'skint'];
+// doNYC, Resident Advisor and The Skint were here before they were parked (see parked/README.md).
+export const LIVE_HIDDEN = [];

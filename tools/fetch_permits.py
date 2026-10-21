@@ -36,6 +36,8 @@ SPECIAL = re.compile(r'festival|\bfest\b|fair\b|market|grownyc|carnival|parade|c
 PRIVATE = re.compile(r'birthday|shower|party|wedding|closure|construction|renovation|bbq|barbecue|picnic|'
                      r'\btest|pick ?up|meeting|\bipo\b|disposal|popup line|^celebration$|^miscellaneous$|amplified|parks event|rain date|back ?up date', re.I)
 
+MARKET = re.compile(r'farmers market|greenmarket|farm stand|grownyc', re.I)
+
 
 def fetch_day(day):
     where = f"start_date_time >= '{day}T00:00:00' AND start_date_time <= '{day}T23:59:59'"
@@ -108,12 +110,20 @@ def place(location, borough, cache):
     return hit
 
 
+def market_spots(day):
+    """Farmers markets already on the map that day (tools/fetch_greenmarkets.py runs first), with exact positions."""
+    f = DATA / 'greenmarkets-events.json'
+    snap = json.loads(f.read_text()) if f.exists() else {}
+    return [e['venue'] for e in snap.get('events', [])] if snap.get('date') == day.isoformat() else []
+
+
 def main():
     day = datetime.strptime(sys.argv[1], '%Y-%m-%d').date() if len(sys.argv) > 1 else datetime.now(NYC).date()
     print(f'Fetching NYC permitted events for {day}...')
     rows = fetch_day(day)
     print(f'  {len(rows)} permits')
     cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
+    markets = market_spots(day)
     events, unplaced, seen = [], [], set()
     for r in rows:
         name, kind = (r.get('event_name') or '').strip(), r.get('event_type') or ''
@@ -128,6 +138,9 @@ def main():
             CACHE.write_text(json.dumps(cache, indent=1, sort_keys=True))
         if not pos:
             unplaced.append({'title': name, 'address': location})
+            continue
+        # A market permit next to a market the farmers markets source already shows is the same market.
+        if MARKET.search(f'{name} {kind}') and any(dist_m(pos, m) < 400 for m in markets):
             continue
         start = datetime.fromisoformat(r['start_date_time'][:19]).replace(tzinfo=NYC)
         end = datetime.fromisoformat(r['end_date_time'][:19]).replace(tzinfo=NYC) if r.get('end_date_time') else None

@@ -47,9 +47,10 @@ Node version comes from `.node-version` (22).
 
 ### Password and coming soon page
 
-`worker/index.js` runs in front of the static build on both Workers. It reads two vars from `wrangler.jsonc`:
-`SITE_PASSWORD` (the shared password, currently `8bit01`) and `SITE` (`live`, or `dev` from the dev workflow).
-On live, visitors without the password see a coming soon page at `/` with a link to `/login`; on dev every page asks for the password first. Logging in sets a cookie for 30 days, and
+`worker/index.js` runs in front of the static build on both Workers. It reads three vars from `wrangler.jsonc`:
+`SITE_PASSWORD` (the shared password: `8bit01` on live, overridden to `alpha8bit01` by the dev workflow), `SITE` (`live`, or `dev` from the dev workflow) and
+`DEV_URL`. On live, visitors without the password see a coming soon page at `/` with a link to the dev site and a
+link to `/login`; on dev every page asks for the password first. Logging in sets a cookie for 30 days, and
 `/logout` clears it. To open the site to everyone later, remove `main` and the `vars` from `wrangler.jsonc`.
 This is a shared password to keep the map private for now, not a real account system.
 Keep `worker/index.js` itself when opening the site up: it also runs the contact form and the cookie consent check below.
@@ -72,7 +73,7 @@ and Cookie Settings in the menu lets them change it. Add `?consent=eu` to the UR
 
 ### Sources shown on dev only
 
-`src/scripts/events/live.js` lists sources (currently Resident Advisor and The Skint) that only dev shows. The
+`src/scripts/events/live.js` lists sources (currently none) that only dev shows. The
 dev workflow builds with `PUBLIC_SITE=dev`; any other build is a live build, which leaves those sources out of the
 map and drops their snapshot files (today's and tomorrow's) from `dist/`. Their fetchers keep running, so dev stays current.
 
@@ -84,23 +85,23 @@ src/styles/global.css             all styles (arcade look, mobile bottom sheet)
 src/scripts/app.js                UI: filters, Today list, event card, map controls
 src/scripts/site.js               site menu, Contact / Privacy / Terms modals, ad slot, cookie banner
 src/components/                   Privacy Policy and Terms texts
-src/scripts/map/geo.js            NYC tile grid: shorelines, parks, bridges, skyline peaks, lat/lng to tile
+src/scripts/map/geo.js            NYC tile grid: parks, beaches, bridges, skyline peaks, lat/lng to tile
+src/scripts/map/land.json         land tiles for all five boroughs and the land around them (tools/build_land.py)
 src/scripts/map/renderer.js       three.js scene: voxel land and buildings, pins, labels, camera, picking
 src/scripts/map/palette.js        colours for the city and for event categories
 src/scripts/events/schema.js      the one event shape every source maps into
 src/scripts/events/index.js       loads all sources, filters to today and the map area, de-duplicates, sorts
-src/scripts/events/sources/       one file per event source: nycgov.js, donyc.js, ra.js, skint.js, luma.js, permits.js,
+src/scripts/events/sources/       one file per event source: nycgov.js, luma.js, permits.js,
                                   ticketmaster.js, seatgeek.js, dice.js, artwrld.js, artrabbit.js,
-                                  artguide.js (live), snapshot.js (shared reader),
+                                  artguide.js (live), greenmarkets.js, nps.js,
+                                  snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
 public/data/tomorrow/*.json       the same snapshots for the next NYC day (EVENTS_DIR=public/data/tomorrow)
+parked/                           doNYC, Resident Advisor and The Skint, removed until they agree to be listed
 public/                           other static files copied as-is (favicon)
 tools/fetch_nycgov.py             pulls one day of NYC.gov events and places them on the map
-tools/fetch_donyc.py              pulls one day of doNYC listings and places each venue once
-tools/fetch_ra.py                 pulls one night of Resident Advisor listings
 tools/fetch_luma.py               pulls one day of Luma NYC events
-tools/fetch_skint.py              pulls The Skint's picks for one day from its roundup posts
 tools/fetch_permits.py            pulls one day of NYC permitted street events (street fairs, parades, greenmarkets)
 tools/fetch_ticketmaster.py       pulls one day of Ticketmaster events (needs TICKETMASTER_API_KEY)
 tools/fetch_seatgeek.py           pulls one day of SeatGeek events (needs SEATGEEK_CLIENT_ID)
@@ -108,8 +109,10 @@ tools/fetch_dice.py               pulls one day of DICE New York events
 tools/fetch_artwrld.py            pulls the day's gallery openings, museum shows and art events from Artwrld
 tools/fetch_artrabbit.py          pulls the day's New York opening receptions from ArtRabbit
 tools/fetch_artguide.py           pulls the day's New York opening receptions from Artforum artguide
+tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, Smalls, comedy clubs, bar trivia)
+tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
+tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
-data/venues.json                  street addresses for venues The Skint names without one
 ```
 
 ## Refreshing the events
@@ -120,9 +123,6 @@ You can also run it from the repo's Actions tab (Run workflow), or by hand with 
 
 ```sh
 python3 tools/fetch_nycgov.py             # today in NYC
-python3 tools/fetch_donyc.py
-python3 tools/fetch_ra.py
-python3 tools/fetch_skint.py
 python3 tools/fetch_luma.py
 python3 tools/fetch_permits.py
 TICKETMASTER_API_KEY=... python3 tools/fetch_ticketmaster.py
@@ -131,6 +131,9 @@ python3 tools/fetch_dice.py
 python3 tools/fetch_artwrld.py
 python3 tools/fetch_artrabbit.py
 python3 tools/fetch_artguide.py
+python3 tools/fetch_venues.py
+python3 tools/fetch_greenmarkets.py
+NPS_API_KEY=... python3 tools/fetch_nps.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
 EVENTS_DIR=public/data/tomorrow python3 tools/fetch_nycgov.py 2026-10-18  # tomorrow's snapshot, as the Action writes it
 ```
@@ -145,31 +148,10 @@ Events with no usable address are listed under `unplaced` in the snapshot. The P
 so every run that reaches it records each Parks venue in `data/parks-places.json`, which the scheduled refresh uses instead. The page header shows the day the
 snapshot covers, so an old snapshot shows that day's events rather than an empty map.
 
-### doNYC
-
-`fetch_donyc.py` reads doNYC's day pages (https://donyc.com/events/2026/10/17). Listings have no coordinates, so
-the script reads each venue's street address once from one of its event pages and places it with GeoSearch, or by
-name for parks and landmarks. Venues are remembered in `data/geocode-cache.json`, so the first run takes a few
-minutes and later runs only look up new venues. The day pages do not show prices.
-
-### Resident Advisor
-
-`fetch_ra.py` reads the GraphQL endpoint behind https://ra.co/events/us/newyork. Most venues come with exact
-coordinates; ones with none or only a rough position are placed from their address with GeoSearch.
-A party that starts after midnight stays on the night RA lists it for.
-
 ### Luma
 
 `fetch_luma.py` reads the discover API behind https://luma.com/nyc. Events come with coordinates. Hosts can keep an
 address for registered guests only, and Luma then gives a shifted position, so those events are left off the map.
-
-### The Skint
-
-`fetch_skint.py` reads The Skint's daily and weekend roundup posts through the site's WordPress API and picks out
-the listings for the day. The Skint names venues rather than addresses ("caveat (les)"), so a listing is placed from
-a street address or block in its text, from `data/venues.json`, or from a GeoSearch place with the same name (parks,
-landmarks). Everything else is listed under `unplaced`. Adding a venue's address to `data/venues.json` places it
-from then on. The text is free-form, so check the output now and then: prices and times are best guesses.
 
 ### NYC Street Events
 
@@ -178,6 +160,25 @@ It keeps street fairs, parades, plaza and Open Streets events, greenmarkets and 
 permits whose names sound public (festivals, markets, 5Ks, movie nights), and skips sports bookings, film shoots,
 block parties and private parties. A closed block is placed at one of its corners with GeoSearch, a park or plaza by
 name; a name GeoSearch puts in several places is left unplaced. Permit times include setup, so some start early.
+A market permit within 400 m of a market that `fetch_greenmarkets.py` already placed that day is skipped, so the
+same market is not shown twice (the refresh runs the scripts in name order, so the markets come first).
+
+### NYC Farmers Markets
+
+`fetch_greenmarkets.py` reads the Health Department's yearly list of farmers markets on NYC Open Data
+(https://data.cityofnewyork.us/d/8vwk-6iz2), which needs no key and gives each market's position, market days
+("Saturday", "Tuesday & Friday", "Monday (1st and 3rd)") and hours. It keeps the markets open on the day asked for.
+The list has no season dates, so markets not marked open year round are shown from June through November. Until a
+new year's list is out, last year's is used.
+
+### National Park Service
+
+`fetch_nps.py` reads the NPS Data API (https://www.nps.gov/subjects/developer/) for events at the national parks in
+the city (`PARKS` in the script: Statue of Liberty, Ellis Island, Governors Island, Gateway, Federal Hall, Castle
+Clinton, Grant's Tomb and others). It needs a free key in `NPS_API_KEY`, read from a repository secret of that name
+by the scheduled refresh; without one it skips the run, like Ticketmaster. Events without coordinates are placed at
+their park, and an event with several times a day becomes one pin per time. NPS text is US government work and free
+to reuse.
 
 ### Ticketmaster
 
@@ -231,6 +232,23 @@ New York listings whose opening reception is on the day, as art, with the venue'
 reception hours from the listing. Some openings also appear on Artwrld or ArtRabbit under a slightly different
 title, so the same reception can show up twice.
 
+### Venue calendars
+
+`fetch_venues.py` reads the schedules venues publish on their own websites, one reader per site, so a site that is
+down or changes its pages only loses that venue: Film Forum's week of showtimes, Nitehawk's day pages for
+Williamsburg and Prospect Park, the today-and-tomorrow sets on SmallsLIVE (Smalls, Mezzrow and Jazzcultural), the
+schema.org event data on New York Comedy Club's and Eastville Comedy Club's calendars, The PIT's month calendar,
+Other Half Brewing's NYC taproom events, and NYC Trivia League's weekly list of bar trivia and bingo nights (each
+bar placed from the coordinates on its listing page). A film is one event at its first showing, with the day's
+showtimes in its description. Each event names its venue as its publisher (trivia nights name NYC Trivia League),
+so they are listed one by one in the Sources dropdown. Venues are placed once from the street address in `VENUES`
+and remembered in `data/geocode-cache.json`. Adding a venue means a reader function, an entry in `VENUES` and a
+place in `READERS`. Only title, time, price when given and a link are kept.
+
+Check a site's terms of use before adding it. St. Marks Comedy Club, QED, McNally Jackson and Apple forbid automated
+access, so they are left out; Geeks Who Drink, The Strand, Greenlight, Barnes & Noble, Film at Lincoln Center,
+Juilliard, BRIC and The Public Theater turn automated visits away.
+
 ## Adding a real event source
 
 1. Copy `src/scripts/events/sources/template.js` to a new file and fill in `fetchEvents({ date, bounds })`.
@@ -246,6 +264,9 @@ and the same show listed on several sites is merged by title, venue and start ti
 
 ## Tuning the map
 
-- Shorelines, parks and islands are `[lat, lng]` polygons at the top of `geo.js`.
+- Shorelines and the map's edges come from `tools/build_land.py`, which turns the city's borough boundaries
+  and the census county shapes around them into `src/scripts/map/land.json`. The map covers all five boroughs;
+  change `BOUNDS` there and rerun it (`python3 tools/build_land.py`) to move the edges.
+- Parks, airports, beaches and small islands are `[lat, lng]` polygons at the top of `geo.js`.
 - Skyline heights come from `PEAKS` in `geo.js` (centre, spread, height).
-- Tile size is `CELL` in `geo.js`; pixel chunkiness is the PX button (2x by default, then 3x, 4x).
+- Tile size is `CELL` in `tools/build_land.py`; pixel chunkiness is the PX button (2x by default, then 3x, 4x).

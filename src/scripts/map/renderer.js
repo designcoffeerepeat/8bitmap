@@ -11,6 +11,17 @@ import { PALETTE, CATEGORY_COLORS } from './palette.js';
 
 const GROUND_H = 0.35;
 const LEVEL_H = 0.4;
+// Roof height of landmarks that clear their neighbouring tiles; pins there sit on top.
+const LANDMARK_TOP = { msg: 3.5 };
+// Zoomed out, pins stand on their spots (sharing a tile fans them out a little). From
+// SPREAD_FROM they ease apart on screen and are fully spread by SPREAD_FULL (max zoom is 7).
+const SPREAD_FROM = 4;
+const SPREAD_FULL = 5.5;
+// Pin spacing in render pixels, measured between the heads of the 13 px wide pins.
+const PIN_GAP = 14; // pins at different places just touch
+const SAME_GAP = 11; // pins at the same place overlap a little
+const MAX_SHIFT = 42; // furthest a pin moves from its true spot; past this crowds may still overlap
+const SAME_SPOT = 0.25; // tiles (~30 m): closer than this counts as the same place
 const VIEW_HEIGHT = 70; // world units visible top to bottom at zoom 1
 const HOME = { lat: 40.738, lng: -73.975, zoom: 1.15 };
 const REDUCED_MOTION = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
@@ -21,6 +32,7 @@ const pick = (arr, r) => arr[Math.floor(r * arr.length) % arr.length];
 export function createMap(container, opts = {}) {
   let pixelSize = opts.pixelSize ?? 2;
   const listeners = { select: [], hover: [] };
+  const frameHooks = new Set(); // extra scene actors (the monster easter egg) step here each frame
   const emit = (name, payload) => listeners[name].forEach((fn) => fn(payload));
 
   const canvas = document.createElement('canvas');
@@ -40,7 +52,7 @@ export function createMap(container, opts = {}) {
   controls.enableDamping = !REDUCED_MOTION;
   controls.dampingFactor = 0.12;
   controls.screenSpacePanning = false;
-  controls.minZoom = 0.7;
+  controls.minZoom = 0.25; // far enough out to see all five boroughs
   controls.maxZoom = 7;
   controls.minPolarAngle = 0.45;
   controls.maxPolarAngle = 1.1;
@@ -52,6 +64,7 @@ export function createMap(container, opts = {}) {
   scene.add(sun);
 
   const city = buildCity();
+  city.landmarkTop = new Map();
   const world = new THREE.Group();
   scene.add(world);
 
@@ -59,13 +72,35 @@ export function createMap(container, opts = {}) {
   const landmarkCells = new Set();
   for (const l of LANDMARKS) {
     const { col, row } = latLngToCell(l.lat, l.lng);
-    landmarkCells.add(Math.floor(row) * COLS + Math.floor(col));
+    const r = l.clear ?? 0;
+    for (let dr = -r; dr <= r; dr++) {
+      for (let dc = -r; dc <= r; dc++) {
+        const c = Math.floor(col) + dc;
+        const w = Math.floor(row) + dr;
+        if (Math.hypot(c + 0.5 - col, w + 0.5 - row) > r + 0.5) continue;
+        landmarkCells.add(w * COLS + c);
+        // pins on a cleared tile sit on the landmark's roof
+        if (l.clear) city.landmarkTop.set(w * COLS + c, GROUND_H + LANDMARK_TOP[l.id]);
+      }
+    }
+    if (l.low) {
+      const r2 = Math.ceil(l.low);
+      for (let dr = -r2; dr <= r2; dr++) {
+        for (let dc = -r2; dc <= r2; dc++) {
+          const c = Math.floor(col) + dc;
+          const w = Math.floor(row) + dr;
+          const d = Math.hypot(c + 0.5 - col, w + 0.5 - row);
+          // step the neighbours down towards the landmark
+          if (d <= l.low) city.height[w * COLS + c] = Math.min(city.height[w * COLS + c], Math.round(2 + d * 1.5));
+        }
+      }
+    }
   }
 
   buildBase(world);
   const waterFrames = buildWater(world, city);
   buildLand(world, city);
-  buildBuildings(world, city, landmarkCells);
+  const roofs = buildBuildings(world, city, landmarkCells);
   buildBridges(world);
   buildLandmarks(world, city);
   const boats = buildBoats(world);
@@ -74,7 +109,8 @@ export function createMap(container, opts = {}) {
   // ---- pins -------------------------------------------------------------
   const pinGroup = new THREE.Group();
   world.add(pinGroup);
-  let pins = []; // { sprite, event, baseY, phase }
+  let pins = []; // { sprite, event, anchor, fan, spot, baseY, order, phase }
+  let visibleVersion = 0;
   let hovered = null;
   let selected = null;
   const pinTextures = new Map();
@@ -88,6 +124,7 @@ export function createMap(container, opts = {}) {
   function setEvents(events) {
     pinGroup.clear();
     pins = [];
+    const spots = []; // one per place; events within ~30 m of each other share it
     const used = new Map();
     for (const ev of events) {
       const p = latLngToWorld(ev.venue.lat, ev.venue.lng);
@@ -95,18 +132,20 @@ export function createMap(container, opts = {}) {
       const n = used.get(cellKey) ?? 0;
       used.set(cellKey, n + 1);
       // fan out events that land on the same tile
-      const ox = n ? Math.cos(n * 2.1) * 0.9 : 0;
-      const oz = n ? Math.sin(n * 2.1) * 0.9 : 0;
+      const fan = new THREE.Vector3(n ? Math.cos(n * 2.1) * 0.9 : 0, 0, n ? Math.sin(n * 2.1) * 0.9 : 0);
+      let spot = spots.findIndex((q) => Math.hypot(q.x - p.x, q.z - p.z) < SAME_SPOT);
+      if (spot < 0) spot = spots.push(p) - 1;
       const baseY = groundTop(city, ev.venue.lat, ev.venue.lng) + 0.2;
       const mat = new THREE.SpriteMaterial({ map: pinTexture(ev.category, 'idle'), depthTest: false, transparent: true });
       const sprite = new THREE.Sprite(mat);
       sprite.center.set(0.5, 0);
-      sprite.position.set(p.x + ox, baseY, p.z + oz);
+      sprite.position.set(p.x + fan.x, baseY, p.z + fan.z);
       sprite.renderOrder = 10;
       sprite.userData.eventId = ev.id;
       pinGroup.add(sprite);
-      pins.push({ sprite, event: ev, baseY, phase: Math.random() * Math.PI * 2 });
+      pins.push({ sprite, event: ev, anchor: new THREE.Vector3(p.x, baseY, p.z), fan, spot, baseY, order: 10, phase: Math.random() * Math.PI * 2 });
     }
+    layoutKey = '';
     refreshPinStates();
     updateSpriteScales();
   }
@@ -115,13 +154,101 @@ export function createMap(container, opts = {}) {
     for (const pin of pins) {
       const state = pin.event.id === selected ? 'selected' : pin.event.id === hovered ? 'hover' : 'idle';
       pin.sprite.material.map = pinTexture(pin.event.category, state);
-      pin.sprite.renderOrder = state === 'idle' ? 10 : 20;
+      pin.sprite.renderOrder = state === 'idle' ? pin.order : 20;
     }
+  }
+
+  // Pins are drawn at a fixed pixel size, so whether two of them collide depends on the view.
+  // Zoomed in close (see SPREAD_FROM) they are spread out on screen: pins at different places
+  // are pushed apart until their heads just touch, and pins at the same place huddle together,
+  // overlapping a little. Panning moves everything alike, so it needs no new layout.
+  let layoutKey = '';
+  const right = new THREE.Vector3();
+  const up = new THREE.Vector3();
+  function layoutPins() {
+    camera.updateMatrixWorld();
+    const q = camera.quaternion;
+    const key = [camera.zoom, q.x, q.y, q.z, q.w].map((n) => n.toFixed(4)).join() + `|${rw}x${rh}|${visibleVersion}`;
+    if (key === layoutKey) return;
+    layoutKey = key;
+    const t = THREE.MathUtils.clamp((camera.zoom - SPREAD_FROM) / (SPREAD_FULL - SPREAD_FROM), 0, 1);
+    if (t === 0) {
+      for (const pin of pins) {
+        pin.sprite.position.copy(pin.anchor).add(pin.fan);
+        pin.baseY = pin.sprite.position.y;
+        pin.order = 10;
+      }
+      refreshPinStates();
+      return;
+    }
+    const wpp = worldPerPixel();
+    right.setFromMatrixColumn(camera.matrixWorld, 0);
+    up.setFromMatrixColumn(camera.matrixWorld, 1);
+    const shown = pins.filter((p) => p.sprite.visible);
+    // screen spots in render pixels, y down; pins sharing a place start on a small spiral
+    const seen = new Map();
+    const pts = shown.map((pin, i) => {
+      projected.copy(pin.anchor).project(camera);
+      const k = seen.get(pin.spot) ?? 0;
+      seen.set(pin.spot, k + 1);
+      const ox = ((projected.x + 1) / 2) * rw;
+      const oy = ((1 - projected.y) / 2) * rh;
+      return { pin, i, ox, oy, x: ox + Math.cos(k * 2.4) * 2 * Math.sqrt(k), y: oy + Math.sin(k * 2.4) * 2 * Math.sqrt(k) };
+    });
+    for (let iter = 0; iter < 40; iter++) {
+      const grid = new Map();
+      for (const p of pts) {
+        const g = `${Math.floor(p.x / PIN_GAP)},${Math.floor(p.y / PIN_GAP)}`;
+        if (!grid.has(g)) grid.set(g, []);
+        grid.get(g).push(p);
+      }
+      let moved = false;
+      for (const a of pts) {
+        const gx = Math.floor(a.x / PIN_GAP);
+        const gy = Math.floor(a.y / PIN_GAP);
+        for (let dx = -1; dx <= 1; dx++) {
+          for (let dy = -1; dy <= 1; dy++) {
+            for (const b of grid.get(`${gx + dx},${gy + dy}`) ?? []) {
+              if (b.i <= a.i) continue; // each pair once
+              const need = a.pin.spot === b.pin.spot ? SAME_GAP : PIN_GAP;
+              let ux = b.x - a.x;
+              let uy = b.y - a.y;
+              let d = Math.hypot(ux, uy);
+              if (d >= need) continue;
+              if (d < 1e-3) { ux = 1; uy = 0; d = 1; } else { ux /= d; uy /= d; }
+              const push = (need - Math.max(d, 1e-3)) / 2;
+              a.x -= ux * push; a.y -= uy * push;
+              b.x += ux * push; b.y += uy * push;
+              moved = true;
+            }
+          }
+        }
+      }
+      for (const p of pts) {
+        const d = Math.hypot(p.x - p.ox, p.y - p.oy);
+        if (d > MAX_SHIFT) {
+          p.x = p.ox + ((p.x - p.ox) * MAX_SHIFT) / d;
+          p.y = p.oy + ((p.y - p.oy) * MAX_SHIFT) / d;
+        }
+      }
+      if (!moved) break;
+    }
+    for (const p of pts) {
+      // whole render pixels keep the sprites crisp
+      const dx = Math.round((p.x - p.ox) * t) * wpp;
+      const dy = -Math.round((p.y - p.oy) * t) * wpp;
+      p.pin.sprite.position.copy(p.pin.anchor).addScaledVector(p.pin.fan, 1 - t).addScaledVector(right, dx).addScaledVector(up, dy);
+      p.pin.baseY = p.pin.sprite.position.y;
+      // pins lower on screen are drawn over the ones behind them
+      p.pin.order = 10 + p.y / rh;
+    }
+    refreshPinStates();
   }
 
   function setVisible(ids) {
     const set = ids ? new Set(ids) : null;
     for (const pin of pins) pin.sprite.visible = !set || set.has(pin.event.id);
+    visibleVersion++;
   }
 
   // ---- sizing ------------------------------------------------------------
@@ -192,7 +319,7 @@ export function createMap(container, opts = {}) {
   function focusEvent(id, zoom) {
     const pin = pins.find((p) => p.event.id === id);
     if (!pin) return;
-    const target = new THREE.Vector3(pin.sprite.position.x, 0, pin.sprite.position.z);
+    const target = new THREE.Vector3(pin.anchor.x, 0, pin.anchor.z);
     flyTo(target, Math.max(camera.zoom, zoom ?? 2.6));
   }
 
@@ -259,7 +386,7 @@ export function createMap(container, opts = {}) {
   });
 
   // ---- HTML labels pinned to map positions -------------------------------------
-  // Crisp text at any size (neighborhood names, the Staten Island sign). Each is a
+  // Crisp text at any size (neighborhood names). Each is a
   // plain element in a layer over the canvas, moved to its projected spot per frame.
   const anchorLayer = document.createElement('div');
   anchorLayer.className = 'map-anchors';
@@ -312,6 +439,7 @@ export function createMap(container, opts = {}) {
       if (flight.t >= 1) flight = null;
     }
     controls.update();
+    layoutPins();
 
     if (!REDUCED_MOTION) {
       waterTick += dt;
@@ -329,6 +457,7 @@ export function createMap(container, opts = {}) {
       }
       for (const b of boats) b.update(t);
     }
+    for (const fn of frameHooks) fn(dt, t);
 
     renderer.render(scene, camera);
     placeAnchors();
@@ -352,6 +481,33 @@ export function createMap(container, opts = {}) {
     home: () => home(true),
     setPixelSize,
     on(name, fn) { listeners[name].push(fn); },
+    // ---- hooks for things that move around the scene (see src/scripts/monster.js) ----
+    world,
+    camera,
+    canvas,
+    onFrame(fn) { frameHooks.add(fn); return () => frameHooks.delete(fn); },
+    // ground height at a world position (water and bridges sit near 0.3)
+    groundAt: (x, z) => groundTopCell(city, Math.floor(x + COLS / 2), Math.floor(z + ROWS / 2)),
+    // the building on a tile: { x, z, size, top, bare } (bare means nothing stands on its roof)
+    rooftop(col, row) { return roofs.get(row * COLS + col) ?? null; },
+    // where the ray under a screen point crosses the level y, in world space
+    rayToHeight(clientX, clientY, y) {
+      const rect = canvas.getBoundingClientRect();
+      ndc.set(((clientX - rect.left) / rect.width) * 2 - 1, -((clientY - rect.top) / rect.height) * 2 + 1);
+      raycaster.setFromCamera(ndc, camera);
+      const r = raycaster.ray;
+      if (Math.abs(r.direction.y) < 1e-4) return null;
+      return r.at((y - r.origin.y) / r.direction.y, new THREE.Vector3());
+    },
+    // a world position in CSS pixels relative to the map container
+    toScreen(v) {
+      projected.copy(v).project(camera);
+      return { x: ((projected.x + 1) / 2) * canvas.clientWidth, y: ((1 - projected.y) / 2) * canvas.clientHeight, behind: projected.z > 1 };
+    },
+    flyTo: (target, zoom) => flyTo(target, THREE.MathUtils.clamp(zoom ?? camera.zoom, controls.minZoom, controls.maxZoom)),
+    get target() { return controls.target.clone(); },
+    get zoom() { return camera.zoom; },
+    get maxZoom() { return controls.maxZoom; },
     get pixelSize() { return pixelSize; },
   };
 }
@@ -361,11 +517,14 @@ export function createMap(container, opts = {}) {
 
 function groundTop(city, lat, lng) {
   const { col, row } = latLngToCell(lat, lng);
-  const c = Math.floor(col);
-  const r = Math.floor(row);
+  return groundTopCell(city, Math.floor(col), Math.floor(row));
+}
+
+function groundTopCell(city, c, r) {
   if (c < 0 || r < 0 || c >= COLS || r >= ROWS) return 0.2;
   const i = r * COLS + c;
   if (city.type[i] === T.WATER || city.type[i] === T.BRIDGE) return 0.3;
+  if (city.landmarkTop?.has(i)) return city.landmarkTop.get(i);
   return GROUND_H + city.height[i] * LEVEL_H;
 }
 
@@ -446,21 +605,47 @@ function buildLand(world, city) {
   const cells = [];
   for (let i = 0; i < city.type.length; i++) {
     const t = city.type[i];
-    if (t === T.LAND || t === T.PARK || t === T.AIRPORT) cells.push(i);
+    if (t === T.LAND || t === T.PARK || t === T.AIRPORT || t === T.BEACH) cells.push(i);
   }
-  const mesh = instanced(cells.length);
+  // The ground tops are one flat texture at GROUND_H, one pixel per tile. Only tiles whose
+  // sides can be seen (on the shore or the map's edge) and the odd raised park tile are
+  // real boxes, which keeps the whole city to a few thousand boxes of ground.
+  const data = new Uint8Array(COLS * ROWS * 4);
+  const sides = [];
   const r = rng(5);
-  cells.forEach((i, k) => {
-    const { x, z } = cellPos(i);
+  for (const i of cells) {
     const col = i % COLS;
     const row = Math.floor(i / COLS);
     const t = city.type[i];
     let hex = PALETTE.land[city.area[i]] ?? PALETTE.land.li;
     if (t === T.PARK) hex = (col + row) % 3 === 0 ? PALETTE.park[1] : PALETTE.park[0];
+    if (t === T.BEACH) hex = PALETTE.sand;
     if (t === T.AIRPORT) hex = (col - row) % 5 === 0 || (col + 2 * row) % 7 === 0 ? PALETTE.runway : PALETTE.airport;
     if (t === T.LAND && city.street[i]) hex = PALETTE.street;
-    if (t === T.LAND && touchesWater(city, col, row) && city.height[i] === 0) hex = PALETTE.sand;
-    place(mesh, k, x, 0, z, 1, GROUND_H + (r() < 0.04 && t === T.PARK ? 0.1 : 0), 1, hex);
+    const shore = touchesWater(city, col, row);
+    if (t === T.LAND && shore && city.height[i] === 0) hex = PALETTE.sand;
+    const ti = ((ROWS - 1 - row) * COLS + col) * 4;
+    const c = color(hex).convertLinearToSRGB();
+    data[ti] = c.r * 255; data[ti + 1] = c.g * 255; data[ti + 2] = c.b * 255; data[ti + 3] = 255;
+    const bump = r() < 0.04 && t === T.PARK ? 0.1 : 0;
+    const edge = col === 0 || row === 0 || col === COLS - 1 || row === ROWS - 1;
+    // boxes stop just under the texture so the two never fight over the same pixels
+    if (shore || edge || bump) sides.push([i, GROUND_H + bump - (bump ? 0 : 0.01), hex]);
+  }
+  const tex = new THREE.DataTexture(data, COLS, ROWS);
+  tex.magFilter = THREE.NearestFilter;
+  tex.minFilter = THREE.NearestFilter;
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.needsUpdate = true;
+  const top = new THREE.Mesh(new THREE.PlaneGeometry(COLS, ROWS), lambert({ map: tex, alphaTest: 0.5 }));
+  top.rotation.x = -Math.PI / 2;
+  top.position.y = GROUND_H;
+  world.add(top);
+
+  const mesh = instanced(sides.length);
+  sides.forEach(([i, h, hex], k) => {
+    const { x, z } = cellPos(i);
+    place(mesh, k, x, 0, z, 1, h, 1, hex);
   });
   mesh.instanceColor.needsUpdate = true;
   world.add(mesh);
@@ -493,6 +678,7 @@ function touchesWater(city, col, row) {
 function buildBuildings(world, city, landmarkCells) {
   const r = rng(42);
   const boxes = [];
+  const roofs = new Map();
   for (let i = 0; i < city.height.length; i++) {
     const h = city.height[i];
     if (!h || city.type[i] !== T.LAND || landmarkCells.has(i)) continue;
@@ -508,14 +694,18 @@ function buildBuildings(world, city, landmarkCells) {
     const blockSeed = rng(Math.floor(col / 3) * 7919 + Math.floor(row / 3) * 104729)();
     const hex = pick(band, r() < 0.6 ? blockSeed : r());
     boxes.push([x + jx, GROUND_H, z + jz, fp, height, fp, hex]);
+    const roof = { x: x + jx, z: z + jz, size: fp, top: GROUND_H + height, bare: true };
+    roofs.set(i, roof);
     // tall towers get a setback and sometimes a mast
     if (h > 7) {
+      roof.bare = false;
       const fp2 = fp * (0.55 + r() * 0.2);
       const h2 = height * (0.15 + r() * 0.2);
       boxes.push([x + jx, GROUND_H + height, z + jz, fp2, h2, fp2, r() < 0.5 ? hex : PALETTE.glass]);
       if (r() < 0.25) boxes.push([x + jx, GROUND_H + height + h2, z + jz, 0.08, 0.9, 0.08, '#e8eef9']);
     } else if (h > 2 && r() < 0.1) {
       // rooftop water tower, very New York
+      roof.bare = false;
       boxes.push([x + jx + 0.15, GROUND_H + height, z + jz - 0.1, 0.22, 0.3, 0.22, '#8f8a82']);
     }
   }
@@ -523,6 +713,7 @@ function buildBuildings(world, city, landmarkCells) {
   boxes.forEach((b, k) => place(mesh, k, b[0], b[1], b[2], b[3], b[4], b[5], b[6]));
   mesh.instanceColor.needsUpdate = true;
   world.add(mesh);
+  return roofs;
 }
 
 function buildBridges(world) {
@@ -556,6 +747,8 @@ function buildLandmarks(world, city) {
     esb: [[1.2, 3, 1.2, '#d8cfbd'], [1, 6, 1, '#e3dccd'], [0.75, 1.6, 0.75, '#d8cfbd'], [0.45, 1.2, 0.45, '#efe9dc'], [0.2, 0.8, 0.2, '#d8cfbd'], [0.07, 2.4, 0.07, '#ffffff']],
     chrysler: [[1, 7.5, 1, '#c9d2e3'], [0.75, 1.2, 0.75, '#e8eef9'], [0.55, 0.9, 0.55, '#f4f7fd'], [0.35, 0.7, 0.35, '#e8eef9'], [0.06, 2, 0.06, '#ffffff']],
     liberty: [[1, 0.6, 1, '#d6d2ca'], [0.55, 0.9, 0.55, '#c8c3ba'], [0.35, 1.3, 0.35, PALETTE.liberty], [0.22, 0.4, 0.22, PALETTE.liberty]],
+    globe: [[1.6, 0.15, 1.6, '#9fcdea'], [0.15, 0.6, 0.15, '#8c8fa3'], [0.9, 0.35, 0.9, '#c9d2e3'], [1.4, 0.45, 1.4, '#c9d2e3'], [1.5, 0.45, 1.5, '#dbe2ee'], [1.1, 0.35, 1.1, '#c9d2e3'], [0.5, 0.2, 0.5, '#c9d2e3']],
+    parachute: [[1, 0.3, 1, '#d94a3a'], [0.3, 5.5, 0.3, '#d94a3a'], [1.6, 0.3, 1.6, '#d94a3a'], [0.9, 0.4, 0.9, '#e8eef9'], [0.08, 1, 0.08, '#ffffff']],
   };
   const parts = [];
   for (const l of LANDMARKS) {
@@ -571,25 +764,56 @@ function buildLandmarks(world, city) {
         parts.push([p.x + 0.15, y - 0.4, p.z, 0.08, 0.8, 0.08, PALETTE.liberty]); // raised arm
         parts.push([p.x + 0.15, y + 0.4, p.z, 0.16, 0.2, 0.16, '#ece8e1']); // torch
       }
-    } else if (l.id === 'yankee') {
+    } else if (l.id === 'yankee' || l.id === 'citi') {
       parts.push([p.x, GROUND_H, p.z, 2.4, 0.15, 2.4, '#5bbd5b']);
       for (const [dx, dz, sx, sz] of [[0, -1.1, 2.6, 0.4], [0, 1.1, 2.6, 0.4], [-1.1, 0, 0.4, 2.6], [1.1, 0, 0.4, 2.6]]) {
         parts.push([p.x + dx, GROUND_H, p.z + dz, sx, 0.9, sz, '#f2f2f2']);
       }
+    } else if (l.id === 'wheel') {
+      // a ring of cars standing on two legs, facing the boardwalk
+      for (let k = 0; k < 12; k++) {
+        const a = (k / 12) * Math.PI * 2;
+        parts.push([p.x + Math.cos(a) * 1.3, GROUND_H + 1.6 + Math.sin(a) * 1.3, p.z, 0.4, 0.4, 0.3, k % 2 ? '#ff5c8a' : '#ffe14d']);
+      }
+      parts.push([p.x, GROUND_H, p.z, 0.25, 1.7, 0.25, '#f2f2f2']);
+      parts.push([p.x, GROUND_H, p.z, 1.6, 0.2, 0.5, '#5a5d72']);
+    } else if (l.id === 'msg') {
+      // Madison Square Garden: a round drum on the Penn Station block, turned to the street grid
+      const grid = -0.5;
+      parts.push([p.x, GROUND_H, p.z, 3, 0.4, 2, '#9a968e', grid]); // Penn Plaza podium
+      // the drum is a pixel circle: thin strips whose width follows the curve
+      const drum = (y, r, h, hex) => {
+        for (let k = -3.5; k <= 3.5; k++) {
+          const dz = (k / 4) * r;
+          const w = 2 * Math.sqrt(Math.max(0, r * r - dz * dz)) + 0.1;
+          parts.push([p.x, y, p.z + dz, w, h, (r / 4) + 0.02, hex]);
+        }
+      };
+      drum(GROUND_H + 0.4, 1, 2.3, '#d6d0c4'); // facade
+      drum(GROUND_H + 2.7, 1.04, 0.4, '#4a4d63'); // dark crown band
+      drum(GROUND_H + 3.1, 0.9, 0.25, '#e8eef9'); // roof
+      drum(GROUND_H + 3.35, 0.55, 0.15, '#c9d2e3'); // roof dome
+      // light ribs around the drum
+      for (let k = 0; k < 16; k++) {
+        const a = (k / 16) * Math.PI * 2;
+        parts.push([p.x + Math.cos(a) * 1.07, GROUND_H + 0.4, p.z + Math.sin(a) * 1.07, 0.12, 2.3, 0.12, '#f4f1ea']);
+      }
+      // the red MSG sign facing 7th Ave
+      parts.push([p.x + Math.cos(grid) * 1.12, GROUND_H + 1.3, p.z - Math.sin(grid) * 1.12, 0.14, 0.7, 0.9, '#d94a3a', grid]);
     } else if (l.id === 'unisphere') {
       parts.push([p.x, GROUND_H, p.z, 1.8, 1.1, 1.4, '#8a4b32']);
       parts.push([p.x, GROUND_H + 1.1, p.z, 1.5, 0.12, 1.1, '#6d3a26']);
     }
   }
   const mesh = instanced(parts.length);
-  parts.forEach((b, k) => place(mesh, k, b[0], b[1], b[2], b[3], b[4], b[5], b[6]));
+  parts.forEach((b, k) => place(mesh, k, b[0], b[1], b[2], b[3], b[4], b[5], b[6], b[7]));
   mesh.instanceColor.needsUpdate = true;
   world.add(mesh);
 }
 
 function buildBoats(world) {
   const routes = [
-    { from: [40.7005, -74.0135], to: [40.6450, -74.0600], hex: '#ff8a1f', size: [0.9, 0.35, 0.45], speed: 0.05 }, // Staten Island Ferry
+    { from: [40.7005, -74.0135], to: [40.6460, -74.0690], hex: '#ff8a1f', size: [0.9, 0.35, 0.45], speed: 0.05 }, // Staten Island Ferry
     { from: [40.7050, -73.9990], to: [40.7600, -73.9550], hex: '#ffffff', size: [0.6, 0.3, 0.3], speed: 0.07 }, // East River ferry
     { from: [40.7800, -74.0060], to: [40.7100, -74.0230], hex: '#f2f2f2', size: [0.7, 0.3, 0.35], speed: 0.04 }, // Hudson
   ];
