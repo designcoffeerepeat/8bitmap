@@ -92,7 +92,8 @@ src/scripts/events/schema.js      the one event shape every source maps into
 src/scripts/events/index.js       loads all sources, filters to today and the map area, de-duplicates, sorts
 src/scripts/events/sources/       one file per event source: nycgov.js, donyc.js, ra.js, skint.js, luma.js, permits.js,
                                   ticketmaster.js, seatgeek.js, dice.js, artwrld.js, artrabbit.js,
-                                  artguide.js (live), snapshot.js (shared reader),
+                                  artguide.js (live), greenmarkets.js, nps.js,
+                                  snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
 public/data/tomorrow/*.json       the same snapshots for the next NYC day (EVENTS_DIR=public/data/tomorrow)
@@ -109,6 +110,8 @@ tools/fetch_dice.py               pulls one day of DICE New York events
 tools/fetch_artwrld.py            pulls the day's gallery openings, museum shows and art events from Artwrld
 tools/fetch_artrabbit.py          pulls the day's New York opening receptions from ArtRabbit
 tools/fetch_artguide.py           pulls the day's New York opening receptions from Artforum artguide
+tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
+tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
 data/venues.json                  street addresses for venues The Skint names without one
 ```
@@ -132,6 +135,8 @@ python3 tools/fetch_dice.py
 python3 tools/fetch_artwrld.py
 python3 tools/fetch_artrabbit.py
 python3 tools/fetch_artguide.py
+python3 tools/fetch_greenmarkets.py
+NPS_API_KEY=... python3 tools/fetch_nps.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
 EVENTS_DIR=public/data/tomorrow python3 tools/fetch_nycgov.py 2026-10-18  # tomorrow's snapshot, as the Action writes it
 ```
@@ -179,6 +184,25 @@ It keeps street fairs, parades, plaza and Open Streets events, greenmarkets and 
 permits whose names sound public (festivals, markets, 5Ks, movie nights), and skips sports bookings, film shoots,
 block parties and private parties. A closed block is placed at one of its corners with GeoSearch, a park or plaza by
 name; a name GeoSearch puts in several places is left unplaced. Permit times include setup, so some start early.
+A market permit within 400 m of a market that `fetch_greenmarkets.py` already placed that day is skipped, so the
+same market is not shown twice (the refresh runs the scripts in name order, so the markets come first).
+
+### NYC Farmers Markets
+
+`fetch_greenmarkets.py` reads the Health Department's yearly list of farmers markets on NYC Open Data
+(https://data.cityofnewyork.us/d/8vwk-6iz2), which needs no key and gives each market's position, market days
+("Saturday", "Tuesday & Friday", "Monday (1st and 3rd)") and hours. It keeps the markets open on the day asked for.
+The list has no season dates, so markets not marked open year round are shown from June through November. Until a
+new year's list is out, last year's is used.
+
+### National Park Service
+
+`fetch_nps.py` reads the NPS Data API (https://www.nps.gov/subjects/developer/) for events at the national parks in
+the city (`PARKS` in the script: Statue of Liberty, Ellis Island, Governors Island, Gateway, Federal Hall, Castle
+Clinton, Grant's Tomb and others). It needs a free key in `NPS_API_KEY`, read from a repository secret of that name
+by the scheduled refresh; without one it skips the run, like Ticketmaster. Events without coordinates are placed at
+their park, and an event with several times a day becomes one pin per time. NPS text is US government work and free
+to reuse.
 
 ### Ticketmaster
 

@@ -4,7 +4,7 @@
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
  "date": "2026-10-21",
- "fetchedAt": "2026-10-20T20:39:36-04:00",
+ "fetchedAt": "2026-10-21T08:39:30-04:00",
  "events": [
   {
    "id": "972601",
@@ -30,29 +30,6 @@
    ]
   },
   {
-   "id": "945374",
-   "title": "GrowNYC @ Bowne Playground",
-   "category": "food",
-   "start": "2026-10-21T06:00:00-04:00",
-   "end": "2026-10-21T19:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Bowne Playground",
-    "address": "Bowne Playground: Bowne Playground",
-    "neighborhood": "Queens",
-    "lat": 40.75835,
-    "lng": -73.82438
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
    "id": "945370",
    "title": "GrowNYC @ Washington Market Park",
    "category": "food",
@@ -65,75 +42,6 @@
     "neighborhood": "Manhattan",
     "lat": 40.71709,
     "lng": -74.01155
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "945338",
-   "title": "GrowNYC @ Bartel-Pritchard",
-   "category": "food",
-   "start": "2026-10-21T06:00:00-04:00",
-   "end": "2026-10-21T19:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Prospect Park",
-    "address": "Prospect Park: Bartel Pritchard Lot",
-    "neighborhood": "Brooklyn",
-    "lat": 40.66138,
-    "lng": -73.96963
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "945364",
-   "title": "GrowNYC @ Dag Ham",
-   "category": "food",
-   "start": "2026-10-21T06:00:00-04:00",
-   "end": "2026-10-21T19:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Dag Hammarskjold Plaza",
-    "address": "Dag Hammarskjold Plaza: Dag Hammarskjold Plaza",
-    "neighborhood": "Manhattan",
-    "lat": 40.75228,
-    "lng": -73.96889
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "945376",
-   "title": "GrowNYC @ Maple Playgound",
-   "category": "food",
-   "start": "2026-10-21T06:00:00-04:00",
-   "end": "2026-10-21T19:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Maple Playground",
-    "address": "Maple Playground: Maple Playground",
-    "neighborhood": "Queens",
-    "lat": 40.75587,
-    "lng": -73.82609
    },
    "price": null,
    "priceUnknown": false,
@@ -237,26 +145,26 @@
    ]
   },
   {
-   "id": "930126",
-   "title": "HHFM Kings County Hospital Market",
-   "category": "food",
+   "id": "982673",
+   "title": "RevenueCat",
+   "category": "community",
    "start": "2026-10-21T08:00:00-04:00",
-   "end": "2026-10-21T15:00:00-04:00",
+   "end": "2026-10-21T21:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Clarkson Avenue",
-    "address": "Clarkson Avenue Between East 37 Street And East 38 Street",
-    "neighborhood": "Brooklyn",
-    "lat": 40.655682,
-    "lng": -73.943031
+    "name": "12 Avenue",
+    "address": "12 Avenue Between West 48 Street And West 49 Street",
+    "neighborhood": "Manhattan",
+    "lat": 40.76504,
+    "lng": -73.9975
    },
    "price": null,
    "priceUnknown": false,
-   "description": "Farmers Market",
+   "description": "Street Event",
    "details": "Permit from Street Activity Permit Office.",
    "url": null,
    "tags": [
-    "Farmers Market"
+    "Street Event"
    ]
   },
   {
@@ -280,29 +188,6 @@
    "url": null,
    "tags": [
     "Plaza Event"
-   ]
-  },
-  {
-   "id": "982673",
-   "title": "RevenueCat",
-   "category": "community",
-   "start": "2026-10-21T08:00:00-04:00",
-   "end": "2026-10-21T21:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "12 Avenue",
-    "address": "12 Avenue Between West 48 Street And West 49 Street",
-    "neighborhood": "Manhattan",
-    "lat": 40.76504,
-    "lng": -73.9975
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
    ]
   },
   {

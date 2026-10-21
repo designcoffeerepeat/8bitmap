@@ -4,7 +4,7 @@
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
  "date": "2026-10-20",
- "fetchedAt": "2026-10-20T20:37:52-04:00",
+ "fetchedAt": "2026-10-21T08:39:28-04:00",
  "events": [
   {
    "id": "972601",
@@ -19,52 +19,6 @@
     "neighborhood": "Queens",
     "lat": 40.77878,
     "lng": -73.9231
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "945282",
-   "title": "GrowNYC @ Poe Park",
-   "category": "food",
-   "start": "2026-10-20T06:00:00-04:00",
-   "end": "2026-10-20T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Poe Park",
-    "address": "Poe Park: Permit Area 1 - Paved Oval",
-    "neighborhood": "Bronx",
-    "lat": 40.8648,
-    "lng": -73.89461
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "945276",
-   "title": "GrowNYC @ Joyce Kilmer",
-   "category": "food",
-   "start": "2026-10-20T06:00:00-04:00",
-   "end": "2026-10-20T19:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Joyce Kilmer Park",
-    "address": "Joyce Kilmer Park: Picnic Or Passive Event/open Lawn",
-    "neighborhood": "Bronx",
-    "lat": 40.82853,
-    "lng": -73.92266
    },
    "price": null,
    "priceUnknown": false,
@@ -142,121 +96,6 @@
    "url": null,
    "tags": [
     "Street Event"
-   ]
-  },
-  {
-   "id": "911516",
-   "title": "Lincoln Hospital Greenmarket Tues  Friday",
-   "category": "food",
-   "start": "2026-10-20T08:00:00-04:00",
-   "end": "2026-10-20T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "East 149 Street",
-    "address": "East 149 Street Between Morris Avenue And Park Avenue",
-    "neighborhood": "Bronx",
-    "lat": 40.818974,
-    "lng": -73.923094
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers Market",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Farmers Market"
-   ]
-  },
-  {
-   "id": "911520",
-   "title": "Elmhurst Greenmarket Tuesday",
-   "category": "food",
-   "start": "2026-10-20T08:00:00-04:00",
-   "end": "2026-10-20T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "41 Avenue",
-    "address": "41 Avenue Between 80 Street And 81 Street",
-    "neighborhood": "Queens",
-    "lat": 40.746262,
-    "lng": -73.88511
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers Market",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Farmers Market"
-   ]
-  },
-  {
-   "id": "911525",
-   "title": "Ft Washington Greenmarket Tuesday",
-   "category": "food",
-   "start": "2026-10-20T08:00:00-04:00",
-   "end": "2026-10-20T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Ft Washington Avenue",
-    "address": "Ft Washington Avenue Between West 168 Street And West 169 Street",
-    "neighborhood": "Manhattan",
-    "lat": 40.8407,
-    "lng": -73.94163
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers Market",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Farmers Market"
-   ]
-  },
-  {
-   "id": "911528",
-   "title": "Poe Park Greenmarket Tuesday",
-   "category": "food",
-   "start": "2026-10-20T08:00:00-04:00",
-   "end": "2026-10-20T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "East 192 Street",
-    "address": "East 192 Street Between Grand Concourse And Valentine Avenue",
-    "neighborhood": "Bronx",
-    "lat": 40.863941,
-    "lng": -73.895401
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers Market",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Farmers Market"
-   ]
-  },
-  {
-   "id": "922197",
-   "title": "La Familia Verde Farmers Market",
-   "category": "food",
-   "start": "2026-10-20T08:00:00-04:00",
-   "end": "2026-10-20T16:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Walter Gladwin Park",
-    "address": "Walter Gladwin Park: Walter Gladwin Park",
-    "neighborhood": "Bronx",
-    "lat": 40.84527,
-    "lng": -73.89524
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
    ]
   },
   {
