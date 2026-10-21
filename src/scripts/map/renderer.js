@@ -378,6 +378,7 @@ export function createMap(container, opts = {}) {
     flyTo: (target, zoom) => flyTo(target, THREE.MathUtils.clamp(zoom ?? camera.zoom, controls.minZoom, controls.maxZoom)),
     get target() { return controls.target.clone(); },
     get zoom() { return camera.zoom; },
+    get maxZoom() { return controls.maxZoom; },
     get pixelSize() { return pixelSize; },
   };
 }
