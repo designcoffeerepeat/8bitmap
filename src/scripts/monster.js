@@ -13,10 +13,10 @@ const AUTO_AFTER_MS = 2 * 60 * 1000;
 const SESSION_KEY = '8bm_monster';
 const CENTER = latLngToWorld(40.754, -73.984); // Midtown, around Bryant Park
 const MAX_HP = 60;
-const VOX = 1; // world units per monster voxel, which makes it about 21 units tall, over the tallest towers
-const SPEED = 1.1; // world units per second
-const STRIDE = 1.5; // seconds per pair of steps
-const PLANE_ALT = 25; // just over the monster's head
+const VOX = 0.5; // world units per monster voxel, which makes it about 10 units tall
+const SPEED = 0.7; // world units per second
+const STRIDE = 1.2; // seconds per pair of steps
+const PLANE_ALT = 13; // just over the monster's head
 const FIRE_RATE = 14; // bullets per second
 const REDUCED_MOTION = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
@@ -187,7 +187,7 @@ function startGame(map, onEnd) {
       const floor = floorAt(map, root.position.x, root.position.z);
       root.position.y += (floor - root.position.y) * Math.min(1, dt * 4);
       if (s.hp < MAX_HP * 0.35 && Math.random() < dt * 8) {
-        fx.add({ p: chest.clone().add(rand3(2)), v: new THREE.Vector3(rand(0.5), 2 + Math.random(), rand(0.5)), life: 1.6, size: 0.5, g: -0.5, ramp: RAMPS.smoke });
+        fx.add({ p: chest.clone().add(rand3(1)), v: new THREE.Vector3(rand(0.5), 2 + Math.random(), rand(0.5)), life: 1.6, size: 0.5, g: -0.5, ramp: RAMPS.smoke });
       }
     } else if (s.mode === 'dying') {
       s.modeT += dt;
@@ -198,12 +198,12 @@ function startGame(map, onEnd) {
       if (f >= 1 && !s.dying.landed) {
         s.dying.landed = true;
         shake(6, 0.5);
-        explode(chest.clone(), 140, 9, RAMPS.boom, 0.7);
-        dustRing(root.position, 40, 7);
+        explode(chest.clone(), 140, 5, RAMPS.boom, 0.45);
+        dustRing(root.position, 40, 4);
       }
       if (s.dying.landed && s.modeT > 1.55 && root.visible) {
         root.visible = false;
-        explode(chest.clone(), 80, 6, RAMPS.flame, 0.5);
+        explode(chest.clone(), 80, 3.5, RAMPS.flame, 0.35);
         for (let i = 0; i < 9; i++) setTimeout(() => shell(root.position), i * 330 + Math.random() * 200);
       }
       if (s.modeT > 7 && fx.size === 0) return end(true);
@@ -225,7 +225,7 @@ function startGame(map, onEnd) {
     }
     const aim = map.rayToHeight(cx, cy, PLANE_ALT) ?? chest;
     const orbit = t * 1.8;
-    tmp.set(aim.x + Math.cos(orbit) * 3.2 * k, PLANE_ALT, aim.z + Math.sin(orbit) * 3.2 * k);
+    tmp.set(aim.x + Math.cos(orbit) * 2.2 * k, PLANE_ALT, aim.z + Math.sin(orbit) * 2.2 * k);
     const pr = plane.root;
     const before = tmp2.copy(pr.position);
     if (!s.planeReady) { pr.position.copy(tmp); s.planeReady = true; }
@@ -238,7 +238,7 @@ function startGame(map, onEnd) {
       pr.rotation.y += turn * Math.min(1, dt * 8);
       plane.body.rotation.z = THREE.MathUtils.lerp(plane.body.rotation.z, THREE.MathUtils.clamp(-turn * 3, -0.8, 0.8), Math.min(1, dt * 6));
     }
-    pr.scale.setScalar(k * 1.8);
+    pr.scale.setScalar(k * 0.9);
     plane.prop.rotation.z += dt * 40;
     pr.visible = s.mode !== 'gone';
 
@@ -249,7 +249,7 @@ function startGame(map, onEnd) {
       while (s.shot >= 1) {
         s.shot -= 1;
         const from = plane.muzzle.getWorldPosition(new THREE.Vector3());
-        const target = chest.clone().add(rand3(2.6));
+        const target = chest.clone().add(rand3(1.3));
         const dir = target.sub(from);
         const dist = dir.length();
         dir.normalize();
@@ -295,28 +295,28 @@ function startGame(map, onEnd) {
     const mouth = kaiju.mouth.getWorldPosition(new THREE.Vector3());
     const sweep = Math.sin((T - 0.5) * 2.2) * 0.6;
     const ang = heading + sweep;
-    const reach = 12 + Math.sin(T * 3) * 2;
+    const reach = 6 + Math.sin(T * 3);
     const tx = root.position.x + Math.sin(ang) * reach;
     const tz = root.position.z + Math.cos(ang) * reach;
     const floor = floorAt(map, tx, tz);
     const target = new THREE.Vector3(tx, floor, tz);
     const n = Math.round(dt * 80);
     for (let i = 0; i < n; i++) {
-      const dir = target.clone().add(rand3(1.2)).sub(mouth);
+      const dir = target.clone().add(rand3(0.6)).sub(mouth);
       const life = 0.55;
       fx.add({
-        p: mouth.clone(), v: dir.divideScalar(life * 0.8), life, size: 0.45 + Math.random() * 0.4, g: 2, ramp: RAMPS.flame, floor,
+        p: mouth.clone(), v: dir.divideScalar(life * 0.8), life, size: 0.25 + Math.random() * 0.2, g: 2, ramp: RAMPS.flame, floor,
       });
     }
     if (floor > 0.32 && Math.random() < dt * 6 && s.fires.length < 40) {
-      s.fires.push({ p: new THREE.Vector3(tx + rand(1.5), floor, tz + rand(1.5)), life: 5 + Math.random() * 5 });
+      s.fires.push({ p: new THREE.Vector3(tx + rand(0.8), floor, tz + rand(0.8)), life: 5 + Math.random() * 5 });
     }
   }
 
   function stomp(foot) {
     const p = foot.getWorldPosition(new THREE.Vector3());
     p.y = floorAt(map, p.x, p.z);
-    dustRing(p, 14, 2.5);
+    dustRing(p, 14, 1.4);
     shake(2, 0.12);
   }
 
