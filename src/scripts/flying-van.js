@@ -1,16 +1,18 @@
-// Flying van easter egg. Zoom all the way in on the Lower East Side and a black Sprinter van
-// on tiny flapping wings cruises in and circles the neighbourhood. On the roof a chill guy
-// in a black hoodie and sunglasses kicks back in a lawn chair next to his Bernedoodle.
-// Zooming back out to about the default view clears it so it flies in again next time.
+// Flying van easter egg. Zoom all the way in between the Lower East Side and the East Village
+// and a black Sprinter van on tiny flapping wings rises up out of the streets in the middle of
+// the view, then circles there. On the roof a chill guy in a black hoodie and sunglasses kicks
+// back in a lawn chair next to his Bernedoodle. Zooming back out to about the default view
+// clears it so it rises again next time.
 
 import * as THREE from 'three';
 import { latLngToWorld } from './map/geo.js';
 import { watchZoomEgg } from './zoom-egg.js';
 
-const CENTER = latLngToWorld(40.71697, -73.98384); // the Lower East Side
+const SPOT = latLngToWorld(40.7215, -73.9830); // between the Lower East Side and the East Village
 const ALT = 3.4; // flying height, just clear of the tallest blocks around the LES
 const RADIUS = 1.7; // world units, the loop it circles
 const SPEED = 0.65; // world units per second
+const RISE = 3; // seconds to climb from the street to flying height
 const VOX = 0.045; // world units per voxel, the same scale as the Brighton Beach sunbather
 
 const C = {
@@ -26,28 +28,27 @@ const C = {
 const BOX = new THREE.BoxGeometry(1, 1, 1);
 
 export function initFlyingVan(map) {
-  watchZoomEgg(map, new THREE.Vector3(CENTER.x, 0.35, CENTER.z), startScene);
+  watchZoomEgg(map, new THREE.Vector3(SPOT.x, 0.35, SPOT.z), startScene);
 }
 
 function startScene(map) {
   const parts = buildVan();
   map.world.add(parts.root);
 
-  // come in from whichever side of the screen is nearer, flying across the view into the loop
+  // it climbs out of the streets, facing left or right across the screen, and levels off into
+  // a loop around the middle of the view
   const right = new THREE.Vector3(1, 0, 0).applyQuaternion(map.camera.quaternion).setY(0).normalize();
   const dir = right.multiplyScalar(Math.random() < 0.5 ? 1 : -1);
   const a0 = Math.atan2(-dir.x, dir.z); // where on the loop its heading matches dir
-  // pull the loop in toward the camera so that, on screen, it circles over the LES itself
+  // pull the loop in toward the camera so that, on screen, it circles the middle of the view
   const away = new THREE.Vector3();
   map.camera.getWorldDirection(away);
   const lean = Math.hypot(away.x, away.z) / Math.max(0.1, -away.y);
   away.setY(0).normalize();
-  const center = new THREE.Vector3(CENTER.x, ALT, CENTER.z).addScaledVector(away, -ALT * lean);
+  const mid = map.target;
+  const center = new THREE.Vector3(mid.x, ALT, mid.z).addScaledVector(away, -ALT * lean);
   const join = center.clone().add(new THREE.Vector3(Math.cos(a0), 0, Math.sin(a0)).multiplyScalar(RADIUS));
-  // it starts just past the edge of the screen and flies straight in until it joins the loop
-  const entry = (map.camera.right - map.camera.left) / map.zoom / 2 + 1;
-  const start = join.clone().addScaledVector(dir, -entry);
-  const entryTime = entry / SPEED;
+  const start = join.clone().setY(0.35).addScaledVector(dir, -SPEED * RISE * 0.5);
   const turnRate = SPEED / RADIUS;
 
   const pos = new THREE.Vector3();
@@ -57,24 +58,29 @@ function startScene(map) {
   function step(dt) {
     t += dt;
     let bank = 0;
-    if (t < entryTime) {
-      pos.copy(start).addScaledVector(dir, SPEED * t);
+    let pitch = 0;
+    if (t < RISE) {
+      // ease up off the street, nose high, drifting forward into the loop
+      const k = t / RISE;
+      pos.lerpVectors(start, join, k);
+      pos.y = THREE.MathUtils.lerp(start.y, ALT, 1 - (1 - k) ** 2);
       vel.copy(dir);
+      pitch = -0.3 * (1 - k);
     } else {
-      const a = a0 + (t - entryTime) * turnRate;
+      const a = a0 + (t - RISE) * turnRate;
       pos.set(center.x + Math.cos(a) * RADIUS, ALT, center.z + Math.sin(a) * RADIUS);
       vel.set(-Math.sin(a), 0, Math.cos(a));
-      bank = Math.min(1, (t - entryTime) / 1.5) * 0.08; // ease into the lean of the turn
+      bank = Math.min(1, (t - RISE) / 1.5) * 0.08; // ease into the lean of the turn
     }
     const root = parts.root;
     root.position.copy(pos);
     root.position.y += Math.sin(t * 1.7) * 0.06;
     root.rotation.y = Math.atan2(vel.x, vel.z);
     root.rotation.z = -bank;
-    root.rotation.x = Math.sin(t * 1.7 + 1) * 0.03;
+    root.rotation.x = pitch + Math.sin(t * 1.7 + 1) * 0.03;
 
     // wings flap fast, the dog's ears blow back and its tail wags, the guy nods along
-    const flap = Math.sin(t * 14) * 0.7;
+    const flap = Math.sin(t * (t < RISE ? 20 : 14)) * 0.7; // working harder on the climb
     parts.wings[0].rotation.z = -flap;
     parts.wings[1].rotation.z = flap;
     parts.ears[0].rotation.z = -0.35 + Math.sin(t * 9) * 0.25;
@@ -101,11 +107,13 @@ function startScene(map) {
 function buildVan() {
   const mats = new Map();
   const mat = (hex) => {
-    if (!mats.has(hex)) mats.set(hex, new THREE.MeshLambertMaterial({ color: hex, flatShading: true }));
+    // drawn in the transparent pass after the pins (renderOrder 10-20), so it flies over them
+    if (!mats.has(hex)) mats.set(hex, new THREE.MeshLambertMaterial({ color: hex, flatShading: true, transparent: true }));
     return mats.get(hex);
   };
   const box = (parent, w, h, d, x, y, z, hex) => {
     const m = new THREE.Mesh(BOX, mat(hex));
+    m.renderOrder = 30;
     m.scale.set(w, h, d);
     m.position.set(x, y, z);
     parent.add(m);

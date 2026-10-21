@@ -545,9 +545,11 @@ function buildPlane() {
   const body = new THREE.Group();
   root.add(body);
   const box = (w, h, d, x, y, z, hex) => {
-    const m = new THREE.MeshLambertMaterial({ color: hex, flatShading: true });
+    // drawn in the transparent pass after the pins (renderOrder 10-20), so it flies over them
+    const m = new THREE.MeshLambertMaterial({ color: hex, flatShading: true, transparent: true });
     mats.push(m);
     const mesh = new THREE.Mesh(BOX, m);
+    mesh.renderOrder = 30;
     mesh.scale.set(w, h, d);
     mesh.position.set(x, y, z);
     body.add(mesh);
