@@ -53,6 +53,12 @@ On live, visitors without the password see a coming soon page at `/` with a link
 `/logout` clears it. To open the site to everyone later, remove `main` and the `vars` from `wrangler.jsonc`.
 This is a shared password to keep the map private for now, not a real account system.
 
+### Sources shown on dev only
+
+`src/scripts/events/live.js` lists sources (currently Resident Advisor and The Skint) that only dev shows. The
+dev workflow builds with `PUBLIC_SITE=dev`; any other build is a live build, which leaves those sources out of the
+map and drops their snapshot files (today's and tomorrow's) from `dist/`. Their fetchers keep running, so dev stays current.
+
 ## Layout
 
 ```
