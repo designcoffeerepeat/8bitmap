@@ -4,7 +4,7 @@
   "url": "https://ra.co/events/us/newyork"
  },
  "date": "2026-10-21",
- "fetchedAt": "2026-10-21T13:08:14-04:00",
+ "fetchedAt": "2026-10-21T16:24:25-04:00",
  "events": [
   {
    "id": "2555009",
@@ -183,22 +183,6 @@
    "url": "https://ra.co/events/2544446"
   },
   {
-   "id": "2558057",
-   "title": "SOB's presents: Celia Cruz Birthday Tribute",
-   "category": "nightlife",
-   "start": "2026-10-21T18:00:00-04:00",
-   "listedDay": "2026-10-21",
-   "end": "2026-10-21T22:00:00-04:00",
-   "venue": {
-    "name": "SOBs",
-    "address": "204 Varick Street, New York, NY 10014-4810, USA",
-    "neighborhood": "Manhattan",
-    "lat": 40.728449,
-    "lng": -74.005124
-   },
-   "url": "https://ra.co/events/2558057"
-  },
-  {
    "id": "2543496",
    "title": "Out The Bag: Choukroun b2b Monk",
    "category": "nightlife",
@@ -229,6 +213,22 @@
     "lng": -74.01
    },
    "url": "https://ra.co/events/2550033"
+  },
+  {
+   "id": "2558057",
+   "title": "SOB's presents: Celia Cruz Birthday Tribute",
+   "category": "nightlife",
+   "start": "2026-10-21T18:00:00-04:00",
+   "listedDay": "2026-10-21",
+   "end": "2026-10-21T22:00:00-04:00",
+   "venue": {
+    "name": "SOBs",
+    "address": "204 Varick Street, New York, NY 10014-4810, USA",
+    "neighborhood": "Manhattan",
+    "lat": 40.728449,
+    "lng": -74.005124
+   },
+   "url": "https://ra.co/events/2558057"
   },
   {
    "id": "2560656",

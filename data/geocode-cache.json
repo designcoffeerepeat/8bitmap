@@ -2498,6 +2498,11 @@
   "lat": 40.78919,
   "lng": -73.811009
  },
+ "permit place: 1419 ST NICHOLAS AVENUE between WEST  180 STREET and WEST  181 STREET | Manhattan": {
+  "label": "1419 ST NICHOLAS AVENUE & WEST 180th STREET",
+  "lat": 40.848939,
+  "lng": -73.93452
+ },
  "permit place: 1545 FLATBUSH AVENUE | Brooklyn": {
   "label": "1545 FLATBUSH AVENUE, Brooklyn, NY, USA",
   "lat": 40.633422,
@@ -2509,11 +2514,17 @@
   "lat": 40.7428265,
   "lng": -73.9780805
  },
+ "permit place: 25th Street Plaza E 25 Street between 3 Avenue and Lexington Ave | Manhattan": {
+  "label": "25th Street Plaza E 25 Street & 3rd Avenue",
+  "lat": 40.740123,
+  "lng": -73.982585
+ },
  "permit place: 28TH ST between QUEENS  PLAZA SOUTH and 42ND ROAD | Queens": {
   "label": "28 ST & QUEENS PLAZA SOUTH",
   "lat": 40.750556,
   "lng": -73.93862250000001
  },
+ "permit place: 3 AVENUE between 89 STREET and 88 STREET | Brooklyn": null,
  "permit place: 31 AVENUE - 33 STREET to 35 STREET: 31 AVENUE - 33 STREET to 35 STREET | Queens": {
   "label": "31st AVENUE & 33rd STREET",
   "lat": 40.763459,
@@ -2632,6 +2643,7 @@
   "lng": -73.9591465
  },
  "permit place: BROADWAY between WEST   43 STREET and WEST   44 STREET | Manhattan": null,
+ "permit place: BROADWAY between WEST   46 STREET and WEST   47 STREET | Manhattan": null,
  "permit place: BROADWAY between WEST   73 STREET and WEST   74 STREET | Manhattan": null,
  "permit place: BROADWAY between WEST  113 STREET and WEST  116 STREET | Manhattan": null,
  "permit place: Baisley Pond Park | Queens": {

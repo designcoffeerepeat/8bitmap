@@ -4,8 +4,29 @@
   "url": "https://artguide.artforum.com/cities/new-york/"
  },
  "date": "2026-10-22",
- "fetchedAt": "2026-10-21T13:08:32-04:00",
+ "fetchedAt": "2026-10-21T16:24:36-04:00",
  "events": [
+  {
+   "id": "1337124",
+   "title": "Gunnar Magnus: Serial Thriller",
+   "category": "art",
+   "start": "2026-10-22T18:00:00-04:00",
+   "end": "2026-10-22T21:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Locker Room",
+    "address": "",
+    "neighborhood": "Tribeca / SoHo",
+    "lat": 40.717869,
+    "lng": -74.005345
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Opening reception",
+   "details": "",
+   "url": "https://artguide.artforum.com/venue/the-locker-room-8765/exhibition/gunnar-magnus-serial-thriller-1337124/",
+   "tags": []
+  },
   {
    "id": "1337104",
    "title": "FlucT: Tough on the Tongue",

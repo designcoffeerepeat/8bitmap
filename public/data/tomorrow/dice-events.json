@@ -4,32 +4,8 @@
   "url": "https://dice.fm/browse/new_york-5bbf4db0f06331478e9b2c59"
  },
  "date": "2026-10-22",
- "fetchedAt": "2026-10-21T13:09:49-04:00",
+ "fetchedAt": "2026-10-21T16:25:43-04:00",
  "events": [
-  {
-   "id": "6ab45a2e79b6750001a48ee1",
-   "title": "GHOSTEMANE AM.FM ALBUM RELEASE SHOW",
-   "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": "2026-10-22T22:00:00-04:00",
-   "venue": {
-    "name": "Market Hotel",
-    "address": "1140 Myrtle Ave, Brooklyn, NY 11221, USA",
-    "neighborhood": "",
-    "lat": 40.69686,
-    "lng": -73.934664
-   },
-   "price": {
-    "min": 46,
-    "max": 46,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://dice.fm/event/6ab45a2e79b6750001a48ee1",
-   "tags": []
-  },
   {
    "id": "6ace5502e6779b0001b9ef34",
    "title": "Pauli The PSM Listening Event + Live + Signing",
@@ -172,6 +148,30 @@
    "description": "",
    "details": "",
    "url": "https://dice.fm/event/6ac5224152781500018c8909",
+   "tags": []
+  },
+  {
+   "id": "6ab45a2e79b6750001a48ee1",
+   "title": "GHOSTEMANE AM.FM ALBUM RELEASE SHOW",
+   "category": "music",
+   "start": "2026-10-22T19:00:00-04:00",
+   "end": "2026-10-22T22:00:00-04:00",
+   "venue": {
+    "name": "Market Hotel",
+    "address": "1140 Myrtle Ave, Brooklyn, NY 11221, USA",
+    "neighborhood": "",
+    "lat": 40.69686,
+    "lng": -73.934664
+   },
+   "price": {
+    "min": 46,
+    "max": 46,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6ab45a2e79b6750001a48ee1",
    "tags": []
   },
   {
@@ -514,7 +514,7 @@
    "id": "6aad6454cef0bb0001aa3fad",
    "title": "All-Ages Open Skate (skate)",
    "category": "sports",
-   "start": "2026-10-22T18:00:00-04:00",
+   "start": "2026-10-22T17:00:00-04:00",
    "end": "2026-10-22T20:00:00-04:00",
    "venue": {
     "name": "Xanadu",

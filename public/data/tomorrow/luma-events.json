@@ -4,7 +4,7 @@
   "url": "https://luma.com/nyc"
  },
  "date": "2026-10-22",
- "fetchedAt": "2026-10-21T13:10:23-04:00",
+ "fetchedAt": "2026-10-21T16:26:06-04:00",
  "events": [
   {
    "id": "evt-VFMn9TqCqA3BJ1O",
@@ -109,26 +109,6 @@
    "details": "",
    "url": "https://luma.com/nyu-bo74",
    "tags": []
-  },
-  {
-   "id": "evt-eBrDWPhXVdVLPlT",
-   "title": "Startup Scaries",
-   "category": "community",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": "2026-10-22T23:00:00-04:00",
-   "venue": {
-    "name": "25 Kent Ave",
-    "address": "25 Kent Ave, Brooklyn, NY 11249, USA",
-    "neighborhood": "Brooklyn",
-    "lat": 40.723034,
-    "lng": -73.957541
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Fonzi, NYC AI Engineers calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/fonzinyc-va2l",
-   "tags": []
   }
  ],
  "unplaced": [
@@ -171,6 +151,11 @@
    "title": "game night.",
    "address": "address shown to guests only",
    "url": "https://luma.com/umr9k0ee"
+  },
+  {
+   "title": "Startup Scaries",
+   "address": "address shown to guests only",
+   "url": "https://luma.com/fonzinyc-va2l"
   }
  ]
 }

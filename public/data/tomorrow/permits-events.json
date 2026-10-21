@@ -4,7 +4,7 @@
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
  "date": "2026-10-22",
- "fetchedAt": "2026-10-21T13:12:58-04:00",
+ "fetchedAt": "2026-10-21T16:26:17-04:00",
  "events": [
   {
    "id": "978706",
@@ -306,6 +306,29 @@
    ]
   },
   {
+   "id": "967768",
+   "title": "Homecoming",
+   "category": "community",
+   "start": "2026-10-22T12:00:00-04:00",
+   "end": "2026-10-22T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "25th Street Plaza",
+    "address": "25th Street Plaza: 25th Street Plaza E 25 Street Between 3 Avenue And Lexington Ave",
+    "neighborhood": "Manhattan",
+    "lat": 40.740123,
+    "lng": -73.982585
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Plaza Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Plaza Event"
+   ]
+  },
+  {
    "id": "978232",
    "title": "Trick-or-Streets Signature Event: Hillel Plaza, Brooklyn",
    "category": "community",
@@ -503,6 +526,10 @@
   {
    "title": "SAIL Structure at Lou Gehrig Plaza",
    "address": "Lou Gehrig Plaza: Lou Gehrig Plaza E. 161st Street between Walton Ave and Grand Concourse"
+  },
+  {
+   "title": "RevenueCat",
+   "address": "Times Square: 46/47 Broadway Pedestrian Plaza (Times Sq) BROADWAY between WEST   46 STREET and WEST   47 STREET,  WEST   46 STREET between 7 AVENUE and 6 AVENUE,  WEST   46 STREET between 8 AVENUE and BROADWAY"
   },
   {
    "title": "Thursday Wellness Fair with The Third Ave BID",
