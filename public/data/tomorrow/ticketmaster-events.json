@@ -4,7 +4,7 @@
   "url": "https://www.ticketmaster.com/discover/new-york"
  },
  "date": "2026-10-21",
- "fetchedAt": "2026-10-20T19:19:37-04:00",
+ "fetchedAt": "2026-10-20T20:45:20-04:00",
  "events": [
   {
    "id": "LvZ18QrWTgeialOZ0E4-1",
@@ -904,8 +904,8 @@
     "lng": -73.959998
    },
    "price": {
-    "min": 32,
-    "max": 32,
+    "min": 0,
+    "max": 0,
     "currency": "USD"
    },
    "priceUnknown": false,

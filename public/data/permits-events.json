@@ -4,7 +4,7 @@
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
  "date": "2026-10-20",
- "fetchedAt": "2026-10-20T14:31:17-04:00",
+ "fetchedAt": "2026-10-20T20:41:45-04:00",
  "events": [
   {
    "id": "972601",
@@ -96,6 +96,29 @@
    "url": null,
    "tags": [
     "Special Event"
+   ]
+  },
+  {
+   "id": "979706",
+   "title": "Project Street Beat - Keith Haring Foundation Mobile Health Center Community Event",
+   "category": "community",
+   "start": "2026-10-20T07:00:00-04:00",
+   "end": "2026-10-20T18:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "450 St Ann's Avenue",
+    "address": "450 St Ann's Avenue Between East 147 Street And East 148 Street",
+    "neighborhood": "Bronx",
+    "lat": 40.812947,
+    "lng": -73.914243
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
    ]
   },
   {
@@ -410,6 +433,10 @@
   {
    "title": "GrowNYC @ Bowling Green Park",
    "address": "Bowling Green: Bowling Green"
+  },
+  {
+   "title": "Oroweat Activation - Union Sq. Broadway Plaza 17/18",
+   "address": "Union Square Plaza: 17/18 Broadway University Place between E 17 st and E 18th st,  EAST   18 STREET between BROADWAY and PARK AVENUE SOUTH"
   },
   {
    "title": "HHFM Mt. Eden Market",

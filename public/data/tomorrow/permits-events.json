@@ -4,7 +4,7 @@
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
  "date": "2026-10-21",
- "fetchedAt": "2026-10-20T19:19:29-04:00",
+ "fetchedAt": "2026-10-20T20:45:13-04:00",
  "events": [
   {
    "id": "972601",
@@ -260,29 +260,6 @@
    ]
   },
   {
-   "id": "982673",
-   "title": "RevenueCat",
-   "category": "community",
-   "start": "2026-10-21T08:00:00-04:00",
-   "end": "2026-10-21T21:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "12 Avenue",
-    "address": "12 Avenue Between West 48 Street And West 49 Street",
-    "neighborhood": "Manhattan",
-    "lat": 40.76504,
-    "lng": -73.9975
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
    "id": "978290",
    "title": "Immigrant Culture Month at Avenue C Plaza Extension - September",
    "category": "community",
@@ -303,6 +280,29 @@
    "url": null,
    "tags": [
     "Plaza Event"
+   ]
+  },
+  {
+   "id": "982673",
+   "title": "RevenueCat",
+   "category": "community",
+   "start": "2026-10-21T08:00:00-04:00",
+   "end": "2026-10-21T21:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "12 Avenue",
+    "address": "12 Avenue Between West 48 Street And West 49 Street",
+    "neighborhood": "Manhattan",
+    "lat": 40.76504,
+    "lng": -73.9975
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
    ]
   },
   {
