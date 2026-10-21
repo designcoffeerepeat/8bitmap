@@ -5,6 +5,7 @@
 
 import * as THREE from 'three';
 import { latLngToWorld } from './map/geo.js';
+import { watchZoomEgg } from './zoom-egg.js';
 
 const SPOT = latLngToWorld(40.57425, -73.9620); // where he lies down, on the Brighton Beach sand
 const FROM = latLngToWorld(40.5756, -73.9626); // where he walks in from, by the boardwalk
@@ -13,9 +14,6 @@ const VOX = 0.045; // world units per voxel, which makes him about a third of a 
 const WALK = 4.5; // voxels per second
 const STRIDE = 0.55; // seconds per pair of steps
 const GAP = 6.8; // voxels between where he lays the towel and where he sits on it
-const IN_VIEW = 0.6; // the beach has to be this close to the middle of the screen (1 = the edge)
-const RESET_ZOOM = 1.6; // zooming out past this (the default view is 1.15) sends him home
-const SETTLE = 0.4; // seconds at full zoom before he sets off, so a pinch or scroll has finished
 
 const C = {
   skin: '#a8612f', shade: '#864a22', thong: '#141418', shades: '#1d2340',
@@ -25,30 +23,7 @@ const C = {
 const BOX = new THREE.BoxGeometry(1, 1, 1);
 
 export function initSunbather(map) {
-  let scene = null;
-  const ndc = new THREE.Vector3();
-  const spot = new THREE.Vector3(SPOT.x, SAND, SPOT.z);
-  let held = 0; // how long the beach has been in view at full zoom
-
-  map.onFrame((dt) => {
-    const atMax = map.zoom >= map.maxZoom * 0.98;
-    if (scene) {
-      if (map.zoom < RESET_ZOOM) {
-        scene.dispose();
-        scene = null;
-      } else {
-        scene.step(dt);
-      }
-      return;
-    }
-    ndc.copy(spot).project(map.camera);
-    const inView = Math.abs(ndc.x) < IN_VIEW && Math.abs(ndc.y) < IN_VIEW;
-    held = atMax && inView ? held + dt : 0;
-    if (held >= SETTLE) {
-      held = 0;
-      scene = startScene(map);
-    }
-  });
+  watchZoomEgg(map, new THREE.Vector3(SPOT.x, SAND, SPOT.z), startScene);
 }
 
 function startScene(map) {

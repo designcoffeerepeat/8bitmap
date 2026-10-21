@@ -6,6 +6,7 @@ import NEIGHBORHOODS from './map/neighborhoods.json';
 import nycgovSource from './events/sources/nycgov.js';
 import { initMonster } from './monster.js';
 import { initSunbather } from './sunbather.js';
+import { initFlyingVan } from './flying-van.js';
 
 const LIST_PAGE = 8;
 
@@ -53,8 +54,9 @@ for (const n of NEIGHBORHOODS) map.addAnchor(n.name, n.lat, n.lng, { className: 
 
 // The monster easter egg (site menu, or by itself after two minutes).
 initMonster(map);
-// A sunbather on Brighton Beach, only at full zoom.
+// Full-zoom easter eggs: a sunbather on Brighton Beach and a flying van over the Lower East Side.
 initSunbather(map);
+initFlyingVan(map);
 
 // Every publisher with events on the shown day, plus any registered source that returned none.
 let publishers = new Map();
