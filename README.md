@@ -90,7 +90,8 @@ src/scripts/map/palette.js        colours for the city and for event categories
 src/scripts/events/schema.js      the one event shape every source maps into
 src/scripts/events/index.js       loads all sources, filters to today and the map area, de-duplicates, sorts
 src/scripts/events/sources/       one file per event source: nycgov.js, donyc.js, ra.js, skint.js, luma.js, permits.js,
-                                  ticketmaster.js, seatgeek.js, dice.js, artwrld.js (live), snapshot.js (shared reader),
+                                  ticketmaster.js, seatgeek.js, dice.js, artwrld.js, artrabbit.js,
+                                  artguide.js (live), snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
 public/data/tomorrow/*.json       the same snapshots for the next NYC day (EVENTS_DIR=public/data/tomorrow)
@@ -105,6 +106,8 @@ tools/fetch_ticketmaster.py       pulls one day of Ticketmaster events (needs TI
 tools/fetch_seatgeek.py           pulls one day of SeatGeek events (needs SEATGEEK_CLIENT_ID)
 tools/fetch_dice.py               pulls one day of DICE New York events
 tools/fetch_artwrld.py            pulls the day's gallery openings, museum shows and art events from Artwrld
+tools/fetch_artrabbit.py          pulls the day's New York opening receptions from ArtRabbit
+tools/fetch_artguide.py           pulls the day's New York opening receptions from Artforum artguide
 data/geocode-cache.json           address lookups the fetch scripts reuse
 data/venues.json                  street addresses for venues The Skint names without one
 ```
@@ -126,6 +129,8 @@ TICKETMASTER_API_KEY=... python3 tools/fetch_ticketmaster.py
 SEATGEEK_CLIENT_ID=... python3 tools/fetch_seatgeek.py
 python3 tools/fetch_dice.py
 python3 tools/fetch_artwrld.py
+python3 tools/fetch_artrabbit.py
+python3 tools/fetch_artguide.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
 EVENTS_DIR=public/data/tomorrow python3 tools/fetch_nycgov.py 2026-10-18  # tomorrow's snapshot, as the Action writes it
 ```
@@ -209,6 +214,22 @@ exhibitions page for museum shows on view that day, shown all day (gallery shows
 and the events page for talks and performances on the day. Museums are matched by name (`MUSEUM` in the script) and
 placed once from one of their exhibition pages, then remembered in `data/geocode-cache.json`. Only the title, venue,
 dates and a link are kept. Openings and events are only listed ahead of time, so a past day comes back mostly empty.
+
+### ArtRabbit
+
+`fetch_artrabbit.py` pages through ArtRabbit's New York lists of shows on now
+(https://www.artrabbit.com/all-listings/united-states/new-york) and opening soon (`.../upcoming`) and keeps the
+shows whose opening reception falls on the day, as art. Each card carries the venue's coordinates and a line such
+as "Opening: Tomorrow, 18:00" or "Opening: 24 Oct 2026, 5-7pm". ArtRabbit's "Today" and "Tomorrow" follow London
+time, so the script reads them against the London date. Only the title, venue, reception time and a link are kept.
+
+### Artforum artguide
+
+`fetch_artguide.py` reads Artforum artguide's public listings API
+(https://artguide.artforum.com/wp-json/wp/v2/ag-exhibition-event, about 25 pages of 100 worldwide) and keeps the
+New York listings whose opening reception is on the day, as art, with the venue's coordinates, neighborhood and
+reception hours from the listing. Some openings also appear on Artwrld or ArtRabbit under a slightly different
+title, so the same reception can show up twice.
 
 ## Adding a real event source
 
