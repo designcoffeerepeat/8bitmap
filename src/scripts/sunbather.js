@@ -1,6 +1,7 @@
 // Sunbather easter egg. Zoom all the way in on Brighton Beach and a tiny bald, tanned man
-// in a black thong walks out onto the sand, spreads his towel and lies down to sunbathe. He stays
-// there until the map zooms back out, which sends him home so the scene plays again next time.
+// in a black thong walks out onto the sand, spreads his towel and lies down to sunbathe. He
+// stays there until the map zooms back out to about the default view, which sends him home
+// so the scene plays again next time.
 
 import * as THREE from 'three';
 import { latLngToWorld } from './map/geo.js';
@@ -13,6 +14,7 @@ const WALK = 4.5; // voxels per second
 const STRIDE = 0.55; // seconds per pair of steps
 const GAP = 6.8; // voxels between where he lays the towel and where he sits on it
 const IN_VIEW = 0.6; // the beach has to be this close to the middle of the screen (1 = the edge)
+const RESET_ZOOM = 1.6; // zooming out past this (the default view is 1.15) sends him home
 const SETTLE = 0.4; // seconds at full zoom before he sets off, so a pinch or scroll has finished
 
 const C = {
@@ -31,7 +33,7 @@ export function initSunbather(map) {
   map.onFrame((dt) => {
     const atMax = map.zoom >= map.maxZoom * 0.98;
     if (scene) {
-      if (map.zoom < map.maxZoom * 0.96) {
+      if (map.zoom < RESET_ZOOM) {
         scene.dispose();
         scene = null;
       } else {
