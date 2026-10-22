@@ -1,0 +1,115 @@
+{
+ "source": {
+  "name": "Hoboken calendars",
+  "url": "https://hobokenmuseum.org/events/"
+ },
+ "date": "2026-10-23",
+ "fetchedAt": "2026-10-22T00:05:51-04:00",
+ "events": [
+  {
+   "id": "hoboken-public-library-202610231030-nj-family-leave-insurance-workshop",
+   "title": "NJ Family Leave Insurance Workshop",
+   "category": "community",
+   "start": "2026-10-23T10:30:00-04:00",
+   "end": "2026-10-23T12:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hoboken Public Library",
+    "address": "500 Park Avenue, Hoboken, NJ",
+    "neighborhood": "Hoboken",
+    "lat": 40.7429,
+    "lng": -74.0311
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://hobokenlibrary.libnet.info/event/17371026",
+   "tags": [],
+   "publisher": {
+    "id": "venue-hoboken-public-library",
+    "name": "Hoboken Public Library",
+    "url": "https://hobokenlibrary.libnet.info/events"
+   }
+  },
+  {
+   "id": "hoboken-library-grand-street-branch-202610231530-feel-good-friday",
+   "title": "Feel Good Friday",
+   "category": "community",
+   "start": "2026-10-23T15:30:00-04:00",
+   "end": "2026-10-23T16:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hoboken Library, Grand Street Branch",
+    "address": "124 Grand Street, Hoboken, NJ",
+    "neighborhood": "Hoboken",
+    "lat": 40.7374,
+    "lng": -74.0353
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "For teens/tweens, kids",
+   "details": "",
+   "url": "https://hobokenlibrary.libnet.info/event/17503251",
+   "tags": [],
+   "publisher": {
+    "id": "venue-hoboken-public-library",
+    "name": "Hoboken Public Library",
+    "url": "https://hobokenlibrary.libnet.info/events"
+   }
+  },
+  {
+   "id": "hoboken-public-library-202610231545-teen-led-debate-club",
+   "title": "Teen-Led Debate Club",
+   "category": "community",
+   "start": "2026-10-23T15:45:00-04:00",
+   "end": "2026-10-23T16:45:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hoboken Public Library",
+    "address": "500 Park Avenue, Hoboken, NJ",
+    "neighborhood": "Hoboken",
+    "lat": 40.7429,
+    "lng": -74.0311
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "For teens/tweens",
+   "details": "",
+   "url": "https://hobokenlibrary.libnet.info/event/17500968",
+   "tags": [],
+   "publisher": {
+    "id": "venue-hoboken-public-library",
+    "name": "Hoboken Public Library",
+    "url": "https://hobokenlibrary.libnet.info/events"
+   }
+  },
+  {
+   "id": "hoboken-public-library-202610231615-italian-heritage-month-read-aloud",
+   "title": "Italian Heritage Month Read-Aloud",
+   "category": "community",
+   "start": "2026-10-23T16:15:00-04:00",
+   "end": "2026-10-23T16:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hoboken Public Library",
+    "address": "500 Park Avenue, Hoboken, NJ",
+    "neighborhood": "Hoboken",
+    "lat": 40.7429,
+    "lng": -74.0311
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "For kids",
+   "details": "",
+   "url": "https://hobokenlibrary.libnet.info/event/17433876",
+   "tags": [],
+   "publisher": {
+    "id": "venue-hoboken-public-library",
+    "name": "Hoboken Public Library",
+    "url": "https://hobokenlibrary.libnet.info/events"
+   }
+  }
+ ],
+ "unplaced": []
+}
