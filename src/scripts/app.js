@@ -225,7 +225,9 @@ function visibleEvents() {
 }
 
 // The Sources dropdown is always A to Z by name, skipping a leading "The" (MK's rule), whatever sources are added later.
-const sortName = (name) => name.replace(/^the\s+/i, '');
+function sortName(name) {
+  return name.replace(/^the\s+/i, '');
+}
 
 function renderSources() {
   el.srcList.innerHTML = [...publishers.values()].sort((a, b) => sortName(a.name).localeCompare(sortName(b.name), 'en', { sensitivity: 'base', numeric: true })).map((p) => `
