@@ -93,7 +93,7 @@ src/scripts/events/schema.js      the one event shape every source maps into
 src/scripts/events/index.js       loads all sources, filters to today and the map area, de-duplicates, sorts
 src/scripts/events/sources/       one file per event source: nycgov.js, luma.js, permits.js,
                                   ticketmaster.js, seatgeek.js, dice.js, artwrld.js, artrabbit.js,
-                                  artguide.js (live), greenmarkets.js, nps.js, astoria.js,
+                                  artguide.js (live), venues.js, greenmarkets.js, nps.js, astoria.js, redhook.js,
                                   snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
@@ -111,6 +111,7 @@ tools/fetch_artrabbit.py          pulls the day's New York opening receptions fr
 tools/fetch_artguide.py           pulls the day's New York opening receptions from Artforum artguide
 tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, Smalls, comedy clubs, bar trivia)
 tools/fetch_astoria.py            pulls the day's events from Astoria venues' own calendars (Socrates Sculpture Park, Melrose Ballroom, Bohemian Hall)
+tools/fetch_redhook.py            pulls the day's events from Red Hook's own calendars (Pioneer Works, Waterfront Museum, CB6)
 tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
 tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
@@ -134,6 +135,7 @@ python3 tools/fetch_artrabbit.py
 python3 tools/fetch_artguide.py
 python3 tools/fetch_venues.py
 python3 tools/fetch_astoria.py
+python3 tools/fetch_redhook.py
 python3 tools/fetch_greenmarkets.py
 NPS_API_KEY=... python3 tools/fetch_nps.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
@@ -267,6 +269,21 @@ forbid using the site for commercial purposes; Queens Public Library's terms all
 Greater Astoria Historical Society has closed its events feed to the public; Astoria Bookshop's calendar loads from
 another host (Bookmanager); SingleCut, Kaufman Arts District and Astoria Performing Arts Center could not be reached;
 the Queens Council on the Arts and The Astor Room domains now belong to unrelated sites.
+
+### Red Hook calendars
+
+`fetch_redhook.py` covers Red Hook, which the big listing sites barely reach. It reads Pioneer Works' calendar
+(https://pioneerworks.org/calendar, from the data in the page) and each program's own page for its discipline,
+leaving out programs held somewhere else; the Waterfront Museum barge's open hours and shows; and Brooklyn
+Community Board 6's community calendar, which also covers Carroll Gardens, Cobble Hill, Gowanus and Park Slope.
+The last two come from the public feed of The Events Calendar plugin (`/wp-json/tribe/events/v1/events`). CB6
+listings are kept only when they give a street address or a place GeoSearch knows by that exact name, and
+election days and Nitehawk shows (already in the venue calendars) are left out. CB6's robots.txt asks for 10
+seconds between requests, which the script keeps to when a day runs to a second page.
+
+Checked 2026-10-22: Kentler International Drawing Space's terms forbid commercial use of the site's text, so it
+is left out. BWAC has had no Red Hook space since its 2025 fire. Sunny's Bar keeps its calendar on Tockify and
+Jalopy Theatre has moved to jalopytheatre.org, neither of which the build environment can reach yet.
 
 ## Adding a real event source
 

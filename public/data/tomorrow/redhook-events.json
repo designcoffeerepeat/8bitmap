@@ -1,0 +1,37 @@
+{
+ "source": {
+  "name": "Red Hook calendars",
+  "url": "https://pioneerworks.org/calendar"
+ },
+ "date": "2026-10-22",
+ "fetchedAt": "2026-10-21T21:32:15-04:00",
+ "events": [
+  {
+   "id": "waterfront-museum-202610221600-open-hours-on-the-barge",
+   "title": "Open hours on the barge",
+   "category": "community",
+   "start": "2026-10-22T16:00:00-04:00",
+   "end": "2026-10-22T20:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Waterfront Museum",
+    "address": "290 Conover Street",
+    "neighborhood": "",
+    "lat": 40.675222,
+    "lng": -74.018337
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://waterfrontmuseum.org/event/open-hours-3-2/2026-10-22/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-waterfront-museum",
+    "name": "Waterfront Museum",
+    "url": "https://waterfrontmuseum.org/"
+   }
+  }
+ ],
+ "unplaced": []
+}
