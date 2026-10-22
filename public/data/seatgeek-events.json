@@ -4,11 +4,7 @@
   "url": "https://seatgeek.com/cities/new-york"
  },
  "date": "2026-10-22",
-<<<<<<< HEAD
- "fetchedAt": "2026-10-22T13:03:13-04:00",
-=======
  "fetchedAt": "2026-10-22T13:08:04-04:00",
->>>>>>> 0bd6d5b
  "events": [
   {
    "id": "18048729",
@@ -107,33 +103,6 @@
   {
    "id": "18664854",
    "title": "Ghostemane",
-<<<<<<< HEAD
-   "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Stone Circle Theatre",
-    "address": "14 70th Ave, Queens, NY 11385",
-    "neighborhood": "Queens",
-    "lat": 40.70103,
-    "lng": -73.89977
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/ghostemane-tickets/queens-new-york-stone-circle-theatre-2026-10-22-7-pm/concert/18664854",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18666223",
-   "title": "Do Si Don'tcha",
-   "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
-=======
    "category": "music",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
@@ -206,7 +175,6 @@
    "title": "Do Si Don'tcha",
    "category": "music",
    "start": "2026-10-22T19:00:00-04:00",
->>>>>>> 0bd6d5b
    "end": null,
    "allDay": false,
    "venue": {
@@ -226,56 +194,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-   "id": "18471930",
-   "title": "Just In Time",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Circle In The Square Theatre",
-    "address": "1633 Broadway, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7623,
-    "lng": -73.9852
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/just-in-time-tickets/broadway/2026-10-22-7-pm/18471930",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18412450",
-   "title": "Cradle of Filth with Moonspell, Worm, and Black Satellite",
-   "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Warsaw",
-    "address": "261 Driggs Ave, Brooklyn, NY 11222",
-    "neighborhood": "Brooklyn",
-    "lat": 40.7226,
-    "lng": -73.9484
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/cradle-of-filth-tickets/brooklyn-new-york-warsaw-2026-10-22-7-pm/concert/18412450",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-=======
->>>>>>> 0bd6d5b
    "id": "18328005",
    "title": "Carly Pearce (Rescheduled from 10/21/2026)",
    "category": "music",
@@ -322,32 +240,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-   "id": "18286753",
-   "title": "The Play That Goes Wrong",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New World Stages - Stage 4",
-    "address": "340 West 50th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7628,
-    "lng": -73.9874
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/the-play-that-goes-wrong-tickets/theater/2026-10-22-7-pm/18286753",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-=======
->>>>>>> 0bd6d5b
    "id": "18310452",
    "title": "Richard O'Brien's Rocky Horror Show",
    "category": "theater",
@@ -394,8 +286,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-=======
    "id": "18286753",
    "title": "The Play That Goes Wrong",
    "category": "theater",
@@ -419,7 +309,6 @@
    ]
   },
   {
->>>>>>> 0bd6d5b
    "id": "18377761",
    "title": "Anaheim Ducks at New Jersey Devils",
    "category": "sports",
@@ -588,8 +477,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-=======
    "id": "18310057",
    "title": "Other Desert Cities",
    "category": "theater",
@@ -662,7 +549,6 @@
    ]
   },
   {
->>>>>>> 0bd6d5b
    "id": "18149480",
    "title": "The Outsiders",
    "category": "theater",
@@ -710,33 +596,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-   "id": "18187862",
-   "title": "Chicago - The Musical",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Ambassador Theatre - New York",
-    "address": "219 West 49th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7613,
-    "lng": -73.985
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/chicago-the-musical-tickets/broadway/2026-10-22-7-pm/18187862",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-=======
->>>>>>> 0bd6d5b
    "id": "17992885",
    "title": "The Lost Boys",
    "category": "theater",
@@ -761,128 +620,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-   "id": "17898712",
-   "title": "Wicked",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Gershwin Theatre",
-    "address": "222 West 51st Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7624,
-    "lng": -73.9851
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/wicked-tickets/broadway/2026-10-22-7-pm/17898712",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18310057",
-   "title": "Other Desert Cities",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Hudson Theatre - New York",
-    "address": "145 West 44th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7569,
-    "lng": -73.9848
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/other-desert-cities-tickets/broadway/2026-10-22-7-pm/18310057",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18324017",
-   "title": "Billy Crystal: 860",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Imperial Theatre - NY",
-    "address": "249 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7588,
-    "lng": -73.9873
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/billy-crystal-860-tickets/broadway/2026-10-22-7-pm/18324017",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18095996",
-   "title": "Maybe Happy Ending",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Belasco Theatre - NY",
-    "address": "111 West 44th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7563,
-    "lng": -73.9836
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/maybe-happy-ending-tickets/broadway/2026-10-22-7-pm/18095996",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "17924812",
-   "title": "Drunk Dracula",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Ruby Theatre",
-    "address": "35 W 39th St, New York, NY 10018",
-    "neighborhood": "New York",
-    "lat": 40.7527,
-    "lng": -73.9841
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/drunk-dracula-tickets/theater/2026-10-22-7-pm/17924812",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-=======
->>>>>>> 0bd6d5b
    "id": "18655188",
    "title": "The Curious Case of Benjamin Button",
    "category": "theater",
@@ -929,39 +666,23 @@
    ]
   },
   {
-<<<<<<< HEAD
-   "id": "18229788",
-   "title": "Schmigadoon!",
-=======
    "id": "17924812",
    "title": "Drunk Dracula",
->>>>>>> 0bd6d5b
    "category": "theater",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-<<<<<<< HEAD
-    "name": "Nederlander Theatre - NY",
-    "address": "208 West 41st Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7557,
-    "lng": -73.9882
-=======
     "name": "The Ruby Theatre",
     "address": "35 W 39th St, New York, NY 10018",
     "neighborhood": "New York",
     "lat": 40.7527,
     "lng": -73.9841
->>>>>>> 0bd6d5b
    },
    "price": null,
    "priceUnknown": true,
    "description": "theater",
    "details": "",
-<<<<<<< HEAD
-   "url": "https://seatgeek.com/schmigadoon-tickets/theater/2026-10-22-7-pm/18229788",
-=======
    "url": "https://seatgeek.com/drunk-dracula-tickets/theater/2026-10-22-7-pm/17924812",
    "tags": [
     "theater"
@@ -986,7 +707,6 @@
    "description": "theater",
    "details": "",
    "url": "https://seatgeek.com/school-girls-or-the-african-mean-girls-tickets/theater/2026-10-22-7-pm/18390697",
->>>>>>> 0bd6d5b
    "tags": [
     "theater"
    ]
@@ -1016,33 +736,13 @@
    ]
   },
   {
-<<<<<<< HEAD
-   "id": "18390697",
-   "title": "School Girls: Or, The African Mean Girls",
-=======
    "id": "18095996",
    "title": "Maybe Happy Ending",
->>>>>>> 0bd6d5b
    "category": "theater",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-<<<<<<< HEAD
-    "name": "Samuel J. Friedman Theatre",
-    "address": "261 West 47th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7602,
-    "lng": -73.9868
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/school-girls-or-the-african-mean-girls-tickets/theater/2026-10-22-7-pm/18390697",
-   "tags": [
-    "theater"
-=======
     "name": "Belasco Theatre - NY",
     "address": "111 West 44th Street, New York, NY 10036",
     "neighborhood": "New York",
@@ -1081,7 +781,6 @@
    "tags": [
     "theater",
     "broadway"
->>>>>>> 0bd6d5b
    ]
   },
   {
@@ -1108,8 +807,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-=======
    "id": "18229788",
    "title": "Schmigadoon!",
    "category": "theater",
@@ -1133,7 +830,6 @@
    ]
   },
   {
->>>>>>> 0bd6d5b
    "id": "18339686",
    "title": "Heathers - The Musical",
    "category": "theater",
@@ -1182,33 +878,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-   "id": "18208914",
-   "title": "Buena Vista Social Club - The Musical",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Gerald Schoenfeld Theatre",
-    "address": "236 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7587,
-    "lng": -73.9873
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/buena-vista-social-club-the-musical-tickets/broadway/2026-10-22-7-pm/18208914",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-=======
->>>>>>> 0bd6d5b
    "id": "18128146",
    "title": "The Book of Mormon",
    "category": "theater",
@@ -1257,8 +926,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-=======
    "id": "18394746",
    "title": "After",
    "category": "music",
@@ -1282,7 +949,6 @@
    ]
   },
   {
->>>>>>> 0bd6d5b
    "id": "18221691",
    "title": "Hadestown",
    "category": "theater",
@@ -1307,32 +973,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-   "id": "18394746",
-   "title": "After",
-   "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Bowery Ballroom",
-    "address": "6 Delancey Street, New York, NY 10002",
-    "neighborhood": "New York",
-    "lat": 40.7204,
-    "lng": -73.9934
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/after-tickets/new-york-new-york-bowery-ballroom-2026-10-22-7-pm/concert/18394746",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-=======
->>>>>>> 0bd6d5b
    "id": "18149217",
    "title": "Operation Mincemeat",
    "category": "theater",
@@ -1356,8 +996,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-=======
    "id": "18208914",
    "title": "Buena Vista Social Club - The Musical",
    "category": "theater",
@@ -1382,7 +1020,6 @@
    ]
   },
   {
->>>>>>> 0bd6d5b
    "id": "18600854",
    "title": "UpDating",
    "category": "comedy",
@@ -1407,32 +1044,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-   "id": "18294738",
-   "title": "Little Big Town",
-   "category": "music",
-   "start": "2026-10-22T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Prudential Hall at New Jersey Performing Arts Center",
-    "address": "1 Center Street, Newark, NJ 07102",
-    "neighborhood": "Newark",
-    "lat": 40.7402,
-    "lng": -74.1673
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/little-big-town-tickets/newark-new-jersey-prudential-hall-at-new-jersey-performing-arts-center-2026-10-22-7-30-pm/concert/18294738",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-=======
->>>>>>> 0bd6d5b
    "id": "18198723",
    "title": "& Juliet",
    "category": "theater",
@@ -1457,8 +1068,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-=======
    "id": "18294738",
    "title": "Little Big Town",
    "category": "music",
@@ -1482,7 +1091,6 @@
    ]
   },
   {
->>>>>>> 0bd6d5b
    "id": "18104294",
    "title": "Metropolitan Opera - La Boheme",
    "category": "music",
@@ -1557,32 +1165,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-   "id": "18426241",
-   "title": "Midnight",
-   "category": "music",
-   "start": "2026-10-22T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Daryl Roth Theatre",
-    "address": "101 East 15th Street, New York, NY 10003",
-    "neighborhood": "New York",
-    "lat": 40.7353,
-    "lng": -73.9897
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/midnight-tickets/new-york-new-york-daryl-roth-theatre-2026-10-22-7-30-pm/concert/18426241",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-=======
->>>>>>> 0bd6d5b
    "id": "18118923",
    "title": "Oh, Mary!",
    "category": "theater",
@@ -1607,8 +1189,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-=======
    "id": "18426241",
    "title": "Midnight",
    "category": "music",
@@ -1632,7 +1212,6 @@
    ]
   },
   {
->>>>>>> 0bd6d5b
    "id": "18091343",
    "title": "Two Strangers (Carry a Cake Across New York)",
    "category": "theater",
@@ -1751,33 +1330,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-   "id": "18411421",
-   "title": "Perfect Crime",
-   "category": "theater",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Theater Center",
-    "address": "210 W. 50th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7615,
-    "lng": -73.9845
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/perfect-crime-tickets/broadway/2026-10-22-8-pm/18411421",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-=======
->>>>>>> 0bd6d5b
    "id": "18316714",
    "title": "Built to Spill with Quasi and Melanie Radford",
    "category": "music",
@@ -1824,8 +1376,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-=======
    "id": "18411421",
    "title": "Perfect Crime",
    "category": "theater",
@@ -1850,7 +1400,6 @@
    ]
   },
   {
->>>>>>> 0bd6d5b
    "id": "18470433",
    "title": "Wanted",
    "category": "theater",
@@ -1875,35 +1424,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-   "id": "18166057",
-   "title": "MANIA: The ABBA Tribute",
-=======
-   "id": "18262210",
-   "title": "The Damned",
->>>>>>> 0bd6d5b
-   "category": "music",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-<<<<<<< HEAD
-    "name": "Bergen Performing Arts Center",
-    "address": "30 North Van Brunt Street, Englewood, NJ 07631",
-    "neighborhood": "Englewood",
-    "lat": 40.8953,
-    "lng": -73.9749
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/abba-mania-tickets/englewood-new-jersey-bergen-performing-arts-center-2026-10-22-8-pm/concert/18166057",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
    "id": "18262210",
    "title": "The Damned",
    "category": "music",
@@ -1911,8 +1431,6 @@
    "end": null,
    "allDay": false,
    "venue": {
-=======
->>>>>>> 0bd6d5b
     "name": "Brooklyn Steel",
     "address": "319 Frost Street, Brooklyn, NY 11222",
     "neighborhood": "Brooklyn",
@@ -1929,8 +1447,6 @@
    ]
   },
   {
-<<<<<<< HEAD
-=======
    "id": "18166057",
    "title": "MANIA: The ABBA Tribute",
    "category": "music",
@@ -1954,7 +1470,6 @@
    ]
   },
   {
->>>>>>> 0bd6d5b
    "id": "18583525",
    "title": "Downstate",
    "category": "theater",
