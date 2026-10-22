@@ -95,7 +95,7 @@ src/scripts/events/overlap.js     merges the same event listed by several source
                                   information (SeatGeek always wins over Ticketmaster)
 src/scripts/events/sources/       one file per event source: nycgov.js, luma.js, permits.js,
                                   ticketmaster.js, seatgeek.js, dice.js, artwrld.js, artrabbit.js,
-                                  artguide.js (live), venues.js, greenmarkets.js, nps.js, astoria.js, redhook.js,
+                                  artguide.js (live), venues.js, greenmarkets.js, nps.js, astoria.js, redhook.js, foresthills.js,
                                   snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
@@ -114,6 +114,7 @@ tools/fetch_artguide.py           pulls the day's New York opening receptions fr
 tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, Smalls, comedy clubs, bar trivia)
 tools/fetch_astoria.py            pulls the day's events from Astoria venues' own calendars (Socrates Sculpture Park, Melrose Ballroom, Bohemian Hall)
 tools/fetch_redhook.py            pulls the day's events from Red Hook's own calendars (Pioneer Works, Waterfront Museum, Sunny's, CB6)
+tools/fetch_foresthills.py        pulls the day's events from Forest Hills' own calendars (Commonpoint Queens, Rove trivia)
 tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
 tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
@@ -138,6 +139,7 @@ python3 tools/fetch_artguide.py
 python3 tools/fetch_venues.py
 python3 tools/fetch_astoria.py
 python3 tools/fetch_redhook.py
+python3 tools/fetch_foresthills.py
 python3 tools/fetch_greenmarkets.py
 NPS_API_KEY=... python3 tools/fetch_nps.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
@@ -289,6 +291,19 @@ Checked 2026-10-22: Kentler International Drawing Space's terms forbid commercia
 is left out. BWAC has had no Red Hook space since its 2025 fire. Jalopy Theatre's calendar now lives on
 jalopytheatre.netlify.app, which the build environment cannot reach yet. Tockify's terms only load in a browser
 and could not be read.
+
+### Forest Hills calendars
+
+`fetch_foresthills.py` covers Forest Hills, Queens. It reads Commonpoint Queens' public events (the Event category of
+its feed from The Events Calendar plugin, `/wp-json/tribe/events/v1/events`, leaving out the thousands of registered
+classes and virtual sessions) at Central Queens on 108th Street and its other NYC centers, and Rove's Thursday trivia
+night as its home page announces it. Forest Hills Stadium already comes in through Ticketmaster and SeatGeek, the
+Sunday Greenmarket through the farmers markets source and Forest Park through NYC.gov.
+
+Checked 2026-10-22 and left out: Cinemart Cinemas' terms allow personal use only and forbid passing anything on for a
+commercial or public purpose; Queens Public Library's terms allow personal, non-commercial use only; The
+Church-in-the-Gardens' calendar is recovery groups, scouts and rehearsals rather than public events; Regal UA Midway
+is a chain ticketing site.
 
 ## Adding a real event source
 

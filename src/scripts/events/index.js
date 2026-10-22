@@ -22,10 +22,11 @@ import greenmarketsSource from './sources/greenmarkets.js';
 import npsSource from './sources/nps.js';
 import astoriaSource from './sources/astoria.js';
 import redhookSource from './sources/redhook.js';
+import foresthillsSource from './sources/foresthills.js';
 import { LIVE_HIDDEN } from './live.js';
 
 // ./sources/dummy.js holds sample events for offline testing.
-const ALL_SOURCES = [nycgovSource, lumaSource, permitsSource, ticketmasterSource, seatgeekSource, diceSource, artwrldSource, artguideSource, artrabbitSource, venuesSource, greenmarketsSource, npsSource, astoriaSource, redhookSource];
+const ALL_SOURCES = [nycgovSource, lumaSource, permitsSource, ticketmasterSource, seatgeekSource, diceSource, artwrldSource, artguideSource, artrabbitSource, venuesSource, greenmarketsSource, npsSource, astoriaSource, redhookSource, foresthillsSource];
 
 // Live builds (anything not built with PUBLIC_SITE=dev) leave out the sources in ./live.js.
 const IS_DEV = import.meta.env.PUBLIC_SITE === 'dev';
