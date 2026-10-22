@@ -326,6 +326,11 @@ button, a { font: inherit; color: inherit; }
   .hud { right: max(16px, env(safe-area-inset-right, 0px)); top: calc(10px + env(safe-area-inset-top, 0px)); gap: 10px; }
   .brand { padding: 9px 12px 8px; }
   .brand h1 { font-size: 13px; }
+  /* date and count always on one line: the 37 glyphs they reserve (1ch each, no letter spacing here) plus the date's
+     8px must fit the box's inner width (screen minus 32px gutters, 6px border, 24px padding) */
+  .brand p { white-space: nowrap; letter-spacing: 0; font-size: clamp(5px, calc((100vw - 70px) / 37), 9px); }
+  .brand p #today-count { min-width: 22ch; }
+  .day-btn { min-width: calc(12ch + 8px); }
   .hud-top { flex-direction: column; align-items: flex-start; gap: 8px; }
   .ad { min-width: 0; width: 100%; padding: 7px 10px; display: flex; justify-content: center; align-items: center; gap: 10px; }
   .ad small { position: static; }
