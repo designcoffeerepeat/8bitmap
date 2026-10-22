@@ -94,21 +94,20 @@ src/scripts/events/index.js       loads all sources, filters to today and the ma
 src/scripts/events/overlap.js     merges the same event listed by several sources, keeping the listing with the most
                                   information (SeatGeek always wins over Ticketmaster)
 src/scripts/events/sources/       one file per event source: nycgov.js, luma.js, permits.js,
-                                  ticketmaster.js, seatgeek.js, dice.js, artwrld.js,
+                                  ticketmaster.js, seatgeek.js, artwrld.js,
                                   venues.js, greenmarkets.js, nps.js, astoria.js, redhook.js, foresthills.js, coneyisland.js, statenisland.js,
                                   snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
 public/data/tomorrow/*.json       the same snapshots for the next NYC day (EVENTS_DIR=public/data/tomorrow)
 parked/                           doNYC, Resident Advisor, The Skint, Queens Public Library, ArtRabbit, Artforum artguide,
-                                  SmallsLIVE and Other Half Brewing, removed until they agree to be listed
+                                  SmallsLIVE, Other Half Brewing and DICE, removed until they agree to be listed
 public/                           other static files copied as-is (favicon)
 tools/fetch_nycgov.py             pulls one day of NYC.gov events and places them on the map
 tools/fetch_luma.py               pulls one day of Luma NYC events
 tools/fetch_permits.py            pulls one day of NYC permitted street events (street fairs, parades, greenmarkets)
 tools/fetch_ticketmaster.py       pulls one day of Ticketmaster events (needs TICKETMASTER_API_KEY)
 tools/fetch_seatgeek.py           pulls one day of SeatGeek events (needs SEATGEEK_CLIENT_ID)
-tools/fetch_dice.py               pulls one day of DICE New York events
 tools/fetch_artwrld.py            pulls the day's gallery openings, museum shows and art events from Artwrld
 tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, comedy clubs, bar trivia, Flushing)
 tools/fetch_astoria.py            pulls the day's events from Astoria venues' own calendars (Socrates Sculpture Park, Melrose Ballroom, Bohemian Hall)
@@ -133,7 +132,6 @@ python3 tools/fetch_luma.py
 python3 tools/fetch_permits.py
 TICKETMASTER_API_KEY=... python3 tools/fetch_ticketmaster.py
 SEATGEEK_CLIENT_ID=... python3 tools/fetch_seatgeek.py
-python3 tools/fetch_dice.py
 python3 tools/fetch_artwrld.py
 python3 tools/fetch_venues.py
 python3 tools/fetch_astoria.py
@@ -202,12 +200,6 @@ the map shows no Ticketmaster events until the first run that has one.
 `fetch_seatgeek.py` reads the SeatGeek Platform API (https://platform.seatgeek.com) for events within 12 miles of
 Manhattan. It needs a free client id in `SEATGEEK_CLIENT_ID`, which the scheduled refresh reads from a repository
 secret of that name. Without one it skips the run, like Ticketmaster.
-
-### DICE
-
-`fetch_dice.py` reads DICE's New York browse page and the first page of each category (gigs, DJ, party, comedy and
-so on). Those pages list events in date order but cannot be paged further from outside the app, so a very busy
-category may be cut short. Venues are placed from their street address with GeoSearch and cached.
 
 ### Categories
 

@@ -73,3 +73,9 @@ ArtRabbit and artguide follow the steps above (`fetch_artrabbit.py`/`artrabbit.j
 their names go back in the page and legal source lists, and their README sections are in git history). SmallsLIVE and
 Other Half were readers inside `tools/fetch_venues.py`; they are kept in `parked/tools/venues_smalls_otherhalf.py`, with
 the lines to paste back. Before bringing any of them back, get the site's written permission.
+
+DICE was parked the same day (MK's call). It has no public API (only a partner API), its terms could not be read
+from the build, and almost none of its venues publish their own calendar: they embed DICE's widget, so reading them
+would still be reading DICE's data. Public Records was the one venue with its own calendar and is now in
+`tools/fetch_venues.py`. MK is emailing DICE (draft in the project's research/emails/email-dice.txt). To bring DICE
+back, follow the steps above with `fetch_dice.py` and `dice.js`; its README section is in git history.
