@@ -95,7 +95,7 @@ src/scripts/events/overlap.js     merges the same event listed by several source
                                   information (SeatGeek always wins over Ticketmaster)
 src/scripts/events/sources/       one file per event source: nycgov.js, luma.js, permits.js,
                                   ticketmaster.js, seatgeek.js, dice.js, artwrld.js, artrabbit.js,
-                                  artguide.js (live), venues.js, greenmarkets.js, nps.js, astoria.js, redhook.js, foresthills.js,
+                                  artguide.js (live), venues.js, greenmarkets.js, nps.js, astoria.js, redhook.js, foresthills.js, coneyisland.js,
                                   snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
@@ -115,6 +115,7 @@ tools/fetch_venues.py             pulls the day's shows from venues' own calenda
 tools/fetch_astoria.py            pulls the day's events from Astoria venues' own calendars (Socrates Sculpture Park, Melrose Ballroom, Bohemian Hall)
 tools/fetch_redhook.py            pulls the day's events from Red Hook's own calendars (Pioneer Works, Waterfront Museum, Sunny's, CB6)
 tools/fetch_foresthills.py        pulls the day's events from Forest Hills' own calendars (Commonpoint Queens, Rove trivia)
+tools/fetch_coneyisland.py        pulls the day's events from Coney Island's own calendars (Coney Island USA, Luna Park, Deno's Wonder Wheel)
 tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
 tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
@@ -140,6 +141,7 @@ python3 tools/fetch_venues.py
 python3 tools/fetch_astoria.py
 python3 tools/fetch_redhook.py
 python3 tools/fetch_foresthills.py
+python3 tools/fetch_coneyisland.py
 python3 tools/fetch_greenmarkets.py
 NPS_API_KEY=... python3 tools/fetch_nps.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
@@ -310,6 +312,22 @@ Checked 2026-10-22 and left out: Cinemart Cinemas' terms allow personal use only
 commercial or public purpose; Queens Public Library's terms allow personal, non-commercial use only; The
 Church-in-the-Gardens' calendar is recovery groups, scouts and rehearsals rather than public events; Regal UA Midway
 is a chain ticketing site.
+
+### Coney Island calendars
+
+`fetch_coneyisland.py` covers Coney Island and, as they are found, Brighton Beach and Manhattan Beach. It reads
+Coney Island USA's events list (Burlesque at the Beach, sideshow nights, films and talks at 1208 Surf Avenue, with the
+time taken from each listing's Add to Google Calendar link), the named events on Luna Park's park calendar (Halloween
+Harvest days, DJ nights; plain opening hours are left out) and the special events on Deno's Wonder Wheel's season
+calendar (fireworks, karaoke, dance shows; the daily ride hours are left out). The Cyclones already come in through
+SeatGeek and the Amphitheater through Ticketmaster.
+
+Checked 2026-10-22: none of the three has terms against automated reading, and their robots.txt allow these pages.
+Left out for now: the New York Aquarium (its terms are on wcs.org, which the build cannot reach yet), Kingsborough
+Community College (its calendar loads from widget.calendar.moderncampus.net, not reachable yet), On Stage at
+Kingsborough (no season announced), the Alliance for Coney Island (its events page has no dates), the Coney Island
+History Project (closed for the season, no dated listings), Brooklyn Public Library (shows automated visitors a bot
+check page), Millennium Theatre (site down) and Tatiana (its domain is parked).
 
 ## Adding a real event source
 
