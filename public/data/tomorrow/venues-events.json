@@ -4,7 +4,7 @@
   "url": "https://filmforum.org/"
  },
  "date": "2026-10-23",
- "fetchedAt": "2026-10-22T13:11:38-04:00",
+ "fetchedAt": "2026-10-22T16:29:42-04:00",
  "events": [
   {
    "id": "film-forum-202610231225-fatherland",
@@ -613,8 +613,8 @@
    }
   },
   {
-   "id": "new-york-comedy-club-202610231900-kunal-c-arora-simeon-goodson-matt-ruby-h",
-   "title": "Kunal C. Arora, Simeon Goodson, Matt Ruby, Humzah Azeem",
+   "id": "new-york-comedy-club-202610231900-simeon-goodson-kunal-c-arora-matt-ruby-h",
+   "title": "Simeon Goodson, Kunal C. Arora, Matt Ruby, Humzah Azeem",
    "category": "comedy",
    "start": "2026-10-23T19:00:00-04:00",
    "end": null,
@@ -634,7 +634,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/kunal-c-arora-simeon-goodson-matt-ruby-humzah-azeem",
+   "url": "https://newyorkcomedyclub.com/events/simeon-goodson-kunal-c-arora-matt-ruby-humzah-azeem",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club",
@@ -673,8 +673,8 @@
    }
   },
   {
-   "id": "new-york-comedy-club-upper-west-side-202610232030-carmen-lynch-simeon-goodson-reggie-conqu",
-   "title": "Carmen Lynch, Simeon Goodson, Reggie Conquest, Liz Glazer",
+   "id": "new-york-comedy-club-upper-west-side-202610232030-simeon-goodson-carmen-lynch-reggie-conqu",
+   "title": "Simeon Goodson, Carmen Lynch, Reggie Conquest, Liz Glazer",
    "category": "comedy",
    "start": "2026-10-23T20:30:00-04:00",
    "end": null,
@@ -694,7 +694,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/carmen-lynch-simeon-goodson-reggie-conquest-liz-glazer",
+   "url": "https://newyorkcomedyclub.com/events/simeon-goodson-carmen-lynch-reggie-conquest-liz-glazer",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club-upper-west-side",
@@ -1092,6 +1092,32 @@
     "id": "venue-h0l0",
     "name": "H0L0",
     "url": "https://h0l0.nyc/"
+   }
+  },
+  {
+   "id": "public-records-202610232300-p-e-a-r-l-juana-anastasia-kristensen-joh",
+   "title": "P.E.A.R.L., Juana / Anastasia Kristensen, John Raffaele / Bob Maynard & Cassandra Croft",
+   "category": "nightlife",
+   "start": "2026-10-23T23:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Public Records",
+    "address": "233 Butler Street",
+    "neighborhood": "Gowanus",
+    "lat": 40.682176,
+    "lng": -73.98639
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Sound Room",
+   "details": "",
+   "url": "https://link.dice.fm/ed801aad0224",
+   "tags": [],
+   "publisher": {
+    "id": "venue-public-records",
+    "name": "Public Records",
+    "url": "https://publicrecords.nyc/"
    }
   },
   {

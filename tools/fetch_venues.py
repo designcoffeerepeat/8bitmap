@@ -18,6 +18,7 @@ turn scripts away (Queens Theatre).
   The PIT               the month calendar on https://thepit-nyc.com/calendar/
   NYC Trivia League     this week's bar trivia and bingo nights on https://nyctrivialeague.com/
   H0L0                  the club's upcoming nights on https://h0l0.nyc/ (Ridgewood)
+  Public Records        the event calendar on https://publicrecords.nyc/ (Gowanus)
   Onderdonk House       the Greater Ridgewood Historical Society's events list (Ridgewood)
   Myrtle Avenue BID     the month calendar of plaza concerts and street festivals on Myrtle Avenue (Ridgewood)
   Queens Botanical Garden  the garden's events feed (The Events Calendar's public JSON) (Flushing)
@@ -57,6 +58,7 @@ VENUES = {
     'Eastville Comedy Club': ('487 Atlantic Avenue, Brooklyn', 'https://www.eastvillecomedy.com/'),
     'The PIT': ('154 West 29th Street, Manhattan', 'https://thepit-nyc.com/'),
     'H0L0': ('1090 Wyckoff Avenue, Queens', 'https://h0l0.nyc/'),
+    'Public Records': ('233 Butler Street, Brooklyn', 'https://publicrecords.nyc/'),
     'Onderdonk House': ('1820 Flushing Avenue, Queens', 'https://onderdonkhouse.org/events-list'),
     # The plaza where 71st Avenue and Stephen Street meet Myrtle Avenue, placed from the corner shop's address.
     'Herman Hochberg Plaza': ('59-03 71st Avenue, Queens', 'https://ridgewood-ny.com/local-events/'),
@@ -260,6 +262,24 @@ def h0l0(day):
     return out
 
 
+def public_records(day):
+    """The home page's event calendar: 'Thu 10.22', 'Live, 7:00 pm,', the room, then the title; tickets link out."""
+    body = get('https://publicrecords.nyc/', as_json=False)
+    label = day.strftime('%a %m.%d')
+    kinds = {'club': 'nightlife', 'live': 'music'}
+    out = []
+    for href, row in re.findall(r'<a target="_blank" class="event table-row" href="([^"]+)"[^>]*>(.*?)</a>', body, re.S):
+        when = re.search(r'table-cell date">\s*(\w{3} \d{2}\.\d{2})<br />\s*(\w+),\s*(\d{1,2}:\d{2}\s*[ap]m)', row, re.I)
+        title = re.search(r'table-cell title">(.*?)<span', row, re.S)
+        if not (when and title) or when.group(1) != label:
+            continue
+        room = re.search(r'class="location">(.*?)<', row)
+        out.append(event('Public Records', text(title.group(1)), at(day, *clock(when.group(3))), href,
+                         kinds.get(when.group(2).lower(), 'community'), description=text(room.group(1)) if room else '',
+                         neighborhood='Gowanus'))
+    return out
+
+
 def onderdonk(day):
     """Squarespace events list. The Google Calendar link on each event gives its start and end in UTC."""
     body = get('https://onderdonkhouse.org/events-list', as_json=False)
@@ -413,7 +433,7 @@ def latimer_house(day):
     return squarespace_events(day, 'Lewis Latimer House', 'https://www.lewislatimerhouse.org', '/events', 'Latimer House')
 
 
-READERS = [film_forum, nitehawk, nycc, eastville, pit, trivia_league, h0l0, onderdonk, myrtle_bid,
+READERS = [film_forum, nitehawk, nycc, eastville, pit, trivia_league, h0l0, public_records, onderdonk, myrtle_bid,
            queens_botanical, nysci, queens_night_market, kingsland, bowne_house, latimer_house]
 
 

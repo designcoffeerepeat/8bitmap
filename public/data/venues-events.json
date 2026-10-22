@@ -4,7 +4,7 @@
   "url": "https://filmforum.org/"
  },
  "date": "2026-10-22",
- "fetchedAt": "2026-10-22T16:20:13-04:00",
+ "fetchedAt": "2026-10-22T16:29:10-04:00",
  "events": [
   {
    "id": "film-forum-202610221215-once-upon-a-time-in-harlem",
@@ -1856,6 +1856,84 @@
     "id": "venue-h0l0",
     "name": "H0L0",
     "url": "https://h0l0.nyc/"
+   }
+  },
+  {
+   "id": "public-records-202610221900-nate-mercereau-fantastic-thoughts-with-s",
+   "title": "Nate Mercereau – FANTASTIC THOUGHTS with special guests, Carlos Niño [DJ Set]",
+   "category": "music",
+   "start": "2026-10-22T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Public Records",
+    "address": "233 Butler Street",
+    "neighborhood": "Gowanus",
+    "lat": 40.682176,
+    "lng": -73.98639
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Sound Room",
+   "details": "",
+   "url": "https://link.dice.fm/Nb27a51d9049",
+   "tags": [],
+   "publisher": {
+    "id": "venue-public-records",
+    "name": "Public Records",
+    "url": "https://publicrecords.nyc/"
+   }
+  },
+  {
+   "id": "public-records-202610221900-mass-moca-records-presents-alyssa-weinbe",
+   "title": "MASS MoCA Records presents Alyssa Weinberg & Gabriel Cabezas – PIECES OF LIGHT Listening Party + Performance",
+   "category": "music",
+   "start": "2026-10-22T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Public Records",
+    "address": "233 Butler Street",
+    "neighborhood": "Gowanus",
+    "lat": 40.682176,
+    "lng": -73.98639
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Upstairs",
+   "details": "",
+   "url": "https://link.dice.fm/q7cc466abef1",
+   "tags": [],
+   "publisher": {
+    "id": "venue-public-records",
+    "name": "Public Records",
+    "url": "https://publicrecords.nyc/"
+   }
+  },
+  {
+   "id": "public-records-202610222230-echo-chamber-s1-e04-sinai-sound-system-f",
+   "title": "Echo Chamber S1.E04: Sinai Sound System feat. Lasai",
+   "category": "nightlife",
+   "start": "2026-10-22T22:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Public Records",
+    "address": "233 Butler Street",
+    "neighborhood": "Gowanus",
+    "lat": 40.682176,
+    "lng": -73.98639
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Sound Room",
+   "details": "",
+   "url": "https://link.dice.fm/w57821b82029",
+   "tags": [],
+   "publisher": {
+    "id": "venue-public-records",
+    "name": "Public Records",
+    "url": "https://publicrecords.nyc/"
    }
   },
   {

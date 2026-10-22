@@ -236,7 +236,7 @@ down or changes its pages only loses that venue: Film Forum's week of showtimes,
 Williamsburg and Prospect Park, the
 schema.org event data on New York Comedy Club's and Eastville Comedy Club's calendars, The PIT's month calendar,
 NYC Trivia League's weekly list of bar trivia and bingo nights (each
-bar placed from the coordinates on its listing page), and three Ridgewood calendars: H0L0's club nights, the
+bar placed from the coordinates on its listing page), Public Records' event calendar (Gowanus), and three Ridgewood calendars: H0L0's club nights, the
 Onderdonk House's events and the Myrtle Avenue BID's plaza concerts and street festivals (placed at Herman Hochberg
 Plaza, or on Myrtle Avenue when an event gives no place), and six in and around Flushing: Queens Botanical Garden's
 events feed, the New York Hall of Science's one-time public events, the Queens Night Market's next market night, and
