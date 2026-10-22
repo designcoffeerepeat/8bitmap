@@ -1,11 +1,11 @@
-// Site chrome outside the map: the menu in the title box (including LAUNCH MONSTER), the Contact / Privacy / Terms
+// Site chrome outside the map: the menu in the title box (including MONSTER ATTACK!), the Contact / About / Privacy / Terms
 // modals, the empty ad slot (opens Contact on Ad/Event Inquiry) and the cookie banner.
 // Loaded on its own so it works while the map and events are still loading.
 
 const $ = (sel) => document.querySelector(sel);
 const menuBtn = $('#menu-btn');
 const menu = $('#site-menu');
-const MODALS = ['contact', 'privacy', 'terms'];
+const MODALS = ['contact', 'about', 'privacy', 'terms'];
 
 // ---- menu ----------------------------------------------------------------------
 function toggleMenu(open) {
@@ -23,15 +23,19 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-// LAUNCH MONSTER: src/scripts/monster.js picks this up once the map is ready.
-$('#launch-monster').addEventListener('click', () => {
+// MONSTER ATTACK! starts the attack, and a second click calls it off. src/scripts/monster.js
+// takes over once the map is ready; until then the click just queues (or unqueues) it.
+const monsterBtn = $('#launch-monster');
+monsterBtn.addEventListener('click', () => {
   toggleMenu(false);
-  window.monsterQueued = true;
-  window.dispatchEvent(new Event('monster:launch'));
+  if (window.monsterToggle) return window.monsterToggle();
+  window.monsterQueued = !window.monsterQueued;
+  monsterBtn.setAttribute('aria-pressed', String(window.monsterQueued));
 });
+window.addEventListener('monster:state', (e) => monsterBtn.setAttribute('aria-pressed', String(e.detail.on)));
 
 // ---- modals ----------------------------------------------------------------------
-// Each modal also has a hash (#contact, #privacy, #terms) so it can be linked to directly.
+// Each modal also has a hash (#contact, #about, #privacy, #terms) so it can be linked to directly.
 function openModal(name, { topic } = {}) {
   const dialog = $(`#modal-${name}`);
   if (!dialog) return;

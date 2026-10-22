@@ -19,6 +19,11 @@ To bring one back:
    `src/components/PrivacyPolicy.astro`, and its section back to the main README.
 5. Run the fetcher once (or the Refresh events workflow) so its snapshot exists.
 
+Queens Public Library was parked on 2026-10-22 before it ever reached live. Its robots.txt allows the calendar,
+but its terms (Library Policies, Copyright & Disclaimer) allow personal, non-commercial use only and forbid
+republishing, so it needs the library's permission first. To bring it back, follow the steps above with
+`fetch_qpl.py` and `qpl.js`; it has no entries in the page or legal source lists.
+
 ## How each one worked
 
 ### doNYC
@@ -42,3 +47,35 @@ a street address or block in its text, from `data/venues.json`, or from a GeoSea
 landmarks). Everything else is listed under `unplaced`. Adding a venue's address to `data/venues.json` places it
 from then on. The text is free-form, so check the output now and then: prices and times are best guesses.
 
+
+### Queens Public Library
+
+`fetch_qpl.py` reads the library calendar (https://www.queenslibrary.org/calendar) one branch and one day at a time
+for the branches in `BRANCHES` (the Flushing area: Flushing, East Flushing, McGoldrick, Mitchell-Linden, Queensboro
+Hill, Pomonok). The calendar filters by each branch's location code (`sm_pSsnVirtua`), not its name; the codes for
+other branches are in the calendar page's `facetsInfoCal`. A desktop browser's user agent gets an empty page, so the
+script names itself. It keeps in-person programs (skipping online, staff-only and cancelled ones) and only the
+title, time, branch, program type and a link back.
+
+## Parked on 2026-10-22 after the source audit
+
+ArtRabbit, Artforum artguide, SmallsLIVE (Smalls, Mezzrow, Jazzcultural) and Other Half Brewing came off for their
+terms, found in the source legality audit (MK's call):
+
+- **Other Half Brewing:** its Terms of Service allow viewing the site for personal, non-commercial use only and forbid
+  using "bots, scripts, or automated tools to access the Site".
+- **SmallsLIVE:** its terms license the site "for personal non-commercial purposes only".
+- **ArtRabbit:** its terms forbid "reproducing, copying ... any of the Website, including ... any information".
+- **Artforum artguide:** its terms are Penske Media's (pmc.com), which could not be read from the build; parked until
+  someone reads them in a browser.
+
+ArtRabbit and artguide follow the steps above (`fetch_artrabbit.py`/`artrabbit.js`, `fetch_artguide.py`/`artguide.js`;
+their names go back in the page and legal source lists, and their README sections are in git history). SmallsLIVE and
+Other Half were readers inside `tools/fetch_venues.py`; they are kept in `parked/tools/venues_smalls_otherhalf.py`, with
+the lines to paste back. Before bringing any of them back, get the site's written permission.
+
+DICE was parked the same day (MK's call). It has no public API (only a partner API), its terms could not be read
+from the build, and almost none of its venues publish their own calendar: they embed DICE's widget, so reading them
+would still be reading DICE's data. Public Records was the one venue with its own calendar and is now in
+`tools/fetch_venues.py`. MK is emailing DICE (draft in the project's research/emails/email-dice.txt). To bring DICE
+back, follow the steps above with `fetch_dice.py` and `dice.js`; its README section is in git history.

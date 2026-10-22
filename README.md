@@ -1,4 +1,4 @@
-# 8-Bit NYC
+# 8bitNYC
 
 An interactive 8-bit (voxel, pixelated) map of New York City showing today's events as pins.
 Built with [Astro](https://astro.build) and [three.js](https://threejs.org), deployed on Cloudflare.
@@ -45,15 +45,13 @@ Cloudflare offers two setup screens and this repo works with either:
 
 Node version comes from `.node-version` (22).
 
-### Password and coming soon page
+### Dev password
 
-`worker/index.js` runs in front of the static build on both Workers. It reads three vars from `wrangler.jsonc`:
-`SITE_PASSWORD` (the shared password: `8bit01` on live, overridden to `alpha8bit01` by the dev workflow), `SITE` (`live`, or `dev` from the dev workflow) and
-`DEV_URL`. On live, visitors without the password see a coming soon page at `/` with a link to the dev site and a
-link to `/login`; on dev every page asks for the password first. Logging in sets a cookie for 30 days, and
-`/logout` clears it. To open the site to everyone later, remove `main` and the `vars` from `wrangler.jsonc`.
-This is a shared password to keep the map private for now, not a real account system.
-Keep `worker/index.js` itself when opening the site up: it also runs the contact form and the cookie consent check below.
+`worker/index.js` runs in front of the static build on both Workers. Live (`SITE` is `live` in `wrangler.jsonc`)
+is open to everyone. The dev workflow deploys with `SITE=dev` and `SITE_PASSWORD=alpha8bit01`, so on dev every page
+asks for the password first. Logging in sets a cookie for 30 days, and `/logout` clears it. On live, `/login` and
+`/logout` just go to the map. This is a shared password to keep unreleased changes private, not a real account system.
+Keep `worker/index.js` itself: it also runs the contact form and the cookie consent check below.
 
 ### Contact form, legal pages and cookie consent
 
@@ -91,25 +89,30 @@ src/scripts/map/renderer.js       three.js scene: voxel land and buildings, pins
 src/scripts/map/palette.js        colours for the city and for event categories
 src/scripts/events/schema.js      the one event shape every source maps into
 src/scripts/events/index.js       loads all sources, filters to today and the map area, de-duplicates, sorts
+src/scripts/events/overlap.js     merges the same event listed by several sources, keeping the listing with the most
+                                  information (SeatGeek always wins over Ticketmaster)
 src/scripts/events/sources/       one file per event source: nycgov.js, luma.js, permits.js,
-                                  ticketmaster.js, seatgeek.js, dice.js, artwrld.js, artrabbit.js,
-                                  artguide.js (live), greenmarkets.js, nps.js,
+                                  ticketmaster.js, seatgeek.js, artwrld.js,
+                                  venues.js, greenmarkets.js, nps.js, astoria.js, redhook.js, foresthills.js, coneyisland.js, statenisland.js,
                                   snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
 public/data/tomorrow/*.json       the same snapshots for the next NYC day (EVENTS_DIR=public/data/tomorrow)
-parked/                           doNYC, Resident Advisor and The Skint, removed until they agree to be listed
+parked/                           doNYC, Resident Advisor, The Skint, Queens Public Library, ArtRabbit, Artforum artguide,
+                                  SmallsLIVE, Other Half Brewing and DICE, removed until they agree to be listed
 public/                           other static files copied as-is (favicon)
 tools/fetch_nycgov.py             pulls one day of NYC.gov events and places them on the map
 tools/fetch_luma.py               pulls one day of Luma NYC events
 tools/fetch_permits.py            pulls one day of NYC permitted street events (street fairs, parades, greenmarkets)
 tools/fetch_ticketmaster.py       pulls one day of Ticketmaster events (needs TICKETMASTER_API_KEY)
 tools/fetch_seatgeek.py           pulls one day of SeatGeek events (needs SEATGEEK_CLIENT_ID)
-tools/fetch_dice.py               pulls one day of DICE New York events
 tools/fetch_artwrld.py            pulls the day's gallery openings, museum shows and art events from Artwrld
-tools/fetch_artrabbit.py          pulls the day's New York opening receptions from ArtRabbit
-tools/fetch_artguide.py           pulls the day's New York opening receptions from Artforum artguide
-tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, Smalls, comedy clubs, bar trivia)
+tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, comedy clubs, bar trivia, Flushing)
+tools/fetch_astoria.py            pulls the day's events from Astoria venues' own calendars (Socrates Sculpture Park, Melrose Ballroom, Bohemian Hall)
+tools/fetch_redhook.py            pulls the day's events from Red Hook's own calendars (Pioneer Works, Waterfront Museum, Sunny's, CB6)
+tools/fetch_foresthills.py        pulls the day's events from Forest Hills' own calendars (Commonpoint Queens, Rove trivia)
+tools/fetch_coneyisland.py        pulls the day's events from Coney Island's own calendars (Coney Island USA, Luna Park, Deno's Wonder Wheel)
+tools/fetch_statenisland.py       pulls the day's events from Staten Island's own calendars (Children's Museum, Noble Maritime, Richmond Town, Alice Austen House)
 tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
 tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
@@ -127,11 +130,13 @@ python3 tools/fetch_luma.py
 python3 tools/fetch_permits.py
 TICKETMASTER_API_KEY=... python3 tools/fetch_ticketmaster.py
 SEATGEEK_CLIENT_ID=... python3 tools/fetch_seatgeek.py
-python3 tools/fetch_dice.py
 python3 tools/fetch_artwrld.py
-python3 tools/fetch_artrabbit.py
-python3 tools/fetch_artguide.py
 python3 tools/fetch_venues.py
+python3 tools/fetch_astoria.py
+python3 tools/fetch_redhook.py
+python3 tools/fetch_foresthills.py
+python3 tools/fetch_coneyisland.py
+python3 tools/fetch_statenisland.py
 python3 tools/fetch_greenmarkets.py
 NPS_API_KEY=... python3 tools/fetch_nps.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
@@ -177,7 +182,8 @@ new year's list is out, last year's is used.
 the city (`PARKS` in the script: Statue of Liberty, Ellis Island, Governors Island, Gateway, Federal Hall, Castle
 Clinton, Grant's Tomb and others). It needs a free key in `NPS_API_KEY`, read from a repository secret of that name
 by the scheduled refresh; without one it skips the run, like Ticketmaster. Events without coordinates are placed at
-their park, and an event with several times a day becomes one pin per time. NPS text is US government work and free
+their park, except Gateway events at Sandy Hook (New Jersey), which are dropped. A tour run several times a day is
+one pin at its first time, with every time listed in its description. NPS text is US government work and free
 to reuse.
 
 ### Ticketmaster
@@ -193,18 +199,15 @@ the map shows no Ticketmaster events until the first run that has one.
 Manhattan. It needs a free client id in `SEATGEEK_CLIENT_ID`, which the scheduled refresh reads from a repository
 secret of that name. Without one it skips the run, like Ticketmaster.
 
-### DICE
-
-`fetch_dice.py` reads DICE's New York browse page and the first page of each category (gigs, DJ, party, comedy and
-so on). Those pages list events in date order but cannot be paged further from outside the app, so a very busy
-category may be cut short. Venues are placed from their street address with GeoSearch and cached.
-
 ### Categories
 
 Each fetcher maps its source's own labels into the map's categories (`CATEGORIES` in `src/scripts/events/schema.js`).
 Theater covers plays, musicals, opera and dance; art covers museums, galleries, exhibits and openings. When a
 listing has no usable label, `venue_category()` in `tools/fetch_nycgov.py` decides from the venue name: a museum or
 gallery is art, a theater or playhouse is theater, a cinema is film.
+Trivia covers trivia and quiz nights: `normalizeEvent()` in `src/scripts/events/schema.js` moves any event whose
+title says trivia or quiz, and every NYC Trivia League night (its Mixtape Bingo too), into trivia whatever its
+source filed it under, so new sources get this without changes.
 
 ### Artwrld
 
@@ -216,38 +219,122 @@ and the events page for talks and performances on the day. Museums are matched b
 placed once from one of their exhibition pages, then remembered in `data/geocode-cache.json`. Only the title, venue,
 dates and a link are kept. Openings and events are only listed ahead of time, so a past day comes back mostly empty.
 
-### ArtRabbit
-
-`fetch_artrabbit.py` pages through ArtRabbit's New York lists of shows on now
-(https://www.artrabbit.com/all-listings/united-states/new-york) and opening soon (`.../upcoming`) and keeps the
-shows whose opening reception falls on the day, as art. Each card carries the venue's coordinates and a line such
-as "Opening: Tomorrow, 18:00" or "Opening: 24 Oct 2026, 5-7pm". ArtRabbit's "Today" and "Tomorrow" follow London
-time, so the script reads them against the London date. Only the title, venue, reception time and a link are kept.
-
-### Artforum artguide
-
-`fetch_artguide.py` reads Artforum artguide's public listings API
-(https://artguide.artforum.com/wp-json/wp/v2/ag-exhibition-event, about 25 pages of 100 worldwide) and keeps the
-New York listings whose opening reception is on the day, as art, with the venue's coordinates, neighborhood and
-reception hours from the listing. Some openings also appear on Artwrld or ArtRabbit under a slightly different
-title, so the same reception can show up twice.
-
 ### Venue calendars
 
 `fetch_venues.py` reads the schedules venues publish on their own websites, one reader per site, so a site that is
 down or changes its pages only loses that venue: Film Forum's week of showtimes, Nitehawk's day pages for
-Williamsburg and Prospect Park, the today-and-tomorrow sets on SmallsLIVE (Smalls, Mezzrow and Jazzcultural), the
+Williamsburg and Prospect Park, the
 schema.org event data on New York Comedy Club's and Eastville Comedy Club's calendars, The PIT's month calendar,
-Other Half Brewing's NYC taproom events, and NYC Trivia League's weekly list of bar trivia and bingo nights (each
-bar placed from the coordinates on its listing page). A film is one event at its first showing, with the day's
+NYC Trivia League's weekly list of bar trivia and bingo nights (each
+bar placed from the coordinates on its listing page), Public Records' event calendar (Gowanus), and three Ridgewood calendars: H0L0's club nights, the
+Onderdonk House's events and the Myrtle Avenue BID's plaza concerts and street festivals (placed at Herman Hochberg
+Plaza, or on Myrtle Avenue when an event gives no place), and six in and around Flushing: Queens Botanical Garden's
+events feed, the New York Hall of Science's one-time public events, the Queens Night Market's next market night, and
+the events lists of Kingsland Homestead (Queens Historical Society), Bowne House and Lewis Latimer House. H0L0's ticket links go to the ticket sellers it uses. A film is one event at its first showing, with the day's
 showtimes in its description. Each event names its venue as its publisher (trivia nights name NYC Trivia League),
 so they are listed one by one in the Sources dropdown. Venues are placed once from the street address in `VENUES`
 and remembered in `data/geocode-cache.json`. Adding a venue means a reader function, an entry in `VENUES` and a
 place in `READERS`. Only title, time, price when given and a link are kept.
 
 Check a site's terms of use before adding it. St. Marks Comedy Club, QED, McNally Jackson and Apple forbid automated
-access, so they are left out; Geeks Who Drink, The Strand, Greenlight, Barnes & Noble, Film at Lincoln Center,
-Juilliard, BRIC and The Public Theater turn automated visits away.
+access, Flushing Town Hall and the Kupferberg Center forbid republishing their content, and Queens Theatre turns
+scripts away, so they are left out; Geeks Who Drink, The Strand, Greenlight, Barnes & Noble, Film at Lincoln Center,
+Juilliard, BRIC, The Public Theater and TV Eye turn automated visits away. Nowadays lists its nights only on
+Resident Advisor, and Trans-Pecos only through VenuePilot, so neither is read here.
+
+### Astoria venues
+
+`fetch_astoria.py` works the same way for Astoria, in its own file so neighbourhoods can be added without touching
+each other: the Upcoming list on Socrates Sculpture Park's Public Programs page (read through the site's WordPress
+page API, since the page itself only comes compressed in a format Python cannot read), the upcoming shows on Melrose
+Ballroom's events page (start and end come from each show's add-to-calendar link), and the event list Bohemian Hall's
+page carries for its events widget. Only title, time and a link are kept, and each venue is its own publisher.
+
+Checked on 2026-10-22 and left out: Museum of the Moving Image turns automated visits away; Noguchi Museum's terms
+forbid using the site for commercial purposes; Queens Public Library's terms allow personal, non-commercial use only;
+Greater Astoria Historical Society has closed its events feed to the public; Astoria Bookshop's calendar loads from
+another host (Bookmanager); SingleCut, Kaufman Arts District and Astoria Performing Arts Center could not be reached;
+the Queens Council on the Arts and The Astor Room domains now belong to unrelated sites.
+
+### Red Hook calendars
+
+`fetch_redhook.py` covers Red Hook, which the big listing sites barely reach. It reads Pioneer Works' calendar
+(https://pioneerworks.org/calendar, from the data in the page) and each program's own page for its discipline,
+leaving out programs held somewhere else; the Waterfront Museum barge's open hours and shows; Sunny's Bar's music
+nights, from the page data of the Tockify calendar its site embeds (https://tockify.com/sunnysmusic; robots.txt
+keeps readers off Tockify's API, so only that page is read); and Brooklyn
+Community Board 6's community calendar, which also covers Carroll Gardens, Cobble Hill, Gowanus and Park Slope.
+The last two come from the public feed of The Events Calendar plugin (`/wp-json/tribe/events/v1/events`). CB6
+listings are kept only when they give a street address or a place GeoSearch knows by that exact name, and
+election days and Nitehawk shows (already in the venue calendars) are left out. CB6's robots.txt asks for 10
+seconds between requests, which the script keeps to when a day runs to a second page.
+
+Checked 2026-10-22: Kentler International Drawing Space's terms forbid commercial use of the site's text, so it
+is left out. BWAC has had no Red Hook space since its 2025 fire. Jalopy Theatre's calendar now lives on
+jalopytheatre.netlify.app, which the build environment cannot reach yet. Tockify's terms only load in a browser
+and could not be read.
+
+### Forest Hills calendars
+
+`fetch_foresthills.py` covers Forest Hills, Queens. It reads Commonpoint Queens' public events (the Event category of
+its feed from The Events Calendar plugin, `/wp-json/tribe/events/v1/events`, leaving out the thousands of registered
+classes and virtual sessions) at Central Queens on 108th Street and its other NYC centers, and Rove's Thursday trivia
+night as its home page announces it. Forest Hills Stadium already comes in through Ticketmaster and SeatGeek, the
+Sunday Greenmarket through the farmers markets source and Forest Park through NYC.gov.
+
+Checked 2026-10-22 and left out: Cinemart Cinemas' terms allow personal use only and forbid passing anything on for a
+commercial or public purpose; Queens Public Library's terms allow personal, non-commercial use only; The
+Church-in-the-Gardens' calendar is recovery groups, scouts and rehearsals rather than public events; Regal UA Midway
+is a chain ticketing site.
+
+### Coney Island calendars
+
+`fetch_coneyisland.py` covers Coney Island and, as they are found, Brighton Beach and Manhattan Beach. It reads
+Coney Island USA's events list (Burlesque at the Beach, sideshow nights, films and talks at 1208 Surf Avenue, with the
+time taken from each listing's Add to Google Calendar link), the named events on Luna Park's park calendar (Halloween
+Harvest days, DJ nights; plain opening hours are left out) and the special events on Deno's Wonder Wheel's season
+calendar (fireworks, karaoke, dance shows; the daily ride hours are left out). The Cyclones already come in through
+SeatGeek and the Amphitheater through Ticketmaster.
+
+Checked 2026-10-22: none of the three has terms against automated reading, and their robots.txt allow these pages.
+Left out for now: the New York Aquarium (its terms are on wcs.org, which the build cannot reach yet), Kingsborough
+Community College (its calendar loads from widget.calendar.moderncampus.net, not reachable yet), On Stage at
+Kingsborough (no season announced), the Alliance for Coney Island (its events page has no dates), the Coney Island
+History Project (closed for the season, no dated listings), Brooklyn Public Library (shows automated visitors a bot
+check page), Millennium Theatre (site down) and Tatiana (its domain is parked).
+
+### Staten Island calendars
+
+`fetch_statenisland.py` covers Staten Island, which the big listing sites barely reach. It reads the Staten Island
+Children's Museum's feed from The Events Calendar plugin (`/wp-json/tribe/events/v1/events`, leaving out
+members-only and private events), the Squarespace events pages of the Noble Maritime Collection and Historic
+Richmond Town (`/events?format=json`, keeping only what starts and ends on the day, so exhibitions and season-long
+tours are left out) and the Alice Austen House's events list. St. George Theatre sells through Ticketmaster, which
+already lists its shows, and the island's parks come in through NYC.gov.
+
+Checked 2026-10-22 and left out: Empire Outlets' terms allow personal, non-commercial use only; Kills Boro
+Brewing's terms forbid reproducing any site content without written permission; Snug Harbor, the Staten Island
+Museum and Wagner College sit behind a Cloudflare check that blocks automated readers, Staten Island Arts' server
+refuses them, NYPL has a bot wall and the Staten Island Zoo refuses requests; the Conference House lists tours
+only; Greenbelt Conservancy's and Flagship Brewing's calendars are empty or a year old; the CSI Center for the Arts'
+calendar is school-group shows; the Jacques Marchais Museum's Wix calendar only loads in a browser; the
+Garibaldi-Meucci Museum's site could not be reached.
+
+### Jersey City calendars
+
+`fetch_jerseycity.py` covers Jersey City, NJ, which is already drawn on the map's New Jersey shore. It reads the
+city's own calendar from the Office of Cultural Affairs (jerseycityculture.org, The Events Calendar feed, leaving
+out meetings and city-wide listings with no place), Art House Productions' Upcoming Events list from its Shopify
+box office (`/collections/upcomingevents/products.json`, with each show's dates read from its description), Mana
+Contemporary's event list (`/wp-json/wp/v2/event`, Jersey City events only) and the Historic Downtown SID's feed
+(Groove on Grove and the Grove Street farmers market, empty between seasons). NYC GeoSearch stops at the Hudson,
+so the places the city calendar uses most are written into `PLACES`, and other street addresses go to the US
+Census geocoder and are remembered in `data/geocode-cache.json`.
+
+Checked 2026-10-22 and left out: the Loew's Jersey Theatre's terms allow personal, non-commercial use only and
+forbid automated collection; WFMU's terms forbid automated requests and data mining (Monty Hall); White Eagle
+Hall, Jersey City Theater Center, the library's main site and Liberty Science Center turn automated visits away;
+the Exchange Place Alliance's domain no longer runs its site.
 
 ## Adding a real event source
 

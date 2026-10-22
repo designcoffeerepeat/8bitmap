@@ -1,6 +1,6 @@
 import { createMap } from './map/renderer.js';
 import { loadEventsForDate, SOURCES } from './events/index.js';
-import { CATEGORIES, CATEGORY_LABELS } from './events/schema.js';
+import { CATEGORIES, MAIN_CATEGORIES, CATEGORY_LABELS } from './events/schema.js';
 import { CATEGORY_COLORS } from './map/palette.js';
 import NEIGHBORHOODS from './map/neighborhoods.json';
 import nycgovSource from './events/sources/nycgov.js';
@@ -17,7 +17,7 @@ const SEATGEEK_LOGO = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="fa
 
 const state = {
   events: [],
-  filter: 'all',
+  catsOff: new Set(), // categories unticked in the Categories dropdown (new ones start ticked)
   sources: new Set(), // publisher ids switched on in the Sources dropdown
   selected: null,
   showAll: false,
@@ -30,7 +30,6 @@ const el = {
   map: $('#map'),
   date: $('#today-date'),
   count: $('#today-count'),
-  chips: $('#chips'),
   list: $('#event-list'),
   more: $('#show-more'),
   detail: $('#detail'),
@@ -41,6 +40,7 @@ const el = {
   catBtn: $('#cat-btn'),
   catMenu: $('#cat-menu'),
   catSummary: $('#cat-summary'),
+  catList: $('#cat-list'),
   srcMenu: $('#src-menu'),
   srcList: $('#src-list'),
   srcSummary: $('#src-summary'),
@@ -120,6 +120,22 @@ document.addEventListener('pointerdown', (e) => {
 });
 $('#src-all').addEventListener('click', () => setSources([...publishers.keys()]));
 $('#src-none').addEventListener('click', () => setSources([]));
+$('#cat-all').addEventListener('click', () => setCategories([]));
+$('#cat-none').addEventListener('click', () => setCategories(CATEGORIES));
+el.catList.addEventListener('change', (e) => {
+  const id = e.target.value;
+  if (e.target.checked) state.catsOff.delete(id);
+  else state.catsOff.add(id);
+  categoriesChanged();
+});
+// Tapping a category's name shows only that category; tapping it again when it is the only one brings all back.
+el.catList.addEventListener('click', (e) => {
+  const c = e.target.closest('.cat-only')?.dataset.cat;
+  if (!c) return;
+  const onlyThis = state.catsOff.size === CATEGORIES.length - 1 && !state.catsOff.has(c);
+  setCategories(onlyThis ? [] : CATEGORIES.filter((x) => x !== c));
+  toggleCategories(false);
+});
 el.srcList.addEventListener('change', (e) => {
   const id = e.target.value;
   if (e.target.checked) state.sources.add(id);
@@ -185,8 +201,7 @@ async function loadDay(tomorrow) {
   map.select(null);
   map.setEvents(events);
   renderSources();
-  if (state.filter !== 'all' && !sourceEvents().some((e) => e.category === state.filter)) state.filter = 'all';
-  renderChips();
+  renderCategories();
   render();
 }
 
@@ -206,7 +221,7 @@ function sourceEvents() {
 
 function visibleEvents() {
   const list = sourceEvents();
-  return state.filter === 'all' ? list : list.filter((e) => e.category === state.filter);
+  return list.filter((e) => !state.catsOff.has(e.category));
 }
 
 function renderSources() {
@@ -237,38 +252,36 @@ function setSources(ids) {
 function sourcesChanged() {
   const on = state.sources.size;
   el.srcSummary.textContent = on === publishers.size ? 'ALL' : `${on}/${publishers.size}`;
-  // drop a category filter that no longer has any events
-  if (state.filter !== 'all' && !sourceEvents().some((e) => e.category === state.filter)) state.filter = 'all';
   state.showAll = false;
   if (state.selected && !visibleEvents().some((e) => e.id === state.selected)) select(null);
-  renderChips();
+  renderCategories();
   render();
 }
 
-function renderChips() {
+function setCategories(off) {
+  state.catsOff = new Set(off);
+  categoriesChanged();
+}
+
+function categoriesChanged() {
+  state.showAll = false;
+  if (state.selected && !visibleEvents().some((e) => e.id === state.selected)) select(null);
+  renderCategories();
+  render();
+}
+
+// The five main categories always show first; the rest follow when the day has events in them.
+function renderCategories() {
   const counts = Object.fromEntries(CATEGORIES.map((c) => [c, 0]));
-  const pool = sourceEvents();
-  pool.forEach((e) => counts[e.category]++);
-  const chips = [['all', 'All', pool.length, '#ffffff'],
-    ...CATEGORIES.filter((c) => counts[c]).map((c) => [c, CATEGORY_LABELS[c], counts[c], CATEGORY_COLORS[c]])];
-  const buttons = chips.map(([id, label, n, col]) => `
-    <button class="chip" type="button" data-cat="${id}" aria-pressed="${state.filter === id}" style="--cat:${col}">
-      <i aria-hidden="true"></i>${label}<span>${n}</span>
-    </button>`).join('');
-  // Desktop shows the chips in a row; phones show the same buttons in the CATEGORY dropdown.
-  el.chips.innerHTML = buttons;
-  el.catMenu.innerHTML = buttons;
-  const current = chips.find(([id]) => id === state.filter) ?? chips[0];
-  el.catSummary.textContent = current[1].toUpperCase();
-  el.catBtn.style.setProperty('--cat', current[3]);
-  document.querySelectorAll('#chips .chip, #cat-menu .chip').forEach((b) => b.addEventListener('click', () => {
-    state.filter = b.dataset.cat;
-    state.showAll = false;
-    toggleCategories(false);
-    if (state.selected && !visibleEvents().some((e) => e.id === state.selected)) select(null);
-    renderChips();
-    render();
-  }));
+  sourceEvents().forEach((e) => counts[e.category]++);
+  const rest = CATEGORIES.filter((c) => !MAIN_CATEGORIES.includes(c) && (counts[c] || state.catsOff.has(c)));
+  el.catList.innerHTML = [...MAIN_CATEGORIES, ...rest].map((c) => `
+    <li class="cat-item" style="--cat:${CATEGORY_COLORS[c]}">
+      <label class="src-item cat-check" title="Add or remove ${CATEGORY_LABELS[c]}"><input type="checkbox" value="${c}"${state.catsOff.has(c) ? '' : ' checked'} aria-label="${CATEGORY_LABELS[c]}"><i aria-hidden="true"></i></label>
+      <button class="cat-only" type="button" data-cat="${c}" title="Show only ${CATEGORY_LABELS[c]}"><em aria-hidden="true"></em>${CATEGORY_LABELS[c]}<small>ONLY</small><span>${counts[c]}</span></button>
+    </li>`).join('');
+  const on = CATEGORIES.filter((c) => !state.catsOff.has(c)).length;
+  el.catSummary.textContent = on === CATEGORIES.length ? 'ALL' : on === 1 ? CATEGORY_LABELS[CATEGORIES.find((c) => !state.catsOff.has(c))].toUpperCase() : `${on}/${CATEGORIES.length}`;
 }
 
 function render() {
@@ -289,7 +302,7 @@ function render() {
         <span class="ev-tags"><span class="tag">${CATEGORY_LABELS[e.category]}</span>${e.source.id === 'seatgeek' ? `<span class="sg-mark" title="Data from SeatGeek">${SEATGEEK_LOGO}</span>` : ''}${e.listingOnly ? '' : `<span class="price">${fmtPrice(e)}</span>`}</span>
       </button>
     </li>`;
-  }).join('') || `<li class="empty">${!state.events.length && state.tomorrow ? "Tomorrow's listings are not in yet." : state.sources.size ? `No events in this category ${state.tomorrow ? 'tomorrow' : 'today'}.` : 'No sources selected. Pick some under SOURCES.'}</li>`;
+  }).join('') || `<li class="empty">${!state.events.length && state.tomorrow ? "Tomorrow's listings are not in yet." : state.sources.size ? `No events in the ticked categories ${state.tomorrow ? 'tomorrow' : 'today'}.` : 'No sources selected. Pick some under SOURCES.'}</li>`;
 
   el.list.querySelectorAll('.ev').forEach((b) => {
     b.addEventListener('click', () => select(b.dataset.id));
@@ -336,7 +349,7 @@ function renderDetail() {
     <h2>${esc(e.title)}</h2>
     <dl>
       <div><dt>WHEN</dt><dd>${e.allDay ? 'All day' : `${fmtTime(e.start)}${e.end ? ` to ${fmtTime(e.end)}` : ''}`}</dd></div>
-      <div><dt>WHERE</dt><dd>${esc(e.venue.name)}<br><small>${esc([e.venue.address !== e.venue.name ? e.venue.address : '', e.venue.neighborhood].filter(Boolean).join(', '))}</small></dd></div>
+      <div><dt>WHERE</dt><dd>${esc(e.venue.name)}<br><small>${esc([e.venue.address !== e.venue.name ? e.venue.address : '', e.venue.address?.includes(e.venue.neighborhood) ? '' : e.venue.neighborhood].filter(Boolean).join(', '))}</small></dd></div>
       <div><dt>PRICE</dt><dd>${fmtPrice(e)}</dd></div>
     </dl>
     <p class="d-blurb">${esc(e.description)}</p>

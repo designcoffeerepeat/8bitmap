@@ -67,6 +67,14 @@
   "lat": 40.633422,
   "lng": -73.947959
  },
+ "155-06 Roosevelt Avenue, Queens": {
+  "lat": 40.763753,
+  "lng": -73.809843
+ },
+ "158-21 Jewel Avenue, Queens": {
+  "lat": 40.733057,
+  "lng": -73.809936
+ },
  "159 Pioneer St | Brooklyn": {
   "label": "159 PIONEER STREET, Brooklyn, NY, USA",
   "lat": 40.679224,
@@ -81,6 +89,10 @@
   "label": "176 SAINT NICHOLAS' AVENUE, Brooklyn, NY, USA",
   "lat": 40.704117,
   "lng": -73.916287
+ },
+ "196-36 Northern Boulevard, Queens": {
+  "lat": 40.757553,
+  "lng": -73.784306
  },
  "2 AVENUE between EAST 32 STREET and EAST 33 STREET Manhattan | Manhattan": null,
  "208 Totten Avenue | Queens": {
@@ -118,6 +130,10 @@
   "lat": 40.713591,
   "lng": -74.004239
  },
+ "31-32 Union Street, Queens": {
+  "lat": 40.769141,
+  "lng": -73.82697
+ },
  "35 AVENUE between 82 STREET and 81 STREET Queens | Queens": null,
  "362 grand street | Brooklyn": {
   "label": "362 GRAND STREET, Brooklyn, NY, USA",
@@ -148,6 +164,10 @@
   "label": "41 AVENUE & 80 STREET",
   "lat": 40.746262,
   "lng": -73.88511
+ },
+ "41-17 Main Street, Queens": {
+  "lat": 40.757744,
+  "lng": -73.828843
  },
  "43 Snyder Ave | Brooklyn": {
   "label": "43 SNYDER AVENUE, Brooklyn, NY, USA",
@@ -203,6 +223,10 @@
   "lng": -73.923506
  },
  "60 STREET between 3 AVENUE and 4 AVENUE Brooklyn | Brooklyn": null,
+ "60-05 Main Street, Queens": {
+  "lat": 40.742925,
+  "lng": -73.825153
+ },
  "61 Wythe Ave | Brooklyn": {
   "label": "61 WYTHE AVENUE, Brooklyn, NY, USA",
   "lat": 40.721767,
@@ -728,6 +752,23 @@
   "lat": 40.73958,
   "lng": -74.00886
  },
+ "cb6: Carroll Park|Carroll Street & Smith Street": {
+  "label": "CARROLL PARK, Brooklyn, NY, USA",
+  "lat": 40.6811,
+  "lng": -73.99547
+ },
+ "cb6: Cobble Hill Park|Clinton Street & Congress Street": {
+  "label": "COBBLE HILL PARK, Brooklyn, NY, USA",
+  "lat": 40.68821,
+  "lng": -73.99601
+ },
+ "cb6: LeFrak Center at Lakeside, Prospect Park|Prospect Park": null,
+ "cb6: Principles GI Coffee House|139 9th St": {
+  "label": "139 9 STREET, Brooklyn, NY, USA",
+  "lat": 40.672485,
+  "lng": -73.992615
+ },
+ "census: 1 JACKSON SQUARE": null,
  "corner: madison ave & e 23rd st | Manhattan": {
   "label": "madison ave & e 23rd st",
   "lat": 40.740847,
@@ -4277,6 +4318,61 @@
   "lng": -73.9634657
  },
  "under The Standard, at 13th St. in The High Line | Manhattan": null,
+ "venue: 1000 Richmond Terrace, Building D, Staten Island": {
+  "label": "1000 RICHMOND TERRACE, Staten Island, NY, USA",
+  "lat": 40.64405,
+  "lng": -74.10176
+ },
+ "venue: 1000 Richmond Terrace, Staten Island": {
+  "label": "1000 RICHMOND TERRACE, Staten Island, NY, USA",
+  "lat": 40.64405,
+  "lng": -74.10176
+ },
+ "venue: 1665 Hoe Ave, The Bronx": {
+  "label": "1665 HOE AVENUE, Bronx, NY, USA",
+  "lat": 40.835703,
+  "lng": -73.887896
+ },
+ "venue: 2 Hylan Boulevard, Staten Island": {
+  "label": "2 HYLAN BOULEVARD, Staten Island, NY, USA",
+  "lat": 40.615145,
+  "lng": -74.06303
+ },
+ "venue: 441 Clarke Avenue, Staten Island": {
+  "label": "441 CLARKE AVENUE, Staten Island, NY, USA",
+  "lat": 40.571245,
+  "lng": -74.145957
+ },
+ "venue: 67-09 108 Street, Forest Hills": {
+  "label": "67-09 108 STREET, Forest Hills, NY, USA",
+  "lat": 40.728719,
+  "lng": -73.847087
+ },
+ "venue: 72-27 Austin Street, Queens": {
+  "label": "72-27 AUSTIN STREET, Forest Hills, NY, USA",
+  "lat": 40.719221,
+  "lng": -73.841755
+ },
+ "venue: Bohemian Hall & Beer Garden": {
+  "label": "29-19 24 AVENUE, Astoria, NY, USA",
+  "lat": 40.77274,
+  "lng": -73.915718
+ },
+ "venue: Bowne House": {
+  "label": "37-01 BOWNE STREET, Flushing, NY, USA",
+  "lat": 40.76289,
+  "lng": -73.824882
+ },
+ "venue: Coney Island USA": {
+  "label": "1208 SURF AVENUE, Brooklyn, NY, USA",
+  "lat": 40.575235,
+  "lng": -73.979841
+ },
+ "venue: Deno's Wonder Wheel": {
+  "label": "3059 WEST 12 STREET, Brooklyn, NY, USA",
+  "lat": 40.574021,
+  "lng": -73.979151
+ },
  "venue: Eastville Comedy Club": {
   "label": "487 ATLANTIC AVENUE, Brooklyn, NY, USA",
   "lat": 40.685915,
@@ -4287,15 +4383,40 @@
   "lat": 40.728219,
   "lng": -74.004492
  },
+ "venue: H0L0": {
+  "label": "1090 WYCKOFF AVENUE, Ridgewood, NY, USA",
+  "lat": 40.694228,
+  "lng": -73.902251
+ },
+ "venue: Herman Hochberg Plaza": {
+  "label": "59-03 71 AVENUE, Ridgewood, NY, USA",
+  "lat": 40.700751,
+  "lng": -73.899747
+ },
  "venue: Jazzcultural": {
   "label": "349 WEST 46 STREET, New York, NY, USA",
   "lat": 40.76077,
   "lng": -73.989656
  },
+ "venue: Luna Park": {
+  "label": "1000 SURF AVENUE, Brooklyn, NY, USA",
+  "lat": 40.575223,
+  "lng": -73.978651
+ },
+ "venue: Melrose Ballroom": {
+  "label": "36-08 33 STREET, Long Island City, NY, USA",
+  "lat": 40.755628,
+  "lng": -73.928682
+ },
  "venue: Mezzrow": {
   "label": "163 WEST 10 STREET, New York, NY, USA",
   "lat": 40.734592,
   "lng": -74.001929
+ },
+ "venue: Myrtle Avenue, Ridgewood": {
+  "label": "58-01 MYRTLE AVENUE, Ridgewood, NY, USA",
+  "lat": 40.700693,
+  "lng": -73.901284
  },
  "venue: New York Comedy Club": {
   "label": "241 EAST 24 STREET, New York, NY, USA",
@@ -4322,6 +4443,11 @@
   "lat": 40.715985,
   "lng": -73.962586
  },
+ "venue: Onderdonk House": {
+  "label": "1820 FLUSHING AVENUE, Ridgewood, NY, USA",
+  "lat": 40.710943,
+  "lng": -73.920019
+ },
  "venue: Other Half Centre Street": {
   "label": "195 CENTRE STREET, Brooklyn, NY, USA",
   "lat": 40.673887,
@@ -4332,25 +4458,55 @@
   "lat": 40.717752,
   "lng": -74.015323
  },
+ "venue: Pioneer Works": {
+  "label": "159 PIONEER STREET, Brooklyn, NY, USA",
+  "lat": 40.679224,
+  "lng": -74.012128
+ },
+ "venue: Public Records": {
+  "label": "233 BUTLER STREET, Brooklyn, NY, USA",
+  "lat": 40.682176,
+  "lng": -73.98639
+ },
  "venue: QED": {
   "label": "27-16 23 AVENUE, Astoria, NY, USA",
   "lat": 40.775556,
   "lng": -73.914942
+ },
+ "venue: Queens Botanical Garden": {
+  "label": "43-50 MAIN STREET, Flushing, NY, USA",
+  "lat": 40.751085,
+  "lng": -73.827732
  },
  "venue: Smalls": {
   "label": "183 WEST 10 STREET, New York, NY, USA",
   "lat": 40.734396,
   "lng": -74.002705
  },
+ "venue: Socrates Sculpture Park": {
+  "label": "32-01 VERNON BOULEVARD, Long Island City, NY, USA",
+  "lat": 40.766559,
+  "lng": -73.936855
+ },
  "venue: St. Marks Comedy Club": {
   "label": "12 ST MARK'S PLACE, New York, NY, USA",
   "lat": 40.729008,
   "lng": -73.989313
  },
+ "venue: Sunny's Bar": {
+  "label": "253 CONOVER STREET, Brooklyn, NY, USA",
+  "lat": 40.675626,
+  "lng": -74.016798
+ },
  "venue: The PIT": {
   "label": "154 WEST 29 STREET, New York, NY, USA",
   "lat": 40.747369,
   "lng": -73.992295
+ },
+ "venue: Waterfront Museum": {
+  "label": "290 CONOVER STREET, Brooklyn, NY, USA",
+  "lat": 40.675222,
+  "lng": -74.018337
  },
  "w 54th street between 9th and 10th ave | Manhattan": {
   "label": "w 54th street & 10th ave",

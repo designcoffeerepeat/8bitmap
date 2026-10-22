@@ -6,24 +6,28 @@
 // See ./sources/template.js.
 
 import { normalizeEvent } from './schema.js';
-import { preferSeatGeek } from './overlap.js';
+import { mergeDuplicates } from './overlap.js';
 import { inBounds, BOUNDS, LANDMARKS } from '../map/geo.js';
 import nycgovSource from './sources/nycgov.js';
 import lumaSource from './sources/luma.js';
 import permitsSource from './sources/permits.js';
 import ticketmasterSource from './sources/ticketmaster.js';
 import seatgeekSource from './sources/seatgeek.js';
-import diceSource from './sources/dice.js';
 import artwrldSource from './sources/artwrld.js';
-import artguideSource from './sources/artguide.js';
-import artrabbitSource from './sources/artrabbit.js';
 import venuesSource from './sources/venues.js';
 import greenmarketsSource from './sources/greenmarkets.js';
 import npsSource from './sources/nps.js';
+import astoriaSource from './sources/astoria.js';
+import redhookSource from './sources/redhook.js';
+import foresthillsSource from './sources/foresthills.js';
+import hobokenSource from './sources/hoboken.js';
+import coneyislandSource from './sources/coneyisland.js';
+import statenislandSource from './sources/statenisland.js';
+import jerseycitySource from './sources/jerseycity.js';
 import { LIVE_HIDDEN } from './live.js';
 
 // ./sources/dummy.js holds sample events for offline testing.
-const ALL_SOURCES = [nycgovSource, lumaSource, permitsSource, ticketmasterSource, seatgeekSource, diceSource, artwrldSource, artguideSource, artrabbitSource, venuesSource, greenmarketsSource, npsSource];
+const ALL_SOURCES = [nycgovSource, lumaSource, permitsSource, ticketmasterSource, seatgeekSource, artwrldSource, venuesSource, greenmarketsSource, npsSource, astoriaSource, redhookSource, foresthillsSource, hobokenSource, coneyislandSource, statenislandSource, jerseycitySource];
 
 // Live builds (anything not built with PUBLIC_SITE=dev) leave out the sources in ./live.js.
 const IS_DEV = import.meta.env.PUBLIC_SITE === 'dev';
@@ -59,7 +63,7 @@ export async function loadEventsForDate(date = new Date(), { tomorrow = false, d
     }
   }
 
-  return { events: dedupe(preferSeatGeek(events)).sort((a, b) => new Date(a.start) - new Date(b.start)), errors };
+  return { events: dedupe(mergeDuplicates(events)).sort((a, b) => new Date(a.start) - new Date(b.start)), errors };
 }
 
 // Listing sites place big venues a block or two apart; pin them onto the landmark model.
@@ -78,7 +82,7 @@ function sameDay(a, b) {
   return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
 }
 
-// The same show often appears on several listing sites.
+// Exact copies (same title, venue and minute) left after mergeDuplicates(), e.g. one site listing a show twice.
 function dedupe(events) {
   const seen = new Map();
   for (const ev of events) {

@@ -2,7 +2,7 @@
 // Midtown and breathes fire on the streets. While it is on screen a little plane circles
 // the cursor (on phones, the last tap); clicking or tapping fires the plane's machine gun.
 // Once hit, a health bar shows over its head, and enough hits topple it over in a burst
-// of 8-bit fireworks. It starts from LAUNCH MONSTER in the site menu, or by itself once
+// of 8-bit fireworks. It starts from MONSTER ATTACK! in the site menu (a second click ends it), or by itself once
 // per visit after two minutes on the site.
 
 import * as THREE from 'three';
@@ -37,13 +37,16 @@ const RAMPS = { flame: ramp(FLAME), ember: ramp(EMBER), smoke: ramp(SMOKE), dust
 
 export function initMonster(map) {
   let game = null;
+  const setState = (on) => window.dispatchEvent(new CustomEvent('monster:state', { detail: { on } }));
   const launch = () => {
     try { sessionStorage.setItem(SESSION_KEY, '1'); } catch {}
-    if (!game) game = startGame(map, () => { game = null; });
+    if (game) return;
+    game = startGame(map, () => { game = null; setState(false); });
+    setState(true);
   };
 
-  // the menu item lives in site.js, which loads before the map
-  window.addEventListener('monster:launch', launch);
+  // the menu item lives in site.js, which loads before the map: it calls this to start or stop
+  window.monsterToggle = () => (game ? game.end() : launch());
   if (window.monsterQueued) launch();
 
   let seen = false;

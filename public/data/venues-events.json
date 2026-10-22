@@ -4,7 +4,7 @@
   "url": "https://filmforum.org/"
  },
  "date": "2026-10-22",
- "fetchedAt": "2026-10-22T13:03:32-04:00",
+ "fetchedAt": "2026-10-22T16:29:10-04:00",
  "events": [
   {
    "id": "film-forum-202610221215-once-upon-a-time-in-harlem",
@@ -683,240 +683,6 @@
    }
   },
   {
-   "id": "jazzcultural-202610221400-afternoon-jam-in-the-cafe",
-   "title": "Afternoon Jam in the Cafe",
-   "category": "music",
-   "start": "2026-10-22T14:00:00-04:00",
-   "end": "2026-10-22T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Jazzcultural",
-    "address": "349 West 46th Street",
-    "neighborhood": "",
-    "lat": 40.76077,
-    "lng": -73.989656
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "From 2:00 PM - 6:00 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/34052-afternoon-jam-in-the-cafe/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-jazzcultural",
-    "name": "Jazzcultural",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "smalls-202610221800-adi-meyerson-dark-matter-quartet",
-   "title": "Adi Meyerson & Dark Matter Quartet",
-   "category": "music",
-   "start": "2026-10-22T18:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Smalls",
-    "address": "183 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734396,
-    "lng": -74.002705
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sets at 6:00 PM & 7:30 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/33978-adi-meyerson-dark-matter-quartet/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-smalls",
-    "name": "Smalls",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "mezzrow-202610221800-yuhan-su-meets-luis-perdomo",
-   "title": "Yuhan Su meets Luis Perdomo",
-   "category": "music",
-   "start": "2026-10-22T18:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Mezzrow",
-    "address": "163 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734592,
-    "lng": -74.001929
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sets at 6:00 PM & 7:30 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/33976-yuhan-su-meets-luis-perdomo/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-mezzrow",
-    "name": "Mezzrow",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "jazzcultural-202610221900-anderson-brothers-octet",
-   "title": "Anderson Brothers Octet",
-   "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Jazzcultural",
-    "address": "349 West 46th Street",
-    "neighborhood": "",
-    "lat": 40.76077,
-    "lng": -73.989656
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sets at 7:00 PM & 9:00 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/33992-anderson-brothers-octet/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-jazzcultural",
-    "name": "Jazzcultural",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "smalls-202610222100-tim-ries-trio",
-   "title": "Tim Ries Trio",
-   "category": "music",
-   "start": "2026-10-22T21:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Smalls",
-    "address": "183 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734396,
-    "lng": -74.002705
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sets at 9:00 PM & 10:30 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/33977-tim-ries-trio/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-smalls",
-    "name": "Smalls",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "mezzrow-202610222100-felix-lemerle-trio",
-   "title": "Felix Lemerle Trio",
-   "category": "music",
-   "start": "2026-10-22T21:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Mezzrow",
-    "address": "163 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734592,
-    "lng": -74.001929
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sets at 9:00 PM & 10:30 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/34012-felix-lemerle-trio/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-mezzrow",
-    "name": "Mezzrow",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "jazzcultural-202610222230-mejedi-owusu-quartet",
-   "title": "Mejedi Owusu Quartet",
-   "category": "music",
-   "start": "2026-10-22T22:30:00-04:00",
-   "end": "2026-10-23T00:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Jazzcultural",
-    "address": "349 West 46th Street",
-    "neighborhood": "",
-    "lat": 40.76077,
-    "lng": -73.989656
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "From 10:30 PM - 12:00 AM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/34213-mejedi-owusu-quartet/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-jazzcultural",
-    "name": "Jazzcultural",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "mezzrow-202610222330-vinyl-after-hours",
-   "title": "Vinyl After Hours",
-   "category": "music",
-   "start": "2026-10-22T23:30:00-04:00",
-   "end": "2026-10-23T00:45:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Mezzrow",
-    "address": "163 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734592,
-    "lng": -74.001929
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "From 11:30 PM - 12:45 AM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/34170-vinyl-after-hours/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-mezzrow",
-    "name": "Mezzrow",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "smalls-202610222345-jam-session-hosted-by-matt-snow",
-   "title": "Jam Session Hosted By Matt Snow",
-   "category": "music",
-   "start": "2026-10-22T23:45:00-04:00",
-   "end": "2026-10-23T04:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Smalls",
-    "address": "183 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734396,
-    "lng": -74.002705
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "From 11:45 PM - 4:00 AM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/34093-jam-session-hosted-by-matt-snow/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-smalls",
-    "name": "Smalls",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
    "id": "new-york-comedy-club-on-4th-street-202610221800-chucklefest-ft-matthew-broussard-bo-bige",
    "title": "Chucklefest ft: Matthew Broussard, Bo Bigelow, Konner Kienzle, Sureni Weerasekera, Kevin Israel, Mo Mussa, Tristan Bowling",
    "category": "comedy",
@@ -1339,35 +1105,9 @@
    }
   },
   {
-   "id": "other-half-centre-street-202610221900-centre-street-trivia",
-   "title": "Centre Street Trivia",
-   "category": "nightlife",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": "2026-10-22T20:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Other Half Centre Street",
-    "address": "195 Centre Street",
-    "neighborhood": "",
-    "lat": 40.673887,
-    "lng": -73.999079
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://otherhalfbrewing.com/event/clone-centre-street-trivia-2026-10-22/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-other-half-centre-street",
-    "name": "Other Half Centre Street",
-    "url": "https://otherhalfbrewing.com/location/centre-street/"
-   }
-  },
-  {
    "id": "american-whiskey-202610221900-trivia-at-american-whiskey",
    "title": "Trivia at American Whiskey",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1393,7 +1133,7 @@
   {
    "id": "the-bier-cheese-collective-202610221900-trivia-at-the-bier-cheese-collective",
    "title": "Trivia at The Bier & Cheese Collective",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1419,7 +1159,7 @@
   {
    "id": "the-broadway-tavern-202610221930-trivia-at-the-broadway-tavern",
    "title": "Trivia at The Broadway Tavern",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:30:00-04:00",
    "end": null,
    "allDay": false,
@@ -1445,7 +1185,7 @@
   {
    "id": "ella-s-cafe-202610221900-trivia-at-ella-s-cafe",
    "title": "Trivia at Ella’s Cafe",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1471,7 +1211,7 @@
   {
    "id": "emmy-squared-pizza-midtown-west-202610221900-trivia-at-emmy-squared-pizza-midtown-wes",
    "title": "Trivia at Emmy Squared Pizza — Midtown West",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1497,7 +1237,7 @@
   {
    "id": "farm-one-202610221900-trivia-at-farm-one",
    "title": "Trivia at Farm.One",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1523,7 +1263,7 @@
   {
    "id": "finback-brewery-brooklyn-202610221900-trivia-at-finback-brewery-brooklyn",
    "title": "Trivia at Finback Brewery — Brooklyn",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1549,7 +1289,7 @@
   {
    "id": "the-five-lamps-nyc-202610221930-trivia-at-the-five-lamps-nyc",
    "title": "Trivia at The Five Lamps NYC",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:30:00-04:00",
    "end": null,
    "allDay": false,
@@ -1575,7 +1315,7 @@
   {
    "id": "the-gaf-astoria-202610222030-trivia-at-the-gaf-astoria",
    "title": "Trivia at The Gaf Astoria",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T20:30:00-04:00",
    "end": null,
    "allDay": false,
@@ -1601,7 +1341,7 @@
   {
    "id": "the-hairy-lemon-202610222000-trivia-at-the-hairy-lemon",
    "title": "Trivia at The Hairy Lemon",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T20:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1627,7 +1367,7 @@
   {
    "id": "the-huntress-lic-202610222000-trivia-at-the-huntress-lic",
    "title": "Trivia at The Huntress LIC",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T20:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1653,7 +1393,7 @@
   {
    "id": "lily-s-202610221900-trivia-at-lily-s",
    "title": "Trivia at Lily’s",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1677,9 +1417,35 @@
    }
   },
   {
+   "id": "other-half-brewing-co-gowanus-202610221900-trivia-at-other-half-brewing-co-gowanus",
+   "title": "Trivia at Other Half Brewing Co. — Gowanus",
+   "category": "trivia",
+   "start": "2026-10-22T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Other Half Brewing Co. — Gowanus",
+    "address": "",
+    "neighborhood": "Carroll Gardens",
+    "lat": 40.673809,
+    "lng": -73.999295
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://nyctrivialeague.com/listings/other-half-brewing/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nyc-trivia-league",
+    "name": "NYC Trivia League",
+    "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
    "id": "overlook-202610221900-trivia-at-overlook",
    "title": "Trivia at Overlook",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1705,7 +1471,7 @@
   {
    "id": "phoenix-bar-nyc-202610222000-trivia-at-phoenix-bar-nyc",
    "title": "Trivia at Phoenix Bar NYC",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T20:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1731,7 +1497,7 @@
   {
    "id": "rockaway-brewing-co-202610222000-trivia-at-rockaway-brewing-co-",
    "title": "Trivia at Rockaway Brewing Co.",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T20:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1757,7 +1523,7 @@
   {
    "id": "rose-s-r-r-bar-202610221900-trivia-at-rose-s-r-r-bar",
    "title": "Trivia at Rose’s R&R Bar",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1783,7 +1549,7 @@
   {
    "id": "rossi-s-lounge-202610222000-trivia-at-rossi-s-lounge",
    "title": "Trivia at Rossi’s Lounge",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T20:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1809,7 +1575,7 @@
   {
    "id": "sadie-s-ward-202610221900-trivia-at-sadie-s-ward",
    "title": "Trivia at Sadie’s Ward",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1835,7 +1601,7 @@
   {
    "id": "the-skillman-202610221900-trivia-at-the-skillman",
    "title": "Trivia at The Skillman",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1861,7 +1627,7 @@
   {
    "id": "stretch-pizza-domino-park-202610222000-trivia-at-stretch-pizza-domino-park",
    "title": "Trivia at Stretch Pizza — Domino Park",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T20:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1887,7 +1653,7 @@
   {
    "id": "tortoise-hare-202610221930-trivia-at-tortoise-hare",
    "title": "Trivia at Tortoise & Hare",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:30:00-04:00",
    "end": null,
    "allDay": false,
@@ -1913,7 +1679,7 @@
   {
    "id": "clinton-hall-51st-st-202610221900-mixtape-bingo-at-clinton-hall-51st-st",
    "title": "Mixtape Bingo at Clinton Hall 51st St",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1939,7 +1705,7 @@
   {
    "id": "dolly-s-202610222000-mixtape-bingo-at-dolly-s",
    "title": "Mixtape Bingo at Dolly’s",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T20:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1965,7 +1731,7 @@
   {
    "id": "judy-punch-202610222000-mixtape-bingo-at-judy-punch",
    "title": "Mixtape Bingo at Judy & Punch",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T20:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1991,7 +1757,7 @@
   {
    "id": "oliver-s-202610222000-mixtape-bingo-at-oliver-s",
    "title": "Mixtape Bingo at Oliver’s",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T20:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -2017,7 +1783,7 @@
   {
    "id": "scrappleland-202610221900-mixtape-bingo-at-scrappleland",
    "title": "Mixtape Bingo at Scrappleland",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -2043,7 +1809,7 @@
   {
    "id": "singlecut-queens-202610221930-mixtape-bingo-at-singlecut-queens",
    "title": "Mixtape Bingo at SingleCut Queens",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-22T19:30:00-04:00",
    "end": null,
    "allDay": false,
@@ -2064,6 +1830,136 @@
     "id": "venue-nyc-trivia-league",
     "name": "NYC Trivia League",
     "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
+   "id": "h0l0-202610222100-sublimina",
+   "title": "SUBLIMINA",
+   "category": "nightlife",
+   "start": "2026-10-22T21:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "H0L0",
+    "address": "1090 Wyckoff Avenue",
+    "neighborhood": "",
+    "lat": 40.694228,
+    "lng": -73.902251
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "SUBLIMINA is a queer techno community focused on achieving a collective transcendental experience through the combination of dance and hypnotic techno.",
+   "details": "",
+   "url": "https://ra.co/events/2553897",
+   "tags": [],
+   "publisher": {
+    "id": "venue-h0l0",
+    "name": "H0L0",
+    "url": "https://h0l0.nyc/"
+   }
+  },
+  {
+   "id": "public-records-202610221900-nate-mercereau-fantastic-thoughts-with-s",
+   "title": "Nate Mercereau – FANTASTIC THOUGHTS with special guests, Carlos Niño [DJ Set]",
+   "category": "music",
+   "start": "2026-10-22T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Public Records",
+    "address": "233 Butler Street",
+    "neighborhood": "Gowanus",
+    "lat": 40.682176,
+    "lng": -73.98639
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Sound Room",
+   "details": "",
+   "url": "https://link.dice.fm/Nb27a51d9049",
+   "tags": [],
+   "publisher": {
+    "id": "venue-public-records",
+    "name": "Public Records",
+    "url": "https://publicrecords.nyc/"
+   }
+  },
+  {
+   "id": "public-records-202610221900-mass-moca-records-presents-alyssa-weinbe",
+   "title": "MASS MoCA Records presents Alyssa Weinberg & Gabriel Cabezas – PIECES OF LIGHT Listening Party + Performance",
+   "category": "music",
+   "start": "2026-10-22T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Public Records",
+    "address": "233 Butler Street",
+    "neighborhood": "Gowanus",
+    "lat": 40.682176,
+    "lng": -73.98639
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Upstairs",
+   "details": "",
+   "url": "https://link.dice.fm/q7cc466abef1",
+   "tags": [],
+   "publisher": {
+    "id": "venue-public-records",
+    "name": "Public Records",
+    "url": "https://publicrecords.nyc/"
+   }
+  },
+  {
+   "id": "public-records-202610222230-echo-chamber-s1-e04-sinai-sound-system-f",
+   "title": "Echo Chamber S1.E04: Sinai Sound System feat. Lasai",
+   "category": "nightlife",
+   "start": "2026-10-22T22:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Public Records",
+    "address": "233 Butler Street",
+    "neighborhood": "Gowanus",
+    "lat": 40.682176,
+    "lng": -73.98639
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Sound Room",
+   "details": "",
+   "url": "https://link.dice.fm/w57821b82029",
+   "tags": [],
+   "publisher": {
+    "id": "venue-public-records",
+    "name": "Public Records",
+    "url": "https://publicrecords.nyc/"
+   }
+  },
+  {
+   "id": "queens-botanical-garden-202610221000-farm-open-hours",
+   "title": "Farm Open Hours",
+   "category": "community",
+   "start": "2026-10-22T10:00:00-04:00",
+   "end": "2026-10-22T12:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Queens Botanical Garden",
+    "address": "43-50 Main Street",
+    "neighborhood": "Flushing",
+    "lat": 40.751085,
+    "lng": -73.827732
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://queensbotanical.org/event/open-farm-hours-7/2026-10-22/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-queens-botanical-garden",
+    "name": "Queens Botanical Garden",
+    "url": "https://queensbotanical.org/calendar/"
    }
   }
  ],

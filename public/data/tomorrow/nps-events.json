@@ -4,7 +4,11 @@
   "url": "https://www.nps.gov/state/ny/index.htm"
  },
  "date": "2026-10-23",
+<<<<<<< HEAD
  "fetchedAt": "2026-10-22T13:05:21-04:00",
+=======
+ "fetchedAt": "2026-10-22T13:10:42-04:00",
+>>>>>>> 0bd6d5b
  "events": [
   {
    "id": "E2214AE5-F7F6-297F-3131D768ACD7CEB2",
@@ -14,8 +18,13 @@
    "end": "2026-10-23T11:30:00-04:00",
    "allDay": false,
    "venue": {
+<<<<<<< HEAD
     "name": "15 Pine St",
     "address": "Federal Hall National Memorial",
+=======
+    "name": "Federal Hall National Memorial",
+    "address": "15 Pine St",
+>>>>>>> 0bd6d5b
     "neighborhood": "Federal Hall National Memorial",
     "lat": 40.707294,
     "lng": -74.010241
@@ -30,6 +39,7 @@
    ]
   },
   {
+<<<<<<< HEAD
    "id": "0D25A738-155D-451F-67D31ADD6827D16D-0",
    "title": "Castle Clinton Guided tour",
    "category": "community",
@@ -39,13 +49,28 @@
    "venue": {
     "name": "Castle Clinton NM",
     "address": "Castle Clinton National Monument",
+=======
+   "id": "0D25A738-155D-451F-67D31ADD6827D16D",
+   "title": "Castle Clinton Guided tour",
+   "category": "community",
+   "start": "2026-10-23T10:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Castle Clinton National Monument",
+    "address": "Castle Clinton NM",
+>>>>>>> 0bd6d5b
     "neighborhood": "Castle Clinton National Monument",
     "lat": 40.7036,
     "lng": -74.0168
    },
    "price": null,
    "priceUnknown": false,
+<<<<<<< HEAD
    "description": "Join a National Park service Ranger for a free guided tour.",
+=======
+   "description": "Times: 10:00 AM, 12:00 PM, 2:00 PM, 3:30 PM. Join a National Park service Ranger for a free guided tour.",
+>>>>>>> 0bd6d5b
    "details": "Join a National Park service Ranger for a free guided tour.",
    "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=0D25A738-155D-451F-67D31ADD6827D16D",
    "tags": [
@@ -53,6 +78,7 @@
    ]
   },
   {
+<<<<<<< HEAD
    "id": "0D25A738-155D-451F-67D31ADD6827D16D-1",
    "title": "Castle Clinton Guided tour",
    "category": "community",
@@ -154,18 +180,34 @@
    "venue": {
     "name": "The tour is inside the brownstone at 28 E 20th St, New York, NY 10029",
     "address": "Theodore Roosevelt Birthplace",
+=======
+   "id": "6EDF053C-C210-BD98-EB826C1AD4526045",
+   "title": "House Tour",
+   "category": "community",
+   "start": "2026-10-23T11:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Theodore Roosevelt Birthplace",
+    "address": "The tour is inside the brownstone at 28 E 20th St, New York, NY 10029",
+>>>>>>> 0bd6d5b
     "neighborhood": "Theodore Roosevelt Birthplace National Historic Site",
     "lat": 40.738672,
     "lng": -73.988962
    },
    "price": null,
    "priceUnknown": false,
+<<<<<<< HEAD
    "description": "Take a tour of 5 recreated period rooms and learn about Theodore Roosevelt's early life in New York City!",
+=======
+   "description": "Times: 11:00 AM, 12:00 PM, 2:00 PM, 3:00 PM. Take a tour of 5 recreated period rooms and learn about Theodore Roosevelt's early life in New York City!",
+>>>>>>> 0bd6d5b
    "details": "Take a tour of 5 recreated period rooms and learn about Theodore Roosevelt's early life in New York City!",
    "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=6EDF053C-C210-BD98-EB826C1AD4526045",
    "tags": [
     "Guided Tour"
    ]
+<<<<<<< HEAD
   },
   {
    "id": "6EDF053C-C210-BD98-EB826C1AD4526045-1",
@@ -308,4 +350,26 @@
   }
  ],
  "unplaced": []
+=======
+  }
+ ],
+ "unplaced": [
+  {
+   "title": "Sandy Hook Lighthouse Tours",
+   "address": "Sandy Hook Lighthouse"
+  },
+  {
+   "title": "Sandy Hook History House",
+   "address": "Building 1, Sandy Hook"
+  },
+  {
+   "title": "On-Target: Fort Hancock Firepower",
+   "address": "Mortar Battery, Sandy Hook"
+  },
+  {
+   "title": "Sandy Hook Harbor Defense Lantern Tour",
+   "address": "Fort Hancock Museum, Building 28"
+  }
+ ]
+>>>>>>> 0bd6d5b
 }

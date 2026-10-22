@@ -1,9 +1,7 @@
-// Edge gate in front of the static Astro build (dist/, bound as ASSETS).
-// One shared password (SITE_PASSWORD) unlocks the map on both workers:
-//   live (SITE=live, the default): visitors without the cookie see the coming soon page at /,
-//     with a link to log in; every other path asks for the password.
-//   dev (SITE=dev, set by the deploy-dev workflow): every path asks for the password.
-// This keeps the map private for now; it is a shared password, not per-person accounts.
+// Edge worker in front of the static Astro build (dist/, bound as ASSETS).
+//   live (SITE=live, the default): the map is open to everyone.
+//   dev (SITE=dev, set by the deploy-dev workflow): every path asks for the shared password (SITE_PASSWORD).
+// The dev password keeps unreleased changes private; it is a shared password, not per-person accounts.
 // It also handles the contact form (POST /api/contact, open to everyone) and marks pages for
 // visitors who need to be asked about cookies (EU, EEA, UK, Switzerland) so analytics waits for a yes.
 
@@ -43,6 +41,11 @@ export default {
       return request.method === 'POST' ? contact(request, env, url) : json({ error: 'Use POST.' }, 405);
     }
 
+    // Live is public, so its old login and logout links just go to the map.
+    if (!isDev && (path === '/login' || path === '/logout')) {
+      return Response.redirect(`${url.origin}/`, 302);
+    }
+
     if (path === '/login' && request.method === 'POST') {
       const form = await request.formData();
       const next = safeNext(form.get('next'));
@@ -69,12 +72,8 @@ export default {
       });
     }
 
-    if (PUBLIC_PATHS.has(path) || readCookie(request, COOKIE) === token) {
+    if (!isDev || PUBLIC_PATHS.has(path) || readCookie(request, COOKIE) === token) {
       return decorate(await env.ASSETS.fetch(request), { isDev, askConsent });
-    }
-
-    if (!isDev && path === '/') {
-      return html(comingSoonPage({ analytics }));
     }
 
     if (request.method === 'GET' || request.method === 'HEAD') {
@@ -153,7 +152,7 @@ async function contact(request, env, url) {
 
 function mime({ to, replyTo, subject, body, route }) {
   return [
-    `From: 8-Bit NYC Website <${FORM_FROM}>`,
+    `From: 8bitNYC Website <${FORM_FROM}>`,
     `To: ${to}`,
     `Reply-To: ${replyTo}`,
     `Subject: ${encodeHeader(subject)}`,
@@ -286,27 +285,7 @@ const HEAD = `<meta charset="utf-8">
   .error { font: 10px/1.6 var(--font-pixel); color: var(--pin); }
 </style>`;
 
-const BRAND = `<h1><img alt="" src="${PIN}">8-BIT <b>NYC</b></h1>`;
-
-function comingSoonPage({ analytics }) {
-  return `<!doctype html>
-<html lang="en">
-<head>
-${HEAD}
-${analytics ? GA : ''}
-<title>8-Bit NYC: Coming Soon</title>
-<meta name="description" content="An 8-bit voxel map of New York City showing today's events. Coming soon.">
-</head>
-<body>
-<main class="box">
-  ${BRAND}
-  <h2>COMING SOON<span class="blink" aria-hidden="true">_</span></h2>
-  <p>A pixel map of New York City with everything happening today, pinned block by block.</p>
-  <p class="small">HAVE THE PASSWORD? <a href="/login">LOG IN HERE</a></p>
-</main>
-</body>
-</html>`;
-}
+const BRAND = `<h1><img alt="" src="${PIN}">8bit<b>NYC</b></h1>`;
 
 function loginPage({ next, error = false, isDev, analytics }) {
   return `<!doctype html>
@@ -315,7 +294,7 @@ function loginPage({ next, error = false, isDev, analytics }) {
 ${HEAD}
 ${analytics ? GA : ''}
 <meta name="robots" content="noindex">
-<title>8-Bit NYC: Log In</title>
+<title>8bitNYC: Log In</title>
 </head>
 <body>
 <main class="box">

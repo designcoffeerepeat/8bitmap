@@ -4,7 +4,7 @@
   "url": "https://filmforum.org/"
  },
  "date": "2026-10-23",
- "fetchedAt": "2026-10-22T13:05:48-04:00",
+ "fetchedAt": "2026-10-22T16:29:42-04:00",
  "events": [
   {
    "id": "film-forum-202610231225-fatherland",
@@ -553,266 +553,6 @@
    }
   },
   {
-   "id": "smalls-202610231400-smalls-afternoon-jam-session-hosted-by-a",
-   "title": "Smalls Afternoon Jam Session Hosted by Andrew Kushnir",
-   "category": "music",
-   "start": "2026-10-23T14:00:00-04:00",
-   "end": "2026-10-23T17:15:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Smalls",
-    "address": "183 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734396,
-    "lng": -74.002705
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "From 2:00 PM - 5:15 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/34041-smalls-afternoon-jam-session-hosted-by-andrew-kushnir/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-smalls",
-    "name": "Smalls",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "jazzcultural-202610231400-afternoon-jam-in-the-cafe",
-   "title": "Afternoon Jam in the Cafe",
-   "category": "music",
-   "start": "2026-10-23T14:00:00-04:00",
-   "end": "2026-10-23T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Jazzcultural",
-    "address": "349 West 46th Street",
-    "neighborhood": "",
-    "lat": 40.76077,
-    "lng": -73.989656
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "From 2:00 PM - 6:00 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/34057-afternoon-jam-in-the-cafe/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-jazzcultural",
-    "name": "Jazzcultural",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "smalls-202610231800-brandon-lee-lewis-quintet",
-   "title": "Brandon Lee Lewis Quintet",
-   "category": "music",
-   "start": "2026-10-23T18:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Smalls",
-    "address": "183 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734396,
-    "lng": -74.002705
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sets at 6:00 PM & 7:30 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/33946-brandon-lee-lewis-quintet/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-smalls",
-    "name": "Smalls",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "mezzrow-202610231800-paula-west-quartet",
-   "title": "Paula West Quartet",
-   "category": "music",
-   "start": "2026-10-23T18:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Mezzrow",
-    "address": "163 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734592,
-    "lng": -74.001929
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sets at 6:00 PM & 7:30 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/33942-paula-west-quartet/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-mezzrow",
-    "name": "Mezzrow",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "jazzcultural-202610231900-jeff-tain-watts-quartet",
-   "title": "Jeff \"Tain\" Watts Quartet",
-   "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Jazzcultural",
-    "address": "349 West 46th Street",
-    "neighborhood": "",
-    "lat": 40.76077,
-    "lng": -73.989656
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sets at 7:00 PM & 9:00 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/33993-jeff-tain-watts-quartet/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-jazzcultural",
-    "name": "Jazzcultural",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "smalls-202610232100-randy-johnston-quartet",
-   "title": "Randy Johnston Quartet",
-   "category": "music",
-   "start": "2026-10-23T21:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Smalls",
-    "address": "183 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734396,
-    "lng": -74.002705
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sets at 9:00 PM & 10:30 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/33948-randy-johnston-quartet/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-smalls",
-    "name": "Smalls",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "mezzrow-202610232100-richard-johnson-trio",
-   "title": "Richard Johnson Trio",
-   "category": "music",
-   "start": "2026-10-23T21:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Mezzrow",
-    "address": "163 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734592,
-    "lng": -74.001929
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sets at 9:00 PM & 10:30 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/33944-richard-johnson-trio/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-mezzrow",
-    "name": "Mezzrow",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "jazzcultural-202610232230-eric-wyatt-quartet",
-   "title": "Eric Wyatt Quartet",
-   "category": "music",
-   "start": "2026-10-23T22:30:00-04:00",
-   "end": "2026-10-24T00:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Jazzcultural",
-    "address": "349 West 46th Street",
-    "neighborhood": "",
-    "lat": 40.76077,
-    "lng": -73.989656
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "From 10:30 PM - 12:00 AM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/34191-eric-wyatt-quartet/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-jazzcultural",
-    "name": "Jazzcultural",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "smalls-202610232355-ken-fowser-quintet",
-   "title": "Ken Fowser Quintet",
-   "category": "music",
-   "start": "2026-10-23T23:55:00-04:00",
-   "end": "2026-10-24T04:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Smalls",
-    "address": "183 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734396,
-    "lng": -74.002705
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "From 11:55 PM - 4:00 AM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/34493-ken-fowser-quintet/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-smalls",
-    "name": "Smalls",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "mezzrow-202610232355-round-midnight-solo-piano-with-janice-fr",
-   "title": "Round Midnight Solo Piano With Janice Friedman",
-   "category": "music",
-   "start": "2026-10-23T23:55:00-04:00",
-   "end": "2026-10-24T01:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Mezzrow",
-    "address": "163 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734592,
-    "lng": -74.001929
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "From 11:55 PM - 1:00 AM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/34143-round-midnight-solo-piano-with-janice-friedman/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-mezzrow",
-    "name": "Mezzrow",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
    "id": "new-york-comedy-club-on-4th-street-202610231800-luke-severeid",
    "title": "Luke Severeid",
    "category": "comedy",
@@ -873,8 +613,8 @@
    }
   },
   {
-   "id": "new-york-comedy-club-202610231900-kunal-c-arora-simeon-goodson-matt-ruby-h",
-   "title": "Kunal C. Arora, Simeon Goodson, Matt Ruby, Humzah Azeem",
+   "id": "new-york-comedy-club-202610231900-simeon-goodson-kunal-c-arora-matt-ruby-h",
+   "title": "Simeon Goodson, Kunal C. Arora, Matt Ruby, Humzah Azeem",
    "category": "comedy",
    "start": "2026-10-23T19:00:00-04:00",
    "end": null,
@@ -894,7 +634,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/kunal-c-arora-simeon-goodson-matt-ruby-humzah-azeem",
+   "url": "https://newyorkcomedyclub.com/events/simeon-goodson-kunal-c-arora-matt-ruby-humzah-azeem",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club",
@@ -903,8 +643,8 @@
    }
   },
   {
-   "id": "new-york-comedy-club-on-4th-street-202610232015-marion-grodin-mike-britt-krystyna-hutchi",
-   "title": "Marion Grodin, Mike Britt, Krystyna Hutchinson, Nore Davis",
+   "id": "new-york-comedy-club-on-4th-street-202610232015-krystyna-hutchinson-marion-grodin-marc-t",
+   "title": "Krystyna Hutchinson, Marion Grodin, Marc Theobald, Nore Davis",
    "category": "comedy",
    "start": "2026-10-23T20:15:00-04:00",
    "end": null,
@@ -924,7 +664,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/marion-grodin-mike-britt-krystyna-hutchinson-nore-davis",
+   "url": "https://newyorkcomedyclub.com/events/marion-grodin-marc-theobald-krystyna-hutchinson-nore-davis",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club-on-4th-street",
@@ -933,8 +673,8 @@
    }
   },
   {
-   "id": "new-york-comedy-club-upper-west-side-202610232030-carmen-lynch-simeon-goodson-reggie-conqu",
-   "title": "Carmen Lynch, Simeon Goodson, Reggie Conquest, Liz Glazer",
+   "id": "new-york-comedy-club-upper-west-side-202610232030-simeon-goodson-carmen-lynch-reggie-conqu",
+   "title": "Simeon Goodson, Carmen Lynch, Reggie Conquest, Liz Glazer",
    "category": "comedy",
    "start": "2026-10-23T20:30:00-04:00",
    "end": null,
@@ -954,7 +694,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/carmen-lynch-simeon-goodson-reggie-conquest-liz-glazer",
+   "url": "https://newyorkcomedyclub.com/events/simeon-goodson-carmen-lynch-reggie-conquest-liz-glazer",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club-upper-west-side",
@@ -1201,7 +941,7 @@
   {
    "id": "blondie-s-sports-202610232000-trivia-at-blondie-s-sports",
    "title": "Trivia at Blondie’s Sports",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-23T20:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1227,7 +967,7 @@
   {
    "id": "sanger-hall-202610232000-trivia-at-sanger-hall",
    "title": "Trivia at Sanger Hall",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-23T20:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1253,7 +993,7 @@
   {
    "id": "singlecut-beersmiths-202610232000-trivia-at-singlecut-beersmiths",
    "title": "Trivia at SingleCut Beersmiths",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-23T20:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1279,7 +1019,7 @@
   {
    "id": "keg-lantern-brewing-202610231900-mixtape-bingo-at-keg-lantern-brewing",
    "title": "Mixtape Bingo at Keg & Lantern Brewing",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-23T19:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1305,7 +1045,7 @@
   {
    "id": "pig-beach-queens-202610231900-mixtape-bingo-at-pig-beach-queens",
    "title": "Mixtape Bingo at Pig Beach Queens",
-   "category": "nightlife",
+   "category": "trivia",
    "start": "2026-10-23T19:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -1326,6 +1066,84 @@
     "id": "venue-nyc-trivia-league",
     "name": "NYC Trivia League",
     "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
+   "id": "h0l0-202610232200-meanred-presents-effy",
+   "title": "MeanRed Presents: Effy",
+   "category": "nightlife",
+   "start": "2026-10-23T22:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "H0L0",
+    "address": "1090 Wyckoff Avenue",
+    "neighborhood": "",
+    "lat": 40.694228,
+    "lng": -73.902251
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://ra.co/events/2508219",
+   "tags": [],
+   "publisher": {
+    "id": "venue-h0l0",
+    "name": "H0L0",
+    "url": "https://h0l0.nyc/"
+   }
+  },
+  {
+   "id": "public-records-202610232300-p-e-a-r-l-juana-anastasia-kristensen-joh",
+   "title": "P.E.A.R.L., Juana / Anastasia Kristensen, John Raffaele / Bob Maynard & Cassandra Croft",
+   "category": "nightlife",
+   "start": "2026-10-23T23:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Public Records",
+    "address": "233 Butler Street",
+    "neighborhood": "Gowanus",
+    "lat": 40.682176,
+    "lng": -73.98639
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Sound Room",
+   "details": "",
+   "url": "https://link.dice.fm/ed801aad0224",
+   "tags": [],
+   "publisher": {
+    "id": "venue-public-records",
+    "name": "Public Records",
+    "url": "https://publicrecords.nyc/"
+   }
+  },
+  {
+   "id": "bowne-house-202610231900-haunted-history-house-tour",
+   "title": "Haunted History House Tour",
+   "category": "community",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": "2026-10-23T20:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Bowne House",
+    "address": "37-01 Bowne Street",
+    "neighborhood": "Flushing",
+    "lat": 40.76289,
+    "lng": -73.824882
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.bownehouse.org/events/hauntedhistorytour2026",
+   "tags": [],
+   "publisher": {
+    "id": "venue-bowne-house",
+    "name": "Bowne House",
+    "url": "https://www.bownehouse.org/events"
    }
   }
  ],

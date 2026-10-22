@@ -122,6 +122,7 @@ export function createMap(container, opts = {}) {
   }
 
   function setEvents(events) {
+    showPinTitle(null);
     pinGroup.clear();
     pins = [];
     const spots = []; // one per place; events within ~30 m of each other share it
@@ -364,9 +365,18 @@ export function createMap(container, opts = {}) {
     if (ev.pointerType !== 'mouse') return;
     const id = pinAt(ev);
     canvas.style.cursor = id ? 'pointer' : '';
+    showPinTitle(id);
     if (id !== hovered) {
       highlight(id);
       emit('hover', id);
+    }
+  });
+  canvas.addEventListener('pointerleave', (ev) => {
+    if (ev.pointerType !== 'mouse') return;
+    showPinTitle(null);
+    if (hovered) {
+      highlight(null);
+      emit('hover', null);
     }
   });
   canvas.addEventListener('pointerdown', (ev) => { downAt = { x: ev.clientX, y: ev.clientY }; });
@@ -419,6 +429,29 @@ export function createMap(container, opts = {}) {
     }
   }
 
+  // The event title floats over a pin while the mouse is on it (mouse only, so taps work as before).
+  const pinTitle = document.createElement('div');
+  pinTitle.className = 'pin-title';
+  pinTitle.hidden = true;
+  anchorLayer.appendChild(pinTitle);
+  let titlePin = null;
+  function showPinTitle(id) {
+    if ((titlePin?.event.id ?? null) === id) return;
+    titlePin = id ? pins.find((p) => p.event.id === id) ?? null : null;
+    if (titlePin) pinTitle.textContent = titlePin.event.title;
+    pinTitle.hidden = !titlePin;
+    placePinTitle();
+  }
+  function placePinTitle() {
+    if (!titlePin) return;
+    if (!titlePin.sprite.visible) return showPinTitle(null);
+    projected.copy(titlePin.sprite.position).project(camera);
+    const cssPerPx = canvas.clientHeight / rh;
+    const x = Math.round(((projected.x + 1) / 2) * canvas.clientWidth);
+    const y = Math.round(((1 - projected.y) / 2) * canvas.clientHeight - titlePin.sprite.material.map.image.height * cssPerPx - 4);
+    pinTitle.style.transform = `translate(${x}px, ${y}px) translate(-50%, -100%)`;
+  }
+
   // ---- loop -------------------------------------------------------------------
   const clock = new THREE.Clock();
   let waterTick = 0;
@@ -461,6 +494,7 @@ export function createMap(container, opts = {}) {
 
     renderer.render(scene, camera);
     placeAnchors();
+    placePinTitle();
     requestAnimationFrame(tick);
   }
 

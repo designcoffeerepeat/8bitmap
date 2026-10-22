@@ -2,11 +2,12 @@
 // The whole app is one page: a full-bleed three.js voxel map with a HUD,
 // a list of today's events and an event card. All behaviour lives in
 // src/scripts/app.js, which Astro bundles (three.js included) at build time.
-// The site menu, its modals (contact, privacy, terms) and the cookie banner live
+// The site menu, its modals (contact, about, privacy, terms) and the cookie banner live
 // in src/scripts/site.js, so they work before the map has loaded.
 import '../styles/global.css';
 import PrivacyPolicy from '../components/PrivacyPolicy.astro';
 import Terms from '../components/Terms.astro';
+import About from '../components/About.astro';
 ---
 <!doctype html>
 <html lang="en">
@@ -36,8 +37,26 @@ import Terms from '../components/Terms.astro';
   })();
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>8-Bit NYC</title>
-<meta name="description" content="An 8-bit voxel map of New York City showing today's events.">
+<title>8bit.NYC | Things to Do in NYC Today and Tomorrow</title>
+<meta name="description" content="Things to do in NYC today and tomorrow on a retro 8-bit map. Music, art, comedy, nightlife, theater and trivia by neighborhood, plus Hoboken and Jersey City.">
+<meta name="keywords" content="things to do in NYC, NYC events today, NYC events tonight, NYC events tomorrow, NYC events map, Brooklyn events, Manhattan events, Queens events, Hoboken events, Jersey City events, live music NYC, comedy shows NYC, art openings NYC, NYC nightlife, trivia nights NYC, NYC theater, 8-bit map, 8bit.NYC">
+<link rel="canonical" href="https://8bit.nyc/">
+<!-- Link previews (Facebook, iMessage, Slack, X). The image is a 1200x630 map shot in public/. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="8bit.NYC">
+<meta property="og:url" content="https://8bit.nyc/">
+<meta property="og:title" content="8bit.NYC | Things to Do in NYC Today and Tomorrow">
+<meta property="og:description" content="Things to do in NYC today and tomorrow on a retro 8-bit map. Music, art, comedy, nightlife, theater and trivia by neighborhood, plus Hoboken and Jersey City.">
+<meta property="og:image" content="https://8bit.nyc/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="8bit.NYC: a pixel art map of New York City covered in event pins">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="8bit.NYC | Things to Do in NYC Today and Tomorrow">
+<meta name="twitter:description" content="Things to do in NYC today and tomorrow on a retro 8-bit map. Music, art, comedy, nightlife, theater and trivia by neighborhood, plus Hoboken and Jersey City.">
+<meta name="twitter:image" content="https://8bit.nyc/og-image.png">
+<meta name="twitter:image:alt" content="8bit.NYC: a pixel art map of New York City covered in event pins">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,17 +70,20 @@ import Terms from '../components/Terms.astro';
   <div class="hud-top">
   <div class="brand box">
     <div class="brand-row">
-    <h1><img class="pin-ico" alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 19' shape-rendering='crispEdges'%3E%3Cpath fill='%23ed1c24' d='M4 0h5v1h2v1h1v2h1v5h-1v2h-1v1h-1v2H9v2H8v2H7v1H6v-1H5v-2H4v-2H3v-2H2v-1H1V9H0V4h1V2h1V1h2z'/%3E%3Cpath fill='%23ffffff' d='M5 4h3v1h1v3H8v1H5V8H4V5h1z'/%3E%3C/svg%3E">8-BIT <b>NYC</b></h1>
+    <h1><img class="pin-ico" alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 19' shape-rendering='crispEdges'%3E%3Cpath fill='%23ed1c24' d='M4 0h5v1h2v1h1v2h1v5h-1v2h-1v1h-1v2H9v2H8v2H7v1H6v-1H5v-2H4v-2H3v-2H2v-1H1V9H0V4h1V2h1V1h2z'/%3E%3Cpath fill='%23ffffff' d='M5 4h3v1h1v3H8v1H5V8H4V5h1z'/%3E%3C/svg%3E">8bit<b>NYC</b></h1>
     <button class="menu-btn" id="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu">
       <svg viewBox="0 0 7 6" aria-hidden="true" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h7v1H0zM0 2.5h7v1H0zM0 5h7v1H0z"/></svg>
     </button>
     </div>
     <nav class="site-menu box" id="site-menu" aria-label="Site" hidden>
       <a href="#contact" data-modal="contact">CONTACT</a>
-      <a href="#privacy" data-modal="privacy">PRIVACY POLICY</a>
-      <a href="#terms" data-modal="terms">TERMS AND CONDITIONS</a>
-      <button type="button" id="launch-monster">LAUNCH MONSTER</button>
-      <button type="button" id="cookie-settings" hidden>COOKIE SETTINGS</button>
+      <a href="#about" data-modal="about">ABOUT</a>
+      <button type="button" id="launch-monster" aria-pressed="false">MONSTER ATTACK!</button>
+      <div class="menu-legal">
+        <a href="#privacy" data-modal="privacy">PRIVACY POLICY</a>
+        <a href="#terms" data-modal="terms">TERMS AND CONDITIONS</a>
+        <button type="button" id="cookie-settings" hidden>COOKIE SETTINGS</button>
+      </div>
     </nav>
     <p><button id="today-date" class="day-btn" type="button" aria-pressed="false">TODAY</button><span id="today-count">LOADING</span></p>
   </div>
@@ -84,12 +106,17 @@ import Terms from '../components/Terms.astro';
         <ul id="src-list" aria-label="Event sources"></ul>
       </div>
     </div>
-    <nav class="chips" id="chips" aria-label="Filter by category"></nav>
     <div class="cat-filter">
-      <button class="chip cat-btn" id="cat-btn" type="button" aria-expanded="false" aria-controls="cat-menu">
-        <i aria-hidden="true"></i><span id="cat-summary">ALL</span><b aria-hidden="true">v</b>
+      <button class="chip cat-btn" id="cat-btn" type="button" aria-expanded="false" aria-controls="cat-menu" style="--cat:#ffffff">
+        CATEGORIES<span id="cat-summary">ALL</span><b aria-hidden="true">v</b>
       </button>
-      <div class="cat-menu box" id="cat-menu" role="group" aria-label="Filter by category" hidden></div>
+      <div class="src-menu cat-menu box" id="cat-menu" hidden>
+        <div class="src-actions">
+          <button type="button" id="cat-all">SELECT ALL</button>
+          <button type="button" id="cat-none">DESELECT ALL</button>
+        </div>
+        <ul id="cat-list" aria-label="Event categories"></ul>
+      </div>
     </div>
   </div>
 </header>
@@ -105,7 +132,7 @@ import Terms from '../components/Terms.astro';
     <button id="show-more" type="button" hidden>SHOW MORE</button>
     <p id="status" class="empty" role="status"></p>
   </div>
-  <p class="panel-foot">LISTINGS FROM NYC.GOV EVENTS, LUMA, NYC STREET EVENTS, TICKETMASTER, SEATGEEK, DICE, ARTWRLD, ARTRABBIT, ARTFORUM ARTGUIDE AND VENUES' OWN CALENDARS.</p>
+  <p class="panel-foot">LISTINGS FROM NYC.GOV EVENTS, LUMA, NYC STREET EVENTS, TICKETMASTER, SEATGEEK, ARTWRLD AND VENUES' OWN CALENDARS.</p>
 </aside>
 
 <section id="detail" class="box" hidden aria-live="polite"></section>
@@ -135,7 +162,7 @@ import Terms from '../components/Terms.astro';
         <option value="ad">Ad/Event Inquiry</option>
       </select>
       <div class="ad-info" id="ad-info" hidden>
-        <p><b>ADVERTISE ON THE MAP.</b> The banner next to the 8-BIT NYC header is open for ads and featured events. Tell us what you want to promote, the dates you have in mind and a link, and we will reply with options and rates.</p>
+        <p><b>ADVERTISE ON THE MAP.</b> The banner next to the 8bitNYC header is open for ads and featured events. Tell us what you want to promote, the dates you have in mind and a link, and we will reply with options and rates.</p>
       </div>
       <label for="cf-name">NAME</label>
       <input id="cf-name" name="name" type="text" autocomplete="name" maxlength="100" required>
@@ -150,6 +177,11 @@ import Terms from '../components/Terms.astro';
       <p class="form-note">Ad/Event Inquiries go to sales@8bit.nyc, everything else to info@8bit.nyc. See our <a href="#privacy" data-modal="privacy">Privacy Policy</a>.</p>
     </form>
   </div>
+</dialog>
+
+<dialog class="modal box" id="modal-about" aria-labelledby="about-title">
+  <div class="modal-head"><h2 id="about-title">ABOUT</h2><button class="modal-close" type="button" aria-label="Close">X</button></div>
+  <div class="modal-body legal"><About /></div>
 </dialog>
 
 <dialog class="modal box" id="modal-privacy" aria-labelledby="privacy-title">

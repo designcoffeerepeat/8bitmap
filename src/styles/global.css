@@ -1,4 +1,4 @@
-/* Layout: full-bleed voxel map, a title box top-left, filter chips under it,
+/* Layout: full-bleed voxel map, a title box top-left, source and category dropdowns under it,
    today's list docked right (a bottom sheet on phones), event card bottom-left.
    Single dark arcade look by design; the map supplies the colour. */
 :root {
@@ -65,7 +65,7 @@ button, a { font: inherit; color: inherit; }
 .day-btn:hover { color: var(--coin); }
 .day-btn:disabled { cursor: progress; }
 
-/* hamburger in the title box and its menu (Contact, Privacy Policy, Terms) */
+/* hamburger in the title box and its menu (Contact, About, Monster, then small Privacy / Terms links) */
 .menu-btn {
   flex: none; width: 30px; height: 26px; margin: -4px 0; cursor: pointer;
   display: grid; place-items: center; background: var(--night-2); border: 0; color: var(--ink);
@@ -80,6 +80,11 @@ button, a { font: inherit; color: inherit; }
 }
 .site-menu a:hover, .site-menu button:hover { background: var(--coin); color: var(--night); }
 .site-menu [hidden] { display: none; }
+.site-menu #launch-monster[aria-pressed="true"] { color: var(--pin); }
+.site-menu #launch-monster[aria-pressed="true"]:hover { color: var(--night); }
+.menu-legal { display: grid; gap: 0; margin-top: 6px; padding-top: 6px; border-top: 3px solid var(--night-2); }
+.site-menu .menu-legal a, .site-menu .menu-legal button { padding: 7px 10px 6px; font-size: 7px; color: var(--dim); }
+.site-menu .menu-legal a:hover, .site-menu .menu-legal button:hover { color: var(--night); }
 
 /* ad slot beside the title box: same dialogue-box frame, swap the text or drop an image in later */
 .hud-top { display: flex; gap: 14px; align-items: stretch; max-width: 100%; }
@@ -95,7 +100,6 @@ button, a { font: inherit; color: inherit; }
 .ad.is-empty:hover strong { color: var(--frame); }
 
 
-.chips { display: flex; gap: 8px; flex-wrap: wrap; max-width: 100%; }
 .chip {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 7px 10px 6px; cursor: pointer;
@@ -108,7 +112,7 @@ button, a { font: inherit; color: inherit; }
 .chip[aria-pressed="true"] span { color: var(--coin); }
 .chip:hover { background: var(--night-2); }
 
-/* sources dropdown: sits before the category chips */
+/* sources dropdown: sits before the categories dropdown */
 .filter-row { display: flex; gap: 8px; align-items: flex-start; max-width: 100%; }
 .src-filter { position: relative; flex: none; }
 .src-btn b { font-weight: 400; color: var(--ink); }
@@ -130,20 +134,38 @@ button, a { font: inherit; color: inherit; }
 .src-item input:focus-visible + i { outline: 3px solid var(--coin); outline-offset: 2px; }
 .src-item span { margin-left: auto; color: var(--dim); font: 8px/1 var(--font-pixel); }
 
-/* category dropdown: phones only, replaces the chip row */
-.cat-filter { display: none; position: relative; flex: none; }
+/* categories dropdown: ticks like SOURCES, with each category's colour beside its name */
+.cat-filter { position: relative; flex: none; }
 .cat-btn b { font-weight: 400; color: var(--ink); }
-.cat-btn span { color: var(--coin); }
 .cat-btn[aria-expanded="true"] { border-color: var(--frame); }
-.cat-menu { position: absolute; top: calc(100% + 10px); right: 0; z-index: 5; width: 220px; padding: 8px; display: grid; gap: 4px; }
-.cat-menu[hidden] { display: none; }
-.cat-menu .chip { width: 100%; box-shadow: none; padding: 10px; }
-.cat-menu .chip span { margin-left: auto; }
+.cat-menu { width: 240px; }
+#cat-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; max-height: 50vh; overflow-y: auto; }
+/* each row: the checkbox adds or removes a category, the name shows only that one */
+.cat-item { display: flex; align-items: stretch; }
+.cat-check { flex: none; padding-right: 4px; }
+.cat-only {
+  flex: 1; display: flex; align-items: center; gap: 10px; min-width: 0;
+  padding: 6px 6px 5px; cursor: pointer; text-align: left;
+  font: inherit; font-size: 20px; color: inherit; background: none; border: 0;
+}
+.cat-only:hover, .cat-check:hover { background: var(--night-2); }
+.cat-only em { flex: none; width: 8px; height: 8px; background: var(--cat); }
+.cat-only small { display: none; color: var(--coin); font: 7px/1 var(--font-pixel); }
+.cat-only:hover small { display: inline; }
+.cat-only:focus-visible { outline: 3px solid var(--coin); outline-offset: -3px; }
+.cat-only span { margin-left: auto; color: var(--dim); font: 8px/1 var(--font-pixel); }
 
 /* text pinned to map positions (see addAnchor in renderer.js) */
 .map-anchors { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
 .map-anchor { position: absolute; left: 0; top: 0; white-space: pre; text-align: center; }
 .map-anchor[hidden] { display: none; }
+.pin-title {
+  position: absolute; left: 0; top: 0; max-width: 220px;
+  overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+  font: 15px/1 var(--font-body); color: var(--ink); background: var(--night);
+  border: 2px solid var(--ink); padding: 2px 5px 3px;
+}
+.pin-title[hidden] { display: none; }
 .hood {
   font: 17px/1 var(--font-body); color: var(--ink); letter-spacing: .5px;
   text-shadow: 1px 0 var(--night), -1px 0 var(--night), 0 1px var(--night), 0 -1px var(--night), 2px 2px 0 var(--night);
@@ -303,11 +325,9 @@ button, a { font: inherit; color: inherit; }
   .ad { min-width: 0; width: 100%; padding: 7px 10px; display: flex; justify-content: center; align-items: center; gap: 10px; }
   .ad small { position: static; }
   .ad strong { font-size: 9px; }
-  .chips { flex-wrap: nowrap; overflow-x: auto; width: 100%; padding-bottom: 6px; scrollbar-width: none; }
   .chip { flex: none; }
-  .filter-row .chips { display: none; }
-  .cat-filter { display: block; }
   .src-menu { width: min(260px, calc(100vw - 32px)); }
+  .cat-menu { left: auto; right: 0; width: min(240px, calc(100vw - 32px)); }
   #panel {
     top: auto; left: 0; width: auto; height: 46%;
     border-left: 0; border-top: 3px solid var(--frame);
