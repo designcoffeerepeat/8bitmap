@@ -4,7 +4,7 @@
   "url": "https://dice.fm/browse/new_york-5bbf4db0f06331478e9b2c59"
  },
  "date": "2026-10-23",
- "fetchedAt": "2026-10-22T00:29:44-04:00",
+ "fetchedAt": "2026-10-22T05:16:47-04:00",
  "events": [
   {
    "id": "6a7b7c33dd402d000135074d",
@@ -463,6 +463,30 @@
    "tags": []
   },
   {
+   "id": "6ab2fcdca61b790001109af4",
+   "title": "Sommer Ray",
+   "category": "nightlife",
+   "start": "2026-10-23T23:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "Nebula",
+    "address": "135 W 41st St, New York, NY 10036, USA",
+    "neighborhood": "",
+    "lat": 40.754987,
+    "lng": -73.985635
+   },
+   "price": {
+    "min": 28,
+    "max": 28,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6ab2fcdca61b790001109af4",
+   "tags": []
+  },
+  {
    "id": "6ab29bbde3834e00013c479d",
    "title": "Weekend Warm-Up (skate)",
    "category": "nightlife",
@@ -748,6 +772,30 @@
    "description": "",
    "details": "",
    "url": "https://dice.fm/event/6aa7f055b3ded300012d8b85",
+   "tags": []
+  },
+  {
+   "id": "6aa7e6d80af0210001d8f08a",
+   "title": "Reggaeton Fridays",
+   "category": "nightlife",
+   "start": "2026-10-23T23:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "The Delancey",
+    "address": "168 Delancey St, New York, NY 10002, USA",
+    "neighborhood": "",
+    "lat": 40.718037,
+    "lng": -73.985277
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6aa7e6d80af0210001d8f08a",
    "tags": []
   },
   {
