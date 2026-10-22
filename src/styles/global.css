@@ -146,6 +146,13 @@ button, a { font: inherit; color: inherit; }
 .map-anchors { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
 .map-anchor { position: absolute; left: 0; top: 0; white-space: pre; text-align: center; }
 .map-anchor[hidden] { display: none; }
+.pin-title {
+  position: absolute; left: 0; top: 0; max-width: 220px;
+  overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+  font: 15px/1 var(--font-body); color: var(--ink); background: var(--night);
+  border: 2px solid var(--ink); padding: 2px 5px 3px;
+}
+.pin-title[hidden] { display: none; }
 .hood {
   font: 17px/1 var(--font-body); color: var(--ink); letter-spacing: .5px;
   text-shadow: 1px 0 var(--night), -1px 0 var(--night), 0 1px var(--night), 0 -1px var(--night), 2px 2px 0 var(--night);
