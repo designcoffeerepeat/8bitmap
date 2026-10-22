@@ -189,7 +189,8 @@ new year's list is out, last year's is used.
 the city (`PARKS` in the script: Statue of Liberty, Ellis Island, Governors Island, Gateway, Federal Hall, Castle
 Clinton, Grant's Tomb and others). It needs a free key in `NPS_API_KEY`, read from a repository secret of that name
 by the scheduled refresh; without one it skips the run, like Ticketmaster. Events without coordinates are placed at
-their park, and an event with several times a day becomes one pin per time. NPS text is US government work and free
+their park, except Gateway events at Sandy Hook (New Jersey), which are dropped. A tour run several times a day is
+one pin at its first time, with every time listed in its description. NPS text is US government work and free
 to reuse.
 
 ### Ticketmaster
