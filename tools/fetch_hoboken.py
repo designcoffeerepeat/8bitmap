@@ -12,13 +12,18 @@ on its own so one site being down only loses that one:
                               are left out
   Stevens DeBaun PAC          concerts, plays and recitals from the season list on Stevens' DeBaun
                               Performing Arts Center page; listings without a time are left out
+  Mile Square Theatre         each performance's time and price from the theatre's ticketing site
+                              (PatronTicket on Salesforce), the same list its Buy Tickets pages load
+  City of Hoboken             festivals, fairs, movie nights and concerts the city books in its parks,
+                              from the city's RecDesk facility calendar (https://hoboken.recdesk.com/Community/Calendar),
+                              which is where hobokennj.gov's Calendar & Events link goes; board meetings,
+                              voting, sign-up classes and private bookings are left out
 
 Checked 2026-10-22: none of these has terms that forbid automated reading, and their robots.txt
-allow these pages. Waiting on hosts not reachable yet: Mile Square Theatre (its performance times are
-on its Salesforce ticketing site) and the City of Hoboken calendar (on RecDesk).
-Only title, time, a price when given and a link back are kept.
+allow these pages (RecDesk and the ticketing site have none). Only title, time, a price when given
+and a link back are kept.
 
-NYC GeoSearch only knows the five boroughs, so the venues' coordinates are written in below.
+NYC GeoSearch only knows the five boroughs, so the venues' and parks' coordinates are written in below.
 
 Usage:  python3 tools/fetch_hoboken.py [YYYY-MM-DD]     (default: today in NYC)
 """
@@ -28,9 +33,10 @@ import re
 import sys
 import time
 import urllib.parse
+import urllib.request
 from datetime import date, datetime
 
-from fetch_nycgov import DATA, NYC, ROOT, get
+from fetch_nycgov import DATA, NYC, ROOT, UA, get
 from fetch_redhook import tribe_events, tribe_time
 from fetch_venues import at, clock, event, text
 
@@ -42,7 +48,24 @@ VENUES = {
     'Hoboken Public Library': ('500 Park Avenue', (40.74290, -74.03110), 'https://hobokenlibrary.libnet.info/events'),
     'Hoboken Library, Grand Street Branch': ('124 Grand Street', (40.73740, -74.03530), 'https://hobokenlibrary.libnet.info/events'),
     'DeBaun Auditorium, Stevens': ('1 Castle Point Terrace', (40.74250, -74.02700), 'https://www.stevens.edu/debaunpac'),
+    'Mile Square Theatre': ('1400 Clinton Street', (40.75330, -74.03270), 'https://www.milesquaretheatre.org/shows-and-events/'),
 }
+CITY = ('City of Hoboken', 'https://hoboken.recdesk.com/Community/Calendar')
+TICKETS = 'https://milesquaretheatre.my.salesforce-sites.com/ticket/'
+# RecDesk facility names start with the park or building ('Pier A Park - Lawn'); those are placed here.
+PARKS = {
+    'ResilienCity Park': (40.75100, -74.03350), 'Pier A Park': (40.73700, -74.02750),
+    'Sinatra Park': (40.74280, -74.02560), 'Waterfront Walkway': (40.73800, -74.02720),
+    'Church Square Park': (40.74220, -74.03100), 'City Hall': (40.73720, -74.03000),
+    'Multi-Service Center': (40.73760, -74.03520), '7th & Jackson Park': (40.74620, -74.03730),
+    'Columbus Park (Hudson County)': (40.74870, -74.03180), '1600 Park': (40.75530, -74.03300),
+    'Castle Point Park': (40.74580, -74.02470), 'Elysian Park': (40.74950, -74.02620),
+    'Stevens Park': (40.74000, -74.02850), 'Shipyard Park': (40.75250, -74.02480),
+    'Maxwell Place Park': (40.75180, -74.02420), 'Southwest Park': (40.73720, -74.03950),
+    'Hudson Place Plaza': (40.73630, -74.02900),
+}
+CITY_EVENT = re.compile(r'fair|festival|\bfest\b|movie|film|concert|music|pumpkin|parade|market|halloween|holiday|'
+                        r'tree lighting|celebration|\bpops\b|\bart\b|dance|carnival', re.I)
 LIBRARY = ('Hoboken Public Library', 'https://hobokenlibrary.libnet.info/events')
 STEVENS = ('Stevens DeBaun PAC', 'https://www.stevens.edu/debaunpac')
 BRANCHES = {'Main Library': 'Hoboken Public Library', 'Grand Street Branch': 'Hoboken Library, Grand Street Branch'}
@@ -143,7 +166,74 @@ def stevens(day):
     return out
 
 
-READERS = [museum, library, stevens]
+def mile_square(day):
+    """Performances from the ticketing app's public fetchEvents call, made with the keys its own page carries."""
+    page = get(TICKETS, as_json=False)
+    m = re.search(r'Visualforce\.remoting\.Manager\.add\(new \$VFRM\.RemotingProviderImpl\((\{.*?\})\)\);', page, re.S)
+    cfg = json.loads(m.group(1))
+    act = next(a for a in cfg['actions']['PatronTicket.Controller_PublicTicketApp']['ms'] if a['name'] == 'fetchEvents')
+    site = re.search(r'siteURL\s*:\s*"([^"]*)"', page)
+    body = json.dumps({
+        'action': 'PatronTicket.Controller_PublicTicketApp', 'method': 'fetchEvents', 'type': 'rpc', 'tid': 2,
+        'data': [site.group(1) if site else '', '', '', None],
+        'ctx': {'csrf': act['csrf'], 'vid': cfg['vf']['vid'], 'ns': act['ns'], 'ver': act['ver'], 'authorization': act['authorization']},
+    }).encode()
+    req = urllib.request.Request(TICKETS + 'apexremote', data=body, headers={
+        'User-Agent': UA, 'Content-Type': 'application/json', 'X-User-Agent': 'Visualforce-Remoting', 'Referer': TICKETS})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        shows = json.loads(r.read().decode())[0]['result']
+    out = []
+    for show in shows:
+        if show.get('type') != 'Tickets':  # memberships and concessions
+            continue
+        for i in show.get('instances', []):
+            start = datetime.fromtimestamp(i['formattedDates']['ISO8601'] / 1000, NYC)
+            if start.date() != day or i.get('nonTimed'):
+                continue
+            prices = [lv['price'] for a in i.get('allocations', []) for lv in a.get('levels', []) if lv.get('price') is not None]
+            price = {'min': round(min(prices)), 'max': round(max(prices)), 'currency': 'USD'} if prices else None
+            category = 'music' if re.search(r'concert|cabaret|music', show.get('category') or '', re.I) else 'theater'
+            out.append(event('Mile Square Theatre', text(show['name']), start, f"{TICKETS}#/instances/{i['id']}", category,
+                             price=price, description='Sold out' if i.get('soldOut') else ''))
+    return out
+
+
+def city(day):
+    """The city's own bookings ('F') on its RecDesk calendar. One event booked on several lawns and rooms
+    of a park, or along the waterfront, shows up once per space, so it is kept once."""
+    stamp = f'{day.month}/{day.day}/{day.year}'
+    body = json.dumps({'facilityId': -1, 'startDate': stamp, 'endDate': stamp, 'getChildren': 'false',
+                       'SelectedView': 'agendaDay', 'SelectedMonth': str(day.month), 'SelectedYear': str(day.year)}).encode()
+    req = urllib.request.Request(CITY[1] + '/GetCalendarItems', data=body, headers={
+        'User-Agent': UA, 'Content-Type': 'application/json; charset=utf-8', 'X-Requested-With': 'XMLHttpRequest'})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        items = json.loads(r.read().decode()).get('Events', [])
+    out, seen = [], set()
+    for e in items:
+        facility = text(e.get('FacilityName'))
+        park = facility.split(' - ')[0].strip()
+        # Names end with the facility in brackets, and some add a booking note after ' - ':
+        # 'Halloween Movie Night/Pumpkin patch - Fall Event City/HBA (ResilienCity Park - Lawn)'.
+        title = re.sub(r'\s*\((?:[^()]|\([^()]*\))*\)\s*$', '', text(e.get('EventName'))).split(' - ')[0].strip()
+        if e.get('EventType') != 'F' or e.get('IsPrivate') or e.get('AllDay') or park not in PARKS:
+            continue
+        if not CITY_EVENT.search(title) or re.search(r'meeting|board|voting|scout', title, re.I):
+            continue
+        start = datetime.fromisoformat(e['StartTimeISO8601']).replace(tzinfo=NYC)
+        end = datetime.fromisoformat(e['EndTimeISO8601']).replace(tzinfo=NYC)
+        if start.date() != day or (title.lower(), start) in seen:
+            continue
+        seen.add((title.lower(), start))
+        category = 'film' if re.search(r'movie|film', title, re.I) else 'music' if re.search(r'concert|music|pops', title, re.I) else 'community'
+        lat, lng = PARKS[park]
+        ev = event(park, title, start, CITY[1], category, end=end if end > start else None,
+                   pos={'lat': lat, 'lng': lng}, publisher=CITY)
+        ev['address'] = park
+        out.append(ev)
+    return out
+
+
+READERS = [museum, library, stevens, mile_square, city]
 
 
 def main():
@@ -164,7 +254,10 @@ def main():
         if key in seen:
             continue
         seen.add(key)
-        address, (lat, lng), url = VENUES[r['venue']]
+        if r['pos']:
+            address, (lat, lng), url = r['address'], (r['pos']['lat'], r['pos']['lng']), CITY[1]
+        else:
+            address, (lat, lng), url = VENUES[r['venue']]
         slug = re.sub(r'[^a-z0-9]+', '-', r['venue'].lower()).strip('-')
         pub_name, pub_url = r['publisher'] or (r['venue'], url)
         events.append({
