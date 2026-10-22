@@ -245,7 +245,7 @@ def other_half(day):
         start = at(day, *clock(m.group(1)))
         end = at(day, *clock(m.group(2))) if m.group(2) else None
         title = text(title.group(1))
-        out.append(event(venue, title, start, href, 'nightlife' if 'trivia' in title.lower() else 'food',
+        out.append(event(venue, title, start, href, 'trivia' if 'trivia' in title.lower() else 'food',
                          end=end if end and end > start else None))
     return out
 
@@ -280,7 +280,7 @@ def trivia_league(day, cache):
             lng = re.search(r'itemprop="longitude" content="([-\d.]+)"', page)
             ll = (lat.group(1), lng.group(1)) if lat and lng else None
             cache[key] = {'lat': float(ll[0]), 'lng': float(ll[1]), 'label': bar} if ll else None
-        out.append(event(bar, f'{kind} at {bar}', at(day, *when), link.group(1), 'nightlife',
+        out.append(event(bar, f'{kind} at {bar}', at(day, *when), link.group(1), 'trivia',
                          pos=cache[key], neighborhood=bits[0] if bits and not clock(bits[0]) else '',
                          publisher=('NYC Trivia League', 'https://nyctrivialeague.com/')))
     return out

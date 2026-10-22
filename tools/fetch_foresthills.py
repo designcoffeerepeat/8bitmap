@@ -88,7 +88,7 @@ def rove(day):
     if not m or day.strftime('%A').upper() != m.group(1).upper() + 'DAY':
         return []
     start, end = at(day, int(m.group(2)) % 12 + 12, 0), at(day, int(m.group(3)) % 12 + 12, 0)
-    return [event(ROVE[0], ROVE[1], 'Trivia Night at Rove', start, ROVE[2], 'nightlife', end if end > start else None)]
+    return [event(ROVE[0], ROVE[1], 'Trivia Night at Rove', start, ROVE[2], 'trivia', end if end > start else None)]
 
 
 READERS = [commonpoint, rove]

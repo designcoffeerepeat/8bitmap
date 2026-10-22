@@ -28,7 +28,7 @@
 //   listingOnly: boolean  true when the source only allows title, time and a link
 // }
 
-export const CATEGORIES = ['music', 'art', 'theater', 'food', 'comedy', 'sports', 'nightlife', 'community', 'film'];
+export const CATEGORIES = ['music', 'art', 'theater', 'food', 'comedy', 'sports', 'nightlife', 'community', 'film', 'trivia'];
 
 export const CATEGORY_LABELS = {
   music: 'Music',
@@ -40,10 +40,13 @@ export const CATEGORY_LABELS = {
   nightlife: 'Nightlife',
   community: 'Community',
   film: 'Film',
+  trivia: 'Trivia',
 };
 
 export function normalizeEvent(raw, source) {
-  const category = CATEGORIES.includes(raw.category) ? raw.category : 'community';
+  // Trivia and quiz nights get their own category whatever a source filed them under,
+  // and so does everything NYC Trivia League runs (its Mixtape Bingo nights too).
+  const category = isTrivia(raw) ? 'trivia' : CATEGORIES.includes(raw.category) ? raw.category : 'community';
   const lat = Number(raw.venue?.lat);
   const lng = Number(raw.venue?.lng);
   if (!raw.title || !raw.start || !Number.isFinite(lat) || !Number.isFinite(lng)) return null;
@@ -71,6 +74,10 @@ export function normalizeEvent(raw, source) {
     tags: raw.tags ?? [],
     listingOnly: Boolean(source.listingOnly),
   };
+}
+
+function isTrivia(raw) {
+  return /\b(trivia|quiz+o?|pub quiz)\b/i.test(raw.title ?? '') || raw.publisher?.name === 'NYC Trivia League';
 }
 
 function slug(s) {

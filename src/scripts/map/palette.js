@@ -35,4 +35,5 @@ export const CATEGORY_COLORS = {
   nightlife: '#ff7b4d',
   community: '#6ee07a',
   film: '#f0f0f0',
+  trivia: '#19c3a3',
 };

@@ -213,6 +213,9 @@ Each fetcher maps its source's own labels into the map's categories (`CATEGORIES
 Theater covers plays, musicals, opera and dance; art covers museums, galleries, exhibits and openings. When a
 listing has no usable label, `venue_category()` in `tools/fetch_nycgov.py` decides from the venue name: a museum or
 gallery is art, a theater or playhouse is theater, a cinema is film.
+Trivia covers trivia and quiz nights: `normalizeEvent()` in `src/scripts/events/schema.js` moves any event whose
+title says trivia or quiz, and every NYC Trivia League night (its Mixtape Bingo too), into trivia whatever its
+source filed it under, so new sources get this without changes.
 
 ### Artwrld
 
