@@ -4,7 +4,7 @@
   "url": "https://dice.fm/browse/new_york-5bbf4db0f06331478e9b2c59"
  },
  "date": "2026-10-23",
- "fetchedAt": "2026-10-22T00:22:01-04:00",
+ "fetchedAt": "2026-10-22T00:29:44-04:00",
  "events": [
   {
    "id": "6a7b7c33dd402d000135074d",
@@ -100,6 +100,54 @@
    "description": "",
    "details": "",
    "url": "https://dice.fm/event/6ac69562f6f26b0001a12b7d",
+   "tags": []
+  },
+  {
+   "id": "6ac66d492860570001398d1e",
+   "title": "Gus Dapperton Acoustic Performance + Signing",
+   "category": "music",
+   "start": "2026-10-23T18:00:00-04:00",
+   "end": "2026-10-23T20:00:00-04:00",
+   "venue": {
+    "name": "Rough Trade Below",
+    "address": "30 Rockefeller Plaza, Concourse Level, New York City, New York 10112, United States",
+    "neighborhood": "",
+    "lat": 40.759149,
+    "lng": -73.979598
+   },
+   "price": {
+    "min": 22,
+    "max": 22,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6ac66d492860570001398d1e",
+   "tags": []
+  },
+  {
+   "id": "6a6962a599f561000110fbfb",
+   "title": "Blackbraid, High Command, Gudsforladt",
+   "category": "music",
+   "start": "2026-10-23T18:00:00-04:00",
+   "end": "2026-10-23T22:30:00-04:00",
+   "venue": {
+    "name": "Saint Vitus",
+    "address": "428 Troutman Street, Brooklyn, New York 11237, United States",
+    "neighborhood": "",
+    "lat": 40.707125,
+    "lng": -73.921948
+   },
+   "price": {
+    "min": 47,
+    "max": 47,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6a6962a599f561000110fbfb",
    "tags": []
   },
   {
@@ -524,8 +572,8 @@
     "lng": -73.923368
    },
    "price": {
-    "min": 11,
-    "max": 11,
+    "min": 12,
+    "max": 12,
     "currency": "USD"
    },
    "priceUnknown": false,
@@ -548,8 +596,8 @@
     "lng": -73.955158
    },
    "price": {
-    "min": 14,
-    "max": 14,
+    "min": 18,
+    "max": 18,
     "currency": "USD"
    },
    "priceUnknown": false,
@@ -628,6 +676,78 @@
    "description": "",
    "details": "",
    "url": "https://dice.fm/event/6ad1467a07a54f0001520266",
+   "tags": []
+  },
+  {
+   "id": "6ac032fb27a6d2000109cde1",
+   "title": "Haunted Aquarium Reggaeton Party | Costume Contest",
+   "category": "nightlife",
+   "start": "2026-10-23T23:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "SEA WOLF BUSHWICK",
+    "address": "19 Wyckoff Avenue, Brooklyn, New York 11237, United States",
+    "neighborhood": "",
+    "lat": 40.706836,
+    "lng": -73.922803
+   },
+   "price": {
+    "min": 2,
+    "max": 2,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6ac032fb27a6d2000109cde1",
+   "tags": []
+  },
+  {
+   "id": "6aafd64b2ac7e80001b853ed",
+   "title": "Perreo Meets Techno [21+]",
+   "category": "nightlife",
+   "start": "2026-10-23T23:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "The Meadows",
+    "address": "17 Meadow St, Brooklyn, NY 11206, USA",
+    "neighborhood": "",
+    "lat": 40.710886,
+    "lng": -73.936609
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Strobing visuals, crazy lights",
+   "details": "",
+   "url": "https://dice.fm/event/6aafd64b2ac7e80001b853ed",
+   "tags": []
+  },
+  {
+   "id": "6aa7f055b3ded300012d8b85",
+   "title": "REGGAETON OPEN BAR",
+   "category": "nightlife",
+   "start": "2026-10-23T23:00:00-04:00",
+   "end": null,
+   "venue": {
+    "name": "The Meadows",
+    "address": "17 Meadow St, Brooklyn, NY 11206, USA",
+    "neighborhood": "",
+    "lat": 40.710886,
+    "lng": -73.936609
+   },
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://dice.fm/event/6aa7f055b3ded300012d8b85",
    "tags": []
   },
   {

@@ -4,7 +4,7 @@
   "url": "https://seatgeek.com/cities/new-york"
  },
  "date": "2026-10-22",
- "fetchedAt": "2026-10-22T00:19:29-04:00",
+ "fetchedAt": "2026-10-22T00:27:21-04:00",
  "events": [
   {
    "id": "18570427",
@@ -266,29 +266,6 @@
    ]
   },
   {
-   "id": "18664854",
-   "title": "Ghostemane",
-   "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Stone Circle Theatre",
-    "address": "14 70th Ave, Queens, NY 11385",
-    "neighborhood": "Queens",
-    "lat": 40.70103,
-    "lng": -73.89977
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/ghostemane-tickets/queens-new-york-stone-circle-theatre-2026-10-22-7-pm/concert/18664854",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
    "id": "18666223",
    "title": "Do Si Don'tcha",
    "category": "music",
@@ -358,6 +335,31 @@
    ]
   },
   {
+   "id": "18377761",
+   "title": "Anaheim Ducks at New Jersey Devils",
+   "category": "sports",
+   "start": "2026-10-22T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Prudential Center",
+    "address": "25 Lafayette Street, Newark, NJ 07102",
+    "neighborhood": "Newark",
+    "lat": 40.7332,
+    "lng": -74.1717
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "nhl",
+   "details": "",
+   "url": "https://seatgeek.com/new-jersey-devils-tickets/10-22-2026-newark-new-jersey-prudential-center/nhl/18377761",
+   "tags": [
+    "sports",
+    "hockey",
+    "nhl"
+   ]
+  },
+  {
    "id": "18584720",
    "title": "A Ghost in Your Ear",
    "category": "theater",
@@ -381,28 +383,26 @@
    ]
   },
   {
-   "id": "18377761",
-   "title": "Anaheim Ducks at New Jersey Devils",
-   "category": "sports",
+   "id": "18664854",
+   "title": "Ghostemane",
+   "category": "music",
    "start": "2026-10-22T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Prudential Center",
-    "address": "25 Lafayette Street, Newark, NJ 07102",
-    "neighborhood": "Newark",
-    "lat": 40.7332,
-    "lng": -74.1717
+    "name": "Stone Circle Theatre",
+    "address": "14 70th Ave, Queens, NY 11385",
+    "neighborhood": "Queens",
+    "lat": 40.70103,
+    "lng": -73.89977
    },
    "price": null,
    "priceUnknown": true,
-   "description": "nhl",
+   "description": "concert",
    "details": "",
-   "url": "https://seatgeek.com/new-jersey-devils-tickets/10-22-2026-newark-new-jersey-prudential-center/nhl/18377761",
+   "url": "https://seatgeek.com/ghostemane-tickets/queens-new-york-stone-circle-theatre-2026-10-22-7-pm/concert/18664854",
    "tags": [
-    "sports",
-    "hockey",
-    "nhl"
+    "concert"
    ]
   },
   {
@@ -830,30 +830,6 @@
    ]
   },
   {
-   "id": "18141301",
-   "title": "Hamilton",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Richard Rodgers Theatre",
-    "address": "226 West 46th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7592,
-    "lng": -73.9866
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/hamilton-tickets/broadway/2026-10-22-7-pm/18141301",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
    "id": "18394746",
    "title": "After",
    "category": "music",
@@ -919,6 +895,30 @@
    "description": "broadway",
    "details": "",
    "url": "https://seatgeek.com/hadestown-tickets/broadway/2026-10-22-7-pm/18221691",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18141301",
+   "title": "Hamilton",
+   "category": "theater",
+   "start": "2026-10-22T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Richard Rodgers Theatre",
+    "address": "226 West 46th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7592,
+    "lng": -73.9866
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/hamilton-tickets/broadway/2026-10-22-7-pm/18141301",
    "tags": [
     "theater",
     "broadway"
@@ -1355,29 +1355,6 @@
    ]
   },
   {
-   "id": "18583525",
-   "title": "Downstate",
-   "category": "theater",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Booth Theatre - New York",
-    "address": "222 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7583,
-    "lng": -73.9863
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/downstate-play-tickets/theater/2026-10-22-8-pm/18583525",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
    "id": "18395364",
    "title": "The Fantasticks",
    "category": "theater",
@@ -1399,6 +1376,29 @@
    "tags": [
     "theater",
     "broadway"
+   ]
+  },
+  {
+   "id": "18583525",
+   "title": "Downstate",
+   "category": "theater",
+   "start": "2026-10-22T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Booth Theatre - New York",
+    "address": "222 West 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7583,
+    "lng": -73.9863
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/downstate-play-tickets/theater/2026-10-22-8-pm/18583525",
+   "tags": [
+    "theater"
    ]
   },
   {

@@ -4,7 +4,7 @@
   "url": "https://seatgeek.com/cities/new-york"
  },
  "date": "2026-10-23",
- "fetchedAt": "2026-10-22T00:23:35-04:00",
+ "fetchedAt": "2026-10-22T00:30:02-04:00",
  "events": [
   {
    "id": "18612455",
@@ -196,6 +196,53 @@
    ]
   },
   {
+   "id": "18526953",
+   "title": "Slam Frank",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Orpheum Theatre - NY",
+    "address": "126 Second Ave, New York, NY 10003",
+    "neighborhood": "New York",
+    "lat": 40.7282,
+    "lng": -73.9875
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/slam-frank-tickets/theater/2026-10-23-7-pm/18526953",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18310059",
+   "title": "Other Desert Cities",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Hudson Theatre - New York",
+    "address": "145 West 44th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7569,
+    "lng": -73.9848
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/other-desert-cities-tickets/broadway/2026-10-23-7-pm/18310059",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
    "id": "18310457",
    "title": "Richard O'Brien's Rocky Horror Show",
    "category": "theater",
@@ -267,48 +314,24 @@
    ]
   },
   {
-   "id": "18310059",
-   "title": "Other Desert Cities",
+   "id": "17958388",
+   "title": "Harry Potter and The Cursed Child",
    "category": "theater",
    "start": "2026-10-23T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Hudson Theatre - New York",
-    "address": "145 West 44th Street, New York, NY 10036",
+    "name": "Lyric Theatre - New York",
+    "address": "213 West 42nd Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7569,
-    "lng": -73.9848
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/other-desert-cities-tickets/broadway/2026-10-23-7-pm/18310059",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18526953",
-   "title": "Slam Frank",
-   "category": "theater",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Orpheum Theatre - NY",
-    "address": "126 Second Ave, New York, NY 10003",
-    "neighborhood": "New York",
-    "lat": 40.7282,
-    "lng": -73.9875
+    "lat": 40.7565,
+    "lng": -73.9878
    },
    "price": null,
    "priceUnknown": true,
    "description": "theater",
    "details": "",
-   "url": "https://seatgeek.com/slam-frank-tickets/theater/2026-10-23-7-pm/18526953",
+   "url": "https://seatgeek.com/harry-potter-and-the-cursed-child-tickets/theater/2026-10-23-7-pm/17958388",
    "tags": [
     "theater"
    ]
@@ -359,29 +382,6 @@
    "tags": [
     "theater",
     "broadway"
-   ]
-  },
-  {
-   "id": "17958388",
-   "title": "Harry Potter and The Cursed Child",
-   "category": "theater",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lyric Theatre - New York",
-    "address": "213 West 42nd Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7565,
-    "lng": -73.9878
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/harry-potter-and-the-cursed-child-tickets/theater/2026-10-23-7-pm/17958388",
-   "tags": [
-    "theater"
    ]
   },
   {
@@ -502,6 +502,29 @@
    ]
   },
   {
+   "id": "18194390",
+   "title": "Beck",
+   "category": "music",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Paramount",
+    "address": "385 Flatbush Ave. Extension, Brooklyn, NY 11201",
+    "neighborhood": "Brooklyn",
+    "lat": 40.6917,
+    "lng": -73.9815
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/beck-tickets/brooklyn-new-york-brooklyn-paramount-2026-10-23-7-pm/concert/18194390",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
    "id": "18408249",
    "title": "Jamie Allan's Amaze",
    "category": "theater",
@@ -524,29 +547,6 @@
     "theater",
     "entertainment",
     "entertainment"
-   ]
-  },
-  {
-   "id": "18194390",
-   "title": "Beck",
-   "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Brooklyn Paramount",
-    "address": "385 Flatbush Ave. Extension, Brooklyn, NY 11201",
-    "neighborhood": "Brooklyn",
-    "lat": 40.6917,
-    "lng": -73.9815
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/beck-tickets/brooklyn-new-york-brooklyn-paramount-2026-10-23-7-pm/concert/18194390",
-   "tags": [
-    "concert"
    ]
   },
   {
@@ -596,27 +596,26 @@
    ]
   },
   {
-   "id": "18262754",
-   "title": "The Lion King",
-   "category": "theater",
+   "id": "18311563",
+   "title": "Telescreens with Torture and the Desert Spiders",
+   "category": "music",
    "start": "2026-10-23T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Minskoff Theatre",
-    "address": "200 West 45th Street, New York, NY 10036",
+    "name": "Bowery Ballroom",
+    "address": "6 Delancey Street, New York, NY 10002",
     "neighborhood": "New York",
-    "lat": 40.7579,
-    "lng": -73.9862
+    "lat": 40.7204,
+    "lng": -73.9934
    },
    "price": null,
    "priceUnknown": true,
-   "description": "broadway",
+   "description": "concert",
    "details": "",
-   "url": "https://seatgeek.com/the-lion-king-tickets/broadway/2026-10-23-7-pm/18262754",
+   "url": "https://seatgeek.com/telescreens-tickets/new-york-new-york-bowery-ballroom-2026-10-23-7-pm/concert/18311563",
    "tags": [
-    "theater",
-    "broadway"
+    "concert"
    ]
   },
   {
@@ -644,47 +643,24 @@
    ]
   },
   {
-   "id": "18311563",
-   "title": "Telescreens with Torture and the Desert Spiders",
-   "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Bowery Ballroom",
-    "address": "6 Delancey Street, New York, NY 10002",
-    "neighborhood": "New York",
-    "lat": 40.7204,
-    "lng": -73.9934
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/telescreens-tickets/new-york-new-york-bowery-ballroom-2026-10-23-7-pm/concert/18311563",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18009722",
-   "title": "The Great Gatsby - The Musical",
+   "id": "18262754",
+   "title": "The Lion King",
    "category": "theater",
    "start": "2026-10-23T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Broadway Theatre - New York",
-    "address": "1681 Broadway, New York, NY 10019",
+    "name": "Minskoff Theatre",
+    "address": "200 West 45th Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7632,
-    "lng": -73.9829
+    "lat": 40.7579,
+    "lng": -73.9862
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/the-great-gatsby-the-musical-tickets/broadway/2026-10-23-7-pm/18009722",
+   "url": "https://seatgeek.com/the-lion-king-tickets/broadway/2026-10-23-7-pm/18262754",
    "tags": [
     "theater",
     "broadway"
@@ -711,6 +687,30 @@
    "url": "https://seatgeek.com/schmigadoon-tickets/theater/2026-10-23-7-pm/18229789",
    "tags": [
     "theater"
+   ]
+  },
+  {
+   "id": "18009722",
+   "title": "The Great Gatsby - The Musical",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Broadway Theatre - New York",
+    "address": "1681 Broadway, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7632,
+    "lng": -73.9829
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/the-great-gatsby-the-musical-tickets/broadway/2026-10-23-7-pm/18009722",
+   "tags": [
+    "theater",
+    "broadway"
    ]
   },
   {
@@ -880,6 +880,29 @@
    ]
   },
   {
+   "id": "18584723",
+   "title": "A Ghost in Your Ear",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Minetta Lane Theatre",
+    "address": "18 Minetta Lane, New York, NY 10012",
+    "neighborhood": "New York",
+    "lat": 40.7303,
+    "lng": -74.0011
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/a-ghost-in-your-ear-tickets/theater/2026-10-23-7-pm/18584723",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
    "id": "18655189",
    "title": "The Curious Case of Benjamin Button",
    "category": "theater",
@@ -927,26 +950,26 @@
    ]
   },
   {
-   "id": "18584723",
-   "title": "A Ghost in Your Ear",
-   "category": "theater",
-   "start": "2026-10-23T19:00:00-04:00",
+   "id": "18426257",
+   "title": "Midnight",
+   "category": "music",
+   "start": "2026-10-23T19:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Minetta Lane Theatre",
-    "address": "18 Minetta Lane, New York, NY 10012",
+    "name": "Daryl Roth Theatre",
+    "address": "101 East 15th Street, New York, NY 10003",
     "neighborhood": "New York",
-    "lat": 40.7303,
-    "lng": -74.0011
+    "lat": 40.7353,
+    "lng": -73.9897
    },
    "price": null,
    "priceUnknown": true,
-   "description": "theater",
+   "description": "concert",
    "details": "",
-   "url": "https://seatgeek.com/a-ghost-in-your-ear-tickets/theater/2026-10-23-7-pm/18584723",
+   "url": "https://seatgeek.com/midnight-tickets/new-york-new-york-daryl-roth-theatre-2026-10-23-7-30-pm/concert/18426257",
    "tags": [
-    "theater"
+    "concert"
    ]
   },
   {
@@ -971,29 +994,6 @@
    "tags": [
     "theater",
     "classical"
-   ]
-  },
-  {
-   "id": "18426257",
-   "title": "Midnight",
-   "category": "music",
-   "start": "2026-10-23T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Daryl Roth Theatre",
-    "address": "101 East 15th Street, New York, NY 10003",
-    "neighborhood": "New York",
-    "lat": 40.7353,
-    "lng": -73.9897
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/midnight-tickets/new-york-new-york-daryl-roth-theatre-2026-10-23-7-30-pm/concert/18426257",
-   "tags": [
-    "concert"
    ]
   },
   {
@@ -1327,29 +1327,6 @@
    ]
   },
   {
-   "id": "18339000",
-   "title": "The New York Pops",
-   "category": "theater",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Carnegie Hall",
-    "address": "152 West 57th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.765,
-    "lng": -73.9795
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/the-new-york-pops-tickets/theater/2026-10-23-8-pm/18339000",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
    "id": "18470434",
    "title": "Wanted",
    "category": "theater",
@@ -1374,27 +1351,26 @@
    ]
   },
   {
-   "id": "18198725",
-   "title": "& Juliet",
+   "id": "18339000",
+   "title": "The New York Pops",
    "category": "theater",
    "start": "2026-10-23T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Stephen Sondheim Theatre - New York",
-    "address": "124 West 43 Street, New York, NY 10036",
+    "name": "Carnegie Hall",
+    "address": "152 West 57th Street, New York, NY 10019",
     "neighborhood": "New York",
-    "lat": 40.7559,
-    "lng": -73.9849
+    "lat": 40.765,
+    "lng": -73.9795
    },
    "price": null,
    "priceUnknown": true,
-   "description": "broadway",
+   "description": "theater",
    "details": "",
-   "url": "https://seatgeek.com/juliet-tickets/broadway/2026-10-23-8-pm/18198725",
+   "url": "https://seatgeek.com/the-new-york-pops-tickets/theater/2026-10-23-8-pm/18339000",
    "tags": [
-    "theater",
-    "broadway"
+    "theater"
    ]
   },
   {
@@ -1445,6 +1421,30 @@
    ]
   },
   {
+   "id": "18198725",
+   "title": "& Juliet",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Stephen Sondheim Theatre - New York",
+    "address": "124 West 43 Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7559,
+    "lng": -73.9849
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/juliet-tickets/broadway/2026-10-23-8-pm/18198725",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
    "id": "18266317",
    "title": "Arcangel",
    "category": "music",
@@ -1465,30 +1465,6 @@
    "url": "https://seatgeek.com/arcangel-tickets/brooklyn-new-york-barclays-center-2026-10-23-8-pm/concert/18266317",
    "tags": [
     "concert"
-   ]
-  },
-  {
-   "id": "18324020",
-   "title": "Billy Crystal: 860",
-   "category": "theater",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Imperial Theatre - NY",
-    "address": "249 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7588,
-    "lng": -73.9873
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/billy-crystal-860-tickets/broadway/2026-10-23-8-pm/18324020",
-   "tags": [
-    "theater",
-    "broadway"
    ]
   },
   {
@@ -1539,24 +1515,24 @@
    ]
   },
   {
-   "id": "18411400",
-   "title": "Perfect Crime",
+   "id": "18324020",
+   "title": "Billy Crystal: 860",
    "category": "theater",
    "start": "2026-10-23T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "The Theater Center",
-    "address": "210 W. 50th Street, New York, NY 10019",
+    "name": "Imperial Theatre - NY",
+    "address": "249 West 45th Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7615,
-    "lng": -73.9845
+    "lat": 40.7588,
+    "lng": -73.9873
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/perfect-crime-tickets/broadway/2026-10-23-8-pm/18411400",
+   "url": "https://seatgeek.com/billy-crystal-860-tickets/broadway/2026-10-23-8-pm/18324020",
    "tags": [
     "theater",
     "broadway"
@@ -1586,6 +1562,30 @@
    ]
   },
   {
+   "id": "18411400",
+   "title": "Perfect Crime",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Theater Center",
+    "address": "210 W. 50th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7615,
+    "lng": -73.9845
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/perfect-crime-tickets/broadway/2026-10-23-8-pm/18411400",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
    "id": "17950974",
    "title": "Osees",
    "category": "music",
@@ -1609,29 +1609,6 @@
    ]
   },
   {
-   "id": "18360884",
-   "title": "A Few Good Men",
-   "category": "theater",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lincoln Center Theater - Vivian Beaumont Theater",
-    "address": "150 West 65th Street, New York, NY 10023",
-    "neighborhood": "New York",
-    "lat": 40.7736,
-    "lng": -73.984
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/a-few-good-men-tickets/theater/2026-10-23-8-pm/18360884",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
    "id": "18245441",
    "title": "Paranormal Activity",
    "category": "theater",
@@ -1650,6 +1627,29 @@
    "description": "theater",
    "details": "",
    "url": "https://seatgeek.com/paranormal-activity-1-tickets/theater/2026-10-23-8-pm/18245441",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18360884",
+   "title": "A Few Good Men",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lincoln Center Theater - Vivian Beaumont Theater",
+    "address": "150 West 65th Street, New York, NY 10023",
+    "neighborhood": "New York",
+    "lat": 40.7736,
+    "lng": -73.984
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/a-few-good-men-tickets/theater/2026-10-23-8-pm/18360884",
    "tags": [
     "theater"
    ]
@@ -1819,29 +1819,6 @@
    ]
   },
   {
-   "id": "18697045",
-   "title": "Massano (21+)",
-   "category": "music",
-   "start": "2026-10-23T22:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Knockdown Center",
-    "address": "52-19 Flushing Avenue, Queens, NY 11378",
-    "neighborhood": "Queens",
-    "lat": 40.7157,
-    "lng": -73.9143
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/massano-tickets/queens-new-york-knockdown-center-2026-10-23-10-pm/concert/18697045",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
    "id": "18332553",
    "title": "Crankdat (21+)",
    "category": "music",
@@ -1860,6 +1837,29 @@
    "description": "concert",
    "details": "",
    "url": "https://seatgeek.com/crankdat-tickets/brooklyn-new-york-brooklyn-storehouse-at-brooklyn-navy-yard-2026-10-23-10-pm/concert/18332553",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18697045",
+   "title": "Massano (21+)",
+   "category": "music",
+   "start": "2026-10-23T22:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Knockdown Center",
+    "address": "52-19 Flushing Avenue, Queens, NY 11378",
+    "neighborhood": "Queens",
+    "lat": 40.7157,
+    "lng": -73.9143
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/massano-tickets/queens-new-york-knockdown-center-2026-10-23-10-pm/concert/18697045",
    "tags": [
     "concert"
    ]

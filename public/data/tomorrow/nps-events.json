@@ -4,7 +4,7 @@
   "url": "https://www.nps.gov/state/ny/index.htm"
  },
  "date": "2026-10-23",
- "fetchedAt": "2026-10-22T00:22:10-04:00",
+ "fetchedAt": "2026-10-22T00:29:52-04:00",
  "events": [
   {
    "id": "E2214AE5-F7F6-297F-3131D768ACD7CEB2",
@@ -14,8 +14,8 @@
    "end": "2026-10-23T11:30:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "15 Pine St",
-    "address": "Federal Hall National Memorial",
+    "name": "Federal Hall National Memorial",
+    "address": "15 Pine St",
     "neighborhood": "Federal Hall National Memorial",
     "lat": 40.707294,
     "lng": -74.010241
@@ -30,22 +30,22 @@
    ]
   },
   {
-   "id": "0D25A738-155D-451F-67D31ADD6827D16D-0",
+   "id": "0D25A738-155D-451F-67D31ADD6827D16D",
    "title": "Castle Clinton Guided tour",
    "category": "community",
    "start": "2026-10-23T10:00:00-04:00",
-   "end": "2026-10-23T10:30:00-04:00",
+   "end": null,
    "allDay": false,
    "venue": {
-    "name": "Castle Clinton NM",
-    "address": "Castle Clinton National Monument",
+    "name": "Castle Clinton National Monument",
+    "address": "Castle Clinton NM",
     "neighborhood": "Castle Clinton National Monument",
     "lat": 40.7036,
     "lng": -74.0168
    },
    "price": null,
    "priceUnknown": false,
-   "description": "Join a National Park service Ranger for a free guided tour.",
+   "description": "Times: 10:00 AM, 12:00 PM, 2:00 PM, 3:30 PM. Join a National Park service Ranger for a free guided tour.",
    "details": "Join a National Park service Ranger for a free guided tour.",
    "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=0D25A738-155D-451F-67D31ADD6827D16D",
    "tags": [
@@ -53,259 +53,45 @@
    ]
   },
   {
-   "id": "0D25A738-155D-451F-67D31ADD6827D16D-1",
-   "title": "Castle Clinton Guided tour",
-   "category": "community",
-   "start": "2026-10-23T12:00:00-04:00",
-   "end": "2026-10-23T12:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Castle Clinton NM",
-    "address": "Castle Clinton National Monument",
-    "neighborhood": "Castle Clinton National Monument",
-    "lat": 40.7036,
-    "lng": -74.0168
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Join a National Park service Ranger for a free guided tour.",
-   "details": "Join a National Park service Ranger for a free guided tour.",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=0D25A738-155D-451F-67D31ADD6827D16D",
-   "tags": [
-    "Other"
-   ]
-  },
-  {
-   "id": "0D25A738-155D-451F-67D31ADD6827D16D-2",
-   "title": "Castle Clinton Guided tour",
-   "category": "community",
-   "start": "2026-10-23T14:00:00-04:00",
-   "end": "2026-10-23T14:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Castle Clinton NM",
-    "address": "Castle Clinton National Monument",
-    "neighborhood": "Castle Clinton National Monument",
-    "lat": 40.7036,
-    "lng": -74.0168
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Join a National Park service Ranger for a free guided tour.",
-   "details": "Join a National Park service Ranger for a free guided tour.",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=0D25A738-155D-451F-67D31ADD6827D16D",
-   "tags": [
-    "Other"
-   ]
-  },
-  {
-   "id": "0D25A738-155D-451F-67D31ADD6827D16D-3",
-   "title": "Castle Clinton Guided tour",
-   "category": "community",
-   "start": "2026-10-23T15:30:00-04:00",
-   "end": "2026-10-23T16:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Castle Clinton NM",
-    "address": "Castle Clinton National Monument",
-    "neighborhood": "Castle Clinton National Monument",
-    "lat": 40.7036,
-    "lng": -74.0168
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Join a National Park service Ranger for a free guided tour.",
-   "details": "Join a National Park service Ranger for a free guided tour.",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=0D25A738-155D-451F-67D31ADD6827D16D",
-   "tags": [
-    "Other"
-   ]
-  },
-  {
-   "id": "220724D5-C4AE-5B4F-53FC13785B1ED3B0",
-   "title": "Sandy Hook Lighthouse Tours",
-   "category": "community",
-   "start": "2026-10-23T13:00:00-04:00",
-   "end": "2026-10-23T15:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Sandy Hook Lighthouse",
-    "address": "Gateway National Recreation Area",
-    "neighborhood": "Gateway National Recreation Area",
-    "lat": 40.5903,
-    "lng": -73.8914
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Tours are first come first served. Visitors are guided up 95 steps and a 9-rung ladder to the lantern room. Children must be 48 inches or taller to climb. Each tour is approximately 30 minutes long.",
-   "details": "Tours are first come first served. Visitors are guided up 95 steps and a 9-rung ladder to the lantern room. Children must be 48 inches or taller to climb. Each tour is approximately 30 minutes long.\n\nTour signups start at 12:30 in the Sandy Hook Visitor Center.",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=220724D5-C4AE-5B4F-53FC13785B1ED3B0",
-   "tags": [
-    "Other"
-   ]
-  },
-  {
-   "id": "6EDF053C-C210-BD98-EB826C1AD4526045-0",
+   "id": "6EDF053C-C210-BD98-EB826C1AD4526045",
    "title": "House Tour",
    "category": "community",
    "start": "2026-10-23T11:00:00-04:00",
-   "end": "2026-10-23T11:45:00-04:00",
+   "end": null,
    "allDay": false,
    "venue": {
-    "name": "The tour is inside the brownstone at 28 E 20th St, New York, NY 10029",
-    "address": "Theodore Roosevelt Birthplace",
+    "name": "Theodore Roosevelt Birthplace",
+    "address": "The tour is inside the brownstone at 28 E 20th St, New York, NY 10029",
     "neighborhood": "Theodore Roosevelt Birthplace National Historic Site",
     "lat": 40.738672,
     "lng": -73.988962
    },
    "price": null,
    "priceUnknown": false,
-   "description": "Take a tour of 5 recreated period rooms and learn about Theodore Roosevelt's early life in New York City!",
+   "description": "Times: 11:00 AM, 12:00 PM, 2:00 PM, 3:00 PM. Take a tour of 5 recreated period rooms and learn about Theodore Roosevelt's early life in New York City!",
    "details": "Take a tour of 5 recreated period rooms and learn about Theodore Roosevelt's early life in New York City!",
    "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=6EDF053C-C210-BD98-EB826C1AD4526045",
    "tags": [
     "Guided Tour"
-   ]
-  },
-  {
-   "id": "6EDF053C-C210-BD98-EB826C1AD4526045-1",
-   "title": "House Tour",
-   "category": "community",
-   "start": "2026-10-23T12:00:00-04:00",
-   "end": "2026-10-23T12:45:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "The tour is inside the brownstone at 28 E 20th St, New York, NY 10029",
-    "address": "Theodore Roosevelt Birthplace",
-    "neighborhood": "Theodore Roosevelt Birthplace National Historic Site",
-    "lat": 40.738672,
-    "lng": -73.988962
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Take a tour of 5 recreated period rooms and learn about Theodore Roosevelt's early life in New York City!",
-   "details": "Take a tour of 5 recreated period rooms and learn about Theodore Roosevelt's early life in New York City!",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=6EDF053C-C210-BD98-EB826C1AD4526045",
-   "tags": [
-    "Guided Tour"
-   ]
-  },
-  {
-   "id": "6EDF053C-C210-BD98-EB826C1AD4526045-2",
-   "title": "House Tour",
-   "category": "community",
-   "start": "2026-10-23T14:00:00-04:00",
-   "end": "2026-10-23T14:45:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "The tour is inside the brownstone at 28 E 20th St, New York, NY 10029",
-    "address": "Theodore Roosevelt Birthplace",
-    "neighborhood": "Theodore Roosevelt Birthplace National Historic Site",
-    "lat": 40.738672,
-    "lng": -73.988962
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Take a tour of 5 recreated period rooms and learn about Theodore Roosevelt's early life in New York City!",
-   "details": "Take a tour of 5 recreated period rooms and learn about Theodore Roosevelt's early life in New York City!",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=6EDF053C-C210-BD98-EB826C1AD4526045",
-   "tags": [
-    "Guided Tour"
-   ]
-  },
-  {
-   "id": "6EDF053C-C210-BD98-EB826C1AD4526045-3",
-   "title": "House Tour",
-   "category": "community",
-   "start": "2026-10-23T15:00:00-04:00",
-   "end": "2026-10-23T15:45:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "The tour is inside the brownstone at 28 E 20th St, New York, NY 10029",
-    "address": "Theodore Roosevelt Birthplace",
-    "neighborhood": "Theodore Roosevelt Birthplace National Historic Site",
-    "lat": 40.738672,
-    "lng": -73.988962
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Take a tour of 5 recreated period rooms and learn about Theodore Roosevelt's early life in New York City!",
-   "details": "Take a tour of 5 recreated period rooms and learn about Theodore Roosevelt's early life in New York City!",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=6EDF053C-C210-BD98-EB826C1AD4526045",
-   "tags": [
-    "Guided Tour"
-   ]
-  },
-  {
-   "id": "8A573A65-9EAF-6243-056326DD54E84E80",
-   "title": "Sandy Hook History House",
-   "category": "community",
-   "start": "2026-10-23T13:00:00-04:00",
-   "end": "2026-10-23T16:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Building 1, Sandy Hook",
-    "address": "Gateway National Recreation Area",
-    "neighborhood": "Gateway National Recreation Area",
-    "lat": 40.5903,
-    "lng": -73.8914
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Built in 1898 and designated a lieutenant’s quarters on Officers Row, History House is furnished to the WWII era, the busiest time in the fort’s history. Enjoy this unique experience at your own pace ",
-   "details": "Built in 1898 and designated a lieutenant’s quarters on Officers Row, History House is furnished to the WWII era, the busiest time in the fort’s history. Enjoy this unique experience at your own pace with a self-guided tour.",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=8A573A65-9EAF-6243-056326DD54E84E80",
-   "tags": [
-    "Other"
-   ]
-  },
-  {
-   "id": "11A80713-AB85-0B83-02CC5376C0A0C4A7",
-   "title": "On-Target: Fort Hancock Firepower",
-   "category": "community",
-   "start": "2026-10-23T15:00:00-04:00",
-   "end": "2026-10-23T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Mortar Battery, Sandy Hook",
-    "address": "Gateway National Recreation Area",
-    "neighborhood": "Gateway National Recreation Area",
-    "lat": 40.5903,
-    "lng": -73.8914
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Discover how soldiers relied on teamwork to operate Fort Hancock’s powerful defenses. Stop by to explore Sandy Hook’s history through hands-on activities highlighting the fort’s coastal defenses throu",
-   "details": "Discover how soldiers relied on teamwork to operate Fort Hancock’s powerful defenses. Stop by to explore Sandy Hook’s history through hands-on activities highlighting the fort’s coastal defenses through time.",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=11A80713-AB85-0B83-02CC5376C0A0C4A7",
-   "tags": [
-    "Talk"
-   ]
-  },
-  {
-   "id": "124FBB3D-ACEE-F492-B1B7653F969560BF",
-   "title": "Sandy Hook Harbor Defense Lantern Tour",
-   "category": "community",
-   "start": "2026-10-23T18:00:00-04:00",
-   "end": "2026-10-23T21:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Fort Hancock Museum, Building 28",
-    "address": "Gateway National Recreation Area",
-    "neighborhood": "Gateway National Recreation Area",
-    "lat": 40.5903,
-    "lng": -73.8914
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Take a walk with volunteer living historians in uniform as World War II coast artillery soldiers from the park’s philanthropic partner, Army Ground Forces Association (AGFA). Visit several seacoast gu",
-   "details": "Take a walk with volunteer living historians in uniform as World War II coast artillery soldiers from the park’s philanthropic partner, Army Ground Forces Association (AGFA). Visit several seacoast gun batteries of Fort Hancock and explore the restored Battery Gunnison/New Peck Battery. Visit http://armygroundforces.org/new-events.htm for more event information, historic documents, and audio downloads. Bring a flashlight",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=124FBB3D-ACEE-F492-B1B7653F969560BF",
-   "tags": [
-    "Partner Program",
-    "Walk"
    ]
   }
  ],
- "unplaced": []
+ "unplaced": [
+  {
+   "title": "Sandy Hook Lighthouse Tours",
+   "address": "Sandy Hook Lighthouse"
+  },
+  {
+   "title": "Sandy Hook History House",
+   "address": "Building 1, Sandy Hook"
+  },
+  {
+   "title": "On-Target: Fort Hancock Firepower",
+   "address": "Mortar Battery, Sandy Hook"
+  },
+  {
+   "title": "Sandy Hook Harbor Defense Lantern Tour",
+   "address": "Fort Hancock Museum, Building 28"
+  }
+ ]
 }
