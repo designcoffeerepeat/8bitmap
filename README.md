@@ -45,15 +45,13 @@ Cloudflare offers two setup screens and this repo works with either:
 
 Node version comes from `.node-version` (22).
 
-### Password and coming soon page
+### Dev password
 
-`worker/index.js` runs in front of the static build on both Workers. It reads three vars from `wrangler.jsonc`:
-`SITE_PASSWORD` (the shared password: `8bit01` on live, overridden to `alpha8bit01` by the dev workflow), `SITE` (`live`, or `dev` from the dev workflow) and
-`DEV_URL`. On live, visitors without the password see a coming soon page at `/` with a link to the dev site and a
-link to `/login`; on dev every page asks for the password first. Logging in sets a cookie for 30 days, and
-`/logout` clears it. To open the site to everyone later, remove `main` and the `vars` from `wrangler.jsonc`.
-This is a shared password to keep the map private for now, not a real account system.
-Keep `worker/index.js` itself when opening the site up: it also runs the contact form and the cookie consent check below.
+`worker/index.js` runs in front of the static build on both Workers. Live (`SITE` is `live` in `wrangler.jsonc`)
+is open to everyone. The dev workflow deploys with `SITE=dev` and `SITE_PASSWORD=alpha8bit01`, so on dev every page
+asks for the password first. Logging in sets a cookie for 30 days, and `/logout` clears it. On live, `/login` and
+`/logout` just go to the map. This is a shared password to keep unreleased changes private, not a real account system.
+Keep `worker/index.js` itself: it also runs the contact form and the cookie consent check below.
 
 ### Contact form, legal pages and cookie consent
 
