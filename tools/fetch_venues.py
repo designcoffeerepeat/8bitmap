@@ -7,7 +7,8 @@ Only the title, time, a price when the venue gives one and a link back are kept;
 no images or write-ups. Every event carries its venue (or the company running it,
 for trivia) as its publisher, so each shows up on its own in the Sources dropdown.
 Sites whose terms of use forbid automated access are left out (St. Marks Comedy
-Club, QED, McNally Jackson, Apple).
+Club, QED, McNally Jackson, Apple, Flushing Town Hall, Kupferberg Center), and so
+are sites that turn scripts away (Queens Theatre).
 
   Film Forum            the week's showtimes on https://filmforum.org/
   Nitehawk Cinema       the day's showtimes at Williamsburg and Prospect Park
@@ -20,6 +21,11 @@ Club, QED, McNally Jackson, Apple).
   H0L0                  the club's upcoming nights on https://h0l0.nyc/ (Ridgewood)
   Onderdonk House       the Greater Ridgewood Historical Society's events list (Ridgewood)
   Myrtle Avenue BID     the month calendar of plaza concerts and street festivals on Myrtle Avenue (Ridgewood)
+  Queens Botanical Garden  the garden's events feed (The Events Calendar's public JSON) (Flushing)
+  New York Hall of Science the calendar's event data, one-time events only (Flushing Meadows)
+  Queens Night Market   the next market night on https://queensnightmarket.com/ (Flushing Meadows)
+  Kingsland Homestead   the Queens Historical Society's events page (Flushing)
+  Bowne House and Lewis Latimer House   their Squarespace events lists (Flushing)
 
 Venues are placed once from their street address with GeoSearch and remembered
 in data/geocode-cache.json.
@@ -32,6 +38,7 @@ import json
 import re
 import sys
 import time
+import urllib.parse
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -62,6 +69,13 @@ VENUES = {
     'Herman Hochberg Plaza': ('59-03 71st Avenue, Queens', 'https://ridgewood-ny.com/local-events/'),
     # BID events with no place of their own (street festivals, sidewalk sales) run along Myrtle Avenue.
     'Myrtle Avenue, Ridgewood': ('58-01 Myrtle Avenue, Queens', 'https://ridgewood-ny.com/local-events/'),
+    'Queens Botanical Garden': ('43-50 Main Street, Queens', 'https://queensbotanical.org/calendar/'),
+    'New York Hall of Science': ('47-01 111th Street, Queens', 'https://nysci.org/nysci-events'),
+    # The market runs in the Hall of Science's parking lot.
+    'Queens Night Market': ('47-01 111th Street, Queens', 'https://queensnightmarket.com/'),
+    'Kingsland Homestead': ('143-35 37th Avenue, Queens', 'https://queenshistoricalsociety.org/visit/events'),
+    'Bowne House': ('37-01 Bowne Street, Queens', 'https://www.bownehouse.org/events'),
+    'Lewis Latimer House': ('34-41 137th Street, Queens', 'https://www.lewislatimerhouse.org/events'),
 }
 
 
@@ -353,7 +367,113 @@ def myrtle_bid(day):
     return out
 
 
-READERS = [film_forum, nitehawk, smalls, nycc, eastville, pit, other_half, trivia_league, h0l0, onderdonk, myrtle_bid]
+def queens_botanical(day):
+    """The Events Calendar's public JSON feed, one day at a time. Events held elsewhere are left out."""
+    q = urllib.parse.urlencode({'start_date': day.isoformat(), 'end_date': f'{day.isoformat()} 23:59:59', 'per_page': 50})
+    data = get(f'https://queensbotanical.org/wp-json/tribe/events/v1/events?{q}')
+    out = []
+    for e in data.get('events', []):
+        place = e.get('venue') if isinstance(e.get('venue'), dict) else {}
+        if place.get('venue') and 'botanical' not in place['venue'].lower():
+            continue
+        start = datetime.strptime(e['start_date'], '%Y-%m-%d %H:%M:%S').replace(tzinfo=NYC)
+        end = datetime.strptime(e['end_date'], '%Y-%m-%d %H:%M:%S').replace(tzinfo=NYC)
+        if start.date() != day or e.get('all_day'):
+            continue
+        title = text(e['title'])
+        kind = 'food' if re.search(r'farm stand|honey|tasting', title, re.I) else 'community'
+        out.append(event('Queens Botanical Garden', title, start, e['url'], kind, end=end if end > start else None,
+                         free=str(e.get('cost', '')).strip().lower() == 'free', neighborhood='Flushing'))
+    return out
+
+
+def nysci(day):
+    """The calendar's own JSON. Only one-time public events: all-day items are the museum's daily activities,
+    and members-only or online events are left out. A screening with several times becomes one entry."""
+    d = day.isoformat()
+    data = get(f'https://www.nysci.org/v1/api/events-by-criteria.json?eventStartDate={d}&eventEndDate={d}')
+    out = []
+    for e in data.get('data') or []:
+        slugs = {c.get('slug') for c in e.get('categories') or []}
+        if (e.get('event_type') or {}).get('value') != 'oneTime' or e.get('event_start_date') != d \
+                or 'member' in slugs or re.search(r'virtual', e['title'], re.I):
+            continue
+        times = sorted({clock(t) for t in re.findall(r'\d{1,2}(?::\d{2})?\s*[ap]\.?m', e.get('event_info') or '', re.I)} - {None})
+        if not times:
+            continue
+        slots = [at(day, *t) for t in times]
+        title = text(e['title'])
+        out.append(event('New York Hall of Science', title, slots[0], e.get('url') or VENUES['New York Hall of Science'][1],
+                         'film' if re.search(r'screening|movie|film', title, re.I) else 'community',
+                         description='Times: ' + ', '.join(s.strftime('%-I:%M %p').lower() for s in slots) if len(slots) > 1 else '',
+                         neighborhood='Flushing Meadows'))
+    return out
+
+
+def queens_night_market(day):
+    """The home page names the next market night ('NEXT NIGHT MARKET: OCT 24') and its hours ('FROM 4 PM UNTIL 12 AM')."""
+    page = text(get('https://queensnightmarket.com/', as_json=False))
+    when = re.search(r'NEXT NIGHT MARKET:\s*([A-Z]{3})\w*\s+(\d{1,2})', page, re.I)
+    hours = re.search(r'FROM\s+(\d{1,2}(?::\d{2})?\s*[AP]M)\s+UNTIL\s+(\d{1,2}(?::\d{2})?\s*[AP]M)', page, re.I)
+    if not when or datetime.strptime(f'{when.group(1).title()} {when.group(2)} {day.year}', '%b %d %Y').date() != day:
+        return []
+    start = at(day, *(clock(hours.group(1)) if hours else (16, 0)))
+    end = at(day, *clock(hours.group(2))) if hours else None
+    if end and end <= start:
+        end += timedelta(days=1)  # until midnight
+    return [event('Queens Night Market', 'Queens Night Market', start, VENUES['Queens Night Market'][1], 'food', end=end,
+                  free=True, neighborhood='Flushing Meadows')]
+
+
+def kingsland(day):
+    """Event cards with the date written out ('October 25th, 2026') and a start time ('3:00 pm')."""
+    body = get('https://queenshistoricalsociety.org/visit/events', as_json=False)
+    out = []
+    for card in body.split('class="card event-card"')[1:]:
+        title = re.search(r'class="content-headline">(.*?)</p>', card, re.S)
+        date = re.search(r'class="date">\s*(\w+ \d{1,2})(?:st|nd|rd|th)?, (\d{4})', card)
+        hour = re.search(r'class="time">(.*?)</p>', card, re.S)
+        link = re.search(r'href="(https://queenshistoricalsociety.org/events/[^"]+)"', card)
+        if not (title and date and hour and clock(text(hour.group(1)))):
+            continue
+        if datetime.strptime(f'{date.group(1)} {date.group(2)}', '%B %d %Y').date() != day:
+            continue
+        out.append(event('Kingsland Homestead', text(title.group(1)), at(day, *clock(text(hour.group(1)))),
+                         link.group(1) if link else VENUES['Kingsland Homestead'][1], 'community', neighborhood='Flushing'))
+    return out
+
+
+def squarespace_events(day, venue, site, path, home):
+    """A Squarespace events list. The Google Calendar link on each event gives its start and end in UTC;
+    events whose address does not mention `home` are held elsewhere and left out."""
+    body = get(site + path, as_json=False)
+    out = []
+    for card in body.split('<article class="eventlist-event')[1:]:
+        title = re.search(r'class="eventlist-title-link">(.*?)</a>', card, re.S)
+        link = re.search(rf'href="({path}/[^"?]+)"', card)
+        span = re.search(r'dates=(\d{8}T\d{6})Z/(\d{8}T\d{6})Z', card)
+        where = re.search(r'eventlist-meta-address(.*?)</li>', card, re.S)
+        if not (title and link and span) or (where and home not in text(where.group(1))):
+            continue
+        start, end = (datetime.strptime(t, '%Y%m%dT%H%M%S').replace(tzinfo=timezone.utc).astimezone(NYC) for t in span.groups())
+        if start.date() != day:
+            continue
+        name = text(title.group(1))
+        kind = 'art' if re.search(r'workshop|craft|art\b|zine', name, re.I) else 'community'
+        out.append(event(venue, name, start, site + link.group(1), kind, end=end if end > start else None, neighborhood='Flushing'))
+    return out
+
+
+def bowne_house(day):
+    return squarespace_events(day, 'Bowne House', 'https://www.bownehouse.org', '/events', '37-01 Bowne')
+
+
+def latimer_house(day):
+    return squarespace_events(day, 'Lewis Latimer House', 'https://www.lewislatimerhouse.org', '/events', 'Latimer House')
+
+
+READERS = [film_forum, nitehawk, smalls, nycc, eastville, pit, other_half, trivia_league, h0l0, onderdonk, myrtle_bid,
+           queens_botanical, nysci, queens_night_market, kingsland, bowne_house, latimer_house]
 
 
 def place(venue, cache):

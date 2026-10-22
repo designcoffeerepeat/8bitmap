@@ -111,7 +111,7 @@ tools/fetch_dice.py               pulls one day of DICE New York events
 tools/fetch_artwrld.py            pulls the day's gallery openings, museum shows and art events from Artwrld
 tools/fetch_artrabbit.py          pulls the day's New York opening receptions from ArtRabbit
 tools/fetch_artguide.py           pulls the day's New York opening receptions from Artforum artguide
-tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, Smalls, comedy clubs, bar trivia)
+tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, Smalls, comedy clubs, bar trivia, Flushing)
 tools/fetch_astoria.py            pulls the day's events from Astoria venues' own calendars (Socrates Sculpture Park, Melrose Ballroom, Bohemian Hall)
 tools/fetch_redhook.py            pulls the day's events from Red Hook's own calendars (Pioneer Works, Waterfront Museum, Sunny's, CB6)
 tools/fetch_foresthills.py        pulls the day's events from Forest Hills' own calendars (Commonpoint Queens, Rove trivia)
@@ -252,14 +252,17 @@ schema.org event data on New York Comedy Club's and Eastville Comedy Club's cale
 Other Half Brewing's NYC taproom events, NYC Trivia League's weekly list of bar trivia and bingo nights (each
 bar placed from the coordinates on its listing page), and three Ridgewood calendars: H0L0's club nights, the
 Onderdonk House's events and the Myrtle Avenue BID's plaza concerts and street festivals (placed at Herman Hochberg
-Plaza, or on Myrtle Avenue when an event gives no place). H0L0's ticket links go to the ticket sellers it uses. A film is one event at its first showing, with the day's
+Plaza, or on Myrtle Avenue when an event gives no place), and six in and around Flushing: Queens Botanical Garden's
+events feed, the New York Hall of Science's one-time public events, the Queens Night Market's next market night, and
+the events lists of Kingsland Homestead (Queens Historical Society), Bowne House and Lewis Latimer House. H0L0's ticket links go to the ticket sellers it uses. A film is one event at its first showing, with the day's
 showtimes in its description. Each event names its venue as its publisher (trivia nights name NYC Trivia League),
 so they are listed one by one in the Sources dropdown. Venues are placed once from the street address in `VENUES`
 and remembered in `data/geocode-cache.json`. Adding a venue means a reader function, an entry in `VENUES` and a
 place in `READERS`. Only title, time, price when given and a link are kept.
 
 Check a site's terms of use before adding it. St. Marks Comedy Club, QED, McNally Jackson and Apple forbid automated
-access, so they are left out; Geeks Who Drink, The Strand, Greenlight, Barnes & Noble, Film at Lincoln Center,
+access, Flushing Town Hall and the Kupferberg Center forbid republishing their content, and Queens Theatre turns
+scripts away, so they are left out; Geeks Who Drink, The Strand, Greenlight, Barnes & Noble, Film at Lincoln Center,
 Juilliard, BRIC, The Public Theater and TV Eye turn automated visits away. Nowadays lists its nights only on
 Resident Advisor, and Trans-Pecos only through VenuePilot, so neither is read here.
 
