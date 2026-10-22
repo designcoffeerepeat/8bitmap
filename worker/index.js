@@ -152,7 +152,7 @@ async function contact(request, env, url) {
 
 function mime({ to, replyTo, subject, body, route }) {
   return [
-    `From: 8-Bit NYC Website <${FORM_FROM}>`,
+    `From: 8bitNYC Website <${FORM_FROM}>`,
     `To: ${to}`,
     `Reply-To: ${replyTo}`,
     `Subject: ${encodeHeader(subject)}`,
@@ -285,7 +285,7 @@ const HEAD = `<meta charset="utf-8">
   .error { font: 10px/1.6 var(--font-pixel); color: var(--pin); }
 </style>`;
 
-const BRAND = `<h1><img alt="" src="${PIN}">8-BIT <b>NYC</b></h1>`;
+const BRAND = `<h1><img alt="" src="${PIN}">8bit<b>NYC</b></h1>`;
 
 function loginPage({ next, error = false, isDev, analytics }) {
   return `<!doctype html>
@@ -294,7 +294,7 @@ function loginPage({ next, error = false, isDev, analytics }) {
 ${HEAD}
 ${analytics ? GA : ''}
 <meta name="robots" content="noindex">
-<title>8-Bit NYC: Log In</title>
+<title>8bitNYC: Log In</title>
 </head>
 <body>
 <main class="box">

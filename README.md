@@ -1,4 +1,4 @@
-# 8-Bit NYC
+# 8bitNYC
 
 An interactive 8-bit (voxel, pixelated) map of New York City showing today's events as pins.
 Built with [Astro](https://astro.build) and [three.js](https://threejs.org), deployed on Cloudflare.
