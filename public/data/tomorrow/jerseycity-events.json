@@ -4,7 +4,7 @@
   "url": "https://jerseycityculture.org/events/calendar/"
  },
  "date": "2026-10-23",
- "fetchedAt": "2026-10-22T09:15:11-04:00",
+ "fetchedAt": "2026-10-22T13:10:41-04:00",
  "events": [
   {
    "id": "jc-exchange-place-202610231730-ariel-rivka-dance",
@@ -25,6 +25,32 @@
    "description": "",
    "details": "",
    "url": "https://jerseycityculture.org/event/ariel-rivka-dance-2026/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-jersey-city-culture",
+    "name": "Jersey City Culture",
+    "url": "https://jerseycityculture.org/events/calendar/"
+   }
+  },
+  {
+   "id": "jc-museum-of-jersey-city-history-202610231900-the-mystery-of-macabbra-mansion-3-spence",
+   "title": "The Mystery of MacAbbra Mansion 3 / Spencer’s Revenge",
+   "category": "community",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": "2026-10-23T21:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Museum of Jersey City History",
+    "address": "298 Academy St, Jersey City, NJ",
+    "neighborhood": "Jersey City",
+    "lat": 40.7297,
+    "lng": -74.062
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://jerseycityculture.org/event/the-mystery-of-macabbra-mansion-3-spencers-revenge-2026/",
    "tags": [],
    "publisher": {
     "id": "venue-jersey-city-culture",

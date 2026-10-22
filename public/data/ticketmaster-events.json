@@ -4,7 +4,7 @@
   "url": "https://www.ticketmaster.com/discover/new-york"
  },
  "date": "2026-10-22",
- "fetchedAt": "2026-10-22T05:14:37-04:00",
+ "fetchedAt": "2026-10-22T13:08:12-04:00",
  "events": [
   {
    "id": "LvZ18QrWTgeialOZ0E4-1",
@@ -118,10 +118,10 @@
    "tags": []
   },
   {
-   "id": "LvZ18Q-9tbOh8sZZvyVzb",
+   "id": "LvZ18Q-9tbOh8sZZvyVzr",
    "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
    "category": "art",
-   "start": "2026-10-22T11:00:00-04:00",
+   "start": "2026-10-22T12:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -164,29 +164,6 @@
    ]
   },
   {
-   "id": "Z7r9jZ1A7PsJa",
-   "title": "The Outsiders",
-   "category": "theater",
-   "start": "2026-10-22T13:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Jacobs Theatre-NY",
-    "address": "242 W 45th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Miscellaneous",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PsJa",
-   "tags": [
-    "Miscellaneous"
-   ]
-  },
-  {
    "id": "Z1r9uZruZqGZ1AvZ8At",
    "title": "Just In Time",
    "category": "theater",
@@ -205,29 +182,6 @@
    "description": "Arts & Theatre / Theatre",
    "details": "(1) Children under 8 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Performances begin promptly. There is no late seating. Patrons who leave their seat for any reason during the performance will not be re-admitted. (4) This production uses a gunshot sound effect. (5) Tickets are on a delayed delivery.",
    "url": "https://www.ticketmaster.com/just-in-time-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ1AvZ8At",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1AA7bkk",
-   "title": "Just In Time",
-   "category": "theater",
-   "start": "2026-10-22T13:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Circle in the Square Theatre",
-    "address": "235 W 50th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA7bkk",
    "tags": [
     "Theatre"
    ]
@@ -420,33 +374,6 @@
    "url": "https://www.ticketmaster.com/center-mid-new-york-new-york-10-22-2026/event/000064FFF0186383",
    "tags": [
     "Rock"
-   ]
-  },
-  {
-   "id": "rZ7HnEZ1A4Zfpd",
-   "title": "Lamplight, Anna McClellan, Margaux",
-   "category": "music",
-   "start": "2026-10-22T18:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Night Club 101",
-    "address": "101 Avenue A, New York",
-    "neighborhood": "New York",
-    "lat": 40.725911,
-    "lng": -73.984043
-   },
-   "price": {
-    "min": 20,
-    "max": 20,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "Music / Alternative",
-   "details": "This event is 21 and over. Any ticket holder unable to present valid identification indicating that they are at least 21 years of age will not be admitted to this event, and will not be eligible for a refund.",
-   "url": "https://www.ticketweb.com/event/lamplight-anna-mcclellan-margaux-night-club-101-tickets/15014583",
-   "tags": [
-    "Alternative"
    ]
   },
   {
@@ -1274,6 +1201,29 @@
    ]
   },
   {
+   "id": "Z7r9jZ1A7PsJ8",
+   "title": "The Outsiders",
+   "category": "theater",
+   "start": "2026-10-22T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Jacobs Theatre-NY",
+    "address": "242 W 45th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Miscellaneous",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PsJ8",
+   "tags": [
+    "Miscellaneous"
+   ]
+  },
+  {
    "id": "Z7r9jZ1A7qxQd",
    "title": "Lost Boys Musical w/ Unknown Mortal Orchestra",
    "category": "theater",
@@ -1740,6 +1690,29 @@
    "description": "Arts & Theatre / Theatre",
    "details": "",
    "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7xeA0",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1AA7bk6",
+   "title": "Just In Time",
+   "category": "theater",
+   "start": "2026-10-22T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Circle in the Square Theatre",
+    "address": "235 W 50th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA7bk6",
    "tags": [
     "Theatre"
    ]
@@ -2244,6 +2217,33 @@
    "url": "https://www.ticketmaster.com/little-big-town-for-the-art-newark-new-jersey-10-22-2026/event/000064C4D25EA0BF",
    "tags": [
     "Country"
+   ]
+  },
+  {
+   "id": "rZ7HnEZ1A4Zfpd",
+   "title": "Lamplight, Anna McClellan, Margaux",
+   "category": "music",
+   "start": "2026-10-22T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Night Club 101",
+    "address": "101 Avenue A, New York",
+    "neighborhood": "New York",
+    "lat": 40.725911,
+    "lng": -73.984043
+   },
+   "price": {
+    "min": 27,
+    "max": 27,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Music / Alternative",
+   "details": "This event is 21 and over. Any ticket holder unable to present valid identification indicating that they are at least 21 years of age will not be admitted to this event, and will not be eligible for a refund.",
+   "url": "https://www.ticketweb.com/event/lamplight-anna-mcclellan-margaux-night-club-101-tickets/15014583",
+   "tags": [
+    "Alternative"
    ]
   },
   {
