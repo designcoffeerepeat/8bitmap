@@ -55,11 +55,16 @@ button, a { font: inherit; color: inherit; }
 .brand h1 b { color: var(--coin); font-weight: 400; }
 .brand h1 .dev-tag { font: 9px/1 var(--font-pixel); font-style: normal; color: var(--night); background: var(--coin); padding: 3px 4px 2px; }
 .brand p { margin: 0; font: 9px/1.4 var(--font-pixel); color: var(--dim); letter-spacing: 1px; }
-.brand p #today-count::before { content: " · "; }
+/* The date and count keep a fixed width (room for "<WED, SEP 30" and "999 EVENTS TOMORROW")
+   so switching days, or the LOADING step in between, never resizes the title box.
+   Each Press Start 2P glyph is 1ch wide plus the 1px letter spacing. */
+.brand p #today-count { display: inline-block; min-width: calc(22 * (1ch + 1px)); }
+.brand p #today-count::before { content: " · "; white-space: pre; }
 /* the header date: click to switch between today's and tomorrow's events */
 .day-btn {
   font: inherit; letter-spacing: inherit; color: var(--ink); background: none; border: 0; padding: 0; cursor: pointer;
   text-decoration: underline dotted var(--dim); text-underline-offset: 3px;
+  min-width: calc(12 * (1ch + 1px) + 8px); text-align: left;
 }
 .day-btn b { font-weight: 400; color: var(--coin); margin: 0 4px; }
 .day-btn:hover { color: var(--coin); }
