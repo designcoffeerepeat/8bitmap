@@ -340,7 +340,7 @@ function renderDetail() {
     <h2>${esc(e.title)}</h2>
     <dl>
       <div><dt>WHEN</dt><dd>${e.allDay ? 'All day' : `${fmtTime(e.start)}${e.end ? ` to ${fmtTime(e.end)}` : ''}`}</dd></div>
-      <div><dt>WHERE</dt><dd>${esc(e.venue.name)}<br><small>${esc([e.venue.address !== e.venue.name ? e.venue.address : '', e.venue.neighborhood].filter(Boolean).join(', '))}</small></dd></div>
+      <div><dt>WHERE</dt><dd>${esc(e.venue.name)}<br><small>${esc([e.venue.address !== e.venue.name ? e.venue.address : '', e.venue.address?.includes(e.venue.neighborhood) ? '' : e.venue.neighborhood].filter(Boolean).join(', '))}</small></dd></div>
       <div><dt>PRICE</dt><dd>${fmtPrice(e)}</dd></div>
     </dl>
     <p class="d-blurb">${esc(e.description)}</p>
