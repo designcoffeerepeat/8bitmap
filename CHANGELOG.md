@@ -2,6 +2,12 @@
 
 Each release from dev to the live site (main) gets a version number here, so it can be referred to later.
 
+## v1.2 (on dev, not released yet)
+
+- Header logo reads 8bit.nyc with no gap between "8bit" and ".nyc" (also on the dev login page).
+- On phones the map controls (zoom in, zoom out, reset) sit at the bottom right, 15% smaller, so the Sources and
+  Categories dropdowns no longer cover them. The event card and MONSTER ATTACK! bar leave room for them.
+
 ## v1.1 (2026-10-22)
 
 - The site is called 8bit.nyc in the header, About, legal pages, login page and contact emails.

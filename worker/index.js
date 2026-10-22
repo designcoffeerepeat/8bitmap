@@ -285,7 +285,7 @@ const HEAD = `<meta charset="utf-8">
   .error { font: 10px/1.6 var(--font-pixel); color: var(--pin); }
 </style>`;
 
-const BRAND = `<h1><img alt="" src="${PIN}">8bit<b>.nyc</b></h1>`;
+const BRAND = `<h1><img alt="" src="${PIN}"><span>8bit<b>.nyc</b></span></h1>`;
 
 function loginPage({ next, error = false, isDev, analytics }) {
   return `<!doctype html>
