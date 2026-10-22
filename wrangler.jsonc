@@ -1,6 +1,7 @@
 // Cloudflare Workers deploy config: worker/index.js sits in front of the static Astro build in dist/
-// and asks for the shared password before serving the map (see the comment at the top of that file).
-// Used when Cloudflare builds this repo with `npx wrangler deploy`; the dev workflow adds --var SITE:dev.
+// (see the comment at the top of that file). Live is open to everyone.
+// Used when Cloudflare builds this repo with `npx wrangler deploy`; the dev workflow adds
+// --var SITE:dev and --var SITE_PASSWORD, which put the password on the dev site only.
 {
   "name": "8bitmap",
   "main": "worker/index.js",
@@ -14,7 +15,6 @@
   // Lets the contact form (POST /api/contact in worker/index.js) send email from 8bit.nyc.
   "send_email": [{ "name": "MAIL" }],
   "vars": {
-    "SITE": "live",
-    "SITE_PASSWORD": "8bit01"
+    "SITE": "live"
   }
 }
