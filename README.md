@@ -95,7 +95,7 @@ src/scripts/events/overlap.js     merges the same event listed by several source
                                   information (SeatGeek always wins over Ticketmaster)
 src/scripts/events/sources/       one file per event source: nycgov.js, luma.js, permits.js,
                                   ticketmaster.js, seatgeek.js, dice.js, artwrld.js, artrabbit.js,
-                                  artguide.js (live), venues.js, greenmarkets.js, nps.js, astoria.js, redhook.js, foresthills.js,
+                                  artguide.js (live), venues.js, greenmarkets.js, nps.js, astoria.js, redhook.js, foresthills.js, statenisland.js,
                                   snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
@@ -115,6 +115,7 @@ tools/fetch_venues.py             pulls the day's shows from venues' own calenda
 tools/fetch_astoria.py            pulls the day's events from Astoria venues' own calendars (Socrates Sculpture Park, Melrose Ballroom, Bohemian Hall)
 tools/fetch_redhook.py            pulls the day's events from Red Hook's own calendars (Pioneer Works, Waterfront Museum, Sunny's, CB6)
 tools/fetch_foresthills.py        pulls the day's events from Forest Hills' own calendars (Commonpoint Queens, Rove trivia)
+tools/fetch_statenisland.py       pulls the day's events from Staten Island's own calendars (Children's Museum, Noble Maritime, Richmond Town, Alice Austen House)
 tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
 tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
@@ -140,6 +141,7 @@ python3 tools/fetch_venues.py
 python3 tools/fetch_astoria.py
 python3 tools/fetch_redhook.py
 python3 tools/fetch_foresthills.py
+python3 tools/fetch_statenisland.py
 python3 tools/fetch_greenmarkets.py
 NPS_API_KEY=... python3 tools/fetch_nps.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
@@ -307,6 +309,23 @@ Checked 2026-10-22 and left out: Cinemart Cinemas' terms allow personal use only
 commercial or public purpose; Queens Public Library's terms allow personal, non-commercial use only; The
 Church-in-the-Gardens' calendar is recovery groups, scouts and rehearsals rather than public events; Regal UA Midway
 is a chain ticketing site.
+
+### Staten Island calendars
+
+`fetch_statenisland.py` covers Staten Island, which the big listing sites barely reach. It reads the Staten Island
+Children's Museum's feed from The Events Calendar plugin (`/wp-json/tribe/events/v1/events`, leaving out
+members-only and private events), the Squarespace events pages of the Noble Maritime Collection and Historic
+Richmond Town (`/events?format=json`, keeping only what starts and ends on the day, so exhibitions and season-long
+tours are left out) and the Alice Austen House's events list. St. George Theatre sells through Ticketmaster, which
+already lists its shows, and the island's parks come in through NYC.gov.
+
+Checked 2026-10-22 and left out: Empire Outlets' terms allow personal, non-commercial use only; Kills Boro
+Brewing's terms forbid reproducing any site content without written permission; Snug Harbor, the Staten Island
+Museum and Wagner College sit behind a Cloudflare check that blocks automated readers, Staten Island Arts' server
+refuses them, NYPL has a bot wall and the Staten Island Zoo refuses requests; the Conference House lists tours
+only; Greenbelt Conservancy's and Flagship Brewing's calendars are empty or a year old; the CSI Center for the Arts'
+calendar is school-group shows; the Jacques Marchais Museum's Wix calendar only loads in a browser; the
+Garibaldi-Meucci Museum's site could not be reached.
 
 ## Adding a real event source
 
