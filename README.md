@@ -93,7 +93,7 @@ src/scripts/events/schema.js      the one event shape every source maps into
 src/scripts/events/index.js       loads all sources, filters to today and the map area, de-duplicates, sorts
 src/scripts/events/sources/       one file per event source: nycgov.js, luma.js, permits.js,
                                   ticketmaster.js, seatgeek.js, dice.js, artwrld.js, artrabbit.js,
-                                  artguide.js (live), greenmarkets.js, nps.js,
+                                  artguide.js (live), greenmarkets.js, nps.js, astoria.js,
                                   snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
@@ -110,6 +110,7 @@ tools/fetch_artwrld.py            pulls the day's gallery openings, museum shows
 tools/fetch_artrabbit.py          pulls the day's New York opening receptions from ArtRabbit
 tools/fetch_artguide.py           pulls the day's New York opening receptions from Artforum artguide
 tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, Smalls, comedy clubs, bar trivia)
+tools/fetch_astoria.py            pulls the day's events from Astoria venues' own calendars (Socrates Sculpture Park, Melrose Ballroom, Bohemian Hall)
 tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
 tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
@@ -132,6 +133,7 @@ python3 tools/fetch_artwrld.py
 python3 tools/fetch_artrabbit.py
 python3 tools/fetch_artguide.py
 python3 tools/fetch_venues.py
+python3 tools/fetch_astoria.py
 python3 tools/fetch_greenmarkets.py
 NPS_API_KEY=... python3 tools/fetch_nps.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
@@ -248,6 +250,20 @@ place in `READERS`. Only title, time, price when given and a link are kept.
 Check a site's terms of use before adding it. St. Marks Comedy Club, QED, McNally Jackson and Apple forbid automated
 access, so they are left out; Geeks Who Drink, The Strand, Greenlight, Barnes & Noble, Film at Lincoln Center,
 Juilliard, BRIC and The Public Theater turn automated visits away.
+
+### Astoria venues
+
+`fetch_astoria.py` works the same way for Astoria, in its own file so neighbourhoods can be added without touching
+each other: the Upcoming list on Socrates Sculpture Park's Public Programs page (read through the site's WordPress
+page API, since the page itself only comes compressed in a format Python cannot read), the upcoming shows on Melrose
+Ballroom's events page (start and end come from each show's add-to-calendar link), and the event list Bohemian Hall's
+page carries for its events widget. Only title, time and a link are kept, and each venue is its own publisher.
+
+Checked on 2026-10-22 and left out: Museum of the Moving Image turns automated visits away; Noguchi Museum's terms
+forbid using the site for commercial purposes; Queens Public Library's terms allow personal, non-commercial use only;
+Greater Astoria Historical Society has closed its events feed to the public; Astoria Bookshop's calendar loads from
+another host (Bookmanager); SingleCut, Kaufman Arts District and Astoria Performing Arts Center could not be reached;
+the Queens Council on the Arts and The Astor Room domains now belong to unrelated sites.
 
 ## Adding a real event source
 
