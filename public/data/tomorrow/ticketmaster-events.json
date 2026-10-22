@@ -3,8 +3,8 @@
   "name": "Ticketmaster",
   "url": "https://www.ticketmaster.com/discover/new-york"
  },
- "date": "2026-10-22",
- "fetchedAt": "2026-10-21T16:26:20-04:00",
+ "date": "2026-10-23",
+ "fetchedAt": "2026-10-22T05:11:40-04:00",
  "events": [
   {
    "id": "LvZ18QrWTgeialOZ0E4-1",
@@ -51,10 +51,33 @@
    ]
   },
   {
-   "id": "LvZ18QEC-33sYJhRiNb-H",
+   "id": "Z1r9uZruZqGZ1AvZ8pA",
+   "title": "The Very Hungry Caterpillar Show",
+   "category": "theater",
+   "start": "2026-10-23T10:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "DR2",
+    "address": "103 East 15th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.735101,
+    "lng": -73.989509
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Children's Theatre",
+   "details": "(1) Everyone regardless of age needs a ticket. (Laps seats are available to purchase at the box office for infants. Lap seats are $10.) (2) Tickets are on a delayed delivery. (3) To help keep everyone safe, please do not bring or consume any foods containing nuts in this space.Thank you for your cooperation.",
+   "url": "https://www.ticketmaster.com/the-very-hungry-caterpillar-show-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ1AvZ8pA",
+   "tags": [
+    "Children's Theatre"
+   ]
+  },
+  {
+   "id": "LvZ18QEC-33sYJhRiNbx2",
    "title": "The Banksy Museum New York!",
    "category": "art",
-   "start": "2026-10-22T10:00:00-04:00",
+   "start": "2026-10-23T10:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -74,10 +97,10 @@
    ]
   },
   {
-   "id": "LvZ18Qk4nbbEibYZvnO2X",
+   "id": "LvZ18Qk4nbbEibYZvnO2T",
    "title": "Banksy Museum - Flexiticket",
    "category": "art",
-   "start": "2026-10-22T10:00:00-04:00",
+   "start": "2026-10-23T10:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -97,31 +120,10 @@
    ]
   },
   {
-   "id": "LvZ18QbKlF_lmuOZvOKEn",
-   "title": "Museum of Chinese in America General Admission",
-   "category": "art",
-   "start": "2026-10-22T11:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Museum of Chinese in America",
-    "address": "215 Centre Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.719533,
-    "lng": -73.999029
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Miscellaneous",
-   "details": "",
-   "url": "https://www.universe.com/events/museum-of-chinese-in-america-general-admission-tickets-PZ7R68?ref=ticketmaster",
-   "tags": []
-  },
-  {
-   "id": "LvZ18Q-9tbOh8sZZvyVzb",
+   "id": "LvZ18Q-9tbOh8sZZvyVzg",
    "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
    "category": "art",
-   "start": "2026-10-22T11:00:00-04:00",
+   "start": "2026-10-23T10:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -141,169 +143,94 @@
    ]
   },
   {
-   "id": "Z1r9uZruZqGZ17Jb-Z",
-   "title": "The Outsiders",
-   "category": "theater",
-   "start": "2026-10-22T13:00:00-04:00",
+   "id": "LvZ18QbKlF_lmuOZvOKEl",
+   "title": "Museum of Chinese in America General Admission",
+   "category": "art",
+   "start": "2026-10-23T11:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Bernard B. Jacobs Theatre",
-    "address": "242 W 45th St, New York",
+    "name": "Museum of Chinese in America",
+    "address": "215 Centre Street, New York",
     "neighborhood": "New York",
-    "lat": 40.758667,
-    "lng": -73.987757
+    "lat": 40.719533,
+    "lng": -73.999029
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Children under 4 years old will not be admitted. (2) Herbal cigarettes are used on stage. (3) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (4) Pyrotechnics are use in this production. (5) This production contains moments of darkness. (6) This production uses loud sound effects. (7) This production uses theatrical haze and smoke. (8) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/the-outsiders-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ17Jb-Z",
-   "tags": [
-    "Theatre"
-   ]
+   "description": "Miscellaneous",
+   "details": "",
+   "url": "https://www.universe.com/events/museum-of-chinese-in-america-general-admission-tickets-PZ7R68?ref=ticketmaster",
+   "tags": []
   },
   {
-   "id": "Z7r9jZ1A7PsJa",
-   "title": "The Outsiders",
-   "category": "theater",
-   "start": "2026-10-22T13:00:00-04:00",
+   "id": "1AYZkfKGkdqdFBZ",
+   "title": "Barclays Center Tours",
+   "category": "community",
+   "start": "2026-10-23T12:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Jacobs Theatre-NY",
-    "address": "242 W 45th St, New York",
+    "name": "Barclays Center",
+    "address": "620 Atlantic Ave, Brooklyn",
+    "neighborhood": "Brooklyn",
+    "lat": 40.68285,
+    "lng": -73.97519
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Miscellaneous",
+   "details": "All tour dates, times, locations and tour stops are subject to availability and are subject to change without notice. All guests should arrive 15 minutes before scheduled tour time and enter Barclays Center through the Main Atrium. All sales final - no refunds.",
+   "url": "https://www.ticketmaster.com/barclays-center-tours-brooklyn-new-york-10-23-2026/event/30006513DD0C8E80",
+   "tags": []
+  },
+  {
+   "id": "Z7r9jZ1AAvJFo",
+   "title": "Soon",
+   "category": "theater",
+   "start": "2026-10-23T17:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "St. Luke's Theatre",
+    "address": "308 West 46th Street, New York",
     "neighborhood": "New York",
     "lat": 40.7593,
     "lng": -73.990196
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Arts & Theatre / Miscellaneous",
+   "description": "",
    "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PsJa",
-   "tags": [
-    "Miscellaneous"
-   ]
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAvJFo",
+   "tags": []
   },
   {
-   "id": "Z1r9uZruZqGZ1AvZ8At",
-   "title": "Just In Time",
-   "category": "theater",
-   "start": "2026-10-22T13:00:00-04:00",
+   "id": "LvZ18QfqZ_bLx6ZZwywoZ",
+   "title": "INKwell Times Sq Harbor Club Grown Folk Fridays Afterwork",
+   "category": "community",
+   "start": "2026-10-23T17:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Circle In The Square Theatre",
-    "address": "235 W 50th St, New York",
+    "name": "The INKwell Harbor-Club Rooftop",
+    "address": "621 W 46th Street, New York",
     "neighborhood": "New York",
-    "lat": 40.762173,
-    "lng": -73.985349
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Children under 8 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Performances begin promptly. There is no late seating. Patrons who leave their seat for any reason during the performance will not be re-admitted. (4) This production uses a gunshot sound effect. (5) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/just-in-time-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ1AvZ8At",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1AA7bkk",
-   "title": "Just In Time",
-   "category": "theater",
-   "start": "2026-10-22T13:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Circle in the Square Theatre",
-    "address": "235 W 50th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA7bkk",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z1r9uZruZqGZ17JePF",
-   "title": "The Great Gatsby",
-   "category": "theater",
-   "start": "2026-10-22T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Broadway Theatre",
-    "address": "1681 Broadway, New York",
-    "neighborhood": "New York",
-    "lat": 40.763518,
-    "lng": -73.982991
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Children under 4 years old will not be admitted. (2) Herbal cigarettes are used on stage. (3) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (4) Pyrotechnics are use in this production. (5) Strobe or flashing lights are used in this production. (6) This production uses a gunshot sound effect. (7) This production uses theatrical haze and smoke. (8) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/the-great-gatsby-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ17JePF",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7-4Az",
-   "title": "The Great Gatsby",
-   "category": "theater",
-   "start": "2026-10-22T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Broadway Theatre-New York",
-    "address": "1681 Broadway, New York",
-    "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Miscellaneous",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7-4Az",
-   "tags": [
-    "Miscellaneous"
-   ]
-  },
-  {
-   "id": "LvZ18QnGULvRNc7n-CAZo",
-   "title": "Student Discount Day",
-   "category": "art",
-   "start": "2026-10-22T17:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Banksy Museum New York",
-    "address": "277 Canal St, New York",
-    "neighborhood": "New York",
-    "lat": 40.719603,
-    "lng": -74.001358
+    "lat": 40.764184,
+    "lng": -73.997514
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://www.universe.com/events/student-discount-day-tickets-NR7PBV?ref=ticketmaster",
+   "url": "https://www.universe.com/events/inkwell-times-sq-harbor-club-grown-folk-fridays-afterwork-tickets-1QT8F9?ref=ticketmaster",
    "tags": []
   },
   {
-   "id": "rZ7HnEZ1AfGM8f",
-   "title": "The Cabin in the Woods (2011)",
+   "id": "rZ7HnEZ1AfGM8V",
+   "title": "Malpertuis (1972)",
    "category": "film",
-   "start": "2026-10-22T17:15:00-04:00",
+   "start": "2026-10-23T17:15:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -320,15 +247,15 @@
    },
    "priceUnknown": false,
    "description": "",
-   "details": "Five friends head out for a weekend at a remote cabin, expecting none of the various horror tropes ahead of them. Drew Goddard and Joss Whedon built the film as a loving, layered argument with the genre it belongs to.",
-   "url": "https://www.ticketweb.com/event/the-cabin-in-the-woods-williams-center-cinema-tickets/14337414",
+   "details": "A sailor named Jan wakes inside his dying uncle's crumbling estate, where something not human draws near. Harry Kumel adapts Jean Ray's cult novel, turning a haunted-house premise into something of a Greek myth.",
+   "url": "https://www.ticketweb.com/event/malpertuis-1972-williams-center-cinema-tickets/14337434",
    "tags": []
   },
   {
-   "id": "rZ7HnEZ1AfGMG0",
-   "title": "Unicorn Wars (2022)",
+   "id": "rZ7HnEZ1AfuZ_7",
+   "title": "Berberian Sound Studio (2012)",
    "category": "film",
-   "start": "2026-10-22T17:20:00-04:00",
+   "start": "2026-10-23T17:20:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -339,26 +266,26 @@
     "lng": -74.10333
    },
    "price": {
-    "min": 7,
+    "min": 14,
     "max": 16,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "",
-   "details": "Alberto Vazquez takes the visual language of children's animation and places it inside a brutal adult war film. Beneath its storybook setting, a satire of militarism, where two young bear brothers join the army in a society at war with unicorns.",
-   "url": "https://www.ticketweb.com/event/unicorn-wars-2022-williams-center-cinema-tickets/14337324",
+   "details": "Peter Strickland's film is set entirely inside the sound design of a fictional Italian horror movie, scored by the English band Broadcast in what became one of their final recordings before singer Trish Keenan's death. Gilderoy, the English engineer hired to record its screams, starts losing track of reality.",
+   "url": "https://www.ticketweb.com/event/berberian-sound-studio-2012-williams-center-cinema-tickets/14340644",
    "tags": []
   },
   {
-   "id": "rZ7HnEZ1Af0pfK",
-   "title": "The High Society New Orleans Jazz Band",
+   "id": "rZ7HnEZ1Af0ppd",
+   "title": "Birdland Big Band",
    "category": "music",
-   "start": "2026-10-22T17:30:00-04:00",
+   "start": "2026-10-23T17:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Birdland Theater",
-    "address": "315 West 44th Street, New York",
+    "name": "Birdland Jazz Club",
+    "address": "315 West 44th Street , New York",
     "neighborhood": "New York",
     "lat": 40.759017,
     "lng": -73.989686
@@ -369,41 +296,41 @@
     "currency": "USD"
    },
    "priceUnknown": false,
-   "description": "Music / Folk",
-   "details": "Led by veteran trumpeter Simon Wettenhall and Grammy winning pianist Conal Fowkes, The High Society New Orleans Jazz Band are a New Orleans style Jazz band which for decades have been Woody Allens band of choice for his movies, concert tours and weekly performances.The band have appeared on all the premiere concert stages of Europe and the United States. Band members have appeared in and provided music for Woody Allen movies including: Wild Man Blues, Sweet and Lowdown, Midnight in Paris, Blue Jasmine, Cafe Society, Magic In The Moonlight, and A Rainy Day In New York.Their driving sound is a testament to the ongoing relevance of New Orleans Jazz and they have an international fan base to prove it. Loved by critics and jazz aficionados alike, they have attracted Jazz icons like Chick Corea, Marian McPartland, Diana Krall and many others who sat in with the band during its twenty year residency at the Cafe Carlyle.Conal Fowkes (piano/vocals co-leader)Simon Wettenhall (trumpet/vocals co-leader)Tom Abbott (clarinet)Harvey Tibbs (trombone)Josh Dunn (banjo)Brian Nalepka (bass/vocals)Kevin Dorn (drums)",
-   "url": "https://www.ticketweb.com/event/the-high-society-new-orleans-birdland-theater-tickets/14916513",
+   "description": "Music / Jazz",
+   "details": "Every Friday, and for two headlining weeks a year, the BBB roars into action playing a thrilling and original mix of jazz, funk, Brazilian, Latin and world music for sold-out audiences. Featured weekly guest artists drop-in from television bands (David Letterman, Saturday Night Live) and pop music touring bands (Rob Thomas, Rod Stewart). Come see for yourself why Time Out New York called the BBB, a completely unique experience... there isnt another band like this anywhere, and yelp.com proclaims, if you hear one band in NYC make sure this is it... and prepare to be blown away!",
+   "url": "https://www.ticketweb.com/event/birdland-big-band-birdland-jazz-club-tickets/14916583",
    "tags": [
-    "Folk"
+    "Jazz"
    ]
   },
   {
-   "id": "k7vGF_CElRawH",
-   "title": "CRADLE OF FILTH: Majestic In Death II",
-   "category": "music",
-   "start": "2026-10-22T18:00:00-04:00",
+   "id": "Z7r9jZ1A7J6q8",
+   "title": "Pre-Existing Condition",
+   "category": "theater",
+   "start": "2026-10-23T17:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Warsaw",
-    "address": "261 Driggs Ave , Brooklyn",
-    "neighborhood": "Brooklyn",
-    "lat": 40.722392,
-    "lng": -73.948408
+    "name": "Greenwich House Theater",
+    "address": "27 Barrow Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.7034,
+    "lng": -74.013199
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Music / Metal",
-   "details": "Doors: 6:00pm Show: 7:00pm All ages",
-   "url": "https://www.ticketmaster.com/cradle-of-filth-majestic-in-death-brooklyn-new-york-10-22-2026/event/000064E9EBBC9CBC",
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7J6q8",
    "tags": [
-    "Metal"
+    "Theatre"
    ]
   },
   {
-   "id": "k7vGF_2TYkkCd",
-   "title": "Center Mid",
+   "id": "k7vGF_5Rr-9Pn",
+   "title": "MARIS",
    "category": "music",
-   "start": "2026-10-22T18:00:00-04:00",
+   "start": "2026-10-23T18:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -415,18 +342,64 @@
    },
    "price": null,
    "priceUnknown": true,
+   "description": "Music / Pop",
+   "details": "MARIS [Ages 16+ (Under 16 with parent or guardian), Doors Open 6pm, $19 Advance, $21 Day of Show] MARIS is proud to partner with LIFEBEAT, a program of The Elizabeth Taylor AIDS Foundation, on her upcoming tour. $1 from every ticket sold will benefit the program, and LIFEBEAT will be offering resources on sexual health, harm reduction, and more at select stops.",
+   "url": "https://www.ticketmaster.com/maris-new-york-new-york-10-23-2026/event/000064BBDE85796A",
+   "tags": [
+    "Pop"
+   ]
+  },
+  {
+   "id": "k7vGF_65ZQqmE",
+   "title": "Frankenstem Returns - The Musical",
+   "category": "theater",
+   "start": "2026-10-23T18:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "St. George Theatre",
+    "address": "35 Hyatt Street, Staten Island",
+    "neighborhood": "Staten Island",
+    "lat": 40.642284,
+    "lng": -74.077484
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/frankenstem-returns-the-musical-staten-island-new-york-10-23-2026/event/00006472C069DBA7",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "k7vGFbMI-EPhg",
+   "title": "Osees ft. Brigid Dawson",
+   "category": "music",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Warsaw",
+    "address": "261 Driggs Ave , Brooklyn",
+    "neighborhood": "Brooklyn",
+    "lat": 40.722392,
+    "lng": -73.948408
+   },
+   "price": null,
+   "priceUnknown": true,
    "description": "Music / Rock",
-   "details": "Center Mid [Doors Open 6pm, Ages 21+, $22 Advance, $25 Day of Show]",
-   "url": "https://www.ticketmaster.com/center-mid-new-york-new-york-10-22-2026/event/000064FFF0186383",
+   "details": "Doors: 7:00pm Show: 8:00pm All ages",
+   "url": "https://www.ticketmaster.com/osees-ft-brigid-dawson-brooklyn-new-york-10-23-2026/event/0000637A219E56F5",
    "tags": [
     "Rock"
    ]
   },
   {
-   "id": "rZ7HnEZ1A4Zfpd",
-   "title": "Lamplight, Anna McClellan, Margaux",
+   "id": "rZ7HnEZ1Af17of",
+   "title": "Pardoner, Laughing Cocks, The Smarthearts",
    "category": "music",
-   "start": "2026-10-22T18:30:00-04:00",
+   "start": "2026-10-23T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -442,18 +415,1622 @@
     "currency": "USD"
    },
    "priceUnknown": false,
-   "description": "Music / Alternative",
+   "description": "Music / Other",
    "details": "This event is 21 and over. Any ticket holder unable to present valid identification indicating that they are at least 21 years of age will not be admitted to this event, and will not be eligible for a refund.",
-   "url": "https://www.ticketweb.com/event/lamplight-anna-mcclellan-margaux-night-club-101-tickets/15014583",
+   "url": "https://www.ticketweb.com/event/pardoner-laughing-cocks-the-smarthearts-night-club-101-tickets/14284454",
    "tags": [
-    "Alternative"
+    "Other"
    ]
   },
   {
-   "id": "k7vGF_f5pRadB",
-   "title": "Do Si Don'tcha: Y'all Stars Country Line Dancing ",
+   "id": "17GZv0G6GExozik",
+   "title": "Slam Frank",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Orpheum Theatre NYC",
+    "address": "126 Second Ave., New York",
+    "neighborhood": "New York",
+    "lat": 40.728188,
+    "lng": -73.987498
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/slam-frank-new-york-new-york-10-23-2026/event/300064C9E2478B06",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "rZ7HnEZ1Afutaf",
+   "title": "The Nightmare Before Christmas: A Read-Through/Sing-Through",
+   "category": "community",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Berlin",
+    "address": "The Lower-Level of 2A Bar, New York",
+    "neighborhood": "New York",
+    "lat": 40.722974,
+    "lng": -73.98608
+   },
+   "price": {
+    "min": 32,
+    "max": 54,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Miscellaneous",
+   "details": "This event is 21 and over. Any ticket holder unable to present valid identification indicating that they are at least 21 years of age will not be admitted to this event, and will not be eligible for a refund.",
+   "url": "https://www.ticketweb.com/event/the-nightmare-before-christmas-a-berlin-tickets/14369254",
+   "tags": []
+  },
+  {
+   "id": "k7vGF_1D6p4pP",
+   "title": "BE:FIRST",
    "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Gramercy Theatre",
+    "address": "127 East 23rd Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.739754,
+    "lng": -73.985013
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Music / Pop",
+   "details": "Accessible accommodations should purchase a General Admission ticket and will be taken care of at the venue day of event.",
+   "url": "https://www.ticketmaster.com/befirst-new-york-new-york-10-23-2026/event/000064AEC75955A5",
+   "tags": [
+    "Pop"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7P8ak",
+   "title": "The Curious Case of the Curse of Benjamin Button",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Public Theater - Newman Theater",
+    "address": "425 Lafayette Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.731602,
+    "lng": -73.989098
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7P8ak",
+   "tags": []
+  },
+  {
+   "id": "k7vGF_G05JND7",
+   "title": "HEY, NOTHING - THE HOUND TOUR",
+   "category": "music",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Irving Plaza Powered By Verizon 5G",
+    "address": "17 Irving Place, New York",
+    "neighborhood": "New York",
+    "lat": 40.734917,
+    "lng": -73.988447
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Music / Rock",
+   "details": "Accessible accommodations should purchase a General Admission ticket and will be taken care of at the venue day of event.",
+   "url": "https://www.ticketmaster.com/hey-nothing-the-hound-tour-new-york-new-york-10-23-2026/event/000064C90B9A3EC4",
+   "tags": [
+    "Rock"
+   ]
+  },
+  {
+   "id": "rZ7HnEZ1AfG0F7",
+   "title": "The Cure Halloween Party",
+   "category": "music",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Bowery Palace",
+    "address": "327 Bowery, New York",
+    "neighborhood": "New York",
+    "lat": 40.7257,
+    "lng": -73.991673
+   },
+   "price": {
+    "min": 12,
+    "max": 19,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Music / Other",
+   "details": "DJ Chase '77 kicks things off at 7 with a Cure music video DJ set. Then She's In Parties (Weird Magazines/Imperial Motors) takes the stage as BAUHAUS, followed by The Bitter And The Sweet (Some of Mine) performing SIOUXSIE & THE BANSHEES. While the final act sets up, visit hairstylist Antonio V's chair to complete your goth look with a complimentary updo Then Depresión Tropical summons the spirit of Robert Smith et al., performing your favorite songs by THE CURE. Following the performances, Chase '77 spins The Cure as well as other new wave, post-punk and dark wave, conjuring a gothic DANCE PARTY that will go 'til close LIMITED NUMBER OF $10 EARLY BIRD TIX AVAILABLE",
+   "url": "https://www.ticketweb.com/event/the-cure-halloween-party-bowery-palace-tickets/14324204",
+   "tags": [
+    "Other"
+   ]
+  },
+  {
+   "id": "k7vGF_GmIniHL",
+   "title": "Telescreens - Why The Lights Flicker North American Tour",
+   "category": "music",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Bowery Ballroom",
+    "address": "6 Delancey St., New York",
+    "neighborhood": "New York",
+    "lat": 40.720364,
+    "lng": -73.993542
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Music / Rock",
+   "details": "Telescreens - Why The Lights Flicker North American Tour [Ages 16+ (Under 16 with parent or guardian), Doors Open 7pm, $25 Advance, $30 Day of Show]",
+   "url": "https://www.ticketmaster.com/telescreens-why-the-lights-flicker-north-new-york-new-york-10-23-2026/event/000064CBA8AACF1F",
+   "tags": [
+    "Rock"
+   ]
+  },
+  {
+   "id": "17GZv0G629LnQGz",
+   "title": "A Ghost in Your Ear",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Audible's Minetta Lane Theatre",
+    "address": "18 Minetta Lane, New York",
+    "neighborhood": "New York",
+    "lat": 40.730358,
+    "lng": -74.001268
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "When an actor arrives late to a sound studio for a last-minute audiobook recording session, he is handed the script of a chilling ghost story to read. But as the engineer cues the recording and the evening wears on, the horrors slowly begin to escape the page to haunt the studio itself. Fresh from an acclaimed, sold-out run in London, A GHOST IN YOUR EAR is the \"truly terrifying headphone horror\" (The Guardian) from the darkly brilliant mind of Tony Award® nominee Jamie Armitage (SIX), made in collaboration with Ben and Max Ringham (ANNA, National Theatre). A mesmerizing blend of gothic horror and psychological thriller, this cutting-edge theatrical experience uses groundbreaking binaural sound technology to immerse every audience member in a haunting world of sound. And at Audible's Minetta Lane Theatre - one of New York's most intimate venues - there's no escaping the frights. Enter if you dare.",
+   "url": "https://www.ticketmaster.com/a-ghost-in-your-ear-new-york-new-york-10-23-2026/event/300064F5DFA9A338",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZruZqGZ17Jbb0",
+   "title": "Maybe Happy Ending",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Belasco Theatre",
+    "address": "111 W 44th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.756627,
+    "lng": -73.983961
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Strobe or flashing lights are used in this production. (4) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/maybe-happy-ending-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ17Jbb0",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZrrZbpZ1Ae7ArA",
+   "title": "Schmigadoon!",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nederlander Theatre",
+    "address": "208 West 41st Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.755548,
+    "lng": -73.988237
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/schmigadoon-new-york-new-york-10-23-2026/event/Z1r9uZrrZbpZ1Ae7ArA",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "vvG1GZ_1Dlfvi7",
+   "title": "Aladdin",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New Amsterdam Theatre",
+    "address": "214 West 42nd Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.756057,
+    "lng": -73.987929
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "Sherri Shepherd joins ALADDIN as Genie from October 16, 2026, through January 3, 2027. She has scheduled absences for the October 17 matinee, October 18 matinee, November 1 matinee and evening, and November 2 evening performances. Age Recommendation: ALADDIN is intended for guests 6 and up. All guests must have a ticket. Run time: Approximately two hours and thirty minutes, including a 15-minute intermission.",
+   "url": "https://www.ticketmaster.com/aladdin-new-york-new-york-10-23-2026/event/030064AEEB501B04",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "rZ7HnEZ1AfCK17",
+   "title": "Yung Miami In Store Appearance",
+   "category": "music",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Vinyl + Thread",
+    "address": "55 Anchorage Place, Brooklyn",
+    "neighborhood": "Brooklyn",
+    "lat": 40.703441,
+    "lng": -73.987825
+   },
+   "price": {
+    "min": 30,
+    "max": 45,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Music / Hip-Hop/Rap",
+   "details": "Yung Miami is coming to Vinyl + Thread for an instore appearance in support of her new album, Watch Dis. You must purchase this ticket for entry. Purchasing the album from any other retailer will not give you entry into the event. Limit one per person. This event includes a photo with the artist (no album signing). Please do not bring large bags or any additional items for the artist to sign. You will receive your cd or vinyl copy at the start of the event. The name on your ticket must match the name on your ID. Doors Open at 7pm Line Starts at 6pm Vinyl + Thread 55 Anchorage Place Brooklyn NY 11201 If you purchase a ticket and do not show up to the event, you can contact Vinyl + Thread at hello@vinylandthread.com to arrange to pick up your vinyl. There are NO REFUNDS and we do not ship.",
+   "url": "https://www.ticketweb.com/event/yung-miami-in-store-appearance-vinyl-thread-tickets/14393284",
+   "tags": [
+    "Hip-Hop/Rap"
+   ]
+  },
+  {
+   "id": "Z1r9uZrrZbpZ1Ae78vw",
+   "title": "The Lion King (New York, NY)",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Minskoff Theatre",
+    "address": "200 West 45th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.757986,
+    "lng": -73.985772
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/the-lion-king-new-york-ny-new-york-new-york-10-23-2026/event/Z1r9uZrrZbpZ1Ae78vw",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "k7vGF_3i7bltx",
+   "title": "It's Up for Debate: Andrew Yang vs. Scott Jennings",
+   "category": "community",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Manhattan Center Hammerstein Ballroom",
+    "address": "311 West 34th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.752664,
+    "lng": -73.994309
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Miscellaneous / Lecture/Seminar",
+   "details": "Andrew Yang vs. Scott Jennings. Two voices from opposite sides of American politics. One stage. Seven topics. One night. No shouting match just real debate, equal time, and a live N.Y. audience voting after each topic on who made the stronger case. Its Up For Debate presented by Polymarket comes to Hammerstein Ballroom on Friday, October 23, featuring Andrew Yang, entrepreneur and founder of the Forward Party, and Scott Jennings, CNN senior political commentator. The debate will be moderated by veteran broadcast journalist Leon Harris. Ahead of the 2026 midterm elections, Yang and Jennings will take part in a town hall style debate on seven issues shaping the countrys present and future. Both will have equal time to make their case, with every argument heard in full. One stage. Two perspectives. Seven topics. Your vote.",
+   "url": "https://www.ticketmaster.com/its-up-for-debate-andrew-yang-new-york-new-york-10-23-2026/event/0000652B0462BA62",
+   "tags": [
+    "Lecture/Seminar"
+   ]
+  },
+  {
+   "id": "Z1r9uZrrZbpZ1Aev7o0",
+   "title": "Stranger Things: The First Shadow",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Marquis Theatre",
+    "address": "210 West 46th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.758526,
+    "lng": -73.985774
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/stranger-things-the-first-shadow-new-york-new-york-10-23-2026/event/Z1r9uZrrZbpZ1Aev7o0",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZrrZbpZ1AvOA4f",
+   "title": "The Lost Boys",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Palace Theatre New York",
+    "address": "1564 Broadway, New York",
+    "neighborhood": "New York",
+    "lat": 40.7591,
+    "lng": -73.984679
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/the-lost-boys-new-york-new-york-10-23-2026/event/Z1r9uZrrZbpZ1AvOA4f",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZruZqGZ1AvZ6Aw",
+   "title": "Buena Vista Social Club",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Gerald Schoenfeld Theatre",
+    "address": "236 W 45th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.758506,
+    "lng": -73.987426
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) The show's dialogue is in English, while the songs are performed in the original Spanish from the beloved album. But Buena Vista Social Club is truly a show for everyone. The songs enrich the story, infusing it with an authentic Havana heartbeat. You won't lose the plot if you don't understand the lyrics - what matters most is how the music makes you feel. (4) This production uses theatrical haze and smoke. (5) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/buena-vista-social-club-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ1AvZ6Aw",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZrrZbpZ1AvjVfY",
+   "title": "Hamilton (NY)",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Richard Rodgers Theatre",
+    "address": "226 West 46th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.759204,
+    "lng": -73.986763
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/hamilton-ny-new-york-new-york-10-23-2026/event/Z1r9uZrrZbpZ1AvjVfY",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZruZqGZ17Jb-3",
+   "title": "The Outsiders",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Bernard B. Jacobs Theatre",
+    "address": "242 W 45th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.758667,
+    "lng": -73.987757
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Children under 4 years old will not be admitted. (2) Herbal cigarettes are used on stage. (3) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (4) Pyrotechnics are use in this production. (5) This production contains moments of darkness. (6) This production uses loud sound effects. (7) This production uses theatrical haze and smoke. (8) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/the-outsiders-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ17Jb-3",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZrrZbpZ1AvP6CF",
+   "title": "Six (New York, NY)",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lena Horne Theatre",
+    "address": "256 West 47th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.760056,
+    "lng": -73.986816
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/six-new-york-ny-new-york-new-york-10-23-2026/event/Z1r9uZrrZbpZ1AvP6CF",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZruZqGZ1AvZ6ef",
+   "title": "School Girls; Or, the African Mean Girls Play",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Samuel J Friedman Theatre",
+    "address": "261 W 47th St,, New York",
+    "neighborhood": "New York",
+    "lat": 40.760371,
+    "lng": -73.986739
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Please note, the first opportunity for late seating occurs approximately 30 minutes into the show. Late seating will be at the discretion of Theatre Management. (4) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/school-girls-or-the-african-mean-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ1AvZ6ef",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "rZ7HnEZ1A4ZAvS",
+   "title": "Curtis Stigers",
+   "category": "music",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Birdland Theater",
+    "address": "315 West 44th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.759017,
+    "lng": -73.989686
+   },
+   "price": {
+    "min": 35,
+    "max": 46,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Music / Rock",
+   "details": "For the past 30 years, the singer, songwriter, saxophonist and guitarist Curtis Stigers has been making records that confound those who try to categorize his music or put him in a box. Stigers burst onto the recording scene in 1991 with his eponymously-titled debut album, which sold 1.5 million copies and spawned several self-penned, pop/soul hit singles, including , \"rdquo\" -> You're All That Matters To Me\", , \"rdquo\" -> Never Saw A Miracle\" and the worldwide top-ten hit, , \"rdquo\" -> I Wonder Why.\" The next year the singer/songwriter/saxophonist recorded Nick Lowe's , \"rdquo\" -> (What's So Funny 'Bout) Peace Love and Understanding\" for , \"rdquo\" -> The Bodyguard\" soundtrack, which has sold over 45 million copies worldwide. Stigers recorded two more pop-oriented albums in the 1990s and made guest appearances on several albums, including two by his early musical mentor, the legendary jazz pianist Gene Harris. In 2001 Stigers pivoted artistically and signed with Concord Jazz. Over the next 18 years he recorded nine genre-busting albums, combining his jazz sensibilities with his love for emotional, well-written modern songs from a wide variety of sources including rock, blues, soul, country and folk. During this period Stigers co-wrote and sang , \"rdquo\" -> This Life\", the Emmy Award-nominated theme song to the wildly popular TV show , \"rdquo\" -> Sons Of Anarchy\", and also made cameo appearances in the Seth MacFarlane movies , \"rdquo\" -> Ted\" and , \"rdquo\" -> Ted 2\". All the while, Stigers was cultivating a successful and enduring touring career, playing concerts around the world, performing songs from his jazz albums as well as newly reconstructed , \"rdquo\" -> jazz\" versions of his hit songs from his early pop albums.",
+   "url": "https://www.ticketweb.com/event/curtis-stigers-birdland-theater-tickets/15005073",
+   "tags": [
+    "Rock"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7-J_e",
+   "title": "Maybe Happy Ending",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Belasco Theatre - NY",
+    "address": "111 W. 44th St., New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7-J_e",
+   "tags": []
+  },
+  {
+   "id": "Z7r9jZ1A70OjI",
+   "title": "Six: The Musical",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lena Horne Theatre",
+    "address": "256 W. 47th St., New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Miscellaneous",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70OjI",
+   "tags": [
+    "Miscellaneous"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7J6v4",
+   "title": "The Imaginary Invalid",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Todd Haimes Theatre",
+    "address": "227 West 42nd Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7J6v4",
+   "tags": []
+  },
+  {
+   "id": "Z7r9jZ1A7PKuP",
+   "title": "Music City",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "St. Luke's Theatre",
+    "address": "308 West 46th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PKuP",
+   "tags": []
+  },
+  {
+   "id": "Z7r9jZ1A7PNv4",
+   "title": "Other Desert Cities",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Hudson Theatre -NY",
+    "address": "145 W. 44th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Performance Art",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PNv4",
+   "tags": [
+    "Performance Art"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7P_8p",
+   "title": "CATS: The Jellicle Ball",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Broadhurst Theatre",
+    "address": "235 W. 44th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7P_8p",
+   "tags": []
+  },
+  {
+   "id": "Z7r9jZ1A7PsJo",
+   "title": "The Outsiders",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Jacobs Theatre-NY",
+    "address": "242 W 45th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Miscellaneous",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PsJo",
+   "tags": [
+    "Miscellaneous"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7qxQ7",
+   "title": "Lost Boys Musical w/ Unknown Mortal Orchestra",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Palace Theatre-NY",
+    "address": "1564 Broadway, New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7qxQ7",
+   "tags": []
+  },
+  {
+   "id": "Z7r9jZ1A7rKFb",
+   "title": "Harry Potter and the Cursed Child",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lyric Theatre - NY",
+    "address": "213 W 42nd St, New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Performance Art",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7rKFb",
+   "tags": [
+    "Performance Art"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7x4ZK",
+   "title": "Hadestown",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Walter Kerr Theatre",
+    "address": "219 West 48th St., New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Miscellaneous",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7x4ZK",
+   "tags": [
+    "Miscellaneous"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1AA73Fb",
+   "title": "Hamilton",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Richard Rodgers Theatre-NY",
+    "address": "226 W. 46th St., New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA73Fb",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1AA7KJf",
+   "title": "Stranger Things: The First Shadow",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Marquis Theatre - NY",
+    "address": "211 W 45th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA7KJf",
+   "tags": []
+  },
+  {
+   "id": "Z7r9jZ1AAZe1b",
+   "title": "School Girls:Or, The African Mean Girls",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Samuel J. Friedman Theatre",
+    "address": "261 West 47th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Miscellaneous",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZe1b",
+   "tags": [
+    "Miscellaneous"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1AAe_QK",
+   "title": "The Lion King",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Minskoff Theatre",
+    "address": "1515 Broadway, New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAe_QK",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1AAvPOA",
+   "title": "Schmigadoon!",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nederlander Theatre",
+    "address": "208 West 41st St., New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAvPOA",
+   "tags": []
+  },
+  {
+   "id": "Z7r9jZ1AAvoAZ",
+   "title": "The Visitors",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Irene Diamond Stage at Signature Theatre",
+    "address": "480 West 42nd Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAvoAZ",
+   "tags": []
+  },
+  {
+   "id": "Z1r9uZrrZbpZ1Av-AQf",
+   "title": "Wicked (NY)",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Gershwin Theatre",
+    "address": "222 West 51st Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.762542,
+    "lng": -73.985027
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/wicked-ny-new-york-new-york-10-23-2026/event/Z1r9uZrrZbpZ1Av-AQf",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZruZqGZ17JeP3",
+   "title": "The Great Gatsby",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Broadway Theatre",
+    "address": "1681 Broadway, New York",
+    "neighborhood": "New York",
+    "lat": 40.763518,
+    "lng": -73.982991
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Children under 4 years old will not be admitted. (2) Herbal cigarettes are used on stage. (3) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (4) Pyrotechnics are use in this production. (5) Strobe or flashing lights are used in this production. (6) This production uses a gunshot sound effect. (7) This production uses theatrical haze and smoke. (8) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/the-great-gatsby-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ17JeP3",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZrrZbpZ1Av0pPK",
+   "title": "MJ",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Neil Simon Theatre",
+    "address": "250 West 52nd Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.763146,
+    "lng": -73.983996
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/mj-new-york-new-york-10-23-2026/event/Z1r9uZrrZbpZ1Av0pPK",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1AAZYqY",
+   "title": "ILYKIMCHI",
+   "category": "community",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Elsewhere",
+    "address": "599 Johnson Ave., Brooklyn, NY 11237, Brooklyn",
+    "neighborhood": "Brooklyn",
+    "lat": 40.704399,
+    "lng": -73.921204
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZYqY",
+   "tags": []
+  },
+  {
+   "id": "Z1r9uZruZqGZ1AvZa7V",
+   "title": "The Play That Goes Wrong",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New World Stages - Stage 4",
+    "address": "340 W 50th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.763014,
+    "lng": -73.987627
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/the-play-that-goes-wrong-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ1AvZa7V",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZruZqGZ1AvZkPk",
+   "title": "Jamie Allan's Amaze",
+   "category": "community",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New World Stages - Stage 5",
+    "address": "340 W 50th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.763014,
+    "lng": -73.987627
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Miscellaneous",
+   "details": "(1) A bright light effect is used in this production. (2) Children under 4 years old will not be admitted. (3) Latecomers will be seated at the discretion of management. (4) Strobe or flashing lights are used in this production. (5) This production uses theatrical haze and smoke. (6) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/jamie-allans-amaze-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ1AvZkPk",
+   "tags": []
+  },
+  {
+   "id": "Z7r9jZ1A7-4A0",
+   "title": "The Great Gatsby",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Broadway Theatre-New York",
+    "address": "1681 Broadway, New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Miscellaneous",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7-4A0",
+   "tags": [
+    "Miscellaneous"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7Jvfy",
+   "title": "The Rocky Horror Show",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Studio 54",
+    "address": "254 W. 54th St., New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Jvfy",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7PV17",
+   "title": "Heathers",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New World Stages - Stage 1",
+    "address": "340 West 50th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PV17",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7rf-_",
+   "title": "Wicked",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Gershwin Theatre",
+    "address": "222 West 51st. St., New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7rf-_",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7xFuA",
+   "title": "MJ (NY)",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Neil Simon Theatre",
+    "address": "250 West 52nd St., New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Miscellaneous",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7xFuA",
+   "tags": [
+    "Miscellaneous"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7xeAP",
+   "title": "The Book of Mormon",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Eugene O'Neill Theatre",
+    "address": "230 W 49th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7xeAP",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "k7vGF_FCcIHra",
+   "title": "BECK: RIDE LONESOME TOUR",
+   "category": "music",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Paramount",
+    "address": "385 Flatbush Ave. Extension, Brooklyn",
+    "neighborhood": "Brooklyn",
+    "lat": 40.691373,
+    "lng": -73.981241
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Music / Rock",
+   "details": "Doors: 7PM Show: 8PM All set times and opening acts are subject to change without notice. For accessible seating inquiries, please email us directly at Info@BrooklynParamount.com to reserve accommodations. Balcony Includes: Exclusive Entrance via Dekalb Ave. Balcony Access Private Bar Private Bathrooms Private Coat Check",
+   "url": "https://www.ticketmaster.com/beck-ride-lonesome-tour-brooklyn-new-york-10-23-2026/event/00006483ADA3C789",
+   "tags": [
+    "Rock"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7p88V",
+   "title": "Little Shop of Horrors",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Westside Theatre Upstairs - NY",
+    "address": "252 W 81st St, New York",
+    "neighborhood": "New York",
+    "lat": 40.785999,
+    "lng": -73.9758
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7p88V",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZruZqGZ17PPbO",
+   "title": "Little Shop Of Horrors",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Westside Theatre Upstairs",
+    "address": "407 West 43rd Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.785414,
+    "lng": -73.979548
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Performances begin promptly. There is no late seating. (4) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/little-shop-of-horrors-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ17PPbO",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "rZ7HnEZ1Afaz47",
+   "title": "WOODSTOCK 99' REVISTED SHOW FEATURING: FISTFUL OF STEEL - RAGE AGAINST THE MACHINE TRIBUTE, issues - Korn Tribute and Red Hot Chili Jam",
+   "category": "music",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Williams Center - Black Box - Rutherford",
+    "address": "15 Sylvan Street, Rutherford",
+    "neighborhood": "Rutherford",
+    "lat": 40.82711,
+    "lng": -74.10333
+   },
+   "price": {
+    "min": 26,
+    "max": 26,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Music / Other",
+   "details": "This event is 18 and over. Any ticket holder unable to present valid identification indicating that they are at least 18 years of age will not be admitted to this event, and will not be eligible for a refund. Attendance at the Williams Center involves risks associated with live entertainment, including loud sound, flashing lights and strobes, theatrical fog, crowded spaces, dancing, physical contact, slips and falls, and exposure to communicable illnesses. These conditions may cause injury or illness. Please consider your health, personal limitations, and comfort before attending or participating. Loud music can cause permanent hearing damage. Hearing protection is strongly recommended. Events may include lighting effects that can trigger seizures or other reactions in susceptible individuals. Ask staff about event conditions if you have concerns. Please follow all posted rules, warnings, and staff instructions. Keep exits and aisles clear, remain outside restricted areas, and promptly report unsafe conditions, injuries, or emergencies to staff. Violence, harassment, unauthorized stage access, and dangerous behavior are prohibited. Attendees who violate venue rules may be refused admission or removed, subject to applicable law and ticket policies. If you choose to dance or participate in other activities, consider the surrounding conditions and your abilities. Respect other attendees' space and avoid conduct that could injure yourself or others. Alcohol is available only to guests of legal drinking age with valid identification. Please drink responsibly and arrange safe transportation. Service may be refused in accordance with applicable law. Keep personal belongings secure and avoid leaving valuables unattended. Report lost or stolen items to staff. The venue takes reasonable steps to provide a safe environment, but attendance cannot be guaranteed to be free of risk. Nothing in this notice releases the venue from liability imposed by law, waives an attendee's legal rights, or excuses gross negligence, reckless or intentional misconduct, or violations of applicable legal duties.",
+   "url": "https://www.ticketweb.com/event/woodstock-99-revisted-show-featuring-williams-center-black-tickets/14278544",
+   "tags": [
+    "Other"
+   ]
+  },
+  {
+   "id": "rZ7HnEZ1AfuPGf",
+   "title": "Who's Next? Comedy Showcase ft. Daniela Mora, Matthew Brousard, Jay Jurden, Eva Evans, Zahid Dewji, and Courtney Maginnis",
+   "category": "comedy",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Improv (The Main Room)",
+    "address": "64 N 9th St, Brooklyn",
+    "neighborhood": "Brooklyn",
+    "lat": 40.720751,
+    "lng": -73.959998
+   },
+   "price": {
+    "min": 16,
+    "max": 16,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Arts & Theatre / Comedy",
+   "details": "DO NOT PURCHASE TICKETS FROM ANYONE OR ANY OTHER SITE OTHER THAN IMPROV.COM TICKET RESALE IS STRICTLY PROHIBITED. TICKETS SUSPECTED OF BEING PURCHASED FOR THE SOLE PURPOSE OF RESELLING MAY BE CANCELLED AT THE DISCRETION OF THE BROOKLYN IMPROV. EVENT INFO: There is a two-item minimum purchase requirement in the showroom for all guests. Seating is general admission, first-come, first-served, with the exception of groups and premium booths. No cell phone use, photography or video recording is permitted during performances. All sales are final. MISCELLANOUS: For group sales info, e-mail our Events Manager to learn about special menu options and reserved seating. Additional questions may be addressed in our Frequently Asked Questions. For further assistance, contact Brooklyn Improv.",
+   "url": "https://www.ticketweb.com/event/whos-next-comedy-showcase-ft-brooklyn-improv-the-main-room-tickets/14365314",
+   "tags": [
+    "Comedy"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1AAZV4Z",
+   "title": "Renny Conti (18 and Over)",
+   "category": "music",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Baby's All Right",
+    "address": "146 Broadway, Brooklyn",
+    "neighborhood": "Brooklyn",
+    "lat": 40.711102,
+    "lng": -73.956497
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Music / Other",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZV4Z",
+   "tags": [
+    "Other"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1AAZI7U",
+   "title": "Midnight",
+   "category": "theater",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Daryl Roth Theatre",
+    "address": "101 East 15th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.731602,
+    "lng": -73.989098
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZI7U",
+   "tags": []
+  },
+  {
+   "id": "Z1r9uZruZqGZ1AvZ8P4",
+   "title": "Midnight",
+   "category": "theater",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Daryl Roth Theatre",
+    "address": "101 E 15th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.735318,
+    "lng": -73.989443
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/midnight-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ1AvZ8P4",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZruZqGZ17J9OF",
+   "title": "Oh, Mary!",
+   "category": "theater",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lyceum Theatre",
+    "address": "149 W 45th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.757703,
+    "lng": -73.984511
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) This production uses a gunshot sound effect. (4) This production uses theatrical haze and smoke. (5) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/oh-mary-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ17J9OF",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZruZqGZ17JeQA",
+   "title": "Operation Mincemeat: A New Musical",
+   "category": "theater",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "John Golden Theatre",
+    "address": "252 W 45th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.758841,
+    "lng": -73.98791
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Strobe or flashing lights are used in this production. (4) This production contains moments of darkness. (5) This production uses loud sound effects. (6) This production uses theatrical haze and smoke. (7) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/operation-mincemeat-a-new-musical-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ17JeQA",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1AAZfA0",
+   "title": "2:22 - A Ghost Story",
+   "category": "theater",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lucille Lortel Theatre",
+    "address": "121 Christopher St, New York",
+    "neighborhood": "New York",
+    "lat": 40.733002,
+    "lng": -74.007103
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZfA0",
+   "tags": []
+  },
+  {
+   "id": "Z1r9uZruZqGZ17JbvA",
+   "title": "Two Strangers (Carry a Cake Across New York)",
+   "category": "theater",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Longacre Theatre",
+    "address": "220 W 48th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.760363,
+    "lng": -73.985974
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Strobe or flashing lights are used in this production. (4) This production uses theatrical haze and smoke. (5) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/two-strangers-carry-a-cake-across-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ17JbvA",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7-Evt",
+   "title": "Oh, Mary!",
+   "category": "theater",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lyceum Theatre - NY",
+    "address": "149 W. 45th St., New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Performance Art",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7-Evt",
+   "tags": [
+    "Performance Art"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7Jo4V",
+   "title": "The Heart",
+   "category": "theater",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Laura Pels Theatre",
+    "address": "111 West 46th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Jo4V",
+   "tags": []
+  },
+  {
+   "id": "Z7r9jZ1A7xkP9",
+   "title": "Two Strangers",
+   "category": "theater",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Longacre Theatre",
+    "address": "220 West 48th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7xkP9",
+   "tags": []
+  },
+  {
+   "id": "Z7r9jZ1A70bGZ",
+   "title": "Movements",
+   "category": "music",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Terminal 5",
+    "address": "610 W. 56th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Music / Other",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70bGZ",
+   "tags": [
+    "Other"
+   ]
+  },
+  {
+   "id": "Z1r9uZruZqGZ1AvZavU",
+   "title": "creation stories and all the important importants",
+   "category": "theater",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lincoln Center - Claire Tow Theater",
+    "address": "150 West 65th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.773878,
+    "lng": -73.984323
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/creation-stories-and-all-the-important-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ1AvZavU",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "rZ7HnEZ1AfkK3f",
+   "title": "BrownstoneJAZZ FEST CONCERT SERIES",
+   "category": "music",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "BrownstoneJAZZ",
+    "address": "107 Macon Street, Brooklyn ",
+    "neighborhood": "Brooklyn ",
+    "lat": 40.681523,
+    "lng": -73.947016
+   },
+   "price": {
+    "min": 55,
+    "max": 55,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Music / Jazz",
+   "details": "-Please read fully to enjoy- BrownstoneJAZZ WEEKEND up close and personal. Intimate acoustic room live concerts Fridays & Saturdays 7:30pm or 9:30pm Sundays 4pm or 6pm Experience the JazzFest in a restored 19th Century Victorian Brownstone located in Bedford Stuyvesant's Central Brooklyn Landmarked Historical Community. Where you will feel transported back to an earlier time period walking through the doors. BrownstoneJAZZ Ensasmbles present the best of yesteryear's jazz soldiers and today's jazz frontier musicians, swinging with the authentic jazz style. Something for everyone to enjoy. Bed Stuy, B'klyn and SugarHill, Harlem were both Jazz Hey Day Communities. When Ella Fitzgerald lyricized the song 'TAKE THE A TRAIN' connecting NYC's two jazz hubs. BrownstoneJAZZ invites you to the magic of music with Curator Debbie McClain and M.C., Bassist Eric Lemons hosting you as you uncover this old school jazz venue to enjoy a different jazz experience. Get your ticket for our private event. Both Eric and Debbie have been involved in the world of music entertainment for years presenting major artist. The list is long. They really know their way around the business. FOR A LIMITED TIME: Tables and seats have been limited. Make early purchases. We sell out fast. NOTES DRESS TO IMPRESS --- It's the Jazz Age! Casual Classy, Cocktail or vintage attire are encouraged. Leave the jeans, shorts, t-shirt, and hoodie at home. NO Athletic Wear, Tank Tops, or T-shirts in THE ROOM NO REFUNDS (no exceptions) ID is required NO PETS NO Shopping-bags or Backpacks in THE ROOM. BYOBB (bring your own brown bag) -NO FISH FRY OPTION- PLEASE PURCHASE ACTUAL TICKETS AS GIFTS WE ARE PRIVATE, please be respectful #jazz, #blues, #ticketweb, #ticketmaster, #music, #concerts, #datenight #events, #livemusic, #Brooklyn, #NYC, #Harlem",
+   "url": "https://www.ticketweb.com/event/brownstonejazz-fest-concert-series-brownstonejazz-tickets/14193494",
+   "tags": [
+    "Jazz"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7JpQ8",
+   "title": "creation stories and all the important importants",
+   "category": "theater",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lincoln Center - Claire Tow Theater",
+    "address": "150 West 65th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.7761,
+    "lng": -73.9841
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7JpQ8",
+   "tags": []
+  },
+  {
+   "id": "1kGZvPaSGAG-Qz1",
+   "title": "Sydnee Washington: My Black Barbie Story",
+   "category": "comedy",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Bell House",
+    "address": "149 7th Street, Brooklyn",
+    "neighborhood": "Brooklyn",
+    "lat": 40.67373,
+    "lng": -73.99156
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Comedy",
+   "details": "Sydnee Washington has lived many lives. Lowkey high key, nights so embarrassing only Black Barbie can reenact in a stop motion live show. Follow Sydnee's life story from childhood, to making questionable decisions as a bottle girl in the iconic nightclubs of 2010s NYC--& how she eventually made her way out through sobriety &, funnily enough, stand-up comedy. Join her in an unhinged night of judgment, laughs & maybe even a bit of inspiration. W/ Liza Treyger & Devon Walker. *Lineup subject to change. Door Time: 6:30pm (front bar opens: 5:30pm). Show Time: 7:30pm. 21 & over w/ valid, government-issued photo ID. General Admission standing & seating. Seating 1st come 1st served & not guaranteed. Arrive early for best selection. No outside food/drink. If you have an accessibility request, please email thebellhouse@livenation.com prior. $.25 per each ticket sold for a majority of events @ The Bell House benefits Comedy Gives Back. IG: @comedygivesback.",
+   "url": "https://www.ticketmaster.com/sydnee-washington-my-black-barbie-story-brooklyn-new-york-10-23-2026/event/300065273C85AE0A",
+   "tags": [
+    "Comedy"
+   ]
+  },
+  {
+   "id": "k7vGF_3lzRpJ0",
+   "title": "VIP Bowling Lane Add On - Space Bacon - Not a Concert Ticket",
+   "category": "community",
+   "start": "2026-10-23T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -465,66 +2042,683 @@
    },
    "price": null,
    "priceUnknown": true,
+   "description": "Miscellaneous",
+   "details": "Take your concert experience to the next level with a VIP bowling lane package. You'll have your own bowling lane with a leather Chesterfield couch and a dedicated server all night long! 1 lane for up to 8 people from 8pm until the end of the show with bowling shoe rental included. Food and Drink service right to your lane. No waiting in line at the bar! NYS Sales Tax and 20% Gratuity not included and will be added to your final tab. *Show admission is required for your entire party and is not included with the purchase of a VIP lane.",
+   "url": "https://www.ticketmaster.com/vip-bowling-lane-add-on-space-brooklyn-new-york-10-23-2026/event/0000652AF8BD69A4",
+   "tags": []
+  },
+  {
+   "id": "k7vGF_udxR1ge",
+   "title": "Space Bacon & Dizgo w/ DJ Greenie of Lotus",
+   "category": "music",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Bowl",
+    "address": "61 Wythe Ave, Brooklyn",
+    "neighborhood": "Brooklyn",
+    "lat": 40.721926,
+    "lng": -73.957346
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Music / R&B",
+   "details": "Valid photo ID required for entry. Doors: 6pm Show: 8pm 18+",
+   "url": "https://www.ticketmaster.com/space-bacon-dizgo-w-dj-greenie-brooklyn-new-york-10-23-2026/event/000064D0E2BCAD42",
+   "tags": [
+    "R&B"
+   ]
+  },
+  {
+   "id": "rZ7HnEZ1AfPUqK",
+   "title": "  Live Band Country Karaoke",
+   "category": "music",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lucinda's",
+    "address": "169 Avenue A, New York",
+    "neighborhood": "New York",
+    "lat": 40.728329,
+    "lng": -73.982199
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
    "description": "Music / Country",
-   "details": "Valid photo ID required for entry. Doors: 6pm Show: 7pm 18+",
-   "url": "https://www.ticketmaster.com/do-si-dontcha-yall-stars-country-brooklyn-new-york-10-22-2026/event/00006542D6BC90FA",
+   "details": "This event is 21 and over. Any ticket holder unable to present valid identification indicating that they are at least 21 years of age will not be admitted to this event, and will not be eligible for a refund.",
+   "url": "https://www.ticketweb.com/event/-live-band-country-lucindas-tickets/14976753",
    "tags": [
     "Country"
    ]
   },
   {
-   "id": "rZ7HnEZ1A4Zd8S",
-   "title": "BoogieManja",
-   "category": "community",
-   "start": "2026-10-22T19:00:00-04:00",
+   "id": "Z7r9jZ1A7xAFS",
+   "title": "Friko (18 and Over)",
+   "category": "music",
+   "start": "2026-10-23T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Brooklyn Improv (The Lab)",
-    "address": "64 N 9th Street, Brooklyn",
+    "name": "Music Hall of Williamsburg",
+    "address": "Brooklyn",
     "neighborhood": "Brooklyn",
-    "lat": 40.720751,
-    "lng": -73.959998
+    "lat": 40.711102,
+    "lng": -73.956497
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Music / Alternative",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7xAFS",
+   "tags": [
+    "Alternative"
+   ]
+  },
+  {
+   "id": "rZ7HnEZ1A4Zb0d",
+   "title": "Robert Glasper X Wyclef Presents Q Theory",
+   "category": "music",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Blue Note Jazz Club",
+    "address": "131 W. 3rd St, New York",
+    "neighborhood": "New York",
+    "lat": 40.73094,
+    "lng": -74.00065
    },
    "price": {
-    "min": 21,
-    "max": 21,
+    "min": 89,
+    "max": 153,
     "currency": "USD"
    },
    "priceUnknown": false,
-   "description": "",
-   "details": "DO NOT PURCHASE TICKETS FROM ANYONE OR ANY OTHER SITE OTHER THAN IMPROV.COM TICKET RESALE IS STRICTLY PROHIBITED. TICKETS SUSPECTED OF BEING PURCHASED FOR THE SOLE PURPOSE OF RESELLING MAY BE CANCELLED AT THE DISCRETION OF THE BREA IMPROV. EVENT INFO: Seating is general admission, first-come, first-served, with the exception of groups and premium booths. No cell phone use, photography or video recording is permitted during performances. All sales are final. MISCELLANOUS: For group sales info, e-mail our Events Manager to learn about special menu options and reserved seating. Additional questions may be addressed in our Frequently Asked Questions. For further assistance, contact Brooklyn Improv.",
-   "url": "https://www.ticketweb.com/event/boogiemanja-brooklyn-improv-the-lab-tickets/15003433",
-   "tags": []
+   "description": "Music / Jazz",
+   "details": "$20 Minimum Per Person Full Bar & Dinner Menu NO REFUNDS OR EXCHANGES. All seating is first come, first served. Bar Area seating is limited and first come first served. When all available seats are occupied, the remaining bar area is standing room only. Table Seating is all ages, Bar Area is 21+. Bar Area tickets for patrons under 21 will not be honored. Group Reservations: Groups larger than 8 must purchase a group package at club@bluenote.net, or by calling 212.475.8592. Groups larger than 8 without a group package will be subject to group surcharges added to your bill. Groups arriving late or separately are not guaranteed to be seated together. All seating is first come, first served. Arrive early for best seats. We are not affiliated with any third-party ticket sellers. Tickets purchased directly through our official website or TicketWeb are the only authorized sources. We cannot guarantee the validity of tickets purchased through unauthorized sources. To protect against fraud and unauthorized ticket sales, management may require verification of the original purchase method, including presenting the credit card used for purchase and matching photo identification upon entry.",
+   "url": "https://www.ticketweb.com/event/robert-glasper-x-wyclef-presents-blue-note-jazz-club-tickets/15018903",
+   "tags": [
+    "Jazz"
+   ]
   },
   {
-   "id": "Z7r9jZ1A7xpjw",
-   "title": "The Damned (16 and Over)",
+   "id": "G5diZ_dfkEICb",
+   "title": "Harry Styles: Together, Together",
    "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
+   "start": "2026-10-23T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Brooklyn Steel",
-    "address": "319 Frost St, Brooklyn",
-    "neighborhood": "Brooklyn",
-    "lat": 40.7272,
-    "lng": -73.945602
+    "name": "Madison Square Garden",
+    "address": "7th Ave & 32nd Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.749706,
+    "lng": -73.991601
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Music / Pop",
+   "details": "PLEASE NOTE: Pricing is all-in and includes fees (before taxes if applicable). By purchasing tickets to this event, you agree to abide by the health and safety measures in effect at the time of the event. Government mandates, venue protocols, and event requirements are subject to change. For more information, please search your event on msg.com. This event may have immersive elements, which may include flashing or strobe lights, intense lighting, visual effects, loud noises, smoke and/or fog. Such elements may aggravate certain medical or physical conditions, and guests should take this into consideration if they have a history of discomfort or physical symptoms when experiencing these elements.",
+   "url": "https://www.ticketmaster.com/harry-styles-together-together-new-york-new-york-10-23-2026/event/3B006435069E8398",
+   "tags": [
+    "Pop"
+   ]
+  },
+  {
+   "id": "vvG1GZ_u5hn-56",
+   "title": "Sanctuary Park Tour: Celebrating 40 Years of The Jayhawks ",
+   "category": "music",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Town Hall",
+    "address": "123 West 43rd Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.755992,
+    "lng": -73.984477
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Music / Rock",
+   "details": "",
+   "url": "https://www.ticketmaster.com/sanctuary-park-tour-celebrating-40-years-new-york-new-york-10-23-2026/event/030064D2DBAA12C7",
+   "tags": [
+    "Rock"
+   ]
+  },
+  {
+   "id": "Z1r9uZruZqGZ1AvZ6CZ",
+   "title": "Wanted",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "James Earl Jones Theatre",
+    "address": "138 W 48th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.759188,
+    "lng": -73.98313
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Children under 4 years old will not be admitted. (2) Herbal cigarettes are used on stage. (3) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (4) Strobe or flashing lights are used in this production. (5) This production uses loud sound effects including gun shots. (6) This production uses theatrical haze and smoke. (7) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/wanted-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ1AvZ6CZ",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZruZqGZ1AvZ3Gs",
+   "title": "Downstate",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Booth Theatre",
+    "address": "222 W 45th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.758343,
+    "lng": -73.987032
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (2) This production contains mature content and is intended purely for audiences ages 17 and older. (3) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/downstate-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ1AvZ3Gs",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZruZqGZ1AvZap9",
+   "title": "Billy Crystal: 860",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Imperial Theatre",
+    "address": "249 W 45th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.759102,
+    "lng": -73.987106
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/billy-crystal-860-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ1AvZap9",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z1r9uZruZqGZ17J_q4",
+   "title": "Chicago",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Ambassador Theatre",
+    "address": "219 West 49th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.761368,
+    "lng": -73.985024
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Children under 4 years old will not be admitted. (2) Herbal cigarettes are used on stage. (3) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (4) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/chicago-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ17J_q4",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "17GZv0G62rKjKQm",
+   "title": "Perfect Crime",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Theater Center",
+    "address": "210 W. 50th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.761604,
+    "lng": -73.9846
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/perfect-crime-new-york-new-york-10-23-2026/event/300064F7937136AE",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7JkFN",
+   "title": "Billy Crystal",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Imperial Theatre - NY",
+    "address": "249 W. 45th St., New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7JkFN",
+   "tags": []
+  },
+  {
+   "id": "Z7r9jZ1A7P-qx",
+   "title": "Wanted",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "James Earl Jones Theatre",
+    "address": "138 W. 48th St., New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7P-qx",
+   "tags": []
+  },
+  {
+   "id": "Z7r9jZ1AAZoCF",
+   "title": "The Fantasticks",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Helen Hayes Theatre",
+    "address": "240 W 44th St., New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Miscellaneous",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZoCF",
+   "tags": [
+    "Miscellaneous"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1AAvJaE",
+   "title": "Downstate",
+   "category": "music",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Booth Theatre",
+    "address": "222 W. 45th St., New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
    },
    "price": null,
    "priceUnknown": true,
    "description": "Music / Other",
    "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7xpjw",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAvJaE",
    "tags": [
     "Other"
    ]
   },
   {
-   "id": "rZ7HnEZ1Afus17",
-   "title": "Reunion Live Short Play Night",
+   "id": "Z1r9uZruZqGZ1AvZ8kd",
+   "title": "Just In Time",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Circle In The Square Theatre",
+    "address": "235 W 50th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.762173,
+    "lng": -73.985349
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Children under 8 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Performances begin promptly. There is no late seating. Patrons who leave their seat for any reason during the performance will not be re-admitted. (4) This production uses a gunshot sound effect. (5) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/just-in-time-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ1AvZ8kd",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7Pyb3",
+   "title": "Drunk Dracula",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Ruby Theatre",
+    "address": "35 W 39th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.755699,
+    "lng": -73.996696
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Pyb3",
+   "tags": []
+  },
+  {
+   "id": "Z7r9jZ1AAZf7J",
+   "title": "Petite Rouge (21+ Event)",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Theatre XIV",
+    "address": "383 Troutman St, Brooklyn",
+    "neighborhood": "Brooklyn",
+    "lat": 40.704399,
+    "lng": -73.921204
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Miscellaneous",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZf7J",
+   "tags": [
+    "Miscellaneous"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A70FvO",
+   "title": "Chicago - The Musical",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Ambassador Theatre-NY",
+    "address": "215 W. 49th St., New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70FvO",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A70gx4",
+   "title": "Paranormal Activity (NY)",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "August Wilson Theatre-NY",
+    "address": "245 W. 52nd St., New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70gx4",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1AA7bkF",
+   "title": "Just In Time",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Circle in the Square Theatre",
+    "address": "235 W 50th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA7bkF",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1AAZxua",
+   "title": "New York Pops: 007: James Bond Forever",
+   "category": "music",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Stern Auditorium / Perelman Stage at Carnegie Hall",
+    "address": "891 Seventh Avenue, New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Music / Classical",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZxua",
+   "tags": [
+    "Classical"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1AAvoFt",
+   "title": "The Unbelievers",
    "category": "community",
-   "start": "2026-10-22T19:00:00-04:00",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New York City Center",
+    "address": "131 W. 55th St., New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAvoFt",
+   "tags": []
+  },
+  {
+   "id": "Z1r9uZruZqGZ1AvZ817",
+   "title": "A Few Good Men",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lincoln Center - Vivian Beaumont Theater",
+    "address": "150 W 65th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.773923,
+    "lng": -73.98436
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "(1) Tickets are on a delayed delivery.",
+   "url": "https://www.ticketmaster.com/a-few-good-men-new-york-new-york-10-23-2026/event/Z1r9uZruZqGZ1AvZ817",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "17GZv0G61Ux2pkD",
+   "title": "Arcángel - La 8va Maravilla World Tour",
+   "category": "music",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Barclays Center",
+    "address": "620 Atlantic Ave, Brooklyn",
+    "neighborhood": "Brooklyn",
+    "lat": 40.68285,
+    "lng": -73.97519
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Music / Hip-Hop/Rap",
+   "details": "Tickets are not available at the box office on the first day of the public on sale. Visit Barclays Center's A-Z Info Guide for venue information and frequently asked questions. SHOW: 8:00 PM ALL AGES EVENT BAG POLICY: Any bags larger than 10\" x 6\" x 2\" are not permitted inside Barclays Center.",
+   "url": "https://www.ticketmaster.com/arcangel-la-8va-maravilla-world-tour-brooklyn-new-york-10-23-2026/event/300064ADA23D61BB",
+   "tags": [
+    "Hip-Hop/Rap"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7J6O_",
+   "title": "A Few Good Men",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lincoln Center - Vivian Beaumont",
+    "address": "150 West 65th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.7761,
+    "lng": -73.9841
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Miscellaneous",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7J6O_",
+   "tags": [
+    "Miscellaneous"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7J3bP",
+   "title": "Thundercat w/ TiaCorine",
+   "category": "music",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Kings Theatre",
+    "address": "1027 Flatbush Avenue, Brooklyn",
+    "neighborhood": "Brooklyn",
+    "lat": 40.646301,
+    "lng": -73.956398
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Music / Other",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7J3bP",
+   "tags": [
+    "Other"
+   ]
+  },
+  {
+   "id": "k7vGF_1xItqSY",
+   "title": "Trombone Shorty & Orleans Avenue  with Mavis Staples",
+   "category": "music",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New Jersey Performing Arts Center",
+    "address": "1 Center Street, Newark",
+    "neighborhood": "Newark",
+    "lat": 40.739502,
+    "lng": -74.16809
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Music / Jazz",
+   "details": "Legendary soul singer Mavis Staples and virtuoso funk musician Trombone Shorty have frequently collaborated, bringing their distinct New Orleans rooted styles together for live performances and tours. They have shared stages at major events like the New Orleans Jazz & Heritage Festival and toured together in 2023, often performing classics like The Weight among others.",
+   "url": "https://www.ticketmaster.com/trombone-shorty-orleans-avenue-with-mavis-newark-new-jersey-10-23-2026/event/000064A8A8A5DCF0",
+   "tags": [
+    "Jazz"
+   ]
+  },
+  {
+   "id": "k7vGF_GRR3j39",
+   "title": "Darren Fleet",
+   "category": "comedy",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New Jersey Performing Arts Center",
+    "address": "1 Center Street, Newark",
+    "neighborhood": "Newark",
+    "lat": 40.739502,
+    "lng": -74.16809
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Comedy",
+   "details": "Darren Fleet is a rapidly rising American stand up comedian and digital content creator who built a massive following through his viral social media rants. Originally from Virginia, Fleet transition from internet sketch fame into headlining and selling out major Alist comedy rooms nationwide. He describes himself as a highly non traditional, high-energy comedian who leans heavily into sharp pop culture commentary, everyday observations, and diverse, inclusive humor.",
+   "url": "https://www.ticketmaster.com/darren-fleet-newark-new-jersey-10-23-2026/event/000064CBEF49C497",
+   "tags": [
+    "Comedy"
+   ]
+  },
+  {
+   "id": "rZ7HnEZ1AfuY07",
+   "title": "Pitchfork Comedy Festival",
+   "category": "community",
+   "start": "2026-10-23T20:15:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -540,543 +2734,60 @@
     "currency": "USD"
    },
    "priceUnknown": false,
-   "description": "",
-   "details": "This event is 21 and over. Any ticket holder unable to present valid identification indicating that they are at least 21 years of age will not be admitted to this event, and will not be eligible for a refund.",
-   "url": "https://www.ticketweb.com/event/reunion-live-short-play-night-night-club-101-tickets/14371284",
-   "tags": []
-  },
-  {
-   "id": "rZ7HnEZ1AfG3uf",
-   "title": "Susto (solo) with special guest Daniel Ray Hillsinger",
-   "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Drom",
-    "address": "85 Avenue A, New York",
-    "neighborhood": "New York",
-    "lat": 40.725324,
-    "lng": -73.984314
-   },
-   "price": {
-    "min": 33,
-    "max": 50,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "Music / Country",
-   "details": "SUSTO (Solo) - Justin Osborne is a singer, songwriter, and storyteller best known as the founder and frontmanof SUSTO. Since founding the band in 2013 while living in Havana, Cuba, Osborne has built anexpansive catalog rooted in deeply personal lyricism and a sound that moves between SouthernGothic, folk, rock, country, and psychedelia.Across SUSTO, the roots-oriented Susto Stringband, and his solo performances, Osborne'ssongwriting remains the throughline---confessional, searching, and shaped by love, loss,change, resilience, and the strange beauty of everyday life. Performing solo brings those songsback to their foundation, putting Osborne's voice, lyrics, and storytelling front and center andoffering an intimate look at the songwriter behind the catalog. Daniel Ray Hillsinger Website - https://danielrayhilsinger.com/ Spotify - https://open.spotify.com/artist/0ZugMhJumMgfKPfAXFzLNU IG - https://www.instagram.com/danielrayhilsinger/",
-   "url": "https://www.ticketweb.com/event/susto-solo-with-special-guest-drom-tickets/14312354",
-   "tags": [
-    "Country"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1AAZVfz",
-   "title": "Swapmeet (18 and Over)",
-   "category": "community",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Baby's All Right",
-    "address": "146 Broadway, Brooklyn",
-    "neighborhood": "Brooklyn",
-    "lat": 40.711102,
-    "lng": -73.956497
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZVfz",
-   "tags": []
-  },
-  {
-   "id": "17GZv0G6GEx8Iid",
-   "title": "Slam Frank",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Orpheum Theatre NYC",
-    "address": "126 Second Ave., New York",
-    "neighborhood": "New York",
-    "lat": 40.728188,
-    "lng": -73.987498
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/slam-frank-new-york-new-york-10-22-2026/event/300064C9E2428B03",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "rZ7HnEZ1AfG8F0",
-   "title": "Literally Entertainment: A Live Music and Comedy Show",
-   "category": "community",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Berlin",
-    "address": "The Lower-Level of 2A Bar, New York",
-    "neighborhood": "New York",
-    "lat": 40.722974,
-    "lng": -73.98608
-   },
-   "price": {
-    "min": 18,
-    "max": 18,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "This event is 21 and over. Any ticket holder unable to present valid identification indicating that they are at least 21 years of age will not be admitted to this event, and will not be eligible for a refund.",
-   "url": "https://www.ticketweb.com/event/literally-entertainment-a-live-music-berlin-tickets/14310224",
-   "tags": []
-  },
-  {
-   "id": "k7vGF_uFuuRuV",
-   "title": "Carly Pearce - Honest Woman: Up Close - Presented by Conundrum Wines",
-   "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Gramercy Theatre",
-    "address": "127 East 23rd Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.739754,
-    "lng": -73.985013
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Music / Country",
-   "details": "Accessible accommodations should purchase a General Admission ticket and will be taken care of at the venue day of event.",
-   "url": "https://www.ticketmaster.com/carly-pearce-honest-woman-up-close-new-york-new-york-10-22-2026/event/000064D20D36F374",
-   "tags": [
-    "Country"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7P8aA",
-   "title": "The Curious Case of the Curse of Benjamin Button",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Public Theater - Newman Theater",
-    "address": "425 Lafayette Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.731602,
-    "lng": -73.989098
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7P8aA",
-   "tags": []
-  },
-  {
-   "id": "k7vGF_2hK5wL0",
-   "title": "After",
-   "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Bowery Ballroom",
-    "address": "6 Delancey St., New York",
-    "neighborhood": "New York",
-    "lat": 40.720364,
-    "lng": -73.993542
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Music / Rock",
-   "details": "After w/ Silverdeer [Ages 16+ (Under 16 with parent or guardian), Doors Open 7pm, $20 Advance, $25 Day of Show]",
-   "url": "https://www.ticketmaster.com/after-new-york-new-york-10-22-2026/event/000064F6D32F27E4",
-   "tags": [
-    "Rock"
-   ]
-  },
-  {
-   "id": "17GZv0G629Ln1GU",
-   "title": "A Ghost in Your Ear",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Audible's Minetta Lane Theatre",
-    "address": "18 Minetta Lane, New York",
-    "neighborhood": "New York",
-    "lat": 40.730358,
-    "lng": -74.001268
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "When an actor arrives late to a sound studio for a last-minute audiobook recording session, he is handed the script of a chilling ghost story to read. But as the engineer cues the recording and the evening wears on, the horrors slowly begin to escape the page to haunt the studio itself. Fresh from an acclaimed, sold-out run in London, A GHOST IN YOUR EAR is the \"truly terrifying headphone horror\" (The Guardian) from the darkly brilliant mind of Tony Award® nominee Jamie Armitage (SIX), made in collaboration with Ben and Max Ringham (ANNA, National Theatre). A mesmerizing blend of gothic horror and psychological thriller, this cutting-edge theatrical experience uses groundbreaking binaural sound technology to immerse every audience member in a haunting world of sound. And at Audible's Minetta Lane Theatre - one of New York's most intimate venues - there's no escaping the frights. Enter if you dare.",
-   "url": "https://www.ticketmaster.com/a-ghost-in-your-ear-new-york-new-york-10-22-2026/event/300064F5DFA8A336",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "LvZ18QtpELPcXD1CuCpJr",
-   "title": "MOCA PERFORMS – Echoes of Arrival: Becoming",
-   "category": "art",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Museum of Chinese in America",
-    "address": "215 Centre Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.719533,
-    "lng": -73.999029
-   },
-   "price": null,
-   "priceUnknown": true,
    "description": "Miscellaneous",
-   "details": "",
-   "url": "https://www.universe.com/events/moca-performs-echoes-of-arrival-becoming-tickets-L6ZS1D?ref=ticketmaster",
+   "details": "This event is 21 and over. Any ticket holder unable to present valid identification indicating that they are at least 21 years of age will not be admitted to this event, and will not be eligible for a refund.",
+   "url": "https://www.ticketweb.com/event/pitchfork-comedy-festival-night-club-101-tickets/14370904",
    "tags": []
   },
   {
-   "id": "Z1r9uZruZqGZ17Jbb9",
-   "title": "Maybe Happy Ending",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
+   "id": "LvZ18QlUQdTK2Ky1n7itA",
+   "title": "Halloween Fright Night Game",
+   "category": "art",
+   "start": "2026-10-23T20:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Belasco Theatre",
-    "address": "111 W 44th St, New York",
+    "name": "Banksy Museum New York",
+    "address": "277 Canal St, New York",
     "neighborhood": "New York",
-    "lat": 40.756627,
-    "lng": -73.983961
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Strobe or flashing lights are used in this production. (4) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/maybe-happy-ending-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ17Jbb9",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z1r9uZrrZbpZ1Ae7AqY",
-   "title": "Schmigadoon!",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nederlander Theatre",
-    "address": "208 West 41st Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.755548,
-    "lng": -73.988237
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/schmigadoon-new-york-new-york-10-22-2026/event/Z1r9uZrrZbpZ1Ae7AqY",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "vvG1GZ_1DlKsl9",
-   "title": "Aladdin",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New Amsterdam Theatre",
-    "address": "214 West 42nd Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.756057,
-    "lng": -73.987929
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "Sherri Shepherd joins ALADDIN as Genie from October 16, 2026, through January 3, 2027. She has scheduled absences for the October 17 matinee, October 18 matinee, November 1 matinee and evening, and November 2 evening performances. Age Recommendation: ALADDIN is intended for guests 6 and up. All guests must have a ticket. Run time: Approximately two hours and thirty minutes, including a 15-minute intermission.",
-   "url": "https://www.ticketmaster.com/aladdin-new-york-new-york-10-22-2026/event/030064AEEB4F1AD7",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z1r9uZrrZbpZ1Ae78vK",
-   "title": "The Lion King (New York, NY)",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Minskoff Theatre",
-    "address": "200 West 45th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.757986,
-    "lng": -73.985772
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/the-lion-king-new-york-ny-new-york-new-york-10-22-2026/event/Z1r9uZrrZbpZ1Ae78vK",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1AAZKox",
-   "title": "Heated Rivalry: The Unauthorized Musical Parody",
-   "category": "community",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Culture Club",
-    "address": "530 W 27th St 6TH FL, New York",
-    "neighborhood": "New York",
-    "lat": 40.75,
-    "lng": -73.996696
+    "lat": 40.719603,
+    "lng": -74.001358
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZKox",
+   "url": "https://www.universe.com/events/halloween-fright-night-game-tickets-VCDFMY?ref=ticketmaster",
    "tags": []
   },
   {
-   "id": "Z1r9uZrrZbpZ1Aev7oa",
-   "title": "Stranger Things: The First Shadow",
+   "id": "17GZv0G62rfBSNe",
+   "title": "Friends! The Musical Parody (New York)",
    "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
+   "start": "2026-10-23T20:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Marquis Theatre",
-    "address": "210 West 46th Street, New York",
+    "name": "The Theater Center",
+    "address": "210 W. 50th Street, New York",
     "neighborhood": "New York",
-    "lat": 40.758526,
-    "lng": -73.985774
+    "lat": 40.761604,
+    "lng": -73.9846
    },
    "price": null,
    "priceUnknown": true,
    "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/stranger-things-the-first-shadow-new-york-new-york-10-22-2026/event/Z1r9uZrrZbpZ1Aev7oa",
+   "details": "It's a seemingly typical day at New York's only coffee shop, Central Perk, until an unexpected runaway bride with beautiful hair enters the picture and kicks the whole gang out of second gear!",
+   "url": "https://www.ticketmaster.com/friends-the-musical-parody-new-york-new-york-new-york-10-23-2026/event/300064F794EB38C2",
    "tags": [
     "Theatre"
    ]
   },
   {
-   "id": "Z1r9uZrrZbpZ1AvOAfp",
-   "title": "The Lost Boys",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Palace Theatre New York",
-    "address": "1564 Broadway, New York",
-    "neighborhood": "New York",
-    "lat": 40.7591,
-    "lng": -73.984679
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/the-lost-boys-new-york-new-york-10-22-2026/event/Z1r9uZrrZbpZ1AvOAfp",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z1r9uZruZqGZ1AvZ6AY",
-   "title": "Buena Vista Social Club",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Gerald Schoenfeld Theatre",
-    "address": "236 W 45th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.758506,
-    "lng": -73.987426
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) The show's dialogue is in English, while the songs are performed in the original Spanish from the beloved album. But Buena Vista Social Club is truly a show for everyone. The songs enrich the story, infusing it with an authentic Havana heartbeat. You won't lose the plot if you don't understand the lyrics - what matters most is how the music makes you feel. (4) This production uses theatrical haze and smoke. (5) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/buena-vista-social-club-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ1AvZ6AY",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z1r9uZrrZbpZ1AvqdAN",
-   "title": "Hamilton (NY)",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Richard Rodgers Theatre",
-    "address": "226 West 46th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.759204,
-    "lng": -73.986763
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/hamilton-ny-new-york-new-york-10-22-2026/event/Z1r9uZrrZbpZ1AvqdAN",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z1r9uZruZqGZ1AvZapp",
-   "title": "Billy Crystal: 860",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Imperial Theatre",
-    "address": "249 W 45th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.759102,
-    "lng": -73.987106
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/billy-crystal-860-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ1AvZapp",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z1r9uZruZqGZ17Je_y",
-   "title": "Operation Mincemeat: A New Musical",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "John Golden Theatre",
-    "address": "252 W 45th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.758841,
-    "lng": -73.98791
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Strobe or flashing lights are used in this production. (4) This production contains moments of darkness. (5) This production uses loud sound effects. (6) This production uses theatrical haze and smoke. (7) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/operation-mincemeat-a-new-musical-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ17Je_y",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z1r9uZrrZbpZ1AvP6uN",
-   "title": "Six (New York, NY)",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lena Horne Theatre",
-    "address": "256 West 47th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.760056,
-    "lng": -73.986816
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/six-new-york-ny-new-york-new-york-10-22-2026/event/Z1r9uZrrZbpZ1AvP6uN",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z1r9uZruZqGZ1AvZ6eK",
-   "title": "School Girls; Or, the African Mean Girls Play",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Samuel J Friedman Theatre",
-    "address": "261 W 47th St,, New York",
-    "neighborhood": "New York",
-    "lat": 40.760371,
-    "lng": -73.986739
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Please note, the first opportunity for late seating occurs approximately 30 minutes into the show. Late seating will be at the discretion of Theatre Management. (4) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/school-girls-or-the-african-mean-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ1AvZ6eK",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z1r9uZruZqGZ17J_qk",
-   "title": "Chicago",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Ambassador Theatre",
-    "address": "219 West 49th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.761368,
-    "lng": -73.985024
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Children under 4 years old will not be admitted. (2) Herbal cigarettes are used on stage. (3) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (4) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/chicago-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ17J_qk",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "rZ7HnEZ1AfFNr7",
+   "id": "rZ7HnEZ1AfFNOV",
    "title": "Ron Carter's Great Big Band",
    "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
+   "start": "2026-10-23T20:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -1094,167 +2805,16 @@
    "priceUnknown": false,
    "description": "Music / Jazz",
    "details": "Ron Carter is among the most original, prolific and influential bassists in jazz with more than 2,000 albums to his credit. Beginning his career in the 1960s with Jaki Byard and Eric Dolphy, Cannonball Adderley, and a five year stint with the Miles Davis' Quintet, Ron also performed and recorded with notables including Bill Evans, B.B. King, and Dexter Gordon. Ron Carter's various ensembles, big band to trio, feature a who's who of the finest players on the NYC scene with, , \"rdquo\" -> an absolute commitment to musical sublimity [that] exudes refined elegance and sonic power.\" (amazon.com) Photo Credit: Peter Schnall",
-   "url": "https://www.ticketweb.com/event/ron-carters-great-big-band-birdland-jazz-club-tickets/14223784",
+   "url": "https://www.ticketweb.com/event/ron-carters-great-big-band-birdland-jazz-club-tickets/14223834",
    "tags": [
     "Jazz"
    ]
   },
   {
-   "id": "Z7r9jZ1A7-J_v",
-   "title": "Maybe Happy Ending",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Belasco Theatre - NY",
-    "address": "111 W. 44th St., New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7-J_v",
-   "tags": []
-  },
-  {
-   "id": "Z7r9jZ1A70OjE",
-   "title": "Six: The Musical",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lena Horne Theatre",
-    "address": "256 W. 47th St., New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Miscellaneous",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70OjE",
-   "tags": [
-    "Miscellaneous"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7Jo4S",
-   "title": "The Heart",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Laura Pels Theatre",
-    "address": "111 West 46th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Jo4S",
-   "tags": []
-  },
-  {
-   "id": "Z7r9jZ1A7PKu0",
-   "title": "Music City",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "St. Luke's Theatre",
-    "address": "308 West 46th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PKu0",
-   "tags": []
-  },
-  {
-   "id": "Z7r9jZ1A7PNvf",
-   "title": "Other Desert Cities",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Hudson Theatre -NY",
-    "address": "145 W. 44th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Performance Art",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PNvf",
-   "tags": [
-    "Performance Art"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7PO4z",
-   "title": "Billy Crystal",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Imperial Theatre - NY",
-    "address": "249 W. 45th St., New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PO4z",
-   "tags": []
-  },
-  {
-   "id": "Z7r9jZ1A7P_84",
-   "title": "CATS: The Jellicle Ball",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Broadhurst Theatre",
-    "address": "235 W. 44th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7P_84",
-   "tags": []
-  },
-  {
-   "id": "Z7r9jZ1A7Pgv7",
+   "id": "Z7r9jZ1A7PU-k",
    "title": "Ron Carter",
    "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
+   "start": "2026-10-23T20:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -1268,943 +2828,64 @@
    "priceUnknown": true,
    "description": "Music / Other",
    "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Pgv7",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PU-k",
    "tags": [
     "Other"
    ]
   },
   {
-   "id": "Z7r9jZ1A7qxQd",
-   "title": "Lost Boys Musical w/ Unknown Mortal Orchestra",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Palace Theatre-NY",
-    "address": "1564 Broadway, New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7qxQd",
-   "tags": []
-  },
-  {
-   "id": "Z7r9jZ1A7rKF9",
-   "title": "Harry Potter and the Cursed Child",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lyric Theatre - NY",
-    "address": "213 W 42nd St, New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Performance Art",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7rKF9",
-   "tags": [
-    "Performance Art"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7x4Z3",
-   "title": "Hadestown",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Walter Kerr Theatre",
-    "address": "219 West 48th St., New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Miscellaneous",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7x4Z3",
-   "tags": [
-    "Miscellaneous"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1AA73F9",
-   "title": "Hamilton",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Richard Rodgers Theatre-NY",
-    "address": "226 W. 46th St., New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA73F9",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1AA7KJK",
-   "title": "Stranger Things: The First Shadow",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Marquis Theatre - NY",
-    "address": "211 W 45th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA7KJK",
-   "tags": []
-  },
-  {
-   "id": "Z7r9jZ1AAZe19",
-   "title": "School Girls:Or, The African Mean Girls",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Samuel J. Friedman Theatre",
-    "address": "261 West 47th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Miscellaneous",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZe19",
-   "tags": [
-    "Miscellaneous"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1AAe_Q3",
-   "title": "The Lion King",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Minskoff Theatre",
-    "address": "1515 Broadway, New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAe_Q3",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1AAvPO7",
-   "title": "Schmigadoon!",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nederlander Theatre",
-    "address": "208 West 41st St., New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAvPO7",
-   "tags": []
-  },
-  {
-   "id": "Z7r9jZ1AAvo7y",
-   "title": "The Visitors",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Irene Diamond Stage at Signature Theatre",
-    "address": "480 West 42nd Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAvo7y",
-   "tags": []
-  },
-  {
-   "id": "Z1r9uZrrZbpZ1Av-A_Y",
-   "title": "Wicked (NY)",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Gershwin Theatre",
-    "address": "222 West 51st Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.762542,
-    "lng": -73.985027
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/wicked-ny-new-york-new-york-10-22-2026/event/Z1r9uZrrZbpZ1Av-A_Y",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z1r9uZrrZbpZ1Av0p0E",
-   "title": "MJ",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Neil Simon Theatre",
-    "address": "250 West 52nd Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.763146,
-    "lng": -73.983996
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/mj-new-york-new-york-10-22-2026/event/Z1r9uZrrZbpZ1Av0p0E",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z1r9uZruZqGZ1AvZa7S",
-   "title": "The Play That Goes Wrong",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New World Stages - Stage 4",
-    "address": "340 W 50th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.763014,
-    "lng": -73.987627
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/the-play-that-goes-wrong-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ1AvZa7S",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z1r9uZruZqGZ1AvZk0p",
-   "title": "Jamie Allan's Amaze",
-   "category": "community",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New World Stages - Stage 5",
-    "address": "340 W 50th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.763014,
-    "lng": -73.987627
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Miscellaneous",
-   "details": "(1) A bright light effect is used in this production. (2) Children under 4 years old will not be admitted. (3) Latecomers will be seated at the discretion of management. (4) Strobe or flashing lights are used in this production. (5) This production uses theatrical haze and smoke. (6) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/jamie-allans-amaze-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ1AvZk0p",
-   "tags": []
-  },
-  {
-   "id": "Z7r9jZ1A70Fv_",
-   "title": "Chicago - The Musical",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Ambassador Theatre-NY",
-    "address": "215 W. 49th St., New York",
-    "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70Fv_",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A70gxf",
-   "title": "Paranormal Activity (NY)",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "August Wilson Theatre-NY",
-    "address": "245 W. 52nd St., New York",
-    "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70gxf",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A70xvd",
-   "title": "Jamie Allan",
-   "category": "community",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New World Stages - Stage 5",
-    "address": "340 West 50th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70xvd",
-   "tags": []
-  },
-  {
-   "id": "Z7r9jZ1A7Jvfz",
-   "title": "The Rocky Horror Show",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Studio 54",
-    "address": "254 W. 54th St., New York",
-    "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Jvfz",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7PV1d",
-   "title": "Heathers",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New World Stages - Stage 1",
-    "address": "340 West 50th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PV1d",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7rf0-",
-   "title": "Wicked",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Gershwin Theatre",
-    "address": "222 West 51st. St., New York",
-    "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7rf0-",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7xFu7",
-   "title": "MJ (NY)",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Neil Simon Theatre",
-    "address": "250 West 52nd St., New York",
-    "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Miscellaneous",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7xFu7",
-   "tags": [
-    "Miscellaneous"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7xeA0",
-   "title": "The Book of Mormon",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Eugene O'Neill Theatre",
-    "address": "230 W 49th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7xeA0",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1AAvoFI",
-   "title": "The Unbelievers",
-   "category": "community",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New York City Center",
-    "address": "131 W. 55th St., New York",
-    "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAvoFI",
-   "tags": []
-  },
-  {
-   "id": "k7vGF_FCcIGqH",
-   "title": "BECK: RIDE LONESOME TOUR",
+   "id": "k7vGF_uhoHA2G",
+   "title": "Rachel Bochner | The \"Sorry If It's Selfish\" Tour",
    "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
+   "start": "2026-10-23T21:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Brooklyn Paramount",
-    "address": "385 Flatbush Ave. Extension, Brooklyn",
-    "neighborhood": "Brooklyn",
-    "lat": 40.691373,
-    "lng": -73.981241
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Music / Rock",
-   "details": "Doors: 7PM Show: 8PM All set times and opening acts are subject to change without notice. For accessible seating inquiries, please email us directly at Info@BrooklynParamount.com to reserve accommodations. Balcony Includes: Exclusive Entrance via Dekalb Ave. Balcony Access Private Bar Private Bathrooms Private Coat Check",
-   "url": "https://www.ticketmaster.com/beck-ride-lonesome-tour-brooklyn-new-york-10-22-2026/event/00006483ADA0C77C",
-   "tags": [
-    "Rock"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1AAZAGs",
-   "title": "Pre-Existing Condition",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Greenwich House Theater",
-    "address": "27 Barrow Street, New York",
+    "name": "Mercury Lounge",
+    "address": "217 East Houston St., New York",
     "neighborhood": "New York",
-    "lat": 40.7034,
-    "lng": -74.013199
+    "lat": 40.722036,
+    "lng": -73.986806
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZAGs",
+   "description": "Music / Pop",
+   "details": "Rachel Bochner | The \"Sorry If It's Selfish\" Tour [Ages 18+, Doors Open 9pm, $17 Advance, $20 Day of Show]",
+   "url": "https://www.ticketmaster.com/rachel-bochner-the-sorry-if-its-new-york-new-york-10-23-2026/event/000064D6D1F053CC",
    "tags": [
-    "Theatre"
+    "Pop"
    ]
   },
   {
-   "id": "Z7r9jZ1A7p88S",
-   "title": "Little Shop of Horrors",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Westside Theatre Upstairs - NY",
-    "address": "252 W 81st St, New York",
-    "neighborhood": "New York",
-    "lat": 40.785999,
-    "lng": -73.9758
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7p88S",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z1r9uZruZqGZ17PPp9",
-   "title": "Little Shop Of Horrors",
-   "category": "theater",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Westside Theatre Upstairs",
-    "address": "407 West 43rd Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.785414,
-    "lng": -73.979548
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Performances begin promptly. There is no late seating. (4) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/little-shop-of-horrors-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ17PPp9",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "rZ7HnEZ1AfuP-f",
-   "title": "CUG's Movie Trivia Night",
-   "category": "film",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Williams Center - Cinema Underground - Rutherford",
-    "address": "15 Sylvan Street, Rutherford",
-    "neighborhood": "Rutherford",
-    "lat": 40.82711,
-    "lng": -74.10333
-   },
-   "price": {
-    "min": 0,
-    "max": 0,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "Miscellaneous",
-   "details": "Cinema Underground Presents: CUG's Movie Trivia Night!!! , \"rdquo\" -> Do you love movies? Do you think you know everything? Well come prove it and show us you are better than everyone else!\" *Winners receive gift cards to Soldato Books & Records",
-   "url": "https://www.ticketweb.com/event/cugs-movie-trivia-night-williams-center-cinema-tickets/14365854",
-   "tags": []
-  },
-  {
-   "id": "vvG1FZ_2eontw2",
-   "title": "New Jersey Devils vs. Anaheim Ducks",
-   "category": "sports",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Prudential Center",
-    "address": "25 Lafayette Street, Newark",
-    "neighborhood": "Newark",
-    "lat": 40.733406,
-    "lng": -74.171212
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sports / Hockey",
-   "details": "Doors open 90 minutes prior to puck drop.",
-   "url": "https://www.ticketmaster.com/new-jersey-devils-vs-anaheim-ducks-newark-new-jersey-10-22-2026/event/020064F091AA9C8F",
-   "tags": [
-    "Hockey"
-   ]
-  },
-  {
-   "id": "rZ7HnEZ1Afag7f",
-   "title": "Ahren Belisle",
+   "id": "rZ7HnEZ1AfuPG7",
+   "title": "Finally Friday with Sameer Naseem",
    "category": "community",
-   "start": "2026-10-22T19:30:00-04:00",
+   "start": "2026-10-23T21:15:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Brooklyn Improv (The Main Room)",
-    "address": "64 N 9th St, Brooklyn",
+    "name": "Brooklyn Improv (The Lab)",
+    "address": "64 N 9th Street, Brooklyn",
     "neighborhood": "Brooklyn",
     "lat": 40.720751,
     "lng": -73.959998
    },
    "price": {
-    "min": 33,
-    "max": 46,
+    "min": 19,
+    "max": 19,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "",
-   "details": "DO NOT PURCHASE TICKETS FROM ANYONE OR ANY OTHER SITE OTHER THAN IMPROV.COM TICKET RESALE IS STRICTLY PROHIBITED. TICKETS SUSPECTED OF BEING PURCHASED FOR THE SOLE PURPOSE OF RESELLING MAY BE CANCELLED AT THE DISCRETION OF THE BROOKLYN IMPROV. EVENT INFO: There is a two-item minimum purchase requirement in the showroom for all guests. Seating is general admission, first-come, first-served, with the exception of groups and premium booths. No cell phone use, photography or video recording is permitted during performances. All sales are final. MISCELLANOUS: For group sales info, e-mail our Events Manager to learn about special menu options and reserved seating. Additional questions may be addressed in our Frequently Asked Questions. For further assistance, contact Brooklyn Improv.",
-   "url": "https://www.ticketweb.com/event/ahren-belisle-brooklyn-improv-the-main-room-tickets/14275114",
+   "details": "DO NOT PURCHASE TICKETS FROM ANYONE OR ANY OTHER SITE OTHER THAN IMPROV.COM TICKET RESALE IS STRICTLY PROHIBITED. TICKETS SUSPECTED OF BEING PURCHASED FOR THE SOLE PURPOSE OF RESELLING MAY BE CANCELLED AT THE DISCRETION OF THE BROOKLYN IMPROV. EVENT INFO: There is a one-item minimum purchase requirement in the showroom for all guests. Seating is general admission, first-come, first-served, with the exception of groups and premium booths. No cell phone use, photography or video recording is permitted during performances. All sales are final. MISCELLANOUS: For group sales info, e-mail our Events Manager to learn about special menu options and reserved seating. Additional questions may be addressed in our Frequently Asked Questions. For further assistance, contact Brooklyn Improv.",
+   "url": "https://www.ticketweb.com/event/finally-friday-with-sameer-naseem-brooklyn-improv-the-lab-tickets/14365304",
    "tags": []
   },
   {
-   "id": "Z7r9jZ1AAZI7g",
-   "title": "Midnight",
-   "category": "theater",
-   "start": "2026-10-22T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Daryl Roth Theatre",
-    "address": "101 East 15th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.731602,
-    "lng": -73.989098
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZI7g",
-   "tags": []
-  },
-  {
-   "id": "Z1r9uZruZqGZ1AvZ8Po",
-   "title": "Midnight",
-   "category": "theater",
-   "start": "2026-10-22T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Daryl Roth Theatre",
-    "address": "101 E 15th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.735318,
-    "lng": -73.989443
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/midnight-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ1AvZ8Po",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "rZ7HnEZ1Afa93f",
-   "title": "Nick and the Old Sport | Wifeknife | Whaat | The Retired Saints",
-   "category": "music",
-   "start": "2026-10-22T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Bowery Palace",
-    "address": "327 Bowery, New York",
-    "neighborhood": "New York",
-    "lat": 40.7257,
-    "lng": -73.991673
-   },
-   "price": {
-    "min": 12,
-    "max": 12,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "Music / Other",
-   "details": "This event is 21 and over. Any ticket holder unable to present valid identification indicating that they are at least 21 years of age will not be admitted to this event, and will not be eligible for a refund.",
-   "url": "https://www.ticketweb.com/event/nick-and-the-old-sport-bowery-palace-tickets/14257494",
-   "tags": [
-    "Other"
-   ]
-  },
-  {
-   "id": "Z1r9uZruZqGZ17J9Oe",
-   "title": "Oh, Mary!",
-   "category": "theater",
-   "start": "2026-10-22T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lyceum Theatre",
-    "address": "149 W 45th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.757703,
-    "lng": -73.984511
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) This production uses a gunshot sound effect. (4) This production uses theatrical haze and smoke. (5) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/oh-mary-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ17J9Oe",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1AAZfAN",
-   "title": "2:22 - A Ghost Story",
-   "category": "theater",
-   "start": "2026-10-22T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lucille Lortel Theatre",
-    "address": "121 Christopher St, New York",
-    "neighborhood": "New York",
-    "lat": 40.733002,
-    "lng": -74.007103
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZfAN",
-   "tags": []
-  },
-  {
-   "id": "Z1r9uZruZqGZ17Jbv7",
-   "title": "Two Strangers (Carry a Cake Across New York)",
-   "category": "theater",
-   "start": "2026-10-22T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Longacre Theatre",
-    "address": "220 W 48th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.760363,
-    "lng": -73.985974
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Children under 4 years old will not be admitted. (2) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (3) Strobe or flashing lights are used in this production. (4) This production uses theatrical haze and smoke. (5) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/two-strangers-carry-a-cake-across-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ17Jbv7",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7-EvI",
-   "title": "Oh, Mary!",
-   "category": "theater",
-   "start": "2026-10-22T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lyceum Theatre - NY",
-    "address": "149 W. 45th St., New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Performance Art",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7-EvI",
-   "tags": [
-    "Performance Art"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7xkPp",
-   "title": "Two Strangers",
-   "category": "theater",
-   "start": "2026-10-22T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Longacre Theatre",
-    "address": "220 West 48th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7xkPp",
-   "tags": []
-  },
-  {
-   "id": "Z7r9jZ1AAvJF8",
-   "title": "Soon",
-   "category": "theater",
-   "start": "2026-10-22T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "St. Luke's Theatre",
-    "address": "308 West 46th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAvJF8",
-   "tags": []
-  },
-  {
-   "id": "Z1r9uZruZqGZ1AvZavw",
-   "title": "creation stories and all the important importants",
-   "category": "theater",
-   "start": "2026-10-22T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lincoln Center - Claire Tow Theater",
-    "address": "150 West 65th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.773878,
-    "lng": -73.984323
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/creation-stories-and-all-the-important-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ1AvZavw",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7JpQa",
-   "title": "creation stories and all the important importants",
-   "category": "theater",
-   "start": "2026-10-22T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lincoln Center - Claire Tow Theater",
-    "address": "150 West 65th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.7761,
-    "lng": -73.9841
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7JpQa",
-   "tags": []
-  },
-  {
-   "id": "G5diZ_GmmTfJP",
-   "title": "Yohay Sponder: Genesis",
+   "id": "1AYZk4vGkeYIJm0",
+   "title": "The Bell House Stand Up Showcase",
    "category": "comedy",
-   "start": "2026-10-22T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Beacon Theatre",
-    "address": "2124 Broadway @ 74th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.779925,
-    "lng": -73.980673
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Comedy",
-   "details": "PLEASE NOTE: Pricing is all-in and includes fees (before taxes if applicable). By purchasing tickets to this event, you agree to abide by the health and safety measures in effect at the time of the event. Government mandates, venue protocols, and event requirements are subject to change. For more information, please search your event on www.beacontheatre.com. This event may have immersive elements, which may include flashing or strobe lights, intense lighting, visual effects, loud noises, smoke and/or fog. Such elements may aggravate certain medical or physical conditions, and guests should take this into consideration if they have a history of discomfort or physical symptoms when experiencing these elements.",
-   "url": "https://www.ticketmaster.com/yohay-sponder-genesis-new-york-new-york-10-22-2026/event/3B0064CBAEFD49A5",
-   "tags": [
-    "Comedy"
-   ]
-  },
-  {
-   "id": "1AdZZ_3GkWClR7R",
-   "title": "UpDating",
-   "category": "comedy",
-   "start": "2026-10-22T19:30:00-04:00",
+   "start": "2026-10-23T21:45:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -2217,71 +2898,25 @@
    "price": null,
    "priceUnknown": true,
    "description": "Arts & Theatre / Comedy",
-   "details": "UpDATING is the critically-acclaimed NYC-based live dating & comedy show bringing 2 singles on blindfolded 1st dates in front of live audiences. Dubbed \"the most raw dating show in existence,\" what follows is a hilarious show w/ audience participation, raw moments, & relatable feedback on modern romance in real-time w/ real people. Reality TV-unfolding & unedited on stage! Created, Produced & Hosted by NYC-based comedians, Brandon Berman & Harrison Forman. Door Time: 6:30pm. Show Time: 7:30pm. *Front Bar opens 1 hour prior to door time. 18 & over w/ valid, government-issued photo ID. General Admission standing & seating. *Seating is 1st come 1st served & not guaranteed. Arrive early for best selection. **If you have an accessibility request, please email thebellhouse@livenation.com prior. ***No outside food, drink permitted. $.25 per each ticket sold for a majority of events @ The Bell House benefits Comedy Gives Back. IG: @comedygivesback.",
-   "url": "https://www.ticketmaster.com/updating-brooklyn-new-york-10-22-2026/event/3000652F4EAEF12F",
+   "details": "With Isa Medina, Joyelle Nicole Johnson, Liam Dalton, Onika McLean, Rob Cantrell & Zahid Dewji. *Lineup subject to change. Door Time: 9:15pm. Show Time: 9:45pm. Join us in our lobby bar, prior to the door time, before the show! 21 & over w/ valid, government-issued photo ID. General Admission standing & seating. Seating is 1st come 1st served & not guaranteed. Arrive early for best selection. If you have an accessibility request, please email thebellhouse@livenation.com prior. No outside food, drink permitted. $.25 per each ticket sold for a majority of events at The Bell House benefits Comedy Gives Back, a safety net for the comedy community. IG: @comedygivesback.",
+   "url": "https://www.ticketmaster.com/the-bell-house-stand-up-showcase-brooklyn-new-york-10-23-2026/event/30006541B0A26BA4",
    "tags": [
     "Comedy"
    ]
   },
   {
-   "id": "k7vGF_GK39neT",
-   "title": "Little Big Town - For The Art Of It Tour",
+   "id": "rZ7HnEZ1AfCA4V",
+   "title": "hellotones “El Hijo de PueblaYork” Debut Single Release Party",
    "category": "music",
-   "start": "2026-10-22T19:30:00-04:00",
+   "start": "2026-10-23T22:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "New Jersey Performing Arts Center",
-    "address": "1 Center Street, Newark",
-    "neighborhood": "Newark",
-    "lat": 40.739502,
-    "lng": -74.16809
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Music / Country",
-   "details": "Little Big Town is an American country music vocal group from Nashville, Tennessee. Formed in 1998, the quartet features Karen Fairchild, Kimberly Schlapman, Phillip Sweet, and Jimi Westbrook. Known for their seamless four-part vocal harmonies, they are celebrated for hits like Girl Crush,Pontoon, and Better Man.",
-   "url": "https://www.ticketmaster.com/little-big-town-for-the-art-newark-new-jersey-10-22-2026/event/000064C4D25EA0BF",
-   "tags": [
-    "Country"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7PIPo",
-   "title": "Built To Spill (18 and Over)",
-   "category": "music",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Music Hall of Williamsburg",
-    "address": "Brooklyn",
-    "neighborhood": "Brooklyn",
-    "lat": 40.711102,
-    "lng": -73.956497
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Music / Alternative",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PIPo",
-   "tags": [
-    "Alternative"
-   ]
-  },
-  {
-   "id": "rZ7HnEZ1A4Zb-S",
-   "title": "Robert Glasper X Wyclef Presents Q Theory",
-   "category": "music",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Blue Note Jazz Club",
-    "address": "131 W. 3rd St, New York",
+    "name": "Night Club 101",
+    "address": "101 Avenue A, New York",
     "neighborhood": "New York",
-    "lat": 40.73094,
-    "lng": -74.00065
+    "lat": 40.725911,
+    "lng": -73.984043
    },
    "price": {
     "min": 0,
@@ -2289,511 +2924,68 @@
     "currency": "USD"
    },
    "priceUnknown": false,
-   "description": "Music / Jazz",
-   "details": "$20 Minimum Per Person Full Bar & Dinner Menu NO REFUNDS OR EXCHANGES. All seating is first come, first served. Bar Area seating is limited and first come first served. When all available seats are occupied, the remaining bar area is standing room only. Table Seating is all ages, Bar Area is 21+. Bar Area tickets for patrons under 21 will not be honored. Group Reservations: Groups larger than 8 must purchase a group package at club@bluenote.net, or by calling 212.475.8592. Groups larger than 8 without a group package will be subject to group surcharges added to your bill. Groups arriving late or separately are not guaranteed to be seated together. All seating is first come, first served. Arrive early for best seats. We are not affiliated with any third-party ticket sellers. Tickets purchased directly through our official website or TicketWeb are the only authorized sources. We cannot guarantee the validity of tickets purchased through unauthorized sources. To protect against fraud and unauthorized ticket sales, management may require verification of the original purchase method, including presenting the credit card used for purchase and matching photo identification upon entry.",
-   "url": "https://www.ticketweb.com/event/robert-glasper-x-wyclef-presents-blue-note-jazz-club-tickets/15018873",
-   "tags": [
-    "Jazz"
-   ]
-  },
-  {
-   "id": "vv17GZ_8GkBRm36d",
-   "title": "Yang Mengen (youngmoon) Stand Up Comedy Special: Renegade",
-   "category": "comedy",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Town Hall",
-    "address": "123 West 43rd Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.755992,
-    "lng": -73.984477
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Comedy",
-   "details": "Yang Mengen (Youngmoon) : Renegade Funny. Free. Fxxk being correct. [Please Note: This performance will be delivered in Mandarin.] Doors open at 7 p.m. | Show starts at 8 p.m. | Show duration: 120 minutes Opening act by Rock Four Ticket Tiers (All ticket tiers include one free official merch item): The ticket's face value includes a $3 venue service fee. 1. $128 (Also includes a post-show 1-on-1 on-stage photo opportunity with the artist) 2. $98 3. $78 4. $58 yangmengen mengenyang youngmoon",
-   "url": "https://www.ticketmaster.com/yang-mengen-youngmoon-stand-up-comedy-new-york-new-york-10-22-2026/event/0300650EAFB921C3",
-   "tags": [
-    "Comedy"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7PJ8f",
-   "title": "Be:First (16 and Over)",
-   "category": "community",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Racket NYC",
-    "address": "431 W 16th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.740898,
-    "lng": -73.999702
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PJ8f",
-   "tags": []
-  },
-  {
-   "id": "Z1r9uZruZqGZ1AvZ6uy",
-   "title": "Wanted",
-   "category": "theater",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "James Earl Jones Theatre",
-    "address": "138 W 48th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.759188,
-    "lng": -73.98313
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Children under 4 years old will not be admitted. (2) Herbal cigarettes are used on stage. (3) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (4) Strobe or flashing lights are used in this production. (5) This production uses loud sound effects including gun shots. (6) This production uses theatrical haze and smoke. (7) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/wanted-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ1AvZ6uy",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z1r9uZruZqGZ1AvZ3GY",
-   "title": "Downstate",
-   "category": "theater",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Booth Theatre",
-    "address": "222 W 45th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.758343,
-    "lng": -73.987032
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) No weapons permitted on the premises. No outside food or beverages, electric scooters, e-bikes, or battery-powered transportation devices, except when medically necessary. All items are subject to inspection. Anything brought into the theatre must fit on your lap or completely under your seat without blocking any aisles. Avoid bringing packages, luggage, and backpacks. Some items must be checked. (2) This production contains mature content and is intended purely for audiences ages 17 and older. (3) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/downstate-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ1AvZ3GY",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "17GZv0G62rKhdQ0",
-   "title": "Perfect Crime",
-   "category": "theater",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Theater Center",
-    "address": "210 W. 50th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.761604,
-    "lng": -73.9846
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/perfect-crime-new-york-new-york-10-22-2026/event/300064F7936C36A4",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7P-q-",
-   "title": "Wanted",
-   "category": "theater",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "James Earl Jones Theatre",
-    "address": "138 W. 48th St., New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7P-q-",
-   "tags": []
-  },
-  {
-   "id": "Z7r9jZ1AAZoCk",
-   "title": "The Fantasticks",
-   "category": "theater",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Helen Hayes Theatre",
-    "address": "240 W 44th St., New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Miscellaneous",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZoCk",
-   "tags": [
-    "Miscellaneous"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1AAvJaJ",
-   "title": "Downstate",
-   "category": "music",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Booth Theatre",
-    "address": "222 W. 45th St., New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
    "description": "Music / Other",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAvJaJ",
+   "details": "hellotones , \"rdquo\" -> El Hijo de PueblaYork\" Debut Single Release Party Night Club 101 basement 10PM - 3AM 21+ Free w/ RSVP DJ sets by Stefan Ruiz Yana Allpa Prince of Queens Marvelito hellotones , \"rdquo\" -> El Hijo de PueblaYork\"",
+   "url": "https://www.ticketweb.com/event/hellotones-el-hijo-de-pueblayork-night-club-101-tickets/14385574",
    "tags": [
     "Other"
    ]
   },
   {
-   "id": "Z7r9jZ1AAZf7P",
-   "title": "Petite Rouge (21+ Event)",
-   "category": "theater",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Theatre XIV",
-    "address": "383 Troutman St, Brooklyn",
-    "neighborhood": "Brooklyn",
-    "lat": 40.704399,
-    "lng": -73.921204
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Miscellaneous",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZf7P",
-   "tags": [
-    "Miscellaneous"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1AAZe_K",
-   "title": "The Avalanches (16 and Over)",
+   "id": "rZ7HnEZ1A4v6ZS",
+   "title": "Dogs on Shady Lane, Why Bonnie, Laveda",
    "category": "music",
-   "start": "2026-10-22T20:00:00-04:00",
+   "start": "2026-10-23T22:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Terminal 5",
-    "address": "610 W. 56th Street, New York",
+    "name": "Night Club 101",
+    "address": "101 Avenue A, New York",
     "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Music / Dance/Electronic",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZe_K",
-   "tags": [
-    "Dance/Electronic"
-   ]
-  },
-  {
-   "id": "Z1r9uZruZqGZ1AvZ81d",
-   "title": "A Few Good Men",
-   "category": "theater",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lincoln Center - Vivian Beaumont Theater",
-    "address": "150 W 65th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.773923,
-    "lng": -73.98436
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "(1) Tickets are on a delayed delivery.",
-   "url": "https://www.ticketmaster.com/a-few-good-men-new-york-new-york-10-22-2026/event/Z1r9uZruZqGZ1AvZ81d",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7J6OP",
-   "title": "A Few Good Men",
-   "category": "theater",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lincoln Center - Vivian Beaumont",
-    "address": "150 West 65th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.7761,
-    "lng": -73.9841
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Miscellaneous",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7J6OP",
-   "tags": [
-    "Miscellaneous"
-   ]
-  },
-  {
-   "id": "G5vVZ_uLNMq4j",
-   "title": "Jamaica Funk: Legends of Queens (A Benefit Concert)",
-   "category": "music",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Colden Auditorium at Kupferberg Center for the Arts",
-    "address": "153-49 Reeves Avenue, Queens",
-    "neighborhood": "Queens",
-    "lat": 40.738456,
-    "lng": -73.816343
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Music / Jazz",
-   "details": "Join us for Jamaica Funk: Legends of Queens, a BENEFIT CONCERT and celebration of the rich legacy of musical artists hailing from Jamaica Queens, New York, and the profound influence Queens-based musicians have had on the national and global music scenes. Jamaica Funk: Legends of Queens is a groundbreaking event to raise important funds towards a feature-length documentary, \"Jamaica Funk,\" which tells the story of three generations of musicians from Jamaica, Queens.",
-   "url": "https://www.ticketmaster.com/jamaica-funk-legends-of-queens-a-queens-new-york-10-22-2026/event/1D0064D7E3DDD55C",
-   "tags": [
-    "Jazz"
-   ]
-  },
-  {
-   "id": "k7vGF_FrCaMha",
-   "title": "MANIA: The ABBA Tribute",
-   "category": "music",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Bergen Performing Arts Center",
-    "address": "30 N. Van Brunt Street, Englewood",
-    "neighborhood": "Englewood",
-    "lat": 40.895358,
-    "lng": -73.97511
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Music",
-   "details": "",
-   "url": "https://www.ticketmaster.com/mania-the-abba-tribute-englewood-new-jersey-10-22-2026/event/000064878E2776C9",
-   "tags": []
-  },
-  {
-   "id": "rZ7HnEZ1AfGzuV",
-   "title": "Raffaella",
-   "category": "music",
-   "start": "2026-10-22T20:15:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lucinda's",
-    "address": "169 Avenue A, New York",
-    "neighborhood": "New York",
-    "lat": 40.728329,
-    "lng": -73.982199
+    "lat": 40.725911,
+    "lng": -73.984043
    },
    "price": {
-    "min": 27,
-    "max": 27,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "Music / Pop",
-   "details": "Over the past six years NYC native Raffaella has been living in Minneapolis and writing her debut album - a midwestern-soaked meditation on faith, belonging, and the beauty of believing without proof. On October 22nd, she's coming home to share it with us. Not only will she give us a sneak peak performance of the whole record, but she will also hand out a free CD to every ticket holder: , \"rdquo\" -> Live music should be rewarded with analogue party favors - I want this to be an experience you can have and then literally hold.\" As one of pop's sharpest observers of human behavior, Raffaella pulls meaning out of weakness like a magnet and turns big existential questions into something warm and lived-in. The record's first single, Courtney, is out now. Previous tours include opening for Samia, Liz Phair, Del Water Gap and more.",
-   "url": "https://www.ticketweb.com/event/raffaella-lucindas-tickets/14338374",
-   "tags": [
-    "Pop"
-   ]
-  },
-  {
-   "id": "rZ7HnEZ1Af0grK",
-   "title": "Acoustic Alchemy",
-   "category": "music",
-   "start": "2026-10-22T20:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Iridium",
-    "address": "1650 Broadway, New York",
-    "neighborhood": "New York",
-    "lat": 40.761816,
-    "lng": -73.983389
-   },
-   "price": {
-    "min": 57,
-    "max": 62,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "Music / Jazz",
-   "details": "All Iridium policies are featured on our FAQ page. By purchasing tickets you are agreeing to follow all rules the venue has in place. The Iridium is a paperless venue and does not give out physical tickets at the box office. If you selected \"Will Call\" as your ticket delivery method, please bring a valid ID to show the host upon arrival. Seating and entrance is not guaranteed after the show has begun. All sales are final.",
-   "url": "https://www.ticketweb.com/event/acoustic-alchemy-iridium-tickets/14935793",
-   "tags": [
-    "Jazz"
-   ]
-  },
-  {
-   "id": "k7vGF_3KhFDV6",
-   "title": "The Solids",
-   "category": "music",
-   "start": "2026-10-22T21:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Mercury Lounge",
-    "address": "217 East Houston St., New York",
-    "neighborhood": "New York",
-    "lat": 40.722036,
-    "lng": -73.986806
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Music / Rock",
-   "details": "The Solids For one night, The Solids return to their college-band roots at Mercury Lounge to play the songs that started it all - loud, imperfect, and exactly as they were meant to be. No reinvention. Just old friends, old songs, and turn it up. [Ages 21+, Doors Open 9pm, $25 Advance, $25 Day of Show]",
-   "url": "https://www.ticketmaster.com/the-solids-new-york-new-york-10-22-2026/event/00006524DB23BD07",
-   "tags": [
-    "Rock"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7Py4U",
-   "title": "Drunk Dracula",
-   "category": "theater",
-   "start": "2026-10-22T21:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Ruby Theatre",
-    "address": "35 W 39th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.755699,
-    "lng": -73.996696
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Py4U",
-   "tags": []
-  },
-  {
-   "id": "rZ7HnEZ1Af1_vf",
-   "title": "Blak Emoji | Paris Monster",
-   "category": "music",
-   "start": "2026-10-22T21:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Berlin",
-    "address": "The Lower-Level of 2A Bar, New York",
-    "neighborhood": "New York",
-    "lat": 40.722974,
-    "lng": -73.98608
-   },
-   "price": {
-    "min": 15,
-    "max": 15,
+    "min": 24,
+    "max": 24,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "Music / Alternative",
    "details": "This event is 21 and over. Any ticket holder unable to present valid identification indicating that they are at least 21 years of age will not be admitted to this event, and will not be eligible for a refund.",
-   "url": "https://www.ticketweb.com/event/blak-emoji-paris-monster-berlin-tickets/14299054",
+   "url": "https://www.ticketweb.com/event/dogs-on-shady-lane-why-night-club-101-tickets/15047033",
    "tags": [
     "Alternative"
    ]
   },
   {
-   "id": "rZ7HnEZ1AfCdOf",
-   "title": "Kevin Hart Works Out New Jokes",
-   "category": "community",
-   "start": "2026-10-22T22:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Brooklyn Improv (The Main Room)",
-    "address": "64 N 9th St, Brooklyn",
-    "neighborhood": "Brooklyn",
-    "lat": 40.720751,
-    "lng": -73.959998
-   },
-   "price": {
-    "min": 0,
-    "max": 0,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "This event will be a phone-free experience. Use of phones, smart watches and accessories, will not be permitted in the performance space. Upon arrival at the venue, all phones, smart watches and accessories will be secured in individual Yondr pouches that will be opened at the end of the event. Guests maintain possession of their devices at all times, and can access them throughout the event only in designated Phone Use Areas within the venue. All devices will be re-secured in Yondr pouches before returning to the performance space. Anyone seen using a device (phone, smart watch or accessories) during the performance will be escorted out of the venue. DO NOT PURCHASE TICKETS FROM ANYONE OR ANY OTHER SITE OTHER THAN IMPROV.COM TICKET RESALE IS STRICTLY PROHIBITED. TICKETS SUSPECTED OF BEING PURCHASED FOR THE SOLE PURPOSE OF RESELLING MAY BE CANCELLED AT THE DISCRETION OF THE BROOKLYN IMPROV. EVENT INFO: There is a two-item minimum purchase requirement in the showroom for all guests. Seating is general admission, first-come, first-served, with the exception of groups and premium booths. No cell phone use, photography or video recording is permitted during performances. All sales are final. MISCELLANOUS: For group sales info, e-mail our Events Manager to learn about special menu options and reserved seating. Additional questions may be addressed in our Frequently Asked Questions. For further assistance, contact Brooklyn Improv.",
-   "url": "https://www.ticketweb.com/event/kevin-hart-works-out-new-brooklyn-improv-the-main-room-tickets/14383814",
-   "tags": []
-  },
-  {
-   "id": "rZ7HnEZ1Afudof",
-   "title": "Bimbo Summit | ELIS",
+   "id": "Z7r9jZ1AAvabp",
+   "title": "Robert Glasper",
    "category": "music",
-   "start": "2026-10-22T23:00:00-04:00",
+   "start": "2026-10-23T22:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Bowery Palace",
-    "address": "327 Bowery, New York",
+    "name": "Blue Note Jazz Club - NY",
+    "address": "131 W 3rd St, New York",
     "neighborhood": "New York",
-    "lat": 40.7257,
-    "lng": -73.991673
+    "lat": 40.7253,
+    "lng": -73.997902
    },
-   "price": {
-    "min": 12,
-    "max": 12,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
+   "price": null,
+   "priceUnknown": true,
    "description": "Music / Other",
-   "details": "This event is 21 and over. Any ticket holder unable to present valid identification indicating that they are at least 21 years of age will not be admitted to this event, and will not be eligible for a refund.",
-   "url": "https://www.ticketweb.com/event/bimbo-summit-elis-bowery-palace-tickets/14343454",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAvabp",
    "tags": [
     "Other"
    ]
   },
   {
-   "id": "G5diZ_AkoYeOz",
+   "id": "G5diZ_AkoY3OB",
    "title": "Madison Square Garden Tour Experience",
    "category": "community",
-   "start": "2026-10-22T00:00:00-04:00",
+   "start": "2026-10-23T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -2807,14 +2999,14 @@
    "priceUnknown": true,
    "description": "Miscellaneous",
    "details": "PLEASE NOTE: Pricing is all-in and includes fees (before taxes if applicable). Access to the Knicks and Rangers locker rooms may be restricted due to venue activity. Tour schedule and content subject to change without notice.",
-   "url": "https://www.ticketmaster.com/madison-square-garden-tour-experience-new-york-new-york-10-22-2026/event/3B00645191C02838",
+   "url": "https://www.ticketmaster.com/madison-square-garden-tour-experience-new-york-new-york-10-23-2026/event/3B00645191C1283A",
    "tags": []
   },
   {
-   "id": "G5dYZ_AI1_eoA",
+   "id": "G5dYZ_AI1Qeo6",
    "title": "Radio City Music Hall Tour Experience",
    "category": "community",
-   "start": "2026-10-22T00:00:00-04:00",
+   "start": "2026-10-23T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -2828,14 +3020,14 @@
    "priceUnknown": true,
    "description": "Miscellaneous",
    "details": "* 14 ticket limit per order. All sales are final - no refunds or exchanges. Discount code only applies to full-priced Adult tickets for select tours purchased on Ticketmaster.com. Offer not valid on not valid on child, senior or group rates. Offer may not be combined with any other offer or used on previously purchased tickets. Offer may be revoked or modified at any time without notice. Tour content, prices, dates and times are subject to change. Tour and Rockette are each subject to availability. Service charges apply to internet orders. Other restrictions may apply. If special accommodations are needed please call 212-465-6115 after ticket purchase. Radio City Music Hall and Stage Door are trademarks of MSG Holdings, L.P. or its affiliates.",
-   "url": "https://www.ticketmaster.com/radio-city-music-hall-tour-experience-new-york-new-york-10-22-2026/event/3C00645A0A642445",
+   "url": "https://www.ticketmaster.com/radio-city-music-hall-tour-experience-new-york-new-york-10-23-2026/event/3C00645A0A682447",
    "tags": []
   },
   {
-   "id": "G5vVZbM3WBJeA",
+   "id": "G5vVZbM3WDke5",
    "title": "Classic Tour at Yankee Stadium",
    "category": "sports",
-   "start": "2026-10-22T00:00:00-04:00",
+   "start": "2026-10-23T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -2849,16 +3041,16 @@
    "priceUnknown": true,
    "description": "Sports / Baseball",
    "details": "CLASSIC TOUR ENTRANCE: Classic Tour guests will enter through the Hard Rock Cafe adjacent to Gate 6 (corner of 161st St. and River Ave.) Please arrive 15 minutes prior to designated tour start time. Knowledgeable and passionate guides lead each sixty (60)-minute Classic Tour. Classic Tours and Lunch Combo: Enjoy lunch at the Hard Rock Cafe Yankee Stadium as part of your visit. Vouchers include tax & gratuity. Please note: Vouchers may be redeemed at the Hard Rock Cafe Yankee Stadium prior to or following your selected tour time. The Hard Rock Café opens at 11 a.m. daily. View menus at yankees.com/tours. The Yankees reserve the right to cancel all or part of any tour. ALL tour dates, times, locations and routes are subject to change without notice.",
-   "url": "https://www.ticketmaster.com/classic-tour-at-yankee-stadium-bronx-new-york-10-22-2026/event/1D006374BDEA6085",
+   "url": "https://www.ticketmaster.com/classic-tour-at-yankee-stadium-bronx-new-york-10-23-2026/event/1D006374BDEC608B",
    "tags": [
     "Baseball"
    ]
   },
   {
-   "id": "G5vVZbMKYaEaT",
+   "id": "G5vVZbMKYaE1v",
    "title": "Glimpse of Greatness",
    "category": "sports",
-   "start": "2026-10-22T00:00:00-04:00",
+   "start": "2026-10-23T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -2872,7 +3064,7 @@
    "priceUnknown": true,
    "description": "Sports / Baseball",
    "details": "TOUR ENTRANCE: Guests will enter through the Hard Rock Cafe adjacent to Gate 6 (corner of 161st St. and River Ave). Glimpse of Greatness offers a quick peek inside Yankee Stadium's treasured New York Yankees Museum presented by Bank of America. This self-guided experience allows guests to explore the museum at their leisure. Knowledgeable tour guides will be on-hand to share stories about exhibit content and displayed memorabilia. Entry available 11:30 a.m. - 3:00 p.m. Schedule and availability may vary due to ballpark-wide events. IMPORTANT: Glimpse of Greatness does not offer any field visibility or interior views of Yankee Stadium. The Yankees reserve the right to cancel all or part of any tour. ALL tour dates, times, locations and routes are subject to change without notice.",
-   "url": "https://www.ticketmaster.com/glimpse-of-greatness-bronx-new-york-10-22-2026/event/1D006374F026727F",
+   "url": "https://www.ticketmaster.com/glimpse-of-greatness-bronx-new-york-10-23-2026/event/1D006374F0267281",
    "tags": [
     "Baseball"
    ]
