@@ -249,8 +249,10 @@ title, so the same reception can show up twice.
 down or changes its pages only loses that venue: Film Forum's week of showtimes, Nitehawk's day pages for
 Williamsburg and Prospect Park, the today-and-tomorrow sets on SmallsLIVE (Smalls, Mezzrow and Jazzcultural), the
 schema.org event data on New York Comedy Club's and Eastville Comedy Club's calendars, The PIT's month calendar,
-Other Half Brewing's NYC taproom events, and NYC Trivia League's weekly list of bar trivia and bingo nights (each
-bar placed from the coordinates on its listing page). A film is one event at its first showing, with the day's
+Other Half Brewing's NYC taproom events, NYC Trivia League's weekly list of bar trivia and bingo nights (each
+bar placed from the coordinates on its listing page), and three Ridgewood calendars: H0L0's club nights, the
+Onderdonk House's events and the Myrtle Avenue BID's plaza concerts and street festivals (placed at Herman Hochberg
+Plaza, or on Myrtle Avenue when an event gives no place). H0L0's ticket links go to the ticket sellers it uses. A film is one event at its first showing, with the day's
 showtimes in its description. Each event names its venue as its publisher (trivia nights name NYC Trivia League),
 so they are listed one by one in the Sources dropdown. Venues are placed once from the street address in `VENUES`
 and remembered in `data/geocode-cache.json`. Adding a venue means a reader function, an entry in `VENUES` and a
@@ -258,7 +260,8 @@ place in `READERS`. Only title, time, price when given and a link are kept.
 
 Check a site's terms of use before adding it. St. Marks Comedy Club, QED, McNally Jackson and Apple forbid automated
 access, so they are left out; Geeks Who Drink, The Strand, Greenlight, Barnes & Noble, Film at Lincoln Center,
-Juilliard, BRIC and The Public Theater turn automated visits away.
+Juilliard, BRIC, The Public Theater and TV Eye turn automated visits away. Nowadays lists its nights only on
+Resident Advisor, and Trans-Pecos only through VenuePilot, so neither is read here.
 
 ## Adding a real event source
 

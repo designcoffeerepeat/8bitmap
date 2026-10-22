@@ -1,5 +1,6 @@
 // Venues' own calendars: Film Forum, Nitehawk, Smalls, Mezzrow, Jazzcultural, New York Comedy Club,
-// Eastville Comedy Club, The PIT, Other Half Brewing and NYC Trivia League's bar nights.
+// Eastville Comedy Club, The PIT, Other Half Brewing, NYC Trivia League's bar nights, and in Ridgewood
+// H0L0, the Onderdonk House and the Myrtle Avenue BID.
 //
 // tools/fetch_venues.py reads each venue's schedule from its own website, places the venue
 // from its address and writes public/data/venues-events.json. Each event names its venue as

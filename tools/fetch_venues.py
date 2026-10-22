@@ -17,6 +17,9 @@ Club, QED, McNally Jackson, Apple).
   The PIT               the month calendar on https://thepit-nyc.com/calendar/
   Other Half Brewing    the NYC taproom events on https://otherhalfbrewing.com/events
   NYC Trivia League     this week's bar trivia and bingo nights on https://nyctrivialeague.com/
+  H0L0                  the club's upcoming nights on https://h0l0.nyc/ (Ridgewood)
+  Onderdonk House       the Greater Ridgewood Historical Society's events list (Ridgewood)
+  Myrtle Avenue BID     the month calendar of plaza concerts and street festivals on Myrtle Avenue (Ridgewood)
 
 Venues are placed once from their street address with GeoSearch and remembered
 in data/geocode-cache.json.
@@ -29,7 +32,7 @@ import json
 import re
 import sys
 import time
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from fetch_nycgov import CACHE, DATA, NYC, dist_m, geosearch, get
@@ -53,6 +56,12 @@ VENUES = {
     'Other Half Centre Street': ('195 Centre Street, Brooklyn', 'https://otherhalfbrewing.com/location/centre-street/'),
     'Other Half Domino Park': ('34 River Street, Brooklyn', 'https://otherhalfbrewing.com/location/domino-park/'),
     'Other Half Rockefeller Center': ('600 5th Avenue, Manhattan', 'https://otherhalfbrewing.com/location/rockefeller-center/'),
+    'H0L0': ('1090 Wyckoff Avenue, Queens', 'https://h0l0.nyc/'),
+    'Onderdonk House': ('1820 Flushing Avenue, Queens', 'https://onderdonkhouse.org/events-list'),
+    # The plaza where 71st Avenue and Stephen Street meet Myrtle Avenue, placed from the corner shop's address.
+    'Herman Hochberg Plaza': ('59-03 71st Avenue, Queens', 'https://ridgewood-ny.com/local-events/'),
+    # BID events with no place of their own (street festivals, sidewalk sales) run along Myrtle Avenue.
+    'Myrtle Avenue, Ridgewood': ('58-01 Myrtle Avenue, Queens', 'https://ridgewood-ny.com/local-events/'),
 }
 
 
@@ -87,11 +96,12 @@ def ld_events(body):
     return out
 
 
-def event(venue, title, start, url, category, end=None, price=None, description='', pos=None, neighborhood='', publisher=None):
+def event(venue, title, start, url, category, end=None, price=None, description='', pos=None, neighborhood='', publisher=None,
+          free=False):
     """pos and publisher are only for events at places not in VENUES (trivia bars)."""
     return {'venue': venue, 'title': title, 'category': category, 'start': start, 'end': end,
             'price': price, 'url': url, 'description': description, 'pos': pos, 'neighborhood': neighborhood,
-            'publisher': publisher}
+            'publisher': publisher, 'free': free}
 
 
 def film_forum(day):
@@ -276,7 +286,74 @@ def trivia_league(day, cache):
     return out
 
 
-READERS = [film_forum, nitehawk, smalls, nycc, eastville, pit, other_half, trivia_league]
+def h0l0(day):
+    """The home page lists the coming nights: a heading, then 'Wed, Oct 21 10:00pm', the lineup and a ticket link."""
+    body = re.sub(r'<style.*?</style>', '', get('https://h0l0.nyc/', as_json=False), flags=re.S)
+    label = f"{day.strftime('%a, %b')} {day.day:02d}"
+    out = []
+    for card in body.split('<h2 class="MuiTypography-root MuiTypography-h2')[1:]:
+        title = re.search(r'>(.*?)</h2>', card, re.S)
+        # The lineup paragraph has one artist per line.
+        paras = [', '.join(filter(None, (text(line) for line in p.split('\n')))) for p in re.findall(r'<p[^>]*>(.*?)</p>', card, re.S)]
+        when = re.match(r'(\w{3}, \w{3} \d{2}) (\d{1,2}:\d{2}\s*[ap]m)$', paras[0], re.I) if paras else None
+        if not (title and when) or when.group(1) != label:
+            continue
+        link = re.search(r'href="(https?://[^"]+)"', card)
+        lineup = paras[1] if len(paras) > 1 else ''
+        out.append(event('H0L0', text(title.group(1)), at(day, *clock(when.group(2))), link.group(1) if link else VENUES['H0L0'][1],
+                         'nightlife', description=lineup[:300]))
+    return out
+
+
+def onderdonk(day):
+    """Squarespace events list. The Google Calendar link on each event gives its start and end in UTC."""
+    body = get('https://onderdonkhouse.org/events-list', as_json=False)
+    out = []
+    for card in body.split('<article class="eventlist-event')[1:]:
+        title = re.search(r'class="eventlist-title-link">(.*?)</a>', card, re.S)
+        link = re.search(r'href="(/events-list/[^"?]+)"', card)
+        span = re.search(r'dates=(\d{8}T\d{6})Z/(\d{8}T\d{6})Z', card)
+        where = re.search(r'maps\.google\.com\?q=([^"]+)"', card)
+        if not (title and link and span) or (where and '1820 Flushing' not in where.group(1)):
+            continue
+        start, end = (datetime.strptime(t, '%Y%m%dT%H%M%S').replace(tzinfo=timezone.utc).astimezone(NYC) for t in span.groups())
+        if start.date() != day:
+            continue
+        out.append(event('Onderdonk House', text(title.group(1)), start, 'https://onderdonkhouse.org' + link.group(1), 'community',
+                         end=end if end > start else None))
+    return out
+
+
+def myrtle_bid(day):
+    """Modern Events Calendar month view: one cell per day ('20261002'), each event with its time ('7:00 pm - 8:00 pm').
+    The cells for the first days of next month are on the same page. Each event's own page says where it is."""
+    body = get('https://ridgewood-ny.com/local-events/', as_json=False)
+    m = re.search(rf'data-mec-cell="{day.strftime("%Y%m%d")}"(.*?)(?=<dt |</dl>)', body, re.S)
+    out = []
+    if not m:
+        return out
+    for href, title, times in re.findall(r'<a class="mec-monthly-tooltip[^"]*"[^>]*href="([^"]+)"><h4 class="mec-event-title">(.*?)</h4>'
+                                         r'.*?mec-tooltip-event-time">.*?</i>\s*([^<]*)<', m.group(1), re.S):
+        times = [clock(t) for t in re.findall(r'\d{1,2}:\d{2}\s*[ap]m', times, re.I)]
+        if not times:
+            continue
+        start = at(day, *times[0])
+        end = at(day, *times[1]) if len(times) > 1 else None
+        time.sleep(0.5)
+        page = ld_events(get(href, as_json=False))
+        place = (page[0].get('location') or {}) if page else {}
+        offer = (page[0].get('offers') or {}) if page else {}
+        venue = 'Herman Hochberg Plaza' if re.search(r'Hochberg|71st Av', f"{place.get('name')} {place.get('address')}", re.I) \
+            else 'Myrtle Avenue, Ridgewood'
+        title = text(title)
+        kind = 'community' if re.search(r'festival|sale|parade|meeting|market|yoga|celebration', title, re.I) else 'music'
+        out.append(event(venue, title, start, href, kind, end=end if end and end > start else None,
+                         free=str(offer.get('price')) == '0', neighborhood='Ridgewood',
+                         publisher=('Myrtle Avenue BID', 'https://ridgewood-ny.com/local-events/')))
+    return out
+
+
+READERS = [film_forum, nitehawk, smalls, nycc, eastville, pit, other_half, trivia_league, h0l0, onderdonk, myrtle_bid]
 
 
 def place(venue, cache):
@@ -332,7 +409,7 @@ def main():
             'venue': {'name': r['venue'], 'address': address, 'neighborhood': r['neighborhood'],
                       'lat': round(pos['lat'], 6), 'lng': round(pos['lng'], 6)},
             'price': r['price'],
-            'priceUnknown': r['price'] is None,
+            'priceUnknown': r['price'] is None and not r['free'],
             'description': r['description'],
             'details': '',
             'url': r['url'],
