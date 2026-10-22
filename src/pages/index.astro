@@ -2,11 +2,12 @@
 // The whole app is one page: a full-bleed three.js voxel map with a HUD,
 // a list of today's events and an event card. All behaviour lives in
 // src/scripts/app.js, which Astro bundles (three.js included) at build time.
-// The site menu, its modals (contact, privacy, terms) and the cookie banner live
+// The site menu, its modals (contact, about, privacy, terms) and the cookie banner live
 // in src/scripts/site.js, so they work before the map has loaded.
 import '../styles/global.css';
 import PrivacyPolicy from '../components/PrivacyPolicy.astro';
 import Terms from '../components/Terms.astro';
+import About from '../components/About.astro';
 ---
 <!doctype html>
 <html lang="en">
@@ -58,10 +59,13 @@ import Terms from '../components/Terms.astro';
     </div>
     <nav class="site-menu box" id="site-menu" aria-label="Site" hidden>
       <a href="#contact" data-modal="contact">CONTACT</a>
-      <a href="#privacy" data-modal="privacy">PRIVACY POLICY</a>
-      <a href="#terms" data-modal="terms">TERMS AND CONDITIONS</a>
-      <button type="button" id="launch-monster">LAUNCH MONSTER</button>
-      <button type="button" id="cookie-settings" hidden>COOKIE SETTINGS</button>
+      <a href="#about" data-modal="about">ABOUT</a>
+      <button type="button" id="launch-monster" aria-pressed="false">MONSTER ATTACK!</button>
+      <div class="menu-legal">
+        <a href="#privacy" data-modal="privacy">PRIVACY POLICY</a>
+        <a href="#terms" data-modal="terms">TERMS AND CONDITIONS</a>
+        <button type="button" id="cookie-settings" hidden>COOKIE SETTINGS</button>
+      </div>
     </nav>
     <p><button id="today-date" class="day-btn" type="button" aria-pressed="false">TODAY</button><span id="today-count">LOADING</span></p>
   </div>
@@ -155,6 +159,11 @@ import Terms from '../components/Terms.astro';
       <p class="form-note">Ad/Event Inquiries go to sales@8bit.nyc, everything else to info@8bit.nyc. See our <a href="#privacy" data-modal="privacy">Privacy Policy</a>.</p>
     </form>
   </div>
+</dialog>
+
+<dialog class="modal box" id="modal-about" aria-labelledby="about-title">
+  <div class="modal-head"><h2 id="about-title">ABOUT</h2><button class="modal-close" type="button" aria-label="Close">X</button></div>
+  <div class="modal-body legal"><About /></div>
 </dialog>
 
 <dialog class="modal box" id="modal-privacy" aria-labelledby="privacy-title">
