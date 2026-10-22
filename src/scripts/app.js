@@ -224,8 +224,9 @@ function visibleEvents() {
   return list.filter((e) => !state.catsOff.has(e.category));
 }
 
+// The Sources dropdown is always A to Z by name (MK's rule), whatever sources are added later.
 function renderSources() {
-  el.srcList.innerHTML = [...publishers.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name)).map((p) => `
+  el.srcList.innerHTML = [...publishers.values()].sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base', numeric: true })).map((p) => `
     <li><label class="src-item">
       <input type="checkbox" value="${esc(p.id)}"${state.sources.has(p.id) ? ' checked' : ''}><i aria-hidden="true"></i>${esc(p.name)}<span>${p.count}</span>
     </label></li>`).join('');
