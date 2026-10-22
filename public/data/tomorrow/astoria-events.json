@@ -3,8 +3,35 @@
   "name": "Astoria venues",
   "url": "https://socratessculpturepark.org/"
  },
- "date": "2026-10-22",
- "fetchedAt": "2026-10-21T21:29:30-04:00",
- "events": [],
+ "date": "2026-10-23",
+ "fetchedAt": "2026-10-22T00:21:42-04:00",
+ "events": [
+  {
+   "id": "melrose-ballroom-202610231900-warriors-cup-81",
+   "title": "WARRIORS CUP 81",
+   "category": "sports",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": "2026-10-24T01:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Melrose Ballroom",
+    "address": "36-08 33rd Street",
+    "neighborhood": "Astoria",
+    "lat": 40.755628,
+    "lng": -73.928682
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.melroseballroom.com/events/warriors-cup-81",
+   "tags": [],
+   "publisher": {
+    "id": "venue-melrose-ballroom",
+    "name": "Melrose Ballroom",
+    "url": "https://www.melroseballroom.com/"
+   }
+  }
+ ],
  "unplaced": []
 }

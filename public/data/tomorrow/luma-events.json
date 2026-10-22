@@ -3,159 +3,84 @@
   "name": "Luma NYC",
   "url": "https://luma.com/nyc"
  },
- "date": "2026-10-22",
- "fetchedAt": "2026-10-21T16:26:06-04:00",
+ "date": "2026-10-23",
+ "fetchedAt": "2026-10-22T00:22:09-04:00",
  "events": [
   {
-   "id": "evt-VFMn9TqCqA3BJ1O",
-   "title": "Early Access Shopping Night at ALO Madison Ave",
-   "category": "community",
-   "start": "2026-10-22T16:00:00-04:00",
-   "end": "2026-10-22T19:00:00-04:00",
+   "id": "evt-RxQvsLgcC2ZFtmX",
+   "title": "The Substrate of Extraction: A Bio Art Show",
+   "category": "art",
+   "start": "2026-10-23T11:00:00-04:00",
+   "end": "2026-10-24T18:00:00-04:00",
    "venue": {
-    "name": "1144 Madison Ave",
-    "address": "1144 Madison Ave, New York, NY 10028, USA",
-    "neighborhood": "Manhattan",
-    "lat": 40.780066,
-    "lng": -73.959598
+    "name": "The Old American Can Factory",
+    "address": "The Old American Can Factory, 232 3rd St, Brooklyn, NY 11215, USA",
+    "neighborhood": "Gowanus",
+    "lat": 40.674751,
+    "lng": -73.987844
    },
    "price": null,
    "priceUnknown": false,
-   "description": "From the ALO calendar on Luma",
+   "description": "From the Personal calendar on Luma",
    "details": "",
-   "url": "https://luma.com/38sntlh9",
+   "url": "https://luma.com/v77g2ygo",
    "tags": []
   },
   {
-   "id": "evt-46vCzkJVI8Hqutz",
-   "title": "Figma agent: Builder night (Thursday, October 22)",
+   "id": "evt-z9kf4B1cEKQpbll",
+   "title": "Afterimage: Figma for Edu community showcase",
    "category": "community",
-   "start": "2026-10-22T18:00:00-04:00",
-   "end": "2026-10-22T21:00:00-04:00",
+   "start": "2026-10-23T18:00:00-04:00",
+   "end": "2026-10-23T21:00:00-04:00",
    "venue": {
-    "name": "Figma NYC",
-    "address": "Figma NYC, 27 W 23rd St, New York, NY 10010, USA",
-    "neighborhood": "Flatiron District",
-    "lat": 40.742232,
-    "lng": -73.990626
+    "name": "ARTECHOUSE NYC",
+    "address": "ARTECHOUSE NYC, 439 W 15th St, New York, NY 10011, USA",
+    "neighborhood": "Chelsea",
+    "lat": 40.7426,
+    "lng": -74.00657
    },
    "price": null,
    "priceUnknown": false,
    "description": "From the Figma for Education calendar on Luma",
    "details": "",
-   "url": "https://luma.com/xl3tvp2w",
+   "url": "https://luma.com/tw9rjsds",
    "tags": []
   },
   {
-   "id": "evt-pFp8YTKhqdBsNwG",
-   "title": "Nanonite Social: NYC Nanotechnology Meetup",
-   "category": "community",
-   "start": "2026-10-22T18:00:00-04:00",
-   "end": "2026-10-22T21:00:00-04:00",
+   "id": "evt-EpFtSRnq165BjK3",
+   "title": "Halloween Masquerade Dinner & Pasta Making Party 🎭🖤",
+   "category": "food",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": "2026-10-23T22:30:00-04:00",
    "venue": {
-    "name": "Harlem Tavern",
-    "address": "Harlem Tavern, 2153 Frederick Douglass Blvd, New York, NY 10026, USA",
-    "neighborhood": "Central Harlem",
-    "lat": 40.804759,
-    "lng": -73.955479
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Nanotech NYC calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/hhl725g4",
-   "tags": []
-  },
-  {
-   "id": "evt-Mhu0MM7WcH2hVNl",
-   "title": "Undefined + EvolveDigital / Oct 22nd 2026",
-   "category": "community",
-   "start": "2026-10-22T18:00:00-04:00",
-   "end": "2026-10-22T21:00:00-04:00",
-   "venue": {
-    "name": "Automattic",
-    "address": "Automattic, 166 Crosby St, New York, NY 10012, USA",
-    "neighborhood": "NoHo",
-    "lat": 40.725873,
-    "lng": -73.995401
+    "name": "75 Murray St",
+    "address": "75 Murray St, New York, NY 10007, USA",
+    "neighborhood": "Tribeca",
+    "lat": 40.714827,
+    "lng": -74.010554
    },
    "price": {
-    "min": 10,
-    "max": 10,
+    "min": 97,
+    "max": 97,
     "currency": "USD"
    },
    "priceUnknown": false,
-   "description": "From the Undefined by Design Systems House calendar on Luma",
+   "description": "From the Girls Who Meet calendar on Luma",
    "details": "",
-   "url": "https://luma.com/undefined-20261022",
-   "tags": []
-  },
-  {
-   "id": "evt-GQBD8K0iNDTa2pH",
-   "title": "Transit Techies #39 | Phil Cline (Swiftly) and Joe Puccio (Sidewalk, formerly WalkNYC)",
-   "category": "community",
-   "start": "2026-10-22T18:30:00-04:00",
-   "end": "2026-10-22T20:30:00-04:00",
-   "venue": {
-    "name": "370 Jay St",
-    "address": "370 Jay St, Brooklyn, NY 11201, USA",
-    "neighborhood": "Downtown Brooklyn",
-    "lat": 40.693144,
-    "lng": -73.987447
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Center for Urban Science + Progress • Events calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/nyu-bo74",
+   "url": "https://luma.com/girlswho-xxeu",
    "tags": []
   }
  ],
  "unplaced": [
   {
-   "title": "Coffee & Apple Ads Masterclass: Maximum ROI, End to End",
+   "title": "Tech Shabbat | NY",
    "address": "address shown to guests only",
-   "url": "https://luma.com/06hgn26s"
+   "url": "https://luma.com/pqlvj80n"
   },
   {
-   "title": "Build Your First App with Replit!",
+   "title": "Prediction Markets Afterparty",
    "address": "address shown to guests only",
-   "url": "https://luma.com/c1bw96zu"
-  },
-  {
-   "title": "Double Diamond ⬩ October 2026",
-   "address": "address shown to guests only",
-   "url": "https://luma.com/double-diamond-oct-2026"
-  },
-  {
-   "title": "Honcho x Variant Happy Hour - NYC agent builders",
-   "address": "address shown to guests only",
-   "url": "https://luma.com/honcho-soho"
-  },
-  {
-   "title": "Pixel Eight x Ramp: Designer Pit Stop",
-   "address": "address shown to guests only",
-   "url": "https://luma.com/apps4s2v"
-  },
-  {
-   "title": "A/B or Not to Be",
-   "address": "address shown to guests only",
-   "url": "https://luma.com/v63nd8d9"
-  },
-  {
-   "title": "Scaling AI Deployments",
-   "address": "address shown to guests only",
-   "url": "https://luma.com/scalingaideployments"
-  },
-  {
-   "title": "game night.",
-   "address": "address shown to guests only",
-   "url": "https://luma.com/umr9k0ee"
-  },
-  {
-   "title": "Startup Scaries",
-   "address": "address shown to guests only",
-   "url": "https://luma.com/fonzinyc-va2l"
+   "url": "https://luma.com/i885kknd"
   }
  ]
 }

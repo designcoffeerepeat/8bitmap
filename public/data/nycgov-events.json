@@ -3,15 +3,15 @@
   "name": "NYC.gov Events Calendar",
   "url": "https://www.nyc.gov/main/events/"
  },
- "date": "2026-10-21",
- "fetchedAt": "2026-10-21T16:24:15-04:00",
+ "date": "2026-10-22",
+ "fetchedAt": "2026-10-22T00:19:20-04:00",
  "events": [
   {
-   "id": "1311456-1",
+   "id": "1311476-1",
    "title": "NYC Parks' 44th Annual Wreath Interpretations Open Call",
    "category": "art",
-   "start": "2026-10-21T00:00:00.000-04:00",
-   "end": "2026-10-21T12:00:00.000-04:00",
+   "start": "2026-10-22T00:00:00.000-04:00",
+   "end": "2026-10-22T12:00:00.000-04:00",
    "allDay": false,
    "timeLabel": "12am to 12pm",
    "venue": {
@@ -25,33 +25,59 @@
    "priceUnknown": true,
    "description": "This juried exhibition features creative variations on the traditional holiday decoration in all varieties of materials and subjects.",
    "details": "This juried exhibition features creative variations on the traditional holiday decoration in all varieties of materials and subjects. Artists are invited to commemorate the holiday season by handcrafting a whimsical wreath using inventive, unexpected objects. To submit your wreath for consideration, please send a proposal according to the guidelines below. Due to space constraints not all applications can be selected. Entrants will be notified no later than Friday, Nov. 6 about wreath selections. Send your entry soon! RulesWreaths exhibited in or proposed for past Arsenal Gallery shows will not be considered. Wreaths will be hung from gallery molding, not mounted on the wall, so please incorporate loops (above the midpoint of your wreath) in your design. Wreaths must be engineered so that they hang properly against the wall. To apply, please fill out this online form OR submit the following information by U.S...",
-   "url": "https://www1.nyc.gov/events/nyc-parks-44th-annual-wreath-interpretations-open-call/1311456/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/nyc-parks-44th-annual-wreath-interpretations-open-call",
+   "url": "https://www1.nyc.gov/events/nyc-parks-44th-annual-wreath-interpretations-open-call/1311476/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/nyc-parks-44th-annual-wreath-interpretations-open-call",
    "agency": "NYC Gov",
    "tags": [
     "Parks & Recreation"
    ]
   },
   {
-   "id": "1324676-21",
-   "title": "HHFM Kings County Hospital Market",
-   "category": "food",
-   "start": "2026-10-21T08:00:00.000-04:00",
-   "end": "2026-10-21T15:00:00.000-04:00",
+   "id": "1302416-1",
+   "title": "Forest Fitness",
+   "category": "community",
+   "start": "2026-10-22T07:30:00.000-04:00",
+   "end": "2026-10-22T08:30:00.000-04:00",
    "allDay": false,
-   "timeLabel": "8am to 3pm",
+   "timeLabel": "7:30am to 8:30am",
    "venue": {
-    "name": "Clarkson Avenue",
-    "address": "between East 37 Street and East 38 Street",
-    "neighborhood": "Brooklyn",
-    "lat": 40.655682,
-    "lng": -73.943031
+    "name": "Fort Tryon Park",
+    "address": "Margaret Corbin Circle",
+    "neighborhood": "Manhattan",
+    "lat": 40.859412,
+    "lng": -73.934135
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Explore Fort Tryon Park while you exercise! Join Nancy Bruning for free Fitness at the Fort with walking, stairs, stretching, and nature on Tuesday...",
+   "details": "Join us for a free, year-round \\\"Fitness at the Fort\\\" exercise program on Tuesdays, Thursdays, and Saturdays! This fitness class incorporates climbing multiple staircases, stretches and strengthening exercises, notable tree identification, and forest bathing. Led by instructor, Nancy Bruning, BA, MPH, PAPHS. Classes are structured so that all levels of fitness will be accommodated; however, all classes involve relatively brisk walking and some stairs because of the layout of the park itself. Classes vary according to the season, path conditions, and the weather, but always meet at the Heather Garden entrance. Tuesday and Thursday classes end at various points near the starting point, including the volleyball courts. Saturday class ends at the Anne Loftus Playground, using the various pieces of equipment, and offers optional after-class group walk to the Greenmarket on Isham Street. All classes end with closing with stretches. (Note: Fitness Walking does not meet...",
+   "url": "https://www1.nyc.gov/events/forest-fitness/1302416/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/forest-fitness",
+   "agency": "NYC Gov",
+   "tags": [
+    "Parks & Recreation"
+   ]
+  },
+  {
+   "id": "1323316-18",
+   "title": "175 street Greenmarket Thursday",
+   "category": "food",
+   "start": "2026-10-22T08:00:00.000-04:00",
+   "end": "2026-10-22T17:00:00.000-04:00",
+   "allDay": false,
+   "timeLabel": "8am to 5pm",
+   "venue": {
+    "name": "West 175 Street",
+    "address": "between Broadway and Wadsworth Avenue",
+    "neighborhood": "Manhattan",
+    "lat": 40.845874,
+    "lng": -73.938206
    },
    "price": null,
    "priceUnknown": true,
    "description": "Farmers Market",
    "details": "Farmers Market Learn about related weekend street closures Learn about related weekly street closures Visit the NYC Street Closures Map",
-   "url": "https://www1.nyc.gov/events/hhfm-kings-county-hospital-market/1324676/21",
+   "url": "https://www1.nyc.gov/events/175-street-greenmarket-thursday/1323316/18",
    "website": null,
    "agency": "NYC Gov",
    "tags": [
@@ -59,11 +85,37 @@
    ]
   },
   {
-   "id": "1310856-1",
+   "id": "1320096-1",
+   "title": "Total Body Fitness",
+   "category": "community",
+   "start": "2026-10-22T08:00:00.000-04:00",
+   "end": "2026-10-22T09:00:00.000-04:00",
+   "allDay": false,
+   "timeLabel": "8am to 9am",
+   "venue": {
+    "name": "St. John’s Recreation Center",
+    "address": "Gymnasium",
+    "neighborhood": "Brooklyn",
+    "lat": 40.6735,
+    "lng": -73.934799
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "This fun low-impact full-body workout includes cardio, strength and balance exercises to improve your overall fitness.",
+   "details": "This fun low-impact full-body workout includes cardio, strength and balance exercises to improve your overall fitness.",
+   "url": "https://www1.nyc.gov/events/total-body-fitness/1320096/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/total-body-fitness1",
+   "agency": "NYC Gov",
+   "tags": [
+    "Parks & Recreation"
+   ]
+  },
+  {
+   "id": "1310876-1",
    "title": "New Dendrology at the Arsenal Gallery",
    "category": "art",
-   "start": "2026-10-21T09:00:00.000-04:00",
-   "end": "2026-10-21T17:00:00.000-04:00",
+   "start": "2026-10-22T09:00:00.000-04:00",
+   "end": "2026-10-22T17:00:00.000-04:00",
    "allDay": false,
    "timeLabel": "9am to 5pm",
    "venue": {
@@ -77,71 +129,45 @@
    "priceUnknown": true,
    "description": "New Dendrology is a group exhibition featuring eleven artists whose work contributes to the study of trees, offering new insight and connection bet...",
    "details": "New Dendrology is a group exhibition featuring eleven artists whose work contributes to the study of trees, offering new insight and connection between humans and their arboreal neighbors. From communing with streets trees through a reading with The New York City Street Tree Tarot deck by Matthew López-Jensen, to the commitment ceremonies officiated by Laura Nova , artworks featured in this exhibition invite you to engage in a new kind of relationship with trees. Featured Artist: Mariel Collard, Karin Giusti, Mark Heller, Anya Hoyer, Ekene Ijeoma, Gail Karlsson, sTo Len, Anthoula Lelekidis, Matthew López-Jensen, Amanda Lovelee, and Laura Nova. Image credit: The Bright Oak, 2019, Matthew López-Jensen",
-   "url": "https://www1.nyc.gov/events/new-dendrology-at-the-arsenal-gallery/1310856/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/new-dendrology-at-the-arsenal-gallery",
+   "url": "https://www1.nyc.gov/events/new-dendrology-at-the-arsenal-gallery/1310876/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/new-dendrology-at-the-arsenal-gallery",
    "agency": "NYC Gov",
    "tags": [
     "Parks & Recreation"
    ]
   },
   {
-   "id": "1317156-1",
-   "title": "Riverside Field House: Fall Yoga",
-   "category": "community",
-   "start": "2026-10-21T09:30:00.000-04:00",
-   "end": "2026-10-21T10:30:00.000-04:00",
+   "id": "1325596-145",
+   "title": "St. Anthony Flea Market",
+   "category": "food",
+   "start": "2026-10-22T09:00:00.000-04:00",
+   "end": "2026-10-22T19:00:00.000-04:00",
    "allDay": false,
-   "timeLabel": "9:30am to 10:30am",
+   "timeLabel": "9am to 7pm",
    "venue": {
-    "name": "Riverside Park",
-    "address": "102nd Street Field House",
+    "name": "West Houston Street",
+    "address": "between Thompson Street and Macdougal Street",
     "neighborhood": "Manhattan",
-    "lat": 40.800692,
-    "lng": -73.973306
+    "lat": 40.72721,
+    "lng": -74.00096
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Join Yoga instructor Meg SantaMaria for a morning practice. Suitable for all fitness levels.",
-   "details": "Join Yoga instructor Meg SantaMaria for a morning practice. Suitable for all fitness levels. Please wear loose, comfortable clothing and bring your own mat. No class November 25. This event takes place in the newly-renovated 102nd Street Field House . Enter the Park at 102nd Street and Riverside Drive, then descend to the promenade level. The stairs to the Field House are across the promenade at 102nd Street.",
-   "url": "https://www1.nyc.gov/events/riverside-field-house-fall-yoga/1317156/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/riverside-field-house-fall-yoga",
+   "description": "Sidewalk Sale",
+   "details": "Sidewalk Sale Learn about related weekend street closures Learn about related weekly street closures Visit the NYC Street Closures Map",
+   "url": "https://www1.nyc.gov/events/st-anthony-flea-market/1325596/145",
+   "website": null,
    "agency": "NYC Gov",
    "tags": [
-    "Parks & Recreation"
+    "Street and Neighborhood"
    ]
   },
   {
-   "id": "1317136-1",
-   "title": "Riverside Field House: Fall Yoga",
-   "category": "community",
-   "start": "2026-10-21T09:30:00.000-04:00",
-   "end": "2026-10-21T10:30:00.000-04:00",
-   "allDay": false,
-   "timeLabel": "9:30am to 10:30am",
-   "venue": {
-    "name": "Riverside Park",
-    "address": "102nd Street Field House",
-    "neighborhood": "Manhattan",
-    "lat": 40.800692,
-    "lng": -73.973306
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Join Yoga instructor Meg SantaMaria for a morning practice. Suitable for all fitness levels.",
-   "details": "Join Yoga instructor Meg SantaMaria for a morning practice. Suitable for all fitness levels. Please wear loose, comfortable clothing and bring your own mat. No class November 25. This event takes place in the newly-renovated 102nd Street Field House . Enter the Park at 102nd Street and Riverside Drive, then descend to the promenade level. The stairs to the Field House are across the promenade at 102nd Street.",
-   "url": "https://www1.nyc.gov/events/riverside-field-house-fall-yoga/1317136/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/riverside-field-house-fall-yoga",
-   "agency": "NYC Gov",
-   "tags": [
-    "Parks & Recreation"
-   ]
-  },
-  {
-   "id": "1305276-1",
+   "id": "1305296-1",
    "title": "Kids In Motion: Arrochar",
    "category": "community",
-   "start": "2026-10-21T10:00:00.000-04:00",
-   "end": "2026-10-21T18:00:00.000-04:00",
+   "start": "2026-10-22T10:00:00.000-04:00",
+   "end": "2026-10-22T18:00:00.000-04:00",
    "allDay": false,
    "timeLabel": "10am to 6pm",
    "venue": {
@@ -155,19 +181,45 @@
    "priceUnknown": true,
    "description": "Join NYC Parks staff in free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and mor",
    "details": "\\u200BVega, Shayr (Parks)\\u200B The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kias in Motion is a free, drop-in program without registration. Children can head to the playground during the listed hours of operation to participate. Occasionally a Kids in Motion program may be cancelled due to harsh weather or other conditions. Please note: We recommend that guardians accompany children participating in this program. Kids in Motion is not a childcare program and NYC Parks is not responsible for the well-being of attendees.",
-   "url": "https://www1.nyc.gov/events/kids-in-motion-arrochar/1305276/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/kids-in-motion-arrochar",
+   "url": "https://www1.nyc.gov/events/kids-in-motion-arrochar/1305296/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/kids-in-motion-arrochar",
    "agency": "NYC Gov",
    "tags": [
     "Parks & Recreation"
    ]
   },
   {
-   "id": "1306356-1",
+   "id": "1305456-1",
+   "title": "Kids In Motion: Austin J. McDonald's Playground",
+   "category": "community",
+   "start": "2026-10-22T10:00:00.000-04:00",
+   "end": "2026-10-22T18:00:00.000-04:00",
+   "allDay": false,
+   "timeLabel": "10am to 6pm",
+   "venue": {
+    "name": "Austin J. McDonald Playground",
+    "address": "Austin J. McDonald Playground Fieldhouse",
+    "neighborhood": "Staten Island",
+    "lat": 40.629101,
+    "lng": -74.115501
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Join NYC Parks staff in free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and mor",
+   "details": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kias in Motion is a free, drop-in program without registration. Children can head to the playground during the listed hours of operation to participate. Occasionally a Kids in Motion program may be cancelled due to harsh weather or other conditions. Please note: We recommend that guardians accompany children participating in this program. Kids in Motion is not a childcare program and NYC Parks is not responsible for the well-being of attendees.",
+   "url": "https://www1.nyc.gov/events/kids-in-motion-austin-j-mcdonalds-playground/1305456/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/kids-in-motion-austin-j-mcdonalds-playground",
+   "agency": "NYC Gov",
+   "tags": [
+    "Parks & Recreation"
+   ]
+  },
+  {
+   "id": "1306376-1",
    "title": "Kids In Motion: De Matti Playground",
    "category": "community",
-   "start": "2026-10-21T10:00:00.000-04:00",
-   "end": "2026-10-21T18:00:00.000-04:00",
+   "start": "2026-10-22T10:00:00.000-04:00",
+   "end": "2026-10-22T18:00:00.000-04:00",
    "allDay": false,
    "timeLabel": "10am to 6pm",
    "venue": {
@@ -181,19 +233,19 @@
    "priceUnknown": true,
    "description": "Join NYC Parks staff in free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and mor",
    "details": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kias in Motion is a free, drop-in program without registration. Children can head to the playground during the listed hours of operation to participate. Occasionally a Kids in Motion program may be cancelled due to harsh weather or other conditions. Please note: We recommend that guardians accompany children participating in this program. Kids in Motion is not a childcare program and NYC Parks is not responsible for the well-being of attendees.",
-   "url": "https://www1.nyc.gov/events/kids-in-motion-de-matti-playground/1306356/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/kids-in-motion-de-matti-playground",
+   "url": "https://www1.nyc.gov/events/kids-in-motion-de-matti-playground/1306376/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/kids-in-motion-de-matti-playground",
    "agency": "NYC Gov",
    "tags": [
     "Parks & Recreation"
    ]
   },
   {
-   "id": "1306656-1",
+   "id": "1306676-1",
    "title": "Kids In Motion: Faber",
    "category": "community",
-   "start": "2026-10-21T10:00:00.000-04:00",
-   "end": "2026-10-21T18:00:00.000-04:00",
+   "start": "2026-10-22T10:00:00.000-04:00",
+   "end": "2026-10-22T18:00:00.000-04:00",
    "allDay": false,
    "timeLabel": "10am to 6pm",
    "venue": {
@@ -207,19 +259,19 @@
    "priceUnknown": true,
    "description": "Join NYC Parks staff in free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and mor",
    "details": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kias in Motion is a free, drop-in program without registration. Children can head to the playground during the listed hours of operation to participate. Occasionally a Kids in Motion program may be cancelled due to harsh weather or other conditions. Please note: We recommend that guardians accompany children participating in this program. Kids in Motion is not a childcare program and NYC Parks is not responsible for the well-being of attendees.",
-   "url": "https://www1.nyc.gov/events/kids-in-motion-faber/1306656/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/kids-in-motion-faber",
+   "url": "https://www1.nyc.gov/events/kids-in-motion-faber/1306676/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/kids-in-motion-faber",
    "agency": "NYC Gov",
    "tags": [
     "Parks & Recreation"
    ]
   },
   {
-   "id": "1307096-1",
+   "id": "1307116-1",
    "title": "Kids In Motion: Levy",
    "category": "community",
-   "start": "2026-10-21T10:00:00.000-04:00",
-   "end": "2026-10-21T18:00:00.000-04:00",
+   "start": "2026-10-22T10:00:00.000-04:00",
+   "end": "2026-10-22T18:00:00.000-04:00",
    "allDay": false,
    "timeLabel": "10am to 6pm",
    "venue": {
@@ -233,19 +285,71 @@
    "priceUnknown": true,
    "description": "Join NYC Parks staff in free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and mor",
    "details": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kias in Motion is a free, drop-in program without registration. Children can head to the playground during the listed hours of operation to participate. Occasionally a Kids in Motion program may be cancelled due to harsh weather or other conditions. Please note: We recommend that guardians accompany children participating in this program. Kids in Motion is not a childcare program and NYC Parks is not responsible for the well-being of attendees.",
-   "url": "https://www1.nyc.gov/events/kids-in-motion-levy/1307096/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/kids-in-motion-levy",
+   "url": "https://www1.nyc.gov/events/kids-in-motion-levy/1307116/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/kids-in-motion-levy",
    "agency": "NYC Gov",
    "tags": [
     "Parks & Recreation"
    ]
   },
   {
-   "id": "1314296-1",
+   "id": "1307476-1",
+   "title": "Kids In Motion: P.S. 55",
+   "category": "community",
+   "start": "2026-10-22T10:00:00.000-04:00",
+   "end": "2026-10-22T18:00:00.000-04:00",
+   "allDay": false,
+   "timeLabel": "10am to 6pm",
+   "venue": {
+    "name": "Lieutenant John H. Martinson Playground",
+    "address": "P.S. 55",
+    "neighborhood": "Staten Island",
+    "lat": 40.536369,
+    "lng": -74.163441
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Join NYC Parks staff in free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and mor",
+   "details": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kias in Motion is a free, drop-in program without registration. Children can head to the playground during the listed hours of operation to participate. Occasionally a Kids in Motion program may be cancelled due to harsh weather or other conditions. Please note: We recommend that guardians accompany children participating in this program. Kids in Motion is not a childcare program and NYC Parks is not responsible for the well-being of attendees.",
+   "url": "https://www1.nyc.gov/events/kids-in-motion-ps-55/1307476/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/kids-in-motion-ps-55",
+   "agency": "NYC Gov",
+   "tags": [
+    "Parks & Recreation"
+   ]
+  },
+  {
+   "id": "1308496-1",
+   "title": "Kids In Motion: The Big Park",
+   "category": "community",
+   "start": "2026-10-22T10:00:00.000-04:00",
+   "end": "2026-10-22T18:00:00.000-04:00",
+   "allDay": false,
+   "timeLabel": "10am to 6pm",
+   "venue": {
+    "name": "The Big Park",
+    "address": "Entrance - Continental Place and Grandview Avenue",
+    "neighborhood": "Staten Island",
+    "lat": 40.630373,
+    "lng": -74.165228
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Join NYC Parks staff in free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and mor",
+   "details": "The Kids in Motion program engages children in active, outdoor play. A NYC Parks staff member leads four to seven hours of free activities in NYC's playgrounds, including organized sports, games, fitness demos, board games, water games, and more! Kias in Motion is a free, drop-in program without registration. Children can head to the playground during the listed hours of operation to participate. Occasionally a Kids in Motion program may be cancelled due to harsh weather or other conditions. Please note: We recommend that guardians accompany children participating in this program. Kids in Motion is not a childcare program and NYC Parks is not responsible for the well-being of attendees.",
+   "url": "https://www1.nyc.gov/events/kids-in-motion-the-big-park/1308496/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/kids-in-motion-the-big-park",
+   "agency": "NYC Gov",
+   "tags": [
+    "Parks & Recreation"
+   ]
+  },
+  {
+   "id": "1314316-1",
    "title": "Ongoing Museum Exhibit: Voices of 1776",
    "category": "art",
-   "start": "2026-10-21T10:00:00.000-04:00",
-   "end": "2026-10-21T15:00:00.000-04:00",
+   "start": "2026-10-22T10:00:00.000-04:00",
+   "end": "2026-10-22T15:00:00.000-04:00",
    "allDay": false,
    "timeLabel": "10am to 3pm",
    "venue": {
@@ -259,104 +363,71 @@
    "priceUnknown": true,
    "description": "Stop by the Lenape Gallery in the Conference House Park Visitor Center and explore \\\"Voices of 1776: The People and Events Surrounding the Histori",
    "details": "The Conference House Association and NYC Parks invite you to explore this America 250 Exhibit! Stop by the Lenape Gallery in the Conference House Park Visitor Center and explore \\\"Voices of 1776: The People and Events Surrounding the Historic Staten Island Peace Conference of the American Revolution\\\".",
-   "url": "https://www1.nyc.gov/events/ongoing-museum-exhibit-voices-of-1776/1314296/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/ongoing-museum-exhibit-voices-of-1776",
+   "url": "https://www1.nyc.gov/events/ongoing-museum-exhibit-voices-of-1776/1314316/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/ongoing-museum-exhibit-voices-of-1776",
    "agency": "NYC Gov",
    "tags": [
     "Parks & Recreation"
    ]
   },
   {
-   "id": "1317576-1",
-   "title": "Senior Cardio Sculpt",
+   "id": "1319616-1",
+   "title": "Tiny Tots: Session 1",
    "category": "community",
-   "start": "2026-10-21T10:30:00.000-04:00",
-   "end": "2026-10-21T11:30:00.000-04:00",
+   "start": "2026-10-22T10:30:00.000-04:00",
+   "end": "2026-10-22T11:30:00.000-04:00",
    "allDay": false,
    "timeLabel": "10:30am to 11:30am",
    "venue": {
-    "name": "Sunnyside Community Services",
-    "address": "Sunnyside Community Services",
+    "name": "Bowne Park",
+    "address": "Bowne Park Field House",
     "neighborhood": "Queens",
-    "lat": 40.745166,
-    "lng": -73.925608
+    "lat": 40.7705,
+    "lng": -73.807297
    },
    "price": null,
    "priceUnknown": true,
-   "description": "This low impact cardio workout consists of functional movement exercises designed to make daily activities easier to perform. Participants must be ...",
-   "details": "This low impact cardio workout consists of functional movement exercises designed to make daily activities easier to perform. Participants must be 60+ to attend this class. The site requires a separate form for the Department of Aging for all participants. Please come earlier to fill out the consent form.",
-   "url": "https://www1.nyc.gov/events/senior-cardio-sculpt/1317576/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/senior-cardio-sculpt",
+   "description": "Tiny Tots is an energetic learning experience fit for children ages 18 months to 3 years old.",
+   "details": "Tiny Tots is an energetic learning experience fit for children ages 18 months to 3 years old. Parents work alongside their children to help them improve their fine motor skills and get them ready to start elementary education. Children will learn to socialize with other children and build independence.",
+   "url": "https://www1.nyc.gov/events/tiny-tots-session-1/1319616/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/tiny-tots-session-1",
    "agency": "NYC Gov",
    "tags": [
     "Parks & Recreation"
    ]
   },
   {
-   "id": "1294636-1",
-   "title": "Neighborhood Stories: Sharing New York Memories",
-   "category": "art",
-   "start": "2026-10-21T11:00:00.000-04:00",
-   "end": "2026-10-21T12:00:00.000-04:00",
-   "allDay": false,
-   "timeLabel": "11am to 12pm",
-   "venue": {
-    "name": "31 Chambers St",
-    "address": "31 Chambers St",
-    "neighborhood": "Manhattan",
-    "lat": 40.713591,
-    "lng": -74.004239
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Join us at the historic Hall of Records on October 21st to learn about the City\\u0092s oral history initiative, Neighborhood Stories!",
-   "details": "On Wednesday, October 21st, the NYC Department of Records and Information Services (DORIS) presents Reflecting on NYC History: A Community Forum, a full day of programming at the historic Hall of Records. Earlier this year, DORIS launched a new website for the Neighborhood Stories project, a unique storytelling initiative that gathers and permanently preserves oral history-style interviews with New York City residents, connecting local history with the records of City government maintained in the collections of the Municipal Archives and Library. Join us at 11:00 AM to learn how you can share your New York memories and help preserve the history of the city and its neighborhoods. Drawing on photographs, documents, maps, and other materials from the Archives, we\\u0092ll explore how the official record and personal stories can tell different sides of the same place, community, or moment in New York\\u0092s history. Bring\\u0097or simply think of\\u0097a photograph, object, memory, or family story connected to New York. Come ready to look closely, share a memory, ask questions, and consider what you or someone you know might contribute to the growing record of New York life. Learn how the project began, how to get involved, and how your story can help preserve New York City history for future generations.",
-   "url": "https://www1.nyc.gov/site/records/events/neighborhood-stories-sharing-new-york-memories/1294636/1",
-   "website": "https://on.nyc.gov/4z0mpB4",
-   "agency": "Department of Records",
-   "tags": [
-    "City Government Office",
-    "Free",
-    "Street and Neighborhood",
-    "Education",
-    "Cultural",
-    "Free",
-    "Street and Neighborhood",
-    "General Events"
-   ]
-  },
-  {
-   "id": "1294336-1",
-   "title": "Notice of Public Hearing",
+   "id": "1298656-1",
+   "title": "Cardio Sculpt",
    "category": "community",
-   "start": "2026-10-21T11:00:00.000-04:00",
-   "end": "2026-10-21T12:00:00.000-04:00",
+   "start": "2026-10-22T11:00:00.000-04:00",
+   "end": "2026-10-22T12:00:00.000-04:00",
    "allDay": false,
    "timeLabel": "11am to 12pm",
    "venue": {
-    "name": "55 Water Street",
-    "address": "55 Water Street 9th Floor",
-    "neighborhood": "Manhattan",
-    "lat": 40.703236,
-    "lng": -74.00907
+    "name": "Queensbridge Park",
+    "address": "Queensbridge Park House",
+    "neighborhood": "Queens",
+    "lat": 40.755046,
+    "lng": -73.949578
    },
    "price": null,
    "priceUnknown": true,
-   "description": "20 proposed revocable consents have been scheduled for public hearing at NYCDOT",
-   "details": "20 proposed revocable consents have been scheduled for public hearing by NYCDOT. The hearing will be held remotely via WebEx Platform. Interested parties can obtain copies of proposed agreements or request sign-language interpreters (with at least seven days pior notice) See link for instructions.",
-   "url": "https://www1.nyc.gov/events/notice-of-public-hearing/1294336/1",
-   "website": null,
+   "description": "This cardio workout consists of functional movement exercises designed to make daily activities easier to perform.",
+   "details": "This cardio workout consists of functional movement exercises designed to make daily activities easier to perform. Please bring a yoga mat!",
+   "url": "https://www1.nyc.gov/events/cardio-sculpt/1298656/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/cardio-sculpt1",
    "agency": "NYC Gov",
    "tags": [
-    "Hearings and Meetings"
+    "Parks & Recreation"
    ]
   },
   {
-   "id": "1313376-1",
+   "id": "1313396-1",
    "title": "Ongoing Museum Exhibit: New York's Brick & Terra Cotta Industries",
    "category": "art",
-   "start": "2026-10-21T11:00:00.000-04:00",
-   "end": "2026-10-21T15:00:00.000-04:00",
+   "start": "2026-10-22T11:00:00.000-04:00",
+   "end": "2026-10-22T15:00:00.000-04:00",
    "allDay": false,
    "timeLabel": "11am to 3pm",
    "venue": {
@@ -370,19 +441,19 @@
    "priceUnknown": true,
    "description": "NYC Parks and the Tottenville Historical Society invite you to visit a unique collection of terracotta artifacts and masonry bricks.",
    "details": "NYC Parks and the Tottenville Historical Society invite you to visit a unique collection of terracotta artifacts and masonry bricks that chronicle turn-of-the-twentieth-century architectural styles common in New York City and across the United States, and to learn about the area's rich terracotta and brick making tradition, including the famed former Atlantic Terra Cotta Company.",
-   "url": "https://www1.nyc.gov/events/ongoing-museum-exhibit-new-yorks-brick-terra-cotta-industries/1313376/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/ongoing-museum-exhibit-new-yorks-brick-terra-cotta-industries",
+   "url": "https://www1.nyc.gov/events/ongoing-museum-exhibit-new-yorks-brick-terra-cotta-industries/1313396/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/ongoing-museum-exhibit-new-yorks-brick-terra-cotta-industries",
    "agency": "NYC Gov",
    "tags": [
     "Parks & Recreation"
    ]
   },
   {
-   "id": "1313736-1",
+   "id": "1313756-1",
    "title": "Ongoing Museum Exhibit: Still Waters: Reflections of a Maritime Community",
    "category": "art",
-   "start": "2026-10-21T11:00:00.000-04:00",
-   "end": "2026-10-21T15:00:00.000-04:00",
+   "start": "2026-10-22T11:00:00.000-04:00",
+   "end": "2026-10-22T15:00:00.000-04:00",
    "allDay": false,
    "timeLabel": "11am to 3pm",
    "venue": {
@@ -396,19 +467,19 @@
    "priceUnknown": true,
    "description": "NYC Parks and the Tottenville Historical Society invite you to an exhibit celebrating the South Shore of Staten Island's maritime history and her",
    "details": "NYC Parks and the Tottenville Historical Society invite you to an exhibit celebrating the South Shore of Staten Island's maritime history and heritage, featuring the A.C. Brown & Sons Shipyard of Tottenville and spotlighting our recreational waterfront and more. Note location: Rutan-Becket House, 6 Shore Rd. Open by chance or by appointment.",
-   "url": "https://www1.nyc.gov/events/ongoing-museum-exhibit-still-waters-reflections-of-a-maritime-community/1313736/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/ongoing-museum-exhibit-still-waters-reflections-of-a-maritime-community",
+   "url": "https://www1.nyc.gov/events/ongoing-museum-exhibit-still-waters-reflections-of-a-maritime-community/1313756/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/ongoing-museum-exhibit-still-waters-reflections-of-a-maritime-community",
    "agency": "NYC Gov",
    "tags": [
     "Parks & Recreation"
    ]
   },
   {
-   "id": "1314916-1",
+   "id": "1314936-1",
    "title": "Ongoing Outdoor Museum Exhibit: Alice's Terracotta Garden",
    "category": "art",
-   "start": "2026-10-21T11:00:00.000-04:00",
-   "end": "2026-10-21T15:00:00.000-04:00",
+   "start": "2026-10-22T11:00:00.000-04:00",
+   "end": "2026-10-22T15:00:00.000-04:00",
    "allDay": false,
    "timeLabel": "11am to 3pm",
    "venue": {
@@ -422,50 +493,149 @@
    "priceUnknown": true,
    "description": "NYC Parks and the Tottenville Historical Society invite you to visit a unique collection of terracotta artifacts that chronicle turn-of-the-twentie...",
    "details": "Terra cotta sculpture garden featuring antique architectural ornaments from Tottenville's Atlantic Terra Cotta Company (west side lawn of Biddle House). NYC Parks and the Tottenville Historical Society invite you to visit a unique collection of terracotta artifacts that chronicle turn-of-the-twentieth-century architectural styles common in New York City and across the United States.",
-   "url": "https://www1.nyc.gov/events/ongoing-outdoor-museum-exhibit-alices-terracotta-garden/1314916/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/ongoing-outdoor-museum-exhibit-alices-terracotta-garden",
+   "url": "https://www1.nyc.gov/events/ongoing-outdoor-museum-exhibit-alices-terracotta-garden/1314936/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/ongoing-outdoor-museum-exhibit-alices-terracotta-garden",
    "agency": "NYC Gov",
    "tags": [
     "Parks & Recreation"
    ]
   },
   {
-   "id": "1294616-1",
-   "title": "Lunch & Learn: Searching the Archives for Hidden Voices",
-   "category": "art",
-   "start": "2026-10-21T13:00:00.000-04:00",
-   "end": "2026-10-21T14:00:00.000-04:00",
+   "id": "1317076-1",
+   "title": "Riverside Field House: Fall Mat Pilates",
+   "category": "community",
+   "start": "2026-10-22T11:00:00.000-04:00",
+   "end": "2026-10-22T12:00:00.000-04:00",
    "allDay": false,
-   "timeLabel": "1pm to 2pm",
+   "timeLabel": "11am to 12pm",
    "venue": {
-    "name": "31 Chambers St",
-    "address": "31 Chambers St",
+    "name": "Riverside Park",
+    "address": "102nd Street Field House",
     "neighborhood": "Manhattan",
-    "lat": 40.713591,
-    "lng": -74.004239
+    "lat": 40.800692,
+    "lng": -73.973306
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Join us as researchers Hugh Ryan and Riah Lee Kinsey discuss their experiences navigating archival spaces while researching LGBTQ history.",
-   "details": "On Wednesday, October 21st, the NYC Department of Records and Information Services (DORIS) presents Reflecting on NYC History: A Community Forum, a full day of programming at the historic Hall of Records. Join us at 1:00 PM for a conversation with author Hugh Ryan and archivist Riah Lee Kinsey. The speakers will discuss their experiences conducting archival research at a range of institutions, with a particular focus on their work at the Municipal Archives and Library. Discover how their research has shaped their understanding of present-day New York and informed the ways they interpret LGBTQ history. The conversation will be moderated by archivist Tara Hart. Join us either virtually (via Zoom) or in person (limited seats available).",
-   "url": "https://www1.nyc.gov/site/records/events/lunch-learn-searching-the-archives-for-hidden-voices/1294616/1",
-   "website": "https://on.nyc.gov/46TfQ7w",
-   "agency": "Department of Records",
+   "description": "Join Sweet Water Dance & Yoga for Mat Pilates, a strengthening and lengthening exercise that focuses on conditioning your core muscles while also",
+   "details": "Join Sweet Water Dance & Yoga for Mat Pilates, a strengthening and lengthening exercise that focuses on conditioning your core muscles while also training your arms and legs. This class incorporates key Pilates principles such as postural alignment, breathing, strength, controlled movement and flexibility. This class is perfect for beginners but intermediate and advanced movers will also benefit. Bring your own mat. This event takes place in the newly-renovated 102nd Street Field House . Enter the Park at 102nd Street and Riverside Drive, then descend to the promenade level. The stairs to the Field House are across the promenade at 102nd Street.",
+   "url": "https://www1.nyc.gov/events/riverside-field-house-fall-mat-pilates/1317076/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/riverside-field-house-fall-mat-pilates",
+   "agency": "NYC Gov",
    "tags": [
-    "City Government Office",
-    "Free",
-    "Education",
-    "Cultural",
-    "Free",
-    "General Events"
+    "Parks & Recreation"
    ]
   },
   {
-   "id": "1323296-71",
+   "id": "1299376-1",
+   "title": "Community Banquet Planning Meeting",
+   "category": "community",
+   "start": "2026-10-22T12:00:00.000-04:00",
+   "end": "2026-10-22T13:00:00.000-04:00",
+   "allDay": false,
+   "timeLabel": "12pm to 1pm",
+   "venue": {
+    "name": "Virtual\\/Online Events",
+    "address": "Virtual/Online Events",
+    "neighborhood": "Manhattan",
+    "lat": 40.758326,
+    "lng": -73.993517
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Community Banquet Planning Meeting",
+   "details": "Help us plan and prepare for the 5th annual Community Banquet, a yearly grassroots tradition highlights the plants and people of the Bronx River. Each year this event invites partners and friends to share lessons learned from the past year, reconnecting people to the land through FREE wild food and drink tastings, herbalism, educational workshops, art, music and more! Join these meetings and help shape the event, scheduled for November 7th from 12-4pm.",
+   "url": "https://www1.nyc.gov/events/community-banquet-planning-meeting/1299376/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/community-banquet-planning-meeting",
+   "agency": "NYC Gov",
+   "tags": [
+    "Parks & Recreation"
+   ]
+  },
+  {
+   "id": "1325576-13",
+   "title": "south villge farmers market",
+   "category": "food",
+   "start": "2026-10-22T12:00:00.000-04:00",
+   "end": "2026-10-22T17:00:00.000-04:00",
+   "allDay": false,
+   "timeLabel": "12pm to 5pm",
+   "venue": {
+    "name": "Avenue Of Americas",
+    "address": "between Carmine Street and West 3 Street",
+    "neighborhood": "Manhattan",
+    "lat": 40.730644,
+    "lng": -74.002024
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Farmers Market",
+   "details": "Farmers Market Learn about related weekend street closures Learn about related weekly street closures Visit the NYC Street Closures Map",
+   "url": "https://www1.nyc.gov/events/south-villge-farmers-market/1325576/13",
+   "website": "http://grubernyc.com",
+   "agency": "NYC Gov",
+   "tags": [
+    "Street and Neighborhood"
+   ]
+  },
+  {
+   "id": "1319776-1",
+   "title": "Tiny Tots: Session 2",
+   "category": "community",
+   "start": "2026-10-22T12:00:00.000-04:00",
+   "end": "2026-10-22T13:00:00.000-04:00",
+   "allDay": false,
+   "timeLabel": "12pm to 1pm",
+   "venue": {
+    "name": "Bowne Park",
+    "address": "Bowne Park Field House",
+    "neighborhood": "Queens",
+    "lat": 40.7705,
+    "lng": -73.807297
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Tiny Tots is an energetic learning experience fit for children ages 18 months to 3 years old.",
+   "details": "Tiny Tots is an energetic learning experience fit for children ages 18 months to 3 years old. Parents work alongside their children to help them improve their fine motor skills and get them ready to start elementary education. Children will learn to socialize with other children and build independence.",
+   "url": "https://www1.nyc.gov/events/tiny-tots-session-2/1319776/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/tiny-tots-session-2",
+   "agency": "NYC Gov",
+   "tags": [
+    "Parks & Recreation"
+   ]
+  },
+  {
+   "id": "1315436-1",
+   "title": "Park Open Studio",
+   "category": "art",
+   "start": "2026-10-22T13:00:00.000-04:00",
+   "end": "2026-10-22T15:00:00.000-04:00",
+   "allDay": false,
+   "timeLabel": "1pm to 3pm",
+   "venue": {
+    "name": "Washington Square Park",
+    "address": "Northwest Corner Seating Area",
+    "neighborhood": "Manhattan",
+    "lat": 40.732022,
+    "lng": -73.998528
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Led by a local teaching artist, this drop-in class invites participants to explore creativity through hands-on artmaking under the shade of Scrabbl...",
+   "details": "Led by a local teaching artist, this drop-in class invites participants to explore creativity through hands-on artmaking under the shade of Scrabble Plaza's trees. Past mediums have included plein-air drawing, printmaking, cyanotypes, and more. All materials are provided by the Washington Square Park Conservancy.",
+   "url": "https://www1.nyc.gov/events/park-open-studio/1315436/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/park-open-studio",
+   "agency": "NYC Gov",
+   "tags": [
+    "Parks & Recreation"
+   ]
+  },
+  {
+   "id": "1323296-72",
    "title": "170 Farm Stand",
    "category": "food",
-   "start": "2026-10-21T14:00:00.000-04:00",
-   "end": "2026-10-21T18:00:00.000-04:00",
+   "start": "2026-10-22T14:00:00.000-04:00",
+   "end": "2026-10-22T18:00:00.000-04:00",
    "allDay": false,
    "timeLabel": "2pm to 6pm",
    "venue": {
@@ -479,7 +649,7 @@
    "priceUnknown": true,
    "description": "Farmers Market",
    "details": "Farmers Market Learn about related weekend street closures Learn about related weekly street closures Visit the NYC Street Closures Map",
-   "url": "https://www1.nyc.gov/events/170-farm-stand/1323296/71",
+   "url": "https://www1.nyc.gov/events/170-farm-stand/1323296/72",
    "website": "https://newsettlement.org",
    "agency": "NYC Gov",
    "tags": [
@@ -487,13 +657,39 @@
    ]
   },
   {
-   "id": "1295316-1",
+   "id": "1316176-1",
+   "title": "Public Gallery Tour",
+   "category": "art",
+   "start": "2026-10-22T14:00:00.000-04:00",
+   "end": "2026-10-22T14:45:00.000-04:00",
+   "allDay": false,
+   "timeLabel": "2pm to 2:45pm",
+   "venue": {
+    "name": "Wave Hill",
+    "address": "Wave Hill",
+    "neighborhood": "Bronx",
+    "lat": 40.898701,
+    "lng": -73.912498
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Solo and group exhibitions at Glyndor Gallery explore the dynamic relationships between nature, culture, and site.",
+   "details": "Solo and group exhibitions at Glyndor Gallery explore the dynamic relationships between nature, culture, and site. When exhibitions are on view in the spring, summer, and fall, Gallery Greeters lead public exhibition tours on Thursdays and Saturdays at 2PM, certain dates excluded. Visitors can expect an in-depth look at artworks on view in Glyndor Gallery and in the Sunroom Project Space, showcasing the work of both emerging and established artists in the unique context of a public garden. Each tour lasts approximately 45 minutes. Registration is not required for this drop-in event. Today's tour features current exhibitions. Questions? Please email us at information@wavehill.org or call 718.549.3200 x251. Glyndor Gallery is wheelchair-accessible. There is an accessible, ground-level entrance at the front of the building with an elevator that provides access to the gallery level. The Sun...",
+   "url": "https://www1.nyc.gov/events/public-gallery-tour/1316176/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/public-gallery-tour",
+   "agency": "NYC Gov",
+   "tags": [
+    "Parks & Recreation"
+   ]
+  },
+  {
+   "id": "1295336-1",
    "title": "After School Youth Recreation",
    "category": "community",
-   "start": "2026-10-21T14:30:00.000-04:00",
-   "end": "2026-10-21T16:00:00.000-04:00",
+   "start": "2026-10-22T14:30:00.000-04:00",
+   "end": "2026-10-22T17:00:00.000-04:00",
    "allDay": false,
-   "timeLabel": "2:30pm to 4pm",
+   "timeLabel": "2:30pm to 5pm",
    "venue": {
     "name": "Lost Battalion Hall Recreation Center",
     "address": "Classroom A - Small",
@@ -505,139 +701,97 @@
    "priceUnknown": true,
    "description": "Join us after school for fun games and active play.",
    "details": "Join us after school for fun games and active play. In this program youth ages 6 - 12 will have the opportunity to play various sports, compete against other kids while playing board games, and play an assortment of group games.",
-   "url": "https://www1.nyc.gov/events/after-school-youth-recreation/1295316/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/after-school-youth-recreation",
+   "url": "https://www1.nyc.gov/events/after-school-youth-recreation/1295336/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/after-school-youth-recreation",
    "agency": "NYC Gov",
    "tags": [
     "Parks & Recreation"
    ]
   },
   {
-   "id": "1294576-1",
-   "title": "AI and NYC Government Records: Perspectives from the Department of Records & Information Services",
-   "category": "art",
-   "start": "2026-10-21T15:00:00.000-04:00",
-   "end": "2026-10-21T16:00:00.000-04:00",
-   "allDay": false,
-   "timeLabel": "3pm to 4pm",
-   "venue": {
-    "name": "31 Chambers St",
-    "address": "31 Chambers St",
-    "neighborhood": "Manhattan",
-    "lat": 40.713591,
-    "lng": -74.004239
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Join us for a cross-departmental conversation with DORIS staff on how AI is affecting municipal archive services.",
-   "details": "On Wednesday, October 21st, the NYC Department of Records and Information Services (DORIS) presents Reflecting on NYC History: A Community Forum, a full day of programming at the historic Hall of Records. At 3:00 PM, join the NYC Department of Records and Information Services (DORIS) for a cross?departmental conversation on how artificial intelligence is reshaping records management, archival practice, digital preservation, and public research services. This moderated panel brings together staff from across DORIS to discuss: \\u0095 The rise of AI?generated research requests and how they challenge existing workflows \\u0095 AI\\u0092s potential to support metadata creation, digitization, technical tasks, and preservation planning \\u0095 Ethical concerns around accuracy, privacy, bias, and transparency \\u0095 How AI may influence the definition, creation, and stewardship of government records \\u0095 Opportunities and limitations for integrating AI into archival decision?making Moderator: Caleb Simone, Digital Archivist Panelists: Katie Ehrlich, Reference Supervisor Patricia Glowinski, Collections Management Supervisor Rossy Mendez, Reference Supervisor Kelli O\\u0092Toole, Digital Programs Supervisor Rose Nagle?Yndigoyen, Director of NYC Records Management Lindsey Hobbs, Head of Conservation & Preservation As part of New York Archives Week, this program highlights DORIS\\u0092s role in shaping the broader conversation about AI, archives, and city government, while bringing together diverse staff perspectives on the opportunities and challenges ahead.",
-   "url": "https://www1.nyc.gov/site/records/events/ai-and-nyc-government-records-perspectives-from-the-department-of-records-information-services/1294576/1",
-   "website": "https://on.nyc.gov/4yHsh2y",
-   "agency": "Department of Records",
-   "tags": [
-    "City Government Office",
-    "Free",
-    "Education",
-    "Cultural",
-    "Free",
-    "General Events"
-   ]
-  },
-  {
-   "id": "1290836-1",
-   "title": "Community Recycling Event - Forest Hills",
+   "id": "1324996-1",
+   "title": "Light the Night Manhattan",
    "category": "community",
-   "start": "2026-10-21T15:00:00.000-04:00",
-   "end": "2026-10-21T19:00:00.000-04:00",
+   "start": "2026-10-22T17:00:00.000-04:00",
+   "end": "2026-10-22T20:30:00.000-04:00",
    "allDay": false,
-   "timeLabel": "3pm to 7pm",
+   "timeLabel": "5pm to 8:30pm",
    "venue": {
-    "name": "Parkside Memorial Chapels",
-    "address": "114-03 Queens Boulevard",
-    "neighborhood": "Queens",
-    "lat": 40.717264,
-    "lng": -73.834319
+    "name": "89 SOUTH STREET Manhattan",
+    "address": "89 SOUTH STREET Manhattan",
+    "neighborhood": "Manhattan",
+    "lat": 40.705523,
+    "lng": -74.001567
    },
    "price": null,
    "priceUnknown": true,
-   "description": "DSNY holds pop-up e-waste & textile recycling events in every Community Board district in New York City.",
-   "details": "DSNY holds pop-up e-waste and textile recycling events in every Community Board district in New York City. E-waste items collected at these events include: household and office electronics (computers, laptops, keyboards, printers), smaller entertainment electronics (video game consoles, cell phones, MP3 players), TVs, VCRs, DVDs, and DVRs, and all cords, cables, wiring accompanying e-waste devices. Textile items include: clothing, shoes, hats, bags, gloves, towels, curtains, bedding, and all clean, dry, unsoiled fabrics. Unacceptable items: commercial waste, air conditioners, household appliances, batteries, lightbulbs. Learn more about this event.",
-   "url": "https://www1.nyc.gov/site/dsny/events/community-recycling-event-forest-hills/1290836/1",
-   "website": "https://www.nyc.gov/site/dsny/what-we-do/programs/community-reuse-recycling-events.page",
-   "agency": "Department of Sanitation",
+   "description": "Parade",
+   "details": "Parade Learn about related weekend street closures Learn about related weekly street closures Visit the NYC Street Closures Map",
+   "url": "https://www1.nyc.gov/events/light-the-night-manhattan/1324996/1",
+   "website": "https://www.bloodcancerunited.org/",
+   "agency": "NYC Gov",
    "tags": [
-    "Health & Public Safety",
-    "Environment",
-    "Free",
-    "Community Recycling",
-    "Disposal",
-    "Environment",
-    "General Events"
+    "Street and Neighborhood"
    ]
   },
   {
-   "id": "1295636-1",
-   "title": "Arts, Culture & Fun: BE BOLD - Ballet Programming",
-   "category": "art",
-   "start": "2026-10-21T16:00:00.000-04:00",
-   "end": "2026-10-21T17:00:00.000-04:00",
+   "id": "1296816-1",
+   "title": "Bodyweight Circuit Training",
+   "category": "community",
+   "start": "2026-10-22T17:30:00.000-04:00",
+   "end": "2026-10-22T18:15:00.000-04:00",
    "allDay": false,
-   "timeLabel": "4pm to 5pm",
+   "timeLabel": "5:30pm to 6:15pm",
    "venue": {
-    "name": "Williamsbridge Oval Recreation Center",
-    "address": "Multi-Use Room",
-    "neighborhood": "Bronx",
-    "lat": 40.876734,
-    "lng": -73.878591
+    "name": "Brooklyn Public Library - New Utrecht",
+    "address": "Brooklyn Public Library - New Utrecht",
+    "neighborhood": "",
+    "lat": 40.607962,
+    "lng": -74.003469
    },
    "price": null,
    "priceUnknown": true,
-   "description": "BE BOLD - Ballet Explorations, Ballet Offers Leadership Development! A new approach to dance education!",
-   "details": "NYC Parks, in partnership with the Misty Copeland Foundation, invites children ages 6 - 14 years to enroll in the BE BOLD afterschool dance program, a fun introductory ballet class with live music. The BE BOLD program is FREE and offers a new approach to afterschool dance education for young children that makes ballet accessible, affordable, and fun. *Membership required* Please email sarah.bishow@parks.nyc.gov to register.",
-   "url": "https://www1.nyc.gov/events/arts-culture-fun-be-bold-ballet-programming/1295636/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/be-bold-ballet-programming",
+   "description": "Using your own body weight, come experience this circuit training class that focuses on functional, everyday movement that will increase overall st...",
+   "details": "Using your own body weight, come experience this circuit training class that focuses on functional, everyday movement that will increase overall strength. This is not just a great workout, but a way to learn \\\"movement tools\\\" you can use in everyday life. Open to all fitness levels, and you can expect several rounds of timed exercises followed by rest. Sets and rounds will vary class to class, and all exercises will be demonstrated and cued for participants.",
+   "url": "https://www1.nyc.gov/events/bodyweight-circuit-training/1296816/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/bodyweight-circuit-training1",
    "agency": "NYC Gov",
    "tags": [
     "Parks & Recreation"
    ]
   },
   {
-   "id": "1294596-1",
-   "title": "Exhibit Opening - Change Preservation",
-   "category": "art",
-   "start": "2026-10-21T18:00:00.000-04:00",
-   "end": "2026-10-21T19:00:00.000-04:00",
+   "id": "1300816-1",
+   "title": "Double Dutch",
+   "category": "community",
+   "start": "2026-10-22T17:30:00.000-04:00",
+   "end": "2026-10-22T19:00:00.000-04:00",
    "allDay": false,
-   "timeLabel": "6pm to 7pm",
+   "timeLabel": "5:30pm to 7pm",
    "venue": {
-    "name": "31 Chambers St",
-    "address": "31 Chambers St",
+    "name": "Washington Square Park",
+    "address": "Garibaldi Plaza",
     "neighborhood": "Manhattan",
-    "lat": 40.713591,
-    "lng": -74.004239
+    "lat": 40.730499,
+    "lng": -73.997002
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Join DORIS for the opening of Change Preservation, a new exhibit located in the first-floor alcove of 31 Chambers Street!",
-   "details": "On Wednesday, October 21st, the NYC Department of Records and Information Services (DORIS) presents Reflecting on NYC History: A Community Forum, a full day of programming at the historic Hall of Records. Join us at 6:00 PM for the opening of Change Preservation! Curated by architects Wes Hiatt and Violette de la Selle, the exhibition brings together the material of Changing Change, a research project shown in two chapters at Citygroup in 2024 and 2025 on how buildings in Manhattan's Lower East Side and Chinatown endure through constant alteration. Patterns of Change layers current conditions over 1940s tax photographs and permit application drawings held at the Municipal Archives, documenting blocks and buildings as they were and as they are. Keep the Change illustrates that history with articulated composite drawings that present each building's many lives at once. Presented at the NYC Department of Records & Information Services, where the source information is held, the drawings read as both evidence and argument. The drawings advocate that the centuries-old buildings of the Lower East Side stand as manifestos for a mode of preservation that contrasts with the one in effect: unconstrained by a particular historical appearance \\u0097 pristine and immutable \\u0097 they contribute meaningfully to their communities, taking on different aspects as they adapt to the changing circumstances that keep them in use. What if preservation frameworks could embrace and even facilitate degrees of change rather than requiring high-fidelity restorations? At 7:00 PM, immediately following the opening, there will be a live podcast interview with Shawn(ta) Smith-Cruz, the commissioner of the NYC Department of Records & Information Services (DORIS).",
-   "url": "https://www1.nyc.gov/site/records/events/exhibit-opening-change-preservation/1294596/1",
-   "website": "https://on.nyc.gov/4hM8hnZ",
-   "agency": "Department of Records",
+   "description": "Learn the fundamentals of street-style and competitive jump rope with the Double Dutch Aunties.",
+   "details": "Learn the fundamentals of street-style and competitive jump rope with the Double Dutch Aunties.",
+   "url": "https://www1.nyc.gov/events/double-dutch/1300816/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/double-dutch",
+   "agency": "NYC Gov",
    "tags": [
-    "City Government Office",
-    "Free",
-    "Education",
-    "Cultural",
-    "Free",
-    "General Events"
+    "Parks & Recreation"
    ]
   },
   {
-   "id": "1309936-1",
-   "title": "Mott Playground Reconstruction Community Input Meeting",
+   "id": "1296116-1",
+   "title": "Bathgate Playground Reconstruction Community Input Meeting",
    "category": "community",
-   "start": "2026-10-21T18:00:00.000-04:00",
-   "end": "2026-10-21T19:00:00.000-04:00",
+   "start": "2026-10-22T18:00:00.000-04:00",
+   "end": "2026-10-22T19:00:00.000-04:00",
    "allDay": false,
    "timeLabel": "6pm to 7pm",
    "venue": {
@@ -649,300 +803,320 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Join a virtual community input meeting to discuss the reconstruction of Mott Playground. This will be a virtual meeting.",
-   "details": "Please join us to discuss your ideas for the reconstruction of Mott Playground. Register online at Community Input Meetings Registration : NYC Parks The meeting information will be sent to registered participants one hour before the start of the meeting. Check your spam folder.",
-   "url": "https://www1.nyc.gov/events/mott-playground-reconstruction-community-input-meeting/1309936/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/mott-playground-reconstruction-community-input-meeting",
+   "description": "Join a virtual community input meeting to discuss the reconstruction of Bathgate Playground. This will be a virtual meeting.",
+   "details": "Please join us to discuss your ideas for the reconstruction of Bathgate Playground. Register online at Community Input Meetings Registration : NYC Parks The meeting information will be sent to registered participants one hour before the start of the meeting. Check your spam folder.",
+   "url": "https://www1.nyc.gov/events/bathgate-playground-reconstruction-community-input-meeting/1296116/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/bathgate-playground-reconstruction-community-input-meeting",
    "agency": "NYC Gov",
    "tags": [
     "Parks & Recreation"
    ]
   },
   {
-   "id": "1317376-1",
-   "title": "Salsa Social",
-   "category": "community",
-   "start": "2026-10-21T18:00:00.000-04:00",
-   "end": "2026-10-21T21:00:00.000-04:00",
-   "allDay": false,
-   "timeLabel": "6pm to 9pm",
-   "venue": {
-    "name": "Washington Square Park",
-    "address": "Garibaldi Plaza",
-    "neighborhood": "Manhattan",
-    "lat": 40.730499,
-    "lng": -73.997002
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Join our friends from Mi Salsa Dura Baile for an evening of Latin rhythm and dancing in Garibaldi Plaza! Each class starts off with a free lesson f...",
-   "details": "Join our friends from Mi Salsa Dura Baile for an evening of Latin rhythm and dancing in Garibaldi Plaza! Each class starts off with a free lesson followed by an open dance floor.",
-   "url": "https://www1.nyc.gov/events/salsa-social/1317376/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/salsa-social",
-   "agency": "NYC Gov",
-   "tags": [
-    "Parks & Recreation"
-   ]
-  },
-  {
-   "id": "1322376-1",
+   "id": "1322436-1",
    "title": "Zumba",
    "category": "community",
-   "start": "2026-10-21T18:00:00.000-04:00",
-   "end": "2026-10-21T19:00:00.000-04:00",
+   "start": "2026-10-22T18:00:00.000-04:00",
+   "end": "2026-10-22T19:00:00.000-04:00",
    "allDay": false,
    "timeLabel": "6pm to 7pm",
    "venue": {
-    "name": "Highbridge Recreation Center",
-    "address": "Gymnasium",
-    "neighborhood": "Manhattan",
-    "lat": 40.842602,
-    "lng": -73.934303
+    "name": "Queens Public Library - Corona",
+    "address": "Queens Public Library - Corona",
+    "neighborhood": "Queens",
+    "lat": 40.751004,
+    "lng": -73.861925
    },
    "price": null,
    "priceUnknown": true,
    "description": "Zumba is a fusion of Latin, International and popular music dance themes creating a dynamic, exciting, effective fitness system!",
-   "details": "Zumba is a fusion of Latin, International and popular music dance themes creating a dynamic, exciting, effective fitness system! The routines feature aerobic, fitness interval training with a combination of fast and slow rhythms that tone and sculpt the body with easy to follow dance steps.",
-   "url": "https://www1.nyc.gov/events/zumba/1322376/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/zumba",
+   "details": "Zumba is a fusion of Latin, International and popular music dance themes creating a dynamic, exciting, effective fitness system! The routines feature aerobic fitness interval training with a combination of fast and slow rhythms that challenge both the heart and muscles. With fun music and easy-to-follow steps, you can't go wrong!",
+   "url": "https://www1.nyc.gov/events/zumba/1322436/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/zumba1",
    "agency": "NYC Gov",
    "tags": [
     "Parks & Recreation"
    ]
   },
   {
-   "id": "1309156-1",
-   "title": "Latin Dance Fitness",
+   "id": "1302676-1",
+   "title": "Full Body Circuit Training",
    "category": "community",
-   "start": "2026-10-21T18:30:00.000-04:00",
-   "end": "2026-10-21T19:15:00.000-04:00",
+   "start": "2026-10-22T18:30:00.000-04:00",
+   "end": "2026-10-22T19:30:00.000-04:00",
    "allDay": false,
-   "timeLabel": "6:30pm to 7:15pm",
+   "timeLabel": "6:30pm to 7:30pm",
    "venue": {
-    "name": "Sonia Sotomayor Community Center",
-    "address": "Sonia Sotomayor Community Center",
-    "neighborhood": "Bronx",
-    "lat": 40.825536,
-    "lng": -73.867359
+    "name": "Chelsea Recreation Center",
+    "address": "Dance Room",
+    "neighborhood": "Manhattan",
+    "lat": 40.709649,
+    "lng": -73.988023
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Come join us as we dance to a mix of salsa, bachata, merengue, 80's and 90's music. All are welcome!",
-   "details": "Come join us as we dance to a mix of salsa, bachata, merengue, 80's and 90's music. All are welcome! Please arrive 15 minutes early to complete a ONE-TIME Beacon Membership Form before you attend your first class. Ven a unirte a nosotros mientras bailamos una mezcla de salsa, bachata, merengue, música de los años 80 y 90. Todos son bienvenidos Por favor llegue 15 minutos antes para completar un Formulario de Membresía Beacon ÚNICO antes de asistir a su primera clase.",
-   "url": "https://www1.nyc.gov/events/latin-dance-fitness/1309156/1",
-   "website": "https://www.nycgovparks.org/events/2026/10/21/latin-dance-fitness",
+   "description": "This circuit training class combines both resistance and bodyweight exercises to provide you with a dynamic full body workout",
+   "details": "This circuit training class combines both resistance and bodyweight exercises to provide you with a dynamic full body workout. Whether you are a beginner or know your way around the gym- this class for you! Come engage in exercises that target all muscle groups as well as get your heart pumping!",
+   "url": "https://www1.nyc.gov/events/full-body-circuit-training/1302676/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/full-body-circuit-training",
    "agency": "NYC Gov",
    "tags": [
     "Parks & Recreation"
    ]
   },
   {
-   "id": "1294656-1",
-   "title": "Person Place Thing with Randy Cohen & DORIS Commissioner Shawn(ta) Smith-Cruz",
-   "category": "art",
-   "start": "2026-10-21T19:00:00.000-04:00",
-   "end": "2026-10-21T20:30:00.000-04:00",
+   "id": "1300296-1",
+   "title": "Dance Fitness Thursdays",
+   "category": "community",
+   "start": "2026-10-22T18:50:00.000-04:00",
+   "end": "2026-10-22T19:35:00.000-04:00",
    "allDay": false,
-   "timeLabel": "7pm to 8:30pm",
+   "timeLabel": "6:50pm to 7:35pm",
    "venue": {
-    "name": "31 Chambers St",
-    "address": "31 Chambers St",
-    "neighborhood": "Manhattan",
-    "lat": 40.713591,
-    "lng": -74.004239
+    "name": "Brooklyn Public Library - New Utrecht",
+    "address": "Brooklyn Public Library - New Utrecht",
+    "neighborhood": "",
+    "lat": 40.607962,
+    "lng": -74.003469
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Join Randy Cohen and DORIS Commissioner Shawn(ta) Smith-Cruz for a live recording of Person Place Thing at the NYC Surrogate\\u0092s Courthouse!",
-   "details": "On Wednesday, October 21st, the NYC Department of Records and Information Services (DORIS) presents Reflecting on NYC History: A Community Forum, a full day of programming at the historic Hall of Records. At 7:00 PM, the NYC Department of Records & Information Services (DORIS)\\u0092 commissioner, Shawn(ta) Smith-Cruz, will join Emmy Award winner Randy Cohen for a live recording of Person Place Thing. Person Place Thing is an interview show based on the idea that people are especially engaging when they speak, not directly about themselves, but about something they care about. Guests share a person, place, and thing they find meaningful. The result: surprising stories from great talkers. Join us either virtually (via Zoom) or in person (limited seats available). Music will be provided by: Liz Hanley Note: If you are interested in attending this event in person, please select the \\u0093In-Person Attendance\\u0094 ticket option when RSVPing for this event.",
-   "url": "https://www1.nyc.gov/site/records/events/person-place-thing-with-randy-cohen-doris-commissioner-shawnta-smith-cruz/1294656/1",
-   "website": "https://on.nyc.gov/4xNfme4",
-   "agency": "Department of Records",
+   "description": "Community , friendship, movement, and fun is the foundation to this high energy dance fitness class.",
+   "details": "Community , friendship, movement, and fun is the foundation to this high energy dance fitness class. It's a judgement free zone while we dance into the weekend & welcome good energy to build ourselves up!",
+   "url": "https://www1.nyc.gov/events/dance-fitness-thursdays/1300296/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/dance-fitness-thursdays",
+   "agency": "NYC Gov",
    "tags": [
-    "City Government Office",
-    "Free",
-    "Education",
-    "Cultural",
-    "Free",
-    "General Events"
+    "Parks & Recreation"
+   ]
+  },
+  {
+   "id": "1320736-1",
+   "title": "Virtual Zumba",
+   "category": "community",
+   "start": "2026-10-22T19:30:00.000-04:00",
+   "end": "2026-10-22T20:30:00.000-04:00",
+   "allDay": false,
+   "timeLabel": "7:30pm to 8:30pm",
+   "venue": {
+    "name": "Virtual\\/Online Events",
+    "address": "Virtual/Online Events",
+    "neighborhood": "Manhattan",
+    "lat": 40.758326,
+    "lng": -73.993517
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Zumba is a fusion of Latin, International and popular music dance themes creating a dynamic, exciting, effective fitness system!",
+   "details": "Zumba is a fusion of Latin, International and popular music dance themes creating a dynamic, exciting, effective fitness system! The routines feature aerobic, fitness interval training with a combination of fast and slow rhythms that tone and sculpt the body with easy to follow dance steps. Please register at least one hour prior to the start of class. The Zoom link will be sent out a few hours before class and again right before the class starts to registered participants.",
+   "url": "https://www1.nyc.gov/events/virtual-zumba/1320736/1",
+   "website": "https://www.nycgovparks.org/events/2026/10/22/virtual-zumba",
+   "agency": "NYC Gov",
+   "tags": [
+    "Parks & Recreation"
    ]
   }
  ],
  "unplaced": [
   {
-   "title": "HHFM Hunts Point Market",
-   "address": "SOUTHERN BOULEVARD between BARRETTO STREET and TIFFANY STREET Bronx",
-   "url": "https://www1.nyc.gov/events/hhfm-hunts-point-market/1324636/24"
+   "title": "Borough Park Greenmarket Thursday",
+   "address": "14 AVENUE between 49 STREET and 50 STREET Brooklyn",
+   "url": "https://www1.nyc.gov/events/borough-park-greenmarket-thursday/1323816/16"
   },
   {
-   "title": "Mount Sinai Greenmarket Wednesday",
-   "address": "MADISON AVENUE between EAST 98 STREET and EAST 99 STREET Manhattan",
-   "url": "https://www1.nyc.gov/events/mount-sinai-greenmarket-wednesday/1325096/19"
+   "title": "Columbia Thursday Sunday Greenmarket",
+   "address": "BROADWAY between WEST 113 STREET and WEST 116 STREET Manhattan",
+   "url": "https://www1.nyc.gov/events/columbia-thursday-sunday-greenmarket/1324016/82"
   },
   {
-   "title": "Cardio Sculpt",
-   "address": "Athletic Courts in Torsney Playground",
-   "url": "https://www1.nyc.gov/events/cardio-sculpt/1298996/1"
+   "title": "HHFM East Harlem Market",
+   "address": "EAST 104 STREET between THIRD AVENUE and SECOND AVENUE Manhattan",
+   "url": "https://www1.nyc.gov/events/hhfm-east-harlem-market/1324596/24"
   },
   {
-   "title": "Wetland Wednesdays: Phragmites Control and Native Planting at Van Cortlandt Park",
-   "address": "Van Cortlandt Golf House in Van Cortlandt Park",
-   "url": "https://www1.nyc.gov/events/wetland-wednesdays-phragmites-control-and-native-planting-at-van-cortlandt-park/1321316/1"
+   "title": "Ring Day Parade 2026",
+   "address": "Poe Park: Permit Area 1 - Paved Oval Bronx",
+   "url": "https://www1.nyc.gov/events/ring-day-parade-2026/1325456/1"
   },
   {
-   "title": "Team RIVER Volunteers",
-   "address": "Randall's Island Park",
-   "url": "https://www1.nyc.gov/events/team-river-volunteers/1319336/1"
+   "title": "Trail Work Thursdays",
+   "address": "VCPA Learning Garden in Van Cortlandt Park",
+   "url": "https://www1.nyc.gov/events/trail-work-thursdays/1320296/1"
   },
   {
-   "title": "De Matti's Tot Pumpkin Patch",
-   "address": "DeMatti Park Fieldhouse in De Matti Park",
-   "url": "https://www1.nyc.gov/events/de-mattis-tot-pumpkin-patch/1300536/1"
+   "title": "Trail Work Thursdays",
+   "address": "VCPA Learning Garden in Van Cortlandt Park",
+   "url": "https://www1.nyc.gov/events/trail-work-thursdays/1320316/1"
+  },
+  {
+   "title": "Trail Work Thursdays",
+   "address": "VCPA Learning Garden in Van Cortlandt Park",
+   "url": "https://www1.nyc.gov/events/trail-work-thursdays/1320316/1"
   },
   {
    "title": "JBOLC Garden Community Farmers Market",
    "address": "WEST MOSHOLU PARKWAY SOUTH between GOULDEN AVENUE and SEDGWICK AVENUE Bronx",
-   "url": "https://www1.nyc.gov/events/jbolc-garden-community-farmers-market/1324816/124"
+   "url": "https://www1.nyc.gov/events/jbolc-garden-community-farmers-market/1324816/125"
   },
   {
-   "title": "Volunteer Workday: Howard Garden",
-   "address": "Howard Garden",
-   "url": "https://www1.nyc.gov/events/volunteer-workday-howard-garden/1320936/1"
+   "title": "Total Body Fitness",
+   "address": "Brooklyn Public Library - Park Slope",
+   "url": "https://www1.nyc.gov/events/total-body-fitness/1320076/1"
   },
   {
-   "title": "Dance Aerobics",
-   "address": "Multi-Use Room A in Detective Keith L. Williams Field House",
-   "url": "https://www1.nyc.gov/events/dance-aerobics/1299756/1"
+   "title": "Craft & Chill",
+   "address": "Multi-Use Room B in Detective Keith L. Williams Field House",
+   "url": "https://www1.nyc.gov/events/craft-chill/1299556/1"
   },
   {
-   "title": "Step Aerobics",
-   "address": "New Settlement Community Center",
-   "url": "https://www1.nyc.gov/events/step-aerobics/1318536/1"
+   "title": "Greenbelt Adult Hike - Paulo's Peak",
+   "address": "Greenbelt Nature Center in Blood Root Valley",
+   "url": "https://www1.nyc.gov/events/greenbelt-adult-hike-paulos-peak/1303336/1"
   },
   {
-   "title": "East 125th Street Farmstand",
-   "address": "EAST 125 STREET between PARK AVENUE and LEXINGTON AVENUE Manhattan",
-   "url": "https://www1.nyc.gov/events/east-125th-street-farmstand/1324236/20"
+   "title": "Air Pruned Raised Bed Session 2 with Cornell Small Farms Program",
+   "address": "Snug Harbor",
+   "url": "https://www1.nyc.gov/events/air-pruned-raised-bed-session-2-with-cornell-small-farms-program/1295416/1"
   },
   {
-   "title": "Pétanque in the Park",
-   "address": "Pétanque Court in Washington Square Park",
-   "url": "https://www1.nyc.gov/events/petanque-in-the-park/1315616/1"
-  },
-  {
-   "title": "Yoga",
-   "address": "Brooklyn Public Library - Kings Highway Branch",
-   "url": "https://www1.nyc.gov/events/yoga/1321836/1"
-  },
-  {
-   "title": "Senior Community Day",
-   "address": "West 218th Street and Indian Road in Inwood Hill Park",
-   "url": "https://www1.nyc.gov/events/senior-community-day/1317656/1"
-  },
-  {
-   "title": "Senior Happy Hour",
-   "address": "Arts and Crafts Room in Greenbelt Recreation Center",
-   "url": "https://www1.nyc.gov/events/senior-happy-hour/1317696/1"
+   "title": "Strength In Motion",
+   "address": "NYPL - Spuyten Duyvil",
+   "url": "https://www1.nyc.gov/events/strength-in-motion/1318756/1"
   },
   {
    "title": "Kids in Motion: Anne Loftus Playground",
    "address": "Anne Loftus Playground in Fort Tryon Park",
-   "url": "https://www1.nyc.gov/events/kids-in-motion-anne-loftus-playground/1304936/1"
+   "url": "https://www1.nyc.gov/events/kids-in-motion-anne-loftus-playground/1304956/1"
+  },
+  {
+   "title": "Kids In Motion: Bloomingdale Playground",
+   "address": "Play Area in Bloomingdale Playground",
+   "url": "https://www1.nyc.gov/events/kids-in-motion-bloomingdale-playground/1305616/1"
   },
   {
    "title": "Kids In Motion: Cherry Tree Park",
    "address": "Cherry Tree Park Playground in Cherry Tree Park",
-   "url": "https://www1.nyc.gov/events/kids-in-motion-cherry-tree-park/1305856/1"
+   "url": "https://www1.nyc.gov/events/kids-in-motion-cherry-tree-park/1305876/1"
   },
   {
    "title": "Kids in Motion: Columbus Park",
    "address": "Columbus Park",
-   "url": "https://www1.nyc.gov/events/kids-in-motion-columbus-park/1306036/1"
+   "url": "https://www1.nyc.gov/events/kids-in-motion-columbus-park/1306056/1"
   },
   {
    "title": "Kids in Motion: Samuel Seabury Playground",
    "address": "Samuel Seabury Playground",
-   "url": "https://www1.nyc.gov/events/kids-in-motion-samuel-seabury-playground/1307596/1"
+   "url": "https://www1.nyc.gov/events/kids-in-motion-samuel-seabury-playground/1307616/1"
   },
   {
    "title": "Kids in Motion: Seward Park",
    "address": "Entrance - East Broadway & Essex St in Seward Park",
-   "url": "https://www1.nyc.gov/events/kids-in-motion-seward-park/1307776/1"
+   "url": "https://www1.nyc.gov/events/kids-in-motion-seward-park/1307796/1"
   },
   {
    "title": "Kids in Motion: Sol Lain Playground",
    "address": "Sol Lain Playground in Sol Lain Plgd",
-   "url": "https://www1.nyc.gov/events/kids-in-motion-sol-lain-playground/1307956/1"
+   "url": "https://www1.nyc.gov/events/kids-in-motion-sol-lain-playground/1307976/1"
   },
   {
    "title": "Kids in Motion: Tompkins Square Park",
    "address": "Avenue A and St. Marks Place in Tompkins Square Park",
-   "url": "https://www1.nyc.gov/events/kids-in-motion-tompkins-square-park/1308576/1"
+   "url": "https://www1.nyc.gov/events/kids-in-motion-tompkins-square-park/1308596/1"
   },
   {
-   "title": "Art in the Park",
-   "address": "Kids Playground - Large in Washington Square Park",
-   "url": "https://www1.nyc.gov/events/art-in-the-park/1295536/1"
+   "title": "Trick-or-Streets: Hillel Plaza",
+   "address": "Hillel Place,\\nKenilworth Place to Flatbush Avenue",
+   "url": "https://www1.nyc.gov/events/trick-or-streets-hillel-plaza/1291256/1"
   },
   {
-   "title": "De Matti's Pumpkin Patch",
-   "address": "DeMatti Park Fieldhouse in De Matti Park",
-   "url": "https://www1.nyc.gov/events/de-mattis-pumpkin-patch/1300516/1"
+   "title": "Uptown Farmstand",
+   "address": "EAST 115 STREET - PARK AVENUE to PARK AVENUE Manhattan",
+   "url": "https://www1.nyc.gov/events/uptown-farmstand/1325776/10"
   },
   {
    "title": "Bodyweight Circuit Training",
-   "address": "Rock Climbing Wall Room in Gertrude Ederle Recreation Center",
-   "url": "https://www1.nyc.gov/events/bodyweight-circuit-training/1296776/1"
+   "address": "P.S./I.S. 109",
+   "url": "https://www1.nyc.gov/events/bodyweight-circuit-training/1296796/1"
   },
   {
-   "title": "intenSati",
-   "address": "Myrtle Avenue and Park Lane South in Forest Park",
-   "url": "https://www1.nyc.gov/events/intensati/1304516/1"
+   "title": "Full Fit Line Dance",
+   "address": "Rochdale Village Community Center",
+   "url": "https://www1.nyc.gov/events/full-fit-line-dance/1302736/1"
   },
   {
-   "title": "Mat Pilates",
-   "address": "NYC Department of Health and Mental Hygiene- Bedford-Stuyvesant Center",
-   "url": "https://www1.nyc.gov/events/mat-pilates/1309716/1"
+   "title": "Spotlight tour: Architecture & Design",
+   "address": "The High Line",
+   "url": "https://www1.nyc.gov/events/spotlight-tour-architecture-design/1318056/1"
   },
   {
-   "title": "Strong & Balanced Circuit Training",
-   "address": "NYPL - George Bruce",
-   "url": "https://www1.nyc.gov/events/strong-balanced-circuit-training/1318856/1"
+   "title": "Cardio Sculpt",
+   "address": "Queens Public Library - Sunnyside",
+   "url": "https://www1.nyc.gov/events/cardio-sculpt/1299016/1"
   },
   {
-   "title": "Body-Centric Circuit Training",
-   "address": "Multi-Use Room A in McCarren Play Center",
-   "url": "https://www1.nyc.gov/events/body-centric-circuit-training/1296536/1"
+   "title": "Faith-Based Organization Housing Development Class - NYC Department of Buildings (DOB)",
+   "address": "Zoom",
+   "url": "https://www1.nyc.gov/site/hpd/events/faith-based-organization-housing-development-class-nyc-department-of-buildings-dob/1193996/1"
   },
   {
-   "title": "Caribbean Dance Fitness",
-   "address": "NYC Department of Health and Mental Hygiene- East Harlem Neighborhood Health Action Center",
-   "url": "https://www1.nyc.gov/events/caribbean-dance-fitness/1299056/1"
+   "title": "Gentle Yoga",
+   "address": "Queens Public Library - Bayside",
+   "url": "https://www1.nyc.gov/events/gentle-yoga/1303156/1"
   },
   {
-   "title": "Dance Fitness Beats",
-   "address": "Hudson Guild Fulton Community Center",
-   "url": "https://www1.nyc.gov/events/dance-fitness-beats/1300036/1"
+   "title": "Level Up Bodyweight Circuit Training",
+   "address": "Sheepshead Bay Cornerstone Community Center",
+   "url": "https://www1.nyc.gov/events/level-up-bodyweight-circuit-training/1309336/1"
   },
   {
-   "title": "Dance Fitness Energize",
-   "address": "Brownsville Neighborhood Health Action Center",
-   "url": "https://www1.nyc.gov/events/dance-fitness-energize/1300116/1"
-  },
-  {
-   "title": "SeedMoney Grant Info Session",
-   "address": "Virtual/Online Workshop",
-   "url": "https://www1.nyc.gov/events/seedmoney-grant-info-session/1317476/1"
+   "title": "Low Impact Bodyweight Circuit Training",
+   "address": "Astoria Pool Deck in Astoria Park",
+   "url": "https://www1.nyc.gov/events/low-impact-bodyweight-circuit-training/1309456/1"
   },
   {
    "title": "Zumba",
-   "address": "Dance Room in Thomas Jefferson Recreation Center",
-   "url": "https://www1.nyc.gov/events/zumba/1322396/1"
+   "address": "Queens Public Library - East Elmhurst",
+   "url": "https://www1.nyc.gov/events/zumba/1322416/1"
   },
   {
-   "title": "Movie Under the Stars: Hotel Transylvania (2012)",
-   "address": "Multipurpose Ballfield in Carroll Park",
-   "url": "https://www1.nyc.gov/events/movie-under-the-stars-hotel-transylvania-2012/1310056/1"
+   "title": "Zumbaween",
+   "address": "Queens Public Library - Broadway",
+   "url": "https://www1.nyc.gov/events/zumbaween/1323256/1"
+  },
+  {
+   "title": "Body-boost Circuit Training",
+   "address": "Brooklyn Public Library - Ulmer Park",
+   "url": "https://www1.nyc.gov/events/body-boost-circuit-training/1296456/1"
+  },
+  {
+   "title": "Body in Motion",
+   "address": "Gymnasium in Hunts Point Recreation Center",
+   "url": "https://www1.nyc.gov/events/body-in-motion/1296376/1"
+  },
+  {
+   "title": "Dance Fitness Fiesta",
+   "address": "Queens Public Library - St. Albans",
+   "url": "https://www1.nyc.gov/events/dance-fitness-fiesta/1300216/1"
+  },
+  {
+   "title": "NYRR Open Run: Flushing Meadows Corona Park",
+   "address": "United Nations Ave South Entrance in Flushing Meadows Corona Park",
+   "url": "https://www1.nyc.gov/events/nyrr-open-run-flushing-meadows-corona-park/1312256/1"
+  },
+  {
+   "title": "Basic Bootcamp",
+   "address": "Greenbelt Recreation Center in Greenbelt Recreation Center",
+   "url": "https://www1.nyc.gov/events/basic-bootcamp/1295996/1"
+  },
+  {
+   "title": "Dance Fusion",
+   "address": "Gymnasium in Hunts Point Recreation Center",
+   "url": "https://www1.nyc.gov/events/dance-fusion/1300436/1"
+  },
+  {
+   "title": "Movie Under the Stars: Sinners (2025)",
+   "address": "Driggs Avenue and Lorimer Street in McCarren Park",
+   "url": "https://www1.nyc.gov/events/movie-under-the-stars-sinners-2025/1310156/1"
   }
  ]
 }
