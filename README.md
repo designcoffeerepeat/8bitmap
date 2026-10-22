@@ -115,7 +115,9 @@ tools/fetch_coneyisland.py        pulls the day's events from Coney Island's own
 tools/fetch_statenisland.py       pulls the day's events from Staten Island's own calendars (Children's Museum, Noble Maritime, Richmond Town, Alice Austen House)
 tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
 tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
+tools/fetch_patchbay.py           pulls today's or tomorrow's New York live music from Patchbay
 data/geocode-cache.json           address lookups the fetch scripts reuse
+data/patchbay-venues.json         Patchbay venues' addresses and positions, read once per venue
 ```
 
 ## Refreshing the events
@@ -139,6 +141,7 @@ python3 tools/fetch_coneyisland.py
 python3 tools/fetch_statenisland.py
 python3 tools/fetch_greenmarkets.py
 NPS_API_KEY=... python3 tools/fetch_nps.py
+python3 tools/fetch_patchbay.py           # today or tomorrow only
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
 EVENTS_DIR=public/data/tomorrow python3 tools/fetch_nycgov.py 2026-10-18  # tomorrow's snapshot, as the Action writes it
 ```
@@ -185,6 +188,17 @@ by the scheduled refresh; without one it skips the run, like Ticketmaster. Event
 their park, except Gateway events at Sandy Hook (New Jersey), which are dropped. A tour run several times a day is
 one pin at its first time, with every time listed in its description. NPS text is US government work and free
 to reuse.
+
+### Patchbay
+
+`fetch_patchbay.py` reads https://patchbay.fm/new-york/today (or `/tomorrow`), whose pages carry each show as
+schema.org MusicEvent data: title, start time, venue, every act on the bill and their genres. Patchbay has no terms
+page; its robots.txt allows these pages and asks for 5 seconds between requests, which the script keeps. The list
+has no street addresses, so the first show at a new venue is opened once for its address, which is placed with
+GeoSearch (or the Census geocoder outside the city) and kept in `data/patchbay-venues.json`. A venue with no usable
+address is tried again after two weeks. Patchbay only lists today and tomorrow by day, so the script takes no other
+date. Shows listed under DJ or dance genres (house, techno, disco) are Nightlife, the rest Music. Each pin links to
+the show's Patchbay page.
 
 ### Ticketmaster
 
