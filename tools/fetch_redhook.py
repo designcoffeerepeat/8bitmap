@@ -14,11 +14,14 @@ each on its own so one site being down only loses that one:
                          https://brooklyncb6.cityofnewyork.us/events/; only events with a street
                          address are kept, and not election days or Nitehawk shows (Nitehawk is
                          already in fetch_venues.py)
+  Sunny's Bar            the music nights on the Tockify calendar its site embeds
+                         (https://tockify.com/sunnysmusic)
 
-Checked 2026-10-22: none of the three has terms that forbid automated reading, and their
+Checked 2026-10-22: none of these has terms that forbid automated reading, and their
 robots.txt allow it (CB6 asks for 10 seconds between requests). Left out: Kentler International
 Drawing Space (terms forbid commercial use of the site's text), BWAC (no Red Hook space since its
-fire), Sunny's Bar and Jalopy Theatre (their calendars are on hosts not reachable yet).
+fire) and Jalopy Theatre (its calendar is on a host not reachable yet). Sunny's has no terms page, and
+Tockify's terms only load in a browser, so they could not be read.
 Only title, time, a price when given and a link back are kept.
 
 Usage:  python3 tools/fetch_redhook.py [YYYY-MM-DD]     (default: today in NYC)
@@ -40,6 +43,7 @@ OUT = DATA / 'redhook-events.json'
 VENUES = {
     'Pioneer Works': ('159 Pioneer Street, Brooklyn', 'https://pioneerworks.org/'),
     'Waterfront Museum': ('290 Conover Street, Brooklyn', 'https://waterfrontmuseum.org/'),
+    "Sunny's Bar": ('253 Conover Street, Brooklyn', 'https://www.sunnysredhook.com/calendar2/'),
 }
 CB6 = ('Brooklyn Community Board 6', 'https://brooklyncb6.cityofnewyork.us/events/')
 # Pioneer Works disciplines -> map categories; anything else (science, technology, writing) is a talk.
@@ -131,6 +135,29 @@ def waterfront_museum(day):
     return out
 
 
+def sunnys(day):
+    """Sunny's music calendar, which its site embeds from Tockify. The calendar's own page on Tockify
+    carries the next dozen or so nights in the page data, so only that page is read (robots.txt
+    keeps automated readers off Tockify's /api/)."""
+    body = get('https://tockify.com/sunnysmusic', as_json=False)
+    m = re.search(r'window\.tkf = (\{.*?\});?\s*</script>', body, re.S)
+    pinboard = json.loads(m.group(1))['bootdata']['query']['pinboard'] if m else {}
+    out = []
+    for e in pinboard.get('events', []):
+        when = e.get('when') or {}
+        start = datetime.fromtimestamp(when['start']['millis'] / 1000, NYC)
+        if start.date() != day or when.get('allDay'):
+            continue
+        end = datetime.fromtimestamp(when['end']['millis'] / 1000, NYC)
+        title = text(e['content']['summary']['text'])
+        eid = e.get('eid') or {}
+        url = f"https://tockify.com/sunnysmusic/detail/{eid['uid']}/{eid['tid']}" if eid.get('uid') and eid.get('tid') else VENUES["Sunny's Bar"][1]
+        # A few listings run their end time days on; those keep only the start.
+        out.append(event("Sunny's Bar", title, start, url, 'music',
+                         end=end if start < end <= start + timedelta(hours=12) else None))
+    return out
+
+
 def cb6_place(v, cache):
     """A CB6 listing's place from its venue: the feed's own coordinates, a street address,
     or a park or building GeoSearch knows by exactly that name ('Carroll Park')."""
@@ -177,7 +204,7 @@ def cb6(day, cache):
     return out
 
 
-READERS = [pioneer_works, waterfront_museum, cb6]
+READERS = [pioneer_works, waterfront_museum, sunnys, cb6]
 
 
 def place(venue, cache):

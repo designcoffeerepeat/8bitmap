@@ -113,7 +113,7 @@ tools/fetch_artrabbit.py          pulls the day's New York opening receptions fr
 tools/fetch_artguide.py           pulls the day's New York opening receptions from Artforum artguide
 tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, Smalls, comedy clubs, bar trivia)
 tools/fetch_astoria.py            pulls the day's events from Astoria venues' own calendars (Socrates Sculpture Park, Melrose Ballroom, Bohemian Hall)
-tools/fetch_redhook.py            pulls the day's events from Red Hook's own calendars (Pioneer Works, Waterfront Museum, CB6)
+tools/fetch_redhook.py            pulls the day's events from Red Hook's own calendars (Pioneer Works, Waterfront Museum, Sunny's, CB6)
 tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
 tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
@@ -276,7 +276,9 @@ the Queens Council on the Arts and The Astor Room domains now belong to unrelate
 
 `fetch_redhook.py` covers Red Hook, which the big listing sites barely reach. It reads Pioneer Works' calendar
 (https://pioneerworks.org/calendar, from the data in the page) and each program's own page for its discipline,
-leaving out programs held somewhere else; the Waterfront Museum barge's open hours and shows; and Brooklyn
+leaving out programs held somewhere else; the Waterfront Museum barge's open hours and shows; Sunny's Bar's music
+nights, from the page data of the Tockify calendar its site embeds (https://tockify.com/sunnysmusic; robots.txt
+keeps readers off Tockify's API, so only that page is read); and Brooklyn
 Community Board 6's community calendar, which also covers Carroll Gardens, Cobble Hill, Gowanus and Park Slope.
 The last two come from the public feed of The Events Calendar plugin (`/wp-json/tribe/events/v1/events`). CB6
 listings are kept only when they give a street address or a place GeoSearch knows by that exact name, and
@@ -284,8 +286,9 @@ election days and Nitehawk shows (already in the venue calendars) are left out. 
 seconds between requests, which the script keeps to when a day runs to a second page.
 
 Checked 2026-10-22: Kentler International Drawing Space's terms forbid commercial use of the site's text, so it
-is left out. BWAC has had no Red Hook space since its 2025 fire. Sunny's Bar keeps its calendar on Tockify and
-Jalopy Theatre has moved to jalopytheatre.org, neither of which the build environment can reach yet.
+is left out. BWAC has had no Red Hook space since its 2025 fire. Jalopy Theatre's calendar now lives on
+jalopytheatre.netlify.app, which the build environment cannot reach yet. Tockify's terms only load in a browser
+and could not be read.
 
 ## Adding a real event source
 
