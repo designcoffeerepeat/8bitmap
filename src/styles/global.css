@@ -140,7 +140,20 @@ button, a { font: inherit; color: inherit; }
 .cat-btn[aria-expanded="true"] { border-color: var(--frame); }
 .cat-menu { width: 240px; }
 #cat-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; max-height: 50vh; overflow-y: auto; }
-.cat-item em { flex: none; width: 8px; height: 8px; margin-left: -2px; background: var(--cat); }
+/* each row: the checkbox adds or removes a category, the name shows only that one */
+.cat-item { display: flex; align-items: stretch; }
+.cat-check { flex: none; padding-right: 4px; }
+.cat-only {
+  flex: 1; display: flex; align-items: center; gap: 10px; min-width: 0;
+  padding: 6px 6px 5px; cursor: pointer; text-align: left;
+  font: inherit; font-size: 20px; color: inherit; background: none; border: 0;
+}
+.cat-only:hover, .cat-check:hover { background: var(--night-2); }
+.cat-only em { flex: none; width: 8px; height: 8px; background: var(--cat); }
+.cat-only small { display: none; color: var(--coin); font: 7px/1 var(--font-pixel); }
+.cat-only:hover small { display: inline; }
+.cat-only:focus-visible { outline: 3px solid var(--coin); outline-offset: -3px; }
+.cat-only span { margin-left: auto; color: var(--dim); font: 8px/1 var(--font-pixel); }
 
 /* text pinned to map positions (see addAnchor in renderer.js) */
 .map-anchors { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }

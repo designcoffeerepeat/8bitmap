@@ -128,6 +128,14 @@ el.catList.addEventListener('change', (e) => {
   else state.catsOff.add(id);
   categoriesChanged();
 });
+// Tapping a category's name shows only that category; tapping it again when it is the only one brings all back.
+el.catList.addEventListener('click', (e) => {
+  const c = e.target.closest('.cat-only')?.dataset.cat;
+  if (!c) return;
+  const onlyThis = state.catsOff.size === CATEGORIES.length - 1 && !state.catsOff.has(c);
+  setCategories(onlyThis ? [] : CATEGORIES.filter((x) => x !== c));
+  toggleCategories(false);
+});
 el.srcList.addEventListener('change', (e) => {
   const id = e.target.value;
   if (e.target.checked) state.sources.add(id);
@@ -268,9 +276,10 @@ function renderCategories() {
   sourceEvents().forEach((e) => counts[e.category]++);
   const rest = CATEGORIES.filter((c) => !MAIN_CATEGORIES.includes(c) && (counts[c] || state.catsOff.has(c)));
   el.catList.innerHTML = [...MAIN_CATEGORIES, ...rest].map((c) => `
-    <li><label class="src-item cat-item" style="--cat:${CATEGORY_COLORS[c]}">
-      <input type="checkbox" value="${c}"${state.catsOff.has(c) ? '' : ' checked'}><i aria-hidden="true"></i><em aria-hidden="true"></em>${CATEGORY_LABELS[c]}<span>${counts[c]}</span>
-    </label></li>`).join('');
+    <li class="cat-item" style="--cat:${CATEGORY_COLORS[c]}">
+      <label class="src-item cat-check" title="Add or remove ${CATEGORY_LABELS[c]}"><input type="checkbox" value="${c}"${state.catsOff.has(c) ? '' : ' checked'} aria-label="${CATEGORY_LABELS[c]}"><i aria-hidden="true"></i></label>
+      <button class="cat-only" type="button" data-cat="${c}" title="Show only ${CATEGORY_LABELS[c]}"><em aria-hidden="true"></em>${CATEGORY_LABELS[c]}<small>ONLY</small><span>${counts[c]}</span></button>
+    </li>`).join('');
   const on = CATEGORIES.filter((c) => !state.catsOff.has(c)).length;
   el.catSummary.textContent = on === CATEGORIES.length ? 'ALL' : on === 1 ? CATEGORY_LABELS[CATEGORIES.find((c) => !state.catsOff.has(c))].toUpperCase() : `${on}/${CATEGORIES.length}`;
 }
