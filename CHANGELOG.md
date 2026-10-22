@@ -7,6 +7,7 @@ Each release from dev to the live site (main) gets a version number here, so it 
 - Header logo reads 8bit.nyc with no gap between "8bit" and ".nyc" (also on the dev login page).
 - On phones the map controls (zoom in, zoom out, reset) sit at the bottom right, 15% smaller, so the Sources and
   Categories dropdowns no longer cover them. The event card and MONSTER ATTACK! bar leave room for them.
+- On phones the date and event count in the header stay on one line, with the font sized to fit the screen.
 
 ## v1.1 (2026-10-22)
 
