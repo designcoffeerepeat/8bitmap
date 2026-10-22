@@ -7,16 +7,15 @@ Only the title, time, a price when the venue gives one and a link back are kept;
 no images or write-ups. Every event carries its venue (or the company running it,
 for trivia) as its publisher, so each shows up on its own in the Sources dropdown.
 Sites whose terms of use forbid automated access are left out (St. Marks Comedy
-Club, QED, McNally Jackson, Apple, Flushing Town Hall, Kupferberg Center), and so
-are sites that turn scripts away (Queens Theatre).
+Club, QED, McNally Jackson, Apple, Flushing Town Hall, Kupferberg Center, and since
+2026-10-22 SmallsLIVE and Other Half Brewing, kept in parked/), and so are sites that
+turn scripts away (Queens Theatre).
 
   Film Forum            the week's showtimes on https://filmforum.org/
   Nitehawk Cinema       the day's showtimes at Williamsburg and Prospect Park
-  Smalls, Mezzrow and Jazzcultural   the today-and-tomorrow sets on https://www.smallslive.com/
   New York Comedy Club  the calendar's event data (East 24th St, Upper West Side, East 4th St)
   Eastville Comedy Club the calendar's event data
   The PIT               the month calendar on https://thepit-nyc.com/calendar/
-  Other Half Brewing    the NYC taproom events on https://otherhalfbrewing.com/events
   NYC Trivia League     this week's bar trivia and bingo nights on https://nyctrivialeague.com/
   H0L0                  the club's upcoming nights on https://h0l0.nyc/ (Ridgewood)
   Onderdonk House       the Greater Ridgewood Historical Society's events list (Ridgewood)
@@ -52,17 +51,11 @@ VENUES = {
     'Film Forum': ('209 West Houston Street, Manhattan', 'https://filmforum.org/'),
     'Nitehawk Williamsburg': ('136 Metropolitan Avenue, Brooklyn', 'https://nitehawkcinema.com/williamsburg/'),
     'Nitehawk Prospect Park': ('188 Prospect Park West, Brooklyn', 'https://nitehawkcinema.com/prospectpark/'),
-    'Smalls': ('183 West 10th Street, Manhattan', 'https://www.smallslive.com/'),
-    'Mezzrow': ('163 West 10th Street, Manhattan', 'https://www.smallslive.com/'),
-    'Jazzcultural': ('349 West 46th Street, Manhattan', 'https://www.smallslive.com/'),
     'New York Comedy Club': ('241 East 24th Street, Manhattan', 'https://newyorkcomedyclub.com/'),
     'New York Comedy Club Upper West Side': ('236 West 78th Street, Manhattan', 'https://newyorkcomedyclub.com/'),
     'New York Comedy Club on 4th Street': ('85 East 4th Street, Manhattan', 'https://newyorkcomedyclub.com/'),
     'Eastville Comedy Club': ('487 Atlantic Avenue, Brooklyn', 'https://www.eastvillecomedy.com/'),
     'The PIT': ('154 West 29th Street, Manhattan', 'https://thepit-nyc.com/'),
-    'Other Half Centre Street': ('195 Centre Street, Brooklyn', 'https://otherhalfbrewing.com/location/centre-street/'),
-    'Other Half Domino Park': ('34 River Street, Brooklyn', 'https://otherhalfbrewing.com/location/domino-park/'),
-    'Other Half Rockefeller Center': ('600 5th Avenue, Manhattan', 'https://otherhalfbrewing.com/location/rockefeller-center/'),
     'H0L0': ('1090 Wyckoff Avenue, Queens', 'https://h0l0.nyc/'),
     'Onderdonk House': ('1820 Flushing Avenue, Queens', 'https://onderdonkhouse.org/events-list'),
     # The plaza where 71st Avenue and Stephen Street meet Myrtle Avenue, placed from the corner shop's address.
@@ -161,31 +154,6 @@ def nitehawk(day):
     return out
 
 
-def smalls(day):
-    body = get('https://www.smallslive.com/', as_json=False)
-    out = []
-    label = f"{day.strftime('%a %b')} {day.day}"
-    for card in re.findall(r'<article class="event-display-today-and-tomorrow(.*?)</article>', body, re.S):
-        title = re.search(r'event-info-title">(.*?)<', card)
-        venue = re.search(r'title5 venue">\s*Live at (.*?)\s*<', card)
-        link = re.search(r'href="(/events/[^"]+)"', card)
-        sets = [text(s) for s in re.findall(r'title5 sets">(.*?)<', card)]
-        if not (title and venue and link) or label not in sets or venue.group(1) not in VENUES:
-            continue
-        # 'Sets at 6:00 PM & 7:30 PM' or 'From 11:45 PM - 4:00 AM'
-        times = [clock(t) for t in re.findall(r'\d{1,2}:\d{2}\s*[AP]M', ' '.join(sets), re.I)]
-        if not times:
-            continue
-        start = at(day, *times[0])
-        end = None
-        if sets[-1].startswith('From') and len(times) > 1:
-            end = at(day, *times[1])
-            end += timedelta(days=1) if end <= start else timedelta(0)
-        out.append(event(venue.group(1), text(title.group(1)), start, 'https://www.smallslive.com' + link.group(1), 'music',
-                         end=end, description=sets[-1]))
-    return out
-
-
 def seatengine_calendar(url, day, venues):
     """Comedy clubs whose calendar page lists its shows as schema.org ComedyEvents with full times."""
     out = []
@@ -234,33 +202,6 @@ def pit(day):
         for t in re.findall(r'<section class="action__time">(.*?)</section>', show):
             if title and clock(t):
                 out.append(event('The PIT', text(title.group(1)), at(day, *clock(t)), link.group(1) if link else VENUES['The PIT'][1], 'comedy'))
-    return out
-
-
-def other_half(day):
-    body = get('https://otherhalfbrewing.com/events', as_json=False)
-    out = []
-    label = f"{day.strftime('%b')} {day.day}"
-    for href, cls, inner in re.findall(r'<a href="(https://otherhalfbrewing.com/event/[^"]+)" class="excerpt-box ([^"]*)">(.*?)</a>', body, re.S):
-        if 'event_type-nyc' not in cls:
-            continue
-        when = re.search(r"excerpt-box-date'>(.*?) / <span class='excerpt-box-location[^']*'>(.*?)</span>", inner, re.S)
-        title = re.search(r'excerpt-box-title[^>]*>(.*?)</h2>', inner, re.S)
-        venue = f'Other Half {text(when.group(2))}' if when else ''
-        # Only single-day listings on the day ('Oct 21'); ranges are happy hours, not events.
-        if not (when and title) or text(when.group(1)) != label or venue not in VENUES:
-            continue
-        time.sleep(0.5)
-        page = text(get(href, as_json=False))
-        # The event page says 'October 21 2026 7:00 pm - 8:00 pm'.
-        m = re.search(rf"{day.strftime('%B')} {day.day} {day.year} (\d{{1,2}}:\d{{2}} [ap]m)(?: - (\d{{1,2}}:\d{{2}} [ap]m))?", page)
-        if not m:
-            continue
-        start = at(day, *clock(m.group(1)))
-        end = at(day, *clock(m.group(2))) if m.group(2) else None
-        title = text(title.group(1))
-        out.append(event(venue, title, start, href, 'trivia' if 'trivia' in title.lower() else 'food',
-                         end=end if end and end > start else None))
     return out
 
 
@@ -472,7 +413,7 @@ def latimer_house(day):
     return squarespace_events(day, 'Lewis Latimer House', 'https://www.lewislatimerhouse.org', '/events', 'Latimer House')
 
 
-READERS = [film_forum, nitehawk, smalls, nycc, eastville, pit, other_half, trivia_league, h0l0, onderdonk, myrtle_bid,
+READERS = [film_forum, nitehawk, nycc, eastville, pit, trivia_league, h0l0, onderdonk, myrtle_bid,
            queens_botanical, nysci, queens_night_market, kingsland, bowne_house, latimer_house]
 
 

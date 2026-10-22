@@ -56,3 +56,20 @@ Hill, Pomonok). The calendar filters by each branch's location code (`sm_pSsnVir
 other branches are in the calendar page's `facetsInfoCal`. A desktop browser's user agent gets an empty page, so the
 script names itself. It keeps in-person programs (skipping online, staff-only and cancelled ones) and only the
 title, time, branch, program type and a link back.
+
+## Parked on 2026-10-22 after the source audit
+
+ArtRabbit, Artforum artguide, SmallsLIVE (Smalls, Mezzrow, Jazzcultural) and Other Half Brewing came off for their
+terms, found in the source legality audit (MK's call):
+
+- **Other Half Brewing:** its Terms of Service allow viewing the site for personal, non-commercial use only and forbid
+  using "bots, scripts, or automated tools to access the Site".
+- **SmallsLIVE:** its terms license the site "for personal non-commercial purposes only".
+- **ArtRabbit:** its terms forbid "reproducing, copying ... any of the Website, including ... any information".
+- **Artforum artguide:** its terms are Penske Media's (pmc.com), which could not be read from the build; parked until
+  someone reads them in a browser.
+
+ArtRabbit and artguide follow the steps above (`fetch_artrabbit.py`/`artrabbit.js`, `fetch_artguide.py`/`artguide.js`;
+their names go back in the page and legal source lists, and their README sections are in git history). SmallsLIVE and
+Other Half were readers inside `tools/fetch_venues.py`; they are kept in `parked/tools/venues_smalls_otherhalf.py`, with
+the lines to paste back. Before bringing any of them back, get the site's written permission.

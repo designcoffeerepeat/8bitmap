@@ -94,13 +94,14 @@ src/scripts/events/index.js       loads all sources, filters to today and the ma
 src/scripts/events/overlap.js     merges the same event listed by several sources, keeping the listing with the most
                                   information (SeatGeek always wins over Ticketmaster)
 src/scripts/events/sources/       one file per event source: nycgov.js, luma.js, permits.js,
-                                  ticketmaster.js, seatgeek.js, dice.js, artwrld.js, artrabbit.js,
-                                  artguide.js (live), venues.js, greenmarkets.js, nps.js, astoria.js, redhook.js, foresthills.js, coneyisland.js, statenisland.js,
+                                  ticketmaster.js, seatgeek.js, dice.js, artwrld.js,
+                                  venues.js, greenmarkets.js, nps.js, astoria.js, redhook.js, foresthills.js, coneyisland.js, statenisland.js,
                                   snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
 public/data/tomorrow/*.json       the same snapshots for the next NYC day (EVENTS_DIR=public/data/tomorrow)
-parked/                           doNYC, Resident Advisor, The Skint and Queens Public Library, removed until they agree to be listed
+parked/                           doNYC, Resident Advisor, The Skint, Queens Public Library, ArtRabbit, Artforum artguide,
+                                  SmallsLIVE and Other Half Brewing, removed until they agree to be listed
 public/                           other static files copied as-is (favicon)
 tools/fetch_nycgov.py             pulls one day of NYC.gov events and places them on the map
 tools/fetch_luma.py               pulls one day of Luma NYC events
@@ -109,9 +110,7 @@ tools/fetch_ticketmaster.py       pulls one day of Ticketmaster events (needs TI
 tools/fetch_seatgeek.py           pulls one day of SeatGeek events (needs SEATGEEK_CLIENT_ID)
 tools/fetch_dice.py               pulls one day of DICE New York events
 tools/fetch_artwrld.py            pulls the day's gallery openings, museum shows and art events from Artwrld
-tools/fetch_artrabbit.py          pulls the day's New York opening receptions from ArtRabbit
-tools/fetch_artguide.py           pulls the day's New York opening receptions from Artforum artguide
-tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, Smalls, comedy clubs, bar trivia, Flushing)
+tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, comedy clubs, bar trivia, Flushing)
 tools/fetch_astoria.py            pulls the day's events from Astoria venues' own calendars (Socrates Sculpture Park, Melrose Ballroom, Bohemian Hall)
 tools/fetch_redhook.py            pulls the day's events from Red Hook's own calendars (Pioneer Works, Waterfront Museum, Sunny's, CB6)
 tools/fetch_foresthills.py        pulls the day's events from Forest Hills' own calendars (Commonpoint Queens, Rove trivia)
@@ -136,8 +135,6 @@ TICKETMASTER_API_KEY=... python3 tools/fetch_ticketmaster.py
 SEATGEEK_CLIENT_ID=... python3 tools/fetch_seatgeek.py
 python3 tools/fetch_dice.py
 python3 tools/fetch_artwrld.py
-python3 tools/fetch_artrabbit.py
-python3 tools/fetch_artguide.py
 python3 tools/fetch_venues.py
 python3 tools/fetch_astoria.py
 python3 tools/fetch_redhook.py
@@ -232,29 +229,13 @@ and the events page for talks and performances on the day. Museums are matched b
 placed once from one of their exhibition pages, then remembered in `data/geocode-cache.json`. Only the title, venue,
 dates and a link are kept. Openings and events are only listed ahead of time, so a past day comes back mostly empty.
 
-### ArtRabbit
-
-`fetch_artrabbit.py` pages through ArtRabbit's New York lists of shows on now
-(https://www.artrabbit.com/all-listings/united-states/new-york) and opening soon (`.../upcoming`) and keeps the
-shows whose opening reception falls on the day, as art. Each card carries the venue's coordinates and a line such
-as "Opening: Tomorrow, 18:00" or "Opening: 24 Oct 2026, 5-7pm". ArtRabbit's "Today" and "Tomorrow" follow London
-time, so the script reads them against the London date. Only the title, venue, reception time and a link are kept.
-
-### Artforum artguide
-
-`fetch_artguide.py` reads Artforum artguide's public listings API
-(https://artguide.artforum.com/wp-json/wp/v2/ag-exhibition-event, about 25 pages of 100 worldwide) and keeps the
-New York listings whose opening reception is on the day, as art, with the venue's coordinates, neighborhood and
-reception hours from the listing. Some openings also appear on Artwrld or ArtRabbit under a slightly different
-title, so the same reception can show up twice.
-
 ### Venue calendars
 
 `fetch_venues.py` reads the schedules venues publish on their own websites, one reader per site, so a site that is
 down or changes its pages only loses that venue: Film Forum's week of showtimes, Nitehawk's day pages for
-Williamsburg and Prospect Park, the today-and-tomorrow sets on SmallsLIVE (Smalls, Mezzrow and Jazzcultural), the
+Williamsburg and Prospect Park, the
 schema.org event data on New York Comedy Club's and Eastville Comedy Club's calendars, The PIT's month calendar,
-Other Half Brewing's NYC taproom events, NYC Trivia League's weekly list of bar trivia and bingo nights (each
+NYC Trivia League's weekly list of bar trivia and bingo nights (each
 bar placed from the coordinates on its listing page), and three Ridgewood calendars: H0L0's club nights, the
 Onderdonk House's events and the Myrtle Avenue BID's plaza concerts and street festivals (placed at Herman Hochberg
 Plaza, or on Myrtle Avenue when an event gives no place), and six in and around Flushing: Queens Botanical Garden's

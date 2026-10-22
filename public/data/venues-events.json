@@ -4,7 +4,7 @@
   "url": "https://filmforum.org/"
  },
  "date": "2026-10-22",
- "fetchedAt": "2026-10-22T13:08:50-04:00",
+ "fetchedAt": "2026-10-22T16:20:13-04:00",
  "events": [
   {
    "id": "film-forum-202610221215-once-upon-a-time-in-harlem",
@@ -683,240 +683,6 @@
    }
   },
   {
-   "id": "jazzcultural-202610221400-afternoon-jam-in-the-cafe",
-   "title": "Afternoon Jam in the Cafe",
-   "category": "music",
-   "start": "2026-10-22T14:00:00-04:00",
-   "end": "2026-10-22T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Jazzcultural",
-    "address": "349 West 46th Street",
-    "neighborhood": "",
-    "lat": 40.76077,
-    "lng": -73.989656
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "From 2:00 PM - 6:00 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/34052-afternoon-jam-in-the-cafe/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-jazzcultural",
-    "name": "Jazzcultural",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "smalls-202610221800-adi-meyerson-dark-matter-quartet",
-   "title": "Adi Meyerson & Dark Matter Quartet",
-   "category": "music",
-   "start": "2026-10-22T18:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Smalls",
-    "address": "183 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734396,
-    "lng": -74.002705
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sets at 6:00 PM & 7:30 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/33978-adi-meyerson-dark-matter-quartet/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-smalls",
-    "name": "Smalls",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "mezzrow-202610221800-yuhan-su-meets-luis-perdomo",
-   "title": "Yuhan Su meets Luis Perdomo",
-   "category": "music",
-   "start": "2026-10-22T18:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Mezzrow",
-    "address": "163 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734592,
-    "lng": -74.001929
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sets at 6:00 PM & 7:30 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/33976-yuhan-su-meets-luis-perdomo/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-mezzrow",
-    "name": "Mezzrow",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "jazzcultural-202610221900-anderson-brothers-octet",
-   "title": "Anderson Brothers Octet",
-   "category": "music",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Jazzcultural",
-    "address": "349 West 46th Street",
-    "neighborhood": "",
-    "lat": 40.76077,
-    "lng": -73.989656
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sets at 7:00 PM & 9:00 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/33992-anderson-brothers-octet/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-jazzcultural",
-    "name": "Jazzcultural",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "smalls-202610222100-tim-ries-trio",
-   "title": "Tim Ries Trio",
-   "category": "music",
-   "start": "2026-10-22T21:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Smalls",
-    "address": "183 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734396,
-    "lng": -74.002705
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sets at 9:00 PM & 10:30 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/33977-tim-ries-trio/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-smalls",
-    "name": "Smalls",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "mezzrow-202610222100-felix-lemerle-trio",
-   "title": "Felix Lemerle Trio",
-   "category": "music",
-   "start": "2026-10-22T21:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Mezzrow",
-    "address": "163 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734592,
-    "lng": -74.001929
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sets at 9:00 PM & 10:30 PM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/34012-felix-lemerle-trio/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-mezzrow",
-    "name": "Mezzrow",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "jazzcultural-202610222230-mejedi-owusu-quartet",
-   "title": "Mejedi Owusu Quartet",
-   "category": "music",
-   "start": "2026-10-22T22:30:00-04:00",
-   "end": "2026-10-23T00:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Jazzcultural",
-    "address": "349 West 46th Street",
-    "neighborhood": "",
-    "lat": 40.76077,
-    "lng": -73.989656
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "From 10:30 PM - 12:00 AM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/34213-mejedi-owusu-quartet/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-jazzcultural",
-    "name": "Jazzcultural",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "mezzrow-202610222330-vinyl-after-hours",
-   "title": "Vinyl After Hours",
-   "category": "music",
-   "start": "2026-10-22T23:30:00-04:00",
-   "end": "2026-10-23T00:45:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Mezzrow",
-    "address": "163 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734592,
-    "lng": -74.001929
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "From 11:30 PM - 12:45 AM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/34170-vinyl-after-hours/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-mezzrow",
-    "name": "Mezzrow",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
-   "id": "smalls-202610222345-jam-session-hosted-by-matt-snow",
-   "title": "Jam Session Hosted By Matt Snow",
-   "category": "music",
-   "start": "2026-10-22T23:45:00-04:00",
-   "end": "2026-10-23T04:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Smalls",
-    "address": "183 West 10th Street",
-    "neighborhood": "",
-    "lat": 40.734396,
-    "lng": -74.002705
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "From 11:45 PM - 4:00 AM",
-   "details": "",
-   "url": "https://www.smallslive.com/events/34093-jam-session-hosted-by-matt-snow/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-smalls",
-    "name": "Smalls",
-    "url": "https://www.smallslive.com/"
-   }
-  },
-  {
    "id": "new-york-comedy-club-on-4th-street-202610221800-chucklefest-ft-matthew-broussard-bo-bige",
    "title": "Chucklefest ft: Matthew Broussard, Bo Bigelow, Konner Kienzle, Sureni Weerasekera, Kevin Israel, Mo Mussa, Tristan Bowling",
    "category": "comedy",
@@ -1339,32 +1105,6 @@
    }
   },
   {
-   "id": "other-half-centre-street-202610221900-centre-street-trivia",
-   "title": "Centre Street Trivia",
-   "category": "trivia",
-   "start": "2026-10-22T19:00:00-04:00",
-   "end": "2026-10-22T20:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Other Half Centre Street",
-    "address": "195 Centre Street",
-    "neighborhood": "",
-    "lat": 40.673887,
-    "lng": -73.999079
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://otherhalfbrewing.com/event/clone-centre-street-trivia-2026-10-22/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-other-half-centre-street",
-    "name": "Other Half Centre Street",
-    "url": "https://otherhalfbrewing.com/location/centre-street/"
-   }
-  },
-  {
    "id": "american-whiskey-202610221900-trivia-at-american-whiskey",
    "title": "Trivia at American Whiskey",
    "category": "trivia",
@@ -1669,6 +1409,32 @@
    "description": "",
    "details": "",
    "url": "https://nyctrivialeague.com/listings/lilys/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nyc-trivia-league",
+    "name": "NYC Trivia League",
+    "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
+   "id": "other-half-brewing-co-gowanus-202610221900-trivia-at-other-half-brewing-co-gowanus",
+   "title": "Trivia at Other Half Brewing Co. — Gowanus",
+   "category": "trivia",
+   "start": "2026-10-22T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Other Half Brewing Co. — Gowanus",
+    "address": "",
+    "neighborhood": "Carroll Gardens",
+    "lat": 40.673809,
+    "lng": -73.999295
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://nyctrivialeague.com/listings/other-half-brewing/",
    "tags": [],
    "publisher": {
     "id": "venue-nyc-trivia-league",
