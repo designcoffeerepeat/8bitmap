@@ -1,0 +1,73 @@
+{
+ "source": {
+  "name": "Jersey City calendars",
+  "url": "https://jerseycityculture.org/events/calendar/"
+ },
+ "date": "2026-10-22",
+ "fetchedAt": "2026-10-22T09:15:02-04:00",
+ "events": [
+  {
+   "id": "jc-mana-contemporary-202610221800-jersey-city-s-youth-mural-arts-program-c",
+   "title": "Jersey City’s Youth Mural Arts Program Celebration at JCYMAP 2026 Celebration, Art Exhibition, and Documentary Premiere",
+   "category": "art",
+   "start": "2026-10-22T18:00:00-04:00",
+   "end": "2026-10-22T21:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Mana Contemporary",
+    "address": "888 Newark Ave, Jersey City, NJ",
+    "neighborhood": "Jersey City",
+    "lat": 40.7362,
+    "lng": -74.0661
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.manacontemporary.com/event/join-us-for-a-powerful-conversation-and-celebration-of-mana-studio-artist-danielle-scott-2-2-2/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-mana-contemporary",
+    "name": "Mana Contemporary",
+    "url": "https://www.manacontemporary.com/"
+   }
+  },
+  {
+   "id": "jc-art-house-productions-202610221930-focus-innovative-choreography-series",
+   "title": "FOCUS: Innovative Choreography Series",
+   "category": "theater",
+   "start": "2026-10-22T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Art House Productions",
+    "address": "345 Marin Blvd, Jersey City, NJ",
+    "neighborhood": "Jersey City",
+    "lat": 40.7236,
+    "lng": -74.0388
+   },
+   "price": {
+    "min": 25,
+    "max": 40,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://www.arthouseproductions.org/products/focus-innovative-choreography-series-october-22-2026",
+   "tags": [],
+   "publisher": {
+    "id": "venue-art-house-productions",
+    "name": "Art House Productions",
+    "url": "https://www.arthouseproductions.org/collections/upcomingevents"
+   }
+  }
+ ],
+ "unplaced": [
+  {
+   "title": "JCPD West District Trunk or Treat",
+   "venue": "JCPD WEST DISTRICT",
+   "address": "1 JACKSON SQUARE"
+  }
+ ]
+}

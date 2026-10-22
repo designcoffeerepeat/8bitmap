@@ -1,0 +1,67 @@
+{
+ "source": {
+  "name": "Jersey City calendars",
+  "url": "https://jerseycityculture.org/events/calendar/"
+ },
+ "date": "2026-10-23",
+ "fetchedAt": "2026-10-22T09:15:11-04:00",
+ "events": [
+  {
+   "id": "jc-exchange-place-202610231730-ariel-rivka-dance",
+   "title": "Ariel Rivka Dance",
+   "category": "theater",
+   "start": "2026-10-23T17:30:00-04:00",
+   "end": "2026-10-23T18:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Exchange Place",
+    "address": "Montgomery St and Hudson St, Jersey City, NJ",
+    "neighborhood": "Jersey City",
+    "lat": 40.7163,
+    "lng": -74.0337
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://jerseycityculture.org/event/ariel-rivka-dance-2026/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-jersey-city-culture",
+    "name": "Jersey City Culture",
+    "url": "https://jerseycityculture.org/events/calendar/"
+   }
+  },
+  {
+   "id": "jc-art-house-productions-202610231930-threads-of-tradition",
+   "title": "Threads of Tradition",
+   "category": "theater",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Art House Productions",
+    "address": "345 Marin Blvd, Jersey City, NJ",
+    "neighborhood": "Jersey City",
+    "lat": 40.7236,
+    "lng": -74.0388
+   },
+   "price": {
+    "min": 20,
+    "max": 35,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://www.arthouseproductions.org/products/threads-of-tradition-october-23-2026",
+   "tags": [],
+   "publisher": {
+    "id": "venue-art-house-productions",
+    "name": "Art House Productions",
+    "url": "https://www.arthouseproductions.org/collections/upcomingevents"
+   }
+  }
+ ],
+ "unplaced": []
+}

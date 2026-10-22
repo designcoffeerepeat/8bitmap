@@ -349,6 +349,22 @@ only; Greenbelt Conservancy's and Flagship Brewing's calendars are empty or a ye
 calendar is school-group shows; the Jacques Marchais Museum's Wix calendar only loads in a browser; the
 Garibaldi-Meucci Museum's site could not be reached.
 
+### Jersey City calendars
+
+`fetch_jerseycity.py` covers Jersey City, NJ, which is already drawn on the map's New Jersey shore. It reads the
+city's own calendar from the Office of Cultural Affairs (jerseycityculture.org, The Events Calendar feed, leaving
+out meetings and city-wide listings with no place), Art House Productions' Upcoming Events list from its Shopify
+box office (`/collections/upcomingevents/products.json`, with each show's dates read from its description), Mana
+Contemporary's event list (`/wp-json/wp/v2/event`, Jersey City events only) and the Historic Downtown SID's feed
+(Groove on Grove and the Grove Street farmers market, empty between seasons). NYC GeoSearch stops at the Hudson,
+so the places the city calendar uses most are written into `PLACES`, and other street addresses go to the US
+Census geocoder and are remembered in `data/geocode-cache.json`.
+
+Checked 2026-10-22 and left out: the Loew's Jersey Theatre's terms allow personal, non-commercial use only and
+forbid automated collection; WFMU's terms forbid automated requests and data mining (Monty Hall); White Eagle
+Hall, Jersey City Theater Center, the library's main site and Liberty Science Center turn automated visits away;
+the Exchange Place Alliance's domain no longer runs its site.
+
 ## Adding a real event source
 
 1. Copy `src/scripts/events/sources/template.js` to a new file and fill in `fetchEvents({ date, bounds })`.
