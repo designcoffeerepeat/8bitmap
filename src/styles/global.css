@@ -346,8 +346,11 @@ button, a { font: inherit; color: inherit; }
   #panel-toggle { display: block; position: absolute; inset: 0 0 auto 0; height: 61px; background: none; border: 0; cursor: pointer; }
   #panel-toggle::after { content: ""; position: absolute; top: 8px; left: 50%; width: 36px; height: 4px; margin-left: -18px; background: var(--dim); }
   .panel-foot { display: none; }
-  #detail { width: auto; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(80px + env(safe-area-inset-bottom, 0px)); max-height: 55%; }
-  .controls { right: max(16px, env(safe-area-inset-right, 0px)); bottom: auto; top: calc(130px + env(safe-area-inset-top, 0px)); grid-template-columns: 40px; }
+  #detail { width: auto; right: calc(max(16px, env(safe-area-inset-right, 0px)) + 66px); bottom: calc(80px + env(safe-area-inset-bottom, 0px)); max-height: 55%; }
+  /* bottom right, just above the list tab, and 15% smaller than on desktop so it stays clear of the dropdowns */
+  .controls { right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(78px + env(safe-area-inset-bottom, 0px)); grid-template-columns: 34px; gap: 5px; padding: 7px; }
+  .controls button { width: 34px; height: 34px; font-size: 10px; }
+  .controls .reset-ico { width: 17px; height: 19px; }
   .controls #rot-l, .controls #rot-r, .controls #pixel { display: none; }
   .hint { display: none; }
   .menu-btn { width: 26px; height: 22px; margin: -3px 0; }
@@ -376,5 +379,5 @@ button, a { font: inherit; color: inherit; }
 .monster-hp b { display: block; height: 100%; width: 100%; background: #6ee07a; }
 .monster-hp.is-low b { background: var(--pin); }
 @media (max-width: 760px) {
-  .monster-hud { left: 16px; right: 16px; transform: none; bottom: calc(76px + env(safe-area-inset-bottom, 0px)); justify-content: space-between; }
+  .monster-hud { left: 16px; right: 82px; transform: none; bottom: calc(76px + env(safe-area-inset-bottom, 0px)); justify-content: space-between; }
 }
