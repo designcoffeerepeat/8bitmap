@@ -1,4 +1,4 @@
-/* Layout: full-bleed voxel map, a title box top-left, filter chips under it,
+/* Layout: full-bleed voxel map, a title box top-left, source and category dropdowns under it,
    today's list docked right (a bottom sheet on phones), event card bottom-left.
    Single dark arcade look by design; the map supplies the colour. */
 :root {
@@ -95,7 +95,6 @@ button, a { font: inherit; color: inherit; }
 .ad.is-empty:hover strong { color: var(--frame); }
 
 
-.chips { display: flex; gap: 8px; flex-wrap: wrap; max-width: 100%; }
 .chip {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 7px 10px 6px; cursor: pointer;
@@ -108,7 +107,7 @@ button, a { font: inherit; color: inherit; }
 .chip[aria-pressed="true"] span { color: var(--coin); }
 .chip:hover { background: var(--night-2); }
 
-/* sources dropdown: sits before the category chips */
+/* sources dropdown: sits before the categories dropdown */
 .filter-row { display: flex; gap: 8px; align-items: flex-start; max-width: 100%; }
 .src-filter { position: relative; flex: none; }
 .src-btn b { font-weight: 400; color: var(--ink); }
@@ -130,15 +129,13 @@ button, a { font: inherit; color: inherit; }
 .src-item input:focus-visible + i { outline: 3px solid var(--coin); outline-offset: 2px; }
 .src-item span { margin-left: auto; color: var(--dim); font: 8px/1 var(--font-pixel); }
 
-/* category dropdown: phones only, replaces the chip row */
-.cat-filter { display: none; position: relative; flex: none; }
+/* categories dropdown: ticks like SOURCES, with each category's colour beside its name */
+.cat-filter { position: relative; flex: none; }
 .cat-btn b { font-weight: 400; color: var(--ink); }
-.cat-btn span { color: var(--coin); }
 .cat-btn[aria-expanded="true"] { border-color: var(--frame); }
-.cat-menu { position: absolute; top: calc(100% + 10px); right: 0; z-index: 5; width: 220px; padding: 8px; display: grid; gap: 4px; }
-.cat-menu[hidden] { display: none; }
-.cat-menu .chip { width: 100%; box-shadow: none; padding: 10px; }
-.cat-menu .chip span { margin-left: auto; }
+.cat-menu { width: 240px; }
+#cat-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; max-height: 50vh; overflow-y: auto; }
+.cat-item em { flex: none; width: 8px; height: 8px; margin-left: -2px; background: var(--cat); }
 
 /* text pinned to map positions (see addAnchor in renderer.js) */
 .map-anchors { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
@@ -303,11 +300,9 @@ button, a { font: inherit; color: inherit; }
   .ad { min-width: 0; width: 100%; padding: 7px 10px; display: flex; justify-content: center; align-items: center; gap: 10px; }
   .ad small { position: static; }
   .ad strong { font-size: 9px; }
-  .chips { flex-wrap: nowrap; overflow-x: auto; width: 100%; padding-bottom: 6px; scrollbar-width: none; }
   .chip { flex: none; }
-  .filter-row .chips { display: none; }
-  .cat-filter { display: block; }
   .src-menu { width: min(260px, calc(100vw - 32px)); }
+  .cat-menu { left: auto; right: 0; width: min(240px, calc(100vw - 32px)); }
   #panel {
     top: auto; left: 0; width: auto; height: 46%;
     border-left: 0; border-top: 3px solid var(--frame);

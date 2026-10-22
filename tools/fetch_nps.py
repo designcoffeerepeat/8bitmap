@@ -47,6 +47,11 @@ PARKS = {
     'loea': ('Lower East Side Tenement Museum', 40.718800, -73.990100),
 }
 
+JERSEY = re.compile(r'sandy hook|fort hancock|new jersey|\bNJ\b|highlands', re.I)
+# Gateway's New York units, for events that only say where they are in words.
+GATEWAY_NYC = re.compile(r'floyd bennett|jamaica bay|fort wadsworth|great kills|miller field|jacob riis|fort tilden|'
+                         r'breezy point|canarsie|plumb beach|staten island|brooklyn|queens', re.I)
+
 
 def fetch_day(day, key):
     params = {'parkCode': ','.join(PARKS), 'dateStart': day.isoformat(), 'dateEnd': day.isoformat(), 'pageSize': 50}
@@ -93,39 +98,47 @@ def category(ev):
 def to_raws(ev, day):
     code = (ev.get('sitecode') or '').lower()
     park = PARKS.get(code, (ev.get('parkfullname') or 'National Park Service', None, None))
+    where = text(ev.get('location'))
+    # Gateway also runs Sandy Hook in New Jersey, and its events there often have no
+    # coordinates; placing those at the park's NYC spot would put them in Brooklyn.
+    if JERSEY.search(f"{where} {ev.get('title', '')}"):
+        return []
     try:
         lat, lng = float(ev['latitude']), float(ev['longitude'])
     except (KeyError, TypeError, ValueError):
+        if code == 'gate' and not GATEWAY_NYC.search(f"{where} {ev.get('title', '')}"):
+            return []
         lat, lng = park[1], park[2]
     if lat is None:
         return []
-    times = ev.get('times') or [{}]
     all_day = str(ev.get('isallday', '')).lower() == 'true'
     free = str(ev.get('isfree', '')).lower() == 'true'
     body = text(ev.get('description'))
     fee = text(ev.get('feeinfo'))
-    out = []
-    for i, t in enumerate(times):
-        start_t, end_t = clock(t.get('timestart')), clock(t.get('timeend'))
-        start = datetime(day.year, day.month, day.day, *(start_t if start_t and not all_day else (0, 0)), tzinfo=NYC)
-        end = datetime(day.year, day.month, day.day, *end_t, tzinfo=NYC) if end_t and not all_day else None
-        out.append({
-            'id': f"{ev.get('id')}-{i}" if len(times) > 1 else ev.get('id'),
-            'title': html.unescape(ev.get('title', '')).strip(),
-            'category': category(ev),
-            'start': start.isoformat(),
-            'end': end.isoformat() if end and end > start else None,
-            'allDay': all_day or not start_t,
-            'venue': {'name': text(ev.get('location')) or park[0], 'address': park[0],
-                      'neighborhood': ev.get('parkfullname') or park[0], 'lat': round(lat, 6), 'lng': round(lng, 6)},
-            'price': None,
-            'priceUnknown': not free,
-            'description': (body.split('\n')[0][:200] if body else ev.get('category', '')),
-            'details': '\n\n'.join(x for x in (body, f'Fees: {fee}' if fee and not free else '') if x)[:1200],
-            'url': ev.get('infourl') or f"https://www.nps.gov/planyourvisit/event-details.htm?id={ev.get('id')}",
-            'tags': [x for x in (ev.get('types') or [])][:3],
-        })
-    return out
+    # A tour run several times a day is one pin, starting at its first time, with every time listed.
+    slots = sorted({(clock(t.get('timestart')), clock(t.get('timeend'))) for t in ev.get('times') or []
+                    if clock(t.get('timestart'))}, key=lambda t: t[0])
+    first = slots[0] if slots and not all_day else (None, None)
+    start = datetime(day.year, day.month, day.day, *(first[0] or (0, 0)), tzinfo=NYC)
+    end = datetime(day.year, day.month, day.day, *first[1], tzinfo=NYC) if first[1] and len(slots) == 1 else None
+    times = f"Times: {', '.join(datetime(2000, 1, 1, *t[0]).strftime('%-I:%M %p') for t in slots)}." if len(slots) > 1 else ''
+    return [{
+        'id': ev.get('id'),
+        'title': html.unescape(ev.get('title', '')).strip(),
+        'category': category(ev),
+        'start': start.isoformat(),
+        'end': end.isoformat() if end and end > start else None,
+        'allDay': first[0] is None,
+        # The location field is often a sentence ("The tour is inside the brownstone at ..."), so it goes under the park's name.
+        'venue': {'name': park[0], 'address': where if where and len(where) <= 80 else park[0],
+                  'neighborhood': ev.get('parkfullname') or park[0], 'lat': round(lat, 6), 'lng': round(lng, 6)},
+        'price': None,
+        'priceUnknown': not free,
+        'description': ' '.join(x for x in (times, body.split('\n')[0][:200] if body else ev.get('category', '')) if x),
+        'details': '\n\n'.join(x for x in (body, where if len(where) > 80 else '', f'Fees: {fee}' if fee and not free else '') if x)[:1200],
+        'url': ev.get('infourl') or f"https://www.nps.gov/planyourvisit/event-details.htm?id={ev.get('id')}",
+        'tags': [x for x in (ev.get('types') or [])][:3],
+    }]
 
 
 def main():

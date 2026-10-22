@@ -30,6 +30,10 @@
 
 export const CATEGORIES = ['music', 'art', 'theater', 'food', 'comedy', 'sports', 'nightlife', 'community', 'film', 'trivia'];
 
+// The CATEGORIES dropdown lists these five first, in this order; every other category,
+// including any added later, follows them.
+export const MAIN_CATEGORIES = ['music', 'art', 'comedy', 'nightlife', 'theater'];
+
 export const CATEGORY_LABELS = {
   music: 'Music',
   art: 'Art',

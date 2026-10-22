@@ -84,12 +84,17 @@ import Terms from '../components/Terms.astro';
         <ul id="src-list" aria-label="Event sources"></ul>
       </div>
     </div>
-    <nav class="chips" id="chips" aria-label="Filter by category"></nav>
     <div class="cat-filter">
-      <button class="chip cat-btn" id="cat-btn" type="button" aria-expanded="false" aria-controls="cat-menu">
-        <i aria-hidden="true"></i><span id="cat-summary">ALL</span><b aria-hidden="true">v</b>
+      <button class="chip cat-btn" id="cat-btn" type="button" aria-expanded="false" aria-controls="cat-menu" style="--cat:#ffffff">
+        CATEGORIES<span id="cat-summary">ALL</span><b aria-hidden="true">v</b>
       </button>
-      <div class="cat-menu box" id="cat-menu" role="group" aria-label="Filter by category" hidden></div>
+      <div class="src-menu cat-menu box" id="cat-menu" hidden>
+        <div class="src-actions">
+          <button type="button" id="cat-all">SELECT ALL</button>
+          <button type="button" id="cat-none">DESELECT ALL</button>
+        </div>
+        <ul id="cat-list" aria-label="Event categories"></ul>
+      </div>
     </div>
   </div>
 </header>

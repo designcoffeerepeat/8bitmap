@@ -95,7 +95,7 @@ src/scripts/events/overlap.js     merges the same event listed by several source
                                   information (SeatGeek always wins over Ticketmaster)
 src/scripts/events/sources/       one file per event source: nycgov.js, luma.js, permits.js,
                                   ticketmaster.js, seatgeek.js, dice.js, artwrld.js, artrabbit.js,
-                                  artguide.js (live), venues.js, greenmarkets.js, nps.js, astoria.js, redhook.js, foresthills.js,
+                                  artguide.js (live), venues.js, greenmarkets.js, nps.js, astoria.js, redhook.js, foresthills.js, coneyisland.js, statenisland.js,
                                   snapshot.js (shared reader),
                                   dummy.js (sample data, not loaded), template.js
 public/data/*-events.json         one snapshot per source, written by the matching tools/fetch_*.py
@@ -111,10 +111,12 @@ tools/fetch_dice.py               pulls one day of DICE New York events
 tools/fetch_artwrld.py            pulls the day's gallery openings, museum shows and art events from Artwrld
 tools/fetch_artrabbit.py          pulls the day's New York opening receptions from ArtRabbit
 tools/fetch_artguide.py           pulls the day's New York opening receptions from Artforum artguide
-tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, Smalls, comedy clubs, bar trivia)
+tools/fetch_venues.py             pulls the day's shows from venues' own calendars (Film Forum, Smalls, comedy clubs, bar trivia, Flushing)
 tools/fetch_astoria.py            pulls the day's events from Astoria venues' own calendars (Socrates Sculpture Park, Melrose Ballroom, Bohemian Hall)
 tools/fetch_redhook.py            pulls the day's events from Red Hook's own calendars (Pioneer Works, Waterfront Museum, Sunny's, CB6)
 tools/fetch_foresthills.py        pulls the day's events from Forest Hills' own calendars (Commonpoint Queens, Rove trivia)
+tools/fetch_coneyisland.py        pulls the day's events from Coney Island's own calendars (Coney Island USA, Luna Park, Deno's Wonder Wheel)
+tools/fetch_statenisland.py       pulls the day's events from Staten Island's own calendars (Children's Museum, Noble Maritime, Richmond Town, Alice Austen House)
 tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
 tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
@@ -140,6 +142,8 @@ python3 tools/fetch_venues.py
 python3 tools/fetch_astoria.py
 python3 tools/fetch_redhook.py
 python3 tools/fetch_foresthills.py
+python3 tools/fetch_coneyisland.py
+python3 tools/fetch_statenisland.py
 python3 tools/fetch_greenmarkets.py
 NPS_API_KEY=... python3 tools/fetch_nps.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
@@ -185,7 +189,8 @@ new year's list is out, last year's is used.
 the city (`PARKS` in the script: Statue of Liberty, Ellis Island, Governors Island, Gateway, Federal Hall, Castle
 Clinton, Grant's Tomb and others). It needs a free key in `NPS_API_KEY`, read from a repository secret of that name
 by the scheduled refresh; without one it skips the run, like Ticketmaster. Events without coordinates are placed at
-their park, and an event with several times a day becomes one pin per time. NPS text is US government work and free
+their park, except Gateway events at Sandy Hook (New Jersey), which are dropped. A tour run several times a day is
+one pin at its first time, with every time listed in its description. NPS text is US government work and free
 to reuse.
 
 ### Ticketmaster
@@ -252,14 +257,17 @@ schema.org event data on New York Comedy Club's and Eastville Comedy Club's cale
 Other Half Brewing's NYC taproom events, NYC Trivia League's weekly list of bar trivia and bingo nights (each
 bar placed from the coordinates on its listing page), and three Ridgewood calendars: H0L0's club nights, the
 Onderdonk House's events and the Myrtle Avenue BID's plaza concerts and street festivals (placed at Herman Hochberg
-Plaza, or on Myrtle Avenue when an event gives no place). H0L0's ticket links go to the ticket sellers it uses. A film is one event at its first showing, with the day's
+Plaza, or on Myrtle Avenue when an event gives no place), and six in and around Flushing: Queens Botanical Garden's
+events feed, the New York Hall of Science's one-time public events, the Queens Night Market's next market night, and
+the events lists of Kingsland Homestead (Queens Historical Society), Bowne House and Lewis Latimer House. H0L0's ticket links go to the ticket sellers it uses. A film is one event at its first showing, with the day's
 showtimes in its description. Each event names its venue as its publisher (trivia nights name NYC Trivia League),
 so they are listed one by one in the Sources dropdown. Venues are placed once from the street address in `VENUES`
 and remembered in `data/geocode-cache.json`. Adding a venue means a reader function, an entry in `VENUES` and a
 place in `READERS`. Only title, time, price when given and a link are kept.
 
 Check a site's terms of use before adding it. St. Marks Comedy Club, QED, McNally Jackson and Apple forbid automated
-access, so they are left out; Geeks Who Drink, The Strand, Greenlight, Barnes & Noble, Film at Lincoln Center,
+access, Flushing Town Hall and the Kupferberg Center forbid republishing their content, and Queens Theatre turns
+scripts away, so they are left out; Geeks Who Drink, The Strand, Greenlight, Barnes & Noble, Film at Lincoln Center,
 Juilliard, BRIC, The Public Theater and TV Eye turn automated visits away. Nowadays lists its nights only on
 Resident Advisor, and Trans-Pecos only through VenuePilot, so neither is read here.
 
@@ -307,6 +315,39 @@ Checked 2026-10-22 and left out: Cinemart Cinemas' terms allow personal use only
 commercial or public purpose; Queens Public Library's terms allow personal, non-commercial use only; The
 Church-in-the-Gardens' calendar is recovery groups, scouts and rehearsals rather than public events; Regal UA Midway
 is a chain ticketing site.
+
+### Coney Island calendars
+
+`fetch_coneyisland.py` covers Coney Island and, as they are found, Brighton Beach and Manhattan Beach. It reads
+Coney Island USA's events list (Burlesque at the Beach, sideshow nights, films and talks at 1208 Surf Avenue, with the
+time taken from each listing's Add to Google Calendar link), the named events on Luna Park's park calendar (Halloween
+Harvest days, DJ nights; plain opening hours are left out) and the special events on Deno's Wonder Wheel's season
+calendar (fireworks, karaoke, dance shows; the daily ride hours are left out). The Cyclones already come in through
+SeatGeek and the Amphitheater through Ticketmaster.
+
+Checked 2026-10-22: none of the three has terms against automated reading, and their robots.txt allow these pages.
+Left out for now: the New York Aquarium (its terms are on wcs.org, which the build cannot reach yet), Kingsborough
+Community College (its calendar loads from widget.calendar.moderncampus.net, not reachable yet), On Stage at
+Kingsborough (no season announced), the Alliance for Coney Island (its events page has no dates), the Coney Island
+History Project (closed for the season, no dated listings), Brooklyn Public Library (shows automated visitors a bot
+check page), Millennium Theatre (site down) and Tatiana (its domain is parked).
+
+### Staten Island calendars
+
+`fetch_statenisland.py` covers Staten Island, which the big listing sites barely reach. It reads the Staten Island
+Children's Museum's feed from The Events Calendar plugin (`/wp-json/tribe/events/v1/events`, leaving out
+members-only and private events), the Squarespace events pages of the Noble Maritime Collection and Historic
+Richmond Town (`/events?format=json`, keeping only what starts and ends on the day, so exhibitions and season-long
+tours are left out) and the Alice Austen House's events list. St. George Theatre sells through Ticketmaster, which
+already lists its shows, and the island's parks come in through NYC.gov.
+
+Checked 2026-10-22 and left out: Empire Outlets' terms allow personal, non-commercial use only; Kills Boro
+Brewing's terms forbid reproducing any site content without written permission; Snug Harbor, the Staten Island
+Museum and Wagner College sit behind a Cloudflare check that blocks automated readers, Staten Island Arts' server
+refuses them, NYPL has a bot wall and the Staten Island Zoo refuses requests; the Conference House lists tours
+only; Greenbelt Conservancy's and Flagship Brewing's calendars are empty or a year old; the CSI Center for the Arts'
+calendar is school-group shows; the Jacques Marchais Museum's Wix calendar only loads in a browser; the
+Garibaldi-Meucci Museum's site could not be reached.
 
 ## Adding a real event source
 
