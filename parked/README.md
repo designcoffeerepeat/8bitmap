@@ -19,6 +19,11 @@ To bring one back:
    `src/components/PrivacyPolicy.astro`, and its section back to the main README.
 5. Run the fetcher once (or the Refresh events workflow) so its snapshot exists.
 
+Queens Public Library was parked on 2026-10-22 before it ever reached live. Its robots.txt allows the calendar,
+but its terms (Library Policies, Copyright & Disclaimer) allow personal, non-commercial use only and forbid
+republishing, so it needs the library's permission first. To bring it back, follow the steps above with
+`fetch_qpl.py` and `qpl.js`; it has no entries in the page or legal source lists.
+
 ## How each one worked
 
 ### doNYC
@@ -42,3 +47,12 @@ a street address or block in its text, from `data/venues.json`, or from a GeoSea
 landmarks). Everything else is listed under `unplaced`. Adding a venue's address to `data/venues.json` places it
 from then on. The text is free-form, so check the output now and then: prices and times are best guesses.
 
+
+### Queens Public Library
+
+`fetch_qpl.py` reads the library calendar (https://www.queenslibrary.org/calendar) one branch and one day at a time
+for the branches in `BRANCHES` (the Flushing area: Flushing, East Flushing, McGoldrick, Mitchell-Linden, Queensboro
+Hill, Pomonok). The calendar filters by each branch's location code (`sm_pSsnVirtua`), not its name; the codes for
+other branches are in the calendar page's `facetsInfoCal`. A desktop browser's user agent gets an empty page, so the
+script names itself. It keeps in-person programs (skipping online, staff-only and cancelled ones) and only the
+title, time, branch, program type and a link back.
