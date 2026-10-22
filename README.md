@@ -91,6 +91,8 @@ src/scripts/map/renderer.js       three.js scene: voxel land and buildings, pins
 src/scripts/map/palette.js        colours for the city and for event categories
 src/scripts/events/schema.js      the one event shape every source maps into
 src/scripts/events/index.js       loads all sources, filters to today and the map area, de-duplicates, sorts
+src/scripts/events/overlap.js     merges the same event listed by several sources, keeping the listing with the most
+                                  information (SeatGeek always wins over Ticketmaster)
 src/scripts/events/sources/       one file per event source: nycgov.js, luma.js, permits.js,
                                   ticketmaster.js, seatgeek.js, dice.js, artwrld.js, artrabbit.js,
                                   artguide.js (live), greenmarkets.js, nps.js, astoria.js,
