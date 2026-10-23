@@ -2,6 +2,10 @@
 
 Each release from dev to the live site (main) gets a version number here, so it can be referred to later.
 
+## v1.3 (on dev, not released yet)
+
+- On phones the event list tray slides up over the map controls instead of under them.
+
 ## v1.2 (on dev, not released yet)
 
 - Header logo reads 8bit.nyc with no gap between "8bit" and ".nyc" (also on the dev login page).

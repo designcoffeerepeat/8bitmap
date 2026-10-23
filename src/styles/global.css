@@ -347,6 +347,8 @@ button, a { font: inherit; color: inherit; }
     padding-left: env(safe-area-inset-left, 0px);
   }
   #panel.is-open { transform: none; }
+  /* the open tray (and the event card above it) cover the map controls; the header menus stay on top at z-index 2 */
+  #panel, #detail { z-index: 1; }
   .panel-head { padding: 0 16px; height: 61px; align-items: center; }
   #panel-toggle { display: block; position: absolute; inset: 0 0 auto 0; height: 61px; background: none; border: 0; cursor: pointer; }
   #panel-toggle::after { content: ""; position: absolute; top: 8px; left: 50%; width: 36px; height: 4px; margin-left: -18px; background: var(--dim); }
