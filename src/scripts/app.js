@@ -61,7 +61,8 @@ initMonster(map);
 initSunbather(map);
 initFlyingVan(map);
 initRooftopGrill(map);
-// Times Square: an open plaza on Broadway, cleared of buildings in geo.js.
+// Times Square: the plaza, the billboard building (an ad/event space like the one beside the header)
+// and One Times Square with the New Year's Eve ball.
 initTimesSquare(map);
 
 // Every publisher with events on the shown day, plus any registered source that returned none.
