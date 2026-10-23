@@ -317,7 +317,9 @@ export const LANDMARKS = [
   { id: 'wtc', name: 'One World Trade', lat: 40.7127, lng: -74.0134 },
   { id: 'esb', name: 'Empire State', lat: 40.7484, lng: -73.9857 },
   { id: 'msg', name: 'Madison Square Garden', lat: 40.7505, lng: -73.9935, clear: 1, low: 4.5 },
-  { id: 'tsq', name: 'Times Square', lat: 40.7580, lng: -73.9855, clear: 3, low: 5 }, // built in src/scripts/times-square.js
+  // Times Square: the tiles along Broadway and 7th Ave from 42nd to 48th St are left open for the
+  // plaza in src/scripts/times-square.js
+  { id: 'tsq', name: 'Times Square', lat: 40.7552, lng: -73.9870, to: [40.7597, -73.9848], clear: 1 },
   { id: 'chrysler', name: 'Chrysler Building', lat: 40.7516, lng: -73.9755 },
   { id: 'liberty', name: 'Statue of Liberty', lat: 40.6892, lng: -74.0445 },
   { id: 'yankee', name: 'Yankee Stadium', lat: 40.8296, lng: -73.9262 },
@@ -327,6 +329,29 @@ export const LANDMARKS = [
   { id: 'parachute', name: 'Parachute Jump', lat: 40.5741, lng: -73.9853 },
   { id: 'wheel', name: 'Wonder Wheel', lat: 40.5741, lng: -73.9781 },
 ];
+
+// The tiles a landmark clears of generic buildings: within clear + 0.5 tiles of its spot,
+// or of the line to l.to when it has one.
+export function clearedTiles(l) {
+  const a = latLngToCell(l.lat, l.lng);
+  const b = l.to ? latLngToCell(l.to[0], l.to[1]) : a;
+  const r = l.clear ?? 0;
+  const tiles = [];
+  const c0 = Math.floor(Math.min(a.col, b.col) - r - 1);
+  const c1 = Math.ceil(Math.max(a.col, b.col) + r + 1);
+  const w0 = Math.floor(Math.min(a.row, b.row) - r - 1);
+  const w1 = Math.ceil(Math.max(a.row, b.row) + r + 1);
+  const len2 = (b.col - a.col) ** 2 + (b.row - a.row) ** 2;
+  for (let w = w0; w <= w1; w++) {
+    for (let c = c0; c <= c1; c++) {
+      const x = c + 0.5;
+      const y = w + 0.5;
+      const t = len2 ? Math.max(0, Math.min(1, ((x - a.col) * (b.col - a.col) + (y - a.row) * (b.row - a.row)) / len2)) : 0;
+      if (Math.hypot(x - a.col - t * (b.col - a.col), y - a.row - t * (b.row - a.row)) <= r + 0.5) tiles.push({ col: c, row: w });
+    }
+  }
+  return tiles;
+}
 
 export const LABELS = [
   { text: 'MIDTOWN', lat: 40.7515, lng: -73.9790 },

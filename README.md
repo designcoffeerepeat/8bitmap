@@ -58,7 +58,7 @@ Keep `worker/index.js` itself: it also runs the contact form and the cookie cons
 The menu in the title box opens Contact, Privacy Policy and Terms and Conditions as modals
 (`src/scripts/site.js`; the texts are `src/components/PrivacyPolicy.astro` and `src/components/Terms.astro`).
 Each can be linked to directly as `/#contact`, `/#privacy` or `/#terms`. The empty ad slot opens Contact
-on Ad/Event Inquiry, and so does the Times Square billboard on the map once you zoom in (`src/scripts/times-square.js`).
+on Ad/Event Inquiry.
 
 The form posts to `/api/contact` in `worker/index.js`, which sends it with the `MAIL` send_email binding
 from website@8bit.nyc. Ad/Event Inquiry is for sales@8bit.nyc and the other topics for info@8bit.nyc; Cloudflare
