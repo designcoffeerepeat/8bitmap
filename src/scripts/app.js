@@ -61,7 +61,7 @@ initMonster(map);
 initSunbather(map);
 initFlyingVan(map);
 initRooftopGrill(map);
-// The Times Square billboard: an ad/event space like the one beside the header.
+// Times Square: an open plaza on Broadway, cleared of buildings in geo.js.
 initTimesSquare(map);
 
 // Every publisher with events on the shown day, plus any registered source that returned none.
