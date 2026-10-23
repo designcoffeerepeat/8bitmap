@@ -317,6 +317,10 @@ export const LANDMARKS = [
   { id: 'wtc', name: 'One World Trade', lat: 40.7127, lng: -74.0134 },
   { id: 'esb', name: 'Empire State', lat: 40.7484, lng: -73.9857 },
   { id: 'msg', name: 'Madison Square Garden', lat: 40.7505, lng: -73.9935, clear: 1, low: 4.5 },
+  // Times Square: the tiles along Broadway and 7th Ave from 42nd to 48th St are left open for the
+  // plaza in src/scripts/times-square.js, plus the block of towers east of it toward 6th Ave
+  { id: 'tsq', name: 'Times Square', lat: 40.7552, lng: -73.9870, to: [40.7597, -73.9848], clear: 1,
+    more: [{ lat: 40.7606, lng: -73.9807, to: [40.7537, -73.9820], clear: 1 }, { lat: 40.7540, lng: -73.9844, clear: 0.5 }] },
   { id: 'chrysler', name: 'Chrysler Building', lat: 40.7516, lng: -73.9755 },
   { id: 'liberty', name: 'Statue of Liberty', lat: 40.6892, lng: -74.0445 },
   { id: 'yankee', name: 'Yankee Stadium', lat: 40.8296, lng: -73.9262 },
@@ -327,8 +331,38 @@ export const LANDMARKS = [
   { id: 'wheel', name: 'Wonder Wheel', lat: 40.5741, lng: -73.9781 },
 ];
 
+// The tiles a landmark clears of generic buildings: within clear + 0.5 tiles of its spot,
+// or of the line to l.to when it has one, plus the areas listed in l.more.
+export function clearedTiles(l) {
+  if (l.more) {
+    const seen = new Set();
+    return [{ ...l, more: null }, ...l.more].flatMap(clearedTiles).filter((t) => {
+      const k = `${t.col},${t.row}`;
+      return !seen.has(k) && seen.add(k);
+    });
+  }
+  const a = latLngToCell(l.lat, l.lng);
+  const b = l.to ? latLngToCell(l.to[0], l.to[1]) : a;
+  const r = l.clear ?? 0;
+  const tiles = [];
+  const c0 = Math.floor(Math.min(a.col, b.col) - r - 1);
+  const c1 = Math.ceil(Math.max(a.col, b.col) + r + 1);
+  const w0 = Math.floor(Math.min(a.row, b.row) - r - 1);
+  const w1 = Math.ceil(Math.max(a.row, b.row) + r + 1);
+  const len2 = (b.col - a.col) ** 2 + (b.row - a.row) ** 2;
+  for (let w = w0; w <= w1; w++) {
+    for (let c = c0; c <= c1; c++) {
+      const x = c + 0.5;
+      const y = w + 0.5;
+      const t = len2 ? Math.max(0, Math.min(1, ((x - a.col) * (b.col - a.col) + (y - a.row) * (b.row - a.row)) / len2)) : 0;
+      if (Math.hypot(x - a.col - t * (b.col - a.col), y - a.row - t * (b.row - a.row)) <= r + 0.5) tiles.push({ col: c, row: w });
+    }
+  }
+  return tiles;
+}
+
 export const LABELS = [
-  { text: 'MIDTOWN', lat: 40.7560, lng: -73.9860 },
+  { text: 'MIDTOWN', lat: 40.7515, lng: -73.9790 },
   { text: 'DOWNTOWN', lat: 40.7140, lng: -74.0060 },
   { text: 'HARLEM', lat: 40.8110, lng: -73.9460 },
   { text: 'BROOKLYN', lat: 40.6780, lng: -73.9500 },

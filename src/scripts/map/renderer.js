@@ -5,14 +5,14 @@
 import * as THREE from 'three';
 import { MapControls } from 'three/addons/controls/MapControls.js';
 import {
-  COLS, ROWS, T, BRIDGES, LANDMARKS, LABELS, buildCity, latLngToWorld, latLngToCell, rng,
+  COLS, ROWS, T, BRIDGES, LANDMARKS, LABELS, buildCity, latLngToWorld, latLngToCell, clearedTiles, rng,
 } from './geo.js';
 import { PALETTE, CATEGORY_COLORS } from './palette.js';
 
 const GROUND_H = 0.35;
 const LEVEL_H = 0.4;
 // Roof height of landmarks that clear their neighbouring tiles; pins there sit on top.
-const LANDMARK_TOP = { msg: 3.5 };
+const LANDMARK_TOP = { msg: 3.5, tsq: 0.1 }; // tsq: the Times Square plaza paving
 // Zoomed out, pins stand on their spots (sharing a tile fans them out a little). From
 // SPREAD_FROM they ease apart on screen and are fully spread by SPREAD_FULL (max zoom is 7).
 const SPREAD_FROM = 4;
@@ -72,16 +72,10 @@ export function createMap(container, opts = {}) {
   const landmarkCells = new Set();
   for (const l of LANDMARKS) {
     const { col, row } = latLngToCell(l.lat, l.lng);
-    const r = l.clear ?? 0;
-    for (let dr = -r; dr <= r; dr++) {
-      for (let dc = -r; dc <= r; dc++) {
-        const c = Math.floor(col) + dc;
-        const w = Math.floor(row) + dr;
-        if (Math.hypot(c + 0.5 - col, w + 0.5 - row) > r + 0.5) continue;
-        landmarkCells.add(w * COLS + c);
-        // pins on a cleared tile sit on the landmark's roof
-        if (l.clear) city.landmarkTop.set(w * COLS + c, GROUND_H + LANDMARK_TOP[l.id]);
-      }
+    for (const { col: c, row: w } of clearedTiles(l)) {
+      landmarkCells.add(w * COLS + c);
+      // pins on a cleared tile sit on the landmark's roof
+      if (l.clear) city.landmarkTop.set(w * COLS + c, GROUND_H + LANDMARK_TOP[l.id]);
     }
     if (l.low) {
       const r2 = Math.ceil(l.low);

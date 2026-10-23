@@ -4,7 +4,7 @@
   "url": "https://seatgeek.com/cities/new-york"
  },
  "date": "2026-10-23",
- "fetchedAt": "2026-10-23T13:04:15-04:00",
+ "fetchedAt": "2026-10-23T13:08:37-04:00",
  "events": [
   {
    "id": "18612455",
@@ -54,6 +54,29 @@
    ]
   },
   {
+   "id": "18272732",
+   "title": "MARIS",
+   "category": "music",
+   "start": "2026-10-23T18:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Mercury Lounge - New York",
+    "address": "217 East Houston Street, New York, NY 10002",
+    "neighborhood": "New York",
+    "lat": 40.72211,
+    "lng": -73.986786
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/maris-tickets/new-york-new-york-mercury-lounge-new-york-2026-10-23-6-pm/concert/18272732",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
    "id": "18559241",
    "title": "Hannah Einbinder talks with Rachel Syme",
    "category": "comedy",
@@ -75,29 +98,6 @@
    "tags": [
     "theater",
     "comedy"
-   ]
-  },
-  {
-   "id": "18272732",
-   "title": "MARIS",
-   "category": "music",
-   "start": "2026-10-23T18:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Mercury Lounge - New York",
-    "address": "217 East Houston Street, New York, NY 10002",
-    "neighborhood": "New York",
-    "lat": 40.72211,
-    "lng": -73.986786
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/maris-tickets/new-york-new-york-mercury-lounge-new-york-2026-10-23-6-pm/concert/18272732",
-   "tags": [
-    "concert"
    ]
   },
   {
@@ -170,30 +170,6 @@
    ]
   },
   {
-   "id": "18037677",
-   "title": "MJ - The Musical",
-   "category": "theater",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Neil Simon Theatre",
-    "address": "250 West 52nd Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7632,
-    "lng": -73.9845
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/mj-the-musical-tickets/broadway/2026-10-23-7-pm/18037677",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
    "id": "18390704",
    "title": "School Girls: Or, The African Mean Girls",
    "category": "theater",
@@ -237,6 +213,30 @@
    "url": "https://seatgeek.com/hey-nothing-tickets/new-york-new-york-irving-plaza-2026-10-23-7-pm/concert/18301734",
    "tags": [
     "concert"
+   ]
+  },
+  {
+   "id": "18037677",
+   "title": "MJ - The Musical",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Neil Simon Theatre",
+    "address": "250 West 52nd Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7632,
+    "lng": -73.9845
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/mj-the-musical-tickets/broadway/2026-10-23-7-pm/18037677",
+   "tags": [
+    "theater",
+    "broadway"
    ]
   },
   {
@@ -499,29 +499,6 @@
    ]
   },
   {
-   "id": "18251569",
-   "title": "BE:FIRST",
-   "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Gramercy Theatre",
-    "address": "127 East 23rd Street, New York, NY 10010",
-    "neighborhood": "New York",
-    "lat": 40.738,
-    "lng": -73.9829
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/be-first-tickets/new-york-new-york-gramercy-theatre-2026-10-23-7-pm/concert/18251569",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
    "id": "18128147",
    "title": "The Book of Mormon",
    "category": "theater",
@@ -543,6 +520,29 @@
    "tags": [
     "theater",
     "broadway"
+   ]
+  },
+  {
+   "id": "18251569",
+   "title": "BE:FIRST",
+   "category": "music",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Gramercy Theatre",
+    "address": "127 East 23rd Street, New York, NY 10010",
+    "neighborhood": "New York",
+    "lat": 40.738,
+    "lng": -73.9829
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/be-first-tickets/new-york-new-york-gramercy-theatre-2026-10-23-7-pm/concert/18251569",
+   "tags": [
+    "concert"
    ]
   },
   {
@@ -617,6 +617,30 @@
    ]
   },
   {
+   "id": "18141239",
+   "title": "Hamilton",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Richard Rodgers Theatre",
+    "address": "226 West 46th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7592,
+    "lng": -73.9866
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/hamilton-tickets/broadway/2026-10-23-7-pm/18141239",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
    "id": "18470262",
    "title": "The Imaginary Invalid",
    "category": "theater",
@@ -665,30 +689,6 @@
    ]
   },
   {
-   "id": "18141239",
-   "title": "Hamilton",
-   "category": "theater",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Richard Rodgers Theatre",
-    "address": "226 West 46th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7592,
-    "lng": -73.9866
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/hamilton-tickets/broadway/2026-10-23-7-pm/18141239",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
    "id": "18298174",
    "title": "Stranger Things: The First Shadow",
    "category": "theater",
@@ -710,6 +710,29 @@
    "tags": [
     "theater",
     "broadway"
+   ]
+  },
+  {
+   "id": "17958388",
+   "title": "Harry Potter and The Cursed Child",
+   "category": "theater",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lyric Theatre - New York",
+    "address": "213 West 42nd Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7565,
+    "lng": -73.9878
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/harry-potter-and-the-cursed-child-tickets/theater/2026-10-23-7-pm/17958388",
+   "tags": [
+    "theater"
    ]
   },
   {
@@ -758,29 +781,6 @@
    "tags": [
     "theater",
     "broadway"
-   ]
-  },
-  {
-   "id": "17958388",
-   "title": "Harry Potter and The Cursed Child",
-   "category": "theater",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lyric Theatre - New York",
-    "address": "213 West 42nd Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7565,
-    "lng": -73.9878
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/harry-potter-and-the-cursed-child-tickets/theater/2026-10-23-7-pm/17958388",
-   "tags": [
-    "theater"
    ]
   },
   {
@@ -924,30 +924,6 @@
    ]
   },
   {
-   "id": "18586065",
-   "title": "Sydnee Washington with Liza Treyger",
-   "category": "comedy",
-   "start": "2026-10-23T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Bell House",
-    "address": "149 7th Street, Brooklyn, NY 11215",
-    "neighborhood": "Brooklyn",
-    "lat": 40.6735,
-    "lng": -73.9916
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "comedy",
-   "details": "",
-   "url": "https://seatgeek.com/sydnee-washington-tickets/comedy/2026-10-23-7-30-pm/18586065",
-   "tags": [
-    "theater",
-    "comedy"
-   ]
-  },
-  {
    "id": "18118909",
    "title": "Oh, Mary!",
    "category": "theater",
@@ -969,6 +945,30 @@
    "tags": [
     "theater",
     "broadway"
+   ]
+  },
+  {
+   "id": "18586065",
+   "title": "Sydnee Washington with Liza Treyger",
+   "category": "comedy",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Bell House",
+    "address": "149 7th Street, Brooklyn, NY 11215",
+    "neighborhood": "Brooklyn",
+    "lat": 40.6735,
+    "lng": -73.9916
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "comedy",
+   "details": "",
+   "url": "https://seatgeek.com/sydnee-washington-tickets/comedy/2026-10-23-7-30-pm/18586065",
+   "tags": [
+    "theater",
+    "comedy"
    ]
   },
   {
@@ -1045,6 +1045,29 @@
    ]
   },
   {
+   "id": "18538668",
+   "title": "The Heart - The Musical",
+   "category": "theater",
+   "start": "2026-10-23T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Laura Pels Theater",
+    "address": "111 West 46th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7579,
+    "lng": -73.983
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/the-heart-the-musical-tickets/theater/2026-10-23-7-30-pm/18538668",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
    "id": "18091339",
    "title": "Two Strangers (Carry a Cake Across New York)",
    "category": "theater",
@@ -1066,29 +1089,6 @@
    "tags": [
     "theater",
     "broadway"
-   ]
-  },
-  {
-   "id": "18538668",
-   "title": "The Heart - The Musical",
-   "category": "theater",
-   "start": "2026-10-23T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Laura Pels Theater",
-    "address": "111 West 46th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7579,
-    "lng": -73.983
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/the-heart-the-musical-tickets/theater/2026-10-23-7-30-pm/18538668",
-   "tags": [
-    "theater"
    ]
   },
   {
@@ -1254,24 +1254,24 @@
    ]
   },
   {
-   "id": "18583531",
-   "title": "Downstate",
+   "id": "18339000",
+   "title": "The New York Pops",
    "category": "theater",
    "start": "2026-10-23T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Booth Theatre - New York",
-    "address": "222 West 45th Street, New York, NY 10036",
+    "name": "Carnegie Hall",
+    "address": "152 West 57th Street, New York, NY 10019",
     "neighborhood": "New York",
-    "lat": 40.7583,
-    "lng": -73.9863
+    "lat": 40.765,
+    "lng": -73.9795
    },
    "price": null,
    "priceUnknown": true,
    "description": "theater",
    "details": "",
-   "url": "https://seatgeek.com/downstate-play-tickets/theater/2026-10-23-8-pm/18583531",
+   "url": "https://seatgeek.com/the-new-york-pops-tickets/theater/2026-10-23-8-pm/18339000",
    "tags": [
     "theater"
    ]
@@ -1301,50 +1301,26 @@
    ]
   },
   {
-   "id": "18339000",
-   "title": "The New York Pops",
+   "id": "18583531",
+   "title": "Downstate",
    "category": "theater",
    "start": "2026-10-23T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Carnegie Hall",
-    "address": "152 West 57th Street, New York, NY 10019",
+    "name": "Booth Theatre - New York",
+    "address": "222 West 45th Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.765,
-    "lng": -73.9795
+    "lat": 40.7583,
+    "lng": -73.9863
    },
    "price": null,
    "priceUnknown": true,
    "description": "theater",
    "details": "",
-   "url": "https://seatgeek.com/the-new-york-pops-tickets/theater/2026-10-23-8-pm/18339000",
+   "url": "https://seatgeek.com/downstate-play-tickets/theater/2026-10-23-8-pm/18583531",
    "tags": [
     "theater"
-   ]
-  },
-  {
-   "id": "18187814",
-   "title": "Chicago - The Musical",
-   "category": "theater",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Ambassador Theatre - New York",
-    "address": "219 West 49th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7613,
-    "lng": -73.985
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/chicago-the-musical-tickets/broadway/2026-10-23-8-pm/18187814",
-   "tags": [
-    "theater",
-    "broadway"
    ]
   },
   {
@@ -1366,6 +1342,30 @@
    "description": "broadway",
    "details": "",
    "url": "https://seatgeek.com/wanted-1-tickets/broadway/2026-10-23-8-pm/18470434",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18187814",
+   "title": "Chicago - The Musical",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Ambassador Theatre - New York",
+    "address": "219 West 49th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7613,
+    "lng": -73.985
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/chicago-the-musical-tickets/broadway/2026-10-23-8-pm/18187814",
    "tags": [
     "theater",
     "broadway"
@@ -1418,29 +1418,6 @@
    ]
   },
   {
-   "id": "18245441",
-   "title": "Paranormal Activity",
-   "category": "theater",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "August Wilson Theatre",
-    "address": "245 West 52nd Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7629,
-    "lng": -73.9837
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/paranormal-activity-1-tickets/theater/2026-10-23-8-pm/18245441",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
    "id": "18702045",
    "title": "Sin Pedir Permiso",
    "category": "theater",
@@ -1459,6 +1436,29 @@
    "description": "theater",
    "details": "",
    "url": "https://seatgeek.com/sin-pedir-permiso-tickets/theater/2026-10-23-8-pm/18702045",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18245441",
+   "title": "Paranormal Activity",
+   "category": "theater",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "August Wilson Theatre",
+    "address": "245 West 52nd Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7629,
+    "lng": -73.9837
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/paranormal-activity-1-tickets/theater/2026-10-23-8-pm/18245441",
    "tags": [
     "theater"
    ]
@@ -1488,30 +1488,6 @@
    ]
   },
   {
-   "id": "18411400",
-   "title": "Perfect Crime",
-   "category": "theater",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Theater Center",
-    "address": "210 W. 50th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7615,
-    "lng": -73.9845
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/perfect-crime-tickets/broadway/2026-10-23-8-pm/18411400",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
    "id": "18166904",
    "title": "Friko",
    "category": "music",
@@ -1535,26 +1511,27 @@
    ]
   },
   {
-   "id": "18371394",
-   "title": "Thundercat with TiaCorine",
-   "category": "music",
+   "id": "18411400",
+   "title": "Perfect Crime",
+   "category": "theater",
    "start": "2026-10-23T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Kings Theatre - Brooklyn",
-    "address": "1027 Flatbush Avenue, Brooklyn, NY 11226",
-    "neighborhood": "Brooklyn",
-    "lat": 40.646,
-    "lng": -73.9573
+    "name": "The Theater Center",
+    "address": "210 W. 50th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7615,
+    "lng": -73.9845
    },
    "price": null,
    "priceUnknown": true,
-   "description": "concert",
+   "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/thundercat-tickets/brooklyn-new-york-kings-theatre-brooklyn-2026-10-23-8-pm/concert/18371394",
+   "url": "https://seatgeek.com/perfect-crime-tickets/broadway/2026-10-23-8-pm/18411400",
    "tags": [
-    "concert"
+    "theater",
+    "broadway"
    ]
   },
   {
@@ -1582,24 +1559,24 @@
    ]
   },
   {
-   "id": "17950974",
-   "title": "Osees",
+   "id": "18371394",
+   "title": "Thundercat with TiaCorine",
    "category": "music",
    "start": "2026-10-23T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Warsaw",
-    "address": "261 Driggs Ave, Brooklyn, NY 11222",
+    "name": "Kings Theatre - Brooklyn",
+    "address": "1027 Flatbush Avenue, Brooklyn, NY 11226",
     "neighborhood": "Brooklyn",
-    "lat": 40.7226,
-    "lng": -73.9484
+    "lat": 40.646,
+    "lng": -73.9573
    },
    "price": null,
    "priceUnknown": true,
    "description": "concert",
    "details": "",
-   "url": "https://seatgeek.com/osees-tickets/brooklyn-new-york-warsaw-2026-10-23-8-pm/concert/17950974",
+   "url": "https://seatgeek.com/thundercat-tickets/brooklyn-new-york-kings-theatre-brooklyn-2026-10-23-8-pm/concert/18371394",
    "tags": [
     "concert"
    ]
@@ -1626,6 +1603,29 @@
    "tags": [
     "theater",
     "broadway"
+   ]
+  },
+  {
+   "id": "17950974",
+   "title": "Osees",
+   "category": "music",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Warsaw",
+    "address": "261 Driggs Ave, Brooklyn, NY 11222",
+    "neighborhood": "Brooklyn",
+    "lat": 40.7226,
+    "lng": -73.9484
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/osees-tickets/brooklyn-new-york-warsaw-2026-10-23-8-pm/concert/17950974",
+   "tags": [
+    "concert"
    ]
   },
   {
@@ -1678,29 +1678,6 @@
    ]
   },
   {
-   "id": "18551078",
-   "title": "King Princess talks with Amanda Petrusich and performs",
-   "category": "music",
-   "start": "2026-10-23T20:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Webster Hall",
-    "address": "125 East 11th Street, New York, NY 10003",
-    "neighborhood": "New York",
-    "lat": 40.7318,
-    "lng": -73.9892
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/king-princess-tickets/new-york-new-york-webster-hall-2026-10-23-8-30-pm/concert/18551078",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
    "id": "18411541",
    "title": "Friends! The Musical Parody",
    "category": "theater",
@@ -1721,6 +1698,29 @@
    "url": "https://seatgeek.com/friends-the-musical-parody-tickets/theater/2026-10-23-8-30-pm/18411541",
    "tags": [
     "theater"
+   ]
+  },
+  {
+   "id": "18551078",
+   "title": "King Princess talks with Amanda Petrusich and performs",
+   "category": "music",
+   "start": "2026-10-23T20:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Webster Hall",
+    "address": "125 East 11th Street, New York, NY 10003",
+    "neighborhood": "New York",
+    "lat": 40.7318,
+    "lng": -73.9892
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/king-princess-tickets/new-york-new-york-webster-hall-2026-10-23-8-30-pm/concert/18551078",
+   "tags": [
+    "concert"
    ]
   },
   {

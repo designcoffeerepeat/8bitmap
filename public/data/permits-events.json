@@ -4,7 +4,7 @@
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
  "date": "2026-10-23",
- "fetchedAt": "2026-10-23T13:04:06-04:00",
+ "fetchedAt": "2026-10-23T13:08:29-04:00",
  "events": [
   {
    "id": "972601",
@@ -237,29 +237,6 @@
    ]
   },
   {
-   "id": "906911",
-   "title": "Fordham Road BID Sidewalk Sale",
-   "category": "sports",
-   "start": "2026-10-23T11:00:00-04:00",
-   "end": "2026-10-23T19:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "East Fordham Road",
-    "address": "East Fordham Road Between Jerome Avenue And Washington Avenue",
-    "neighborhood": "Bronx",
-    "lat": 40.862864,
-    "lng": -73.900521
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Sidewalk Sale",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Sidewalk Sale"
-   ]
-  },
-  {
    "id": "967838",
    "title": "Neutrogena Acne NYFW Pop Up - Gansevoort Plaza",
    "category": "community",
@@ -280,6 +257,29 @@
    "url": null,
    "tags": [
     "Plaza Event"
+   ]
+  },
+  {
+   "id": "906911",
+   "title": "Fordham Road BID Sidewalk Sale",
+   "category": "sports",
+   "start": "2026-10-23T11:00:00-04:00",
+   "end": "2026-10-23T19:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "East Fordham Road",
+    "address": "East Fordham Road Between Jerome Avenue And Washington Avenue",
+    "neighborhood": "Bronx",
+    "lat": 40.862864,
+    "lng": -73.900521
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Sidewalk Sale",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Sidewalk Sale"
    ]
   },
   {
