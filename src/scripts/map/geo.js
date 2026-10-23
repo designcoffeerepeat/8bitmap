@@ -318,8 +318,9 @@ export const LANDMARKS = [
   { id: 'esb', name: 'Empire State', lat: 40.7484, lng: -73.9857 },
   { id: 'msg', name: 'Madison Square Garden', lat: 40.7505, lng: -73.9935, clear: 1, low: 4.5 },
   // Times Square: the tiles along Broadway and 7th Ave from 42nd to 48th St are left open for the
-  // plaza in src/scripts/times-square.js
-  { id: 'tsq', name: 'Times Square', lat: 40.7552, lng: -73.9870, to: [40.7597, -73.9848], clear: 1 },
+  // plaza in src/scripts/times-square.js, plus the block of towers east of it toward 6th Ave
+  { id: 'tsq', name: 'Times Square', lat: 40.7552, lng: -73.9870, to: [40.7597, -73.9848], clear: 1,
+    more: [{ lat: 40.7606, lng: -73.9807, to: [40.7537, -73.9820], clear: 1 }, { lat: 40.7540, lng: -73.9844, clear: 0.5 }] },
   { id: 'chrysler', name: 'Chrysler Building', lat: 40.7516, lng: -73.9755 },
   { id: 'liberty', name: 'Statue of Liberty', lat: 40.6892, lng: -74.0445 },
   { id: 'yankee', name: 'Yankee Stadium', lat: 40.8296, lng: -73.9262 },
@@ -331,8 +332,15 @@ export const LANDMARKS = [
 ];
 
 // The tiles a landmark clears of generic buildings: within clear + 0.5 tiles of its spot,
-// or of the line to l.to when it has one.
+// or of the line to l.to when it has one, plus the areas listed in l.more.
 export function clearedTiles(l) {
+  if (l.more) {
+    const seen = new Set();
+    return [{ ...l, more: null }, ...l.more].flatMap(clearedTiles).filter((t) => {
+      const k = `${t.col},${t.row}`;
+      return !seen.has(k) && seen.add(k);
+    });
+  }
   const a = latLngToCell(l.lat, l.lng);
   const b = l.to ? latLngToCell(l.to[0], l.to[1]) : a;
   const r = l.clear ?? 0;
