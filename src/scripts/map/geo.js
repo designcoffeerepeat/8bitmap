@@ -317,6 +317,7 @@ export const LANDMARKS = [
   { id: 'wtc', name: 'One World Trade', lat: 40.7127, lng: -74.0134 },
   { id: 'esb', name: 'Empire State', lat: 40.7484, lng: -73.9857 },
   { id: 'msg', name: 'Madison Square Garden', lat: 40.7505, lng: -73.9935, clear: 1, low: 4.5 },
+  { id: 'tsq', name: 'Times Square', lat: 40.7580, lng: -73.9855, low: 2.5 }, // built in src/scripts/times-square.js
   { id: 'chrysler', name: 'Chrysler Building', lat: 40.7516, lng: -73.9755 },
   { id: 'liberty', name: 'Statue of Liberty', lat: 40.6892, lng: -74.0445 },
   { id: 'yankee', name: 'Yankee Stadium', lat: 40.8296, lng: -73.9262 },
@@ -328,7 +329,7 @@ export const LANDMARKS = [
 ];
 
 export const LABELS = [
-  { text: 'MIDTOWN', lat: 40.7560, lng: -73.9860 },
+  { text: 'MIDTOWN', lat: 40.7515, lng: -73.9790 },
   { text: 'DOWNTOWN', lat: 40.7140, lng: -74.0060 },
   { text: 'HARLEM', lat: 40.8110, lng: -73.9460 },
   { text: 'BROOKLYN', lat: 40.6780, lng: -73.9500 },

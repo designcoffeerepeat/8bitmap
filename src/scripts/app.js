@@ -8,6 +8,7 @@ import { initMonster } from './monster.js';
 import { initSunbather } from './sunbather.js';
 import { initFlyingVan } from './flying-van.js';
 import { initRooftopGrill } from './rooftop-grill.js';
+import { initTimesSquare } from './times-square.js';
 
 const LIST_PAGE = 8;
 
@@ -60,6 +61,8 @@ initMonster(map);
 initSunbather(map);
 initFlyingVan(map);
 initRooftopGrill(map);
+// The Times Square billboard: an ad/event space like the one beside the header.
+initTimesSquare(map);
 
 // Every publisher with events on the shown day, plus any registered source that returned none.
 let publishers = new Map();
