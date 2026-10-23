@@ -12,7 +12,7 @@ import { PALETTE, CATEGORY_COLORS } from './palette.js';
 const GROUND_H = 0.35;
 const LEVEL_H = 0.4;
 // Roof height of landmarks that clear their neighbouring tiles; pins there sit on top.
-const LANDMARK_TOP = { msg: 3.5 };
+const LANDMARK_TOP = { msg: 3.5, tsq: 0.1 }; // tsq: the Times Square plaza paving
 // Zoomed out, pins stand on their spots (sharing a tile fans them out a little). From
 // SPREAD_FROM they ease apart on screen and are fully spread by SPREAD_FULL (max zoom is 7).
 const SPREAD_FROM = 4;
