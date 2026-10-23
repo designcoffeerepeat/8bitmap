@@ -36,6 +36,11 @@
   "lng": -73.834319
  },
  "116th Street Overlook in Riverside Park | Manhattan": null,
+ "125 STREET between ATLANTIC AVENUE and 95 AVENUE Queens | Queens": {
+  "label": "125 STREET & ATLANTIC AVENUE",
+  "lat": 40.694672,
+  "lng": -73.821523
+ },
  "125 W 18th St | Manhattan": {
   "label": "125 WEST 18 STREET, New York, NY, USA",
   "lat": 40.740559,
@@ -61,6 +66,16 @@
   "label": "149 7 STREET, Brooklyn, NY, USA",
   "lat": 40.673739,
   "lng": -73.991677
+ },
+ "1490 Sheridan Blvd | Bronx": {
+  "label": "1490 SHERIDAN BOULEVARD, Bronx, NY, USA",
+  "lat": 40.832826,
+  "lng": -73.882878
+ },
+ "14th Street Passage in The High Line | Manhattan": {
+  "label": "THE FIELD IN HIGH BRIDGE PARK, New York, NY, USA",
+  "lat": 40.84112,
+  "lng": -73.93369
  },
  "1545 FLATBUSH AVENUE Brooklyn | Brooklyn": {
   "label": "1545 FLATBUSH AVENUE, Brooklyn, NY, USA",
@@ -90,6 +105,11 @@
   "lat": 40.704117,
   "lng": -73.916287
  },
+ "1848 Carnaga Avenue | Queens": {
+  "label": "1848 CORNAGA AVENUE, Far Rockaway, NY, USA",
+  "lat": 40.602443,
+  "lng": -73.751375
+ },
  "196-36 Northern Boulevard, Queens": {
   "lat": 40.757553,
   "lng": -73.784306
@@ -115,6 +135,11 @@
   "lat": 40.74568,
   "lng": -73.996356
  },
+ "280 Wyckoff St | Brooklyn": {
+  "label": "280 WYCKOFF STREET, Brooklyn, NY, USA",
+  "lat": 40.682952,
+  "lng": -73.983556
+ },
  "29 STREET between 47 AVENUE and SKILLMAN AVENUE Queens | Queens": {
   "label": "29 STREET & 47 AVENUE",
   "lat": 40.744271,
@@ -133,6 +158,11 @@
  "31-32 Union Street, Queens": {
   "lat": 40.769141,
   "lng": -73.82697
+ },
+ "32 Broadway 7th Floor | Manhattan": {
+  "label": "32 B'WAY, New York, NY, USA",
+  "lat": 40.705801,
+  "lng": -74.012728
  },
  "35 AVENUE between 82 STREET and 81 STREET Queens | Queens": null,
  "362 grand street | Brooklyn": {
@@ -160,6 +190,11 @@
   "lat": 40.673319,
   "lng": -73.989864
  },
+ "407 EAST 59 STREET Manhattan | Manhattan": {
+  "label": "407 EAST 59 STREET, New York, NY, USA",
+  "lat": 40.75945,
+  "lng": -73.96061
+ },
  "41 AVENUE between 80 STREET and 81 STREET Queens | Queens": {
   "label": "41 AVENUE & 80 STREET",
   "lat": 40.746262,
@@ -168,6 +203,11 @@
  "41-17 Main Street, Queens": {
   "lat": 40.757744,
   "lng": -73.828843
+ },
+ "4211 14 AVENUE Brooklyn | Brooklyn": {
+  "label": "14 BROOKLYN AVENUE, Brooklyn, NY, USA",
+  "lat": 40.679723,
+  "lng": -73.944357
  },
  "43 Snyder Ave | Brooklyn": {
   "label": "43 SNYDER AVENUE, Brooklyn, NY, USA",
@@ -212,10 +252,20 @@
   "lat": 40.703236,
   "lng": -74.00907
  },
+ "57-07 Junction Boulevard | Queens": {
+  "label": "57-07 JUNCTION BOULEVARD, South Corona, NY, USA",
+  "lat": 40.736388,
+  "lng": -73.865051
+ },
  "579 Metropolitan Ave | Brooklyn": {
   "label": "579 METROPOLITAN AVENUE, Brooklyn, NY, USA",
   "lat": 40.714299,
   "lng": -73.949742
+ },
+ "5th Avenue between 3rd & 4th Streets | Brooklyn": {
+  "label": "107 MYRTLE AVENUE, Brooklyn, NY, USA",
+  "lat": 40.69413,
+  "lng": -73.98567
  },
  "6 Wyckoff Ave | Brooklyn": {
   "label": "6 WYCKOFF AVENUE, Brooklyn, NY, USA",
@@ -244,6 +294,7 @@
   "lng": -73.983416
  },
  "69 STREET between 37 AVENUE and 34 AVENUE Queens | Queens": null,
+ "6th Avenue between West 34th Street and West 42nd Street | Manhattan": null,
  "6th Street and Avenue B Community Garden | Manhattan": {
   "label": "6 ST AND AVE B COMMUNITY GDN, New York, NY, USA",
   "lat": 40.72431,
@@ -315,10 +366,14 @@
  "Ballroom in Fort Hamilton Senior Recreation Center | Brooklyn": null,
  "Bartow Community Center - Room 31 | Bronx": null,
  "Bayside Historical Society in Fort Totten Park | Queens": null,
+ "Beach 54th and Almeda Avenue in Rockaway Community Park | Queens": null,
  "Between 38th & 39th Streets | Brooklyn": null,
  "Between 78th & 79th Streets | Queens": null,
+ "Blue Heron Nature Center in Blue Heron Park | Staten Island": null,
  "Boardwalk at Beach 60th Street in Rockaway Beach and Boardwalk | Queens": null,
+ "Bowling Green Cottage in Parade Ground | Brooklyn": null,
  "Bowne Park Field House in Bowne Park | Queens": null,
+ "Broadway/Arden Entrance in Fort Tryon Park | Manhattan": null,
  "Bronx River Forest at Burke Bridge in Bronx Park | Bronx": null,
  "Bronx River House in Starlight Park | Bronx": null,
  "BronxWorks - Betances Community Center | Bronx": null,
@@ -347,12 +402,15 @@
  "Cherry Tree Park Playground in Cherry Tree Park | Manhattan": null,
  "Church parking lot, enter from Alameda Ave | Queens": null,
  "Classroom A - Small in Lost Battalion Hall Recreation Center | Queens": null,
+ "Clayton Williams Garden | Manhattan": null,
  "Cloisters Lawn in Fort Tryon Park | Manhattan": null,
  "Columbus Park | Manhattan": null,
  "Concrete Park Boat Launch in Concrete Plant Park | Bronx": null,
  "Concrete Plant Park | Bronx": null,
  "Conference House Museum in Conference House Park | Staten Island": null,
  "Conference House Park | Staten Island": null,
+ "Crotona Nature Center in Crotona Park | Bronx": null,
+ "Crotona Park - Crotona Park East and Charlotte Street | Bronx": null,
  "Cunningham Park Parking Lot in Cunningham Park | Queens": null,
  "DRIGGS AVENUE between DIAMOND STREET and NEWELL STREET Brooklyn | Brooklyn": {
   "label": "DRIGGS AVENUE & DIAMOND STREET",
@@ -369,6 +427,8 @@
  "Dance Room in Thomas Jefferson Recreation Center | Manhattan": null,
  "De Matti Playground in De Matti Park | Staten Island": null,
  "DeMatti Park Fieldhouse in De Matti Park | Staten Island": null,
+ "Dinosaur Playground in Riverside Park | Manhattan": null,
+ "Ditmars Park: Ditmars Park Queens | Queens": null,
  "Driggs Avenue and Lorimer Street in McCarren Park | Brooklyn": null,
  "Dyckman Farmhouse Museum in Dyckman House Museum | Manhattan": null,
  "Dyckman Fields in Inwood Hill Park | Manhattan": null,
@@ -378,6 +438,11 @@
  "EAST 115 STREET - PARK AVENUE to PARK AVENUE: EAST 115 STREET - PARK AVENUE to PARK AVENUE Manhattan | Manhattan": null,
  "EAST 125 STREET between PARK AVENUE and LEXINGTON AVENUE Manhattan | Manhattan": null,
  "EAST 149 STREET between MORRIS AVENUE and PARK AVENUE Bronx | Bronx": null,
+ "EAST 161 STREET between GRAND CONCOURSE and WALTON AVENUE Bronx | Bronx": {
+  "label": "EAST 161 STREET & WALTON AVENUE",
+  "lat": 40.82698,
+  "lng": -73.924588
+ },
  "EAST 192 STREET between GRAND CONCOURSE and VALENTINE AVENUE Bronx | Bronx": {
   "label": "EAST 192 STREET & GRAND CONCOURSE",
   "lat": 40.863941,
@@ -402,6 +467,7 @@
  "East 33rd Street and Avenue U | Brooklyn": null,
  "East Fourth Street Community Garden | Brooklyn": null,
  "Ecology Park | Brooklyn": null,
+ "Eibs Pond Park | Staten Island": null,
  "Elton Street and Jamaica Avenue in Highland Park | Queens": null,
  "Enslaved Burial Ground in Van Cortlandt Park | Bronx": null,
  "Entrance - 215th Place and 33rd Road in Crocheron Park | Queens": null,
@@ -422,6 +488,7 @@
  "Fort Greene Park Visitor Center in Fort Greene Park | Brooklyn": null,
  "Fort Totten Front Gate in Fort Totten Park | Queens": null,
  "Fort Totten Park Visitors Center in Fort Totten Park | Queens": null,
+ "Frederick Douglass Blvd Community Garden | Manhattan": null,
  "Front Lawn in De Matti Park | Staten Island": null,
  "Garden Peoples Garden in Riverside Park | Manhattan": null,
  "Garibaldi Plaza in Washington Square Park | Manhattan": null,
@@ -429,6 +496,8 @@
  "George Washington Carver Community Garden | Brooklyn": null,
  "Governors Island | Manhattan": null,
  "Grand Army Plaza Arch in Grand Army Plaza | Brooklyn": null,
+ "Grass Field in Wayanda Park | Queens": null,
+ "Great Lawn in Conference House Park | Staten Island": null,
  "Greeley Square Park | Manhattan": null,
  "Greenbelt Nature Center in Blood Root Valley | Staten Island": null,
  "Greenbelt Recreation Center in Greenbelt Recreation Center | Staten Island": null,
@@ -472,6 +541,7 @@
  },
  "Kaiser Park Lawn 2 in Kaiser Park | Brooklyn": null,
  "Kids Playground - Large in Washington Square Park | Manhattan": null,
+ "Kissena Park | Queens": null,
  "Kissena Velodrome Parking Lot in Kissena Park | Queens": null,
  "LENOX AVENUE between WEST 117 STREET and WEST 118 STREET Manhattan | Manhattan": {
   "label": "LENOX AVENUE & WEST 117 STREET",
@@ -483,24 +553,30 @@
   "lat": 40.815036,
   "lng": -73.940643
  },
+ "La Plaza Cultural | Manhattan": null,
  "Lawn Area in Owl's Head Park | Brooklyn": null,
  "Lawn Area in Springfield Park | Queens": null,
  "Lawn Near 79th Street Entrance in Shore Park and Parkway | Brooklyn": null,
  "Lawn in J. Hood Wright Park | Manhattan": null,
  "Lawrence Cemetery | Queens": null,
+ "Lentol Garden | Brooklyn": null,
+ "Loreto Playground | Bronx": null,
  "Lower Parking Lot in Greenbelt Recreation Center | Staten Island": null,
  "MADISON AVENUE between EAST 98 STREET and EAST 99 STREET Manhattan | Manhattan": null,
  "Maggies Magic Garden | Manhattan": null,
+ "Maple Street Community Garden | Brooklyn": null,
  "Marcus Garvey Park | Manhattan": null,
  "Margaret Corbin Circle in Fort Tryon Park | Manhattan": null,
  "Merchant's House Museum | Manhattan": null,
  "Midland Beach Splash Plaza in Franklin D. Roosevelt Boardwalk and Beach | Staten Island": null,
  "Mission Garden | Manhattan": null,
+ "Monument Plaza in Fort Greene Park | Brooklyn": null,
  "Mount Morris Fire Watchtower in Marcus Garvey Park | Manhattan": null,
  "Multi-Use Room - 2nd Fl in Sorrentino Recreation Center | Queens": null,
  "Multi-Use Room A in Detective Keith L. Williams Field House | Queens": null,
  "Multi-Use Room A in McCarren Play Center | Brooklyn": null,
  "Multi-Use Room B in Detective Keith L. Williams Field House | Queens": null,
+ "Multi-Use Room B in Pelham Fritz Recreation Center | Manhattan": null,
  "Multi-Use Room C in McCarren Play Center | Brooklyn": null,
  "Multi-Use Room in Asser Levy Recreation Center | Manhattan": null,
  "Multi-Use Room in Greenbelt Recreation Center | Staten Island": null,
@@ -508,6 +584,7 @@
  "Multi-Use Room in St. James Recreation Center | Bronx": null,
  "Multi-Use Room in Williamsbridge Oval Recreation Center | Bronx": null,
  "Multipurpose Ballfield in Carroll Park | Brooklyn": null,
+ "Multipurpose Play Area (Hard Top) in Juniper Valley Park | Queens": null,
  "Myrtle Avenue and Park Lane South in Forest Park | Queens": null,
  "NOSTRAND AVENUE between FLATBUSH AVENUE and GLENWOOD ROAD Brooklyn | Brooklyn": null,
  "NYC Department of Health and Mental Hygiene- Bedford-Stuyvesant Center | Brooklyn": null,
@@ -523,6 +600,7 @@
  "Newport Community Garden | Brooklyn": null,
  "Northwest Corner Seating Area in Washington Square Park | Manhattan": null,
  "Oak Ridge in Forest Park | Queens": null,
+ "Ocean Breeze Athletic Complex in Ocean Breeze Track & Field Athletic Complex | Staten Island": null,
  "Off-Broadway | Manhattan": null,
  "Old Stone House in Washington Park | Brooklyn": null,
  "On the High Line at 13th Street in The High Line | Manhattan": null,
@@ -546,12 +624,14 @@
   "lat": 40.723169,
   "lng": -73.995655
  },
+ "Parking lot, cars follow park drive to the end | Bronx": null,
  "Pelham Bay Nature Center in Pelham Bay Park | Bronx": null,
  "Phoenix Community Garden | Brooklyn": null,
  "Pier 35 in East River Waterfront Esplanade | Manhattan": null,
  "Pier 6 in Brooklyn Bridge Park | Brooklyn": null,
  "Play Area in Arrochar Playground | Staten Island": null,
  "Play Area in Bloomingdale Playground | Manhattan": null,
+ "Play Area in Carmansville Playground | Manhattan": null,
  "Play Area in Levy Playground | Staten Island": null,
  "Poe Park: Permit Area 1 - Paved Oval Bronx | Bronx": null,
  "Powell Street Garden | Brooklyn": null,
@@ -575,6 +655,7 @@
  "ROOSEVELT AVENUE between 103 STREET and 104 STREET Queens | Queens": null,
  "Ralph Ellison Plaza | Manhattan": null,
  "Randall's Island Park | Manhattan": null,
+ "Red Shed Garden | Brooklyn": null,
  "Rock Climbing Wall Room in Gertrude Ederle Recreation Center | Manhattan": null,
  "Rutan-Becket House in Conference House Park | Staten Island": null,
  "Ryan Health- Chelsea Clinton Community Health Center | Manhattan": null,
@@ -584,6 +665,11 @@
   "lng": -73.88710549999999
  },
  "SECOND AVENUE between EAST 97 STREET and EAST 99 STREET Manhattan | Manhattan": null,
+ "SIMPSON STREET between EAST 163 STREET and WESTCHESTER AVENUE Bronx | Bronx": {
+  "label": "SIMPSON STREET & EAST 163 STREET",
+  "lat": 40.821322,
+  "lng": -73.893122
+ },
  "SOUTH STREET between FULTON STREET and JOHN STREET Manhattan | Manhattan": {
   "label": "SOUTH STREET & FULTON STREET",
   "lat": 40.706753,
@@ -598,8 +684,10 @@
  "Sol Lain Playground in Sol Lain Plgd | Manhattan": null,
  "Sonia Sotomayor Community Center | Bronx": null,
  "Soundview Park, Bronx in Soundview Park | Bronx": null,
+ "South Meadow Lawn in Snug Harbor Cultural Center | Staten Island": null,
  "Sparrow's Nest Community Garden | Queens": null,
  "Spin Room in Lost Battalion Hall Recreation Center | Queens": null,
+ "Spuyten Duyvil Shorefront Park | Bronx": null,
  "St. Mary's Annual 5K Start | Bronx": null,
  "Sunnyside Community Services | Queens": null,
  "Surfside Community Garden | Brooklyn": null,
@@ -612,6 +700,9 @@
  "The Cottage in Fort Tryon Park | Manhattan": null,
  "The High Line | Manhattan": null,
  "Thomas Jefferson Park | Manhattan": null,
+ "Thomas Paine Park (Foley Square): Fountain Plaza Manhattan | Manhattan": null,
+ "Two Coves Community Garden | Queens": null,
+ "Union St. Garden and Community Development | Brooklyn": null,
  "United Nations Ave South Entrance in Flushing Meadows Corona Park | Queens": null,
  "Urban Farm in Randall's Island Park | Manhattan": null,
  "VCPA Learning Garden in Van Cortlandt Park | Bronx": null,
@@ -643,13 +734,21 @@
   "lng": -74.00096
  },
  "WEST MOSHOLU PARKWAY SOUTH between GOULDEN AVENUE and SEDGWICK AVENUE Bronx | Bronx": null,
+ "WOODWARD AVENUE between LINDEN STREET and GROVE STREET Queens | Queens": {
+  "label": "WOODWARD AVENUE & LINDEN STREET",
+  "lat": 40.70567,
+  "lng": -73.907413
+ },
  "Wagner College Pool - Spiro Sports Center | Staten Island": null,
  "Wanaqua Garden | Bronx": null,
+ "Water Street, Beach Street to Canal Street | Staten Island": null,
  "Wave Hill | Bronx": null,
  "West 104th Street Garden | Manhattan": null,
+ "West 116th Street and Riverside Drive in Riverside Park | Manhattan": null,
  "West 174 Street and Amsterdam Avenue in Highbridge Park | Manhattan": null,
  "West 218th Street and Indian Road in Inwood Hill Park | Manhattan": null,
  "West 87th Street Garden | Manhattan": null,
+ "White Garden in Randall's Island Park | Manhattan": null,
  "Williamsbridge Oval Recreation Center in Williamsbridge Oval Recreation Center | Bronx": null,
  "Wyckoff Farmhouse Museum in Fidler-Wyckoff House Park | Brooklyn": null,
  "artwrld:American Folk Art Museum": {
@@ -728,6 +827,10 @@
   "lat": 40.83111,
   "lng": -73.91985
  },
+ "artwrld:The Drawing Center": {
+  "lat": 40.7224,
+  "lng": -74.00285
+ },
  "artwrld:The Frick Collection": {
   "lat": 40.77108,
   "lng": -73.96738
@@ -769,6 +872,15 @@
   "lng": -73.992615
  },
  "census: 1 JACKSON SQUARE": null,
+ "census: 161 NEWKIRK STREET CULINARY CONFERENCE CENTER": {
+  "lat": 40.729974,
+  "lng": -74.064739
+ },
+ "census: 1841 JFK BLVD.": {
+  "lat": 40.70287,
+  "lng": -74.09126
+ },
+ "census: 222 JERSEY CIYT BOULEVARD": null,
  "corner: madison ave & e 23rd st | Manhattan": {
   "label": "madison ave & e 23rd st",
   "lat": 40.740847,
@@ -2643,11 +2755,26 @@
   "lat": 40.827368,
   "lng": -73.925876
  },
+ "permit place: 11 AVENUE between 66 STREET and 67 STREET | Brooklyn": {
+  "label": "11th AVENUE & 66th STREET",
+  "lat": 40.6285055,
+  "lng": -74.00667250000001
+ },
  "permit place: 11 MADISON AVENUE | Manhattan": null,
  "permit place: 12 AVENUE between WEST   48 STREET and WEST   49 STREET | Manhattan": {
   "label": "12th AVENUE & WEST 48th STREET",
   "lat": 40.76504,
   "lng": -73.9975
+ },
+ "permit place: 12/13 9 Avenue 9 AVENUE between Gansevoort st and WEST   13 STREET | Manhattan": {
+  "label": "12/13 9 Avenue 9 AVENUE & Gansevoort st",
+  "lat": 40.739544,
+  "lng": -74.006706
+ },
+ "permit place: 125 STREET between ATLANTIC AVENUE and 95 AVENUE | Queens": {
+  "label": "125th STREET & ATLANTIC AVENUE",
+  "lat": 40.694672,
+  "lng": -73.821523
  },
  "permit place: 14 AVENUE between 49 STREET and 50 STREET | Brooklyn": {
   "label": "14th AVENUE & 49th STREET",
@@ -2658,6 +2785,11 @@
   "label": "14th AVENUE & CLINTONVILLE STREET",
   "lat": 40.78919,
   "lng": -73.811009
+ },
+ "permit place: 14 STREET between 8 AVENUE and PROSPECT PARK WEST | Brooklyn": {
+  "label": "14th STREET & 8th AVENUE",
+  "lat": 40.663051,
+  "lng": -73.981142
  },
  "permit place: 1419 ST NICHOLAS AVENUE between WEST  180 STREET and WEST  181 STREET | Manhattan": {
   "label": "1419 ST NICHOLAS AVENUE & WEST 180th STREET",
@@ -2670,6 +2802,7 @@
   "lng": -73.947959
  },
  "permit place: 17/18 Broadway University Place between E 17 st and E 18th st | Manhattan": null,
+ "permit place: 191 STREET between 90 AVE and JAMAICA AVENUE | Queens": null,
  "permit place: 2 AVENUE between EAST   32 STREET and EAST   33 STREET | Manhattan": {
   "label": "2nd AVENUE & EAST 32nd STREET",
   "lat": 40.7428265,
@@ -2689,6 +2822,11 @@
   "label": "28 ST & QUEENS PLAZA SOUTH",
   "lat": 40.750556,
   "lng": -73.93862250000001
+ },
+ "permit place: 29 AVENUE between 204 STREET and CLEARVIEW EXPRESSWAY SERVICE ROAD | Queens": {
+  "label": "29th AVENUE & 204th STREET",
+  "lat": 40.7729655,
+  "lng": -73.786931
  },
  "permit place: 3 AVENUE between 89 STREET and 88 STREET | Brooklyn": null,
  "permit place: 31 AVENUE - 33 STREET to 35 STREET: 31 AVENUE - 33 STREET to 35 STREET | Queens": {
@@ -2710,6 +2848,11 @@
   "label": "41st AVENUE & 80th STREET",
   "lat": 40.746262,
   "lng": -73.88511
+ },
+ "permit place: 4211 14 AVENUE | Brooklyn": {
+  "label": "4211 14 AVENUE, Brooklyn, NY, USA",
+  "lat": 40.637175,
+  "lng": -73.985833
  },
  "permit place: 44 STREET between FORT HAMILTON PARKWAY and 12 AVENUE | Brooklyn": {
   "label": "44th STREET & FORT HAMILTON PARKWAY",
@@ -2736,6 +2879,7 @@
   "lat": 40.673008,
   "lng": -73.98462
  },
+ "permit place: 5 AVENUE between 72 STREET and 85 STREET | Brooklyn": null,
  "permit place: 5 AVENUE between EAST   44 STREET and EAST   45 STREET | Manhattan": {
   "label": "5th AVENUE & EAST 44th STREET",
   "lat": 40.754442,
@@ -2751,6 +2895,7 @@
   "lat": 40.73068,
   "lng": -74.00132
  },
+ "permit place: 6 AVENUE between WEST   34 STREET and WEST   42 STREET | Manhattan": null,
  "permit place: 60 STREET between 3 AVENUE and 4 AVENUE | Brooklyn": null,
  "permit place: 7 STREET between 8 AVENUE and PROSPECT PARK WEST | Brooklyn": {
   "label": "7th STREET & 8th AVENUE",
@@ -2761,6 +2906,11 @@
   "label": "71st AVENUE & QUEENS BOULEVARD",
   "lat": 40.7211275,
   "lng": -73.84490550000001
+ },
+ "permit place: 71 STREET between 6 AVENUE and 7 AVENUE | Brooklyn": {
+  "label": "71st STREET & 6th AVENUE",
+  "lat": 40.631583,
+  "lng": -74.018471
  },
  "permit place: 79 STREET between NORTHERN BOULEVARD and 34 AVENUE | Queens": {
   "label": "79th STREET & NORTHERN BOULEVARD",
@@ -2787,6 +2937,7 @@
   "lat": 40.646922,
   "lng": -73.965771
  },
+ "permit place: ASTOR PLACE between BROADWAY and LAFAYETTE STREET | Manhattan": null,
  "permit place: AVENUE OF AMERICAS between CARMINE STREET and WEST    3 STREET | Manhattan": {
   "label": "AVENUE OF AMERICAS & CARMINE STREET",
   "lat": 40.730644,
@@ -2802,6 +2953,11 @@
   "label": "AMERICAN VETERANS MEMORIAL PIER, Brooklyn, NY, USA",
   "lat": 40.611998,
   "lng": -74.035716
+ },
+ "permit place: Andrew Haswell Green Park | Manhattan": {
+  "label": "ANDREW HASWELL GREEN PARK, New York, NY, USA",
+  "lat": 40.75951,
+  "lng": -73.95762
  },
  "permit place: Astoria Park | Queens": {
   "label": "ASTORIA PARK, Astoria, NY, USA",
@@ -2823,6 +2979,7 @@
   "lat": 40.741935,
   "lng": -73.9591465
  },
+ "permit place: BROADWAY between EAST HOUSTON STREET and PRINCE STREET | Manhattan": null,
  "permit place: BROADWAY between MORRIS STREET and BATTERY PLACE | Manhattan": {
   "label": "BROADWAY & MORRIS STREET",
   "lat": 40.705786,
@@ -2877,6 +3034,11 @@
   "lng": -73.873
  },
  "permit place: Brower Park (PS 289 - Playground Only) | Brooklyn": null,
+ "permit place: Bushwick Inlet Park | Brooklyn": {
+  "label": "BUSHWICK INLET PARK, Brooklyn, NY, USA",
+  "lat": 40.72263,
+  "lng": -73.96179
+ },
  "permit place: CANAL STREET between WRIGHT STREET and BAY STREET | Staten Island": {
   "label": "CANAL STREET & WRIGHT STREET",
   "lat": 40.626944,
@@ -2888,6 +3050,7 @@
   "lng": -73.95482799999999
  },
  "permit place: CARROLL STREET between SMITH STREET and COURT STREET | Brooklyn": null,
+ "permit place: CC Moore Homestead Playground | Queens": null,
  "permit place: CHAUNCEY STREET - HOWARD AVENUE to SARATOGA AVENUE: CHAUNCEY STREET - HOWARD AVENUE to SARATOGA AVENUE | Brooklyn": {
   "label": "CHAUNCEY STREET & HOWARD AVENUE",
   "lat": 40.681682,
@@ -2902,6 +3065,11 @@
   "label": "COLLEGE POINT BOULEVARD & 14th AVENUE",
   "lat": 40.78559,
   "lng": -73.84527
+ },
+ "permit place: CONVENT AVENUE between WEST  135 STREET and WEST  133 STREET | Manhattan": {
+  "label": "CONVENT AVENUE & WEST 135th STREET",
+  "lat": 40.818394,
+  "lng": -73.951448
  },
  "permit place: CORTELYOU ROAD between RUGBY ROAD and ARGYLE ROAD | Brooklyn": {
   "label": "CORTELYOU ROAD & RUGBY ROAD",
@@ -2933,6 +3101,11 @@
   "lat": 40.78249,
   "lng": -73.96554
  },
+ "permit place: City Hall Park | Manhattan": {
+  "label": "CITY HALL PARK, New York, NY, USA",
+  "lat": 40.7128,
+  "lng": -74.00616
+ },
  "permit place: Columbus Circle Plaza BROADWAY between WEST   57 STREET and COLUMBUS CIRCLE | Manhattan": null,
  "permit place: Columbus Park | Brooklyn": null,
  "permit place: Conference House Park | Staten Island": {
@@ -2949,6 +3122,11 @@
   "label": "CUNNINGHAM PARK, Cunningham Park, NY, USA",
   "lat": 40.72902,
   "lng": -73.76467
+ },
+ "permit place: DEAN STREET between COURT STREET and BOERUM PLACE | Brooklyn": {
+  "label": "DEAN STREET & COURT STREET",
+  "lat": 40.6890095,
+  "lng": -73.991904
  },
  "permit place: DELANCEY STREET between CHRYSTIE STREET and FORSYTH STREET | Manhattan": {
   "label": "DELANCEY STREET & CHRYSTIE STREET",
@@ -2980,7 +3158,13 @@
   "lat": 40.75228,
   "lng": -73.96889
  },
+ "permit place: Ditmars Park | Queens": null,
  "permit place: Diversity Plaza 37 Road between Broadway and 74 Street | Queens": null,
+ "permit place: EAST    3 STREET between AVENUE B and AVENUE C | Manhattan": {
+  "label": "EAST 3rd STREET & AVENUE B",
+  "lat": 40.722862,
+  "lng": -73.983093
+ },
  "permit place: EAST    4 STREET between BOWERY and 2 AVENUE | Manhattan": {
   "label": "EAST 4th STREET & BOWERY",
   "lat": 40.726556,
@@ -3055,6 +3239,11 @@
   "lat": 40.863941,
   "lng": -73.895401
  },
+ "permit place: EAST 115 STREET - PARK AVENUE to MADISON AVENUE: EAST 115 STREET - PARK AVENUE to MADISON AVENUE | Manhattan": {
+  "label": "EAST 115th STREET & PARK AVENUE",
+  "lat": 40.798673,
+  "lng": -73.94334
+ },
  "permit place: EAST 115 STREET - PARK AVENUE to PARK AVENUE: EAST 115 STREET - PARK AVENUE to PARK AVENUE | Manhattan": {
   "label": "EAST 115th STREET & PARK AVENUE",
   "lat": 40.798673,
@@ -3087,6 +3276,17 @@
  },
  "permit place: East River Esplanade 36th-38th | Manhattan": null,
  "permit place: East River Waterfront Esplanade | Manhattan": null,
+ "permit place: Estella Diggs Park | Bronx": {
+  "label": "ESTELLA DIGGS PARK, Bronx, NY, USA",
+  "lat": 40.82903,
+  "lng": -73.90635
+ },
+ "permit place: FOREST PARKWAY between JAMAICA AVENUE and 86 ROAD | Queens": null,
+ "permit place: FRANKLIN AVENUE between DEAN STREET and EASTERN PARKWAY | Brooklyn": {
+  "label": "FRANKLIN AVENUE & DEAN STREET",
+  "lat": 40.6774745,
+  "lng": -73.956149
+ },
  "permit place: FT WASHINGTON AVENUE between WEST  168 STREET and WEST  169 STREET | Manhattan": {
   "label": "FT WASHINGTON AVENUE & WEST 168th STREET",
   "lat": 40.8407,
@@ -3109,10 +3309,20 @@
   "lat": 40.69152,
   "lng": -73.97552
  },
+ "permit place: Fort Tryon Park | Manhattan": {
+  "label": "FORT TRYON PARK, New York, NY, USA",
+  "lat": 40.86215,
+  "lng": -73.93233
+ },
  "permit place: GLEANE STREET between BAXTER AVENUE and BRITTON AVENUE | Queens": {
   "label": "GLEANE STREET & BAXTER AVENUE",
   "lat": 40.747437,
   "lng": -73.88234
+ },
+ "permit place: GLEASON AVENUE between ZEREGA AVENUE and COMMERCE AVENUE | Bronx": {
+  "label": "GLEASON AVENUE & ZEREGA AVENUE",
+  "lat": 40.83236,
+  "lng": -73.845372
  },
  "permit place: GREENE STREET between CANAL STREET and GRAND STREET | Manhattan": {
   "label": "GREENE STREET & CANAL STREET",
@@ -3131,6 +3341,11 @@
   "lat": 40.6948105,
   "lng": -73.9306645
  },
+ "permit place: HARWAY AVENUE between 24 AVENUE and BAY   37 STREET | Brooklyn": {
+  "label": "HARWAY AVENUE & 24th AVENUE",
+  "lat": 40.594191499999994,
+  "lng": -73.9936545
+ },
  "permit place: HRPT Piers | Manhattan": null,
  "permit place: Hart Playground | Queens": null,
  "permit place: Hawkins Park | Bronx": {
@@ -3143,6 +3358,7 @@
   "lat": 40.76548,
   "lng": -73.87092
  },
+ "permit place: Herman Hochberg Plaza 71 Avenue between Myrtle Avenue and Stephen Street | Queens": null,
  "permit place: Highland Park | Queens": {
   "label": "HIGHLAND PARK, Brooklyn, NY, USA",
   "lat": 40.68513,
@@ -3153,6 +3369,11 @@
   "lat": 40.632268,
   "lng": -73.94873
  },
+ "permit place: Hunter's Point South Park | Queens": {
+  "label": "HUNTER'S POINT SOUTH PARK, Long Island City, NY, USA",
+  "lat": 40.74109,
+  "lng": -73.96114
+ },
  "permit place: ISHAM STREET between SEAMAN AVENUE and COOPER STREET | Manhattan": {
   "label": "ISHAM STREET & SEAMAN AVENUE",
   "lat": 40.8694345,
@@ -3162,6 +3383,11 @@
   "label": "INWOOD HILL PARK, New York, NY, USA",
   "lat": 40.87239,
   "lng": -73.92611
+ },
+ "permit place: JEROME AVENUE between MOSHOLU PARKWAY and GUN HILL ROAD | Bronx": {
+  "label": "JEROME AVENUE & MOSHOLU PARKWAY",
+  "lat": 40.89331,
+  "lng": -73.88479
  },
  "permit place: JOHN STREET between FRONT STREET and SOUTH STREET | Manhattan": {
   "label": "JOHN STREET & FRONT STREET",
@@ -3246,10 +3472,21 @@
   "lat": 40.691877,
   "lng": -73.991638
  },
+ "permit place: LORIMER STREET between CALYER STREET and MESEROLE AVENUE | Brooklyn": {
+  "label": "LORIMER STREET & CALYER STREET",
+  "lat": 40.727665,
+  "lng": -73.953706
+ },
  "permit place: LUDLOW STREET between GRAND STREET and HESTER STREET | Manhattan": {
   "label": "LUDLOW STREET & GRAND STREET",
   "lat": 40.716753,
   "lng": -73.989926
+ },
+ "permit place: Lawrence Virgilio Playground | Queens": null,
+ "permit place: Loreto Playground | Bronx": {
+  "label": "LORETO PLAYGROUND, Bronx, NY, USA",
+  "lat": 40.84906,
+  "lng": -73.85212
  },
  "permit place: Lou Gehrig Plaza E. 161st Street between Walton Ave and Grand Concourse | Bronx": null,
  "permit place: MADISON AVENUE between EAST   98 STREET and EAST   99 STREET | Manhattan": null,
@@ -3262,6 +3499,11 @@
   "label": "MARCUS GARVEY BOULEVARD & MACDONOUGH STREET",
   "lat": 40.6820675,
   "lng": -73.936507
+ },
+ "permit place: MCDONALD AVENUE between CHURCH AVENUE and AVENUE C | Brooklyn": {
+  "label": "MCDONALD AVENUE & CHURCH AVENUE",
+  "lat": 40.642972,
+  "lng": -73.979696
  },
  "permit place: MERCER STREET between BROOME STREET and SPRING STREET | Manhattan": {
   "label": "MERCER STREET & BROOME STREET",
@@ -3277,6 +3519,11 @@
   "label": "MONITOR STREET & NASSAU AVENUE",
   "lat": 40.725711,
   "lng": -73.942393
+ },
+ "permit place: MOSHOLU AVENUE between WEST  256 STREET and TYNDALL AVENUE | Bronx": {
+  "label": "MOSHOLU AVENUE & WEST 256th STREET",
+  "lat": 40.904077,
+  "lng": -73.903214
  },
  "permit place: MOTHER GASTON BOULEVARD between PITKIN AVENUE and LIVONIA AVENUE | Brooklyn": {
   "label": "MOTHER GASTON BOULEVARD & PITKIN AVENUE",
@@ -3313,6 +3560,11 @@
   "lat": 40.64578,
   "lng": -74.01975
  },
+ "permit place: Matthew P. Sapolin Playground | Manhattan": {
+  "label": "MATTHEW P SAPOLIN PLAYGROUND, New York, NY, USA",
+  "lat": 40.77759,
+  "lng": -73.98443
+ },
  "permit place: McCarren Park | Brooklyn": {
   "label": "MCCARREN PARK, Brooklyn, NY, USA",
   "lat": 40.72022,
@@ -3341,6 +3593,7 @@
  },
  "permit place: Mosholu Parkway | Bronx": null,
  "permit place: Mount Eden Malls | Bronx": null,
+ "permit place: Murdock Plaza Murdock Avenue between 180 Street and Dead End | Queens": null,
  "permit place: NEWKIRK AVENUE between EAST   17 STREET and CONEY ISLAND AVENUE | Brooklyn": {
   "label": "NEWKIRK AVENUE & EAST 17th STREET",
   "lat": 40.636304,
@@ -3358,6 +3611,11 @@
   "label": "PELL STREET & BOWERY",
   "lat": 40.714641,
   "lng": -73.997505
+ },
+ "permit place: PRESIDENT STREET between WASHINGTON AVENUE and CLASSON AVENUE | Brooklyn": {
+  "label": "PRESIDENT STREET & WASHINGTON AVENUE",
+  "lat": 40.669084,
+  "lng": -73.961736
  },
  "permit place: PRINCE STREET between MULBERRY STREET and MOTT STREET | Manhattan": {
   "label": "PRINCE STREET & MULBERRY STREET",
@@ -3386,6 +3644,7 @@
   "lng": -73.960035
  },
  "permit place: ROOSEVELT AVENUE between 103 STREET and 104 STREET | Queens": null,
+ "permit place: Rainey Park | Bronx": null,
  "permit place: Randall's Island Park | Manhattan": {
   "label": "RANDALL'S ISLAND PARK, New York, NY, USA",
   "lat": 40.79553,
@@ -3408,6 +3667,16 @@
   "lng": -73.82288
  },
  "permit place: Rose Street / Pearl Street Avenue of the Finest Avenue of the Finest between Rose Street and Spruce Street | Manhattan": null,
+ "permit place: Roy Wilkins Park | Queens": {
+  "label": "ROY WILKINS PARK, St. Albans, NY, USA",
+  "lat": 40.68791,
+  "lng": -73.77205
+ },
+ "permit place: Rufus King Park | Queens": {
+  "label": "RUFUS KING PARK, Jamaica, NY, USA",
+  "lat": 40.70369,
+  "lng": -73.804
+ },
  "permit place: SAINT FELIX STREET between FULTON STREET and DEKALB AVENUE | Brooklyn": null,
  "permit place: SCHENCK AVENUE between NEW LOTS AVENUE and LIVONIA AVENUE | Brooklyn": {
   "label": "SCHENCK AVENUE & NEW LOTS AVENUE",
@@ -3448,12 +3717,23 @@
   "lat": 40.81727,
   "lng": -73.94882
  },
+ "permit place: TIFFANY STREET between WESTCHESTER AVENUE and EAST  163 STREET | Bronx": {
+  "label": "TIFFANY STREET & WESTCHESTER AVENUE",
+  "lat": 40.8246385,
+  "lng": -73.8934595
+ },
  "permit place: TOMPKINS AVENUE OPEN STREET TOMPKINS AVENUE between GATES AVENUE | Brooklyn": null,
+ "permit place: Tecumseh Playground | Manhattan": {
+  "label": "TECUMSEH PLAYGROUND, New York, NY, USA",
+  "lat": 40.78188,
+  "lng": -73.97875
+ },
  "permit place: Theodore Roosevelt Park | Manhattan": {
   "label": "THEODORE ROOSEVELT PARK, New York, NY, USA",
   "lat": 40.78136,
   "lng": -73.97406
  },
+ "permit place: Thomas Paine Park (Foley Square) | Manhattan": null,
  "permit place: Tompkins Square Park | Manhattan": {
   "label": "TOMPKINS SQUARE PARK, New York, NY, USA",
   "lat": 40.72645,
@@ -3482,10 +3762,20 @@
   "lat": 40.706208,
   "lng": -74.009922
  },
+ "permit place: WATER STREET between BEACH STREET and CANAL STREET | Staten Island": {
+  "label": "WATER STREET & BEACH STREET",
+  "lat": 40.627298,
+  "lng": -74.076304
+ },
  "permit place: WEST   23 STREET between 8 AVENUE and 9 AVENUE | Manhattan": {
   "label": "WEST 23rd STREET & 8th AVENUE",
   "lat": 40.74552,
   "lng": -73.99791
+ },
+ "permit place: WEST   27 STREET between 7 AVENUE and 8 AVENUE | Manhattan": {
+  "label": "WEST 27th STREET & 7th AVENUE",
+  "lat": 40.74642,
+  "lng": -73.994376
  },
  "permit place: WEST   28 STREET between 11 AVENUE and 10 AVENUE | Manhattan": {
   "label": "WEST 28th STREET & 11th AVENUE",
@@ -3497,10 +3787,25 @@
   "lat": 40.753202,
   "lng": -73.98225
  },
+ "permit place: WEST   64 STREET between CENTRAL PARK WEST and BROADWAY | Manhattan": {
+  "label": "WEST 64th STREET & CENTRAL PARK WEST",
+  "lat": 40.770842,
+  "lng": -73.980187
+ },
+ "permit place: WEST   77 STREET between COLUMBUS AVENUE and AMSTERDAM AVENUE | Manhattan": {
+  "label": "WEST 77th STREET & COLUMBUS AVENUE",
+  "lat": 40.780363,
+  "lng": -73.976347
+ },
  "permit place: WEST   83 STREET between CPW and COLUMBUS AVENUE | Manhattan": {
   "label": "WEST 83rd STREET & CPW",
   "lat": 40.783341,
   "lng": -73.971089
+ },
+ "permit place: WEST   89 STREET between COLUMBUS AVENUE and AMSTERDAM AVENUE | Manhattan": {
+  "label": "WEST 89th STREET & COLUMBUS AVENUE",
+  "lat": 40.788735,
+  "lng": -73.970085
  },
  "permit place: WEST   92 STREET between RIVERSIDE DRIVE and WEST END AVENUE | Manhattan": {
   "label": "WEST 92nd STREET & RIVERSIDE DRIVE",
@@ -3518,6 +3823,7 @@
   "lng": -73.955751
  },
  "permit place: WEST  134 STREET between BROADWAY and AMSTERDAM AVENUE | Manhattan": null,
+ "permit place: WEST  158 STREET between BROADWAY and AMSTERDAM AVENUE | Manhattan": null,
  "permit place: WEST  175 STREET between BROADWAY and WADSWORTH AVENUE | Manhattan": null,
  "permit place: WEST BROADWAY between GRAND STREET and CANAL STREET | Manhattan": {
   "label": "WEST BROADWAY & GRAND STREET",
@@ -3540,6 +3846,11 @@
   "lat": 40.72984,
   "lng": -73.96079
  },
+ "permit place: WOODWARD AVENUE between LINDEN STREET and GROVE STREET | Queens": {
+  "label": "WOODWARD AVENUE & LINDEN STREET",
+  "lat": 40.70567,
+  "lng": -73.907413
+ },
  "permit place: Walter Gladwin Park | Bronx": {
   "label": "WALTER GLADWIN PARK, Bronx, NY, USA",
   "lat": 40.84527,
@@ -3560,6 +3871,12 @@
   "lat": 40.73089,
   "lng": -73.9976
  },
+ "permit place: Wayanda Park (PS 34) | Queens": null,
+ "permit place: Westerleigh Park | Staten Island": {
+  "label": "WESTERLEIGH PARK, Staten Island, NY, USA",
+  "lat": 40.61983,
+  "lng": -74.13446
+ },
  "permit place: Williamsbridge Oval | Bronx": {
   "label": "WILLIAMSBRIDGE OVAL, Bronx, NY, USA",
   "lat": 40.87763,
@@ -3574,6 +3891,11 @@
   "label": "WORTH SQUARE, New York, NY, USA",
   "lat": 40.74271,
   "lng": -73.98897
+ },
+ "permit place: water street between Anchorage Pl and adams st | Brooklyn": {
+  "label": "water street & Anchorage Pl",
+  "lat": 40.70281,
+  "lng": -73.99401449999999
  },
  "place: 100 sutton event space | Brooklyn": null,
  "place: 11am and runs along avenue b | ": null,
@@ -4477,6 +4799,11 @@
   "label": "43-50 MAIN STREET, Flushing, NY, USA",
   "lat": 40.751085,
   "lng": -73.827732
+ },
+ "venue: Queens Night Market": {
+  "label": "47-01 111 STREET, Flushing Meadows, NY, USA",
+  "lat": 40.747359,
+  "lng": -73.851695
  },
  "venue: Smalls": {
   "label": "183 WEST 10 STREET, New York, NY, USA",

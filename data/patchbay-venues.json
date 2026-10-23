@@ -1,4 +1,10 @@
 {
+ "314 Scholes": {
+  "address": "314 Scholes Street, Brooklyn",
+  "checked": "2026-10-23",
+  "lat": 40.709191,
+  "lng": -73.935263
+ },
  "ALPHAVILLE": {
   "address": "140 Wilson Ave, Brooklyn",
   "checked": "2026-10-22",
@@ -35,6 +41,12 @@
   "lat": 40.709994,
   "lng": -73.963495
  },
+ "Bar  Milagro": {
+  "address": "29 Dunham Place, Brooklyn",
+  "checked": "2026-10-23",
+  "lat": 40.711483,
+  "lng": -73.967463
+ },
  "Barclays Center": {
   "address": "620 Atlantic Avenue, Brooklyn",
   "checked": "2026-10-22",
@@ -64,6 +76,12 @@
   "checked": "2026-10-22",
   "lat": 40.730952,
   "lng": -74.000633
+ },
+ "Bogart House": {
+  "address": "230 Bogart St, Brooklyn",
+  "checked": "2026-10-23",
+  "lat": 40.711667,
+  "lng": -73.935456
  },
  "Bossa Nova Civic Club": {
   "address": "1271 Myrtle Avenue, Brooklyn",
@@ -149,11 +167,29 @@
   "lat": 40.70261,
   "lng": -73.901214
  },
+ "City Winery NYC": {
+  "address": "25 11th Avenue",
+  "checked": "2026-10-23",
+  "lat": 40.74344,
+  "lng": -74.009904
+ },
  "Colden Auditorium at Kupferberg Center for the Arts": {
   "address": "65-30 Kissena Blvd, Flushing",
   "checked": "2026-10-22",
   "lat": 40.73619,
   "lng": -73.816162
+ },
+ "College Street Music Hall": {
+  "address": "238 College Street, New Haven",
+  "checked": "2026-10-23",
+  "lat": 41.306404,
+  "lng": -72.929431
+ },
+ "Cosmic Arts": {
+  "address": "56 Bogart Street, Unit 1J, Brooklyn, NY 11206",
+  "checked": "2026-10-23",
+  "lat": 40.705796,
+  "lng": -73.933143
  },
  "Crossroads - Garwood": {
   "address": "78 North Avenue, Garwood",
@@ -172,6 +208,12 @@
   "checked": "2026-10-22",
   "lat": 40.702811,
   "lng": -73.925888
+ },
+ "David Geffen Hall, Lincoln Center": {
+  "address": "150 West 65th Street",
+  "checked": "2026-10-23",
+  "lat": 40.77355,
+  "lng": -73.9845
  },
  "Dead Letter No. 9": {
   "address": "63 Grand Street, Brooklyn",
@@ -203,6 +245,12 @@
   "lat": 41.116876,
   "lng": -73.414313
  },
+ "Dream Live at American Dream": {
+  "address": "1 American Dream Way, East Rutherford",
+  "checked": "2026-10-23",
+  "lat": null,
+  "lng": null
+ },
  "Drom": {
   "address": "85 Avenue A",
   "checked": "2026-10-22",
@@ -221,17 +269,35 @@
   "lat": 40.709451,
   "lng": -73.923221
  },
+ "Elsewhere - The Hall": {
+  "address": "599 Johnson Ave, Brooklyn",
+  "checked": "2026-10-23",
+  "lat": 40.709451,
+  "lng": -73.923221
+ },
  "Elsewhere - Zone One": {
   "address": "599 Johnson Avenue, Brooklyn",
   "checked": "2026-10-22",
   "lat": 40.709451,
   "lng": -73.923221
  },
+ "ErF Gallery": {
+  "address": "1 Ingraham Street, Brooklyn, NY 11206",
+  "checked": "2026-10-23",
+  "lat": 40.707026,
+  "lng": -73.933483
+ },
  "ErF Studios": {
   "address": "1 Ingraham St, Brooklyn",
   "checked": "2026-10-22",
   "lat": 40.707026,
   "lng": -73.933483
+ },
+ "Ernest Records": {
+  "address": "337 Marcus Garvey Boulevard, Brooklyn",
+  "checked": "2026-10-23",
+  "lat": 40.685898,
+  "lng": -73.938458
  },
  "Fairfield Theatre Company": {
   "address": "70 Sanford Street, Fairfield",
@@ -242,6 +308,12 @@
  "Flagstar at Westbury Music Fair": {
   "address": "960 Brush Hollow Road, Westbury",
   "checked": "2026-10-22",
+  "lat": null,
+  "lng": null
+ },
+ "Flushing Meadows Corona Park": {
+  "address": "",
+  "checked": "2026-10-23",
   "lat": null,
   "lng": null
  },
@@ -269,6 +341,18 @@
   "lat": 40.739896,
   "lng": -73.984931
  },
+ "Green Room NYC": {
+  "address": "195 Morgan Ave, Brooklyn",
+  "checked": "2026-10-23",
+  "lat": 40.71075,
+  "lng": -73.934165
+ },
+ "H0L0": {
+  "address": "1090 Wyckoff Ave, Ridgewood",
+  "checked": "2026-10-23",
+  "lat": 40.694228,
+  "lng": -73.902251
+ },
  "H0l0": {
   "address": "1090 Wyckoff Ave, Ridgewood",
   "checked": "2026-10-22",
@@ -281,11 +365,29 @@
   "lat": 40.765072,
   "lng": -73.996
  },
+ "Honey's": {
+  "address": "93 Scott Avenue, Brooklyn",
+  "checked": "2026-10-23",
+  "lat": 40.710578,
+  "lng": -73.923404
+ },
  "House of Independents": {
   "address": "572 Cookman Avenue, Asbury Park",
   "checked": "2026-10-22",
   "lat": 40.216061,
   "lng": -74.010012
+ },
+ "House of Yes": {
+  "address": "2 Wyckoff Avenue, Brooklyn",
+  "checked": "2026-10-23",
+  "lat": 40.706772,
+  "lng": -73.923611
+ },
+ "Irving Plaza": {
+  "address": "17 Irving Place",
+  "checked": "2026-10-23",
+  "lat": 40.734928,
+  "lng": -73.988455
  },
  "Irving Plaza Powered By Verizon 5G": {
   "address": "17 Irving Place",
@@ -359,6 +461,12 @@
   "lat": 40.750101,
   "lng": -74.00283
  },
+ "Massapequa VFW Hall": {
+  "address": "191 Veterans Boulevard, Massapequa",
+  "checked": "2026-10-23",
+  "lat": null,
+  "lng": null
+ },
  "Mayo Performing Arts Center ": {
   "address": "100 South Street, Morristown",
   "checked": "2026-10-22",
@@ -389,6 +497,18 @@
   "lat": 40.707894,
   "lng": -73.929192
  },
+ "Mother Pugs": {
+  "address": "1371 Forest Avenue, Staten Island, NY 10302",
+  "checked": "2026-10-23",
+  "lat": 40.625654,
+  "lng": -74.135258
+ },
+ "Mr. Purple": {
+  "address": "180 Orchard St",
+  "checked": "2026-10-23",
+  "lat": 40.721757,
+  "lng": -73.987937
+ },
  "Music Hall of Williamsburg": {
   "address": "66 North 6th Street, Brooklyn",
   "checked": "2026-10-22",
@@ -413,6 +533,12 @@
   "lat": null,
   "lng": null
  },
+ "New Jersey Performing Arts Center - Prudential Hall": {
+  "address": "",
+  "checked": "2026-10-23",
+  "lat": null,
+  "lng": null
+ },
  "Night Club 101": {
   "address": "101 Avenue A",
   "checked": "2026-10-22",
@@ -430,6 +556,12 @@
   "checked": "2026-10-22",
   "lat": 40.722006,
   "lng": -73.992275
+ },
+ "Palladium Times Square": {
+  "address": "1515 Broadway",
+  "checked": "2026-10-23",
+  "lat": 40.757925,
+  "lng": -73.986425
  },
  "Paragon": {
   "address": "990 Broadway, Brooklyn",
@@ -539,15 +671,51 @@
   "lat": 40.707337,
   "lng": -73.939539
  },
+ "Stereo Garden LI": {
+  "address": "9 Railroad Ave, Patchogue, NY 11772, Patchogue",
+  "checked": "2026-10-23",
+  "lat": 40.764796,
+  "lng": -73.01714
+ },
  "Stern Auditorium / Perelman Stage at Carnegie Hall": {
   "address": "881 Seventh Avenue",
   "checked": "2026-10-22",
   "lat": 40.765007,
   "lng": -73.979914
  },
+ "Superior Ingredients": {
+  "address": "74 wythe ave",
+  "checked": "2026-10-23",
+  "lat": 40.722303,
+  "lng": -73.957855
+ },
+ "TBA": {
+  "address": "",
+  "checked": "2026-10-23",
+  "lat": null,
+  "lng": null
+ },
+ "TBA - 333": {
+  "address": "",
+  "checked": "2026-10-23",
+  "lat": null,
+  "lng": null
+ },
+ "TBA - Brooklyn": {
+  "address": "",
+  "checked": "2026-10-23",
+  "lat": null,
+  "lng": null
+ },
  "TBA - The Bakery": {
   "address": "",
   "checked": "2026-10-22",
+  "lat": null,
+  "lng": null
+ },
+ "TBA - Underground Event (sign up link in description)": {
+  "address": "",
+  "checked": "2026-10-23",
   "lat": null,
   "lng": null
  },
@@ -568,6 +736,12 @@
   "checked": "2026-10-22",
   "lat": 40.769722,
   "lng": -73.992769
+ },
+ "The Bitter End": {
+  "address": "147 Bleecker St",
+  "checked": "2026-10-23",
+  "lat": 40.728433,
+  "lng": -73.999141
  },
  "The Brooklyn Monarch": {
   "address": "",
@@ -593,11 +767,29 @@
   "lat": 40.761757,
   "lng": -73.983274
  },
+ "The Paramount In Concert With Northwell": {
+  "address": "370 New York Avenue, Huntington",
+  "checked": "2026-10-23",
+  "lat": 40.86962,
+  "lng": -73.425975
+ },
  "The Ridgefield Playhouse": {
   "address": "80 East Ridge, Ridgefield",
   "checked": "2026-10-22",
   "lat": 41.280611,
   "lng": -73.493786
+ },
+ "The Rooftop at Pier 17": {
+  "address": "89 South Street",
+  "checked": "2026-10-23",
+  "lat": 40.705523,
+  "lng": -74.001567
+ },
+ "The Stone Pony": {
+  "address": "913 Ocean Ave, Asbury Park",
+  "checked": "2026-10-23",
+  "lat": 40.219437,
+  "lng": -74.000769
  },
  "The Sultan Room": {
   "address": "234 Starr St, Brooklyn",
@@ -629,11 +821,29 @@
   "lat": 40.812659,
   "lng": -74.216211
  },
+ "The Woodshop": {
+  "address": "21A Meadow St, Brooklyn, NY 11206, Brooklyn",
+  "checked": "2026-10-23",
+  "lat": null,
+  "lng": null
+ },
  "Trans-Pecos": {
   "address": "9-15 Wyckoff Avenue, Ridgewood",
   "checked": "2026-10-22",
   "lat": 40.765181,
   "lng": -73.9388
+ },
+ "UBS Arena": {
+  "address": "2400 Hempstead Turnpike, Elmont",
+  "checked": "2026-10-23",
+  "lat": null,
+  "lng": null
+ },
+ "Union Hall": {
+  "address": "702 Union Street, Brooklyn",
+  "checked": "2026-10-23",
+  "lat": 40.675996,
+  "lng": -73.980133
  },
  "Union Pool": {
   "address": "484 Union Ave, Brooklyn",
@@ -658,6 +868,12 @@
   "checked": "2026-10-22",
   "lat": 40.722416,
   "lng": -73.948306
+ },
+ "Webster Hall": {
+  "address": "125 East 11th Street",
+  "checked": "2026-10-23",
+  "lat": 40.731777,
+  "lng": -73.989091
  },
  "Wonder Bar": {
   "address": "1213 Ocean Avenue North, Asbury Park",

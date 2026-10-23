@@ -3,40 +3,66 @@
   "name": "Jersey City calendars",
   "url": "https://jerseycityculture.org/events/calendar/"
  },
- "date": "2026-10-22",
- "fetchedAt": "2026-10-22T13:07:53-04:00",
+ "date": "2026-10-23",
+ "fetchedAt": "2026-10-23T05:03:59-04:00",
  "events": [
   {
-   "id": "jc-mana-contemporary-202610221800-jersey-city-s-youth-mural-arts-program-c",
-   "title": "Jersey City’s Youth Mural Arts Program Celebration at JCYMAP 2026 Celebration, Art Exhibition, and Documentary Premiere",
-   "category": "art",
-   "start": "2026-10-22T18:00:00-04:00",
-   "end": "2026-10-22T21:00:00-04:00",
+   "id": "jc-exchange-place-202610231730-ariel-rivka-dance",
+   "title": "Ariel Rivka Dance",
+   "category": "theater",
+   "start": "2026-10-23T17:30:00-04:00",
+   "end": "2026-10-23T18:30:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Mana Contemporary",
-    "address": "888 Newark Ave, Jersey City, NJ",
+    "name": "Exchange Place",
+    "address": "Montgomery St and Hudson St, Jersey City, NJ",
     "neighborhood": "Jersey City",
-    "lat": 40.7362,
-    "lng": -74.0661
+    "lat": 40.7163,
+    "lng": -74.0337
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://www.manacontemporary.com/event/join-us-for-a-powerful-conversation-and-celebration-of-mana-studio-artist-danielle-scott-2-2-2/",
+   "url": "https://jerseycityculture.org/event/ariel-rivka-dance-2026/",
    "tags": [],
    "publisher": {
-    "id": "venue-mana-contemporary",
-    "name": "Mana Contemporary",
-    "url": "https://www.manacontemporary.com/"
+    "id": "venue-jersey-city-culture",
+    "name": "Jersey City Culture",
+    "url": "https://jerseycityculture.org/events/calendar/"
    }
   },
   {
-   "id": "jc-art-house-productions-202610221930-focus-innovative-choreography-series",
-   "title": "FOCUS: Innovative Choreography Series",
+   "id": "jc-museum-of-jersey-city-history-202610231900-the-mystery-of-macabbra-mansion-3-spence",
+   "title": "The Mystery of MacAbbra Mansion 3 / Spencer’s Revenge",
+   "category": "community",
+   "start": "2026-10-23T19:00:00-04:00",
+   "end": "2026-10-23T21:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Museum of Jersey City History",
+    "address": "298 Academy St, Jersey City, NJ",
+    "neighborhood": "Jersey City",
+    "lat": 40.7297,
+    "lng": -74.062
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://jerseycityculture.org/event/the-mystery-of-macabbra-mansion-3-spencers-revenge-2026/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-jersey-city-culture",
+    "name": "Jersey City Culture",
+    "url": "https://jerseycityculture.org/events/calendar/"
+   }
+  },
+  {
+   "id": "jc-art-house-productions-202610231930-threads-of-tradition",
+   "title": "Threads of Tradition",
    "category": "theater",
-   "start": "2026-10-22T19:30:00-04:00",
+   "start": "2026-10-23T19:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -47,14 +73,14 @@
     "lng": -74.0388
    },
    "price": {
-    "min": 25,
-    "max": 40,
+    "min": 20,
+    "max": 35,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://www.arthouseproductions.org/products/focus-innovative-choreography-series-october-22-2026",
+   "url": "https://www.arthouseproductions.org/products/threads-of-tradition-october-23-2026",
    "tags": [],
    "publisher": {
     "id": "venue-art-house-productions",
@@ -63,16 +89,5 @@
    }
   }
  ],
- "unplaced": [
-  {
-   "title": "JCPD West District Trunk or Treat",
-   "venue": "JCPD WEST DISTRICT",
-   "address": "1 JACKSON SQUARE"
-  },
-  {
-   "title": "HALLOWEEN EVENTS",
-   "venue": "",
-   "address": ""
-  }
- ]
+ "unplaced": []
 }
