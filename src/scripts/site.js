@@ -1,5 +1,5 @@
 // Site chrome outside the map: the menu in the title box (including MONSTER ATTACK!), the Contact / About / Privacy / Terms
-// modals, the empty ad slot (opens Contact on Ad/Event Inquiry) and the cookie banner.
+// modals, the empty ad slot and Times Square billboard (open Contact on Ad/Event Inquiry) and the cookie banner.
 // Loaded on its own so it works while the map and events are still loading.
 
 const $ = (sel) => document.querySelector(sel);
@@ -74,6 +74,8 @@ openFromHash();
 
 // ---- ad slot ----------------------------------------------------------------------
 $('#ad-slot.is-empty')?.addEventListener('click', () => openModal('contact', { topic: 'ad' }));
+// the Times Square billboard on the map (src/scripts/times-square.js) asks for the same form
+window.addEventListener('ad:inquiry', () => openModal('contact', { topic: 'ad' }));
 
 // ---- contact form ----------------------------------------------------------------------
 const form = $('#contact-form');
