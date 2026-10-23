@@ -4,7 +4,7 @@
   "url": "https://www.ticketmaster.com/discover/new-york"
  },
  "date": "2026-10-23",
- "fetchedAt": "2026-10-23T05:17:51-04:00",
+ "fetchedAt": "2026-10-23T13:08:45-04:00",
  "events": [
   {
    "id": "LvZ18QrWTgeialOZ0E4-1",
@@ -74,29 +74,6 @@
    ]
   },
   {
-   "id": "LvZ18QEC-33sYJhRiNbx2",
-   "title": "The Banksy Museum New York!",
-   "category": "art",
-   "start": "2026-10-23T10:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Banksy Museum New York",
-    "address": "277 Canal St, New York",
-    "neighborhood": "New York",
-    "lat": 40.719603,
-    "lng": -74.001358
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Fine Art",
-   "details": "",
-   "url": "https://www.universe.com/events/the-banksy-museum-new-york-tickets-5PKNY0?ref=ticketmaster",
-   "tags": [
-    "Fine Art"
-   ]
-  },
-  {
    "id": "LvZ18Qk4nbbEibYZvnO2T",
    "title": "Banksy Museum - Flexiticket",
    "category": "art",
@@ -120,26 +97,26 @@
    ]
   },
   {
-   "id": "LvZ18Q-9tbOh8sZZvyVzg",
-   "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
+   "id": "LvZ18QEC-33sYJhRiNbx8",
+   "title": "The Banksy Museum New York!",
    "category": "art",
-   "start": "2026-10-23T10:00:00-04:00",
+   "start": "2026-10-23T10:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Balloon Museum NYC",
-    "address": "96 South Street, New York City",
-    "neighborhood": "New York City",
-    "lat": 40.70624,
-    "lng": -74.002277
+    "name": "Banksy Museum New York",
+    "address": "277 Canal St, New York",
+    "neighborhood": "New York",
+    "lat": 40.719603,
+    "lng": -74.001358
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Miscellaneous / Family",
+   "description": "Arts & Theatre / Fine Art",
    "details": "",
-   "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-tickets-Y5HV92?ref=ticketmaster",
+   "url": "https://www.universe.com/events/the-banksy-museum-new-york-tickets-5PKNY0?ref=ticketmaster",
    "tags": [
-    "Family"
+    "Fine Art"
    ]
   },
   {
@@ -164,6 +141,31 @@
    "tags": []
   },
   {
+   "id": "rZ7HnEZ1AfC44f",
+   "title": "Test Test Test 3",
+   "category": "community",
+   "start": "2026-10-23T11:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Mezzrow",
+    "address": "163 W 10th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.734602,
+    "lng": -74.001924
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Miscellaneous",
+   "details": "Please arrive on time for the show. Doors open 45 minutes in advance. Your entry is guaranteed, but choice of seats is always first come, first served. There is a required one drink minimum per person. Non-alcoholic options are available. All tickets are handled through Will Call, no tickets will be sent in advance. We look forward to welcoming you!",
+   "url": "https://www.ticketweb.com/event/test-test-test-3-mezzrow-tickets/14395554",
+   "tags": []
+  },
+  {
    "id": "1AYZkfKGkdqdFBZ",
    "title": "Barclays Center Tours",
    "category": "community",
@@ -183,6 +185,29 @@
    "details": "All tour dates, times, locations and tour stops are subject to availability and are subject to change without notice. All guests should arrive 15 minutes before scheduled tour time and enter Barclays Center through the Main Atrium. All sales final - no refunds.",
    "url": "https://www.ticketmaster.com/barclays-center-tours-brooklyn-new-york-10-23-2026/event/30006513DD0C8E80",
    "tags": []
+  },
+  {
+   "id": "LvZ18Q-9tbOh8sZZvyVzT",
+   "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
+   "category": "art",
+   "start": "2026-10-23T12:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Balloon Museum NYC",
+    "address": "96 South Street, New York City",
+    "neighborhood": "New York City",
+    "lat": 40.70624,
+    "lng": -74.002277
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Miscellaneous / Family",
+   "details": "",
+   "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-tickets-Y5HV92?ref=ticketmaster",
+   "tags": [
+    "Family"
+   ]
   },
   {
    "id": "Z7r9jZ1AAvJFo",
@@ -2670,7 +2695,7 @@
   },
   {
    "id": "k7vGF_1xItqSY",
-   "title": "Trombone Shorty & Orleans Avenue  with Mavis Staples",
+   "title": "Trombone Shorty & Orleans Avenue",
    "category": "music",
    "start": "2026-10-23T20:00:00-04:00",
    "end": null,
@@ -2685,8 +2710,8 @@
    "price": null,
    "priceUnknown": true,
    "description": "Music / Jazz",
-   "details": "Legendary soul singer Mavis Staples and virtuoso funk musician Trombone Shorty have frequently collaborated, bringing their distinct New Orleans rooted styles together for live performances and tours. They have shared stages at major events like the New Orleans Jazz & Heritage Festival and toured together in 2023, often performing classics like The Weight among others.",
-   "url": "https://www.ticketmaster.com/trombone-shorty-orleans-avenue-with-mavis-newark-new-jersey-10-23-2026/event/000064A8A8A5DCF0",
+   "details": "",
+   "url": "https://www.ticketmaster.com/trombone-shorty-orleans-avenue-newark-new-jersey-10-23-2026/event/000064A8A8A5DCF0",
    "tags": [
     "Jazz"
    ]

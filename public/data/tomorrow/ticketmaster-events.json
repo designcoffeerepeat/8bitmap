@@ -4,7 +4,7 @@
   "url": "https://www.ticketmaster.com/discover/new-york"
  },
  "date": "2026-10-24",
- "fetchedAt": "2026-10-23T05:27:54-04:00",
+ "fetchedAt": "2026-10-23T13:10:54-04:00",
  "events": [
   {
    "id": "LvZ18QrWTgeialOZ0E4-1",
@@ -2335,8 +2335,8 @@
   },
   {
    "id": "rZ7HnEZ1AfuPG0",
-   "title": "Live! from Brooklyn Comedy Showcase ft. Gina Brillon, TaTa Sherise, Nick Smith, Meka Mo, Graham Kay, and Rojo Perez",
-   "category": "comedy",
+   "title": "Live! from Brooklyn Comedy Showcase ft. TaTa Sherise, Nick Smith, Meka Mo, Grace Johnson, Graham Kay, and Rojo Perez",
+   "category": "community",
    "start": "2026-10-24T19:00:00-04:00",
    "end": null,
    "allDay": false,
@@ -2353,12 +2353,10 @@
     "currency": "USD"
    },
    "priceUnknown": false,
-   "description": "Arts & Theatre / Comedy",
+   "description": "",
    "details": "DO NOT PURCHASE TICKETS FROM ANYONE OR ANY OTHER SITE OTHER THAN IMPROV.COM TICKET RESALE IS STRICTLY PROHIBITED. TICKETS SUSPECTED OF BEING PURCHASED FOR THE SOLE PURPOSE OF RESELLING MAY BE CANCELLED AT THE DISCRETION OF THE BROOKLYN IMPROV. EVENT INFO: There is a two-item minimum purchase requirement in the showroom for all guests. Seating is general admission, first-come, first-served, with the exception of groups and premium booths. No cell phone use, photography or video recording is permitted during performances. All sales are final. MISCELLANOUS: For group sales info, e-mail our Events Manager to learn about special menu options and reserved seating. Additional questions may be addressed in our Frequently Asked Questions. For further assistance, contact Brooklyn Improv.",
    "url": "https://www.ticketweb.com/event/live-from-brooklyn-comedy-showcase-brooklyn-improv-the-main-room-tickets/14365324",
-   "tags": [
-    "Comedy"
-   ]
+   "tags": []
   },
   {
    "id": "k7vGFbMI-ygr8",
@@ -3428,6 +3426,31 @@
    "tags": [
     "Music"
    ]
+  },
+  {
+   "id": "rZ7HnEZ1AfCAoV",
+   "title": "Kevin Hart Works Out New Jokes",
+   "category": "community",
+   "start": "2026-10-24T22:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Improv (The Main Room)",
+    "address": "64 N 9th St, Brooklyn",
+    "neighborhood": "Brooklyn",
+    "lat": 40.720751,
+    "lng": -73.959998
+   },
+   "price": {
+    "min": 63,
+    "max": 63,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "This event will be a phone-free experience. Use of phones, smart watches and accessories, will not be permitted in the performance space. Upon arrival at the venue, all phones, smart watches and accessories will be secured in individual Yondr pouches that will be opened at the end of the event. Guests maintain possession of their devices at all times, and can access them throughout the event only in designated Phone Use Areas within the venue. All devices will be re-secured in Yondr pouches before returning to the performance space. Anyone seen using a device (phone, smart watch or accessories) during the performance will be escorted out of the venue. DO NOT PURCHASE TICKETS FROM ANYONE OR ANY OTHER SITE OTHER THAN IMPROV.COM TICKET RESALE IS STRICTLY PROHIBITED. TICKETS SUSPECTED OF BEING PURCHASED FOR THE SOLE PURPOSE OF RESELLING MAY BE CANCELLED AT THE DISCRETION OF THE BROOKLYN IMPROV. EVENT INFO: There is a two-item minimum purchase requirement in the showroom for all guests. Seating is general admission, first-come, first-served, with the exception of groups and premium booths. No cell phone use, photography or video recording is permitted during performances. All sales are final. MISCELLANOUS: For group sales info, e-mail our Events Manager to learn about special menu options and reserved seating. Additional questions may be addressed in our Frequently Asked Questions. For further assistance, contact Brooklyn Improv.",
+   "url": "https://www.ticketweb.com/event/kevin-hart-works-out-new-brooklyn-improv-the-main-room-tickets/14385474",
+   "tags": []
   },
   {
    "id": "rZ7HnEZ1AfusFf",
