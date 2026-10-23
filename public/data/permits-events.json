@@ -4,7 +4,7 @@
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
  "date": "2026-10-23",
- "fetchedAt": "2026-10-23T05:04:45-04:00",
+ "fetchedAt": "2026-10-23T13:04:06-04:00",
  "events": [
   {
    "id": "972601",
@@ -237,29 +237,6 @@
    ]
   },
   {
-   "id": "967838",
-   "title": "Neutrogena Acne NYFW Pop Up - Gansevoort Plaza",
-   "category": "community",
-   "start": "2026-10-23T11:00:00-04:00",
-   "end": "2026-10-23T19:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Gansevoort Plaza",
-    "address": "Gansevoort Plaza: 12/13 9 Avenue 9 Avenue Between Gansevoort St And West 13 Street, Greenwich Street Between Horatio Street And Gansevoort Street",
-    "neighborhood": "Manhattan",
-    "lat": 40.739544,
-    "lng": -74.006706
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Plaza Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Plaza Event"
-   ]
-  },
-  {
    "id": "906911",
    "title": "Fordham Road BID Sidewalk Sale",
    "category": "sports",
@@ -280,6 +257,29 @@
    "url": null,
    "tags": [
     "Sidewalk Sale"
+   ]
+  },
+  {
+   "id": "967838",
+   "title": "Neutrogena Acne NYFW Pop Up - Gansevoort Plaza",
+   "category": "community",
+   "start": "2026-10-23T11:00:00-04:00",
+   "end": "2026-10-23T19:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Gansevoort Plaza",
+    "address": "Gansevoort Plaza: 12/13 9 Avenue 9 Avenue Between Gansevoort St And West 13 Street, Greenwich Street Between Horatio Street And Gansevoort Street",
+    "neighborhood": "Manhattan",
+    "lat": 40.739544,
+    "lng": -74.006706
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Plaza Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Plaza Event"
    ]
   },
   {

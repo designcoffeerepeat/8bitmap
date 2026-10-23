@@ -4,7 +4,7 @@
   "url": "https://filmforum.org/"
  },
  "date": "2026-10-24",
- "fetchedAt": "2026-10-23T05:16:02-04:00",
+ "fetchedAt": "2026-10-23T13:07:10-04:00",
  "events": [
   {
    "id": "film-forum-202610241225-fatherland",
@@ -1260,6 +1260,58 @@
     "id": "venue-public-records",
     "name": "Public Records",
     "url": "https://publicrecords.nyc/"
+   }
+  },
+  {
+   "id": "queens-botanical-garden-202610241100-autumn-garden-tour-with-our-horticulture",
+   "title": "Autumn Garden Tour with Our Horticulture Director",
+   "category": "community",
+   "start": "2026-10-24T11:00:00-04:00",
+   "end": "2026-10-24T12:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Queens Botanical Garden",
+    "address": "43-50 Main Street",
+    "neighborhood": "Flushing",
+    "lat": 40.751085,
+    "lng": -73.827732
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://queensbotanical.org/event/autumn-garden-tour-with-our-horticulture-director/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-queens-botanical-garden",
+    "name": "Queens Botanical Garden",
+    "url": "https://queensbotanical.org/calendar/"
+   }
+  },
+  {
+   "id": "queens-botanical-garden-202610241300-cameron-russell-mei-tao-supremely-unequi",
+   "title": "Cameron Russell & Mei Tao: “Supremely Unequivocal in Our Commitment to this Moment of Being” Opening Day",
+   "category": "community",
+   "start": "2026-10-24T13:00:00-04:00",
+   "end": "2026-10-24T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Queens Botanical Garden",
+    "address": "43-50 Main Street",
+    "neighborhood": "Flushing",
+    "lat": 40.751085,
+    "lng": -73.827732
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://queensbotanical.org/event/cameron-russell-mei-tao-supremely-unequivocal-opening-day/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-queens-botanical-garden",
+    "name": "Queens Botanical Garden",
+    "url": "https://queensbotanical.org/calendar/"
    }
   },
   {
