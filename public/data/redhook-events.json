@@ -3,41 +3,15 @@
   "name": "Red Hook calendars",
   "url": "https://pioneerworks.org/calendar"
  },
- "date": "2026-10-22",
- "fetchedAt": "2026-10-22T13:08:04-04:00",
+ "date": "2026-10-23",
+ "fetchedAt": "2026-10-23T05:17:42-04:00",
  "events": [
   {
-   "id": "waterfront-museum-202610221600-open-hours-on-the-barge",
-   "title": "Open hours on the barge",
-   "category": "community",
-   "start": "2026-10-22T16:00:00-04:00",
-   "end": "2026-10-22T20:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Waterfront Museum",
-    "address": "290 Conover Street",
-    "neighborhood": "",
-    "lat": 40.675222,
-    "lng": -74.018337
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://waterfrontmuseum.org/event/open-hours-3-2/2026-10-22/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-waterfront-museum",
-    "name": "Waterfront Museum",
-    "url": "https://waterfrontmuseum.org/"
-   }
-  },
-  {
-   "id": "sunny-s-bar-202610222000-erica-mancini-s-fun-machine",
-   "title": "Erica Mancini's Fun Machine",
+   "id": "sunny-s-bar-202610232000-roman-angelos-band",
+   "title": "Roman Angelos Band",
    "category": "music",
-   "start": "2026-10-22T20:00:00-04:00",
-   "end": "2026-10-22T22:00:00-04:00",
+   "start": "2026-10-23T20:00:00-04:00",
+   "end": "2026-10-23T22:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Sunny's Bar",
@@ -50,7 +24,7 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://tockify.com/sunnysmusic/detail/286/1792713600000",
+   "url": "https://tockify.com/sunnysmusic/detail/287/1792800000000",
    "tags": [],
    "publisher": {
     "id": "venue-sunny-s-bar",

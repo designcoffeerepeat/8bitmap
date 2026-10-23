@@ -3,16 +3,16 @@
   "name": "Patchbay",
   "url": "https://patchbay.fm/new-york"
  },
- "date": "2026-10-23",
- "fetchedAt": "2026-10-22T17:04:47-04:00",
+ "date": "2026-10-24",
+ "fetchedAt": "2026-10-23T05:24:00-04:00",
  "events": [
   {
-   "id": "new-york-2026-10-23-madison-square-garden",
+   "id": "new-york-2026-10-24-madison-square-garden",
    "title": "Harry Styles: Together, Together",
    "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
+   "start": "2026-10-24T20:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "Madison Square Garden",
@@ -25,7 +25,7 @@
    "priceUnknown": true,
    "description": "With Jamie xx",
    "details": "pop rock, soft rock, indietronica, uk garage",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-madison-square-garden",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-madison-square-garden",
    "tags": [
     "pop rock",
     "soft rock",
@@ -34,37 +34,37 @@
    ]
   },
   {
-   "id": "new-york-2026-10-23-barclays-center",
-   "title": "Arcángel - La 8va Maravilla World Tour",
+   "id": "new-york-2026-10-24-brooklyn-paramount",
+   "title": "TINASHE - ONE NIGHT WITH A POPSTAR",
    "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
+   "start": "2026-10-24T19:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
-    "name": "Barclays Center",
-    "address": "620 Atlantic Avenue, Brooklyn",
+    "name": "Brooklyn Paramount",
+    "address": "385 Flatbush Avenue Extension, Brooklyn",
     "neighborhood": "",
-    "lat": 40.682579,
-    "lng": -73.975263
+    "lat": 40.676067,
+    "lng": -73.971212
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
-   "details": "reggaeton, trap latino",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-barclays-center",
+   "details": "alternative r&b, dance-pop",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-brooklyn-paramount",
    "tags": [
-    "reggaeton",
-    "trap latino"
+    "alternative r&b",
+    "dance-pop"
    ]
   },
   {
-   "id": "new-york-2026-10-23-marquee-new-york",
-   "title": "Jonas Blue",
+   "id": "new-york-2026-10-24-marquee-new-york",
+   "title": "Tinashe (DJ Set)",
    "category": "nightlife",
-   "start": "2026-10-23T23:00:00-04:00",
+   "start": "2026-10-24T23:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "Marquee New York",
@@ -76,48 +76,150 @@
    "price": null,
    "priceUnknown": true,
    "description": "",
-   "details": "tropical house, dance-pop",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-marquee-new-york",
+   "details": "alternative r&b, dance-pop",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-marquee-new-york",
    "tags": [
-    "tropical house",
+    "alternative r&b",
     "dance-pop"
    ]
   },
   {
-   "id": "new-york-2026-10-23-paragon",
-   "title": "Paradiso: Ultra Naté, Kilopatrah Jones + RATONC1T0",
-   "category": "nightlife",
-   "start": "2026-10-23T21:30:00-04:00",
+   "id": "new-york-2026-10-24-music-hall-of-williamsburg",
+   "title": "Mac DeMarco (16 and Over)",
+   "category": "music",
+   "start": "2026-10-24T20:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
-    "name": "Paragon",
-    "address": "990 Broadway, Brooklyn",
+    "name": "Music Hall of Williamsburg",
+    "address": "66 North 6th Street, Brooklyn",
     "neighborhood": "",
-    "lat": 40.696055,
-    "lng": -73.934117
+    "lat": 40.719161,
+    "lng": -73.961785
    },
    "price": null,
    "priceUnknown": true,
-   "description": "With Karim Olen Ash, Saia",
-   "details": "house, garage, soulful house, techno, disco, electro, breaks, detroit techno",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-paragon",
+   "description": "",
+   "details": "indie rock, lo-fi",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-music-hall-of-williamsburg",
    "tags": [
-    "house",
-    "garage",
-    "soulful house",
-    "techno",
-    "disco"
+    "indie rock",
+    "lo-fi"
    ]
   },
   {
-   "id": "new-york-2026-10-23-ritz-theatre",
-   "title": "Ken-Y",
-   "category": "music",
-   "start": "2026-10-23T18:30:00-04:00",
+   "id": "new-york-2026-10-24-the-rooftop-at-pier-17",
+   "title": "STEVE AOKI - DIM MAK 30 TOUR",
+   "category": "nightlife",
+   "start": "2026-10-24T17:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "The Rooftop at Pier 17",
+    "address": "89 South Street",
+    "neighborhood": "",
+    "lat": 40.705523,
+    "lng": -74.001567
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With Henry Fong, Nostalgix",
+   "details": "electro house, big room, bass house, g-house",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-the-rooftop-at-pier-17",
+   "tags": [
+    "electro house",
+    "big room",
+    "bass house",
+    "g-house"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-webster-hall",
+   "title": "Pixies w/ Amanda Petrusich",
+   "category": "music",
+   "start": "2026-10-24T20:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Webster Hall",
+    "address": "125 East 11th Street",
+    "neighborhood": "",
+    "lat": 40.731777,
+    "lng": -73.989091
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "alternative rock, noise pop",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-webster-hall",
+   "tags": [
+    "alternative rock",
+    "noise pop"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-college-street-music-hall",
+   "title": "The Living Tombstone: The Multiplayer Tour",
+   "category": "nightlife",
+   "start": "2026-10-24T20:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "College Street Music Hall",
+    "address": "238 College Street, New Haven",
+    "neighborhood": "",
+    "lat": 41.306404,
+    "lng": -72.929431
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With Mystery Skulls, Madison Rose",
+   "details": "electronic rock, alternative rock, nu disco, electropop, dance-pop",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-college-street-music-hall",
+   "tags": [
+    "electronic rock",
+    "alternative rock",
+    "nu disco",
+    "electropop",
+    "dance-pop"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-terminal-5",
+   "title": "ROZ (18 and Over)",
+   "category": "nightlife",
+   "start": "2026-10-24T20:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Terminal 5",
+    "address": "610 West 56th Street",
+    "neighborhood": "",
+    "lat": 40.769722,
+    "lng": -73.992769
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With Røz",
+   "details": "latin house, urbano latino",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-terminal-5",
+   "tags": [
+    "latin house",
+    "urbano latino"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-ritz-theatre",
+   "title": "Víctor Manuelle",
+   "category": "music",
+   "start": "2026-10-24T20:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "Ritz Theatre - NJ",
@@ -129,234 +231,121 @@
    "price": null,
    "priceUnknown": true,
    "description": "",
+   "details": "salsa, latin pop",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-ritz-theatre",
+   "tags": [
+    "salsa",
+    "latin pop"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-fairfield-theatre-company",
+   "title": "Los Lobos",
+   "category": "music",
+   "start": "2026-10-24T20:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Fairfield Theatre Company",
+    "address": "70 Sanford Street, Fairfield",
+    "neighborhood": "",
+    "lat": 41.141907,
+    "lng": -73.257706
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "roots rock, latin rock",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-fairfield-theatre-company",
+   "tags": [
+    "roots rock",
+    "latin rock"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-brooklyn-bowl-abbie-gamboa",
+   "title": "Abbie Gamboa",
+   "category": "music",
+   "start": "2026-10-24T19:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Bowl",
+    "address": "61 Wythe Avenue, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.721767,
+    "lng": -73.957234
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "worship, christian",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-brooklyn-bowl-abbie-gamboa",
+   "tags": [
+    "worship",
+    "christian"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-david-geffen-hall",
+   "title": "Artist Spotlight: Batiashvili, Capucon & Thibaudet",
+   "category": "music",
+   "start": "2026-10-24T19:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "David Geffen Hall, Lincoln Center",
+    "address": "150 West 65th Street",
+    "neighborhood": "",
+    "lat": 40.77355,
+    "lng": -73.9845
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With Jean-Yves Thibaudet, Lisa Batiashvili, Gautier Capuçon",
+   "details": "classical piano, classical, chamber music",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-david-geffen-hall",
+   "tags": [
+    "classical piano",
+    "classical",
+    "chamber music"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-hk-hall",
+   "title": "Dany Ome / Kevincito El 13 - Tendencia US Tour 2026",
+   "category": "music",
+   "start": "2026-10-24T23:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "HK Hall",
+    "address": "605 W 48th St",
+    "neighborhood": "",
+    "lat": 40.765072,
+    "lng": -73.996
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
    "details": "reggaeton, urbano latino",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-ritz-theatre",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-hk-hall",
    "tags": [
     "reggaeton",
     "urbano latino"
    ]
   },
   {
-   "id": "new-york-2026-10-23-kings-theatre",
-   "title": "Thundercat w/ TiaCorine",
-   "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Kings Theatre",
-    "address": "1027 Flatbush Avenue, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.64604,
-    "lng": -73.957348
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "jazz fusion, indie soul, hip hop, alternative hip hop",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-kings-theatre",
-   "tags": [
-    "jazz fusion",
-    "indie soul",
-    "hip hop",
-    "alternative hip hop"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-wellmont-theater",
-   "title": "The Living Tombstone",
+   "id": "new-york-2026-10-24-knockdown-center-ahmed-spins",
+   "title": "Ahmed Spins, Sapian, Mehdi",
    "category": "nightlife",
-   "start": "2026-10-23T20:00:00-04:00",
+   "start": "2026-10-24T23:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "The Wellmont Theater",
-    "address": "5 Seymour Street, Montclair",
-    "neighborhood": "",
-    "lat": 40.812659,
-    "lng": -74.216211
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Mystery Skulls, Dom Palombi",
-   "details": "electronic rock, alternative rock, nu disco, electropop, jazz fusion, funk",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-wellmont-theater",
-   "tags": [
-    "electronic rock",
-    "alternative rock",
-    "nu disco",
-    "electropop",
-    "jazz fusion"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-brooklyn-paramount",
-   "title": "BECK: RIDE LONESOME TOUR",
-   "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Brooklyn Paramount",
-    "address": "385 Flatbush Avenue Extension, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.676067,
-    "lng": -73.971212
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Ioanna Gika",
-   "details": "alternative rock, art rock, dream pop, electropop",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-brooklyn-paramount",
-   "tags": [
-    "alternative rock",
-    "art rock",
-    "dream pop",
-    "electropop"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-blue-note",
-   "title": "Robert Glasper X Wyclef Presents Q Theory",
-   "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Blue Note",
-    "address": "131 West 3rd Street",
-    "neighborhood": "",
-    "lat": 40.730952,
-    "lng": -74.000633
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Wyclef Jean",
-   "details": "nu jazz, jazz rap, hip hop, reggae",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-blue-note",
-   "tags": [
-    "nu jazz",
-    "jazz rap",
-    "hip hop",
-    "reggae"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-gramercy-theatre",
-   "title": "BE:FIRST",
-   "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Gramercy Theatre",
-    "address": "127 East 23rd Street",
-    "neighborhood": "",
-    "lat": 40.739896,
-    "lng": -73.984931
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "j-pop, dance",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-gramercy-theatre",
-   "tags": [
-    "j-pop",
-    "dance"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-prudential-center",
-   "title": "2026-27 TAEMIN WORLD TOUR In NEWARK",
-   "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Prudential Center",
-    "address": "25 Lafayette Street, Newark",
-    "neighborhood": "",
-    "lat": 40.732991,
-    "lng": -74.172745
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "k-pop, synthpop",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-prudential-center",
-   "tags": [
-    "k-pop",
-    "synthpop"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-elsewhere",
-   "title": "Franc Moody DJ Set, Cody Currie (open to close), Cosmo, Pei Up + friends",
-   "category": "nightlife",
-   "start": "2026-10-23T22:30:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Elsewhere",
-    "address": "599 Johnson Ave, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.709451,
-    "lng": -73.923221
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Iris Estefanía, HOT HONEY",
-   "details": "nu disco, indie soul, deep house, tribal house, disco house, jazz house, baltimore club, breakbeat",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-elsewhere",
-   "tags": [
-    "nu disco",
-    "indie soul",
-    "deep house",
-    "tribal house",
-    "disco house"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-terminal-5",
-   "title": "Movements",
-   "category": "music",
-   "start": "2026-10-23T19:30:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Terminal 5",
-    "address": "610 West 56th Street",
-    "neighborhood": "",
-    "lat": 40.769722,
-    "lng": -73.992769
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Balance and Composure, Niis",
-   "details": "post-hardcore, emo, hardcore punk, queercore",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-terminal-5",
-   "tags": [
-    "post-hardcore",
-    "emo",
-    "hardcore punk",
-    "queercore"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-knockdown-center",
-   "title": "Massano, Konstantin Sibold, SOEL",
-   "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "Knockdown Center",
@@ -368,21 +357,183 @@
    "price": null,
    "priceUnknown": true,
    "description": "",
-   "details": "melodic techno, melodic house, indie dance",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-knockdown-center",
+   "details": "afro house, melodic house, tech house, indie dance",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-knockdown-center-ahmed-spins",
    "tags": [
-    "melodic techno",
+    "afro house",
     "melodic house",
+    "tech house",
     "indie dance"
    ]
   },
   {
-   "id": "new-york-2026-10-23-brooklyn-navy-yard",
+   "id": "new-york-2026-10-24-blue-note",
+   "title": "Robert Glasper X Kem presents Alkemy",
+   "category": "music",
+   "start": "2026-10-24T20:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Blue Note",
+    "address": "131 West 3rd Street",
+    "neighborhood": "",
+    "lat": 40.730952,
+    "lng": -74.000633
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "nu jazz, jazz rap, quiet storm, contemporary r&b",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-blue-note",
+   "tags": [
+    "nu jazz",
+    "jazz rap",
+    "quiet storm",
+    "contemporary r&b"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-the-paramount",
+   "title": "KIDZ BOP Daytime Dance Party",
+   "category": "music",
+   "start": "2026-10-24T12:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "The Paramount In Concert With Northwell",
+    "address": "370 New York Avenue, Huntington",
+    "neighborhood": "",
+    "lat": 40.86962,
+    "lng": -73.425975
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With Kidz Bop Kids",
+   "details": "children's music, dance-pop",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-the-paramount",
+   "tags": [
+    "children's music",
+    "dance-pop"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-elsewhere",
+   "title": "Be Your Own Pet w/ Farmer's Wife",
+   "category": "nightlife",
+   "start": "2026-10-24T19:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Elsewhere",
+    "address": "599 Johnson Ave, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.709451,
+    "lng": -73.923221
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With Blossom, IVY, Skepsis, oomfhaver, Max Parkinson",
+   "details": "bass house, drum and bass, rave, bassline, brostep, hyperpop, tech house",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-elsewhere",
+   "tags": [
+    "bass house",
+    "drum and bass",
+    "rave",
+    "bassline",
+    "brostep"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-elsewhere-harriet-jaxxon",
+   "title": "The Hall / Zone One / Loft - 10 Years of Crucast",
+   "category": "nightlife",
+   "start": "2026-10-24T22:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Elsewhere",
+    "address": "599 Johnson Ave, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.709451,
+    "lng": -73.923221
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With Harriet Jaxxon, IVY, Skepsis, Voltage",
+   "details": "drum and bass, jungle, rave, bassline, bass house",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-elsewhere-harriet-jaxxon",
+   "tags": [
+    "drum and bass",
+    "jungle",
+    "rave",
+    "bassline",
+    "bass house"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-irving-plaza",
+   "title": "Hawthorne Heights - 20th anniversary of If Only You Were Lonely",
+   "category": "music",
+   "start": "2026-10-24T18:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Irving Plaza",
+    "address": "17 Irving Place",
+    "neighborhood": "",
+    "lat": 40.734928,
+    "lng": -73.988455
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With letlive., Creeper",
+   "details": "emo, post-hardcore, melodic hardcore, horror punk, pop punk",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-irving-plaza",
+   "tags": [
+    "emo",
+    "post-hardcore",
+    "melodic hardcore",
+    "horror punk",
+    "pop punk"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-nebula",
+   "title": "Quintino",
+   "category": "nightlife",
+   "start": "2026-10-24T23:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Nebula",
+    "address": "135 West 41st Street",
+    "neighborhood": "",
+    "lat": 40.754987,
+    "lng": -73.985635
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "big room, electro house",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-nebula",
+   "tags": [
+    "big room",
+    "electro house"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-brooklyn-navy-yard",
    "title": "Crankdat",
    "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
+   "start": "2026-10-24T22:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "Brooklyn Navy Yard",
@@ -395,120 +546,182 @@
    "priceUnknown": true,
    "description": "",
    "details": "dubstep, bass house",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-brooklyn-navy-yard",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-brooklyn-navy-yard",
    "tags": [
     "dubstep",
     "bass house"
    ]
   },
   {
-   "id": "new-york-2026-10-23-rough-trade-below",
-   "title": "Gus Dapperton Acoustic Performance + Signing",
+   "id": "new-york-2026-10-24-racket",
+   "title": "Maddie Zahm (16 and Over)",
    "category": "music",
-   "start": "2026-10-23T18:00:00-04:00",
+   "start": "2026-10-24T20:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
-    "name": "Rough Trade Below",
-    "address": "30 Rockefeller Plaza",
+    "name": "Racket",
+    "address": "431 West 16th Street",
     "neighborhood": "",
-    "lat": 40.759149,
-    "lng": -73.979598
+    "lat": 40.743081,
+    "lng": -74.00572
    },
    "price": null,
    "priceUnknown": true,
-   "description": "With Loose Goose",
-   "details": "bedroom pop, indie pop",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-rough-trade-below",
+   "description": "",
+   "details": "alternative pop, singer-songwriter",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-racket",
    "tags": [
-    "bedroom pop",
-    "indie pop"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-irving-plaza",
-   "title": "HEY, NOTHING - THE HOUND TOUR",
-   "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Irving Plaza Powered By Verizon 5G",
-    "address": "17 Irving Place",
-    "neighborhood": "",
-    "lat": 40.734928,
-    "lng": -73.988455
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Brother Bird",
-   "details": "midwest emo, indie folk, singer-songwriter",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-irving-plaza",
-   "tags": [
-    "midwest emo",
-    "indie folk",
+    "alternative pop",
     "singer-songwriter"
    ]
   },
   {
-   "id": "new-york-2026-10-23-paramount-hudson-valley-theater",
-   "title": "Molly Hatchet",
+   "id": "new-york-2026-10-24-elsewhere-the-hall",
+   "title": "Big Crown Records 10 Year Anniversary",
    "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
+   "start": "2026-10-24T18:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
-    "name": "Paramount Hudson Valley Theater",
-    "address": "1008 Brown Street, Peekskill",
+    "name": "Elsewhere - The Hall",
+    "address": "599 Johnson Ave, Brooklyn",
     "neighborhood": "",
-    "lat": 41.290032,
-    "lng": -73.919668
+    "lat": 40.709451,
+    "lng": -73.923221
    },
    "price": null,
    "priceUnknown": true,
-   "description": "",
-   "details": "southern rock, hard rock",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-paramount-hudson-valley-theater",
+   "description": "With El Michels Affair, Marco Benevento, Dave Guy, Derya Yıldırım & Grup Şimşek, Brainstory, Thee Marloes",
+   "details": "retro soul, afrobeat, jam band, psych, funk, jazz, world fusion, psychedelic soul",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-elsewhere-the-hall",
    "tags": [
-    "southern rock",
-    "hard rock"
+    "retro soul",
+    "afrobeat",
+    "jam band",
+    "psych",
+    "funk"
    ]
   },
   {
-   "id": "new-york-2026-10-23-artspace",
-   "title": "Tita Lau at Public Hotel",
+   "id": "new-york-2026-10-24-palladium-times-square",
+   "title": "Arch Enemy & The Black Dahlia Murder: Wrath Across North America 2026",
+   "category": "music",
+   "start": "2026-10-24T18:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Palladium Times Square",
+    "address": "1515 Broadway",
+    "neighborhood": "",
+    "lat": 40.757925,
+    "lng": -73.986425
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With Septicflesh, Crypta, Thrown into Exile",
+   "details": "melodic death metal, death metal, deathcore, symphonic metal, technical death metal, groove metal",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-palladium-times-square",
+   "tags": [
+    "melodic death metal",
+    "death metal",
+    "deathcore",
+    "symphonic metal",
+    "technical death metal"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-knockdown-center",
+   "title": "L7: The Last Hurrah Tour 2026",
+   "category": "music",
+   "start": "2026-10-24T18:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Knockdown Center",
+    "address": "52-19 Flushing Ave, Maspeth",
+    "neighborhood": "",
+    "lat": 40.7156,
+    "lng": -73.91418
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With VIAL",
+   "details": "grunge, riot grrrl, queercore",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-knockdown-center",
+   "tags": [
+    "grunge",
+    "riot grrrl",
+    "queercore"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-superior-ingredients",
+   "title": "Danny Tenaglia presents Boo Yourself *5hr Set*",
    "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
+   "start": "2026-10-24T22:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
-    "name": "ArtSpace",
-    "address": "215 Chrystie St",
+    "name": "Superior Ingredients",
+    "address": "74 wythe ave",
     "neighborhood": "",
-    "lat": 40.723055,
-    "lng": -73.992023
+    "lat": 40.722303,
+    "lng": -73.957855
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With LEFTI, Anthony Romano",
+   "details": "tribal house, tech house, nu disco, disco house, indie dance",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-superior-ingredients",
+   "tags": [
+    "tribal house",
+    "tech house",
+    "nu disco",
+    "disco house",
+    "indie dance"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-basement-ny",
+   "title": "Dustin Zahn / Kameliia / Ade Kassim / Hercules & Love Affair / Eli Escobar / Andi",
+   "category": "nightlife",
+   "start": "2026-10-24T22:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "BASEMENT",
+    "address": "52-19 Flushing Ave, Maspeth",
+    "neighborhood": "",
+    "lat": 40.7156,
+    "lng": -73.91418
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
-   "details": "tech house, bass house",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-artspace",
+   "details": "techno, hypnotic techno, minimal techno, house, deep house, nu disco, disco house, ebm",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-basement-ny",
    "tags": [
-    "tech house",
-    "bass house"
+    "techno",
+    "hypnotic techno",
+    "minimal techno",
+    "house",
+    "deep house"
    ]
   },
   {
-   "id": "new-york-2026-10-23-birdland-theatre",
+   "id": "new-york-2026-10-24-birdland-theatre",
    "title": "Curtis Stigers",
    "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
+   "start": "2026-10-24T19:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "Birdland Theatre",
@@ -521,19 +734,19 @@
    "priceUnknown": true,
    "description": "",
    "details": "vocal jazz, adult contemporary",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-birdland-theatre",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-birdland-theatre",
    "tags": [
     "vocal jazz",
     "adult contemporary"
    ]
   },
   {
-   "id": "new-york-2026-10-23-birdland-theatre-curtis-stigers",
+   "id": "new-york-2026-10-24-birdland-theatre-curtis-stigers",
    "title": "Curtis Stigers",
    "category": "music",
-   "start": "2026-10-23T21:30:00-04:00",
+   "start": "2026-10-24T21:30:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "Birdland Theatre",
@@ -546,121 +759,122 @@
    "priceUnknown": true,
    "description": "",
    "details": "vocal jazz, adult contemporary",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-birdland-theatre-curtis-stigers",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-birdland-theatre-curtis-stigers",
    "tags": [
     "vocal jazz",
     "adult contemporary"
    ]
   },
   {
-   "id": "new-york-2026-10-23-nebula",
-   "title": "Sommer Ray",
-   "category": "nightlife",
-   "start": "2026-10-23T23:00:00-04:00",
+   "id": "new-york-2026-10-24-silo-brooklyn",
+   "title": "Know Good presents: Against All Odds Tour",
+   "category": "music",
+   "start": "2026-10-24T22:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
-    "name": "Nebula",
-    "address": "135 West 41st Street",
+    "name": "SILO Brooklyn",
+    "address": "90 Scott Avenue, Brooklyn",
     "neighborhood": "",
-    "lat": 40.754987,
-    "lng": -73.985635
+    "lat": 40.710564,
+    "lng": -73.922686
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
-   "details": "tech house, dance-pop",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-nebula",
+   "details": "dubstep, melodic bass",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-silo-brooklyn",
    "tags": [
+    "dubstep",
+    "melodic bass"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-the-iridium",
+   "title": "Brian Simpson",
+   "category": "music",
+   "start": "2026-10-24T20:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "The Iridium",
+    "address": "1650 Broadway",
+    "neighborhood": "",
+    "lat": 40.761757,
+    "lng": -73.983274
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "contemporary jazz, jazz funk",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-the-iridium",
+   "tags": [
+    "contemporary jazz",
+    "jazz funk"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-amityville-music-hall",
+   "title": "Ballyhoo",
+   "category": "music",
+   "start": "2026-10-24T18:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Amityville Music Hall",
+    "address": "198 Broadway, Amityville",
+    "neighborhood": "",
+    "lat": 40.679065,
+    "lng": -73.417396
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With Ballyhoo!",
+   "details": "reggae rock, ska punk",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-amityville-music-hall",
+   "tags": [
+    "reggae rock",
+    "ska punk"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-mood-ring-ilusm",
+   "title": "BARRIO BOUNCE, A Budots & SEA Club Night",
+   "category": "nightlife",
+   "start": "2026-10-24T22:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Mood Ring",
+    "address": "1260 Myrtle Ave, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.697743,
+    "lng": -73.926906
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With P41dz, trandon, NANAGOTCHI, ILUSM, rogue.wav, SEBS",
+   "details": "baltimore club, reggaeton, jungle, tech house, latin house",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-mood-ring-ilusm",
+   "tags": [
+    "baltimore club",
+    "reggaeton",
+    "jungle",
     "tech house",
-    "dance-pop"
+    "latin house"
    ]
   },
   {
-   "id": "new-york-2026-10-23-h0l0",
-   "title": "Effy",
-   "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "H0l0",
-    "address": "1090 Wyckoff Ave, Ridgewood",
-    "neighborhood": "",
-    "lat": 40.694228,
-    "lng": -73.902251
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With QRTR, Samantha Da Silva, Baru, America Rose",
-   "details": "uk garage, breaks, stutter house",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-h0l0",
-   "tags": [
-    "uk garage",
-    "breaks",
-    "stutter house"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-tarrytown-music-hall",
-   "title": "Josh Ritter (Rescheduled from 9/26)",
+   "id": "new-york-2026-10-24-town-hall",
+   "title": "Bruce Cockburn with special guest Livingston Taylor",
    "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
+   "start": "2026-10-24T20:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Tarrytown Music Hall",
-    "address": "13 Main St, Tarrytown",
-    "neighborhood": "",
-    "lat": 41.076788,
-    "lng": -73.860485
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "alt country, indie folk",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-tarrytown-music-hall",
-   "tags": [
-    "alt country",
-    "indie folk"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-shu-community-theatre",
-   "title": "Tab Benoit",
-   "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "SHU Community Theatre",
-    "address": "1420 Post Road, Fairfield",
-    "neighborhood": "",
-    "lat": 41.141472,
-    "lng": -73.256527
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Ghalia Volt",
-   "details": "blues rock, modern blues, roots rock",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-shu-community-theatre",
-   "tags": [
-    "blues rock",
-    "modern blues",
-    "roots rock"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-town-hall",
-   "title": "Sanctuary Park Tour: Celebrating 40 Years of The Jayhawks",
-   "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "The Town Hall",
@@ -671,175 +885,122 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "With The Cactus Blossoms",
-   "details": "alt country, americana",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-town-hall",
+   "description": "",
+   "details": "folk rock, singer-songwriter, folk pop",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-town-hall",
    "tags": [
-    "alt country",
-    "americana"
+    "folk rock",
+    "singer-songwriter",
+    "folk pop"
    ]
   },
   {
-   "id": "new-york-2026-10-23-pianos",
-   "title": "I Have A Dream Pop Festival: The Veldt • Darksoft • Diary • Day & Dream",
+   "id": "new-york-2026-10-24-capitol-theatre",
+   "title": "Trombone Shorty",
    "category": "music",
-   "start": "2026-10-23T18:30:00-04:00",
+   "start": "2026-10-24T20:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
-    "name": "Pianos: Showroom",
-    "address": "158 Ludlow Street",
+    "name": "Capitol Theatre Port Chester",
+    "address": "149 Westchester Avenue, Port Chester",
     "neighborhood": "",
-    "lat": 40.721012,
-    "lng": -73.987622
+    "lat": 41.001369,
+    "lng": -73.665496
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
-   "details": "shoegaze, dream pop, jangle pop",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-pianos",
+   "details": "jazz funk, funk",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-capitol-theatre",
    "tags": [
-    "shoegaze",
-    "dream pop",
-    "jangle pop"
+    "jazz funk",
+    "funk"
    ]
   },
   {
-   "id": "new-york-2026-10-23-asbury-lanes",
-   "title": "Hunter Flynn",
+   "id": "new-york-2026-10-24-rough-trade-below",
+   "title": "Tommy Lefroy Live + Signing",
    "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
+   "start": "2026-10-24T14:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
-    "name": "Asbury Lanes",
-    "address": "209 4th Avenue, Asbury Park",
+    "name": "Rough Trade Below",
+    "address": "30 Rockefeller Plaza",
     "neighborhood": "",
-    "lat": 40.222787,
-    "lng": -74.00136
+    "lat": 40.759149,
+    "lng": -73.979598
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
-   "details": "country, singer-songwriter",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-asbury-lanes",
+   "details": "indie pop, indie folk",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-rough-trade-below",
    "tags": [
-    "country",
-    "singer-songwriter"
+    "indie pop",
+    "indie folk"
    ]
   },
   {
-   "id": "new-york-2026-10-23-the-vogel-at-count-basie-center-for-the-arts",
-   "title": "Mike Dawes (Rescheduled from 2/6/26)",
+   "id": "new-york-2026-10-24-babys-all-right",
+   "title": "iKeda",
    "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
+   "start": "2026-10-24T19:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
-    "name": "The Vogel at Count Basie Center for the Arts",
-    "address": "99 Monmouth Street, Red Bank",
+    "name": "Baby's All Right",
+    "address": "146 Broadway, Brooklyn",
     "neighborhood": "",
-    "lat": 40.349176,
-    "lng": -74.070002
+    "lat": 40.709994,
+    "lng": -73.963495
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
-   "details": "acoustic, instrumental",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-the-vogel-at-count-basie-center-for-the-arts",
+   "details": "electroclash, hyperpop",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-babys-all-right",
    "tags": [
-    "acoustic",
-    "instrumental"
+    "electroclash",
+    "hyperpop"
    ]
   },
   {
-   "id": "new-york-2026-10-23-mercury-lounge",
-   "title": "MARIS",
+   "id": "new-york-2026-10-24-national-sawdust",
+   "title": "LPR Presents: Little Barrie",
    "category": "music",
-   "start": "2026-10-23T18:00:00-04:00",
+   "start": "2026-10-24T18:30:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
-    "name": "Mercury Lounge",
-    "address": "217 East Houston Street",
+    "name": "National Sawdust",
+    "address": "80 N 6th St, Brooklyn",
     "neighborhood": "",
-    "lat": 40.722069,
-    "lng": -73.986801
+    "lat": 40.718897,
+    "lng": -73.961372
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
-   "details": "art pop, alternative pop",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-mercury-lounge",
+   "details": "garage rock, blues rock",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-national-sawdust",
    "tags": [
-    "art pop",
-    "alternative pop"
+    "garage rock",
+    "blues rock"
    ]
   },
   {
-   "id": "new-york-2026-10-23-the-sultan-room-rooftop",
-   "title": "Arkose, Kevin Oliver Jr. Group, Freedom Attic",
-   "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "The Sultan Room Rooftop",
-    "address": "234 Starr St, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.705556,
-    "lng": -73.92234
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Kevin Oliver, Jr.",
-   "details": "acid jazz, neo-soul, cool jazz, jazz fusion, indie rock, indie folk",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-the-sultan-room-rooftop",
-   "tags": [
-    "acid jazz",
-    "neo-soul",
-    "cool jazz",
-    "jazz fusion",
-    "indie rock"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-music-hall-of-williamsburg",
-   "title": "Friko (18 and Over)",
-   "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Music Hall of Williamsburg",
-    "address": "66 North 6th Street, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.719161,
-    "lng": -73.961785
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "chamber pop, indie rock",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-music-hall-of-williamsburg",
-   "tags": [
-    "chamber pop",
-    "indie rock"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-birdland-jazz-club",
+   "id": "new-york-2026-10-24-birdland-jazz-club",
    "title": "Ron Carter",
    "category": "music",
-   "start": "2026-10-23T20:30:00-04:00",
+   "start": "2026-10-24T20:30:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "Birdland Jazz Club",
@@ -852,19 +1013,19 @@
    "priceUnknown": true,
    "description": "",
    "details": "hard bop, bebop",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-birdland-jazz-club",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-birdland-jazz-club",
    "tags": [
     "hard bop",
     "bebop"
    ]
   },
   {
-   "id": "new-york-2026-10-23-birdland-jazz-club-ron-carter",
+   "id": "new-york-2026-10-24-birdland-jazz-club-ron-carter",
    "title": "Ron Carter",
    "category": "music",
-   "start": "2026-10-23T22:30:00-04:00",
+   "start": "2026-10-24T22:30:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "Birdland Jazz Club",
@@ -877,45 +1038,47 @@
    "priceUnknown": true,
    "description": "",
    "details": "hard bop, bebop",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-birdland-jazz-club-ron-carter",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-birdland-jazz-club-ron-carter",
    "tags": [
     "hard bop",
     "bebop"
    ]
   },
   {
-   "id": "new-york-2026-10-23-feedbk",
-   "title": "feedbk with Alex Neri, Burchan",
-   "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
+   "id": "new-york-2026-10-24-zone-one",
+   "title": "Be Your Own Pet (16+ Event)",
+   "category": "music",
+   "start": "2026-10-24T19:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
-    "name": "feedbk",
-    "address": "153 Morgan Ave, Brooklyn, NY 11237, Brooklyn",
+    "name": "Elsewhere - Zone One",
+    "address": "599 Johnson Avenue, Brooklyn",
     "neighborhood": "",
-    "lat": 40.709394,
-    "lng": -73.933336
+    "lat": 40.709451,
+    "lng": -73.923221
    },
    "price": null,
    "priceUnknown": true,
-   "description": "",
-   "details": "deep house, tech house, minimal techno",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-feedbk",
+   "description": "With Farmer's Wife, Josephine Network",
+   "details": "queercore, riot grrrl, punk, garage punk, power pop, glam rock",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-zone-one",
    "tags": [
-    "deep house",
-    "tech house",
-    "minimal techno"
+    "queercore",
+    "riot grrrl",
+    "punk",
+    "garage punk",
+    "power pop"
    ]
   },
   {
-   "id": "new-york-2026-10-23-warsaw",
+   "id": "new-york-2026-10-24-warsaw",
    "title": "Osees ft. Brigid Dawson",
    "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
+   "start": "2026-10-24T19:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "Warsaw",
@@ -928,7 +1091,7 @@
    "priceUnknown": true,
    "description": "With Traps PS",
    "details": "garage rock, krautrock, post-punk, cold wave",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-warsaw",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-warsaw",
    "tags": [
     "garage rock",
     "krautrock",
@@ -937,243 +1100,12 @@
    ]
   },
   {
-   "id": "new-york-2026-10-23-zone-one",
-   "title": "ilykimchi",
-   "category": "nightlife",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Elsewhere - Zone One",
-    "address": "599 Johnson Avenue, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.709451,
-    "lng": -73.923221
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With DJ Thank You",
-   "details": "hyperpop, bedroom pop, baltimore club, electroclash",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-zone-one",
-   "tags": [
-    "hyperpop",
-    "bedroom pop",
-    "baltimore club",
-    "electroclash"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-the-ridgefield-playhouse",
-   "title": "Dar Williams",
-   "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "The Ridgefield Playhouse",
-    "address": "80 East Ridge, Ridgefield",
-    "neighborhood": "",
-    "lat": 41.280611,
-    "lng": -73.493786
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "folk, singer-songwriter",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-the-ridgefield-playhouse",
-   "tags": [
-    "folk",
-    "singer-songwriter"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-brooklyn-roots-collective",
-   "title": "HALLOWEEN NIGHT: Vendex - Extended Set [4 Hours]",
-   "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Brooklyn Roots Collective",
-    "address": "255 Randolph Street, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.710858,
-    "lng": -73.922424
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "hard techno, industrial",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-brooklyn-roots-collective",
-   "tags": [
-    "hard techno",
-    "industrial"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-wonder-bar",
-   "title": "Big D and the Kids Table - A Nightmare Before Halloween",
-   "category": "music",
-   "start": "2026-10-23T18:30:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Wonder Bar",
-    "address": "1213 Ocean Avenue North, Asbury Park",
-    "neighborhood": "",
-    "lat": 40.222647,
-    "lng": -73.999612
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "ska punk, skate punk",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-wonder-bar",
-   "tags": [
-    "ska punk",
-    "skate punk"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-babys-all-right",
-   "title": "Renny Conti (18 and Over)",
-   "category": "music",
-   "start": "2026-10-23T19:30:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Baby's All Right",
-    "address": "146 Broadway, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.709994,
-    "lng": -73.963495
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "indie folk, lo-fi",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-babys-all-right",
-   "tags": [
-    "indie folk",
-    "lo-fi"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-mercury-lounge-rachel-bochner",
-   "title": "Rachel Bochner | The \"Sorry If It's Selfish\" Tour",
-   "category": "music",
-   "start": "2026-10-23T21:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Mercury Lounge",
-    "address": "217 East Houston Street",
-    "neighborhood": "",
-    "lat": 40.722069,
-    "lng": -73.986801
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Janna Jamison",
-   "details": "alternative pop, indie pop",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-mercury-lounge-rachel-bochner",
-   "tags": [
-    "alternative pop",
-    "indie pop"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-national-sawdust",
-   "title": "Disco Bambino presents: An Italian Disco Revolution",
-   "category": "nightlife",
-   "start": "2026-10-23T20:30:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "National Sawdust",
-    "address": "80 N 6th St, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.718897,
-    "lng": -73.961372
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "italo disco, disco",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-national-sawdust",
-   "tags": [
-    "italo disco",
-    "disco"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-le-poisson-rouge",
-   "title": "Cab Ellis",
-   "category": "music",
-   "start": "2026-10-23T18:30:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Le Poisson Rouge",
-    "address": "158 Bleecker Street",
-    "neighborhood": "",
-    "lat": 40.728443,
-    "lng": -74.000202
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With The Dead Bolts",
-   "details": "indie rock, rap rock, americana rock",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-le-poisson-rouge",
-   "tags": [
-    "indie rock",
-    "rap rock",
-    "americana rock"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-trans-pecos",
-   "title": "SONIC PALETTES",
-   "category": "nightlife",
-   "start": "2026-10-23T23:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Trans-Pecos",
-    "address": "9-15 Wyckoff Avenue, Ridgewood",
-    "neighborhood": "",
-    "lat": 40.765181,
-    "lng": -73.9388
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With gum.mp3, Griffin Maxwell Brooks, ARCHANGEL, Bodegaparty, g.io, jauwshewuh",
-   "details": "jungle, deep house, electro, techno, jersey club, baltimore club, bass music, footwork",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-trans-pecos",
-   "tags": [
-    "jungle",
-    "deep house",
-    "electro",
-    "techno",
-    "jersey club"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-bowery-ballroom",
+   "id": "new-york-2026-10-24-bowery-ballroom",
    "title": "Telescreens - Why The Lights Flicker North American Tour",
    "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
+   "start": "2026-10-24T19:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "Bowery Ballroom",
@@ -1184,924 +1116,49 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "With Torture and the Desert Spiders, Nudey",
-   "details": "indie rock, alternative rock, garage punk, blues rock",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-bowery-ballroom",
+   "description": "With Sid Simons, Truman Flyer",
+   "details": "indie rock, alternative rock, folk pop, indie pop",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-bowery-ballroom",
    "tags": [
     "indie rock",
     "alternative rock",
-    "garage punk",
-    "blues rock"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-house-of-independents",
-   "title": "He Is Legend",
-   "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "House of Independents",
-    "address": "572 Cookman Avenue, Asbury Park",
-    "neighborhood": "",
-    "lat": 40.216061,
-    "lng": -74.010012
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "metalcore, post-hardcore",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-house-of-independents",
-   "tags": [
-    "metalcore",
-    "post-hardcore"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-night-club-101-dogs-on-shady-lane",
-   "title": "Dogs on Shady Lane, Why Bonnie",
-   "category": "music",
-   "start": "2026-10-23T22:30:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Night Club 101",
-    "address": "101 Avenue A",
-    "neighborhood": "",
-    "lat": 40.725862,
-    "lng": -73.984038
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "indie folk, indie rock, bedroom pop, dream pop",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-night-club-101-dogs-on-shady-lane",
-   "tags": [
-    "indie folk",
-    "indie rock",
-    "bedroom pop",
-    "dream pop"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-basement-ny",
-   "title": "FIST: Lacchesi / Nene H / Word of Command / DJ Clone / Jubilee / Mez Monty / Connor Wrong",
-   "category": "nightlife",
-   "start": "2026-10-23T22:30:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "BASEMENT",
-    "address": "52-19 Flushing Ave, Maspeth",
-    "neighborhood": "",
-    "lat": 40.7156,
-    "lng": -73.91418
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "hard techno, trance, industrial, acid techno, dembow, deconstructed club, miami bass, ghettotech",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-basement-ny",
-   "tags": [
-    "hard techno",
-    "trance",
-    "industrial",
-    "acid techno",
-    "dembow"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-zankel-hall",
-   "title": "Lakecia Benjamin",
-   "category": "music",
-   "start": "2026-10-23T21:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Carnegie Hall - Zankel Hall",
-    "address": "881 7th Avenue",
-    "neighborhood": "",
-    "lat": 40.765007,
-    "lng": -73.979914
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "contemporary jazz, jazz funk",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-zankel-hall",
-   "tags": [
-    "contemporary jazz",
-    "jazz funk"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-saint-vitus",
-   "title": "Blackbraid, High Command, Gudsforladt",
-   "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Saint Vitus",
-    "address": "428 Troutman Street",
-    "neighborhood": "",
-    "lat": 40.707125,
-    "lng": -73.921948
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "black metal, folk metal, thrash metal, speed metal, atmospheric",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-saint-vitus",
-   "tags": [
-    "black metal",
-    "folk metal",
-    "thrash metal",
-    "speed metal",
-    "atmospheric"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-brooklyn-bowl",
-   "title": "Space Bacon & Dizgo w/ DJ Greenie of Lotus",
-   "category": "nightlife",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Brooklyn Bowl",
-    "address": "61 Wythe Avenue, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.721767,
-    "lng": -73.957234
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Mike Greenfield",
-   "details": "jam band, space rock, funk, house, tech house",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-brooklyn-bowl",
-   "tags": [
-    "jam band",
-    "space rock",
-    "funk",
-    "house",
-    "tech house"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-the-chocolate-factory",
-   "title": "Soul in the Horn FT Natasha Diggs & Friends - October 23",
-   "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "The Chocolate Factory",
-    "address": "70 Scott Avenue, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.709868,
-    "lng": -73.922411
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With DJ Spen, Lovie, Stonie Blue, Coflo",
-   "details": "soulful house, disco, disco house, soul, neo-soul, deep house, afro house",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-the-chocolate-factory",
-   "tags": [
-    "soulful house",
-    "disco",
-    "disco house",
-    "soul",
-    "neo-soul"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-crossroads",
-   "title": "Stanley Jordan",
-   "category": "music",
-   "start": "2026-10-23T19:30:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Crossroads - Garwood",
-    "address": "78 North Avenue, Garwood",
-    "neighborhood": "",
-    "lat": 40.654313,
-    "lng": -74.317771
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "jazz fusion, smooth jazz",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-crossroads",
-   "tags": [
-    "jazz fusion",
-    "smooth jazz"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-buffalo-iron-works",
-   "title": "Jimkata",
-   "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Buffalo Iron Works",
-    "address": "49 Illinois St., Buffalo",
-    "neighborhood": "",
-    "lat": 42.874566,
-    "lng": -78.874941
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "jam band, electronic rock",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-buffalo-iron-works",
-   "tags": [
-    "jam band",
-    "electronic rock"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-nowadays",
-   "title": "Danny Daze All Night",
-   "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Nowadays",
-    "address": "56-06 Cooper Avenue, Queens",
-    "neighborhood": "",
-    "lat": 40.692509,
-    "lng": -73.901593
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "electro, miami bass",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-nowadays",
-   "tags": [
-    "electro",
-    "miami bass"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-capitol-theatre",
-   "title": "Melvin Seals",
-   "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Capitol Theatre Port Chester",
-    "address": "149 Westchester Avenue, Port Chester",
-    "neighborhood": "",
-    "lat": 41.001369,
-    "lng": -73.665496
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Melvin Seals & JGB",
-   "details": "jam band, funk",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-capitol-theatre",
-   "tags": [
-    "jam band",
-    "funk"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-cmon-everybody",
-   "title": "KISS KISS w/s/g Rose Hips",
-   "category": "nightlife",
-   "start": "2026-10-23T22:30:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "C'mon Everybody",
-    "address": "325 Franklin Ave, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.688309,
-    "lng": -73.956821
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Justin Miller, Persona La Ave, Giuseppe V",
-   "details": "italo disco, disco, synthwave",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-cmon-everybody",
-   "tags": [
-    "italo disco",
-    "disco",
-    "synthwave"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-bossa-nova-civic-club",
-   "title": "Break A Leg: NYC vol. 5",
-   "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Bossa Nova Civic Club",
-    "address": "1271 Myrtle Avenue, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.697947,
-    "lng": -73.927932
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Tromac, DJ-SUN, flotussin",
-   "details": "baltimore club, jersey club, turntablism, ghettotech, ballroom",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-bossa-nova-civic-club",
-   "tags": [
-    "baltimore club",
-    "jersey club",
-    "turntablism",
-    "ghettotech",
-    "ballroom"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-alphaville-the-treasury",
-   "title": "Hand to Phone: The Treasury, Heavy Halo, Blood Handsome, DJ Ivy Oh",
-   "category": "nightlife",
-   "start": "2026-10-23T22:30:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "ALPHAVILLE",
-    "address": "140 Wilson Ave, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.700494,
-    "lng": -73.925859
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "ebm, darkwave, gothic rock, grunge, cold wave, italo disco",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-alphaville-the-treasury",
-   "tags": [
-    "ebm",
-    "darkwave",
-    "gothic rock",
-    "grunge",
-    "cold wave"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-amityville-music-hall",
-   "title": "The Templars",
-   "category": "music",
-   "start": "2026-10-23T18:30:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Amityville Music Hall",
-    "address": "198 Broadway, Amityville",
-    "neighborhood": "",
-    "lat": 40.679065,
-    "lng": -73.417396
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "hardcore punk, celtic punk",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-amityville-music-hall",
-   "tags": [
-    "hardcore punk",
-    "celtic punk"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-dead-letter-no-9",
-   "title": "Dead Letter No. 9 Psychosis: Halloween Party Pt. 1of 4 - Lauren Flax, Rose Kourts, Serrian",
-   "category": "nightlife",
-   "start": "2026-10-23T21:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Dead Letter No. 9",
-    "address": "63 Grand Street, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.716105,
-    "lng": -73.964809
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Lady Harley, CatLadyHi, Bea Trinidad, ellen.j",
-   "details": "acid house, ghettotech, hard house, drum and bass, deep house, minimal techno, disco house, nu disco",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-dead-letter-no-9",
-   "tags": [
-    "acid house",
-    "ghettotech",
-    "hard house",
-    "drum and bass",
-    "deep house"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-mood-ring",
-   "title": "LIFE AFTER TRANCE",
-   "category": "nightlife",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Mood Ring",
-    "address": "1260 Myrtle Ave, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.697743,
-    "lng": -73.926906
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With dj try, Anna Eberg, CITYSPROBLEM, FUSSY, Aster, FRANCIS WOLFE ( DJ SET)",
-   "details": "trance, hard house, hard techno, techno, progressive trance",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-mood-ring",
-   "tags": [
-    "trance",
-    "hard house",
-    "hard techno",
-    "techno",
-    "progressive trance"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-le-bain",
-   "title": "Nulu Movement by Anané",
-   "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Le Bain",
-    "address": "444 W. 13th Street",
-    "neighborhood": "",
-    "lat": 40.741025,
-    "lng": -74.007978
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Anané Vega, Jihad Muhammad, DJ Justice",
-   "details": "afro house, soulful house, deep house",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-le-bain",
-   "tags": [
-    "afro house",
-    "soulful house",
-    "deep house"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-signal",
-   "title": "Night & Day: Anthony Rother Hybrid, Ken Ishii, KYRUH, Mike Parker, Mr.Murray",
-   "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Signal",
-    "address": "175 Morgan Ave, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.710113,
-    "lng": -73.933605
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Mr. Murray, Gino, Lauren Ritter, Jay Prouty, Vivian Wang",
-   "details": "electro, techno, detroit techno, hypnotic techno, minimal techno, hard techno, ambient, dub techno",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-signal",
-   "tags": [
-    "electro",
-    "techno",
-    "detroit techno",
-    "hypnotic techno",
-    "minimal techno"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-carnegie-hall",
-   "title": "The New York Pops - 007 James Bond Forever",
-   "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Stern Auditorium / Perelman Stage at Carnegie Hall",
-    "address": "881 Seventh Avenue",
-    "neighborhood": "",
-    "lat": 40.765007,
-    "lng": -73.979914
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "musicals, soundtrack",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-carnegie-hall",
-   "tags": [
-    "musicals",
-    "soundtrack"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-night-club-101",
-   "title": "hellotones “El Hijo de PueblaYork” Debut Single Release Party",
-   "category": "nightlife",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Night Club 101",
-    "address": "101 Avenue A",
-    "neighborhood": "",
-    "lat": 40.725862,
-    "lng": -73.984038
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With hellotones \"El Hijo de PueblaYork\", Stefan Ruiz, Yana Allpa, Prince of Queens, marvelito",
-   "details": "cumbia, tropical, latin house, jersey club, baltimore club",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-night-club-101",
-   "tags": [
-    "cumbia",
-    "tropical",
-    "latin house",
-    "jersey club",
-    "baltimore club"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-richardson-auditorium",
-   "title": "New Jersey Symphony Orchestra - Beethoven and Schubert",
-   "category": "music",
-   "start": "2026-10-23T19:30:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Richardson Auditorium in Alexander Hall",
-    "address": "68 Nassau Street, Princeton",
-    "neighborhood": "",
-    "lat": 40.34933,
-    "lng": -74.661211
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "classical, orchestra",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-richardson-auditorium",
-   "tags": [
-    "classical",
-    "orchestra"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-public-records",
-   "title": "P.E.A.R.L., Juana / Anastasia Kristensen, John Raffaele / Bob Maynard & Cassandra Croft",
-   "category": "nightlife",
-   "start": "2026-10-23T23:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "public records",
-    "address": "233 Butler Street, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.682176,
-    "lng": -73.98639
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "hypnotic techno, techno, chicago house, detroit techno, breaks, house, disco",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-public-records",
-   "tags": [
-    "hypnotic techno",
-    "techno",
-    "chicago house",
-    "detroit techno",
-    "breaks"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-drom",
-   "title": "YOI TOKI [A FUTURE FUNK/VAPORWAVE HALLOWEEN]",
-   "category": "music",
-   "start": "2026-10-23T23:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Drom",
-    "address": "85 Avenue A",
-    "neighborhood": "",
-    "lat": 40.725329,
-    "lng": -73.984453
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Faith In The Glitch, GreenTeaWasted",
-   "details": "synthwave, bass music, future funk, city pop",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-drom",
-   "tags": [
-    "synthwave",
-    "bass music",
-    "future funk",
-    "city pop"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-cassette",
-   "title": "WYYRRD, SMALL POND, BUG CRUSH, MOPE",
-   "category": "music",
-   "start": "2026-10-23T21:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Cassette",
-    "address": "68-38 Forest Avenue, Queens",
-    "neighborhood": "",
-    "lat": 40.70261,
-    "lng": -73.901214
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "neo-psychedelia, bedroom pop, indie rock, slowcore, indie folk",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-cassette",
-   "tags": [
-    "neo-psychedelia",
-    "bedroom pop",
-    "indie rock",
-    "slowcore",
-    "indie folk"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-brooklyn-music-kitchen",
-   "title": "Eel Sallad, Elena Schlax, THE MISS J EXPERIENCE, KSO",
-   "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Brooklyn Music Kitchen",
-    "address": "177 Vanderbilt Avenue, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.692646,
-    "lng": -73.96947
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "grunge, folk rock, singer-songwriter, folk pop",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-brooklyn-music-kitchen",
-   "tags": [
-    "grunge",
-    "folk rock",
-    "singer-songwriter",
-    "folk pop"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-union-pool",
-   "title": "Matthew Danger Lippman • Horror Movie Marathon • Star 80",
-   "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Union Pool",
-    "address": "484 Union Ave, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.715004,
-    "lng": -73.951552
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "anti-folk, singer-songwriter, art rock, indie folk, garage rock, indie rock",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-union-pool",
-   "tags": [
-    "anti-folk",
-    "singer-songwriter",
-    "art rock",
-    "indie folk",
-    "garage rock"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-alphaville",
-   "title": "Julian Harper, Arianna Barricelli, SCRAP METAL JODI",
-   "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "ALPHAVILLE",
-    "address": "140 Wilson Ave, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.700494,
-    "lng": -73.925859
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "synthpop, glam rock, singer-songwriter, indie pop",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-alphaville",
-   "tags": [
-    "synthpop",
-    "glam rock",
-    "singer-songwriter",
+    "folk pop",
     "indie pop"
    ]
   },
   {
-   "id": "new-york-2026-10-23-crown-hill-theatre",
-   "title": "NYC Ska Orchestra",
+   "id": "new-york-2026-10-24-night-club-101-laura-elliott",
+   "title": "Laura Elliott, Christopher Normann, Vittorio",
    "category": "music",
-   "start": "2026-10-23T20:00:00-04:00",
+   "start": "2026-10-24T22:30:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
-    "name": "Crown Hill Theatre",
-    "address": "750 Nostrand Avenue, Brooklyn",
+    "name": "Night Club 101",
+    "address": "101 Avenue A",
     "neighborhood": "",
-    "lat": 40.673074,
-    "lng": -73.950509
+    "lat": 40.725862,
+    "lng": -73.984038
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
-   "details": "ska, rocksteady",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-crown-hill-theatre",
+   "details": "indie pop, singer-songwriter, jazz",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-night-club-101-laura-elliott",
    "tags": [
-    "ska",
-    "rocksteady"
+    "indie pop",
+    "singer-songwriter",
+    "jazz"
    ]
   },
   {
-   "id": "new-york-2026-10-23-mad-radio-nyc",
-   "title": "SHEIK N BEIK PRESENTS: LA COMBI / Rechulski / ELLIOT FROM EARTH",
+   "id": "new-york-2026-10-24-gabriela",
+   "title": "Justin Strauss // ALL NIGHT LONG",
    "category": "nightlife",
-   "start": "2026-10-23T17:00:00-04:00",
+   "start": "2026-10-24T21:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "MAD Radio NYC",
-    "address": "395 Wythe Ave, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.711144,
-    "lng": -73.966355
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "deep house, italo disco, tech house",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-mad-radio-nyc",
-   "tags": [
-    "deep house",
-    "italo disco",
-    "tech house"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-the-cutting-room",
-   "title": "﻿IRWIN HALL",
-   "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "The Cutting Room",
-    "address": "44 East 32nd Street",
-    "neighborhood": "",
-    "lat": 40.745844,
-    "lng": -73.982936
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "spiritual jazz, world fusion",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-the-cutting-room",
-   "tags": [
-    "spiritual jazz",
-    "world fusion"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-jolene-sound-room",
-   "title": "NAIRA: Afro Electronic Freedom",
-   "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Jolene Sound Room Brooklyn",
-    "address": "353 Bedford Ave, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.71148,
-    "lng": -73.9629
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With SYDNI LUV, SAY3, UBABU, DJ TURÉ",
-   "details": "afro house, afrobeats, gqom, uk funky, amapiano",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-jolene-sound-room",
-   "tags": [
-    "afro house",
-    "afrobeats",
-    "gqom",
-    "uk funky",
-    "amapiano"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-dingbatz",
-   "title": "Shades of Morose, Chapter 31, Ask Andy, Raincheck",
-   "category": "music",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Dingbatz",
-    "address": "620 Van Houten Avenue, Clifton",
-    "neighborhood": "",
-    "lat": 40.857805,
-    "lng": -74.147528
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-dingbatz",
-   "tags": []
-  },
-  {
-   "id": "new-york-2026-10-23-eden",
-   "title": "Fractals presents: Niki Istrefi",
-   "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Eden NYC",
-    "address": "20 West 36th Street",
-    "neighborhood": "",
-    "lat": 40.750049,
-    "lng": -73.984967
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Dante Pasquale, CRYFXB",
-   "details": "industrial, hard techno, hardcore techno",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-eden",
-   "tags": [
-    "industrial",
-    "hard techno",
-    "hardcore techno"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-gabriela",
-   "title": "G I N A // ALL NIGHT LONG",
-   "category": "nightlife",
-   "start": "2026-10-23T21:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "Gabriela",
@@ -2113,20 +1170,793 @@
    "price": null,
    "priceUnknown": true,
    "description": "",
-   "details": "ebm, electro",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-gabriela",
+   "details": "nu disco, house",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-gabriela",
    "tags": [
-    "ebm",
-    "electro"
+    "nu disco",
+    "house"
    ]
   },
   {
-   "id": "new-york-2026-10-23-good-room",
-   "title": "XOXA + Tossd ft DJ Shannon, Kim Anh, YASMEENAH, DJ DEADNAME, Sevyn Love, Giovannii, Will Jack",
-   "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
+   "id": "new-york-2026-10-24-erf-gallery",
+   "title": "Wakelee Album Release",
+   "category": "music",
+   "start": "2026-10-24T19:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "ErF Gallery",
+    "address": "1 Ingraham Street, Brooklyn, NY 11206",
+    "neighborhood": "",
+    "lat": 40.707026,
+    "lng": -73.933483
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "midwest emo, emo",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-erf-gallery",
+   "tags": [
+    "midwest emo",
+    "emo"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-crown-hill-theatre",
+   "title": "Goblin performing live score to Tenebre",
+   "category": "music",
+   "start": "2026-10-24T20:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Crown Hill Theatre",
+    "address": "750 Nostrand Avenue, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.673074,
+    "lng": -73.950509
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "progressive rock, krautrock",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-crown-hill-theatre",
+   "tags": [
+    "progressive rock",
+    "krautrock"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-wellmont-theater",
+   "title": "AJ McLean presents Alexander James : The Better Man Tour",
+   "category": "music",
+   "start": "2026-10-24T20:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "The Wellmont Theater",
+    "address": "5 Seymour Street, Montclair",
+    "neighborhood": "",
+    "lat": 40.812659,
+    "lng": -74.216211
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With DJ Gab Wright",
+   "details": "pop, pop rock",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-wellmont-theater",
+   "tags": [
+    "pop",
+    "pop rock"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-pianos",
+   "title": "I Have A Dream Pop Festival: The Veldt • Burnt Sugar • Honeychild Coleman's DEM + more",
+   "category": "music",
+   "start": "2026-10-24T13:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Pianos: Showroom",
+    "address": "158 Ludlow Street",
+    "neighborhood": "",
+    "lat": 40.721012,
+    "lng": -73.987622
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With Burnt Sugar The Arkestra Chamber, Mahogany, Cigarettes for Breakfast, Dead Leaf Echo, The Moonbugs, Weegee",
+   "details": "shoegaze, dream pop, jazz funk, free jazz, neo-psychedelia, post-punk, noise rock, indie rock",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-pianos",
+   "tags": [
+    "shoegaze",
+    "dream pop",
+    "jazz funk",
+    "free jazz",
+    "neo-psychedelia"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-shu-community-theatre",
+   "title": "A.J. Croce",
+   "category": "music",
+   "start": "2026-10-24T20:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "SHU Community Theatre",
+    "address": "1420 Post Road, Fairfield",
+    "neighborhood": "",
+    "lat": 41.141472,
+    "lng": -73.256527
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "roots rock, singer-songwriter",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-shu-community-theatre",
+   "tags": [
+    "roots rock",
+    "singer-songwriter"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-alphaville",
+   "title": "Jerry Big's World Famous Band, Peachole, DJ Pixikim, DJ Liliessence",
+   "category": "nightlife",
+   "start": "2026-10-24T22:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "ALPHAVILLE",
+    "address": "140 Wilson Ave, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.700494,
+    "lng": -73.925859
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "electroclash, dance-punk",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-alphaville",
+   "tags": [
+    "electroclash",
+    "dance-punk"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-bar-milagro",
+   "title": "private browsing, Shane T (Live), Tiny T-Bone, DJ DOU, & Special Guests",
+   "category": "nightlife",
+   "start": "2026-10-24T21:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Bar  Milagro",
+    "address": "29 Dunham Place, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.711483,
+    "lng": -73.967463
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "indie pop, singer-songwriter, melodic house, uk garage",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-bar-milagro",
+   "tags": [
+    "indie pop",
+    "singer-songwriter",
+    "melodic house",
+    "uk garage"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-bowery-palace",
+   "title": "Neutral Snap | Shower Beers | Dana Ives",
+   "category": "music",
+   "start": "2026-10-24T19:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Bowery Palace",
+    "address": "327 Bowery",
+    "neighborhood": "",
+    "lat": 40.725712,
+    "lng": -73.991683
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "pop punk, alternative rock, punk rock",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-bowery-palace",
+   "tags": [
+    "pop punk",
+    "alternative rock",
+    "punk rock"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-cassette",
+   "title": "MORE EAZE (ALBUM RELEASE), JADELAIN, ANDREA SCHIAVELLI",
+   "category": "music",
+   "start": "2026-10-24T19:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Cassette",
+    "address": "68-38 Forest Avenue, Queens",
+    "neighborhood": "",
+    "lat": 40.70261,
+    "lng": -73.901214
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "ambient, drone, experimental folk, experimental, indie rock, bedroom pop",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-cassette",
+   "tags": [
+    "ambient",
+    "drone",
+    "experimental folk",
+    "experimental",
+    "indie rock"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-paragon",
+   "title": "Diamond CLUB: Manuka Honey, Cain Lima + WTCHCRFT",
+   "category": "nightlife",
+   "start": "2026-10-24T21:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Paragon",
+    "address": "990 Broadway, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.696055,
+    "lng": -73.934117
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With J. Córdova, Caín Lima, Simzii",
+   "details": "deconstructed club, baile funk, hard house, dembow, neoperreo, reggaeton, witch house, acid techno",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-paragon",
+   "tags": [
+    "deconstructed club",
+    "baile funk",
+    "hard house",
+    "dembow",
+    "neoperreo"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-night-club-101",
+   "title": "Caleb Giles",
+   "category": "music",
+   "start": "2026-10-24T18:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Night Club 101",
+    "address": "101 Avenue A",
+    "neighborhood": "",
+    "lat": 40.725862,
+    "lng": -73.984038
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "experimental hip hop, underground hip hop",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-night-club-101",
+   "tags": [
+    "experimental hip hop",
+    "underground hip hop"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-green-room-nyc",
+   "title": "Golden Record NYC x FIGA present DEBONAIR",
+   "category": "nightlife",
+   "start": "2026-10-24T22:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Green Room NYC",
+    "address": "195 Morgan Ave, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.71075,
+    "lng": -73.934165
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With Via App, LUNÁTICA, ROCCO",
+   "details": "ebm, techno, experimental, tribal house, industrial",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-green-room-nyc",
+   "tags": [
+    "ebm",
+    "techno",
+    "experimental",
+    "tribal house",
+    "industrial"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-bogart-house",
+   "title": "CvnTea: A Spooky Soirée...for C*nts",
+   "category": "nightlife",
+   "start": "2026-10-24T22:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Bogart House",
+    "address": "230 Bogart St, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.711667,
+    "lng": -73.935456
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With Nita Aviance, Meilgaarden",
+   "details": "disco, house, progressive house, trance",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-bogart-house",
+   "tags": [
+    "disco",
+    "house",
+    "progressive house",
+    "trance"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-314-scholes",
+   "title": "URGE: Drumloop & Scant/Omei/Parasite Nurse/January Hunt",
+   "category": "music",
+   "start": "2026-10-24T20:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "314 Scholes",
+    "address": "314 Scholes Street, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.709191,
+    "lng": -73.935263
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "glitch, experimental pop, noise, drone, dark ambient, industrial",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-314-scholes",
+   "tags": [
+    "glitch",
+    "experimental pop",
+    "noise",
+    "drone",
+    "dark ambient"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-bossa-nova-civic-club",
+   "title": "FREAKS COME AT NIGHT",
+   "category": "nightlife",
+   "start": "2026-10-24T19:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Bossa Nova Civic Club",
+    "address": "1271 Myrtle Avenue, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.697947,
+    "lng": -73.927932
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With JEWELSSEA, bratattack, dev.n, NoahG",
+   "details": "breakbeat, uk garage, baltimore club, jersey club, juke, hip hop, trap",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-bossa-nova-civic-club",
+   "tags": [
+    "breakbeat",
+    "uk garage",
+    "baltimore club",
+    "jersey club",
+    "juke"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-dead-letter-no-9",
+   "title": "Mike Servito, Sister System, Acid Mama, beewack",
+   "category": "nightlife",
+   "start": "2026-10-24T21:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Dead Letter No. 9",
+    "address": "63 Grand Street, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.716105,
+    "lng": -73.964809
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With Bea Hardy, Love Language",
+   "details": "acid house, techno, electro, breaks, soulful house",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-dead-letter-no-9",
+   "tags": [
+    "acid house",
+    "techno",
+    "electro",
+    "breaks",
+    "soulful house"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-mercury-lounge",
+   "title": "Blonde Otter w/ Already Late",
+   "category": "music",
+   "start": "2026-10-24T21:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Mercury Lounge",
+    "address": "217 East Houston Street",
+    "neighborhood": "",
+    "lat": 40.722069,
+    "lng": -73.986801
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "power pop, garage rock, pop punk, rap rock",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-mercury-lounge",
+   "tags": [
+    "power pop",
+    "garage rock",
+    "pop punk",
+    "rap rock"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-wonder-bar",
+   "title": "Quality Living",
+   "category": "music",
+   "start": "2026-10-24T19:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Wonder Bar",
+    "address": "1213 Ocean Avenue North, Asbury Park",
+    "neighborhood": "",
+    "lat": 40.222647,
+    "lng": -73.999612
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "indie rock, alternative rock",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-wonder-bar",
+   "tags": [
+    "indie rock",
+    "alternative rock"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-the-stone-pony",
+   "title": "Emo Night Brooklyn (21+ Event)",
+   "category": "music",
+   "start": "2026-10-24T21:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "The Stone Pony",
+    "address": "913 Ocean Ave, Asbury Park",
+    "neighborhood": "",
+    "lat": 40.219437,
+    "lng": -74.000769
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "emo, pop punk",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-the-stone-pony",
+   "tags": [
+    "emo",
+    "pop punk"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-bitter-end",
+   "title": "David Ayscue w/The Breaks Inc.",
+   "category": "music",
+   "start": "2026-10-24T20:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "The Bitter End",
+    "address": "147 Bleecker St",
+    "neighborhood": "",
+    "lat": 40.728433,
+    "lng": -73.999141
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "singer-songwriter, pop rock",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-bitter-end",
+   "tags": [
+    "singer-songwriter",
+    "pop rock"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-mother-pugs",
+   "title": "CROPSEY & SILENCE EQUALS DEATH",
+   "category": "music",
+   "start": "2026-10-24T19:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Mother Pugs",
+    "address": "1371 Forest Avenue, Staten Island, NY 10302",
+    "neighborhood": "",
+    "lat": 40.625654,
+    "lng": -74.135258
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "hardcore, metalcore, hardcore punk",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-mother-pugs",
+   "tags": [
+    "hardcore",
+    "metalcore",
+    "hardcore punk"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-city-winery-nyc",
+   "title": "Jeff Mattson and Friends",
+   "category": "music",
+   "start": "2026-10-24T19:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "City Winery NYC",
+    "address": "25 11th Avenue",
+    "neighborhood": "",
+    "lat": 40.74344,
+    "lng": -74.009904
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "jam band, psychedelic rock",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-city-winery-nyc",
+   "tags": [
+    "jam band",
+    "psychedelic rock"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-gramercy-theatre",
+   "title": "SERGE CLIVIO AND FRIENDS 6: Rock Royalty",
+   "category": "music",
+   "start": "2026-10-24T20:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Gramercy Theatre",
+    "address": "127 East 23rd Street",
+    "neighborhood": "",
+    "lat": 40.739896,
+    "lng": -73.984931
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "soul, pop rock",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-gramercy-theatre",
+   "tags": [
+    "soul",
+    "pop rock"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-asbury-lanes",
+   "title": "Earlybirds Club",
+   "category": "nightlife",
+   "start": "2026-10-24T18:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Asbury Lanes",
+    "address": "209 4th Avenue, Asbury Park",
+    "neighborhood": "",
+    "lat": 40.222787,
+    "lng": -74.00136
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-asbury-lanes",
+   "tags": []
+  },
+  {
+   "id": "new-york-2026-10-24-brooklyn-bowl",
+   "title": "HOUSE OF HEAVY - Nu Metal + Metalcore Night",
+   "category": "nightlife",
+   "start": "2026-10-24T11:45:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Bowl",
+    "address": "61 Wythe Avenue, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.721767,
+    "lng": -73.957234
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-brooklyn-bowl",
+   "tags": []
+  },
+  {
+   "id": "new-york-2026-10-24-cosmic-arts",
+   "title": "Dreamons: Scorpio",
+   "category": "nightlife",
+   "start": "2026-10-24T21:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Cosmic Arts",
+    "address": "56 Bogart Street, Unit 1J, Brooklyn, NY 11206",
+    "neighborhood": "",
+    "lat": 40.705796,
+    "lng": -73.933143
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With Joe Claussell, Paul Nickerson",
+   "details": "deep house, ambient",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-cosmic-arts",
+   "tags": [
+    "deep house",
+    "ambient"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-drom",
+   "title": "THE DEAD DANCE [HALLOWEEN PARTY]",
+   "category": "music",
+   "start": "2026-10-24T23:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Drom",
+    "address": "85 Avenue A",
+    "neighborhood": "",
+    "lat": 40.725329,
+    "lng": -73.984453
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With Alex Jay",
+   "details": "dance-pop, hi-nrg",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-drom",
+   "tags": [
+    "dance-pop",
+    "hi-nrg"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-ernest-records",
+   "title": "Degen",
+   "category": "music",
+   "start": "2026-10-24T22:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Ernest Records",
+    "address": "337 Marcus Garvey Boulevard, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.685898,
+    "lng": -73.938458
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-ernest-records",
+   "tags": []
+  },
+  {
+   "id": "new-york-2026-10-24-feedbk",
+   "title": "feedbk with Lawrence Asher, Sergio Dimoff",
+   "category": "nightlife",
+   "start": "2026-10-24T22:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "feedbk",
+    "address": "153 Morgan Ave, Brooklyn, NY 11237, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.709394,
+    "lng": -73.933336
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "minimal techno, deep house, tech house",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-feedbk",
+   "tags": [
+    "minimal techno",
+    "deep house",
+    "tech house"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-gold-sounds",
+   "title": "Robot Princess // Painted Zeros // Mt. Ex // Best Pete",
+   "category": "music",
+   "start": "2026-10-24T19:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Gold Sounds",
+    "address": "44 Wilson Ave, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.702633,
+    "lng": -73.929618
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "indie rock, indie folk, dream pop, indie punk",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-gold-sounds",
+   "tags": [
+    "indie rock",
+    "indie folk",
+    "dream pop",
+    "indie punk"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-good-room",
+   "title": "FIXED with Mozhgan, JDH & Dave P, Universal Cave (all night)",
+   "category": "nightlife",
+   "start": "2026-10-24T22:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "Good Room",
@@ -2138,45 +1968,128 @@
    "price": null,
    "priceUnknown": true,
    "description": "",
-   "details": "tribal house, uk garage, chicago house, acid house, deep house, gqom, bass music, drum and bass",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-good-room",
+   "details": "deep house, darkwave, disco, indie dance, boogie",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-good-room",
    "tags": [
-    "tribal house",
-    "uk garage",
-    "chicago house",
-    "acid house",
-    "deep house"
+    "deep house",
+    "darkwave",
+    "disco",
+    "indie dance",
+    "boogie"
    ]
   },
   {
-   "id": "new-york-2026-10-23-hk-hall",
-   "title": "NO TE ENAMORES: WILLITO (18+)",
-   "category": "music",
-   "start": "2026-10-23T23:00:00-04:00",
+   "id": "new-york-2026-10-24-h0l0",
+   "title": "Honcho H0L0 Takeover",
+   "category": "nightlife",
+   "start": "2026-10-24T15:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
-    "name": "HK Hall",
-    "address": "605 W 48th St",
+    "name": "H0L0",
+    "address": "1090 Wyckoff Ave, Ridgewood",
     "neighborhood": "",
-    "lat": 40.765072,
-    "lng": -73.996
+    "lat": 40.694228,
+    "lng": -73.902251
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With 999ADJ, Carlos Souffront, Carrie Sours, Carrieondisco, Aaron Clark, Clark Price",
+   "details": "electro, ambient, acid house, techno, downtempo, house, nu disco, deep house",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-h0l0",
+   "tags": [
+    "electro",
+    "ambient",
+    "acid house",
+    "techno",
+    "downtempo"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-honeys",
+   "title": "Vantage presents: GLAZED",
+   "category": "nightlife",
+   "start": "2026-10-24T21:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Honey's",
+    "address": "93 Scott Avenue, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.710578,
+    "lng": -73.923404
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With America Rose, JULIEN (NYC), Kettle, Knostalgia, Naomi Duan, Nöel Black",
+   "details": "deep house, techno, hypnotic techno, tribal, afro house, jersey club, footwork, electro",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-honeys",
+   "tags": [
+    "deep house",
+    "techno",
+    "hypnotic techno",
+    "tribal",
+    "afro house"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-house-of-independents",
+   "title": "I Love RnB Party",
+   "category": "music",
+   "start": "2026-10-24T21:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "House of Independents",
+    "address": "572 Cookman Avenue, Asbury Park",
+    "neighborhood": "",
+    "lat": 40.216061,
+    "lng": -74.010012
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-hk-hall",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-house-of-independents",
    "tags": []
   },
   {
-   "id": "new-york-2026-10-23-jupiter-disco",
-   "title": "Cecily + Heidy P",
+   "id": "new-york-2026-10-24-house-of-yes",
+   "title": "Night Cult: Madam X, Bella Mode, G I N A",
    "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
+   "start": "2026-10-24T22:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "House of Yes",
+    "address": "2 Wyckoff Avenue, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.706772,
+    "lng": -73.923611
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "bass music, techno, ebm, electro",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-house-of-yes",
+   "tags": [
+    "bass music",
+    "techno",
+    "ebm",
+    "electro"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-jupiter-disco",
+   "title": "Friends !: Prezzo, UMA DJ, Boatneck",
+   "category": "nightlife",
+   "start": "2026-10-24T22:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "Jupiter Disco",
@@ -2187,22 +2100,158 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "With Heidy.P",
-   "details": "disco, deep house, nu disco",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-jupiter-disco",
+   "description": "With N.B. Rhythm, Majii, Boat Neck",
+   "details": "",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-jupiter-disco",
+   "tags": []
+  },
+  {
+   "id": "new-york-2026-10-24-kings-theatre",
+   "title": "Coraline in Concert",
+   "category": "music",
+   "start": "2026-10-24T19:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Kings Theatre",
+    "address": "1027 Flatbush Avenue, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.64604,
+    "lng": -73.957348
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-kings-theatre",
+   "tags": []
+  },
+  {
+   "id": "new-york-2026-10-24-le-bain",
+   "title": "TELESCREENS AFTER PARTY",
+   "category": "music",
+   "start": "2026-10-24T22:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Le Bain",
+    "address": "444 W. 13th Street",
+    "neighborhood": "",
+    "lat": 40.741025,
+    "lng": -74.007978
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With Julian (The Cave), Moj, hypebeck, Zillion",
+   "details": "uk garage, breakbeat",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-le-bain",
    "tags": [
-    "disco",
-    "deep house",
-    "nu disco"
+    "uk garage",
+    "breakbeat"
    ]
   },
   {
-   "id": "new-york-2026-10-23-moondog-hifi",
-   "title": "Elon",
-   "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
+   "id": "new-york-2026-10-24-le-poisson-rouge",
+   "title": "Members Only: $ome $exy $ongs 4 New York",
+   "category": "music",
+   "start": "2026-10-24T23:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Le Poisson Rouge",
+    "address": "158 Bleecker Street",
+    "neighborhood": "",
+    "lat": 40.728443,
+    "lng": -74.000202
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-le-poisson-rouge",
+   "tags": []
+  },
+  {
+   "id": "new-york-2026-10-24-mad-radio-nyc",
+   "title": "WE ARE ECLIPSE: JLU / renai /REVA & LUGARIC",
+   "category": "nightlife",
+   "start": "2026-10-24T17:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "MAD Radio NYC",
+    "address": "395 Wythe Ave, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.711144,
+    "lng": -73.966355
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With JLu (MX)",
+   "details": "deep house, disco house, organic house, melodic house",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-mad-radio-nyc",
+   "tags": [
+    "deep house",
+    "disco house",
+    "organic house",
+    "melodic house"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-mayo-performing-arts-center",
+   "title": "Coco - A Live to Film Concert Experience",
+   "category": "music",
+   "start": "2026-10-24T15:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Mayo Performing Arts Center ",
+    "address": "100 South Street, Morristown",
+    "neighborhood": "",
+    "lat": 40.79378,
+    "lng": -74.477962
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-mayo-performing-arts-center",
+   "tags": []
+  },
+  {
+   "id": "new-york-2026-10-24-mood-ring",
+   "title": "Dead Frequency",
+   "category": "music",
+   "start": "2026-10-24T19:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Mood Ring",
+    "address": "1260 Myrtle Ave, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.697743,
+    "lng": -73.926906
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With DJ Fifi, Maya Panosh, suciopath",
+   "details": "",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-mood-ring",
+   "tags": []
+  },
+  {
+   "id": "new-york-2026-10-24-moondog-hifi",
+   "title": "Zaidan + GETLIVE",
+   "category": "music",
+   "start": "2026-10-24T22:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "Moondog Hifi",
@@ -2213,21 +2262,68 @@
    },
    "price": null,
    "priceUnknown": true,
+   "description": "With GETLIVE!",
+   "details": "",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-moondog-hifi",
+   "tags": []
+  },
+  {
+   "id": "new-york-2026-10-24-mr-purple",
+   "title": "Mr Purple Presents: WAVCRASH",
+   "category": "music",
+   "start": "2026-10-24T22:30:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Mr. Purple",
+    "address": "180 Orchard St",
+    "neighborhood": "",
+    "lat": 40.721757,
+    "lng": -73.987937
+   },
+   "price": null,
+   "priceUnknown": true,
    "description": "",
-   "details": "techno, breakbeat",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-moondog-hifi",
+   "details": "",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-mr-purple",
+   "tags": []
+  },
+  {
+   "id": "new-york-2026-10-24-nowadays",
+   "title": "SanDia: Season Finale with Bendito, Donis, Jeremy Giros, Yvonne Turner",
+   "category": "nightlife",
+   "start": "2026-10-24T14:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Nowadays",
+    "address": "56-06 Cooper Avenue, Queens",
+    "neighborhood": "",
+    "lat": 40.692509,
+    "lng": -73.901593
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "deep house, afro house, garage, soulful house, disco",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-nowadays",
    "tags": [
-    "techno",
-    "breakbeat"
+    "deep house",
+    "afro house",
+    "garage",
+    "soulful house",
+    "disco"
    ]
   },
   {
-   "id": "new-york-2026-10-23-outer-heaven",
-   "title": "Outer Heaven presents: Jack Mulqueen",
+   "id": "new-york-2026-10-24-outer-heaven",
+   "title": "Outer Heaven presents: J Richards b2b Kurilo [All Night Long]",
    "category": "nightlife",
-   "start": "2026-10-23T20:00:00-04:00",
+   "start": "2026-10-24T20:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "Outer Heaven",
@@ -2238,77 +2334,51 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "With RICCI, Bella Mutino",
-   "details": "acid house, disco, tech house, deep house, acid techno",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-outer-heaven",
+   "description": "With J. Richards",
+   "details": "progressive house, deep house, acid house, minimal techno",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-outer-heaven",
    "tags": [
-    "acid house",
-    "disco",
-    "tech house",
+    "progressive house",
     "deep house",
-    "acid techno"
+    "acid house",
+    "minimal techno"
    ]
   },
   {
-   "id": "new-york-2026-10-23-pixelated-records",
-   "title": "Ladies in Frequency: The Launch — Lady Liz BK's Birthday Celebration with Chia Minaya",
+   "id": "new-york-2026-10-24-public-records",
+   "title": "Love Injection Invites: Pete BBE, Johnny Reckless, Jeff Higgins, hyanna & Alyssa Stowers",
    "category": "nightlife",
-   "start": "2026-10-23T18:00:00-04:00",
+   "start": "2026-10-24T23:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
-    "name": "Pixelated Records",
-    "address": "792 Onderdonk Ave",
+    "name": "public records",
+    "address": "233 Butler Street, Brooklyn",
     "neighborhood": "",
-    "lat": 40.702445,
-    "lng": -73.904871
+    "lat": 40.682176,
+    "lng": -73.98639
    },
    "price": null,
    "priceUnknown": true,
-   "description": "With Tellmedelme, Roksana, MsPackMan, S.O.P.H.G, Esthetik Violation, DJ Courtney K",
-   "details": "soulful house, latin house, techno, industrial, tech house, funky house, deep house, disco",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-pixelated-records",
+   "description": "",
+   "details": "deep house, downtempo, soul, jazz funk, house",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-public-records",
    "tags": [
-    "soulful house",
-    "latin house",
-    "techno",
-    "industrial",
-    "tech house"
+    "deep house",
+    "downtempo",
+    "soul",
+    "jazz funk",
+    "house"
    ]
   },
   {
-   "id": "new-york-2026-10-23-silo-brooklyn",
-   "title": "Ginja",
+   "id": "new-york-2026-10-24-sobs",
+   "title": "SOB's presents: 2000's Emo Night: The Black Parade 20th Anniversary",
    "category": "music",
-   "start": "2026-10-23T22:00:00-04:00",
+   "start": "2026-10-24T18:00:00-04:00",
    "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "SILO Brooklyn",
-    "address": "90 Scott Avenue, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.710564,
-    "lng": -73.922686
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Ethan Tomas",
-   "details": "amapiano, gqom",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-silo-brooklyn",
-   "tags": [
-    "amapiano",
-    "gqom"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-sobs",
-   "title": "SOB's presents: Sak Pasé: Haitian Fridays",
-   "category": "music",
-   "start": "2026-10-23T23:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
+   "listedDay": "2026-10-24",
    "allDay": false,
    "venue": {
     "name": "SOBs",
@@ -2319,91 +2389,163 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "With Rubie Lee, Citizen B, DJ Marz",
-   "details": "afrobeats, contemporary r&b, dancehall, amapiano",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-sobs",
-   "tags": [
-    "afrobeats",
-    "contemporary r&b",
-    "dancehall",
-    "amapiano"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-unveiled",
-   "title": "GOOD BOY - Halloween",
-   "category": "nightlife",
-   "start": "2026-10-23T23:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Unveiled",
-    "address": "94 North 13th Street, Brooklyn",
-    "neighborhood": "",
-    "lat": 40.722298,
-    "lng": -73.956734
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Memphy, Dangerous Rose",
-   "details": "hard techno, trance, ghettotech, techno",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-unveiled",
-   "tags": [
-    "hard techno",
-    "trance",
-    "ghettotech",
-    "techno"
-   ]
-  },
-  {
-   "id": "new-york-2026-10-23-virgo",
-   "title": "FIFTH HOUSE NYC",
-   "category": "nightlife",
-   "start": "2026-10-23T23:00:00-04:00",
-   "end": null,
-   "listedDay": "2026-10-23",
-   "allDay": false,
-   "venue": {
-    "name": "Virgo",
-    "address": "324 Grand St",
-    "neighborhood": "",
-    "lat": 40.717284,
-    "lng": -73.990374
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "With Kai9, Stella Key, A.D.",
+   "description": "With DJ ILY",
    "details": "",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-virgo",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-sobs",
+   "tags": []
+  },
+  {
+   "id": "new-york-2026-10-24-stereo-garden-li",
+   "title": "DJ ADONI FREAK SHOW AT STEREO GARDEN HALLOWEEN PARTY 2026",
+   "category": "nightlife",
+   "start": "2026-10-24T21:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Stereo Garden LI",
+    "address": "9 Railroad Ave, Patchogue, NY 11772, Patchogue",
+    "neighborhood": "",
+    "lat": 40.764796,
+    "lng": -73.01714
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "With DJ Ever, DJ Castellanos, DJ Mundo, DJ Unit, DJ Spicy",
+   "details": "bachata, dembow",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-stereo-garden-li",
+   "tags": [
+    "bachata",
+    "dembow"
+   ]
+  },
+  {
+   "id": "new-york-2026-10-24-union-hall-dj",
+   "title": "The Roundup with DJ Cowboy",
+   "category": "nightlife",
+   "start": "2026-10-24T23:59:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Union Hall",
+    "address": "702 Union Street, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.675996,
+    "lng": -73.980133
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-union-hall-dj",
+   "tags": []
+  },
+  {
+   "id": "new-york-2026-10-24-union-pool",
+   "title": "slimdan",
+   "category": "music",
+   "start": "2026-10-24T19:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Union Pool",
+    "address": "484 Union Ave, Brooklyn",
+    "neighborhood": "",
+    "lat": 40.715004,
+    "lng": -73.951552
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-union-pool",
+   "tags": []
+  },
+  {
+   "id": "new-york-2026-10-24-zankel-hall",
+   "title": "Fang Tao Jiang",
+   "category": "music",
+   "start": "2026-10-24T19:00:00-04:00",
+   "end": null,
+   "listedDay": "2026-10-24",
+   "allDay": false,
+   "venue": {
+    "name": "Carnegie Hall - Zankel Hall",
+    "address": "881 7th Avenue",
+    "neighborhood": "",
+    "lat": 40.765007,
+    "lng": -73.979914
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-zankel-hall",
    "tags": []
   }
  ],
  "unplaced": [
   {
-   "title": "Refuge Friday: DJ Seinfeld, Baltra, Physical Therapy & Kiyoshi",
+   "title": "Diplo's Run Club - New York",
+   "venue": "Flushing Meadows Corona Park",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-flushing-meadows-corona-park"
+  },
+  {
+   "title": "KATSEYE: THE WILDWORLD TOUR",
+   "venue": "UBS Arena",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-ubs-arena"
+  },
+  {
+   "title": "Magic!",
+   "venue": "Dream Live at American Dream",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-dream-live"
+  },
+  {
+   "title": "Refuge Saturday: Floating Points",
    "venue": "Refuge",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-refuge"
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-refuge"
   },
   {
-   "title": "Trombone Shorty & Orleans Avenue  with Mavis Staples",
-   "venue": "New Jersey Performing Arts Center",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-new-jersey-performing-arts-center"
+   "title": "Canabliss @ The Woodshop",
+   "venue": "The Woodshop",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-the-woodshop"
   },
   {
-   "title": "Minty Boi Presents: swedm (Varg2tm + jamesjamesjames)",
-   "venue": "The Brooklyn Monarch",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-the-brooklyn-monarch"
+   "title": "Underground Event",
+   "venue": "TBA - Underground Event (sign up link in description)",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-tba-underground-event-sign-up-link-in-description"
   },
   {
-   "title": "House of Yes x Matias Aguayo present: The Anenoa Show",
-   "venue": "House of Yes",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-house-of-yes"
+   "title": "oneLOUDdrawing, American Motors, Dearly Departed",
+   "venue": "Massapequa VFW Hall",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-massapequa-vfw-hall"
   },
   {
-   "title": "Scrubs Lane: Amelia Holt, sznl, Frank B",
-   "venue": "TBA - The Bakery",
-   "url": "https://patchbay.fm/show/new-york-2026-10-23-tba-the-bakery"
+   "title": "New Jersey Symphony Orchestra - Beethoven and Schubert",
+   "venue": "New Jersey Performing Arts Center - Prudential Hall",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-prudential-hall"
+  },
+  {
+   "title": "Gallery Studios presents: October Sky",
+   "venue": "TBA",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-tba"
+  },
+  {
+   "title": "333 House presents: Dylan Payne",
+   "venue": "TBA - 333",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-tba-333"
+  },
+  {
+   "title": "Track Maintenance 11: Daniro, Special Guest (CLE), Kweku, Roni",
+   "venue": "TBA - Brooklyn",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-tba-brooklyn"
+  },
+  {
+   "title": "Nocturna: Secret Location",
+   "venue": "TBA",
+   "url": "https://patchbay.fm/show/new-york-2026-10-24-tba-ani-be"
   }
  ]
 }

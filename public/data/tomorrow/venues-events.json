@@ -3,14 +3,14 @@
   "name": "Venue calendars",
   "url": "https://filmforum.org/"
  },
- "date": "2026-10-23",
- "fetchedAt": "2026-10-22T16:29:42-04:00",
+ "date": "2026-10-24",
+ "fetchedAt": "2026-10-23T05:28:27-04:00",
  "events": [
   {
-   "id": "film-forum-202610231225-fatherland",
+   "id": "film-forum-202610241225-fatherland",
    "title": "FATHERLAND",
    "category": "film",
-   "start": "2026-10-23T12:25:00-04:00",
+   "start": "2026-10-24T12:25:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -22,7 +22,7 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 12:25 pm, 2:25 pm, 4:30 pm, 6:30 pm, 8:30 pm",
+   "description": "Showtimes: 12:25 pm, 4:30 pm, 6:30 pm, 9:00 pm",
    "details": "",
    "url": "https://filmforum.org/film/fatherland",
    "tags": [],
@@ -33,10 +33,10 @@
    }
   },
   {
-   "id": "film-forum-202610231215-once-upon-a-time-in-harlem",
+   "id": "film-forum-202610241430-once-upon-a-time-in-harlem",
    "title": "ONCE UPON A TIME IN HARLEM",
    "category": "film",
-   "start": "2026-10-23T12:15:00-04:00",
+   "start": "2026-10-24T14:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -48,7 +48,7 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 12:15 pm, 2:30 pm, 4:45 pm, 6:00 pm, 7:00 pm, 8:15 pm, 9:15 pm",
+   "description": "Showtimes: 2:30 pm, 4:45 pm, 6:00 pm, 7:00 pm, 8:15 pm, 9:15 pm",
    "details": "",
    "url": "https://filmforum.org/film/once-upon-a-time-in-harlem",
    "tags": [],
@@ -59,10 +59,10 @@
    }
   },
   {
-   "id": "film-forum-202610231230-my-undesirable-friends-part-ii-exile-cha",
+   "id": "film-forum-202610241230-my-undesirable-friends-part-ii-exile-cha",
    "title": "MY UNDESIRABLE FRIENDS: PART II – EXILE: Chapters 1-3",
    "category": "film",
-   "start": "2026-10-23T12:30:00-04:00",
+   "start": "2026-10-24T12:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -85,10 +85,10 @@
    }
   },
   {
-   "id": "film-forum-202610231615-unzipped",
+   "id": "film-forum-202610241615-unzipped",
    "title": "UNZIPPED",
    "category": "film",
-   "start": "2026-10-23T16:15:00-04:00",
+   "start": "2026-10-24T16:15:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -111,10 +111,10 @@
    }
   },
   {
-   "id": "film-forum-202610231215-symbiopsychotaxiplasm-take-one",
-   "title": "SYMBIOPSYCHOTAXIPLASM: TAKE ONE",
+   "id": "film-forum-202610241220-profile-of-a-problem-drinker-putting-it-",
+   "title": "PROFILE OF A PROBLEM DRINKER, PUTTING IT STRAIGHT, and SMOKE AND WEATHER",
    "category": "film",
-   "start": "2026-10-23T12:15:00-04:00",
+   "start": "2026-10-24T12:20:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -126,9 +126,9 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 12:15 pm, 8:50 pm",
+   "description": "Showtimes: 12:20 pm",
    "details": "",
-   "url": "https://filmforum.org/film/symbiopsychotaxiplasm-take-one-william-greaves-100",
+   "url": "https://filmforum.org/film/profile-of-a-problem-drinker-putting-it-straight-smoke-and-weather-william-greaves-100",
    "tags": [],
    "publisher": {
     "id": "venue-film-forum",
@@ -137,10 +137,10 @@
    }
   },
   {
-   "id": "film-forum-202610231400-nationtime",
-   "title": "NATIONTIME",
+   "id": "film-forum-202610241350-souls-of-sin",
+   "title": "SOULS OF SIN",
    "category": "film",
-   "start": "2026-10-23T14:00:00-04:00",
+   "start": "2026-10-24T13:50:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -152,7 +152,85 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 2:00 pm",
+   "description": "Showtimes: 1:50 pm",
+   "details": "",
+   "url": "https://filmforum.org/film/souls-of-sin-william-greaves-100",
+   "tags": [],
+   "publisher": {
+    "id": "venue-film-forum",
+    "name": "Film Forum",
+    "url": "https://filmforum.org/"
+   }
+  },
+  {
+   "id": "film-forum-202610241520-still-a-brother-inside-the-negro-middle-",
+   "title": "STILL A BROTHER: INSIDE THE NEGRO MIDDLE CLASS and IN THE COMPANY OF MEN",
+   "category": "film",
+   "start": "2026-10-24T15:20:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Film Forum",
+    "address": "209 West Houston Street",
+    "neighborhood": "",
+    "lat": 40.728219,
+    "lng": -74.004492
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 3:20 pm",
+   "details": "",
+   "url": "https://filmforum.org/film/still-a-brother-inside-the-negro-middle-class-in-the-company-of-men-william-greaves-100",
+   "tags": [],
+   "publisher": {
+    "id": "venue-film-forum",
+    "name": "Film Forum",
+    "url": "https://filmforum.org/"
+   }
+  },
+  {
+   "id": "film-forum-202610241810-the-first-world-festival-of-negro-arts-f",
+   "title": "THE FIRST WORLD FESTIVAL OF NEGRO ARTS, FROM THESE ROOTS, and WEALTH OF A NATION",
+   "category": "film",
+   "start": "2026-10-24T18:10:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Film Forum",
+    "address": "209 West Houston Street",
+    "neighborhood": "",
+    "lat": 40.728219,
+    "lng": -74.004492
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 6:10 pm",
+   "details": "",
+   "url": "https://filmforum.org/film/the-first-world-festival-of-negro-arts-from-these-roots-wealth-of-a-nation-william-greaves-100",
+   "tags": [],
+   "publisher": {
+    "id": "venue-film-forum",
+    "name": "Film Forum",
+    "url": "https://filmforum.org/"
+   }
+  },
+  {
+   "id": "film-forum-202610242020-nationtime",
+   "title": "NATIONTIME",
+   "category": "film",
+   "start": "2026-10-24T20:20:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Film Forum",
+    "address": "209 West Houston Street",
+    "neighborhood": "",
+    "lat": 40.728219,
+    "lng": -74.004492
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 8:20 pm",
    "details": "",
    "url": "https://filmforum.org/film/nationtime-william-greaves-100",
    "tags": [],
@@ -163,114 +241,10 @@
    }
   },
   {
-   "id": "film-forum-202610231550-from-these-roots-and-black-power-in-amer",
-   "title": "FROM THESE ROOTS and BLACK POWER IN AMERICA: MYTH… OR REALITY?",
-   "category": "film",
-   "start": "2026-10-23T15:50:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Film Forum",
-    "address": "209 West Houston Street",
-    "neighborhood": "",
-    "lat": 40.728219,
-    "lng": -74.004492
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 3:50 pm",
-   "details": "",
-   "url": "https://filmforum.org/film/from-these-roots-black-power-in-america-william-greaves-100",
-   "tags": [],
-   "publisher": {
-    "id": "venue-film-forum",
-    "name": "Film Forum",
-    "url": "https://filmforum.org/"
-   }
-  },
-  {
-   "id": "film-forum-202610231750-lost-boundaries",
-   "title": "LOST BOUNDARIES",
-   "category": "film",
-   "start": "2026-10-23T17:50:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Film Forum",
-    "address": "209 West Houston Street",
-    "neighborhood": "",
-    "lat": 40.728219,
-    "lng": -74.004492
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 5:50 pm",
-   "details": "",
-   "url": "https://filmforum.org/film/lost-boundaries-william-greaves-100",
-   "tags": [],
-   "publisher": {
-    "id": "venue-film-forum",
-    "name": "Film Forum",
-    "url": "https://filmforum.org/"
-   }
-  },
-  {
-   "id": "nitehawk-williamsburg-202610231500-the-social-reckoning",
-   "title": "The Social Reckoning",
-   "category": "film",
-   "start": "2026-10-23T15:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Williamsburg",
-    "address": "136 Metropolitan Avenue",
-    "neighborhood": "",
-    "lat": 40.715985,
-    "lng": -73.962586
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 3:00 pm, 5:45 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/williamsburg/movies/the-social-reckoning/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-williamsburg",
-    "name": "Nitehawk Williamsburg",
-    "url": "https://nitehawkcinema.com/williamsburg/"
-   }
-  },
-  {
-   "id": "nitehawk-williamsburg-202610231515-primetime",
-   "title": "Primetime",
-   "category": "film",
-   "start": "2026-10-23T15:15:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Williamsburg",
-    "address": "136 Metropolitan Avenue",
-    "neighborhood": "",
-    "lat": 40.715985,
-    "lng": -73.962586
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 3:15 pm, 8:30 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/williamsburg/movies/primetime/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-williamsburg",
-    "name": "Nitehawk Williamsburg",
-    "url": "https://nitehawkcinema.com/williamsburg/"
-   }
-  },
-  {
-   "id": "nitehawk-williamsburg-202610231630-you-can-see-everything",
+   "id": "nitehawk-williamsburg-202610241100-you-can-see-everything",
    "title": "You Can See Everything",
    "category": "film",
-   "start": "2026-10-23T16:30:00-04:00",
+   "start": "2026-10-24T11:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -282,7 +256,7 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 4:30 pm, 6:00 pm, 8:15 pm, 9:45 pm, 11:00 pm",
+   "description": "Showtimes: 11:00 am, 1:40 pm, 2:00 pm, 5:25 pm, 5:45 pm, 9:10 pm, 9:30 pm",
    "details": "",
    "url": "https://nitehawkcinema.com/williamsburg/movies/you-can-see-everything/",
    "tags": [],
@@ -293,10 +267,10 @@
    }
   },
   {
-   "id": "nitehawk-williamsburg-202610232355-the-funhouse",
-   "title": "The Funhouse",
+   "id": "nitehawk-williamsburg-202610241100-young-frankenstein",
+   "title": "Young Frankenstein",
    "category": "film",
-   "start": "2026-10-23T23:55:00-04:00",
+   "start": "2026-10-24T11:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -308,9 +282,9 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 11:55 pm",
+   "description": "Showtimes: 11:00 am",
    "details": "",
-   "url": "https://nitehawkcinema.com/williamsburg/showtimes/the-funhouse-10-23-26-1155-pm/",
+   "url": "https://nitehawkcinema.com/williamsburg/movies/young-frankenstein/",
    "tags": [],
    "publisher": {
     "id": "venue-nitehawk-williamsburg",
@@ -319,166 +293,88 @@
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610231430-clayface",
-   "title": "Clayface",
+   "id": "nitehawk-williamsburg-202610241115-spoons-toons-booze-halloween",
+   "title": "Spoons Toons & Booze Halloween",
    "category": "film",
-   "start": "2026-10-23T14:30:00-04:00",
+   "start": "2026-10-24T11:15:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
+    "name": "Nitehawk Williamsburg",
+    "address": "136 Metropolitan Avenue",
     "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
+    "lat": 40.715985,
+    "lng": -73.962586
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 2:30 pm, 6:00 pm, 10:00 pm",
+   "description": "Showtimes: 11:15 am",
    "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/clayface/",
+   "url": "https://nitehawkcinema.com/williamsburg/special_events/stb-october-2026/",
    "tags": [],
    "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
+    "id": "venue-nitehawk-williamsburg",
+    "name": "Nitehawk Williamsburg",
+    "url": "https://nitehawkcinema.com/williamsburg/"
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610231445-you-can-see-everything",
-   "title": "You Can See Everything",
-   "category": "film",
-   "start": "2026-10-23T14:45:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
-    "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 2:45 pm, 5:00 pm, 5:30 pm, 6:30 pm, 8:45 pm, 9:15 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/you-can-see-everything/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
-   }
-  },
-  {
-   "id": "nitehawk-prospect-park-202610231500-the-history-of-concrete",
-   "title": "The History of Concrete",
-   "category": "film",
-   "start": "2026-10-23T15:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
-    "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 3:00 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/the-history-of-concrete/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
-   }
-  },
-  {
-   "id": "nitehawk-prospect-park-202610231515-the-social-reckoning",
+   "id": "nitehawk-williamsburg-202610241435-the-social-reckoning",
    "title": "The Social Reckoning",
    "category": "film",
-   "start": "2026-10-23T15:15:00-04:00",
+   "start": "2026-10-24T14:35:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
+    "name": "Nitehawk Williamsburg",
+    "address": "136 Metropolitan Avenue",
     "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
+    "lat": 40.715985,
+    "lng": -73.962586
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 3:15 pm",
+   "description": "Showtimes: 2:35 pm, 7:40 pm",
    "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/the-social-reckoning/",
+   "url": "https://nitehawkcinema.com/williamsburg/movies/the-social-reckoning/",
    "tags": [],
    "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
+    "id": "venue-nitehawk-williamsburg",
+    "name": "Nitehawk Williamsburg",
+    "url": "https://nitehawkcinema.com/williamsburg/"
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610231530-klara-and-the-sun",
-   "title": "Klara and the Sun",
+   "id": "nitehawk-williamsburg-202610241710-primetime",
+   "title": "Primetime",
    "category": "film",
-   "start": "2026-10-23T15:30:00-04:00",
+   "start": "2026-10-24T17:10:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
+    "name": "Nitehawk Williamsburg",
+    "address": "136 Metropolitan Avenue",
     "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
+    "lat": 40.715985,
+    "lng": -73.962586
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 3:30 pm, 6:15 pm, 8:30 pm",
+   "description": "Showtimes: 5:10 pm, 10:15 pm",
    "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/klara-and-the-sun/",
+   "url": "https://nitehawkcinema.com/williamsburg/movies/primetime/",
    "tags": [],
    "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
+    "id": "venue-nitehawk-williamsburg",
+    "name": "Nitehawk Williamsburg",
+    "url": "https://nitehawkcinema.com/williamsburg/"
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610231530-fjord",
-   "title": "Fjord",
-   "category": "film",
-   "start": "2026-10-23T15:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
-    "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 3:30 pm, 6:45 pm, 9:00 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/fjord/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
-   }
-  },
-  {
-   "id": "nitehawk-prospect-park-202610231600-wildwood",
+   "id": "nitehawk-prospect-park-202610241100-wildwood",
    "title": "Wildwood",
    "category": "film",
-   "start": "2026-10-23T16:00:00-04:00",
+   "start": "2026-10-24T11:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -490,7 +386,7 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 4:00 pm",
+   "description": "Showtimes: 11:00 am, 6:45 pm",
    "details": "",
    "url": "https://nitehawkcinema.com/prospectpark/movies/wildwood/",
    "tags": [],
@@ -501,10 +397,10 @@
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610231905-primetime",
-   "title": "Primetime",
+   "id": "nitehawk-prospect-park-202610241100-ginger-snaps",
+   "title": "Ginger Snaps",
    "category": "film",
-   "start": "2026-10-23T19:05:00-04:00",
+   "start": "2026-10-24T11:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -516,7 +412,241 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 7:05 pm, 9:45 pm",
+   "description": "Showtimes: 11:00 am",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/ginger-snaps/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610241115-the-history-of-concrete",
+   "title": "The History of Concrete",
+   "category": "film",
+   "start": "2026-10-24T11:15:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 11:15 am",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/the-history-of-concrete/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610241115-fjord",
+   "title": "Fjord",
+   "category": "film",
+   "start": "2026-10-24T11:15:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 11:15 am, 2:30 pm, 5:45 pm, 8:45 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/fjord/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610241200-montreal-my-beautiful",
+   "title": "Montreal, My Beautiful",
+   "category": "film",
+   "start": "2026-10-24T12:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 12:00 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/montreal-my-beautiful/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610241245-something-you-should-know-about-me",
+   "title": "Something You Should Know About Me",
+   "category": "film",
+   "start": "2026-10-24T12:45:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 12:45 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/something-you-should-know-about-me/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610241300-the-social-reckoning",
+   "title": "The Social Reckoning",
+   "category": "film",
+   "start": "2026-10-24T13:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 1:00 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/the-social-reckoning/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610241330-klara-and-the-sun",
+   "title": "Klara and the Sun",
+   "category": "film",
+   "start": "2026-10-24T13:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 1:30 pm, 4:30 pm, 7:15 pm, 10:00 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/klara-and-the-sun/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610241345-clayface",
+   "title": "Clayface",
+   "category": "film",
+   "start": "2026-10-24T13:45:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 1:45 pm, 3:40 pm, 6:15 pm, 10:15 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/clayface/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610241405-you-can-see-everything",
+   "title": "You Can See Everything",
+   "category": "film",
+   "start": "2026-10-24T14:05:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 2:05 pm, 2:45 pm, 3:15 pm, 5:45 pm, 6:30 pm, 7:00 pm, 9:00 pm, 9:30 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/you-can-see-everything/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610241615-primetime",
+   "title": "Primetime",
+   "category": "film",
+   "start": "2026-10-24T16:15:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 4:15 pm, 9:45 pm",
    "details": "",
    "url": "https://nitehawkcinema.com/prospectpark/movies/primetime/",
    "tags": [],
@@ -527,10 +657,10 @@
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610232215-other-mommy",
+   "id": "nitehawk-prospect-park-202610242245-other-mommy",
    "title": "Other Mommy",
    "category": "film",
-   "start": "2026-10-23T22:15:00-04:00",
+   "start": "2026-10-24T22:45:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -542,7 +672,7 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 10:15 pm",
+   "description": "Showtimes: 10:45 pm",
    "details": "",
    "url": "https://nitehawkcinema.com/prospectpark/movies/other-mommy/",
    "tags": [],
@@ -553,10 +683,10 @@
    }
   },
   {
-   "id": "new-york-comedy-club-on-4th-street-202610231800-luke-severeid",
-   "title": "Luke Severeid",
+   "id": "new-york-comedy-club-on-4th-street-202610241500-one-funny-lisa-marie",
+   "title": "One Funny Lisa Marie",
    "category": "comedy",
-   "start": "2026-10-23T18:00:00-04:00",
+   "start": "2026-10-24T15:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -567,14 +697,14 @@
     "lng": -73.989808
    },
    "price": {
-    "min": 29,
-    "max": 29,
+    "min": 35,
+    "max": 35,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/luke-severeid-2026-10-23180000",
+   "url": "https://newyorkcomedyclub.com/events/one-funny-lisa-marie-2026-10-24150000",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club-on-4th-street",
@@ -583,10 +713,10 @@
    }
   },
   {
-   "id": "new-york-comedy-club-upper-west-side-202610231815-ian-fidance-jackie-fabulous-santi-espino",
-   "title": "Ian Fidance, Jackie Fabulous, Santi Espinosa, Nick Smith",
+   "id": "new-york-comedy-club-upper-west-side-202610241600-matinee-with-ry-daddy",
+   "title": "Matinee with Ry Daddy",
    "category": "comedy",
-   "start": "2026-10-23T18:15:00-04:00",
+   "start": "2026-10-24T16:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -604,7 +734,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/ian-fidance-jackie-fabulous-santi-espinosa-nick-smith",
+   "url": "https://newyorkcomedyclub.com/events/matinee-with-ry-daddy-2026-10-24160000",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club-upper-west-side",
@@ -613,10 +743,10 @@
    }
   },
   {
-   "id": "new-york-comedy-club-202610231900-simeon-goodson-kunal-c-arora-matt-ruby-h",
-   "title": "Simeon Goodson, Kunal C. Arora, Matt Ruby, Humzah Azeem",
+   "id": "new-york-comedy-club-202610241700-todd-barry-patricia-dinglasan-meka-mo-ad",
+   "title": "Todd Barry, Patricia Dinglasan, Meka Mo, Adam Gilbert",
    "category": "comedy",
-   "start": "2026-10-23T19:00:00-04:00",
+   "start": "2026-10-24T17:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -627,14 +757,14 @@
     "lng": -73.980785
    },
    "price": {
-    "min": 25,
-    "max": 25,
+    "min": 20,
+    "max": 20,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/simeon-goodson-kunal-c-arora-matt-ruby-humzah-azeem",
+   "url": "https://newyorkcomedyclub.com/events/todd-barry-patricia-dinglasan-meka-mo-adam-gilbert",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club",
@@ -643,10 +773,10 @@
    }
   },
   {
-   "id": "new-york-comedy-club-on-4th-street-202610232015-krystyna-hutchinson-marion-grodin-marc-t",
-   "title": "Krystyna Hutchinson, Marion Grodin, Marc Theobald, Nore Davis",
+   "id": "new-york-comedy-club-on-4th-street-202610241730-judah-friedlander-meka-mo-dan-davies-joe",
+   "title": "Judah Friedlander, Meka Mo, Dan Davies, Joey Rinaldi",
    "category": "comedy",
-   "start": "2026-10-23T20:15:00-04:00",
+   "start": "2026-10-24T17:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -657,14 +787,14 @@
     "lng": -73.989808
    },
    "price": {
-    "min": 45,
-    "max": 45,
+    "min": 20,
+    "max": 20,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/marion-grodin-marc-theobald-krystyna-hutchinson-nore-davis",
+   "url": "https://newyorkcomedyclub.com/events/judah-friedlander-meka-mo-dan-davies-joey-rinaldi",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club-on-4th-street",
@@ -673,100 +803,10 @@
    }
   },
   {
-   "id": "new-york-comedy-club-upper-west-side-202610232030-simeon-goodson-carmen-lynch-reggie-conqu",
-   "title": "Simeon Goodson, Carmen Lynch, Reggie Conquest, Liz Glazer",
+   "id": "new-york-comedy-club-upper-west-side-202610241815-marina-franklin-todd-barry-talent-harris",
+   "title": "Marina Franklin, Todd Barry, Talent Harris Jr, Adam Gilbert",
    "category": "comedy",
-   "start": "2026-10-23T20:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New York Comedy Club Upper West Side",
-    "address": "236 West 78th Street",
-    "neighborhood": "",
-    "lat": 40.782823,
-    "lng": -73.980169
-   },
-   "price": {
-    "min": 25,
-    "max": 25,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://newyorkcomedyclub.com/events/simeon-goodson-carmen-lynch-reggie-conquest-liz-glazer",
-   "tags": [],
-   "publisher": {
-    "id": "venue-new-york-comedy-club-upper-west-side",
-    "name": "New York Comedy Club Upper West Side",
-    "url": "https://newyorkcomedyclub.com/"
-   }
-  },
-  {
-   "id": "new-york-comedy-club-202610232115-jackie-fabulous-monroe-martin-robby-slow",
-   "title": "Jackie Fabulous, Monroe Martin, Robby Slowik, Kunal C. Arora",
-   "category": "comedy",
-   "start": "2026-10-23T21:15:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New York Comedy Club",
-    "address": "241 East 24th Street",
-    "neighborhood": "",
-    "lat": 40.73896,
-    "lng": -73.980785
-   },
-   "price": {
-    "min": 45,
-    "max": 45,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://newyorkcomedyclub.com/events/jackie-fabulous-monroe-martin-robby-slowik-kunal-c-arora",
-   "tags": [],
-   "publisher": {
-    "id": "venue-new-york-comedy-club",
-    "name": "New York Comedy Club",
-    "url": "https://newyorkcomedyclub.com/"
-   }
-  },
-  {
-   "id": "new-york-comedy-club-on-4th-street-202610232230-marion-grodin-mike-britt-liza-treyger-re",
-   "title": "Marion Grodin, Mike Britt, Liza Treyger, Reggie Conquest",
-   "category": "comedy",
-   "start": "2026-10-23T22:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New York Comedy Club on 4th Street",
-    "address": "85 East 4th Street",
-    "neighborhood": "",
-    "lat": 40.726592,
-    "lng": -73.989808
-   },
-   "price": {
-    "min": 25,
-    "max": 25,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://newyorkcomedyclub.com/events/marion-grodin-mike-britt-liza-treyger-reggie-conquest",
-   "tags": [],
-   "publisher": {
-    "id": "venue-new-york-comedy-club-on-4th-street",
-    "name": "New York Comedy Club on 4th Street",
-    "url": "https://newyorkcomedyclub.com/"
-   }
-  },
-  {
-   "id": "new-york-comedy-club-upper-west-side-202610232245-nore-davis-robby-slowik-liz-glazer-alex-",
-   "title": "Nore Davis, Robby Slowik, Liz Glazer, Alex Babbitt, Chris Brown",
-   "category": "comedy",
-   "start": "2026-10-23T22:45:00-04:00",
+   "start": "2026-10-24T18:15:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -784,7 +824,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/nore-davis-robby-slowik-liz-glazer-alex-babbitt-chris-brown",
+   "url": "https://newyorkcomedyclub.com/events/marina-franklin-todd-barry-talent-harris-jr-adam-gilbert",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club-upper-west-side",
@@ -793,10 +833,190 @@
    }
   },
   {
-   "id": "new-york-comedy-club-202610232330-jessica-levin-kunal-c-arora-andre-d-thom",
-   "title": "Jessica Levin, Kunal C. Arora, Andre D Thompson, Geo Perez, Chris Pattwell, Sam Kochman",
+   "id": "new-york-comedy-club-202610241900-judah-friedlander-liz-barrett-jatty-robi",
+   "title": "Judah Friedlander, Liz Barrett, Jatty Robinson, Tom Cassidy",
    "category": "comedy",
-   "start": "2026-10-23T23:30:00-04:00",
+   "start": "2026-10-24T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New York Comedy Club",
+    "address": "241 East 24th Street",
+    "neighborhood": "",
+    "lat": 40.73896,
+    "lng": -73.980785
+   },
+   "price": {
+    "min": 45,
+    "max": 45,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://newyorkcomedyclub.com/events/judah-friedlander-liz-barrett-jatty-robinson-tom-cassidy",
+   "tags": [],
+   "publisher": {
+    "id": "venue-new-york-comedy-club",
+    "name": "New York Comedy Club",
+    "url": "https://newyorkcomedyclub.com/"
+   }
+  },
+  {
+   "id": "new-york-comedy-club-on-4th-street-202610242000-marina-franklin-mike-britt-terry-thomas-",
+   "title": "Marina Franklin, Mike Britt, Terry Thomas Jr., Phil Duckett",
+   "category": "comedy",
+   "start": "2026-10-24T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New York Comedy Club on 4th Street",
+    "address": "85 East 4th Street",
+    "neighborhood": "",
+    "lat": 40.726592,
+    "lng": -73.989808
+   },
+   "price": {
+    "min": 45,
+    "max": 45,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://newyorkcomedyclub.com/events/marina-franklin-mike-britt-terry-thomas-jr-phil-duckett",
+   "tags": [],
+   "publisher": {
+    "id": "venue-new-york-comedy-club-on-4th-street",
+    "name": "New York Comedy Club on 4th Street",
+    "url": "https://newyorkcomedyclub.com/"
+   }
+  },
+  {
+   "id": "new-york-comedy-club-upper-west-side-202610242030-mike-feeney-liz-barrett-jatty-robinson-c",
+   "title": "Mike Feeney, Liz Barrett, Jatty Robinson, Courtney Fearrington",
+   "category": "comedy",
+   "start": "2026-10-24T20:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New York Comedy Club Upper West Side",
+    "address": "236 West 78th Street",
+    "neighborhood": "",
+    "lat": 40.782823,
+    "lng": -73.980169
+   },
+   "price": {
+    "min": 45,
+    "max": 45,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://newyorkcomedyclub.com/events/mike-feeney-liz-barrett-jatty-robinson-courtney-fearrington",
+   "tags": [],
+   "publisher": {
+    "id": "venue-new-york-comedy-club-upper-west-side",
+    "name": "New York Comedy Club Upper West Side",
+    "url": "https://newyorkcomedyclub.com/"
+   }
+  },
+  {
+   "id": "new-york-comedy-club-202610242115-aminah-imani-mike-britt-alexis-guerreros",
+   "title": "Aminah Imani, Mike Britt, Alexis Guerreros, Tom Cassidy",
+   "category": "comedy",
+   "start": "2026-10-24T21:15:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New York Comedy Club",
+    "address": "241 East 24th Street",
+    "neighborhood": "",
+    "lat": 40.73896,
+    "lng": -73.980785
+   },
+   "price": {
+    "min": 45,
+    "max": 45,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://newyorkcomedyclub.com/events/aminah-imani-mike-britt-alexis-guerreros-tom-cassidy",
+   "tags": [],
+   "publisher": {
+    "id": "venue-new-york-comedy-club",
+    "name": "New York Comedy Club",
+    "url": "https://newyorkcomedyclub.com/"
+   }
+  },
+  {
+   "id": "new-york-comedy-club-on-4th-street-202610242230-calise-hawkins-mike-britt-alexis-guerrer",
+   "title": "Calise Hawkins, Mike Britt, Alexis Guerreros, Phil Duckett",
+   "category": "comedy",
+   "start": "2026-10-24T22:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New York Comedy Club on 4th Street",
+    "address": "85 East 4th Street",
+    "neighborhood": "",
+    "lat": 40.726592,
+    "lng": -73.989808
+   },
+   "price": {
+    "min": 45,
+    "max": 45,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://newyorkcomedyclub.com/events/calise-hawkins-mike-britt-alexis-guerreros-phil-duckett",
+   "tags": [],
+   "publisher": {
+    "id": "venue-new-york-comedy-club-on-4th-street",
+    "name": "New York Comedy Club on 4th Street",
+    "url": "https://newyorkcomedyclub.com/"
+   }
+  },
+  {
+   "id": "new-york-comedy-club-upper-west-side-202610242245-aminah-imani-gastor-almonte-courtney-fea",
+   "title": "Aminah Imani, Gastor Almonte, Courtney Fearrington, Terry Thomas Jr.",
+   "category": "comedy",
+   "start": "2026-10-24T22:45:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New York Comedy Club Upper West Side",
+    "address": "236 West 78th Street",
+    "neighborhood": "",
+    "lat": 40.782823,
+    "lng": -73.980169
+   },
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://newyorkcomedyclub.com/events/aminah-imani-gastor-almonte-courtney-fearrington-terry-thomas-jr",
+   "tags": [],
+   "publisher": {
+    "id": "venue-new-york-comedy-club-upper-west-side",
+    "name": "New York Comedy Club Upper West Side",
+    "url": "https://newyorkcomedyclub.com/"
+   }
+  },
+  {
+   "id": "new-york-comedy-club-202610242330-liz-glazer-michael-fleming-talent-harris",
+   "title": "Liz Glazer, Michael Fleming, Talent Harris Jr, Aaron McCann",
+   "category": "comedy",
+   "start": "2026-10-24T23:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -814,7 +1034,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/jessica-levin-kunal-c-arora-andre-d-thompson-geo-perez-chris-pattwell-sam-kochman",
+   "url": "https://newyorkcomedyclub.com/events/liz-glazer-michael-fleming-talent-harris-jr-aaron-mccann",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club",
@@ -823,10 +1043,10 @@
    }
   },
   {
-   "id": "eastville-comedy-club-202610231800-james-mattern-katie-blunt-malachi-fox-gr",
-   "title": "James Mattern, Katie Blunt, Malachi Fox, Greg Melly, John Bennett",
+   "id": "eastville-comedy-club-202610241800-james-mattern-preston-gitlin-lauren-cocr",
+   "title": "James Mattern, Preston Gitlin, Lauren Cocroft, Greg Melly, John Bennett, Cesh Reyes",
    "category": "comedy",
-   "start": "2026-10-23T18:00:00-04:00",
+   "start": "2026-10-24T18:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -844,7 +1064,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://www.eastvillecomedy.com/events/james-mattern-katie-blunt-malachi-fox-greg-melly-john-bennett",
+   "url": "https://www.eastvillecomedy.com/events/james-mattern-preston-gitlin-lauren-cocroft-greg-melly-john-bennett-cesh-reyes",
    "tags": [],
    "publisher": {
     "id": "venue-eastville-comedy-club",
@@ -853,10 +1073,10 @@
    }
   },
   {
-   "id": "eastville-comedy-club-202610232000-subhah-agarwal-james-mattern-miss-lissa-",
-   "title": "Subhah Agarwal, James Mattern, Miss Lissa Knows, Rosey Catherine, Derek Humphrey",
+   "id": "eastville-comedy-club-202610242000-james-mattern-ed-rodriguez-slater-harris",
+   "title": "James Mattern, Ed Rodriguez, Slater Harrison, Gus Kynast, Dave Temple, Derek Humphrey, Alex Babbitt",
    "category": "comedy",
-   "start": "2026-10-23T20:00:00-04:00",
+   "start": "2026-10-24T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -874,7 +1094,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://www.eastvillecomedy.com/events/subhah-agarwal-james-mattern-miss-lissa-knows-rosey-catherine-malachi-fox-lauren-cocroft-jaclyn-lore-edwards-derek-humphrey",
+   "url": "https://www.eastvillecomedy.com/events/james-mattern-ed-rodriguez-slater-harrison-gus-kynast-dave-temple-derek-humphrey-alex-babbitt",
    "tags": [],
    "publisher": {
     "id": "venue-eastville-comedy-club",
@@ -883,10 +1103,10 @@
    }
   },
   {
-   "id": "eastville-comedy-club-202610232200-mariel-jimenez-liam-dalton-lauren-cocrof",
-   "title": "Mariel Jimenez, Liam Dalton, Lauren Cocroft, Hoodo Hersi, Neko White, Dave Temple",
+   "id": "eastville-comedy-club-202610242200-liam-dalton-greg-melly-trayvon-fulton-ce",
+   "title": "Liam Dalton, Greg Melly, Trayvon Fulton, Cesh Reyes, Alex Babbitt, Derrell Meyers",
    "category": "comedy",
-   "start": "2026-10-23T22:00:00-04:00",
+   "start": "2026-10-24T22:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -904,7 +1124,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://www.eastvillecomedy.com/events/mariel-jimenez-liam-dalton-lauren-cocroft-hoodo-hersi-neko-white-dave-temple",
+   "url": "https://www.eastvillecomedy.com/events/liam-dalton-greg-melly-trayvon-fulton-cesh-reyes-alex-babbitt-derrell-meyers",
    "tags": [],
    "publisher": {
     "id": "venue-eastville-comedy-club",
@@ -913,10 +1133,10 @@
    }
   },
   {
-   "id": "the-pit-202610231700-friday-feel-good-improv-jam",
-   "title": "Friday Feel-GOOD IMPROV JAM",
+   "id": "the-pit-202610241830-ladies-stand-up-men-sit-down-open-mic",
+   "title": "Ladies Stand-Up! (Men Sit Down) Open Mic",
    "category": "comedy",
-   "start": "2026-10-23T17:00:00-04:00",
+   "start": "2026-10-24T18:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -930,7 +1150,7 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://thepit-nyc.com/events/improv-jam/",
+   "url": "https://thepit-nyc.com/events/ladies-stand-up-men-sit-down-open-mic/",
    "tags": [],
    "publisher": {
     "id": "venue-the-pit",
@@ -939,140 +1159,10 @@
    }
   },
   {
-   "id": "blondie-s-sports-202610232000-trivia-at-blondie-s-sports",
-   "title": "Trivia at Blondie’s Sports",
-   "category": "trivia",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Blondie’s Sports",
-    "address": "",
-    "neighborhood": "Upper West Side",
-    "lat": 40.78321,
-    "lng": -73.979158
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/blondies/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "sanger-hall-202610232000-trivia-at-sanger-hall",
-   "title": "Trivia at Sanger Hall",
-   "category": "trivia",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Sanger Hall",
-    "address": "",
-    "neighborhood": "Sunnyside",
-    "lat": 40.746081,
-    "lng": -73.915443
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/sanger-hall-queens/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "singlecut-beersmiths-202610232000-trivia-at-singlecut-beersmiths",
-   "title": "Trivia at SingleCut Beersmiths",
-   "category": "trivia",
-   "start": "2026-10-23T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "SingleCut Beersmiths",
-    "address": "",
-    "neighborhood": "Astoria",
-    "lat": 40.778301,
-    "lng": -73.901536
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/singlecut-beersmiths/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "keg-lantern-brewing-202610231900-mixtape-bingo-at-keg-lantern-brewing",
-   "title": "Mixtape Bingo at Keg & Lantern Brewing",
-   "category": "trivia",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Keg & Lantern Brewing",
-    "address": "",
-    "neighborhood": "Red Hook",
-    "lat": 40.675726,
-    "lng": -74.015805
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/keg-lantern-brewing-co-red-hook/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "pig-beach-queens-202610231900-mixtape-bingo-at-pig-beach-queens",
-   "title": "Mixtape Bingo at Pig Beach Queens",
-   "category": "trivia",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Pig Beach Queens",
-    "address": "",
-    "neighborhood": "Astoria",
-    "lat": 40.755105,
-    "lng": -73.92527
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/pig-beach-queens/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "h0l0-202610232200-meanred-presents-effy",
-   "title": "MeanRed Presents: Effy",
+   "id": "h0l0-202610241500-honcho-h0l0-takeover",
+   "title": "Honcho H0L0 Takeover",
    "category": "nightlife",
-   "start": "2026-10-23T22:00:00-04:00",
+   "start": "2026-10-24T15:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -1084,9 +1174,9 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "",
+   "description": "999ADJ, Carlos Souffront, Carrie Sours, Carrieondisco, Honcho (Aaron Clark, Clark Price, d'Adhemar), 'nohup', Simisea, Sterling Juan Diaz, wngdu",
    "details": "",
-   "url": "https://ra.co/events/2508219",
+   "url": "https://ra.co/events/2537038",
    "tags": [],
    "publisher": {
     "id": "venue-h0l0",
@@ -1095,10 +1185,36 @@
    }
   },
   {
-   "id": "public-records-202610232300-p-e-a-r-l-juana-anastasia-kristensen-joh",
-   "title": "P.E.A.R.L., Juana / Anastasia Kristensen, John Raffaele / Bob Maynard & Cassandra Croft",
-   "category": "nightlife",
-   "start": "2026-10-23T23:00:00-04:00",
+   "id": "public-records-202610241100-233-record-fair-co-hosted-by-shawn-dub",
+   "title": "233 Record Fair co-hosted by Shawn Dub",
+   "category": "community",
+   "start": "2026-10-24T11:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Public Records",
+    "address": "233 Butler Street",
+    "neighborhood": "Gowanus",
+    "lat": 40.682176,
+    "lng": -73.98639
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "The Garden",
+   "details": "",
+   "url": "https://link.dice.fm/M152dccf6d22",
+   "tags": [],
+   "publisher": {
+    "id": "venue-public-records",
+    "name": "Public Records",
+    "url": "https://publicrecords.nyc/"
+   }
+  },
+  {
+   "id": "public-records-202610241900-mark-guiliana-beat-music",
+   "title": "Mark Guiliana – BEAT MUSIC",
+   "category": "music",
+   "start": "2026-10-24T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -1112,7 +1228,7 @@
    "priceUnknown": true,
    "description": "Sound Room",
    "details": "",
-   "url": "https://link.dice.fm/ed801aad0224",
+   "url": "https://link.dice.fm/s212761833b2",
    "tags": [],
    "publisher": {
     "id": "venue-public-records",
@@ -1121,11 +1237,115 @@
    }
   },
   {
-   "id": "bowne-house-202610231900-haunted-history-house-tour",
-   "title": "Haunted History House Tour",
+   "id": "public-records-202610242300-love-injection-invites-pete-bbe-johnny-r",
+   "title": "Love Injection Invites: Pete BBE, Johnny Reckless, Jeff Higgins, hyanna & Alyssa Stowers",
+   "category": "nightlife",
+   "start": "2026-10-24T23:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Public Records",
+    "address": "233 Butler Street",
+    "neighborhood": "Gowanus",
+    "lat": 40.682176,
+    "lng": -73.98639
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Sound Room",
+   "details": "",
+   "url": "https://link.dice.fm/D3d962551b5b",
+   "tags": [],
+   "publisher": {
+    "id": "venue-public-records",
+    "name": "Public Records",
+    "url": "https://publicrecords.nyc/"
+   }
+  },
+  {
+   "id": "queens-botanical-garden-202610241100-autumn-garden-tour-with-our-horticulture",
+   "title": "Autumn Garden Tour with Our Horticulture Director",
    "category": "community",
-   "start": "2026-10-23T19:00:00-04:00",
-   "end": "2026-10-23T20:30:00-04:00",
+   "start": "2026-10-24T11:00:00-04:00",
+   "end": "2026-10-24T12:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Queens Botanical Garden",
+    "address": "43-50 Main Street",
+    "neighborhood": "Flushing",
+    "lat": 40.751085,
+    "lng": -73.827732
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://queensbotanical.org/event/autumn-garden-tour-with-our-horticulture-director/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-queens-botanical-garden",
+    "name": "Queens Botanical Garden",
+    "url": "https://queensbotanical.org/calendar/"
+   }
+  },
+  {
+   "id": "queens-botanical-garden-202610241300-cameron-russell-mei-tao-supremely-unequi",
+   "title": "Cameron Russell & Mei Tao: “Supremely Unequivocal in Our Commitment to this Moment of Being” Opening Day",
+   "category": "community",
+   "start": "2026-10-24T13:00:00-04:00",
+   "end": "2026-10-24T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Queens Botanical Garden",
+    "address": "43-50 Main Street",
+    "neighborhood": "Flushing",
+    "lat": 40.751085,
+    "lng": -73.827732
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://queensbotanical.org/event/cameron-russell-mei-tao-supremely-unequivocal-opening-day/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-queens-botanical-garden",
+    "name": "Queens Botanical Garden",
+    "url": "https://queensbotanical.org/calendar/"
+   }
+  },
+  {
+   "id": "queens-night-market-202610241600-queens-night-market",
+   "title": "Queens Night Market",
+   "category": "food",
+   "start": "2026-10-24T16:00:00-04:00",
+   "end": "2026-10-25T00:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Queens Night Market",
+    "address": "47-01 111th Street",
+    "neighborhood": "Flushing Meadows",
+    "lat": 40.747359,
+    "lng": -73.851695
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://queensnightmarket.com/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-queens-night-market",
+    "name": "Queens Night Market",
+    "url": "https://queensnightmarket.com/"
+   }
+  },
+  {
+   "id": "bowne-house-202610241100-a-very-happy-halloween-storytime-craft",
+   "title": "A Very Happy Halloween Storytime & Craft",
+   "category": "art",
+   "start": "2026-10-24T11:00:00-04:00",
+   "end": "2026-10-24T12:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Bowne House",
@@ -1138,7 +1358,33 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://www.bownehouse.org/events/hauntedhistorytour2026",
+   "url": "https://www.bownehouse.org/events/halloweenreadaloud2026",
+   "tags": [],
+   "publisher": {
+    "id": "venue-bowne-house",
+    "name": "Bowne House",
+    "url": "https://www.bownehouse.org/events"
+   }
+  },
+  {
+   "id": "bowne-house-202610241300-beginner-s-felt-christmas-ornament-works",
+   "title": "Beginner's Felt Christmas Ornament Workshop",
+   "category": "art",
+   "start": "2026-10-24T13:00:00-04:00",
+   "end": "2026-10-24T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Bowne House",
+    "address": "37-01 Bowne Street",
+    "neighborhood": "Flushing",
+    "lat": 40.76289,
+    "lng": -73.824882
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.bownehouse.org/events/beginners-felt-christmas-ornament-workshop",
    "tags": [],
    "publisher": {
     "id": "venue-bowne-house",
