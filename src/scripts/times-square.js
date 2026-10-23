@@ -1,4 +1,4 @@
-// Times Square: the tiles cleared for it in geo.js (Broadway and 7th Ave, 42nd to 48th St)
+// Times Square: the tiles cleared for it in geo.js (Broadway and 7th Ave from 42nd to 48th St, and the block east of it)
 // are paved as one open plaza. The billboard and buildings around it come later.
 
 import * as THREE from 'three';
