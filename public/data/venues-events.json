@@ -4,7 +4,7 @@
   "url": "https://filmforum.org/"
  },
  "date": "2026-10-24",
- "fetchedAt": "2026-10-24T05:07:28-04:00",
+ "fetchedAt": "2026-10-24T13:02:20-04:00",
  "events": [
   {
    "id": "film-forum-202610241225-fatherland",
@@ -834,7 +834,7 @@
   },
   {
    "id": "new-york-comedy-club-202610241900-judah-friedlander-liz-barrett-jatty-robi",
-   "title": "Judah Friedlander, Liz Barrett, Jatty Robinson, Tom Cassidy",
+   "title": "Judah Friedlander, Liz Barrett, Jatty Robinson, Tom Cassidy and special guest!",
    "category": "comedy",
    "start": "2026-10-24T19:00:00-04:00",
    "end": null,
@@ -854,7 +854,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/judah-friedlander-liz-barrett-jatty-robinson-tom-cassidy",
+   "url": "https://newyorkcomedyclub.com/events/judah-friedlander-liz-barrett-jatty-robinson-tom-cassidy-and-special-guest",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club",
@@ -953,8 +953,8 @@
    }
   },
   {
-   "id": "new-york-comedy-club-on-4th-street-202610242230-calise-hawkins-mike-britt-alexis-guerrer",
-   "title": "Calise Hawkins, Mike Britt, Alexis Guerreros, Phil Duckett",
+   "id": "new-york-comedy-club-on-4th-street-202610242230-alexis-guerreros-calise-hawkins-mike-bri",
+   "title": "Alexis Guerreros, Calise Hawkins, Mike Britt, Phil Duckett",
    "category": "comedy",
    "start": "2026-10-24T22:30:00-04:00",
    "end": null,
@@ -974,7 +974,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/calise-hawkins-mike-britt-alexis-guerreros-phil-duckett",
+   "url": "https://newyorkcomedyclub.com/events/alexis-guerreros-calise-hawkins-mike-britt-phil-duckett",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club-on-4th-street",
@@ -1263,6 +1263,58 @@
    }
   },
   {
+   "id": "queens-botanical-garden-202610241100-autumn-garden-tour-with-our-horticulture",
+   "title": "Autumn Garden Tour with Our Horticulture Director",
+   "category": "community",
+   "start": "2026-10-24T11:00:00-04:00",
+   "end": "2026-10-24T12:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Queens Botanical Garden",
+    "address": "43-50 Main Street",
+    "neighborhood": "Flushing",
+    "lat": 40.751085,
+    "lng": -73.827732
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://queensbotanical.org/event/autumn-garden-tour-with-our-horticulture-director/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-queens-botanical-garden",
+    "name": "Queens Botanical Garden",
+    "url": "https://queensbotanical.org/calendar/"
+   }
+  },
+  {
+   "id": "queens-botanical-garden-202610241300-cameron-russell-mei-tao-supremely-unequi",
+   "title": "Cameron Russell & Mei Tao: “Supremely Unequivocal in Our Commitment to this Moment of Being” Opening Day",
+   "category": "community",
+   "start": "2026-10-24T13:00:00-04:00",
+   "end": "2026-10-24T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Queens Botanical Garden",
+    "address": "43-50 Main Street",
+    "neighborhood": "Flushing",
+    "lat": 40.751085,
+    "lng": -73.827732
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://queensbotanical.org/event/cameron-russell-mei-tao-supremely-unequivocal-opening-day/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-queens-botanical-garden",
+    "name": "Queens Botanical Garden",
+    "url": "https://queensbotanical.org/calendar/"
+   }
+  },
+  {
    "id": "queens-night-market-202610241600-queens-night-market",
    "title": "Queens Night Market",
    "category": "food",
@@ -1289,32 +1341,6 @@
    }
   },
   {
-   "id": "bowne-house-202610241100-a-very-happy-halloween-storytime-craft",
-   "title": "A Very Happy Halloween Storytime & Craft",
-   "category": "art",
-   "start": "2026-10-24T11:00:00-04:00",
-   "end": "2026-10-24T12:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Bowne House",
-    "address": "37-01 Bowne Street",
-    "neighborhood": "Flushing",
-    "lat": 40.76289,
-    "lng": -73.824882
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.bownehouse.org/events/halloweenreadaloud2026",
-   "tags": [],
-   "publisher": {
-    "id": "venue-bowne-house",
-    "name": "Bowne House",
-    "url": "https://www.bownehouse.org/events"
-   }
-  },
-  {
    "id": "bowne-house-202610241300-cancelled-beginner-s-felt-christmas-orna",
    "title": "CANCELLED: Beginner's Felt Christmas Ornament Workshop",
    "category": "art",
@@ -1333,6 +1359,32 @@
    "description": "",
    "details": "",
    "url": "https://www.bownehouse.org/events/beginners-felt-christmas-ornament-workshop",
+   "tags": [],
+   "publisher": {
+    "id": "venue-bowne-house",
+    "name": "Bowne House",
+    "url": "https://www.bownehouse.org/events"
+   }
+  },
+  {
+   "id": "bowne-house-202610241100-a-very-happy-halloween-storytime-craft",
+   "title": "A Very Happy Halloween Storytime & Craft",
+   "category": "art",
+   "start": "2026-10-24T11:00:00-04:00",
+   "end": "2026-10-24T12:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Bowne House",
+    "address": "37-01 Bowne Street",
+    "neighborhood": "Flushing",
+    "lat": 40.76289,
+    "lng": -73.824882
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.bownehouse.org/events/halloweenreadaloud2026",
    "tags": [],
    "publisher": {
     "id": "venue-bowne-house",

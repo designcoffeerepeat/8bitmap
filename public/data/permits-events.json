@@ -4,7 +4,7 @@
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
  "date": "2026-10-24",
- "fetchedAt": "2026-10-24T05:06:42-04:00",
+ "fetchedAt": "2026-10-24T13:01:34-04:00",
  "events": [
   {
    "id": "972601",
@@ -99,29 +99,6 @@
    ]
   },
   {
-   "id": "980196",
-   "title": "Walk With Her",
-   "category": "sports",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T12:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Canarsie Park",
-    "address": "Canarsie Park: Canarsie Park",
-    "neighborhood": "Brooklyn",
-    "lat": 40.62734,
-    "lng": -73.8957
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
    "id": "886813",
    "title": "Ronald Mcdonald House Fun Run",
    "category": "sports",
@@ -134,6 +111,29 @@
     "neighborhood": "Manhattan",
     "lat": 40.78249,
     "lng": -73.96554
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
+   "id": "980196",
+   "title": "Walk With Her",
+   "category": "sports",
+   "start": "2026-10-24T08:00:00-04:00",
+   "end": "2026-10-24T12:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Canarsie Park",
+    "address": "Canarsie Park: Canarsie Park",
+    "neighborhood": "Brooklyn",
+    "lat": 40.62734,
+    "lng": -73.8957
    },
    "price": null,
    "priceUnknown": false,
@@ -398,26 +398,26 @@
    ]
   },
   {
-   "id": "887240",
-   "title": "Diplo's Run Club NYC",
-   "category": "sports",
+   "id": "980171",
+   "title": "Bloom Club Apple Launch at Ideal Glass Studios: 9 W. 8th St.",
+   "category": "community",
    "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T13:00:00-04:00",
+   "end": null,
    "allDay": false,
    "venue": {
-    "name": "Flushing Meadows Corona Park",
-    "address": "Flushing Meadows Corona Park: Fountain Of The Planets",
-    "neighborhood": "Queens",
-    "lat": 40.74726,
-    "lng": -73.84333
+    "name": "West 8 Street",
+    "address": "West 8 Street Between Macdougal Street And 5 Avenue",
+    "neighborhood": "Manhattan",
+    "lat": 40.73293,
+    "lng": -73.99834
    },
    "price": null,
    "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
    "url": null,
    "tags": [
-    "Special Event"
+    "Street Event"
    ]
   },
   {
@@ -467,26 +467,49 @@
    ]
   },
   {
-   "id": "980171",
-   "title": "Bloom Club Apple Launch at Ideal Glass Studios: 9 W. 8th St.",
+   "id": "979336",
+   "title": "PS 199 Fall Festival",
    "category": "community",
    "start": "2026-10-24T09:00:00-04:00",
-   "end": null,
+   "end": "2026-10-24T17:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "West 8 Street",
-    "address": "West 8 Street Between Macdougal Street And 5 Avenue",
+    "name": "Matthew P. Sapolin Playground",
+    "address": "Matthew P. Sapolin Playground: Mppa",
     "neighborhood": "Manhattan",
-    "lat": 40.73293,
-    "lng": -73.99834
+    "lat": 40.77759,
+    "lng": -73.98443
    },
    "price": null,
    "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
    "url": null,
    "tags": [
-    "Street Event"
+    "Special Event"
+   ]
+  },
+  {
+   "id": "887240",
+   "title": "Diplo's Run Club NYC",
+   "category": "sports",
+   "start": "2026-10-24T09:00:00-04:00",
+   "end": "2026-10-24T13:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Flushing Meadows Corona Park",
+    "address": "Flushing Meadows Corona Park: Fountain Of The Planets",
+    "neighborhood": "Queens",
+    "lat": 40.74726,
+    "lng": -73.84333
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
    ]
   },
   {
@@ -502,29 +525,6 @@
     "neighborhood": "Bronx",
     "lat": 40.84906,
     "lng": -73.85212
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "979336",
-   "title": "PS 199 Fall Festival",
-   "category": "community",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Matthew P. Sapolin Playground",
-    "address": "Matthew P. Sapolin Playground: Mppa",
-    "neighborhood": "Manhattan",
-    "lat": 40.77759,
-    "lng": -73.98443
    },
    "price": null,
    "priceUnknown": false,
@@ -720,52 +720,6 @@
    ]
   },
   {
-   "id": "972213",
-   "title": "Alumni and Family Weekend",
-   "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "West 27 Street",
-    "address": "West 27 Street Between 7 Avenue And 8 Avenue",
-    "neighborhood": "Manhattan",
-    "lat": 40.74642,
-    "lng": -73.994376
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Single Block Festival",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Single Block Festival"
-   ]
-  },
-  {
-   "id": "974675",
-   "title": "BOO On Mosholu",
-   "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Mosholu Avenue",
-    "address": "Mosholu Avenue Between West 256 Street And Tyndall Avenue",
-    "neighborhood": "Bronx",
-    "lat": 40.904077,
-    "lng": -73.903214
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Single Block Festival",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Single Block Festival"
-   ]
-  },
-  {
    "id": "951696",
    "title": "2026 PTA Fun Run",
    "category": "sports",
@@ -786,29 +740,6 @@
    "url": null,
    "tags": [
     "Special Event"
-   ]
-  },
-  {
-   "id": "967704",
-   "title": "BHMS Harvest Festival",
-   "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T14:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Dean Street",
-    "address": "Dean Street Between Court Street And Boerum Place",
-    "neighborhood": "Brooklyn",
-    "lat": 40.689009,
-    "lng": -73.991904
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
    ]
   },
   {
@@ -847,6 +778,52 @@
     "neighborhood": "Bronx",
     "lat": 40.89331,
     "lng": -73.88479
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Single Block Festival",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Single Block Festival"
+   ]
+  },
+  {
+   "id": "972213",
+   "title": "Alumni and Family Weekend",
+   "category": "community",
+   "start": "2026-10-24T10:00:00-04:00",
+   "end": "2026-10-24T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "West 27 Street",
+    "address": "West 27 Street Between 7 Avenue And 8 Avenue",
+    "neighborhood": "Manhattan",
+    "lat": 40.74642,
+    "lng": -73.994376
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Single Block Festival",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Single Block Festival"
+   ]
+  },
+  {
+   "id": "974675",
+   "title": "BOO On Mosholu",
+   "category": "community",
+   "start": "2026-10-24T10:00:00-04:00",
+   "end": "2026-10-24T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Mosholu Avenue",
+    "address": "Mosholu Avenue Between West 256 Street And Tyndall Avenue",
+    "neighborhood": "Bronx",
+    "lat": 40.904077,
+    "lng": -73.903214
    },
    "price": null,
    "priceUnknown": false,
@@ -973,6 +950,29 @@
    ]
   },
   {
+   "id": "967704",
+   "title": "BHMS Harvest Festival",
+   "category": "community",
+   "start": "2026-10-24T10:00:00-04:00",
+   "end": "2026-10-24T14:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Dean Street",
+    "address": "Dean Street Between Court Street And Boerum Place",
+    "neighborhood": "Brooklyn",
+    "lat": 40.689009,
+    "lng": -73.991904
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
+   ]
+  },
+  {
    "id": "980212",
    "title": "Trick-or-Streets",
    "category": "community",
@@ -985,6 +985,29 @@
     "neighborhood": "Brooklyn",
     "lat": 40.669084,
     "lng": -73.961736
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
+   ]
+  },
+  {
+   "id": "979132",
+   "title": "Harway Ave Trick or Streets",
+   "category": "community",
+   "start": "2026-10-24T11:00:00-04:00",
+   "end": "2026-10-24T17:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Harway Avenue",
+    "address": "Harway Avenue Between 24 Avenue And Bay 37 Street",
+    "neighborhood": "Brooklyn",
+    "lat": 40.594191,
+    "lng": -73.993655
    },
    "price": null,
    "priceUnknown": false,
@@ -1016,29 +1039,6 @@
    "url": null,
    "tags": [
     "Special Event"
-   ]
-  },
-  {
-   "id": "979132",
-   "title": "Harway Ave Trick or Streets",
-   "category": "community",
-   "start": "2026-10-24T11:00:00-04:00",
-   "end": "2026-10-24T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Harway Avenue",
-    "address": "Harway Avenue Between 24 Avenue And Bay 37 Street",
-    "neighborhood": "Brooklyn",
-    "lat": 40.594191,
-    "lng": -73.993655
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
    ]
   },
   {
@@ -1108,75 +1108,6 @@
    "url": null,
    "tags": [
     "Special Event"
-   ]
-  },
-  {
-   "id": "980215",
-   "title": "Open Streets Fall Festival E. 115 St",
-   "category": "community",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "East 115 Street - Park Avenue To Madison Avenue",
-    "address": "East 115 Street - Park Avenue To Madison Avenue: East 115 Street - Park Avenue To Madison Avenue",
-    "neighborhood": "Manhattan",
-    "lat": 40.798673,
-    "lng": -73.94334
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Open Street Partner Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Open Street Partner Event"
-   ]
-  },
-  {
-   "id": "978230",
-   "title": "Trick-or-Streets Signature event: Water Street Open Street, Staten Island",
-   "category": "community",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Water Street",
-    "address": "Water Street Between Beach Street And Canal Street",
-    "neighborhood": "Staten Island",
-    "lat": 40.627298,
-    "lng": -74.076304
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "922392",
-   "title": "NIA Halloween Spooktacular",
-   "category": "community",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T16:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "11 Avenue",
-    "address": "11 Avenue Between 66 Street And 67 Street",
-    "neighborhood": "Brooklyn",
-    "lat": 40.628506,
-    "lng": -74.006673
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
    ]
   },
   {
@@ -1261,6 +1192,75 @@
     "neighborhood": "Queens",
     "lat": 40.772965,
     "lng": -73.786931
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
+   ]
+  },
+  {
+   "id": "980215",
+   "title": "Open Streets Fall Festival E. 115 St",
+   "category": "community",
+   "start": "2026-10-24T12:00:00-04:00",
+   "end": "2026-10-24T17:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "East 115 Street - Park Avenue To Madison Avenue",
+    "address": "East 115 Street - Park Avenue To Madison Avenue: East 115 Street - Park Avenue To Madison Avenue",
+    "neighborhood": "Manhattan",
+    "lat": 40.798673,
+    "lng": -73.94334
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Open Street Partner Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Open Street Partner Event"
+   ]
+  },
+  {
+   "id": "978230",
+   "title": "Trick-or-Streets Signature event: Water Street Open Street, Staten Island",
+   "category": "community",
+   "start": "2026-10-24T12:00:00-04:00",
+   "end": "2026-10-24T17:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Water Street",
+    "address": "Water Street Between Beach Street And Canal Street",
+    "neighborhood": "Staten Island",
+    "lat": 40.627298,
+    "lng": -74.076304
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
+   ]
+  },
+  {
+   "id": "922392",
+   "title": "NIA Halloween Spooktacular",
+   "category": "community",
+   "start": "2026-10-24T12:00:00-04:00",
+   "end": "2026-10-24T16:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "11 Avenue",
+    "address": "11 Avenue Between 66 Street And 67 Street",
+    "neighborhood": "Brooklyn",
+    "lat": 40.628506,
+    "lng": -74.006673
    },
    "price": null,
    "priceUnknown": false,
@@ -1809,10 +1809,6 @@
    "address": "35 AVENUE between 82 STREET and 81 STREET"
   },
   {
-   "title": "Astor Place Fair",
-   "address": "ASTOR PLACE between BROADWAY and LAFAYETTE STREET"
-  },
-  {
    "title": "BronxWorks 2026 Monster Mash Hunger Dash 5K Run Walk",
    "address": "Pelham Bay Park and Orchard Beach: Orchard Beach Boardwalk"
   },
@@ -1825,24 +1821,28 @@
    "address": "6 AVENUE between WEST   34 STREET and WEST   42 STREET"
   },
   {
-   "title": "Susan G. Komen Race For The Cure NYC",
-   "address": "Thomas Paine Park (Foley Square): Fountain Plaza , LAFAYETTE STREET between DUANE STREET and CENTER STREET, Brooklyn Bridge: Brooklyn Bridge Pedestrian: 1 , CENTRE STREET between BROOKLYN BRIDGE and DUANE ST,  CENTRE STREET between CHAMBERS STREET and BROOKLYN BRIDGE, Thomas Paine Park (Foley Square): Fountain Plaza , BROOKLYN BRIDGE WALKWAY between CENTRE ST and 2ND TOWER OF BRIDGE"
+   "title": "Astor Place Fair",
+   "address": "ASTOR PLACE between BROADWAY and LAFAYETTE STREET"
   },
   {
-   "title": "Myrtle Avenue Pollinator Planting Day",
-   "address": "71st Avenue Plaza: Herman Hochberg Plaza 71 Avenue between Myrtle Avenue and Stephen Street"
+   "title": "Susan G. Komen Race For The Cure NYC",
+   "address": "Thomas Paine Park (Foley Square): Fountain Plaza , LAFAYETTE STREET between DUANE STREET and CENTER STREET, Brooklyn Bridge: Brooklyn Bridge Pedestrian: 1 , CENTRE STREET between BROOKLYN BRIDGE and DUANE ST,  CENTRE STREET between CHAMBERS STREET and BROOKLYN BRIDGE, Thomas Paine Park (Foley Square): Fountain Plaza , BROOKLYN BRIDGE WALKWAY between CENTRE ST and 2ND TOWER OF BRIDGE"
   },
   {
    "title": "Sammaan For All Diwali at Times Square",
    "address": "WEST   46 STREET between BROADWAY and 8 AVENUE,  WEST   47 STREET between BROADWAY and 8 AVENUE,  WEST   48 STREET between BROADWAY and 8 AVENUE, Times Square: 46/47 Broadway Pedestrian Plaza (Times Sq) BROADWAY between WEST   46 STREET and WEST   47 STREET, Times Square: 47/48 Broadway Pedestrian Plaza (Times Sq) BROADWAY between WEST   47 STREET and WEST   48 STREET"
   },
   {
-   "title": "Trick or Streets",
-   "address": "WEST  158 STREET between BROADWAY and AMSTERDAM AVENUE"
-  },
-  {
    "title": "Trolli Candy Cart at 575 Broadway",
    "address": "BROADWAY between EAST HOUSTON STREET and PRINCE STREET"
+  },
+  {
+   "title": "Myrtle Avenue Pollinator Planting Day",
+   "address": "71st Avenue Plaza: Herman Hochberg Plaza 71 Avenue between Myrtle Avenue and Stephen Street"
+  },
+  {
+   "title": "Trick or Streets",
+   "address": "WEST  158 STREET between BROADWAY and AMSTERDAM AVENUE"
   },
   {
    "title": "Halloween Parade",
@@ -1853,20 +1853,20 @@
    "address": "CC Moore Homestead Playground: Performance Area"
   },
   {
-   "title": "Community Event",
-   "address": "191 STREET between 90 AVE and JAMAICA AVENUE"
+   "title": "TREAT OR STREETS",
+   "address": "Murdock Plaza: Murdock Plaza Murdock Avenue between 180 Street and Dead End"
   },
   {
    "title": "Fall Festival",
    "address": "Wayanda Park (PS 34): Lawn 01"
   },
   {
-   "title": "Trick-or-Streets Woodhaven Community Event",
-   "address": "FOREST PARKWAY between JAMAICA AVENUE and 86 ROAD"
+   "title": "Community Event",
+   "address": "191 STREET between 90 AVE and JAMAICA AVENUE"
   },
   {
-   "title": "TREAT OR STREETS",
-   "address": "Murdock Plaza: Murdock Plaza Murdock Avenue between 180 Street and Dead End"
+   "title": "Trick-or-Streets Woodhaven Community Event",
+   "address": "FOREST PARKWAY between JAMAICA AVENUE and 86 ROAD"
   },
   {
    "title": "Boombox in Jamaica",

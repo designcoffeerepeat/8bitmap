@@ -4,7 +4,7 @@
   "url": "https://www.ticketmaster.com/discover/new-york"
  },
  "date": "2026-10-24",
- "fetchedAt": "2026-10-24T05:06:56-04:00",
+ "fetchedAt": "2026-10-24T13:01:52-04:00",
  "events": [
   {
    "id": "LvZ18QrWTgeialOZ0E4-1",
@@ -46,29 +46,6 @@
    "description": "Miscellaneous / Family",
    "details": "",
    "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-flexible-entry-tickets-XV56PW?ref=ticketmaster",
-   "tags": [
-    "Family"
-   ]
-  },
-  {
-   "id": "LvZ18QENF-RM_LWf4xCqY",
-   "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
-   "category": "art",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Balloon Museum NYC",
-    "address": "96 South Street, New York City",
-    "neighborhood": "New York City",
-    "lat": 40.70624,
-    "lng": -74.002277
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Miscellaneous / Family",
-   "details": "",
-   "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-tickets-Y5HV92?ref=ticketmaster",
    "tags": [
     "Family"
    ]
@@ -367,25 +344,27 @@
    ]
   },
   {
-   "id": "Z7r9jZ1A7P8a6",
-   "title": "The Curious Case of the Curse of Benjamin Button",
-   "category": "theater",
-   "start": "2026-10-24T13:00:00-04:00",
+   "id": "LvZ18Q-9tbOh8sZZvyVyx",
+   "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
+   "category": "art",
+   "start": "2026-10-24T12:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Public Theater - Newman Theater",
-    "address": "425 Lafayette Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.731602,
-    "lng": -73.989098
+    "name": "Balloon Museum NYC",
+    "address": "96 South Street, New York City",
+    "neighborhood": "New York City",
+    "lat": 40.70624,
+    "lng": -74.002277
    },
    "price": null,
    "priceUnknown": true,
-   "description": "",
+   "description": "Miscellaneous / Family",
    "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7P8a6",
-   "tags": []
+   "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-tickets-Y5HV92?ref=ticketmaster",
+   "tags": [
+    "Family"
+   ]
   },
   {
    "id": "Z1r9uZrrZbpZ1Aev73v",
@@ -431,96 +410,6 @@
    "url": "https://www.ticketmaster.com/hamilton-ny-new-york-new-york-10-24-2026/event/Z1r9uZrrZbpZ1AvjMja",
    "tags": [
     "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1AA73F_",
-   "title": "Hamilton",
-   "category": "theater",
-   "start": "2026-10-24T13:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Richard Rodgers Theatre-NY",
-    "address": "226 W. 46th St., New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA73F_",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1AA7fv_",
-   "title": "Stranger Things: The First Shadow",
-   "category": "theater",
-   "start": "2026-10-24T13:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Marquis Theatre - NY",
-    "address": "211 W 45th St, New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA7fv_",
-   "tags": []
-  },
-  {
-   "id": "Z7r9jZ1A7PIO9",
-   "title": "Metropolitan Opera presents Lincoln in the Bardo",
-   "category": "theater",
-   "start": "2026-10-24T13:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Metropolitan Opera House",
-    "address": "20 Lincoln Center Plz, New York",
-    "neighborhood": "New York",
-    "lat": 40.7761,
-    "lng": -73.9841
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Opera",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PIO9",
-   "tags": [
-    "Opera"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7-IqP",
-   "title": "Fordham Rams Football vs. Lafayette College Leopards Football",
-   "category": "sports",
-   "start": "2026-10-24T13:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Jack Coffey Field",
-    "address": "Bronx",
-    "neighborhood": "Bronx",
-    "lat": 40.862701,
-    "lng": -73.888
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sports / Football",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7-IqP",
-   "tags": [
-    "Football"
    ]
   },
   {
@@ -2430,6 +2319,27 @@
    "tags": []
   },
   {
+   "id": "Z7r9jZ1A7P8aF",
+   "title": "The Curious Case of the Curse of Benjamin Button",
+   "category": "theater",
+   "start": "2026-10-24T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Public Theater - Newman Theater",
+    "address": "425 Lafayette Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.731602,
+    "lng": -73.989098
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7P8aF",
+   "tags": []
+  },
+  {
    "id": "k7vGF_GmIaGMH",
    "title": "Telescreens - Why The Lights Flicker North American Tour",
    "category": "music",
@@ -2499,6 +2409,50 @@
    "tags": [
     "Rock"
    ]
+  },
+  {
+   "id": "Z7r9jZ1AA73FO",
+   "title": "Hamilton",
+   "category": "theater",
+   "start": "2026-10-24T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Richard Rodgers Theatre-NY",
+    "address": "226 W. 46th St., New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA73FO",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1AA7KJ4",
+   "title": "Stranger Things: The First Shadow",
+   "category": "theater",
+   "start": "2026-10-24T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Marquis Theatre - NY",
+    "address": "211 W 45th St, New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AA7KJ4",
+   "tags": []
   },
   {
    "id": "Z7r9jZ1AAvoAv",
@@ -2628,7 +2582,7 @@
     "lng": -74.10333
    },
    "price": {
-    "min": 41,
+    "min": 46,
     "max": 61,
     "currency": "USD"
    },
