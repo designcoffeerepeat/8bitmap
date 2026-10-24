@@ -210,6 +210,14 @@ button, a { font: inherit; color: inherit; }
   font: 10px/1 var(--font-pixel); background: var(--night-2); border: 3px solid var(--frame);
 }
 #show-more:hover { background: var(--coin); color: var(--night); }
+#list-reset {
+  margin: 12px auto 0; width: 100%; padding: 10px 12px; cursor: pointer;
+  display: flex; justify-content: center; align-items: center; gap: 10px;
+  font: 10px/1 var(--font-pixel); background: var(--night-2); border: 3px solid var(--frame);
+}
+#list-reset[hidden] { display: none; }
+#list-reset:hover { background: var(--coin); color: var(--night); }
+#list-reset .reset-ico { width: 15px; height: 17px; flex: none; }
 .panel-foot { padding: 10px 18px 14px; font: 7px/1.6 var(--font-pixel); color: var(--dim); border-top: 3px solid var(--night-2); }
 
 /* event card */

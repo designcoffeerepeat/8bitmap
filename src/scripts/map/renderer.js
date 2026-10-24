@@ -31,7 +31,7 @@ const pick = (arr, r) => arr[Math.floor(r * arr.length) % arr.length];
 
 export function createMap(container, opts = {}) {
   let pixelSize = opts.pixelSize ?? 2;
-  const listeners = { select: [], hover: [] };
+  const listeners = { select: [], hover: [], view: [] };
   const frameHooks = new Set(); // extra scene actors (the monster easter egg) step here each frame
   const emit = (name, payload) => listeners[name].forEach((fn) => fn(payload));
 
@@ -341,6 +341,44 @@ export function createMap(container, opts = {}) {
     resize();
   }
 
+  // ---- what the viewer can see ------------------------------------------------
+  // The event list follows the map: once the view leaves home, it lists only the pins on screen.
+  // 'view' fires when the camera comes to rest after any move (drag, zoom, turn, fly, resize).
+  const homeTarget = (() => { const p = latLngToWorld(HOME.lat, HOME.lng); return new THREE.Vector3(p.x, 0, p.z); })();
+  function atHome() {
+    const off = camera.position.clone().sub(controls.target).normalize();
+    return Math.abs(camera.zoom - HOME.zoom) < 0.01
+      && controls.target.distanceTo(homeTarget) < 0.5
+      && off.angleTo(camOffset) < 0.01;
+  }
+  function eventsInView() {
+    camera.updateMatrixWorld();
+    const ids = new Set();
+    for (const pin of pins) {
+      projected.copy(pin.anchor).project(camera);
+      if (Math.abs(projected.x) <= 1 && Math.abs(projected.y) <= 1) ids.add(pin.event.id);
+    }
+    return ids;
+  }
+  let viewKey = '';
+  let viewSent = '';
+  let viewStill = 0;
+  function watchView(dt) {
+    const p = camera.position;
+    const t = controls.target;
+    const key = [camera.zoom, p.x, p.y, p.z, t.x, t.z].map((n) => n.toFixed(3)).join() + `|${rw}x${rh}`;
+    if (key !== viewKey) {
+      viewKey = key;
+      viewStill = 0;
+      return;
+    }
+    viewStill += dt;
+    if (viewStill > 0.15 && key !== viewSent) {
+      viewSent = key;
+      emit('view');
+    }
+  }
+
   // ---- pointer ----------------------------------------------------------------
   const raycaster = new THREE.Raycaster();
   const ndc = new THREE.Vector2();
@@ -467,6 +505,7 @@ export function createMap(container, opts = {}) {
     }
     controls.update();
     layoutPins();
+    watchView(dt);
 
     if (!REDUCED_MOTION) {
       waterTick += dt;
@@ -507,6 +546,8 @@ export function createMap(container, opts = {}) {
     zoomBy,
     rotateBy,
     home: () => home(true),
+    atHome,
+    eventsInView,
     setPixelSize,
     on(name, fn) { listeners[name].push(fn); },
     // ---- hooks for things that move around the scene (see src/scripts/monster.js) ----
