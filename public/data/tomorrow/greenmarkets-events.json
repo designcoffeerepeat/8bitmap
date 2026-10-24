@@ -3,786 +3,462 @@
   "name": "NYC Farmers Markets",
   "url": "https://data.cityofnewyork.us/d/8vwk-6iz2"
  },
- "date": "2026-10-24",
- "fetchedAt": "2026-10-23T13:09:32-04:00",
+ "date": "2026-10-25",
+ "fetchedAt": "2026-10-24T05:07:40-04:00",
  "events": [
   {
-   "id": "bissel-gardens-farmers-market",
-   "title": "Bissel Gardens Farmers Market",
+   "id": "bronx-park-east-bxpe-farmers-market",
+   "title": "Bronx Park East (BxPE) Farmers Market",
    "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T16:00:00-04:00",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T16:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Bissel Gardens Farmers Market",
-    "address": "Baychester Ave across from Camp St.",
+    "name": "Bronx Park East (BxPE) Farmers Market",
+    "address": "2045 Bronx Park East, Bronx Park (Bradley Playground)",
     "neighborhood": "Bronx",
-    "lat": 40.900941,
-    "lng": -73.84674
+    "lat": 40.851713,
+    "lng": -73.867786
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Saturday, 8 a.m.- 4 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "details": "Open Sunday, 9 a.m. - 4 p.m.. Seasonal market. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "harvest-home-co-op-city-farm-stand",
-   "title": "Harvest Home Co-op City Farm Stand",
+   "id": "riverdale-y-sunday-market",
+   "title": "Riverdale Y Sunday Market",
    "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T14:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Harvest Home Co-op City Farm Stand",
-    "address": "Asch Loop & Aldrich St.",
+    "name": "Riverdale Y Sunday Market",
+    "address": "3407 Netherland Avenue",
     "neighborhood": "Bronx",
-    "lat": 40.8702,
-    "lng": -73.830963
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farm stand",
-   "details": "Open Wednesday & Saturday, 8 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "jbolc-garden-community-farmers-market",
-   "title": "JBOLC Garden Community Farmers Market",
-   "category": "food",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "JBOLC Garden Community Farmers Market",
-    "address": "100 W Mosholu Pkwy S. (James Baldwin Plaza)",
-    "neighborhood": "Bronx",
-    "lat": 40.882178,
-    "lng": -73.88691
+    "lat": 40.885103,
+    "lng": -73.911186
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Saturday, 10 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "details": "Open Sunday, 9 a.m. - 2 p.m.. Seasonal market.",
    "url": null,
-   "tags": [
-    "EBT"
-   ]
+   "tags": []
   },
   {
-   "id": "new-roots-farm-stand",
-   "title": "New Roots Farm Stand",
+   "id": "bartel-pritchard-square-greenmarket",
+   "title": "Bartel-Pritchard Square Greenmarket",
    "category": "food",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T14:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "New Roots Farm Stand",
-    "address": "670 Grand Concourse",
-    "neighborhood": "Bronx",
-    "lat": 40.821447,
-    "lng": -73.925492
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farm stand",
-   "details": "Open Saturday, 10 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "4th-ave-sunset-park-greenmarket",
-   "title": "4th Ave Sunset Park Greenmarket",
-   "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "4th Ave Sunset Park Greenmarket",
-    "address": "4th Ave. 60th St.",
+    "name": "Bartel-Pritchard Square Greenmarket",
+    "address": "Prospect Park W at 15th St.",
     "neighborhood": "Brooklyn",
-    "lat": 40.647975,
-    "lng": -74.003744
+    "lat": 40.661354,
+    "lng": -73.96968
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Saturday, 8 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "details": "Open Wednesday & Sunday (starting 5/5), 8 a.m. - 2 p.m. (W); 9 a.m. - 2 p.m. (SU). Open year round. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "7th-ave-sunset-park-greenmarket",
-   "title": "7th Ave Sunset Park Greenmarket",
+   "id": "bensonhurst-greenmarket",
+   "title": "Bensonhurst Greenmarket",
    "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
+   "start": "2026-10-25T08:00:00-04:00",
+   "end": "2026-10-25T15:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "7th Ave Sunset Park Greenmarket",
-    "address": "7th Ave. & 44th St.",
+    "name": "Bensonhurst Greenmarket",
+    "address": "18th Ave. bet. 81st & 82nd Sts",
     "neighborhood": "Brooklyn",
-    "lat": 40.645841,
-    "lng": -74.002402
+    "lat": 40.609588,
+    "lng": -73.999677
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Saturday, 8 a.m. - 3 p.m.. Open year round. Accepts EBT/SNAP.",
+   "details": "Open Sunday, 8 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "bay-ridge-greenmarket",
-   "title": "Bay Ridge Greenmarket",
+   "id": "carroll-gardens-greenmarket",
+   "title": "Carroll Gardens Greenmarket",
    "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
+   "start": "2026-10-25T08:00:00-04:00",
+   "end": "2026-10-25T14:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Bay Ridge Greenmarket",
-    "address": "3rd Ave. & 95th St.",
+    "name": "Carroll Gardens Greenmarket",
+    "address": "Smith & Carroll Sts",
     "neighborhood": "Brooklyn",
-    "lat": 40.61781,
-    "lng": -74.03338
+    "lat": 40.680761,
+    "lng": -73.99552
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Saturday, 8 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "details": "Open Sunday, 8 a.m. - 2 p.m.. Open year round. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "brooklyn-borough-hall-greenmarket",
-   "title": "Brooklyn Borough Hall Greenmarket",
+   "id": "cortelyou-greenmarket",
+   "title": "Cortelyou Greenmarket",
    "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
+   "start": "2026-10-25T08:00:00-04:00",
+   "end": "2026-10-25T14:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Brooklyn Borough Hall Greenmarket",
-    "address": "Montague & Court Sts",
+    "name": "Cortelyou Greenmarket",
+    "address": "Cortelyou Rd. bet. Rugby & Argyle Rds",
     "neighborhood": "Brooklyn",
-    "lat": 40.693722,
-    "lng": -73.990455
+    "lat": 40.64051,
+    "lng": -73.966021
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Tusday & Saturday, 8 a.m. - 3 p.m.. Open year round. Accepts EBT/SNAP.",
+   "details": "Open Sunday, 8 a.m. - 2 p.m.. Open year round. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "east-new-york-farmers-market",
-   "title": "East New York Farmers Market",
+   "id": "domino-park-greenmarket",
+   "title": "Domino Park Greenmarket",
    "category": "food",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
+   "start": "2026-10-25T08:00:00-04:00",
+   "end": "2026-10-25T15:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "East New York Farmers Market",
-    "address": "Schenck Avenue and New Lots Avenue",
+    "name": "Domino Park Greenmarket",
+    "address": "River St between S 3rd & S 4th Sts",
     "neighborhood": "Brooklyn",
-    "lat": 40.664602,
-    "lng": -73.886803
+    "lat": 40.714037,
+    "lng": -73.967586
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Saturday, 9 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "details": "Open Sunday, 8 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "fort-greene-greenmarket",
-   "title": "Fort Greene Greenmarket",
+   "id": "down-to-earth-mcgolrick-park-farmers-market",
+   "title": "Down to Earth McGolrick Park Farmers Market",
    "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T14:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Fort Greene Greenmarket",
-    "address": "Washington Park & Dekalb Ave.",
+    "name": "Down to Earth McGolrick Park Farmers Market",
+    "address": "108 Russell St.",
     "neighborhood": "Brooklyn",
-    "lat": 40.691457,
-    "lng": -73.973421
+    "lat": 40.724305,
+    "lng": -73.944271
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Saturday, 8 a.m. - 3 p.m.. Open year round. Accepts EBT/SNAP.",
+   "details": "Open Sunday, 9 a.m. - 2 p.m.. Open year round. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "grand-army-plaza-greenmarket",
-   "title": "Grand Army Plaza Greenmarket",
+   "id": "down-to-earth-park-slope-farmers-market",
+   "title": "Down to Earth Park Slope Farmers Market",
    "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T16:00:00-04:00",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T14:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Grand Army Plaza Greenmarket",
-    "address": "Grand Army Plaza",
+    "name": "Down to Earth Park Slope Farmers Market",
+    "address": "289 4th St.",
     "neighborhood": "Brooklyn",
-    "lat": 40.672525,
-    "lng": -73.969799
+    "lat": 40.672424,
+    "lng": -73.984257
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Saturday, 8 a.m. - 4 p.m.. Open year round. Accepts EBT/SNAP.",
+   "details": "Open Sunday, 9 a.m. - 2 p.m.. Open year round. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "isabahlia-farmers-market-at-iso-student-farm",
-   "title": "Isabahlia Farmers Market at ISO Student Farm",
+   "id": "riseboro-farmers-markets-at-irving-square-park",
+   "title": "RiseBoro Farmers Markets at Irving Square Park",
    "category": "food",
-   "start": "2026-10-24T08:30:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
+   "start": "2026-10-25T10:00:00-04:00",
+   "end": "2026-10-25T15:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Isabahlia Farmers Market at ISO Student Farm",
-    "address": "514 Rockaway Ave (ISO Student Farm)",
+    "name": "RiseBoro Farmers Markets at Irving Square Park",
+    "address": "Knickerbocker Ave., bet. Weirfield & Halsey Sts.",
     "neighborhood": "Brooklyn",
-    "lat": 40.667554,
-    "lng": -73.910207
+    "lat": 40.693761,
+    "lng": -73.909497
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Friday & Saturday, 8:30 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "details": "Open Sunday, 10 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "isabahlia-farmers-market-at-powell-street-garden",
-   "title": "Isabahlia Farmers Market at Powell Street Garden",
+   "id": "79th-street-greenmarket",
+   "title": "79th Street Greenmarket",
    "category": "food",
-   "start": "2026-10-24T08:30:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T16:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Isabahlia Farmers Market at Powell Street Garden",
-    "address": "410 Livonia Ave (In Front of Powell Street Garden)",
-    "neighborhood": "Brooklyn",
-    "lat": 40.663532,
-    "lng": -73.902236
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers market",
-   "details": "Open Friday & Saturday, 8:30 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "mccarren-park-greenmarket",
-   "title": "McCarren Park Greenmarket",
-   "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "McCarren Park Greenmarket",
-    "address": "N 12th btwn Union & Driggs Aves",
-    "neighborhood": "Brooklyn",
-    "lat": 40.719219,
-    "lng": -73.952479
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers market",
-   "details": "Open Saturday, 8 a.m. - 3 p.m.. Open year round. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "red-hook-farm-stand",
-   "title": "Red Hook Farm Stand",
-   "category": "food",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T14:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Red Hook Farm Stand",
-    "address": "560 Columbia St.",
-    "neighborhood": "Brooklyn",
-    "lat": 40.672524,
-    "lng": -74.00871
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farm stand",
-   "details": "Open Saturday, 10 a.m. - 2 p.m.. Seasonal market. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "riseboro-farmers-markets-at-maria-hernandez",
-   "title": "RiseBoro Farmers Markets at Maria Hernandez",
-   "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "RiseBoro Farmers Markets at Maria Hernandez",
-    "address": "Knickerbocker Ave. bet. Sudyam & Starr Sts.",
-    "neighborhood": "Brooklyn",
-    "lat": 40.702811,
-    "lng": -73.92539
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers market",
-   "details": "Open Saturday, 8 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "saratoga-farm-stand",
-   "title": "Saratoga Farm Stand",
-   "category": "food",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T14:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Saratoga Farm Stand",
-    "address": "1965-1971 Fulton St.",
-    "neighborhood": "Brooklyn",
-    "lat": 40.678562,
-    "lng": -8e-05
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farm stand",
-   "details": "Open Tuesday-Saturday, 10 a.m. - 2 p.m.. Seasonal market. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "wyckoff-house-museum-farmstand",
-   "title": "Wyckoff House Museum Farmstand",
-   "category": "food",
-   "start": "2026-10-24T11:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Wyckoff House Museum Farmstand",
-    "address": "5816 Clarendon Rd",
-    "neighborhood": "Brooklyn",
-    "lat": 40.64497,
-    "lng": -73.920914
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers market",
-   "details": "Open Saturday, 11 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "57th-street-greenmarket",
-   "title": "57th Street Greenmarket",
-   "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T16:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "57th Street Greenmarket",
-    "address": "Tenth Avenue & W 57th Street",
+    "name": "79th Street Greenmarket",
+    "address": "79th St. & Columbus Ave.",
     "neighborhood": "Manhattan",
-    "lat": 40.769117,
-    "lng": -73.988559
+    "lat": 40.782295,
+    "lng": -73.975244
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Saturday, 8 a.m. - 4 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "details": "Open Sunday, 9 a.m. - 4 p.m. Open year round. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "82nd-street-greenmarket",
-   "title": "82nd Street Greenmarket",
+   "id": "columbia-greenmarket",
+   "title": "Columbia Greenmarket",
    "category": "food",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T14:30:00-04:00",
+   "start": "2026-10-25T08:00:00-04:00",
+   "end": "2026-10-25T16:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "82nd Street Greenmarket",
-    "address": "82nd St. bet. 1st & York Aves",
+    "name": "Columbia Greenmarket",
+    "address": "Broadway & W. 114th St.",
     "neighborhood": "Manhattan",
-    "lat": 40.774292,
-    "lng": -73.951262
+    "lat": 40.807145,
+    "lng": -73.964265
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Saturday, 9 a.m. - 2:30 p.m.. Open year round. Accepts EBT/SNAP.",
+   "details": "Open Thursday & Sunday, 8 a.m. - 4 p.m.. Open year round. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "abingdon-square-park-greenmarket",
-   "title": "Abingdon Square Park Greenmarket",
+   "id": "down-to-earth-battery-park-city-farmers-market",
+   "title": "Down to Earth Battery Park City Farmers Market",
    "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T14:00:00-04:00",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T14:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Abingdon Square Park Greenmarket",
-    "address": "Hudson St. & W 12th St.",
+    "name": "Down to Earth Battery Park City Farmers Market",
+    "address": "2-4 River Terrace",
     "neighborhood": "Manhattan",
-    "lat": 40.737553,
-    "lng": -74.005687
+    "lat": 40.715534,
+    "lng": -74.016651
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Saturday, 8 a.m. - 2 p.m.. Open year round. Accepts EBT/SNAP.",
+   "details": "Open Sundays, 9 a.m. - 2 p.m.. Seasonal market. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "down-to-earth-chelsea-farmers-market",
-   "title": "Down to Earth Chelsea Farmers Market",
+   "id": "ruppert-park-greenmarket",
+   "title": "Ruppert Park Greenmarket",
    "category": "food",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T14:00:00-04:00",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T15:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Down to Earth Chelsea Farmers Market",
-    "address": "355 W. 23rd St.",
+    "name": "Ruppert Park Greenmarket",
+    "address": "90th Street & 2nd Avenue",
     "neighborhood": "Manhattan",
-    "lat": 40.745944,
-    "lng": -74.000004
+    "lat": 40.780294,
+    "lng": -73.949521
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Saturday, 9 a.m. - 2 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "details": "Open Sunday, 9 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "down-to-earth-morningside-park-farmers-market",
-   "title": "Down to Earth Morningside Park Farmers Market",
+   "id": "stuyvesant-town-greenmarket",
+   "title": "Stuyvesant Town Greenmarket",
    "category": "food",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T14:00:00-04:00",
+   "start": "2026-10-25T09:30:00-04:00",
+   "end": "2026-10-25T16:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Down to Earth Morningside Park Farmers Market",
-    "address": "237-331 Manhattan Ave.",
+    "name": "Stuyvesant Town Greenmarket",
+    "address": "South end of Stuyvesant Town Oval, near 14th Street Loop between 1st Avenue & Avenue A",
     "neighborhood": "Manhattan",
-    "lat": 40.801263,
-    "lng": -73.959582
+    "lat": 40.731498,
+    "lng": -73.97818
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Saturday, 9 a.m. - 2 p.m.. Open year round. Accepts EBT/SNAP.",
+   "details": "Open Sunday, 9:30 a.m. - 4 p.m.. Seasonal market. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "grass-roots-farmers-market",
-   "title": "Grass Roots Farmers' Market",
+   "id": "tompkins-square-greenmarket",
+   "title": "Tompkins Square Greenmarket",
    "category": "food",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T16:00:00-04:00",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T16:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Grass Roots Farmers' Market",
-    "address": "W 145th St bet Edgecombe & Bradhurst Aves, at Jackie Robinson Park",
+    "name": "Tompkins Square Greenmarket",
+    "address": "7th St. & Avenue A",
     "neighborhood": "Manhattan",
-    "lat": 40.823647,
-    "lng": -73.943844
+    "lat": 40.726054,
+    "lng": -73.983534
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Tuesday & Saturday, 9 a.m. - 4 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "details": "Open Sunday, 9 a.m. - 4 p.m.. Open year round. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "harvest-home-lenox-avenue-farm-stand",
-   "title": "Harvest Home Lenox Avenue Farm Stand",
+   "id": "two-bridges-youth-market",
+   "title": "Two Bridges Youth Market",
    "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
+   "start": "2026-10-25T10:30:00-04:00",
+   "end": "2026-10-25T15:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Harvest Home Lenox Avenue Farm Stand",
-    "address": "151 Lenox Ave",
+    "name": "Two Bridges Youth Market",
+    "address": "50 Madison St.",
     "neighborhood": "Manhattan",
-    "lat": 40.80302,
-    "lng": -73.948966
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farm stand",
-   "details": "Open Saturday, 8 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "inwood-greenmarket",
-   "title": "Inwood Greenmarket",
-   "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Inwood Greenmarket",
-    "address": "Isham St. bet. Seaman Ave. & Cooper St.",
-    "neighborhood": "Manhattan",
-    "lat": 40.869001,
-    "lng": -73.920896
+    "lat": 40.711958,
+    "lng": -73.997825
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Saturday, 8 a.m. - 3 p.m.. Open year round. Accepts EBT/SNAP.",
+   "details": "Open Sunday, 10:30 a.m. - 3:00 p.m.. Seasonal market. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "seaport-farmers-market",
-   "title": "Seaport Farmers Market",
+   "id": "down-to-earth-cunningham-park-farmers-market",
+   "title": "Down to Earth Cunningham Park Farmers Market",
    "category": "food",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T16:00:00-04:00",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T14:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Seaport Farmers Market",
-    "address": "South St at Burling Slip bet. Fulton & John Sts. (near Imagination Playground)",
-    "neighborhood": "Manhattan",
-    "lat": 40.706076,
-    "lng": -74.004202
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers market",
-   "details": "Open Saturday, 10 a.m. - 4 p.m.. Seasonal market. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "tribeca-greenmarket",
-   "title": "Tribeca Greenmarket",
-   "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T14:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Tribeca Greenmarket",
-    "address": "Greenwich & Chambers Sts.",
-    "neighborhood": "Manhattan",
-    "lat": 40.716303,
-    "lng": -74.010966
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers market",
-   "details": "Open Saturday, 8 a.m. - 2 p.m.. Open year round. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "tucker-square-greenmarket",
-   "title": "Tucker Square Greenmarket",
-   "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T16:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Tucker Square Greenmarket",
-    "address": "W 66th St. & Broadway",
-    "neighborhood": "Manhattan",
-    "lat": 40.773709,
-    "lng": -73.98196
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers market",
-   "details": "Open Thursday & Saturday, 8 a.m. - 4 p.m.. Open year round. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "union-square-greenmarket",
-   "title": "Union Square Greenmarket",
-   "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Union Square Greenmarket",
-    "address": "Union Square West & 17th St.",
-    "neighborhood": "Manhattan",
-    "lat": 40.737133,
-    "lng": -73.990329
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers market",
-   "details": "Open Monday, Wednesday, Friday & Saturday, 8 a.m. - 6 p.m.. Open year round. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "unitymarketsny-at-central-park-north",
-   "title": "UnityMarketsNY at Central Park North",
-   "category": "food",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "UnityMarketsNY at Central Park North",
-    "address": "W 110th Street & Lenox Ave",
-    "neighborhood": "Manhattan",
-    "lat": 40.79718,
-    "lng": -73.94992
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers market",
-   "details": "Open Saturday, 10 a.m. - 5 p.m.. Seasonal market. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "uptown-good-food-farmers-market",
-   "title": "Uptown Good Food Farmers Market",
-   "category": "food",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Uptown Good Food Farmers Market",
-    "address": "St Nicholas Ave &, W 137th St (St. Nicholas Park)",
-    "neighborhood": "Manhattan",
-    "lat": 40.818521,
-    "lng": -73.947392
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers market",
-   "details": "Open Saturday, 9 a.m. - 3 p.m.. Seasonal market. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "edgemere-farm-market",
-   "title": "Edgemere Farm Market",
-   "category": "food",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T14:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Edgemere Farm Market",
-    "address": "385 Beach 45th St",
+    "name": "Down to Earth Cunningham Park Farmers Market",
+    "address": "19600 Union Turnpike",
     "neighborhood": "Queens",
-    "lat": 40.595255,
-    "lng": -73.776524
+    "lat": 40.730929,
+    "lng": -73.774773
    },
    "price": null,
    "priceUnknown": false,
    "description": "Farmers market",
-   "details": "Open Friday & Saturday, 3 p.m. - 6 p.m. (Friday); 10 a.m. - 2 p.m. (Saturday). Seasonal market. Accepts EBT/SNAP.",
+   "details": "Open Sunday, 9 a.m. - 2 p.m.. Seasonal market. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
    ]
   },
   {
-   "id": "far-rock-farm-stand",
-   "title": "Far Rock Farm Stand",
+   "id": "forest-hills-greenmarket",
+   "title": "Forest Hills Greenmarket",
    "category": "food",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T14:00:00-04:00",
+   "start": "2026-10-25T08:00:00-04:00",
+   "end": "2026-10-25T14:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Far Rock Farm Stand",
-    "address": "45-55 Beach Channel Dr.",
+    "name": "Forest Hills Greenmarket",
+    "address": "Queens Blvd. & 70th Ave.",
     "neighborhood": "Queens",
-    "lat": 40.595572,
-    "lng": -73.777001
+    "lat": 40.722054,
+    "lng": -73.847155
    },
    "price": null,
    "priceUnknown": false,
-   "description": "Farm stand",
-   "details": "Open Tuesday-Saturday, 10 a.m. - 2 p.m.. Seasonal market. Accepts EBT/SNAP.",
+   "description": "Farmers market",
+   "details": "Open Sunday, 8 a.m. - 2 p.m.. Open year round. Accepts EBT/SNAP.",
+   "url": null,
+   "tags": [
+    "EBT"
+   ]
+  },
+  {
+   "id": "jackson-heights-greenmarket",
+   "title": "Jackson Heights Greenmarket",
+   "category": "food",
+   "start": "2026-10-25T08:00:00-04:00",
+   "end": "2026-10-25T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Jackson Heights Greenmarket",
+    "address": "34th Ave. & 79th St.",
+    "neighborhood": "Queens",
+    "lat": 40.753607,
+    "lng": -73.887739
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farmers market",
+   "details": "Open Sunday, 8 a.m. - 3 p.m.. Open year round. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"
@@ -792,8 +468,8 @@
    "id": "queens-county-farm-museum-farm-stand",
    "title": "Queens County Farm Museum Farm Stand",
    "category": "food",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T16:00:00-04:00",
+   "start": "2026-10-25T10:00:00-04:00",
+   "end": "2026-10-25T16:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Queens County Farm Museum Farm Stand",
@@ -806,98 +482,6 @@
    "priceUnknown": false,
    "description": "Farm stand",
    "details": "Open Wednesday - Sunday, 10 a.m. - 4 p.m.. Seasonal market. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "sunnyside-greenmarket",
-   "title": "Sunnyside Greenmarket",
-   "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Sunnyside Greenmarket",
-    "address": "Skillman Ave. & 43rd St.",
-    "neighborhood": "Queens",
-    "lat": 40.74701,
-    "lng": -73.92173
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers market",
-   "details": "Open Saturday, 8 a.m. - 3 p.m.. Open year round. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "heritage-farm-stand-compost-demonstration-site",
-   "title": "Heritage Farm Stand (Compost Demonstration Site)",
-   "category": "food",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T12:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Heritage Farm Stand (Compost Demonstration Site)",
-    "address": "1000 Richmond Terrace (compost demonstration site)",
-    "neighborhood": "Staten Island",
-    "lat": 40.645075,
-    "lng": -74.104753
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farm stand",
-   "details": "Open Thursday & Saturday, 3:30 p.m. - 6 p.m. (Thursday); 9 a.m. - 12 p.m. (Saturday). Seasonal market. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "st-george-greenmarket",
-   "title": "St. George Greenmarket",
-   "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T13:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "St. George Greenmarket",
-    "address": "St Marks Pl. & Hyatt St.",
-    "neighborhood": "Staten Island",
-    "lat": 40.641586,
-    "lng": -74.0779
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers market",
-   "details": "Open Saturday, 8 a.m. - 1 p.m.. Open year round. Accepts EBT/SNAP.",
-   "url": null,
-   "tags": [
-    "EBT"
-   ]
-  },
-  {
-   "id": "staten-island-mall-greenmarket",
-   "title": "Staten Island Mall Greenmarket",
-   "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T13:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Staten Island Mall Greenmarket",
-    "address": "Marsh Ave. & Ring Rd.",
-    "neighborhood": "Staten Island",
-    "lat": 40.583804,
-    "lng": -74.161245
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Farmers market",
-   "details": "Open Saturday, 8 a.m. - 1 p.m.. Seasonal market. Accepts EBT/SNAP.",
    "url": null,
    "tags": [
     "EBT"

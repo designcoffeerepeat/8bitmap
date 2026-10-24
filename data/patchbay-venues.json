@@ -1,4 +1,10 @@
 {
+ "3 Dollar Bill": {
+  "address": "260 Meserole Street, Brooklyn",
+  "checked": "2026-10-24",
+  "lat": 40.708294,
+  "lng": -73.937971
+ },
  "314 Scholes": {
   "address": "314 Scholes Street, Brooklyn",
   "checked": "2026-10-23",
@@ -46,6 +52,12 @@
   "checked": "2026-10-23",
   "lat": 40.711483,
   "lng": -73.967463
+ },
+ "Bar Bonobo": {
+  "address": "84 8th Ave",
+  "checked": "2026-10-24",
+  "lat": 40.739876,
+  "lng": -74.002039
  },
  "Barclays Center": {
   "address": "620 Atlantic Avenue, Brooklyn",
@@ -160,6 +172,12 @@
   "checked": "2026-10-22",
   "lat": 40.765007,
   "lng": -73.979914
+ },
+ "Carro Café of Union City": {
+  "address": "",
+  "checked": "2026-10-24",
+  "lat": null,
+  "lng": null
  },
  "Cassette": {
   "address": "68-38 Forest Avenue, Queens",
@@ -431,6 +449,12 @@
   "lat": 40.728443,
   "lng": -74.000202
  },
+ "Littlefield": {
+  "address": "635 Sackett Street, Brooklyn",
+  "checked": "2026-10-24",
+  "lat": 40.678617,
+  "lng": -73.983416
+ },
  "Lucinda's": {
   "address": "",
   "checked": "2026-10-22",
@@ -472,6 +496,12 @@
   "checked": "2026-10-22",
   "lat": 40.79378,
   "lng": -74.477962
+ },
+ "Melrose Ballroom": {
+  "address": "3608 33rd Street, Astoria",
+  "checked": "2026-10-24",
+  "lat": 40.755628,
+  "lng": -73.928682
  },
  "Mercury Lounge": {
   "address": "217 East Houston Street",
@@ -575,6 +605,12 @@
   "lat": 41.290032,
   "lng": -73.919668
  },
+ "Pianos": {
+  "address": "158 Ludlow Street",
+  "checked": "2026-10-24",
+  "lat": 40.721012,
+  "lng": -73.987622
+ },
  "Pianos: Showroom": {
   "address": "158 Ludlow Street",
   "checked": "2026-10-22",
@@ -599,11 +635,23 @@
   "lat": 40.682176,
   "lng": -73.98639
  },
+ "Purgatory": {
+  "address": "675 Central Ave, Brooklyn",
+  "checked": "2026-10-24",
+  "lat": 40.687233,
+  "lng": -73.905733
+ },
  "Racket": {
   "address": "431 West 16th Street",
   "checked": "2026-10-22",
   "lat": 40.743081,
   "lng": -74.00572
+ },
+ "Reforesters Laboratory": {
+  "address": "147 Metropolitan Ave, Brooklyn",
+  "checked": "2026-10-24",
+  "lat": 40.716269,
+  "lng": -73.961918
  },
  "Refuge": {
   "address": "366 Ten Eyck St, Brooklyn",
@@ -671,6 +719,18 @@
   "lat": 40.707337,
   "lng": -73.939539
  },
+ "Starland Ballroom": {
+  "address": "570 Jernee Mill Road, Sayreville",
+  "checked": "2026-10-24",
+  "lat": 40.449316,
+  "lng": -74.356415
+ },
+ "State Theatre New Brunswick": {
+  "address": "15 Livingston Avenue, New Brunswick",
+  "checked": "2026-10-24",
+  "lat": 40.493454,
+  "lng": -74.443985
+ },
  "Stereo Garden LI": {
   "address": "9 Railroad Ave, Patchogue, NY 11772, Patchogue",
   "checked": "2026-10-23",
@@ -704,6 +764,18 @@
  "TBA - Brooklyn": {
   "address": "",
   "checked": "2026-10-23",
+  "lat": null,
+  "lng": null
+ },
+ "TBA - Club House on Fulton": {
+  "address": "",
+  "checked": "2026-10-24",
+  "lat": null,
+  "lng": null
+ },
+ "TBA - Private Location": {
+  "address": "",
+  "checked": "2026-10-24",
   "lat": null,
   "lng": null
  },
@@ -760,6 +832,12 @@
   "checked": "2026-10-22",
   "lat": 40.745844,
   "lng": -73.982936
+ },
+ "The Delancey": {
+  "address": "168 Delancey St",
+  "checked": "2026-10-24",
+  "lat": 40.718037,
+  "lng": -73.985277
  },
  "The Iridium": {
   "address": "1650 Broadway",
@@ -874,6 +952,18 @@
   "checked": "2026-10-23",
   "lat": 40.731777,
   "lng": -73.989091
+ },
+ "Wild Horses": {
+  "address": "626 Elizabeth Ave, Elizabeth",
+  "checked": "2026-10-24",
+  "lat": 40.656489,
+  "lng": -74.200429
+ },
+ "Williams Center - CUG Cantina - Rutherford": {
+  "address": "15 Sylvan St, Rutherford",
+  "checked": "2026-10-24",
+  "lat": 40.826574,
+  "lng": -74.103957
  },
  "Wonder Bar": {
   "address": "1213 Ocean Avenue North, Asbury Park",

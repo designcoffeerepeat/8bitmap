@@ -3,84 +3,128 @@
   "name": "Luma NYC",
   "url": "https://luma.com/nyc"
  },
- "date": "2026-10-23",
- "fetchedAt": "2026-10-23T13:07:55-04:00",
+ "date": "2026-10-24",
+ "fetchedAt": "2026-10-24T05:05:42-04:00",
  "events": [
   {
-   "id": "evt-RxQvsLgcC2ZFtmX",
-   "title": "The Substrate of Extraction: A Bio Art Show",
-   "category": "art",
-   "start": "2026-10-23T11:00:00-04:00",
-   "end": "2026-10-24T18:00:00-04:00",
+   "id": "evt-sNAZPXCo7HFEeO8",
+   "title": "Longest Pastry Table",
+   "category": "community",
+   "start": "2026-10-24T12:00:00-04:00",
+   "end": "2026-10-24T14:00:00-04:00",
    "venue": {
-    "name": "The Old American Can Factory",
-    "address": "The Old American Can Factory, 232 3rd St, Brooklyn, NY 11215, USA",
-    "neighborhood": "Gowanus",
-    "lat": 40.674751,
-    "lng": -73.987844
+    "name": "McCarren Park",
+    "address": "McCarren Park, 776 Lorimer St, Brooklyn, NY 11222, USA",
+    "neighborhood": "Williamsburg",
+    "lat": 40.719833,
+    "lng": -73.953436
    },
    "price": null,
    "priceUnknown": false,
    "description": "From the Personal calendar on Luma",
    "details": "",
-   "url": "https://luma.com/v77g2ygo",
+   "url": "https://luma.com/suqb6924",
    "tags": []
   },
   {
-   "id": "evt-z9kf4B1cEKQpbll",
-   "title": "Afterimage: Figma for Edu community showcase",
-   "category": "community",
-   "start": "2026-10-23T18:00:00-04:00",
-   "end": "2026-10-23T21:00:00-04:00",
+   "id": "evt-0Gl5SsgXMRNVu3O",
+   "title": "Snake and Sip at Fugue Gallery",
+   "category": "art",
+   "start": "2026-10-24T12:00:00-04:00",
+   "end": "2026-10-24T17:00:00-04:00",
    "venue": {
-    "name": "ARTECHOUSE NYC",
-    "address": "ARTECHOUSE NYC, 439 W 15th St, New York, NY 10011, USA",
-    "neighborhood": "Chelsea",
-    "lat": 40.7426,
-    "lng": -74.00657
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Figma for Education calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/tw9rjsds",
-   "tags": []
-  },
-  {
-   "id": "evt-EpFtSRnq165BjK3",
-   "title": "Halloween Masquerade Dinner & Pasta Making Party 🎭🖤",
-   "category": "food",
-   "start": "2026-10-23T19:30:00-04:00",
-   "end": "2026-10-23T22:30:00-04:00",
-   "venue": {
-    "name": "75 Murray St",
-    "address": "75 Murray St, New York, NY 10007, USA",
-    "neighborhood": "Tribeca",
-    "lat": 40.714827,
-    "lng": -74.010554
+    "name": "FUGUE GALLERY",
+    "address": "FUGUE GALLERY, 132 Mulberry St #4C, New York, NY 10013, USA",
+    "neighborhood": "Little Italy",
+    "lat": 40.718421,
+    "lng": -73.997617
    },
    "price": {
-    "min": 97,
-    "max": 97,
+    "min": 20,
+    "max": 20,
     "currency": "USD"
    },
    "priceUnknown": false,
-   "description": "From the Girls Who Meet calendar on Luma",
+   "description": "From the Personal calendar on Luma",
    "details": "",
-   "url": "https://luma.com/girlswho-xxeu",
+   "url": "https://luma.com/5y1chr9j",
+   "tags": []
+  },
+  {
+   "id": "evt-YahOVIHNSWAVm0u",
+   "title": "Hushmarrow Press Presents: Writing What Haunts Us",
+   "category": "community",
+   "start": "2026-10-24T13:00:00-04:00",
+   "end": "2026-10-24T14:30:00-04:00",
+   "venue": {
+    "name": "Boogie Down Grind",
+    "address": "Boogie Down Grind, 868 Hunts Point Ave, Bronx, NY 10474, USA",
+    "neighborhood": "Hunts Point",
+    "lat": 40.818473,
+    "lng": -73.888827
+   },
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "From the Hushmarrow Press calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/1kjqsagq",
+   "tags": []
+  },
+  {
+   "id": "evt-nVAuvl1GUJjEDGm",
+   "title": "THAT Open Studio + Afterparty: Alice Gong Xiaowen",
+   "category": "nightlife",
+   "start": "2026-10-24T16:00:00-04:00",
+   "end": "2026-10-24T20:30:00-04:00",
+   "venue": {
+    "name": "56 Bogart St",
+    "address": "56 Bogart St, Brooklyn, NY 11206, USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.70583,
+    "lng": -73.93325
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Personal calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/v3m7t82x",
+   "tags": []
+  },
+  {
+   "id": "evt-bC0W7PW1ebTAUnv",
+   "title": "SACHRAGA x ESSX Autumn '26 Collection Launch Event",
+   "category": "community",
+   "start": "2026-10-24T17:00:00-04:00",
+   "end": "2026-10-24T20:00:00-04:00",
+   "venue": {
+    "name": "140 Essex St",
+    "address": "140 Essex St, New York, NY 10002, USA",
+    "neighborhood": "Manhattan",
+    "lat": 40.720289,
+    "lng": -73.98703
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Personal calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/odpmez89",
    "tags": []
   }
  ],
  "unplaced": [
   {
-   "title": "Tech Shabbat | NY",
+   "title": "Demo Day",
    "address": "address shown to guests only",
-   "url": "https://luma.com/pqlvj80n"
+   "url": "https://luma.com/3udwxahu"
   },
   {
-   "title": "Prediction Markets Afterparty",
+   "title": "Blue Hour: a night for nyc’s most ambitious",
    "address": "address shown to guests only",
-   "url": "https://luma.com/i885kknd"
+   "url": "https://luma.com/ypzqeny0"
   }
  ]
 }
