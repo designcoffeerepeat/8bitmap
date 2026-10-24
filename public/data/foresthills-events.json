@@ -3,8 +3,35 @@
   "name": "Forest Hills calendars",
   "url": "https://www.commonpoint.org/"
  },
- "date": "2026-10-23",
- "fetchedAt": "2026-10-23T13:07:37-04:00",
- "events": [],
+ "date": "2026-10-24",
+ "fetchedAt": "2026-10-24T04:58:07-04:00",
+ "events": [
+  {
+   "id": "commonpoint-central-queens-202610241100-capoeira-free-pop-up-classes",
+   "title": "Capoeira Free Pop-Up Classes",
+   "category": "sports",
+   "start": "2026-10-24T11:00:00-04:00",
+   "end": "2026-10-24T13:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Commonpoint Central Queens",
+    "address": "67-09 108 Street",
+    "neighborhood": "",
+    "lat": 40.728719,
+    "lng": -73.847087
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.commonpoint.org/event/capoeira-open-house/2026-10-24",
+   "tags": [],
+   "publisher": {
+    "id": "venue-commonpoint-queens",
+    "name": "Commonpoint Queens",
+    "url": "https://www.commonpoint.org/"
+   }
+  }
+ ],
  "unplaced": []
 }

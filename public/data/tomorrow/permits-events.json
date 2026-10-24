@@ -3,15 +3,38 @@
   "name": "NYC Street Events",
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
- "date": "2026-10-24",
- "fetchedAt": "2026-10-23T13:10:37-04:00",
+ "date": "2026-10-25",
+ "fetchedAt": "2026-10-24T05:04:15-04:00",
  "events": [
+  {
+   "id": "959755",
+   "title": "Music in Hawkins Park",
+   "category": "music",
+   "start": "2026-10-25T00:00:00-04:00",
+   "end": "2026-10-25T20:00:00-04:00",
+   "allDay": true,
+   "venue": {
+    "name": "Hawkins Park",
+    "address": "Hawkins Park: Sitting Area",
+    "neighborhood": "Bronx",
+    "lat": 40.8466,
+    "lng": -73.78652
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
   {
    "id": "972601",
    "title": "Free Yoga Classes",
    "category": "community",
-   "start": "2026-10-24T00:00:00-04:00",
-   "end": "2026-10-24T09:00:00-04:00",
+   "start": "2026-10-25T00:00:00-04:00",
+   "end": "2026-10-25T09:00:00-04:00",
    "allDay": true,
    "venue": {
     "name": "Astoria Park",
@@ -30,333 +53,34 @@
    ]
   },
   {
-   "id": "945348",
-   "title": "GrowNYC @ Grand Army Plaza",
+   "id": "899826",
+   "title": "Murray Hill Farmers Market",
    "category": "food",
-   "start": "2026-10-24T05:00:00-04:00",
-   "end": "2026-10-24T19:00:00-04:00",
+   "start": "2026-10-25T05:30:00-04:00",
+   "end": "2026-10-25T19:30:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Prospect Park",
-    "address": "Prospect Park: Grand Army Plaza Arch",
-    "neighborhood": "Brooklyn",
-    "lat": 40.66138,
-    "lng": -73.96963
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "886925",
-   "title": "Run Rockaway Beach Marathon, Half Marthon And 5k",
-   "category": "sports",
-   "start": "2026-10-24T06:00:00-04:00",
-   "end": "2026-10-24T12:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Rockaway Beach And Boardwalk",
-    "address": "Rockaway Beach And Boardwalk: Beach 94th Street",
-    "neighborhood": "Queens",
-    "lat": 40.581,
-    "lng": -73.82288
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "945366",
-   "title": "GrowNYC @ Inwood",
-   "category": "food",
-   "start": "2026-10-24T06:00:00-04:00",
-   "end": "2026-10-24T19:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Inwood Hill Park",
-    "address": "Inwood Hill Park: Inwood Hill Park",
+    "name": "2 Avenue",
+    "address": "2 Avenue Between East 32 Street And East 33 Street",
     "neighborhood": "Manhattan",
-    "lat": 40.87239,
-    "lng": -73.92611
+    "lat": 40.742826,
+    "lng": -73.978081
    },
    "price": null,
    "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
+   "description": "Farmers Market",
+   "details": "Permit from Street Activity Permit Office.",
    "url": null,
    "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "980196",
-   "title": "Walk With Her",
-   "category": "sports",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T12:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Canarsie Park",
-    "address": "Canarsie Park: Canarsie Park",
-    "neighborhood": "Brooklyn",
-    "lat": 40.62734,
-    "lng": -73.8957
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "886813",
-   "title": "Ronald Mcdonald House Fun Run",
-   "category": "sports",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T14:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Central Park",
-    "address": "Central Park: Bandshell Plaza ,central Park: Dead Road North ,central Park: 72nd Street Cross Drive",
-    "neighborhood": "Manhattan",
-    "lat": 40.78249,
-    "lng": -73.96554
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "976996",
-   "title": "NYRR Open Run at Highland Park",
-   "category": "sports",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T11:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Highland Park",
-    "address": "Highland Park: Reservoir Path",
-    "neighborhood": "Queens",
-    "lat": 40.68513,
-    "lng": -73.8858
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "976992",
-   "title": "NYRR Open Run at Crocheron Park",
-   "category": "sports",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T11:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Crocheron Park",
-    "address": "Crocheron Park: Crocheron Park",
-    "neighborhood": "Queens",
-    "lat": 40.77153,
-    "lng": -73.76755
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "976995",
-   "title": "NYRR Open Run at Canarsie Park",
-   "category": "sports",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T11:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Canarsie Park",
-    "address": "Canarsie Park: Oval Path",
-    "neighborhood": "Brooklyn",
-    "lat": 40.62734,
-    "lng": -73.8957
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "978382",
-   "title": "NYRR Open Run at St Marys Park",
-   "category": "sports",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T11:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "St. Mary's Park",
-    "address": "St. Mary's Park: St Mary's Playground East",
-    "neighborhood": "Bronx",
-    "lat": 40.81151,
-    "lng": -73.91227
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "976991",
-   "title": "NYRR Open Run at Astoria Park",
-   "category": "sports",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T11:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Astoria Park",
-    "address": "Astoria Park: Great Lawn 02 Ditmars Blvd",
-    "neighborhood": "Queens",
-    "lat": 40.77878,
-    "lng": -73.9231
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "976994",
-   "title": "NYRR Open Run at Soundview Park",
-   "category": "sports",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T11:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Soundview Park",
-    "address": "Soundview Park: Soundview Park",
-    "neighborhood": "Bronx",
-    "lat": 40.81691,
-    "lng": -73.87101
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "976999",
-   "title": "NYRR Open Run at Morningside Park",
-   "category": "sports",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T11:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Morningside Park",
-    "address": "Morningside Park: Lower Path 114th-116th",
-    "neighborhood": "Manhattan",
-    "lat": 40.80576,
-    "lng": -73.95838
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "976990",
-   "title": "NYRR Open Run at Baisley Pond Park",
-   "category": "sports",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T11:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Baisley Pond Park",
-    "address": "Baisley Pond Park: Large Lawn Area Zone 04",
-    "neighborhood": "Queens",
-    "lat": 40.67603,
-    "lng": -73.78544
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "976998",
-   "title": "NYRR Open Run at Inwood Park",
-   "category": "sports",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T11:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Inwood Hill Park",
-    "address": "Inwood Hill Park: Inwood Hill Trails",
-    "neighborhood": "Manhattan",
-    "lat": 40.87239,
-    "lng": -73.92611
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
+    "Farmers Market"
    ]
   },
   {
    "id": "899565",
    "title": "Pompeii Flea Market",
    "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T20:00:00-04:00",
+   "start": "2026-10-25T08:00:00-04:00",
+   "end": "2026-10-25T20:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Bleecker Street",
@@ -375,11 +99,126 @@
    ]
   },
   {
+   "id": "962747",
+   "title": "NYRR Open Run at Conference House Park",
+   "category": "sports",
+   "start": "2026-10-25T08:00:00-04:00",
+   "end": "2026-10-25T11:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Conference House Park",
+    "address": "Conference House Park: Conference House Park",
+    "neighborhood": "Staten Island",
+    "lat": 40.49927,
+    "lng": -74.24786
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
+   "id": "912768",
+   "title": "Bronx Park East Farmers Market",
+   "category": "food",
+   "start": "2026-10-25T08:00:00-04:00",
+   "end": "2026-10-25T17:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Bronx Park",
+    "address": "Bronx Park: Brady Avenue Entrance",
+    "neighborhood": "Bronx",
+    "lat": 40.86226,
+    "lng": -73.873
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
+   "id": "977000",
+   "title": "NYRR Open Run at Cunningham Park",
+   "category": "sports",
+   "start": "2026-10-25T08:00:00-04:00",
+   "end": "2026-10-25T11:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Cunningham Park",
+    "address": "Cunningham Park: Jogging Track",
+    "neighborhood": "Queens",
+    "lat": 40.72902,
+    "lng": -73.76467
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
+   "id": "913375",
+   "title": "Stickball League",
+   "category": "community",
+   "start": "2026-10-25T08:00:00-04:00",
+   "end": "2026-10-25T08:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Stickball Boulevard",
+    "address": "Stickball Boulevard Between Randall Avenue And Seward Avenue",
+    "neighborhood": "Bronx",
+    "lat": 40.818965,
+    "lng": -73.856411
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
+   ]
+  },
+  {
+   "id": "903586",
+   "title": "Halloween 5k",
+   "category": "community",
+   "start": "2026-10-25T08:00:00-04:00",
+   "end": "2026-10-25T10:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Forest Park",
+    "address": "Forest Park: Forest Park Drive (race)",
+    "neighborhood": "Queens",
+    "lat": 40.70368,
+    "lng": -73.8535
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
    "id": "909426",
    "title": "Old Cathedral Outdoor Market",
    "category": "food",
-   "start": "2026-10-24T08:00:00-04:00",
-   "end": "2026-10-24T20:00:00-04:00",
+   "start": "2026-10-25T08:00:00-04:00",
+   "end": "2026-10-25T20:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Prince Street",
@@ -398,61 +237,15 @@
    ]
   },
   {
-   "id": "887240",
-   "title": "Diplo's Run Club NYC",
+   "id": "977001",
+   "title": "NYRR Open Run at Marine Park",
    "category": "sports",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T13:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Flushing Meadows Corona Park",
-    "address": "Flushing Meadows Corona Park: Fountain Of The Planets",
-    "neighborhood": "Queens",
-    "lat": 40.74726,
-    "lng": -73.84333
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "952871",
-   "title": "Steps for Stroke Awareness Walk",
-   "category": "sports",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T11:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Flushing Meadows Corona Park",
-    "address": "Flushing Meadows Corona Park: Sidewalk Around Meadow Lake (race)",
-    "neighborhood": "Queens",
-    "lat": 40.74726,
-    "lng": -73.84333
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "965880",
-   "title": "Intro to Birding Walk",
-   "category": "sports",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T11:00:00-04:00",
+   "start": "2026-10-25T08:00:00-04:00",
+   "end": "2026-10-25T11:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Marine Park",
-    "address": "Marine Park: Salt Marsh Nature Center (outside Only)",
+    "address": "Marine Park: Lawn (fillmore Avenue)",
     "neighborhood": "Brooklyn",
     "lat": 40.59704,
     "lng": -73.91945
@@ -467,64 +260,41 @@
    ]
   },
   {
-   "id": "966328",
-   "title": "Fall Festival with CM Aldebol",
-   "category": "community",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Loreto Playground",
-    "address": "Loreto Playground: Loreto Playground ,loreto Playground: Softball-01 ,loreto Playground: Hockey-01",
-    "neighborhood": "Bronx",
-    "lat": 40.84906,
-    "lng": -73.85212
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "979336",
-   "title": "PS 199 Fall Festival",
-   "category": "community",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Matthew P. Sapolin Playground",
-    "address": "Matthew P. Sapolin Playground: Mppa",
-    "neighborhood": "Manhattan",
-    "lat": 40.77759,
-    "lng": -73.98443
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "902376",
-   "title": "Morningside Park Farmers' Market",
+   "id": "902387",
+   "title": "Cunningham Park Farmers' Market",
    "category": "food",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T14:00:00-04:00",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T14:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Morningside Park",
-    "address": "Morningside Park: West 110th St Sidewalk Perimeter",
-    "neighborhood": "Manhattan",
-    "lat": 40.80576,
-    "lng": -73.95838
+    "name": "Cunningham Park",
+    "address": "Cunningham Park: Parking Lot 1 - Union Tp And 196 Pl ,cunningham Park: Parking Lot 1 - Union Tp And 196 Pl",
+    "neighborhood": "Queens",
+    "lat": 40.72902,
+    "lng": -73.76467
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
+   "id": "915927",
+   "title": "Day of the Dead Half and 5K",
+   "category": "community",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T12:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Flushing Meadows Corona Park",
+    "address": "Flushing Meadows Corona Park: Around The Unisphere",
+    "neighborhood": "Queens",
+    "lat": 40.74726,
+    "lng": -73.84333
    },
    "price": null,
    "priceUnknown": false,
@@ -539,8 +309,8 @@
    "id": "912460",
    "title": "St. Anthony Flea Market",
    "category": "food",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T19:00:00-04:00",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T19:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "West Houston Street",
@@ -559,41 +329,64 @@
    ]
   },
   {
-   "id": "966050",
-   "title": "Free Gentle Yoga",
-   "category": "community",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T11:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Crocheron Park",
-    "address": "Crocheron Park: Picnic Area",
-    "neighborhood": "Queens",
-    "lat": 40.77153,
-    "lng": -73.76755
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "913831",
-   "title": "UnityMarketsNY",
+   "id": "923926",
+   "title": "RiseBoro Farmers Markets at Irving Square Park",
    "category": "food",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T19:00:00-04:00",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T15:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Central Park",
-    "address": "Central Park: 110th And Lenox",
+    "name": "Knickerbocker Avenue",
+    "address": "Knickerbocker Avenue Between Starr Street And Suydam Street, Knickerbocker Avenue Between Weirfield Street And Halsey Street",
+    "neighborhood": "Brooklyn",
+    "lat": 40.702998,
+    "lng": -73.92404
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Farmers Market",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Farmers Market"
+   ]
+  },
+  {
+   "id": "982170",
+   "title": "DOT Partner Pell Open Streets Events",
+   "category": "community",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T16:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Pell Street",
+    "address": "Pell Street Between Bowery And Mott Street",
     "neighborhood": "Manhattan",
-    "lat": 40.78249,
-    "lng": -73.96554
+    "lat": 40.714641,
+    "lng": -73.997505
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Open Street Partner Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Open Street Partner Event"
+   ]
+  },
+  {
+   "id": "958687",
+   "title": "Richmond Rockets Halloween 5k run and walk",
+   "category": "sports",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T12:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Silver Lake Park",
+    "address": "Silver Lake Park: Reservoir Circumference",
+    "neighborhood": "Staten Island",
+    "lat": 40.62735,
+    "lng": -74.09582
    },
    "price": null,
    "priceUnknown": false,
@@ -605,409 +398,179 @@
    ]
   },
   {
-   "id": "967740",
-   "title": "Community Walk  and Health Resource Fair",
-   "category": "sports",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T14:00:00-04:00",
+   "id": "899273",
+   "title": "6th Avenue Autumn Fair",
+   "category": "community",
+   "start": "2026-10-25T10:00:00-04:00",
+   "end": "2026-10-25T18:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Roy Wilkins Park",
-    "address": "Roy Wilkins Park: Roy Wilkins Recreation Center / Park (add Park)",
+    "name": "6 Avenue",
+    "address": "6 Avenue Between West 14 Street And West 23 Street",
+    "neighborhood": "Manhattan",
+    "lat": 40.736567,
+    "lng": -73.997003
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Festival",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Festival"
+   ]
+  },
+  {
+   "id": "954759",
+   "title": "Korean Harvest Festival",
+   "category": "community",
+   "start": "2026-10-25T10:00:00-04:00",
+   "end": "2026-10-25T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "41 Avenue",
+    "address": "41 Avenue Between 149 Street And 149 Place",
     "neighborhood": "Queens",
-    "lat": 40.68791,
-    "lng": -73.77205
+    "lat": 40.762234,
+    "lng": -73.816189
    },
    "price": null,
    "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
+   "description": "Single Block Festival",
+   "details": "Permit from Street Activity Permit Office.",
    "url": null,
    "tags": [
-    "Special Event"
+    "Single Block Festival"
    ]
   },
   {
-   "id": "981788",
-   "title": "Polio Awareness Walk",
+   "id": "893014",
+   "title": "Queens Walk to END Alzheimer's",
    "category": "sports",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": "2026-10-24T11:00:00-04:00",
+   "start": "2026-10-25T10:00:00-04:00",
+   "end": "2026-10-25T12:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "City Hall Park",
-    "address": "City Hall Park: Broadway Sidewalk",
-    "neighborhood": "Manhattan",
-    "lat": 40.7128,
-    "lng": -74.00616
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "965646",
-   "title": "Fall Foliage Photo Walk",
-   "category": "sports",
-   "start": "2026-10-24T09:30:00-04:00",
-   "end": "2026-10-24T11:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Central Park",
-    "address": "Central Park: The Pool Lawns",
-    "neighborhood": "Manhattan",
-    "lat": 40.78249,
-    "lng": -73.96554
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "981783",
-   "title": "CCS Steps To Cure Breast Cancer Awareness Walk",
-   "category": "sports",
-   "start": "2026-10-24T09:59:00-04:00",
-   "end": "2026-10-24T13:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Estella Diggs Park",
-    "address": "Estella Diggs Park: Estella Diggs Park",
-    "neighborhood": "Bronx",
-    "lat": 40.82903,
-    "lng": -73.90635
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "972213",
-   "title": "Alumni and Family Weekend",
-   "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "West 27 Street",
-    "address": "West 27 Street Between 7 Avenue And 8 Avenue",
-    "neighborhood": "Manhattan",
-    "lat": 40.74642,
-    "lng": -73.994376
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Single Block Festival",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Single Block Festival"
-   ]
-  },
-  {
-   "id": "974675",
-   "title": "BOO On Mosholu",
-   "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Mosholu Avenue",
-    "address": "Mosholu Avenue Between West 256 Street And Tyndall Avenue",
-    "neighborhood": "Bronx",
-    "lat": 40.904077,
-    "lng": -73.903214
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Single Block Festival",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Single Block Festival"
-   ]
-  },
-  {
-   "id": "967704",
-   "title": "BHMS Harvest Festival",
-   "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T14:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Dean Street",
-    "address": "Dean Street Between Court Street And Boerum Place",
-    "neighborhood": "Brooklyn",
-    "lat": 40.689009,
-    "lng": -73.991904
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "954328",
-   "title": "4th Annual Loisaida Fall Festival",
-   "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "East 3 Street",
-    "address": "East 3 Street Between Avenue B And Avenue C",
-    "neighborhood": "Manhattan",
-    "lat": 40.722862,
-    "lng": -73.983093
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Single Block Festival",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Single Block Festival"
-   ]
-  },
-  {
-   "id": "903390",
-   "title": "Jerome Avenue Festival",
-   "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Jerome Avenue",
-    "address": "Jerome Avenue Between Mosholu Parkway And Gun Hill Road",
-    "neighborhood": "Bronx",
-    "lat": 40.89331,
-    "lng": -73.88479
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Single Block Festival",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Single Block Festival"
-   ]
-  },
-  {
-   "id": "973377",
-   "title": "Family Festival",
-   "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T13:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "71 Street",
-    "address": "71 Street Between 6 Avenue And 7 Avenue",
-    "neighborhood": "Brooklyn",
-    "lat": 40.631583,
-    "lng": -74.018471
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "970044",
-   "title": "Ethical Society Fair",
-   "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "West 64 Street",
-    "address": "West 64 Street Between Central Park West And Broadway",
-    "neighborhood": "Manhattan",
-    "lat": 40.770842,
-    "lng": -73.980187
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Single Block Festival",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Single Block Festival"
-   ]
-  },
-  {
-   "id": "887117",
-   "title": "Mile Square Hope Program 5K",
-   "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T11:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Riverside Park",
-    "address": "Riverside Park: Promenade Lower - 79th-95th Streets",
-    "neighborhood": "Manhattan",
-    "lat": 40.79097,
-    "lng": -73.98019
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "970304",
-   "title": "Harlem Stage Kids Day",
-   "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Convent Avenue",
-    "address": "Convent Avenue Between West 135 Street And West 133 Street",
-    "neighborhood": "Manhattan",
-    "lat": 40.818394,
-    "lng": -73.951448
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "923521",
-   "title": "Yoga Series Saturdays",
-   "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T11:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Bella Abzug Park",
-    "address": "Bella Abzug Park : Block 2 (between 34th Street & 35th Street)",
-    "neighborhood": "Manhattan",
-    "lat": 40.75564,
-    "lng": -74.00056
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "980212",
-   "title": "Trick-or-Streets",
-   "category": "community",
-   "start": "2026-10-24T10:30:00-04:00",
-   "end": "2026-10-24T14:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "President Street",
-    "address": "President Street Between Washington Avenue And Classon Avenue",
-    "neighborhood": "Brooklyn",
-    "lat": 40.669084,
-    "lng": -73.961736
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "965672",
-   "title": "2026 PS.77 Lower Lab Fall Fair",
-   "category": "community",
-   "start": "2026-10-24T11:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Samuel Seabury Playground",
-    "address": "Samuel Seabury Playground: Samuel Seabury Playground ,samuel Seabury Playground: Basketball-01 ,samuel Seabury Playground: Basketball-02 ,samuel Seabury Playground: Basketball-03 ,samuel Seabury Playground: Basketball-04 ,samuel Seabury Playground: Softball-01",
-    "neighborhood": "Manhattan",
-    "lat": 40.78547,
-    "lng": -73.95074
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "979132",
-   "title": "Harway Ave Trick or Streets",
-   "category": "community",
-   "start": "2026-10-24T11:00:00-04:00",
-   "end": "2026-10-24T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Harway Avenue",
-    "address": "Harway Avenue Between 24 Avenue And Bay 37 Street",
-    "neighborhood": "Brooklyn",
-    "lat": 40.594191,
-    "lng": -73.993655
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "978207",
-   "title": "Family Halloween",
-   "category": "community",
-   "start": "2026-10-24T11:00:00-04:00",
-   "end": "2026-10-24T13:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Torsney Playground",
-    "address": "Torsney Playground: Torsney Playground - Whole Park",
+    "name": "Flushing Meadows Corona Park",
+    "address": "Flushing Meadows Corona Park: Zoo Large Event Area",
     "neighborhood": "Queens",
-    "lat": 40.74735,
-    "lng": -73.92161
+    "lat": 40.74726,
+    "lng": -73.84333
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
+   "id": "892620",
+   "title": "Saint Anns Fun Run",
+   "category": "sports",
+   "start": "2026-10-25T10:00:00-04:00",
+   "end": "2026-10-25T11:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Prospect Park",
+    "address": "Prospect Park: Bartel Pritchard Lot ,prospect Park: Park Drive - Whole Drive",
+    "neighborhood": "Brooklyn",
+    "lat": 40.66138,
+    "lng": -73.96963
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
+   "id": "905391",
+   "title": "Court Street Spectacular",
+   "category": "community",
+   "start": "2026-10-25T10:00:00-04:00",
+   "end": "2026-10-25T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Court Street",
+    "address": "Court Street Between Atlantic Avenue And Joralemon Street",
+    "neighborhood": "Brooklyn",
+    "lat": 40.689994,
+    "lng": -73.992504
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Festival",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Festival"
+   ]
+  },
+  {
+   "id": "960768",
+   "title": "Chelsea Green Park Halloween Celebration",
+   "category": "community",
+   "start": "2026-10-25T10:00:00-04:00",
+   "end": "2026-10-25T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "West 20 Street",
+    "address": "West 20 Street Between 6 Avenue And 7 Avenue",
+    "neighborhood": "Manhattan",
+    "lat": 40.739999,
+    "lng": -73.994466
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Single Block Festival",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Single Block Festival"
+   ]
+  },
+  {
+   "id": "974128",
+   "title": "Run Your City - Belmont",
+   "category": "sports",
+   "start": "2026-10-25T10:30:00-04:00",
+   "end": "2026-10-25T12:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Williamsbridge Oval",
+    "address": "Williamsbridge Oval: Scenic Tables ,williamsbridge Oval: Track-01",
+    "neighborhood": "Bronx",
+    "lat": 40.87763,
+    "lng": -73.87739
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
+   "id": "980701",
+   "title": "Resilience Youth Walk and  Run 2026",
+   "category": "sports",
+   "start": "2026-10-25T10:30:00-04:00",
+   "end": "2026-10-25T12:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Cunningham Park",
+    "address": "Cunningham Park: Picnic Blue",
+    "neighborhood": "Queens",
+    "lat": 40.72902,
+    "lng": -73.76467
    },
    "price": null,
    "priceUnknown": false,
@@ -1022,8 +585,8 @@
    "id": "906911",
    "title": "Fordham Road BID Sidewalk Sale",
    "category": "sports",
-   "start": "2026-10-24T11:00:00-04:00",
-   "end": "2026-10-24T19:00:00-04:00",
+   "start": "2026-10-25T11:00:00-04:00",
+   "end": "2026-10-25T19:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "East Fordham Road",
@@ -1042,15 +605,15 @@
    ]
   },
   {
-   "id": "973413",
-   "title": "CPC Yoga",
-   "category": "community",
-   "start": "2026-10-24T11:00:00-04:00",
-   "end": "2026-10-24T12:00:00-04:00",
+   "id": "889231",
+   "title": "Central Park international folkdancers",
+   "category": "art",
+   "start": "2026-10-25T11:00:00-04:00",
+   "end": "2026-10-25T18:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Central Park",
-    "address": "Central Park: East Meadow",
+    "address": "Central Park: King Jagiallo Plaza",
     "neighborhood": "Manhattan",
     "lat": 40.78249,
     "lng": -73.96554
@@ -1065,179 +628,18 @@
    ]
   },
   {
-   "id": "980215",
-   "title": "Open Streets Fall Festival E. 115 St",
-   "category": "community",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T17:00:00-04:00",
+   "id": "932282",
+   "title": "Congo Square Vendor's Market",
+   "category": "food",
+   "start": "2026-10-25T11:00:00-04:00",
+   "end": "2026-10-25T20:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "East 115 Street - Park Avenue To Madison Avenue",
-    "address": "East 115 Street - Park Avenue To Madison Avenue: East 115 Street - Park Avenue To Madison Avenue",
-    "neighborhood": "Manhattan",
-    "lat": 40.798673,
-    "lng": -73.94334
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Open Street Partner Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Open Street Partner Event"
-   ]
-  },
-  {
-   "id": "978230",
-   "title": "Trick-or-Streets Signature event: Water Street Open Street, Staten Island",
-   "category": "community",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Water Street",
-    "address": "Water Street Between Beach Street And Canal Street",
-    "neighborhood": "Staten Island",
-    "lat": 40.627298,
-    "lng": -74.076304
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "922392",
-   "title": "NIA Halloween Spooktacular",
-   "category": "community",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T16:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "11 Avenue",
-    "address": "11 Avenue Between 66 Street And 67 Street",
+    "name": "Prospect Park",
+    "address": "Prospect Park: Drummer's Grove Market Place",
     "neighborhood": "Brooklyn",
-    "lat": 40.628506,
-    "lng": -74.006673
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "972590",
-   "title": "PS 31 PTA Fall Fest",
-   "category": "community",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T16:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Lorimer Street",
-    "address": "Lorimer Street Between Calyer Street And Meserole Avenue",
-    "neighborhood": "Brooklyn",
-    "lat": 40.727665,
-    "lng": -73.953706
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "962103",
-   "title": "PS166 Falloween",
-   "category": "community",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "West 89 Street",
-    "address": "West 89 Street Between Columbus Avenue And Amsterdam Avenue",
-    "neighborhood": "Manhattan",
-    "lat": 40.788735,
-    "lng": -73.970085
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "971298",
-   "title": "Halloween Trunk or Treat",
-   "category": "community",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T14:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "29 Avenue",
-    "address": "29 Avenue Between 204 Street And Clearview Expressway Service Road",
-    "neighborhood": "Queens",
-    "lat": 40.772965,
-    "lng": -73.786931
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "940438",
-   "title": "Franklin Avenue Open Streets",
-   "category": "community",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Franklin Avenue",
-    "address": "Franklin Avenue Between Dean Street And Eastern Parkway",
-    "neighborhood": "Brooklyn",
-    "lat": 40.677475,
-    "lng": -73.956149
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Open Street Partner Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Open Street Partner Event"
-   ]
-  },
-  {
-   "id": "976440",
-   "title": "Family Fun Day- Fall Festival",
-   "category": "community",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T16:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Rufus King Park",
-    "address": "Rufus King Park: Event Area",
-    "neighborhood": "Queens",
-    "lat": 40.70369,
-    "lng": -73.804
+    "lat": 40.66138,
+    "lng": -73.96963
    },
    "price": null,
    "priceUnknown": false,
@@ -1249,34 +651,195 @@
    ]
   },
   {
-   "id": "956421",
-   "title": "41st Annual Bronx Halloween Parade",
+   "id": "978797",
+   "title": "Fall Festival of Diasporas: Gleane Street Trick-Or-Streets",
    "category": "community",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T17:00:00-04:00",
+   "start": "2026-10-25T11:00:00-04:00",
+   "end": "2026-10-25T21:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Tiffany Street",
-    "address": "Tiffany Street Between Westchester Avenue And East 163 Street, Simpson Street Between East 163 Street And Westchester Avenue, Westchester Avenue Between Southern Boulevard And East 163 Street, Southern Boulevard Between Westchester Avenue And East 167 Street, Westchester Avenue Between Southern Boulevard And Hoe Avenue, Westchester Avenue Between Simpson Street And Southern Boulevard, Southern Boulevard Between Westchester Avenue And Longwood Avenue, Intervale Avenue Between Southern Boulevard And East 163 Street, Dawson Street Between Intervale Avenue And Longwood Avenue, Intervale Avenue Between Beck Street And East 163 Street",
-    "neighborhood": "Bronx",
-    "lat": 40.824638,
-    "lng": -73.89346
+    "name": "Gleane Street",
+    "address": "Gleane Street Between Baxter Avenue And Britton Avenue",
+    "neighborhood": "Queens",
+    "lat": 40.747437,
+    "lng": -73.88234
    },
    "price": null,
    "priceUnknown": false,
-   "description": "Parade",
-   "details": "Permit from Police Department.",
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
    "url": null,
    "tags": [
-    "Parade"
+    "Street Event"
+   ]
+  },
+  {
+   "id": "947570",
+   "title": "YCS Fall Festival 2026",
+   "category": "community",
+   "start": "2026-10-25T11:00:00-04:00",
+   "end": "2026-10-25T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "East 88 Street",
+    "address": "East 88 Street Between York Avenue And 1 Avenue",
+    "neighborhood": "Manhattan",
+    "lat": 40.77723,
+    "lng": -73.946461
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
+   ]
+  },
+  {
+   "id": "967944",
+   "title": "Fall Festival Asser Levy",
+   "category": "community",
+   "start": "2026-10-25T12:00:00-04:00",
+   "end": "2026-10-25T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Asser Levy Park",
+    "address": "Asser Levy Park: Lawn",
+    "neighborhood": "Brooklyn",
+    "lat": 40.57501,
+    "lng": -73.97156
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
+   "id": "918143",
+   "title": "Autumn Festival",
+   "category": "community",
+   "start": "2026-10-25T12:00:00-04:00",
+   "end": "2026-10-25T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Marine Park",
+    "address": "Marine Park: Lawn (fillmore Avenue)",
+    "neighborhood": "Brooklyn",
+    "lat": 40.59704,
+    "lng": -73.91945
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
+   "id": "977767",
+   "title": "Van Nest Neighborhood Alliance Fall Festival",
+   "category": "community",
+   "start": "2026-10-25T12:00:00-04:00",
+   "end": "2026-10-25T16:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Van Nest Park",
+    "address": "Van Nest Park: Van Nest Park",
+    "neighborhood": "Bronx",
+    "lat": 40.84342,
+    "lng": -73.86583
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
+   "id": "977667",
+   "title": "Trick or Streets",
+   "category": "community",
+   "start": "2026-10-25T12:00:00-04:00",
+   "end": "2026-10-25T18:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Columbus Avenue",
+    "address": "Columbus Avenue Between West 77 Street And West 68 Street",
+    "neighborhood": "Manhattan",
+    "lat": 40.780363,
+    "lng": -73.976347
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
+   ]
+  },
+  {
+   "id": "967827",
+   "title": "College Point Halloween Parade",
+   "category": "community",
+   "start": "2026-10-25T12:00:00-04:00",
+   "end": "2026-10-25T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Macneil Park",
+    "address": "Macneil Park: Lawn",
+    "neighborhood": "Queens",
+    "lat": 40.79296,
+    "lng": -73.85169
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
+   "id": "967060",
+   "title": "CM Lee's Fall Health Fair 2026",
+   "category": "community",
+   "start": "2026-10-25T12:00:00-04:00",
+   "end": "2026-10-25T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Cunningham Park",
+    "address": "Cunningham Park: Parking Lot 1 - Union Tp And 196 Pl",
+    "neighborhood": "Queens",
+    "lat": 40.72902,
+    "lng": -73.76467
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
    ]
   },
   {
    "id": "978466",
    "title": "31st Ave Open Street - October 2026 Programming",
    "category": "community",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T20:00:00-04:00",
+   "start": "2026-10-25T12:00:00-04:00",
+   "end": "2026-10-25T20:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "31 Avenue - 33 Street To 35 Street",
@@ -1295,87 +858,18 @@
    ]
   },
   {
-   "id": "967653",
-   "title": "PS 107 Fall Festival",
+   "id": "956461",
+   "title": "Halloween Dog Costume Parade",
    "category": "community",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T17:00:00-04:00",
+   "start": "2026-10-25T13:00:00-04:00",
+   "end": "2026-10-25T16:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "14 Street",
-    "address": "14 Street Between 8 Avenue And Prospect Park West",
-    "neighborhood": "Brooklyn",
-    "lat": 40.663051,
-    "lng": -73.981142
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "970531",
-   "title": "Catrina Alebrije Parade",
-   "category": "community",
-   "start": "2026-10-24T12:30:00-04:00",
-   "end": "2026-10-24T13:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "4211 14 Avenue, 14 Avenue",
-    "address": "4211 14 Avenue, 14 Avenue Between 43 Street And Church Avenue, Church Avenue Between 14 Avenue And Mcdonald Avenue, Mcdonald Avenue Between Church Avenue And Avenue C, Mcdonald Avenue Between Church Avenue And Avenue C",
-    "neighborhood": "Brooklyn",
-    "lat": 40.637175,
-    "lng": -73.985833
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Parade",
-   "details": "Permit from Police Department.",
-   "url": null,
-   "tags": [
-    "Parade"
-   ]
-  },
-  {
-   "id": "961513",
-   "title": "Dia De Los Muertos Celebration",
-   "category": "community",
-   "start": "2026-10-24T13:00:00-04:00",
-   "end": "2026-10-24T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Mcdonald Avenue",
-    "address": "Mcdonald Avenue Between Church Avenue And Avenue C",
-    "neighborhood": "Brooklyn",
-    "lat": 40.642972,
-    "lng": -73.979696
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "976402",
-   "title": "FDHP Oktober Fest",
-   "category": "community",
-   "start": "2026-10-24T13:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Dag Hammarskjold Plaza",
-    "address": "Dag Hammarskjold Plaza: Central Plaza",
+    "name": "Stuyvesant Square",
+    "address": "Stuyvesant Square: Flagpole Plaza East",
     "neighborhood": "Manhattan",
-    "lat": 40.75228,
-    "lng": -73.96889
+    "lat": 40.73383,
+    "lng": -73.98443
    },
    "price": null,
    "priceUnknown": false,
@@ -1387,57 +881,11 @@
    ]
   },
   {
-   "id": "978693",
-   "title": "PS87 Harvest Fest 2026",
-   "category": "community",
-   "start": "2026-10-24T13:00:00-04:00",
-   "end": "2026-10-24T16:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Tecumseh Playground",
-    "address": "Tecumseh Playground: Basketball-01",
-    "neighborhood": "Manhattan",
-    "lat": 40.78188,
-    "lng": -73.97875
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "978686",
-   "title": "PS 87 Harvest Fest 2026",
-   "category": "community",
-   "start": "2026-10-24T13:00:00-04:00",
-   "end": "2026-10-24T16:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "West 77 Street",
-    "address": "West 77 Street Between Columbus Avenue And Amsterdam Avenue",
-    "neighborhood": "Manhattan",
-    "lat": 40.780363,
-    "lng": -73.976347
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "906491",
+   "id": "906490",
    "title": "Live Music and Activities at Andrew Haswell Green Park",
    "category": "music",
-   "start": "2026-10-24T13:00:00-04:00",
-   "end": "2026-10-24T16:00:00-04:00",
+   "start": "2026-10-25T13:00:00-04:00",
+   "end": "2026-10-25T16:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Andrew Haswell Green Park",
@@ -1456,18 +904,18 @@
    ]
   },
   {
-   "id": "930731",
-   "title": "Landri and Nicholas's Cakewalk",
-   "category": "sports",
-   "start": "2026-10-24T14:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
+   "id": "979078",
+   "title": "2026 Washington Market Park Halloween Parade",
+   "category": "food",
+   "start": "2026-10-25T13:00:00-04:00",
+   "end": "2026-10-25T15:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Fort Tryon Park",
-    "address": "Fort Tryon Park: Cloister Lawn",
+    "name": "Washington Market Park",
+    "address": "Washington Market Park: Washington Market Park",
     "neighborhood": "Manhattan",
-    "lat": 40.86215,
-    "lng": -73.93233
+    "lat": 40.71709,
+    "lng": -74.01155
    },
    "price": null,
    "priceUnknown": false,
@@ -1479,18 +927,87 @@
    ]
   },
   {
-   "id": "905010",
-   "title": "Water Lantern Festival - Staten Island",
+   "id": "889156",
+   "title": "Halloween in Tompins Square Park",
    "category": "community",
-   "start": "2026-10-24T15:00:00-04:00",
-   "end": "2026-10-24T20:00:00-04:00",
+   "start": "2026-10-25T13:00:00-04:00",
+   "end": "2026-10-25T19:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Wolfe's Pond Park",
-    "address": "Wolfe's Pond Park: Lawn ,wolfe's Pond Park: Wolfe's Pond Park ,wolfe's Pond Park: Bbq Area 1 ,wolfe's Pond Park: Bbq Area 2 ,wolfe's Pond Park: Bbq Area 3 ,wolfe's Pond Park: Beach",
-    "neighborhood": "Staten Island",
-    "lat": 40.51806,
-    "lng": -74.19006
+    "name": "Tompkins Square Park",
+    "address": "Tompkins Square Park: Old Bandshell",
+    "neighborhood": "Manhattan",
+    "lat": 40.72645,
+    "lng": -73.98171
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
+   "id": "978202",
+   "title": "Trick-or-Streets @ the Soundview Economic Hub",
+   "category": "community",
+   "start": "2026-10-25T14:00:00-04:00",
+   "end": "2026-10-25T17:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Bruckner Boulevard Plaza",
+    "address": "Bruckner Boulevard Plaza: Bruckner Boulevard Plaza Bruckner Blvd Between Bruckner Blvd And Bronx River Ave",
+    "neighborhood": "Bronx",
+    "lat": 40.832025,
+    "lng": -73.830839
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Plaza Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Plaza Event"
+   ]
+  },
+  {
+   "id": "978071",
+   "title": "Trick-or-Streets Signature event: Austin Street Open Street/Queens",
+   "category": "community",
+   "start": "2026-10-25T14:00:00-04:00",
+   "end": "2026-10-25T19:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Austin Street",
+    "address": "Austin Street Between 71 Road And 71 Avenue",
+    "neighborhood": "Queens",
+    "lat": 40.720216,
+    "lng": -73.844915
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
+   ]
+  },
+  {
+   "id": "945219",
+   "title": "McGolrick Park Farmers' Market",
+   "category": "food",
+   "start": "2026-10-25T14:27:00-04:00",
+   "end": "2026-10-25T14:28:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Monsignor Mcgolrick Park",
+    "address": "Monsignor Mcgolrick Park: Pavilion",
+    "neighborhood": "Brooklyn",
+    "lat": 40.72444,
+    "lng": -73.94335
    },
    "price": null,
    "priceUnknown": false,
@@ -1505,8 +1022,8 @@
    "id": "945241",
    "title": "Worth Square Food Market",
    "category": "food",
-   "start": "2026-10-24T15:01:00-04:00",
-   "end": "2026-10-24T15:02:00-04:00",
+   "start": "2026-10-25T15:01:00-04:00",
+   "end": "2026-10-25T15:02:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Worth Square",
@@ -1523,297 +1040,56 @@
    "tags": [
     "Special Event"
    ]
-  },
-  {
-   "id": "974104",
-   "title": "2026 Castle Hill Little League Monster Mash Halloween Bash Community Event",
-   "category": "community",
-   "start": "2026-10-24T16:00:00-04:00",
-   "end": "2026-10-24T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Gleason Avenue",
-    "address": "Gleason Avenue Between Zerega Avenue And Commerce Avenue",
-    "neighborhood": "Bronx",
-    "lat": 40.83236,
-    "lng": -73.845372
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "981327",
-   "title": "Frightful Fun Fest in Westerleigh",
-   "category": "community",
-   "start": "2026-10-24T16:00:00-04:00",
-   "end": "2026-10-24T20:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Westerleigh Park",
-    "address": "Westerleigh Park: Westerleigh Park - Whole Park ,westerleigh Park: Gazebo ,westerleigh Park: Lawn",
-    "neighborhood": "Staten Island",
-    "lat": 40.61983,
-    "lng": -74.13446
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "974633",
-   "title": "Birding Walk",
-   "category": "sports",
-   "start": "2026-10-24T16:30:00-04:00",
-   "end": "2026-10-24T17:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Hunter's Point South Park",
-    "address": "Hunter's Point South Park: Hunter's Point South Park",
-    "neighborhood": "Queens",
-    "lat": 40.74109,
-    "lng": -73.96114
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "968371",
-   "title": "Halloween: Projections",
-   "category": "community",
-   "start": "2026-10-24T17:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Pearl Street Plaza",
-    "address": "Pearl Street Plaza: Archway (pearl Street Plaza) Water Street Between Anchorage Pl And Adams St",
-    "neighborhood": "Brooklyn",
-    "lat": 40.70281,
-    "lng": -73.994014
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Plaza Partner Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Plaza Partner Event"
-   ]
-  },
-  {
-   "id": "960823",
-   "title": "RESCEDULE Friends of Bushwick Inlet Park Summer Music Series '26",
-   "category": "music",
-   "start": "2026-10-24T17:00:00-04:00",
-   "end": "2026-10-24T20:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Bushwick Inlet Park",
-    "address": "Bushwick Inlet Park: Waterfront Esplanade",
-    "neighborhood": "Brooklyn",
-    "lat": 40.72263,
-    "lng": -73.96179
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "966517",
-   "title": "Diwali Motorcade",
-   "category": "community",
-   "start": "2026-10-24T17:00:00-04:00",
-   "end": "2026-10-24T20:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "125 Street",
-    "address": "125 Street Between Atlantic Avenue And 95 Avenue, 125 Street Between Atlantic Avenue And Liberty Avenue, Liberty Avenue Between 125 Street And 120 Street, 120 Street Between Liberty Avenue And Atlantic Avenue, Atlantic Avenue Between 120 Street And 125 Street, Atlantic Avenue Between 125 Street And 127 Street",
-    "neighborhood": "Queens",
-    "lat": 40.694672,
-    "lng": -73.821523
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Parade",
-   "details": "Permit from Police Department.",
-   "url": null,
-   "tags": [
-    "Parade"
-   ]
-  },
-  {
-   "id": "980264",
-   "title": "Pincushion Puppet Parade",
-   "category": "community",
-   "start": "2026-10-24T17:00:00-04:00",
-   "end": "2026-10-24T19:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Woodward Avenue",
-    "address": "Woodward Avenue Between Linden Street And Grove Street, Woodward Avenue Between Linden Street And Grove Street, Woodward Avenue Between Gates Avenue And Linden Street, Woodward Avenue Between Linden Street And Grove Street",
-    "neighborhood": "Queens",
-    "lat": 40.70567,
-    "lng": -73.907413
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Parade",
-   "details": "Permit from Police Department.",
-   "url": null,
-   "tags": [
-    "Parade"
-   ]
   }
  ],
  "unplaced": [
   {
-   "title": "Union Square Greenmarket",
-   "address": "Union Square Park: North Plaza"
-  },
-  {
-   "title": "GrowNYC @ Columbus Park",
-   "address": "Columbus Park: Columbus Park"
-  },
-  {
-   "title": "82 Street Greenmarket Saturday",
-   "address": "EAST   82 STREET between 1 AVENUE and YORK AVENUE"
-  },
-  {
-   "title": "Susan G. Komen NYC Walk",
-   "address": "Thomas Paine Park (Foley Square): Thomas Paine Park (Foley Square)"
-  },
-  {
-   "title": "4th Avenue Sunset Park Greenmarket Saturday",
-   "address": "60 STREET between 3 AVENUE and 4 AVENUE"
+   "title": "Carroll Gardens Greenmarket Sunday",
+   "address": "CARROLL STREET between SMITH STREET and COURT STREET"
   },
   {
    "title": "Afterschool Fun",
    "address": "34 AVENUE between 93 STREET and 94 STREET"
   },
   {
-   "title": "Grass Roots Farmers Market",
-   "address": "Jackie Robinson Park: Sidewalk"
-  },
-  {
-   "title": "NYRR Open Run at Shore Road Park",
-   "address": "Shore Road Park: 79th St Lawn"
-  },
-  {
-   "title": "Shape Up NYC: Yoga",
-   "address": "Pelham Bay Park and Orchard Beach: Lawn East of Track"
-  },
-  {
-   "title": "Youth Led Farmers Market",
-   "address": "NOSTRAND AVENUE between FLATBUSH AVENUE and GLENWOOD ROAD"
+   "title": "Columbia Thursday Sunday Greenmarket",
+   "address": "BROADWAY between WEST  113 STREET and WEST  116 STREET"
   },
   {
    "title": "SAIL Structure at Lou Gehrig Plaza",
    "address": "Lou Gehrig Plaza: Lou Gehrig Plaza E. 161st Street between Walton Ave and Grand Concourse"
   },
   {
-   "title": "Methodist Flea market",
-   "address": "35 AVENUE between 82 STREET and 81 STREET"
+   "title": "Making Strides Against Breast Cancer of Brooklyn Walk",
+   "address": "Coney Island Beach & Boardwalk: W 16 St Performance Area   ,Coney Island Beach & Boardwalk: W. 10th St. Ramp/Entrance Area"
   },
   {
-   "title": "Astor Place Fair",
-   "address": "ASTOR PLACE between BROADWAY and LAFAYETTE STREET"
+   "title": "37th Annual Upper Broadway Harvest Festival",
+   "address": "BROADWAY between WEST   96 STREET and WEST  106 STREET"
   },
   {
-   "title": "BronxWorks 2026 Monster Mash Hunger Dash 5K Run Walk",
-   "address": "Pelham Bay Park and Orchard Beach: Orchard Beach Boardwalk"
+   "title": "Community Recycling Event",
+   "address": "WEST   76 STREET between AMSTERDAM AVENUE and BROADWAY"
   },
   {
-   "title": "Halloween Family Parade",
-   "address": "Ditmars Park: Ditmars Park , STEINWAY STREET between 23 AVENUE and DITMARS BOULEVARD,  DITMARS BOULEVARD between STEINWAY STREET and 33 STREET,  DITMARS BOULEVARD between 33 STREET and 35 STREET"
-  },
-  {
-   "title": "6TH AVENUE AUTUMNFEST",
-   "address": "6 AVENUE between WEST   34 STREET and WEST   42 STREET"
-  },
-  {
-   "title": "Susan G. Komen Race For The Cure NYC",
-   "address": "Thomas Paine Park (Foley Square): Fountain Plaza , LAFAYETTE STREET between DUANE STREET and CENTER STREET, Brooklyn Bridge: Brooklyn Bridge Pedestrian: 1 , CENTRE STREET between BROOKLYN BRIDGE and DUANE ST,  CENTRE STREET between CHAMBERS STREET and BROOKLYN BRIDGE, Thomas Paine Park (Foley Square): Fountain Plaza , BROOKLYN BRIDGE WALKWAY between CENTRE ST and 2ND TOWER OF BRIDGE"
-  },
-  {
-   "title": "Myrtle Avenue Pollinator Planting Day",
-   "address": "71st Avenue Plaza: Herman Hochberg Plaza 71 Avenue between Myrtle Avenue and Stephen Street"
-  },
-  {
-   "title": "Trick or Streets",
-   "address": "WEST  158 STREET between BROADWAY and AMSTERDAM AVENUE"
-  },
-  {
-   "title": "Trolli Candy Cart at 575 Broadway",
-   "address": "BROADWAY between EAST HOUSTON STREET and PRINCE STREET"
-  },
-  {
-   "title": "Halloween Parade",
-   "address": "Rainey Park: Bill Rainey Park"
-  },
-  {
-   "title": "Elmhurst Family Health Fair",
-   "address": "CC Moore Homestead Playground: Performance Area"
-  },
-  {
-   "title": "Community Event",
-   "address": "191 STREET between 90 AVE and JAMAICA AVENUE"
-  },
-  {
-   "title": "Fall Festival",
-   "address": "Wayanda Park (PS 34): Lawn 01"
-  },
-  {
-   "title": "Trick-or-Streets Woodhaven Community Event",
-   "address": "FOREST PARKWAY between JAMAICA AVENUE and 86 ROAD"
-  },
-  {
-   "title": "TREAT OR STREETS",
-   "address": "Murdock Plaza: Murdock Plaza Murdock Avenue between 180 Street and Dead End"
+   "title": "9th Annual MAY 5K",
+   "address": "Beach 17 Playground (O'Donohue Park): Beach 17th Street Performance Space"
   },
   {
    "title": "Boombox in Jamaica",
    "address": "PARSONS BOULEVARD between JAMAICA AVENUE and ARCHER AVENUE"
   },
   {
-   "title": "Music Performances and Fitness Classes and Circus Arts",
-   "address": "Greeley Square Plaza: Greeley Square (32/33 Broadway) Broadway between W. 32rd Street and W. 33rd Street"
+   "title": "she shreds arts and music festival",
+   "address": "Faber Pool and Park: Lawn"
   },
   {
-   "title": "Halloween Fest",
-   "address": "5 AVENUE between 72 STREET and 85 STREET"
+   "title": "Day of the Dead Parade",
+   "address": "5 AVENUE between 60 STREET and 59 STREET,  5 AVENUE between 59 STREET and 43 STREET,  43 STREET between 5 AVENUE and 4 AVENUE"
   },
   {
    "title": "New Wave Pier Food Market",
    "address": "East River Esplanade 36th-38th: 36th-38th St"
-  },
-  {
-   "title": "OTCA Halloween PARADE",
-   "address": "Addabbo Park: Tudor Park (Joseph P. Addabbo)"
-  },
-  {
-   "title": "Movie Night",
-   "address": "Lawrence Virgilio Playground: Lawrence Virgilio Playground - Whole Park"
   }
  ]
 }
