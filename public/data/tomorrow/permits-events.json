@@ -4,7 +4,7 @@
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
  "date": "2026-10-25",
- "fetchedAt": "2026-10-24T05:04:15-04:00",
+ "fetchedAt": "2026-10-24T12:59:25-04:00",
  "events": [
   {
    "id": "959755",
@@ -1016,6 +1016,29 @@
    "url": null,
    "tags": [
     "Special Event"
+   ]
+  },
+  {
+   "id": "981673",
+   "title": "A 135 Cookout at 135 Spring St.",
+   "category": "community",
+   "start": "2026-10-25T15:00:00-04:00",
+   "end": "2026-10-25T19:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Spring Street",
+    "address": "Spring Street Between Greene Street And Wooster Street",
+    "neighborhood": "Manhattan",
+    "lat": 40.723605,
+    "lng": -74.000295
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
    ]
   },
   {

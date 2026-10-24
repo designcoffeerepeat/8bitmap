@@ -4,7 +4,7 @@
   "url": "https://www.ticketmaster.com/discover/new-york"
  },
  "date": "2026-10-24",
- "fetchedAt": "2026-10-24T04:59:47-04:00",
+ "fetchedAt": "2026-10-24T12:57:47-04:00",
  "events": [
   {
    "id": "LvZ18QrWTgeialOZ0E4-1",
@@ -46,29 +46,6 @@
    "description": "Miscellaneous / Family",
    "details": "",
    "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-flexible-entry-tickets-XV56PW?ref=ticketmaster",
-   "tags": [
-    "Family"
-   ]
-  },
-  {
-   "id": "LvZ18QENF-RM_LWf4xCqY",
-   "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
-   "category": "art",
-   "start": "2026-10-24T09:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Balloon Museum NYC",
-    "address": "96 South Street, New York City",
-    "neighborhood": "New York City",
-    "lat": 40.70624,
-    "lng": -74.002277
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Miscellaneous / Family",
-   "details": "",
-   "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-tickets-Y5HV92?ref=ticketmaster",
    "tags": [
     "Family"
    ]
@@ -364,6 +341,29 @@
    "url": "https://www.ticketweb.com/event/moved-to-october-24th-at-williams-center-rivoli-tickets/14124734",
    "tags": [
     "Other"
+   ]
+  },
+  {
+   "id": "LvZ18Q-9tbOh8sZZvyVyx",
+   "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
+   "category": "art",
+   "start": "2026-10-24T12:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Balloon Museum NYC",
+    "address": "96 South Street, New York City",
+    "neighborhood": "New York City",
+    "lat": 40.70624,
+    "lng": -74.002277
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Miscellaneous / Family",
+   "details": "",
+   "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-tickets-Y5HV92?ref=ticketmaster",
+   "tags": [
+    "Family"
    ]
   },
   {
@@ -2628,7 +2628,7 @@
     "lng": -74.10333
    },
    "price": {
-    "min": 41,
+    "min": 46,
     "max": 61,
     "currency": "USD"
    },
