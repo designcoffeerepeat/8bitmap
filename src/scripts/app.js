@@ -24,6 +24,7 @@ const state = {
   showAll: false,
   detailsOpen: false,
   tomorrow: false, // the header date switches between today's and tomorrow's listings
+  inView: null, // ids of events on screen once the map leaves its home view; null lists every event
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -46,6 +47,8 @@ const el = {
   srcList: $('#src-list'),
   srcSummary: $('#src-summary'),
   listTitle: $('#list-title'),
+  listHint: $('#list-hint'),
+  listReset: $('#list-reset'),
 };
 
 await document.fonts.load('8px "Press Start 2P"').catch(() => {});
@@ -74,6 +77,11 @@ let loading = 0;
 await loadDay(false);
 
 map.on('select', (id) => select(id, { fromMap: true }));
+// Zoomed or moved away from home, the list shows only the events on screen.
+map.on('view', () => {
+  state.inView = map.atHome() ? null : map.eventsInView();
+  render();
+});
 map.on('hover', (id) => {
   document.querySelectorAll('.ev.is-hover').forEach((n) => n.classList.remove('is-hover'));
   if (id) document.querySelector(`.ev[data-id="${CSS.escape(id)}"]`)?.classList.add('is-hover');
@@ -92,6 +100,13 @@ $('#pixel').addEventListener('click', (e) => {
   e.currentTarget.querySelector('b').textContent = `${next}X`;
 });
 $('#pixel b').textContent = `${map.pixelSize}X`;
+el.listReset.addEventListener('click', () => {
+  map.home();
+  state.inView = null;
+  state.showAll = false;
+  render();
+  el.list.closest('.list-wrap').scrollTop = 0;
+});
 el.more.addEventListener('click', () => {
   state.showAll = !state.showAll;
   render();
@@ -204,6 +219,7 @@ async function loadDay(tomorrow) {
   state.showAll = false;
   map.select(null);
   map.setEvents(events);
+  if (state.inView) state.inView = map.eventsInView();
   renderSources();
   renderCategories();
   render();
@@ -226,6 +242,12 @@ function sourceEvents() {
 function visibleEvents() {
   const list = sourceEvents();
   return list.filter((e) => !state.catsOff.has(e.category));
+}
+
+// The events in the list: the visible ones, cut down to the map's view once it leaves home.
+function listedEvents() {
+  const list = visibleEvents();
+  return state.inView ? list.filter((e) => state.inView.has(e.id)) : list;
 }
 
 // The Sources dropdown is always A to Z by name, skipping a leading "The" (MK's rule), whatever sources are added later.
@@ -294,9 +316,12 @@ function renderCategories() {
 }
 
 function render() {
-  const list = visibleEvents();
-  map.setVisible(list.map((e) => e.id));
-  el.count.textContent = `${list.length} ${list.length === 1 ? 'EVENT' : 'EVENTS'} ${state.tomorrow ? 'TOMORROW' : 'TODAY'}`;
+  const all = visibleEvents();
+  map.setVisible(all.map((e) => e.id));
+  el.count.textContent = `${all.length} ${all.length === 1 ? 'EVENT' : 'EVENTS'} ${state.tomorrow ? 'TOMORROW' : 'TODAY'}`;
+  const list = listedEvents();
+  el.listHint.textContent = state.inView ? `${list.length} IN VIEW` : 'TAP A PIN OR A ROW';
+  el.listReset.hidden = !state.inView;
 
   const shown = state.showAll ? list : list.slice(0, LIST_PAGE);
   const now = Date.now();
@@ -311,7 +336,7 @@ function render() {
         <span class="ev-tags"><span class="tag">${CATEGORY_LABELS[e.category]}</span>${e.source.id === 'seatgeek' ? `<span class="sg-mark" title="Data from SeatGeek">${SEATGEEK_LOGO}</span>` : ''}${e.listingOnly ? '' : `<span class="price">${fmtPrice(e)}</span>`}</span>
       </button>
     </li>`;
-  }).join('') || `<li class="empty">${!state.events.length && state.tomorrow ? "Tomorrow's listings are not in yet." : state.sources.size ? `No events in the ticked categories ${state.tomorrow ? 'tomorrow' : 'today'}.` : 'No sources selected. Pick some under SOURCES.'}</li>`;
+  }).join('') || `<li class="empty">${state.inView && all.length ? 'No events in this part of the map.' : !state.events.length && state.tomorrow ? "Tomorrow's listings are not in yet." : state.sources.size ? `No events in the ticked categories ${state.tomorrow ? 'tomorrow' : 'today'}.` : 'No sources selected. Pick some under SOURCES.'}</li>`;
 
   el.list.querySelectorAll('.ev').forEach((b) => {
     b.addEventListener('click', () => select(b.dataset.id));
@@ -387,7 +412,7 @@ function select(id, { fromMap = false } = {}) {
   if (id) {
     map.focusEvent(id);
     // make sure the card is in the list and visible
-    const idx = visibleEvents().findIndex((e) => e.id === id);
+    const idx = listedEvents().findIndex((e) => e.id === id);
     if (idx >= LIST_PAGE && !state.showAll) state.showAll = true;
   }
   render();
