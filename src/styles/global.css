@@ -205,11 +205,6 @@ button, a { font: inherit; color: inherit; }
 .tag { color: var(--cat); text-transform: uppercase; }
 .price { color: var(--ink); }
 .empty { color: var(--dim); padding: 12px; }
-#show-more {
-  margin: 12px auto 0; display: block; width: 100%; padding: 12px; cursor: pointer;
-  font: 10px/1 var(--font-pixel); background: var(--night-2); border: 3px solid var(--frame);
-}
-#show-more:hover { background: var(--coin); color: var(--night); }
 #list-reset {
   margin: 12px auto 0; width: 100%; padding: 10px 12px; cursor: pointer;
   display: flex; justify-content: center; align-items: center; gap: 10px;
