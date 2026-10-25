@@ -4,7 +4,7 @@
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
  "date": "2026-10-25",
- "fetchedAt": "2026-10-25T05:03:01-04:00",
+ "fetchedAt": "2026-10-25T13:00:41-04:00",
  "events": [
   {
    "id": "959755",
@@ -260,29 +260,6 @@
    ]
   },
   {
-   "id": "981356",
-   "title": "Youth To Seniors Walk Run in Honor of Breast Cancer Survivors",
-   "category": "sports",
-   "start": "2026-10-25T09:00:00-04:00",
-   "end": "2026-10-25T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Paerdegat Park",
-    "address": "Paerdegat Park: Lawn On Foster Side",
-    "neighborhood": "Brooklyn",
-    "lat": 40.63806,
-    "lng": -73.93813
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
    "id": "902387",
    "title": "Cunningham Park Farmers' Market",
    "category": "food",
@@ -349,6 +326,29 @@
    "url": null,
    "tags": [
     "Sidewalk Sale"
+   ]
+  },
+  {
+   "id": "981356",
+   "title": "Youth To Seniors Walk Run in Honor of Breast Cancer Survivors",
+   "category": "sports",
+   "start": "2026-10-25T09:00:00-04:00",
+   "end": "2026-10-25T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Paerdegat Park",
+    "address": "Paerdegat Park: Lawn On Foster Side",
+    "neighborhood": "Brooklyn",
+    "lat": 40.63806,
+    "lng": -73.93813
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
    ]
   },
   {
@@ -421,49 +421,26 @@
    ]
   },
   {
-   "id": "899273",
-   "title": "6th Avenue Autumn Fair",
-   "category": "community",
+   "id": "892620",
+   "title": "Saint Anns Fun Run",
+   "category": "sports",
    "start": "2026-10-25T10:00:00-04:00",
-   "end": "2026-10-25T18:00:00-04:00",
+   "end": "2026-10-25T11:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "6 Avenue",
-    "address": "6 Avenue Between West 14 Street And West 23 Street",
-    "neighborhood": "Manhattan",
-    "lat": 40.736567,
-    "lng": -73.997003
+    "name": "Prospect Park",
+    "address": "Prospect Park: Bartel Pritchard Lot ,prospect Park: Park Drive - Whole Drive",
+    "neighborhood": "Brooklyn",
+    "lat": 40.66138,
+    "lng": -73.96963
    },
    "price": null,
    "priceUnknown": false,
-   "description": "Street Festival",
-   "details": "Permit from Street Activity Permit Office.",
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
    "url": null,
    "tags": [
-    "Street Festival"
-   ]
-  },
-  {
-   "id": "954759",
-   "title": "Korean Harvest Festival",
-   "category": "community",
-   "start": "2026-10-25T10:00:00-04:00",
-   "end": "2026-10-25T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "41 Avenue",
-    "address": "41 Avenue Between 149 Street And 149 Place",
-    "neighborhood": "Queens",
-    "lat": 40.762234,
-    "lng": -73.816189
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Single Block Festival",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Single Block Festival"
+    "Special Event"
    ]
   },
   {
@@ -479,29 +456,6 @@
     "neighborhood": "Queens",
     "lat": 40.74726,
     "lng": -73.84333
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "892620",
-   "title": "Saint Anns Fun Run",
-   "category": "sports",
-   "start": "2026-10-25T10:00:00-04:00",
-   "end": "2026-10-25T11:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Prospect Park",
-    "address": "Prospect Park: Bartel Pritchard Lot ,prospect Park: Park Drive - Whole Drive",
-    "neighborhood": "Brooklyn",
-    "lat": 40.66138,
-    "lng": -73.96963
    },
    "price": null,
    "priceUnknown": false,
@@ -548,6 +502,52 @@
     "neighborhood": "Manhattan",
     "lat": 40.739999,
     "lng": -73.994466
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Single Block Festival",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Single Block Festival"
+   ]
+  },
+  {
+   "id": "899273",
+   "title": "6th Avenue Autumn Fair",
+   "category": "community",
+   "start": "2026-10-25T10:00:00-04:00",
+   "end": "2026-10-25T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "6 Avenue",
+    "address": "6 Avenue Between West 14 Street And West 23 Street",
+    "neighborhood": "Manhattan",
+    "lat": 40.736567,
+    "lng": -73.997003
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Festival",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Festival"
+   ]
+  },
+  {
+   "id": "954759",
+   "title": "Korean Harvest Festival",
+   "category": "community",
+   "start": "2026-10-25T10:00:00-04:00",
+   "end": "2026-10-25T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "41 Avenue",
+    "address": "41 Avenue Between 149 Street And 149 Place",
+    "neighborhood": "Queens",
+    "lat": 40.762234,
+    "lng": -73.816189
    },
    "price": null,
    "priceUnknown": false,
@@ -720,6 +720,29 @@
    ]
   },
   {
+   "id": "977767",
+   "title": "Van Nest Neighborhood Alliance Fall Festival",
+   "category": "community",
+   "start": "2026-10-25T12:00:00-04:00",
+   "end": "2026-10-25T16:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Van Nest Park",
+    "address": "Van Nest Park: Van Nest Park",
+    "neighborhood": "Bronx",
+    "lat": 40.84342,
+    "lng": -73.86583
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
    "id": "967944",
    "title": "Fall Festival Asser Levy",
    "category": "community",
@@ -755,29 +778,6 @@
     "neighborhood": "Brooklyn",
     "lat": 40.59704,
     "lng": -73.91945
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "977767",
-   "title": "Van Nest Neighborhood Alliance Fall Festival",
-   "category": "community",
-   "start": "2026-10-25T12:00:00-04:00",
-   "end": "2026-10-25T16:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Van Nest Park",
-    "address": "Van Nest Park: Van Nest Park",
-    "neighborhood": "Bronx",
-    "lat": 40.84342,
-    "lng": -73.86583
    },
    "price": null,
    "priceUnknown": false,
@@ -881,6 +881,29 @@
    ]
   },
   {
+   "id": "979078",
+   "title": "2026 Washington Market Park Halloween Parade",
+   "category": "food",
+   "start": "2026-10-25T13:00:00-04:00",
+   "end": "2026-10-25T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Washington Market Park",
+    "address": "Washington Market Park: Washington Market Park",
+    "neighborhood": "Manhattan",
+    "lat": 40.71709,
+    "lng": -74.01155
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
+   ]
+  },
+  {
    "id": "956461",
    "title": "Halloween Dog Costume Parade",
    "category": "community",
@@ -916,29 +939,6 @@
     "neighborhood": "Manhattan",
     "lat": 40.75951,
     "lng": -73.95762
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "979078",
-   "title": "2026 Washington Market Park Halloween Parade",
-   "category": "food",
-   "start": "2026-10-25T13:00:00-04:00",
-   "end": "2026-10-25T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Washington Market Park",
-    "address": "Washington Market Park: Washington Market Park",
-    "neighborhood": "Manhattan",
-    "lat": 40.71709,
-    "lng": -74.01155
    },
    "price": null,
    "priceUnknown": false,
@@ -1094,12 +1094,12 @@
    "address": "CARROLL STREET between SMITH STREET and COURT STREET"
   },
   {
-   "title": "2026 Making Strides Against Breast Cancer of The Bronx walk",
-   "address": "Pelham Bay Park and Orchard Beach: Orchard Beach - Main Stage   ,Pelham Bay Park and Orchard Beach: Orchard Beach - Main Stairs Front Area ,Pelham Bay Park and Orchard Beach: Orchard Beach - Main Stairs Front Area ,Pelham Bay Park and Orchard Beach: Orchard Beach - Upper Plaza ,Pelham Bay Park and Orchard Beach: Orchard Beach Boardwalk"
-  },
-  {
    "title": "Afterschool Fun",
    "address": "34 AVENUE between 93 STREET and 94 STREET"
+  },
+  {
+   "title": "2026 Making Strides Against Breast Cancer of The Bronx walk",
+   "address": "Pelham Bay Park and Orchard Beach: Orchard Beach - Main Stage   ,Pelham Bay Park and Orchard Beach: Orchard Beach - Main Stairs Front Area ,Pelham Bay Park and Orchard Beach: Orchard Beach - Main Stairs Front Area ,Pelham Bay Park and Orchard Beach: Orchard Beach - Upper Plaza ,Pelham Bay Park and Orchard Beach: Orchard Beach Boardwalk"
   },
   {
    "title": "Columbia Thursday Sunday Greenmarket",

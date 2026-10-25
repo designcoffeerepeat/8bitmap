@@ -4,7 +4,7 @@
   "url": "https://filmforum.org/"
  },
  "date": "2026-10-26",
- "fetchedAt": "2026-10-25T05:06:15-04:00",
+ "fetchedAt": "2026-10-25T13:03:02-04:00",
  "events": [
   {
    "id": "film-forum-202610261225-fatherland",
@@ -1398,32 +1398,6 @@
     "id": "venue-nyc-trivia-league",
     "name": "NYC Trivia League",
     "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "queens-botanical-garden-202610260930-compost-build-community-volunteer-days",
-   "title": "Compost Build Community Volunteer Days",
-   "category": "community",
-   "start": "2026-10-26T09:30:00-04:00",
-   "end": "2026-10-26T12:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Queens Botanical Garden",
-    "address": "43-50 Main Street",
-    "neighborhood": "Flushing",
-    "lat": 40.751085,
-    "lng": -73.827732
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://queensbotanical.org/event/compost-build-community-volunteer-days-34/2026-10-26/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-queens-botanical-garden",
-    "name": "Queens Botanical Garden",
-    "url": "https://queensbotanical.org/calendar/"
    }
   }
  ],

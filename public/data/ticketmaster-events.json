@@ -4,7 +4,7 @@
   "url": "https://www.ticketmaster.com/discover/new-york"
  },
  "date": "2026-10-25",
- "fetchedAt": "2026-10-25T05:03:16-04:00",
+ "fetchedAt": "2026-10-25T13:00:56-04:00",
  "events": [
   {
    "id": "LvZ18QrWTgeialOZ0E4-1",
@@ -76,29 +76,6 @@
    "tags": []
   },
   {
-   "id": "LvZ18QENF-RM_LWf4xCqV",
-   "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
-   "category": "art",
-   "start": "2026-10-25T09:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Balloon Museum NYC",
-    "address": "96 South Street, New York City",
-    "neighborhood": "New York City",
-    "lat": 40.70624,
-    "lng": -74.002277
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Miscellaneous / Family",
-   "details": "",
-   "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-tickets-Y5HV92?ref=ticketmaster",
-   "tags": [
-    "Family"
-   ]
-  },
-  {
    "id": "Z1r9uZruZqGZ1AvZ8bS",
    "title": "The Very Hungry Caterpillar Show",
    "category": "theater",
@@ -122,29 +99,6 @@
    ]
   },
   {
-   "id": "LvZ18QEC-33sYJhRiNbxg",
-   "title": "The Banksy Museum New York!",
-   "category": "art",
-   "start": "2026-10-25T10:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Banksy Museum New York",
-    "address": "277 Canal St, New York",
-    "neighborhood": "New York",
-    "lat": 40.719603,
-    "lng": -74.001358
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Fine Art",
-   "details": "",
-   "url": "https://www.universe.com/events/the-banksy-museum-new-york-tickets-5PKNY0?ref=ticketmaster",
-   "tags": [
-    "Fine Art"
-   ]
-  },
-  {
    "id": "LvZ18Qk4nbbEibYZvnO8v",
    "title": "Banksy Museum - Flexiticket",
    "category": "art",
@@ -163,6 +117,29 @@
    "description": "Arts & Theatre / Fine Art",
    "details": "",
    "url": "https://www.universe.com/events/banksy-museum-flexiticket-tickets-F7XJ8T?ref=ticketmaster",
+   "tags": [
+    "Fine Art"
+   ]
+  },
+  {
+   "id": "LvZ18QEC-33sYJhRiNbxU",
+   "title": "The Banksy Museum New York!",
+   "category": "art",
+   "start": "2026-10-25T10:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Banksy Museum New York",
+    "address": "277 Canal St, New York",
+    "neighborhood": "New York",
+    "lat": 40.719603,
+    "lng": -74.001358
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Fine Art",
+   "details": "",
+   "url": "https://www.universe.com/events/the-banksy-museum-new-york-tickets-5PKNY0?ref=ticketmaster",
    "tags": [
     "Fine Art"
    ]
@@ -357,6 +334,29 @@
    "url": "https://www.ticketmaster.com/the-gazillion-bubble-show-new-york-new-york-10-25-2026/event/Z1r9uZruZqGZ1AvZo0-",
    "tags": [
     "Theatre"
+   ]
+  },
+  {
+   "id": "LvZ18Q-9tbOh8sZZvyVBd",
+   "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
+   "category": "art",
+   "start": "2026-10-25T12:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Balloon Museum NYC",
+    "address": "96 South Street, New York City",
+    "neighborhood": "New York City",
+    "lat": 40.70624,
+    "lng": -74.002277
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Miscellaneous / Family",
+   "details": "",
+   "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-tickets-Y5HV92?ref=ticketmaster",
+   "tags": [
+    "Family"
    ]
   },
   {

@@ -4,7 +4,7 @@
   "url": "https://luma.com/nyc"
  },
  "date": "2026-10-25",
- "fetchedAt": "2026-10-25T05:02:35-04:00",
+ "fetchedAt": "2026-10-25T13:00:12-04:00",
  "events": [
   {
    "id": "evt-dK3XQorAsX2BuC8",
@@ -24,26 +24,6 @@
    "description": "From the Koah calendar on Luma",
    "details": "",
    "url": "https://luma.com/96ikhrfi",
-   "tags": []
-  },
-  {
-   "id": "evt-a9NFjOHwfTVSKH7",
-   "title": "ALO RECOVERY WALK: ALO MADISON AVE",
-   "category": "community",
-   "start": "2026-10-25T10:30:00-04:00",
-   "end": "2026-10-25T11:30:00-04:00",
-   "venue": {
-    "name": "1144 Madison Ave",
-    "address": "1144 Madison Ave, New York, NY 10028, USA",
-    "neighborhood": "Manhattan",
-    "lat": 40.780066,
-    "lng": -73.959598
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the ALO calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/mcetweyr",
    "tags": []
   },
   {
@@ -111,6 +91,26 @@
    "tags": []
   },
   {
+   "id": "evt-jtvnviAZMeQXD1C",
+   "title": "Ridgewood Puppet Parade",
+   "category": "community",
+   "start": "2026-10-25T18:00:00-04:00",
+   "end": "2026-10-25T19:00:00-04:00",
+   "venue": {
+    "name": "6-12 Woodward Ave",
+    "address": "6-12 Woodward Ave, Ridgewood, NY 11385, USA",
+    "neighborhood": "Ridgewood",
+    "lat": 40.705753,
+    "lng": -73.907496
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Personal calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/bq9it6vl",
+   "tags": []
+  },
+  {
    "id": "evt-kkEljBhElElrfmt",
    "title": "Rocky Horror Picture Show at Romania",
    "category": "community",
@@ -132,11 +132,6 @@
   }
  ],
  "unplaced": [
-  {
-   "title": "Olive Tree Writing Club x Subra - Writer's Cafe (Fall '26: Part IV)",
-   "address": "address shown to guests only",
-   "url": "https://luma.com/kjh927pr"
-  },
   {
    "title": "The Pause: Candlelit Yoga and Sound Bath with Live Harp",
    "address": "address shown to guests only",
