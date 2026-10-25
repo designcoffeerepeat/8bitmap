@@ -3,15 +3,15 @@
   "name": "Astoria venues",
   "url": "https://socratessculpturepark.org/"
  },
- "date": "2026-10-24",
- "fetchedAt": "2026-10-24T12:56:18-04:00",
+ "date": "2026-10-25",
+ "fetchedAt": "2026-10-25T04:57:22-04:00",
  "events": [
   {
-   "id": "melrose-ballroom-202610242100-hye-house-presents-middle-east-river",
-   "title": "Hye House Presents ֍ Middle East River",
-   "category": "nightlife",
-   "start": "2026-10-24T21:00:00-04:00",
-   "end": "2026-10-25T03:00:00-04:00",
+   "id": "melrose-ballroom-202610252000-mumiy-troll-concert-in-new-york",
+   "title": "Mumiy Troll Concert in New York",
+   "category": "music",
+   "start": "2026-10-25T20:00:00-04:00",
+   "end": "2026-10-26T02:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Melrose Ballroom",
@@ -24,38 +24,12 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://www.melroseballroom.com/events/hye-house-presents-middle-east-river",
+   "url": "https://www.melroseballroom.com/events/mumiy-troll-concert-in-new-york",
    "tags": [],
    "publisher": {
     "id": "venue-melrose-ballroom",
     "name": "Melrose Ballroom",
     "url": "https://www.melroseballroom.com/"
-   }
-  },
-  {
-   "id": "bohemian-hall-beer-garden-202610241200-halloween-moove-2026",
-   "title": "Halloween Moove 2026",
-   "category": "community",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T22:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Bohemian Hall & Beer Garden",
-    "address": "29-19 24th Avenue",
-    "neighborhood": "Astoria",
-    "lat": 40.77274,
-    "lng": -73.915718
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.bohemianhall.com/event-details/halloween-moove-2026",
-   "tags": [],
-   "publisher": {
-    "id": "venue-bohemian-hall-beer-garden",
-    "name": "Bohemian Hall & Beer Garden",
-    "url": "https://www.bohemianhall.com/"
    }
   }
  ],
