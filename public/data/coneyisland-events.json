@@ -3,15 +3,41 @@
   "name": "Coney Island calendars",
   "url": "https://www.coneyisland.com/event"
  },
- "date": "2026-10-24",
- "fetchedAt": "2026-10-24T13:00:33-04:00",
+ "date": "2026-10-25",
+ "fetchedAt": "2026-10-25T05:02:16-04:00",
  "events": [
   {
-   "id": "luna-park-202610241100-halloween-harvest",
+   "id": "luna-park-202610250800-paint-luna-pink",
+   "title": "PAINT LUNA PINK",
+   "category": "community",
+   "start": "2026-10-25T08:00:00-04:00",
+   "end": "2026-10-25T12:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Luna Park",
+    "address": "1000 Surf Avenue",
+    "neighborhood": "",
+    "lat": 40.575223,
+    "lng": -73.978651
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://lunaparknyc.com/events-luna-park/paint-luna-pink/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-luna-park",
+    "name": "Luna Park",
+    "url": "https://lunaparknyc.com/plan/park-hours/"
+   }
+  },
+  {
+   "id": "luna-park-202610251100-halloween-harvest",
    "title": "Halloween Harvest",
    "category": "community",
-   "start": "2026-10-24T11:00:00-04:00",
-   "end": "2026-10-24T20:00:00-04:00",
+   "start": "2026-10-25T11:00:00-04:00",
+   "end": "2026-10-25T20:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Luna Park",
@@ -30,6 +56,36 @@
     "id": "venue-luna-park",
     "name": "Luna Park",
     "url": "https://lunaparknyc.com/plan/park-hours/"
+   }
+  },
+  {
+   "id": "coney-island-usa-202610251600-the-brenda-and-glennda-show-drag-activis",
+   "title": "The Brenda and Glennda Show: Drag Activist Films from the '90s + Live Drag Show",
+   "category": "theater",
+   "start": "2026-10-25T16:00:00-04:00",
+   "end": "2026-10-25T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Coney Island USA",
+    "address": "1208 Surf Avenue",
+    "neighborhood": "",
+    "lat": 40.575235,
+    "lng": -73.979841
+   },
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://www.coneyisland.com/event/glennda-drag102526",
+   "tags": [],
+   "publisher": {
+    "id": "venue-coney-island-usa",
+    "name": "Coney Island USA",
+    "url": "https://www.coneyisland.com/event"
    }
   }
  ],

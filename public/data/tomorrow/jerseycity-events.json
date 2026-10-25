@@ -3,41 +3,8 @@
   "name": "Jersey City calendars",
   "url": "https://jerseycityculture.org/events/calendar/"
  },
- "date": "2026-10-25",
- "fetchedAt": "2026-10-24T13:02:47-04:00",
- "events": [
-  {
-   "id": "jc-mana-contemporary-202610251200-mana-contemporary-fall-open-studios-2026",
-   "title": "Mana Contemporary Fall Open Studios 2026",
-   "category": "art",
-   "start": "2026-10-25T12:00:00-04:00",
-   "end": "2026-10-25T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Mana Contemporary",
-    "address": "888 Newark Ave, Jersey City, NJ",
-    "neighborhood": "Jersey City",
-    "lat": 40.7362,
-    "lng": -74.0661
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.manacontemporary.com/event/spring-open-studios-day-2/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-mana-contemporary",
-    "name": "Mana Contemporary",
-    "url": "https://www.manacontemporary.com/"
-   }
-  }
- ],
- "unplaced": [
-  {
-   "title": "HALLOWEEN EVENTS",
-   "venue": "",
-   "address": ""
-  }
- ]
+ "date": "2026-10-26",
+ "fetchedAt": "2026-10-25T05:04:12-04:00",
+ "events": [],
+ "unplaced": []
 }

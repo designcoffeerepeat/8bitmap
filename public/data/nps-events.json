@@ -3,15 +3,15 @@
   "name": "National Park Service",
   "url": "https://www.nps.gov/state/ny/index.htm"
  },
- "date": "2026-10-24",
- "fetchedAt": "2026-10-24T13:00:54-04:00",
+ "date": "2026-10-25",
+ "fetchedAt": "2026-10-25T05:02:36-04:00",
  "events": [
   {
    "id": "E2214AE5-F7F6-297F-3131D768ACD7CEB2",
    "title": "Ranger-Guided Tour of Federal Hall",
    "category": "community",
-   "start": "2026-10-24T10:30:00-04:00",
-   "end": "2026-10-24T11:30:00-04:00",
+   "start": "2026-10-25T10:30:00-04:00",
+   "end": "2026-10-25T11:30:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Federal Hall National Memorial",
@@ -33,7 +33,7 @@
    "id": "0D25A738-155D-451F-67D31ADD6827D16D",
    "title": "Castle Clinton Guided tour",
    "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
+   "start": "2026-10-25T10:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -56,8 +56,8 @@
    "id": "B7C9485A-F65C-B12D-80C5A4EBBDD45A9E",
    "title": "Fort Tompkins Tour",
    "category": "community",
-   "start": "2026-10-24T10:30:00-04:00",
-   "end": "2026-10-24T12:00:00-04:00",
+   "start": "2026-10-25T10:30:00-04:00",
+   "end": "2026-10-25T12:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Gateway National Recreation Area",
@@ -76,33 +76,10 @@
    ]
   },
   {
-   "id": "F785C7EA-BD7B-BFC7-89BB0C9767C21518",
-   "title": "Hangar B Open House",
-   "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T13:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Gateway National Recreation Area",
-    "address": "Hangar B, Floyd Bennett Field",
-    "neighborhood": "Gateway National Recreation Area",
-    "lat": 40.5903,
-    "lng": -73.8914
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Discover Floyd Bennett Field’s aviation history and explore restored aircrafts at a historic airplane hangar. Explore on your own during open house hours or join a park ranger for a guided tour at 10:",
-   "details": "Discover Floyd Bennett Field’s aviation history and explore restored aircrafts at a historic airplane hangar. Explore on your own during open house hours or join a park ranger for a guided tour at 10:30 a.m.",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=F785C7EA-BD7B-BFC7-89BB0C9767C21518",
-   "tags": [
-    "Guided Tour"
-   ]
-  },
-  {
    "id": "6EDF053C-C210-BD98-EB826C1AD4526045",
    "title": "House Tour",
    "category": "community",
-   "start": "2026-10-24T11:00:00-04:00",
+   "start": "2026-10-25T11:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -122,11 +99,11 @@
    ]
   },
   {
-   "id": "B9A4EB4F-EC82-87B9-DE598C80AC5F99F0",
+   "id": "B8A5C90F-B321-12E1-476C9293B76D30B8",
    "title": "\"Ranger's Choice\" Guided Walk at Jamaica Bay Wildlife Refuge",
    "category": "community",
-   "start": "2026-10-24T10:30:00-04:00",
-   "end": "2026-10-24T11:30:00-04:00",
+   "start": "2026-10-25T10:30:00-04:00",
+   "end": "2026-10-25T11:30:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Gateway National Recreation Area",
@@ -138,8 +115,8 @@
    "price": null,
    "priceUnknown": false,
    "description": "Join us for a park ranger-led program highlighting the nature and history of Jamaica Bay. For more information about a week's tour, call the Jamaica Bay Wildlife Refuge Visitor Center at 718-318-4340.",
-   "details": "Join us for a park ranger-led program highlighting the nature and history of Jamaica Bay. For more information about a week's tour, call the Jamaica Bay Wildlife Refuge Visitor Center at 718-318-4340.\n\nSaturday, 10/3: Junior Ranger Birding Buddies Join us on our Junior Ranger Birding Buddies' program, made for our Junior Rangers who are new to birding. We will learn the skills and tools used to have a fun outdoor adventure!   \n\nSunday, 10/4: Birding for Beginners Interested in birds, but feel intimidated about getting into birding? No problem, this is birding for beginners! Together we will take a nature walk, talk about what makes Jamaica Bay such a great place for birds, and give you the tools to learn the basics of bird identification and appreciation. Bug spray and sunscreen are recommended, binoculars available. \n\nSaturday, 10/10: Junior Ranger Walk: Bees and Butterflies of Jamaica Bay Bees and butterflies are a welcome summer sight in our gardens, yards, and parks! These little bugs are important pollinators who keep our environment in good working order. Join a ranger on a guided walk to learn all about the bees and butterflies that inhabit Jamaica Bay. \n\nSunday, 10/11: Soil",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=B9A4EB4F-EC82-87B9-DE598C80AC5F99F0",
+   "details": "Join us for a park ranger-led program highlighting the nature and history of Jamaica Bay. For more information about a week's tour, call the Jamaica Bay Wildlife Refuge Visitor Center at 718-318-4340.",
+   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=B8A5C90F-B321-12E1-476C9293B76D30B8",
    "tags": [
     "Guided Tour",
     "Walk"
@@ -149,7 +126,7 @@
    "id": "E3F6B7BB-D8CA-ACF6-EC9FAB485D7454B5",
    "title": "Children's Storytime",
    "category": "community",
-   "start": "2026-10-24T10:15:00-04:00",
+   "start": "2026-10-25T10:15:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -169,80 +146,11 @@
    ]
   },
   {
-   "id": "4C347113-EDB8-0008-71728DD98EF1A600",
-   "title": "Gateway Collections Pop-Up at Fort Wadsworth",
-   "category": "community",
-   "start": "2026-10-24T13:00:00-04:00",
-   "end": "2026-10-24T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Gateway National Recreation Area",
-    "address": "Fort Wadsworth Visitor Center",
-    "neighborhood": "Gateway National Recreation Area",
-    "lat": 40.5903,
-    "lng": -73.8914
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Gateway will host a Collections Pop-Up Event for members of the public to discover the diverse objects in the park's museum collection",
-   "details": "Gateway will host a Collections Pop-Up Event for members of the public to discover the diverse objects in the park's museum collection\n\nGateway National Recreation Area Cultural Resources will host a Collections Pop-Up Event for members of the public to discover the rich and diverse objects in the park’s museum collection on Saturday, October 24 from 1:00-3:00 pm. Visit with Seasonal Museum Techs Jade Maynard and Sarah McCullough who will spotlight a few of their favorite items from our vast collections. Gateway's museum collections include items such as architectural drawings, photographs, military manuals, architectural elements, uniforms, and much more, spanning from approximately 2,700 BCE into the twentieth century. Some of the artifacts that will be on display are from the American Revolutionary Period, in celebration of the 250th anniversary of the Declaration of Independence.\n\nThis event will be hosted at the Fort Wadsworth Visitor Center in the Staten Island Unit at 120 New York Avenue. You can register for one of two time slots; the first slot is at 1:00 p.m. and the second at 2:00 p.m. There are a limited number of spaces available, so register as soon as possible to res",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=4C347113-EDB8-0008-71728DD98EF1A600",
-   "tags": [
-    "Other"
-   ]
-  },
-  {
-   "id": "1B140C5A-D06D-ED50-B1D8EAE10F1F9747",
-   "title": "Great Kills Park Wellness Walk and Journaling",
-   "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T11:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Gateway National Recreation Area",
-    "address": "Great Kills Park, Parking Lot A",
-    "neighborhood": "Gateway National Recreation Area",
-    "lat": 40.5903,
-    "lng": -73.8914
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Join a Park Ranger to explore and reconnect with the natural world; ignite your senses, create a journal of your park memories. Inclement weather will cancel the program, questions, contact Ranger at ",
-   "details": "Join a Park Ranger to explore and reconnect with the natural world; ignite your senses, create a journal of your park memories. Inclement weather will cancel the program, questions, contact Ranger at 718 354-4500.",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=1B140C5A-D06D-ED50-B1D8EAE10F1F9747",
-   "tags": [
-    "Walk"
-   ]
-  },
-  {
-   "id": "1B62D61D-EC4D-56B2-EFA5D66741584667",
-   "title": "Mont Sec Murder Mystery Party",
-   "category": "community",
-   "start": "2026-10-24T15:00:00-04:00",
-   "end": "2026-10-24T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Gateway National Recreation Area",
-    "address": "112 A Mont Sec Avenue, Fort Wadsworth",
-    "neighborhood": "Gateway National Recreation Area",
-    "lat": 40.5903,
-    "lng": -73.8914
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Join us in Mont Sec House for an immersive and interactive mystery experience. You'll be invited to play a character and help solve a crime based around historic facts. Use your sleuthing skills to na",
-   "details": "Join us in Mont Sec House for an immersive and interactive mystery experience. You'll be invited to play a character and help solve a crime based around historic facts. Use your sleuthing skills to navigate twists and turns while learning a bit more about Fort Wadsworth along the way! Contact 718-354-4500 for questions. \n\nReservations are required. Please RSVP on Eventbrite.",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=1B62D61D-EC4D-56B2-EFA5D66741584667",
-   "tags": [
-    "Other"
-   ]
-  },
-  {
    "id": "E3CE1854-BB33-28D1-861776DBAD6A3BB1",
    "title": "Theodore Roosevelt's Birthday Celebration",
    "category": "community",
-   "start": "2026-10-24T10:00:00-04:00",
-   "end": "2026-10-24T16:00:00-04:00",
+   "start": "2026-10-25T10:00:00-04:00",
+   "end": "2026-10-25T16:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Theodore Roosevelt Birthplace",
@@ -279,8 +187,16 @@
    "address": "Building 28, Sandy Hook"
   },
   {
-   "title": "Clean Ocean Action Beach Sweep at Sandy Hook",
-   "address": "Parking Lot D, Sandy Hook"
+   "title": "Battery Gunnison/New Battery Peck",
+   "address": "Battery Gunnison, Sandy Hook"
+  },
+  {
+   "title": "Histor-Trees of Fort Hancock",
+   "address": "Sandy Hook Lighthouse"
+  },
+  {
+   "title": "Nike Missile Radar Site Tours",
+   "address": "Horseshoe Cove - Parking Lot L, Sandy Hook"
   }
  ]
 }

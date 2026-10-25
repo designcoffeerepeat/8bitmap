@@ -3,124 +3,64 @@
   "name": "Luma NYC",
   "url": "https://luma.com/nyc"
  },
- "date": "2026-10-25",
- "fetchedAt": "2026-10-24T13:02:47-04:00",
+ "date": "2026-10-26",
+ "fetchedAt": "2026-10-25T05:04:12-04:00",
  "events": [
   {
-   "id": "evt-dK3XQorAsX2BuC8",
-   "title": "koah soundsystem: consumer founders coffee & coworking",
-   "category": "food",
-   "start": "2026-10-25T10:00:00-04:00",
-   "end": "2026-10-25T18:00:00-04:00",
+   "id": "evt-moQ4JxkhySjJE7i",
+   "title": "Lumara Film Festival World Premiere",
+   "category": "film",
+   "start": "2026-10-26T18:00:00-04:00",
+   "end": "2026-10-26T20:30:00-04:00",
    "venue": {
-    "name": "Silence Please",
-    "address": "Silence Please, 132 Bowery Fl 2, New York, NY 10013, USA",
-    "neighborhood": "Lower Manhattan",
-    "lat": 40.71895,
-    "lng": -73.994898
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Koah calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/96ikhrfi",
-   "tags": []
-  },
-  {
-   "id": "evt-a9NFjOHwfTVSKH7",
-   "title": "ALO RECOVERY WALK: ALO MADISON AVE",
-   "category": "community",
-   "start": "2026-10-25T10:30:00-04:00",
-   "end": "2026-10-25T11:30:00-04:00",
-   "venue": {
-    "name": "1144 Madison Ave",
-    "address": "1144 Madison Ave, New York, NY 10028, USA",
-    "neighborhood": "Manhattan",
-    "lat": 40.780066,
-    "lng": -73.959598
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the ALO calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/mcetweyr",
-   "tags": []
-  },
-  {
-   "id": "evt-QWuLgKMI7BUEUkw",
-   "title": "Maum Market NYC",
-   "category": "community",
-   "start": "2026-10-25T11:00:00-04:00",
-   "end": "2026-10-25T16:00:00-04:00",
-   "venue": {
-    "name": "5-2-A at Industry City",
-    "address": "5-2-A at Industry City, 33 35th St 2nd FL, Brooklyn, NY 11232, USA",
-    "neighborhood": "Greenwood Heights",
-    "lat": 40.657238,
-    "lng": -74.007553
+    "name": "Roxy Cinema New York",
+    "address": "Roxy Cinema New York, 2 6th Avenue Cellar Level, New York, NY 10013, USA",
+    "neighborhood": "Tribeca",
+    "lat": 40.719439,
+    "lng": -74.004915
    },
    "price": null,
    "priceUnknown": false,
    "description": "From the Personal calendar on Luma",
    "details": "",
-   "url": "https://luma.com/kj3cxjqj",
+   "url": "https://luma.com/xqkmb9rg",
    "tags": []
   },
   {
-   "id": "evt-DO75l08dX1zh6Bo",
-   "title": "Future Reality AI Film Festival (NYC)-Film × Advertising × Creative Technology Screenings · Awards · Industry Leaders Networking",
-   "category": "film",
-   "start": "2026-10-25T18:00:00-04:00",
-   "end": "2026-10-25T22:00:00-04:00",
+   "id": "evt-nMbHV1EwssVLvZG",
+   "title": "Mahjong with Jill Kargman and GOLDA 10/26",
+   "category": "community",
+   "start": "2026-10-26T18:00:00-04:00",
+   "end": "2026-10-26T21:00:00-04:00",
    "venue": {
-    "name": "Village East by Angelika",
-    "address": "Village East by Angelika, 181-189 2nd Ave, New York, NY 10003, USA",
-    "neighborhood": "Ukrainian Village",
-    "lat": 40.730956,
-    "lng": -73.986212
+    "name": "Breads Bakery",
+    "address": "Breads Bakery, 1294 3rd Ave, New York, NY 10021, USA",
+    "neighborhood": "Lenox Hill",
+    "lat": 40.771345,
+    "lng": -73.959746
    },
    "price": {
-    "min": 28,
-    "max": 28,
+    "min": 72,
+    "max": 72,
     "currency": "USD"
    },
    "priceUnknown": false,
-   "description": "From the Harvard XR calendar on Luma",
+   "description": "From the GOLDA Events calendar on Luma",
    "details": "",
-   "url": "https://luma.com/8pqcqqu0",
-   "tags": []
-  },
-  {
-   "id": "evt-kkEljBhElElrfmt",
-   "title": "Rocky Horror Picture Show at Romania",
-   "category": "community",
-   "start": "2026-10-25T20:00:00-04:00",
-   "end": "2026-10-26T00:00:00-04:00",
-   "venue": {
-    "name": "286 Eldert St",
-    "address": "286 Eldert St, Brooklyn, NY 11207, USA",
-    "neighborhood": "Brooklyn",
-    "lat": 40.692192,
-    "lng": -73.907501
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Personal calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/naod1f5i",
+   "url": "https://luma.com/xtfeb4df",
    "tags": []
   }
  ],
  "unplaced": [
   {
-   "title": "Olive Tree Writing Club x Subra - Writer's Cafe (Fall '26: Part IV)",
+   "title": "Build Your Content System: AI + Personal Brand Workshop (with Wispr Flow & Stanley)",
    "address": "address shown to guests only",
-   "url": "https://luma.com/kjh927pr"
+   "url": "https://luma.com/gqkb1kgb"
   },
   {
-   "title": "The Pause: Candlelit Yoga and Sound Bath with Live Harp",
+   "title": "Animation Nights New York (ANNY) at The Gutter Spare Room!",
    "address": "address shown to guests only",
-   "url": "https://luma.com/6z6plb6c"
+   "url": "https://luma.com/ht18t7s3"
   }
  ]
 }

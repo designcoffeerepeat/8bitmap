@@ -3,128 +3,144 @@
   "name": "Luma NYC",
   "url": "https://luma.com/nyc"
  },
- "date": "2026-10-24",
- "fetchedAt": "2026-10-24T13:00:53-04:00",
+ "date": "2026-10-25",
+ "fetchedAt": "2026-10-25T05:02:35-04:00",
  "events": [
   {
-   "id": "evt-sNAZPXCo7HFEeO8",
-   "title": "Longest Pastry Table",
-   "category": "community",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T14:00:00-04:00",
+   "id": "evt-dK3XQorAsX2BuC8",
+   "title": "koah soundsystem: consumer founders coffee & coworking",
+   "category": "food",
+   "start": "2026-10-25T10:00:00-04:00",
+   "end": "2026-10-25T18:00:00-04:00",
    "venue": {
-    "name": "McCarren Park",
-    "address": "McCarren Park, 776 Lorimer St, Brooklyn, NY 11222, USA",
-    "neighborhood": "Williamsburg",
-    "lat": 40.719833,
-    "lng": -73.953436
+    "name": "Silence Please",
+    "address": "Silence Please, 132 Bowery Fl 2, New York, NY 10013, USA",
+    "neighborhood": "Lower Manhattan",
+    "lat": 40.71895,
+    "lng": -73.994898
    },
    "price": null,
    "priceUnknown": false,
-   "description": "From the Personal calendar on Luma",
+   "description": "From the Koah calendar on Luma",
    "details": "",
-   "url": "https://luma.com/suqb6924",
+   "url": "https://luma.com/96ikhrfi",
    "tags": []
   },
   {
-   "id": "evt-0Gl5SsgXMRNVu3O",
-   "title": "Snake and Sip at Fugue Gallery",
-   "category": "art",
-   "start": "2026-10-24T12:00:00-04:00",
-   "end": "2026-10-24T17:00:00-04:00",
-   "venue": {
-    "name": "FUGUE GALLERY",
-    "address": "FUGUE GALLERY, 132 Mulberry St #4C, New York, NY 10013, USA",
-    "neighborhood": "Little Italy",
-    "lat": 40.718421,
-    "lng": -73.997617
-   },
-   "price": {
-    "min": 20,
-    "max": 20,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "From the Personal calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/5y1chr9j",
-   "tags": []
-  },
-  {
-   "id": "evt-YahOVIHNSWAVm0u",
-   "title": "Hushmarrow Press Presents: Writing What Haunts Us",
+   "id": "evt-a9NFjOHwfTVSKH7",
+   "title": "ALO RECOVERY WALK: ALO MADISON AVE",
    "category": "community",
-   "start": "2026-10-24T13:00:00-04:00",
-   "end": "2026-10-24T14:30:00-04:00",
+   "start": "2026-10-25T10:30:00-04:00",
+   "end": "2026-10-25T11:30:00-04:00",
    "venue": {
-    "name": "Boogie Down Grind",
-    "address": "Boogie Down Grind, 868 Hunts Point Ave, Bronx, NY 10474, USA",
-    "neighborhood": "Hunts Point",
-    "lat": 40.818473,
-    "lng": -73.888827
-   },
-   "price": {
-    "min": 20,
-    "max": 20,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "From the Hushmarrow Press calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/1kjqsagq",
-   "tags": []
-  },
-  {
-   "id": "evt-nVAuvl1GUJjEDGm",
-   "title": "THAT Open Studio + Afterparty: Alice Gong Xiaowen",
-   "category": "nightlife",
-   "start": "2026-10-24T16:00:00-04:00",
-   "end": "2026-10-24T20:30:00-04:00",
-   "venue": {
-    "name": "56 Bogart St",
-    "address": "56 Bogart St, Brooklyn, NY 11206, USA",
-    "neighborhood": "Brooklyn",
-    "lat": 40.70583,
-    "lng": -73.93325
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Personal calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/v3m7t82x",
-   "tags": []
-  },
-  {
-   "id": "evt-bC0W7PW1ebTAUnv",
-   "title": "SACHRAGA x ESSX Autumn '26 Collection Launch Event",
-   "category": "community",
-   "start": "2026-10-24T17:00:00-04:00",
-   "end": "2026-10-24T20:00:00-04:00",
-   "venue": {
-    "name": "140 Essex St",
-    "address": "140 Essex St, New York, NY 10002, USA",
+    "name": "1144 Madison Ave",
+    "address": "1144 Madison Ave, New York, NY 10028, USA",
     "neighborhood": "Manhattan",
-    "lat": 40.720289,
-    "lng": -73.98703
+    "lat": 40.780066,
+    "lng": -73.959598
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the ALO calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/mcetweyr",
+   "tags": []
+  },
+  {
+   "id": "evt-QWuLgKMI7BUEUkw",
+   "title": "Maum Market NYC",
+   "category": "community",
+   "start": "2026-10-25T11:00:00-04:00",
+   "end": "2026-10-25T16:00:00-04:00",
+   "venue": {
+    "name": "5-2-A at Industry City",
+    "address": "5-2-A at Industry City, 33 35th St 2nd FL, Brooklyn, NY 11232, USA",
+    "neighborhood": "Greenwood Heights",
+    "lat": 40.657238,
+    "lng": -74.007553
    },
    "price": null,
    "priceUnknown": false,
    "description": "From the Personal calendar on Luma",
    "details": "",
-   "url": "https://luma.com/odpmez89",
+   "url": "https://luma.com/kj3cxjqj",
+   "tags": []
+  },
+  {
+   "id": "evt-rSlzN3CWUhKpt7t",
+   "title": "1$T Gear: Brooklyn",
+   "category": "community",
+   "start": "2026-10-25T12:00:00-04:00",
+   "end": "2026-10-25T18:00:00-04:00",
+   "venue": {
+    "name": "Planet X Studios",
+    "address": "Planet X Studios, 180 Maspeth Ave, Brooklyn, NY 11211, USA",
+    "neighborhood": "East Williamsburg",
+    "lat": 40.716723,
+    "lng": -73.936086
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Planet X Event Calendar calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/lpm7z0ah",
+   "tags": []
+  },
+  {
+   "id": "evt-DO75l08dX1zh6Bo",
+   "title": "Future Reality AI Film Festival (NYC)-Film × Advertising × Creative Technology Screenings · Awards · Industry Leaders Networking",
+   "category": "film",
+   "start": "2026-10-25T18:00:00-04:00",
+   "end": "2026-10-25T22:00:00-04:00",
+   "venue": {
+    "name": "Village East by Angelika",
+    "address": "Village East by Angelika, 181-189 2nd Ave, New York, NY 10003, USA",
+    "neighborhood": "Ukrainian Village",
+    "lat": 40.730956,
+    "lng": -73.986212
+   },
+   "price": {
+    "min": 28,
+    "max": 28,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "From the Harvard XR calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/8pqcqqu0",
+   "tags": []
+  },
+  {
+   "id": "evt-kkEljBhElElrfmt",
+   "title": "Rocky Horror Picture Show at Romania",
+   "category": "community",
+   "start": "2026-10-25T20:00:00-04:00",
+   "end": "2026-10-26T00:00:00-04:00",
+   "venue": {
+    "name": "286 Eldert St",
+    "address": "286 Eldert St, Brooklyn, NY 11207, USA",
+    "neighborhood": "Brooklyn",
+    "lat": 40.692192,
+    "lng": -73.907501
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Personal calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/naod1f5i",
    "tags": []
   }
  ],
  "unplaced": [
   {
-   "title": "Demo Day",
+   "title": "Olive Tree Writing Club x Subra - Writer's Cafe (Fall '26: Part IV)",
    "address": "address shown to guests only",
-   "url": "https://luma.com/3udwxahu"
+   "url": "https://luma.com/kjh927pr"
   },
   {
-   "title": "Blue Hour: a night for nyc’s most ambitious",
+   "title": "The Pause: Candlelit Yoga and Sound Bath with Live Harp",
    "address": "address shown to guests only",
-   "url": "https://luma.com/ypzqeny0"
+   "url": "https://luma.com/6z6plb6c"
   }
  ]
 }

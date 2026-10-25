@@ -348,9 +348,11 @@
   "lng": -74.002024
  },
  "Addabbo Playground in Tudor Park | Queens": null,
+ "Alfred E. Smith Recreation Center in Alfred E. Smith Recreation Center | Manhattan": null,
  "Alley Pond Adventure Course in Alley Pond Park | Queens": null,
  "Amboy Street Garden | Brooklyn": null,
  "Anne Loftus Playground in Fort Tryon Park | Manhattan": null,
+ "Anthem BlueCross Blue Shield HP, 32 Richmond Terrence | Staten Island": null,
  "Arsenal in Central Park | Manhattan": null,
  "Arts and Crafts Room in Greenbelt Recreation Center | Staten Island": null,
  "Asser Levy Park Play Area in Asser Levy Park | Brooklyn": null,
@@ -485,6 +487,7 @@
  "East Fourth Street Community Garden | Brooklyn": null,
  "Ecology Park | Brooklyn": null,
  "Eibs Pond Park | Staten Island": null,
+ "Elmhurst Community Partnership, 41-42 Elbertson Street, Elmhurst, NY | Queens": null,
  "Elton Street and Jamaica Avenue in Highland Park | Queens": null,
  "Enslaved Burial Ground in Van Cortlandt Park | Bronx": null,
  "Entrance - 215th Place and 33rd Road in Crocheron Park | Queens": null,
@@ -589,6 +592,7 @@
  "Lawn in J. Hood Wright Park | Manhattan": null,
  "Lawrence Cemetery | Queens": null,
  "Lentol Garden | Brooklyn": null,
+ "Little Hell Gate Salt Marsh in Randall's Island Park | Manhattan": null,
  "Loreto Playground | Bronx": null,
  "Lower Parking Lot in Greenbelt Recreation Center | Staten Island": null,
  "MADISON AVENUE between EAST 98 STREET and EAST 99 STREET Manhattan | Manhattan": null,
@@ -3046,6 +3050,7 @@
   "lng": -74.013961
  },
  "permit place: BROADWAY between WEST   43 STREET and WEST   44 STREET | Manhattan": null,
+ "permit place: BROADWAY between WEST   45 STREET and WEST   46 STREET | Manhattan": null,
  "permit place: BROADWAY between WEST   46 STREET and WEST   47 STREET | Manhattan": null,
  "permit place: BROADWAY between WEST   73 STREET and WEST   74 STREET | Manhattan": null,
  "permit place: BROADWAY between WEST   96 STREET and WEST  106 STREET | Manhattan": null,
@@ -3369,6 +3374,7 @@
   "lng": -73.90635
  },
  "permit place: FOREST PARKWAY between JAMAICA AVENUE and 86 ROAD | Queens": null,
+ "permit place: FRANKLIN  AVENUE between FULTON  STREET and LEFFEERTS PL | Brooklyn": null,
  "permit place: FRANKLIN AVENUE between DEAN STREET and EASTERN PARKWAY | Brooklyn": {
   "label": "FRANKLIN AVENUE & DEAN STREET",
   "lat": 40.6774745,
@@ -3432,6 +3438,11 @@
   "label": "HARWAY AVENUE & 24th AVENUE",
   "lat": 40.594191499999994,
   "lng": -73.9936545
+ },
+ "permit place: HOFFMAN STREET between EAST FORDHAM ROAD and EAST  191 STREET | Bronx": {
+  "label": "HOFFMAN STREET & EAST FORDHAM ROAD",
+  "lat": 40.858964,
+  "lng": -73.88559
  },
  "permit place: HRPT Piers | Manhattan": null,
  "permit place: Hart Playground | Queens": null,
@@ -3714,6 +3725,11 @@
   "lat": 40.723169,
   "lng": -73.995655
  },
+ "permit place: Paerdegat Park | Brooklyn": {
+  "label": "PAERDEGAT PARK, Brooklyn, NY, USA",
+  "lat": 40.63806,
+  "lng": -73.93813
+ },
  "permit place: Pelham Bay Park and Orchard Beach | Bronx": null,
  "permit place: Poe Park | Bronx": {
   "label": "POE PARK, Bronx, NY, USA",
@@ -3730,6 +3746,7 @@
   "lat": 40.723892,
   "lng": -73.848366
  },
+ "permit place: QUEENS BOULEVARD between 80 ROAD and 82 AVENUE | Queens": null,
  "permit place: ROEBLING STREET - SOUTH 4 STREET to WILLIAMSBURG BRG EN S 4 ST: ROEBLING STREET - SOUTH 4 STREET to WILLIAMSBURG BRG EN S 4 ST | Brooklyn": {
   "label": "ROEBLING STREET & SOUTH 4th STREET",
   "lat": 40.711065,
@@ -3873,6 +3890,11 @@
   "label": "WALL STREET & WILLIAM STREET",
   "lat": 40.706208,
   "lng": -74.009922
+ },
+ "permit place: WASHINGTON AVENUE between EAST  183 STREET and EAST  184 STREET | Bronx": {
+  "label": "WASHINGTON AVENUE & EAST 183rd STREET",
+  "lat": 40.855518,
+  "lng": -73.893286
  },
  "permit place: WATER STREET between BEACH STREET and CANAL STREET | Staten Island": {
   "label": "WATER STREET & BEACH STREET",
@@ -4414,10 +4436,20 @@
   "lat": 40.774768,
   "lng": -73.90831
  },
+ "trivia league: https://nyctrivialeague.com/listings/bareburger-hells-kitchen/": {
+  "label": "Bareburger",
+  "lat": 40.76066382667413,
+  "lng": -73.99029413017564
+ },
  "trivia league: https://nyctrivialeague.com/listings/bella-union/": {
   "label": "Bella Union",
   "lat": 40.7423712,
   "lng": -73.9801834
+ },
+ "trivia league: https://nyctrivialeague.com/listings/bierhaus-nyc/": {
+  "label": "Bierhaus NYC",
+  "lat": 40.7525325,
+  "lng": -73.9733874
  },
  "trivia league: https://nyctrivialeague.com/listings/bird-in-hand-nyc/": {
   "label": "Bird In Hand",
@@ -4434,6 +4466,11 @@
   "lat": 40.6856232,
   "lng": -73.9910146
  },
+ "trivia league: https://nyctrivialeague.com/listings/bleecker-street-bar/": {
+  "label": "Bleecker Street Bar",
+  "lat": 40.726685266290566,
+  "lng": -73.995529757175
+ },
  "trivia league: https://nyctrivialeague.com/listings/block-hill-station/": {
   "label": "Block Hill Station",
   "lat": 40.6605453,
@@ -4443,6 +4480,11 @@
   "label": "Blondie\u2019s Sports",
   "lat": 40.7832098,
   "lng": -73.9791577
+ },
+ "trivia league: https://nyctrivialeague.com/listings/bubbys/": {
+  "label": "Bubby\u2019s",
+  "lat": 40.7198196,
+  "lng": -74.0083109
  },
  "trivia league: https://nyctrivialeague.com/listings/captains-bar-and-grille/": {
   "label": "Captain\u2019s Bar & Grille",
@@ -4474,6 +4516,11 @@
   "lat": 40.85739,
   "lng": -73.8856943
  },
+ "trivia league: https://nyctrivialeague.com/listings/conors-goat/": {
+  "label": "Conor\u2019s Goat",
+  "lat": 40.72295276840408,
+  "lng": -73.98602560698515
+ },
  "trivia league: https://nyctrivialeague.com/listings/coopers-craft-kitchen-east-village/": {
   "label": "Cooper\u2019s Craft & Cocktails 2nd Avenue",
   "lat": 40.7270474,
@@ -4504,10 +4551,25 @@
   "lat": 40.72950149718815,
   "lng": -73.9873564343148
  },
+ "trivia league: https://nyctrivialeague.com/listings/draught-55/": {
+  "label": "Draught 55",
+  "lat": 40.7583039,
+  "lng": -73.9665883
+ },
  "trivia league: https://nyctrivialeague.com/listings/drop-off-service/": {
   "label": "Drop Off Service",
   "lat": 40.7299251,
   "lng": -73.9809574
+ },
+ "trivia league: https://nyctrivialeague.com/listings/due-west/": {
+  "label": "Due West",
+  "lat": 40.7343315,
+  "lng": -74.0032395
+ },
+ "trivia league: https://nyctrivialeague.com/listings/dutch-freds/": {
+  "label": "Dutch Fred\u2019s",
+  "lat": 40.76074066554669,
+  "lng": -73.98788323918227
  },
  "trivia league: https://nyctrivialeague.com/listings/eastpoint-nyc/": {
   "label": "Eastpoint Bar",
@@ -4564,6 +4626,11 @@
   "lat": 40.7481179,
   "lng": -73.9911687
  },
+ "trivia league: https://nyctrivialeague.com/listings/gowanus-gardens/": {
+  "label": "Gowanus Gardens",
+  "lat": 40.6765065,
+  "lng": -73.9839919
+ },
  "trivia league: https://nyctrivialeague.com/listings/gramercy-ale-house/": {
   "label": "Gramercy Ale House",
   "lat": 40.7379971,
@@ -4604,15 +4671,35 @@
   "lat": 40.7320414,
   "lng": -73.9854656
  },
+ "trivia league: https://nyctrivialeague.com/listings/mad-dog-beans-midtown/": {
+  "label": "Mad Dog & Beans Midtown",
+  "lat": 40.7509107,
+  "lng": -73.9818844
+ },
+ "trivia league: https://nyctrivialeague.com/listings/maiden-lane/": {
+  "label": "Maiden Lane",
+  "lat": 40.7271447,
+  "lng": -73.9798696
+ },
  "trivia league: https://nyctrivialeague.com/listings/moms-astoria/": {
   "label": "Mom\u2019s Astoria",
   "lat": 40.7636033,
   "lng": -73.9216229
  },
+ "trivia league: https://nyctrivialeague.com/listings/montague-diner/": {
+  "label": "Montague Diner",
+  "lat": 40.694385671654906,
+  "lng": -73.99339659860124
+ },
  "trivia league: https://nyctrivialeague.com/listings/mosaic/": {
   "label": "Mosaic",
   "lat": 40.77462122682671,
   "lng": -73.91847247374426
+ },
+ "trivia league: https://nyctrivialeague.com/listings/motel-no-tell/": {
+  "label": "Motel No Tell",
+  "lat": 40.7297354,
+  "lng": -73.9806069
  },
  "trivia league: https://nyctrivialeague.com/listings/nook/": {
   "label": "Nook",
@@ -4704,6 +4791,11 @@
   "lat": 40.7783006,
   "lng": -73.9015358
  },
+ "trivia league: https://nyctrivialeague.com/listings/sixpoint-brookfield/": {
+  "label": "Sixpoint Brewery at Brookfield Place",
+  "lat": 40.711458,
+  "lng": -74.01547
+ },
  "trivia league: https://nyctrivialeague.com/listings/small-change/": {
   "label": "Small Change",
   "lat": 40.711485336688824,
@@ -4724,10 +4816,20 @@
   "lat": 40.7566161,
   "lng": -73.9255931
  },
+ "trivia league: https://nyctrivialeague.com/listings/talea-beer-bryant-park/": {
+  "label": "Talea Beer Co. \u2014 Bryant Park",
+  "lat": 40.7526252,
+  "lng": -73.9830859
+ },
  "trivia league: https://nyctrivialeague.com/listings/talea-beer-co-cobble-hill/": {
   "label": "Talea Beer Co. \u2014 Cobble Hill",
   "lat": 40.6871184,
   "lng": -73.9908801
+ },
+ "trivia league: https://nyctrivialeague.com/listings/talea-west-village/": {
+  "label": "Talea Beer Co. \u2014 West Village",
+  "lat": 40.7331361,
+  "lng": -74.0047952
  },
  "trivia league: https://nyctrivialeague.com/listings/the-alvin-public-house/": {
   "label": "The Alvin Public House",
@@ -4738,6 +4840,11 @@
   "label": "The Broadway Tavern",
   "lat": 40.8250528,
   "lng": -73.9519092
+ },
+ "trivia league: https://nyctrivialeague.com/listings/the-district/": {
+  "label": "The District",
+  "lat": 40.783898665058665,
+  "lng": -73.95006224416281
  },
  "trivia league: https://nyctrivialeague.com/listings/the-factory-380/": {
   "label": "The Factory 380",
@@ -4764,6 +4871,11 @@
   "lat": 40.8027728,
   "lng": -73.96439
  },
+ "trivia league: https://nyctrivialeague.com/listings/the-high-note/": {
+  "label": "The High Note",
+  "lat": 40.7349662,
+  "lng": -73.9885982
+ },
  "trivia league: https://nyctrivialeague.com/listings/the-huntress-lic/": {
   "label": "The Huntress LIC",
   "lat": 40.7526721,
@@ -4773,6 +4885,11 @@
   "label": "The Laurels Cafe & Bar",
   "lat": 40.7325995,
   "lng": -73.985007
+ },
+ "trivia league: https://nyctrivialeague.com/listings/the-mayfly/": {
+  "label": "The Mayfly",
+  "lat": 40.7214946,
+  "lng": -73.9846749
  },
  "trivia league: https://nyctrivialeague.com/listings/the-skillman/": {
   "label": "The Skillman",
@@ -4794,6 +4911,11 @@
   "lat": 40.7001546,
   "lng": -73.9242022
  },
+ "trivia league: https://nyctrivialeague.com/listings/the-winslow-2/": {
+  "label": "The Winslow",
+  "lat": 40.732778,
+  "lng": -73.9852113
+ },
  "trivia league: https://nyctrivialeague.com/listings/thehairylemon/": {
   "label": "The Hairy Lemon",
   "lat": 40.7224802,
@@ -4813,6 +4935,11 @@
   "label": "Vacations Bar",
   "lat": 40.7083005,
   "lng": -73.9202741
+ },
+ "trivia league: https://nyctrivialeague.com/listings/valhalla-bar/": {
+  "label": "Valhalla Bar",
+  "lat": 40.7659717,
+  "lng": -73.9873959
  },
  "trivia league: https://nyctrivialeague.com/listings/washington-commons/": {
   "label": "Washington Commons",
