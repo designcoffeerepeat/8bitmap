@@ -4,7 +4,7 @@
   "url": "https://seatgeek.com/cities/new-york"
  },
  "date": "2026-10-26",
- "fetchedAt": "2026-10-26T05:13:20-04:00",
+ "fetchedAt": "2026-10-26T13:13:22-04:00",
  "events": [
   {
    "id": "18542907",
@@ -54,27 +54,28 @@
    ]
   },
   {
-   "id": "18083165",
-   "title": "Six the Musical",
+   "id": "18408259",
+   "title": "Jamie Allan's Amaze",
    "category": "theater",
    "start": "2026-10-26T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Lena Horne Theatre",
-    "address": "256 West 47th Street, New York, NY 10036",
+    "name": "New World Stages - Stage 5",
+    "address": "340 West 50th Street, New York, NY 10019",
     "neighborhood": "New York",
-    "lat": 40.7602,
-    "lng": -73.9868
+    "lat": 40.7628,
+    "lng": -73.9874
    },
    "price": null,
    "priceUnknown": true,
-   "description": "broadway",
+   "description": "entertainment",
    "details": "",
-   "url": "https://seatgeek.com/six-the-musical-tickets/broadway/2026-10-26-7-pm/18083165",
+   "url": "https://seatgeek.com/jamie-allan-s-amaze-tickets/entertainment/2026-10-26-7-pm/18408259",
    "tags": [
     "theater",
-    "broadway"
+    "entertainment",
+    "entertainment"
    ]
   },
   {
@@ -101,14 +102,14 @@
    ]
   },
   {
-   "id": "18408259",
-   "title": "Jamie Allan's Amaze",
+   "id": "18286773",
+   "title": "The Play That Goes Wrong",
    "category": "theater",
    "start": "2026-10-26T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "New World Stages - Stage 5",
+    "name": "New World Stages - Stage 4",
     "address": "340 West 50th Street, New York, NY 10019",
     "neighborhood": "New York",
     "lat": 40.7628,
@@ -116,13 +117,11 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "entertainment",
+   "description": "theater",
    "details": "",
-   "url": "https://seatgeek.com/jamie-allan-s-amaze-tickets/entertainment/2026-10-26-7-pm/18408259",
+   "url": "https://seatgeek.com/the-play-that-goes-wrong-tickets/theater/2026-10-26-7-pm/18286773",
    "tags": [
-    "theater",
-    "entertainment",
-    "entertainment"
+    "theater"
    ]
   },
   {
@@ -149,29 +148,6 @@
    ]
   },
   {
-   "id": "18286773",
-   "title": "The Play That Goes Wrong",
-   "category": "theater",
-   "start": "2026-10-26T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New World Stages - Stage 4",
-    "address": "340 West 50th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7628,
-    "lng": -73.9874
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/the-play-that-goes-wrong-tickets/theater/2026-10-26-7-pm/18286773",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
    "id": "18009749",
    "title": "The Great Gatsby - The Musical",
    "category": "theater",
@@ -190,6 +166,30 @@
    "description": "broadway",
    "details": "",
    "url": "https://seatgeek.com/the-great-gatsby-the-musical-tickets/broadway/2026-10-26-7-pm/18009749",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18339681",
+   "title": "Heathers - The Musical",
+   "category": "theater",
+   "start": "2026-10-26T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New World Stages - Stage 1",
+    "address": "340 West 50th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7628,
+    "lng": -73.9874
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/heathers-tickets/broadway/2026-10-26-7-pm/18339681",
    "tags": [
     "theater",
     "broadway"
@@ -243,30 +243,6 @@
    ]
   },
   {
-   "id": "18339681",
-   "title": "Heathers - The Musical",
-   "category": "theater",
-   "start": "2026-10-26T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New World Stages - Stage 1",
-    "address": "340 West 50th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7628,
-    "lng": -73.9874
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/heathers-tickets/broadway/2026-10-26-7-pm/18339681",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
    "id": "18294664",
    "title": "Jenna Davis",
    "category": "music",
@@ -315,95 +291,24 @@
    ]
   },
   {
-   "id": "18659241",
-   "title": "The Moth StorySLAM",
-   "category": "music",
-   "start": "2026-10-26T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Bell House",
-    "address": "149 7th Street, Brooklyn, NY 11215",
-    "neighborhood": "Brooklyn",
-    "lat": 40.6735,
-    "lng": -73.9916
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/the-moth-storyslam-1-tickets/brooklyn-new-york-the-bell-house-2026-10-26-7-30-pm/concert/18659241",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18369898",
-   "title": "Metropolitan Opera - Lincoln in the Bardo",
-   "category": "music",
-   "start": "2026-10-26T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Metropolitan Opera House",
-    "address": "70 Lincoln Center Plaza, New York, NY 10023",
-    "neighborhood": "New York",
-    "lat": 40.7742,
-    "lng": -73.9843
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "opera",
-   "details": "",
-   "url": "https://seatgeek.com/metropolitan-opera-tickets/opera/2026-10-26-7-30-pm/18369898",
-   "tags": [
-    "theater",
-    "classical",
-    "opera"
-   ]
-  },
-  {
-   "id": "18654948",
-   "title": "kwn (16+)",
-   "category": "music",
-   "start": "2026-10-26T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Terminal 5",
-    "address": "610 W 56th St., New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7697,
-    "lng": -73.9928
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/kwn-tickets/new-york-new-york-terminal-5-2026-10-26-7-30-pm/concert/18654948",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18411548",
-   "title": "Singfeld! A Musical About Nothing!",
+   "id": "18083165",
+   "title": "Six the Musical",
    "category": "theater",
-   "start": "2026-10-26T19:30:00-04:00",
+   "start": "2026-10-26T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "The Theater Center",
-    "address": "210 W. 50th Street, New York, NY 10019",
+    "name": "Lena Horne Theatre",
+    "address": "256 West 47th Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7615,
-    "lng": -73.9845
+    "lat": 40.7602,
+    "lng": -73.9868
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/singfeld-a-musical-about-nothing-tickets/broadway/2026-10-26-7-30-pm/18411548",
+   "url": "https://seatgeek.com/six-the-musical-tickets/broadway/2026-10-26-7-pm/18083165",
    "tags": [
     "theater",
     "broadway"
@@ -430,6 +335,30 @@
    "url": "https://seatgeek.com/dashboard-confessional-tickets/new-york-new-york-the-greene-space-nyc-2026-10-26-7-30-pm/concert/18667288",
    "tags": [
     "concert"
+   ]
+  },
+  {
+   "id": "18411548",
+   "title": "Singfeld! A Musical About Nothing!",
+   "category": "theater",
+   "start": "2026-10-26T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Theater Center",
+    "address": "210 W. 50th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7615,
+    "lng": -73.9845
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/singfeld-a-musical-about-nothing-tickets/broadway/2026-10-26-7-30-pm/18411548",
+   "tags": [
+    "theater",
+    "broadway"
    ]
   },
   {
@@ -476,6 +405,77 @@
    "url": "https://seatgeek.com/the-moth-tickets/theater/2026-10-26-7-30-pm/18272481",
    "tags": [
     "theater"
+   ]
+  },
+  {
+   "id": "18659241",
+   "title": "The Moth StorySLAM",
+   "category": "music",
+   "start": "2026-10-26T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Bell House",
+    "address": "149 7th Street, Brooklyn, NY 11215",
+    "neighborhood": "Brooklyn",
+    "lat": 40.6735,
+    "lng": -73.9916
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/the-moth-storyslam-1-tickets/brooklyn-new-york-the-bell-house-2026-10-26-7-30-pm/concert/18659241",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18654948",
+   "title": "kwn (16+)",
+   "category": "music",
+   "start": "2026-10-26T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Terminal 5",
+    "address": "610 W 56th St., New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7697,
+    "lng": -73.9928
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/kwn-tickets/new-york-new-york-terminal-5-2026-10-26-7-30-pm/concert/18654948",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18369898",
+   "title": "Metropolitan Opera - Lincoln in the Bardo",
+   "category": "music",
+   "start": "2026-10-26T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Metropolitan Opera House",
+    "address": "70 Lincoln Center Plaza, New York, NY 10023",
+    "neighborhood": "New York",
+    "lat": 40.7742,
+    "lng": -73.9843
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "opera",
+   "details": "",
+   "url": "https://seatgeek.com/metropolitan-opera-tickets/opera/2026-10-26-7-30-pm/18369898",
+   "tags": [
+    "theater",
+    "classical",
+    "opera"
    ]
   },
   {
@@ -597,6 +597,29 @@
    ]
   },
   {
+   "id": "18583527",
+   "title": "Downstate",
+   "category": "theater",
+   "start": "2026-10-26T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Booth Theatre - New York",
+    "address": "222 West 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7583,
+    "lng": -73.9863
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/downstate-play-tickets/theater/2026-10-26-8-pm/18583527",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
    "id": "18416823",
    "title": "Hablando Huevadas - Newark",
    "category": "theater",
@@ -618,29 +641,6 @@
    "tags": [
     "theater",
     "entertainment"
-   ]
-  },
-  {
-   "id": "18583527",
-   "title": "Downstate",
-   "category": "theater",
-   "start": "2026-10-26T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Booth Theatre - New York",
-    "address": "222 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7583,
-    "lng": -73.9863
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/downstate-play-tickets/theater/2026-10-26-8-pm/18583527",
-   "tags": [
-    "theater"
    ]
   },
   {
