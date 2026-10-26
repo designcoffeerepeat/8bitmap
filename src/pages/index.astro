@@ -118,6 +118,17 @@ import About from '../components/About.astro';
         <ul id="cat-list" aria-label="Event categories"></ul>
       </div>
     </div>
+    <!-- + dropdown: pick a neighborhood and the map flies to it -->
+    <div class="hood-filter">
+      <button class="chip hood-btn" id="hood-btn" type="button" aria-expanded="false" aria-controls="hood-menu" aria-label="Go to a neighborhood" title="Go to a neighborhood">
+        <svg viewBox="0 0 7 7" aria-hidden="true" shape-rendering="crispEdges"><path fill="currentColor" d="M3 0h1v3h3v1H4v3H3V4H0V3h3z"/></svg>
+      </button>
+      <div class="src-menu hood-menu box" id="hood-menu" hidden>
+        <p class="hood-head">GO TO A NEIGHBORHOOD</p>
+        <input id="hood-search" type="search" placeholder="Search" aria-label="Search neighborhoods" autocomplete="off" spellcheck="false">
+        <ul id="hood-list" aria-label="Neighborhoods"></ul>
+      </div>
+    </div>
   </div>
 </header>
 

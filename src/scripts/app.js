@@ -45,7 +45,30 @@ const el = {
   listTitle: $('#list-title'),
   listHint: $('#list-hint'),
   listReset: $('#list-reset'),
+  hoodBtn: $('#hood-btn'),
+  hoodMenu: $('#hood-menu'),
+  hoodSearch: $('#hood-search'),
+  hoodList: $('#hood-list'),
 };
+
+// The + dropdown: each borough (or New Jersey) first, then its neighborhoods A to Z. A borough zooms out enough to
+// show all of it; a neighborhood zooms in past where the neighborhood names appear (2.4).
+const BOROUGH_VIEWS = {
+  Manhattan: { lat: 40.7685, lng: -73.9772, zoom: 1.6 },
+  Brooklyn: { lat: 40.6500, lng: -73.9500, zoom: 1.6 },
+  Queens: { lat: 40.7050, lng: -73.8200, zoom: 1.4 },
+  Bronx: { lat: 40.8450, lng: -73.8700, zoom: 1.8 },
+  'Staten Island': { lat: 40.5800, lng: -74.1450, zoom: 1.8 },
+  'New Jersey': { lat: 40.7300, lng: -74.0450, zoom: 2.4 },
+};
+const HOOD_ZOOM = 2.7;
+const HOOD_GROUPS = Object.entries(BOROUGH_VIEWS).map(([borough, view]) => ({
+  borough,
+  view,
+  hoods: [...NEIGHBORHOODS, { name: 'Hoboken', borough: 'New Jersey', lat: 40.7440, lng: -74.0324 }, { name: 'Jersey City', borough: 'New Jersey', lat: 40.7178, lng: -74.0431 }]
+    .filter((n) => n.borough === borough)
+    .sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' })),
+}));
 
 await document.fonts.load('8px "Press Start 2P"').catch(() => {});
 const map = createMap(el.map, { pixelSize: 2 });
@@ -119,19 +142,42 @@ document.addEventListener('keydown', (e) => {
   } else if (!el.catMenu.hidden) {
     toggleCategories(false);
     el.catBtn.focus();
+  } else if (!el.hoodMenu.hidden) {
+    toggleHoods(false);
+    el.hoodBtn.focus();
   } else if (state.selected) select(null);
 });
 el.srcBtn.addEventListener('click', () => {
   toggleCategories(false);
+  toggleHoods(false);
   toggleSources(el.srcMenu.hidden);
 });
 el.catBtn.addEventListener('click', () => {
   toggleSources(false);
+  toggleHoods(false);
   toggleCategories(el.catMenu.hidden);
+});
+el.hoodBtn.addEventListener('click', () => {
+  toggleSources(false);
+  toggleCategories(false);
+  toggleHoods(el.hoodMenu.hidden);
 });
 document.addEventListener('pointerdown', (e) => {
   if (!el.srcMenu.hidden && !e.target.closest('.src-filter')) toggleSources(false);
   if (!el.catMenu.hidden && !e.target.closest('.cat-filter')) toggleCategories(false);
+  if (!el.hoodMenu.hidden && !e.target.closest('.hood-filter')) toggleHoods(false);
+});
+el.hoodSearch.addEventListener('input', renderHoods);
+// Enter in the search box goes to the first match.
+el.hoodSearch.addEventListener('keydown', (e) => {
+  if (e.key !== 'Enter') return;
+  e.preventDefault();
+  el.hoodList.querySelector('.hood-go')?.click();
+});
+el.hoodList.addEventListener('click', (e) => {
+  const b = e.target.closest('.hood-go');
+  if (!b) return;
+  goToPlace(b.dataset.name, +b.dataset.lat, +b.dataset.lng, +b.dataset.zoom);
 });
 $('#src-all').addEventListener('click', () => setSources([...publishers.keys()]));
 $('#src-none').addEventListener('click', () => setSources([]));
@@ -262,6 +308,42 @@ function renderSources() {
 function toggleCategories(open) {
   el.catMenu.hidden = !open;
   el.catBtn.setAttribute('aria-expanded', String(open));
+}
+
+function toggleHoods(open) {
+  el.hoodMenu.hidden = !open;
+  el.hoodBtn.setAttribute('aria-expanded', String(open));
+  if (!open) return;
+  el.hoodSearch.value = '';
+  renderHoods();
+  el.hoodList.scrollTop = 0;
+  // Phones skip the focus so the keyboard does not cover the list.
+  if (matchMedia('(hover: hover)').matches) el.hoodSearch.focus();
+}
+
+// The last place picked is marked in the list the next time it opens.
+let pickedPlace = null;
+
+function renderHoods() {
+  const q = el.hoodSearch.value.trim().toLowerCase();
+  const item = (name, lat, lng, zoom, cls = '') => `
+    <li><button class="hood-go${cls}${name === pickedPlace ? ' is-on' : ''}" type="button" data-name="${esc(name)}" data-lat="${lat}" data-lng="${lng}" data-zoom="${zoom}">${esc(name)}</button></li>`;
+  el.hoodList.innerHTML = HOOD_GROUPS.map((g) => {
+    const boroHit = !q || g.borough.toLowerCase().includes(q);
+    const hoods = q ? g.hoods.filter((n) => n.name.toLowerCase().includes(q)) : g.hoods;
+    if (!boroHit && !hoods.length) return '';
+    const label = g.borough === 'Bronx' ? 'THE BRONX' : g.borough.toUpperCase();
+    return `<li class="hood-boro" aria-hidden="true">${label}</li>`
+      + (boroHit ? item(`All of ${g.borough === 'Bronx' ? 'the Bronx' : g.borough}`, g.view.lat, g.view.lng, g.view.zoom, ' is-boro') : '')
+      + hoods.map((n) => item(n.name, n.lat, n.lng, HOOD_ZOOM)).join('');
+  }).join('') || '<li class="hood-empty">No neighborhood by that name.</li>';
+}
+
+function goToPlace(name, lat, lng, zoom) {
+  pickedPlace = name;
+  toggleHoods(false);
+  if (state.selected) select(null);
+  map.focusLatLng(lat, lng, zoom);
 }
 
 function toggleSources(open) {
