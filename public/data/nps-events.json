@@ -3,37 +3,14 @@
   "name": "National Park Service",
   "url": "https://www.nps.gov/state/ny/index.htm"
  },
- "date": "2026-10-25",
- "fetchedAt": "2026-10-25T13:00:13-04:00",
+ "date": "2026-10-26",
+ "fetchedAt": "2026-10-26T05:17:06-04:00",
  "events": [
-  {
-   "id": "E2214AE5-F7F6-297F-3131D768ACD7CEB2",
-   "title": "Ranger-Guided Tour of Federal Hall",
-   "category": "community",
-   "start": "2026-10-25T10:30:00-04:00",
-   "end": "2026-10-25T11:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Federal Hall National Memorial",
-    "address": "15 Pine St",
-    "neighborhood": "Federal Hall National Memorial",
-    "lat": 40.707294,
-    "lng": -74.010241
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Join a ranger for a guided tour of Federal Hall.",
-   "details": "Join a ranger for a guided tour of Federal Hall.",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=E2214AE5-F7F6-297F-3131D768ACD7CEB2",
-   "tags": [
-    "Guided Tour"
-   ]
-  },
   {
    "id": "0D25A738-155D-451F-67D31ADD6827D16D",
    "title": "Castle Clinton Guided tour",
    "category": "community",
-   "start": "2026-10-25T10:00:00-04:00",
+   "start": "2026-10-26T10:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -53,57 +30,11 @@
    ]
   },
   {
-   "id": "B7C9485A-F65C-B12D-80C5A4EBBDD45A9E",
-   "title": "Fort Tompkins Tour",
-   "category": "community",
-   "start": "2026-10-25T10:30:00-04:00",
-   "end": "2026-10-25T12:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Gateway National Recreation Area",
-    "address": "Meet at the Fort Wadsworth Visitor Center",
-    "neighborhood": "Gateway National Recreation Area",
-    "lat": 40.5903,
-    "lng": -73.8914
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Join us for a tour around Fort Tompkins as we explore the fort and surrounding areas. Inclement weather will cancel this program. Dress appropriately for the weather and bring water. Call 718-354-4500",
-   "details": "Join us for a tour around Fort Tompkins as we explore the fort and surrounding areas. Inclement weather will cancel this program. Dress appropriately for the weather and bring water. Call 718-354-4500 to make a reservation.",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=B7C9485A-F65C-B12D-80C5A4EBBDD45A9E",
-   "tags": [
-    "Guided Tour"
-   ]
-  },
-  {
-   "id": "6EDF053C-C210-BD98-EB826C1AD4526045",
-   "title": "House Tour",
-   "category": "community",
-   "start": "2026-10-25T11:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Theodore Roosevelt Birthplace",
-    "address": "The tour is inside the brownstone at 28 E 20th St, New York, NY 10029",
-    "neighborhood": "Theodore Roosevelt Birthplace National Historic Site",
-    "lat": 40.738672,
-    "lng": -73.988962
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Times: 11:00 AM, 12:00 PM, 2:00 PM, 3:00 PM. Take a tour of 5 recreated period rooms and learn about Theodore Roosevelt's early life in New York City!",
-   "details": "Take a tour of 5 recreated period rooms and learn about Theodore Roosevelt's early life in New York City!",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=6EDF053C-C210-BD98-EB826C1AD4526045",
-   "tags": [
-    "Guided Tour"
-   ]
-  },
-  {
-   "id": "B8A5C90F-B321-12E1-476C9293B76D30B8",
-   "title": "\"Ranger's Choice\" Guided Walk at Jamaica Bay Wildlife Refuge",
-   "category": "community",
-   "start": "2026-10-25T10:30:00-04:00",
-   "end": "2026-10-25T11:30:00-04:00",
+   "id": "B941C32B-9D46-40B0-9EF4ACAC61D2B7B0",
+   "title": "Catch the Buzz About Bees!",
+   "category": "art",
+   "start": "2026-10-26T14:00:00-04:00",
+   "end": "2026-10-26T15:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Gateway National Recreation Area",
@@ -114,89 +45,48 @@
    },
    "price": null,
    "priceUnknown": false,
-   "description": "Join us for a park ranger-led program highlighting the nature and history of Jamaica Bay. For more information about a week's tour, call the Jamaica Bay Wildlife Refuge Visitor Center at 718-318-4340.",
-   "details": "Join us for a park ranger-led program highlighting the nature and history of Jamaica Bay. For more information about a week's tour, call the Jamaica Bay Wildlife Refuge Visitor Center at 718-318-4340.",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=B8A5C90F-B321-12E1-476C9293B76D30B8",
+   "description": "Did you know New York state has over 400 native species of bee? Join a park ranger to learn all about New York's native bees and what we can do to help them. This program will involve a woodworking de",
+   "details": "Did you know New York state has over 400 native species of bee? Join a park ranger to learn all about New York's native bees and what we can do to help them. This program will involve a woodworking demonstration where you'll learn how to make a bee hotel, a place where certain bees will make their nest.",
+   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=B941C32B-9D46-40B0-9EF4ACAC61D2B7B0",
    "tags": [
-    "Guided Tour",
-    "Walk"
+    "Cultural/Craft Demonstration",
+    "Guided Tour"
    ]
   },
   {
-   "id": "E3F6B7BB-D8CA-ACF6-EC9FAB485D7454B5",
-   "title": "Children's Storytime",
-   "category": "community",
-   "start": "2026-10-25T10:15:00-04:00",
-   "end": null,
+   "id": "F1614BA4-B239-3336-085ABEB82CFFC387",
+   "title": "Full Hunter's Moon Hike at Jamaica Bay Wildlife Refuge",
+   "category": "sports",
+   "start": "2026-10-26T18:00:00-04:00",
+   "end": "2026-10-26T19:30:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Theodore Roosevelt Birthplace",
-    "address": "28 East 20th Street, New York, NY 10003",
-    "neighborhood": "Theodore Roosevelt Birthplace National Historic Site",
-    "lat": 40.7389,
-    "lng": -73.9893
+    "name": "Gateway National Recreation Area",
+    "address": "Jamaica Bay Wildlife Refuge Visitor Center",
+    "neighborhood": "Gateway National Recreation Area",
+    "lat": 40.5903,
+    "lng": -73.8914
    },
    "price": null,
    "priceUnknown": false,
-   "description": "Times: 10:15 AM, 1:00 PM. Join a ranger for a children's storytime all about Thedore Roosevelt! A ranger will read fun, educational books to engage children with history!",
-   "details": "Join a ranger for a children's storytime all about Thedore Roosevelt! A ranger will read fun, educational books to engage children with history!",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=E3F6B7BB-D8CA-ACF6-EC9FAB485D7454B5",
+   "description": "New York City is a busy city of bright lights at night. With only the full moon, stars, and park rangers to guide you, set off on a hike around Jamaica Bay Wildlife Refuge. Explore the refuge afterhou",
+   "details": "New York City is a busy city of bright lights at night. With only the full moon, stars, and park rangers to guide you, set off on a hike around Jamaica Bay Wildlife Refuge. Explore the refuge afterhours, learn about the traditional name for this moon and look for signs of the story it represents.  \n\nAll ages are welcome. Flashlights and/or headlamps are recommended. Dress appropriately for the weather.",
+   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=F1614BA4-B239-3336-085ABEB82CFFC387",
    "tags": [
-    "Children’s Program"
-   ]
-  },
-  {
-   "id": "E3CE1854-BB33-28D1-861776DBAD6A3BB1",
-   "title": "Theodore Roosevelt's Birthday Celebration",
-   "category": "community",
-   "start": "2026-10-25T10:00:00-04:00",
-   "end": "2026-10-25T16:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Theodore Roosevelt Birthplace",
-    "address": "28 East 20th Street, New York, NY 10003",
-    "neighborhood": "Theodore Roosevelt Birthplace National Historic Site",
-    "lat": 40.7389,
-    "lng": -73.9893
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Join us on Saturday, October 24th and Sunday, October 25th to celebrate Theodore Roosevelt’s 168th birthday! If you come to the Birthplace dressed as TR on either day, you will receive a small “birthd",
-   "details": "Join us on Saturday, October 24th and Sunday, October 25th to celebrate Theodore Roosevelt’s 168th birthday! If you come to the Birthplace dressed as TR on either day, you will receive a small “birthday present” to take home! There will also be free crafts, a photo op station, and a children’s storytime held at 10:15 AM and 1:00 PM on both days!  \n\n Theodore Roosevelt Bithplace is at 28 East 20th Street, New York, NY 10003. The site is open from 10:00 AM to 4:00 PM. Free first-come, first-served house tours are available at 11:00, 12:00, 2:00, and 3:00. Space for these tours is limited. Questions? Please email thrb_info@nps.gov or visit www.nps.gov/thrb.",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=E3CE1854-BB33-28D1-861776DBAD6A3BB1",
-   "tags": [
-    "Festival"
+    "Campfire/Evening Program",
+    "Festival",
+    "Guided Tour"
    ]
   }
  ],
  "unplaced": [
   {
-   "title": "Sandy Hook History House",
-   "address": "Sandy Hook History House, Building 1"
-  },
-  {
    "title": "Sandy Hook Lighthouse Tours",
    "address": "Sandy Hook Lighthouse"
   },
   {
-   "title": "Spermaceti Cove No. 2 Life-Saving Service Station",
-   "address": "Spermaceti Cove No. 2 Life Saving Service Station"
-  },
-  {
-   "title": "Fort Hancock Museum",
-   "address": "Building 28, Sandy Hook"
-  },
-  {
-   "title": "Battery Gunnison/New Battery Peck",
-   "address": "Battery Gunnison, Sandy Hook"
-  },
-  {
-   "title": "Histor-Trees of Fort Hancock",
-   "address": "Sandy Hook Lighthouse"
-  },
-  {
-   "title": "Nike Missile Radar Site Tours",
-   "address": "Horseshoe Cove - Parking Lot L, Sandy Hook"
+   "title": "Sandy Hook History House",
+   "address": "Building 1, Sandy Hook"
   }
  ]
 }

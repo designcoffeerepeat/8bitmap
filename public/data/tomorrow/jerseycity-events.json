@@ -3,8 +3,39 @@
   "name": "Jersey City calendars",
   "url": "https://jerseycityculture.org/events/calendar/"
  },
- "date": "2026-10-26",
- "fetchedAt": "2026-10-25T13:01:59-04:00",
- "events": [],
+ "date": "2026-10-27",
+ "fetchedAt": "2026-10-26T05:18:36-04:00",
+ "events": [
+  {
+   "id": "jc-art-house-productions-202610271900-young-frankenstein",
+   "title": "Young Frankenstein",
+   "category": "film",
+   "start": "2026-10-27T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Art House Productions",
+    "address": "345 Marin Blvd, Jersey City, NJ",
+    "neighborhood": "Jersey City",
+    "lat": 40.7236,
+    "lng": -74.0388
+   },
+   "price": {
+    "min": 20,
+    "max": 30,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://www.arthouseproductions.org/products/young-frankenstein-october-27-2026",
+   "tags": [],
+   "publisher": {
+    "id": "venue-art-house-productions",
+    "name": "Art House Productions",
+    "url": "https://www.arthouseproductions.org/collections/upcomingevents"
+   }
+  }
+ ],
  "unplaced": []
 }

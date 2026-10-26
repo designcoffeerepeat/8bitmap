@@ -3,15 +3,15 @@
   "name": "Hoboken calendars",
   "url": "https://hobokenmuseum.org/events/"
  },
- "date": "2026-10-25",
- "fetchedAt": "2026-10-25T13:00:05-04:00",
+ "date": "2026-10-26",
+ "fetchedAt": "2026-10-26T05:16:58-04:00",
  "events": [
   {
-   "id": "hoboken-public-library-202610251030-toddler-story-time",
-   "title": "Toddler Story Time",
+   "id": "hoboken-public-library-202610261200-baby-story-time",
+   "title": "Baby Story Time",
    "category": "community",
-   "start": "2026-10-25T10:30:00-04:00",
-   "end": "2026-10-25T11:00:00-04:00",
+   "start": "2026-10-26T12:00:00-04:00",
+   "end": "2026-10-26T12:30:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Hoboken Public Library",
@@ -24,7 +24,7 @@
    "priceUnknown": false,
    "description": "For kids",
    "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17434073",
+   "url": "https://hobokenlibrary.libnet.info/event/17434294",
    "tags": [],
    "publisher": {
     "id": "venue-hoboken-public-library",
@@ -33,11 +33,115 @@
    }
   },
   {
-   "id": "hoboken-public-library-202610251030-self-care-sunday",
-   "title": "Self Care Sunday",
+   "id": "hoboken-public-library-202610261230-safe-sleep-safe-baby",
+   "title": "Safe Sleep, Safe Baby",
    "category": "community",
-   "start": "2026-10-25T10:30:00-04:00",
-   "end": "2026-10-25T14:00:00-04:00",
+   "start": "2026-10-26T12:30:00-04:00",
+   "end": "2026-10-26T13:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hoboken Public Library",
+    "address": "500 Park Avenue, Hoboken, NJ",
+    "neighborhood": "Hoboken",
+    "lat": 40.7429,
+    "lng": -74.0311
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "For kids",
+   "details": "",
+   "url": "https://hobokenlibrary.libnet.info/event/17564449",
+   "tags": [],
+   "publisher": {
+    "id": "venue-hoboken-public-library",
+    "name": "Hoboken Public Library",
+    "url": "https://hobokenlibrary.libnet.info/events"
+   }
+  },
+  {
+   "id": "hoboken-public-library-202610261300-unemployment-insurance-workshop",
+   "title": "Unemployment Insurance Workshop",
+   "category": "community",
+   "start": "2026-10-26T13:00:00-04:00",
+   "end": "2026-10-26T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hoboken Public Library",
+    "address": "500 Park Avenue, Hoboken, NJ",
+    "neighborhood": "Hoboken",
+    "lat": 40.7429,
+    "lng": -74.0311
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://hobokenlibrary.libnet.info/event/17386879",
+   "tags": [],
+   "publisher": {
+    "id": "venue-hoboken-public-library",
+    "name": "Hoboken Public Library",
+    "url": "https://hobokenlibrary.libnet.info/events"
+   }
+  },
+  {
+   "id": "hoboken-library-grand-street-branch-202610261530-maker-monday",
+   "title": "Maker Monday",
+   "category": "community",
+   "start": "2026-10-26T15:30:00-04:00",
+   "end": "2026-10-26T16:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hoboken Library, Grand Street Branch",
+    "address": "124 Grand Street, Hoboken, NJ",
+    "neighborhood": "Hoboken",
+    "lat": 40.7374,
+    "lng": -74.0353
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "For kids",
+   "details": "",
+   "url": "https://hobokenlibrary.libnet.info/event/17502651",
+   "tags": [],
+   "publisher": {
+    "id": "venue-hoboken-public-library",
+    "name": "Hoboken Public Library",
+    "url": "https://hobokenlibrary.libnet.info/events"
+   }
+  },
+  {
+   "id": "hoboken-public-library-202610261630-scary-movie-night-house-of-usher",
+   "title": "Scary Movie Night - House of Usher",
+   "category": "film",
+   "start": "2026-10-26T16:30:00-04:00",
+   "end": "2026-10-26T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hoboken Public Library",
+    "address": "500 Park Avenue, Hoboken, NJ",
+    "neighborhood": "Hoboken",
+    "lat": 40.7429,
+    "lng": -74.0311
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://hobokenlibrary.libnet.info/event/17518093",
+   "tags": [],
+   "publisher": {
+    "id": "venue-hoboken-public-library",
+    "name": "Hoboken Public Library",
+    "url": "https://hobokenlibrary.libnet.info/events"
+   }
+  },
+  {
+   "id": "hoboken-public-library-202610261730-teen-gaming-hours",
+   "title": "Teen Gaming Hours",
+   "category": "community",
+   "start": "2026-10-26T17:30:00-04:00",
+   "end": "2026-10-26T19:30:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Hoboken Public Library",
@@ -50,7 +154,7 @@
    "priceUnknown": false,
    "description": "For teens/tweens",
    "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17459008",
+   "url": "https://hobokenlibrary.libnet.info/event/17459269",
    "tags": [],
    "publisher": {
     "id": "venue-hoboken-public-library",
@@ -59,37 +163,11 @@
    }
   },
   {
-   "id": "resiliencity-park-202610251100-halloween-movie-night-pumpkin-patch",
-   "title": "Halloween Movie Night/Pumpkin patch",
-   "category": "film",
-   "start": "2026-10-25T11:00:00-04:00",
-   "end": "2026-10-25T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "ResilienCity Park",
-    "address": "ResilienCity Park, Hoboken, NJ",
-    "neighborhood": "Hoboken",
-    "lat": 40.751,
-    "lng": -74.0335
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://hoboken.recdesk.com/Community/Calendar",
-   "tags": [],
-   "publisher": {
-    "id": "venue-city-of-hoboken",
-    "name": "City of Hoboken",
-    "url": "https://hoboken.recdesk.com/Community/Calendar"
-   }
-  },
-  {
-   "id": "hoboken-public-library-202610251330-pok-mon-card-battle-hour",
-   "title": "Pokémon Card Battle Hour",
+   "id": "hoboken-public-library-202610261800-sci-fi-fantasy-horror-thriller-book-disc",
+   "title": "Sci-Fi/Fantasy & Horror/Thriller Book Discussion",
    "category": "community",
-   "start": "2026-10-25T13:30:00-04:00",
-   "end": "2026-10-25T14:30:00-04:00",
+   "start": "2026-10-26T18:00:00-04:00",
+   "end": "2026-10-26T19:30:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Hoboken Public Library",
@@ -100,66 +178,14 @@
    },
    "price": null,
    "priceUnknown": false,
-   "description": "For teens/tweens, kids",
+   "description": "",
    "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17600216",
+   "url": "https://hobokenlibrary.libnet.info/event/17545440",
    "tags": [],
    "publisher": {
     "id": "venue-hoboken-public-library",
     "name": "Hoboken Public Library",
     "url": "https://hobokenlibrary.libnet.info/events"
-   }
-  },
-  {
-   "id": "hoboken-historical-museum-202610251600-hoboken-s-elysian-fields-the-rise-and-de",
-   "title": "Hoboken’s Elysian Fields: The Rise and Demise of a Riverside Paradise with Irwin Chusid",
-   "category": "community",
-   "start": "2026-10-25T16:00:00-04:00",
-   "end": "2026-10-25T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Hoboken Historical Museum",
-    "address": "1301 Hudson Street, Hoboken, NJ",
-    "neighborhood": "Hoboken",
-    "lat": 40.75385,
-    "lng": -74.0259
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://hobokenmuseum.org/event/elysian-fields-and-early-baseball-with-irwin-chusid/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-hoboken-historical-museum",
-    "name": "Hoboken Historical Museum",
-    "url": "https://hobokenmuseum.org/events/"
-   }
-  },
-  {
-   "id": "resiliencity-park-202610251800-halloween-movie-night-pumpkin-patch",
-   "title": "Halloween Movie Night/Pumpkin patch",
-   "category": "film",
-   "start": "2026-10-25T18:00:00-04:00",
-   "end": "2026-10-25T21:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "ResilienCity Park",
-    "address": "ResilienCity Park, Hoboken, NJ",
-    "neighborhood": "Hoboken",
-    "lat": 40.751,
-    "lng": -74.0335
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://hoboken.recdesk.com/Community/Calendar",
-   "tags": [],
-   "publisher": {
-    "id": "venue-city-of-hoboken",
-    "name": "City of Hoboken",
-    "url": "https://hoboken.recdesk.com/Community/Calendar"
    }
   }
  ],

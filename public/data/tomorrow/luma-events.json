@@ -3,64 +3,135 @@
   "name": "Luma NYC",
   "url": "https://luma.com/nyc"
  },
- "date": "2026-10-26",
- "fetchedAt": "2026-10-25T13:02:00-04:00",
+ "date": "2026-10-27",
+ "fetchedAt": "2026-10-26T05:18:36-04:00",
  "events": [
   {
-   "id": "evt-moQ4JxkhySjJE7i",
-   "title": "Lumara Film Festival World Premiere",
-   "category": "film",
-   "start": "2026-10-26T18:00:00-04:00",
-   "end": "2026-10-26T20:30:00-04:00",
+   "id": "evt-KAvgOgypuoWl2sV",
+   "title": "Day of the Bats: Welcoming Bat Conservation International to DSI",
+   "category": "community",
+   "start": "2026-10-27T15:30:00-04:00",
+   "end": "2026-10-27T18:00:00-04:00",
    "venue": {
-    "name": "Roxy Cinema New York",
-    "address": "Roxy Cinema New York, 2 6th Avenue Cellar Level, New York, NY 10013, USA",
-    "neighborhood": "Tribeca",
-    "lat": 40.719439,
-    "lng": -74.004915
+    "name": "SVA MFA Design for Social Innovation",
+    "address": "SVA MFA Design for Social Innovation, 136 W 21st St, New York, NY 10011, USA",
+    "neighborhood": "Chelsea",
+    "lat": 40.742176,
+    "lng": -73.995544
    },
    "price": null,
    "priceUnknown": false,
    "description": "From the Personal calendar on Luma",
    "details": "",
-   "url": "https://luma.com/xqkmb9rg",
+   "url": "https://luma.com/rd5iv9kh",
    "tags": []
   },
   {
-   "id": "evt-nMbHV1EwssVLvZG",
-   "title": "Mahjong with Jill Kargman and GOLDA 10/26",
+   "id": "evt-JVDYHZ1HSEOKx8a",
+   "title": "Pawn Chess Club at Newlab",
    "category": "community",
-   "start": "2026-10-26T18:00:00-04:00",
-   "end": "2026-10-26T21:00:00-04:00",
+   "start": "2026-10-27T18:00:00-04:00",
+   "end": "2026-10-27T21:00:00-04:00",
    "venue": {
-    "name": "Breads Bakery",
-    "address": "Breads Bakery, 1294 3rd Ave, New York, NY 10021, USA",
-    "neighborhood": "Lenox Hill",
-    "lat": 40.771345,
-    "lng": -73.959746
+    "name": "Newlab",
+    "address": "Newlab, 19 Morris Ave, Brooklyn, NY 11205, USA",
+    "neighborhood": "Brooklyn Navy Yard",
+    "lat": 40.698859,
+    "lng": -73.974727
    },
-   "price": {
-    "min": 72,
-    "max": 72,
-    "currency": "USD"
-   },
+   "price": null,
    "priceUnknown": false,
-   "description": "From the GOLDA Events calendar on Luma",
+   "description": "From the Pawn Chess Club calendar on Luma",
    "details": "",
-   "url": "https://luma.com/xtfeb4df",
+   "url": "https://luma.com/d6xymuwk",
+   "tags": []
+  },
+  {
+   "id": "evt-cgwYFPQhj7J2FsG",
+   "title": "Asian Founders Club & Vibranium Labs Present: Founders After Dark",
+   "category": "community",
+   "start": "2026-10-27T18:30:00-04:00",
+   "end": "2026-10-27T21:30:00-04:00",
+   "venue": {
+    "name": "Civic Hall",
+    "address": "Civic Hall, 124 E 14th St, New York, NY 10003, USA",
+    "neighborhood": "East Village",
+    "lat": 40.733829,
+    "lng": -73.988863
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Asian Founders Club calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/9yreeb7u",
+   "tags": []
+  },
+  {
+   "id": "evt-IInfE0TYycN9RGH",
+   "title": "Decoding COGE with Abundance NY & Citizens Union",
+   "category": "community",
+   "start": "2026-10-27T18:30:00-04:00",
+   "end": "2026-10-27T20:30:00-04:00",
+   "venue": {
+    "name": "Caveat",
+    "address": "Caveat, 21 A Clinton St, New York, NY 10002, USA",
+    "neighborhood": "Lower Manhattan",
+    "lat": 40.720741,
+    "lng": -73.984434
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Abundance New York calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/14p62n8i",
+   "tags": []
+  },
+  {
+   "id": "evt-UFNBKzbsBCYZDEM",
+   "title": "Antimetal Dinner at Dirty French",
+   "category": "food",
+   "start": "2026-10-27T19:00:00-04:00",
+   "end": "2026-10-27T21:30:00-04:00",
+   "venue": {
+    "name": "Dirty French New York",
+    "address": "Dirty French New York, 180 Ludlow St, New York, NY 10002, USA",
+    "neighborhood": "Lower Manhattan",
+    "lat": 40.7219,
+    "lng": -73.987187
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Antimetal calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/antimetal-i8ex",
    "tags": []
   }
  ],
  "unplaced": [
   {
-   "title": "Build Your Content System: AI + Personal Brand Workshop (with Wispr Flow & Stanley)",
+   "title": "Flare NYC: Swell Week Drinks",
    "address": "address shown to guests only",
-   "url": "https://luma.com/gqkb1kgb"
+   "url": "https://luma.com/pv1hqf61"
   },
   {
-   "title": "Animation Nights New York (ANNY) at The Gutter Spare Room!",
+   "title": "State of AI 2026 - NYC launch event",
    "address": "address shown to guests only",
-   "url": "https://luma.com/ht18t7s3"
+   "url": "https://luma.com/soai-nyc"
+  },
+  {
+   "title": "Percepta x Sapienne - Builders After Dark: An evening for women in AI",
+   "address": "address shown to guests only",
+   "url": "https://luma.com/9kulxk97"
+  },
+  {
+   "title": "The Shortlist Network Dinner",
+   "address": "address shown to guests only",
+   "url": "https://luma.com/networkdinner"
+  },
+  {
+   "title": "pickleball but make it a party",
+   "address": "address shown to guests only",
+   "url": "https://luma.com/cumg8xjf"
   }
  ]
 }
