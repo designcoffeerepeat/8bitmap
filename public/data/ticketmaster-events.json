@@ -4,7 +4,7 @@
   "url": "https://www.ticketmaster.com/discover/new-york"
  },
  "date": "2026-10-26",
- "fetchedAt": "2026-10-26T05:17:35-04:00",
+ "fetchedAt": "2026-10-26T13:16:54-04:00",
  "events": [
   {
    "id": "LvZ18QrWTgeialOZ0E4-1",
@@ -78,29 +78,6 @@
    ]
   },
   {
-   "id": "LvZ18QEC-33sYJhRiNbNF",
-   "title": "The Banksy Museum New York!",
-   "category": "art",
-   "start": "2026-10-26T10:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Banksy Museum New York",
-    "address": "277 Canal St, New York",
-    "neighborhood": "New York",
-    "lat": 40.719603,
-    "lng": -74.001358
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Fine Art",
-   "details": "",
-   "url": "https://www.universe.com/events/the-banksy-museum-new-york-tickets-5PKNY0?ref=ticketmaster",
-   "tags": [
-    "Fine Art"
-   ]
-  },
-  {
    "id": "LvZ18Qk4nbbEibYZvnO8e",
    "title": "Banksy Museum - Flexiticket",
    "category": "art",
@@ -124,10 +101,33 @@
    ]
   },
   {
-   "id": "LvZ18Q-9tbOh8sZZvyVBQ",
+   "id": "LvZ18QEC-33sYJhRiNbN5",
+   "title": "The Banksy Museum New York!",
+   "category": "art",
+   "start": "2026-10-26T11:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Banksy Museum New York",
+    "address": "277 Canal St, New York",
+    "neighborhood": "New York",
+    "lat": 40.719603,
+    "lng": -74.001358
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Fine Art",
+   "details": "",
+   "url": "https://www.universe.com/events/the-banksy-museum-new-york-tickets-5PKNY0?ref=ticketmaster",
+   "tags": [
+    "Fine Art"
+   ]
+  },
+  {
+   "id": "LvZ18Q-9tbOh8sZZvyVBJ",
    "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
    "category": "art",
-   "start": "2026-10-26T10:00:00-04:00",
+   "start": "2026-10-26T13:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -207,16 +207,16 @@
     "lng": -73.989686
    },
    "price": {
-    "min": 25,
-    "max": 46,
+    "min": 0,
+    "max": 0,
     "currency": "USD"
    },
    "priceUnknown": false,
-   "description": "Music / Rock",
-   "details": "In his Birdland Theater residency, GRAMMY Award winner, New York native, and multi-instrumentalist Vince Giordano leads The Nighthawks -- an 11-piece band who have set the standard for recreating authentic jazz sounds of the 1920s and beyond. In addition to club and concert appearances around the world, the band has provided period soundtracks for film and television productions including The Cotton Club, The Aviator, Finding Forrester, Revolutionary Road, Cafe Society, HBOs Boardwalk Empire, The Marvelous Mrs. Maisel, the upcoming Martin Scorsese film Killers of The Flower Moon, and many more.",
+   "description": "Music / Jazz",
+   "details": "In his Birdland Theater residency, GRAMMY® Award winner, New York native, and multi-instrumentalist Vince Giordano leads The Nighthawks -- an 11-piece band who have set the standard for recreating authentic jazz sounds of the 1920s and beyond. In addition to club and concert appearances around the world, the band has provided period soundtracks for film and television productions including The Cotton Club, The Aviator, Finding Forrester, Revolutionary Road, Cafe Society, HBOs Boardwalk Empire, The Marvelous Mrs. Maisel, the upcoming Martin Scorsese film Killers of The Flower Moon, and many more.",
    "url": "https://www.ticketweb.com/event/vince-giordano-and-the-nighthawks-birdland-theater-tickets/14916253",
    "tags": [
-    "Rock"
+    "Jazz"
    ]
   },
   {

@@ -4,7 +4,7 @@
   "url": "https://seatgeek.com/cities/new-york"
  },
  "date": "2026-10-26",
- "fetchedAt": "2026-10-26T05:17:28-04:00",
+ "fetchedAt": "2026-10-26T13:16:48-04:00",
  "events": [
   {
    "id": "18542907",
@@ -54,38 +54,14 @@
    ]
   },
   {
-   "id": "18009749",
-   "title": "The Great Gatsby - The Musical",
+   "id": "18408259",
+   "title": "Jamie Allan's Amaze",
    "category": "theater",
    "start": "2026-10-26T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Broadway Theatre - New York",
-    "address": "1681 Broadway, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7632,
-    "lng": -73.9829
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/the-great-gatsby-the-musical-tickets/broadway/2026-10-26-7-pm/18009749",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18286773",
-   "title": "The Play That Goes Wrong",
-   "category": "theater",
-   "start": "2026-10-26T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New World Stages - Stage 4",
+    "name": "New World Stages - Stage 5",
     "address": "340 West 50th Street, New York, NY 10019",
     "neighborhood": "New York",
     "lat": 40.7628,
@@ -93,11 +69,13 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "theater",
+   "description": "entertainment",
    "details": "",
-   "url": "https://seatgeek.com/the-play-that-goes-wrong-tickets/theater/2026-10-26-7-pm/18286773",
+   "url": "https://seatgeek.com/jamie-allan-s-amaze-tickets/entertainment/2026-10-26-7-pm/18408259",
    "tags": [
-    "theater"
+    "theater",
+    "entertainment",
+    "entertainment"
    ]
   },
   {
@@ -147,14 +125,14 @@
    ]
   },
   {
-   "id": "18408259",
-   "title": "Jamie Allan's Amaze",
+   "id": "18286773",
+   "title": "The Play That Goes Wrong",
    "category": "theater",
    "start": "2026-10-26T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "New World Stages - Stage 5",
+    "name": "New World Stages - Stage 4",
     "address": "340 West 50th Street, New York, NY 10019",
     "neighborhood": "New York",
     "lat": 40.7628,
@@ -162,108 +140,35 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "entertainment",
+   "description": "theater",
    "details": "",
-   "url": "https://seatgeek.com/jamie-allan-s-amaze-tickets/entertainment/2026-10-26-7-pm/18408259",
+   "url": "https://seatgeek.com/the-play-that-goes-wrong-tickets/theater/2026-10-26-7-pm/18286773",
    "tags": [
-    "theater",
-    "entertainment",
-    "entertainment"
+    "theater"
    ]
   },
   {
-   "id": "18083165",
-   "title": "Six the Musical",
+   "id": "18009749",
+   "title": "The Great Gatsby - The Musical",
    "category": "theater",
    "start": "2026-10-26T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Lena Horne Theatre",
-    "address": "256 West 47th Street, New York, NY 10036",
+    "name": "Broadway Theatre - New York",
+    "address": "1681 Broadway, New York, NY 10019",
     "neighborhood": "New York",
-    "lat": 40.7602,
-    "lng": -73.9868
+    "lat": 40.7632,
+    "lng": -73.9829
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/six-the-musical-tickets/broadway/2026-10-26-7-pm/18083165",
+   "url": "https://seatgeek.com/the-great-gatsby-the-musical-tickets/broadway/2026-10-26-7-pm/18009749",
    "tags": [
     "theater",
     "broadway"
-   ]
-  },
-  {
-   "id": "18377600",
-   "title": "Los Angeles Kings at New York Rangers",
-   "category": "sports",
-   "start": "2026-10-26T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Madison Square Garden",
-    "address": "4 Pennsylvania Plaza, New York, NY 10001",
-    "neighborhood": "New York",
-    "lat": 40.7509,
-    "lng": -73.9943
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "nhl",
-   "details": "",
-   "url": "https://seatgeek.com/new-york-rangers-tickets/10-26-2026-new-york-new-york-madison-square-garden/nhl/18377600",
-   "tags": [
-    "sports",
-    "hockey",
-    "nhl"
-   ]
-  },
-  {
-   "id": "18294664",
-   "title": "Jenna Davis",
-   "category": "music",
-   "start": "2026-10-26T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Gramercy Theatre",
-    "address": "127 East 23rd Street, New York, NY 10010",
-    "neighborhood": "New York",
-    "lat": 40.738,
-    "lng": -73.9829
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/jenna-davis-tickets/new-york-new-york-gramercy-theatre-2026-10-26-7-pm/concert/18294664",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18526963",
-   "title": "Slam Frank",
-   "category": "theater",
-   "start": "2026-10-26T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Orpheum Theatre - NY",
-    "address": "126 Second Ave, New York, NY 10003",
-    "neighborhood": "New York",
-    "lat": 40.7282,
-    "lng": -73.9875
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/slam-frank-tickets/theater/2026-10-26-7-pm/18526963",
-   "tags": [
-    "theater"
    ]
   },
   {
@@ -309,6 +214,101 @@
    "description": "broadway",
    "details": "",
    "url": "https://seatgeek.com/chicago-the-musical-tickets/broadway/2026-10-26-7-pm/18187808",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18526963",
+   "title": "Slam Frank",
+   "category": "theater",
+   "start": "2026-10-26T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Orpheum Theatre - NY",
+    "address": "126 Second Ave, New York, NY 10003",
+    "neighborhood": "New York",
+    "lat": 40.7282,
+    "lng": -73.9875
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/slam-frank-tickets/theater/2026-10-26-7-pm/18526963",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18294664",
+   "title": "Jenna Davis",
+   "category": "music",
+   "start": "2026-10-26T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Gramercy Theatre",
+    "address": "127 East 23rd Street, New York, NY 10010",
+    "neighborhood": "New York",
+    "lat": 40.738,
+    "lng": -73.9829
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/jenna-davis-tickets/new-york-new-york-gramercy-theatre-2026-10-26-7-pm/concert/18294664",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18377600",
+   "title": "Los Angeles Kings at New York Rangers",
+   "category": "sports",
+   "start": "2026-10-26T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Madison Square Garden",
+    "address": "4 Pennsylvania Plaza, New York, NY 10001",
+    "neighborhood": "New York",
+    "lat": 40.7509,
+    "lng": -73.9943
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "nhl",
+   "details": "",
+   "url": "https://seatgeek.com/new-york-rangers-tickets/10-26-2026-new-york-new-york-madison-square-garden/nhl/18377600",
+   "tags": [
+    "sports",
+    "hockey",
+    "nhl"
+   ]
+  },
+  {
+   "id": "18083165",
+   "title": "Six the Musical",
+   "category": "theater",
+   "start": "2026-10-26T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lena Horne Theatre",
+    "address": "256 West 47th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7602,
+    "lng": -73.9868
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/six-the-musical-tickets/broadway/2026-10-26-7-pm/18083165",
    "tags": [
     "theater",
     "broadway"
@@ -362,6 +362,75 @@
    ]
   },
   {
+   "id": "18426244",
+   "title": "Midnight",
+   "category": "music",
+   "start": "2026-10-26T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Daryl Roth Theatre",
+    "address": "101 East 15th Street, New York, NY 10003",
+    "neighborhood": "New York",
+    "lat": 40.7353,
+    "lng": -73.9897
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/midnight-tickets/new-york-new-york-daryl-roth-theatre-2026-10-26-7-30-pm/concert/18426244",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18272481",
+   "title": "The Moth - Brooklyn",
+   "category": "theater",
+   "start": "2026-10-26T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Bell House",
+    "address": "149 7th Street, Brooklyn, NY 11215",
+    "neighborhood": "Brooklyn",
+    "lat": 40.6735,
+    "lng": -73.9916
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/the-moth-tickets/theater/2026-10-26-7-30-pm/18272481",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18659241",
+   "title": "The Moth StorySLAM",
+   "category": "music",
+   "start": "2026-10-26T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Bell House",
+    "address": "149 7th Street, Brooklyn, NY 11215",
+    "neighborhood": "Brooklyn",
+    "lat": 40.6735,
+    "lng": -73.9916
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/the-moth-storyslam-1-tickets/brooklyn-new-york-the-bell-house-2026-10-26-7-30-pm/concert/18659241",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
    "id": "18654948",
    "title": "kwn (16+)",
    "category": "music",
@@ -410,118 +479,28 @@
    ]
   },
   {
-   "id": "18659241",
-   "title": "The Moth StorySLAM",
-   "category": "music",
-   "start": "2026-10-26T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Bell House",
-    "address": "149 7th Street, Brooklyn, NY 11215",
-    "neighborhood": "Brooklyn",
-    "lat": 40.6735,
-    "lng": -73.9916
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/the-moth-storyslam-1-tickets/brooklyn-new-york-the-bell-house-2026-10-26-7-30-pm/concert/18659241",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18426244",
-   "title": "Midnight",
-   "category": "music",
-   "start": "2026-10-26T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Daryl Roth Theatre",
-    "address": "101 East 15th Street, New York, NY 10003",
-    "neighborhood": "New York",
-    "lat": 40.7353,
-    "lng": -73.9897
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/midnight-tickets/new-york-new-york-daryl-roth-theatre-2026-10-26-7-30-pm/concert/18426244",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18272481",
-   "title": "The Moth - Brooklyn",
+   "id": "18589691",
+   "title": "Night of the Living Drag",
    "category": "theater",
-   "start": "2026-10-26T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Bell House",
-    "address": "149 7th Street, Brooklyn, NY 11215",
-    "neighborhood": "Brooklyn",
-    "lat": 40.6735,
-    "lng": -73.9916
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/the-moth-tickets/theater/2026-10-26-7-30-pm/18272481",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18558884",
-   "title": "Action Bronson (16+)",
-   "category": "music",
    "start": "2026-10-26T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Le Poisson Rouge",
-    "address": "158 Bleecker Street, New York, NY 10012",
-    "neighborhood": "New York",
-    "lat": 40.7285,
-    "lng": -74.0001
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/action-bronson-tickets/new-york-new-york-le-poisson-rouge-2026-10-26-8-pm/concert/18558884",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18081069",
-   "title": "Mac DeMarco",
-   "category": "music",
-   "start": "2026-10-26T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Carnegie Hall",
-    "address": "152 West 57th Street, New York, NY 10019",
+    "name": "HK Hall",
+    "address": "605 W 48th St, New York, NY 10036",
     "neighborhood": "New York",
     "lat": 40.765,
-    "lng": -73.9795
+    "lng": -73.996
    },
    "price": null,
    "priceUnknown": true,
-   "description": "concert",
+   "description": "entertainment",
    "details": "",
-   "url": "https://seatgeek.com/mac-demarco-tickets/new-york-new-york-carnegie-hall-2026-10-26-8-pm/concert/18081069",
+   "url": "https://seatgeek.com/night-of-the-living-drag-tickets/entertainment/2026-10-26-8-pm/18589691",
    "tags": [
-    "concert"
+    "theater",
+    "entertainment",
+    "entertainment"
    ]
   },
   {
@@ -549,28 +528,72 @@
    ]
   },
   {
-   "id": "18589691",
-   "title": "Night of the Living Drag",
-   "category": "theater",
+   "id": "18081069",
+   "title": "Mac DeMarco",
+   "category": "music",
    "start": "2026-10-26T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "HK Hall",
-    "address": "605 W 48th St, New York, NY 10036",
+    "name": "Carnegie Hall",
+    "address": "152 West 57th Street, New York, NY 10019",
     "neighborhood": "New York",
     "lat": 40.765,
-    "lng": -73.996
+    "lng": -73.9795
    },
    "price": null,
    "priceUnknown": true,
-   "description": "entertainment",
+   "description": "concert",
    "details": "",
-   "url": "https://seatgeek.com/night-of-the-living-drag-tickets/entertainment/2026-10-26-8-pm/18589691",
+   "url": "https://seatgeek.com/mac-demarco-tickets/new-york-new-york-carnegie-hall-2026-10-26-8-pm/concert/18081069",
    "tags": [
-    "theater",
-    "entertainment",
-    "entertainment"
+    "concert"
+   ]
+  },
+  {
+   "id": "18558884",
+   "title": "Action Bronson (16+)",
+   "category": "music",
+   "start": "2026-10-26T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Le Poisson Rouge",
+    "address": "158 Bleecker Street, New York, NY 10012",
+    "neighborhood": "New York",
+    "lat": 40.7285,
+    "lng": -74.0001
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/action-bronson-tickets/new-york-new-york-le-poisson-rouge-2026-10-26-8-pm/concert/18558884",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18608448",
+   "title": "Baby Rose",
+   "category": "music",
+   "start": "2026-10-26T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Blue Note",
+    "address": "131 West 3rd Street, New York, NY 10012",
+    "neighborhood": "New York",
+    "lat": 40.7309,
+    "lng": -74.0007
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/baby-rose-tickets/new-york-new-york-blue-note-28-2026-10-26-8-pm/concert/18608448",
+   "tags": [
+    "concert"
    ]
   },
   {
@@ -595,29 +618,6 @@
    "tags": [
     "theater",
     "entertainment"
-   ]
-  },
-  {
-   "id": "18608448",
-   "title": "Baby Rose",
-   "category": "music",
-   "start": "2026-10-26T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Blue Note",
-    "address": "131 West 3rd Street, New York, NY 10012",
-    "neighborhood": "New York",
-    "lat": 40.7309,
-    "lng": -74.0007
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/baby-rose-tickets/new-york-new-york-blue-note-28-2026-10-26-8-pm/concert/18608448",
-   "tags": [
-    "concert"
    ]
   },
   {
