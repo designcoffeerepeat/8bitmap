@@ -318,6 +318,12 @@ export function createMap(container, opts = {}) {
     flyTo(target, Math.max(camera.zoom, zoom ?? 2.6));
   }
 
+  // Slides and zooms the map to a place, such as a neighborhood picked in the + dropdown.
+  function focusLatLng(lat, lng, zoom) {
+    const p = latLngToWorld(lat, lng);
+    flyTo(new THREE.Vector3(p.x, 0, p.z), THREE.MathUtils.clamp(zoom, controls.minZoom, controls.maxZoom));
+  }
+
   function select(id) {
     selected = id;
     refreshPinStates();
@@ -541,6 +547,7 @@ export function createMap(container, opts = {}) {
     addAnchor,
     setVisible,
     focusEvent,
+    focusLatLng,
     select,
     highlight,
     zoomBy,

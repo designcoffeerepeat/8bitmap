@@ -160,6 +160,30 @@ button, a { font: inherit; color: inherit; }
 .cat-only:focus-visible { outline: 3px solid var(--coin); outline-offset: -3px; }
 .cat-only span { margin-left: auto; color: var(--dim); font: 8px/1 var(--font-pixel); }
 
+/* + dropdown: a neighborhood picker that flies the map there */
+.hood-filter { position: relative; flex: none; align-self: stretch; display: flex; }
+.hood-btn { padding: 7px 9px 6px; }
+.hood-btn svg { display: block; width: 9px; height: 9px; }
+.hood-btn[aria-expanded="true"] { border-color: var(--frame); }
+.hood-menu { width: 260px; }
+.hood-head { margin: 0 0 8px; font: 8px/1.3 var(--font-pixel); letter-spacing: .5px; color: var(--dim); }
+#hood-search {
+  display: block; width: 100%; margin: 0 0 8px; padding: 6px 8px 5px;
+  font: 20px/1 var(--font-body); color: var(--ink); background: var(--night-2);
+  border: 2px solid var(--frame); border-radius: 0; -webkit-appearance: none; appearance: none;
+}
+#hood-search::placeholder { color: var(--dim); }
+#hood-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; max-height: 50vh; overflow-y: auto; }
+.hood-boro { padding: 8px 6px 4px; font: 8px/1 var(--font-pixel); letter-spacing: .5px; color: var(--coin); }
+.hood-go {
+  display: flex; align-items: center; gap: 10px; width: 100%; padding: 5px 6px 4px; cursor: pointer; text-align: left;
+  font: 20px/1.05 var(--font-body); color: var(--ink); background: none; border: 0;
+}
+.hood-go:hover, .hood-go.is-on { background: var(--night-2); }
+.hood-go:focus-visible { outline: 3px solid var(--coin); outline-offset: -3px; }
+.hood-go.is-boro { color: var(--coin); }
+.hood-empty { padding: 6px; color: var(--dim); }
+
 /* text pinned to map positions (see addAnchor in renderer.js) */
 .map-anchors { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
 .map-anchor { position: absolute; left: 0; top: 0; white-space: pre; text-align: center; }
@@ -338,9 +362,16 @@ button, a { font: inherit; color: inherit; }
   .ad { min-width: 0; width: 100%; padding: 7px 10px; display: flex; justify-content: center; align-items: center; gap: 10px; }
   .ad small { position: static; }
   .ad strong { font-size: 9px; }
-  .chip { flex: none; }
+  /* the three dropdowns share one line: SOURCES and CATEGORIES split what the + button leaves, and their text
+     shrinks with the screen (17 and 20 glyphs plus fixed padding must fit the screen minus 32px gutters) */
+  .filter-row { gap: 6px; width: 100%; }
+  .src-filter, .cat-filter { flex: 1 1 auto; min-width: 0; }
+  .src-btn, .cat-btn { width: 100%; justify-content: space-between; gap: 5px; padding: 7px 7px 6px; letter-spacing: 0; white-space: nowrap; font-size: clamp(6px, calc((100vw - 180px) / 37), 9px); }
+  .src-btn span, .cat-btn span { margin-left: auto; overflow: hidden; text-overflow: clip; }
+  .hood-btn { padding: 7px 10px 6px; }
   .src-menu { width: min(260px, calc(100vw - 32px)); }
   .cat-menu { left: auto; right: 0; width: min(240px, calc(100vw - 32px)); }
+  .hood-menu { left: auto; right: 0; width: min(260px, calc(100vw - 32px)); }
   #panel {
     top: auto; left: 0; width: auto; height: 46%;
     border-left: 0; border-top: 3px solid var(--frame);
