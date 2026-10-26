@@ -3,33 +3,33 @@
   "name": "Red Hook calendars",
   "url": "https://pioneerworks.org/calendar"
  },
- "date": "2026-10-25",
- "fetchedAt": "2026-10-25T12:57:33-04:00",
+ "date": "2026-10-26",
+ "fetchedAt": "2026-10-26T05:13:20-04:00",
  "events": [
   {
-   "id": "sunny-s-bar-202610252000-ken-and-friends-featuring-aidan-o-donnel",
-   "title": "Ken and Friends featuring Aidan O'Donnell and Emeline O'Rourke",
+   "id": "pioneer-works-202610262000-false-harmonics-28-currawong-project",
+   "title": "False Harmonics #28: Currawong Project",
    "category": "music",
-   "start": "2026-10-25T20:00:00-04:00",
-   "end": "2026-10-25T22:00:00-04:00",
+   "start": "2026-10-26T20:00:00-04:00",
+   "end": "2026-10-26T22:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Sunny's Bar",
-    "address": "253 Conover Street",
+    "name": "Pioneer Works",
+    "address": "159 Pioneer Street",
     "neighborhood": "",
-    "lat": 40.675626,
-    "lng": -74.016798
+    "lat": 40.679224,
+    "lng": -74.012128
    },
    "price": null,
    "priceUnknown": true,
-   "description": "",
+   "description": "Doors 7:00 pm",
    "details": "",
-   "url": "https://tockify.com/sunnysmusic/detail/257/1792972800000",
+   "url": "https://pioneerworks.org/programs/false-harmonics-28-currawong-project-by-matthias-kriesberg-and-kevin-larke-feat-han-chen-arseniy",
    "tags": [],
    "publisher": {
-    "id": "venue-sunny-s-bar",
-    "name": "Sunny's Bar",
-    "url": "https://www.sunnysredhook.com/calendar2/"
+    "id": "venue-pioneer-works",
+    "name": "Pioneer Works",
+    "url": "https://pioneerworks.org/"
    }
   }
  ],

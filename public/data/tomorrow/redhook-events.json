@@ -3,33 +3,85 @@
   "name": "Red Hook calendars",
   "url": "https://pioneerworks.org/calendar"
  },
- "date": "2026-10-26",
- "fetchedAt": "2026-10-25T12:59:00-04:00",
+ "date": "2026-10-27",
+ "fetchedAt": "2026-10-26T05:15:27-04:00",
  "events": [
   {
-   "id": "pioneer-works-202610262000-false-harmonics-28-currawong-project",
-   "title": "False Harmonics #28: Currawong Project",
-   "category": "music",
-   "start": "2026-10-26T20:00:00-04:00",
-   "end": "2026-10-26T22:00:00-04:00",
+   "id": "brooklyn-public-library-sunset-park-branch-202610271330-freeze-your-rent-lower-your-property-tax",
+   "title": "Freeze Your Rent! Lower Your Property Taxes! — BPL Sunset Park Branch",
+   "category": "community",
+   "start": "2026-10-27T13:30:00-04:00",
+   "end": "2026-10-27T16:30:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Pioneer Works",
-    "address": "159 Pioneer Street",
+    "name": "Brooklyn Public Library, Sunset Park Branch",
+    "address": "5108 4th Ave",
     "neighborhood": "",
-    "lat": 40.679224,
-    "lng": -74.012128
+    "lat": 40.645916,
+    "lng": -74.013619
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Doors 7:00 pm",
+   "description": "",
    "details": "",
-   "url": "https://pioneerworks.org/programs/false-harmonics-28-currawong-project-by-matthias-kriesberg-and-kevin-larke-feat-han-chen-arseniy",
+   "url": "https://brooklyncb6.cityofnewyork.us/event/freeze-your-rent-lower-your-property-taxes-bpl-sunset-park-branch/",
    "tags": [],
    "publisher": {
-    "id": "venue-pioneer-works",
-    "name": "Pioneer Works",
-    "url": "https://pioneerworks.org/"
+    "id": "venue-brooklyn-community-board-6",
+    "name": "Brooklyn Community Board 6",
+    "url": "https://brooklyncb6.cityofnewyork.us/events/"
+   }
+  },
+  {
+   "id": "78th-precinct-202610271830-78th-precinct-community-council-meeting",
+   "title": "78th Precinct Community Council Meeting",
+   "category": "community",
+   "start": "2026-10-27T18:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "78th Precinct",
+    "address": "65 6th Avenue",
+    "neighborhood": "",
+    "lat": 40.680901,
+    "lng": -73.974145
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://brooklyncb6.cityofnewyork.us/event/78th-precinct-community-council-meeting-7/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-brooklyn-community-board-6",
+    "name": "Brooklyn Community Board 6",
+    "url": "https://brooklyncb6.cityofnewyork.us/events/"
+   }
+  },
+  {
+   "id": "sunny-s-bar-202610272000-stefan-zeniuk-s-limits",
+   "title": "Stefan Zeniuk's Limits",
+   "category": "music",
+   "start": "2026-10-27T20:00:00-04:00",
+   "end": "2026-10-27T22:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Sunny's Bar",
+    "address": "253 Conover Street",
+    "neighborhood": "",
+    "lat": 40.675626,
+    "lng": -74.016798
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://tockify.com/sunnysmusic/detail/288/1793145600000",
+   "tags": [],
+   "publisher": {
+    "id": "venue-sunny-s-bar",
+    "name": "Sunny's Bar",
+    "url": "https://www.sunnysredhook.com/calendar2/"
    }
   }
  ],
