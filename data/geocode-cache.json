@@ -165,6 +165,11 @@
   "lng": -74.012728
  },
  "35 AVENUE between 82 STREET and 81 STREET Queens | Queens": null,
+ "350 Grand St | Manhattan": {
+  "label": "350 GRAND STREET, New York, NY, USA",
+  "lat": 40.717491,
+  "lng": -73.989324
+ },
  "362 grand street | Brooklyn": {
   "label": "362 GRAND STREET, Brooklyn, NY, USA",
   "lat": 40.712214,
@@ -399,6 +404,7 @@
  "Brownsville Neighborhood Health Action Center | Brooklyn": null,
  "Bruckner Mott Haven Community Garden | Bronx": null,
  "CARROLL STREET between SMITH STREET and COURT STREET Brooklyn | Brooklyn": null,
+ "CHCF Early Head Start Community Baby Shower- Baby Shower PS 299K, 88 Woodbine Street, Brooklyn, NY | Brooklyn": null,
  "CLARKSON AVENUE between EAST 37 STREET and EAST 38 STREET Brooklyn | Brooklyn": {
   "label": "CLARKSON AVENUE & EAST 37 STREET",
   "lat": 40.655682,
@@ -414,9 +420,11 @@
   "lat": 40.640669,
   "lng": -73.965126
  },
+ "Canal Street, Essex Street to Orchard Street | Manhattan": null,
  "Canarsie Park House in Canarsie Park | Brooklyn": null,
  "Carmine Carro Community Center in Marine Park | Brooklyn": null,
  "Central Park Gardens - Community Room | Manhattan": null,
+ "Chayya Community Development Corporation, 121-18 Liberty Avenue, Richmond Hill, NY | Queens": null,
  "Cherry Tree Park Playground in Cherry Tree Park | Manhattan": null,
  "Church parking lot, enter from Alameda Ave | Queens": null,
  "Classroom A - Small in Lost Battalion Hall Recreation Center | Queens": null,
@@ -485,6 +493,7 @@
  },
  "ENY Youth Farm | Brooklyn": null,
  "East 33rd Street and Avenue U | Brooklyn": null,
+ "East Flatbush Community Partnership\\n1011 Utica Avenue, Brooklyn, NY | Brooklyn": null,
  "East Fourth Street Community Garden | Brooklyn": null,
  "Ecology Park | Brooklyn": null,
  "Eibs Pond Park | Staten Island": null,
@@ -602,6 +611,7 @@
  "Maple Street Community Garden | Brooklyn": null,
  "Marcus Garvey Park | Manhattan": null,
  "Margaret Corbin Circle in Fort Tryon Park | Manhattan": null,
+ "Marine Park | Brooklyn": null,
  "Martling Avenue and Brooks Pond Place in Clove Lakes Park | Staten Island": null,
  "Merchant's House Museum | Manhattan": null,
  "Midland Beach Splash Plaza in Franklin D. Roosevelt Boardwalk and Beach | Staten Island": null,
@@ -668,6 +678,7 @@
   "lng": -73.995655
  },
  "PS 94 Kings College School- 3530 Kings College Place, Bronx, NY | Bronx": null,
+ "PS369 - Young Leaders Elementary School: 468 E 140th St, Bronx, NY | Bronx": null,
  "Parking lot, cars follow park drive to the end | Bronx": null,
  "Patchen Community Square | Brooklyn": null,
  "Pelham Bay Nature Center in Pelham Bay Park | Bronx": null,
@@ -938,6 +949,10 @@
   "lng": -74.09126
  },
  "census: 222 JERSEY CIYT BOULEVARD": null,
+ "census: 360 Martin Luther King Dr.": {
+  "lat": 40.710084,
+  "lng": -74.079851
+ },
  "corner: madison ave & e 23rd st | Manhattan": {
   "label": "madison ave & e 23rd st",
   "lat": 40.740847,
@@ -3449,6 +3464,7 @@
   "lat": 40.71672,
   "lng": -73.96691
  },
+ "permit place: HARMAN STREET between MYRTLE AVENUE and WILSON AVENUE | Brooklyn": null,
  "permit place: HART STREET between BROADWAY and STUYVESANT AVENUE | Brooklyn": {
   "label": "HART STREET & BROADWAY",
   "lat": 40.6948105,
@@ -3578,6 +3594,11 @@
   "label": "LENOX AVENUE & WEST 136th STREET",
   "lat": 40.815036,
   "lng": -73.940643
+ },
+ "permit place: LEONARD STREET between MAUJER STREET and GRAND STREET | Brooklyn": {
+  "label": "LEONARD STREET & MAUJER STREET",
+  "lat": 40.71074,
+  "lng": -73.94734249999999
  },
  "permit place: LEXINGTON AVENUE between EAST   42 STREET and EAST   57 STREET | Manhattan": {
   "label": "LEXINGTON AVENUE & EAST 42nd STREET",
@@ -3728,6 +3749,11 @@
   "lat": 40.636304,
   "lng": -73.961341
  },
+ "permit place: NORTH    6 STREET between BERRY STREET and BEDFORD AVENUE | Brooklyn": {
+  "label": "NORTH 6th STREET & BERRY STREET",
+  "lat": 40.71835,
+  "lng": -73.95963
+ },
  "permit place: NOSTRAND AVENUE between FLATBUSH AVENUE and GLENWOOD ROAD | Brooklyn": null,
  "permit place: Ocean Parkway Malls | Brooklyn": null,
  "permit place: PARSONS BOULEVARD between JAMAICA AVENUE and ARCHER AVENUE | Queens": null,
@@ -3757,6 +3783,7 @@
   "lng": -73.93813
  },
  "permit place: Pelham Bay Park and Orchard Beach | Bronx": null,
+ "permit place: Plaza Alianza Dominicana Audubon ave between 166 th st and St nicholas Ave | Manhattan": null,
  "permit place: Poe Park | Bronx": {
   "label": "POE PARK, Bronx, NY, USA",
   "lat": 40.8648,
@@ -3962,10 +3989,20 @@
   "lat": 40.752264,
   "lng": -74.006236
  },
+ "permit place: WEST   28 STREET between 9 AVENUE and 10 AVENUE | Manhattan": {
+  "label": "WEST 28th STREET & 9th AVENUE",
+  "lat": 40.7501245,
+  "lng": -73.99825849999999
+ },
  "permit place: WEST   42 STREET between 5 AVENUE and 6 AVENUE | Manhattan": {
   "label": "WEST 42nd STREET & 5th AVENUE",
   "lat": 40.753202,
   "lng": -73.98225
+ },
+ "permit place: WEST   45 STREET between 8 AVENUE and 9 AVENUE | Manhattan": {
+  "label": "WEST 45th STREET & 8th AVENUE",
+  "lat": 40.758723,
+  "lng": -73.9883
  },
  "permit place: WEST   46 STREET between BROADWAY and 8 AVENUE | Manhattan": null,
  "permit place: WEST   64 STREET between CENTRAL PARK WEST and BROADWAY | Manhattan": {

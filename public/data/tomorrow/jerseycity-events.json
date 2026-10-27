@@ -3,14 +3,66 @@
   "name": "Jersey City calendars",
   "url": "https://jerseycityculture.org/events/calendar/"
  },
- "date": "2026-10-27",
- "fetchedAt": "2026-10-26T13:14:35-04:00",
+ "date": "2026-10-28",
+ "fetchedAt": "2026-10-27T05:11:58-04:00",
  "events": [
   {
-   "id": "jc-art-house-productions-202610271900-young-frankenstein",
-   "title": "Young Frankenstein",
-   "category": "film",
-   "start": "2026-10-27T19:00:00-04:00",
+   "id": "jc-city-hall-annex-202610281000-employee-wellness-fair",
+   "title": "Employee Wellness Fair",
+   "category": "community",
+   "start": "2026-10-28T10:00:00-04:00",
+   "end": "2026-10-28T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "City Hall Annex",
+    "address": "360 Martin Luther King Dr., Jersey City, NJ",
+    "neighborhood": "Jersey City",
+    "lat": 40.710084,
+    "lng": -74.079851
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://jerseycityculture.org/event/employee-wellness-fair-2026/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-jersey-city-culture",
+    "name": "Jersey City Culture",
+    "url": "https://jerseycityculture.org/events/calendar/"
+   }
+  },
+  {
+   "id": "jc-hamilton-park-202610281600-hamilton-park-farmers-market",
+   "title": "Hamilton Park Farmers Market",
+   "category": "food",
+   "start": "2026-10-28T16:00:00-04:00",
+   "end": "2026-10-28T19:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hamilton Park",
+    "address": "9 McWilliams Pl, Jersey City, NJ",
+    "neighborhood": "Jersey City",
+    "lat": 40.7278,
+    "lng": -74.0446
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://jerseycityculture.org/event/hamilton-park-farmers-market-2026/2026-10-28/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-jersey-city-culture",
+    "name": "Jersey City Culture",
+    "url": "https://jerseycityculture.org/events/calendar/"
+   }
+  },
+  {
+   "id": "jc-art-house-productions-202610281930-lizzie-borden",
+   "title": "Lizzie Borden",
+   "category": "theater",
+   "start": "2026-10-28T19:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -22,13 +74,13 @@
    },
    "price": {
     "min": 20,
-    "max": 30,
+    "max": 40,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://www.arthouseproductions.org/products/young-frankenstein-october-27-2026",
+   "url": "https://www.arthouseproductions.org/products/lizzie-borden-october-28-2026",
    "tags": [],
    "publisher": {
     "id": "venue-art-house-productions",
