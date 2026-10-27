@@ -358,7 +358,8 @@ button, a { font: inherit; color: inherit; }
   .brand p { white-space: nowrap; letter-spacing: 0; font-size: clamp(5px, calc((100vw - 70px) / 37), 9px); }
   .brand p #today-count { min-width: 22ch; }
   .day-btn { min-width: calc(12ch + 8px); }
-  .hud-top { flex-direction: column; align-items: flex-start; gap: 8px; }
+  /* title box and ad run the full width, so their right edge matches the 16px left margin */
+  .hud-top { flex-direction: column; align-items: stretch; align-self: stretch; gap: 8px; }
   .ad { min-width: 0; width: 100%; padding: 7px 10px; display: flex; justify-content: center; align-items: center; gap: 10px; }
   .ad small { position: static; }
   .ad strong { font-size: 9px; }
