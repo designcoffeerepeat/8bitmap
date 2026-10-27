@@ -387,11 +387,26 @@ and the same show listed on several sites is merged by title, venue and start ti
   `pins`). An overlay such as a subway map can draw lines with `map.addOverlayLine(points, { color, width })`, fade
   the city under it with `map.dimBase(0.6)`, hide a layer with `map.setLayerVisible('roads', false)` and add or
   remove text tags with `map.addAnchor` / `map.removeAnchor`. Pins always stay on top.
-- Subway alerts: the + menu's Subway Alerts section asks `/api/subway-alerts` (`worker/index.js`, which reads the
-  MTA's live alerts feed and keeps it for two minutes) for the active alerts and delays, or the planned work for today
-  and tomorrow, then draws the affected lines with `addOverlayLine` (`src/scripts/subway.js`). The line paths are
-  `src/scripts/map/subway.json`, written by `tools/build_subway.py` from the MTA's subway GTFS before every aul build;
-  the copy in git is empty, so a local build lists the lines without drawing them unless you run the script first.
+- Subway: the + menu's Subway section has SUBWAY MAP (every line and station, a few pixels wide at any zoom) and
+  the lines hit by ACTIVE ALERTS / DELAYS or PLANNED WORK, from `/api/subway-alerts` (`worker/index.js`, which reads
+  the MTA's live alerts feed and keeps it for two minutes). A headline like "No [L] trains between 8 Av and Bedford
+  Av" is matched to the line's stations (`src/scripts/subway-spans.js`) and that stretch is drawn red with a ! pin
+  that shows the alert. The lines and stations are `src/scripts/map/subway.json`, written by `tools/build_subway.py`
+  from the MTA's subway GTFS before every aul build; the copy in git is empty, so a local build lists the lines
+  without drawing them unless you run the script first. `node tools/check_subway_spans.mjs alerts.json` shows how
+  the live alerts match (the aul workflow prints it).
+- Weather: the button at the bottom left asks `/api/weather` (the National Weather Service's hourly forecast for
+  Central Park, kept 15 minutes) and its card has the chance of rain, the umbrella answer and WINTER MODE, which
+  covers the streets, roofs and trees in snow (`map.setWinter`, `src/scripts/weather.js`).
+- Alternate side parking: the + menu shows today and tomorrow from `src/scripts/asp.json`, written by
+  `tools/build_asp.py` from NYC DOT's yearly calendar (refreshed before every aul build), and the #asp modal shows the
+  whole year (`src/components/AspCalendar.astro`). SHOW ON MAP keeps a chip at the bottom left.
+- Airport security: shield pins over JFK, LaGuardia and Newark open a card with each terminal's general and PreCheck
+  wait from `/api/airport-security` (the Port Authority's checkpoint feed, kept five minutes). Pins that are not
+  events go through `map.setExtraPins` (`src/scripts/airport-security.js`).
+- New Year's Eve: from 11:50 pm on December 31 (New York time) a countdown floats over the Times Square ball, which
+  drops over the last minute, then ten minutes of fireworks; on January 1st tapping the ball drops it again
+  (`src/scripts/new-year.js`). `?nye=90` sets the clock 90 seconds before midnight to try it.
 - `?at=lat,lng,zoom` in the address opens the map on that spot, e.g. `/?at=40.7499,-73.8467,3.5` for the US Open.
 - Skyline heights come from `PEAKS` in `geo.js` (centre, spread, height).
 - Tile size is `CELL` in `tools/build_land.py`; pixel chunkiness is the PX button (2x by default, then 3x, 4x).

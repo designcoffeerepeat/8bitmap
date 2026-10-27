@@ -476,3 +476,113 @@ button, a { font: inherit; color: inherit; }
   .filter-row { position: relative; }
   .sub-chip { position: absolute; top: calc(100% + 8px); right: 0; }
 }
+
+/* bottom left corner: the weather button (src/scripts/weather.js) and the parking chip (src/scripts/asp.js) */
+.corner {
+  position: fixed; z-index: 1; left: max(16px, env(safe-area-inset-left, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  display: flex; flex-direction: column; align-items: flex-start; gap: 8px;
+}
+#detail:not([hidden]) ~ .corner, .monster-on .corner { display: none; }
+.wx { position: relative; }
+.wx-btn { display: flex; align-items: center; gap: 8px; padding: 6px 10px 6px 6px; cursor: pointer; font: 10px/1 var(--font-pixel); color: var(--ink); }
+.wx-btn svg { width: 30px; height: 30px; }
+.wx-btn:hover, .wx-btn[aria-expanded="true"] { color: var(--coin); }
+.wx-card { position: absolute; left: 0; bottom: calc(100% + 10px); width: 270px; padding: 12px 12px 8px; }
+.wx-card[hidden] { display: none; }
+.wx-head { margin: 0 0 8px; font: 8px/1 var(--font-pixel); color: var(--coin); letter-spacing: .5px; }
+.wx-now { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.wx-now svg { flex: none; width: 48px; height: 48px; }
+.wx-now strong { display: block; font: 16px/1.1 var(--font-pixel); font-weight: 400; color: var(--ink); }
+.wx-now span { font: 19px/1 var(--font-body); color: var(--dim); }
+.wx-facts { margin: 0 0 8px; }
+.wx-facts div { padding: 5px 0; border-top: 2px solid var(--night-2); }
+.wx-facts dt { font: 7px/1.3 var(--font-pixel); color: var(--dim); }
+.wx-facts dd { margin: 2px 0 0; font: 18px/1.05 var(--font-body); color: var(--ink); }
+.wx-facts dd b { font: 8px/1 var(--font-pixel); font-weight: 400; padding: 3px 4px 2px; margin-right: 4px; color: var(--night); }
+.wx-yes { background: #4dd2ff; }
+.wx-maybe { background: var(--coin); }
+.wx-no { background: #7cf07c; }
+.wx-winter, #asp-show {
+  display: flex; justify-content: space-between; align-items: center; width: 100%; margin: 0 0 4px; padding: 8px 8px 7px;
+  cursor: pointer; font: 7px/1.2 var(--font-pixel); color: var(--ink); background: var(--night-2); border: 2px solid var(--frame);
+}
+.wx-winter b, #asp-show b { font-weight: 400; color: var(--dim); }
+.wx-winter[aria-pressed="true"], #asp-show[aria-pressed="true"] { border-color: var(--coin); }
+.wx-winter[aria-pressed="true"] b, #asp-show[aria-pressed="true"] b { color: var(--coin); }
+@media (max-width: 760px) {
+  .corner { bottom: calc(78px + env(safe-area-inset-bottom, 0px)); }
+  .wx-btn { padding: 5px 8px 5px 5px; font-size: 9px; }
+  .wx-btn svg { width: 24px; height: 24px; }
+  .wx-card { width: min(270px, calc(100vw - 32px)); }
+}
+
+/* alternate side parking (src/scripts/asp.js, src/components/AspCalendar.astro) */
+.asp-badge { margin-left: auto; margin-right: 8px; font: 6px/1 var(--font-pixel); font-style: normal; padding: 3px 4px 2px; color: var(--night); background: var(--coin); }
+.asp-badge.is-off { background: #7cf07c; }
+.asp-badge:empty { display: none; }
+.asp-row { margin: 0 0 8px; padding: 6px 8px; background: var(--night-2); border-left: 4px solid var(--coin); }
+.asp-row.is-off { border-left-color: #7cf07c; }
+.asp-row p { display: flex; justify-content: space-between; gap: 8px; margin: 0 0 3px; font: 7px/1.3 var(--font-pixel); color: var(--ink); }
+.asp-row p small { color: var(--dim); }
+.asp-row p b { font-weight: 400; color: var(--coin); white-space: nowrap; }
+.asp-row.is-off p b { color: #7cf07c; }
+.asp-row > small { display: block; font: 16px/1.05 var(--font-body); color: var(--dim); }
+.sub-link.asp-cal::after { content: none; }
+.asp-chip { display: flex; align-items: center; gap: 8px; padding: 7px 9px 6px; font: 7px/1 var(--font-pixel); color: var(--ink); white-space: nowrap; cursor: pointer; }
+.asp-chip[hidden] { display: none; }
+.asp-chip b { font-weight: 400; color: var(--coin); }
+.asp-chip b.is-off { color: #7cf07c; }
+.asp-chip span { color: var(--dim); }
+.modal-wide { width: min(880px, calc(100vw - 32px)); }
+.asp-year { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 14px; margin-bottom: 18px; }
+.asp-month h4 { margin: 0 0 6px; font: 8px/1 var(--font-pixel); color: var(--ink); letter-spacing: 1px; }
+.asp-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; }
+.asp-grid span { display: grid; place-items: center; height: 22px; font: 17px/1 var(--font-body); color: var(--dim); }
+.asp-grid .asp-dow { font: 6px/1 var(--font-pixel); color: var(--dim); height: 14px; }
+.asp-grid .asp-day { color: var(--ink); background: var(--night-2); }
+.asp-grid .asp-day.is-off { background: var(--coin); color: var(--night); cursor: help; }
+.asp-grid .asp-day.is-today { outline: 2px solid var(--frame); outline-offset: -2px; }
+.asp-why { list-style: none; margin: 6px 0 0; padding: 0; }
+.legal .asp-why li { margin: 0 0 2px; font: 16px/1.05 var(--font-body); color: var(--dim); }
+.asp-why b { display: inline-block; min-width: 20px; }
+
+/* airport security pins (src/scripts/airport-security.js), in the event card */
+.sec-table { width: 100%; margin: 0 0 8px; border-collapse: collapse; font: 18px/1.1 var(--font-body); }
+.sec-table th { padding: 0 4px 4px 0; text-align: left; font: 7px/1.2 var(--font-pixel); color: var(--dim); }
+.sec-table td { padding: 4px 4px 4px 0; border-top: 2px solid var(--night-2); color: var(--ink); }
+.sec-table td:first-child { color: var(--coin); }
+.sec-table small { color: var(--dim); font-size: 16px; }
+
+/* New Year's Eve in Times Square (src/scripts/new-year.js) */
+.nye-tag {
+  position: absolute; left: 0; top: 0; z-index: 1; pointer-events: none; padding: 5px 7px 4px; white-space: nowrap;
+  font: 10px/1 var(--font-pixel); color: var(--coin); background: var(--night); border: 2px solid var(--frame);
+}
+.nye-tag[hidden] { display: none; }
+.nye-tag.is-final { font-size: 22px; color: #ff5c8a; }
+.nye-hud {
+  position: fixed; z-index: 3; left: 50%; top: auto; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); transform: translateX(calc(-50% - var(--panel-w) / 2));
+  display: flex; gap: 12px; align-items: center; padding: 9px 10px 8px 14px; cursor: pointer; white-space: nowrap;
+  font: 9px/1 var(--font-pixel); color: var(--coin); letter-spacing: .5px;
+}
+.nye-hud[hidden] { display: none; }
+.nye-hud b { font-weight: 400; padding: 4px 6px 3px; color: var(--night); background: var(--coin); }
+@media (max-width: 760px) {
+  .nye-hud { left: auto; right: 82px; transform: none; bottom: calc(78px + env(safe-area-inset-bottom, 0px)); font-size: 7px; }
+}
+
+/* a stretch of subway out of service: the ! pin and its alert (src/scripts/subway.js) */
+.map-anchor.sub-warn { pointer-events: auto; z-index: 2; }
+.map-anchor.sub-warn.is-open { z-index: 3; }
+.sub-warn-btn {
+  display: grid; place-items: center; width: 20px; height: 20px; padding: 0; cursor: pointer;
+  font: 10px/1 var(--font-pixel); color: var(--ink); background: #ff2a2a; border: 2px solid var(--frame); box-shadow: 2px 2px 0 var(--night);
+}
+.sub-warn-btn:hover, .sub-warn.is-open .sub-warn-btn { background: var(--coin); color: var(--night); }
+.sub-warn-box { position: absolute; left: 50%; bottom: calc(100% + 8px); transform: translateX(-50%); width: 240px; padding: 10px 10px 4px; text-align: left; white-space: normal; }
+.sub-warn-box[hidden] { display: none; }
+.sub-warn-head { display: flex; align-items: center; gap: 4px; margin: 0 0 6px; font: 8px/1 var(--font-pixel); color: #ff6b6b; }
+.sub-warn-span { margin: 0 0 6px; font: 8px/1.4 var(--font-pixel); color: var(--ink); }
+.sub-warn-text { margin: 0 0 6px; font: 17px/1.05 var(--font-body); color: var(--dim); }
+.sub-warn-text .sub-bullet, .sub-warn-head .sub-bullet { display: inline-grid; min-width: 15px; height: 15px; font-size: 7px; vertical-align: -2px; }
+.sub-out-n { font-weight: 400; color: #ff6b6b; }

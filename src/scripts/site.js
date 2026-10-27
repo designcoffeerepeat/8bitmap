@@ -5,7 +5,7 @@
 const $ = (sel) => document.querySelector(sel);
 const menuBtn = $('#menu-btn');
 const menu = $('#site-menu');
-const MODALS = ['contact', 'about', 'privacy', 'terms'];
+const MODALS = ['contact', 'about', 'privacy', 'terms', 'disclaimer', 'asp'];
 
 // ---- menu ----------------------------------------------------------------------
 function toggleMenu(open) {
@@ -35,7 +35,7 @@ monsterBtn.addEventListener('click', () => {
 window.addEventListener('monster:state', (e) => monsterBtn.setAttribute('aria-pressed', String(e.detail.on)));
 
 // ---- modals ----------------------------------------------------------------------
-// Each modal also has a hash (#contact, #about, #privacy, #terms) so it can be linked to directly.
+// Each modal also has a hash (#contact, #about, #privacy, #terms, #disclaimer, #asp) so it can be linked to directly.
 function openModal(name, { topic } = {}) {
   const dialog = $(`#modal-${name}`);
   if (!dialog) return;

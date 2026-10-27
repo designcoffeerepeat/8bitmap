@@ -8,6 +8,7 @@
 
 import * as THREE from 'three';
 import { COLS, ROWS, LANDMARKS, clearedTiles } from './map/geo.js';
+import { initNewYear } from './new-year.js';
 
 const GROUND_H = 0.35;
 const PAVING = '#a9a6b8';
@@ -18,7 +19,7 @@ const tile = (col, row) => ({ x: col - COLS / 2, z: row - ROWS / 2 });
 const AD = { x0: tile(179, 0).x + 0.1, x1: tile(182, 0).x - 0.1, z0: tile(0, 135).z + 0.4, z1: tile(0, 137).z - 0.05, h: 4.6 };
 const SIGN = { w: 2.6, h: 1.5, y: 2.6 }; // world units; y is the bottom edge above the ground
 // One Times Square, across the plaza from the ad building and clear of its view
-const TOWER = { ...tile(180, 139), w: 0.8, h: 4.2, mast: 1 };
+const TOWER = { ...tile(180, 139), w: 0.8, h: 4.2, mast: 1.6 };
 const BALL_R = 3; // the ball's radius in voxels
 const BALL_VOX = 0.1;
 const AD_ZOOM = 3; // from here in the billboard shows the ad
@@ -96,6 +97,8 @@ export function initTimesSquare(map) {
   const ball = buildBall();
   ball.mesh.position.set(tx, top + TOWER.mast, tz);
   map.world.add(ball.mesh);
+  // the countdown, the drop at midnight and the fireworks (src/scripts/new-year.js)
+  initNewYear(map, ball, { x: tx, z: tz, top, high: top + TOWER.mast });
 
   // ---- tapping the billboard: fly in while zoomed out, the contact form once it shows the ad ----
   const raycaster = new THREE.Raycaster();

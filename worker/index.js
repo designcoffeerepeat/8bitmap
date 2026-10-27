@@ -41,6 +41,8 @@ export default {
       return request.method === 'POST' ? contact(request, env, url) : json({ error: 'Use POST.' }, 405);
     }
     if (path === '/api/subway-alerts') return subwayAlerts();
+    if (path === '/api/weather') return weather();
+    if (path === '/api/airport-security') return airportSecurity();
 
     // Live is public, so its old login and logout links just go to the map.
     if (!isDev && (path === '/login' || path === '/logout')) {
@@ -229,6 +231,118 @@ function boilAlerts(feed, now) {
   }
   for (const k of ['active', 'planned']) out[k].sort((x, y) => (x.start ?? 0) - (y.start ?? 0));
   return out;
+}
+
+// ---- weather ------------------------------------------------------------------------------------
+// The National Weather Service's hourly forecast for Central Park (public domain, no key), boiled down
+// for the weather button: now, the rest of today, tomorrow, and whether to bring an umbrella.
+// Kept for WEATHER_SECONDS at the edge.
+const NWS_POINT = 'https://api.weather.gov/points/40.7829,-73.9654';
+const NWS_HEADERS = { 'User-Agent': '8bit.nyc (info@8bit.nyc)', Accept: 'application/geo+json' };
+const WEATHER_SECONDS = 900;
+
+async function weather() {
+  const cache = caches.default;
+  const key = new Request('https://cache.8bit.nyc/api/weather');
+  const hit = await cache.match(key);
+  if (hit) return hit;
+  let periods;
+  try {
+    const point = await (await fetch(NWS_POINT, { headers: NWS_HEADERS })).json();
+    const r = await fetch(point.properties.forecastHourly, { headers: NWS_HEADERS });
+    if (!r.ok) throw new Error(`NWS answered ${r.status}`);
+    periods = (await r.json()).properties.periods;
+  } catch (e) {
+    return json({ error: 'The weather is not available right now.', detail: String(e.message || e) }, 502);
+  }
+  const res = json(boilWeather(periods, Date.now()));
+  res.headers.set('Cache-Control', `public, max-age=${WEATHER_SECONDS}`);
+  await cache.put(key, res.clone());
+  return res;
+}
+
+function boilWeather(periods, now) {
+  const hours = periods
+    .filter((p) => Date.parse(p.endTime) > now)
+    .map((p) => ({
+      day: p.startTime.slice(0, 10), // the NY date, since NWS times carry the local offset
+      hour: Number(p.startTime.slice(11, 13)),
+      temp: p.temperature,
+      pop: p.probabilityOfPrecipitation?.value ?? 0,
+      short: p.shortForecast,
+      isDay: p.isDaytime,
+      wind: p.windSpeed,
+    }));
+  const cur = hours[0];
+  const summary = (day) => {
+    const h = hours.filter((x) => x.day === day);
+    if (!h.length) return null;
+    const wettest = h.reduce((a, b) => (b.pop > a.pop ? b : a));
+    return {
+      day,
+      high: Math.max(...h.map((x) => x.temp)),
+      low: Math.min(...h.map((x) => x.temp)),
+      pop: wettest.pop,
+      wetHour: wettest.pop >= 20 ? wettest.hour : null,
+      short: (h.find((x) => x.hour === 14) ?? h[Math.floor(h.length / 2)]).short,
+    };
+  };
+  const today = summary(cur.day);
+  const next = hours.find((x) => x.day !== cur.day);
+  const tomorrow = next ? summary(next.day) : null;
+  const umbrella = today.pop >= 40 ? 'yes' : today.pop >= 20 ? 'maybe' : 'no';
+  return { updated: now, now: cur, today, tomorrow, umbrella };
+}
+
+// ---- airport security lines --------------------------------------------------------------------
+// The Port Authority's live security checkpoint wait times for JFK, LaGuardia and Newark (the feed behind
+// the wait times on jfkairport.com, laguardiaairport.com and newarkairport.com), boiled down to each
+// terminal's general and TSA PreCheck lines. Kept for SECURITY_SECONDS at the edge.
+const SECURITY_FEED = 'https://avi-prod-mpp-webapp-api.azurewebsites.net/api/v1/SecurityWaitTimesPoints/';
+const AIRPORT_SITES = { JFK: 'https://www.jfkairport.com', LGA: 'https://www.laguardiaairport.com', EWR: 'https://www.newarkairport.com' };
+const SECURITY_SECONDS = 300;
+
+async function airportSecurity() {
+  const cache = caches.default;
+  const key = new Request('https://cache.8bit.nyc/api/airport-security');
+  const hit = await cache.match(key);
+  if (hit) return hit;
+  const out = { updated: Date.now(), airports: {} };
+  await Promise.all(Object.entries(AIRPORT_SITES).map(async ([code, site]) => {
+    try {
+      const r = await fetch(SECURITY_FEED + code, { headers: { Accept: 'application/json', Referer: `${site}/`, Origin: site, 'User-Agent': '8bit.nyc (info@8bit.nyc)' } });
+      if (!r.ok) throw new Error(`${code} answered ${r.status}`);
+      out.airports[code] = boilSecurity(await r.json());
+    } catch (e) {
+      out.airports[code] = { error: String(e.message || e), terminals: [] };
+    }
+  }));
+  const res = json(out);
+  res.headers.set('Cache-Control', `public, max-age=${SECURITY_SECONDS}`);
+  await cache.put(key, res.clone());
+  return res;
+}
+
+// [{ terminal, checkpoint, queueType: 'Reg' | 'TSAPre', timeInMinutes, queueOpen, ... }] becomes
+// { terminals: [{ name, general, precheck }] } with minutes, or null where a line is closed or not reported
+function boilSecurity(list) {
+  const rows = Array.isArray(list) ? list : list?.data ?? list?.items ?? [];
+  const terms = new Map();
+  for (const x of rows) {
+    const t = String(x.terminal ?? x.Terminal ?? x.title ?? '').trim();
+    if (!t) continue;
+    const name = /^\w{1,2}$/.test(t) ? `Terminal ${t.toUpperCase()}` : t;
+    const pre = /pre/i.test(String(x.queueType ?? x.QueueType ?? x.type ?? ''));
+    const open = (x.queueOpen ?? x.isWaitTimeAvailable ?? true) !== false && !/closed/i.test(String(x.status ?? ''));
+    const raw = x.timeInMinutes ?? x.waitTimeMinutes ?? x.waitTime ?? (x.timeInSeconds != null ? Number(x.timeInSeconds) / 60 : null);
+    const min = open && raw !== null && raw !== '' && Number.isFinite(Number(raw)) ? Math.round(Number(raw)) : null;
+    const row = terms.get(name) ?? { name, general: null, precheck: null };
+    const k = pre ? 'precheck' : 'general';
+    // a terminal with more than one checkpoint shows its shortest line
+    if (min !== null) row[k] = row[k] === null ? min : Math.min(row[k], min);
+    terms.set(name, row);
+  }
+  return { terminals: [...terms.values()].sort((a, b) => a.name.localeCompare(b.name, 'en', { numeric: true })) };
 }
 
 function json(data, status = 200) {

@@ -111,9 +111,22 @@ export function createMap(container, opts = {}) {
 
   buildBase(layers.ground);
   const waterFrames = buildWater(layers.ground, city);
-  buildLand(layers.ground, city);
-  buildRoads(layers.roads);
+  const land = buildLand(layers.ground, city);
+  const roadTex = buildRoads(layers.roads);
   const roofs = buildBuildings(layers.buildings, city, landmarkCells);
+  const snowCaps = buildSnowCaps(layers.buildings, roofs, land.treeTops);
+  const snowfall = buildSnowfall(world);
+  const snowGroundSwap = snowSwap(land.tex, snowGround);
+  const snowRoadSwap = snowSwap(roadTex, snowRoad);
+  let winter = false;
+  // Winter: snow on the ground, streets, roofs and trees, and snow falling.
+  function setWinter(on) {
+    winter = on;
+    snowGroundSwap(on);
+    snowRoadSwap(on);
+    snowCaps.visible = on;
+    snowfall.pts.visible = on && !REDUCED_MOTION;
+  }
   buildBridges(layers.ground);
   buildLandmarks(layers.landmarks, city);
   const boats = buildBoats(layers.ground);
@@ -160,6 +173,22 @@ export function createMap(container, opts = {}) {
     layers.overlay.add(mesh);
     return mesh;
   }
+  // Square pixel dots at [lat, lng] points on the overlay layer (subway stations), size in render pixels.
+  function addOverlayPoints(points, { color: hex = '#ffffff', size = 3, order = 2 } = {}) {
+    const pos = new Float32Array(points.length * 3);
+    points.forEach(([lat, lng], k) => {
+      const p = latLngToWorld(lat, lng);
+      pos[k * 3] = p.x; pos[k * 3 + 1] = 0; pos[k * 3 + 2] = p.z;
+    });
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+    const mesh = new THREE.Points(geo, new THREE.PointsMaterial({ color: hex, size, sizeAttenuation: false, depthTest: false }));
+    mesh.position.y = OVERLAY_Y;
+    mesh.renderOrder = 8 + order * 0.01;
+    mesh.frustumCulled = false;
+    layers.overlay.add(mesh);
+    return mesh;
+  }
   function removeOverlay(mesh) {
     if (!mesh) { layers.overlay.clear(); return; }
     layers.overlay.remove(mesh);
@@ -177,11 +206,22 @@ export function createMap(container, opts = {}) {
 
   function pinTexture(category, state) {
     const key = `${category}:${state}`;
-    if (!pinTextures.has(key)) pinTextures.set(key, makePinTexture(CATEGORY_COLORS[category] ?? '#ffffff', state));
+    if (!pinTextures.has(key)) pinTextures.set(key, makePinTexture(CATEGORY_COLORS[category] ?? PIN_ICONS[category]?.color ?? '#ffffff', state, PIN_ICONS[category]?.icon));
     return pinTextures.get(key);
   }
 
+  // Pins that are not events (the airport security lines): shown whatever the filters, and left out of
+  // eventsInView. Each is event-shaped: { id, title, category, venue: { lat, lng } }.
+  let lastEvents = [];
+  let extraPins = [];
+  function setExtraPins(list) {
+    extraPins = list.map((ev) => ({ ...ev, extra: true }));
+    setEvents(lastEvents);
+  }
+
   function setEvents(events) {
+    lastEvents = events;
+    events = [...events, ...extraPins];
     showPinTitle(null);
     pinGroup.clear();
     pins = [];
@@ -308,7 +348,7 @@ export function createMap(container, opts = {}) {
 
   function setVisible(ids) {
     const set = ids ? new Set(ids) : null;
-    for (const pin of pins) pin.sprite.visible = !set || set.has(pin.event.id);
+    for (const pin of pins) pin.sprite.visible = !set || set.has(pin.event.id) || !!pin.event.extra;
     visibleVersion++;
   }
 
@@ -427,6 +467,7 @@ export function createMap(container, opts = {}) {
     camera.updateMatrixWorld();
     const ids = new Set();
     for (const pin of pins) {
+      if (pin.event.extra) continue;
       projected.copy(pin.anchor).project(camera);
       if (Math.abs(projected.x) <= 1 && Math.abs(projected.y) <= 1) ids.add(pin.event.id);
     }
@@ -599,6 +640,7 @@ export function createMap(container, opts = {}) {
         pin.sprite.position.y = pin.baseY + bob * wpp;
       }
       for (const b of boats) b.update(t);
+      if (winter) snowfall.update(dt, controls.target);
     }
     for (const fn of frameHooks) fn(dt, t);
 
@@ -615,13 +657,17 @@ export function createMap(container, opts = {}) {
 
   return {
     setEvents,
+    setExtraPins,
     addAnchor,
     removeAnchor,
     layers,
     setLayerVisible,
     dimBase,
     addOverlayLine,
+    addOverlayPoints,
     removeOverlay,
+    setWinter,
+    get winter() { return winter; },
     setVisible,
     focusEvent,
     focusLatLng,
@@ -660,6 +706,8 @@ export function createMap(container, opts = {}) {
     flyTo: (target, zoom) => flyTo(target, THREE.MathUtils.clamp(zoom ?? camera.zoom, controls.minZoom, controls.maxZoom)),
     get target() { return controls.target.clone(); },
     get zoom() { return camera.zoom; },
+    // world units per render pixel at the current zoom, for overlays drawn a set number of pixels wide
+    get worldPerPixel() { return worldPerPixel(); },
     get maxZoom() { return controls.maxZoom; },
     get pixelSize() { return pixelSize; },
   };
@@ -833,13 +881,18 @@ function buildLand(world, city) {
   const treeR = rng(9);
   const trees = parkCells.filter(() => treeR() < 0.5);
   const tm = instanced(trees.length);
+  const treeTops = [];
   trees.forEach((i, k) => {
     const { x, z } = cellPos(i);
     const s = 0.35 + treeR() * 0.25;
-    place(tm, k, x + (treeR() - 0.5) * 0.4, GROUND_H, z + (treeR() - 0.5) * 0.4, s, s * 1.3, s, pick(PALETTE.tree, treeR()));
+    const tx = x + (treeR() - 0.5) * 0.4;
+    const tz = z + (treeR() - 0.5) * 0.4;
+    place(tm, k, tx, GROUND_H, tz, s, s * 1.3, s, pick(PALETTE.tree, treeR()));
+    treeTops.push({ x: tx, z: tz, size: s, top: GROUND_H + s * 1.3 });
   });
   tm.instanceColor.needsUpdate = true;
   world.add(tm);
+  return { tex, treeTops };
 }
 
 // Major streets and highways, a see-through layer just above the ground so a later overlay
@@ -879,7 +932,79 @@ function buildRoads(world) {
   mesh.position.y = GROUND_H + 0.004;
   mesh.userData.fineSub = S;
   world.add(mesh);
+  return tex;
+}
+
+// ---- winter -----------------------------------------------------------------------
+// Snow swaps a texture's pixels for a snowy copy (made the first time it is asked for) and back.
+function snowSwap(tex, recolor) {
+  const plain = tex.image.data;
+  let snowy = null;
+  return (on) => {
+    if (on && !snowy) {
+      snowy = new Uint8Array(plain);
+      for (let k = 0; k < snowy.length; k += 4) {
+        if (!snowy[k + 3]) continue;
+        const [r, g, b] = recolor(snowy[k], snowy[k + 1], snowy[k + 2], k >> 2);
+        snowy[k] = r; snowy[k + 1] = g; snowy[k + 2] = b;
+      }
+    }
+    tex.image.data = on ? snowy : plain;
+    tex.needsUpdate = true;
+  };
+}
+
+// ground: water in the parks freezes, everything else turns white, ploughed runways stay greyer
+function snowGround(r, g, b, k) {
+  if (b > r + 30 && b >= g) return [212, 236, 245];
+  const dark = (r + g + b) / 3 < 130;
+  const w = dark ? 0.45 : 0.82;
+  const n = (k * 2654435761) % 7 === 0 ? -10 : 0; // a little speckle
+  return [r * (1 - w) + (250 + n) * w, g * (1 - w) + (251 + n) * w, b * (1 - w) + (255 + n) * w];
+}
+function snowRoad(r, g, b) {
+  return [r * 0.3 + 228 * 0.7, g * 0.3 + 228 * 0.7, b * 0.3 + 236 * 0.7];
+}
+
+// white caps on every roof and tree top
+function buildSnowCaps(world, roofs, treeTops) {
+  const tops = [...roofs.values(), ...treeTops];
+  const mesh = instanced(tops.length);
+  tops.forEach((t, k) => place(mesh, k, t.x, t.top, t.z, t.size + 0.04, 0.07, t.size + 0.04, k % 5 ? '#f6f8fc' : '#e9eef7'));
+  mesh.instanceColor.needsUpdate = true;
+  mesh.visible = false;
+  world.add(mesh);
   return mesh;
+}
+
+// falling snow: pixel flakes in a box that follows the camera's target
+function buildSnowfall(world) {
+  const N = 1400;
+  const SPAN = 90;
+  const pos = new Float32Array(N * 3);
+  const r = rng(31);
+  for (let k = 0; k < N; k++) {
+    pos[k * 3] = (r() - 0.5) * SPAN;
+    pos[k * 3 + 1] = r() * 30;
+    pos[k * 3 + 2] = (r() - 0.5) * SPAN;
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  const pts = new THREE.Points(geo, new THREE.PointsMaterial({ color: '#ffffff', size: 2, sizeAttenuation: false, depthWrite: false }));
+  pts.visible = false;
+  pts.frustumCulled = false;
+  world.add(pts);
+  const update = (dt, target) => {
+    pts.position.set(target.x, 0, target.z);
+    for (let k = 0; k < N; k++) {
+      let y = pos[k * 3 + 1] - dt * (2 + (k % 5) * 0.4);
+      if (y < 0) y += 30;
+      pos[k * 3 + 1] = y;
+      pos[k * 3] += Math.sin(y * 0.7 + k) * dt * 0.3;
+    }
+    geo.attributes.position.needsUpdate = true;
+  };
+  return { pts, update };
 }
 
 function touchesWater(city, col, row) {
@@ -1143,7 +1268,12 @@ const PIN = [
   '.............',
 ];
 
-function makePinTexture(catHex, state) {
+// Pins that are not events wear their own colour and a 5 x 5 icon in place of the centre.
+const PIN_ICONS = {
+  security: { color: '#4dd2ff', icon: ['#####', '#####', '#####', '.###.', '..#..'] }, // a shield
+};
+
+function makePinTexture(catHex, state, icon = null) {
   const scale = state === 'idle' ? 1 : 1;
   const pad = 1;
   const w = PIN[0].length + pad * 2;
@@ -1164,6 +1294,10 @@ function makePinTexture(catHex, state) {
       ctx.fillRect((x + pad) * scale, (y + pad) * scale, scale, scale);
     });
   });
+  if (icon) {
+    ctx.fillStyle = '#1d2340';
+    icon.forEach((line, y) => [...line].forEach((ch, x) => ch === '#' && ctx.fillRect((x + 4 + pad) * scale, (y + 4 + pad) * scale, scale, scale)));
+  }
   if (state !== 'idle') {
     // 1px glow ring around the outline
     const img = ctx.getImageData(0, 0, cv.width, cv.height);

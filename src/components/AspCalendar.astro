@@ -1,0 +1,48 @@
+---
+// The year's alternate side parking suspensions, shown in the #asp modal: one small calendar per month with the
+// suspended days lit, and the reason under each month. The days come from src/scripts/asp.json (tools/build_asp.py).
+// src/scripts/asp.js marks today once the page is open.
+import ASP from '../scripts/asp.json';
+
+const MONTHS = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'];
+const DOW = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+const years = [...new Set(Object.keys(ASP).map((d) => Number(d.slice(0, 4))))].sort();
+const pad = (n) => String(n).padStart(2, '0');
+
+function month(y, m) {
+  const first = new Date(Date.UTC(y, m, 1)).getUTCDay();
+  const len = new Date(Date.UTC(y, m + 1, 0)).getUTCDate();
+  const cells = Array.from({ length: first }, () => null);
+  for (let d = 1; d <= len; d++) {
+    const key = `${y}-${pad(m + 1)}-${pad(d)}`;
+    cells.push({ d, key, off: ASP[key] });
+  }
+  const days = cells.filter((c) => c?.off);
+  return { name: MONTHS[m], cells, days };
+}
+---
+<p>Alternate side parking (street cleaning) rules are suspended on the days lit in yellow. Days marked <b>*</b> also suspend parking meters; on the rest, meters stay in effect. There is no alternate side parking on Sundays.</p>
+<p>The city can also suspend the rules on short notice for snow or storms. Those are not on this calendar, so check <a href="https://www.nyc.gov/html/dot/html/motorist/alternate-side-parking.shtml" target="_blank" rel="noopener">NYC DOT</a> or 311 on the day.</p>
+{years.map((y) => (
+  <>
+    <h3>{y}</h3>
+    <div class="asp-year">
+      {MONTHS.map((_, m) => month(y, m)).map((mo) => (
+        <section class="asp-month">
+          <h4>{mo.name}</h4>
+          <div class="asp-grid">
+            {DOW.map((d) => <span class="asp-dow">{d}</span>)}
+            {mo.cells.map((c) => c
+              ? <span class:list={['asp-day', { 'is-off': c.off }]} data-day={c.key} title={c.off ? c.off.reason : undefined}>{c.d}</span>
+              : <span />)}
+          </div>
+          {mo.days.length > 0 && (
+            <ul class="asp-why">
+              {mo.days.map((c) => <li><b>{c.d}</b> {c.off.reason}{c.off.meters ? '' : ' *'}</li>)}
+            </ul>
+          )}
+        </section>
+      ))}
+    </div>
+  </>
+))}

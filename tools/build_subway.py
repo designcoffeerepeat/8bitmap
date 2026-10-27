@@ -1,9 +1,10 @@
-"""Write src/scripts/map/subway.json: where each subway line runs, for the subway alerts overlay.
+"""Write src/scripts/map/subway.json: where each subway line runs and stops, for the subway map overlay.
 
 Source: the MTA's static subway GTFS (routes, trips and shapes), which lists every route's colour and
 the path of each of its train patterns. Each route keeps its longest path plus any branch that runs
 somewhere the kept paths do not (the A's two Rockaway ends, the 5's Dyre Ave and Nereid Ave ends...),
-simplified to a few hundred points.
+simplified to a few hundred points. Each kept path also lists its stations in order (from one trip
+that follows it), and the stations themselves are listed once with their name and position.
 
 The deploy workflow runs this before every aul build. Run it by hand with:  python3 tools/build_subway.py
 """
@@ -64,22 +65,27 @@ def main():
     z = fetch()
     routes = {r['route_id']: r for r in rows(z, 'routes.txt')}
     shapes_of = defaultdict(set)
+    trip_of = {}  # one trip per shape, for its stops
     for t in rows(z, 'trips.txt'):
         if t.get('shape_id'):
             shapes_of[t['route_id']].add(t['shape_id'])
+            trip_of.setdefault(t['shape_id'], t['trip_id'])
     pts = defaultdict(list)
     for s in rows(z, 'shapes.txt'):
         pts[s['shape_id']].append((int(s['shape_pt_sequence']), float(s['shape_pt_lat']), float(s['shape_pt_lon'])))
     paths = {k: [(lat, lng) for _, lat, lng in sorted(v)] for k, v in pts.items()}
 
     out = {}
+    kept_shapes = {}
     for rid, r in sorted(routes.items()):
-        cands = sorted((paths[s] for s in shapes_of.get(rid, ()) if s in paths), key=len, reverse=True)
+        cands = sorted((s for s in shapes_of.get(rid, ()) if s in paths), key=lambda s: len(paths[s]), reverse=True)
         kept = []
-        for p in cands:
+        for sid in cands:
+            p = paths[sid]
             covered = sum(1 for q in p[::5] if any(abs(q[0] - k[0]) < NEAR and abs(q[1] - k[1]) < NEAR for path in kept for k in path[::3]))
             if not kept or covered < 0.8 * len(p[::5]):
                 kept.append(p)
+                kept_shapes.setdefault(rid, []).append(sid)
         if not kept:
             continue
         color = '#' + (r.get('route_color') or '808183').strip('#')
@@ -91,7 +97,25 @@ def main():
             'paths': [[[round(a, 5), round(b, 5)] for a, b in simplify(p, TOLERANCE)] for p in kept],
         }
         print(f'{rid}: {len(kept)} paths, {sum(len(p) for p in out[rid]["paths"])} points')
-    OUT.write_text(json.dumps({'routes': out}, separators=(',', ':')) + '\n')
+    # stations: each kept path's stops in order, by parent station
+    stops = {st['stop_id']: st for st in rows(z, 'stops.txt')}
+    parent = {k: (v.get('parent_station') or k) for k, v in stops.items()}
+    want = {trip_of[sid]: (rid, k) for rid, sids in kept_shapes.items() for k, sid in enumerate(sids) if sid in trip_of}
+    seqs = defaultdict(list)
+    for st in rows(z, 'stop_times.txt'):
+        if st['trip_id'] in want:
+            seqs[st['trip_id']].append((int(st['stop_sequence']), parent.get(st['stop_id'], st['stop_id'])))
+    stations = {}
+    for tid, (rid, k) in want.items():
+        ids = []
+        for _, sid in sorted(seqs[tid]):
+            if sid in stops and (not ids or ids[-1] != sid):
+                ids.append(sid)
+                st = stops[sid]
+                stations[sid] = [st['stop_name'], round(float(st['stop_lat']), 5), round(float(st['stop_lon']), 5)]
+        out[rid].setdefault('stops', [[] for _ in out[rid]['paths']])[k] = ids
+    print(f'{len(stations)} stations')
+    OUT.write_text(json.dumps({'routes': out, 'stations': stations}, separators=(',', ':')) + '\n')
     print(f'wrote {OUT.relative_to(ROOT)}: {len(out)} routes, {OUT.stat().st_size // 1024} KB')
 
 

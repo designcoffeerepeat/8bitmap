@@ -42,6 +42,18 @@ jobs:
         run: |
           curl -sS -m 30 'https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fsubway-alerts.json' -o alerts.json
           python3 -c "import json;d=json.load(open('alerts.json'));e=d.get('entity',[]);print(len(e),'alerts');print(json.dumps(e[0])[:1500] if e else '')"
+          node tools/check_subway_spans.mjs alerts.json
+      - name: Check the weather and airport security feeds
+        continue-on-error: true
+        run: |
+          curl -sS -m 30 -A '8bit.nyc (info@8bit.nyc)' 'https://api.weather.gov/points/40.7829,-73.9654' | head -c 400; echo
+          for a in JFK LGA EWR; do
+            echo "== $a"
+            curl -sS -m 30 -H 'Accept: application/json' -H 'Referer: https://www.jfkairport.com/' 'https://avi-prod-mpp-webapp-api.azurewebsites.net/api/v1/SecurityWaitTimesPoints/'$a | head -c 1500; echo
+          done
+      - name: Refresh the alternate side parking calendar
+        # a failed download keeps the committed calendar
+        run: python3 tools/build_asp.py || echo "::warning::tools/build_asp.py failed; using the committed calendar"
       - run: npm run build
         env:
           PUBLIC_SITE: dev

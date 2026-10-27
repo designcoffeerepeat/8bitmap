@@ -11,6 +11,9 @@ import { initFlyingVan } from './flying-van.js';
 import { initRooftopGrill } from './rooftop-grill.js';
 import { initTimesSquare } from './times-square.js';
 import { initSubway } from './subway.js';
+import { initWeather } from './weather.js';
+import { initAsp } from './asp.js';
+import { initSecurity } from './airport-security.js';
 
 // SeatGeek's wordmark (from seatgeek.com/press, via Simple Icons), shown with every
 // event that uses SeatGeek data and linked to seatgeek.com in the event card.
@@ -52,7 +55,7 @@ const el = {
   hoodSearch: $('#hood-search'),
   hoodList: $('#hood-list'),
   hoodSecBtn: $('#hood-sec-btn'),
-  subSecBtn: $('#sub-sec-btn'),
+  menuSecs: [...document.querySelectorAll('#hood-menu .menu-sec')],
 };
 
 // The + dropdown: each borough (or New Jersey) first, then its neighborhoods A to Z. A borough zooms out enough to
@@ -98,8 +101,20 @@ initRooftopGrill(map);
 // Times Square: the plaza, the billboard building (an ad/event space like the one beside the header)
 // and One Times Square with the New Year's Eve ball.
 initTimesSquare(map);
-// Subway alerts in the + menu: the lines affected by today's active alerts or planned work.
+// The subway map in the + menu: every line and station, and the lines hit by alerts or planned work.
 initSubway(map);
+// The weather button at the bottom left, with WINTER MODE in its card.
+initWeather(map);
+// Alternate side parking in the + menu: today, tomorrow and the year's calendar.
+initAsp();
+// Security line pins over the three airports; their cards open in the event card's place.
+const extras = new Map();
+initSecurity((list) => {
+  extras.clear();
+  for (const p of list) extras.set(p.id, p);
+  map.setExtraPins(list);
+  if (extras.has(state.selected)) renderDetail();
+});
 
 // Every publisher with events on the shown day, plus any registered source that returned none.
 let publishers = new Map();
@@ -181,7 +196,7 @@ document.addEventListener('pointerdown', (e) => {
   if (!el.catMenu.hidden && !e.target.closest('.cat-filter')) toggleCategories(false);
   if (!el.hoodMenu.hidden && !e.target.closest('.hood-filter')) toggleHoods(false);
 });
-for (const b of [el.hoodSecBtn, el.subSecBtn]) {
+for (const b of el.menuSecs) {
   b.addEventListener('click', () => openSection(b, b.getAttribute('aria-expanded') !== 'true'));
 }
 el.hoodSearch.addEventListener('input', renderHoods);
@@ -327,13 +342,12 @@ function toggleCategories(open) {
   el.catBtn.setAttribute('aria-expanded', String(open));
 }
 
-// The + menu opens with its two sections (Neighborhoods, Subway Alerts) folded; each header opens its own.
+// The + menu opens with its sections (Neighborhoods, Subway, Alternate Side Parking) folded; each header opens its own.
 function toggleHoods(open) {
   el.hoodMenu.hidden = !open;
   el.hoodBtn.setAttribute('aria-expanded', String(open));
   if (!open) return;
-  openSection(el.hoodSecBtn, false);
-  openSection(el.subSecBtn, false);
+  for (const b of el.menuSecs) openSection(b, false);
 }
 
 function openSection(btn, open) {
@@ -448,6 +462,14 @@ function render() {
 }
 
 function renderDetail() {
+  const extra = extras.get(state.selected);
+  if (extra) {
+    el.detail.hidden = false;
+    el.detail.style.setProperty('--cat', extra.color);
+    el.detail.innerHTML = `<button class="close" type="button" id="detail-close" aria-label="Close">X</button>${extra.card()}`;
+    $('#detail-close').addEventListener('click', () => select(null));
+    return;
+  }
   const e = state.events.find((x) => x.id === state.selected);
   el.detail.hidden = !e;
   if (!e) return;
