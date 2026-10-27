@@ -40,6 +40,7 @@ export default {
     if (path === '/api/contact') {
       return request.method === 'POST' ? contact(request, env, url) : json({ error: 'Use POST.' }, 405);
     }
+    if (path === '/api/subway-alerts') return subwayAlerts();
 
     // Live is public, so its old login and logout links just go to the map.
     if (!isDev && (path === '/login' || path === '/logout')) {
@@ -175,6 +176,59 @@ function base64(text) {
   let bin = '';
   for (const b of new TextEncoder().encode(text)) bin += String.fromCharCode(b);
   return btoa(bin);
+}
+
+// ---- subway alerts ----------------------------------------------------------------------------
+// The MTA's live subway alerts feed (GTFS-realtime as JSON, no key needed), boiled down to what the
+// map's Subway Alerts menu shows: which lines each alert affects and its headline, split into
+// active alerts and delays (in effect now) and planned work (in effect now or within SOON).
+// Kept for CACHE_SECONDS at the edge so visitors do not each ask the MTA.
+const MTA_ALERTS = 'https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fsubway-alerts.json';
+const CACHE_SECONDS = 120;
+const SOON = 36 * 3600; // planned work starting by the end of tomorrow
+
+async function subwayAlerts() {
+  const cache = caches.default;
+  const key = new Request('https://cache.8bit.nyc/api/subway-alerts');
+  const hit = await cache.match(key);
+  if (hit) return hit;
+  let feed;
+  try {
+    const r = await fetch(MTA_ALERTS, { headers: { Accept: 'application/json' } });
+    if (!r.ok) throw new Error(`MTA answered ${r.status}`);
+    feed = await r.json();
+  } catch (e) {
+    return json({ error: 'Subway alerts are not available right now.', detail: String(e.message || e) }, 502);
+  }
+  const res = json(boilAlerts(feed, Math.floor(Date.now() / 1000)));
+  res.headers.set('Cache-Control', `public, max-age=${CACHE_SECONDS}`);
+  await cache.put(key, res.clone());
+  return res;
+}
+
+function boilAlerts(feed, now) {
+  const text = (t) => {
+    const tr = t?.translation ?? [];
+    return (tr.find((x) => x.language === 'en') ?? tr.find((x) => !x.language) ?? tr[0])?.text?.trim() ?? '';
+  };
+  const out = { updated: now, active: [], planned: [] };
+  for (const e of feed?.entity ?? []) {
+    const a = e.alert;
+    if (!a) continue;
+    const routes = [...new Set((a.informed_entity ?? []).map((x) => x.route_id).filter(Boolean))];
+    if (!routes.length) continue;
+    const mercury = a['transit_realtime.mercury_alert'] ?? a.mercury_alert ?? {};
+    const type = mercury.alert_type ?? '';
+    const planned = /planned/i.test(type);
+    const periods = (a.active_period ?? []).map((p) => [Number(p.start) || 0, Number(p.end) || Infinity]);
+    const live = !periods.length || periods.some(([s, f]) => s <= now && now < f);
+    const soon = periods.some(([s, f]) => s < now + SOON && now < f);
+    if (planned ? !(live || soon) : !live) continue;
+    const start = periods.filter(([, f]) => now < f).map(([s]) => s).sort((x, y) => x - y)[0] ?? null;
+    (planned ? out.planned : out.active).push({ id: e.id, routes, type, header: text(a.header_text), live, start });
+  }
+  for (const k of ['active', 'planned']) out[k].sort((x, y) => (x.start ?? 0) - (y.start ?? 0));
+  return out;
 }
 
 function json(data, status = 200) {

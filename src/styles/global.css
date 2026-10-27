@@ -435,3 +435,44 @@ button, a { font: inherit; color: inherit; }
 @media (max-width: 760px) {
   .monster-hud { left: 16px; right: 82px; transform: none; bottom: calc(76px + env(safe-area-inset-bottom, 0px)); justify-content: space-between; }
 }
+
+/* + menu sections and subway alerts (src/scripts/subway.js) */
+.menu-sec {
+  display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 8px 6px 7px;
+  cursor: pointer; font: 8px/1 var(--font-pixel); letter-spacing: .5px; color: var(--coin);
+  background: none; border: 0; border-bottom: 2px solid var(--night-2); text-align: left;
+}
+.menu-sec + .menu-sec-body { padding-top: 8px; }
+.menu-sec i { width: 0; height: 0; border: 4px solid transparent; border-top-color: currentColor; border-bottom: 0; transition: transform .1s steps(2); }
+.menu-sec[aria-expanded="true"] i { transform: rotate(180deg); }
+.menu-sec:hover { background: var(--night-2); }
+.menu-sec:focus-visible { outline: 3px solid var(--coin); outline-offset: -3px; }
+.menu-sec-body[hidden] { display: none; }
+.menu-sec-body + .menu-sec { margin-top: 6px; }
+.sub-mode {
+  display: flex; justify-content: space-between; align-items: center; gap: 8px; width: 100%; margin: 0 0 6px;
+  padding: 8px 8px 7px; cursor: pointer; font: 7px/1.2 var(--font-pixel); color: var(--ink); text-align: left;
+  background: var(--night-2); border: 2px solid var(--frame);
+}
+.sub-mode span { color: var(--dim); white-space: nowrap; }
+.sub-mode.is-on { border-color: var(--coin); color: var(--coin); }
+.sub-mode:focus-visible { outline: 3px solid var(--coin); outline-offset: 1px; }
+.sub-note { margin: 4px 2px 8px; font: 18px/1.1 var(--font-body); color: var(--dim); }
+.sub-list { list-style: none; margin: 4px 0 8px; padding: 0; max-height: 260px; overflow-y: auto; }
+.sub-list li { display: flex; gap: 8px; align-items: flex-start; padding: 4px 2px; font: 16px/1.05 var(--font-body); color: var(--ink); }
+.sub-list span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.sub-list em { font-style: normal; color: var(--dim); }
+.sub-bullet {
+  flex: none; display: inline-grid; place-items: center; min-width: 18px; height: 18px; padding: 0 3px; border-radius: 9px;
+  font: 8px/1 var(--font-pixel);
+}
+.sub-link { display: block; padding: 6px 2px; font: 7px/1.3 var(--font-pixel); color: var(--coin); }
+.sub-link::after { content: " \2197"; }
+.sub-chip { padding: 7px 9px 6px; font: 7px/1 var(--font-pixel); color: var(--coin); white-space: nowrap; }
+.sub-chip i { font-style: normal; margin-left: 6px; color: var(--ink); }
+.sub-chip[hidden] { display: none; }
+@media (max-width: 760px) {
+  /* on phones the subway chip sits under the dropdown row so the three dropdowns keep their room */
+  .filter-row { position: relative; }
+  .sub-chip { position: absolute; top: calc(100% + 8px); right: 0; }
+}

@@ -387,6 +387,11 @@ and the same show listed on several sites is merged by title, venue and start ti
   `pins`). An overlay such as a subway map can draw lines with `map.addOverlayLine(points, { color, width })`, fade
   the city under it with `map.dimBase(0.6)`, hide a layer with `map.setLayerVisible('roads', false)` and add or
   remove text tags with `map.addAnchor` / `map.removeAnchor`. Pins always stay on top.
+- Subway alerts: the + menu's Subway Alerts section asks `/api/subway-alerts` (`worker/index.js`, which reads the
+  MTA's live alerts feed and keeps it for two minutes) for the active alerts and delays, or the planned work for today
+  and tomorrow, then draws the affected lines with `addOverlayLine` (`src/scripts/subway.js`). The line paths are
+  `src/scripts/map/subway.json`, written by `tools/build_subway.py` from the MTA's subway GTFS before every aul build;
+  the copy in git is empty, so a local build lists the lines without drawing them unless you run the script first.
 - `?at=lat,lng,zoom` in the address opens the map on that spot, e.g. `/?at=40.7499,-73.8467,3.5` for the US Open.
 - Skyline heights come from `PEAKS` in `geo.js` (centre, spread, height).
 - Tile size is `CELL` in `tools/build_land.py`; pixel chunkiness is the PX button (2x by default, then 3x, 4x).

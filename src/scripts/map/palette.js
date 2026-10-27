@@ -15,8 +15,8 @@ export const PALETTE = {
   runwayMark: '#f4f4f4',
   // real streets and highways (tools/build_detail.py); sidewalk is the open ground around them
   road: '#a79f96',
-  highway: '#6f7286',
-  highwayEdge: '#54576b',
+  highway: '#968f88',
+  highwayEdge: '#8a837c',
   sidewalk: '#e4ddd0',
   bridge: '#8c8fa3',
   bridgeTower: '#5a5d72',

@@ -34,6 +34,14 @@ jobs:
           node-version-file: .node-version
           cache: npm
       - run: npm ci
+      - name: Draw the subway lines from the MTA's GTFS
+        # a failed download keeps the empty file, and the alerts menu then lists lines without drawing them
+        run: python3 tools/build_subway.py || echo "::warning::tools/build_subway.py failed; the subway lines are not drawn"
+      - name: Check the MTA alerts feed
+        continue-on-error: true
+        run: |
+          curl -sS -m 30 'https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fsubway-alerts.json' -o alerts.json
+          python3 -c "import json;d=json.load(open('alerts.json'));e=d.get('entity',[]);print(len(e),'alerts');print(json.dumps(e[0])[:1500] if e else '')"
       - run: npm run build
         env:
           PUBLIC_SITE: dev

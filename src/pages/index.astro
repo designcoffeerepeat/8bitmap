@@ -118,17 +118,27 @@ import About from '../components/About.astro';
         <ul id="cat-list" aria-label="Event categories"></ul>
       </div>
     </div>
-    <!-- + dropdown: pick a neighborhood and the map flies to it -->
+    <!-- + dropdown: two sections, a neighborhood to fly to and the subway alerts (src/scripts/subway.js) -->
     <div class="hood-filter">
-      <button class="chip hood-btn" id="hood-btn" type="button" aria-expanded="false" aria-controls="hood-menu" aria-label="Go to a neighborhood" title="Go to a neighborhood">
+      <button class="chip hood-btn" id="hood-btn" type="button" aria-expanded="false" aria-controls="hood-menu" aria-label="Neighborhoods and subway alerts" title="Neighborhoods and subway alerts">
         <svg viewBox="0 0 7 7" aria-hidden="true" shape-rendering="crispEdges"><path fill="currentColor" d="M3 0h1v3h3v1H4v3H3V4H0V3h3z"/></svg>
       </button>
       <div class="src-menu hood-menu box" id="hood-menu" hidden>
-        <p class="hood-head">GO TO A NEIGHBORHOOD</p>
-        <input id="hood-search" type="search" placeholder="Search" aria-label="Search neighborhoods" autocomplete="off" spellcheck="false">
-        <ul id="hood-list" aria-label="Neighborhoods"></ul>
+        <button class="menu-sec" id="hood-sec-btn" type="button" aria-expanded="false" aria-controls="hood-sec">NEIGHBORHOODS<i aria-hidden="true"></i></button>
+        <div class="menu-sec-body" id="hood-sec" hidden>
+          <p class="hood-head">GO TO A NEIGHBORHOOD</p>
+          <input id="hood-search" type="search" placeholder="Search" aria-label="Search neighborhoods" autocomplete="off" spellcheck="false">
+          <ul id="hood-list" aria-label="Neighborhoods"></ul>
+        </div>
+        <button class="menu-sec" id="sub-sec-btn" type="button" aria-expanded="false" aria-controls="sub-sec">SUBWAY ALERTS<i aria-hidden="true"></i></button>
+        <div class="menu-sec-body" id="sub-sec" hidden>
+          <button class="sub-mode" type="button" data-mode="active">ACTIVE ALERTS / DELAYS<span></span></button>
+          <button class="sub-mode" type="button" data-mode="planned">PLANNED WORK<span></span></button>
+          <div id="sub-out" aria-live="polite"></div>
+        </div>
       </div>
     </div>
+    <button class="chip sub-chip" id="sub-chip" type="button" hidden title="Hide the subway lines"></button>
   </div>
 </header>
 

@@ -10,6 +10,7 @@ import { initSunbather } from './sunbather.js';
 import { initFlyingVan } from './flying-van.js';
 import { initRooftopGrill } from './rooftop-grill.js';
 import { initTimesSquare } from './times-square.js';
+import { initSubway } from './subway.js';
 
 // SeatGeek's wordmark (from seatgeek.com/press, via Simple Icons), shown with every
 // event that uses SeatGeek data and linked to seatgeek.com in the event card.
@@ -50,6 +51,8 @@ const el = {
   hoodMenu: $('#hood-menu'),
   hoodSearch: $('#hood-search'),
   hoodList: $('#hood-list'),
+  hoodSecBtn: $('#hood-sec-btn'),
+  subSecBtn: $('#sub-sec-btn'),
 };
 
 // The + dropdown: each borough (or New Jersey) first, then its neighborhoods A to Z. A borough zooms out enough to
@@ -95,6 +98,8 @@ initRooftopGrill(map);
 // Times Square: the plaza, the billboard building (an ad/event space like the one beside the header)
 // and One Times Square with the New Year's Eve ball.
 initTimesSquare(map);
+// Subway alerts in the + menu: the lines affected by today's active alerts or planned work.
+initSubway(map);
 
 // Every publisher with events on the shown day, plus any registered source that returned none.
 let publishers = new Map();
@@ -176,6 +181,9 @@ document.addEventListener('pointerdown', (e) => {
   if (!el.catMenu.hidden && !e.target.closest('.cat-filter')) toggleCategories(false);
   if (!el.hoodMenu.hidden && !e.target.closest('.hood-filter')) toggleHoods(false);
 });
+for (const b of [el.hoodSecBtn, el.subSecBtn]) {
+  b.addEventListener('click', () => openSection(b, b.getAttribute('aria-expanded') !== 'true'));
+}
 el.hoodSearch.addEventListener('input', renderHoods);
 // Enter in the search box goes to the first match.
 el.hoodSearch.addEventListener('keydown', (e) => {
@@ -319,10 +327,19 @@ function toggleCategories(open) {
   el.catBtn.setAttribute('aria-expanded', String(open));
 }
 
+// The + menu opens with its two sections (Neighborhoods, Subway Alerts) folded; each header opens its own.
 function toggleHoods(open) {
   el.hoodMenu.hidden = !open;
   el.hoodBtn.setAttribute('aria-expanded', String(open));
   if (!open) return;
+  openSection(el.hoodSecBtn, false);
+  openSection(el.subSecBtn, false);
+}
+
+function openSection(btn, open) {
+  btn.setAttribute('aria-expanded', String(open));
+  document.getElementById(btn.getAttribute('aria-controls')).hidden = !open;
+  if (!open || btn !== el.hoodSecBtn) return;
   el.hoodSearch.value = '';
   renderHoods();
   el.hoodList.scrollTop = 0;
