@@ -3,93 +3,15 @@
   "name": "Hoboken calendars",
   "url": "https://hobokenmuseum.org/events/"
  },
- "date": "2026-10-26",
- "fetchedAt": "2026-10-26T13:16:06-04:00",
+ "date": "2026-10-27",
+ "fetchedAt": "2026-10-27T05:15:38-04:00",
  "events": [
   {
-   "id": "hoboken-public-library-202610261200-baby-story-time",
-   "title": "Baby Story Time",
+   "id": "hoboken-library-grand-street-branch-202610271030-rise-read",
+   "title": "Rise & Read",
    "category": "community",
-   "start": "2026-10-26T12:00:00-04:00",
-   "end": "2026-10-26T12:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Hoboken Public Library",
-    "address": "500 Park Avenue, Hoboken, NJ",
-    "neighborhood": "Hoboken",
-    "lat": 40.7429,
-    "lng": -74.0311
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "For kids",
-   "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17434294",
-   "tags": [],
-   "publisher": {
-    "id": "venue-hoboken-public-library",
-    "name": "Hoboken Public Library",
-    "url": "https://hobokenlibrary.libnet.info/events"
-   }
-  },
-  {
-   "id": "hoboken-public-library-202610261230-safe-sleep-safe-baby",
-   "title": "Safe Sleep, Safe Baby",
-   "category": "community",
-   "start": "2026-10-26T12:30:00-04:00",
-   "end": "2026-10-26T13:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Hoboken Public Library",
-    "address": "500 Park Avenue, Hoboken, NJ",
-    "neighborhood": "Hoboken",
-    "lat": 40.7429,
-    "lng": -74.0311
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "For kids",
-   "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17564449",
-   "tags": [],
-   "publisher": {
-    "id": "venue-hoboken-public-library",
-    "name": "Hoboken Public Library",
-    "url": "https://hobokenlibrary.libnet.info/events"
-   }
-  },
-  {
-   "id": "hoboken-public-library-202610261300-unemployment-insurance-workshop",
-   "title": "Unemployment Insurance Workshop",
-   "category": "community",
-   "start": "2026-10-26T13:00:00-04:00",
-   "end": "2026-10-26T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Hoboken Public Library",
-    "address": "500 Park Avenue, Hoboken, NJ",
-    "neighborhood": "Hoboken",
-    "lat": 40.7429,
-    "lng": -74.0311
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17386879",
-   "tags": [],
-   "publisher": {
-    "id": "venue-hoboken-public-library",
-    "name": "Hoboken Public Library",
-    "url": "https://hobokenlibrary.libnet.info/events"
-   }
-  },
-  {
-   "id": "hoboken-library-grand-street-branch-202610261530-maker-monday",
-   "title": "Maker Monday",
-   "category": "community",
-   "start": "2026-10-26T15:30:00-04:00",
-   "end": "2026-10-26T16:30:00-04:00",
+   "start": "2026-10-27T10:30:00-04:00",
+   "end": "2026-10-27T11:30:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Hoboken Library, Grand Street Branch",
@@ -102,7 +24,7 @@
    "priceUnknown": false,
    "description": "For kids",
    "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17502651",
+   "url": "https://hobokenlibrary.libnet.info/event/17502875",
    "tags": [],
    "publisher": {
     "id": "venue-hoboken-public-library",
@@ -111,11 +33,37 @@
    }
   },
   {
-   "id": "hoboken-public-library-202610261630-scary-movie-night-house-of-usher",
-   "title": "Scary Movie Night - House of Usher",
-   "category": "film",
-   "start": "2026-10-26T16:30:00-04:00",
-   "end": "2026-10-26T18:00:00-04:00",
+   "id": "hoboken-library-grand-street-branch-202610271230-tai-chi-workshop",
+   "title": "Tai Chi Workshop",
+   "category": "community",
+   "start": "2026-10-27T12:30:00-04:00",
+   "end": "2026-10-27T13:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hoboken Library, Grand Street Branch",
+    "address": "124 Grand Street, Hoboken, NJ",
+    "neighborhood": "Hoboken",
+    "lat": 40.7374,
+    "lng": -74.0353
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://hobokenlibrary.libnet.info/event/17514133",
+   "tags": [],
+   "publisher": {
+    "id": "venue-hoboken-public-library",
+    "name": "Hoboken Public Library",
+    "url": "https://hobokenlibrary.libnet.info/events"
+   }
+  },
+  {
+   "id": "hoboken-public-library-202610271430-hpl-s-not-so-scary-halloween-party",
+   "title": "HPL's Not So Scary Halloween Party",
+   "category": "community",
+   "start": "2026-10-27T14:30:00-04:00",
+   "end": "2026-10-27T16:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Hoboken Public Library",
@@ -126,9 +74,9 @@
    },
    "price": null,
    "priceUnknown": false,
-   "description": "",
+   "description": "For teens/tweens, kids",
    "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17518093",
+   "url": "https://hobokenlibrary.libnet.info/event/17433979",
    "tags": [],
    "publisher": {
     "id": "venue-hoboken-public-library",
@@ -137,11 +85,37 @@
    }
   },
   {
-   "id": "hoboken-public-library-202610261730-teen-gaming-hours",
+   "id": "hoboken-library-grand-street-branch-202610271530-tech-time",
+   "title": "Tech Time",
+   "category": "community",
+   "start": "2026-10-27T15:30:00-04:00",
+   "end": "2026-10-27T17:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hoboken Library, Grand Street Branch",
+    "address": "124 Grand Street, Hoboken, NJ",
+    "neighborhood": "Hoboken",
+    "lat": 40.7374,
+    "lng": -74.0353
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "For seniors",
+   "details": "",
+   "url": "https://hobokenlibrary.libnet.info/event/17578762",
+   "tags": [],
+   "publisher": {
+    "id": "venue-hoboken-public-library",
+    "name": "Hoboken Public Library",
+    "url": "https://hobokenlibrary.libnet.info/events"
+   }
+  },
+  {
+   "id": "hoboken-public-library-202610271730-teen-gaming-hours",
    "title": "Teen Gaming Hours",
    "category": "community",
-   "start": "2026-10-26T17:30:00-04:00",
-   "end": "2026-10-26T19:30:00-04:00",
+   "start": "2026-10-27T17:30:00-04:00",
+   "end": "2026-10-27T19:30:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Hoboken Public Library",
@@ -154,7 +128,7 @@
    "priceUnknown": false,
    "description": "For teens/tweens",
    "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17459269",
+   "url": "https://hobokenlibrary.libnet.info/event/17459270",
    "tags": [],
    "publisher": {
     "id": "venue-hoboken-public-library",
@@ -163,11 +137,11 @@
    }
   },
   {
-   "id": "hoboken-public-library-202610261800-sci-fi-fantasy-horror-thriller-book-disc",
-   "title": "Sci-Fi/Fantasy & Horror/Thriller Book Discussion",
+   "id": "hoboken-public-library-202610271800-write-share-prompts-projects",
+   "title": "Write & Share: Prompts & Projects",
    "category": "community",
-   "start": "2026-10-26T18:00:00-04:00",
-   "end": "2026-10-26T19:30:00-04:00",
+   "start": "2026-10-27T18:00:00-04:00",
+   "end": "2026-10-27T19:30:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Hoboken Public Library",
@@ -180,12 +154,38 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17545440",
+   "url": "https://hobokenlibrary.libnet.info/event/17599605",
    "tags": [],
    "publisher": {
     "id": "venue-hoboken-public-library",
     "name": "Hoboken Public Library",
     "url": "https://hobokenlibrary.libnet.info/events"
+   }
+  },
+  {
+   "id": "hoboken-historical-museum-202610271830-collage-workshop-with-susan-olinsky",
+   "title": "Collage Workshop with Susan Olinsky",
+   "category": "art",
+   "start": "2026-10-27T18:30:00-04:00",
+   "end": "2026-10-27T20:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hoboken Historical Museum",
+    "address": "1301 Hudson Street, Hoboken, NJ",
+    "neighborhood": "Hoboken",
+    "lat": 40.75385,
+    "lng": -74.0259
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://hobokenmuseum.org/event/collage-workshop-with-susan-olinsky/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-hoboken-historical-museum",
+    "name": "Hoboken Historical Museum",
+    "url": "https://hobokenmuseum.org/events/"
    }
   }
  ],

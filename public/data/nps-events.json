@@ -3,14 +3,14 @@
   "name": "National Park Service",
   "url": "https://www.nps.gov/state/ny/index.htm"
  },
- "date": "2026-10-26",
- "fetchedAt": "2026-10-26T13:16:14-04:00",
+ "date": "2026-10-27",
+ "fetchedAt": "2026-10-27T05:15:46-04:00",
  "events": [
   {
    "id": "0D25A738-155D-451F-67D31ADD6827D16D",
    "title": "Castle Clinton Guided tour",
    "category": "community",
-   "start": "2026-10-26T10:00:00-04:00",
+   "start": "2026-10-27T10:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -30,63 +30,30 @@
    ]
   },
   {
-   "id": "B941C32B-9D46-40B0-9EF4ACAC61D2B7B0",
-   "title": "Catch the Buzz About Bees!",
+   "id": "B9801ACF-9833-E501-534AA6148F572210",
+   "title": "Reel Fun on Jamaica Bay! Junior Angler Fishing Clinic",
    "category": "art",
-   "start": "2026-10-26T14:00:00-04:00",
-   "end": "2026-10-26T15:00:00-04:00",
+   "start": "2026-10-27T16:00:00-04:00",
+   "end": "2026-10-27T18:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Gateway National Recreation Area",
-    "address": "Jamaica Bay Wildlife Refuge Visitor Center",
+    "address": "Canarsie Pier",
     "neighborhood": "Gateway National Recreation Area",
     "lat": 40.5903,
     "lng": -73.8914
    },
    "price": null,
    "priceUnknown": false,
-   "description": "Did you know New York state has over 400 native species of bee? Join a park ranger to learn all about New York's native bees and what we can do to help them. This program will involve a woodworking de",
-   "details": "Did you know New York state has over 400 native species of bee? Join a park ranger to learn all about New York's native bees and what we can do to help them. This program will involve a woodworking demonstration where you'll learn how to make a bee hotel, a place where certain bees will make their nest.",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=B941C32B-9D46-40B0-9EF4ACAC61D2B7B0",
+   "description": "Families are invited to join National Park Service Rangers and our friends from the Jamaica Bay Rockaway Parks Conservancy for an afternoon of fishing! Whether you are an aspiring Jr. Angler or have d",
+   "details": "Families are invited to join National Park Service Rangers and our friends from the Jamaica Bay Rockaway Parks Conservancy for an afternoon of fishing! Whether you are an aspiring Jr. Angler or have dropped a line before, this hands-on program is the perfect way to experience the fun of fishing together. Discover local marine life, learn how to become an ethical angler, and practice dropping a cast. All fishing gear provided.",
+   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=B9801ACF-9833-E501-534AA6148F572210",
    "tags": [
     "Cultural/Craft Demonstration",
-    "Guided Tour"
-   ]
-  },
-  {
-   "id": "F1614BA4-B239-3336-085ABEB82CFFC387",
-   "title": "Full Hunter's Moon Hike at Jamaica Bay Wildlife Refuge",
-   "category": "sports",
-   "start": "2026-10-26T18:00:00-04:00",
-   "end": "2026-10-26T19:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Gateway National Recreation Area",
-    "address": "Jamaica Bay Wildlife Refuge Visitor Center",
-    "neighborhood": "Gateway National Recreation Area",
-    "lat": 40.5903,
-    "lng": -73.8914
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "New York City is a busy city of bright lights at night. With only the full moon, stars, and park rangers to guide you, set off on a hike around Jamaica Bay Wildlife Refuge. Explore the refuge afterhou",
-   "details": "New York City is a busy city of bright lights at night. With only the full moon, stars, and park rangers to guide you, set off on a hike around Jamaica Bay Wildlife Refuge. Explore the refuge afterhours, learn about the traditional name for this moon and look for signs of the story it represents.  \n\nAll ages are welcome. Flashlights and/or headlamps are recommended. Dress appropriately for the weather.",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=F1614BA4-B239-3336-085ABEB82CFFC387",
-   "tags": [
-    "Campfire/Evening Program",
-    "Festival",
-    "Guided Tour"
+    "Other",
+    "Partner Program"
    ]
   }
  ],
- "unplaced": [
-  {
-   "title": "Sandy Hook Lighthouse Tours",
-   "address": "Sandy Hook Lighthouse"
-  },
-  {
-   "title": "Sandy Hook History House",
-   "address": "Building 1, Sandy Hook"
-  }
- ]
+ "unplaced": []
 }

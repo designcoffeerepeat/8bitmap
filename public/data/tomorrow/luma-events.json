@@ -3,135 +3,155 @@
   "name": "Luma NYC",
   "url": "https://luma.com/nyc"
  },
- "date": "2026-10-27",
- "fetchedAt": "2026-10-26T13:17:55-04:00",
+ "date": "2026-10-28",
+ "fetchedAt": "2026-10-27T05:17:27-04:00",
  "events": [
   {
-   "id": "evt-KAvgOgypuoWl2sV",
-   "title": "Day of the Bats: Welcoming Bat Conservation International to DSI",
+   "id": "evt-cuppBFplkh4i6x4",
+   "title": "Dirt City: Sunrise Trails",
    "category": "community",
-   "start": "2026-10-27T15:30:00-04:00",
-   "end": "2026-10-27T18:00:00-04:00",
+   "start": "2026-10-28T07:00:00-04:00",
+   "end": "2026-10-28T08:00:00-04:00",
    "venue": {
-    "name": "SVA MFA Design for Social Innovation",
-    "address": "SVA MFA Design for Social Innovation, 136 W 21st St, New York, NY 10011, USA",
-    "neighborhood": "Chelsea",
-    "lat": 40.742176,
-    "lng": -73.995544
+    "name": "Grand Army Plaza",
+    "address": "Grand Army Plaza, Flatbush Ave, Brooklyn, NY 11238, USA",
+    "neighborhood": "Prospect Heights",
+    "lat": 40.672349,
+    "lng": -73.969761
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the MILER RUNNING calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/7w6gubxp",
+   "tags": []
+  },
+  {
+   "id": "evt-1ZGaMZlVBV4JrZC",
+   "title": "Agents in NYC",
+   "category": "community",
+   "start": "2026-10-28T17:30:00-04:00",
+   "end": "2026-10-28T21:00:00-04:00",
+   "venue": {
+    "name": "Datadog",
+    "address": "Datadog, New York Times Bldg, 620 8th Ave, New York, NY 10018, USA",
+    "neighborhood": "Midtown South",
+    "lat": 40.756087,
+    "lng": -73.990112
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Datadog calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/agentsinnyc",
+   "tags": []
+  },
+  {
+   "id": "evt-nBIhJFXk20Eytjq",
+   "title": "Book Swap",
+   "category": "art",
+   "start": "2026-10-28T18:30:00-04:00",
+   "end": "2026-10-28T20:30:00-04:00",
+   "venue": {
+    "name": "Good Company - Cannabis Dispensary",
+    "address": "Good Company - Cannabis Dispensary, 2273A Broadway, New York, NY 10024, USA",
+    "neighborhood": "Upper West Side",
+    "lat": 40.785789,
+    "lng": -73.979001
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Lit Club NYC Calendar calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/qz9bowcw",
+   "tags": []
+  },
+  {
+   "id": "evt-oBqgGgeVzlhRsb7",
+   "title": "Papers We Love NYC | Learning Rules: What can math tell us about language",
+   "category": "community",
+   "start": "2026-10-28T18:30:00-04:00",
+   "end": "2026-10-28T20:30:00-04:00",
+   "venue": {
+    "name": "Mindspace Williamsburg",
+    "address": "Mindspace Williamsburg, 25 Kent Ave lobby; Suite 401, Brooklyn, NY 11249, USA",
+    "neighborhood": "Greenpoint",
+    "lat": 40.72293,
+    "lng": -73.957799
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Papers We Love - NYC calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/xhgp3nlp",
+   "tags": []
+  },
+  {
+   "id": "evt-6MvEjhQMgALzltj",
+   "title": "The New York Philosophy Club: Columbus Circle",
+   "category": "community",
+   "start": "2026-10-28T19:00:00-04:00",
+   "end": "2026-10-28T22:00:00-04:00",
+   "venue": {
+    "name": "New York Society for Ethical Culture",
+    "address": "New York Society for Ethical Culture, 2 W 64th St, New York, NY 10023, USA",
+    "neighborhood": "Manhattan",
+    "lat": 40.771131,
+    "lng": -73.980035
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the The New York Philosophy Club calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/8185ihqi",
+   "tags": []
+  },
+  {
+   "id": "evt-NszxVzU1h5PEGlV",
+   "title": "Curfew Halloween",
+   "category": "community",
+   "start": "2026-10-28T20:00:00-04:00",
+   "end": "2026-10-29T00:00:00-04:00",
+   "venue": {
+    "name": "Beverly's",
+    "address": "Beverly's, 297 Grand St, New York, NY 10002, USA",
+    "neighborhood": "Lower East Side",
+    "lat": 40.71742,
+    "lng": -73.992019
    },
    "price": null,
    "priceUnknown": false,
    "description": "From the Personal calendar on Luma",
    "details": "",
-   "url": "https://luma.com/rd5iv9kh",
-   "tags": []
-  },
-  {
-   "id": "evt-JVDYHZ1HSEOKx8a",
-   "title": "Pawn Chess Club at Newlab",
-   "category": "community",
-   "start": "2026-10-27T18:00:00-04:00",
-   "end": "2026-10-27T21:00:00-04:00",
-   "venue": {
-    "name": "Newlab",
-    "address": "Newlab, 19 Morris Ave, Brooklyn, NY 11205, USA",
-    "neighborhood": "Brooklyn Navy Yard",
-    "lat": 40.698859,
-    "lng": -73.974727
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Pawn Chess Club calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/d6xymuwk",
-   "tags": []
-  },
-  {
-   "id": "evt-cgwYFPQhj7J2FsG",
-   "title": "Asian Founders Club & Vibranium Labs Present: Founders After Dark",
-   "category": "community",
-   "start": "2026-10-27T18:30:00-04:00",
-   "end": "2026-10-27T21:30:00-04:00",
-   "venue": {
-    "name": "Civic Hall",
-    "address": "Civic Hall, 124 E 14th St, New York, NY 10003, USA",
-    "neighborhood": "East Village",
-    "lat": 40.733829,
-    "lng": -73.988863
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Asian Founders Club calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/9yreeb7u",
-   "tags": []
-  },
-  {
-   "id": "evt-IInfE0TYycN9RGH",
-   "title": "Decoding COGE with Abundance NY & Citizens Union",
-   "category": "community",
-   "start": "2026-10-27T18:30:00-04:00",
-   "end": "2026-10-27T20:30:00-04:00",
-   "venue": {
-    "name": "Caveat",
-    "address": "Caveat, 21 A Clinton St, New York, NY 10002, USA",
-    "neighborhood": "Lower Manhattan",
-    "lat": 40.720741,
-    "lng": -73.984434
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Abundance New York calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/14p62n8i",
-   "tags": []
-  },
-  {
-   "id": "evt-UFNBKzbsBCYZDEM",
-   "title": "Antimetal Dinner at Dirty French",
-   "category": "food",
-   "start": "2026-10-27T19:00:00-04:00",
-   "end": "2026-10-27T21:30:00-04:00",
-   "venue": {
-    "name": "Dirty French New York",
-    "address": "Dirty French New York, 180 Ludlow St, New York, NY 10002, USA",
-    "neighborhood": "Lower Manhattan",
-    "lat": 40.7219,
-    "lng": -73.987187
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Antimetal calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/antimetal-i8ex",
+   "url": "https://luma.com/venammy8",
    "tags": []
   }
  ],
  "unplaced": [
   {
-   "title": "Flare NYC: Swell Week Drinks",
+   "title": "The Red Sea Ventures Consumer Brand Summit",
    "address": "address shown to guests only",
-   "url": "https://luma.com/pv1hqf61"
+   "url": "https://luma.com/mx9dqfpr"
   },
   {
-   "title": "State of AI 2026 - NYC launch event",
+   "title": "Circle x Chelsea NYC Watch Party",
    "address": "address shown to guests only",
-   "url": "https://luma.com/soai-nyc"
+   "url": "https://luma.com/circle-chelsea-nyc-oct28-2026"
   },
   {
-   "title": "Percepta x Sapienne - Builders After Dark: An evening for women in AI",
+   "title": "dev/ai/nyc",
    "address": "address shown to guests only",
-   "url": "https://luma.com/9kulxk97"
+   "url": "https://luma.com/sjnwdzsw"
   },
   {
-   "title": "The Shortlist Network Dinner",
+   "title": "Hear Me Out: \"SCARE\"",
    "address": "address shown to guests only",
-   "url": "https://luma.com/networkdinner"
+   "url": "https://luma.com/rc0hrnyo"
   },
   {
-   "title": "pickleball but make it a party",
+   "title": "Murdoch’s world: The empire that changed news",
    "address": "address shown to guests only",
-   "url": "https://luma.com/cumg8xjf"
+   "url": "https://luma.com/murdoch"
   }
  ]
 }
