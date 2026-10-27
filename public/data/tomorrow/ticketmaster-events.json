@@ -4,7 +4,7 @@
   "url": "https://www.ticketmaster.com/discover/new-york"
  },
  "date": "2026-10-28",
- "fetchedAt": "2026-10-27T05:14:29-04:00",
+ "fetchedAt": "2026-10-27T13:14:36-04:00",
  "events": [
   {
    "id": "LvZ18QrWTgeialOZ0E4-1",
@@ -2468,6 +2468,33 @@
    "url": "https://www.ticketmaster.com/hablando-huevadas-us-tour-2026-newark-new-jersey-10-28-2026/event/000064F0D590EB49",
    "tags": [
     "Theatre"
+   ]
+  },
+  {
+   "id": "rZ7HnEZ1Af8dr7",
+   "title": "Light Sweet Crude, Meghan Fitton",
+   "category": "music",
+   "start": "2026-10-28T20:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lucinda's",
+    "address": "169 Avenue A, New York",
+    "neighborhood": "New York",
+    "lat": 40.728329,
+    "lng": -73.982199
+   },
+   "price": {
+    "min": 0,
+    "max": 0,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "Music / Country",
+   "details": "This event is 21 and over. Any ticket holder unable to present valid identification indicating that they are at least 21 years of age will not be admitted to this event, and will not be eligible for a refund.",
+   "url": "https://www.ticketweb.com/event/light-sweet-crude-meghan-fitton-lucindas-tickets/14403784",
+   "tags": [
+    "Country"
    ]
   },
   {

@@ -4,7 +4,7 @@
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
  "date": "2026-10-27",
- "fetchedAt": "2026-10-27T05:10:15-04:00",
+ "fetchedAt": "2026-10-27T13:12:32-04:00",
  "events": [
   {
    "id": "972601",
@@ -19,29 +19,6 @@
     "neighborhood": "Queens",
     "lat": 40.77878,
     "lng": -73.9231
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Special Event",
-   "details": "Permit from Parks Department.",
-   "url": null,
-   "tags": [
-    "Special Event"
-   ]
-  },
-  {
-   "id": "974107",
-   "title": "The Friends of WNYC Transmitter Park Present Community Yoga",
-   "category": "community",
-   "start": "2026-10-27T07:00:00-04:00",
-   "end": "2026-10-27T08:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Wnyc Transmitter Park",
-    "address": "Wnyc Transmitter Park: Lawn",
-    "neighborhood": "Brooklyn",
-    "lat": 40.72984,
-    "lng": -73.96079
    },
    "price": null,
    "priceUnknown": false,
@@ -73,6 +50,29 @@
    "url": null,
    "tags": [
     "Street Event"
+   ]
+  },
+  {
+   "id": "974107",
+   "title": "The Friends of WNYC Transmitter Park Present Community Yoga",
+   "category": "community",
+   "start": "2026-10-27T07:00:00-04:00",
+   "end": "2026-10-27T08:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Wnyc Transmitter Park",
+    "address": "Wnyc Transmitter Park: Lawn",
+    "neighborhood": "Brooklyn",
+    "lat": 40.72984,
+    "lng": -73.96079
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Special Event",
+   "details": "Permit from Parks Department.",
+   "url": null,
+   "tags": [
+    "Special Event"
    ]
   },
   {

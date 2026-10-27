@@ -4,7 +4,7 @@
   "url": "https://www.ticketmaster.com/discover/new-york"
  },
  "date": "2026-10-27",
- "fetchedAt": "2026-10-27T05:10:33-04:00",
+ "fetchedAt": "2026-10-27T13:12:48-04:00",
  "events": [
   {
    "id": "LvZ18QrWTgeialOZ0E4-1",
@@ -78,29 +78,6 @@
    ]
   },
   {
-   "id": "LvZ18QEC-33sYJhRiNbNh",
-   "title": "The Banksy Museum New York!",
-   "category": "art",
-   "start": "2026-10-27T10:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Banksy Museum New York",
-    "address": "277 Canal St, New York",
-    "neighborhood": "New York",
-    "lat": 40.719603,
-    "lng": -74.001358
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Fine Art",
-   "details": "",
-   "url": "https://www.universe.com/events/the-banksy-museum-new-york-tickets-5PKNY0?ref=ticketmaster",
-   "tags": [
-    "Fine Art"
-   ]
-  },
-  {
    "id": "LvZ18Qk4nbbEibYZvnO8d",
    "title": "Banksy Museum - Flexiticket",
    "category": "art",
@@ -124,26 +101,26 @@
    ]
   },
   {
-   "id": "LvZ18Q-9tbOh8sZZvyVBD",
-   "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
+   "id": "LvZ18QEC-33sYJhRiNbNj",
+   "title": "The Banksy Museum New York!",
    "category": "art",
-   "start": "2026-10-27T10:00:00-04:00",
+   "start": "2026-10-27T10:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Balloon Museum NYC",
-    "address": "96 South Street, New York City",
-    "neighborhood": "New York City",
-    "lat": 40.70624,
-    "lng": -74.002277
+    "name": "Banksy Museum New York",
+    "address": "277 Canal St, New York",
+    "neighborhood": "New York",
+    "lat": 40.719603,
+    "lng": -74.001358
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Miscellaneous / Family",
+   "description": "Arts & Theatre / Fine Art",
    "details": "",
-   "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-tickets-Y5HV92?ref=ticketmaster",
+   "url": "https://www.universe.com/events/the-banksy-museum-new-york-tickets-5PKNY0?ref=ticketmaster",
    "tags": [
-    "Family"
+    "Fine Art"
    ]
   },
   {
@@ -166,6 +143,29 @@
    "details": "All tour dates, times, locations and tour stops are subject to availability and are subject to change without notice. All guests should arrive 15 minutes before scheduled tour time and enter Barclays Center through the Main Atrium. All sales final - no refunds.",
    "url": "https://www.ticketmaster.com/barclays-center-tours-brooklyn-new-york-10-27-2026/event/30006513DD118E8F",
    "tags": []
+  },
+  {
+   "id": "LvZ18Q-9tbOh8sZZvyVD6",
+   "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
+   "category": "art",
+   "start": "2026-10-27T13:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Balloon Museum NYC",
+    "address": "96 South Street, New York City",
+    "neighborhood": "New York City",
+    "lat": 40.70624,
+    "lng": -74.002277
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Miscellaneous / Family",
+   "details": "",
+   "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-tickets-Y5HV92?ref=ticketmaster",
+   "tags": [
+    "Family"
+   ]
   },
   {
    "id": "rZ7HnEZ1AfueaV",
