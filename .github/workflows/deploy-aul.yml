@@ -57,18 +57,18 @@ jobs:
           export CLOUDFLARE_API_TOKEN="$(printf '%s' "$CLOUDFLARE_API_TOKEN" | grep -o '[[:alnum:]_-]\{30,\}' | tail -1)"
           api() { curl -sS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H 'Content-Type: application/json' "$@"; }
           base="https://api.cloudflare.com/client/v4"
-          if api "$base/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/domains?hostname=aul.8bit.nyc" | grep -q '"service":"8bitmap-aul"'; then
+          if api "$base/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/domains?hostname=aul.8bit.nyc" | grep -q '"service": *"8bitmap-aul"'; then
             echo "::notice::aul.8bit.nyc already points at 8bitmap-aul"
             exit 0
           fi
-          zone="$(api "$base/zones?name=8bit.nyc" | grep -o '"id":"[0-9a-f]\{32\}"' | head -1 | cut -d'"' -f4)"
+          zone="$(api "$base/zones?name=8bit.nyc" | grep -o '"id": *"[0-9a-f]\{32\}"' | head -1 | grep -o '[0-9a-f]\{32\}')"
           if [ -z "$zone" ]; then
             echo "::warning::Could not look up the 8bit.nyc zone; add aul.8bit.nyc to 8bitmap-aul in the Cloudflare dashboard."
             exit 1
           fi
           out="$(api -X PUT "$base/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/domains" \
             -d "{\"environment\":\"production\",\"hostname\":\"aul.8bit.nyc\",\"service\":\"8bitmap-aul\",\"zone_id\":\"$zone\"}")"
-          if echo "$out" | grep -q '"success":true'; then
+          if echo "$out" | grep -q '"success": *true'; then
             echo "::notice::aul.8bit.nyc now points at 8bitmap-aul"
           else
             echo "::warning::Could not add aul.8bit.nyc: $(echo "$out" | head -c 400)"
