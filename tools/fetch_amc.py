@@ -100,7 +100,7 @@ def to_raw(s, venue):
 
 def main():
     day = datetime.strptime(sys.argv[1], '%Y-%m-%d').date() if len(sys.argv) > 1 else datetime.now(NYC).date()
-    key = os.environ.get('AMC_API_KEY')
+    key = (os.environ.get('AMC_API_KEY') or '').strip()  # a pasted secret can carry a trailing newline
     if not key:
         print('AMC_API_KEY is not set; skipping AMC and keeping the existing snapshot.')
         return
