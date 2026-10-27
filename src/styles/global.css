@@ -199,6 +199,17 @@ button, a { font: inherit; color: inherit; }
   font: 17px/1 var(--font-body); color: var(--ink); letter-spacing: .5px;
   text-shadow: 1px 0 var(--night), -1px 0 var(--night), 0 1px var(--night), 0 -1px var(--night), 2px 2px 0 var(--night);
 }
+/* park, highway and landmark names (src/scripts/map/places.js) */
+.park-name, .poi {
+  font: 15px/1 var(--font-body); letter-spacing: .5px;
+  text-shadow: 1px 0 var(--night), -1px 0 var(--night), 0 1px var(--night), 0 -1px var(--night), 2px 2px 0 var(--night);
+}
+.park-name { color: #b6f5a8; }
+.poi { color: var(--coin); }
+.road-name {
+  font: 13px/1 var(--font-body); color: #fff; background: #4a4d63; border: 1px solid #fff;
+  padding: 1px 4px 2px; letter-spacing: .5px;
+}
 
 /* right panel */
 #panel {

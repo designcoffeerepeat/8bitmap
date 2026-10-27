@@ -27,7 +27,10 @@ In VS Code you can also press F5 (Run and Debug, "Development server") to start 
 
 ## Deploying
 
-Two branches:
+Three branches:
+
+- `aul`: the more detailed map, at https://aul.8bit.nyc (same password as dev), deployed by
+  `.github/workflows/deploy-aul.yml` with dev's latest event snapshots. Kept apart from dev until it is merged in.
 
 - `dev`: every change lands here first. Cloudflare builds it as a preview (see the Workers Builds
   check on the commit in GitHub for its link) so it can be tested before going live.
@@ -85,6 +88,8 @@ src/scripts/site.js               site menu, Contact / Privacy / Terms modals, a
 src/components/                   Privacy Policy and Terms texts
 src/scripts/map/geo.js            NYC tile grid: parks, beaches, bridges, skyline peaks, lat/lng to tile
 src/scripts/map/land.json         land tiles for all five boroughs and the land around them (tools/build_land.py)
+src/scripts/map/detail.json       finer ground detail: real parks, lakes, runways, major streets, highways (tools/build_detail.py)
+src/scripts/map/places.js         landmark models (stadiums, arenas, museums, City Hall, airports...) and park, road and place names
 src/scripts/map/renderer.js       three.js scene: voxel land and buildings, pins, labels, camera, picking
 src/scripts/map/palette.js        colours for the city and for event categories
 src/scripts/events/schema.js      the one event shape every source maps into
@@ -368,6 +373,20 @@ and the same show listed on several sites is merged by title, venue and start ti
 - Shorelines and the map's edges come from `tools/build_land.py`, which turns the city's borough boundaries
   and the census county shapes around them into `src/scripts/map/land.json`. The map covers all five boroughs;
   change `BOUNDS` there and rerun it (`python3 tools/build_land.py`) to move the edges.
-- Parks, airports, beaches and small islands are `[lat, lng]` polygons at the top of `geo.js`.
+- Parks, roads and lakes: `tools/build_detail.py` reads the NYC Parks properties and the city's street centerline
+  file from NYC Open Data and writes `src/scripts/map/detail.json`, which splits every tile into 4 x 4 finer pixels.
+  The streets drawn are every highway plus `MAJOR_STREETS` in the script; lakes and runways are traced by hand there.
+  Rerun it (`python3 tools/build_detail.py`) after changing them. A tile that is mostly park becomes a park tile (no
+  buildings, trees), and a tile a highway or major street crosses is kept clear of buildings.
+- Parks the city data leaves out (federal, state and New Jersey parks), airports, beaches and small islands are
+  `[lat, lng]` polygons at the top of `geo.js`.
+- Landmarks: the older ones are `LANDMARKS` in `geo.js`, the newer ones `PLACES` in `places.js`, each with a small
+  model function made of boxes. `clear` empties the tiles around it of generic buildings and `top` is where event
+  pins on those tiles sit.
+- Layers: the renderer keeps the map in layers (`ground`, `roads`, `buildings`, `landmarks`, `labels`, `overlay`,
+  `pins`). An overlay such as a subway map can draw lines with `map.addOverlayLine(points, { color, width })`, fade
+  the city under it with `map.dimBase(0.6)`, hide a layer with `map.setLayerVisible('roads', false)` and add or
+  remove text tags with `map.addAnchor` / `map.removeAnchor`. Pins always stay on top.
+- `?at=lat,lng,zoom` in the address opens the map on that spot, e.g. `/?at=40.7499,-73.8467,3.5` for the US Open.
 - Skyline heights come from `PEAKS` in `geo.js` (centre, spread, height).
 - Tile size is `CELL` in `tools/build_land.py`; pixel chunkiness is the PX button (2x by default, then 3x, 4x).

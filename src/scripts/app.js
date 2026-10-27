@@ -3,6 +3,7 @@ import { loadEventsForDate, SOURCES } from './events/index.js';
 import { CATEGORIES, MAIN_CATEGORIES, CATEGORY_LABELS } from './events/schema.js';
 import { CATEGORY_COLORS } from './map/palette.js';
 import NEIGHBORHOODS from './map/neighborhoods.json';
+import { PLACES, MORE_LABELS, PARK_LABELS, ROAD_LABELS } from './map/places.js';
 import nycgovSource from './events/sources/nycgov.js';
 import { initMonster } from './monster.js';
 import { initSunbather } from './sunbather.js';
@@ -73,8 +74,16 @@ const HOOD_GROUPS = Object.entries(BOROUGH_VIEWS).map(([borough, view]) => ({
 await document.fonts.load('8px "Press Start 2P"').catch(() => {});
 const map = createMap(el.map, { pixelSize: 2 });
 
+// ?at=lat,lng,zoom opens the map on that spot, for sharing a view.
+const at = new URLSearchParams(location.search).get('at')?.split(',').map(Number);
+if (at?.length === 3 && at.every(Number.isFinite)) map.focusLatLng(at[0], at[1], at[2]);
+
 // Official neighborhood names appear once you zoom in past the borough labels.
 for (const n of NEIGHBORHOODS) map.addAnchor(n.name, n.lat, n.lng, { className: 'hood', minZoom: 2.4 });
+// Big parks and highways get their names from the borough view in; landmarks and venues closer in.
+for (const p of PARK_LABELS) map.addAnchor(p.name, p.lat, p.lng, { className: 'park-name', minZoom: 1.5 });
+for (const r of ROAD_LABELS) map.addAnchor(r.name, r.lat, r.lng, { className: 'road-name', minZoom: 2.2 });
+for (const p of [...PLACES, ...MORE_LABELS]) map.addAnchor(p.name, p.lat, p.lng, { className: 'poi', minZoom: 3 });
 
 // The monster easter egg (site menu, or by itself after two minutes).
 initMonster(map);
