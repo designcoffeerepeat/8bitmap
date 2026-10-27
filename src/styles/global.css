@@ -387,7 +387,8 @@ button, a { font: inherit; color: inherit; }
   #panel-toggle { display: block; position: absolute; inset: 0 0 auto 0; height: 61px; background: none; border: 0; cursor: pointer; }
   #panel-toggle::after { content: ""; position: absolute; top: 8px; left: 50%; width: 36px; height: 4px; margin-left: -18px; background: var(--dim); }
   .panel-foot { display: none; }
-  #detail { width: auto; right: calc(max(16px, env(safe-area-inset-right, 0px)) + 66px); bottom: calc(80px + env(safe-area-inset-bottom, 0px)); max-height: 55%; }
+  /* full width with the header's 16px gutters; it covers the map controls while open */
+  #detail { width: auto; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(80px + env(safe-area-inset-bottom, 0px)); max-height: 55%; }
   /* bottom right, just above the list tab, and 15% smaller than on desktop so it stays clear of the dropdowns */
   .controls { right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(78px + env(safe-area-inset-bottom, 0px)); grid-template-columns: 34px; gap: 5px; padding: 7px; }
   .controls button { width: 34px; height: 34px; font-size: 10px; }
