@@ -21,15 +21,21 @@ export function zoomer(map, lat, lng, start, { y = null } = {}) {
 }
 
 // Behind a building a Zoomer still shows, as a pale see-through ghost: every box gets a twin drawn only
-// where something nearer covers it.
-const GHOST = new THREE.MeshBasicMaterial({ color: '#ffffff', transparent: true, opacity: 0.45, depthWrite: false, depthFunc: THREE.GreaterDepth });
+// where something nearer covers it. The stencil keeps that to the outline: a Zoomer's own boxes mark
+// the pixels where they show (1), so a box hidden behind another part of the same figure draws no ghost,
+// and each ghost pixel marks itself too, so overlapping ghosts don't stack into a brighter skeleton.
+const SHOWN = { stencilWrite: true, stencilRef: 1, stencilFunc: THREE.AlwaysStencilFunc, stencilZPass: THREE.ReplaceStencilOp };
+const GHOST = new THREE.MeshBasicMaterial({
+  color: '#ffffff', transparent: true, opacity: 0.45, depthWrite: false, depthFunc: THREE.GreaterDepth,
+  stencilWrite: true, stencilRef: 0, stencilFunc: THREE.EqualStencilFunc, stencilZPass: THREE.IncrementStencilOp,
+});
 
 // A box builder that shares one material per colour and disposes them all at the end.
 export function kit() {
   const mats = new Map();
   const mat = (hex, glow = false) => {
     const key = `${hex}${glow ? '!' : ''}`;
-    if (!mats.has(key)) mats.set(key, glow ? new THREE.MeshBasicMaterial({ color: hex }) : new THREE.MeshLambertMaterial({ color: hex, flatShading: true }));
+    if (!mats.has(key)) mats.set(key, glow ? new THREE.MeshBasicMaterial({ color: hex, ...SHOWN }) : new THREE.MeshLambertMaterial({ color: hex, flatShading: true, ...SHOWN }));
     return mats.get(key);
   };
   const box = (parent, w, h, d, x, y, z, hex, glow = false) => {
