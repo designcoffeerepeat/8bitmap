@@ -116,6 +116,7 @@ tools/fetch_statenisland.py       pulls the day's events from Staten Island's ow
 tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
 tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
 tools/fetch_patchbay.py           pulls today's or tomorrow's New York live music from Patchbay
+tools/fetch_amc.py                pulls one day of IMAX showings at AMC Lincoln Square 13 (needs AMC_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
 data/patchbay-venues.json         Patchbay venues' addresses and positions, read once per venue
 ```
@@ -142,6 +143,7 @@ python3 tools/fetch_statenisland.py
 python3 tools/fetch_greenmarkets.py
 NPS_API_KEY=... python3 tools/fetch_nps.py
 python3 tools/fetch_patchbay.py           # today or tomorrow only
+AMC_API_KEY=... python3 tools/fetch_amc.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
 EVENTS_DIR=public/data/tomorrow python3 tools/fetch_nycgov.py 2026-10-18  # tomorrow's snapshot, as the Action writes it
 ```
@@ -213,6 +215,13 @@ the map shows no Ticketmaster events until the first run that has one.
 Manhattan. It needs a free client id in `SEATGEEK_CLIENT_ID`, which the scheduled refresh reads from a repository
 secret of that name. Without one it skips the run, like Ticketmaster.
 
+### AMC Lincoln Square IMAX
+
+`fetch_amc.py` reads AMC's official API (https://developers.amctheatres.com) for the day's showtimes at AMC Lincoln
+Square 13 (Broadway at 68th Street) and keeps only the IMAX showings, one pin per showing, each linking to its
+ticket page. It needs a vendor key in `AMC_API_KEY`, read from a repository secret of that name by the scheduled
+refresh; without one it skips the run, like Ticketmaster.
+
 ### Categories
 
 Each fetcher maps its source's own labels into the map's categories (`CATEGORIES` in `src/scripts/events/schema.js`).
@@ -253,7 +262,8 @@ place in `READERS`. Only title, time, price when given and a link are kept.
 Check a site's terms of use before adding it. St. Marks Comedy Club, QED, McNally Jackson and Apple forbid automated
 access, Flushing Town Hall and the Kupferberg Center forbid republishing their content, and Queens Theatre turns
 scripts away, so they are left out; Geeks Who Drink, The Strand, Greenlight, Barnes & Noble, Film at Lincoln Center,
-Juilliard, BRIC, The Public Theater and TV Eye turn automated visits away. Nowadays lists its nights only on
+Juilliard, BRIC, The Public Theater and TV Eye turn automated visits away. IFC Center's owner (AMC Networks) forbids
+republishing its content, and Angelika's showtimes come only from a private API, so neither cinema is read here. Nowadays lists its nights only on
 Resident Advisor, and Trans-Pecos only through VenuePilot, so neither is read here.
 
 ### Astoria venues
