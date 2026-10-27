@@ -1158,7 +1158,7 @@ function buildLandmarks(world, city) {
 
 function buildBoats(world) {
   const routes = [
-    { from: [40.7005, -74.0135], to: [40.6460, -74.0690], hex: '#ff8a1f', size: [0.9, 0.35, 0.45], speed: 0.05 }, // Staten Island Ferry
+    // the Staten Island Ferry is its own model now (src/scripts/zoomers/bridge-and-river.js)
     { from: [40.7050, -73.9990], to: [40.7600, -73.9550], hex: '#ffffff', size: [0.6, 0.3, 0.3], speed: 0.07 }, // East River ferry
     { from: [40.7800, -74.0060], to: [40.7100, -74.0230], hex: '#f2f2f2', size: [0.7, 0.3, 0.35], speed: 0.04 }, // Hudson
   ];

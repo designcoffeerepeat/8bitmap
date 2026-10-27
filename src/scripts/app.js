@@ -14,6 +14,7 @@ import { initSubway } from './subway.js';
 import { initWeather } from './weather.js';
 import { initAsp } from './asp.js';
 import { initSecurity } from './airport-security.js';
+import { initZoomers } from './zoomers/index.js';
 
 // SeatGeek's wordmark (from seatgeek.com/press, via Simple Icons), shown with every
 // event that uses SeatGeek data and linked to seatgeek.com in the event card.
@@ -101,6 +102,9 @@ initRooftopGrill(map);
 // Times Square: the plaza, the billboard building (an ad/event space like the one beside the header)
 // and One Times Square with the New Year's Eve ball.
 initTimesSquare(map);
+// Zoomers: street performers, a woman watering her plants, subway dancers on the Manhattan Bridge and more,
+// each when the map is zoomed all the way in on its spot (src/scripts/zoomers/).
+initZoomers(map);
 // The subway map in the + menu: every line and station, and the lines hit by alerts or planned work.
 initSubway(map);
 // The weather button at the bottom left, with WINTER MODE in its card.
