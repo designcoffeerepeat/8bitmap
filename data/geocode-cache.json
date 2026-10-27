@@ -949,6 +949,10 @@
   "lng": -74.09126
  },
  "census: 222 JERSEY CIYT BOULEVARD": null,
+ "census: 360 Martin Luther King Dr.": {
+  "lat": 40.710084,
+  "lng": -74.079851
+ },
  "corner: madison ave & e 23rd st | Manhattan": {
   "label": "madison ave & e 23rd st",
   "lat": 40.740847,
@@ -5109,6 +5113,11 @@
   "label": "The Gaf East",
   "lat": 40.778917,
   "lng": -73.9506544
+ },
+ "trivia league: https://nyctrivialeague.com/listings/the-gin-mill/": {
+  "label": "The Gin Mill",
+  "lat": 40.78471015487677,
+  "lng": -73.97742958037915
  },
  "trivia league: https://nyctrivialeague.com/listings/the-hamilton/": {
   "label": "The Hamilton",
