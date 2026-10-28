@@ -1013,11 +1013,14 @@ function createUfo(ctx) {
       u.body.rotation.y += dt * (8 + T * 6);
       root.rotation.z = Math.min(0.9, T * 0.6);
       if (Math.random() < dt * 30) fx.add({ p: root.position.clone().add(rand3(1)), v: new THREE.Vector3(rand(0.5), 1.5, rand(0.5)), life: 1, size: 0.5, g: -0.5, ramp: Math.random() < 0.5 ? RAMPS.flame : RAMPS.smoke });
-      if (T > 0.3 && st.falling.length < 5 && Math.random() < dt * 6) {
+      // three of them, a quarter second apart: each pops up out of the dome, then falls
+      if (st.falling.length < 3 && T > 0.3 + st.falling.length * 0.25) {
         const a = buildGray(u.grayMats);
-        a.position.copy(root.position).add(new THREE.Vector3(rand(1), -0.4, rand(1)));
+        a.scale.setScalar(1.8);
+        a.position.copy(root.position).add(new THREE.Vector3(rand(0.4), 1.2, rand(0.4)));
         group.add(a);
-        st.falling.push({ a, v: new THREE.Vector3(rand(1.5), 1 + Math.random(), rand(1.5)), spin: rand(8), down: false });
+        const out = Math.random() * Math.PI * 2;
+        st.falling.push({ a, v: new THREE.Vector3(Math.cos(out) * 1.6, 6 + Math.random() * 1.5, Math.sin(out) * 1.6), spin: rand(8), down: false });
       }
       for (const f of st.falling) {
         if (f.down) continue;
@@ -1025,7 +1028,7 @@ function createUfo(ctx) {
         f.a.position.addScaledVector(f.v, dt);
         f.a.rotation.x += f.spin * dt;
         f.a.rotation.z += f.spin * 0.7 * dt;
-        if (Math.random() < dt * 40) fx.add({ p: f.a.position.clone().add(rand3(0.15)), v: new THREE.Vector3(rand(0.3), 0.8, rand(0.3)), life: 0.45, size: 0.22, g: -0.5, ramp: RAMPS.flame });
+        if (Math.random() < dt * 25) fx.add({ p: f.a.position.clone().add(rand3(0.25)), v: new THREE.Vector3(rand(0.3), 0.8, rand(0.3)), life: 0.45, size: 0.3, g: -0.5, ramp: RAMPS.flame });
         const floor = floorAt(map, f.a.position.x, f.a.position.z);
         if (f.a.position.y <= floor) {
           f.down = true;
@@ -1045,7 +1048,7 @@ function createUfo(ctx) {
           ctx.dustRing(root.position, 36, 3.5);
         }
       }
-      return !!st.landed && st.falling.length >= 5 && st.falling.every((f) => f.down);
+      return !!st.landed && st.falling.length >= 3 && st.falling.every((f) => f.down);
     },
   };
 }
