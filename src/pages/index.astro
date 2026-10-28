@@ -8,6 +8,8 @@ import '../styles/global.css';
 import PrivacyPolicy from '../components/PrivacyPolicy.astro';
 import Terms from '../components/Terms.astro';
 import About from '../components/About.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+import AspCalendar from '../components/AspCalendar.astro';
 ---
 <!doctype html>
 <html lang="en">
@@ -82,6 +84,7 @@ import About from '../components/About.astro';
       <div class="menu-legal">
         <a href="#privacy" data-modal="privacy">PRIVACY POLICY</a>
         <a href="#terms" data-modal="terms">TERMS AND CONDITIONS</a>
+        <a href="#disclaimer" data-modal="disclaimer">DISCLAIMER</a>
         <button type="button" id="cookie-settings" hidden>COOKIE SETTINGS</button>
       </div>
     </nav>
@@ -118,17 +121,36 @@ import About from '../components/About.astro';
         <ul id="cat-list" aria-label="Event categories"></ul>
       </div>
     </div>
-    <!-- + dropdown: pick a neighborhood and the map flies to it -->
+    <!-- + dropdown: a neighborhood to fly to, the subway map and alerts (src/scripts/subway.js) and
+         alternate side parking (src/scripts/asp.js) -->
     <div class="hood-filter">
-      <button class="chip hood-btn" id="hood-btn" type="button" aria-expanded="false" aria-controls="hood-menu" aria-label="Go to a neighborhood" title="Go to a neighborhood">
+      <button class="chip hood-btn" id="hood-btn" type="button" aria-expanded="false" aria-controls="hood-menu" aria-label="Neighborhoods, subway and parking" title="Neighborhoods, subway and parking">
         <svg viewBox="0 0 7 7" aria-hidden="true" shape-rendering="crispEdges"><path fill="currentColor" d="M3 0h1v3h3v1H4v3H3V4H0V3h3z"/></svg>
       </button>
       <div class="src-menu hood-menu box" id="hood-menu" hidden>
-        <p class="hood-head">GO TO A NEIGHBORHOOD</p>
-        <input id="hood-search" type="search" placeholder="Search" aria-label="Search neighborhoods" autocomplete="off" spellcheck="false">
-        <ul id="hood-list" aria-label="Neighborhoods"></ul>
+        <button class="menu-sec" id="hood-sec-btn" type="button" aria-expanded="false" aria-controls="hood-sec">NEIGHBORHOODS<i aria-hidden="true"></i></button>
+        <div class="menu-sec-body" id="hood-sec" hidden>
+          <p class="hood-head">GO TO A NEIGHBORHOOD</p>
+          <input id="hood-search" type="search" placeholder="Search" aria-label="Search neighborhoods" autocomplete="off" spellcheck="false">
+          <ul id="hood-list" aria-label="Neighborhoods"></ul>
+        </div>
+        <button class="menu-sec" id="sub-sec-btn" type="button" aria-expanded="false" aria-controls="sub-sec">SUBWAY<i aria-hidden="true"></i></button>
+        <div class="menu-sec-body" id="sub-sec" hidden>
+          <button class="sub-mode" type="button" data-mode="map">SUBWAY MAP<span>ALL LINES</span></button>
+          <button class="sub-mode" type="button" data-mode="active">ACTIVE ALERTS / DELAYS<span></span></button>
+          <button class="sub-mode" type="button" data-mode="planned">PLANNED WORK<span></span></button>
+          <div id="sub-out" aria-live="polite"></div>
+        </div>
+        <button class="menu-sec" id="asp-sec-btn" type="button" aria-expanded="false" aria-controls="asp-sec">ALT SIDE PARKING<em class="asp-badge" id="asp-badge"></em><i aria-hidden="true"></i></button>
+        <div class="menu-sec-body" id="asp-sec" hidden>
+          <div id="asp-out"></div>
+          <button class="sub-mode" type="button" id="asp-show" aria-pressed="false">SHOW ON MAP<b>OFF</b></button>
+          <a class="sub-link asp-cal" href="#asp" data-modal="asp">FULL YEAR CALENDAR</a>
+          <a class="sub-link" href="https://www.nyc.gov/html/dot/html/motorist/alternate-side-parking.shtml" target="_blank" rel="noopener">EMERGENCY SUSPENSIONS AT NYC.GOV</a>
+        </div>
       </div>
     </div>
+    <button class="chip sub-chip" id="sub-chip" type="button" hidden title="Hide the subway lines"></button>
   </div>
 </header>
 
@@ -149,6 +171,15 @@ import About from '../components/About.astro';
 </aside>
 
 <section id="detail" class="box" hidden aria-live="polite"></section>
+
+<!-- bottom left: the weather (src/scripts/weather.js) and, when switched on, the parking chip (src/scripts/asp.js) -->
+<div class="corner">
+  <button class="chip asp-chip" id="asp-chip" type="button" data-modal="asp" hidden title="Alternate side parking calendar"></button>
+  <div class="wx">
+    <div class="wx-card box" id="wx-card" hidden aria-live="polite"></div>
+    <button class="wx-btn box" id="wx-btn" type="button" aria-expanded="false" aria-controls="wx-card" title="Weather"></button>
+  </div>
+</div>
 
 <div class="controls box" role="toolbar" aria-label="Map controls">
   <button id="zoom-in" type="button" aria-label="Zoom in">+</button>
@@ -205,6 +236,16 @@ import About from '../components/About.astro';
 <dialog class="modal box" id="modal-terms" aria-labelledby="terms-title">
   <div class="modal-head"><h2 id="terms-title">TERMS AND CONDITIONS</h2><button class="modal-close" type="button" aria-label="Close">X</button></div>
   <div class="modal-body legal"><Terms /></div>
+</dialog>
+
+<dialog class="modal box" id="modal-disclaimer" aria-labelledby="disclaimer-title">
+  <div class="modal-head"><h2 id="disclaimer-title">DISCLAIMER</h2><button class="modal-close" type="button" aria-label="Close">X</button></div>
+  <div class="modal-body legal"><Disclaimer /></div>
+</dialog>
+
+<dialog class="modal box modal-wide" id="modal-asp" aria-labelledby="asp-title">
+  <div class="modal-head"><h2 id="asp-title">ALTERNATE SIDE PARKING</h2><button class="modal-close" type="button" aria-label="Close">X</button></div>
+  <div class="modal-body legal asp-cal-body"><AspCalendar /></div>
 </dialog>
 
 <section class="consent box" id="consent" aria-label="Cookie consent" hidden>

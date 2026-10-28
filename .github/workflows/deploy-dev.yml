@@ -27,6 +27,12 @@ jobs:
           node-version-file: .node-version
           cache: npm
       - run: npm ci
+      - name: Draw the subway lines from the MTA's GTFS
+        # a failed download keeps the empty file, and the alerts menu then lists lines without drawing them
+        run: python3 tools/build_subway.py || echo "::warning::tools/build_subway.py failed; the subway lines are not drawn"
+      - name: Refresh the alternate side parking calendar
+        # a failed download keeps the committed calendar
+        run: python3 tools/build_asp.py || echo "::warning::tools/build_asp.py failed; using the committed calendar"
       # PUBLIC_SITE=dev keeps the sources that live leaves out (src/scripts/events/live.js).
       - run: npm run build
         env:
@@ -49,7 +55,8 @@ jobs:
         run: echo "::warning::Add the CLOUDFLARE_API_TOKEN repository secret to publish dev."
 
   # Rebuilds the detailed map at aul.8bit.nyc (branch aul) after each dev deploy, so it shows
-  # dev's latest events too. Remove this job once aul is merged into dev.
+  # dev's latest events too. Everything on aul is now on dev as well (v1.15); remove this job
+  # when aul.8bit.nyc is retired.
   aul:
     needs: deploy
     uses: designcoffeerepeat/8bitmap/.github/workflows/deploy-aul.yml@aul

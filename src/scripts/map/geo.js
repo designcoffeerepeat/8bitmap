@@ -4,6 +4,7 @@
 // with the voxel city.
 
 import LAND from './land.json';
+import DETAIL from './detail.json';
 
 // Land and borough shapes come from tools/build_land.py, which also sets the map's edges.
 export const BOUNDS = LAND.bounds;
@@ -13,6 +14,34 @@ export const COLS = LAND.cols;
 export const ROWS = LAND.rows.length;
 
 export const T = { WATER: 0, LAND: 1, PARK: 2, AIRPORT: 3, BRIDGE: 4, BEACH: 5 };
+
+// Fine ground detail from tools/build_detail.py: every tile split into SUB x SUB pixels, each one
+// nothing, park, lake, runway, major street or highway (F below). Real parks come from NYC Parks and
+// real roads from the city's street centerline file, so they line up with the event pins.
+export const F = { NONE: 0, PARK: 1, LAKE: 2, RUNWAY: 3, ROAD: 4, HIGHWAY: 5, MARK: 6 };
+const FINE_CODES = { '.': F.NONE, p: F.PARK, w: F.LAKE, a: F.RUNWAY, r: F.ROAD, h: F.HIGHWAY, m: F.MARK };
+export const FINE = (() => {
+  const w = DETAIL.cols;
+  const data = new Uint8Array(w * DETAIL.rows.length);
+  let k = 0;
+  for (const line of DETAIL.rows) {
+    for (const [, n, c] of line.matchAll(/(\d+)(.)/g)) {
+      data.fill(FINE_CODES[c], k, k + +n);
+      k += +n;
+    }
+  }
+  return { sub: DETAIL.sub, w, h: DETAIL.rows.length, data };
+})();
+
+const HALF_TILE = (FINE.sub * FINE.sub) / 2;
+
+// How many of a tile's fine pixels are each kind: counts[kind]
+export function fineCounts(col, row) {
+  const counts = new Uint8Array(7);
+  const s = FINE.sub;
+  for (let y = row * s; y < row * s + s; y++) for (let x = col * s; x < col * s + s; x++) counts[FINE.data[y * FINE.w + x]]++;
+  return counts;
+}
 
 // land.json letters to areas. Brooklyn and Queens share Long Island's look, as before.
 const AREA_CODES = {
@@ -31,53 +60,23 @@ const ISLANDS = [
   [[40.7005, -74.0405], [40.7005, -74.0380], [40.6985, -74.0380], [40.6985, -74.0405]],
 ];
 
+// Parks the NYC Parks data leaves out (federal, state and New Jersey parks), [lat, lng]. City parks come
+// from detail.json; a tile is park when most of its fine pixels are.
 const PARKS = [
-  // Central Park
-  [[40.7681, -73.9817], [40.7644, -73.9730], [40.7969, -73.9496], [40.8006, -73.9580]],
-  // Prospect Park
-  [[40.6720, -73.9700], [40.6630, -73.9620], [40.6530, -73.9730], [40.6600, -73.9800]],
-  // Randall's Island park
-  [[40.8010, -73.9270], [40.8000, -73.9160], [40.7880, -73.9145], [40.7845, -73.9240]],
   // Governors Island
   [[40.6935, -74.0160], [40.6915, -74.0115], [40.6870, -74.0135], [40.6845, -74.0225], [40.6875, -74.0245]],
   // Liberty State Park (NJ)
   [[40.7050, -74.0450], [40.6950, -74.0400], [40.6900, -74.0550], [40.7000, -74.0620]],
-  // Bronx Zoo + Botanical Garden
-  [[40.8640, -73.8800], [40.8620, -73.8690], [40.8440, -73.8710], [40.8460, -73.8820]],
-  // Fort Tryon + Inwood Hill
-  [[40.8720, -73.9290], [40.8720, -73.9220], [40.8600, -73.9290], [40.8600, -73.9330]],
   // Brooklyn Bridge Park
   [[40.7040, -73.9960], [40.7020, -73.9945], [40.6950, -73.9990], [40.6960, -74.0010]],
-  // McCarren Park
-  [[40.7230, -73.9540], [40.7230, -73.9480], [40.7190, -73.9480], [40.7190, -73.9540]],
-  // Astoria Park
-  [[40.7820, -73.9250], [40.7800, -73.9200], [40.7740, -73.9240], [40.7760, -73.9290]],
-  // Van Cortlandt Park
-  [[40.9040, -73.8990], [40.9040, -73.8780], [40.8850, -73.8800], [40.8820, -73.8960]],
-  // Pelham Bay Park
-  [[40.8800, -73.8250], [40.8830, -73.8000], [40.8650, -73.7900], [40.8500, -73.8100], [40.8560, -73.8300]],
-  // Flushing Meadows Corona Park
-  [[40.7560, -73.8470], [40.7560, -73.8380], [40.7280, -73.8320], [40.7280, -73.8420]],
-  // Forest Park
-  [[40.7050, -73.8700], [40.7030, -73.8350], [40.6940, -73.8370], [40.6960, -73.8650]],
-  // Cunningham Park
-  [[40.7400, -73.7800], [40.7400, -73.7640], [40.7280, -73.7660], [40.7280, -73.7820]],
-  // Alley Pond Park
-  [[40.7620, -73.7500], [40.7600, -73.7380], [40.7350, -73.7380], [40.7360, -73.7480]],
-  // Marine Park
-  [[40.6080, -73.9300], [40.6050, -73.9150], [40.5900, -73.9180], [40.5920, -73.9300]],
-  // Dyker Beach Park
-  [[40.6170, -74.0230], [40.6150, -74.0130], [40.6070, -74.0150], [40.6080, -74.0250]],
   // Fort Tilden and Jacob Riis Park
   [[40.5680, -73.8950], [40.5730, -73.8650], [40.5640, -73.8640], [40.5580, -73.8950]],
-  // Staten Island Greenbelt
-  [[40.6050, -74.1500], [40.6000, -74.1150], [40.5780, -74.1200], [40.5700, -74.1450]],
-  // Freshkills Park
-  [[40.5950, -74.2000], [40.5950, -74.1700], [40.5650, -74.1700], [40.5700, -74.2000]],
   // Great Kills Park
   [[40.5530, -74.1350], [40.5500, -74.1180], [40.5360, -74.1230], [40.5420, -74.1400]],
-  // Conference House Park
-  [[40.5060, -74.2560], [40.5060, -74.2470], [40.4980, -74.2470], [40.4990, -74.2560]],
+  // Lincoln Park, Jersey City
+  [[40.7290, -74.0870], [40.7290, -74.0790], [40.7200, -74.0790], [40.7200, -74.0870]],
+  // Hoboken's Pier A and Sinatra parks
+  [[40.7400, -74.0270], [40.7400, -74.0250], [40.7360, -74.0255], [40.7360, -74.0275]],
 ];
 
 const AIRPORTS = [
@@ -225,6 +224,7 @@ export function buildCity() {
   const area = new Array(n).fill(null);
   const height = new Float32Array(n); // building height in levels, 0 = no building
   const street = new Uint8Array(n); // 1 = road tile in the street grid
+  const road = new Uint8Array(n); // 1 = a real major street or highway crosses the tile
   const codes = LAND.rows.flatMap((line) => [...line.matchAll(/(\d+)(.)/g)].flatMap(([, k, c]) => Array(+k).fill(c)));
 
   for (let row = 0; row < ROWS; row++) {
@@ -234,8 +234,11 @@ export function buildCity() {
       if (codes[i] !== '.') { type[i] = T.LAND; area[i] = AREA_CODES[codes[i]]; }
       if (inAny(lat, lng, ISLANDS)) { type[i] = T.LAND; area[i] = 'island'; }
       if (type[i] === T.LAND) {
-        if (inAny(lat, lng, PARKS)) type[i] = T.PARK;
-        else if (inAny(lat, lng, AIRPORTS)) type[i] = T.AIRPORT;
+        const f = fineCounts(col, row);
+        if (inAny(lat, lng, AIRPORTS)) type[i] = T.AIRPORT;
+        else if (inAny(lat, lng, PARKS) || f[F.PARK] + f[F.LAKE] >= HALF_TILE) type[i] = T.PARK;
+        // streets and highways keep their tiles clear of buildings
+        if (f[F.HIGHWAY] || f[F.ROAD] >= 3) road[i] = 1;
       }
     }
   }
@@ -291,9 +294,11 @@ export function buildCity() {
       if ((area[i] === 'suburb' || (area[i] === 'nj' && lng < -74.09)) && r < 0.6) h = 0;
       if (area[i] === 'island') h = r < 0.3 ? 1 : 0;
       height[i] = h < 0.6 ? 0 : Math.round(h * 2) / 2;
-      // a loose street grid: avenues and major cross streets stay open
-      const isStreet = area[i] === 'manhattan' ? col % 3 === 0 || row % 5 === 0 : col % 4 === 0 || row % 4 === 0;
-      if (isStreet && area[i] !== 'island') { street[i] = 1; height[i] = 0; }
+      // the real major streets and highways, plus a loose grid of side streets between them
+      // outside Manhattan (New Jersey and the suburbs have no street data, so their grid is closer)
+      const every = area[i] === 'nj' || area[i] === 'suburb' ? 4 : 5;
+      const grid = area[i] !== 'manhattan' && (col % every === 0 || row % every === 0);
+      if ((road[i] || grid) && area[i] !== 'island') { street[i] = 1; height[i] = 0; }
     }
   }
 
@@ -307,7 +312,7 @@ export function buildCity() {
     });
   }
 
-  return { type, area, height, street, shore, bridgeCells };
+  return { type, area, height, street, road, shore, bridgeCells };
 }
 
 // Landmarks get their own hand-built meshes in the renderer.

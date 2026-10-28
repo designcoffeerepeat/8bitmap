@@ -1,13 +1,14 @@
 // Times Square. The tiles cleared for it in geo.js (Broadway and 7th Ave from 42nd to 48th St, and
 // the block east of it) are paved as one plaza. At the north end stands a wide building with a
 // billboard on its front; across the plaza, One Times Square with flashing screens and the New
-// Year's Eve ball waiting at the top of its mast.
+// Year's Eve ball waiting at the top of its mast, and the red TKTS steps between the two.
 // Zoomed out the billboard flashes 8BIT / .NYC and tapping it flies in. From AD_ZOOM in it shows
 // YOUR AD/EVENT HERE, like the ad slot beside the header, and tapping it opens the contact form
 // on Ad/Event Inquiry. A booked ad can later replace drawAd*() with its own artwork.
 
 import * as THREE from 'three';
 import { COLS, ROWS, LANDMARKS, clearedTiles } from './map/geo.js';
+import { initNewYear } from './new-year.js';
 
 const GROUND_H = 0.35;
 const PAVING = '#a9a6b8';
@@ -18,7 +19,10 @@ const tile = (col, row) => ({ x: col - COLS / 2, z: row - ROWS / 2 });
 const AD = { x0: tile(179, 0).x + 0.1, x1: tile(182, 0).x - 0.1, z0: tile(0, 135).z + 0.4, z1: tile(0, 137).z - 0.05, h: 4.6 };
 const SIGN = { w: 2.6, h: 1.5, y: 2.6 }; // world units; y is the bottom edge above the ground
 // One Times Square, across the plaza from the ad building and clear of its view
-const TOWER = { ...tile(180, 139), w: 0.8, h: 4.2, mast: 1 };
+const TOWER = { ...tile(180, 139), w: 0.8, h: 4.2, mast: 1.6 };
+const STEPS = 6; // the red TKTS steps: how many, and each one's rise and depth in world units
+const STEP_H = 0.09;
+const STEP_D = 0.17;
 const BALL_R = 3; // the ball's radius in voxels
 const BALL_VOX = 0.1;
 const AD_ZOOM = 3; // from here in the billboard shows the ad
@@ -78,6 +82,15 @@ export function initTimesSquare(map) {
   for (const y of [0.9, 1.5]) box(ax, front + 0.02, aw - 0.3, 0.12, 0.04, GROUND_H + y, '#fff3a0', true);
   const shops = box(ax, front + 0.02, aw - 0.2, 0.3, 0.04, GROUND_H + 0.3, NEON[1], true);
 
+  // ---- the red TKTS steps in front of it, climbing north so the seats face the ball ----
+  const st = { x: tile(179, 0).x + 1, z: tile(0, 138).z + 0.55 };
+  for (let k = 0; k < STEPS; k++) {
+    const y = GROUND_H + 0.08;
+    const z = st.z - k * STEP_D;
+    box(st.x, z, 1.5, (k + 1) * STEP_H, STEP_D, y, '#c8322a'); // the step
+    box(st.x, z + STEP_D / 2 - 0.01, 1.5, 0.03, 0.03, y + (k + 1) * STEP_H - 0.03, '#ff6b5a', true); // its lit edge
+  }
+
   const flash = [drawFlash('8BIT', NEON[0], NIGHT), drawFlash('.NYC', NIGHT, NEON[1]), drawFlash('8BIT', NEON[2], NIGHT), drawFlash('.NYC', NIGHT, NEON[3])];
   const adSmall = drawAdSmall();
   const adBig = drawAdBig();
@@ -96,6 +109,8 @@ export function initTimesSquare(map) {
   const ball = buildBall();
   ball.mesh.position.set(tx, top + TOWER.mast, tz);
   map.world.add(ball.mesh);
+  // the countdown, the drop at midnight and the fireworks (src/scripts/new-year.js)
+  initNewYear(map, ball, { x: tx, z: tz, top, high: top + TOWER.mast });
 
   // ---- tapping the billboard: fly in while zoomed out, the contact form once it shows the ad ----
   const raycaster = new THREE.Raycaster();

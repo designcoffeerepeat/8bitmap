@@ -5,9 +5,10 @@
 import * as THREE from 'three';
 import { MapControls } from 'three/addons/controls/MapControls.js';
 import {
-  COLS, ROWS, T, BRIDGES, LANDMARKS, LABELS, buildCity, latLngToWorld, latLngToCell, clearedTiles, rng,
+  COLS, ROWS, T, F, FINE, BRIDGES, LANDMARKS, LABELS, buildCity, latLngToWorld, latLngToCell, clearedTiles, rng, fineCounts,
 } from './geo.js';
 import { PALETTE, CATEGORY_COLORS } from './palette.js';
+import { PLACES, buildPlaceParts, pathAreas } from './places.js';
 
 const GROUND_H = 0.35;
 const LEVEL_H = 0.4;
@@ -70,12 +71,13 @@ export function createMap(container, opts = {}) {
 
   // Landmark tiles get hand-built models instead of generic blocks.
   const landmarkCells = new Set();
-  for (const l of LANDMARKS) {
+  const clearing = [...LANDMARKS, ...PLACES.filter((pl) => pl.clear !== undefined), ...PLACES.filter((pl) => pl.path).flatMap(pathAreas)];
+  for (const l of clearing) {
     const { col, row } = latLngToCell(l.lat, l.lng);
     for (const { col: c, row: w } of clearedTiles(l)) {
       landmarkCells.add(w * COLS + c);
       // pins on a cleared tile sit on the landmark's roof
-      if (l.clear) city.landmarkTop.set(w * COLS + c, GROUND_H + LANDMARK_TOP[l.id]);
+      if (l.clear) city.landmarkTop.set(w * COLS + c, GROUND_H + (l.top ?? LANDMARK_TOP[l.id]));
     }
     if (l.low) {
       const r2 = Math.ceil(l.low);
@@ -91,18 +93,111 @@ export function createMap(container, opts = {}) {
     }
   }
 
-  buildBase(world);
-  const waterFrames = buildWater(world, city);
-  buildLand(world, city);
-  const roofs = buildBuildings(world, city, landmarkCells);
-  buildBridges(world);
-  buildLandmarks(world, city);
-  const boats = buildBoats(world);
-  const labelSprites = buildLabels(world);
+  // The map is drawn in layers, bottom to top, so a later overlay (such as the subway map with its
+  // lines and service alerts) can sit on top and dim or hide what is under it:
+  //   ground     the slab, water, land, parks, lakes, runways, bridges and boats
+  //   roads      major streets and highways (their own see-through layer)
+  //   buildings  the generic city blocks
+  //   landmarks  hand-built models (stadiums, towers, airports...)
+  //   labels     borough and water names
+  //   overlay    empty for now: flat lines drawn over everything below (see addOverlayLine)
+  //   pins       event pins, always on top
+  const layers = {};
+  for (const name of ['ground', 'roads', 'buildings', 'landmarks', 'labels', 'overlay', 'pins']) {
+    layers[name] = new THREE.Group();
+    layers[name].name = name;
+    world.add(layers[name]);
+  }
+
+  buildBase(layers.ground);
+  const waterFrames = buildWater(layers.ground, city);
+  const land = buildLand(layers.ground, city);
+  const roadTex = buildRoads(layers.roads);
+  const roofs = buildBuildings(layers.buildings, city, landmarkCells);
+  const snowCaps = buildSnowCaps(layers.buildings, roofs, land.treeTops);
+  const snowfall = buildSnowfall(world);
+  const snowGroundSwap = snowSwap(land.tex, snowGround);
+  const snowRoadSwap = snowSwap(roadTex, snowRoad);
+  let winter = false;
+  // Winter: snow on the ground, streets, roofs and trees, and snow falling.
+  function setWinter(on) {
+    winter = on;
+    snowGroundSwap(on);
+    snowRoadSwap(on);
+    snowCaps.visible = on;
+    snowfall.pts.visible = on && !REDUCED_MOTION;
+  }
+  buildBridges(layers.ground);
+  buildLandmarks(layers.landmarks, city);
+  const boats = buildBoats(layers.ground);
+  const labelSprites = buildLabels(layers.labels);
+
+  // ---- layers and overlays --------------------------------------------------
+  function setLayerVisible(name, on) {
+    if (layers[name]) layers[name].visible = on;
+  }
+  // Fades the base map (0 = as drawn, 1 = strongly faded) so an overlay stands out.
+  const BASE_LAYERS = ['ground', 'roads', 'buildings', 'landmarks'];
+  function dimBase(amount) {
+    const k = 1 - THREE.MathUtils.clamp(amount, 0, 1) * 0.55;
+    for (const name of BASE_LAYERS) {
+      layers[name].traverse((o) => {
+        if (!o.material) return;
+        for (const m of [].concat(o.material)) {
+          m.userData.baseColor ??= m.color.clone();
+          m.color.copy(m.userData.baseColor).multiplyScalar(k);
+        }
+      });
+    }
+  }
+  // A flat line on the overlay layer through [lat, lng] points, drawn over the buildings (like a
+  // transit map laid on the city). width is in tiles; returns the mesh, which removeOverlay takes.
+  const OVERLAY_Y = GROUND_H + 0.05;
+  function addOverlayLine(points, { color: hex = '#ffffff', width = 0.5, order = 0 } = {}) {
+    const pos = [];
+    const pts = points.map(([lat, lng]) => latLngToWorld(lat, lng));
+    for (let k = 0; k < pts.length - 1; k++) {
+      const a = pts[k];
+      const b = pts[k + 1];
+      const len = Math.hypot(b.x - a.x, b.z - a.z) || 1;
+      const nx = (-(b.z - a.z) / len) * (width / 2);
+      const nz = ((b.x - a.x) / len) * (width / 2);
+      pos.push(a.x + nx, 0, a.z + nz, a.x - nx, 0, a.z - nz, b.x + nx, 0, b.z + nz);
+      pos.push(b.x + nx, 0, b.z + nz, a.x - nx, 0, a.z - nz, b.x - nx, 0, b.z - nz);
+    }
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+    const mesh = new THREE.Mesh(geo, new THREE.MeshBasicMaterial({ color: hex, depthTest: false, side: THREE.DoubleSide }));
+    mesh.position.y = OVERLAY_Y;
+    mesh.renderOrder = 8 + order * 0.01; // over the city, under the pins (10 and up)
+    layers.overlay.add(mesh);
+    return mesh;
+  }
+  // Square pixel dots at [lat, lng] points on the overlay layer (subway stations), size in render pixels.
+  function addOverlayPoints(points, { color: hex = '#ffffff', size = 3, order = 2 } = {}) {
+    const pos = new Float32Array(points.length * 3);
+    points.forEach(([lat, lng], k) => {
+      const p = latLngToWorld(lat, lng);
+      pos[k * 3] = p.x; pos[k * 3 + 1] = 0; pos[k * 3 + 2] = p.z;
+    });
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+    const mesh = new THREE.Points(geo, new THREE.PointsMaterial({ color: hex, size, sizeAttenuation: false, depthTest: false }));
+    mesh.position.y = OVERLAY_Y;
+    mesh.renderOrder = 8 + order * 0.01;
+    mesh.frustumCulled = false;
+    layers.overlay.add(mesh);
+    return mesh;
+  }
+  function removeOverlay(mesh) {
+    if (!mesh) { layers.overlay.clear(); return; }
+    layers.overlay.remove(mesh);
+    mesh.geometry.dispose();
+    mesh.material.dispose();
+  }
 
   // ---- pins -------------------------------------------------------------
-  const pinGroup = new THREE.Group();
-  world.add(pinGroup);
+  const pinGroup = layers.pins;
   let pins = []; // { sprite, event, anchor, fan, spot, baseY, order, phase }
   let visibleVersion = 0;
   let hovered = null;
@@ -111,11 +206,22 @@ export function createMap(container, opts = {}) {
 
   function pinTexture(category, state) {
     const key = `${category}:${state}`;
-    if (!pinTextures.has(key)) pinTextures.set(key, makePinTexture(CATEGORY_COLORS[category] ?? '#ffffff', state));
+    if (!pinTextures.has(key)) pinTextures.set(key, makePinTexture(CATEGORY_COLORS[category] ?? PIN_ICONS[category]?.color ?? '#ffffff', state, PIN_ICONS[category]?.icon));
     return pinTextures.get(key);
   }
 
+  // Pins that are not events (the airport security lines): shown whatever the filters, and left out of
+  // eventsInView. Each is event-shaped: { id, title, category, venue: { lat, lng } }.
+  let lastEvents = [];
+  let extraPins = [];
+  function setExtraPins(list) {
+    extraPins = list.map((ev) => ({ ...ev, extra: true }));
+    setEvents(lastEvents);
+  }
+
   function setEvents(events) {
+    lastEvents = events;
+    events = [...events, ...extraPins];
     showPinTitle(null);
     pinGroup.clear();
     pins = [];
@@ -242,7 +348,7 @@ export function createMap(container, opts = {}) {
 
   function setVisible(ids) {
     const set = ids ? new Set(ids) : null;
-    for (const pin of pins) pin.sprite.visible = !set || set.has(pin.event.id);
+    for (const pin of pins) pin.sprite.visible = !set || set.has(pin.event.id) || !!pin.event.extra;
     visibleVersion++;
   }
 
@@ -361,6 +467,7 @@ export function createMap(container, opts = {}) {
     camera.updateMatrixWorld();
     const ids = new Set();
     for (const pin of pins) {
+      if (pin.event.extra) continue;
       projected.copy(pin.anchor).project(camera);
       if (Math.abs(projected.x) <= 1 && Math.abs(projected.y) <= 1) ids.add(pin.event.id);
     }
@@ -451,6 +558,11 @@ export function createMap(container, opts = {}) {
     anchors.push({ el, pos: new THREE.Vector3(p.x, groundTop(city, lat, lng) + 0.5, p.z), minZoom, maxZoom });
     return el;
   }
+  function removeAnchor(el) {
+    const k = anchors.findIndex((a) => a.el === el);
+    if (k >= 0) anchors.splice(k, 1);
+    el.remove();
+  }
   function placeAnchors() {
     const w = canvas.clientWidth;
     const h = canvas.clientHeight;
@@ -528,6 +640,7 @@ export function createMap(container, opts = {}) {
         pin.sprite.position.y = pin.baseY + bob * wpp;
       }
       for (const b of boats) b.update(t);
+      if (winter) snowfall.update(dt, controls.target);
     }
     for (const fn of frameHooks) fn(dt, t);
 
@@ -544,7 +657,17 @@ export function createMap(container, opts = {}) {
 
   return {
     setEvents,
+    setExtraPins,
     addAnchor,
+    removeAnchor,
+    layers,
+    setLayerVisible,
+    dimBase,
+    addOverlayLine,
+    addOverlayPoints,
+    removeOverlay,
+    setWinter,
+    get winter() { return winter; },
     setVisible,
     focusEvent,
     focusLatLng,
@@ -583,6 +706,8 @@ export function createMap(container, opts = {}) {
     flyTo: (target, zoom) => flyTo(target, THREE.MathUtils.clamp(zoom ?? camera.zoom, controls.minZoom, controls.maxZoom)),
     get target() { return controls.target.clone(); },
     get zoom() { return camera.zoom; },
+    // world units per render pixel at the current zoom, for overlays drawn a set number of pixels wide
+    get worldPerPixel() { return worldPerPixel(); },
     get maxZoom() { return controls.maxZoom; },
     get pixelSize() { return pixelSize; },
   };
@@ -683,10 +808,24 @@ function buildLand(world, city) {
     const t = city.type[i];
     if (t === T.LAND || t === T.PARK || t === T.AIRPORT || t === T.BEACH) cells.push(i);
   }
-  // The ground tops are one flat texture at GROUND_H, one pixel per tile. Only tiles whose
-  // sides can be seen (on the shore or the map's edge) and the odd raised park tile are
-  // real boxes, which keeps the whole city to a few thousand boxes of ground.
-  const data = new Uint8Array(COLS * ROWS * 4);
+  // The ground tops are one flat texture at GROUND_H, SUB x SUB pixels per tile (FINE in geo.js), so
+  // parks, lakes and runways keep their real outlines. Only tiles whose sides can be seen (on the
+  // shore or the map's edge) and the odd raised park tile are real boxes, which keeps the whole city
+  // to a few thousand boxes of ground.
+  const S = FINE.sub;
+  const W = COLS * S;
+  const data = new Uint8Array(W * ROWS * S * 4);
+  const rgb = new Map();
+  const toRGB = (hex) => {
+    if (!rgb.has(hex)) { const c = color(hex).convertLinearToSRGB(); rgb.set(hex, [c.r * 255, c.g * 255, c.b * 255]); }
+    return rgb.get(hex);
+  };
+  const put = (x, y, hex) => {
+    const ti = ((ROWS * S - 1 - y) * W + x) * 4;
+    const [cr, cg, cb] = toRGB(hex);
+    data[ti] = cr; data[ti + 1] = cg; data[ti + 2] = cb; data[ti + 3] = 255;
+  };
+  const fineAt = (x, y) => (x < 0 || y < 0 || x >= FINE.w || y >= FINE.h ? F.NONE : FINE.data[y * FINE.w + x]);
   const sides = [];
   const r = rng(5);
   for (const i of cells) {
@@ -696,19 +835,30 @@ function buildLand(world, city) {
     let hex = PALETTE.land[city.area[i]] ?? PALETTE.land.li;
     if (t === T.PARK) hex = (col + row) % 3 === 0 ? PALETTE.park[1] : PALETTE.park[0];
     if (t === T.BEACH) hex = PALETTE.sand;
-    if (t === T.AIRPORT) hex = (col - row) % 5 === 0 || (col + 2 * row) % 7 === 0 ? PALETTE.runway : PALETTE.airport;
-    if (t === T.LAND && city.street[i]) hex = PALETTE.street;
+    if (t === T.LAND && city.street[i]) hex = city.road[i] ? PALETTE.sidewalk : PALETTE.street;
     const shore = touchesWater(city, col, row);
     if (t === T.LAND && shore && city.height[i] === 0) hex = PALETTE.sand;
-    const ti = ((ROWS - 1 - row) * COLS + col) * 4;
-    const c = color(hex).convertLinearToSRGB();
-    data[ti] = c.r * 255; data[ti + 1] = c.g * 255; data[ti + 2] = c.b * 255; data[ti + 3] = 255;
+    for (let y = row * S; y < row * S + S; y++) {
+      for (let x = col * S; x < col * S + S; x++) {
+        const f = fineAt(x, y);
+        let px = hex;
+        if (t === T.AIRPORT) px = (x + y) % 9 === 0 ? PALETTE.apron : PALETTE.airport;
+        if (f === F.PARK && t !== T.BEACH) px = (x * 3 + y * 5) % 11 === 0 ? PALETTE.park[1] : PALETTE.park[0];
+        if (f === F.LAKE) {
+          const edge = [[1, 0], [-1, 0], [0, 1], [0, -1]].some(([dx, dy]) => fineAt(x + dx, y + dy) !== F.LAKE);
+          px = edge ? PALETTE.waterShore : (x + y) % 6 === 0 ? PALETTE.water[1] : PALETTE.water[0];
+        }
+        if (f === F.RUNWAY) px = PALETTE.runway;
+        if (f === F.MARK) px = PALETTE.runwayMark;
+        put(x, y, px);
+      }
+    }
     const bump = r() < 0.04 && t === T.PARK ? 0.1 : 0;
     const edge = col === 0 || row === 0 || col === COLS - 1 || row === ROWS - 1;
     // boxes stop just under the texture so the two never fight over the same pixels
     if (shore || edge || bump) sides.push([i, GROUND_H + bump - (bump ? 0 : 0.01), hex]);
   }
-  const tex = new THREE.DataTexture(data, COLS, ROWS);
+  const tex = new THREE.DataTexture(data, W, ROWS * S);
   tex.magFilter = THREE.NearestFilter;
   tex.minFilter = THREE.NearestFilter;
   tex.colorSpace = THREE.SRGBColorSpace;
@@ -726,18 +876,135 @@ function buildLand(world, city) {
   mesh.instanceColor.needsUpdate = true;
   world.add(mesh);
 
-  // trees
-  const parkCells = cells.filter((i) => city.type[i] === T.PARK);
+  // trees, kept off the lakes
+  const parkCells = cells.filter((i) => city.type[i] === T.PARK && fineCounts(i % COLS, Math.floor(i / COLS))[F.LAKE] < 4);
   const treeR = rng(9);
   const trees = parkCells.filter(() => treeR() < 0.5);
   const tm = instanced(trees.length);
+  const treeTops = [];
   trees.forEach((i, k) => {
     const { x, z } = cellPos(i);
     const s = 0.35 + treeR() * 0.25;
-    place(tm, k, x + (treeR() - 0.5) * 0.4, GROUND_H, z + (treeR() - 0.5) * 0.4, s, s * 1.3, s, pick(PALETTE.tree, treeR()));
+    const tx = x + (treeR() - 0.5) * 0.4;
+    const tz = z + (treeR() - 0.5) * 0.4;
+    place(tm, k, tx, GROUND_H, tz, s, s * 1.3, s, pick(PALETTE.tree, treeR()));
+    treeTops.push({ x: tx, z: tz, size: s, top: GROUND_H + s * 1.3 });
   });
   tm.instanceColor.needsUpdate = true;
   world.add(tm);
+  return { tex, treeTops };
+}
+
+// Major streets and highways, a see-through layer just above the ground so a later overlay
+// (the subway map) can dim or hide it on its own.
+function buildRoads(world) {
+  const S = FINE.sub;
+  const W = FINE.w;
+  const H = FINE.h;
+  const data = new Uint8Array(W * H * 4);
+  const road = color(PALETTE.road).convertLinearToSRGB();
+  const hwy = color(PALETTE.highway).convertLinearToSRGB();
+  const hwyEdge = color(PALETTE.highwayEdge).convertLinearToSRGB();
+  for (let y = 0; y < H; y++) {
+    for (let x = 0; x < W; x++) {
+      const f = FINE.data[y * W + x];
+      if (f !== F.ROAD && f !== F.HIGHWAY) continue;
+      let c = road;
+      if (f === F.HIGHWAY) {
+        // highways get a darker rim where they meet the city around them
+        const rim = [[1, 0], [-1, 0], [0, 1], [0, -1]].some(([dx, dy]) => {
+          const g = FINE.data[(y + dy) * W + x + dx];
+          return g !== F.HIGHWAY && g !== F.ROAD;
+        });
+        c = rim ? hwyEdge : hwy;
+      }
+      const ti = ((H - 1 - y) * W + x) * 4;
+      data[ti] = c.r * 255; data[ti + 1] = c.g * 255; data[ti + 2] = c.b * 255; data[ti + 3] = 255;
+    }
+  }
+  const tex = new THREE.DataTexture(data, W, H);
+  tex.magFilter = THREE.NearestFilter;
+  tex.minFilter = THREE.NearestFilter;
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.needsUpdate = true;
+  const mesh = new THREE.Mesh(new THREE.PlaneGeometry(COLS, ROWS), lambert({ map: tex, transparent: false, alphaTest: 0.5 }));
+  mesh.rotation.x = -Math.PI / 2;
+  mesh.position.y = GROUND_H + 0.004;
+  mesh.userData.fineSub = S;
+  world.add(mesh);
+  return tex;
+}
+
+// ---- winter -----------------------------------------------------------------------
+// Snow swaps a texture's pixels for a snowy copy (made the first time it is asked for) and back.
+function snowSwap(tex, recolor) {
+  const plain = tex.image.data;
+  let snowy = null;
+  return (on) => {
+    if (on && !snowy) {
+      snowy = new Uint8Array(plain);
+      for (let k = 0; k < snowy.length; k += 4) {
+        if (!snowy[k + 3]) continue;
+        const [r, g, b] = recolor(snowy[k], snowy[k + 1], snowy[k + 2], k >> 2);
+        snowy[k] = r; snowy[k + 1] = g; snowy[k + 2] = b;
+      }
+    }
+    tex.image.data = on ? snowy : plain;
+    tex.needsUpdate = true;
+  };
+}
+
+// ground: water in the parks freezes, everything else turns white, ploughed runways stay greyer
+function snowGround(r, g, b, k) {
+  if (b > r + 30 && b >= g) return [212, 236, 245];
+  const dark = (r + g + b) / 3 < 130;
+  const w = dark ? 0.45 : 0.82;
+  const n = (k * 2654435761) % 7 === 0 ? -10 : 0; // a little speckle
+  return [r * (1 - w) + (250 + n) * w, g * (1 - w) + (251 + n) * w, b * (1 - w) + (255 + n) * w];
+}
+function snowRoad(r, g, b) {
+  return [r * 0.3 + 228 * 0.7, g * 0.3 + 228 * 0.7, b * 0.3 + 236 * 0.7];
+}
+
+// white caps on every roof and tree top
+function buildSnowCaps(world, roofs, treeTops) {
+  const tops = [...roofs.values(), ...treeTops];
+  const mesh = instanced(tops.length);
+  tops.forEach((t, k) => place(mesh, k, t.x, t.top, t.z, t.size + 0.04, 0.07, t.size + 0.04, k % 5 ? '#f6f8fc' : '#e9eef7'));
+  mesh.instanceColor.needsUpdate = true;
+  mesh.visible = false;
+  world.add(mesh);
+  return mesh;
+}
+
+// falling snow: pixel flakes in a box that follows the camera's target
+function buildSnowfall(world) {
+  const N = 1400;
+  const SPAN = 90;
+  const pos = new Float32Array(N * 3);
+  const r = rng(31);
+  for (let k = 0; k < N; k++) {
+    pos[k * 3] = (r() - 0.5) * SPAN;
+    pos[k * 3 + 1] = r() * 30;
+    pos[k * 3 + 2] = (r() - 0.5) * SPAN;
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  const pts = new THREE.Points(geo, new THREE.PointsMaterial({ color: '#ffffff', size: 2, sizeAttenuation: false, depthWrite: false }));
+  pts.visible = false;
+  pts.frustumCulled = false;
+  world.add(pts);
+  const update = (dt, target) => {
+    pts.position.set(target.x, 0, target.z);
+    for (let k = 0; k < N; k++) {
+      let y = pos[k * 3 + 1] - dt * (2 + (k % 5) * 0.4);
+      if (y < 0) y += 30;
+      pos[k * 3 + 1] = y;
+      pos[k * 3] += Math.sin(y * 0.7 + k) * dt * 0.3;
+    }
+    geo.attributes.position.needsUpdate = true;
+  };
+  return { pts, update };
 }
 
 function touchesWater(city, col, row) {
@@ -881,6 +1148,8 @@ function buildLandmarks(world, city) {
       parts.push([p.x, GROUND_H + 1.1, p.z, 1.5, 0.12, 1.1, '#6d3a26']);
     }
   }
+  // the places in places.js: stadiums, arenas, museums, City Hall, the airports...
+  parts.push(...buildPlaceParts(latLngToWorld));
   const mesh = instanced(parts.length);
   parts.forEach((b, k) => place(mesh, k, b[0], b[1], b[2], b[3], b[4], b[5], b[6], b[7]));
   mesh.instanceColor.needsUpdate = true;
@@ -889,11 +1158,11 @@ function buildLandmarks(world, city) {
 
 function buildBoats(world) {
   const routes = [
-    { from: [40.7005, -74.0135], to: [40.6460, -74.0690], hex: '#ff8a1f', size: [0.9, 0.35, 0.45], speed: 0.05 }, // Staten Island Ferry
+    // the Staten Island Ferry is its own model now (src/scripts/zoomers/bridge-and-river.js)
     { from: [40.7050, -73.9990], to: [40.7600, -73.9550], hex: '#ffffff', size: [0.6, 0.3, 0.3], speed: 0.07 }, // East River ferry
     { from: [40.7800, -74.0060], to: [40.7100, -74.0230], hex: '#f2f2f2', size: [0.7, 0.3, 0.35], speed: 0.04 }, // Hudson
   ];
-  return routes.map((rt, idx) => {
+  const ships = routes.map((rt, idx) => {
     const a = latLngToWorld(rt.from[0], rt.from[1]);
     const b = latLngToWorld(rt.to[0], rt.to[1]);
     const ang = Math.atan2(-(b.z - a.z), b.x - a.x);
@@ -912,6 +1181,42 @@ function buildBoats(world) {
     update(0);
     return { update };
   });
+  return [...ships, buildTakeoff(world)];
+}
+
+// Now and then a jet rolls down LaGuardia's runway 4, lifts off over Flushing Bay and climbs away.
+function buildTakeoff(world) {
+  const a = latLngToWorld(40.7694, -73.8847);
+  const b = latLngToWorld(40.7836, -73.8711);
+  const dir = new THREE.Vector3(b.x - a.x, 0, b.z - a.z).normalize();
+  const g = new THREE.Group();
+  const white = lambert({ color: '#f4f6fb' });
+  const grey = lambert({ color: '#dfe5f0' });
+  const add = (sx, sy, sz, x, y, z, mat) => {
+    const m = new THREE.Mesh(new THREE.BoxGeometry(sx, sy, sz), mat);
+    m.position.set(x, y, z);
+    g.add(m);
+  };
+  add(1.3, 0.22, 0.22, 0, 0, 0, white); // fuselage, nose along +x
+  add(0.3, 0.05, 1.4, 0.05, 0, 0, grey); // wings
+  add(0.2, 0.32, 0.06, -0.55, 0.2, 0, lambert({ color: '#4f6bff' })); // tail fin
+  add(0.16, 0.04, 0.5, -0.55, 0.06, 0, grey);
+  g.rotation.y = Math.atan2(-dir.z, dir.x);
+  world.add(g);
+  const runway = Math.hypot(b.x - a.x, b.z - a.z);
+  const CYCLE = 45; // seconds between takeoffs
+  const update = (t) => {
+    const u = (t % CYCLE) / 14; // 14 s from the start of the roll until it is out of sight
+    g.visible = u <= 1;
+    if (!g.visible) return;
+    // speeds up along the runway, then climbs out past its end
+    const d = runway * 1.6 * u * u;
+    const lift = Math.max(0, d - runway * 0.55);
+    g.position.set(a.x + dir.x * d, GROUND_H + 0.12 + lift * 0.35, a.z + dir.z * d);
+    g.rotation.z = lift > 0 ? Math.min(0.25, lift * 0.1) : 0;
+  };
+  update(0);
+  return { update };
 }
 
 function buildLabels(world) {
@@ -963,7 +1268,12 @@ const PIN = [
   '.............',
 ];
 
-function makePinTexture(catHex, state) {
+// Pins that are not events wear their own colour and a 5 x 5 icon in place of the centre.
+const PIN_ICONS = {
+  security: { color: '#4dd2ff', icon: ['#####', '#####', '#####', '.###.', '..#..'] }, // a shield
+};
+
+function makePinTexture(catHex, state, icon = null) {
   const scale = state === 'idle' ? 1 : 1;
   const pad = 1;
   const w = PIN[0].length + pad * 2;
@@ -984,6 +1294,10 @@ function makePinTexture(catHex, state) {
       ctx.fillRect((x + pad) * scale, (y + pad) * scale, scale, scale);
     });
   });
+  if (icon) {
+    ctx.fillStyle = '#1d2340';
+    icon.forEach((line, y) => [...line].forEach((ch, x) => ch === '#' && ctx.fillRect((x + 4 + pad) * scale, (y + 4 + pad) * scale, scale, scale)));
+  }
   if (state !== 'idle') {
     // 1px glow ring around the outline
     const img = ctx.getImageData(0, 0, cv.width, cv.height);

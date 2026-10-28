@@ -1,0 +1,99 @@
+# Publishes the aul branch (the more detailed map) to its own Worker, 8bitmap-aul, shown at
+# https://aul.8bit.nyc (also https://8bitmap-aul.design-coffee-repeat.workers.dev), with the same
+# password as dev. It uses dev's latest event snapshots, so it shows the same events as dev.
+# Runs on every push to aul, and after every dev deploy (deploy-dev.yml calls it) so the events
+# stay as fresh as dev's. Needs the CLOUDFLARE_API_TOKEN repository secret, like dev.
+name: Deploy aul
+
+on:
+  push:
+    branches: [aul]
+  workflow_call: {}
+
+concurrency:
+  group: deploy-aul
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: d6042a3026e9b43a3cfb01f284dd5345
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: aul
+      - name: Use dev's latest event snapshots
+        run: |
+          git fetch --depth=1 origin dev
+          git checkout FETCH_HEAD -- public/data data
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      - name: Draw the subway lines from the MTA's GTFS
+        # a failed download keeps the empty file, and the alerts menu then lists lines without drawing them
+        run: python3 tools/build_subway.py || echo "::warning::tools/build_subway.py failed; the subway lines are not drawn"
+      - name: Check the MTA alerts feed
+        continue-on-error: true
+        run: |
+          curl -sS -m 30 'https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fsubway-alerts.json' -o alerts.json
+          python3 -c "import json;d=json.load(open('alerts.json'));e=d.get('entity',[]);print(len(e),'alerts');print(json.dumps(e[0])[:1500] if e else '')"
+          node tools/check_subway_spans.mjs alerts.json
+      - name: Check the weather and airport security feeds
+        continue-on-error: true
+        run: |
+          curl -sS -m 30 -A '8bit.nyc (info@8bit.nyc)' 'https://api.weather.gov/points/40.7829,-73.9654' | head -c 400; echo
+          for a in JFK LGA EWR; do
+            echo "== $a"
+            curl -sS -m 30 -H 'Accept: application/json' -H 'Referer: https://www.jfkairport.com/' 'https://avi-prod-mpp-webapp-api.azurewebsites.net/api/v1/SecurityWaitTimesPoints/'$a | head -c 1500; echo
+          done
+      - name: Refresh the alternate side parking calendar
+        # a failed download keeps the committed calendar
+        run: python3 tools/build_asp.py || echo "::warning::tools/build_asp.py failed; using the committed calendar"
+      - run: npm run build
+        env:
+          PUBLIC_SITE: dev
+      - name: Deploy to 8bitmap-aul
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        run: |
+          set -o pipefail
+          # keep only the token itself, as in deploy-dev.yml
+          export CLOUDFLARE_API_TOKEN="$(printf '%s' "$CLOUDFLARE_API_TOKEN" | grep -o '[[:alnum:]_-]\{30,\}' | tail -1)"
+          if ! npx wrangler deploy --name 8bitmap-aul --var SITE:dev --var SITE_PASSWORD:alpha8bit01 2>&1 | tee deploy.log; then
+            grep -v '^\s*$' deploy.log | tail -25 | sed 's/^/::error::/'
+            exit 1
+          fi
+          grep -o 'https://[^ ]*workers.dev' deploy.log | sed 's/^/::notice::aul site: /' || true
+      - name: Point aul.8bit.nyc at the Worker
+        # Best effort: the token may not be allowed to change domains, and then the Cloudflare
+        # dashboard can do it once (Workers > 8bitmap-aul > Settings > Domains > Add aul.8bit.nyc).
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        continue-on-error: true
+        run: |
+          export CLOUDFLARE_API_TOKEN="$(printf '%s' "$CLOUDFLARE_API_TOKEN" | grep -o '[[:alnum:]_-]\{30,\}' | tail -1)"
+          api() { curl -sS -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H 'Content-Type: application/json' "$@"; }
+          base="https://api.cloudflare.com/client/v4"
+          if api "$base/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/domains?hostname=aul.8bit.nyc" | grep -q '"service": *"8bitmap-aul"'; then
+            echo "::notice::aul.8bit.nyc already points at 8bitmap-aul"
+            exit 0
+          fi
+          zone="$(api "$base/zones?name=8bit.nyc" | grep -o '"id": *"[0-9a-f]\{32\}"' | head -1 | grep -o '[0-9a-f]\{32\}')"
+          if [ -z "$zone" ]; then
+            echo "::warning::Could not look up the 8bit.nyc zone; add aul.8bit.nyc to 8bitmap-aul in the Cloudflare dashboard."
+            exit 1
+          fi
+          out="$(api -X PUT "$base/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/domains" \
+            -d "{\"environment\":\"production\",\"hostname\":\"aul.8bit.nyc\",\"service\":\"8bitmap-aul\",\"zone_id\":\"$zone\"}")"
+          if echo "$out" | grep -q '"success": *true'; then
+            echo "::notice::aul.8bit.nyc now points at 8bitmap-aul"
+          else
+            echo "::warning::Could not add aul.8bit.nyc: $(echo "$out" | head -c 400)"
+            exit 1
+          fi
+      - name: Explain the missing token
+        if: env.CLOUDFLARE_API_TOKEN == ''
+        run: echo "::warning::Add the CLOUDFLARE_API_TOKEN repository secret to publish aul."

@@ -10,7 +10,14 @@ export const PALETTE = {
   park: ['#5bbd5b', '#52b152'],
   tree: ['#2f8f4e', '#3aa35a', '#277a43'],
   airport: '#c9c9cf',
+  apron: '#bdbdc6',
   runway: '#6d6f7c',
+  runwayMark: '#f4f4f4',
+  // real streets and highways (tools/build_detail.py); sidewalk is the open ground around them
+  road: '#a79f96',
+  highway: '#a79f96',
+  highwayEdge: '#a79f96',
+  sidewalk: '#e4ddd0',
   bridge: '#8c8fa3',
   bridgeTower: '#5a5d72',
   // building colours, grouped by how tall the tile is
