@@ -9,7 +9,6 @@ import { normalizeEvent } from './schema.js';
 import { mergeDuplicates } from './overlap.js';
 import { inBounds, BOUNDS, LANDMARKS } from '../map/geo.js';
 import nycgovSource from './sources/nycgov.js';
-import lumaSource from './sources/luma.js';
 import permitsSource from './sources/permits.js';
 import ticketmasterSource from './sources/ticketmaster.js';
 import seatgeekSource from './sources/seatgeek.js';
@@ -29,7 +28,7 @@ import amcSource from './sources/amc.js';
 import { LIVE_HIDDEN } from './live.js';
 
 // ./sources/dummy.js holds sample events for offline testing.
-const ALL_SOURCES = [nycgovSource, lumaSource, permitsSource, ticketmasterSource, seatgeekSource, artwrldSource, venuesSource, greenmarketsSource, npsSource, astoriaSource, redhookSource, foresthillsSource, hobokenSource, coneyislandSource, statenislandSource, jerseycitySource, patchbaySource, amcSource];
+const ALL_SOURCES = [nycgovSource, permitsSource, ticketmasterSource, seatgeekSource, artwrldSource, venuesSource, greenmarketsSource, npsSource, astoriaSource, redhookSource, foresthillsSource, hobokenSource, coneyislandSource, statenislandSource, jerseycitySource, patchbaySource, amcSource];
 
 // Live builds (anything not built with PUBLIC_SITE=dev) leave out the sources in ./live.js.
 const IS_DEV = import.meta.env.PUBLIC_SITE === 'dev';

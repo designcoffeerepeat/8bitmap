@@ -1,16 +1,13 @@
 // Zoomers on the bridges, the river and the rooftops:
 //   Manhattan Bridge: a subway train rolls across with two "what time is it" kids dancing on its roof.
-//   Hunters Point: a web-slinging hero in dark green swings twice between towers, lands on a lower roof, sits on the
-//     ledge and thinks "ugh, responsibility."
 //   Staten Island Ferry: the big orange ferry sails between Whitehall and St. George all day, docking at
 //     each end, with people at the rails. It replaces the plain boat the renderer used to draw there.
 
 import * as THREE from 'three';
 import { watchZoomEgg } from '../zoom-egg.js';
-import { BRIDGES, COLS, ROWS, latLngToWorld, latLngToCell } from '../map/geo.js';
-import { kit, person, standPose, sitPose, bubble, headTop, VOX } from './kit.js';
+import { BRIDGES, latLngToWorld } from '../map/geo.js';
+import { kit, person, standPose, VOX } from './kit.js';
 
-const HUNTERS_POINT = [40.7448, -73.9555];
 const DECK = 0.93; // top of the bridge decks (renderer.js buildBridges: 0.75 + 0.18)
 
 export function initBridgeAndRiverZoomers(map) {
@@ -21,9 +18,6 @@ export function initBridgeAndRiverZoomers(map) {
     const ends = [new THREE.Vector3(a.x, DECK, a.z), new THREE.Vector3(b.x, DECK, b.z)];
     watchZoomEgg(map, ends[0].clone().lerp(ends[1], 0.5), (m) => subwayDancers(m, ends));
   }
-  const roofs = hunterPointRoofs(map);
-  const hp = latLngToWorld(...HUNTERS_POINT);
-  if (roofs) watchZoomEgg(map, new THREE.Vector3(hp.x, 1, hp.z), (m) => swinger(m, roofs));
   ferry(map);
 }
 
@@ -102,112 +96,6 @@ function subwayDancers(map, [a, b]) {
   }
   step(0);
   return { step, dispose() { map.world.remove(root); k.dispose(); } };
-}
-
-// ---- Hunters Point -----------------------------------------------------------------------------------
-// three roofs near Hunters Point South: the tallest to start on, another tall one to swing to, and a
-// lower one beyond it to land on
-function hunterPointRoofs(map) {
-  // a couple of rows south of the spot, so the roofs (which stand tall on screen) sit mid-screen
-  const c = latLngToCell(...HUNTERS_POINT);
-  c.row += 2.5;
-  const found = [];
-  for (let dr = -3; dr <= 3; dr++) {
-    for (let dc = -3; dc <= 3; dc++) {
-      const roof = map.rooftop(Math.floor(c.col) + dc, Math.floor(c.row) + dr);
-      if (roof) found.push({ ...roof, pos: new THREE.Vector3(roof.x, roof.top, roof.z) });
-    }
-  }
-  if (found.length < 3) return null;
-  const flat = (p, q) => Math.hypot(p.x - q.x, p.z - q.z);
-  const here = { x: c.col - COLS / 2, z: c.row - ROWS / 2 };
-  found.sort((x, y) => y.top - x.top);
-  const start = found.find((r) => flat(r, here) < 3) ?? found[0];
-  const mid = found.find((r) => r !== start && r.top > 1.2 && flat(r, start) > 1.2 && flat(r, start) < 3);
-  if (!mid) return null;
-  const dir = mid.pos.clone().sub(start.pos).setY(0).normalize();
-  const end = found
-    .filter((r) => r !== start && r !== mid && r.top < mid.top - 0.2 && r.top > 0.6 && flat(r, mid) > 0.9 && flat(r, mid) < 4)
-    .map((r) => ({ r, score: r.pos.clone().sub(mid.pos).setY(0).normalize().dot(dir) - Math.abs(flat(r, mid) - 1.5) * 0.3 }))
-    .sort((x, y) => y.score - x.score)[0]?.r;
-  return end ? [start, mid, end] : null;
-}
-
-function swinger(map, [r0, r1, r2]) {
-  const k = kit();
-  const root = new THREE.Group();
-  map.world.add(root);
-  const hero = person(k, { skin: '#1f4a2c', top: '#1f4a2c', bottom: '#1f4a2c', legsColor: '#1f4a2c', shoe: '#1f4a2c', mask: '#1f4a2c', sleeves: '#1f4a2c', hands: '#1f4a2c' });
-  k.box(hero.upper, 1.2, 1.2, 0.1, 0, 2.2, 0.62, '#e8e8ea'); // the emblem
-  root.add(hero.root);
-  const web = k.box(root, 0.008, 1, 0.008, 0, 0, 0, '#f4f4f2', true);
-  const think = bubble(map, 'ugh, responsibility.', 'think');
-  // stand in the middle of each roof, and sit on the last one's ledge facing back the way he came
-  const p0 = r0.pos.clone();
-  const p1 = r1.pos.clone();
-  const dir2 = r2.pos.clone().sub(r1.pos).setY(0).normalize();
-  const ledge = r2.pos.clone().addScaledVector(dir2, -(r2.size / 2 - 0.02));
-  const SWING = 1.8;
-  const T = { s1: 0.8, s2: 0.8 + SWING + 0.5, land: 0.8 + SWING * 2 + 0.5, sit: 0.8 + SWING * 2 + 1.3 };
-  const hand = new THREE.Vector3();
-  let t = 0;
-  // one swing: a dip under an anchor point high above the middle of the gap
-  const swing = (a, b, u) => {
-    const p = a.clone().lerp(b, u);
-    const top = Math.max(a.y, b.y) + 1.6;
-    p.y -= Math.sin(u * Math.PI) * 0.6; // sags in the middle
-    const anchor = a.clone().lerp(b, 0.5).setY(top);
-    return { p, anchor };
-  };
-  function step(dt) {
-    t += dt;
-    standPose(hero);
-    let anchor = null;
-    if (t < T.s1) {
-      hero.root.position.copy(p0);
-      hero.root.rotation.y = Math.atan2(p1.x - p0.x, p1.z - p0.z);
-      hero.legs[0].rotation.x = -0.4; // crouched to jump
-      hero.hips.position.y = 2.4;
-    } else if (t < T.s2 - 0.5) {
-      const s = swing(p0, p1, (t - T.s1) / SWING);
-      hero.root.position.copy(s.p);
-      anchor = s.anchor;
-    } else if (t < T.s2) {
-      hero.root.position.copy(p1);
-      hero.hips.position.y = 2.4;
-    } else if (t < T.land) {
-      const s = swing(p1, ledge, (t - T.s2) / SWING);
-      hero.root.position.copy(s.p);
-      hero.root.rotation.y = Math.atan2(ledge.x - p1.x, ledge.z - p1.z);
-      anchor = s.anchor;
-    } else {
-      // sit on the ledge with his legs over the edge, looking out
-      hero.root.position.copy(ledge);
-      hero.root.rotation.y = Math.atan2(-dir2.x, -dir2.z);
-      sitPose(hero);
-      hero.hips.position.y = 0.2;
-      hero.upper.rotation.x = 0.25; // slumped
-      hero.arms[0].rotation.x = -0.5;
-      hero.arms[1].rotation.x = -0.5;
-    }
-    if (anchor) {
-      hero.arms[1].rotation.set(-Math.PI, 0, -0.2);
-      hero.legs[0].rotation.x = 0.4;
-      hero.legs[1].rotation.x = -0.3;
-    }
-    root.updateMatrixWorld(true);
-    web.visible = !!anchor;
-    if (anchor) {
-      hero.arms[1].userData.hand.localToWorld(hand.set(0, 0, 0));
-      web.position.copy(hand).lerp(anchor, 0.5);
-      web.scale.y = hand.distanceTo(anchor);
-      web.lookAt(anchor);
-      web.rotateX(Math.PI / 2);
-    }
-    think.at(t > T.sit ? headTop(hero, hand) : null);
-  }
-  step(0);
-  return { step, dispose() { map.world.remove(root); think.dispose(); k.dispose(); } };
 }
 
 // ---- the Staten Island Ferry ---------------------------------------------------------------------------

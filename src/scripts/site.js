@@ -5,7 +5,7 @@
 const $ = (sel) => document.querySelector(sel);
 const menuBtn = $('#menu-btn');
 const menu = $('#site-menu');
-const MODALS = ['contact', 'about', 'privacy', 'terms', 'disclaimer', 'asp'];
+const MODALS = ['contact', 'about', 'privacy', 'terms', 'disclaimer', 'accessibility', 'asp'];
 
 // ---- menu ----------------------------------------------------------------------
 function toggleMenu(open) {
@@ -24,7 +24,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ---- modals ----------------------------------------------------------------------
-// Each modal also has a hash (#contact, #about, #privacy, #terms, #disclaimer, #asp) so it can be linked to directly.
+// Each modal also has a hash (#contact, #about, #privacy, #terms, #disclaimer, #accessibility, #asp) so it can be linked to directly.
 function openModal(name, { topic } = {}) {
   const dialog = $(`#modal-${name}`);
   if (!dialog) return;

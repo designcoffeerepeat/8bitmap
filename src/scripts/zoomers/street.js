@@ -1,19 +1,15 @@
 // Zoomers out on the street, each starting when the map sits zoomed all the way in on its spot:
-//   Carroll Gardens: a woman dressed all in green waters the planters in front of a building.
 //   Fifth Avenue and 57th Street: Bill Cunningham in his blue jacket rides his bike and stops to take photos.
-//   City Hall: the Rent Is Too Damn High guy, in black gloves and white whiskers, says so.
-//   McCarren Park: a guy in a black cap and a blonde guy in sunglasses on beach chairs pass a joint back and forth.
-//   Museum of the Moving Image: a big turquoise bird and a gray elephant stroll around outside.
+//   McCarren Park: a guy in a black cap and a blonde guy in sunglasses on beach chairs share a can of soda back and forth.
+//   Museum of the Moving Image: a giant pigeon and a gray elephant stroll around outside.
 
 import * as THREE from 'three';
 import { watchZoomEgg } from '../zoom-egg.js';
 import { latLngToWorld } from '../map/geo.js';
-import { kit, person, walkPose, standPose, sitPose, loop, bubble, headTop, openSpot, VOX, STRIDE, WALK } from './kit.js';
+import { kit, person, standPose, sitPose, loop, openSpot, VOX, STRIDE, WALK } from './kit.js';
 
 export function initStreetZoomers(map) {
-  near(map, 40.6795, -73.9992, carrollGardens);
   near(map, 40.7637, -73.9740, billCunningham);
-  near(map, 40.7118, -74.0062, rentGuy);
   const park = latLngToWorld(40.7212, -73.9512);
   at(map, { pos: new THREE.Vector3(park.x, map.groundAt(park.x, park.z), park.z) }, mccarren);
   near(map, 40.7563, -73.9239, movingImage);
@@ -42,64 +38,6 @@ function stage(map, spot) {
 }
 // a local point on a stage, in world units
 const v = (x, z, y = 0) => new THREE.Vector3(x, y, z);
-
-// ---- Carroll Gardens -----------------------------------------------------------------------------
-function carrollGardens(map, spot) {
-  const k = kit();
-  const root = stage(map, spot);
-  const GREEN = '#2e9d4a';
-  const pots = [-0.28, 0, 0.28].map((x, i) => {
-    const pot = k.node(root, x, 0, 0.36);
-    pot.scale.setScalar(VOX);
-    k.box(pot, 3, 1.6, 2, 0, 0.8, 0, '#8a5a32');
-    k.box(pot, 2.6, 1.2, 1.6, 0, 2.1, 0, '#3f9b3a');
-    for (const [fx, fz] of [[-0.8, 0.3], [0.2, -0.4], [0.9, 0.4]]) k.box(pot, 0.5, 0.5, 0.5, fx, 2.9, fz, ['#ff5c8a', '#ffd23f', '#ffffff'][(i + fx > 0 ? 1 : 0) % 3]);
-    return pot;
-  });
-  k.box(k.node(root), 0.9, 0.04, 0.12, 0, 0.02, 0.36, '#6a4a30'); // the bed the pots stand in
-  const her = person(k, { skin: '#f0c9a8', top: GREEN, bottom: GREEN, shoe: '#1f6b33', hair: '#a0522d', hairStyle: 'long', hat: 'beanie', hatColor: GREEN });
-  root.add(her.root);
-  const can = k.node(her.arms[1].userData.hand, 0, -0.3, 0.6);
-  k.box(can, 1.4, 1.3, 1.2, 0, 0, 0, '#1f6b33');
-  k.box(can, 0.3, 0.3, 1.4, 0, 0.3, 1.1, '#1f6b33'); // spout
-  const drops = [0, 1, 2, 3].map(() => k.box(root, 0.012, 0.03, 0.012, 0, 0, 0, '#4dd2ff', true));
-
-  const stops = pots.map((p) => v(p.position.x, 0.17));
-  let t = 0;
-  const seg = 4.2; // seconds at each pot: walk over, then water
-  function step(dt) {
-    t += dt;
-    const n = Math.floor(t / seg);
-    const u = t % seg;
-    const from = stops[(n + stops.length - 1) % stops.length];
-    const to = stops[n % stops.length];
-    const walking = u < 1.2;
-    standPose(her);
-    if (walking) {
-      her.root.position.lerpVectors(from, to, u / 1.2);
-      her.root.rotation.y = to.x > from.x ? Math.PI / 2 : -Math.PI / 2;
-      walkPose(her, (u / STRIDE) * Math.PI * 2, { arms: false });
-      her.arms[1].rotation.x = -0.3;
-    } else {
-      her.root.position.copy(to);
-      her.root.rotation.y = 0;
-      const tip = THREE.MathUtils.smoothstep(u, 1.3, 1.8) - THREE.MathUtils.smoothstep(u, seg - 0.5, seg - 0.1);
-      her.arms[1].rotation.x = -0.4 - tip * 0.9;
-      can.rotation.x = tip * 0.7;
-      her.upper.rotation.x = tip * 0.25;
-    }
-    // water runs from the spout while the can is tipped
-    root.updateMatrixWorld(true);
-    const spout = root.worldToLocal(can.localToWorld(new THREE.Vector3(0, 0.3, 1.8)));
-    drops.forEach((d, i) => {
-      const ph = (t * 2.2 + i / drops.length) % 1;
-      d.visible = !walking && can.rotation.x > 0.5;
-      d.position.set(spout.x, Math.max(0.08, spout.y - ph * 0.2), spout.z + ph * 0.03);
-    });
-  }
-  step(0);
-  return { step, dispose() { map.world.remove(root); k.dispose(); } };
-}
 
 // ---- Bill Cunningham -----------------------------------------------------------------------------
 function billCunningham(map, spot) {
@@ -168,40 +106,6 @@ function billCunningham(map, spot) {
   return { step, dispose() { map.world.remove(root); k.dispose(); } };
 }
 
-// ---- the Rent Is Too Damn High guy ---------------------------------------------------------------
-function rentGuy(map, spot) {
-  const k = kit();
-  const root = new THREE.Group();
-  root.position.copy(spot.pos);
-  map.world.add(root);
-  const man = person(k, { skin: '#6b4226', top: '#1d1d22', bottom: '#1d1d22', shoe: '#141418', hair: '#f4f4f2', hairStyle: 'bald', hands: '#141418' });
-  root.add(man.root);
-  // the white whiskers and moustache
-  k.box(man.head, 0.4, 1, 0.5, -0.75, 0.35, 0.45, '#f4f4f2');
-  k.box(man.head, 0.4, 1, 0.5, 0.75, 0.35, 0.45, '#f4f4f2');
-  k.box(man.head, 1.4, 0.3, 0.2, 0, 0.45, 0.86, '#f4f4f2');
-  k.box(man.upper, 0.5, 1.6, 0.1, 0, 2.2, 0.62, '#f4f4f2'); // shirt front
-  const say = bubble(map, 'Rent is Too Damn High!', 'say');
-  const head = new THREE.Vector3();
-  let t = 0;
-  function step(dt) {
-    t += dt;
-    standPose(man);
-    const c = t % 6;
-    const talking = c > 0.6 && c < 4.4;
-    man.root.rotation.y = Math.sin(t * 0.5) * 0.4;
-    if (talking) {
-      man.arms[1].rotation.set(-Math.PI * 0.85 + Math.sin(t * 6) * 0.15, 0, -0.2); // fist up
-      man.arms[0].rotation.set(-0.6 + Math.sin(t * 6 + 1) * 0.2, 0, 0.2);
-      man.hips.position.y = 3 + Math.abs(Math.sin(t * 6)) * 0.15;
-    }
-    root.updateMatrixWorld(true);
-    say.at(talking ? headTop(man, head) : null);
-  }
-  step(0);
-  return { step, dispose() { map.world.remove(root); say.dispose(); k.dispose(); } };
-}
-
 // ---- McCarren Park -------------------------------------------------------------------------------
 function mccarren(map, spot) {
   const k = kit();
@@ -231,10 +135,10 @@ function mccarren(map, spot) {
     sitPose(p);
     p.upper.rotation.x = -0.45; // leaning back
   });
-  // big enough to see at full zoom, with a glowing tip
-  const joint = k.box(root, 0.022, 0.022, 0.075, 0, 0, 0, '#f4f4f2');
-  const tip = k.box(root, 0.026, 0.026, 0.026, 0, 0, 0, '#ff8a1f', true);
-  const puffs = [0, 1, 2].map(() => k.box(root, 0.03, 0.03, 0.03, 0, 0, 0, '#dcdce4'));
+  // a can of soda, big enough to see at full zoom
+  const can = k.node(root);
+  k.box(can, 0.032, 0.05, 0.032, 0, 0, 0, '#ed1c24');
+  k.box(can, 0.033, 0.008, 0.033, 0, 0.026, 0, '#c9c9cf');
   const from = new THREE.Vector3();
   const to = new THREE.Vector3();
   const hand = (p, i, out) => {
@@ -243,8 +147,8 @@ function mccarren(map, spot) {
   };
   const ease = THREE.MathUtils.smoothstep;
   let t = 0;
-  // Each turn: raise it and puff (0 to 1.8 s), breathe out (to 3), then both lean in and reach across
-  // (3 to 3.6), the joint goes hand to hand (3.6 to 4.4) and the other one sits back with it (to 5).
+  // Each turn: raise it and take a sip (0 to 1.8 s), sit back (to 3), then both lean in and reach across
+  // (3 to 3.6), the can goes hand to hand (3.6 to 4.4) and the other one sits back with it (to 5).
   const TURN = 5;
   function step(dt) {
     t += dt;
@@ -263,20 +167,7 @@ function mccarren(map, spot) {
     root.updateMatrixWorld(true);
     hand(pals[n], n, from);
     hand(pals[1 - n], 1 - n, to);
-    joint.position.lerpVectors(from, to, slide);
-    tip.position.copy(joint.position).add(v(0, 0.045, 0.004)); // at the far end
-    // the smoke after a puff, drifting up
-    const holder = pals[n];
-    puffs.forEach((pf, i) => {
-      const s = u - 1.6 - i * 0.35;
-      pf.visible = s > 0 && s < 1.6;
-      if (!pf.visible) return;
-      holder.head.localToWorld(pf.position.set(0, 0.6, 1.2));
-      root.worldToLocal(pf.position);
-      pf.position.y += s * 0.08;
-      pf.position.x += Math.sin(s * 3 + i) * 0.01;
-      pf.scale.setScalar(0.02 + s * 0.02);
-    });
+    can.position.lerpVectors(from, to, slide);
   }
   step(0);
   return { step, dispose() { map.world.remove(root); k.dispose(); } };
@@ -289,31 +180,31 @@ function movingImage(map, spot) {
   root.position.copy(spot.pos);
   map.world.add(root);
 
-  // the big turquoise bird: tall, feathery, orange legs and beak
+  // a giant New York pigeon: plump and gray, with a shimmering green and purple neck and pink feet
   const bird = k.node(root);
   const bb = k.node(bird);
   bb.scale.setScalar(VOX);
   const birdLegs = [-0.7, 0.7].map((x) => {
-    const leg = k.node(bb, x, 4.2, 0);
-    k.box(leg, 0.4, 4.2, 0.4, 0, -2.1, 0, '#ff8a1f');
-    k.box(leg, 0.9, 0.3, 1.4, 0, -4.1, 0.3, '#ff8a1f');
+    const leg = k.node(bb, x, 1.8, 0);
+    k.box(leg, 0.4, 1.8, 0.4, 0, -0.9, 0, '#e8828f');
+    k.box(leg, 0.9, 0.3, 1.4, 0, -1.7, 0.3, '#e8828f');
     return leg;
   });
-  const torso = k.node(bb, 0, 4.2, 0);
-  k.box(torso, 3.6, 3.6, 3.2, 0, 1.8, 0, '#2ec4b6');
-  k.box(torso, 3.2, 1, 3, 0, 0.1, 0, '#21a396');
-  const neck = k.node(torso, 0, 3.4, 0.8);
-  k.box(neck, 1.4, 3, 1.4, 0, 1.5, 0, '#2ec4b6');
-  k.box(neck, 2.2, 2, 2, 0, 3.6, 0.1, '#2ec4b6'); // head
-  k.box(neck, 1.2, 0.5, 1.4, 0, 3.2, 1.6, '#ff8a1f'); // beak
-  k.box(neck, 0.5, 0.5, 0.2, -0.5, 4, 1.15, '#ffffff');
-  k.box(neck, 0.5, 0.5, 0.2, 0.5, 4, 1.15, '#ffffff');
-  k.box(neck, 0.25, 0.25, 0.1, -0.5, 4, 1.26, '#1d2340');
-  k.box(neck, 0.25, 0.25, 0.1, 0.5, 4, 1.26, '#1d2340');
-  for (const x of [-0.6, 0, 0.6]) k.box(neck, 0.3, 0.9, 0.3, x, 4.9, 0, '#2ec4b6'); // head feathers
+  const torso = k.node(bb, 0, 1.8, 0);
+  k.box(torso, 3.2, 2.8, 4.4, 0, 1.6, -0.2, '#8e939c');
+  k.box(torso, 3, 0.8, 4, 0, 0.2, -0.2, '#6f747d');
+  k.box(torso, 2, 1, 1.6, 0, 2.2, -2.9, '#4a4e57'); // tail
+  const neck = k.node(torso, 0, 2.6, 1.6);
+  k.box(neck, 2, 1.4, 1.6, 0, 0.6, 0, '#3f9a72'); // the shimmering neck
+  k.box(neck, 2.05, 0.6, 1.65, 0, 0.2, 0, '#7a4f9e');
+  k.box(neck, 1.8, 1.8, 1.8, 0, 2, 0.2, '#8e939c'); // head
+  k.box(neck, 0.6, 0.4, 0.9, 0, 1.8, 1.4, '#3b3f57'); // beak
+  k.box(neck, 0.4, 0.4, 0.1, -0.5, 2.3, 1.12, '#ff8a1f'); // orange eyes
+  k.box(neck, 0.4, 0.4, 0.1, 0.5, 2.3, 1.12, '#ff8a1f');
   const wings = [-1, 1].map((side) => {
-    const w = k.node(torso, side * 1.9, 3, 0);
-    k.box(w, 0.4, 2.8, 2.4, 0, -1.4, 0, '#21a396');
+    const w = k.node(torso, side * 1.7, 2.8, 0);
+    k.box(w, 0.4, 2.4, 3.6, 0, -1.2, -0.4, '#6f747d');
+    k.box(w, 0.42, 0.4, 3.2, 0, -1.6, -0.4, '#2b2e35'); // wing bars
     return w;
   });
 
@@ -348,8 +239,8 @@ function movingImage(map, spot) {
     const ph = (t / STRIDE) * Math.PI * 2;
     birdLegs[0].rotation.x = Math.sin(ph) * 0.5;
     birdLegs[1].rotation.x = -Math.sin(ph) * 0.5;
-    torso.position.y = 4.2 + Math.abs(Math.cos(ph)) * 0.3;
-    neck.rotation.x = Math.sin(ph) * 0.12;
+    torso.position.y = 1.8 + Math.abs(Math.cos(ph)) * 0.2;
+    neck.position.z = 1.6 + Math.sin(ph) * 0.4; // the pigeon head bob
     wings[0].rotation.z = 0.15 + Math.max(0, Math.sin(t * 1.3)) * 0.6;
     wings[1].rotation.z = -wings[0].rotation.z;
     eleLegs.forEach((l, i) => { l.rotation.x = Math.sin(ph * 0.7 + (i % 3 ? Math.PI : 0)) * 0.35; });

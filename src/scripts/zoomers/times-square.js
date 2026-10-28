@@ -1,6 +1,6 @@
-// Zoomer: Times Square's street performers and tourists. Zoomed all the way in on the plaza, two costumed
-// superheroes strike poses, a big red furry character waves and bounces, the Naked Cowboy strums his
-// guitar in his hat, boots and briefs, and a few tourists wander the paving stopping to take photos.
+// Zoomer: Times Square's street performers and tourists. Zoomed all the way in on the plaza, a caped hero and
+// a masked wrestler strike poses, a big orange furry character waves and bounces, and a few tourists wander the
+// paving stopping to take photos. The costumes are our own, not anyone's famous characters.
 
 import * as THREE from 'three';
 import { COLS, ROWS } from '../map/geo.js';
@@ -26,29 +26,19 @@ function start(map) {
   };
   const toCrowd = Math.PI * 0.75; // the performers face out across the plaza
 
-  // a red and blue caped hero, hands on hips, now and then punching the air
-  const hero = add(person(k, { skin: '#e8b48a', top: '#2a5bd7', bottom: '#d7262e', legsColor: '#2a5bd7', shoe: '#d7262e', cape: '#d7262e', hair: '#1a1a1a' }), at(177.4, 139.2), toCrowd);
-  k.box(hero.upper, 1, 0.9, 0.1, 0, 2.1, 0.62, '#ffd23f'); // the badge
-  // a dark caped hero with a cowl, arms folded, now and then waving
-  const dark = add(person(k, { skin: '#d9a27a', top: '#2b2b33', bottom: '#2b2b33', shoe: '#1a1a1e', cape: '#1a1a1e', mask: '#2b2b33', hands: '#1a1a1e' }), at(178.3, 140.3), toCrowd);
-  k.box(dark.head, 0.3, 0.6, 0.3, -0.55, 1.9, 0, '#2b2b33'); // ears on the cowl
-  k.box(dark.head, 0.3, 0.6, 0.3, 0.55, 1.9, 0, '#2b2b33');
-  k.box(dark.upper, 1.1, 0.6, 0.1, 0, 2.2, 0.62, '#ffd23f');
-  // the big red furry one: round, bright, with an orange nose
-  const red = add(person(k, { scale: 1.15, skin: '#e0231f', top: '#e0231f', bottom: '#e0231f', shoe: '#e0231f', mask: '#e0231f', hands: '#e0231f' }), at(176.6, 140.8), toCrowd);
-  k.box(red.head, 0.7, 0.5, 0.5, 0, 0.45, 0.95, '#ff8a1f'); // nose
+  // a purple hero in green goggles and an orange cape, hands on hips, now and then punching the air
+  const hero = add(person(k, { skin: '#e8b48a', top: '#7a3cff', bottom: '#7a3cff', legsColor: '#7a3cff', shoe: '#ffd23f', cape: '#ff8a1f', hair: '#1a1a1a', glasses: '#7cf07c' }), at(177.4, 139.2), toCrowd);
+  k.box(hero.upper, 2.3, 0.5, 0.1, 0, 1.2, 0.62, '#ffd23f'); // the belt
+  // a masked wrestler in pink and teal, arms folded, now and then waving
+  const dark = add(person(k, { skin: '#d9a27a', top: '#18b7a8', bottom: '#ff4fa3', shoe: '#ff4fa3', mask: '#ff4fa3', hands: '#18b7a8' }), at(178.3, 140.3), toCrowd);
+  k.box(dark.head, 1.5, 0.6, 0.1, 0, 0.95, 0.81, '#fff3a0'); // the yellow band around the mask's eyes
+  // the big furry one: round, orange with blue spots and two little horns
+  const red = add(person(k, { scale: 1.15, skin: '#ff8a1f', top: '#ff8a1f', bottom: '#ff8a1f', shoe: '#ff8a1f', mask: '#ff8a1f', hands: '#ff8a1f' }), at(176.6, 140.8), toCrowd);
+  k.box(red.head, 0.3, 0.6, 0.3, -0.5, 1.9, 0, '#fff3a0'); // horns
+  k.box(red.head, 0.3, 0.6, 0.3, 0.5, 1.9, 0, '#fff3a0');
   k.box(red.head, 1, 0.3, 0.2, 0, 0.05, 0.82, '#1d2340'); // mouth
-  k.box(red.upper, 2.6, 2.8, 1.5, 0, 1.6, 0, '#e0231f'); // the fluffy middle
-  // the Naked Cowboy: white hat, boots and briefs, a guitar slung across
-  const cowboy = add(person(k, { skin: '#e3b08a', top: '#e3b08a', bottom: '#ffffff', legsColor: '#e3b08a', shoe: '#8a5a32', hair: '#d8b25a', hat: 'cowboy' }), at(180.6, 141.6), Math.PI);
-  for (const leg of cowboy.legs) k.box(leg, 1.05, 1.6, 1.1, 0, -2.1, 0, '#8a5a32'); // boots
-  const guitar = k.node(cowboy.upper, 0, 1.6, 0.9);
-  guitar.rotation.z = -0.5;
-  k.box(guitar, 1.8, 1.4, 0.4, 0, -0.3, 0, '#c27a3a');
-  k.box(guitar, 1.2, 1, 0.42, 0, 0.8, 0, '#c27a3a');
-  k.box(guitar, 0.5, 0.5, 0.45, 0, 0.1, 0.02, '#3b2414'); // sound hole
-  k.box(guitar, 0.3, 2.6, 0.3, 0, 2.5, 0, '#5a3a22'); // neck
-  cowboy.arms[0].rotation.set(-1.1, 0, 0.5); // fretting hand up the neck
+  k.box(red.upper, 2.6, 2.8, 1.5, 0, 1.6, 0, '#ff8a1f'); // the fluffy middle
+  for (const [x, y] of [[-0.7, 2.3], [0.6, 1.4], [-0.2, 0.7]]) k.box(red.upper, 0.5, 0.5, 0.1, x, y, 0.78, '#3d7be0'); // spots
 
   // tourists on two loops around the paving, each with a camera
   const tours = [
@@ -82,10 +72,6 @@ function start(map) {
     red.hips.position.y = 3 + Math.abs(Math.sin(t * 4)) * 0.6;
     red.arms[0].rotation.set(-Math.PI * 0.8, 0, 0.4 + Math.sin(t * 6) * 0.4);
     red.arms[1].rotation.set(-Math.PI * 0.8, 0, -0.4 - Math.sin(t * 6 + 1) * 0.4);
-    // the cowboy strums and taps a boot
-    cowboy.arms[1].rotation.set(-0.7 + Math.sin(t * 10) * 0.25, 0, -0.3);
-    cowboy.legs[1].rotation.x = Math.max(0, Math.sin(t * 5)) * -0.2;
-    cowboy.upper.rotation.z = Math.sin(t * 2.5) * 0.06;
     // tourists walk, stop, raise the camera, flash, and walk on
     for (const tr of tours) {
       tr.clock += dt;

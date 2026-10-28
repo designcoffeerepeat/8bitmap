@@ -1,9 +1,9 @@
 // Monster easter egg. One of six voxel monsters attacks a corner of the city:
-//   lizard  a kaiju wades in from the edge of the view, stomps toward Midtown and breathes fire on the streets
-//   ape     a rather large ape leaps in, climbs the Empire State Building with a blond woman in its hand,
+//   lizard  a giant rust-red lizard wades in from the edge of the view, stomps toward Midtown and roars
+//   ape     a rather large ape leaps in, climbs the Empire State Building with a hot dog in its hand,
 //           and swats at the plane from the top; when it falls she somersaults into the plane
 //   alien   a long-limbed alien rises out of Central Park, roars and shakes off little parasites
-//   fluff   the Always Pudgy Fluff Dude forms on the Upper West Side and stomps around, smiling
+//   fluff   a giant toasted marshmallow forms on the Upper West Side and stomps around, smiling
 //   ufo     a flying saucer drifts over the Village beaming people up; shot down, gray aliens fall out on fire
 //   robot   a giant robot in the West Village shouts GIVE ME ALL YOUR JOBS! and lasers the towers with its eyes
 // While it is on screen a little plane circles the cursor (on phones, the last tap); clicking or tapping fires
@@ -30,17 +30,17 @@ const PARK = [[40.7644, -73.9730], [40.7681, -73.9819], [40.8003, -73.9582], [40
 // center: where the camera flies; zoom: how close; hp: hits to bring it down; planeAlt: the plane's height;
 // spread: how far bullets scatter around its chest; puff: size of its smoke when hurt
 const MONSTERS = {
-  lizard: { name: 'GIGANTIC LIZARD', tag: 'KAIJU', where: 'HEADED FOR MIDTOWN', at: [40.754, -73.984], zoom: 1.15, hp: 60, planeAlt: 13, spread: 1.3, puff: 1, create: createLizard },
+  lizard: { name: 'GIGANTIC LIZARD', tag: 'LIZARD', where: 'HEADED FOR MIDTOWN', at: [40.754, -73.984], zoom: 1.15, hp: 60, planeAlt: 13, spread: 1.3, puff: 1, create: createLizard },
   ape: { name: 'RATHER LARGE APE', tag: 'APE', where: 'AT THE EMPIRE STATE', at: [ESB.lat, ESB.lng], lookY: 6, zoom: 2.1, hp: 45, planeAlt: 18, spread: 0.5, puff: 0.5, create: createApe },
   alien: { name: 'ALIEN MONSTER', tag: 'ALIEN', where: 'IN CENTRAL PARK', at: [40.7812, -73.9665], zoom: 2, hp: 50, planeAlt: 9, spread: 0.8, puff: 0.6, create: createAlien },
-  fluff: { name: 'ALWAYS PUDGY FLUFF DUDE', tag: 'DUDE', where: 'ON THE UPPER WEST SIDE', at: [40.7865, -73.9770], zoom: 2, hp: 50, planeAlt: 10, spread: 0.9, puff: 0.6, create: createFluff },
+  fluff: { name: 'GIANT MARSHMALLOW', tag: 'MALLOW', where: 'ON THE UPPER WEST SIDE', at: [40.7865, -73.9770], zoom: 2, hp: 50, planeAlt: 10, spread: 0.9, puff: 0.6, create: createFluff },
   ufo: { name: 'UFO', tag: 'UFO', where: 'OVER MANHATTAN', at: [40.7308, -73.9973], zoom: 2, hp: 50, planeAlt: 15, spread: 1.2, puff: 0.8, create: createUfo },
   robot: { name: 'GIANT ROBOT', tag: 'ROBOT', where: 'IN THE WEST VILLAGE', at: [40.7343, -74.0055], zoom: 2, hp: 55, planeAlt: 11, spread: 1, puff: 0.7, create: createRobot },
 };
 const ORDER = ['lizard', 'ape', 'alien', 'fluff', 'ufo', 'robot'];
 
 const C = {
-  body: '#3d5a4a', dark: '#24362d', belly: '#9fbf8f', spine: '#e8eef9', glow: '#7fe3ff',
+  body: '#b0662e', dark: '#6e3b17', belly: '#f2c46b', spine: '#7a3f1a',
   eye: '#ffd23f', mouth: '#9e0f15', tooth: '#ffffff', claw: '#ece8e1',
 };
 const FLAME = ['#ffffff', '#fff3a0', PALETTE.pinHi, '#ff8a1f', '#ed1c24', '#9e0f15', '#5a5d72'];
@@ -445,7 +445,8 @@ function settle(map, root, dt) {
 }
 const ease = (x) => 1 - (1 - x) ** 3;
 
-// the gigantic lizard: wades in from the edge of the view, stomps around Midtown and breathes fire
+// the gigantic lizard: wades in from the edge of the view, stomps around Midtown and rears up to roar, shaking
+// the streets around it
 function createLizard(ctx) {
   const { map, s, fx, center } = ctx;
   const kaiju = buildKaiju();
@@ -466,32 +467,16 @@ function createLizard(ctx) {
 
   function breathe(dt) {
     const T = st.modeT;
-    // rear back, glow, then rake fire across the street ahead
+    // rear back, then roar with the jaw wide open, shaking the street and kicking up a ring of dust
     const rear = Math.min(1, T / 0.5);
-    const fire = T > 0.5 && T < 2.4;
-    kaiju.neck.rotation.x = fire ? 0.35 : -0.35 * rear;
-    kaiju.jaw.rotation.x = 0.55 * (fire ? 1 : rear);
-    kaiju.spineMat.emissive.set(C.glow).multiplyScalar(Math.min(1, T / 0.5) * (0.6 + Math.sin(T * 30) * 0.15));
-    pose(kaiju, st.phase, s.t, fire ? 1 : 0);
-    if (!fire) return;
-    const mouth = kaiju.mouth.getWorldPosition(new THREE.Vector3());
-    const sweep = Math.sin((T - 0.5) * 2.2) * 0.6;
-    const ang = st.heading + sweep;
-    const reach = 6 + Math.sin(T * 3);
-    const tx = root.position.x + Math.sin(ang) * reach;
-    const tz = root.position.z + Math.cos(ang) * reach;
-    const floor = floorAt(map, tx, tz);
-    const target = new THREE.Vector3(tx, floor, tz);
-    const n = Math.round(dt * 80);
-    for (let i = 0; i < n; i++) {
-      const dir = target.clone().add(rand3(0.6)).sub(mouth);
-      const life = 0.55;
-      fx.add({
-        p: mouth.clone(), v: dir.divideScalar(life * 0.8), life, size: 0.25 + Math.random() * 0.2, g: 2, ramp: RAMPS.flame, floor,
-      });
-    }
-    if (floor > 0.32 && Math.random() < dt * 6 && s.fires.length < 40) {
-      s.fires.push({ p: new THREE.Vector3(tx + rand(0.8), floor, tz + rand(0.8)), life: 5 + Math.random() * 5 });
+    const roar = T > 0.5 && T < 2.4;
+    kaiju.neck.rotation.x = roar ? 0.35 : -0.35 * rear;
+    kaiju.jaw.rotation.x = 0.55 * (roar ? 1 : rear);
+    pose(kaiju, st.phase, s.t, roar ? 1 : 0);
+    if (roar && !st.roared) {
+      st.roared = true;
+      ctx.shake(4, 0.6);
+      ctx.dustRing(root.position, 36, 5);
     }
   }
 
@@ -510,19 +495,17 @@ function createLizard(ctx) {
           const r = 4 + Math.random() * 7;
           st.goal = new THREE.Vector3(center.x + Math.cos(a) * r, 0, center.z + Math.sin(a) * r);
         }
-        if (st.modeT > st.nextBreath) { st.mode = 'breath'; st.modeT = 0; }
+        if (st.modeT > st.nextBreath) { st.mode = 'breath'; st.modeT = 0; st.roared = false; }
       } else {
         breathe(dt);
         if (st.modeT > 2.8) {
           st.mode = 'walk'; st.modeT = 0; st.nextBreath = 3.5 + Math.random() * 3;
-          kaiju.spineMat.emissive.set(0x000000);
         }
       }
       settle(map, root, dt);
     },
     onDefeat() {
       st.fallDir = Math.random() < 0.5 ? -1 : 1;
-      kaiju.spineMat.emissive.set(0x000000);
     },
     die(dt, T) {
       const f = Math.min(1, T / 1.3);
@@ -546,7 +529,7 @@ function createLizard(ctx) {
 }
 
 // the rather large ape: leaps in beside the Empire State Building, beats its chest, climbs to the top with the
-// woman in its hand, and swats at the plane. Shot down, it lets go: she somersaults into the plane and it falls.
+// hot dog in its hand, and swats at the plane. Shot down, it lets go: the hot dog flips into the plane and it falls.
 function createApe(ctx) {
   const { map, plane, group, center } = ctx;
   const ape = buildApe();
@@ -561,21 +544,17 @@ function createApe(ctx) {
   root.position.copy(from);
   const faceIn = Math.atan2(-n.x, -n.z);
   const faceOut = Math.atan2(n.x, n.z);
-  const st = { mode: 'leap', modeT: 0, phase: 0, heading: Math.atan2(base.x - from.x, base.z - from.z), next: 3, act: null, fallV: 0, landed: 0, woman: null };
+  const st = { mode: 'leap', modeT: 0, phase: 0, heading: Math.atan2(base.x - from.x, base.z - from.z), next: 3, act: null, fallV: 0, landed: 0, prize: null };
   root.rotation.y = st.heading;
   const chest = new THREE.Vector3();
   const set = (mode) => { st.mode = mode; st.modeT = 0; };
   const [armL, armR] = ape.arms;
 
-  // the woman flails in its fist the whole time
+  // the hot dog waggles in its fist the whole time
   function flail(t) {
-    const w = ape.woman;
-    w.arms[0].rotation.z = 2.6 + Math.sin(t * 14) * 0.5;
-    w.arms[1].rotation.z = -2.6 - Math.sin(t * 14 + 1) * 0.5;
-    w.legs[0].rotation.x = Math.sin(t * 11) * 0.5;
-    w.legs[1].rotation.x = -Math.sin(t * 11) * 0.5;
+    ape.prize.root.rotation.z = Math.sin(t * 6) * 0.25;
   }
-  // the right arm holds her out to the side
+  // the right arm holds it out to the side
   function holdOut() {
     armR.rotation.set(-0.7, 0, 0.35);
     ape.elbows[1].rotation.x = -1;
@@ -668,27 +647,25 @@ function createApe(ctx) {
       }
     },
     onDefeat() {
-      // she lets go of its fist and somersaults into the plane
-      const w = ape.woman.root;
+      // the hot dog slips out of its fist and flips into the plane
+      const w = ape.prize.root;
       group.attach(w);
-      st.woman = { from: w.position.clone(), spin: w.rotation.x, size: w.scale.x };
+      st.prize = { from: w.position.clone(), spin: w.rotation.x, size: w.scale.x };
       armR.rotation.set(-2.6, 0, 0.3);
     },
     die(dt, T) {
-      // her flight
-      const w = ape.woman.root;
-      if (st.woman && w.visible) {
+      // the hot dog's flight
+      const w = ape.prize.root;
+      if (st.prize && w.visible) {
         const e = Math.min(1, T / 1.3);
-        w.position.lerpVectors(st.woman.from, plane.root.position, ease(e));
+        w.position.lerpVectors(st.prize.from, plane.root.position, ease(e));
         w.position.y += Math.sin(Math.PI * e) * 1.6;
-        w.rotation.set(st.woman.spin - e * Math.PI * 4, 0, 0);
-        w.scale.setScalar(st.woman.size * (1 - e * 0.5));
-        ape.woman.arms[0].rotation.z = 0.3;
-        ape.woman.arms[1].rotation.z = -0.3;
+        w.rotation.set(st.prize.spin - e * Math.PI * 4, 0, 0);
+        w.scale.setScalar(st.prize.size * (1 - e * 0.5));
         if (e >= 1) {
           w.visible = false;
           plane.passenger.visible = true;
-          ctx.say("SHE'S SAFE ON BOARD");
+          ctx.say('THE HOT DOG IS SAFE ON BOARD');
         }
       }
       // its fall: a stagger, then off the tower, tumbling, to the street
@@ -810,7 +787,7 @@ function createAlien(ctx) {
   };
 }
 
-// the Always Pudgy Fluff Dude: forms out of thin air on the Upper West Side, waddles along the streets smiling and
+// the giant marshmallow: forms out of thin air on the Upper West Side, waddles along the streets smiling and
 // jumps to stomp them flat. Shot down, it swells, catches fire and pops in a rain of marshmallow.
 function createFluff(ctx) {
   const { map, s, fx, center } = ctx;
@@ -1284,7 +1261,7 @@ function buildKaiju() {
     seg.rotation.x = i ? -0.16 : -0.35;
     box(seg, w, h, d, 0, 0, -d / 2, C.body);
     box(seg, w * 0.5, h * 0.25, d * 0.8, 0, -h * 0.45, -d / 2, C.belly);
-    if (i < 5) box(seg, 0.6, 1.4 - i * 0.2, 1.6, 0, h / 2 + 0.5, -d / 2, 'spine');
+    if (i < 5) box(seg, 0.5, 0.8 - i * 0.1, 0.9, 0, h / 2 + 0.3, -d / 2, 'spine');
     tail.push(seg);
     parent = seg;
   });
@@ -1296,11 +1273,8 @@ function buildKaiju() {
   for (const y of [1.5, 3.1, 4.7]) box(torso, 4.6, 0.3, 0.7, 0, y, 2.8, C.dark); // belly ridges
   box(torso, 4.6, 3, 4.4, 0, 8.4, 0.6, C.body);
   const chest = node(torso, 0, 5, 1.5);
-  // three rows of dorsal plates, tallest down the middle
-  [2.2, 2.8, 3.2, 2.8, 2.2].forEach((h, i) => {
-    box(torso, 0.7, h, 1.8, 0, 1 + i * 1.8, -3.1, 'spine');
-    for (const sx of [-1.3, 1.3]) box(torso, 0.6, h * 0.6, 1.4, sx, 1.4 + i * 1.8, -2.8, 'spine');
-  });
+  // a low crest of little spikes down its back
+  [0.8, 1, 1.1, 1, 0.8].forEach((h, i) => box(torso, 0.6, h, 0.9, 0, 1.2 + i * 1.8, -2.9, 'spine'));
   const arms = [-1, 1].map((side) => {
     const arm = node(torso, side * 3.6, 6.4, 1.2);
     box(arm, 1.4, 3, 1.6, 0, -1.2, 0.4, C.body);
@@ -1438,53 +1412,35 @@ function buildApe() {
     hands.push(node(elbow, 0, -5.6, 1.2));
     return arm;
   });
-  // the woman, in world units, in its right fist
-  const woman = buildWoman();
-  kit.extra.push(...woman.mats);
-  woman.root.scale.setScalar(1.6 / APE_VOX);
-  woman.root.position.set(0, 0.2, 0.4);
-  hands[1].add(woman.root);
-  return { ...kit, hips, torso, chest, head, jaw, crown, legs, arms, elbows, woman };
+  // a hot dog, in world units, in its right fist
+  const prize = buildHotDog();
+  kit.extra.push(...prize.mats);
+  prize.root.scale.setScalar(1.6 / APE_VOX);
+  prize.root.position.set(0, 0.2, 0.4);
+  hands[1].add(prize.root);
+  return { ...kit, hips, torso, chest, head, jaw, crown, legs, arms, elbows, prize };
 }
 
-// blond hair and a white dress, half a unit tall before scaling; she spins around her middle
-function buildWoman() {
+// a hot dog in a bun with a stripe of mustard, half a unit long before scaling; it spins around its middle
+function buildHotDog() {
   const mats = [];
   const root = new THREE.Group();
-  const inner = new THREE.Group();
-  inner.position.y = -0.3;
-  root.add(inner);
-  const box = (parent, w, h, d, x, y, z, hex) => {
-    // drawn after the pins like the plane, so she shows when she flies over them
+  const box = (w, h, d, x, y, z, hex) => {
+    // drawn after the pins like the plane, so it shows when it flies over them
     const m = new THREE.MeshLambertMaterial({ color: hex, flatShading: true, transparent: true });
     mats.push(m);
     const mesh = new THREE.Mesh(BOX, m);
     mesh.renderOrder = 30;
     mesh.scale.set(w, h, d);
     mesh.position.set(x, y, z);
-    parent.add(mesh);
+    root.add(mesh);
     return mesh;
   };
-  const skin = '#f2c9a0';
-  const legs = [-1, 1].map((side) => {
-    const leg = new THREE.Group();
-    leg.position.set(side * 0.045, 0.22, 0);
-    inner.add(leg);
-    box(leg, 0.06, 0.22, 0.06, 0, -0.11, 0, skin);
-    return leg;
-  });
-  box(inner, 0.2, 0.26, 0.13, 0, 0.33, 0, '#ffffff');
-  const arms = [-1, 1].map((side) => {
-    const arm = new THREE.Group();
-    arm.position.set(side * 0.12, 0.43, 0);
-    inner.add(arm);
-    box(arm, 0.05, 0.18, 0.05, 0, -0.09, 0, skin);
-    return arm;
-  });
-  box(inner, 0.13, 0.13, 0.13, 0, 0.52, 0, skin);
-  box(inner, 0.16, 0.07, 0.16, 0, 0.6, 0, '#ffe066');
-  box(inner, 0.16, 0.17, 0.05, 0, 0.5, -0.07, '#ffe066');
-  return { root, legs, arms, mats };
+  box(0.5, 0.1, 0.16, 0, 0, 0, '#e8b56a'); // bun
+  for (const z of [-0.07, 0.07]) box(0.5, 0.1, 0.05, 0, 0.07, z, '#e8b56a');
+  box(0.6, 0.08, 0.09, 0, 0.09, 0, '#b5452b'); // the frank
+  box(0.44, 0.02, 0.03, 0, 0.14, 0, '#ffd23f'); // mustard
+  return { root, mats };
 }
 
 const ALIEN_VOX = 0.32; // about 5 units tall: half the lizard
@@ -1542,51 +1498,51 @@ function buildAlien() {
 
 const FLUFF_VOX = 0.24; // about 6 units tall
 
+// a giant marshmallow: one round, squat cylinder on stubby legs, toasted golden on top, with a face on the front
 function buildFluff() {
   const white = '#fbf8f1';
   const shade = '#e4ddd0';
+  const toast = '#d9a55a';
+  const char = '#9a6331';
   const ink = '#1d2340';
-  const blue = '#3d7be0';
   const kit = voxelKit(FLUFF_VOX);
   const { box, node, body } = kit;
+  // a pixel cylinder: three crossed boxes give it a rounded footprint
+  const drum = (parent, r, y, h, hex) => {
+    box(parent, 2 * r, h, 1.2 * r, 0, y, 0, hex);
+    box(parent, 1.6 * r, h, 1.6 * r, 0, y, 0, hex);
+    box(parent, 1.2 * r, h, 2 * r, 0, y, 0, hex);
+  };
   const hips = node(body, 0, 7, 0);
   const feet = [];
   const legs = [-1, 1].map((side) => {
-    const leg = node(hips, side * 2.4, 0, 0);
-    box(leg, 4, 3, 4, 0, -1.5, 0, white);
-    box(leg, 4.5, 0.3, 4.5, 0, -3, 0, shade);
-    box(leg, 4.4, 2.4, 4.4, 0, -4.3, 0, white);
-    box(leg, 4.2, 1.4, 5, 0, -6.3, 0.4, white);
+    const leg = node(hips, side * 2.2, 0, 0);
+    box(leg, 2.6, 5.6, 2.6, 0, -3, 0, white);
+    box(leg, 3.2, 1.4, 3.8, 0, -6.3, 0.4, shade);
     feet.push(node(leg, 0, -7, 0.4));
     return leg;
   });
   const torso = node(hips, 0, 0, 0);
-  for (const [w, h, d, y] of [[8.4, 2, 7, 1], [10, 3, 8.4, 3.5], [9.6, 2.4, 8, 6], [8, 1.6, 6.8, 7.9]]) box(torso, w, h, d, 0, y, 0, white);
-  for (const y of [2.1, 5]) box(torso, 10.1, 0.3, 8.5, 0, y, 0, shade);
-  box(torso, 7, 1.2, 6.2, 0, 9.2, 0, blue);
-  box(torso, 3, 1.4, 0.6, 0, 9.1, 3.3, '#ed1c24');
-  box(torso, 0.9, 0.9, 0.8, 0, 9.1, 3.5, '#9e0f15');
-  const chest = node(torso, 0, 5, 2);
+  drum(torso, 5.4, 2.5, 5, white);
+  drum(torso, 5.5, 0.1, 0.3, shade);
+  const chest = node(torso, 0, 4, 2);
   const arms = [-1, 1].map((side) => {
-    const arm = node(torso, side * 5.6, 8, 0);
-    box(arm, 3.2, 3, 3.2, 0, -1.2, 0, white);
-    box(arm, 3.4, 2.6, 3.4, 0, -3.8, 0, white);
-    box(arm, 3.5, 0.3, 3.5, 0, -2.6, 0, shade);
-    box(arm, 2.8, 2.4, 2.8, 0, -6.2, 0.2, white);
+    const arm = node(torso, side * 5.6, 4.2, 0);
+    box(arm, 1.8, 4.4, 1.8, 0, -1.8, 0, white);
+    box(arm, 2.2, 1.6, 2.2, 0, -4.4, 0.2, shade);
     return arm;
   });
-  const head = node(torso, 0, 9.8, 0.2);
-  box(head, 6, 2, 5.6, 0, 1, 0, white);
-  box(head, 6.8, 2.8, 6.2, 0, 3.3, 0, white);
-  box(head, 6, 1.8, 5.6, 0, 5.5, 0, white);
-  for (const sx of [-1.3, 1.3]) box(head, 0.7, 1, 0.3, sx, 3.9, 3.15, ink);
-  box(head, 2.4, 0.35, 0.3, 0, 2.3, 3.15, ink);
-  for (const sx of [-1.4, 1.4]) box(head, 0.5, 0.35, 0.3, sx, 2.6, 3.15, ink);
-  for (const sx of [-2.4, 2.4]) box(head, 1, 0.6, 0.3, sx, 2.8, 3.12, '#ffb3c1');
-  // sailor hat
-  box(head, 6.4, 0.6, 6, 0, 6.6, 0, blue);
-  box(head, 5.6, 1.6, 5.2, 0, 7.7, 0, white);
-  const crown = node(head, 0, 9, 0);
+  // the top half turns as one, so the face looks around
+  const head = node(torso, 0, 5, 0);
+  drum(head, 5.4, 2, 4, white);
+  drum(head, 5.45, 4.4, 0.8, toast);
+  drum(head, 4.6, 4.9, 0.4, char);
+  for (const [x, z] of [[-3.6, 1.5], [3.1, -2.2], [0.8, 3.9], [-1.5, -3.8]]) box(head, 1.4, 0.8, 1.2, x, 3.9, z, toast);
+  for (const sx of [-1.4, 1.4]) box(head, 0.8, 1.1, 0.3, sx, 2.6, 5.45, ink);
+  box(head, 2, 0.35, 0.3, 0, 1.2, 5.45, ink);
+  for (const sx of [-1.2, 1.2]) box(head, 0.5, 0.35, 0.3, sx, 1.5, 5.45, ink);
+  for (const sx of [-2.6, 2.6]) box(head, 1, 0.6, 0.3, sx, 1.6, 5.4, '#ffb3c1');
+  const crown = node(head, 0, 6, 0);
   return { ...kit, hips, torso, chest, head, crown, legs, arms, feet };
 }
 
@@ -1775,8 +1731,8 @@ function buildPlane() {
   box(1.1, 0.1, 0.35, 0, 0.1, -0.8, PALETTE.pin);
   box(0.1, 0.5, 0.4, 0, 0.35, -0.8, PALETTE.pin);
   const prop = box(1.2, 0.12, 0.08, 0, 0, 1.18, '#1d2340');
-  // the woman the ape lets go of, riding behind the cockpit once she lands in the plane
-  const passenger = box(0.24, 0.2, 0.24, 0, 0.4, -0.1, '#ffe066');
+  // the hot dog the ape lets go of, riding behind the cockpit once it lands in the plane
+  const passenger = box(0.3, 0.12, 0.14, 0, 0.36, -0.1, '#e8b56a');
   passenger.visible = false;
   const muzzle = new THREE.Object3D();
   muzzle.position.set(0, 0, 1.3);

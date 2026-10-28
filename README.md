@@ -55,7 +55,7 @@ Keep `worker/index.js` itself: it also runs the contact form and the cookie cons
 
 ### Contact form, legal pages and cookie consent
 
-The menu in the title box opens Contact, Privacy Policy and Terms and Conditions as modals
+The menu in the title box opens Contact, About, Privacy Policy, Terms and Conditions, Disclaimer and Accessibility as modals
 (`src/scripts/site.js`; the texts are `src/components/PrivacyPolicy.astro` and `src/components/Terms.astro`).
 Each can be linked to directly as `/#contact`, `/#privacy` or `/#terms`. The empty ad slot opens Contact
 on Ad/Event Inquiry, and so does the Times Square billboard on the map once you zoom in (`src/scripts/times-square.js`).
@@ -82,7 +82,7 @@ src/pages/index.astro             page shell and HUD markup
 src/styles/global.css             all styles (arcade look, mobile bottom sheet)
 src/scripts/app.js                UI: filters, Today list, event card, map controls
 src/scripts/site.js               site menu, Contact / Privacy / Terms modals, ad slot, cookie banner
-src/components/                   Privacy Policy and Terms texts
+src/components/                   About, Privacy Policy, Terms, Disclaimer and Accessibility texts
 src/scripts/map/geo.js            NYC tile grid: parks, beaches, bridges, skyline peaks, lat/lng to tile
 src/scripts/map/land.json         land tiles for all five boroughs and the land around them (tools/build_land.py)
 src/scripts/map/detail.json       finer ground detail: real parks, lakes, runways, major streets, highways (tools/build_detail.py)
@@ -93,7 +93,7 @@ src/scripts/events/schema.js      the one event shape every source maps into
 src/scripts/events/index.js       loads all sources, filters to today and the map area, de-duplicates, sorts
 src/scripts/events/overlap.js     merges the same event listed by several sources, keeping the listing with the most
                                   information (SeatGeek always wins over Ticketmaster)
-src/scripts/events/sources/       one file per event source: nycgov.js, luma.js, permits.js,
+src/scripts/events/sources/       one file per event source: nycgov.js, permits.js,
                                   ticketmaster.js, seatgeek.js, artwrld.js,
                                   venues.js, greenmarkets.js, nps.js, astoria.js, redhook.js, foresthills.js, coneyisland.js, statenisland.js,
                                   snapshot.js (shared reader),
@@ -104,7 +104,6 @@ parked/                           doNYC, Resident Advisor, The Skint, Queens Pub
                                   SmallsLIVE, Other Half Brewing and DICE, removed until they agree to be listed
 public/                           other static files copied as-is (favicon)
 tools/fetch_nycgov.py             pulls one day of NYC.gov events and places them on the map
-tools/fetch_luma.py               pulls one day of Luma NYC events
 tools/fetch_permits.py            pulls one day of NYC permitted street events (street fairs, parades, greenmarkets)
 tools/fetch_ticketmaster.py       pulls one day of Ticketmaster events (needs TICKETMASTER_API_KEY)
 tools/fetch_seatgeek.py           pulls one day of SeatGeek events (needs SEATGEEK_CLIENT_ID)
@@ -131,7 +130,6 @@ You can also run it from the repo's Actions tab (Run workflow), or by hand with 
 
 ```sh
 python3 tools/fetch_nycgov.py             # today in NYC
-python3 tools/fetch_luma.py
 python3 tools/fetch_permits.py
 TICKETMASTER_API_KEY=... python3 tools/fetch_ticketmaster.py
 SEATGEEK_CLIENT_ID=... python3 tools/fetch_seatgeek.py
@@ -159,11 +157,6 @@ Parks Department's coordinates and everything else with NYC City Planning GeoSea
 Events with no usable address are listed under `unplaced` in the snapshot. The Parks feed refuses GitHub's servers,
 so every run that reaches it records each Parks venue in `data/parks-places.json`, which the scheduled refresh uses instead. The page header shows the day the
 snapshot covers, so an old snapshot shows that day's events rather than an empty map.
-
-### Luma
-
-`fetch_luma.py` reads the discover API behind https://luma.com/nyc. Events come with coordinates. Hosts can keep an
-address for registered guests only, and Luma then gives a shifted position, so those events are left off the map.
 
 ### NYC Street Events
 
@@ -415,10 +408,8 @@ and the same show listed on several sites is merged by title, venue and start ti
   drops over the last minute, then ten minutes of fireworks; on January 1st tapping the ball drops it again
   (`src/scripts/new-year.js`). `?nye=90` sets the clock 90 seconds before midnight to try it.
 - Zoomers: the easter egg characters that appear when the map is zoomed all the way in on their spot
-  (`src/scripts/zoomers/`): Times Square's costumed heroes, red furry character, Naked Cowboy and tourists; the
-  woman in green watering plants in Carroll Gardens; the subway dancers on a train over the Manhattan Bridge; Bill
-  Cunningham at Fifth Avenue and 57th Street; the Rent Is Too Damn High guy at City Hall; the web-slinger in dark green in Hunters
-  Point; the two guys on beach chairs in McCarren Park; the big turquoise bird and gray elephant at the Museum of the
+  (`src/scripts/zoomers/`): Times Square's caped hero, masked wrestler, orange furry character and tourists; the subway dancers
+  on a train over the Manhattan Bridge; Bill Cunningham at Fifth Avenue and 57th Street; the two guys on beach chairs in McCarren Park; the giant pigeon and gray elephant at the Museum of the
   Moving Image; and the Staten Island Ferry, which sails all day. `kit.js` builds the voxel people, walk cycles and
   speech bubbles, and shows a Zoomer as a pale ghost where a building hides it. A new Zoomer is a `start(map, spot)`
   that returns `{ step(dt), dispose() }`, hooked up with `zoomer()` or `watchZoomEgg`.
