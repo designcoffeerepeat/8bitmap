@@ -1,7 +1,7 @@
 // Zoomers out on the street, each starting when the map sits zoomed all the way in on its spot:
 //   Fifth Avenue and 57th Street: Bill Cunningham in his blue jacket rides his bike and stops to take photos.
 //   McCarren Park: a guy in a black cap and a blonde guy in sunglasses on beach chairs share a can of soda back and forth.
-//   Museum of the Moving Image: a giant pigeon and a gray elephant stroll around outside.
+//   Museum of the Moving Image: a giant pigeon struts around outside.
 
 import * as THREE from 'three';
 import { watchZoomEgg } from '../zoom-egg.js';
@@ -208,25 +208,6 @@ function movingImage(map, spot) {
     return w;
   });
 
-  // the gray elephant: four legs, big ears, long trunk, little tusks
-  const ele = k.node(root);
-  const eb = k.node(ele);
-  eb.scale.setScalar(VOX);
-  const eleLegs = [[-1.2, -2], [1.2, -2], [-1.2, 2], [1.2, 2]].map(([x, z]) => {
-    const leg = k.node(eb, x, 2.4, z);
-    k.box(leg, 1.3, 2.4, 1.3, 0, -1.2, 0, '#7d8288');
-    return leg;
-  });
-  k.box(eb, 3.8, 3, 6, 0, 3.6, 0, '#9aa0a6');
-  const ehead = k.node(eb, 0, 4.2, 3.4);
-  k.box(ehead, 2.6, 2.6, 2, 0, 0.4, 0.4, '#9aa0a6');
-  for (const x of [-1.9, 1.9]) k.box(ehead, 0.4, 2.6, 1.8, x, 0.6, 0, '#7d8288'); // ears
-  k.box(ehead, 0.3, 0.3, 0.1, -0.6, 0.9, 1.42, '#1d2340'); // eyes
-  k.box(ehead, 0.3, 0.3, 0.1, 0.6, 0.9, 1.42, '#1d2340');
-  for (const x of [-0.7, 0.7]) k.box(ehead, 0.3, 0.3, 0.9, x, -0.6, 1.6, '#f4f1e8'); // tusks
-  const trunk = k.node(ehead, 0, 0, 1.4);
-  k.box(trunk, 0.8, 3, 0.8, 0, -1.4, 0.2, '#7d8288');
-
   // a loop around the museum's front
   const r = 0.32;
   const path = loop([v(-r, -r), v(r, -r), v(r, r), v(-r, r)]);
@@ -235,7 +216,6 @@ function movingImage(map, spot) {
     t += dt;
     const d = t * WALK * VOX * 0.8;
     path.place(bird, d);
-    path.place(ele, d - 0.32);
     const ph = (t / STRIDE) * Math.PI * 2;
     birdLegs[0].rotation.x = Math.sin(ph) * 0.5;
     birdLegs[1].rotation.x = -Math.sin(ph) * 0.5;
@@ -243,9 +223,6 @@ function movingImage(map, spot) {
     neck.position.z = 1.6 + Math.sin(ph) * 0.4; // the pigeon head bob
     wings[0].rotation.z = 0.15 + Math.max(0, Math.sin(t * 1.3)) * 0.6;
     wings[1].rotation.z = -wings[0].rotation.z;
-    eleLegs.forEach((l, i) => { l.rotation.x = Math.sin(ph * 0.7 + (i % 3 ? Math.PI : 0)) * 0.35; });
-    trunk.rotation.x = Math.sin(t * 1.7) * 0.3;
-    trunk.rotation.z = Math.sin(t * 1.1) * 0.25;
   }
   step(0);
   return { step, dispose() { map.world.remove(root); k.dispose(); } };

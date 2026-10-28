@@ -3,7 +3,7 @@
 //   ape     a rather large ape leaps in, climbs the Empire State Building with a hot dog in its hand,
 //           and swats at the plane from the top; when it falls she somersaults into the plane
 //   alien   a long-limbed alien rises out of Central Park, roars and shakes off little parasites
-//   fluff   a giant toasted marshmallow forms on the Upper West Side and stomps around, smiling
+//   fluff   a giant toasted marshmallow forms over the Upper West Side and floats above the rooftops, smiling
 //   ufo     a flying saucer drifts over the Village beaming people up; shot down, gray aliens fall out on fire
 //   robot   a giant robot in the West Village shouts GIVE ME ALL YOUR JOBS! and lasers the towers with its eyes
 // While it is on screen a little plane circles the cursor (on phones, the last tap); clicking or tapping fires
@@ -33,7 +33,7 @@ const MONSTERS = {
   lizard: { name: 'GIGANTIC LIZARD', tag: 'LIZARD', where: 'HEADED FOR MIDTOWN', at: [40.754, -73.984], zoom: 1.15, hp: 60, planeAlt: 13, spread: 1.3, puff: 1, create: createLizard },
   ape: { name: 'RATHER LARGE APE', tag: 'APE', where: 'AT THE EMPIRE STATE', at: [ESB.lat, ESB.lng], lookY: 6, zoom: 2.1, hp: 45, planeAlt: 18, spread: 0.5, puff: 0.5, create: createApe },
   alien: { name: 'ALIEN MONSTER', tag: 'ALIEN', where: 'IN CENTRAL PARK', at: [40.7812, -73.9665], zoom: 2, hp: 50, planeAlt: 9, spread: 0.8, puff: 0.6, create: createAlien },
-  fluff: { name: 'GIANT MARSHMALLOW', tag: 'MALLOW', where: 'ON THE UPPER WEST SIDE', at: [40.7865, -73.9770], zoom: 2, hp: 50, planeAlt: 10, spread: 0.9, puff: 0.6, create: createFluff },
+  fluff: { name: 'GIANT MARSHMALLOW', tag: 'MALLOW', where: 'OVER THE UPPER WEST SIDE', at: [40.7865, -73.9770], zoom: 2, hp: 50, planeAlt: 15, spread: 0.9, puff: 0.6, create: createFluff },
   ufo: { name: 'UFO', tag: 'UFO', where: 'OVER MANHATTAN', at: [40.7308, -73.9973], zoom: 2, hp: 50, planeAlt: 15, spread: 1.2, puff: 0.8, create: createUfo },
   robot: { name: 'GIANT ROBOT', tag: 'ROBOT', where: 'IN THE WEST VILLAGE', at: [40.7343, -74.0055], zoom: 2, hp: 55, planeAlt: 11, spread: 1, puff: 0.7, create: createRobot },
 };
@@ -787,14 +787,16 @@ function createAlien(ctx) {
   };
 }
 
-// the giant marshmallow: forms out of thin air on the Upper West Side, waddles along the streets smiling and
-// jumps to stomp them flat. Shot down, it swells, catches fire and pops in a rain of marshmallow.
+// the giant marshmallow: forms out of thin air over the Upper West Side, floats above the rooftops smiling, legs
+// paddling, and now and then bounces up and drops back with a puff. Shot down, it swells, catches fire and pops in a
+// rain of marshmallow.
+const FLOAT = 6; // how high its feet hang above the street, clear of the Upper West Side's rooftops
 function createFluff(ctx) {
   const { map, s, fx, center } = ctx;
   const pf = buildFluff();
   const root = pf.root;
   const start = center.clone().add(new THREE.Vector3(rand(2), 0, rand(2)));
-  root.position.set(start.x, floorAt(map, start.x, start.z), start.z);
+  root.position.set(start.x, FLOAT, start.z);
   const st = { mode: 'form', modeT: 0, phase: 0, heading: Math.random() * Math.PI * 2, goal: null, next: 4 };
   const goalNear = () => {
     const a = Math.random() * Math.PI * 2;
@@ -823,28 +825,20 @@ function createFluff(ctx) {
         }
         if (e >= 1) { root.scale.setScalar(1); set('walk'); }
       } else if (st.mode === 'walk') {
-        // a happy waddle
+        // a happy drift over the rooftops, legs paddling the air
         if (walkTo(root, st, st.goal, 0.9, dt) < 1.2) st.goal = goalNear();
-        const foot = stride(st, dt, 1.3);
-        if (foot) {
-          const p = (foot > 0 ? pf.feet[1] : pf.feet[0]).getWorldPosition(new THREE.Vector3());
-          p.y = floorAt(map, p.x, p.z);
-          ctx.dustRing(p, 10, 1.1);
-          ctx.shake(1.5, 0.1);
-        }
+        stride(st, dt, 1.3);
         const sw = Math.sin(st.phase);
         pf.legs[0].rotation.x = sw * 0.4;
         pf.legs[1].rotation.x = -sw * 0.4;
         pf.arms[0].rotation.x = -sw * 0.35;
         pf.arms[1].rotation.x = sw * 0.35;
         pf.body.rotation.z = sw * 0.07;
-        pf.hips.position.y = 7 - Math.abs(sw) * 0.4;
         pf.head.rotation.y = Math.sin(t * 0.7) * 0.25;
-        settle(map, root, dt);
+        root.position.y += (FLOAT + Math.sin(t * 1.6) * 0.35 - root.position.y) * Math.min(1, dt * 2);
         if (T > st.next) set('jump');
       } else {
-        // crouch, jump, and come down hard
-        const floor = floorAt(map, root.position.x, root.position.z);
+        // tuck, bounce up, and drop back to its float with a puff of marshmallow
         pf.legs[0].rotation.x = pf.legs[1].rotation.x = 0;
         pf.body.rotation.z = 0;
         if (T < 0.35) {
@@ -853,14 +847,13 @@ function createFluff(ctx) {
         } else if (T < 1.05) {
           const e = (T - 0.35) / 0.7;
           pf.hips.position.y = 7;
-          root.position.y = floor + Math.sin(e * Math.PI) * 1.8;
+          root.position.y = FLOAT + Math.sin(e * Math.PI) * 2.4;
           pf.arms[0].rotation.z = -1.2 * Math.sin(e * Math.PI);
           pf.arms[1].rotation.z = 1.2 * Math.sin(e * Math.PI);
         } else if (!st.landed) {
           st.landed = true;
-          root.position.y = floor;
-          ctx.shake(5, 0.35);
-          ctx.dustRing(root.position, 40, 3.2);
+          root.position.y = FLOAT;
+          ctx.shake(2, 0.2);
           ctx.dustRing(root.position, 24, 2.2, RAMPS.goo, 0.35);
         } else {
           pf.hips.position.y = 7 - Math.max(0, 0.6 - (T - 1.05) * 3);
