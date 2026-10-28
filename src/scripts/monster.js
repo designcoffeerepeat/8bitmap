@@ -1,13 +1,14 @@
-// Monster easter egg. One of four voxel monsters attacks a corner of the city:
+// Monster easter egg. One of five voxel monsters attacks a corner of the city:
 //   lizard  a kaiju wades in from the edge of the view, stomps toward Midtown and breathes fire on the streets
 //   ape     a rather large ape leaps in, climbs the Empire State Building with a blond woman in its hand,
 //           and swats at the plane from the top; when it falls she somersaults into the plane
 //   alien   a long-limbed alien rises out of Central Park, roars and shakes off little parasites
 //   fluff   the Always Pudgy Fluff Dude forms on the Upper West Side and stomps around, smiling
+//   ufo     a flying saucer drifts over the Village beaming people up; shot down, gray aliens fall out on fire
 // While it is on screen a little plane circles the cursor (on phones, the last tap); clicking or tapping fires
 // the plane's machine gun. Once hit, a health bar shows over its head, and enough hits bring it down in a burst
 // of 8-bit fireworks. It starts from MONSTER ATTACK! in the + menu (CALL OFF THE ATTACK ends it), or by itself
-// every five minutes, cycling through the four, after a ten second warning with STOP and NO MORE.
+// every five minutes, cycling through the five, after a ten second warning with STOP and NO MORE.
 
 import * as THREE from 'three';
 import { COLS, ROWS, LANDMARKS, latLngToWorld } from './map/geo.js';
@@ -32,8 +33,9 @@ const MONSTERS = {
   ape: { name: 'RATHER LARGE APE', tag: 'APE', where: 'AT THE EMPIRE STATE', at: [ESB.lat, ESB.lng], lookY: 6, zoom: 2.1, hp: 45, planeAlt: 18, spread: 0.5, puff: 0.5, create: createApe },
   alien: { name: 'ALIEN MONSTER', tag: 'ALIEN', where: 'IN CENTRAL PARK', at: [40.7812, -73.9665], zoom: 2, hp: 50, planeAlt: 9, spread: 0.8, puff: 0.6, create: createAlien },
   fluff: { name: 'ALWAYS PUDGY FLUFF DUDE', tag: 'DUDE', where: 'ON THE UPPER WEST SIDE', at: [40.7865, -73.9770], zoom: 2, hp: 50, planeAlt: 10, spread: 0.9, puff: 0.6, create: createFluff },
+  ufo: { name: 'UFO', tag: 'UFO', where: 'OVER MANHATTAN', at: [40.7308, -73.9973], zoom: 2, hp: 50, planeAlt: 11, spread: 1.2, puff: 0.8, create: createUfo },
 };
-const ORDER = ['lizard', 'ape', 'alien', 'fluff'];
+const ORDER = ['lizard', 'ape', 'alien', 'fluff', 'ufo'];
 
 const C = {
   body: '#3d5a4a', dark: '#24362d', belly: '#9fbf8f', spine: '#e8eef9', glow: '#7fe3ff',
@@ -911,6 +913,144 @@ function createFluff(ctx) {
   };
 }
 
+// the UFO: a flying saucer swoops down over Manhattan, drifts over the Village and beams people up off the
+// streets. Shot down, it spins out of the sky and little gray aliens fall out of it on fire.
+function createUfo(ctx) {
+  const { map, fx, group, center } = ctx;
+  const u = buildUfo();
+  const root = u.root;
+  const HOVER = 7;
+  const goalNear = () => {
+    const a = Math.random() * Math.PI * 2;
+    const r = 2 + Math.random() * 6;
+    return new THREE.Vector3(center.x + Math.cos(a) * r, HOVER, center.z + Math.sin(a) * r);
+  };
+  const from = ctx.edgePoint(THREE.MathUtils.clamp(ctx.halfW + 4, 12, 40)).setY(HOVER + 14);
+  const arrive = goalNear();
+  root.position.copy(from);
+  const st = { mode: 'arrive', modeT: 0, goal: goalNear(), next: 3, riders: [], falling: [], fallV: 0, landed: 0 };
+  const set = (mode) => { st.mode = mode; st.modeT = 0; };
+  const beamFloor = () => floorAt(map, root.position.x, root.position.z);
+
+  // a little person standing in the beam, carried up and into the saucer
+  function pickUp() {
+    const p = buildTiny(SPARKS[Math.floor(Math.random() * SPARKS.length)], u.tinyMats);
+    const a = Math.random() * Math.PI * 2;
+    const r = Math.random() * 0.8;
+    p.position.set(root.position.x + Math.cos(a) * r, beamFloor(), root.position.z + Math.sin(a) * r);
+    group.add(p);
+    st.riders.push({ p, spin: rand(4) });
+  }
+  function carry(dt) {
+    for (let i = st.riders.length - 1; i >= 0; i--) {
+      const { p, spin } = st.riders[i];
+      p.position.y += dt * 1.6;
+      p.position.x += (root.position.x - p.position.x) * Math.min(1, dt * 0.8);
+      p.position.z += (root.position.z - p.position.z) * Math.min(1, dt * 0.8);
+      p.rotation.y += spin * dt;
+      p.rotation.z = Math.sin(p.position.y * 3) * 0.4;
+      if (p.position.y > root.position.y - 0.8) {
+        fx.add({ p: p.position.clone(), v: new THREE.Vector3(), life: 0.3, size: 0.4, g: 0, ramp: RAMPS.sparkle });
+        group.remove(p);
+        st.riders.splice(i, 1);
+      }
+    }
+  }
+
+  function float(dt, t) {
+    root.position.y += (HOVER + Math.sin(t * 1.7) * 0.3 - root.position.y) * Math.min(1, dt * 2);
+    u.body.rotation.y += dt * 1.5;
+    root.rotation.x = Math.sin(t * 1.3) * 0.06;
+    root.rotation.z = Math.cos(t * 1.1) * 0.06;
+  }
+
+  return {
+    root, chest: u.chest, crown: u.crown, setFlash: u.setFlash,
+    dispose() { st.riders.forEach(({ p }) => group.remove(p)); u.dispose(); },
+    update(dt, t) {
+      st.modeT += dt;
+      const T = st.modeT;
+      u.blink(t);
+      carry(dt);
+      if (st.mode === 'arrive') {
+        // swoops down out of the sky
+        const e = ease(Math.min(1, T / 2.6));
+        root.position.lerpVectors(from, arrive, e);
+        u.body.rotation.y += dt * 4;
+        if (e >= 1) { set('drift'); st.goal = goalNear(); }
+      } else if (st.mode === 'drift') {
+        const d = tmpV.subVectors(st.goal, root.position).setY(0);
+        if (d.length() < 0.5) st.goal = goalNear();
+        root.position.addScaledVector(d.normalize(), dt * 2.2);
+        float(dt, t);
+        if (T > st.next) set('beam');
+      } else {
+        // the tractor beam: down for three seconds, a few people float up it
+        float(dt, t);
+        const on = T < 3.2;
+        u.beam.visible = on;
+        if (on) {
+          const h = root.position.y - beamFloor();
+          u.beam.position.y = -h / 2;
+          u.beam.scale.y = h;
+          u.beamMat.opacity = 0.4 + Math.sin(t * 20) * 0.06;
+          if (Math.random() < dt * 1.3 && st.riders.length < 4) pickUp();
+          if (Math.random() < dt * 12) {
+            fx.add({ p: new THREE.Vector3(root.position.x + rand(0.8), beamFloor() + Math.random() * h, root.position.z + rand(0.8)), v: new THREE.Vector3(0, 1.5, 0), life: 0.5, size: 0.15, g: 0, ramp: RAMPS.sparkle, twinkle: true });
+          }
+        }
+        if (T > 4) { u.beam.visible = false; set('drift'); st.next = 3 + Math.random() * 3; }
+      }
+    },
+    onDefeat() {
+      u.beam.visible = false;
+      // anyone still in the beam drops back to the street, unhurt
+      st.riders.forEach(({ p }) => group.remove(p));
+      st.riders.length = 0;
+    },
+    die(dt, T) {
+      // spins and smokes, then drops out of the sky; the crew falls out on fire
+      u.body.rotation.y += dt * (8 + T * 6);
+      root.rotation.z = Math.min(0.9, T * 0.6);
+      if (Math.random() < dt * 30) fx.add({ p: root.position.clone().add(rand3(1)), v: new THREE.Vector3(rand(0.5), 1.5, rand(0.5)), life: 1, size: 0.5, g: -0.5, ramp: Math.random() < 0.5 ? RAMPS.flame : RAMPS.smoke });
+      if (T > 0.3 && st.falling.length < 5 && Math.random() < dt * 6) {
+        const a = buildGray(u.grayMats);
+        a.position.copy(root.position).add(new THREE.Vector3(rand(1), -0.4, rand(1)));
+        group.add(a);
+        st.falling.push({ a, v: new THREE.Vector3(rand(1.5), 1 + Math.random(), rand(1.5)), spin: rand(8), down: false });
+      }
+      for (const f of st.falling) {
+        if (f.down) continue;
+        f.v.y -= 9 * dt;
+        f.a.position.addScaledVector(f.v, dt);
+        f.a.rotation.x += f.spin * dt;
+        f.a.rotation.z += f.spin * 0.7 * dt;
+        if (Math.random() < dt * 40) fx.add({ p: f.a.position.clone().add(rand3(0.15)), v: new THREE.Vector3(rand(0.3), 0.8, rand(0.3)), life: 0.45, size: 0.22, g: -0.5, ramp: RAMPS.flame });
+        const floor = floorAt(map, f.a.position.x, f.a.position.z);
+        if (f.a.position.y <= floor) {
+          f.down = true;
+          group.remove(f.a);
+          ctx.explode(f.a.position.clone().setY(floor + 0.2), 14, 2, RAMPS.ember, 0.25);
+        }
+      }
+      if (T > 1 && !st.landed) {
+        st.fallV -= 10 * dt;
+        root.position.y += st.fallV * dt;
+        const floor = floorAt(map, root.position.x, root.position.z);
+        if (root.position.y <= floor + 0.3) {
+          root.position.y = floor + 0.3;
+          st.landed = T;
+          ctx.shake(6, 0.5);
+          ctx.explode(root.position.clone(), 140, 5, RAMPS.boom, 0.45);
+          ctx.dustRing(root.position, 36, 3.5);
+        }
+      }
+      return !!st.landed && st.falling.length >= 5 && st.falling.every((f) => f.down);
+    },
+  };
+}
+const tmpV = new THREE.Vector3();
+
 // ---------------------------------------------------------------------------
 // the gigantic lizard: a stack of voxel boxes with pivots for legs, arms, tail, head and jaw
 
@@ -1261,6 +1401,92 @@ function buildFluff() {
   box(head, 5.6, 1.6, 5.2, 0, 7.7, 0, white);
   const crown = node(head, 0, 9, 0);
   return { ...kit, hips, torso, chest, head, crown, legs, arms, feet };
+}
+
+const UFO_VOX = 0.25; // about 6 units across
+
+function buildUfo() {
+  const kit = voxelKit(UFO_VOX);
+  const { box, node, body } = kit;
+  // a pixel disc: strips whose width follows the circle
+  const disc = (r, y, h, hex) => {
+    for (let k = -r + 0.5; k < r; k += 1) box(body, 2 * Math.sqrt(r * r - k * k), h, 1, 0, y, k, hex);
+  };
+  disc(9, -1.2, 1, '#8c8fa3');
+  disc(12, 0, 1.4, '#c9d2e3');
+  disc(10, 1.2, 1, '#e8eef9');
+  disc(5, 2.6, 2, PALETTE.glass);
+  disc(3.4, 4.1, 1, '#c5d6f2');
+  disc(3, -2, 0.6, '#b6ff8a'); // the glow underneath
+  // blinking lights round the rim
+  const lights = [];
+  for (let i = 0; i < 12; i++) {
+    const a = (i / 12) * Math.PI * 2;
+    const m = new THREE.MeshBasicMaterial({ color: SPARKS[i % SPARKS.length] });
+    kit.extra.push(m);
+    const l = new THREE.Mesh(BOX, m);
+    l.scale.set(1.2, 0.8, 1.2);
+    l.position.set(Math.cos(a) * 11.6, 0, Math.sin(a) * 11.6);
+    body.add(l);
+    lights.push(l);
+  }
+  // the tractor beam: a pale green column, scaled to reach the street
+  const beamMat = new THREE.MeshBasicMaterial({ color: '#b6ff8a', transparent: true, opacity: 0.3, depthWrite: false });
+  kit.extra.push(beamMat);
+  const beam = new THREE.Mesh(BOX, beamMat);
+  beam.renderOrder = 25;
+  beam.scale.set(1.6, 1, 1.6);
+  beam.visible = false;
+  kit.root.add(beam);
+  const chest = node(kit.root, 0, 0, 0);
+  const crown = node(kit.root, 0, 1.6, 0);
+  const tinyMats = new Map();
+  const grayMats = new Map();
+  const dispose = kit.dispose;
+  return {
+    ...kit, chest, crown, beam, beamMat, tinyMats, grayMats,
+    blink(t) { lights.forEach((l, i) => { l.visible = Math.floor(t * 6 + i) % 3 !== 0; }); },
+    dispose() {
+      dispose();
+      [...tinyMats.values(), ...grayMats.values()].forEach((m) => m.dispose());
+    },
+  };
+}
+
+// little figures, in world units, sharing materials through the map they are given
+function figureKit(mats) {
+  const mat = (hex) => {
+    if (!mats.has(hex)) mats.set(hex, new THREE.MeshLambertMaterial({ color: hex, flatShading: true, transparent: true }));
+    return mats.get(hex);
+  };
+  return (parent, w, h, d, x, y, z, hex) => {
+    const m = new THREE.Mesh(BOX, mat(hex));
+    m.renderOrder = 30; // over the pins, like the plane
+    m.scale.set(w, h, d);
+    m.position.set(x, y, z);
+    parent.add(m);
+    return m;
+  };
+}
+
+// a New Yorker about half a unit tall, in a shirt of the given colour
+function buildTiny(shirt, mats) {
+  const box = figureKit(mats);
+  const g = new THREE.Group();
+  box(g, 0.14, 0.2, 0.08, 0, 0.1, 0, '#3b3f57');
+  box(g, 0.18, 0.2, 0.1, 0, 0.3, 0, shirt);
+  box(g, 0.12, 0.12, 0.12, 0, 0.46, 0, '#f2c9a0');
+  return g;
+}
+
+// a little gray alien: big head, black eyes
+function buildGray(mats) {
+  const box = figureKit(mats);
+  const g = new THREE.Group();
+  box(g, 0.12, 0.28, 0.1, 0, 0, 0, '#9aa0a6');
+  box(g, 0.24, 0.2, 0.2, 0, 0.24, 0, '#b4bac0');
+  for (const sx of [-0.06, 0.06]) box(g, 0.07, 0.05, 0.03, sx, 0.25, 0.1, '#1d2340');
+  return g;
 }
 
 // ---------------------------------------------------------------------------
