@@ -1,8 +1,11 @@
 # One-off: deletes the 8bitmap-aul Worker, which also drops its aul.8bit.nyc custom domain.
-# Run it once by hand; it can be removed afterwards.
+# Runs when this file is pushed to dev, and is removed again once it has run.
 name: Retire aul
 
 on:
+  push:
+    branches: [dev]
+    paths: ['.github/workflows/retire-aul.yml']
   workflow_dispatch: {}
 
 jobs:
