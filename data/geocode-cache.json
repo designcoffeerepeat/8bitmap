@@ -164,6 +164,11 @@
   "lat": 40.705801,
   "lng": -74.012728
  },
+ "3420 Duncomb Ave, Bronx, NY in Bronx Park | Bronx": {
+  "label": "3420 DUNCOMB AVENUE, Bronx, NY, USA",
+  "lat": 40.875756,
+  "lng": -73.869839
+ },
  "35 AVENUE between 82 STREET and 81 STREET Queens | Queens": null,
  "350 Grand St | Manhattan": {
   "label": "350 GRAND STREET, New York, NY, USA",
@@ -256,6 +261,11 @@
   "label": "54 MACDONOUGH STREET, Brooklyn, NY, USA",
   "lat": 40.680736,
   "lng": -73.943693
+ },
+ "55 Hanson Place | Brooklyn": {
+  "label": "55 HANSON PLACE, Brooklyn, NY, USA",
+  "lat": 40.685636,
+  "lng": -73.975781
  },
  "55 Water Street 9th Floor | Manhattan": {
   "label": "55 WATER STREET, New York, NY, USA",
@@ -423,9 +433,11 @@
  "Canal Street, Essex Street to Orchard Street | Manhattan": null,
  "Canarsie Park House in Canarsie Park | Brooklyn": null,
  "Carmine Carro Community Center in Marine Park | Brooklyn": null,
+ "Central Lawn in Sunset Park | Brooklyn": null,
  "Central Park Gardens - Community Room | Manhattan": null,
  "Chayya Community Development Corporation, 121-18 Liberty Avenue, Richmond Hill, NY | Queens": null,
  "Cherry Tree Park Playground in Cherry Tree Park | Manhattan": null,
+ "Children's Corner in Prospect Park | Brooklyn": null,
  "Church parking lot, enter from Alameda Ave | Queens": null,
  "Classroom A - Small in Lost Battalion Hall Recreation Center | Queens": null,
  "Clayton Williams Garden | Manhattan": null,
@@ -519,6 +531,7 @@
  "Fort Totten Front Gate in Fort Totten Park | Queens": null,
  "Fort Totten Park Visitors Center in Fort Totten Park | Queens": null,
  "Frederick Douglass Blvd Community Garden | Manhattan": null,
+ "Front Entrance in Austin J. McDonald Playground | Staten Island": null,
  "Front Lawn in De Matti Park | Staten Island": null,
  "GREENWICH STREET between BEACH STREET and DUANE STREET Manhattan | Manhattan": {
   "label": "GREENWICH STREET & BEACH STREET",
@@ -667,6 +680,11 @@
   "lat": 40.856662,
   "lng": -73.842587
  },
+ "PIONEER STREET between VAN BRUNT STREET and IMLAY STREET Brooklyn | Brooklyn": {
+  "label": "PIONEER STREET & VAN BRUNT STREET",
+  "lat": 40.679169,
+  "lng": -74.011166
+ },
  "PITKIN AVENUE between LEGION STREET and MOTHER GASTON BOULEVARD Brooklyn | Brooklyn": {
   "label": "PITKIN AVENUE & LEGION STREET",
   "lat": 40.668975,
@@ -709,6 +727,11 @@
  "Queens Public Library - Seaside | Queens": null,
  "Queens Public Library - Sunnyside | Queens": null,
  "Queensbridge Park House in Queensbridge Park | Queens": null,
+ "RIVERDALE AVENUE between MOTHER GASTON BOULEVARD and ROCKAWAY AVENUE Brooklyn | Brooklyn": {
+  "label": "RIVERDALE AVENUE & MOTHER GASTON BOULEVARD",
+  "lat": 40.661763,
+  "lng": -73.904532
+ },
  "ROOSEVELT AVENUE between 103 STREET and 104 STREET Queens | Queens": null,
  "Ralph Ellison Plaza | Manhattan": null,
  "Randall's Island Park | Manhattan": null,
@@ -927,6 +950,11 @@
   "label": "CARROLL PARK, Brooklyn, NY, USA",
   "lat": 40.6811,
   "lng": -73.99547
+ },
+ "cb6: Cobble Hill Health Center|380 Henry Street": {
+  "label": "380 HENRY STREET, Brooklyn, NY, USA",
+  "lat": 40.688504,
+  "lng": -73.997812
  },
  "cb6: Cobble Hill Park|Clinton Street & Congress Street": {
   "label": "COBBLE HILL PARK, Brooklyn, NY, USA",
@@ -3015,6 +3043,7 @@
   "lat": 40.705523,
   "lng": -74.001567
  },
+ "permit place: 90 AVENUE between 179 STREET and 179 PLACE | Queens": null,
  "permit place: ALBEMARLE ROAD - MARLBOROUGH ROAD to ARGYLE ROAD: ALBEMARLE ROAD - MARLBOROUGH ROAD to ARGYLE ROAD | Brooklyn": {
   "label": "ALBEMARLE ROAD & MARLBOROUGH ROAD",
   "lat": 40.646922,
@@ -3062,10 +3091,20 @@
   "lat": 40.640614,
   "lng": -73.978691
  },
+ "permit place: BARBEY STREET between NEW LOTS AVENUE and LIVONIA AVENUE | Brooklyn": {
+  "label": "BARBEY STREET & NEW LOTS AVENUE",
+  "lat": 40.6660095,
+  "lng": -73.885555
+ },
  "permit place: BLEECKER STREET between LEROY STREET and CARMINE STREET | Manhattan": {
   "label": "BLEECKER STREET & LEROY STREET",
   "lat": 40.730992,
   "lng": -74.003102
+ },
+ "permit place: BOND STREET between BALTIC STREET and WARREN STREET | Brooklyn": {
+  "label": "BOND STREET & BALTIC STREET",
+  "lat": 40.683317,
+  "lng": -73.98687949999999
  },
  "permit place: BORDEN AVENUE between CENTER BLVD and 2ND STREET | Queens": {
   "label": "BORDEN AVENUE & CENTER BLVD",
@@ -3144,6 +3183,11 @@
   "lat": 40.72263,
   "lng": -73.96179
  },
+ "permit place: CANAL STREET - ESSEX STREET to ORCHARD STREET ,Division Street Plaza: Division Street Plaza Division Street between Ludlow Street and Canal Street | Manhattan": {
+  "label": "CANAL STREET - ESSEX STREET to ORCHARD STREET ,Division Street Plaza: Division Street Plaza Division Street & Ludlow Street",
+  "lat": 40.717491,
+  "lng": -73.989324
+ },
  "permit place: CANAL STREET between WRIGHT STREET and BAY STREET | Staten Island": {
   "label": "CANAL STREET & WRIGHT STREET",
   "lat": 40.626944,
@@ -3160,6 +3204,11 @@
   "label": "CHAUNCEY STREET & HOWARD AVENUE",
   "lat": 40.681682,
   "lng": -73.9195
+ },
+ "permit place: CHAUNCEY STREET between SARATOGA AVENUE and BOYLAND STREET | Brooklyn": {
+  "label": "CHAUNCEY STREET & SARATOGA AVENUE",
+  "lat": 40.681937,
+  "lng": -73.917304
  },
  "permit place: CLARKSON AVENUE between EAST   37 STREET and EAST   38 STREET | Brooklyn": {
   "label": "CLARKSON AVENUE & EAST 37th STREET",
@@ -3180,6 +3229,11 @@
   "label": "CONVENT AVENUE & WEST 135th STREET",
   "lat": 40.818394,
   "lng": -73.951448
+ },
+ "permit place: CORONA AVENUE between 50 AVENUE and 51 AVENUE | Queens": {
+  "label": "CORONA AVENUE & 50th AVENUE",
+  "lat": 40.741945,
+  "lng": -73.867898
  },
  "permit place: CORTELYOU ROAD between RUGBY ROAD and ARGYLE ROAD | Brooklyn": {
   "label": "CORTELYOU ROAD & RUGBY ROAD",
@@ -3452,6 +3506,11 @@
   "lat": 40.83236,
   "lng": -73.845372
  },
+ "permit place: GRAND STREET between WEST BROADWAY and THOMPSON STREET | Manhattan": {
+  "label": "GRAND STREET & WEST BROADWAY",
+  "lat": 40.722318,
+  "lng": -74.004066
+ },
  "permit place: GREENE STREET between CANAL STREET and GRAND STREET | Manhattan": {
   "label": "GREENE STREET & CANAL STREET",
   "lat": 40.720596,
@@ -3606,6 +3665,11 @@
   "lng": -73.976933
  },
  "permit place: LEXINGTON AVENUE between EAST   79 STREET and EAST   96 STREET | Manhattan": null,
+ "permit place: LIBERTY STREET between BROADWAY and TRINITY PLACE | Manhattan": {
+  "label": "LIBERTY STREET & BROADWAY",
+  "lat": 40.7096,
+  "lng": -74.01096
+ },
  "permit place: LIVINGSTON STREET between BOERUM PLACE and SMITH STREET | Brooklyn": {
   "label": "LIVINGSTON STREET & BOERUM PLACE",
   "lat": 40.690377,
@@ -3767,6 +3831,11 @@
   "lat": 40.714641,
   "lng": -73.997505
  },
+ "permit place: PIONEER STREET between VAN BRUNT STREET and IMLAY STREET | Brooklyn": {
+  "label": "PIONEER STREET & VAN BRUNT STREET",
+  "lat": 40.679169,
+  "lng": -74.011166
+ },
  "permit place: PRESIDENT STREET between WASHINGTON AVENUE and CLASSON AVENUE | Brooklyn": {
   "label": "PRESIDENT STREET & WASHINGTON AVENUE",
   "lat": 40.669084,
@@ -3800,12 +3869,23 @@
   "lng": -73.848366
  },
  "permit place: QUEENS BOULEVARD between 80 ROAD and 82 AVENUE | Queens": null,
+ "permit place: RIVERDALE AVENUE between MOTHER GASTON BOULEVARD and ROCKAWAY AVENUE | Brooklyn": {
+  "label": "RIVERDALE AVENUE & MOTHER GASTON BOULEVARD",
+  "lat": 40.661763,
+  "lng": -73.904532
+ },
+ "permit place: ROCKWOOD STREET - WALTON AVENUE to GRAND CONCOURSE: ROCKWOOD STREET - WALTON AVENUE to GRAND CONCOURSE | Bronx": null,
  "permit place: ROEBLING STREET - SOUTH 4 STREET to WILLIAMSBURG BRG EN S 4 ST: ROEBLING STREET - SOUTH 4 STREET to WILLIAMSBURG BRG EN S 4 ST | Brooklyn": {
   "label": "ROEBLING STREET & SOUTH 4th STREET",
   "lat": 40.711065,
   "lng": -73.960035
  },
  "permit place: ROOSEVELT AVENUE between 103 STREET and 104 STREET | Queens": null,
+ "permit place: RUGBY ROAD between CHURCH AVENUE and CATON AVENUE | Brooklyn": {
+  "label": "RUGBY ROAD & CHURCH AVENUE",
+  "lat": 40.64777,
+  "lng": -73.966891
+ },
  "permit place: Rainey Park | Bronx": null,
  "permit place: Randall's Island Park | Manhattan": {
   "label": "RANDALL'S ISLAND PARK, New York, NY, USA",
@@ -4070,6 +4150,11 @@
   "lat": 40.70567,
   "lng": -73.907413
  },
+ "permit place: WORTH STREET between LAFAYETTE STREET and BROADWAY | Manhattan": {
+  "label": "WORTH STREET & LAFAYETTE STREET",
+  "lat": 40.716061,
+  "lng": -74.003493
+ },
  "permit place: Walter Gladwin Park | Bronx": {
   "label": "WALTER GLADWIN PARK, Bronx, NY, USA",
   "lat": 40.84527,
@@ -4091,6 +4176,7 @@
   "lng": -73.9976
  },
  "permit place: Wayanda Park (PS 34) | Queens": null,
+ "permit place: West Park ave between E 42nd street and E 41st street | Manhattan": null,
  "permit place: Westerleigh Park | Staten Island": {
   "label": "WESTERLEIGH PARK, Staten Island, NY, USA",
   "lat": 40.61983,

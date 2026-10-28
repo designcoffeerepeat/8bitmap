@@ -119,6 +119,12 @@
   "lat": 40.725712,
   "lng": -73.991683
  },
+ "Boyfriend co-op": {
+  "address": "1157 Myrtle Ave, Brooklyn",
+  "checked": "2026-10-28",
+  "lat": 40.69722,
+  "lng": -73.934697
+ },
  "Brooklyn Bowl": {
   "address": "61 Wythe Avenue, Brooklyn",
   "checked": "2026-10-22",
@@ -227,6 +233,12 @@
   "lat": 40.673074,
   "lng": -73.950509
  },
+ "DROM": {
+  "address": "85 Avenue A",
+  "checked": "2026-10-28",
+  "lat": 40.725329,
+  "lng": -73.984453
+ },
  "Danger Danger": {
   "address": "232 Knickerbocker Ave, Brooklyn",
   "checked": "2026-10-22",
@@ -292,6 +304,12 @@
   "checked": "2026-10-22",
   "lat": 40.750049,
   "lng": -73.984967
+ },
+ "Edge - Hudson Yards": {
+  "address": "30 Hudson Yards",
+  "checked": "2026-10-28",
+  "lat": 40.75351,
+  "lng": -74.000888
  },
  "Elsewhere": {
   "address": "599 Johnson Ave, Brooklyn",
@@ -485,6 +503,12 @@
   "lat": 40.675032,
   "lng": -73.999104
  },
+ "Los Depressos": {
+  "address": "1271a Fulton Street, Brooklyn",
+  "checked": "2026-10-28",
+  "lat": null,
+  "lng": null
+ },
  "Lucinda's": {
   "address": "",
   "checked": "2026-10-22",
@@ -527,6 +551,12 @@
   "lat": 40.79378,
   "lng": -74.477962
  },
+ "McCarter Theatre Center": {
+  "address": "91 University Place, Princeton",
+  "checked": "2026-10-28",
+  "lat": 40.345234,
+  "lng": -74.66059
+ },
  "Melrose Ballroom": {
   "address": "3608 33rd Street, Astoria",
   "checked": "2026-10-24",
@@ -568,6 +598,12 @@
   "checked": "2026-10-23",
   "lat": 40.721757,
   "lng": -73.987937
+ },
+ "Mulcahy’s": {
+  "address": "3232 Railroad Avenue, Wantagh",
+  "checked": "2026-10-28",
+  "lat": 40.672606,
+  "lng": -73.51009
  },
  "Music Hall of Williamsburg": {
   "address": "66 North 6th Street, Brooklyn",
@@ -617,6 +653,12 @@
   "lat": 40.722006,
   "lng": -73.992275
  },
+ "Pacha New York": {
+  "address": "140 Stewart Avenue, Brooklyn",
+  "checked": "2026-10-28",
+  "lat": 40.71071,
+  "lng": -73.9261
+ },
  "Palladium Times Square": {
   "address": "1515 Broadway",
   "checked": "2026-10-23",
@@ -634,6 +676,12 @@
   "checked": "2026-10-22",
   "lat": 41.290032,
   "lng": -73.919668
+ },
+ "Patio at Radio Hotel": {
+  "address": "",
+  "checked": "2026-10-28",
+  "lat": null,
+  "lng": null
  },
  "Pianos": {
   "address": "158 Ludlow Street",
@@ -851,11 +899,23 @@
   "lat": null,
   "lng": null
  },
+ "TBA - Secret Location": {
+  "address": "",
+  "checked": "2026-10-28",
+  "lat": null,
+  "lng": null
+ },
  "TBA - The Bakery": {
   "address": "",
   "checked": "2026-10-22",
   "lat": null,
   "lng": null
+ },
+ "TBA - Then House 29 locust street. Brooklyn": {
+  "address": "29 Locust St, Brooklyn",
+  "checked": "2026-10-28",
+  "lat": 40.69949,
+  "lng": -73.937636
  },
  "TBA - Underground Event (sign up link in description)": {
   "address": "",
@@ -922,6 +982,12 @@
   "checked": "2026-10-22",
   "lat": 40.761757,
   "lng": -73.983274
+ },
+ "The Meadows": {
+  "address": "17 Meadow Street, Brooklyn",
+  "checked": "2026-10-28",
+  "lat": 40.710886,
+  "lng": -73.936609
  },
  "The Paramount In Concert With Northwell": {
   "address": "370 New York Avenue, Huntington",
@@ -1013,6 +1079,12 @@
   "lat": 40.715004,
   "lng": -73.951552
  },
+ "United Palace": {
+  "address": "4140 Broadway",
+  "checked": "2026-10-28",
+  "lat": 40.846457,
+  "lng": -73.937867
+ },
  "Unveiled": {
   "address": "94 North 13th Street, Brooklyn",
   "checked": "2026-10-22",
@@ -1067,6 +1139,12 @@
   "lat": 40.692404,
   "lng": -73.927613
  },
+ "Xanadu": {
+  "address": "262 Starr Street, Brooklyn",
+  "checked": "2026-10-28",
+  "lat": 40.706435,
+  "lng": -73.921458
+ },
  "[untitled]": {
   "address": "55-57 N 9th St, Brooklyn",
   "checked": "2026-10-22",
@@ -1084,5 +1162,11 @@
   "checked": "2026-10-22",
   "lat": 40.682176,
   "lng": -73.98639
+ },
+ "telos.haus": {
+  "address": "303 Ten Eyck St, Brooklyn",
+  "checked": "2026-10-28",
+  "lat": 40.711592,
+  "lng": -73.93696
  }
 }

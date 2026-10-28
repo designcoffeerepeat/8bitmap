@@ -3,14 +3,37 @@
   "name": "National Park Service",
   "url": "https://www.nps.gov/state/ny/index.htm"
  },
- "date": "2026-10-27",
- "fetchedAt": "2026-10-27T14:50:24-04:00",
+ "date": "2026-10-28",
+ "fetchedAt": "2026-10-28T05:24:25-04:00",
  "events": [
+  {
+   "id": "E2214AE5-F7F6-297F-3131D768ACD7CEB2",
+   "title": "Ranger-Guided Tour of Federal Hall",
+   "category": "community",
+   "start": "2026-10-28T10:30:00-04:00",
+   "end": "2026-10-28T11:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Federal Hall National Memorial",
+    "address": "15 Pine St",
+    "neighborhood": "Federal Hall National Memorial",
+    "lat": 40.707294,
+    "lng": -74.010241
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Join a ranger for a guided tour of Federal Hall.",
+   "details": "Join a ranger for a guided tour of Federal Hall.",
+   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=E2214AE5-F7F6-297F-3131D768ACD7CEB2",
+   "tags": [
+    "Guided Tour"
+   ]
+  },
   {
    "id": "0D25A738-155D-451F-67D31ADD6827D16D",
    "title": "Castle Clinton Guided tour",
    "category": "community",
-   "start": "2026-10-27T10:00:00-04:00",
+   "start": "2026-10-28T10:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -30,28 +53,26 @@
    ]
   },
   {
-   "id": "B9801ACF-9833-E501-534AA6148F572210",
-   "title": "Reel Fun on Jamaica Bay! Junior Angler Fishing Clinic",
-   "category": "art",
-   "start": "2026-10-27T16:00:00-04:00",
-   "end": "2026-10-27T18:00:00-04:00",
+   "id": "6EDF053C-C210-BD98-EB826C1AD4526045",
+   "title": "House Tour",
+   "category": "community",
+   "start": "2026-10-28T11:00:00-04:00",
+   "end": null,
    "allDay": false,
    "venue": {
-    "name": "Gateway National Recreation Area",
-    "address": "Canarsie Pier",
-    "neighborhood": "Gateway National Recreation Area",
-    "lat": 40.5903,
-    "lng": -73.8914
+    "name": "Theodore Roosevelt Birthplace",
+    "address": "The tour is inside the brownstone at 28 E 20th St, New York, NY 10029",
+    "neighborhood": "Theodore Roosevelt Birthplace National Historic Site",
+    "lat": 40.738672,
+    "lng": -73.988962
    },
    "price": null,
    "priceUnknown": false,
-   "description": "Families are invited to join National Park Service Rangers and our friends from the Jamaica Bay Rockaway Parks Conservancy for an afternoon of fishing! Whether you are an aspiring Jr. Angler or have d",
-   "details": "Families are invited to join National Park Service Rangers and our friends from the Jamaica Bay Rockaway Parks Conservancy for an afternoon of fishing! Whether you are an aspiring Jr. Angler or have dropped a line before, this hands-on program is the perfect way to experience the fun of fishing together. Discover local marine life, learn how to become an ethical angler, and practice dropping a cast. All fishing gear provided.",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=B9801ACF-9833-E501-534AA6148F572210",
+   "description": "Times: 11:00 AM, 12:00 PM, 2:00 PM, 3:00 PM. Take a tour of 5 recreated period rooms and learn about Theodore Roosevelt's early life in New York City!",
+   "details": "Take a tour of 5 recreated period rooms and learn about Theodore Roosevelt's early life in New York City!",
+   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=6EDF053C-C210-BD98-EB826C1AD4526045",
    "tags": [
-    "Cultural/Craft Demonstration",
-    "Other",
-    "Partner Program"
+    "Guided Tour"
    ]
   }
  ],
