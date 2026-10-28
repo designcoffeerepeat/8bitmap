@@ -248,11 +248,17 @@ bar placed from the coordinates on its listing page), Public Records' event cale
 Onderdonk House's events and the Myrtle Avenue BID's plaza concerts and street festivals (placed at Herman Hochberg
 Plaza, or on Myrtle Avenue when an event gives no place), and six in and around Flushing: Queens Botanical Garden's
 events feed, the New York Hall of Science's one-time public events, the Queens Night Market's next market night, and
-the events lists of Kingsland Homestead (Queens Historical Society), Bowne House and Lewis Latimer House. H0L0's ticket links go to the ticket sellers it uses. A film is one event at its first showing, with the day's
+the events lists of Kingsland Homestead (Queens Historical Society), Bowne House and Lewis Latimer House, and The Cooper Union's
+public lectures, talks and performances (its month page, leaving out in-class lectures). H0L0's ticket links go to the ticket sellers it uses. A film is one event at its first showing, with the day's
 showtimes in its description. Each event names its venue as its publisher (trivia nights name NYC Trivia League),
 so they are listed one by one in the Sources dropdown. Venues are placed once from the street address in `VENUES`
 and remembered in `data/geocode-cache.json`. Adding a venue means a reader function, an entry in `VENUES` and a
 place in `READERS`. Only title, time, price when given and a link are kept.
+
+Replacements for Luma (parked 2026-10-28) were checked the same day: The Cooper Union has no terms against reading its
+events pages and its robots.txt allows them, so it is read here. NYU's and Columbia's calendars and the NYC Council's
+Legistar API turn automated visits away or need a key, and The New School's events load from an /api path its
+robots.txt keeps readers off, so they are left out for now.
 
 Check a site's terms of use before adding it. St. Marks Comedy Club, QED, McNally Jackson and Apple forbid automated
 access, Flushing Town Hall and the Kupferberg Center forbid republishing their content, and Queens Theatre turns
