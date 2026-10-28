@@ -430,6 +430,9 @@ button, a { font: inherit; color: inherit; }
 .monster-hp i { display: block; width: 72px; height: 10px; padding: 2px; background: var(--night); border: 2px solid var(--frame); }
 .monster-hp b { display: block; height: 100%; width: 100%; background: #6ee07a; }
 .monster-hp.is-low b { background: var(--pin); }
+/* the robot's speech bubble */
+.monster-say { position: absolute; left: 0; top: 0; pointer-events: none; padding: 6px 8px 5px; white-space: nowrap; font: 8px/1 var(--font-pixel); letter-spacing: .5px; color: var(--night); background: #ffffff; border: 2px solid var(--night); }
+.monster-say[hidden] { display: none; }
 /* the warning before an attack that starts by itself, with STOP and NO MORE */
 .monster-warn { white-space: normal; }
 .monster-warn p { max-width: 48ch; }

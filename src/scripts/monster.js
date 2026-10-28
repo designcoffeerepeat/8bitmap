@@ -1,14 +1,15 @@
-// Monster easter egg. One of five voxel monsters attacks a corner of the city:
+// Monster easter egg. One of six voxel monsters attacks a corner of the city:
 //   lizard  a kaiju wades in from the edge of the view, stomps toward Midtown and breathes fire on the streets
 //   ape     a rather large ape leaps in, climbs the Empire State Building with a blond woman in its hand,
 //           and swats at the plane from the top; when it falls she somersaults into the plane
 //   alien   a long-limbed alien rises out of Central Park, roars and shakes off little parasites
 //   fluff   the Always Pudgy Fluff Dude forms on the Upper West Side and stomps around, smiling
 //   ufo     a flying saucer drifts over the Village beaming people up; shot down, gray aliens fall out on fire
+//   robot   a giant robot on Wall Street shouts GIVE ME ALL YOUR JOBS! and lasers the towers with its eyes
 // While it is on screen a little plane circles the cursor (on phones, the last tap); clicking or tapping fires
 // the plane's machine gun. Once hit, a health bar shows over its head, and enough hits bring it down in a burst
 // of 8-bit fireworks. It starts from MONSTER ATTACK! in the + menu (CALL OFF THE ATTACK ends it), or by itself
-// every five minutes, cycling through the five, after a ten second warning with STOP and NO MORE.
+// every five minutes, cycling through the six, after a ten second warning with STOP and NO MORE.
 
 import * as THREE from 'three';
 import { COLS, ROWS, LANDMARKS, latLngToWorld } from './map/geo.js';
@@ -34,8 +35,9 @@ const MONSTERS = {
   alien: { name: 'ALIEN MONSTER', tag: 'ALIEN', where: 'IN CENTRAL PARK', at: [40.7812, -73.9665], zoom: 2, hp: 50, planeAlt: 9, spread: 0.8, puff: 0.6, create: createAlien },
   fluff: { name: 'ALWAYS PUDGY FLUFF DUDE', tag: 'DUDE', where: 'ON THE UPPER WEST SIDE', at: [40.7865, -73.9770], zoom: 2, hp: 50, planeAlt: 10, spread: 0.9, puff: 0.6, create: createFluff },
   ufo: { name: 'UFO', tag: 'UFO', where: 'OVER MANHATTAN', at: [40.7308, -73.9973], zoom: 2, hp: 50, planeAlt: 15, spread: 1.2, puff: 0.8, create: createUfo },
+  robot: { name: 'GIANT ROBOT', tag: 'ROBOT', where: 'ON WALL STREET', at: [40.7069, -74.0113], zoom: 2, hp: 55, planeAlt: 11, spread: 1, puff: 0.7, create: createRobot },
 };
-const ORDER = ['lizard', 'ape', 'alien', 'fluff', 'ufo'];
+const ORDER = ['lizard', 'ape', 'alien', 'fluff', 'ufo', 'robot'];
 
 const C = {
   body: '#3d5a4a', dark: '#24362d', belly: '#9fbf8f', spine: '#e8eef9', glow: '#7fe3ff',
@@ -1054,6 +1056,182 @@ function createUfo(ctx) {
 }
 const tmpV = new THREE.Vector3();
 
+// the giant robot: lands on rocket feet and stomps around Wall Street shouting GIVE ME ALL YOUR JOBS! and lasers the office towers
+// with its eyes, setting their roofs on fire. Shot down, it sparks, its head pops off and it blows apart.
+function createRobot(ctx) {
+  const { map, s, fx, center } = ctx;
+  const r = buildRobot();
+  const root = r.root;
+  r.beams.forEach((b) => ctx.group.add(b));
+  // it drops out of the sky on rocket feet, a couple of blocks from Wall Street
+  const start = center.clone().add(new THREE.Vector3(rand(3), 0, rand(3)));
+  const floor0 = floorAt(map, start.x, start.z);
+  root.position.set(start.x, floor0 + 22, start.z);
+  const st = { mode: 'land', modeT: 0, phase: 0, heading: Math.atan2(center.x - start.x, center.z - start.z), goal: center.clone(), next: 3, target: null, said: 0, headV: null };
+  root.rotation.y = st.heading;
+  const set = (mode) => { st.mode = mode; st.modeT = 0; };
+  const eyePos = new THREE.Vector3();
+  const tmp = new THREE.Vector3();
+
+  // its speech bubble, over its head like the health bar
+  const bubble = document.createElement('div');
+  bubble.className = 'monster-say';
+  bubble.textContent = 'GIVE ME ALL YOUR JOBS!';
+  bubble.hidden = true;
+  map.canvas.parentElement.appendChild(bubble);
+  const say = (on) => { bubble.hidden = !on; };
+  function placeBubble() {
+    if (bubble.hidden) return;
+    r.crown.getWorldPosition(tmp);
+    tmp.y += 1.4;
+    const p = map.toScreen(tmp);
+    bubble.style.transform = `translate(${Math.round(p.x)}px, ${Math.round(p.y) - 30}px) translate(-50%, -100%)`;
+  }
+
+  // a rooftop a few blocks away to laser
+  function pickTarget() {
+    for (let i = 0; i < 12; i++) {
+      const a = st.heading + rand(1.2);
+      const d = 3 + Math.random() * 5;
+      const x = root.position.x + Math.sin(a) * d;
+      const z = root.position.z + Math.cos(a) * d;
+      const roof = map.rooftop(Math.floor(x + COLS / 2), Math.floor(z + ROWS / 2));
+      if (roof && roof.top > 1) return new THREE.Vector3(roof.x, roof.top, roof.z);
+    }
+    const a = st.heading;
+    const x = root.position.x + Math.sin(a) * 5;
+    const z = root.position.z + Math.cos(a) * 5;
+    return new THREE.Vector3(x, floorAt(map, x, z), z);
+  }
+
+  function aimBeams(target, t) {
+    r.beams.forEach((b, i) => {
+      r.eyes[i].getWorldPosition(eyePos);
+      const end = target.clone().add(new THREE.Vector3(Math.sin(t * 9 + i) * 0.15, 0, Math.cos(t * 7 + i) * 0.15));
+      const len = eyePos.distanceTo(end);
+      b.position.copy(eyePos).lerp(end, 0.5);
+      b.lookAt(end);
+      b.scale.set(0.12, 0.12, len);
+      b.visible = true;
+    });
+    r.beamMat.opacity = 0.75 + Math.sin(t * 40) * 0.2;
+  }
+
+  return {
+    root, chest: r.chest, crown: r.crown, setFlash: r.setFlash,
+    dispose() { bubble.remove(); r.dispose(); },
+    update(dt, t) {
+      st.modeT += dt;
+      const T = st.modeT;
+      // shouts every few seconds
+      if (st.mode !== 'land' && bubble.hidden && t - st.said > 6) { st.said = t; say(true); }
+      if (!bubble.hidden && t - st.said > 2.6) say(false);
+      placeBubble();
+      r.antenna.visible = Math.floor(t * 4) % 2 === 0;
+      if (st.mode === 'land') {
+        const e = Math.min(1, T / 2.4);
+        root.position.y = floor0 + 22 * (1 - ease(e));
+        for (const f of r.feet) {
+          if (Math.random() > dt * 40) continue;
+          f.getWorldPosition(tmp);
+          fx.add({ p: tmp.clone(), v: new THREE.Vector3(rand(0.4), -3 - Math.random() * 2, rand(0.4)), life: 0.4, size: 0.35, g: 0, ramp: RAMPS.flame });
+        }
+        if (e >= 1) {
+          ctx.shake(5, 0.4);
+          ctx.dustRing(root.position, 36, 3.2);
+          set('walk');
+          st.said = -10; // shouts as soon as it lands
+        }
+      } else if (st.mode === 'walk') {
+        if (walkTo(root, st, st.goal, 0.8, dt, 1.2) < 1.5) {
+          const a = Math.random() * Math.PI * 2;
+          const d = 2 + Math.random() * 6;
+          st.goal = new THREE.Vector3(center.x + Math.cos(a) * d, 0, center.z + Math.sin(a) * d);
+        }
+        const foot = stride(st, dt, 1.4);
+        if (foot) {
+          const p = (foot > 0 ? r.feet[1] : r.feet[0]).getWorldPosition(new THREE.Vector3());
+          p.y = floorAt(map, p.x, p.z);
+          ctx.dustRing(p, 12, 1.3);
+          ctx.shake(2, 0.1);
+        }
+        // a stiff, mechanical stride
+        const sw = Math.round(Math.sin(st.phase) * 4) / 4;
+        r.legs[0].rotation.x = sw * 0.4;
+        r.legs[1].rotation.x = -sw * 0.4;
+        r.arms[0].rotation.x = -sw * 0.35;
+        r.arms[1].rotation.x = sw * 0.35;
+        r.head.rotation.y = Math.sin(t * 0.9) * 0.3;
+        settle(map, root, dt);
+        if (T > st.next) { set('laser'); st.target = pickTarget(); }
+      } else {
+        // turn to the tower, eyes glow, then a steady laser that sets the roof on fire
+        const want = Math.atan2(st.target.x - root.position.x, st.target.z - root.position.z);
+        st.heading += wrapAngle(want - st.heading) * Math.min(1, dt * 4);
+        root.rotation.y = st.heading;
+        r.head.rotation.y *= 1 - Math.min(1, dt * 6);
+        r.eyeMat.color.set(T < 0.6 && Math.floor(T * 12) % 2 ? '#ffffff' : '#ff2a2a');
+        const firing = T > 0.6 && T < 2.8;
+        r.beams.forEach((b) => { b.visible = false; });
+        if (firing) {
+          aimBeams(st.target, t);
+          if (Math.random() < dt * 50) {
+            fx.add({ p: st.target.clone().add(rand3(0.2)), v: rand3(2.5).setY(1 + Math.random() * 2), life: 0.4, size: 0.2, g: 5, ramp: RAMPS.bullet });
+          }
+          if (Math.random() < dt * 4 && s.fires.length < 40) s.fires.push({ p: st.target.clone().add(new THREE.Vector3(rand(0.4), 0, rand(0.4))), life: 6 + Math.random() * 4 });
+          if (Math.random() < dt * 3) ctx.shake(1, 0.08);
+        }
+        if (T > 3.2) {
+          r.eyeMat.color.set('#ff2a2a');
+          set('walk');
+          st.next = 3 + Math.random() * 3;
+        }
+      }
+    },
+    onDefeat() {
+      r.beams.forEach((b) => { b.visible = false; });
+      bubble.textContent = 'NO MORE JOBS...';
+      say(true);
+      placeBubble();
+    },
+    die(dt, T) {
+      placeBubble();
+      // sparks and judders, the eyes go dark, then the head pops off and the body blows apart
+      r.eyeMat.color.set(Math.floor(T * 10) % 2 ? '#3b3f57' : '#ff2a2a');
+      root.rotation.z = rand(0.04);
+      if (Math.random() < dt * 30) {
+        r.chest.getWorldPosition(tmp);
+        fx.add({ p: tmp.clone().add(rand3(1.5)), v: rand3(3).setY(2 + Math.random() * 2), life: 0.5, size: 0.2, g: 6, ramp: RAMPS.bullet });
+      }
+      if (T > 1 && !st.headV) {
+        st.headV = new THREE.Vector3(rand(1), 7, rand(1));
+        say(false);
+        r.chest.getWorldPosition(tmp);
+        ctx.shake(6, 0.5);
+        ctx.explode(tmp.clone(), 150, 5, RAMPS.boom, 0.45);
+        ctx.explode(tmp.clone(), 60, 4, RAMPS.smoke, 0.4);
+        ctx.dustRing(root.position, 36, 3.5);
+        r.body.visible = false;
+        r.head.getWorldPosition(tmp);
+        ctx.group.attach(r.head);
+        r.head.visible = true;
+      }
+      if (st.headV) {
+        st.headV.y -= 12 * dt;
+        r.head.position.addScaledVector(st.headV, dt);
+        r.head.rotation.x += dt * 6;
+        const floor = floorAt(map, r.head.position.x, r.head.position.z);
+        if (r.head.position.y <= floor) {
+          r.head.visible = false;
+          ctx.explode(r.head.position.clone().setY(floor + 0.3), 50, 3, RAMPS.boom, 0.35);
+          return true;
+        }
+      }
+      return false;
+    },
+  };
+}
+
 // ---------------------------------------------------------------------------
 // the gigantic lizard: a stack of voxel boxes with pivots for legs, arms, tail, head and jaw
 
@@ -1493,6 +1671,78 @@ function buildGray(mats) {
   box(g, 0.24, 0.2, 0.2, 0, 0.24, 0, '#b4bac0');
   for (const sx of [-0.06, 0.06]) box(g, 0.07, 0.05, 0.03, sx, 0.25, 0.1, '#1d2340');
   return g;
+}
+
+const ROBOT_VOX = 0.3; // about 7 units tall
+
+function buildRobot() {
+  const steel = '#8c8fa3';
+  const light = '#c9d2e3';
+  const dark = '#3b3f57';
+  const kit = voxelKit(ROBOT_VOX);
+  const { box, node, body } = kit;
+  const hips = node(body, 0, 9, 0);
+  box(hips, 6, 1.6, 3.6, 0, 0, 0, dark);
+  const feet = [];
+  const legs = [-1, 1].map((side) => {
+    const leg = node(hips, side * 2, -0.4, 0);
+    box(leg, 2.4, 4, 2.4, 0, -2.2, 0, steel);
+    box(leg, 2.8, 1, 2.8, 0, -4.5, 0, dark); // knee
+    box(leg, 2.4, 3.4, 2.4, 0, -6.4, 0, steel);
+    box(leg, 3, 1.2, 4, 0, -8.2, 0.5, dark);
+    feet.push(node(leg, 0, -8.6, 0.5));
+    return leg;
+  });
+  const torso = node(hips, 0, 0.8, 0);
+  box(torso, 7.6, 6.4, 4.6, 0, 3.4, 0, light);
+  box(torso, 4.4, 3, 0.4, 0, 3.6, 2.4, dark);
+  // chest panel lights
+  [PALETTE.pinHi, '#6ee07a', '#7fe3ff'].forEach((hex, i) => box(torso, 0.8, 0.8, 0.3, -1.3 + i * 1.3, 4.2, 2.65, hex));
+  box(torso, 3, 0.4, 0.3, 0, 2.8, 2.65, PALETTE.pin);
+  box(torso, 9.2, 1.8, 3.6, 0, 6.4, 0, steel); // shoulders
+  const chest = node(torso, 0, 3.5, 1.5);
+  const arms = [-1, 1].map((side) => {
+    const arm = node(torso, side * 5, 6.4, 0);
+    box(arm, 1.8, 4, 1.8, 0, -2.4, 0, steel);
+    box(arm, 2.2, 0.9, 2.2, 0, -4.6, 0, dark);
+    box(arm, 1.8, 3, 1.8, 0, -6.4, 0, steel);
+    for (const cx of [-0.5, 0.5]) box(arm, 0.6, 1.4, 1.6, cx, -8.4, 0.2, dark); // claw
+    return arm;
+  });
+  box(torso, 1.6, 1, 1.6, 0, 7.6, 0, dark); // neck
+  const head = node(torso, 0, 8.1, 0);
+  box(head, 4, 3.4, 3.6, 0, 1.7, 0, light);
+  box(head, 3.4, 1.2, 0.3, 0, 2.2, 1.85, dark); // visor
+  box(head, 2.4, 0.4, 0.3, 0, 0.8, 1.85, steel); // mouth grille
+  for (const sx of [-2.2, 2.2]) box(head, 0.4, 1.4, 1.4, sx, 1.8, 0, steel); // ear bolts
+  box(head, 0.3, 1.6, 0.3, 0, 4.2, 0, steel);
+  // glowing eyes and the antenna light, unlit so they always shine
+  const eyeMat = new THREE.MeshBasicMaterial({ color: '#ff2a2a' });
+  const antMat = new THREE.MeshBasicMaterial({ color: PALETTE.pin });
+  kit.extra.push(eyeMat, antMat);
+  const eyes = [-0.9, 0.9].map((sx) => {
+    const e = new THREE.Mesh(BOX, eyeMat);
+    e.scale.set(0.8, 0.6, 0.3);
+    e.position.set(sx, 2.2, 2.05);
+    head.add(e);
+    return e;
+  });
+  const antenna = new THREE.Mesh(BOX, antMat);
+  antenna.scale.set(0.7, 0.7, 0.7);
+  antenna.position.set(0, 5.3, 0);
+  head.add(antenna);
+  const crown = node(head, 0, 5.5, 0);
+  // the eye lasers: thin red bars stretched from each eye to the target, drawn over the pins (the robot puts them
+  // in the scene, since they are placed in world space)
+  const beamMat = new THREE.MeshBasicMaterial({ color: '#ff2a2a', transparent: true, opacity: 0.85, depthWrite: false });
+  kit.extra.push(beamMat);
+  const beams = [0, 1].map(() => {
+    const b = new THREE.Mesh(BOX, beamMat);
+    b.renderOrder = 30;
+    b.visible = false;
+    return b;
+  });
+  return { ...kit, hips, torso, chest, head, crown, legs, arms, feet, eyes, eyeMat, antenna, beams, beamMat };
 }
 
 // ---------------------------------------------------------------------------
