@@ -6,7 +6,7 @@ Each release from dev to the live site (main) gets a version number here, so it 
 
 aul was a separate, more detailed version of the map at https://aul.8bit.nyc, built on the `aul` branch and
 deployed to its own Worker (8bitmap-aul). All of it was merged into dev as v1.15 on 2026-10-28, and the site and
-Worker were then taken down. The branch `aul` and the tag `aul-v6` keep its last state.
+Worker were then taken down. The `aul` branch is kept as is, so its last state (aul v6) stays in git.
 
 - aul v1: detailed map with real parks, roads, landmarks and airports.
 - aul v2: subway alerts in the + menu, softer highways.
