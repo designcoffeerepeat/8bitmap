@@ -3,28 +3,28 @@
   "name": "Jersey City calendars",
   "url": "https://jerseycityculture.org/events/calendar/"
  },
- "date": "2026-10-28",
- "fetchedAt": "2026-10-27T13:13:55-04:00",
+ "date": "2026-10-29",
+ "fetchedAt": "2026-10-28T05:19:22-04:00",
  "events": [
   {
-   "id": "jc-city-hall-annex-202610281000-employee-wellness-fair",
-   "title": "Employee Wellness Fair",
+   "id": "jc-newport-centre-202610291600-jcpd-east-district-trunk-or-treat",
+   "title": "JCPD East District Trunk or Treat",
    "category": "community",
-   "start": "2026-10-28T10:00:00-04:00",
-   "end": "2026-10-28T15:00:00-04:00",
+   "start": "2026-10-29T16:00:00-04:00",
+   "end": "2026-10-29T19:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "City Hall Annex",
-    "address": "360 Martin Luther King Dr., Jersey City, NJ",
+    "name": "Newport Centre",
+    "address": "30 Mall Dr W, Jersey City, NJ",
     "neighborhood": "Jersey City",
-    "lat": 40.710084,
-    "lng": -74.079851
+    "lat": 40.727,
+    "lng": -74.037
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://jerseycityculture.org/event/employee-wellness-fair-2026/",
+   "url": "https://jerseycityculture.org/event/jcpd-east-district-trunk-or-treat-2026/",
    "tags": [],
    "publisher": {
     "id": "venue-jersey-city-culture",
@@ -33,36 +33,10 @@
    }
   },
   {
-   "id": "jc-hamilton-park-202610281600-hamilton-park-farmers-market",
-   "title": "Hamilton Park Farmers Market",
-   "category": "food",
-   "start": "2026-10-28T16:00:00-04:00",
-   "end": "2026-10-28T19:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Hamilton Park",
-    "address": "9 McWilliams Pl, Jersey City, NJ",
-    "neighborhood": "Jersey City",
-    "lat": 40.7278,
-    "lng": -74.0446
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://jerseycityculture.org/event/hamilton-park-farmers-market-2026/2026-10-28/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-jersey-city-culture",
-    "name": "Jersey City Culture",
-    "url": "https://jerseycityculture.org/events/calendar/"
-   }
-  },
-  {
-   "id": "jc-art-house-productions-202610281930-lizzie-borden",
-   "title": "Lizzie Borden",
-   "category": "theater",
-   "start": "2026-10-28T19:30:00-04:00",
+   "id": "jc-art-house-productions-202610291930-rocky-horror-picture-show",
+   "title": "Rocky Horror Picture Show",
+   "category": "film",
+   "start": "2026-10-29T19:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -74,13 +48,13 @@
    },
    "price": {
     "min": 20,
-    "max": 40,
+    "max": 30,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://www.arthouseproductions.org/products/lizzie-borden-october-28-2026",
+   "url": "https://www.arthouseproductions.org/products/rocky-horror-picture-show-october-29-2026",
    "tags": [],
    "publisher": {
     "id": "venue-art-house-productions",
@@ -89,5 +63,11 @@
    }
   }
  ],
- "unplaced": []
+ "unplaced": [
+  {
+   "title": "JCPD North District Trunk or Treat",
+   "venue": "JCPD NORTH DISTRICT",
+   "address": "JEFFERSON AVENUE BETWEEN CENTRAL AVENUE AND SUMMIT AVENUE"
+  }
+ ]
 }

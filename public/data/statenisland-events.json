@@ -3,8 +3,35 @@
   "name": "Staten Island calendars",
   "url": "https://www.historicrichmondtown.org/"
  },
- "date": "2026-10-27",
- "fetchedAt": "2026-10-27T13:12:47-04:00",
- "events": [],
+ "date": "2026-10-28",
+ "fetchedAt": "2026-10-28T05:18:01-04:00",
+ "events": [
+  {
+   "id": "staten-island-children-s-museum-202610281300-walk-in-workshop-plenty-of-purples",
+   "title": "Walk-In! Workshop: Plenty of Purples",
+   "category": "art",
+   "start": "2026-10-28T13:00:00-04:00",
+   "end": "2026-10-28T16:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Staten Island Children's Museum",
+    "address": "1000 Richmond Terrace",
+    "neighborhood": "",
+    "lat": 40.64405,
+    "lng": -74.10176
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://sichildrensmuseum.org/event/walk-in-workshop-plenty-of-purples/2026-10-28/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-staten-island-children-s-museum",
+    "name": "Staten Island Children's Museum",
+    "url": "https://sichildrensmuseum.org/"
+   }
+  }
+ ],
  "unplaced": []
 }
