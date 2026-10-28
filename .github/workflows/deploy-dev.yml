@@ -53,11 +53,3 @@ jobs:
       - name: Explain the missing token
         if: env.CLOUDFLARE_API_TOKEN == ''
         run: echo "::warning::Add the CLOUDFLARE_API_TOKEN repository secret to publish dev."
-
-  # Rebuilds the detailed map at aul.8bit.nyc (branch aul) after each dev deploy, so it shows
-  # dev's latest events too. Everything on aul is now on dev as well (v1.15); remove this job
-  # when aul.8bit.nyc is retired.
-  aul:
-    needs: deploy
-    uses: designcoffeerepeat/8bitmap/.github/workflows/deploy-aul.yml@aul
-    secrets: inherit

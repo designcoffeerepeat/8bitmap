@@ -27,10 +27,7 @@ In VS Code you can also press F5 (Run and Debug, "Development server") to start 
 
 ## Deploying
 
-Three branches:
-
-- `aul`: the more detailed map, at https://aul.8bit.nyc (same password as dev), deployed by
-  `.github/workflows/deploy-aul.yml` with dev's latest event snapshots. Kept apart from dev until it is merged in.
+Two branches (the detailed map's old `aul` branch and aul.8bit.nyc were folded into dev in v1.15 and retired):
 
 - `dev`: every change lands here first. Cloudflare builds it as a preview (see the Workers Builds
   check on the commit in GitHub for its link) so it can be tested before going live.
@@ -402,14 +399,14 @@ and the same show listed on several sites is merged by title, venue and start ti
   the MTA's live alerts feed and keeps it for two minutes). A headline like "No [L] trains between 8 Av and Bedford
   Av" is matched to the line's stations (`src/scripts/subway-spans.js`) and that stretch is drawn red with a ! pin
   that shows the alert. The lines and stations are `src/scripts/map/subway.json`, written by `tools/build_subway.py`
-  from the MTA's subway GTFS before every aul build; the copy in git is empty, so a local build lists the lines
+  from the MTA's subway GTFS before every dev build; the copy in git is empty, so a local build lists the lines
   without drawing them unless you run the script first. `node tools/check_subway_spans.mjs alerts.json` shows how
-  the live alerts match (the aul workflow prints it).
+  the live alerts match.
 - Weather: the button at the bottom left asks `/api/weather` (the National Weather Service's hourly forecast for
   Central Park, kept 15 minutes) and its card has the chance of rain, the umbrella answer and WINTER MODE, which
   covers the streets, roofs and trees in snow (`map.setWinter`, `src/scripts/weather.js`).
 - Alternate side parking: the + menu shows today and tomorrow from `src/scripts/asp.json`, written by
-  `tools/build_asp.py` from NYC DOT's yearly calendar (refreshed before every aul build), and the #asp modal shows the
+  `tools/build_asp.py` from NYC DOT's yearly calendar (refreshed before every dev build), and the #asp modal shows the
   whole year (`src/components/AspCalendar.astro`). SHOW ON MAP keeps a chip at the bottom left.
 - Airport security: shield pins over JFK, LaGuardia and Newark open a card with each terminal's general and PreCheck
   wait from `/api/airport-security` (the Port Authority's checkpoint feed, kept five minutes). Pins that are not
