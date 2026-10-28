@@ -4,7 +4,7 @@
   "url": "https://jerseycityculture.org/events/calendar/"
  },
  "date": "2026-10-28",
- "fetchedAt": "2026-10-28T05:24:24-04:00",
+ "fetchedAt": "2026-10-28T13:22:54-04:00",
  "events": [
   {
    "id": "jc-city-hall-annex-202610281000-employee-wellness-fair",
@@ -51,6 +51,32 @@
    "description": "",
    "details": "",
    "url": "https://jerseycityculture.org/event/hamilton-park-farmers-market-2026/2026-10-28/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-jersey-city-culture",
+    "name": "Jersey City Culture",
+    "url": "https://jerseycityculture.org/events/calendar/"
+   }
+  },
+  {
+   "id": "jc-jersey-city-hall-202610281730-filipino-american-history-month-closing-",
+   "title": "Filipino American History Month Closing Celebration",
+   "category": "community",
+   "start": "2026-10-28T17:30:00-04:00",
+   "end": "2026-10-28T19:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Jersey City Hall",
+    "address": "280 Grove St, Jersey City, NJ",
+    "neighborhood": "Jersey City",
+    "lat": 40.7178,
+    "lng": -74.0435
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://jerseycityculture.org/event/44829/",
    "tags": [],
    "publisher": {
     "id": "venue-jersey-city-culture",

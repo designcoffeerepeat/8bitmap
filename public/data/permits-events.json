@@ -4,7 +4,7 @@
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
  "date": "2026-10-28",
- "fetchedAt": "2026-10-28T05:25:05-04:00",
+ "fetchedAt": "2026-10-28T13:23:16-04:00",
  "events": [
   {
    "id": "972601",
@@ -99,29 +99,6 @@
    ]
   },
   {
-   "id": "980242",
-   "title": "Leonard St PS 18  - Trick or Streets",
-   "category": "community",
-   "start": "2026-10-28T08:00:00-04:00",
-   "end": "2026-10-28T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Leonard Street",
-    "address": "Leonard Street Between Maujer Street And Grand Street",
-    "neighborhood": "Brooklyn",
-    "lat": 40.71074,
-    "lng": -73.947342
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
    "id": "978290",
    "title": "Immigrant Culture Month at Avenue C Plaza Extension - September",
    "category": "community",
@@ -142,6 +119,29 @@
    "url": null,
    "tags": [
     "Plaza Event"
+   ]
+  },
+  {
+   "id": "980242",
+   "title": "Leonard St PS 18  - Trick or Streets",
+   "category": "community",
+   "start": "2026-10-28T08:00:00-04:00",
+   "end": "2026-10-28T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Leonard Street",
+    "address": "Leonard Street Between Maujer Street And Grand Street",
+    "neighborhood": "Brooklyn",
+    "lat": 40.71074,
+    "lng": -73.947342
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
    ]
   },
   {

@@ -4,31 +4,8 @@
   "url": "https://seatgeek.com/cities/new-york"
  },
  "date": "2026-10-29",
- "fetchedAt": "2026-10-28T05:30:58-04:00",
+ "fetchedAt": "2026-10-28T13:25:33-04:00",
  "events": [
-  {
-   "id": "18055761",
-   "title": "Lawrence - 3 Day Pass",
-   "category": "music",
-   "start": "2026-10-29T03:30:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Brooklyn Paramount",
-    "address": "385 Flatbush Ave. Extension, Brooklyn, NY 11201",
-    "neighborhood": "Brooklyn",
-    "lat": 40.6917,
-    "lng": -73.9815
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/lawrence-tickets/brooklyn-new-york-brooklyn-paramount-2026-10-29-3-30-am/concert/18055761",
-   "tags": [
-    "concert"
-   ]
-  },
   {
    "id": "18548602",
    "title": "Belmont Racing - Fall Meet",
@@ -126,6 +103,102 @@
    ]
   },
   {
+   "id": "18339647",
+   "title": "Heathers - The Musical",
+   "category": "theater",
+   "start": "2026-10-29T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New World Stages - Stage 1",
+    "address": "340 West 50th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7628,
+    "lng": -73.9874
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/heathers-tickets/broadway/2026-10-29-2-pm/18339647",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18408264",
+   "title": "Jamie Allan's Amaze",
+   "category": "theater",
+   "start": "2026-10-29T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New World Stages - Stage 5",
+    "address": "340 West 50th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7628,
+    "lng": -73.9874
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "entertainment",
+   "details": "",
+   "url": "https://seatgeek.com/jamie-allan-s-amaze-tickets/entertainment/2026-10-29-2-pm/18408264",
+   "tags": [
+    "theater",
+    "entertainment",
+    "entertainment"
+   ]
+  },
+  {
+   "id": "18310470",
+   "title": "Richard O'Brien's Rocky Horror Show",
+   "category": "theater",
+   "start": "2026-10-29T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Studio 54 - New York",
+    "address": "254 W 54th St, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.764313,
+    "lng": -73.9838
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/richard-o-brien-s-rocky-horror-show-tickets/theater/2026-10-29-2-pm/18310470",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18209027",
+   "title": "Buena Vista Social Club - The Musical",
+   "category": "theater",
+   "start": "2026-10-29T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Gerald Schoenfeld Theatre",
+    "address": "236 West 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7587,
+    "lng": -73.9873
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/buena-vista-social-club-the-musical-tickets/broadway/2026-10-29-2-pm/18209027",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
    "id": "18083170",
    "title": "Six the Musical",
    "category": "theater",
@@ -171,102 +244,6 @@
    "tags": [
     "theater",
     "broadway"
-   ]
-  },
-  {
-   "id": "18339647",
-   "title": "Heathers - The Musical",
-   "category": "theater",
-   "start": "2026-10-29T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New World Stages - Stage 1",
-    "address": "340 West 50th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7628,
-    "lng": -73.9874
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/heathers-tickets/broadway/2026-10-29-2-pm/18339647",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18209027",
-   "title": "Buena Vista Social Club - The Musical",
-   "category": "theater",
-   "start": "2026-10-29T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Gerald Schoenfeld Theatre",
-    "address": "236 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7587,
-    "lng": -73.9873
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/buena-vista-social-club-the-musical-tickets/broadway/2026-10-29-2-pm/18209027",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18310470",
-   "title": "Richard O'Brien's Rocky Horror Show",
-   "category": "theater",
-   "start": "2026-10-29T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Studio 54 - New York",
-    "address": "254 W 54th St, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.764313,
-    "lng": -73.9838
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/richard-o-brien-s-rocky-horror-show-tickets/theater/2026-10-29-2-pm/18310470",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18408264",
-   "title": "Jamie Allan's Amaze",
-   "category": "theater",
-   "start": "2026-10-29T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New World Stages - Stage 5",
-    "address": "340 West 50th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7628,
-    "lng": -73.9874
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "entertainment",
-   "details": "",
-   "url": "https://seatgeek.com/jamie-allan-s-amaze-tickets/entertainment/2026-10-29-2-pm/18408264",
-   "tags": [
-    "theater",
-    "entertainment",
-    "entertainment"
    ]
   },
   {
@@ -388,30 +365,6 @@
    ]
   },
   {
-   "id": "18037691",
-   "title": "MJ - The Musical",
-   "category": "theater",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Neil Simon Theatre",
-    "address": "250 West 52nd Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7632,
-    "lng": -73.9845
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/mj-the-musical-tickets/broadway/2026-10-29-7-pm/18037691",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
    "id": "18310073",
    "title": "Other Desert Cities",
    "category": "theater",
@@ -436,51 +389,26 @@
    ]
   },
   {
-   "id": "18470274",
-   "title": "The Imaginary Invalid",
-   "category": "theater",
+   "id": "18297073",
+   "title": "Nekrogoblikon with Aborted, Signs of the Swarm, and Party Cannon (18+)",
+   "category": "music",
    "start": "2026-10-29T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Todd Haimes Theatre",
-    "address": "227 West 42nd Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7566,
-    "lng": -73.9883
+    "name": "Brooklyn Bowl - NY",
+    "address": "61 Wythe Avenue, Brooklyn, NY 11249",
+    "neighborhood": "Brooklyn",
+    "lat": 40.7219,
+    "lng": -73.9574
    },
    "price": null,
    "priceUnknown": true,
-   "description": "broadway",
+   "description": "concert",
    "details": "",
-   "url": "https://seatgeek.com/the-imaginary-invalid-tickets/broadway/2026-10-29-7-pm/18470274",
+   "url": "https://seatgeek.com/nekrogoblikon-tickets/brooklyn-new-york-brooklyn-bowl-ny-2026-10-29-7-pm/concert/18297073",
    "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "17898707",
-   "title": "Wicked",
-   "category": "theater",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Gershwin Theatre",
-    "address": "222 West 51st Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7624,
-    "lng": -73.9851
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/wicked-tickets/broadway/2026-10-29-7-pm/17898707",
-   "tags": [
-    "theater",
-    "broadway"
+    "concert"
    ]
   },
   {
@@ -532,444 +460,75 @@
    ]
   },
   {
-   "id": "18297073",
-   "title": "Nekrogoblikon with Aborted, Signs of the Swarm, and Party Cannon (18+)",
-   "category": "music",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Brooklyn Bowl - NY",
-    "address": "61 Wythe Avenue, Brooklyn, NY 11249",
-    "neighborhood": "Brooklyn",
-    "lat": 40.7219,
-    "lng": -73.9574
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/nekrogoblikon-tickets/brooklyn-new-york-brooklyn-bowl-ny-2026-10-29-7-pm/concert/18297073",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "17924848",
-   "title": "Drunk Dracula",
+   "id": "17898707",
+   "title": "Wicked",
    "category": "theater",
    "start": "2026-10-29T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "The Ruby Theatre",
-    "address": "35 W 39th St, New York, NY 10018",
+    "name": "Gershwin Theatre",
+    "address": "222 West 51st Street, New York, NY 10019",
     "neighborhood": "New York",
-    "lat": 40.7527,
-    "lng": -73.9841
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/drunk-dracula-tickets/theater/2026-10-29-7-pm/17924848",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18245673",
-   "title": "Paranormal Activity",
-   "category": "theater",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "August Wilson Theatre",
-    "address": "245 West 52nd Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7629,
-    "lng": -73.9837
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/paranormal-activity-1-tickets/theater/2026-10-29-7-pm/18245673",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18298175",
-   "title": "Stranger Things: The First Shadow",
-   "category": "theater",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Marquis Theatre - New York",
-    "address": "1535 Broadway, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7584,
-    "lng": -73.9855
+    "lat": 40.7624,
+    "lng": -73.9851
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/stranger-things-the-first-shadow-tickets/broadway/2026-10-29-7-pm/18298175",
+   "url": "https://seatgeek.com/wicked-tickets/broadway/2026-10-29-7-pm/17898707",
    "tags": [
     "theater",
     "broadway"
    ]
   },
   {
-   "id": "18655204",
-   "title": "The Curious Case of Benjamin Button",
+   "id": "18037691",
+   "title": "MJ - The Musical",
    "category": "theater",
    "start": "2026-10-29T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Public Theater - Newman Theater",
-    "address": "425 Lafayette St, New York, NY 10003",
+    "name": "Neil Simon Theatre",
+    "address": "250 West 52nd Street, New York, NY 10019",
     "neighborhood": "New York",
-    "lat": 40.729,
-    "lng": -73.9918
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/the-curious-case-of-benjamin-button-tickets/theater/2026-10-29-7-pm/18655204",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18390675",
-   "title": "School Girls: Or, The African Mean Girls",
-   "category": "theater",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Samuel J. Friedman Theatre",
-    "address": "261 West 47th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7602,
-    "lng": -73.9868
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/school-girls-or-the-african-mean-girls-tickets/theater/2026-10-29-7-pm/18390675",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18055763",
-   "title": "Lawrence - Night 1",
-   "category": "music",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Brooklyn Paramount",
-    "address": "385 Flatbush Ave. Extension, Brooklyn, NY 11201",
-    "neighborhood": "Brooklyn",
-    "lat": 40.6917,
-    "lng": -73.9815
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/lawrence-tickets/brooklyn-new-york-brooklyn-paramount-2026-10-29-7-pm/concert/18055763",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18149187",
-   "title": "Operation Mincemeat",
-   "category": "theater",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "John Golden Theatre",
-    "address": "252 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7589,
-    "lng": -73.9878
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/operation-mincemeat-tickets/theater/2026-10-29-7-pm/18149187",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18175953",
-   "title": "Grateful Shred",
-   "category": "music",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Webster Hall",
-    "address": "125 East 11th Street, New York, NY 10003",
-    "neighborhood": "New York",
-    "lat": 40.7318,
-    "lng": -73.9892
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/grateful-shred-tickets/new-york-new-york-webster-hall-2026-10-29-7-pm/concert/18175953",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18187813",
-   "title": "Chicago - The Musical",
-   "category": "theater",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Ambassador Theatre - New York",
-    "address": "219 West 49th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7613,
-    "lng": -73.985
+    "lat": 40.7632,
+    "lng": -73.9845
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/chicago-the-musical-tickets/broadway/2026-10-29-7-pm/18187813",
+   "url": "https://seatgeek.com/mj-the-musical-tickets/broadway/2026-10-29-7-pm/18037691",
    "tags": [
     "theater",
     "broadway"
    ]
   },
   {
-   "id": "18229806",
-   "title": "Schmigadoon!",
+   "id": "18470274",
+   "title": "The Imaginary Invalid",
    "category": "theater",
    "start": "2026-10-29T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Nederlander Theatre - NY",
-    "address": "208 West 41st Street, New York, NY 10036",
+    "name": "Todd Haimes Theatre",
+    "address": "227 West 42nd Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7557,
-    "lng": -73.9882
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/schmigadoon-tickets/theater/2026-10-29-7-pm/18229806",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18324032",
-   "title": "Billy Crystal: 860",
-   "category": "theater",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Imperial Theatre - NY",
-    "address": "249 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7588,
-    "lng": -73.9873
+    "lat": 40.7566,
+    "lng": -73.9883
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/billy-crystal-860-tickets/broadway/2026-10-29-7-pm/18324032",
+   "url": "https://seatgeek.com/the-imaginary-invalid-tickets/broadway/2026-10-29-7-pm/18470274",
    "tags": [
     "theater",
     "broadway"
-   ]
-  },
-  {
-   "id": "18526967",
-   "title": "Slam Frank",
-   "category": "theater",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Orpheum Theatre - NY",
-    "address": "126 Second Ave, New York, NY 10003",
-    "neighborhood": "New York",
-    "lat": 40.7282,
-    "lng": -73.9875
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/slam-frank-tickets/theater/2026-10-29-7-pm/18526967",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "17958402",
-   "title": "Harry Potter and The Cursed Child",
-   "category": "theater",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lyric Theatre - New York",
-    "address": "213 West 42nd Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7565,
-    "lng": -73.9878
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/harry-potter-and-the-cursed-child-tickets/theater/2026-10-29-7-pm/17958402",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18502316",
-   "title": "Chanpan",
-   "category": "music",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Baby's All Right",
-    "address": "146 Broadway, Brooklyn, NY 11211",
-    "neighborhood": "Brooklyn",
-    "lat": 40.71,
-    "lng": -73.9635
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/chanpan-tickets/brooklyn-new-york-baby-s-all-right-2026-10-29-7-pm/concert/18502316",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18316921",
-   "title": "YHWH Nailgun",
-   "category": "music",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Warsaw",
-    "address": "261 Driggs Ave, Brooklyn, NY 11222",
-    "neighborhood": "Brooklyn",
-    "lat": 40.7226,
-    "lng": -73.9484
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/yhwh-nailgun-tickets/brooklyn-new-york-warsaw-2026-10-29-7-pm/concert/18316921",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18246609",
-   "title": "Disney On Ice presents Spotlight Magic! - Newark",
-   "category": "community",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Prudential Center",
-    "address": "25 Lafayette Street, Newark, NJ 07102",
-    "neighborhood": "Newark",
-    "lat": 40.7332,
-    "lng": -74.1717
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "family",
-   "details": "",
-   "url": "https://seatgeek.com/disney-on-ice-presents-spotlight-magic-tickets/family/2026-10-29-7-pm/18246609",
-   "tags": [
-    "theater",
-    "family"
-   ]
-  },
-  {
-   "id": "17420321",
-   "title": "Little Shop of Horrors",
-   "category": "theater",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Westside Theatre Upstairs",
-    "address": "407 West 43rd Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.9927
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/little-shop-of-horrors-tickets/theater/2026-10-29-7-pm/17420321",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18260516",
-   "title": "Aladdin",
-   "category": "theater",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New Amsterdam Theatre",
-    "address": "214 West 42nd Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7563,
-    "lng": -73.9877
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/aladdin-tickets/theater/2026-10-29-7-pm/18260516",
-   "tags": [
-    "theater"
    ]
   },
   {
@@ -996,6 +555,29 @@
    ]
   },
   {
+   "id": "17420321",
+   "title": "Little Shop of Horrors",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Westside Theatre Upstairs",
+    "address": "407 West 43rd Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.9927
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/little-shop-of-horrors-tickets/theater/2026-10-29-7-pm/17420321",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
    "id": "18096005",
    "title": "Maybe Happy Ending",
    "category": "theater",
@@ -1014,6 +596,30 @@
    "description": "broadway",
    "details": "",
    "url": "https://seatgeek.com/maybe-happy-ending-tickets/broadway/2026-10-29-7-pm/18096005",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18141309",
+   "title": "Hamilton",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Richard Rodgers Theatre",
+    "address": "226 West 46th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7592,
+    "lng": -73.9866
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/hamilton-tickets/broadway/2026-10-29-7-pm/18141309",
    "tags": [
     "theater",
     "broadway"
@@ -1044,24 +650,70 @@
    ]
   },
   {
-   "id": "18141309",
-   "title": "Hamilton",
+   "id": "18260516",
+   "title": "Aladdin",
    "category": "theater",
    "start": "2026-10-29T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Richard Rodgers Theatre",
-    "address": "226 West 46th Street, New York, NY 10036",
+    "name": "New Amsterdam Theatre",
+    "address": "214 West 42nd Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7592,
-    "lng": -73.9866
+    "lat": 40.7563,
+    "lng": -73.9877
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/aladdin-tickets/theater/2026-10-29-7-pm/18260516",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18625705",
+   "title": "Christine Ebersole",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "54 Below",
+    "address": "254 W 54th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7645,
+    "lng": -73.9837
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/christine-ebersole-tickets/theater/2026-10-29-7-pm/18625705",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18221705",
+   "title": "Hadestown",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Walter Kerr Theatre",
+    "address": "219 West 48th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7605,
+    "lng": -73.9857
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/hamilton-tickets/broadway/2026-10-29-7-pm/18141309",
+   "url": "https://seatgeek.com/hadestown-tickets/broadway/2026-10-29-7-pm/18221705",
    "tags": [
     "theater",
     "broadway"
@@ -1115,97 +767,375 @@
    ]
   },
   {
-   "id": "18625705",
-   "title": "Christine Ebersole",
+   "id": "18175953",
+   "title": "Grateful Shred",
+   "category": "music",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Webster Hall",
+    "address": "125 East 11th Street, New York, NY 10003",
+    "neighborhood": "New York",
+    "lat": 40.7318,
+    "lng": -73.9892
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/grateful-shred-tickets/new-york-new-york-webster-hall-2026-10-29-7-pm/concert/18175953",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18655204",
+   "title": "The Curious Case of Benjamin Button",
    "category": "theater",
    "start": "2026-10-29T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "54 Below",
-    "address": "254 W 54th Street, New York, NY 10019",
+    "name": "Public Theater - Newman Theater",
+    "address": "425 Lafayette St, New York, NY 10003",
     "neighborhood": "New York",
-    "lat": 40.7645,
+    "lat": 40.729,
+    "lng": -73.9918
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/the-curious-case-of-benjamin-button-tickets/theater/2026-10-29-7-pm/18655204",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "17924848",
+   "title": "Drunk Dracula",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Ruby Theatre",
+    "address": "35 W 39th St, New York, NY 10018",
+    "neighborhood": "New York",
+    "lat": 40.7527,
+    "lng": -73.9841
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/drunk-dracula-tickets/theater/2026-10-29-7-pm/17924848",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18390675",
+   "title": "School Girls: Or, The African Mean Girls",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Samuel J. Friedman Theatre",
+    "address": "261 West 47th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7602,
+    "lng": -73.9868
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/school-girls-or-the-african-mean-girls-tickets/theater/2026-10-29-7-pm/18390675",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18298175",
+   "title": "Stranger Things: The First Shadow",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Marquis Theatre - New York",
+    "address": "1535 Broadway, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7584,
+    "lng": -73.9855
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/stranger-things-the-first-shadow-tickets/broadway/2026-10-29-7-pm/18298175",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18149187",
+   "title": "Operation Mincemeat",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "John Golden Theatre",
+    "address": "252 West 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7589,
+    "lng": -73.9878
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/operation-mincemeat-tickets/theater/2026-10-29-7-pm/18149187",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18187813",
+   "title": "Chicago - The Musical",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Ambassador Theatre - New York",
+    "address": "219 West 49th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7613,
+    "lng": -73.985
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/chicago-the-musical-tickets/broadway/2026-10-29-7-pm/18187813",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18245673",
+   "title": "Paranormal Activity",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "August Wilson Theatre",
+    "address": "245 West 52nd Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7629,
     "lng": -73.9837
    },
    "price": null,
    "priceUnknown": true,
    "description": "theater",
    "details": "",
-   "url": "https://seatgeek.com/christine-ebersole-tickets/theater/2026-10-29-7-pm/18625705",
+   "url": "https://seatgeek.com/paranormal-activity-1-tickets/theater/2026-10-29-7-pm/18245673",
    "tags": [
     "theater"
    ]
   },
   {
-   "id": "18221705",
-   "title": "Hadestown",
+   "id": "18229806",
+   "title": "Schmigadoon!",
    "category": "theater",
    "start": "2026-10-29T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Walter Kerr Theatre",
-    "address": "219 West 48th Street, New York, NY 10036",
+    "name": "Nederlander Theatre - NY",
+    "address": "208 West 41st Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7605,
-    "lng": -73.9857
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/hadestown-tickets/broadway/2026-10-29-7-pm/18221705",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18269244",
-   "title": "In The Heights",
-   "category": "theater",
-   "start": "2026-10-29T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New York City Center",
-    "address": "131 West 55th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7639,
-    "lng": -73.9794
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/in-the-heights-tickets/broadway/2026-10-29-7-30-pm/18269244",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18538684",
-   "title": "The Heart - The Musical",
-   "category": "theater",
-   "start": "2026-10-29T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Laura Pels Theater",
-    "address": "111 West 46th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7579,
-    "lng": -73.983
+    "lat": 40.7557,
+    "lng": -73.9882
    },
    "price": null,
    "priceUnknown": true,
    "description": "theater",
    "details": "",
-   "url": "https://seatgeek.com/the-heart-the-musical-tickets/theater/2026-10-29-7-30-pm/18538684",
+   "url": "https://seatgeek.com/schmigadoon-tickets/theater/2026-10-29-7-pm/18229806",
    "tags": [
     "theater"
+   ]
+  },
+  {
+   "id": "18055763",
+   "title": "Lawrence - Night 1",
+   "category": "music",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Paramount",
+    "address": "385 Flatbush Ave. Extension, Brooklyn, NY 11201",
+    "neighborhood": "Brooklyn",
+    "lat": 40.6917,
+    "lng": -73.9815
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/lawrence-tickets/brooklyn-new-york-brooklyn-paramount-2026-10-29-7-pm/concert/18055763",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18502316",
+   "title": "Chanpan",
+   "category": "music",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Baby's All Right",
+    "address": "146 Broadway, Brooklyn, NY 11211",
+    "neighborhood": "Brooklyn",
+    "lat": 40.71,
+    "lng": -73.9635
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/chanpan-tickets/brooklyn-new-york-baby-s-all-right-2026-10-29-7-pm/concert/18502316",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18324032",
+   "title": "Billy Crystal: 860",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Imperial Theatre - NY",
+    "address": "249 West 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7588,
+    "lng": -73.9873
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/billy-crystal-860-tickets/broadway/2026-10-29-7-pm/18324032",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18526967",
+   "title": "Slam Frank",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Orpheum Theatre - NY",
+    "address": "126 Second Ave, New York, NY 10003",
+    "neighborhood": "New York",
+    "lat": 40.7282,
+    "lng": -73.9875
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/slam-frank-tickets/theater/2026-10-29-7-pm/18526967",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18316921",
+   "title": "YHWH Nailgun",
+   "category": "music",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Warsaw",
+    "address": "261 Driggs Ave, Brooklyn, NY 11222",
+    "neighborhood": "Brooklyn",
+    "lat": 40.7226,
+    "lng": -73.9484
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/yhwh-nailgun-tickets/brooklyn-new-york-warsaw-2026-10-29-7-pm/concert/18316921",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "17958402",
+   "title": "Harry Potter and The Cursed Child",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lyric Theatre - New York",
+    "address": "213 West 42nd Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7565,
+    "lng": -73.9878
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/harry-potter-and-the-cursed-child-tickets/theater/2026-10-29-7-pm/17958402",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18246609",
+   "title": "Disney On Ice presents Spotlight Magic! - Newark",
+   "category": "community",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Prudential Center",
+    "address": "25 Lafayette Street, Newark, NJ 07102",
+    "neighborhood": "Newark",
+    "lat": 40.7332,
+    "lng": -74.1717
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "family",
+   "details": "",
+   "url": "https://seatgeek.com/disney-on-ice-presents-spotlight-magic-tickets/family/2026-10-29-7-pm/18246609",
+   "tags": [
+    "theater",
+    "family"
    ]
   },
   {
@@ -1329,26 +1259,50 @@
    ]
   },
   {
-   "id": "18226904",
-   "title": "horsegiirL (16+)",
-   "category": "music",
-   "start": "2026-10-29T20:00:00-04:00",
+   "id": "18269244",
+   "title": "In The Heights",
+   "category": "theater",
+   "start": "2026-10-29T19:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Terminal 5",
-    "address": "610 W 56th St., New York, NY 10019",
+    "name": "New York City Center",
+    "address": "131 West 55th Street, New York, NY 10019",
     "neighborhood": "New York",
-    "lat": 40.7697,
-    "lng": -73.9928
+    "lat": 40.7639,
+    "lng": -73.9794
    },
    "price": null,
    "priceUnknown": true,
-   "description": "concert",
+   "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/horsegiirl-tickets/new-york-new-york-terminal-5-2026-10-29-8-pm/concert/18226904",
+   "url": "https://seatgeek.com/in-the-heights-tickets/broadway/2026-10-29-7-30-pm/18269244",
    "tags": [
-    "concert"
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18538684",
+   "title": "The Heart - The Musical",
+   "category": "theater",
+   "start": "2026-10-29T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Laura Pels Theater",
+    "address": "111 West 46th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7579,
+    "lng": -73.983
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/the-heart-the-musical-tickets/theater/2026-10-29-7-30-pm/18538684",
+   "tags": [
+    "theater"
    ]
   },
   {
@@ -1375,27 +1329,120 @@
    ]
   },
   {
-   "id": "18470447",
-   "title": "Wanted",
+   "id": "18226904",
+   "title": "horsegiirL (16+)",
+   "category": "music",
+   "start": "2026-10-29T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Terminal 5",
+    "address": "610 W 56th St., New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7697,
+    "lng": -73.9928
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/horsegiirl-tickets/new-york-new-york-terminal-5-2026-10-29-8-pm/concert/18226904",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18652970",
+   "title": "Rasputina",
+   "category": "music",
+   "start": "2026-10-29T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Le Poisson Rouge",
+    "address": "158 Bleecker Street, New York, NY 10012",
+    "neighborhood": "New York",
+    "lat": 40.7285,
+    "lng": -74.0001
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/rasputina-tickets/new-york-new-york-le-poisson-rouge-2026-10-29-8-pm/concert/18652970",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18317480",
+   "title": "The Barr Brothers with SOAK",
+   "category": "music",
+   "start": "2026-10-29T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Bowery Ballroom",
+    "address": "6 Delancey Street, New York, NY 10002",
+    "neighborhood": "New York",
+    "lat": 40.7204,
+    "lng": -73.9934
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/the-barr-brothers-tickets/new-york-new-york-bowery-ballroom-2026-10-29-8-pm/concert/18317480",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18395373",
+   "title": "The Fantasticks",
    "category": "theater",
    "start": "2026-10-29T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "James Earl Jones Theatre",
-    "address": "138 West 48th Street, New York, NY 10036",
+    "name": "The Hayes Theater",
+    "address": "240 West 44th Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7592,
-    "lng": -73.983
+    "lat": 40.758,
+    "lng": -73.9878
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/wanted-1-tickets/broadway/2026-10-29-8-pm/18470447",
+   "url": "https://seatgeek.com/the-fantasticks-tickets/broadway/2026-10-29-8-pm/18395373",
    "tags": [
     "theater",
     "broadway"
+   ]
+  },
+  {
+   "id": "18492336",
+   "title": "Wunderkammer",
+   "category": "comedy",
+   "start": "2026-10-29T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Bell House",
+    "address": "149 7th Street, Brooklyn, NY 11215",
+    "neighborhood": "Brooklyn",
+    "lat": 40.6735,
+    "lng": -73.9916
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "comedy",
+   "details": "",
+   "url": "https://seatgeek.com/wunderkammer-tickets/comedy/2026-10-29-8-pm/18492336",
+   "tags": [
+    "theater",
+    "comedy"
    ]
   },
   {
@@ -1445,24 +1492,48 @@
    ]
   },
   {
-   "id": "18499209",
-   "title": "A Boogie Wit Da Hoodie with G Herbo",
+   "id": "18470447",
+   "title": "Wanted",
+   "category": "theater",
+   "start": "2026-10-29T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "James Earl Jones Theatre",
+    "address": "138 West 48th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7592,
+    "lng": -73.983
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/wanted-1-tickets/broadway/2026-10-29-8-pm/18470447",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18166056",
+   "title": "Get The Led Out",
    "category": "music",
    "start": "2026-10-29T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "UBS Arena",
-    "address": "2150 Hempstead Turnpike, Elmont, NY 11003",
-    "neighborhood": "Elmont",
-    "lat": 40.7095,
-    "lng": -73.7204
+    "name": "Bergen Performing Arts Center",
+    "address": "30 North Van Brunt Street, Englewood, NJ 07631",
+    "neighborhood": "Englewood",
+    "lat": 40.8953,
+    "lng": -73.9749
    },
    "price": null,
    "priceUnknown": true,
    "description": "concert",
    "details": "",
-   "url": "https://seatgeek.com/a-boogie-wit-da-hoodie-tickets/elmont-new-york-ubs-arena-2026-10-29-8-pm/concert/18499209",
+   "url": "https://seatgeek.com/get-the-led-out-a-tribute-to-led-zeppelin-tickets/englewood-new-jersey-bergen-performing-arts-center-2026-10-29-8-pm/concert/18166056",
    "tags": [
     "concert"
    ]
@@ -1492,26 +1563,27 @@
    ]
   },
   {
-   "id": "18166056",
-   "title": "Get The Led Out",
-   "category": "music",
+   "id": "18411520",
+   "title": "Perfect Crime",
+   "category": "theater",
    "start": "2026-10-29T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Bergen Performing Arts Center",
-    "address": "30 North Van Brunt Street, Englewood, NJ 07631",
-    "neighborhood": "Englewood",
-    "lat": 40.8953,
-    "lng": -73.9749
+    "name": "The Theater Center",
+    "address": "210 W. 50th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7615,
+    "lng": -73.9845
    },
    "price": null,
    "priceUnknown": true,
-   "description": "concert",
+   "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/get-the-led-out-a-tribute-to-led-zeppelin-tickets/englewood-new-jersey-bergen-performing-arts-center-2026-10-29-8-pm/concert/18166056",
+   "url": "https://seatgeek.com/perfect-crime-tickets/broadway/2026-10-29-8-pm/18411520",
    "tags": [
-    "concert"
+    "theater",
+    "broadway"
    ]
   },
   {
@@ -1539,121 +1611,26 @@
    ]
   },
   {
-   "id": "18411520",
-   "title": "Perfect Crime",
-   "category": "theater",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Theater Center",
-    "address": "210 W. 50th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7615,
-    "lng": -73.9845
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/perfect-crime-tickets/broadway/2026-10-29-8-pm/18411520",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18652970",
-   "title": "Rasputina",
+   "id": "18499209",
+   "title": "A Boogie Wit Da Hoodie with G Herbo",
    "category": "music",
    "start": "2026-10-29T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Le Poisson Rouge",
-    "address": "158 Bleecker Street, New York, NY 10012",
-    "neighborhood": "New York",
-    "lat": 40.7285,
-    "lng": -74.0001
+    "name": "UBS Arena",
+    "address": "2150 Hempstead Turnpike, Elmont, NY 11003",
+    "neighborhood": "Elmont",
+    "lat": 40.7095,
+    "lng": -73.7204
    },
    "price": null,
    "priceUnknown": true,
    "description": "concert",
    "details": "",
-   "url": "https://seatgeek.com/rasputina-tickets/new-york-new-york-le-poisson-rouge-2026-10-29-8-pm/concert/18652970",
+   "url": "https://seatgeek.com/a-boogie-wit-da-hoodie-tickets/elmont-new-york-ubs-arena-2026-10-29-8-pm/concert/18499209",
    "tags": [
     "concert"
-   ]
-  },
-  {
-   "id": "18395373",
-   "title": "The Fantasticks",
-   "category": "theater",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Hayes Theater",
-    "address": "240 West 44th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.758,
-    "lng": -73.9878
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/the-fantasticks-tickets/broadway/2026-10-29-8-pm/18395373",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18317480",
-   "title": "The Barr Brothers with SOAK",
-   "category": "music",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Bowery Ballroom",
-    "address": "6 Delancey Street, New York, NY 10002",
-    "neighborhood": "New York",
-    "lat": 40.7204,
-    "lng": -73.9934
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/the-barr-brothers-tickets/new-york-new-york-bowery-ballroom-2026-10-29-8-pm/concert/18317480",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18492336",
-   "title": "Wunderkammer",
-   "category": "comedy",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Bell House",
-    "address": "149 7th Street, Brooklyn, NY 11215",
-    "neighborhood": "Brooklyn",
-    "lat": 40.6735,
-    "lng": -73.9916
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "comedy",
-   "details": "",
-   "url": "https://seatgeek.com/wunderkammer-tickets/comedy/2026-10-29-8-pm/18492336",
-   "tags": [
-    "theater",
-    "comedy"
    ]
   },
   {

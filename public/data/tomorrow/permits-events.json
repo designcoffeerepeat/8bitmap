@@ -4,7 +4,7 @@
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
  "date": "2026-10-29",
- "fetchedAt": "2026-10-28T05:30:51-04:00",
+ "fetchedAt": "2026-10-28T13:25:26-04:00",
  "events": [
   {
    "id": "972601",
@@ -145,6 +145,29 @@
    ]
   },
   {
+   "id": "900343",
+   "title": "World Trade Center Festival",
+   "category": "community",
+   "start": "2026-10-29T10:00:00-04:00",
+   "end": "2026-10-29T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Liberty Street",
+    "address": "Liberty Street Between Broadway And Trinity Place",
+    "neighborhood": "Manhattan",
+    "lat": 40.7096,
+    "lng": -74.01096
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Single Block Festival",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Single Block Festival"
+   ]
+  },
+  {
    "id": "983961",
    "title": "IDNYC at Councilmember Hanifs Office",
    "category": "community",
@@ -188,29 +211,6 @@
    "url": null,
    "tags": [
     "Street Event"
-   ]
-  },
-  {
-   "id": "900343",
-   "title": "World Trade Center Festival",
-   "category": "community",
-   "start": "2026-10-29T10:00:00-04:00",
-   "end": "2026-10-29T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Liberty Street",
-    "address": "Liberty Street Between Broadway And Trinity Place",
-    "neighborhood": "Manhattan",
-    "lat": 40.7096,
-    "lng": -74.01096
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Single Block Festival",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Single Block Festival"
    ]
   },
   {
@@ -352,29 +352,6 @@
    ]
   },
   {
-   "id": "979831",
-   "title": "14th Annual Barnacle Day Parade",
-   "category": "community",
-   "start": "2026-10-29T15:30:00-04:00",
-   "end": "2026-10-29T19:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Pioneer Street",
-    "address": "Pioneer Street Between Van Brunt Street And Imlay Street, Pioneer Street Between Van Brunt Street And Richards Street, Richards Street Between Pioneer Street And Verona Street, Verona Street Between Richards Street And Columbia Street, Columbia Street Between Verona Street And Lorraine Street, Lorraine Street Between Columbia Street And Otsego Street, Wolcott Street Between Otsego Street And Van Brunt Street, Van Brunt Street Between Wolcott Street And Van Dyke Street, Van Dyke Street Between Van Brunt Street And Ferris Street, Ferris Street Between Van Dyke Street And Sullivan Street, Sullivan Street Between Ferris Street And Conover Street, Conover Street Between Sullivan Street And Pioneer Street, Pioneer Street Between Conover Street And Van Brunt Street",
-    "neighborhood": "Brooklyn",
-    "lat": 40.679169,
-    "lng": -74.011166
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Parade",
-   "details": "Permit from Police Department.",
-   "url": null,
-   "tags": [
-    "Parade"
-   ]
-  },
-  {
    "id": "977770",
    "title": "Harvest fest 2026",
    "category": "community",
@@ -395,6 +372,29 @@
    "url": null,
    "tags": [
     "Street Event"
+   ]
+  },
+  {
+   "id": "979831",
+   "title": "14th Annual Barnacle Day Parade",
+   "category": "community",
+   "start": "2026-10-29T15:30:00-04:00",
+   "end": "2026-10-29T19:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Pioneer Street",
+    "address": "Pioneer Street Between Van Brunt Street And Imlay Street, Pioneer Street Between Van Brunt Street And Richards Street, Richards Street Between Pioneer Street And Verona Street, Verona Street Between Richards Street And Columbia Street, Columbia Street Between Verona Street And Lorraine Street, Lorraine Street Between Columbia Street And Otsego Street, Wolcott Street Between Otsego Street And Van Brunt Street, Van Brunt Street Between Wolcott Street And Van Dyke Street, Van Dyke Street Between Van Brunt Street And Ferris Street, Ferris Street Between Van Dyke Street And Sullivan Street, Sullivan Street Between Ferris Street And Conover Street, Conover Street Between Sullivan Street And Pioneer Street, Pioneer Street Between Conover Street And Van Brunt Street",
+    "neighborhood": "Brooklyn",
+    "lat": 40.679169,
+    "lng": -74.011166
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Parade",
+   "details": "Permit from Police Department.",
+   "url": null,
+   "tags": [
+    "Parade"
    ]
   },
   {
