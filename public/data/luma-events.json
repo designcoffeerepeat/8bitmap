@@ -4,28 +4,8 @@
   "url": "https://luma.com/nyc"
  },
  "date": "2026-10-28",
- "fetchedAt": "2026-10-28T05:17:08-04:00",
+ "fetchedAt": "2026-10-28T13:18:32-04:00",
  "events": [
-  {
-   "id": "evt-cuppBFplkh4i6x4",
-   "title": "Dirt City: Sunrise Trails",
-   "category": "community",
-   "start": "2026-10-28T07:00:00-04:00",
-   "end": "2026-10-28T08:00:00-04:00",
-   "venue": {
-    "name": "Grand Army Plaza",
-    "address": "Grand Army Plaza, Flatbush Ave, Brooklyn, NY 11238, USA",
-    "neighborhood": "Prospect Heights",
-    "lat": 40.672349,
-    "lng": -73.969761
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the MILER RUNNING calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/7w6gubxp",
-   "tags": []
-  },
   {
    "id": "evt-1ZGaMZlVBV4JrZC",
    "title": "Agents in NYC",
@@ -47,6 +27,26 @@
    "tags": []
   },
   {
+   "id": "evt-8NvftTMFTDFRb4k",
+   "title": "Rhone Extra Mile Run Series | led by Jay Markland",
+   "category": "sports",
+   "start": "2026-10-28T17:30:00-04:00",
+   "end": "2026-10-28T19:00:00-04:00",
+   "venue": {
+    "name": "Rhone - Hudson Yards",
+    "address": "Rhone - Hudson Yards, 500 W 33rd St Ste 222B, New York, NY 10001, USA",
+    "neighborhood": "Chelsea",
+    "lat": 40.753301,
+    "lng": -74.001329
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Rhone event series calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/te3vmaa9",
+   "tags": []
+  },
+  {
    "id": "evt-nBIhJFXk20Eytjq",
    "title": "Book Swap",
    "category": "art",
@@ -64,6 +64,26 @@
    "description": "From the Lit Club NYC Calendar calendar on Luma",
    "details": "",
    "url": "https://luma.com/qz9bowcw",
+   "tags": []
+  },
+  {
+   "id": "evt-8kpFo54jiESKhdx",
+   "title": "iMessage Agent Founder Pitch @Corgi",
+   "category": "community",
+   "start": "2026-10-28T18:30:00-04:00",
+   "end": "2026-10-28T21:00:00-04:00",
+   "venue": {
+    "name": "Corgi Cafe",
+    "address": "Corgi Cafe, 121 E 27th St, New York, NY 10016, USA",
+    "neighborhood": "Rose Hill",
+    "lat": 40.742401,
+    "lng": -73.983429
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Photon calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/photonhq-k0ni",
    "tags": []
   },
   {
