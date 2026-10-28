@@ -1,6 +1,6 @@
 // Zoomers on the bridges, the river and the rooftops:
 //   Manhattan Bridge: a subway train rolls across with two "what time is it" kids dancing on its roof.
-//   Hunters Point: a web-slinging hero swings twice between towers, lands on a lower roof, sits on the
+//   Hunters Point: a web-slinging hero in black swings twice between towers, lands on a lower roof, sits on the
 //     ledge and thinks "ugh, responsibility."
 //   Staten Island Ferry: the big orange ferry sails between Whitehall and St. George all day, docking at
 //     each end, with people at the rails. It replaces the plain boat the renderer used to draw there.
@@ -137,8 +137,8 @@ function swinger(map, [r0, r1, r2]) {
   const k = kit();
   const root = new THREE.Group();
   map.world.add(root);
-  const hero = person(k, { skin: '#d7262e', top: '#d7262e', bottom: '#2a5bd7', legsColor: '#2a5bd7', shoe: '#d7262e', mask: '#d7262e', sleeves: '#d7262e', hands: '#d7262e' });
-  k.box(hero.upper, 1.2, 1.2, 0.1, 0, 2.2, 0.62, '#1d1d22'); // the emblem
+  const hero = person(k, { skin: '#1d1d22', top: '#1d1d22', bottom: '#1d1d22', legsColor: '#1d1d22', shoe: '#1d1d22', mask: '#1d1d22', sleeves: '#1d1d22', hands: '#1d1d22' });
+  k.box(hero.upper, 1.2, 1.2, 0.1, 0, 2.2, 0.62, '#e8e8ea'); // the emblem
   root.add(hero.root);
   const web = k.box(root, 0.008, 1, 0.008, 0, 0, 0, '#f4f4f2', true);
   const think = bubble(map, 'ugh, responsibility.', 'think');

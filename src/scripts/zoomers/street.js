@@ -3,7 +3,7 @@
 //   Fifth Avenue and 57th Street: Bill Cunningham in his blue jacket rides his bike and stops to take photos.
 //   City Hall: the Rent Is Too Damn High guy, in black gloves and white whiskers, says so.
 //   McCarren Park: a guy in a cap and a blonde guy in sunglasses on beach chairs pass a joint back and forth.
-//   Museum of the Moving Image: a big yellow bird and a brown woolly elephant stroll around outside.
+//   Museum of the Moving Image: a big turquoise bird and a gray elephant stroll around outside.
 
 import * as THREE from 'three';
 import { watchZoomEgg } from '../zoom-egg.js';
@@ -281,7 +281,7 @@ function movingImage(map, spot) {
   root.position.copy(spot.pos);
   map.world.add(root);
 
-  // the big yellow bird: tall, feathery, orange legs and beak
+  // the big turquoise bird: tall, feathery, orange legs and beak
   const bird = k.node(root);
   const bb = k.node(bird);
   bb.scale.setScalar(VOX);
@@ -292,41 +292,41 @@ function movingImage(map, spot) {
     return leg;
   });
   const torso = k.node(bb, 0, 4.2, 0);
-  k.box(torso, 3.6, 3.6, 3.2, 0, 1.8, 0, '#ffd21f');
-  k.box(torso, 3.2, 1, 3, 0, 0.1, 0, '#f2c200');
+  k.box(torso, 3.6, 3.6, 3.2, 0, 1.8, 0, '#2ec4b6');
+  k.box(torso, 3.2, 1, 3, 0, 0.1, 0, '#21a396');
   const neck = k.node(torso, 0, 3.4, 0.8);
-  k.box(neck, 1.4, 3, 1.4, 0, 1.5, 0, '#ffd21f');
-  k.box(neck, 2.2, 2, 2, 0, 3.6, 0.1, '#ffd21f'); // head
+  k.box(neck, 1.4, 3, 1.4, 0, 1.5, 0, '#2ec4b6');
+  k.box(neck, 2.2, 2, 2, 0, 3.6, 0.1, '#2ec4b6'); // head
   k.box(neck, 1.2, 0.5, 1.4, 0, 3.2, 1.6, '#ff8a1f'); // beak
   k.box(neck, 0.5, 0.5, 0.2, -0.5, 4, 1.15, '#ffffff');
   k.box(neck, 0.5, 0.5, 0.2, 0.5, 4, 1.15, '#ffffff');
   k.box(neck, 0.25, 0.25, 0.1, -0.5, 4, 1.26, '#1d2340');
   k.box(neck, 0.25, 0.25, 0.1, 0.5, 4, 1.26, '#1d2340');
-  for (const x of [-0.6, 0, 0.6]) k.box(neck, 0.3, 0.9, 0.3, x, 4.9, 0, '#ffd21f'); // head feathers
+  for (const x of [-0.6, 0, 0.6]) k.box(neck, 0.3, 0.9, 0.3, x, 4.9, 0, '#2ec4b6'); // head feathers
   const wings = [-1, 1].map((side) => {
     const w = k.node(torso, side * 1.9, 3, 0);
-    k.box(w, 0.4, 2.8, 2.4, 0, -1.4, 0, '#f2c200');
+    k.box(w, 0.4, 2.8, 2.4, 0, -1.4, 0, '#21a396');
     return w;
   });
 
-  // the brown woolly elephant: four legs, long trunk, sleepy eyes
+  // the gray elephant: four legs, big ears, long trunk, little tusks
   const ele = k.node(root);
   const eb = k.node(ele);
   eb.scale.setScalar(VOX);
   const eleLegs = [[-1.2, -2], [1.2, -2], [-1.2, 2], [1.2, 2]].map(([x, z]) => {
     const leg = k.node(eb, x, 2.4, z);
-    k.box(leg, 1.3, 2.4, 1.3, 0, -1.2, 0, '#7a5235');
+    k.box(leg, 1.3, 2.4, 1.3, 0, -1.2, 0, '#7d8288');
     return leg;
   });
-  k.box(eb, 3.8, 3, 6, 0, 3.6, 0, '#8a5d3b');
-  k.box(eb, 3.9, 0.8, 6.1, 0, 5, 0, '#7a5235'); // shaggy back
+  k.box(eb, 3.8, 3, 6, 0, 3.6, 0, '#9aa0a6');
   const ehead = k.node(eb, 0, 4.2, 3.4);
-  k.box(ehead, 2.6, 2.6, 2, 0, 0.4, 0.4, '#8a5d3b');
-  for (const x of [-1.6, 1.6]) k.box(ehead, 0.6, 1.8, 1.4, x, 0.8, 0, '#7a5235'); // ears
-  k.box(ehead, 0.6, 0.2, 0.1, -0.6, 0.9, 1.42, '#3b2414'); // sleepy eyes
-  k.box(ehead, 0.6, 0.2, 0.1, 0.6, 0.9, 1.42, '#3b2414');
+  k.box(ehead, 2.6, 2.6, 2, 0, 0.4, 0.4, '#9aa0a6');
+  for (const x of [-1.9, 1.9]) k.box(ehead, 0.4, 2.6, 1.8, x, 0.6, 0, '#7d8288'); // ears
+  k.box(ehead, 0.3, 0.3, 0.1, -0.6, 0.9, 1.42, '#1d2340'); // eyes
+  k.box(ehead, 0.3, 0.3, 0.1, 0.6, 0.9, 1.42, '#1d2340');
+  for (const x of [-0.7, 0.7]) k.box(ehead, 0.3, 0.3, 0.9, x, -0.6, 1.6, '#f4f1e8'); // tusks
   const trunk = k.node(ehead, 0, 0, 1.4);
-  k.box(trunk, 0.8, 3, 0.8, 0, -1.4, 0.2, '#7a5235');
+  k.box(trunk, 0.8, 3, 0.8, 0, -1.4, 0.2, '#7d8288');
 
   // a loop around the museum's front
   const r = 0.32;

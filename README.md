@@ -417,8 +417,8 @@ and the same show listed on several sites is merged by title, venue and start ti
 - Zoomers: the easter egg characters that appear when the map is zoomed all the way in on their spot
   (`src/scripts/zoomers/`): Times Square's costumed heroes, red furry character, Naked Cowboy and tourists; the
   woman in green watering plants in Carroll Gardens; the subway dancers on a train over the Manhattan Bridge; Bill
-  Cunningham at Fifth Avenue and 57th Street; the Rent Is Too Damn High guy at City Hall; the web-slinger in Hunters
-  Point; the two guys on beach chairs in McCarren Park; the big yellow bird and woolly elephant at the Museum of the
+  Cunningham at Fifth Avenue and 57th Street; the Rent Is Too Damn High guy at City Hall; the web-slinger in black in Hunters
+  Point; the two guys on beach chairs in McCarren Park; the big turquoise bird and gray elephant at the Museum of the
   Moving Image; and the Staten Island Ferry, which sails all day. `kit.js` builds the voxel people, walk cycles and
   speech bubbles, and shows a Zoomer as a pale ghost where a building hides it. A new Zoomer is a `start(map, spot)`
   that returns `{ step(dt), dispose() }`, hooked up with `zoomer()` or `watchZoomEgg`.
