@@ -5,7 +5,7 @@
 //   alien   a long-limbed alien rises out of Central Park, roars and shakes off little parasites
 //   fluff   the Always Pudgy Fluff Dude forms on the Upper West Side and stomps around, smiling
 //   ufo     a flying saucer drifts over the Village beaming people up; shot down, gray aliens fall out on fire
-//   robot   a giant robot on Wall Street shouts GIVE ME ALL YOUR JOBS! and lasers the towers with its eyes
+//   robot   a giant robot in the West Village shouts GIVE ME ALL YOUR JOBS! and lasers the towers with its eyes
 // While it is on screen a little plane circles the cursor (on phones, the last tap); clicking or tapping fires
 // the plane's machine gun. Once hit, a health bar shows over its head, and enough hits bring it down in a burst
 // of 8-bit fireworks. It starts from MONSTER ATTACK! in the + menu (CALL OFF THE ATTACK ends it), or by itself
@@ -35,7 +35,7 @@ const MONSTERS = {
   alien: { name: 'ALIEN MONSTER', tag: 'ALIEN', where: 'IN CENTRAL PARK', at: [40.7812, -73.9665], zoom: 2, hp: 50, planeAlt: 9, spread: 0.8, puff: 0.6, create: createAlien },
   fluff: { name: 'ALWAYS PUDGY FLUFF DUDE', tag: 'DUDE', where: 'ON THE UPPER WEST SIDE', at: [40.7865, -73.9770], zoom: 2, hp: 50, planeAlt: 10, spread: 0.9, puff: 0.6, create: createFluff },
   ufo: { name: 'UFO', tag: 'UFO', where: 'OVER MANHATTAN', at: [40.7308, -73.9973], zoom: 2, hp: 50, planeAlt: 15, spread: 1.2, puff: 0.8, create: createUfo },
-  robot: { name: 'GIANT ROBOT', tag: 'ROBOT', where: 'ON WALL STREET', at: [40.7069, -74.0113], zoom: 2, hp: 55, planeAlt: 11, spread: 1, puff: 0.7, create: createRobot },
+  robot: { name: 'GIANT ROBOT', tag: 'ROBOT', where: 'IN THE WEST VILLAGE', at: [40.7343, -74.0055], zoom: 2, hp: 55, planeAlt: 11, spread: 1, puff: 0.7, create: createRobot },
 };
 const ORDER = ['lizard', 'ape', 'alien', 'fluff', 'ufo', 'robot'];
 
@@ -1056,14 +1056,14 @@ function createUfo(ctx) {
 }
 const tmpV = new THREE.Vector3();
 
-// the giant robot: lands on rocket feet and stomps around Wall Street shouting GIVE ME ALL YOUR JOBS! and lasers the office towers
+// the giant robot: lands on rocket feet and stomps around the West Village shouting GIVE ME ALL YOUR JOBS! and lasers the office towers
 // with its eyes, setting their roofs on fire. Shot down, it sparks, its head pops off and it blows apart.
 function createRobot(ctx) {
   const { map, s, fx, center } = ctx;
   const r = buildRobot();
   const root = r.root;
   r.beams.forEach((b) => ctx.group.add(b));
-  // it drops out of the sky on rocket feet, a couple of blocks from Wall Street
+  // it drops out of the sky on rocket feet, in the West Village
   const start = center.clone().add(new THREE.Vector3(rand(3), 0, rand(3)));
   const floor0 = floorAt(map, start.x, start.z);
   root.position.set(start.x, floor0 + 22, start.z);
@@ -1240,12 +1240,14 @@ const VOX = 0.5; // world units per lizard voxel, which makes it about 10 units 
 function buildKaiju() {
   const mats = new Map();
   const mat = (hex) => {
-    if (!mats.has(hex)) mats.set(hex, new THREE.MeshLambertMaterial({ color: hex, flatShading: true }));
+    // transparent and drawn last, like the other monsters, so it stands in front of the pins
+    if (!mats.has(hex)) mats.set(hex, new THREE.MeshLambertMaterial({ color: hex, flatShading: true, transparent: true }));
     return mats.get(hex);
   };
-  const spineMat = new THREE.MeshLambertMaterial({ color: C.spine, flatShading: true });
+  const spineMat = new THREE.MeshLambertMaterial({ color: C.spine, flatShading: true, transparent: true });
   const box = (parent, w, h, d, x, y, z, hex) => {
     const m = new THREE.Mesh(BOX, hex === 'spine' ? spineMat : mat(hex));
+    m.renderOrder = 30;
     m.scale.set(w, h, d);
     m.position.set(x, y, z);
     parent.add(m);
@@ -1355,8 +1357,10 @@ function pose(k, phase, t, still) {
 // ---------------------------------------------------------------------------
 // the other three monsters, built the same way: boxes in voxel units under a scaled `body`
 
-// `over` draws it in the transparent pass after the pins (renderOrder 10-20), like the plane, so it flies over them
-function voxelKit(vox, { over = false } = {}) {
+// every monster draws in the transparent pass after the pins (renderOrder 10-20), like the plane, so it stands
+// in front of them
+function voxelKit(vox) {
+  const over = true;
   const mats = new Map();
   const mat = (hex) => {
     if (!mats.has(hex)) mats.set(hex, new THREE.MeshLambertMaterial({ color: hex, flatShading: true, transparent: over }));
@@ -1589,7 +1593,7 @@ function buildFluff() {
 const UFO_VOX = 0.25; // about 6 units across
 
 function buildUfo() {
-  const kit = voxelKit(UFO_VOX, { over: true });
+  const kit = voxelKit(UFO_VOX);
   const { box, node, body } = kit;
   // a pixel disc: strips whose width follows the circle
   const disc = (r, y, h, hex) => {
@@ -1784,12 +1788,12 @@ function buildPlane() {
 // one instanced mesh of unlit cubes for flames, smoke, dust, bullets and fireworks
 
 function particles(parent, max) {
-  const mesh = new THREE.InstancedMesh(BOX, new THREE.MeshBasicMaterial(), max);
+  const mesh = new THREE.InstancedMesh(BOX, new THREE.MeshBasicMaterial({ transparent: true }), max);
   mesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
   mesh.instanceColor = new THREE.InstancedBufferAttribute(new Float32Array(max * 3), 3);
   mesh.frustumCulled = false;
   mesh.count = 0;
-  mesh.renderOrder = 15;
+  mesh.renderOrder = 28; // over the pins, with the monsters
   parent.add(mesh);
   const list = [];
   const m = new THREE.Matrix4();
