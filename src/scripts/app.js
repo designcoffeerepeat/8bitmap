@@ -92,8 +92,19 @@ for (const p of PARK_LABELS) map.addAnchor(p.name, p.lat, p.lng, { className: 'p
 for (const r of ROAD_LABELS) map.addAnchor(r.name, r.lat, r.lng, { className: 'road-name', minZoom: 2.2 });
 for (const p of [...PLACES, ...MORE_LABELS]) map.addAnchor(p.name, p.lat, p.lng, { className: 'poi', minZoom: 3 });
 
-// The monster easter egg (site menu, or by itself after two minutes).
-initMonster(map);
+// The monster easter egg: MONSTER ATTACK! in the + menu, or by itself every five minutes after a warning.
+const monster = initMonster(map);
+$('#mon-sec').addEventListener('click', (e) => {
+  const b = e.target.closest('.mon-go, .mon-off');
+  if (!b) return;
+  toggleHoods(false);
+  if (b.dataset.monster) monster.launch(b.dataset.monster);
+  else monster.stop();
+});
+window.addEventListener('monster:state', (e) => {
+  for (const b of document.querySelectorAll('.mon-go')) b.setAttribute('aria-pressed', String(b.dataset.monster === e.detail.kind));
+  $('#mon-off').hidden = !e.detail.kind;
+});
 // Full-zoom easter eggs: a sunbather on Brighton Beach, a flying van over the Lower East Side
 // and a rooftop cookout on the Upper West Side.
 initSunbather(map);
@@ -346,7 +357,7 @@ function toggleCategories(open) {
   el.catBtn.setAttribute('aria-expanded', String(open));
 }
 
-// The + menu opens with its sections (Neighborhoods, Subway, Alternate Side Parking) folded; each header opens its own.
+// The + menu opens with its sections (Neighborhoods, Subway, Alternate Side Parking, Monster Attack) folded; each header opens its own.
 function toggleHoods(open) {
   el.hoodMenu.hidden = !open;
   el.hoodBtn.setAttribute('aria-expanded', String(open));

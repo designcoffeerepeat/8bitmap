@@ -1,4 +1,4 @@
-// Site chrome outside the map: the menu in the title box (including MONSTER ATTACK!), the Contact / About / Privacy / Terms
+// Site chrome outside the map: the menu in the title box, the Contact / About / Privacy / Terms
 // modals, the empty ad slot and Times Square billboard (open Contact on Ad/Event Inquiry) and the cookie banner.
 // Loaded on its own so it works while the map and events are still loading.
 
@@ -22,17 +22,6 @@ document.addEventListener('keydown', (e) => {
     menuBtn.focus();
   }
 });
-
-// MONSTER ATTACK! starts the attack, and a second click calls it off. src/scripts/monster.js
-// takes over once the map is ready; until then the click just queues (or unqueues) it.
-const monsterBtn = $('#launch-monster');
-monsterBtn.addEventListener('click', () => {
-  toggleMenu(false);
-  if (window.monsterToggle) return window.monsterToggle();
-  window.monsterQueued = !window.monsterQueued;
-  monsterBtn.setAttribute('aria-pressed', String(window.monsterQueued));
-});
-window.addEventListener('monster:state', (e) => monsterBtn.setAttribute('aria-pressed', String(e.detail.on)));
 
 // ---- modals ----------------------------------------------------------------------
 // Each modal also has a hash (#contact, #about, #privacy, #terms, #disclaimer, #asp) so it can be linked to directly.

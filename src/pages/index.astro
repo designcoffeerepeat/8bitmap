@@ -80,7 +80,6 @@ import AspCalendar from '../components/AspCalendar.astro';
     <nav class="site-menu box" id="site-menu" aria-label="Site" hidden>
       <a href="#contact" data-modal="contact">CONTACT</a>
       <a href="#about" data-modal="about">ABOUT</a>
-      <button type="button" id="launch-monster" aria-pressed="false">MONSTER ATTACK!</button>
       <div class="menu-legal">
         <a href="#privacy" data-modal="privacy">PRIVACY POLICY</a>
         <a href="#terms" data-modal="terms">TERMS AND CONDITIONS</a>
@@ -121,10 +120,10 @@ import AspCalendar from '../components/AspCalendar.astro';
         <ul id="cat-list" aria-label="Event categories"></ul>
       </div>
     </div>
-    <!-- + dropdown: a neighborhood to fly to, the subway map and alerts (src/scripts/subway.js) and
-         alternate side parking (src/scripts/asp.js) -->
+    <!-- + dropdown: a neighborhood to fly to, the subway map and alerts (src/scripts/subway.js),
+         alternate side parking (src/scripts/asp.js) and MONSTER ATTACK! (src/scripts/monster.js) -->
     <div class="hood-filter">
-      <button class="chip hood-btn" id="hood-btn" type="button" aria-expanded="false" aria-controls="hood-menu" aria-label="Neighborhoods, subway and parking" title="Neighborhoods, subway and parking">
+      <button class="chip hood-btn" id="hood-btn" type="button" aria-expanded="false" aria-controls="hood-menu" aria-label="Neighborhoods, subway, parking and monsters" title="Neighborhoods, subway, parking and monsters">
         <svg viewBox="0 0 7 7" aria-hidden="true" shape-rendering="crispEdges"><path fill="currentColor" d="M3 0h1v3h3v1H4v3H3V4H0V3h3z"/></svg>
       </button>
       <div class="src-menu hood-menu box" id="hood-menu" hidden>
@@ -147,6 +146,14 @@ import AspCalendar from '../components/AspCalendar.astro';
           <button class="sub-mode" type="button" id="asp-show" aria-pressed="false">SHOW ON MAP<b>OFF</b></button>
           <a class="sub-link asp-cal" href="#asp" data-modal="asp">FULL YEAR CALENDAR</a>
           <a class="sub-link" href="https://www.nyc.gov/html/dot/html/motorist/alternate-side-parking.shtml" target="_blank" rel="noopener">EMERGENCY SUSPENSIONS AT NYC.GOV</a>
+        </div>
+        <button class="menu-sec" id="mon-sec-btn" type="button" aria-expanded="false" aria-controls="mon-sec">MONSTER ATTACK!<i aria-hidden="true"></i></button>
+        <div class="menu-sec-body" id="mon-sec" hidden>
+          <button class="sub-mode mon-go" type="button" data-monster="lizard" aria-pressed="false">GIGANTIC LIZARD<span>MIDTOWN</span></button>
+          <button class="sub-mode mon-go" type="button" data-monster="ape" aria-pressed="false">RATHER LARGE APE<span>EMPIRE STATE</span></button>
+          <button class="sub-mode mon-go" type="button" data-monster="alien" aria-pressed="false">ALIEN MONSTER<span>CENTRAL PARK</span></button>
+          <button class="sub-mode mon-go" type="button" data-monster="fluff" aria-pressed="false">ALWAYS PUDGY FLUFF DUDE<span>UPPER WEST SIDE</span></button>
+          <button class="sub-mode mon-off" type="button" id="mon-off" hidden>CALL OFF THE ATTACK</button>
         </div>
       </div>
     </div>

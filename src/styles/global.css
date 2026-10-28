@@ -70,7 +70,7 @@ button, a { font: inherit; color: inherit; }
 .day-btn:hover { color: var(--coin); }
 .day-btn:disabled { cursor: progress; }
 
-/* hamburger in the title box and its menu (Contact, About, Monster, then small Privacy / Terms links) */
+/* hamburger in the title box and its menu (Contact, About, then small Privacy / Terms links) */
 .menu-btn {
   flex: none; width: 30px; height: 26px; margin: -4px 0; cursor: pointer;
   display: grid; place-items: center; background: var(--night-2); border: 0; color: var(--ink);
@@ -85,8 +85,6 @@ button, a { font: inherit; color: inherit; }
 }
 .site-menu a:hover, .site-menu button:hover { background: var(--coin); color: var(--night); }
 .site-menu [hidden] { display: none; }
-.site-menu #launch-monster[aria-pressed="true"] { color: var(--pin); }
-.site-menu #launch-monster[aria-pressed="true"]:hover { color: var(--night); }
 .menu-legal { display: grid; gap: 0; margin-top: 6px; padding-top: 6px; border-top: 3px solid var(--night-2); }
 .site-menu .menu-legal a, .site-menu .menu-legal button { padding: 7px 10px 6px; font-size: 7px; color: var(--dim); }
 .site-menu .menu-legal a:hover, .site-menu .menu-legal button:hover { color: var(--night); }
@@ -432,8 +430,19 @@ button, a { font: inherit; color: inherit; }
 .monster-hp i { display: block; width: 72px; height: 10px; padding: 2px; background: var(--night); border: 2px solid var(--frame); }
 .monster-hp b { display: block; height: 100%; width: 100%; background: #6ee07a; }
 .monster-hp.is-low b { background: var(--pin); }
+/* the warning before an attack that starts by itself, with STOP and NO MORE */
+.monster-warn { white-space: normal; }
+.monster-warn p { max-width: 48ch; }
+.monster-warn p span { display: block; }
+.monster-acts { display: flex; gap: 6px; flex: none; }
+.monster-btn { height: 26px; padding: 0 10px; cursor: pointer; font: 8px/1 var(--font-pixel); letter-spacing: .5px; color: var(--ink); background: var(--night-2); border: 0; }
+.monster-btn:hover { background: var(--pin); }
+.monster-btn:focus-visible, .monster-x:focus-visible { outline: 3px solid var(--coin); outline-offset: 1px; }
 @media (max-width: 760px) {
   .monster-hud { left: 16px; right: 82px; transform: none; bottom: calc(76px + env(safe-area-inset-bottom, 0px)); justify-content: space-between; }
+  .monster-hud p { white-space: normal; }
+  .monster-warn { flex-direction: column; align-items: stretch; gap: 10px; }
+  .monster-acts .monster-btn { flex: 1; }
 }
 
 /* + menu sections and subway alerts (src/scripts/subway.js) */
@@ -456,6 +465,9 @@ button, a { font: inherit; color: inherit; }
 }
 .sub-mode span { color: var(--dim); white-space: nowrap; }
 .sub-mode.is-on { border-color: var(--coin); color: var(--coin); }
+.mon-go[aria-pressed="true"] { border-color: var(--pin); color: var(--pin); }
+.mon-off { justify-content: center; color: var(--pin); }
+.mon-off[hidden] { display: none; }
 .sub-mode:focus-visible { outline: 3px solid var(--coin); outline-offset: 1px; }
 .sub-note { margin: 4px 2px 8px; font: 18px/1.1 var(--font-body); color: var(--dim); }
 .sub-list { list-style: none; margin: 4px 0 8px; padding: 0; max-height: 260px; overflow-y: auto; }
