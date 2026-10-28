@@ -33,7 +33,7 @@ const MONSTERS = {
   ape: { name: 'RATHER LARGE APE', tag: 'APE', where: 'AT THE EMPIRE STATE', at: [ESB.lat, ESB.lng], lookY: 6, zoom: 2.1, hp: 45, planeAlt: 18, spread: 0.5, puff: 0.5, create: createApe },
   alien: { name: 'ALIEN MONSTER', tag: 'ALIEN', where: 'IN CENTRAL PARK', at: [40.7812, -73.9665], zoom: 2, hp: 50, planeAlt: 9, spread: 0.8, puff: 0.6, create: createAlien },
   fluff: { name: 'ALWAYS PUDGY FLUFF DUDE', tag: 'DUDE', where: 'ON THE UPPER WEST SIDE', at: [40.7865, -73.9770], zoom: 2, hp: 50, planeAlt: 10, spread: 0.9, puff: 0.6, create: createFluff },
-  ufo: { name: 'UFO', tag: 'UFO', where: 'OVER MANHATTAN', at: [40.7308, -73.9973], zoom: 2, hp: 50, planeAlt: 11, spread: 1.2, puff: 0.8, create: createUfo },
+  ufo: { name: 'UFO', tag: 'UFO', where: 'OVER MANHATTAN', at: [40.7308, -73.9973], zoom: 2, hp: 50, planeAlt: 15, spread: 1.2, puff: 0.8, create: createUfo },
 };
 const ORDER = ['lizard', 'ape', 'alien', 'fluff', 'ufo'];
 
@@ -919,7 +919,7 @@ function createUfo(ctx) {
   const { map, fx, group, center } = ctx;
   const u = buildUfo();
   const root = u.root;
-  const HOVER = 7;
+  const HOVER = 11; // well over the rooftops
   const goalNear = () => {
     const a = Math.random() * Math.PI * 2;
     const r = 2 + Math.random() * 6;
@@ -1174,14 +1174,16 @@ function pose(k, phase, t, still) {
 // ---------------------------------------------------------------------------
 // the other three monsters, built the same way: boxes in voxel units under a scaled `body`
 
-function voxelKit(vox) {
+// `over` draws it in the transparent pass after the pins (renderOrder 10-20), like the plane, so it flies over them
+function voxelKit(vox, { over = false } = {}) {
   const mats = new Map();
   const mat = (hex) => {
-    if (!mats.has(hex)) mats.set(hex, new THREE.MeshLambertMaterial({ color: hex, flatShading: true }));
+    if (!mats.has(hex)) mats.set(hex, new THREE.MeshLambertMaterial({ color: hex, flatShading: true, transparent: over }));
     return mats.get(hex);
   };
   const box = (parent, w, h, d, x, y, z, hex) => {
     const m = new THREE.Mesh(BOX, mat(hex));
+    if (over) m.renderOrder = 30;
     m.scale.set(w, h, d);
     m.position.set(x, y, z);
     parent.add(m);
@@ -1406,7 +1408,7 @@ function buildFluff() {
 const UFO_VOX = 0.25; // about 6 units across
 
 function buildUfo() {
-  const kit = voxelKit(UFO_VOX);
+  const kit = voxelKit(UFO_VOX, { over: true });
   const { box, node, body } = kit;
   // a pixel disc: strips whose width follows the circle
   const disc = (r, y, h, hex) => {
@@ -1422,9 +1424,10 @@ function buildUfo() {
   const lights = [];
   for (let i = 0; i < 12; i++) {
     const a = (i / 12) * Math.PI * 2;
-    const m = new THREE.MeshBasicMaterial({ color: SPARKS[i % SPARKS.length] });
+    const m = new THREE.MeshBasicMaterial({ color: SPARKS[i % SPARKS.length], transparent: true });
     kit.extra.push(m);
     const l = new THREE.Mesh(BOX, m);
+    l.renderOrder = 30;
     l.scale.set(1.2, 0.8, 1.2);
     l.position.set(Math.cos(a) * 11.6, 0, Math.sin(a) * 11.6);
     body.add(l);
