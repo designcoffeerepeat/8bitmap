@@ -86,8 +86,7 @@ button, a { font: inherit; color: inherit; }
 .site-menu a:hover, .site-menu button:hover { background: var(--coin); color: var(--night); }
 .site-menu [hidden] { display: none; }
 .menu-legal { display: grid; gap: 0; margin-top: 6px; padding-top: 6px; border-top: 3px solid var(--night-2); }
-/* small links at the font's native 8px so every glyph sits on whole pixels and the left edges line up exactly */
-.site-menu .menu-legal a, .site-menu .menu-legal button { padding: 6px 10px 5px; font-size: 8px; letter-spacing: 0; text-indent: 0; color: var(--dim); }
+.site-menu .menu-legal a, .site-menu .menu-legal button { padding: 7px 10px 6px; font-size: 7px; color: var(--dim); }
 .site-menu .menu-legal a:hover, .site-menu .menu-legal button:hover { color: var(--night); }
 
 /* ad slot beside the title box: same dialogue-box frame, swap the text or drop an image in later */
