@@ -4,9 +4,12 @@
 // In every mode, a stretch an alert takes out of service ("No [L] trains between 8 Av and Bedford Av") is
 // drawn in red with a warning pin; tapping the pin shows the alert. Line paths and stations come from
 // src/scripts/map/subway.json (tools/build_subway.py), alerts from /api/subway-alerts in worker/index.js.
-// The chip beside the + button says what is shown and hides it when tapped.
+// The chip beside the + button says what is shown and hides it when tapped. With the map on, hovering a
+// station shows its name and the lines that stop there.
 
+import * as THREE from 'three';
 import SUBWAY from './map/subway.json';
+import { latLngToWorld } from './map/geo.js';
 import { parseSpan, findSpan } from './subway-spans.js';
 
 const MTA_ALERTS_PAGE = 'https://www.mta.info/alerts';
@@ -224,6 +227,48 @@ export function initSubway(map) {
       <li>${bullet(r)}<span title="${esc(heads.join('\n\n'))}">${esc(heads[0] ?? '')}${heads.length > 1 ? ` <em>+${heads.length - 1} more</em>` : ''}</span></li>`).join('')}
     </ul>${link}`;
   }
+
+  // Hovering a station on the subway map shows its name and the lines that stop there.
+  const HOVER_PX = 9; // how near the pointer has to be, in screen pixels
+  const tip = document.createElement('div');
+  tip.className = 'sub-tip';
+  tip.hidden = true;
+  map.canvas.parentElement.appendChild(tip);
+  const serving = {};
+  for (const [r, route] of Object.entries(SUBWAY.routes)) {
+    for (const id of (route.stops ?? []).flat()) (serving[id] ??= new Set()).add(BULLET[r] ?? r);
+  }
+  const stations = Object.entries(SUBWAY.stations ?? {}).map(([id, [name, lat, lng]]) => {
+    const p = latLngToWorld(lat, lng);
+    return { name, routes: [...(serving[id] ?? [])].sort((a, b) => rank(a) - rank(b)), pos: new THREE.Vector3(p.x, map.groundAt(p.x, p.z), p.z) };
+  });
+  let shown = null;
+  const hideTip = () => { tip.hidden = true; shown = null; };
+  map.canvas.addEventListener('pointermove', (e) => {
+    // not while dragging, on touch, or over an event pin (which shows its own label)
+    if (mode !== 'map' || e.buttons || e.pointerType === 'touch' || map.canvas.style.cursor === 'pointer') { hideTip(); return; }
+    const box = map.canvas.getBoundingClientRect();
+    const x = e.clientX - box.left;
+    const y = e.clientY - box.top;
+    let best = null;
+    let bestD = HOVER_PX * HOVER_PX;
+    for (const st of stations) {
+      const q = map.toScreen(st.pos);
+      if (q.behind) continue;
+      const d = (q.x - x) ** 2 + (q.y - y) ** 2;
+      if (d < bestD) { bestD = d; best = { st, q }; }
+    }
+    if (!best) { hideTip(); return; }
+    if (shown !== best.st) {
+      shown = best.st;
+      tip.innerHTML = `<b>${esc(best.st.name)}</b>${best.st.routes.length ? `<span>${best.st.routes.map(bullet).join('')}</span>` : ''}`;
+    }
+    tip.hidden = false;
+    tip.style.transform = `translate(${Math.round(best.q.x)}px, ${Math.round(best.q.y - 8)}px) translate(-50%, -100%)`;
+  });
+  map.canvas.addEventListener('pointerleave', hideTip);
+  map.on('view', hideTip);
+  for (const b of [...modeBtns, chip]) b.addEventListener('click', hideTip);
 
   // a tap anywhere else closes an open warning
   document.addEventListener('pointerdown', (e) => {
