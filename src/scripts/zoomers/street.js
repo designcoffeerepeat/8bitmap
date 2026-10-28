@@ -2,7 +2,7 @@
 //   Carroll Gardens: a woman dressed all in green waters the planters in front of a building.
 //   Fifth Avenue and 57th Street: Bill Cunningham in his blue jacket rides his bike and stops to take photos.
 //   City Hall: the Rent Is Too Damn High guy, in black gloves and white whiskers, says so.
-//   McCarren Park: a guy in a cap and a blonde guy in sunglasses on beach chairs pass a joint back and forth.
+//   McCarren Park: a guy in a black cap and a blonde guy in sunglasses on beach chairs pass a joint back and forth.
 //   Museum of the Moving Image: a big turquoise bird and a gray elephant stroll around outside.
 
 import * as THREE from 'three';
@@ -218,49 +218,57 @@ function mccarren(map, spot) {
     for (const [lx, lz] of [[-1.2, -1], [1.2, -1], [-1.2, 1.2], [1.2, 1.2]]) k.box(c, 0.2, 1.2, 0.2, lx, 0.6, lz, '#c9c9cf');
     return c;
   };
-  chair(-0.09, ['#ff5c8a', '#ffffff']);
-  chair(0.09, ['#4dd2ff', '#ffffff']);
-  const cap = person(k, { skin: '#d9a27a', top: '#5d6470', bottom: '#2b3a5a', hat: 'cap', hatColor: '#ed1c24' });
+  const SEAT = 0.25; // each chair's middle from the pair's middle: a chair's width apart, so the pass shows
+  chair(-SEAT, ['#ff5c8a', '#ffffff']);
+  chair(SEAT, ['#4dd2ff', '#ffffff']);
+  const cap = person(k, { skin: '#d9a27a', top: '#5d6470', bottom: '#2b3a5a', hat: 'cap', hatColor: '#141418' });
   const blond = person(k, { skin: '#f0c9a8', top: '#ffffff', bottom: '#4a5a7a', hair: '#f1d36b', glasses: '#141418' });
   const pals = [cap, blond];
   pals.forEach((p, i) => {
     root.add(p.root);
-    p.root.position.set(i ? 0.09 : -0.09, 0, 0);
+    p.root.position.set(i ? SEAT : -SEAT, 0, 0);
     p.root.rotation.y = i ? -0.35 : 0.35; // turned a little toward each other
     sitPose(p);
     p.upper.rotation.x = -0.45; // leaning back
   });
-  const joint = k.box(root, 0.008, 0.008, 0.04, 0, 0, 0, '#f4f4f2');
-  const tip = k.box(root, 0.01, 0.01, 0.01, 0, 0, 0, '#ff8a1f', true);
+  // big enough to see at full zoom, with a glowing tip
+  const joint = k.box(root, 0.022, 0.022, 0.075, 0, 0, 0, '#f4f4f2');
+  const tip = k.box(root, 0.026, 0.026, 0.026, 0, 0, 0, '#ff8a1f', true);
   const puffs = [0, 1, 2].map(() => k.box(root, 0.03, 0.03, 0.03, 0, 0, 0, '#dcdce4'));
-  const hand = new THREE.Vector3();
+  const from = new THREE.Vector3();
+  const to = new THREE.Vector3();
+  const hand = (p, i, out) => {
+    p.arms[i ? 0 : 1].userData.hand.localToWorld(out.set(0, 0, 0.3));
+    return root.worldToLocal(out);
+  };
+  const ease = THREE.MathUtils.smoothstep;
   let t = 0;
-  const TURN = 4; // seconds each holds it: a puff, a breath out, then pass
+  // Each turn: raise it and puff (0 to 1.8 s), breathe out (to 3), then both lean in and reach across
+  // (3 to 3.6), the joint goes hand to hand (3.6 to 4.4) and the other one sits back with it (to 5).
+  const TURN = 5;
   function step(dt) {
     t += dt;
     const n = Math.floor(t / TURN) % 2;
     const u = t % TURN;
+    const reach = ease(u, 3, 3.6) * (1 - ease(u, 4.4, 5));
+    const slide = ease(u, 3.6, 4.4);
     pals.forEach((p, i) => {
       sitPose(p);
       p.upper.rotation.x = -0.45;
-      if (i === n) {
-        const up = u < 1.2 ? THREE.MathUtils.smoothstep(u, 0, 0.5) : u < 3.2 ? 1 - THREE.MathUtils.smoothstep(u, 1.2, 1.7) : 0;
-        p.arms[i ? 0 : 1].rotation.set(-0.6 - up * 1.8, 0, (i ? -1 : 1) * (u > 3.2 ? 0.9 : 0.2));
-      } else {
-        // reaching over for it at the end of the other's turn
-        const reach = THREE.MathUtils.smoothstep(u, 3.1, 3.6);
-        p.arms[i ? 0 : 1].rotation.set(-0.6 - reach * 0.4, 0, (i ? -1 : 1) * reach * 0.9);
-      }
+      p.upper.rotation.z = (i ? 1 : -1) * reach * 0.35; // leaning in toward the other chair
+      const side = i ? -1 : 1;
+      const up = i === n ? ease(u, 0, 0.5) * (1 - ease(u, 1.3, 1.8)) : 0;
+      p.arms[i ? 0 : 1].rotation.set(-0.6 - up * 1.8 + reach * 0.35, 0, side * (0.2 + reach * 1.35));
     });
     root.updateMatrixWorld(true);
-    const holder = pals[n];
-    holder.arms[n ? 0 : 1].userData.hand.localToWorld(hand.set(0, 0, 0.3));
-    root.worldToLocal(hand);
-    joint.position.copy(hand);
-    tip.position.copy(hand).add(v(0, 0.025, 0.006));
+    hand(pals[n], n, from);
+    hand(pals[1 - n], 1 - n, to);
+    joint.position.lerpVectors(from, to, slide);
+    tip.position.copy(joint.position).add(v(0, 0.045, 0.004)); // at the far end
     // the smoke after a puff, drifting up
+    const holder = pals[n];
     puffs.forEach((pf, i) => {
-      const s = u - 1.3 - i * 0.35;
+      const s = u - 1.6 - i * 0.35;
       pf.visible = s > 0 && s < 1.6;
       if (!pf.visible) return;
       holder.head.localToWorld(pf.position.set(0, 0.6, 1.2));
