@@ -13,6 +13,7 @@ Usage:  python3 tools/fetch_eventbrite.py [YYYY-MM-DD]     (default: today in NY
 
 import json
 import os
+import re
 import sys
 import time
 import urllib.parse
@@ -52,10 +53,11 @@ def to_raw(ev, org):
     start = datetime.fromisoformat(ev['start']['local']).replace(tzinfo=NYC)
     end = datetime.fromisoformat(ev['end']['local']).replace(tzinfo=NYC) if (ev.get('end') or {}).get('local') else None
     cat = (ev.get('category') or {}).get('name', '')
+    title = (ev.get('name') or {}).get('text', '').strip()
     return {
         'id': str(ev['id']),
-        'title': (ev.get('name') or {}).get('text', '').strip(),
-        'category': CATEGORIES.get(cat, 'art' if 'Art' in cat else 'community'),
+        'title': title,
+        'category': 'comedy' if re.search(r'comedy|stand-?up', title, re.I) else CATEGORIES.get(cat, 'art' if 'Art' in cat else 'community'),
         'start': start.isoformat(),
         'end': end.isoformat() if end else None,
         'allDay': False,
@@ -95,12 +97,23 @@ def main():
             seen.add(ev['id'])
             a = (ev.get('venue') or {}).get('address') or {}
             if a.get('latitude') and a.get('longitude'):
-                events.append(to_raw(ev, org))
+                raw = to_raw(ev, org)
+                # A show run several times a night is one pin at its first time, with every time listed.
+                same = next((e for e in events if e['title'] == raw['title'] and e['venue']['name'] == raw['venue']['name']), None)
+                if same:
+                    same['times'].append(raw['start'])
+                    continue
+                raw['times'] = [raw['start']]
+                events.append(raw)
                 kept += 1
             else:
                 unplaced.append({'title': (ev.get('name') or {}).get('text'), 'url': ev.get('url')})
         print(f"  {org['name']}: {kept}")
         time.sleep(0.5)
+    for e in events:
+        times = e.pop('times')
+        if len(times) > 1:
+            e['description'] += '. Times: ' + ', '.join(datetime.fromisoformat(t).strftime('%-I:%M %p').lower() for t in times)
     OUT.write_text(json.dumps({
         'source': {'name': 'Eventbrite', 'url': PAGE},
         'date': day.isoformat(),
