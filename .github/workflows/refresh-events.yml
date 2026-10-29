@@ -40,7 +40,10 @@ jobs:
         env:
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
           SEATGEEK_CLIENT_ID: ${{ secrets.SEATGEEK_CLIENT_ID }}
+          EVENTBRITE_TOKEN: ${{ secrets.EVENTBRITE_TOKEN }}
+          NYC_COUNCIL_TOKEN: ${{ secrets.NYC_COUNCIL_TOKEN }}
           NPS_API_KEY: ${{ secrets.NPS_API_KEY }}
+          AMC_API_KEY: ${{ secrets.AMC_API_KEY }}
         run: |
           for f in tools/fetch_*.py; do
             echo "::group::$f"
@@ -52,7 +55,10 @@ jobs:
         env:
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
           SEATGEEK_CLIENT_ID: ${{ secrets.SEATGEEK_CLIENT_ID }}
+          EVENTBRITE_TOKEN: ${{ secrets.EVENTBRITE_TOKEN }}
+          NYC_COUNCIL_TOKEN: ${{ secrets.NYC_COUNCIL_TOKEN }}
           NPS_API_KEY: ${{ secrets.NPS_API_KEY }}
+          AMC_API_KEY: ${{ secrets.AMC_API_KEY }}
           EVENTS_DIR: public/data/tomorrow
         run: |
           day="$(TZ=America/New_York date -d tomorrow +%F)"
