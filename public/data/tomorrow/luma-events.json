@@ -4,8 +4,28 @@
   "url": "https://luma.com/nyc"
  },
  "date": "2026-10-30",
- "fetchedAt": "2026-10-29T05:20:37-04:00",
+ "fetchedAt": "2026-10-29T13:22:18-04:00",
  "events": [
+  {
+   "id": "evt-1nTUdICtKcX8Jf3",
+   "title": "COROS x The Woods x Leon's Bagels",
+   "category": "community",
+   "start": "2026-10-30T08:00:00-04:00",
+   "end": "2026-10-30T10:00:00-04:00",
+   "venue": {
+    "name": "Leon’s Bagels",
+    "address": "Leon’s Bagels, 181 Mulberry St, New York, NY 10012, USA",
+    "neighborhood": "Nolita",
+    "lat": 40.720878,
+    "lng": -73.996833
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Personal calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/j05tytha",
+   "tags": []
+  },
   {
    "id": "evt-c2tn1q1lYlAH3jC",
    "title": "PROOF x rabbit - NYCM Bagel Shakeout Run",
