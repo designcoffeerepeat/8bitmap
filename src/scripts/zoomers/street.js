@@ -1,5 +1,5 @@
 // Zoomers out on the street, each starting when the map sits zoomed all the way in on its spot:
-//   Fifth Avenue and 57th Street: Bill Cunningham in his blue jacket rides his bike and stops to take photos.
+//   The plaza by Central Park South, beside the park's pool: Bill Cunningham in his blue jacket rides his bike and stops to take photos.
 //   McCarren Park: a guy in a black cap and a blonde guy in sunglasses on beach chairs share a can of soda back and forth.
 //   Museum of the Moving Image: a giant pigeon struts around outside.
 
@@ -9,7 +9,8 @@ import { latLngToWorld } from '../map/geo.js';
 import { kit, person, standPose, sitPose, loop, openSpot, VOX, STRIDE, WALK } from './kit.js';
 
 export function initStreetZoomers(map) {
-  near(map, 40.7637, -73.9740, billCunningham);
+  // on the light plaza paving south of Central Park, beside the park's pool, between the towers
+  near(map, 40.7647, -73.9791, billCunningham, { paved: true });
   const park = latLngToWorld(40.7212, -73.9512);
   at(map, { pos: new THREE.Vector3(park.x, map.groundAt(park.x, park.z), park.z) }, mccarren);
   near(map, 40.7563, -73.9239, movingImage);
@@ -21,8 +22,10 @@ function at(map, spot, start) {
 
 // A scene on the open tile nearest [lat, lng], preferring one no tall building hides, that starts when
 // the map is zoomed all the way in on [lat, lng] itself.
-function near(map, lat, lng, start) {
-  const spot = openSpot(map, lat, lng, { clearView: true, maxRing: 3 }) ?? openSpot(map, lat, lng);
+function near(map, lat, lng, start, { paved = false } = {}) {
+  const spot = paved
+    ? openSpot(map, lat, lng, { paved, maxRing: 4 }) ?? openSpot(map, lat, lng)
+    : openSpot(map, lat, lng, { clearView: true, maxRing: 3 }) ?? openSpot(map, lat, lng);
   if (!spot) return;
   const p = latLngToWorld(lat, lng);
   watchZoomEgg(map, new THREE.Vector3(p.x, spot.y, p.z), (m) => start(m, spot));

@@ -4,7 +4,7 @@
 // waist, a walk cycle, and speech or thought bubbles that float over a head as plain page text.
 
 import * as THREE from 'three';
-import { latLngToWorld, latLngToCell, COLS, ROWS } from '../map/geo.js';
+import { latLngToWorld, latLngToCell, fineCounts, F, COLS, ROWS } from '../map/geo.js';
 import { watchZoomEgg } from '../zoom-egg.js';
 
 export const VOX = 0.065; // world units per voxel: a person is about half a tile tall, a bit bigger than the older eggs so they read at full zoom
@@ -190,8 +190,9 @@ export function headTop(p, out = new THREE.Vector3()) {
 
 // The nearest open tile (a street or plaza, no building on it, not water) to [lat, lng]: its middle in
 // world space, its ground height, and the roof of a building beside it to stand in front of, if any.
-// With clearView it also skips tiles hidden behind tall buildings to the south, where the camera sits.
-export function openSpot(map, lat, lng, { maxRing = 6, clearView = false } = {}) {
+// With clearView it also skips tiles hidden behind tall buildings to the south, where the camera sits;
+// with paved, any tile with park or water on it.
+export function openSpot(map, lat, lng, { maxRing = 6, clearView = false, paved = false } = {}) {
   const c = latLngToCell(lat, lng);
   const c0 = Math.floor(c.col);
   const r0 = Math.floor(c.row);
@@ -206,6 +207,7 @@ export function openSpot(map, lat, lng, { maxRing = 6, clearView = false } = {})
         const z = row - ROWS / 2 + 0.5;
         const y = map.groundAt(x, z);
         if (y < 0.34 || y > 0.6) continue; // water, or a raised landmark
+        if (paved) { const n = fineCounts(col, row); if (n[F.PARK] || n[F.LAKE]) continue; }
         // clearView: nothing tall just south of it, where the camera looks from
         if (clearView && [1, 2, 3].some((d) => [-1, 0, 1].some((e) => (map.rooftop(col + e, row + d)?.top ?? 0) > y + 0.8 * d))) continue;
         const beside = [[0, -1], [1, 0], [0, 1], [-1, 0]].map(([a, b]) => map.rooftop(col + a, row + b)).find(Boolean) ?? null;
