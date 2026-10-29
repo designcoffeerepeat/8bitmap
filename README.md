@@ -133,6 +133,7 @@ python3 tools/fetch_nycgov.py             # today in NYC
 python3 tools/fetch_permits.py
 TICKETMASTER_API_KEY=... python3 tools/fetch_ticketmaster.py
 EVENTBRITE_TOKEN=... python3 tools/fetch_eventbrite.py
+NYC_COUNCIL_TOKEN=... python3 tools/fetch_council.py
 SEATGEEK_CLIENT_ID=... python3 tools/fetch_seatgeek.py
 python3 tools/fetch_artwrld.py
 python3 tools/fetch_venues.py
@@ -210,6 +211,13 @@ the map shows no Ticketmaster events until the first run that has one.
 `fetch_seatgeek.py` reads the SeatGeek Platform API (https://platform.seatgeek.com) for events within 12 miles of
 Manhattan. It needs a free client id in `SEATGEEK_CLIENT_ID`, which the scheduled refresh reads from a repository
 secret of that name. Without one it skips the run, like Ticketmaster.
+
+### NYC Council
+
+`fetch_council.py` reads the day's public hearings and Stated Meetings from the Council's Legistar Web API
+(https://council.nyc.gov/legislation/api/). It needs a free key in `NYC_COUNCIL_TOKEN`, read from a repository secret
+of that name by the scheduled refresh; without one it skips the run. Meetings are placed at City Hall or 250 Broadway
+(`BUILDINGS` in the script); cancelled, deferred and remote-only ones are left out. Each links to its Legistar page.
 
 ### Eventbrite
 

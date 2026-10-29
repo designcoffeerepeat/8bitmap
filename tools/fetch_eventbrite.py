@@ -34,8 +34,7 @@ CATEGORIES = {'Music': 'music', 'Performing & Visual Arts': 'theater', 'Film, Me
 def organizer_events(org_id, token):
     rows, cont = [], None
     while True:
-        params = {'token': token, 'status': 'live', 'order_by': 'start_asc', 'time_filter': 'current_future',
-                  'expand': 'venue,category'}
+        params = {'token': token, 'status': 'live', 'order_by': 'start_asc', 'expand': 'venue,category'}
         if cont:
             params['continuation'] = cont
         data = get(f'{API}/organizers/{org_id}/events/?{urllib.parse.urlencode(params)}')
@@ -83,7 +82,9 @@ def main():
         try:
             rows = organizer_events(org['id'], token)
         except Exception as e:
-            print(f"  could not read {org['name']}: {e}", file=sys.stderr)
+            # Eventbrite says what was wrong in the error body; it never contains the token.
+            detail = e.read().decode('utf-8', 'replace')[:300] if hasattr(e, 'read') else ''
+            print(f"  could not read {org['name']}: {e} {detail}", file=sys.stderr)
             continue
         kept = 0
         for ev in rows:

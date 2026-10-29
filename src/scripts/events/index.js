@@ -13,6 +13,7 @@ import permitsSource from './sources/permits.js';
 import ticketmasterSource from './sources/ticketmaster.js';
 import seatgeekSource from './sources/seatgeek.js';
 import eventbriteSource from './sources/eventbrite.js';
+import councilSource from './sources/council.js';
 import artwrldSource from './sources/artwrld.js';
 import venuesSource from './sources/venues.js';
 import greenmarketsSource from './sources/greenmarkets.js';
@@ -29,7 +30,7 @@ import amcSource from './sources/amc.js';
 import { LIVE_HIDDEN } from './live.js';
 
 // ./sources/dummy.js holds sample events for offline testing.
-const ALL_SOURCES = [nycgovSource, permitsSource, ticketmasterSource, seatgeekSource, eventbriteSource, artwrldSource, venuesSource, greenmarketsSource, npsSource, astoriaSource, redhookSource, foresthillsSource, hobokenSource, coneyislandSource, statenislandSource, jerseycitySource, patchbaySource, amcSource];
+const ALL_SOURCES = [nycgovSource, permitsSource, councilSource, ticketmasterSource, seatgeekSource, eventbriteSource, artwrldSource, venuesSource, greenmarketsSource, npsSource, astoriaSource, redhookSource, foresthillsSource, hobokenSource, coneyislandSource, statenislandSource, jerseycitySource, patchbaySource, amcSource];
 
 // Live builds (anything not built with PUBLIC_SITE=dev) leave out the sources in ./live.js.
 const IS_DEV = import.meta.env.PUBLIC_SITE === 'dev';
