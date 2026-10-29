@@ -226,8 +226,9 @@ organizers listed in `data/eventbrite-organizers.json` (Eventbrite has no city-w
 private token in `EVENTBRITE_TOKEN`, read from a repository secret of that name by the scheduled refresh; without one
 it skips the run, like Ticketmaster. Eventbrite's API terms ask that each event shows its title and links straight to
 its Eventbrite page, so only the title, time, place and link are kept, and online-only events are left out. Add an
-organizer with the number at the end of its page address (eventbrite.com/o/name-NUMBER). It is dev only
-(`LIVE_HIDDEN`) until MK approves the organizer list.
+organizer with the number at the end of its page address (eventbrite.com/o/name-NUMBER).
+Leave out organizers that are venues another source already reads (Eastville Comedy, Public Records and so on), so
+nothing is listed twice.
 
 ### AMC Lincoln Square IMAX
 

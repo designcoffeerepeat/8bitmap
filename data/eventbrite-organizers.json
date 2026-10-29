@@ -1,9 +1,50 @@
 {
-  "_note": "NYC organizers whose public Eventbrite events go on the map. Add one with the number at the end of its organizer page (eventbrite.com/o/name-NUMBER). Approved by MK before going live.",
+  "_note": "NYC organizers whose public Eventbrite events go on the map (approved by MK 2026-10-29). Add one with the number at the end of its organizer page (eventbrite.com/o/name-NUMBER). Leave out venues another source already reads, so the same event is not listed twice.",
   "organizers": [
-    { "id": "17593055320", "name": "Epic Tech Events", "kind": "tech meetups" },
-    { "id": "70958284203", "name": "Lofty Pigeon Books", "kind": "bookstore, Kensington" },
-    { "id": "79929425663", "name": "Hive Mind Books", "kind": "bookstore, Bushwick" },
-    { "id": "54092262743", "name": "ASICS NYC", "kind": "run club, Meatpacking District" }
+    {
+      "id": "17593055320",
+      "name": "Epic Tech Events",
+      "kind": "tech meetups"
+    },
+    {
+      "id": "70958284203",
+      "name": "Lofty Pigeon Books",
+      "kind": "bookstore, Kensington"
+    },
+    {
+      "id": "79929425663",
+      "name": "Hive Mind Books",
+      "kind": "bookstore, Bushwick"
+    },
+    {
+      "id": "54092262743",
+      "name": "ASICS NYC",
+      "kind": "run club, Meatpacking District"
+    },
+    {
+      "id": "13064382976",
+      "name": "Greenlight Bookstore",
+      "kind": "bookstore, Fort Greene"
+    },
+    {
+      "id": "30058841244",
+      "name": "Strand Bookstore",
+      "kind": "bookstore, Union Square"
+    },
+    {
+      "id": "102488394741",
+      "name": "SULLALUNA bookshop & bistrot",
+      "kind": "bookstore, West Village"
+    },
+    {
+      "id": "112449709231",
+      "name": "NYC AI & Tech Meetup",
+      "kind": "tech meetups"
+    },
+    {
+      "id": "18898315629",
+      "name": "The Tiny Cupboard",
+      "kind": "comedy club, Bushwick"
+    }
   ]
 }
