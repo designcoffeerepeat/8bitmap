@@ -132,6 +132,7 @@ You can also run it from the repo's Actions tab (Run workflow), or by hand with 
 python3 tools/fetch_nycgov.py             # today in NYC
 python3 tools/fetch_permits.py
 TICKETMASTER_API_KEY=... python3 tools/fetch_ticketmaster.py
+EVENTBRITE_TOKEN=... python3 tools/fetch_eventbrite.py
 SEATGEEK_CLIENT_ID=... python3 tools/fetch_seatgeek.py
 python3 tools/fetch_artwrld.py
 python3 tools/fetch_venues.py
@@ -209,6 +210,16 @@ the map shows no Ticketmaster events until the first run that has one.
 `fetch_seatgeek.py` reads the SeatGeek Platform API (https://platform.seatgeek.com) for events within 12 miles of
 Manhattan. It needs a free client id in `SEATGEEK_CLIENT_ID`, which the scheduled refresh reads from a repository
 secret of that name. Without one it skips the run, like Ticketmaster.
+
+### Eventbrite
+
+`fetch_eventbrite.py` reads the official Eventbrite API (https://www.eventbrite.com/platform/api) for the NYC
+organizers listed in `data/eventbrite-organizers.json` (Eventbrite has no city-wide search any more). It needs a
+private token in `EVENTBRITE_TOKEN`, read from a repository secret of that name by the scheduled refresh; without one
+it skips the run, like Ticketmaster. Eventbrite's API terms ask that each event shows its title and links straight to
+its Eventbrite page, so only the title, time, place and link are kept, and online-only events are left out. Add an
+organizer with the number at the end of its page address (eventbrite.com/o/name-NUMBER). It is dev only
+(`LIVE_HIDDEN`) until MK approves the organizer list.
 
 ### AMC Lincoln Square IMAX
 
