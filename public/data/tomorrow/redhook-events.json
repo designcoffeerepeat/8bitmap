@@ -3,28 +3,28 @@
   "name": "Red Hook calendars",
   "url": "https://pioneerworks.org/calendar"
  },
- "date": "2026-10-29",
- "fetchedAt": "2026-10-28T13:21:23-04:00",
+ "date": "2026-10-30",
+ "fetchedAt": "2026-10-29T05:26:15-04:00",
  "events": [
   {
-   "id": "cobble-hill-health-center-202610291500-cobble-hill-health-center-halloween-haun",
-   "title": "Cobble Hill Health Center Halloween Haunted House",
-   "category": "community",
-   "start": "2026-10-29T15:00:00-04:00",
-   "end": "2026-10-29T17:30:00-04:00",
+   "id": "red-hook-art-project-studio-202610301800-red-hook-art-project-adult-figure-drawin",
+   "title": "Red Hook Art Project: Adult Figure Drawing Night",
+   "category": "art",
+   "start": "2026-10-30T18:00:00-04:00",
+   "end": "2026-10-30T21:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Cobble Hill Health Center",
-    "address": "380 Henry Street",
+    "name": "Red Hook Art Project Studio",
+    "address": "291 Van Brunt St",
     "neighborhood": "",
-    "lat": 40.688504,
-    "lng": -73.997812
+    "lat": 40.678682,
+    "lng": -74.010898
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://brooklyncb6.cityofnewyork.us/event/cobble-hill-health-center-halloween-haunted-house/",
+   "url": "https://brooklyncb6.cityofnewyork.us/event/red-hook-art-project-adult-figure-drawing-night/",
    "tags": [],
    "publisher": {
     "id": "venue-brooklyn-community-board-6",
@@ -33,11 +33,37 @@
    }
   },
   {
-   "id": "sunny-s-bar-202610292000-anita-montoya",
-   "title": "Anita Montoya",
+   "id": "pioneer-works-202610302000-machine-girl-halloween",
+   "title": "Machine Girl Halloween",
    "category": "music",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": "2026-10-29T22:00:00-04:00",
+   "start": "2026-10-30T20:00:00-04:00",
+   "end": "2026-10-30T22:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Pioneer Works",
+    "address": "159 Pioneer Street",
+    "neighborhood": "",
+    "lat": 40.679224,
+    "lng": -74.012128
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Doors 7:00 pm",
+   "details": "",
+   "url": "https://pioneerworks.org/programs/machine-girl",
+   "tags": [],
+   "publisher": {
+    "id": "venue-pioneer-works",
+    "name": "Pioneer Works",
+    "url": "https://pioneerworks.org/"
+   }
+  },
+  {
+   "id": "sunny-s-bar-202610302000-the-spice-ghouls-dance-party",
+   "title": "The Spice Ghouls Dance Party",
+   "category": "music",
+   "start": "2026-10-30T20:00:00-04:00",
+   "end": "2026-10-30T23:30:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Sunny's Bar",
@@ -50,7 +76,7 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://tockify.com/sunnysmusic/detail/289/1793318400000",
+   "url": "https://tockify.com/sunnysmusic/detail/290/1793404800000",
    "tags": [],
    "publisher": {
     "id": "venue-sunny-s-bar",

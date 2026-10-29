@@ -3,15 +3,15 @@
   "name": "National Park Service",
   "url": "https://www.nps.gov/state/ny/index.htm"
  },
- "date": "2026-10-28",
- "fetchedAt": "2026-10-28T13:18:34-04:00",
+ "date": "2026-10-29",
+ "fetchedAt": "2026-10-29T05:18:26-04:00",
  "events": [
   {
    "id": "E2214AE5-F7F6-297F-3131D768ACD7CEB2",
    "title": "Ranger-Guided Tour of Federal Hall",
    "category": "community",
-   "start": "2026-10-28T10:30:00-04:00",
-   "end": "2026-10-28T11:30:00-04:00",
+   "start": "2026-10-29T10:30:00-04:00",
+   "end": "2026-10-29T11:30:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Federal Hall National Memorial",
@@ -33,7 +33,7 @@
    "id": "0D25A738-155D-451F-67D31ADD6827D16D",
    "title": "Castle Clinton Guided tour",
    "category": "community",
-   "start": "2026-10-28T10:00:00-04:00",
+   "start": "2026-10-29T10:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -56,7 +56,7 @@
    "id": "6EDF053C-C210-BD98-EB826C1AD4526045",
    "title": "House Tour",
    "category": "community",
-   "start": "2026-10-28T11:00:00-04:00",
+   "start": "2026-10-29T11:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -73,6 +73,30 @@
    "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=6EDF053C-C210-BD98-EB826C1AD4526045",
    "tags": [
     "Guided Tour"
+   ]
+  },
+  {
+   "id": "264950A1-03F1-BBFD-1EC3FA6F6DDAE2A7",
+   "title": "Ranger-led Program",
+   "category": "community",
+   "start": "2026-10-29T11:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "General Grant National Memorial (Grant's Tomb)",
+    "address": "Programs start on the front plaza of the mausoleum.",
+    "neighborhood": "General Grant National Memorial",
+    "lat": 40.813249,
+    "lng": -73.963163
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Times: 11:00 AM, 2:00 PM. Join a park ranger for a free 30-minute program about Grant's Tomb Wednesdays - Sundays!",
+   "details": "Join a park ranger for a free 30-minute program about Grant's Tomb Wednesdays - Sundays!",
+   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=264950A1-03F1-BBFD-1EC3FA6F6DDAE2A7",
+   "tags": [
+    "Guided Tour",
+    "Talk"
    ]
   }
  ],

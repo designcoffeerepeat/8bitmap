@@ -3,93 +3,41 @@
   "name": "Hoboken calendars",
   "url": "https://hobokenmuseum.org/events/"
  },
- "date": "2026-10-28",
- "fetchedAt": "2026-10-28T13:18:16-04:00",
+ "date": "2026-10-29",
+ "fetchedAt": "2026-10-29T05:18:14-04:00",
  "events": [
   {
-   "id": "hoboken-library-grand-street-branch-202610281030-toddler-story-time",
-   "title": "Toddler Story Time",
-   "category": "community",
-   "start": "2026-10-28T10:30:00-04:00",
-   "end": "2026-10-28T11:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Hoboken Library, Grand Street Branch",
-    "address": "124 Grand Street, Hoboken, NJ",
-    "neighborhood": "Hoboken",
-    "lat": 40.7374,
-    "lng": -74.0353
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "For kids",
-   "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17502933",
-   "tags": [],
-   "publisher": {
-    "id": "venue-hoboken-public-library",
-    "name": "Hoboken Public Library",
-    "url": "https://hobokenlibrary.libnet.info/events"
-   }
-  },
-  {
-   "id": "hoboken-library-grand-street-branch-202610281030-art-with-liz-lecture-and-workshop",
-   "title": "Art with Liz: Lecture and Workshop",
+   "id": "hoboken-historical-museum-202610291000-weekly-arts-crafts-class-at-the-museum",
+   "title": "Weekly Arts & Crafts Class at the Museum",
    "category": "art",
-   "start": "2026-10-28T10:30:00-04:00",
-   "end": "2026-10-28T12:30:00-04:00",
+   "start": "2026-10-29T10:00:00-04:00",
+   "end": "2026-10-29T12:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Hoboken Library, Grand Street Branch",
-    "address": "124 Grand Street, Hoboken, NJ",
+    "name": "Hoboken Historical Museum",
+    "address": "1301 Hudson Street, Hoboken, NJ",
     "neighborhood": "Hoboken",
-    "lat": 40.7374,
-    "lng": -74.0353
+    "lat": 40.75385,
+    "lng": -74.0259
    },
    "price": null,
-   "priceUnknown": false,
+   "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17565889",
+   "url": "https://hobokenmuseum.org/event/artscrafts/2026-10-29/",
    "tags": [],
    "publisher": {
-    "id": "venue-hoboken-public-library",
-    "name": "Hoboken Public Library",
-    "url": "https://hobokenlibrary.libnet.info/events"
+    "id": "venue-hoboken-historical-museum",
+    "name": "Hoboken Historical Museum",
+    "url": "https://hobokenmuseum.org/events/"
    }
   },
   {
-   "id": "hoboken-library-grand-street-branch-202610281530-move-play-wednesday",
-   "title": "Move & Play Wednesday",
+   "id": "hoboken-public-library-202610291030-fine-motor-skills-prep",
+   "title": "Fine Motor Skills Prep",
    "category": "community",
-   "start": "2026-10-28T15:30:00-04:00",
-   "end": "2026-10-28T16:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Hoboken Library, Grand Street Branch",
-    "address": "124 Grand Street, Hoboken, NJ",
-    "neighborhood": "Hoboken",
-    "lat": 40.7374,
-    "lng": -74.0353
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "For kids",
-   "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17503083",
-   "tags": [],
-   "publisher": {
-    "id": "venue-hoboken-public-library",
-    "name": "Hoboken Public Library",
-    "url": "https://hobokenlibrary.libnet.info/events"
-   }
-  },
-  {
-   "id": "hoboken-public-library-202610281600-what-s-new-book-club",
-   "title": "What's New Book Club",
-   "category": "community",
-   "start": "2026-10-28T16:00:00-04:00",
-   "end": "2026-10-28T17:00:00-04:00",
+   "start": "2026-10-29T10:30:00-04:00",
+   "end": "2026-10-29T11:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Hoboken Public Library",
@@ -100,9 +48,9 @@
    },
    "price": null,
    "priceUnknown": false,
-   "description": "",
+   "description": "For kids",
    "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17409513",
+   "url": "https://hobokenlibrary.libnet.info/event/17433950",
    "tags": [],
    "publisher": {
     "id": "venue-hoboken-public-library",
@@ -111,11 +59,63 @@
    }
   },
   {
-   "id": "hoboken-public-library-202610281600-teen-led-lit-club",
-   "title": "Teen-Led Lit Club",
+   "id": "hoboken-public-library-202610291200-baby-music-class",
+   "title": "Baby Music Class",
+   "category": "music",
+   "start": "2026-10-29T12:00:00-04:00",
+   "end": "2026-10-29T12:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hoboken Public Library",
+    "address": "500 Park Avenue, Hoboken, NJ",
+    "neighborhood": "Hoboken",
+    "lat": 40.7429,
+    "lng": -74.0311
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "For kids",
+   "details": "",
+   "url": "https://hobokenlibrary.libnet.info/event/17433896",
+   "tags": [],
+   "publisher": {
+    "id": "venue-hoboken-public-library",
+    "name": "Hoboken Public Library",
+    "url": "https://hobokenlibrary.libnet.info/events"
+   }
+  },
+  {
+   "id": "hoboken-library-grand-street-branch-202610291530-after-school-story-time",
+   "title": "After School Story Time",
    "category": "community",
-   "start": "2026-10-28T16:00:00-04:00",
-   "end": "2026-10-28T17:00:00-04:00",
+   "start": "2026-10-29T15:30:00-04:00",
+   "end": "2026-10-29T16:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hoboken Library, Grand Street Branch",
+    "address": "124 Grand Street, Hoboken, NJ",
+    "neighborhood": "Hoboken",
+    "lat": 40.7374,
+    "lng": -74.0353
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "For kids",
+   "details": "",
+   "url": "https://hobokenlibrary.libnet.info/event/17503201",
+   "tags": [],
+   "publisher": {
+    "id": "venue-hoboken-public-library",
+    "name": "Hoboken Public Library",
+    "url": "https://hobokenlibrary.libnet.info/events"
+   }
+  },
+  {
+   "id": "hoboken-public-library-202610291600-teen-halloween-party",
+   "title": "Teen Halloween Party",
+   "category": "community",
+   "start": "2026-10-29T16:00:00-04:00",
+   "end": "2026-10-29T17:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Hoboken Public Library",
@@ -128,7 +128,7 @@
    "priceUnknown": false,
    "description": "For teens/tweens",
    "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17459151",
+   "url": "https://hobokenlibrary.libnet.info/event/17501397",
    "tags": [],
    "publisher": {
     "id": "venue-hoboken-public-library",
@@ -137,11 +137,37 @@
    }
   },
   {
-   "id": "hoboken-public-library-202610281730-teen-gaming-hours",
+   "id": "hoboken-public-library-202610291700-coding-for-tweens",
+   "title": "Coding for Tweens",
+   "category": "community",
+   "start": "2026-10-29T17:00:00-04:00",
+   "end": "2026-10-29T17:45:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hoboken Public Library",
+    "address": "500 Park Avenue, Hoboken, NJ",
+    "neighborhood": "Hoboken",
+    "lat": 40.7429,
+    "lng": -74.0311
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "For teens/tweens, kids",
+   "details": "",
+   "url": "https://hobokenlibrary.libnet.info/event/17566693",
+   "tags": [],
+   "publisher": {
+    "id": "venue-hoboken-public-library",
+    "name": "Hoboken Public Library",
+    "url": "https://hobokenlibrary.libnet.info/events"
+   }
+  },
+  {
+   "id": "hoboken-public-library-202610291730-teen-gaming-hours",
    "title": "Teen Gaming Hours",
    "category": "community",
-   "start": "2026-10-28T17:30:00-04:00",
-   "end": "2026-10-28T19:30:00-04:00",
+   "start": "2026-10-29T17:30:00-04:00",
+   "end": "2026-10-29T19:30:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Hoboken Public Library",
@@ -154,7 +180,7 @@
    "priceUnknown": false,
    "description": "For teens/tweens",
    "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17459271",
+   "url": "https://hobokenlibrary.libnet.info/event/17459272",
    "tags": [],
    "publisher": {
     "id": "venue-hoboken-public-library",
@@ -163,29 +189,29 @@
    }
   },
   {
-   "id": "hoboken-public-library-202610281745-math-circle",
-   "title": "Math Circle",
+   "id": "hoboken-historical-museum-202610291900-hoboken-talks-with-vincent-pasculli",
+   "title": "Hoboken Talks with Vincent Pasculli",
    "category": "community",
-   "start": "2026-10-28T17:45:00-04:00",
-   "end": "2026-10-28T18:45:00-04:00",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": "2026-10-29T20:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Hoboken Public Library",
-    "address": "500 Park Avenue, Hoboken, NJ",
+    "name": "Hoboken Historical Museum",
+    "address": "1301 Hudson Street, Hoboken, NJ",
     "neighborhood": "Hoboken",
-    "lat": 40.7429,
-    "lng": -74.0311
+    "lat": 40.75385,
+    "lng": -74.0259
    },
    "price": null,
-   "priceUnknown": false,
-   "description": "For kids",
+   "priceUnknown": true,
+   "description": "",
    "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17743434",
+   "url": "https://hobokenmuseum.org/event/hoboken-talks-with-vincent-pasculli/",
    "tags": [],
    "publisher": {
-    "id": "venue-hoboken-public-library",
-    "name": "Hoboken Public Library",
-    "url": "https://hobokenlibrary.libnet.info/events"
+    "id": "venue-hoboken-historical-museum",
+    "name": "Hoboken Historical Museum",
+    "url": "https://hobokenmuseum.org/events/"
    }
   }
  ],
