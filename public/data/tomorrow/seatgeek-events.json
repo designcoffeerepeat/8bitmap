@@ -4,7 +4,7 @@
   "url": "https://seatgeek.com/cities/new-york"
  },
  "date": "2026-10-30",
- "fetchedAt": "2026-10-29T05:35:45-04:00",
+ "fetchedAt": "2026-10-29T13:27:23-04:00",
  "events": [
   {
    "id": "18539517",
@@ -174,29 +174,6 @@
    ]
   },
   {
-   "id": "17924850",
-   "title": "Drunk Dracula",
-   "category": "theater",
-   "start": "2026-10-30T18:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Ruby Theatre",
-    "address": "35 W 39th St, New York, NY 10018",
-    "neighborhood": "New York",
-    "lat": 40.7527,
-    "lng": -73.9841
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/drunk-dracula-tickets/theater/2026-10-30-6-pm/17924850",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
    "id": "18576656",
    "title": "Josie Edwards",
    "category": "music",
@@ -220,14 +197,83 @@
    ]
   },
   {
-   "id": "18286792",
-   "title": "The Play That Goes Wrong",
+   "id": "17924850",
+   "title": "Drunk Dracula",
+   "category": "theater",
+   "start": "2026-10-30T18:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Ruby Theatre",
+    "address": "35 W 39th St, New York, NY 10018",
+    "neighborhood": "New York",
+    "lat": 40.7527,
+    "lng": -73.9841
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/drunk-dracula-tickets/theater/2026-10-30-6-pm/17924850",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18229803",
+   "title": "Schmigadoon!",
    "category": "theater",
    "start": "2026-10-30T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "New World Stages - Stage 4",
+    "name": "Nederlander Theatre - NY",
+    "address": "208 West 41st Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7557,
+    "lng": -73.9882
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/schmigadoon-tickets/theater/2026-10-30-7-pm/18229803",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18310472",
+   "title": "Richard O'Brien's Rocky Horror Show",
+   "category": "theater",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Studio 54 - New York",
+    "address": "254 W 54th St, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.764313,
+    "lng": -73.9838
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/richard-o-brien-s-rocky-horror-show-tickets/theater/2026-10-30-7-pm/18310472",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18408268",
+   "title": "Jamie Allan's Amaze",
+   "category": "theater",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New World Stages - Stage 5",
     "address": "340 West 50th Street, New York, NY 10019",
     "neighborhood": "New York",
     "lat": 40.7628,
@@ -235,177 +281,36 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "theater",
+   "description": "entertainment",
    "details": "",
-   "url": "https://seatgeek.com/the-play-that-goes-wrong-tickets/theater/2026-10-30-7-pm/18286792",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18390306",
-   "title": "God Street Wine",
-   "category": "music",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Gramercy Theatre",
-    "address": "127 East 23rd Street, New York, NY 10010",
-    "neighborhood": "New York",
-    "lat": 40.738,
-    "lng": -73.9829
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/god-street-wine-tickets/new-york-new-york-gramercy-theatre-2026-10-30-7-pm/concert/18390306",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18128163",
-   "title": "The Book of Mormon",
-   "category": "theater",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Eugene O'Neill Theatre",
-    "address": "230 W 49th St, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7611,
-    "lng": -73.9857
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/the-book-of-mormon-tickets/broadway/2026-10-30-7-pm/18128163",
+   "url": "https://seatgeek.com/jamie-allan-s-amaze-tickets/entertainment/2026-10-30-7-pm/18408268",
    "tags": [
     "theater",
-    "broadway"
+    "entertainment",
+    "entertainment"
    ]
   },
   {
-   "id": "18149432",
-   "title": "The Outsiders",
+   "id": "17958403",
+   "title": "Harry Potter and The Cursed Child",
    "category": "theater",
    "start": "2026-10-30T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Bernard B. Jacobs Theatre",
-    "address": "242 W. 45th Street, New York, NY 10036",
+    "name": "Lyric Theatre - New York",
+    "address": "213 West 42nd Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7586,
+    "lat": 40.7565,
     "lng": -73.9878
    },
    "price": null,
    "priceUnknown": true,
-   "description": "broadway",
+   "description": "theater",
    "details": "",
-   "url": "https://seatgeek.com/the-outsiders-1-tickets/broadway/2026-10-30-7-pm/18149432",
+   "url": "https://seatgeek.com/harry-potter-and-the-cursed-child-tickets/theater/2026-10-30-7-pm/17958403",
    "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18037692",
-   "title": "MJ - The Musical",
-   "category": "theater",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Neil Simon Theatre",
-    "address": "250 West 52nd Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7632,
-    "lng": -73.9845
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/mj-the-musical-tickets/broadway/2026-10-30-7-pm/18037692",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18373063",
-   "title": "Aaron Weber",
-   "category": "comedy",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Bananas Comedy Club - Rutherford",
-    "address": "801 Rutherford Ave, Rutherford, NJ 07070",
-    "neighborhood": "Rutherford",
-    "lat": 40.811504,
-    "lng": -74.104164
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "comedy",
-   "details": "",
-   "url": "https://seatgeek.com/aaron-weber-tickets/comedy/2026-10-30-7-pm/18373063",
-   "tags": [
-    "theater",
-    "comedy"
-   ]
-  },
-  {
-   "id": "18574492",
-   "title": "Neurosis",
-   "category": "music",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Warsaw",
-    "address": "261 Driggs Ave, Brooklyn, NY 11222",
-    "neighborhood": "Brooklyn",
-    "lat": 40.7226,
-    "lng": -73.9484
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/neurosis-tickets/brooklyn-new-york-warsaw-2026-10-30-7-pm/concert/18574492",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18262740",
-   "title": "The Lion King",
-   "category": "theater",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Minskoff Theatre",
-    "address": "200 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7579,
-    "lng": -73.9862
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/the-lion-king-tickets/broadway/2026-10-30-7-pm/18262740",
-   "tags": [
-    "theater",
-    "broadway"
+    "theater"
    ]
   },
   {
@@ -433,73 +338,27 @@
    ]
   },
   {
-   "id": "18339646",
-   "title": "Heathers - The Musical",
+   "id": "18262740",
+   "title": "The Lion King",
    "category": "theater",
    "start": "2026-10-30T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "New World Stages - Stage 1",
-    "address": "340 West 50th Street, New York, NY 10019",
+    "name": "Minskoff Theatre",
+    "address": "200 West 45th Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7628,
-    "lng": -73.9874
+    "lat": 40.7579,
+    "lng": -73.9862
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/heathers-tickets/broadway/2026-10-30-7-pm/18339646",
+   "url": "https://seatgeek.com/the-lion-king-tickets/broadway/2026-10-30-7-pm/18262740",
    "tags": [
     "theater",
     "broadway"
-   ]
-  },
-  {
-   "id": "17958403",
-   "title": "Harry Potter and The Cursed Child",
-   "category": "theater",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lyric Theatre - New York",
-    "address": "213 West 42nd Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7565,
-    "lng": -73.9878
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/harry-potter-and-the-cursed-child-tickets/theater/2026-10-30-7-pm/17958403",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18310472",
-   "title": "Richard O'Brien's Rocky Horror Show",
-   "category": "theater",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Studio 54 - New York",
-    "address": "254 W 54th St, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.764313,
-    "lng": -73.9838
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/richard-o-brien-s-rocky-horror-show-tickets/theater/2026-10-30-7-pm/18310472",
-   "tags": [
-    "theater"
    ]
   },
   {
@@ -549,37 +408,156 @@
    ]
   },
   {
-   "id": "18229803",
-   "title": "Schmigadoon!",
-   "category": "theater",
+   "id": "18373063",
+   "title": "Aaron Weber",
+   "category": "comedy",
    "start": "2026-10-30T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Nederlander Theatre - NY",
-    "address": "208 West 41st Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7557,
-    "lng": -73.9882
+    "name": "Bananas Comedy Club - Rutherford",
+    "address": "801 Rutherford Ave, Rutherford, NJ 07070",
+    "neighborhood": "Rutherford",
+    "lat": 40.811504,
+    "lng": -74.104164
    },
    "price": null,
    "priceUnknown": true,
-   "description": "theater",
+   "description": "comedy",
    "details": "",
-   "url": "https://seatgeek.com/schmigadoon-tickets/theater/2026-10-30-7-pm/18229803",
+   "url": "https://seatgeek.com/aaron-weber-tickets/comedy/2026-10-30-7-pm/18373063",
    "tags": [
-    "theater"
+    "theater",
+    "comedy"
    ]
   },
   {
-   "id": "18408268",
-   "title": "Jamie Allan's Amaze",
+   "id": "18390306",
+   "title": "God Street Wine",
+   "category": "music",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Gramercy Theatre",
+    "address": "127 East 23rd Street, New York, NY 10010",
+    "neighborhood": "New York",
+    "lat": 40.738,
+    "lng": -73.9829
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/god-street-wine-tickets/new-york-new-york-gramercy-theatre-2026-10-30-7-pm/concert/18390306",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18149432",
+   "title": "The Outsiders",
    "category": "theater",
    "start": "2026-10-30T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "New World Stages - Stage 5",
+    "name": "Bernard B. Jacobs Theatre",
+    "address": "242 W. 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7586,
+    "lng": -73.9878
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/the-outsiders-1-tickets/broadway/2026-10-30-7-pm/18149432",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18574492",
+   "title": "Neurosis",
+   "category": "music",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Warsaw",
+    "address": "261 Driggs Ave, Brooklyn, NY 11222",
+    "neighborhood": "Brooklyn",
+    "lat": 40.7226,
+    "lng": -73.9484
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/neurosis-tickets/brooklyn-new-york-warsaw-2026-10-30-7-pm/concert/18574492",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18037692",
+   "title": "MJ - The Musical",
+   "category": "theater",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Neil Simon Theatre",
+    "address": "250 West 52nd Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7632,
+    "lng": -73.9845
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/mj-the-musical-tickets/broadway/2026-10-30-7-pm/18037692",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18128163",
+   "title": "The Book of Mormon",
+   "category": "theater",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Eugene O'Neill Theatre",
+    "address": "230 W 49th St, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7611,
+    "lng": -73.9857
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/the-book-of-mormon-tickets/broadway/2026-10-30-7-pm/18128163",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18286792",
+   "title": "The Play That Goes Wrong",
+   "category": "theater",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New World Stages - Stage 4",
     "address": "340 West 50th Street, New York, NY 10019",
     "neighborhood": "New York",
     "lat": 40.7628,
@@ -587,13 +565,11 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "entertainment",
+   "description": "theater",
    "details": "",
-   "url": "https://seatgeek.com/jamie-allan-s-amaze-tickets/entertainment/2026-10-30-7-pm/18408268",
+   "url": "https://seatgeek.com/the-play-that-goes-wrong-tickets/theater/2026-10-30-7-pm/18286792",
    "tags": [
-    "theater",
-    "entertainment",
-    "entertainment"
+    "theater"
    ]
   },
   {
@@ -668,24 +644,142 @@
    ]
   },
   {
-   "id": "18260399",
-   "title": "Aladdin",
+   "id": "18390696",
+   "title": "School Girls: Or, The African Mean Girls",
    "category": "theater",
    "start": "2026-10-30T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "New Amsterdam Theatre",
-    "address": "214 West 42nd Street, New York, NY 10036",
+    "name": "Samuel J. Friedman Theatre",
+    "address": "261 West 47th Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7563,
-    "lng": -73.9877
+    "lat": 40.7602,
+    "lng": -73.9868
    },
    "price": null,
    "priceUnknown": true,
    "description": "theater",
    "details": "",
-   "url": "https://seatgeek.com/aladdin-tickets/theater/2026-10-30-7-pm/18260399",
+   "url": "https://seatgeek.com/school-girls-or-the-african-mean-girls-tickets/theater/2026-10-30-7-pm/18390696",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18625706",
+   "title": "Christine Ebersole",
+   "category": "theater",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "54 Below",
+    "address": "254 W 54th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7645,
+    "lng": -73.9837
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/christine-ebersole-tickets/theater/2026-10-30-7-pm/18625706",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18221707",
+   "title": "Hadestown",
+   "category": "theater",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Walter Kerr Theatre",
+    "address": "219 West 48th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7605,
+    "lng": -73.9857
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/hadestown-tickets/broadway/2026-10-30-7-pm/18221707",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18470275",
+   "title": "The Imaginary Invalid",
+   "category": "theater",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Todd Haimes Theatre",
+    "address": "227 West 42nd Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7566,
+    "lng": -73.9883
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/the-imaginary-invalid-tickets/broadway/2026-10-30-7-pm/18470275",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18009721",
+   "title": "The Great Gatsby - The Musical",
+   "category": "theater",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Broadway Theatre - New York",
+    "address": "1681 Broadway, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7632,
+    "lng": -73.9829
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/the-great-gatsby-the-musical-tickets/broadway/2026-10-30-7-pm/18009721",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18360902",
+   "title": "A Few Good Men",
+   "category": "theater",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lincoln Center Theater - Vivian Beaumont Theater",
+    "address": "150 West 65th Street, New York, NY 10023",
+    "neighborhood": "New York",
+    "lat": 40.7736,
+    "lng": -73.984
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/a-few-good-men-tickets/theater/2026-10-30-7-pm/18360902",
    "tags": [
     "theater"
    ]
@@ -715,121 +809,27 @@
    ]
   },
   {
-   "id": "18095989",
-   "title": "Maybe Happy Ending",
-   "category": "theater",
+   "id": "18373064",
+   "title": "Christian Johnson",
+   "category": "comedy",
    "start": "2026-10-30T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Belasco Theatre - NY",
-    "address": "111 West 44th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7563,
-    "lng": -73.9836
+    "name": "Bananas Comedy Club - Rutherford",
+    "address": "801 Rutherford Ave, Rutherford, NJ 07070",
+    "neighborhood": "Rutherford",
+    "lat": 40.811504,
+    "lng": -74.104164
    },
    "price": null,
    "priceUnknown": true,
-   "description": "broadway",
+   "description": "comedy",
    "details": "",
-   "url": "https://seatgeek.com/maybe-happy-ending-tickets/broadway/2026-10-30-7-pm/18095989",
+   "url": "https://seatgeek.com/christian-johnson-tickets/comedy/2026-10-30-7-pm/18373064",
    "tags": [
     "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18526970",
-   "title": "Slam Frank",
-   "category": "theater",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Orpheum Theatre - NY",
-    "address": "126 Second Ave, New York, NY 10003",
-    "neighborhood": "New York",
-    "lat": 40.7282,
-    "lng": -73.9875
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/slam-frank-tickets/theater/2026-10-30-7-pm/18526970",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18141243",
-   "title": "Hamilton",
-   "category": "theater",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Richard Rodgers Theatre",
-    "address": "226 West 46th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7592,
-    "lng": -73.9866
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/hamilton-tickets/broadway/2026-10-30-7-pm/18141243",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18209009",
-   "title": "Buena Vista Social Club - The Musical",
-   "category": "theater",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Gerald Schoenfeld Theatre",
-    "address": "236 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7587,
-    "lng": -73.9873
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/buena-vista-social-club-the-musical-tickets/broadway/2026-10-30-7-pm/18209009",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "17420151",
-   "title": "Little Shop of Horrors",
-   "category": "theater",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Westside Theatre Upstairs",
-    "address": "407 West 43rd Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.9927
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/little-shop-of-horrors-tickets/theater/2026-10-30-7-pm/17420151",
-   "tags": [
-    "theater"
+    "comedy"
    ]
   },
   {
@@ -881,213 +881,141 @@
    ]
   },
   {
-   "id": "18373064",
-   "title": "Christian Johnson",
-   "category": "comedy",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Bananas Comedy Club - Rutherford",
-    "address": "801 Rutherford Ave, Rutherford, NJ 07070",
-    "neighborhood": "Rutherford",
-    "lat": 40.811504,
-    "lng": -74.104164
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "comedy",
-   "details": "",
-   "url": "https://seatgeek.com/christian-johnson-tickets/comedy/2026-10-30-7-pm/18373064",
-   "tags": [
-    "theater",
-    "comedy"
-   ]
-  },
-  {
-   "id": "18009721",
-   "title": "The Great Gatsby - The Musical",
+   "id": "17420151",
+   "title": "Little Shop of Horrors",
    "category": "theater",
    "start": "2026-10-30T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Broadway Theatre - New York",
-    "address": "1681 Broadway, New York, NY 10019",
+    "name": "Westside Theatre Upstairs",
+    "address": "407 West 43rd Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7632,
-    "lng": -73.9829
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/the-great-gatsby-the-musical-tickets/broadway/2026-10-30-7-pm/18009721",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18470275",
-   "title": "The Imaginary Invalid",
-   "category": "theater",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Todd Haimes Theatre",
-    "address": "227 West 42nd Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7566,
-    "lng": -73.9883
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/the-imaginary-invalid-tickets/broadway/2026-10-30-7-pm/18470275",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18625706",
-   "title": "Christine Ebersole",
-   "category": "theater",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "54 Below",
-    "address": "254 W 54th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7645,
-    "lng": -73.9837
+    "lat": 40.7593,
+    "lng": -73.9927
    },
    "price": null,
    "priceUnknown": true,
    "description": "theater",
    "details": "",
-   "url": "https://seatgeek.com/christine-ebersole-tickets/theater/2026-10-30-7-pm/18625706",
+   "url": "https://seatgeek.com/little-shop-of-horrors-tickets/theater/2026-10-30-7-pm/17420151",
    "tags": [
     "theater"
    ]
   },
   {
-   "id": "18390696",
-   "title": "School Girls: Or, The African Mean Girls",
+   "id": "18095989",
+   "title": "Maybe Happy Ending",
    "category": "theater",
    "start": "2026-10-30T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Samuel J. Friedman Theatre",
-    "address": "261 West 47th Street, New York, NY 10036",
+    "name": "Belasco Theatre - NY",
+    "address": "111 West 44th Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7602,
-    "lng": -73.9868
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/school-girls-or-the-african-mean-girls-tickets/theater/2026-10-30-7-pm/18390696",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18360902",
-   "title": "A Few Good Men",
-   "category": "theater",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lincoln Center Theater - Vivian Beaumont Theater",
-    "address": "150 West 65th Street, New York, NY 10023",
-    "neighborhood": "New York",
-    "lat": 40.7736,
-    "lng": -73.984
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/a-few-good-men-tickets/theater/2026-10-30-7-pm/18360902",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18221707",
-   "title": "Hadestown",
-   "category": "theater",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Walter Kerr Theatre",
-    "address": "219 West 48th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7605,
-    "lng": -73.9857
+    "lat": 40.7563,
+    "lng": -73.9836
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/hadestown-tickets/broadway/2026-10-30-7-pm/18221707",
+   "url": "https://seatgeek.com/maybe-happy-ending-tickets/broadway/2026-10-30-7-pm/18095989",
    "tags": [
     "theater",
     "broadway"
    ]
   },
   {
-   "id": "18091325",
-   "title": "Two Strangers (Carry a Cake Across New York)",
+   "id": "18526970",
+   "title": "Slam Frank",
    "category": "theater",
-   "start": "2026-10-30T19:30:00-04:00",
+   "start": "2026-10-30T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Longacre Theatre",
-    "address": "220 West 48th Street, New York, NY 10036",
+    "name": "Orpheum Theatre - NY",
+    "address": "126 Second Ave, New York, NY 10003",
     "neighborhood": "New York",
-    "lat": 40.7605,
-    "lng": -73.9857
+    "lat": 40.7282,
+    "lng": -73.9875
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/slam-frank-tickets/theater/2026-10-30-7-pm/18526970",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18260399",
+   "title": "Aladdin",
+   "category": "theater",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New Amsterdam Theatre",
+    "address": "214 West 42nd Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7563,
+    "lng": -73.9877
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/aladdin-tickets/theater/2026-10-30-7-pm/18260399",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18209009",
+   "title": "Buena Vista Social Club - The Musical",
+   "category": "theater",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Gerald Schoenfeld Theatre",
+    "address": "236 West 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7587,
+    "lng": -73.9873
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/two-strangers-carry-a-cake-across-new-york-tickets/broadway/2026-10-30-7-30-pm/18091325",
+   "url": "https://seatgeek.com/buena-vista-social-club-the-musical-tickets/broadway/2026-10-30-7-pm/18209009",
    "tags": [
     "theater",
     "broadway"
    ]
   },
   {
-   "id": "18269243",
-   "title": "In The Heights",
+   "id": "18141243",
+   "title": "Hamilton",
    "category": "theater",
-   "start": "2026-10-30T19:30:00-04:00",
+   "start": "2026-10-30T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "New York City Center",
-    "address": "131 West 55th Street, New York, NY 10019",
+    "name": "Richard Rodgers Theatre",
+    "address": "226 West 46th Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7639,
-    "lng": -73.9794
+    "lat": 40.7592,
+    "lng": -73.9866
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/in-the-heights-tickets/broadway/2026-10-30-7-30-pm/18269243",
+   "url": "https://seatgeek.com/hamilton-tickets/broadway/2026-10-30-7-pm/18141243",
    "tags": [
     "theater",
     "broadway"
@@ -1144,48 +1072,48 @@
    ]
   },
   {
-   "id": "18165515",
-   "title": "New York Philharmonic - Get Out In Concert",
-   "category": "music",
-   "start": "2026-10-30T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "David Geffen Hall",
-    "address": "10 Lincoln Center Plaza, New York, NY 10023",
-    "neighborhood": "New York",
-    "lat": 40.7729,
-    "lng": -73.9831
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "classical",
-   "details": "",
-   "url": "https://seatgeek.com/new-york-philharmonic-tickets/classical/2026-10-30-7-30-pm/18165515",
-   "tags": [
-    "theater",
-    "classical"
-   ]
-  },
-  {
-   "id": "18118937",
-   "title": "Oh, Mary!",
+   "id": "18091325",
+   "title": "Two Strangers (Carry a Cake Across New York)",
    "category": "theater",
    "start": "2026-10-30T19:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Lyceum Theatre",
-    "address": "149 West 45th Street, New York, NY 10036",
+    "name": "Longacre Theatre",
+    "address": "220 West 48th Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7577,
-    "lng": -73.9846
+    "lat": 40.7605,
+    "lng": -73.9857
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/oh-mary-tickets/broadway/2026-10-30-7-30-pm/18118937",
+   "url": "https://seatgeek.com/two-strangers-carry-a-cake-across-new-york-tickets/broadway/2026-10-30-7-30-pm/18091325",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18269243",
+   "title": "In The Heights",
+   "category": "theater",
+   "start": "2026-10-30T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New York City Center",
+    "address": "131 West 55th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7639,
+    "lng": -73.9794
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/in-the-heights-tickets/broadway/2026-10-30-7-30-pm/18269243",
    "tags": [
     "theater",
     "broadway"
@@ -1217,6 +1145,54 @@
    ]
   },
   {
+   "id": "18118937",
+   "title": "Oh, Mary!",
+   "category": "theater",
+   "start": "2026-10-30T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lyceum Theatre",
+    "address": "149 West 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7577,
+    "lng": -73.9846
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/oh-mary-tickets/broadway/2026-10-30-7-30-pm/18118937",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18165515",
+   "title": "New York Philharmonic - Get Out In Concert",
+   "category": "music",
+   "start": "2026-10-30T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "David Geffen Hall",
+    "address": "10 Lincoln Center Plaza, New York, NY 10023",
+    "neighborhood": "New York",
+    "lat": 40.7729,
+    "lng": -73.9831
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "classical",
+   "details": "",
+   "url": "https://seatgeek.com/new-york-philharmonic-tickets/classical/2026-10-30-7-30-pm/18165515",
+   "tags": [
+    "theater",
+    "classical"
+   ]
+  },
+  {
    "id": "18149199",
    "title": "Operation Mincemeat",
    "category": "theater",
@@ -1237,29 +1213,6 @@
    "url": "https://seatgeek.com/operation-mincemeat-tickets/theater/2026-10-30-7-30-pm/18149199",
    "tags": [
     "theater"
-   ]
-  },
-  {
-   "id": "18426265",
-   "title": "Midnight",
-   "category": "music",
-   "start": "2026-10-30T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Daryl Roth Theatre",
-    "address": "101 East 15th Street, New York, NY 10003",
-    "neighborhood": "New York",
-    "lat": 40.7353,
-    "lng": -73.9897
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/midnight-tickets/new-york-new-york-daryl-roth-theatre-2026-10-30-7-30-pm/concert/18426265",
-   "tags": [
-    "concert"
    ]
   },
   {
@@ -1286,6 +1239,52 @@
    ]
   },
   {
+   "id": "18426265",
+   "title": "Midnight",
+   "category": "music",
+   "start": "2026-10-30T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Daryl Roth Theatre",
+    "address": "101 East 15th Street, New York, NY 10003",
+    "neighborhood": "New York",
+    "lat": 40.7353,
+    "lng": -73.9897
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/midnight-tickets/new-york-new-york-daryl-roth-theatre-2026-10-30-7-30-pm/concert/18426265",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18262212",
+   "title": "Laundry Day",
+   "category": "music",
+   "start": "2026-10-30T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Steel",
+    "address": "319 Frost Street, Brooklyn, NY 11222",
+    "neighborhood": "Brooklyn",
+    "lat": 40.7194,
+    "lng": -73.9388
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/laundry-day-tickets/brooklyn-new-york-brooklyn-steel-2026-10-30-8-pm/concert/18262212",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
    "id": "18639244",
    "title": "Machine Girl",
    "category": "music",
@@ -1304,29 +1303,6 @@
    "description": "concert",
    "details": "",
    "url": "https://seatgeek.com/machine-girl-tickets/brooklyn-new-york-pioneer-works-2026-10-30-8-pm/concert/18639244",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18473030",
-   "title": "A Boogie Wit Da Hoodie with DaBaby",
-   "category": "music",
-   "start": "2026-10-30T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "UBS Arena",
-    "address": "2150 Hempstead Turnpike, Elmont, NY 11003",
-    "neighborhood": "Elmont",
-    "lat": 40.7095,
-    "lng": -73.7204
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/a-boogie-wit-da-hoodie-tickets/elmont-new-york-ubs-arena-2026-10-30-8-pm/concert/18473030",
    "tags": [
     "concert"
    ]
@@ -1379,47 +1355,24 @@
    ]
   },
   {
-   "id": "18262212",
-   "title": "Laundry Day",
+   "id": "18473030",
+   "title": "A Boogie Wit Da Hoodie with DaBaby",
    "category": "music",
    "start": "2026-10-30T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Brooklyn Steel",
-    "address": "319 Frost Street, Brooklyn, NY 11222",
-    "neighborhood": "Brooklyn",
-    "lat": 40.7194,
-    "lng": -73.9388
+    "name": "UBS Arena",
+    "address": "2150 Hempstead Turnpike, Elmont, NY 11003",
+    "neighborhood": "Elmont",
+    "lat": 40.7095,
+    "lng": -73.7204
    },
    "price": null,
    "priceUnknown": true,
    "description": "concert",
    "details": "",
-   "url": "https://seatgeek.com/laundry-day-tickets/brooklyn-new-york-brooklyn-steel-2026-10-30-8-pm/concert/18262212",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18033621",
-   "title": "Eva Ayllon with Daniela Darcourt",
-   "category": "music",
-   "start": "2026-10-30T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Prudential Hall at New Jersey Performing Arts Center",
-    "address": "1 Center Street, Newark, NJ 07102",
-    "neighborhood": "Newark",
-    "lat": 40.7402,
-    "lng": -74.1673
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/eva-ayllon-tickets/newark-new-jersey-prudential-hall-at-new-jersey-performing-arts-center-2026-10-30-8-pm/concert/18033621",
+   "url": "https://seatgeek.com/a-boogie-wit-da-hoodie-tickets/elmont-new-york-ubs-arena-2026-10-30-8-pm/concert/18473030",
    "tags": [
     "concert"
    ]
@@ -1446,29 +1399,6 @@
    "tags": [
     "theater",
     "broadway"
-   ]
-  },
-  {
-   "id": "18549852",
-   "title": "ROA",
-   "category": "music",
-   "start": "2026-10-30T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Palladium Times Square",
-    "address": "1515 Broadway, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7576,
-    "lng": -73.9858
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/roa-tickets/new-york-new-york-palladium-times-square-2026-10-30-8-pm/concert/18549852",
-   "tags": [
-    "concert"
    ]
   },
   {
@@ -1519,164 +1449,47 @@
    ]
   },
   {
-   "id": "18302831",
-   "title": "& Juliet",
-   "category": "theater",
-   "start": "2026-10-30T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Stephen Sondheim Theatre - New York",
-    "address": "124 West 43 Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7559,
-    "lng": -73.9849
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/juliet-tickets/broadway/2026-10-30-8-pm/18302831",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18411469",
-   "title": "Perfect Crime",
-   "category": "theater",
-   "start": "2026-10-30T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Theater Center",
-    "address": "210 W. 50th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7615,
-    "lng": -73.9845
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/perfect-crime-tickets/broadway/2026-10-30-8-pm/18411469",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18658943",
-   "title": "Les Savy Fav",
+   "id": "18033621",
+   "title": "Eva Ayllon with Daniela Darcourt",
    "category": "music",
    "start": "2026-10-30T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Music Hall of Williamsburg",
-    "address": "66 North 6th St., Brooklyn, NY 11211",
-    "neighborhood": "Brooklyn",
-    "lat": 40.719154,
-    "lng": -73.96175
+    "name": "Prudential Hall at New Jersey Performing Arts Center",
+    "address": "1 Center Street, Newark, NJ 07102",
+    "neighborhood": "Newark",
+    "lat": 40.7402,
+    "lng": -74.1673
    },
    "price": null,
    "priceUnknown": true,
    "description": "concert",
    "details": "",
-   "url": "https://seatgeek.com/les-savy-fav-tickets/brooklyn-new-york-music-hall-of-williamsburg-2026-10-30-8-pm/concert/18658943",
+   "url": "https://seatgeek.com/eva-ayllon-tickets/newark-new-jersey-prudential-hall-at-new-jersey-performing-arts-center-2026-10-30-8-pm/concert/18033621",
    "tags": [
     "concert"
    ]
   },
   {
-   "id": "18424711",
-   "title": "Prince Daddy & The Hyena",
+   "id": "18549852",
+   "title": "ROA",
    "category": "music",
    "start": "2026-10-30T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Celon Bar & Lounge",
-    "address": "40 West 40th Street, New York, NY 10001",
+    "name": "Palladium Times Square",
+    "address": "1515 Broadway, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7528,
-    "lng": -73.9838
+    "lat": 40.7576,
+    "lng": -73.9858
    },
    "price": null,
    "priceUnknown": true,
    "description": "concert",
    "details": "",
-   "url": "https://seatgeek.com/prince-daddy-the-hyena-tickets/new-york-new-york-celon-bar-lounge-2026-10-30-8-pm/concert/18424711",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18583543",
-   "title": "Downstate",
-   "category": "theater",
-   "start": "2026-10-30T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Booth Theatre - New York",
-    "address": "222 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7583,
-    "lng": -73.9863
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/downstate-play-tickets/theater/2026-10-30-8-pm/18583543",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18672582",
-   "title": "hABBAween (21+)",
-   "category": "music",
-   "start": "2026-10-30T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Bell House",
-    "address": "149 7th Street, Brooklyn, NY 11215",
-    "neighborhood": "Brooklyn",
-    "lat": 40.6735,
-    "lng": -73.9916
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/habbaween-tickets/brooklyn-new-york-the-bell-house-2026-10-30-8-pm/concert/18672582",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18252226",
-   "title": "Waylon Wyatt with Noah James",
-   "category": "music",
-   "start": "2026-10-30T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Irving Plaza",
-    "address": "17 Irving Place, New York, NY 10003",
-    "neighborhood": "New York",
-    "lat": 40.734905,
-    "lng": -73.98838
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/waylon-wyatt-tickets/new-york-new-york-irving-plaza-2026-10-30-8-pm/concert/18252226",
+   "url": "https://seatgeek.com/roa-tickets/new-york-new-york-palladium-times-square-2026-10-30-8-pm/concert/18549852",
    "tags": [
     "concert"
    ]
@@ -1705,24 +1518,24 @@
    ]
   },
   {
-   "id": "18027143",
-   "title": "Harry Styles with Jamie XX",
+   "id": "18508905",
+   "title": "Evil Island",
    "category": "music",
    "start": "2026-10-30T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Madison Square Garden",
-    "address": "4 Pennsylvania Plaza, New York, NY 10001",
+    "name": "Bowery Ballroom",
+    "address": "6 Delancey Street, New York, NY 10002",
     "neighborhood": "New York",
-    "lat": 40.7509,
-    "lng": -73.9943
+    "lat": 40.7204,
+    "lng": -73.9934
    },
    "price": null,
    "priceUnknown": true,
    "description": "concert",
    "details": "",
-   "url": "https://seatgeek.com/harry-styles-tickets/new-york-new-york-madison-square-garden-2026-10-30-8-pm/concert/18027143",
+   "url": "https://seatgeek.com/evil-island-tickets/new-york-new-york-bowery-ballroom-2026-10-30-8-pm/concert/18508905",
    "tags": [
     "concert"
    ]
@@ -1776,29 +1589,6 @@
    ]
   },
   {
-   "id": "18508905",
-   "title": "Evil Island",
-   "category": "music",
-   "start": "2026-10-30T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Bowery Ballroom",
-    "address": "6 Delancey Street, New York, NY 10002",
-    "neighborhood": "New York",
-    "lat": 40.7204,
-    "lng": -73.9934
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/evil-island-tickets/new-york-new-york-bowery-ballroom-2026-10-30-8-pm/concert/18508905",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
    "id": "18533457",
    "title": "Too Many Zooz with Thundersmack",
    "category": "music",
@@ -1842,6 +1632,192 @@
    "url": "https://seatgeek.com/the-phil-collins-story-tickets/staten-island-new-york-st-george-theatre-2026-10-30-8-pm/concert/18181727",
    "tags": [
     "concert"
+   ]
+  },
+  {
+   "id": "18027143",
+   "title": "Harry Styles with Jamie XX",
+   "category": "music",
+   "start": "2026-10-30T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Madison Square Garden",
+    "address": "4 Pennsylvania Plaza, New York, NY 10001",
+    "neighborhood": "New York",
+    "lat": 40.7509,
+    "lng": -73.9943
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/harry-styles-tickets/new-york-new-york-madison-square-garden-2026-10-30-8-pm/concert/18027143",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18658943",
+   "title": "Les Savy Fav",
+   "category": "music",
+   "start": "2026-10-30T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Music Hall of Williamsburg",
+    "address": "66 North 6th St., Brooklyn, NY 11211",
+    "neighborhood": "Brooklyn",
+    "lat": 40.719154,
+    "lng": -73.96175
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/les-savy-fav-tickets/brooklyn-new-york-music-hall-of-williamsburg-2026-10-30-8-pm/concert/18658943",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18424711",
+   "title": "Prince Daddy & The Hyena",
+   "category": "music",
+   "start": "2026-10-30T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Celon Bar & Lounge",
+    "address": "40 West 40th Street, New York, NY 10001",
+    "neighborhood": "New York",
+    "lat": 40.7528,
+    "lng": -73.9838
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/prince-daddy-the-hyena-tickets/new-york-new-york-celon-bar-lounge-2026-10-30-8-pm/concert/18424711",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18672582",
+   "title": "hABBAween (21+)",
+   "category": "music",
+   "start": "2026-10-30T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Bell House",
+    "address": "149 7th Street, Brooklyn, NY 11215",
+    "neighborhood": "Brooklyn",
+    "lat": 40.6735,
+    "lng": -73.9916
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/habbaween-tickets/brooklyn-new-york-the-bell-house-2026-10-30-8-pm/concert/18672582",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18252226",
+   "title": "Waylon Wyatt with Noah James",
+   "category": "music",
+   "start": "2026-10-30T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Irving Plaza",
+    "address": "17 Irving Place, New York, NY 10003",
+    "neighborhood": "New York",
+    "lat": 40.734905,
+    "lng": -73.98838
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/waylon-wyatt-tickets/new-york-new-york-irving-plaza-2026-10-30-8-pm/concert/18252226",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
+   "id": "18411469",
+   "title": "Perfect Crime",
+   "category": "theater",
+   "start": "2026-10-30T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Theater Center",
+    "address": "210 W. 50th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7615,
+    "lng": -73.9845
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/perfect-crime-tickets/broadway/2026-10-30-8-pm/18411469",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18302831",
+   "title": "& Juliet",
+   "category": "theater",
+   "start": "2026-10-30T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Stephen Sondheim Theatre - New York",
+    "address": "124 West 43 Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7559,
+    "lng": -73.9849
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/juliet-tickets/broadway/2026-10-30-8-pm/18302831",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18583543",
+   "title": "Downstate",
+   "category": "theater",
+   "start": "2026-10-30T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Booth Theatre - New York",
+    "address": "222 West 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7583,
+    "lng": -73.9863
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/downstate-play-tickets/theater/2026-10-30-8-pm/18583543",
+   "tags": [
+    "theater"
    ]
   },
   {
