@@ -3,8 +3,61 @@
   "name": "Astoria venues",
   "url": "https://socratessculpturepark.org/"
  },
- "date": "2026-10-29",
- "fetchedAt": "2026-10-28T13:24:25-04:00",
- "events": [],
+ "date": "2026-10-30",
+ "fetchedAt": "2026-10-29T05:29:31-04:00",
+ "events": [
+  {
+   "id": "melrose-ballroom-202610302200-the-legacy-gala-60-shades-of-black",
+   "title": "The Legacy Gala : 60 Shades of Black",
+   "category": "music",
+   "start": "2026-10-30T22:00:00-04:00",
+   "end": "2026-10-31T03:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Melrose Ballroom",
+    "address": "36-08 33rd Street",
+    "neighborhood": "Astoria",
+    "lat": 40.755628,
+    "lng": -73.928682
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.melroseballroom.com/events/share-this-event-the-legacy-gala-60-shades-of-black",
+   "tags": [],
+   "publisher": {
+    "id": "venue-melrose-ballroom",
+    "name": "Melrose Ballroom",
+    "url": "https://www.melroseballroom.com/"
+   }
+  },
+  {
+   "id": "melrose-ballroom-202610302200-halloween-party-penthouse-edition",
+   "title": "HALLOWEEN PARTY PENTHOUSE EDITION",
+   "category": "music",
+   "start": "2026-10-30T22:00:00-04:00",
+   "end": "2026-10-31T02:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Melrose Ballroom",
+    "address": "36-08 33rd Street",
+    "neighborhood": "Astoria",
+    "lat": 40.755628,
+    "lng": -73.928682
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.melroseballroom.com/events/halloween-party-penthouse-edition",
+   "tags": [],
+   "publisher": {
+    "id": "venue-melrose-ballroom",
+    "name": "Melrose Ballroom",
+    "url": "https://www.melroseballroom.com/"
+   }
+  }
+ ],
  "unplaced": []
 }
