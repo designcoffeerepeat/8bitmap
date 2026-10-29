@@ -4,7 +4,48 @@
   "url": "https://www.eventbrite.com/d/ny--new-york/events/"
  },
  "date": "2026-10-29",
- "fetchedAt": "2026-10-29T14:12:36-04:00",
- "events": [],
+ "fetchedAt": "2026-10-29T14:18:17-04:00",
+ "events": [
+  {
+   "id": "2002952190921",
+   "title": "Wax Wings: A Journey through 1970s New York in Vinyl",
+   "category": "music",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": "2026-10-29T20:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Lofty Pigeon Books",
+    "address": "743 Church Avenue, Brooklyn, NY 11218",
+    "neighborhood": "Brooklyn",
+    "lat": 40.646122,
+    "lng": -73.97196
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "By Lofty Pigeon Books on Eventbrite",
+   "url": "https://www.eventbrite.com/e/wax-wings-a-journey-through-1970s-new-york-in-vinyl-tickets-2002952190921",
+   "tags": []
+  },
+  {
+   "id": "2002919922405",
+   "title": "Work In Progress: A Queer Literary Open Mic",
+   "category": "community",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": "2026-10-29T21:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hive Mind Books",
+    "address": "219 Irving Ave, Brooklyn, NY 11237",
+    "neighborhood": "Brooklyn",
+    "lat": 40.701021,
+    "lng": -73.917543
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "By Hive Mind Books on Eventbrite",
+   "url": "https://www.eventbrite.com/e/work-in-progress-a-queer-literary-open-mic-tickets-2002919922405",
+   "tags": []
+  }
+ ],
  "unplaced": []
 }

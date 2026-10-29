@@ -1,0 +1,71 @@
+{
+ "source": {
+  "name": "NYC Council",
+  "url": "https://legistar.council.nyc.gov/Calendar.aspx"
+ },
+ "date": "2026-10-29",
+ "fetchedAt": "2026-10-29T14:18:12-04:00",
+ "events": [
+  {
+   "id": "22740",
+   "title": "Council hearing: Subcommittee on Early Childhood Education",
+   "category": "community",
+   "start": "2026-10-29T13:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "250 Broadway",
+    "address": "250 Broadway, Manhattan",
+    "neighborhood": "Civic Center",
+    "lat": 40.71297,
+    "lng": -74.00804
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Public meeting of the NYC Council. 250 Broadway - 8th Floor - Hearing Room 1.",
+   "url": "https://nyc.legistar.com/MeetingDetail.aspx?LEGID=22740&GID=61&G=2FD004F1-D85B-4588-A648-0A736C77D6E3",
+   "tags": []
+  },
+  {
+   "id": "22741",
+   "title": "Council hearing: Committee on Small Business",
+   "category": "community",
+   "start": "2026-10-29T13:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "250 Broadway",
+    "address": "250 Broadway, Manhattan",
+    "neighborhood": "Civic Center",
+    "lat": 40.71297,
+    "lng": -74.00804
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Public meeting of the NYC Council. 250 Broadway - 8th Floor - Hearing Room 1.",
+   "url": "https://nyc.legistar.com/MeetingDetail.aspx?LEGID=22741&GID=61&G=2FD004F1-D85B-4588-A648-0A736C77D6E3",
+   "tags": []
+  },
+  {
+   "id": "22794",
+   "title": "Council hearing: Committee on Contracts",
+   "category": "community",
+   "start": "2026-10-29T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "250 Broadway",
+    "address": "250 Broadway, Manhattan",
+    "neighborhood": "Civic Center",
+    "lat": 40.71297,
+    "lng": -74.00804
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Public meeting of the NYC Council. 250 Broadway - 8th Floor - Hearing Room 2.",
+   "url": "https://nyc.legistar.com/MeetingDetail.aspx?LEGID=22794&GID=61&G=2FD004F1-D85B-4588-A648-0A736C77D6E3",
+   "tags": []
+  }
+ ],
+ "unplaced": []
+}

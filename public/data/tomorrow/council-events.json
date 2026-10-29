@@ -1,0 +1,51 @@
+{
+ "source": {
+  "name": "NYC Council",
+  "url": "https://legistar.council.nyc.gov/Calendar.aspx"
+ },
+ "date": "2026-10-30",
+ "fetchedAt": "2026-10-29T14:21:02-04:00",
+ "events": [
+  {
+   "id": "22809",
+   "title": "Council hearing: Committee on Public Safety",
+   "category": "community",
+   "start": "2026-10-30T13:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "City Hall",
+    "address": "City Hall Park, Manhattan",
+    "neighborhood": "Civic Center",
+    "lat": 40.71277,
+    "lng": -74.00602
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Public meeting of the NYC Council. Council Chambers.",
+   "url": "https://nyc.legistar.com/MeetingDetail.aspx?LEGID=22809&GID=61&G=2FD004F1-D85B-4588-A648-0A736C77D6E3",
+   "tags": []
+  },
+  {
+   "id": "22810",
+   "title": "Council hearing: Committee on Governmental Operations, State & Federal Legislation",
+   "category": "community",
+   "start": "2026-10-30T13:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "City Hall",
+    "address": "City Hall Park, Manhattan",
+    "neighborhood": "Civic Center",
+    "lat": 40.71277,
+    "lng": -74.00602
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Public meeting of the NYC Council. Council Chambers.",
+   "url": "https://nyc.legistar.com/MeetingDetail.aspx?LEGID=22810&GID=61&G=2FD004F1-D85B-4588-A648-0A736C77D6E3",
+   "tags": []
+  }
+ ],
+ "unplaced": []
+}
