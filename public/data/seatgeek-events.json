@@ -4,7 +4,7 @@
   "url": "https://seatgeek.com/cities/new-york"
  },
  "date": "2026-10-29",
- "fetchedAt": "2026-10-29T14:19:45-04:00",
+ "fetchedAt": "2026-10-29T14:33:56-04:00",
  "events": [
   {
    "id": "18542910",
@@ -289,29 +289,6 @@
    ]
   },
   {
-   "id": "18149187",
-   "title": "Operation Mincemeat",
-   "category": "theater",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "John Golden Theatre",
-    "address": "252 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7589,
-    "lng": -73.9878
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/operation-mincemeat-tickets/theater/2026-10-29-7-pm/18149187",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
    "id": "18229806",
    "title": "Schmigadoon!",
    "category": "theater",
@@ -402,6 +379,29 @@
    "url": "https://seatgeek.com/lawrence-tickets/brooklyn-new-york-brooklyn-paramount-2026-10-29-7-pm/concert/18055763",
    "tags": [
     "concert"
+   ]
+  },
+  {
+   "id": "18149187",
+   "title": "Operation Mincemeat",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "John Golden Theatre",
+    "address": "252 West 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7589,
+    "lng": -73.9878
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/operation-mincemeat-tickets/theater/2026-10-29-7-pm/18149187",
+   "tags": [
+    "theater"
    ]
   },
   {
@@ -595,6 +595,30 @@
    ]
   },
   {
+   "id": "18083169",
+   "title": "Six the Musical",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lena Horne Theatre",
+    "address": "256 West 47th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7602,
+    "lng": -73.9868
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/six-the-musical-tickets/broadway/2026-10-29-7-pm/18083169",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
    "id": "18316921",
    "title": "YHWH Nailgun",
    "category": "music",
@@ -618,72 +642,24 @@
    ]
   },
   {
-   "id": "18246609",
-   "title": "Disney On Ice presents Spotlight Magic! - Newark",
-   "category": "community",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Prudential Center",
-    "address": "25 Lafayette Street, Newark, NJ 07102",
-    "neighborhood": "Newark",
-    "lat": 40.7332,
-    "lng": -74.1717
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "family",
-   "details": "",
-   "url": "https://seatgeek.com/disney-on-ice-presents-spotlight-magic-tickets/family/2026-10-29-7-pm/18246609",
-   "tags": [
-    "theater",
-    "family"
-   ]
-  },
-  {
-   "id": "18471928",
-   "title": "Just In Time",
+   "id": "18324032",
+   "title": "Billy Crystal: 860",
    "category": "theater",
    "start": "2026-10-29T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Circle In The Square Theatre",
-    "address": "1633 Broadway, New York, NY 10019",
+    "name": "Imperial Theatre - NY",
+    "address": "249 West 45th Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.7623,
-    "lng": -73.9852
+    "lat": 40.7588,
+    "lng": -73.9873
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/just-in-time-tickets/broadway/2026-10-29-7-pm/18471928",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
-   "id": "18083169",
-   "title": "Six the Musical",
-   "category": "theater",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lena Horne Theatre",
-    "address": "256 West 47th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7602,
-    "lng": -73.9868
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/six-the-musical-tickets/broadway/2026-10-29-7-pm/18083169",
+   "url": "https://seatgeek.com/billy-crystal-860-tickets/broadway/2026-10-29-7-pm/18324032",
    "tags": [
     "theater",
     "broadway"
@@ -713,6 +689,54 @@
    ]
   },
   {
+   "id": "18471928",
+   "title": "Just In Time",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Circle In The Square Theatre",
+    "address": "1633 Broadway, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7623,
+    "lng": -73.9852
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/just-in-time-tickets/broadway/2026-10-29-7-pm/18471928",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18246609",
+   "title": "Disney On Ice presents Spotlight Magic! - Newark",
+   "category": "community",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Prudential Center",
+    "address": "25 Lafayette Street, Newark, NJ 07102",
+    "neighborhood": "Newark",
+    "lat": 40.7332,
+    "lng": -74.1717
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "family",
+   "details": "",
+   "url": "https://seatgeek.com/disney-on-ice-presents-spotlight-magic-tickets/family/2026-10-29-7-pm/18246609",
+   "tags": [
+    "theater",
+    "family"
+   ]
+  },
+  {
    "id": "17958402",
    "title": "Harry Potter and The Cursed Child",
    "category": "theater",
@@ -733,30 +757,6 @@
    "url": "https://seatgeek.com/harry-potter-and-the-cursed-child-tickets/theater/2026-10-29-7-pm/17958402",
    "tags": [
     "theater"
-   ]
-  },
-  {
-   "id": "18324032",
-   "title": "Billy Crystal: 860",
-   "category": "theater",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Imperial Theatre - NY",
-    "address": "249 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7588,
-    "lng": -73.9873
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/billy-crystal-860-tickets/broadway/2026-10-29-7-pm/18324032",
-   "tags": [
-    "theater",
-    "broadway"
    ]
   },
   {
@@ -946,30 +946,6 @@
    ]
   },
   {
-   "id": "18149417",
-   "title": "The Outsiders",
-   "category": "theater",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Bernard B. Jacobs Theatre",
-    "address": "242 W. 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7586,
-    "lng": -73.9878
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/the-outsiders-1-tickets/broadway/2026-10-29-7-pm/18149417",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
    "id": "18096005",
    "title": "Maybe Happy Ending",
    "category": "theater",
@@ -988,6 +964,30 @@
    "description": "broadway",
    "details": "",
    "url": "https://seatgeek.com/maybe-happy-ending-tickets/broadway/2026-10-29-7-pm/18096005",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18149417",
+   "title": "The Outsiders",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Bernard B. Jacobs Theatre",
+    "address": "242 W. 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7586,
+    "lng": -73.9878
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/the-outsiders-1-tickets/broadway/2026-10-29-7-pm/18149417",
    "tags": [
     "theater",
     "broadway"
@@ -1256,29 +1256,6 @@
    ]
   },
   {
-   "id": "18583542",
-   "title": "Downstate",
-   "category": "theater",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Booth Theatre - New York",
-    "address": "222 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7583,
-    "lng": -73.9863
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/downstate-play-tickets/theater/2026-10-29-8-pm/18583542",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
    "id": "18470447",
    "title": "Wanted",
    "category": "theater",
@@ -1300,6 +1277,29 @@
    "tags": [
     "theater",
     "broadway"
+   ]
+  },
+  {
+   "id": "18583542",
+   "title": "Downstate",
+   "category": "theater",
+   "start": "2026-10-29T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Booth Theatre - New York",
+    "address": "222 West 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7583,
+    "lng": -73.9863
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/downstate-play-tickets/theater/2026-10-29-8-pm/18583542",
+   "tags": [
+    "theater"
    ]
   },
   {
@@ -1373,6 +1373,29 @@
    ]
   },
   {
+   "id": "18166056",
+   "title": "Get The Led Out",
+   "category": "music",
+   "start": "2026-10-29T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Bergen Performing Arts Center",
+    "address": "30 North Van Brunt Street, Englewood, NJ 07631",
+    "neighborhood": "Englewood",
+    "lat": 40.8953,
+    "lng": -73.9749
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "concert",
+   "details": "",
+   "url": "https://seatgeek.com/get-the-led-out-a-tribute-to-led-zeppelin-tickets/englewood-new-jersey-bergen-performing-arts-center-2026-10-29-8-pm/concert/18166056",
+   "tags": [
+    "concert"
+   ]
+  },
+  {
    "id": "18009738",
    "title": "The Great Gatsby - The Musical",
    "category": "theater",
@@ -1397,26 +1420,27 @@
    ]
   },
   {
-   "id": "18166056",
-   "title": "Get The Led Out",
-   "category": "music",
+   "id": "18411520",
+   "title": "Perfect Crime",
+   "category": "theater",
    "start": "2026-10-29T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Bergen Performing Arts Center",
-    "address": "30 North Van Brunt Street, Englewood, NJ 07631",
-    "neighborhood": "Englewood",
-    "lat": 40.8953,
-    "lng": -73.9749
+    "name": "The Theater Center",
+    "address": "210 W. 50th Street, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7615,
+    "lng": -73.9845
    },
    "price": null,
    "priceUnknown": true,
-   "description": "concert",
+   "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/get-the-led-out-a-tribute-to-led-zeppelin-tickets/englewood-new-jersey-bergen-performing-arts-center-2026-10-29-8-pm/concert/18166056",
+   "url": "https://seatgeek.com/perfect-crime-tickets/broadway/2026-10-29-8-pm/18411520",
    "tags": [
-    "concert"
+    "theater",
+    "broadway"
    ]
   },
   {
@@ -1441,30 +1465,6 @@
    "tags": [
     "theater",
     "entertainment"
-   ]
-  },
-  {
-   "id": "18411520",
-   "title": "Perfect Crime",
-   "category": "theater",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Theater Center",
-    "address": "210 W. 50th Street, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7615,
-    "lng": -73.9845
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/perfect-crime-tickets/broadway/2026-10-29-8-pm/18411520",
-   "tags": [
-    "theater",
-    "broadway"
    ]
   },
   {

@@ -4,7 +4,7 @@
   "url": "https://www.eventbrite.com/d/ny--new-york/events/"
  },
  "date": "2026-10-29",
- "fetchedAt": "2026-10-29T14:18:17-04:00",
+ "fetchedAt": "2026-10-29T14:33:01-04:00",
  "events": [
   {
    "id": "2002952190921",
@@ -44,6 +44,146 @@
    "priceUnknown": false,
    "description": "By Hive Mind Books on Eventbrite",
    "url": "https://www.eventbrite.com/e/work-in-progress-a-queer-literary-open-mic-tickets-2002919922405",
+   "tags": []
+  },
+  {
+   "id": "1999297368248",
+   "title": "Carol Mitchell with Marsha Massiah",
+   "category": "theater",
+   "start": "2026-10-29T19:30:00-04:00",
+   "end": "2026-10-29T20:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Greenlight Bookstore in Fort Greene",
+    "address": "686 Fulton Street, Brooklyn, NY 11217",
+    "neighborhood": "Brooklyn",
+    "lat": 40.686177,
+    "lng": -73.974567
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By Greenlight Bookstore on Eventbrite",
+   "url": "https://www.eventbrite.com/e/carol-mitchell-with-marsha-massiah-tickets-1999297368248",
+   "tags": []
+  },
+  {
+   "id": "1996829515835",
+   "title": "SOLD OUT - Sophia Bush: And I Will Tell You Mine",
+   "category": "community",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": "2026-10-29T20:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Strand Building",
+    "address": "826 Broadway, New York, NY 10003",
+    "neighborhood": "New York",
+    "lat": 40.733424,
+    "lng": -73.990948
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By Strand Bookstore on Eventbrite",
+   "url": "https://www.eventbrite.com/e/sold-out-sophia-bush-and-i-will-tell-you-mine-tickets-1996829515835",
+   "tags": []
+  },
+  {
+   "id": "1994075718152",
+   "title": "Live Stand-Up Comedy Every Night @ The Tiny Cupboard Brooklyn",
+   "category": "theater",
+   "start": "2026-10-29T20:30:00-04:00",
+   "end": "2026-10-29T22:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Tiny Cupboard",
+    "address": "10 Cooper Street, Brooklyn, NY 11207",
+    "neighborhood": "Brooklyn",
+    "lat": 40.683725,
+    "lng": -73.911217
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By The Tiny Cupboard on Eventbrite",
+   "url": "https://www.eventbrite.com/e/live-stand-up-comedy-every-night-the-tiny-cupboard-brooklyn-tickets-1994075718152",
+   "tags": []
+  },
+  {
+   "id": "1994075719155",
+   "title": "Live Stand-Up Comedy Every Night @ The Tiny Cupboard Brooklyn",
+   "category": "theater",
+   "start": "2026-10-29T22:00:00-04:00",
+   "end": "2026-10-29T23:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Tiny Cupboard",
+    "address": "10 Cooper Street, Brooklyn, NY 11207",
+    "neighborhood": "Brooklyn",
+    "lat": 40.683725,
+    "lng": -73.911217
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By The Tiny Cupboard on Eventbrite",
+   "url": "https://www.eventbrite.com/e/live-stand-up-comedy-every-night-the-tiny-cupboard-brooklyn-tickets-1994075719155",
+   "tags": []
+  },
+  {
+   "id": "1994698986364",
+   "title": "Free Backyard Anime & Cartoons Night: Audience Choice!",
+   "category": "film",
+   "start": "2026-10-29T20:30:00-04:00",
+   "end": "2026-10-29T22:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Tiny Cupboard",
+    "address": "10 Cooper Street, Brooklyn, NY 11207",
+    "neighborhood": "Brooklyn",
+    "lat": 40.683725,
+    "lng": -73.911217
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By The Tiny Cupboard on Eventbrite",
+   "url": "https://www.eventbrite.com/e/free-backyard-anime-cartoons-night-audience-choice-tickets-1994698986364",
+   "tags": []
+  },
+  {
+   "id": "2001257398752",
+   "title": "Clay & Cocktails: Free Sculpt & Sip Night",
+   "category": "theater",
+   "start": "2026-10-29T19:30:00-04:00",
+   "end": "2026-10-29T21:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Tiny Cupboard",
+    "address": "10 Cooper, brooklyn, NY 1207",
+    "neighborhood": "brooklyn",
+    "lat": 40.683717,
+    "lng": -73.911224
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "By The Tiny Cupboard on Eventbrite",
+   "url": "https://www.eventbrite.com/e/clay-cocktails-free-sculpt-sip-night-tickets-2001257398752",
+   "tags": []
+  },
+  {
+   "id": "2003509560027",
+   "title": "Free Paint & Sip Night (with Free Clay Night after!)",
+   "category": "theater",
+   "start": "2026-10-29T18:00:00-04:00",
+   "end": "2026-10-29T20:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Tiny Cupboard",
+    "address": "10 Cooper Street, Brooklyn, NY 11207",
+    "neighborhood": "Brooklyn",
+    "lat": 40.683725,
+    "lng": -73.911217
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By The Tiny Cupboard on Eventbrite",
+   "url": "https://www.eventbrite.com/e/free-paint-sip-night-with-free-clay-night-after-tickets-2003509560027",
    "tags": []
   }
  ],

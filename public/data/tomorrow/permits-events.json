@@ -4,7 +4,7 @@
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
  "date": "2026-10-30",
- "fetchedAt": "2026-10-29T14:22:37-04:00",
+ "fetchedAt": "2026-10-29T14:36:15-04:00",
  "events": [
   {
    "id": "972601",
@@ -260,29 +260,6 @@
    ]
   },
   {
-   "id": "984040",
-   "title": "Spooky Street Halloween Event",
-   "category": "community",
-   "start": "2026-10-30T09:00:00-04:00",
-   "end": "2026-10-30T11:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Marion Street",
-    "address": "Marion Street Between Patchen Avenue And Malcolm X Boulevard",
-    "neighborhood": "Brooklyn",
-    "lat": 40.680383,
-    "lng": -73.926045
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
    "id": "982066",
    "title": "Halloween Parade for Nord Anglia",
    "category": "community",
@@ -303,6 +280,29 @@
    "url": null,
    "tags": [
     "Special Event"
+   ]
+  },
+  {
+   "id": "984040",
+   "title": "Spooky Street Halloween Event",
+   "category": "community",
+   "start": "2026-10-30T09:00:00-04:00",
+   "end": "2026-10-30T11:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Marion Street",
+    "address": "Marion Street Between Patchen Avenue And Malcolm X Boulevard",
+    "neighborhood": "Brooklyn",
+    "lat": 40.680383,
+    "lng": -73.926045
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
    ]
   },
   {
@@ -375,29 +375,6 @@
    ]
   },
   {
-   "id": "910575",
-   "title": "Asphalt Screams",
-   "category": "community",
-   "start": "2026-10-30T10:00:00-04:00",
-   "end": "2026-10-30T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "East 90 Street",
-    "address": "East 90 Street Between York Avenue And East End Avenue",
-    "neighborhood": "Manhattan",
-    "lat": 40.77833,
-    "lng": -73.945859
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Single Block Festival",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Single Block Festival"
-   ]
-  },
-  {
    "id": "967699",
    "title": "P.S. 595  P.S. 352 Trunk o Treat",
    "category": "community",
@@ -441,6 +418,29 @@
    "url": null,
    "tags": [
     "Special Event"
+   ]
+  },
+  {
+   "id": "910575",
+   "title": "Asphalt Screams",
+   "category": "community",
+   "start": "2026-10-30T10:00:00-04:00",
+   "end": "2026-10-30T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "East 90 Street",
+    "address": "East 90 Street Between York Avenue And East End Avenue",
+    "neighborhood": "Manhattan",
+    "lat": 40.77833,
+    "lng": -73.945859
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Single Block Festival",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Single Block Festival"
    ]
   },
   {
@@ -628,29 +628,6 @@
    ]
   },
   {
-   "id": "980220",
-   "title": "Trick or Streets 2026",
-   "category": "community",
-   "start": "2026-10-30T14:00:00-04:00",
-   "end": "2026-10-30T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Beach 21st Street Plaza",
-    "address": "Beach 21st Street Plaza: Beach 21st Street Plaza Beach 21st St Between Mott Ave And Mott Ave",
-    "neighborhood": "Queens",
-    "lat": 40.604215,
-    "lng": -73.753281
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Plaza Partner Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Plaza Partner Event"
-   ]
-  },
-  {
    "id": "980251",
    "title": "Neutrogena Sampling",
    "category": "community",
@@ -671,6 +648,29 @@
    "url": null,
    "tags": [
     "Street Event"
+   ]
+  },
+  {
+   "id": "980220",
+   "title": "Trick or Streets 2026",
+   "category": "community",
+   "start": "2026-10-30T14:00:00-04:00",
+   "end": "2026-10-30T17:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Beach 21st Street Plaza",
+    "address": "Beach 21st Street Plaza: Beach 21st Street Plaza Beach 21st St Between Mott Ave And Mott Ave",
+    "neighborhood": "Queens",
+    "lat": 40.604215,
+    "lng": -73.753281
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Plaza Partner Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Plaza Partner Event"
    ]
   },
   {
@@ -709,6 +709,52 @@
     "neighborhood": "Manhattan",
     "lat": 40.865197,
     "lng": -73.922285
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
+   ]
+  },
+  {
+   "id": "978359",
+   "title": "Trick-or-Streets @ Morrison Avenue Plaza",
+   "category": "community",
+   "start": "2026-10-30T15:00:00-04:00",
+   "end": "2026-10-30T16:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Morrison Avenue Plaza",
+    "address": "Morrison Avenue Plaza: Morrison Avenue Plaza Morrison Avenue Between Harrod Place And Westchester Avenue",
+    "neighborhood": "Bronx",
+    "lat": 40.833064,
+    "lng": -73.874877
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Plaza Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Plaza Event"
+   ]
+  },
+  {
+   "id": "977554",
+   "title": "50 Fest",
+   "category": "community",
+   "start": "2026-10-30T15:00:00-04:00",
+   "end": "2026-10-30T17:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "South 3 Street",
+    "address": "South 3 Street Between Roebling Street And Driggs Avenue",
+    "neighborhood": "Brooklyn",
+    "lat": 40.711864,
+    "lng": -73.96017
    },
    "price": null,
    "priceUnknown": false,
@@ -766,41 +812,18 @@
    ]
   },
   {
-   "id": "978359",
-   "title": "Trick-or-Streets @ Morrison Avenue Plaza",
+   "id": "977148",
+   "title": "Halloween - 2026",
    "category": "community",
    "start": "2026-10-30T15:00:00-04:00",
-   "end": "2026-10-30T16:30:00-04:00",
+   "end": "2026-10-30T17:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Morrison Avenue Plaza",
-    "address": "Morrison Avenue Plaza: Morrison Avenue Plaza Morrison Avenue Between Harrod Place And Westchester Avenue",
-    "neighborhood": "Bronx",
-    "lat": 40.833064,
-    "lng": -73.874877
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Plaza Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Plaza Event"
-   ]
-  },
-  {
-   "id": "977554",
-   "title": "50 Fest",
-   "category": "community",
-   "start": "2026-10-30T15:00:00-04:00",
-   "end": "2026-10-30T17:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "South 3 Street",
-    "address": "South 3 Street Between Roebling Street And Driggs Avenue",
-    "neighborhood": "Brooklyn",
-    "lat": 40.711864,
-    "lng": -73.96017
+    "name": "Wadsworth Avenue",
+    "address": "Wadsworth Avenue Between West 177 Street And West 176 Street",
+    "neighborhood": "Manhattan",
+    "lat": 40.846874,
+    "lng": -73.936729
    },
    "price": null,
    "priceUnknown": false,
@@ -835,18 +858,18 @@
    ]
   },
   {
-   "id": "977148",
-   "title": "Halloween - 2026",
+   "id": "978709",
+   "title": "Throggs Neck Halloween Parade Event",
    "category": "community",
-   "start": "2026-10-30T15:00:00-04:00",
-   "end": "2026-10-30T17:00:00-04:00",
+   "start": "2026-10-30T17:00:00-04:00",
+   "end": null,
    "allDay": false,
    "venue": {
-    "name": "Wadsworth Avenue",
-    "address": "Wadsworth Avenue Between West 177 Street And West 176 Street",
-    "neighborhood": "Manhattan",
-    "lat": 40.846874,
-    "lng": -73.936729
+    "name": "Throgs Neck Boulevard",
+    "address": "Throgs Neck Boulevard Between Harding Avenue And Silver Beach Place",
+    "neighborhood": "Bronx",
+    "lat": 40.815631,
+    "lng": -73.811476
    },
    "price": null,
    "priceUnknown": false,
@@ -870,29 +893,6 @@
     "neighborhood": "Manhattan",
     "lat": 40.82584,
     "lng": -73.93882
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "978709",
-   "title": "Throggs Neck Halloween Parade Event",
-   "category": "community",
-   "start": "2026-10-30T17:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Throgs Neck Boulevard",
-    "address": "Throgs Neck Boulevard Between Harding Avenue And Silver Beach Place",
-    "neighborhood": "Bronx",
-    "lat": 40.815631,
-    "lng": -73.811476
    },
    "price": null,
    "priceUnknown": false,

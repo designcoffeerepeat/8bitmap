@@ -4,7 +4,7 @@
   "url": "https://www.eventbrite.com/d/ny--new-york/events/"
  },
  "date": "2026-10-30",
- "fetchedAt": "2026-10-29T14:21:07-04:00",
+ "fetchedAt": "2026-10-29T14:35:19-04:00",
  "events": [
   {
    "id": "2002920132032",
@@ -24,6 +24,86 @@
    "priceUnknown": false,
    "description": "By Hive Mind Books on Eventbrite",
    "url": "https://www.eventbrite.com/e/full-moon-circle-tickets-2002920132032",
+   "tags": []
+  },
+  {
+   "id": "1994091654819",
+   "title": "Live Stand-Up Comedy Every Night @ The Tiny Cupboard Brooklyn",
+   "category": "theater",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": "2026-10-30T20:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Tiny Cupboard",
+    "address": "10 Cooper Street, Brooklyn, NY 11207",
+    "neighborhood": "Brooklyn",
+    "lat": 40.683725,
+    "lng": -73.911217
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By The Tiny Cupboard on Eventbrite",
+   "url": "https://www.eventbrite.com/e/live-stand-up-comedy-every-night-the-tiny-cupboard-brooklyn-tickets-1994091654819",
+   "tags": []
+  },
+  {
+   "id": "1994091655822",
+   "title": "Live Stand-Up Comedy Every Night @ The Tiny Cupboard Brooklyn",
+   "category": "theater",
+   "start": "2026-10-30T20:30:00-04:00",
+   "end": "2026-10-30T22:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Tiny Cupboard",
+    "address": "10 Cooper Street, Brooklyn, NY 11207",
+    "neighborhood": "Brooklyn",
+    "lat": 40.683725,
+    "lng": -73.911217
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By The Tiny Cupboard on Eventbrite",
+   "url": "https://www.eventbrite.com/e/live-stand-up-comedy-every-night-the-tiny-cupboard-brooklyn-tickets-1994091655822",
+   "tags": []
+  },
+  {
+   "id": "1994091656825",
+   "title": "Live Stand-Up Comedy Every Night @ The Tiny Cupboard Brooklyn",
+   "category": "theater",
+   "start": "2026-10-30T22:15:00-04:00",
+   "end": "2026-10-30T23:45:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Tiny Cupboard",
+    "address": "10 Cooper Street, Brooklyn, NY 11207",
+    "neighborhood": "Brooklyn",
+    "lat": 40.683725,
+    "lng": -73.911217
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By The Tiny Cupboard on Eventbrite",
+   "url": "https://www.eventbrite.com/e/live-stand-up-comedy-every-night-the-tiny-cupboard-brooklyn-tickets-1994091656825",
+   "tags": []
+  },
+  {
+   "id": "1996345140054",
+   "title": "Brooklyn Book Club: Read your book and then meet some people! BYO Book!",
+   "category": "community",
+   "start": "2026-10-30T18:00:00-04:00",
+   "end": "2026-10-30T20:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Tiny Cupboard",
+    "address": "10 Cooper Street, Brooklyn, NY 11207",
+    "neighborhood": "Brooklyn",
+    "lat": 40.683725,
+    "lng": -73.911217
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "By The Tiny Cupboard on Eventbrite",
+   "url": "https://www.eventbrite.com/e/brooklyn-book-club-read-your-book-and-then-meet-some-people-byo-book-tickets-1996345140054",
    "tags": []
   }
  ],
