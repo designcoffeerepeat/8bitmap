@@ -4,7 +4,7 @@
   "url": "https://www.artwrld.com/city/new-york/openings"
  },
  "date": "2026-10-30",
- "fetchedAt": "2026-10-29T13:26:11-04:00",
+ "fetchedAt": "2026-10-29T14:14:34-04:00",
  "events": [
   {
    "id": "87488",
@@ -715,6 +715,29 @@
    "description": "Exhibition opening, on view until Dec 19",
    "details": "",
    "url": "https://www.artwrld.com/exhibit/heidi-lau-ouroboros-sikkema-malloy-jenkins",
+   "tags": [
+    "opening"
+   ]
+  },
+  {
+   "id": "87666",
+   "title": "999",
+   "category": "art",
+   "start": "2026-10-30T18:00:00-04:00",
+   "end": "2026-10-30T20:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Silke Lindner",
+    "address": "",
+    "neighborhood": "Tribeca / SoHo",
+    "lat": 40.71689,
+    "lng": -74.00374
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Exhibition opening, on view until Dec 12",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/999",
    "tags": [
     "opening"
    ]

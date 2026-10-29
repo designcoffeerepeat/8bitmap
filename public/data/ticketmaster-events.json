@@ -4,7 +4,7 @@
   "url": "https://www.ticketmaster.com/discover/new-york"
  },
  "date": "2026-10-29",
- "fetchedAt": "2026-10-29T13:25:23-04:00",
+ "fetchedAt": "2026-10-29T14:13:42-04:00",
  "events": [
   {
    "id": "LvZ18QrWTgeialOZ0E4-1",
@@ -164,50 +164,6 @@
    ]
   },
   {
-   "id": "LvZ18Q-9tbOh8sZZvyVHa",
-   "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
-   "category": "art",
-   "start": "2026-10-29T13:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Balloon Museum NYC",
-    "address": "96 South Street, New York City",
-    "neighborhood": "New York City",
-    "lat": 40.70624,
-    "lng": -74.002277
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Miscellaneous / Family",
-   "details": "",
-   "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-tickets-Y5HV92?ref=ticketmaster",
-   "tags": [
-    "Family"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1AAZKoY",
-   "title": "Heated Rivalry: The Unauthorized Musical Parody",
-   "category": "community",
-   "start": "2026-10-29T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Culture Club",
-    "address": "530 W 27th St 6TH FL, New York",
-    "neighborhood": "New York",
-    "lat": 40.75,
-    "lng": -73.996696
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZKoY",
-   "tags": []
-  },
-  {
    "id": "Z1r9uZruZqGZ1AvZ6ke",
    "title": "Buena Vista Social Club",
    "category": "theater",
@@ -251,29 +207,6 @@
    "url": "https://www.ticketmaster.com/six-new-york-ny-new-york-new-york-10-29-2026/event/Z1r9uZrrZbpZ1AvP6uI",
    "tags": [
     "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A70Ojg",
-   "title": "Six: The Musical",
-   "category": "theater",
-   "start": "2026-10-29T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lena Horne Theatre",
-    "address": "256 W. 47th St., New York",
-    "neighborhood": "New York",
-    "lat": 40.7593,
-    "lng": -73.990196
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Miscellaneous",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70Ojg",
-   "tags": [
-    "Miscellaneous"
    ]
   },
   {
@@ -344,72 +277,26 @@
    "tags": []
   },
   {
-   "id": "Z7r9jZ1A7-4kZ",
-   "title": "The Great Gatsby",
-   "category": "theater",
+   "id": "LvZ18Q-9tbOh8sZZvyVHu",
+   "title": "DAYDREAM | Air Becomes Art - Balloon Museum",
+   "category": "art",
    "start": "2026-10-29T14:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Broadway Theatre-New York",
-    "address": "1681 Broadway, New York",
-    "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
+    "name": "Balloon Museum NYC",
+    "address": "96 South Street, New York City",
+    "neighborhood": "New York City",
+    "lat": 40.70624,
+    "lng": -74.002277
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Arts & Theatre / Miscellaneous",
+   "description": "Miscellaneous / Family",
    "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7-4kZ",
+   "url": "https://www.universe.com/events/daydream-air-becomes-art-balloon-museum-tickets-Y5HV92?ref=ticketmaster",
    "tags": [
-    "Miscellaneous"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A70p0O",
-   "title": "The Rocky Horror Show",
-   "category": "theater",
-   "start": "2026-10-29T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Studio 54",
-    "address": "254 W. 54th St., New York",
-    "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70p0O",
-   "tags": [
-    "Theatre"
-   ]
-  },
-  {
-   "id": "Z7r9jZ1A7PV16",
-   "title": "Heathers",
-   "category": "theater",
-   "start": "2026-10-29T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New World Stages - Stage 1",
-    "address": "340 West 50th Street, New York",
-    "neighborhood": "New York",
-    "lat": 40.765202,
-    "lng": -73.985298
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Arts & Theatre / Theatre",
-   "details": "",
-   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PV16",
-   "tags": [
-    "Theatre"
+    "Family"
    ]
   },
   {
@@ -1008,6 +895,27 @@
    ]
   },
   {
+   "id": "Z7r9jZ1AAZKot",
+   "title": "Heated Rivalry: The Unauthorized Musical Parody",
+   "category": "community",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Culture Club",
+    "address": "530 W 27th St 6TH FL, New York",
+    "neighborhood": "New York",
+    "lat": 40.75,
+    "lng": -73.996696
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZKot",
+   "tags": []
+  },
+  {
    "id": "Z1r9uZrrZbpZ1Aev7o8",
    "title": "Stranger Things: The First Shadow",
    "category": "theater",
@@ -1236,6 +1144,29 @@
    "details": "",
    "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7-J_k",
    "tags": []
+  },
+  {
+   "id": "Z7r9jZ1A70OjU",
+   "title": "Six: The Musical",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lena Horne Theatre",
+    "address": "256 W. 47th St., New York",
+    "neighborhood": "New York",
+    "lat": 40.7593,
+    "lng": -73.990196
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Miscellaneous",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70OjU",
+   "tags": [
+    "Miscellaneous"
+   ]
   },
   {
    "id": "Z7r9jZ1A7J6v-",
@@ -1680,6 +1611,29 @@
    ]
   },
   {
+   "id": "Z7r9jZ1A7Jvfk",
+   "title": "The Rocky Horror Show",
+   "category": "theater",
+   "start": "2026-10-29T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Studio 54",
+    "address": "254 W. 54th St., New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7Jvfk",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
    "id": "Z7r9jZ1A7rf-A",
    "title": "Wicked",
    "category": "theater",
@@ -1945,8 +1899,8 @@
     "lng": -73.959998
    },
    "price": {
-    "min": 33,
-    "max": 33,
+    "min": 0,
+    "max": 0,
     "currency": "USD"
    },
    "priceUnknown": false,
@@ -2171,6 +2125,29 @@
    "description": "Arts & Theatre / Theatre",
    "details": "",
    "url": "https://www.ticketmaster.com/event/Z7r9jZ1A70g0e",
+   "tags": [
+    "Theatre"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7PVaS",
+   "title": "Heathers",
+   "category": "theater",
+   "start": "2026-10-29T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New World Stages - Stage 1",
+    "address": "340 West 50th Street, New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Theatre",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7PVaS",
    "tags": [
     "Theatre"
    ]
@@ -2631,6 +2608,29 @@
    "description": "Arts & Theatre / Miscellaneous",
    "details": "",
    "url": "https://www.ticketmaster.com/event/Z7r9jZ1AAZf7I",
+   "tags": [
+    "Miscellaneous"
+   ]
+  },
+  {
+   "id": "Z7r9jZ1A7-4AK",
+   "title": "The Great Gatsby",
+   "category": "theater",
+   "start": "2026-10-29T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Broadway Theatre-New York",
+    "address": "1681 Broadway, New York",
+    "neighborhood": "New York",
+    "lat": 40.765202,
+    "lng": -73.985298
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Arts & Theatre / Miscellaneous",
+   "details": "",
+   "url": "https://www.ticketmaster.com/event/Z7r9jZ1A7-4AK",
    "tags": [
     "Miscellaneous"
    ]
