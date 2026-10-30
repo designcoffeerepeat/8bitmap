@@ -3,6 +3,7 @@ import { loadEventsForDate, SOURCES } from './events/index.js';
 import { CATEGORIES, MAIN_CATEGORIES, CATEGORY_LABELS } from './events/schema.js';
 import { CATEGORY_COLORS } from './map/palette.js';
 import NEIGHBORHOODS from './map/neighborhoods.json';
+import { latLngToWorld } from './map/geo.js';
 import { PLACES, MORE_LABELS, PARK_LABELS, ROAD_LABELS } from './map/places.js';
 import nycgovSource from './events/sources/nycgov.js';
 import { initMonster } from './monster.js';
@@ -50,6 +51,7 @@ const el = {
   srcSummary: $('#src-summary'),
   listTitle: $('#list-title'),
   listHint: $('#list-hint'),
+  listHoods: $('#list-hoods'),
   listReset: $('#list-reset'),
   hoodBtn: $('#hood-btn'),
   hoodMenu: $('#hood-menu'),
@@ -86,7 +88,23 @@ const at = new URLSearchParams(location.search).get('at')?.split(',').map(Number
 if (at?.length === 3 && at.every(Number.isFinite)) map.focusLatLng(at[0], at[1], at[2]);
 
 // Official neighborhood names appear once you zoom in past the borough labels.
-for (const n of NEIGHBORHOODS) map.addAnchor(n.name, n.lat, n.lng, { className: 'hood', minZoom: 2.4 });
+const HOOD_LABEL_ZOOM = 2.4;
+for (const n of NEIGHBORHOODS) map.addAnchor(n.name, n.lat, n.lng, { className: 'hood', minZoom: HOOD_LABEL_ZOOM });
+const HOOD_POS = NEIGHBORHOODS.map((n) => ({ name: n.name, ...latLngToWorld(n.lat, n.lng), y: 0 }));
+
+// Zoomed in far enough for the neighborhood names, the neighborhoods on screen, nearest the middle first.
+// On phones the open tray covers the bottom of the map, so only the part above it counts.
+function hoodsInView() {
+  if (!state.inView || map.zoom < HOOD_LABEL_ZOOM) return [];
+  const w = map.canvas.clientWidth;
+  const tray = el.sheet.getBoundingClientRect();
+  const h = el.sheet.classList.contains('is-open') && tray.left < 1 ? Math.min(map.canvas.clientHeight, tray.top) : map.canvas.clientHeight;
+  return HOOD_POS
+    .map((n) => ({ name: n.name, s: map.toScreen(n) }))
+    .filter(({ s }) => !s.behind && s.x >= 0 && s.x <= w && s.y >= 0 && s.y <= h)
+    .sort((a, b) => Math.hypot(a.s.x - w / 2, a.s.y - h / 2) - Math.hypot(b.s.x - w / 2, b.s.y - h / 2))
+    .map((n) => n.name);
+}
 // Big parks and highways get their names from the borough view in; landmarks and venues closer in.
 for (const p of PARK_LABELS) map.addAnchor(p.name, p.lat, p.lng, { className: 'park-name', minZoom: 1.5 });
 for (const r of ROAD_LABELS) map.addAnchor(r.name, r.lat, r.lng, { className: 'road-name', minZoom: 2.2 });
@@ -177,6 +195,7 @@ el.listReset.addEventListener('click', () => {
 el.sheetToggle.addEventListener('click', () => {
   const open = el.sheet.classList.toggle('is-open');
   el.sheetToggle.setAttribute('aria-expanded', String(open));
+  if (open) setTimeout(render, 300); // the neighborhoods line counts only the map above the tray
 });
 document.addEventListener('keydown', (e) => {
   if (e.key !== 'Escape' || document.querySelector('dialog[open]')) return;
@@ -452,6 +471,10 @@ function render() {
   const list = listedEvents();
   el.listHint.textContent = state.inView ? `${list.length} IN VIEW` : 'TAP A PIN OR A ROW';
   el.listReset.hidden = !state.inView;
+  const hoods = hoodsInView();
+  el.listHoods.hidden = !hoods.length;
+  el.listHoods.textContent = hoods.slice(0, 3).join(' · ') + (hoods.length > 3 ? ` +${hoods.length - 3} MORE` : '');
+  el.listHoods.title = hoods.join(', ');
 
   const now = Date.now();
   el.list.innerHTML = list.map((e) => {

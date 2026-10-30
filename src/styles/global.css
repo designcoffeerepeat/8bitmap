@@ -219,6 +219,9 @@ button, a { font: inherit; color: inherit; }
 .panel-head { padding: 18px 18px 12px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; border-bottom: 3px solid var(--night-2); }
 .panel-head h2 { margin: 0; font: 12px/1 var(--font-pixel); letter-spacing: 1px; }
 .panel-head small { font: 8px/1 var(--font-pixel); color: var(--dim); }
+/* the neighborhoods on screen once zoomed in, under the IN VIEW count */
+.list-hoods { margin: 0; padding: 8px 18px 7px; font: 7px/1.5 var(--font-pixel); color: var(--coin); text-transform: uppercase; border-bottom: 3px solid var(--night-2); }
+.list-hoods[hidden] { display: none; }
 #panel-toggle { display: none; }
 .list-wrap { overflow-y: auto; flex: 1; padding: 10px 12px 16px; scrollbar-color: var(--night-2) transparent; }
 #event-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
@@ -394,6 +397,7 @@ button, a { font: inherit; color: inherit; }
   /* the open tray (and the event card above it) cover the map controls; the header menus stay on top at z-index 2 */
   #panel, #detail { z-index: 1; }
   .panel-head { padding: 0 16px; height: 61px; align-items: center; }
+  .list-hoods { padding: 8px 16px 7px; }
   #panel-toggle { display: block; position: absolute; inset: 0 0 auto 0; height: 61px; background: none; border: 0; cursor: pointer; }
   #panel-toggle::after { content: ""; position: absolute; top: 8px; left: 50%; width: 36px; height: 4px; margin-left: -18px; background: var(--dim); }
   .panel-foot { display: none; }
