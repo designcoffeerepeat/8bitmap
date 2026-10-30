@@ -3,15 +3,15 @@
   "name": "Staten Island calendars",
   "url": "https://www.historicrichmondtown.org/"
  },
- "date": "2026-10-30",
- "fetchedAt": "2026-10-29T13:23:14-04:00",
+ "date": "2026-10-31",
+ "fetchedAt": "2026-10-30T05:29:33-04:00",
  "events": [
   {
-   "id": "staten-island-children-s-museum-202610301300-walk-in-workshop-plenty-of-purples",
-   "title": "Walk-In! Workshop: Plenty of Purples",
-   "category": "art",
-   "start": "2026-10-30T13:00:00-04:00",
-   "end": "2026-10-30T16:00:00-04:00",
+   "id": "staten-island-children-s-museum-202610311000-trick-or-treating-at-the-museum",
+   "title": "Trick-or-Treating at the Museum",
+   "category": "community",
+   "start": "2026-10-31T10:00:00-04:00",
+   "end": "2026-10-31T17:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Staten Island Children's Museum",
@@ -24,7 +24,7 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://sichildrensmuseum.org/event/walk-in-workshop-plenty-of-purples/2026-10-30/",
+   "url": "https://sichildrensmuseum.org/event/trick-or-treating-at-the-museum-2/",
    "tags": [],
    "publisher": {
     "id": "venue-staten-island-children-s-museum",
@@ -33,11 +33,89 @@
    }
   },
   {
-   "id": "alice-austen-house-202610301930-mischief-night-screening",
-   "title": "MISCHIEF NIGHT SCREENING",
-   "category": "film",
-   "start": "2026-10-30T19:30:00-04:00",
-   "end": "2026-10-30T21:00:00-04:00",
+   "id": "staten-island-children-s-museum-202610311200-weekend-walk-in-workshop-plenty-of-purpl",
+   "title": "Weekend Walk-In! Workshop: Plenty of Purples",
+   "category": "art",
+   "start": "2026-10-31T12:00:00-04:00",
+   "end": "2026-10-31T16:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Staten Island Children's Museum",
+    "address": "1000 Richmond Terrace",
+    "neighborhood": "",
+    "lat": 40.64405,
+    "lng": -74.10176
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://sichildrensmuseum.org/event/weekend-walk-in-workshop-plenty-of-purples/2026-10-31/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-staten-island-children-s-museum",
+    "name": "Staten Island Children's Museum",
+    "url": "https://sichildrensmuseum.org/"
+   }
+  },
+  {
+   "id": "staten-island-children-s-museum-202610311200-lead-poisoning-prevention-van",
+   "title": "Lead Poisoning Prevention Van",
+   "category": "community",
+   "start": "2026-10-31T12:00:00-04:00",
+   "end": "2026-10-31T16:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Staten Island Children's Museum",
+    "address": "1000 Richmond Terrace",
+    "neighborhood": "",
+    "lat": 40.64405,
+    "lng": -74.10176
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://sichildrensmuseum.org/event/lead-poisoning-prevention-van/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-staten-island-children-s-museum",
+    "name": "Staten Island Children's Museum",
+    "url": "https://sichildrensmuseum.org/"
+   }
+  },
+  {
+   "id": "staten-island-children-s-museum-202610311600-binx-the-reptile-guy-dino-scales-tails",
+   "title": "Binx the Reptile Guy – Dino Scales & Tails",
+   "category": "community",
+   "start": "2026-10-31T16:00:00-04:00",
+   "end": "2026-10-31T16:45:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Staten Island Children's Museum",
+    "address": "1000 Richmond Terrace",
+    "neighborhood": "",
+    "lat": 40.64405,
+    "lng": -74.10176
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://sichildrensmuseum.org/event/binx-the-reptile-guy-dino-scales-tails-5/2026-10-31/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-staten-island-children-s-museum",
+    "name": "Staten Island Children's Museum",
+    "url": "https://sichildrensmuseum.org/"
+   }
+  },
+  {
+   "id": "alice-austen-house-202610311200-harvest-moon-at-alice-austen",
+   "title": "Harvest Moon at Alice Austen",
+   "category": "food",
+   "start": "2026-10-31T12:00:00-04:00",
+   "end": "2026-10-31T16:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Alice Austen House",
@@ -50,7 +128,7 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://aliceausten.org/events/mischief-night-screening/",
+   "url": "https://aliceausten.org/events/harvest-moon-at-alice-austen/",
    "tags": [],
    "publisher": {
     "id": "venue-alice-austen-house",

@@ -3,120 +3,117 @@
   "name": "Luma NYC",
   "url": "https://luma.com/nyc"
  },
- "date": "2026-10-30",
- "fetchedAt": "2026-10-29T13:22:18-04:00",
+ "date": "2026-10-31",
+ "fetchedAt": "2026-10-30T05:20:37-04:00",
  "events": [
   {
-   "id": "evt-1nTUdICtKcX8Jf3",
-   "title": "COROS x The Woods x Leon's Bagels",
-   "category": "community",
-   "start": "2026-10-30T08:00:00-04:00",
-   "end": "2026-10-30T10:00:00-04:00",
-   "venue": {
-    "name": "Leon’s Bagels",
-    "address": "Leon’s Bagels, 181 Mulberry St, New York, NY 10012, USA",
-    "neighborhood": "Nolita",
-    "lat": 40.720878,
-    "lng": -73.996833
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Personal calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/j05tytha",
-   "tags": []
-  },
-  {
-   "id": "evt-c2tn1q1lYlAH3jC",
-   "title": "PROOF x rabbit - NYCM Bagel Shakeout Run",
+   "id": "evt-xlY1sYf0mhE0BB1",
+   "title": "Maybelline X Rendezvous NYC Marathon Shake Out Run",
    "category": "sports",
-   "start": "2026-10-30T09:00:00-04:00",
-   "end": "2026-10-30T10:00:00-04:00",
+   "start": "2026-10-31T09:00:00-04:00",
+   "end": "2026-10-31T11:00:00-04:00",
    "venue": {
-    "name": "Walker Hotel Tribeca",
-    "address": "Walker Hotel Tribeca, 77 Walker St, New York, NY 10013, USA",
-    "neighborhood": "New York",
-    "lat": 40.718417,
-    "lng": -74.002285
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the PROOF Running Co calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/psaeefxb",
-   "tags": []
-  },
-  {
-   "id": "evt-VNfnnD0IxV6gAT7",
-   "title": "BAMBAS ISSUE03 NY LAUNCH",
-   "category": "community",
-   "start": "2026-10-30T16:00:00-04:00",
-   "end": "2026-10-30T18:00:00-04:00",
-   "venue": {
-    "name": "RUBBER N' ROAD",
-    "address": "RUBBER N' ROAD, 466 W 51st St, New York, NY 10019, USA",
-    "neighborhood": "Hell's Kitchen",
-    "lat": 40.765033,
-    "lng": -73.991113
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the Bambas Sports Club calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/9d6c82b0",
-   "tags": []
-  },
-  {
-   "id": "evt-I124iEvsGj6kxZQ",
-   "title": "Athletics Archive Launch Party",
-   "category": "nightlife",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": "2026-10-30T21:00:00-04:00",
-   "venue": {
-    "name": "345 Broome St",
-    "address": "345 Broome St, New York, NY 10013, USA",
-    "neighborhood": "Manhattan",
-    "lat": 40.719616,
-    "lng": -73.994919
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "From the MILER RUNNING calendar on Luma",
-   "details": "",
-   "url": "https://luma.com/nhfqhmbf",
-   "tags": []
-  },
-  {
-   "id": "evt-Gv9j4KBQPhK52Xb",
-   "title": "Capture the Future",
-   "category": "community",
-   "start": "2026-10-30T19:00:00-04:00",
-   "end": "2026-10-30T22:00:00-04:00",
-   "venue": {
-    "name": "Prospect Park",
-    "address": "Prospect Park, Brooklyn, NY, USA",
-    "neighborhood": "Brooklyn",
-    "lat": 40.663838,
-    "lng": -73.962946
+    "name": "Festivál Café NYC",
+    "address": "Festivál Café NYC, 1155 2nd Ave, New York, NY 10065, USA",
+    "neighborhood": "Lenox Hill",
+    "lat": 40.761825,
+    "lng": -73.963759
    },
    "price": null,
    "priceUnknown": false,
    "description": "From the Personal calendar on Luma",
    "details": "",
-   "url": "https://luma.com/p7g5rpfb",
+   "url": "https://luma.com/b8fsno5k",
+   "tags": []
+  },
+  {
+   "id": "evt-yxZgQ73I80xuQTS",
+   "title": "Saucony x 212 Athletic Shakeout Run",
+   "category": "sports",
+   "start": "2026-10-31T09:00:00-04:00",
+   "end": "2026-10-31T10:30:00-04:00",
+   "venue": {
+    "name": "48 Ludlow St",
+    "address": "48 Ludlow St, New York, NY 10002, USA",
+    "neighborhood": "Lower East Side",
+    "lat": 40.716381,
+    "lng": -73.990054
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Personal calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/skohk375",
+   "tags": []
+  },
+  {
+   "id": "evt-Y8UoYBPAKRBMHb7",
+   "title": "Shutter Speed: Capturing Race Day",
+   "category": "community",
+   "start": "2026-10-31T13:00:00-04:00",
+   "end": "2026-10-31T15:00:00-04:00",
+   "venue": {
+    "name": "48 Ludlow St",
+    "address": "48 Ludlow St, New York, NY 10002, USA",
+    "neighborhood": "Lower East Side",
+    "lat": 40.716381,
+    "lng": -73.990054
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "From the Personal calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/2kvghex1",
+   "tags": []
+  },
+  {
+   "id": "evt-H80RhU7SXTtgMqi",
+   "title": "Philosophy at the Museum: Medieval Art at The Met Cloisters",
+   "category": "art",
+   "start": "2026-10-31T14:00:00-04:00",
+   "end": "2026-10-31T16:00:00-04:00",
+   "venue": {
+    "name": "The Met Cloisters",
+    "address": "The Met Cloisters, 99 Margaret Corbin Dr, New York, NY 10040, USA",
+    "neighborhood": "Fort George",
+    "lat": 40.864863,
+    "lng": -73.931727
+   },
+   "price": {
+    "min": 9,
+    "max": 9,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "From the The New York Philosophy Club calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/157thqlu",
+   "tags": []
+  },
+  {
+   "id": "evt-7qB3CYj73mYkAxc",
+   "title": "Halloween Night @ Putnam's Pub!",
+   "category": "community",
+   "start": "2026-10-31T22:00:00-04:00",
+   "end": "2026-11-01T02:00:00-05:00",
+   "venue": {
+    "name": "Putnam's Pub & Cooker",
+    "address": "Putnam's Pub & Cooker, 419 Myrtle Ave, Brooklyn, NY 11205, USA",
+    "neighborhood": "Kings County",
+    "lat": 40.693252,
+    "lng": -73.969029
+   },
+   "price": {
+    "min": 10,
+    "max": 10,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "From the Putnam's Pub calendar on Luma",
+   "details": "",
+   "url": "https://luma.com/6u6hfd0b",
    "tags": []
   }
  ],
- "unplaced": [
-  {
-   "title": "NYC Frontier Hackathon: Build your Autonomous Code Factory",
-   "address": "address shown to guests only",
-   "url": "https://luma.com/frontierNYC2"
-  },
-  {
-   "title": "NousCon 2026",
-   "address": "address shown to guests only",
-   "url": "https://luma.com/y0y9ngkm"
-  }
- ]
+ "unplaced": []
 }

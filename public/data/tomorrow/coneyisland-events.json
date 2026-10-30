@@ -3,15 +3,15 @@
   "name": "Coney Island calendars",
   "url": "https://www.coneyisland.com/event"
  },
- "date": "2026-10-30",
- "fetchedAt": "2026-10-29T13:21:56-04:00",
+ "date": "2026-10-31",
+ "fetchedAt": "2026-10-30T05:20:13-04:00",
  "events": [
   {
-   "id": "luna-park-202610301600-halloween-harvest",
+   "id": "luna-park-202610311100-halloween-harvest",
    "title": "Halloween Harvest",
    "category": "community",
-   "start": "2026-10-30T16:00:00-04:00",
-   "end": "2026-10-30T22:00:00-04:00",
+   "start": "2026-10-31T11:00:00-04:00",
+   "end": "2026-10-31T22:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Luna Park",
@@ -24,7 +24,7 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://lunaparknyc.com/events-luna-park/halloween-harvest-4-10/",
+   "url": "https://lunaparknyc.com/events-luna-park/halloween-harvest-11-10/",
    "tags": [],
    "publisher": {
     "id": "venue-luna-park",
@@ -33,11 +33,11 @@
    }
   },
   {
-   "id": "coney-island-usa-202610302000-creatures-of-the-night-a-drag-burlesque-",
+   "id": "coney-island-usa-202610312000-creatures-of-the-night-a-drag-burlesque-",
    "title": "Creatures of the Night: A Drag, Burlesque & Sideshow Shadow Cast of the Rocky Horror Picture Show",
    "category": "theater",
-   "start": "2026-10-30T20:00:00-04:00",
-   "end": "2026-10-30T22:00:00-04:00",
+   "start": "2026-10-31T20:00:00-04:00",
+   "end": "2026-10-31T22:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Coney Island USA",
@@ -54,7 +54,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://www.coneyisland.com/event/rockyhorror103026",
+   "url": "https://www.coneyisland.com/event/rockyhorror103126",
    "tags": [],
    "publisher": {
     "id": "venue-coney-island-usa",
