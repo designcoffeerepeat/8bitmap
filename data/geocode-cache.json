@@ -3887,6 +3887,11 @@
   "lng": -73.845372
  },
  "permit place: GLENWOOD ROAD between REMSEN AVENUE and EAST   92 STREET | Brooklyn": null,
+ "permit place: GLENWOOD ROAD between RUGBY ROAD and WESTMINSTER ROAD | Brooklyn": {
+  "label": "GLENWOOD ROAD & RUGBY ROAD",
+  "lat": 40.632476,
+  "lng": -73.963926
+ },
  "permit place: GOLD STREET between SPRUCE STREET and FRANKFORT STREET | Manhattan": {
   "label": "GOLD STREET & SPRUCE STREET",
   "lat": 40.710299,
@@ -6112,6 +6117,11 @@
   "label": "253 CONOVER STREET, Brooklyn, NY, USA",
   "lat": 40.675626,
   "lng": -74.016798
+ },
+ "venue: The Cooper Union": {
+  "label": "7 EAST 7 STREET, New York, NY, USA",
+  "lat": 40.729377,
+  "lng": -73.99043
  },
  "venue: The PIT": {
   "label": "154 WEST 29 STREET, New York, NY, USA",

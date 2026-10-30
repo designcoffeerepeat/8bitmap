@@ -9,10 +9,11 @@ import { normalizeEvent } from './schema.js';
 import { mergeDuplicates } from './overlap.js';
 import { inBounds, BOUNDS, LANDMARKS } from '../map/geo.js';
 import nycgovSource from './sources/nycgov.js';
-import lumaSource from './sources/luma.js';
 import permitsSource from './sources/permits.js';
 import ticketmasterSource from './sources/ticketmaster.js';
 import seatgeekSource from './sources/seatgeek.js';
+import eventbriteSource from './sources/eventbrite.js';
+import councilSource from './sources/council.js';
 import artwrldSource from './sources/artwrld.js';
 import venuesSource from './sources/venues.js';
 import greenmarketsSource from './sources/greenmarkets.js';
@@ -25,10 +26,11 @@ import coneyislandSource from './sources/coneyisland.js';
 import statenislandSource from './sources/statenisland.js';
 import jerseycitySource from './sources/jerseycity.js';
 import patchbaySource from './sources/patchbay.js';
+import amcSource from './sources/amc.js';
 import { LIVE_HIDDEN } from './live.js';
 
 // ./sources/dummy.js holds sample events for offline testing.
-const ALL_SOURCES = [nycgovSource, lumaSource, permitsSource, ticketmasterSource, seatgeekSource, artwrldSource, venuesSource, greenmarketsSource, npsSource, astoriaSource, redhookSource, foresthillsSource, hobokenSource, coneyislandSource, statenislandSource, jerseycitySource, patchbaySource];
+const ALL_SOURCES = [nycgovSource, permitsSource, councilSource, ticketmasterSource, seatgeekSource, eventbriteSource, artwrldSource, venuesSource, greenmarketsSource, npsSource, astoriaSource, redhookSource, foresthillsSource, hobokenSource, coneyislandSource, statenislandSource, jerseycitySource, patchbaySource, amcSource];
 
 // Live builds (anything not built with PUBLIC_SITE=dev) leave out the sources in ./live.js.
 const IS_DEV = import.meta.env.PUBLIC_SITE === 'dev';

@@ -26,6 +26,7 @@ turn scripts away (Queens Theatre).
   Queens Night Market   the next market night on https://queensnightmarket.com/ (Flushing Meadows)
   Kingsland Homestead   the Queens Historical Society's events page (Flushing)
   Bowne House and Lewis Latimer House   their Squarespace events lists (Flushing)
+  The Cooper Union      the public events month page on https://cooper.edu/events-and-exhibitions/events (East Village)
 
 Venues are placed once from their street address with GeoSearch and remembered
 in data/geocode-cache.json.
@@ -71,6 +72,8 @@ VENUES = {
     'Kingsland Homestead': ('143-35 37th Avenue, Queens', 'https://queenshistoricalsociety.org/visit/events'),
     'Bowne House': ('37-01 Bowne Street, Queens', 'https://www.bownehouse.org/events'),
     'Lewis Latimer House': ('34-41 137th Street, Queens', 'https://www.lewislatimerhouse.org/events'),
+    # Most public events are in the Foundation Building's Great Hall and galleries.
+    'The Cooper Union': ('7 East 7th Street, Manhattan', 'https://cooper.edu/events-and-exhibitions/events'),
 }
 
 
@@ -433,8 +436,31 @@ def latimer_house(day):
     return squarespace_events(day, 'Lewis Latimer House', 'https://www.lewislatimerhouse.org', '/events', 'Latimer House')
 
 
+def cooper_union(day):
+    """The month page: a section per day (id '10-29-2026'), each event a linked title and '6:30 - 8:30PM'.
+    In-class lectures are left out; the rest are lectures, talks and performances open to the public."""
+    body = get(f'https://cooper.edu/events-and-exhibitions/events/{day:%Y/%m}', as_json=False)
+    m = re.search(rf'<div id="{day:%m-%d-%Y}" class="title">(.*?)(?:<div id="\d\d-\d\d-\d{{4}}" class="title">|</article>)', body, re.S)
+    out = []
+    for href, title, when in re.findall(r'<h3>\s*<a href="([^"]+)"[^>]*>(.*?)</a>\s*</h3>\s*<time>([^<]*)</time>', m.group(1) if m else '', re.S):
+        title = text(title)
+        span = re.match(r'(\d{1,2})(?::(\d{2}))?\s*(?:([AP])M)?\s*-\s*(\d{1,2})(?::(\d{2}))?\s*([AP])M', when.strip(), re.I)
+        if title.lower().startswith('in-class') or not span:
+            continue
+        h1, m1, ap1, h2, m2, ap2 = span.groups()
+        end_pm = ap2.upper() == 'P'
+        # Only the end has am or pm unless they differ: a start later on the clock than the end is in the morning.
+        start_pm = ap1.upper() == 'P' if ap1 else end_pm and int(h1) % 12 <= int(h2) % 12
+        start = at(day, int(h1) % 12 + (12 if start_pm else 0), int(m1 or 0))
+        end = at(day, int(h2) % 12 + (12 if end_pm else 0), int(m2 or 0))
+        url = urllib.parse.urljoin('https://cooper.edu/', href.replace('/index.php/', '/'))
+        kind = 'art' if re.search(r'exhibition|opening|gallery', title, re.I) else 'community'
+        out.append(event('The Cooper Union', title, start, url, kind, end=end, neighborhood='East Village'))
+    return out
+
+
 READERS = [film_forum, nitehawk, nycc, eastville, pit, trivia_league, h0l0, public_records, onderdonk, myrtle_bid,
-           queens_botanical, nysci, queens_night_market, kingsland, bowne_house, latimer_house]
+           queens_botanical, nysci, queens_night_market, kingsland, bowne_house, latimer_house, cooper_union]
 
 
 def place(venue, cache):

@@ -8,6 +8,9 @@ import '../styles/global.css';
 import PrivacyPolicy from '../components/PrivacyPolicy.astro';
 import Terms from '../components/Terms.astro';
 import About from '../components/About.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+import Accessibility from '../components/Accessibility.astro';
+import AspCalendar from '../components/AspCalendar.astro';
 ---
 <!doctype html>
 <html lang="en">
@@ -78,10 +81,11 @@ import About from '../components/About.astro';
     <nav class="site-menu box" id="site-menu" aria-label="Site" hidden>
       <a href="#contact" data-modal="contact">CONTACT</a>
       <a href="#about" data-modal="about">ABOUT</a>
-      <button type="button" id="launch-monster" aria-pressed="false">MONSTER ATTACK!</button>
       <div class="menu-legal">
         <a href="#privacy" data-modal="privacy">PRIVACY POLICY</a>
         <a href="#terms" data-modal="terms">TERMS AND CONDITIONS</a>
+        <a href="#disclaimer" data-modal="disclaimer">DISCLAIMER</a>
+        <a href="#accessibility" data-modal="accessibility">ACCESSIBILITY</a>
         <button type="button" id="cookie-settings" hidden>COOKIE SETTINGS</button>
       </div>
     </nav>
@@ -118,6 +122,47 @@ import About from '../components/About.astro';
         <ul id="cat-list" aria-label="Event categories"></ul>
       </div>
     </div>
+    <!-- + dropdown: a neighborhood to fly to, the subway map and alerts (src/scripts/subway.js),
+         alternate side parking (src/scripts/asp.js) and MONSTER ATTACK! (src/scripts/monster.js) -->
+    <div class="hood-filter">
+      <button class="chip hood-btn" id="hood-btn" type="button" aria-expanded="false" aria-controls="hood-menu" aria-label="Neighborhoods, subway, parking and monsters" title="Neighborhoods, subway, parking and monsters">
+        <svg viewBox="0 0 7 7" aria-hidden="true" shape-rendering="crispEdges"><path fill="currentColor" d="M3 0h1v3h3v1H4v3H3V4H0V3h3z"/></svg>
+      </button>
+      <div class="src-menu hood-menu box" id="hood-menu" hidden>
+        <button class="menu-sec" id="hood-sec-btn" type="button" aria-expanded="false" aria-controls="hood-sec">NEIGHBORHOODS<i aria-hidden="true"></i></button>
+        <div class="menu-sec-body" id="hood-sec" hidden>
+          <p class="hood-head">GO TO A NEIGHBORHOOD</p>
+          <input id="hood-search" type="search" placeholder="Search" aria-label="Search neighborhoods" autocomplete="off" spellcheck="false">
+          <ul id="hood-list" aria-label="Neighborhoods"></ul>
+        </div>
+        <button class="menu-sec" id="sub-sec-btn" type="button" aria-expanded="false" aria-controls="sub-sec">SUBWAY<i aria-hidden="true"></i></button>
+        <div class="menu-sec-body" id="sub-sec" hidden>
+          <button class="sub-mode" type="button" data-mode="map">SUBWAY MAP<span>ALL LINES</span></button>
+          <button class="sub-mode" type="button" data-mode="active">ACTIVE ALERTS / DELAYS<span></span></button>
+          <button class="sub-mode" type="button" data-mode="planned">PLANNED WORK<span></span></button>
+          <div id="sub-out" aria-live="polite"></div>
+          <p class="sub-note sub-credit">Subway data from the MTA. 8bit.nyc is not affiliated with or endorsed by the MTA.</p>
+        </div>
+        <button class="menu-sec" id="asp-sec-btn" type="button" aria-expanded="false" aria-controls="asp-sec">ALT SIDE PARKING<em class="asp-badge" id="asp-badge"></em><i aria-hidden="true"></i></button>
+        <div class="menu-sec-body" id="asp-sec" hidden>
+          <div id="asp-out"></div>
+          <button class="sub-mode" type="button" id="asp-show" aria-pressed="false">SHOW ON MAP<b>OFF</b></button>
+          <a class="sub-link asp-cal" href="#asp" data-modal="asp">FULL YEAR CALENDAR</a>
+          <a class="sub-link" href="https://www.nyc.gov/html/dot/html/motorist/alternate-side-parking.shtml" target="_blank" rel="noopener">EMERGENCY SUSPENSIONS AT NYC.GOV</a>
+        </div>
+        <button class="menu-sec" id="mon-sec-btn" type="button" aria-expanded="false" aria-controls="mon-sec">MONSTER ATTACK!<i aria-hidden="true"></i></button>
+        <div class="menu-sec-body" id="mon-sec" hidden>
+          <button class="sub-mode mon-go" type="button" data-monster="lizard" aria-pressed="false">GIGANTIC LIZARD<span>MIDTOWN</span></button>
+          <button class="sub-mode mon-go" type="button" data-monster="ape" aria-pressed="false">RATHER LARGE APE<span>EMPIRE STATE</span></button>
+          <button class="sub-mode mon-go" type="button" data-monster="alien" aria-pressed="false">ALIEN MONSTER<span>CENTRAL PARK</span></button>
+          <button class="sub-mode mon-go" type="button" data-monster="fluff" aria-pressed="false">GIANT MARSHMALLOW<span>CENTRAL PARK WEST</span></button>
+          <button class="sub-mode mon-go" type="button" data-monster="ufo" aria-pressed="false">UFO<span>OVER MANHATTAN</span></button>
+          <button class="sub-mode mon-go" type="button" data-monster="robot" aria-pressed="false">GIANT ROBOT<span>WEST VILLAGE</span></button>
+          <button class="sub-mode mon-off" type="button" id="mon-off" hidden>CALL OFF THE ATTACK</button>
+        </div>
+      </div>
+    </div>
+    <button class="chip sub-chip" id="sub-chip" type="button" hidden title="Hide the subway lines"></button>
   </div>
 </header>
 
@@ -125,17 +170,29 @@ import About from '../components/About.astro';
   <button id="panel-toggle" type="button" aria-expanded="false" aria-controls="event-list"><span hidden>Toggle event list</span></button>
   <div class="panel-head">
     <h2 id="list-title">TODAY</h2>
-    <small>TAP A PIN OR A ROW</small>
+    <small id="list-hint">TAP A PIN OR A ROW</small>
   </div>
+  <p id="list-hoods" class="list-hoods" hidden></p>
   <div class="list-wrap">
     <ol id="event-list"></ol>
-    <button id="show-more" type="button" hidden>SHOW MORE</button>
+    <button id="list-reset" type="button" hidden title="Back to the whole map and every listing">
+      <svg class="reset-ico" viewBox="0 0 10 11" aria-hidden="true" shape-rendering="crispEdges"><path fill="currentColor" d="M6 0h1v1H6zM6 1h2v1H6zM2 2h7v1H2zM1 3h1v1H1zM6 3h2v1H6zM0 4h1v1H0zM6 4h1v1H6zM0 5h1v1H0zM0 6h1v1H0zM9 6h1v1H9zM0 7h1v1H0zM9 7h1v1H9zM0 8h1v1H0zM9 8h1v1H9zM1 9h1v1H1zM8 9h1v1H8zM2 10h6v1H2z"/></svg>RESET
+    </button>
     <p id="status" class="empty" role="status"></p>
   </div>
-  <p class="panel-foot">LISTINGS FROM NYC.GOV EVENTS, LUMA, NYC STREET EVENTS, TICKETMASTER, SEATGEEK, ARTWRLD AND VENUES' OWN CALENDARS.</p>
+  <p class="panel-foot">LISTINGS FROM NYC.GOV EVENTS, NYC STREET EVENTS, NYC FARMERS MARKETS, THE NYC COUNCIL, THE NATIONAL PARK SERVICE, TICKETMASTER, SEATGEEK, EVENTBRITE, ARTWRLD, PATCHBAY AND VENUES' OWN CALENDARS.</p>
 </aside>
 
 <section id="detail" class="box" hidden aria-live="polite"></section>
+
+<!-- bottom left: the weather (src/scripts/weather.js) and, when switched on, the parking chip (src/scripts/asp.js) -->
+<div class="corner">
+  <button class="chip asp-chip" id="asp-chip" type="button" data-modal="asp" hidden title="Alternate side parking calendar"></button>
+  <div class="wx">
+    <div class="wx-card box" id="wx-card" hidden aria-live="polite"></div>
+    <button class="wx-btn box" id="wx-btn" type="button" aria-expanded="false" aria-controls="wx-card" title="Weather"></button>
+  </div>
+</div>
 
 <div class="controls box" role="toolbar" aria-label="Map controls">
   <button id="zoom-in" type="button" aria-label="Zoom in">+</button>
@@ -192,6 +249,21 @@ import About from '../components/About.astro';
 <dialog class="modal box" id="modal-terms" aria-labelledby="terms-title">
   <div class="modal-head"><h2 id="terms-title">TERMS AND CONDITIONS</h2><button class="modal-close" type="button" aria-label="Close">X</button></div>
   <div class="modal-body legal"><Terms /></div>
+</dialog>
+
+<dialog class="modal box" id="modal-disclaimer" aria-labelledby="disclaimer-title">
+  <div class="modal-head"><h2 id="disclaimer-title">DISCLAIMER</h2><button class="modal-close" type="button" aria-label="Close">X</button></div>
+  <div class="modal-body legal"><Disclaimer /></div>
+</dialog>
+
+<dialog class="modal box" id="modal-accessibility" aria-labelledby="accessibility-title">
+  <div class="modal-head"><h2 id="accessibility-title">ACCESSIBILITY</h2><button class="modal-close" type="button" aria-label="Close">X</button></div>
+  <div class="modal-body legal"><Accessibility /></div>
+</dialog>
+
+<dialog class="modal box modal-wide" id="modal-asp" aria-labelledby="asp-title">
+  <div class="modal-head"><h2 id="asp-title">ALTERNATE SIDE PARKING</h2><button class="modal-close" type="button" aria-label="Close">X</button></div>
+  <div class="modal-body legal asp-cal-body"><AspCalendar /></div>
 </dialog>
 
 <section class="consent box" id="consent" aria-label="Cookie consent" hidden>

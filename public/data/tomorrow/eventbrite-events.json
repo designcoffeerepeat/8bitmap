@@ -1,0 +1,151 @@
+{
+ "source": {
+  "name": "Eventbrite",
+  "url": "https://www.eventbrite.com/d/ny--new-york/events/"
+ },
+ "date": "2026-10-31",
+ "fetchedAt": "2026-10-30T05:33:59-04:00",
+ "events": [
+  {
+   "id": "2003021460107",
+   "title": "Storytime with Marilyn Singer at USQ",
+   "category": "community",
+   "start": "2026-10-31T11:00:00-04:00",
+   "end": "2026-10-31T12:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Strand Book Store",
+    "address": "828 Broadway 3rd Floor, Rare Book Room, New York, NY 10003",
+    "neighborhood": "New York",
+    "lat": 40.733316,
+    "lng": -73.990954
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "By Strand Bookstore on Eventbrite",
+   "url": "https://www.eventbrite.com/e/storytime-with-marilyn-singer-at-usq-tickets-2003021460107",
+   "tags": []
+  },
+  {
+   "id": "1994091657828",
+   "title": "Live Stand-Up Comedy Every Night @ The Tiny Cupboard Brooklyn",
+   "category": "comedy",
+   "start": "2026-10-31T19:00:00-04:00",
+   "end": "2026-10-31T20:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Tiny Cupboard",
+    "address": "10 Cooper Street, Brooklyn, NY 11207",
+    "neighborhood": "Brooklyn",
+    "lat": 40.683725,
+    "lng": -73.911217
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By The Tiny Cupboard on Eventbrite. Times: 7:00 pm, 8:30 pm, 10:15 pm",
+   "url": "https://www.eventbrite.com/e/live-stand-up-comedy-every-night-the-tiny-cupboard-brooklyn-tickets-1994091657828",
+   "tags": []
+  },
+  {
+   "id": "1999048344411",
+   "title": "What Makes [You] Laugh?",
+   "category": "community",
+   "start": "2026-10-31T20:30:00-04:00",
+   "end": "2026-10-31T21:45:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Comedy Collective",
+    "address": "167 Graham Avenue, Brooklyn, NY 11206",
+    "neighborhood": "Brooklyn",
+    "lat": 40.70771,
+    "lng": -73.943628
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By Brooklyn Comedy Collective on Eventbrite",
+   "url": "https://www.eventbrite.com/e/what-makes-you-laugh-tickets-1999048344411",
+   "tags": []
+  },
+  {
+   "id": "2003244574448",
+   "title": "A Nightmare Off the L Train",
+   "category": "film",
+   "start": "2026-10-31T19:00:00-04:00",
+   "end": "2026-10-31T20:15:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Comedy Collective",
+    "address": "167 Graham Avenue, Brooklyn, NY 11206",
+    "neighborhood": "Brooklyn",
+    "lat": 40.70771,
+    "lng": -73.943628
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By Brooklyn Comedy Collective on Eventbrite",
+   "url": "https://www.eventbrite.com/e/a-nightmare-off-the-l-train-tickets-2003244574448",
+   "tags": []
+  },
+  {
+   "id": "2003468372835",
+   "title": "The Big Simp Revival",
+   "category": "theater",
+   "start": "2026-10-31T20:30:00-04:00",
+   "end": "2026-10-31T21:45:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Comedy Collective",
+    "address": "167 Graham Avenue, Brooklyn, NY 11206",
+    "neighborhood": "Brooklyn",
+    "lat": 40.70771,
+    "lng": -73.943628
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By Brooklyn Comedy Collective on Eventbrite",
+   "url": "https://www.eventbrite.com/e/the-big-simp-revival-tickets-2003468372835",
+   "tags": []
+  },
+  {
+   "id": "1999412774431",
+   "title": "Open Farm Days at Battery Urban Farm: September & October (Multiple Dates)",
+   "category": "community",
+   "start": "2026-10-31T09:30:00-04:00",
+   "end": "2026-10-31T12:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Battery Urban Farm",
+    "address": "Battery Place, New York, NY 10004",
+    "neighborhood": "New York",
+    "lat": 40.703725,
+    "lng": -74.015053
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "By The Battery Conservancy on Eventbrite",
+   "url": "https://www.eventbrite.com/e/open-farm-days-at-battery-urban-farm-september-october-multiple-dates-tickets-1999412774431",
+   "tags": []
+  },
+  {
+   "id": "2003365508164",
+   "title": "Upper West Side Run Club 2.62 mile NYC Marathon Shakeout",
+   "category": "sports",
+   "start": "2026-10-31T09:00:00-04:00",
+   "end": "2026-10-31T11:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Obelisk",
+    "address": "East 81st Street, New York, NY 10024",
+    "neighborhood": "New York",
+    "lat": 40.779636,
+    "lng": -73.965396
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "By Upper West Side Run Club on Eventbrite",
+   "url": "https://www.eventbrite.com/e/upper-west-side-run-club-262-mile-nyc-marathon-shakeout-tickets-2003365508164",
+   "tags": []
+  }
+ ],
+ "unplaced": []
+}

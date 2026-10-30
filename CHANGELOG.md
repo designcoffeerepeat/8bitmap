@@ -2,6 +2,24 @@
 
 Each release from dev to the live site (main) gets a version number here, so it can be referred to later.
 
+## aul (2026-10-26 to 2026-10-28, retired)
+
+aul was a separate, more detailed version of the map at https://aul.8bit.nyc, built on the `aul` branch and
+deployed to its own Worker (8bitmap-aul). All of it was merged into dev as v1.15 on 2026-10-28, and the site and
+Worker were then taken down. The `aul` branch is kept as is, so its last state (aul v6) stays in git.
+
+- aul v1: detailed map with real parks, roads, landmarks and airports.
+- aul v2: subway alerts in the + menu, softer highways.
+- aul v3: highways the same colour as the other streets.
+- aul v4: weather button with chance of rain, an umbrella answer and winter mode; alternate side parking in the
+  + menu with a full-year calendar; subway map with suspended stretches in red and a warning pin; Disclaimer page;
+  New Year's Eve countdown, ball drop and fireworks; security wait pins over JFK, LaGuardia and Newark.
+- aul v5: the red TKTS steps back in Times Square, and the first Zoomers (easter egg characters at full zoom):
+  Times Square performers and tourists, the woman in green in Carroll Gardens, the subway dancers on the Manhattan
+  Bridge, a cyclist, the Rent Is Too Damn High guy, the hero in Hunters Point, the McCarren Park pair, the
+  Staten Island Ferry, and the big yellow bird and brown elephant at the Museum of the Moving Image.
+- aul v6: Zoomers draw solid, with no white skeleton showing through.
+
 ## v1.8 (2026-10-23)
 
 Everything on dev since v1.1 (dev versions v1.2 to v1.8) goes live together as v1.8.

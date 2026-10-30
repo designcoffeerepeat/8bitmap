@@ -1,0 +1,191 @@
+{
+ "source": {
+  "name": "Eventbrite",
+  "url": "https://www.eventbrite.com/d/ny--new-york/events/"
+ },
+ "date": "2026-10-30",
+ "fetchedAt": "2026-10-30T05:31:14-04:00",
+ "events": [
+  {
+   "id": "2002920132032",
+   "title": "Full Moon Circle",
+   "category": "community",
+   "start": "2026-10-30T18:30:00-04:00",
+   "end": "2026-10-30T19:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hive Mind Books",
+    "address": "219 Irving Ave, Brooklyn, NY 11237",
+    "neighborhood": "Brooklyn",
+    "lat": 40.701021,
+    "lng": -73.917543
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "By Hive Mind Books on Eventbrite",
+   "url": "https://www.eventbrite.com/e/full-moon-circle-tickets-2002920132032",
+   "tags": []
+  },
+  {
+   "id": "1994091654819",
+   "title": "Live Stand-Up Comedy Every Night @ The Tiny Cupboard Brooklyn",
+   "category": "comedy",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": "2026-10-30T20:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Tiny Cupboard",
+    "address": "10 Cooper Street, Brooklyn, NY 11207",
+    "neighborhood": "Brooklyn",
+    "lat": 40.683725,
+    "lng": -73.911217
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By The Tiny Cupboard on Eventbrite. Times: 7:00 pm, 8:30 pm, 10:15 pm",
+   "url": "https://www.eventbrite.com/e/live-stand-up-comedy-every-night-the-tiny-cupboard-brooklyn-tickets-1994091654819",
+   "tags": []
+  },
+  {
+   "id": "1996345140054",
+   "title": "Brooklyn Book Club: Read your book and then meet some people! BYO Book!",
+   "category": "community",
+   "start": "2026-10-30T18:00:00-04:00",
+   "end": "2026-10-30T20:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The Tiny Cupboard",
+    "address": "10 Cooper Street, Brooklyn, NY 11207",
+    "neighborhood": "Brooklyn",
+    "lat": 40.683725,
+    "lng": -73.911217
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "By The Tiny Cupboard on Eventbrite",
+   "url": "https://www.eventbrite.com/e/brooklyn-book-club-read-your-book-and-then-meet-some-people-byo-book-tickets-1996345140054",
+   "tags": []
+  },
+  {
+   "id": "1999047350438",
+   "title": "TGIF with Duchovny & Olestra",
+   "category": "theater",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": "2026-10-30T20:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Comedy Collective",
+    "address": "167 Graham Avenue, Brooklyn, NY 11206",
+    "neighborhood": "Brooklyn",
+    "lat": 40.70771,
+    "lng": -73.943628
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By Brooklyn Comedy Collective on Eventbrite",
+   "url": "https://www.eventbrite.com/e/tgif-with-duchovny-olestra-tickets-1999047350438",
+   "tags": []
+  },
+  {
+   "id": "1999719854917",
+   "title": "The Letdown Goes Long",
+   "category": "film",
+   "start": "2026-10-30T20:30:00-04:00",
+   "end": "2026-10-30T21:45:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The BCC Pig Pen",
+    "address": "144 Boerum Street, Brooklyn, NY 11206",
+    "neighborhood": "Brooklyn",
+    "lat": 40.705849,
+    "lng": -73.942541
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By Brooklyn Comedy Collective on Eventbrite",
+   "url": "https://www.eventbrite.com/e/the-letdown-goes-long-tickets-1999719854917",
+   "tags": []
+  },
+  {
+   "id": "2000319067177",
+   "title": "Night of the Living Variety Show: Halloween Special",
+   "category": "theater",
+   "start": "2026-10-30T20:30:00-04:00",
+   "end": "2026-10-30T21:45:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Comedy Collective",
+    "address": "167 Graham Avenue, Brooklyn, NY 11206",
+    "neighborhood": "Brooklyn",
+    "lat": 40.70771,
+    "lng": -73.943628
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By Brooklyn Comedy Collective on Eventbrite",
+   "url": "https://www.eventbrite.com/e/night-of-the-living-variety-show-halloween-special-tickets-2000319067177",
+   "tags": []
+  },
+  {
+   "id": "2002759859653",
+   "title": "My Dream My Dream My Dream: Level Up w/ Tallie Class Show",
+   "category": "film",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": "2026-10-30T20:15:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "The BCC Pig Pen",
+    "address": "144 Boerum Street, Brooklyn, NY 11206",
+    "neighborhood": "Brooklyn",
+    "lat": 40.705849,
+    "lng": -73.942541
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By Brooklyn Comedy Collective on Eventbrite",
+   "url": "https://www.eventbrite.com/e/my-dream-my-dream-my-dream-level-up-w-tallie-class-show-tickets-2002759859653",
+   "tags": []
+  },
+  {
+   "id": "2003167558090",
+   "title": "JUMPSCARE HALLOWEEN SPECTACULAR",
+   "category": "film",
+   "start": "2026-10-30T20:30:00-04:00",
+   "end": "2026-10-30T21:45:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Comedy Collective",
+    "address": "167 Graham Avenue, Brooklyn, NY 11206",
+    "neighborhood": "Brooklyn",
+    "lat": 40.70771,
+    "lng": -73.943628
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By Brooklyn Comedy Collective on Eventbrite",
+   "url": "https://www.eventbrite.com/e/jumpscare-halloween-spectacular-tickets-2003167558090",
+   "tags": []
+  },
+  {
+   "id": "2003862369289",
+   "title": "Old Yorkers",
+   "category": "film",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": "2026-10-30T20:15:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Brooklyn Comedy Collective",
+    "address": "167 Graham Avenue, Brooklyn, NY 11206",
+    "neighborhood": "Brooklyn",
+    "lat": 40.70771,
+    "lng": -73.943628
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "By Brooklyn Comedy Collective on Eventbrite",
+   "url": "https://www.eventbrite.com/e/old-yorkers-tickets-2003862369289",
+   "tags": []
+  }
+ ],
+ "unplaced": []
+}

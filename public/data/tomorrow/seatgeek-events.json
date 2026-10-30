@@ -4,7 +4,7 @@
   "url": "https://seatgeek.com/cities/new-york"
  },
  "date": "2026-10-31",
- "fetchedAt": "2026-10-30T05:29:27-04:00",
+ "fetchedAt": "2026-10-30T05:43:54-04:00",
  "events": [
   {
    "id": "18688586",
@@ -295,30 +295,6 @@
    ]
   },
   {
-   "id": "17992886",
-   "title": "The Lost Boys",
-   "category": "theater",
-   "start": "2026-10-31T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Palace Theatre - New York",
-    "address": "1564 Broadway, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7589,
-    "lng": -73.9846
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/the-lost-boys-tickets/broadway/2026-10-31-2-pm/17992886",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
    "id": "18096053",
    "title": "Maybe Happy Ending",
    "category": "theater",
@@ -343,29 +319,6 @@
    ]
   },
   {
-   "id": "17958404",
-   "title": "Harry Potter and The Cursed Child",
-   "category": "theater",
-   "start": "2026-10-31T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lyric Theatre - New York",
-    "address": "213 West 42nd Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7565,
-    "lng": -73.9878
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/harry-potter-and-the-cursed-child-tickets/theater/2026-10-31-2-pm/17958404",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
    "id": "18470276",
    "title": "The Imaginary Invalid",
    "category": "theater",
@@ -387,29 +340,6 @@
    "tags": [
     "theater",
     "broadway"
-   ]
-  },
-  {
-   "id": "18526971",
-   "title": "Slam Frank",
-   "category": "theater",
-   "start": "2026-10-31T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Orpheum Theatre - NY",
-    "address": "126 Second Ave, New York, NY 10003",
-    "neighborhood": "New York",
-    "lat": 40.7282,
-    "lng": -73.9875
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/slam-frank-tickets/theater/2026-10-31-2-pm/18526971",
-   "tags": [
-    "theater"
    ]
   },
   {
@@ -477,6 +407,100 @@
    "description": "broadway",
    "details": "",
    "url": "https://seatgeek.com/the-great-gatsby-the-musical-tickets/broadway/2026-10-31-2-pm/18186681",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "17992886",
+   "title": "The Lost Boys",
+   "category": "theater",
+   "start": "2026-10-31T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Palace Theatre - New York",
+    "address": "1564 Broadway, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7589,
+    "lng": -73.9846
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/the-lost-boys-tickets/broadway/2026-10-31-2-pm/17992886",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "17958404",
+   "title": "Harry Potter and The Cursed Child",
+   "category": "theater",
+   "start": "2026-10-31T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lyric Theatre - New York",
+    "address": "213 West 42nd Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7565,
+    "lng": -73.9878
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/harry-potter-and-the-cursed-child-tickets/theater/2026-10-31-2-pm/17958404",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18526971",
+   "title": "Slam Frank",
+   "category": "theater",
+   "start": "2026-10-31T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Orpheum Theatre - NY",
+    "address": "126 Second Ave, New York, NY 10003",
+    "neighborhood": "New York",
+    "lat": 40.7282,
+    "lng": -73.9875
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/slam-frank-tickets/theater/2026-10-31-2-pm/18526971",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18128165",
+   "title": "The Book of Mormon",
+   "category": "theater",
+   "start": "2026-10-31T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Eugene O'Neill Theatre",
+    "address": "230 W 49th St, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7611,
+    "lng": -73.9857
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/the-book-of-mormon-tickets/broadway/2026-10-31-2-pm/18128165",
    "tags": [
     "theater",
     "broadway"
@@ -553,31 +577,6 @@
    ]
   },
   {
-   "id": "18600415",
-   "title": "CF Montreal at New York City FC",
-   "category": "sports",
-   "start": "2026-10-31T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Citi Field",
-    "address": "41 Seaver Way, Flushing, NY 11368",
-    "neighborhood": "Flushing",
-    "lat": 40.7577,
-    "lng": -73.8456
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "mls",
-   "details": "",
-   "url": "https://seatgeek.com/new-york-city-fc-tickets/mls/2026-10-31-2-pm/18600415",
-   "tags": [
-    "sports",
-    "soccer",
-    "mls"
-   ]
-  },
-  {
    "id": "18470453",
    "title": "Wanted",
    "category": "theater",
@@ -602,27 +601,28 @@
    ]
   },
   {
-   "id": "18128165",
-   "title": "The Book of Mormon",
-   "category": "theater",
+   "id": "18600415",
+   "title": "CF Montreal at New York City FC",
+   "category": "sports",
    "start": "2026-10-31T14:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Eugene O'Neill Theatre",
-    "address": "230 W 49th St, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7611,
-    "lng": -73.9857
+    "name": "Citi Field",
+    "address": "41 Seaver Way, Flushing, NY 11368",
+    "neighborhood": "Flushing",
+    "lat": 40.7577,
+    "lng": -73.8456
    },
    "price": null,
    "priceUnknown": true,
-   "description": "broadway",
+   "description": "mls",
    "details": "",
-   "url": "https://seatgeek.com/the-book-of-mormon-tickets/broadway/2026-10-31-2-pm/18128165",
+   "url": "https://seatgeek.com/new-york-city-fc-tickets/mls/2026-10-31-2-pm/18600415",
    "tags": [
-    "theater",
-    "broadway"
+    "sports",
+    "soccer",
+    "mls"
    ]
   },
   {
@@ -675,6 +675,29 @@
    ]
   },
   {
+   "id": "18583539",
+   "title": "Downstate",
+   "category": "theater",
+   "start": "2026-10-31T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Booth Theatre - New York",
+    "address": "222 West 45th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7583,
+    "lng": -73.9863
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/downstate-play-tickets/theater/2026-10-31-2-pm/18583539",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
    "id": "18269246",
    "title": "In The Heights - New York (with \"Talkback\")",
    "category": "theater",
@@ -696,6 +719,29 @@
    "tags": [
     "theater",
     "broadway"
+   ]
+  },
+  {
+   "id": "18229720",
+   "title": "Schmigadoon!",
+   "category": "theater",
+   "start": "2026-10-31T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nederlander Theatre - NY",
+    "address": "208 West 41st Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7557,
+    "lng": -73.9882
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/schmigadoon-tickets/theater/2026-10-31-2-pm/18229720",
+   "tags": [
+    "theater"
    ]
   },
   {
@@ -721,52 +767,6 @@
     "theater",
     "entertainment",
     "entertainment"
-   ]
-  },
-  {
-   "id": "18583539",
-   "title": "Downstate",
-   "category": "theater",
-   "start": "2026-10-31T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Booth Theatre - New York",
-    "address": "222 West 45th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7583,
-    "lng": -73.9863
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/downstate-play-tickets/theater/2026-10-31-2-pm/18583539",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18229720",
-   "title": "Schmigadoon!",
-   "category": "theater",
-   "start": "2026-10-31T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nederlander Theatre - NY",
-    "address": "208 West 41st Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7557,
-    "lng": -73.9882
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/schmigadoon-tickets/theater/2026-10-31-2-pm/18229720",
-   "tags": [
-    "theater"
    ]
   },
   {
@@ -818,76 +818,6 @@
    ]
   },
   {
-   "id": "18390695",
-   "title": "School Girls: Or, The African Mean Girls",
-   "category": "theater",
-   "start": "2026-10-31T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Samuel J. Friedman Theatre",
-    "address": "261 West 47th Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7602,
-    "lng": -73.9868
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/school-girls-or-the-african-mean-girls-tickets/theater/2026-10-31-2-pm/18390695",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18360903",
-   "title": "A Few Good Men",
-   "category": "theater",
-   "start": "2026-10-31T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lincoln Center Theater - Vivian Beaumont Theater",
-    "address": "150 West 65th Street, New York, NY 10023",
-    "neighborhood": "New York",
-    "lat": 40.7736,
-    "lng": -73.984
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "theater",
-   "details": "",
-   "url": "https://seatgeek.com/a-few-good-men-tickets/theater/2026-10-31-2-pm/18360903",
-   "tags": [
-    "theater"
-   ]
-  },
-  {
-   "id": "18471901",
-   "title": "Just In Time",
-   "category": "theater",
-   "start": "2026-10-31T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Circle In The Square Theatre",
-    "address": "1633 Broadway, New York, NY 10019",
-    "neighborhood": "New York",
-    "lat": 40.7623,
-    "lng": -73.9852
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/just-in-time-tickets/broadway/2026-10-31-2-pm/18471901",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
    "id": "18310078",
    "title": "Other Desert Cities",
    "category": "theater",
@@ -936,6 +866,53 @@
    ]
   },
   {
+   "id": "18390695",
+   "title": "School Girls: Or, The African Mean Girls",
+   "category": "theater",
+   "start": "2026-10-31T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Samuel J. Friedman Theatre",
+    "address": "261 West 47th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.7602,
+    "lng": -73.9868
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/school-girls-or-the-african-mean-girls-tickets/theater/2026-10-31-2-pm/18390695",
+   "tags": [
+    "theater"
+   ]
+  },
+  {
+   "id": "18471901",
+   "title": "Just In Time",
+   "category": "theater",
+   "start": "2026-10-31T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Circle In The Square Theatre",
+    "address": "1633 Broadway, New York, NY 10019",
+    "neighborhood": "New York",
+    "lat": 40.7623,
+    "lng": -73.9852
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/just-in-time-tickets/broadway/2026-10-31-2-pm/18471901",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
    "id": "18221709",
    "title": "Hadestown",
    "category": "theater",
@@ -957,6 +934,29 @@
    "tags": [
     "theater",
     "broadway"
+   ]
+  },
+  {
+   "id": "18360903",
+   "title": "A Few Good Men",
+   "category": "theater",
+   "start": "2026-10-31T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Lincoln Center Theater - Vivian Beaumont Theater",
+    "address": "150 West 65th Street, New York, NY 10023",
+    "neighborhood": "New York",
+    "lat": 40.7736,
+    "lng": -73.984
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "theater",
+   "details": "",
+   "url": "https://seatgeek.com/a-few-good-men-tickets/theater/2026-10-31-2-pm/18360903",
+   "tags": [
+    "theater"
    ]
   },
   {
@@ -1031,24 +1031,24 @@
    ]
   },
   {
-   "id": "18395375",
-   "title": "The Fantasticks",
+   "id": "18302804",
+   "title": "& Juliet",
    "category": "theater",
    "start": "2026-10-31T14:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "The Hayes Theater",
-    "address": "240 West 44th Street, New York, NY 10036",
+    "name": "Stephen Sondheim Theatre - New York",
+    "address": "124 West 43 Street, New York, NY 10036",
     "neighborhood": "New York",
-    "lat": 40.758,
-    "lng": -73.9878
+    "lat": 40.7559,
+    "lng": -73.9849
    },
    "price": null,
    "priceUnknown": true,
    "description": "broadway",
    "details": "",
-   "url": "https://seatgeek.com/the-fantasticks-tickets/broadway/2026-10-31-2-pm/18395375",
+   "url": "https://seatgeek.com/juliet-tickets/broadway/2026-10-31-2-pm/18302804",
    "tags": [
     "theater",
     "broadway"
@@ -1079,30 +1079,6 @@
    ]
   },
   {
-   "id": "18302804",
-   "title": "& Juliet",
-   "category": "theater",
-   "start": "2026-10-31T14:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Stephen Sondheim Theatre - New York",
-    "address": "124 West 43 Street, New York, NY 10036",
-    "neighborhood": "New York",
-    "lat": 40.7559,
-    "lng": -73.9849
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "broadway",
-   "details": "",
-   "url": "https://seatgeek.com/juliet-tickets/broadway/2026-10-31-2-pm/18302804",
-   "tags": [
-    "theater",
-    "broadway"
-   ]
-  },
-  {
    "id": "18149481",
    "title": "The Outsiders",
    "category": "theater",
@@ -1121,6 +1097,30 @@
    "description": "broadway",
    "details": "",
    "url": "https://seatgeek.com/the-outsiders-1-tickets/broadway/2026-10-31-2-pm/18149481",
+   "tags": [
+    "theater",
+    "broadway"
+   ]
+  },
+  {
+   "id": "18395375",
+   "title": "The Fantasticks",
+   "category": "theater",
+   "start": "2026-10-31T14:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Hayes Theater",
+    "address": "240 West 44th Street, New York, NY 10036",
+    "neighborhood": "New York",
+    "lat": 40.758,
+    "lng": -73.9878
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "broadway",
+   "details": "",
+   "url": "https://seatgeek.com/the-fantasticks-tickets/broadway/2026-10-31-2-pm/18395375",
    "tags": [
     "theater",
     "broadway"
@@ -1362,30 +1362,6 @@
    ]
   },
   {
-   "id": "18517264",
-   "title": "Aaron Weber",
-   "category": "comedy",
-   "start": "2026-10-31T18:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Bananas Comedy Club - Rutherford",
-    "address": "801 Rutherford Ave, Rutherford, NJ 07070",
-    "neighborhood": "Rutherford",
-    "lat": 40.811504,
-    "lng": -74.104164
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "comedy",
-   "details": "",
-   "url": "https://seatgeek.com/aaron-weber-tickets/comedy/2026-10-31-6-pm/18517264",
-   "tags": [
-    "theater",
-    "comedy"
-   ]
-  },
-  {
    "id": "18055762",
    "title": "Lawrence - Night 3",
    "category": "music",
@@ -1433,28 +1409,27 @@
    ]
   },
   {
-   "id": "18394271",
-   "title": "Marquette Golden Eagles at St. John's Red Storm Mens Soccer",
-   "category": "sports",
+   "id": "18517264",
+   "title": "Aaron Weber",
+   "category": "comedy",
    "start": "2026-10-31T18:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Belson Stadium",
-    "address": "8000 Utopia Parkway, Jamaica, NY 11432",
-    "neighborhood": "Jamaica",
-    "lat": 40.7202,
-    "lng": -73.7937
+    "name": "Bananas Comedy Club - Rutherford",
+    "address": "801 Rutherford Ave, Rutherford, NJ 07070",
+    "neighborhood": "Rutherford",
+    "lat": 40.811504,
+    "lng": -74.104164
    },
    "price": null,
    "priceUnknown": true,
-   "description": "ncaa soccer",
+   "description": "comedy",
    "details": "",
-   "url": "https://seatgeek.com/st-john-s-red-storm-mens-soccer-tickets/ncaa-soccer/2026-10-31-6-pm/18394271",
+   "url": "https://seatgeek.com/aaron-weber-tickets/comedy/2026-10-31-6-pm/18517264",
    "tags": [
-    "sports",
-    "soccer",
-    "ncaa soccer"
+    "theater",
+    "comedy"
    ]
   },
   {
@@ -1478,6 +1453,31 @@
    "url": "https://seatgeek.com/bassvictim-tickets/queens-new-york-knockdown-center-2026-10-31-6-pm/concert/18508243",
    "tags": [
     "concert"
+   ]
+  },
+  {
+   "id": "18394271",
+   "title": "Marquette Golden Eagles at St. John's Red Storm Mens Soccer",
+   "category": "sports",
+   "start": "2026-10-31T18:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Belson Stadium",
+    "address": "8000 Utopia Parkway, Jamaica, NY 11432",
+    "neighborhood": "Jamaica",
+    "lat": 40.7202,
+    "lng": -73.7937
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "ncaa soccer",
+   "details": "",
+   "url": "https://seatgeek.com/st-john-s-red-storm-mens-soccer-tickets/ncaa-soccer/2026-10-31-6-pm/18394271",
+   "tags": [
+    "sports",
+    "soccer",
+    "ncaa soccer"
    ]
   },
   {
@@ -1644,30 +1644,6 @@
    ]
   },
   {
-   "id": "18165517",
-   "title": "New York Philharmonic - Get Out In Concert",
-   "category": "music",
-   "start": "2026-10-31T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "David Geffen Hall",
-    "address": "10 Lincoln Center Plaza, New York, NY 10023",
-    "neighborhood": "New York",
-    "lat": 40.7729,
-    "lng": -73.9831
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "classical",
-   "details": "",
-   "url": "https://seatgeek.com/new-york-philharmonic-tickets/classical/2026-10-31-7-30-pm/18165517",
-   "tags": [
-    "theater",
-    "classical"
-   ]
-  },
-  {
    "id": "18269249",
    "title": "In The Heights",
    "category": "theater",
@@ -1689,6 +1665,30 @@
    "tags": [
     "theater",
     "broadway"
+   ]
+  },
+  {
+   "id": "18165517",
+   "title": "New York Philharmonic - Get Out In Concert",
+   "category": "music",
+   "start": "2026-10-31T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "David Geffen Hall",
+    "address": "10 Lincoln Center Plaza, New York, NY 10023",
+    "neighborhood": "New York",
+    "lat": 40.7729,
+    "lng": -73.9831
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "classical",
+   "details": "",
+   "url": "https://seatgeek.com/new-york-philharmonic-tickets/classical/2026-10-31-7-30-pm/18165517",
+   "tags": [
+    "theater",
+    "classical"
    ]
   },
   {
@@ -1735,29 +1735,6 @@
    "description": "concert",
    "details": "",
    "url": "https://seatgeek.com/mico-tickets/brooklyn-new-york-music-hall-of-williamsburg-2026-10-31-8-pm/concert/18259849",
-   "tags": [
-    "concert"
-   ]
-  },
-  {
-   "id": "18723793",
-   "title": "Paul Oakenfold with The Crystal Method (18+)",
-   "category": "music",
-   "start": "2026-10-31T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Racket NYC",
-    "address": "431 West 16th Street, New York, NY 10011",
-    "neighborhood": "New York",
-    "lat": 40.7402,
-    "lng": -73.9869
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "concert",
-   "details": "",
-   "url": "https://seatgeek.com/paul-oakenfold-tickets/new-york-new-york-racket-nyc-2026-10-31-8-pm/concert/18723793",
    "tags": [
     "concert"
    ]

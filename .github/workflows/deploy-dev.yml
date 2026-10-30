@@ -27,6 +27,12 @@ jobs:
           node-version-file: .node-version
           cache: npm
       - run: npm ci
+      - name: Draw the subway lines from the MTA's GTFS
+        # a failed download keeps the empty file, and the alerts menu then lists lines without drawing them
+        run: python3 tools/build_subway.py || echo "::warning::tools/build_subway.py failed; the subway lines are not drawn"
+      - name: Refresh the alternate side parking calendar
+        # a failed download keeps the committed calendar
+        run: python3 tools/build_asp.py || echo "::warning::tools/build_asp.py failed; using the committed calendar"
       # PUBLIC_SITE=dev keeps the sources that live leaves out (src/scripts/events/live.js).
       - run: npm run build
         env:

@@ -4,7 +4,7 @@
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
  "date": "2026-10-31",
- "fetchedAt": "2026-10-30T05:29:19-04:00",
+ "fetchedAt": "2026-10-30T05:43:47-04:00",
  "events": [
   {
    "id": "972601",
@@ -1916,18 +1916,18 @@
    ]
   },
   {
-   "id": "980201",
-   "title": "Halloween parade",
+   "id": "981551",
+   "title": "Halloween Parade",
    "category": "community",
    "start": "2026-10-31T17:30:00-04:00",
-   "end": "2026-10-31T20:00:00-04:00",
+   "end": "2026-10-31T19:30:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Albemarle Road",
-    "address": "Albemarle Road Between Argyle Road And Rugby Road, Albemarle Road Between Argyle Road And Buckingham Road, Albemarle Road Between Argyle Road And Rugby Road",
+    "name": "Glenwood Road",
+    "address": "Glenwood Road Between Rugby Road And Westminster Road, Glenwood Road Between Rugby Road And Westminster Road, Glenwood Road Between Rugby Road And Westminster Road",
     "neighborhood": "Brooklyn",
-    "lat": 40.646809,
-    "lng": -73.967101
+    "lat": 40.632476,
+    "lng": -73.963926
    },
    "price": null,
    "priceUnknown": false,
@@ -1936,29 +1936,6 @@
    "url": null,
    "tags": [
     "Parade"
-   ]
-  },
-  {
-   "id": "982344",
-   "title": "Moxy Hotel Event",
-   "category": "community",
-   "start": "2026-10-31T18:00:00-04:00",
-   "end": "2026-10-31T23:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "East 11 Street",
-    "address": "East 11 Street Between 3 Avenue And 4 Avenue",
-    "neighborhood": "Manhattan",
-    "lat": 40.73101,
-    "lng": -73.988395
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
    ]
   },
   {
@@ -1974,6 +1951,29 @@
     "neighborhood": "Brooklyn",
     "lat": 40.691588,
     "lng": -73.966763
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
+   ]
+  },
+  {
+   "id": "982344",
+   "title": "Moxy Hotel Event",
+   "category": "community",
+   "start": "2026-10-31T18:00:00-04:00",
+   "end": "2026-10-31T23:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "East 11 Street",
+    "address": "East 11 Street Between 3 Avenue And 4 Avenue",
+    "neighborhood": "Manhattan",
+    "lat": 40.73101,
+    "lng": -73.988395
    },
    "price": null,
    "priceUnknown": false,

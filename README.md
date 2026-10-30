@@ -27,7 +27,7 @@ In VS Code you can also press F5 (Run and Debug, "Development server") to start 
 
 ## Deploying
 
-Two branches:
+Two branches (the detailed map's old `aul` branch and aul.8bit.nyc were folded into dev in v1.15 and retired):
 
 - `dev`: every change lands here first. Cloudflare builds it as a preview (see the Workers Builds
   check on the commit in GitHub for its link) so it can be tested before going live.
@@ -55,7 +55,7 @@ Keep `worker/index.js` itself: it also runs the contact form and the cookie cons
 
 ### Contact form, legal pages and cookie consent
 
-The menu in the title box opens Contact, Privacy Policy and Terms and Conditions as modals
+The menu in the title box opens Contact, About, Privacy Policy, Terms and Conditions, Disclaimer and Accessibility as modals
 (`src/scripts/site.js`; the texts are `src/components/PrivacyPolicy.astro` and `src/components/Terms.astro`).
 Each can be linked to directly as `/#contact`, `/#privacy` or `/#terms`. The empty ad slot opens Contact
 on Ad/Event Inquiry, and so does the Times Square billboard on the map once you zoom in (`src/scripts/times-square.js`).
@@ -82,16 +82,18 @@ src/pages/index.astro             page shell and HUD markup
 src/styles/global.css             all styles (arcade look, mobile bottom sheet)
 src/scripts/app.js                UI: filters, Today list, event card, map controls
 src/scripts/site.js               site menu, Contact / Privacy / Terms modals, ad slot, cookie banner
-src/components/                   Privacy Policy and Terms texts
+src/components/                   About, Privacy Policy, Terms, Disclaimer and Accessibility texts
 src/scripts/map/geo.js            NYC tile grid: parks, beaches, bridges, skyline peaks, lat/lng to tile
 src/scripts/map/land.json         land tiles for all five boroughs and the land around them (tools/build_land.py)
+src/scripts/map/detail.json       finer ground detail: real parks, lakes, runways, major streets, highways (tools/build_detail.py)
+src/scripts/map/places.js         landmark models (stadiums, arenas, museums, City Hall, airports...) and park, road and place names
 src/scripts/map/renderer.js       three.js scene: voxel land and buildings, pins, labels, camera, picking
 src/scripts/map/palette.js        colours for the city and for event categories
 src/scripts/events/schema.js      the one event shape every source maps into
 src/scripts/events/index.js       loads all sources, filters to today and the map area, de-duplicates, sorts
 src/scripts/events/overlap.js     merges the same event listed by several sources, keeping the listing with the most
                                   information (SeatGeek always wins over Ticketmaster)
-src/scripts/events/sources/       one file per event source: nycgov.js, luma.js, permits.js,
+src/scripts/events/sources/       one file per event source: nycgov.js, permits.js,
                                   ticketmaster.js, seatgeek.js, artwrld.js,
                                   venues.js, greenmarkets.js, nps.js, astoria.js, redhook.js, foresthills.js, coneyisland.js, statenisland.js,
                                   snapshot.js (shared reader),
@@ -102,7 +104,6 @@ parked/                           doNYC, Resident Advisor, The Skint, Queens Pub
                                   SmallsLIVE, Other Half Brewing and DICE, removed until they agree to be listed
 public/                           other static files copied as-is (favicon)
 tools/fetch_nycgov.py             pulls one day of NYC.gov events and places them on the map
-tools/fetch_luma.py               pulls one day of Luma NYC events
 tools/fetch_permits.py            pulls one day of NYC permitted street events (street fairs, parades, greenmarkets)
 tools/fetch_ticketmaster.py       pulls one day of Ticketmaster events (needs TICKETMASTER_API_KEY)
 tools/fetch_seatgeek.py           pulls one day of SeatGeek events (needs SEATGEEK_CLIENT_ID)
@@ -116,6 +117,7 @@ tools/fetch_statenisland.py       pulls the day's events from Staten Island's ow
 tools/fetch_greenmarkets.py       lists the farmers markets, Greenmarkets and farm stands open on one day
 tools/fetch_nps.py                pulls one day of National Park Service events in NYC (needs NPS_API_KEY)
 tools/fetch_patchbay.py           pulls today's or tomorrow's New York live music from Patchbay
+tools/fetch_amc.py                pulls one day of IMAX showings at AMC Lincoln Square 13 (needs AMC_API_KEY)
 data/geocode-cache.json           address lookups the fetch scripts reuse
 data/patchbay-venues.json         Patchbay venues' addresses and positions, read once per venue
 ```
@@ -128,9 +130,10 @@ You can also run it from the repo's Actions tab (Run workflow), or by hand with 
 
 ```sh
 python3 tools/fetch_nycgov.py             # today in NYC
-python3 tools/fetch_luma.py
 python3 tools/fetch_permits.py
 TICKETMASTER_API_KEY=... python3 tools/fetch_ticketmaster.py
+EVENTBRITE_TOKEN=... python3 tools/fetch_eventbrite.py
+NYC_COUNCIL_TOKEN=... python3 tools/fetch_council.py
 SEATGEEK_CLIENT_ID=... python3 tools/fetch_seatgeek.py
 python3 tools/fetch_artwrld.py
 python3 tools/fetch_venues.py
@@ -142,6 +145,7 @@ python3 tools/fetch_statenisland.py
 python3 tools/fetch_greenmarkets.py
 NPS_API_KEY=... python3 tools/fetch_nps.py
 python3 tools/fetch_patchbay.py           # today or tomorrow only
+AMC_API_KEY=... python3 tools/fetch_amc.py
 python3 tools/fetch_nycgov.py 2026-10-17  # or a given day (each script takes one)
 EVENTS_DIR=public/data/tomorrow python3 tools/fetch_nycgov.py 2026-10-18  # tomorrow's snapshot, as the Action writes it
 ```
@@ -155,11 +159,6 @@ Parks Department's coordinates and everything else with NYC City Planning GeoSea
 Events with no usable address are listed under `unplaced` in the snapshot. The Parks feed refuses GitHub's servers,
 so every run that reaches it records each Parks venue in `data/parks-places.json`, which the scheduled refresh uses instead. The page header shows the day the
 snapshot covers, so an old snapshot shows that day's events rather than an empty map.
-
-### Luma
-
-`fetch_luma.py` reads the discover API behind https://luma.com/nyc. Events come with coordinates. Hosts can keep an
-address for registered guests only, and Luma then gives a shifted position, so those events are left off the map.
 
 ### NYC Street Events
 
@@ -213,6 +212,31 @@ the map shows no Ticketmaster events until the first run that has one.
 Manhattan. It needs a free client id in `SEATGEEK_CLIENT_ID`, which the scheduled refresh reads from a repository
 secret of that name. Without one it skips the run, like Ticketmaster.
 
+### NYC Council
+
+`fetch_council.py` reads the day's public hearings and Stated Meetings from the Council's Legistar Web API
+(https://council.nyc.gov/legislation/api/). It needs a free key in `NYC_COUNCIL_TOKEN`, read from a repository secret
+of that name by the scheduled refresh; without one it skips the run. Meetings are placed at City Hall or 250 Broadway
+(`BUILDINGS` in the script); cancelled, deferred and remote-only ones are left out. Each links to its Legistar page.
+
+### Eventbrite
+
+`fetch_eventbrite.py` reads the official Eventbrite API (https://www.eventbrite.com/platform/api) for the NYC
+organizers listed in `data/eventbrite-organizers.json` (Eventbrite has no city-wide search any more). It needs a
+private token in `EVENTBRITE_TOKEN`, read from a repository secret of that name by the scheduled refresh; without one
+it skips the run, like Ticketmaster. Eventbrite's API terms ask that each event shows its title and links straight to
+its Eventbrite page, so only the title, time, place and link are kept, and online-only events are left out. Add an
+organizer with the number at the end of its page address (eventbrite.com/o/name-NUMBER).
+Leave out organizers that are venues another source already reads (Eastville Comedy, Public Records and so on), so
+nothing is listed twice.
+
+### AMC Lincoln Square IMAX
+
+`fetch_amc.py` reads AMC's official API (https://developers.amctheatres.com) for the day's showtimes at AMC Lincoln
+Square 13 (Broadway at 68th Street) and keeps only the IMAX showings, one pin per showing, each linking to its
+ticket page. It needs a vendor key in `AMC_API_KEY`, read from a repository secret of that name by the scheduled
+refresh; without one it skips the run, like Ticketmaster.
+
 ### Categories
 
 Each fetcher maps its source's own labels into the map's categories (`CATEGORIES` in `src/scripts/events/schema.js`).
@@ -244,16 +268,23 @@ bar placed from the coordinates on its listing page), Public Records' event cale
 Onderdonk House's events and the Myrtle Avenue BID's plaza concerts and street festivals (placed at Herman Hochberg
 Plaza, or on Myrtle Avenue when an event gives no place), and six in and around Flushing: Queens Botanical Garden's
 events feed, the New York Hall of Science's one-time public events, the Queens Night Market's next market night, and
-the events lists of Kingsland Homestead (Queens Historical Society), Bowne House and Lewis Latimer House. H0L0's ticket links go to the ticket sellers it uses. A film is one event at its first showing, with the day's
+the events lists of Kingsland Homestead (Queens Historical Society), Bowne House and Lewis Latimer House, and The Cooper Union's
+public lectures, talks and performances (its month page, leaving out in-class lectures). H0L0's ticket links go to the ticket sellers it uses. A film is one event at its first showing, with the day's
 showtimes in its description. Each event names its venue as its publisher (trivia nights name NYC Trivia League),
 so they are listed one by one in the Sources dropdown. Venues are placed once from the street address in `VENUES`
 and remembered in `data/geocode-cache.json`. Adding a venue means a reader function, an entry in `VENUES` and a
 place in `READERS`. Only title, time, price when given and a link are kept.
 
+Replacements for Luma (parked 2026-10-28) were checked the same day: The Cooper Union has no terms against reading its
+events pages and its robots.txt allows them, so it is read here. NYU's and Columbia's calendars and the NYC Council's
+Legistar API turn automated visits away or need a key, and The New School's events load from an /api path its
+robots.txt keeps readers off, so they are left out for now.
+
 Check a site's terms of use before adding it. St. Marks Comedy Club, QED, McNally Jackson and Apple forbid automated
 access, Flushing Town Hall and the Kupferberg Center forbid republishing their content, and Queens Theatre turns
 scripts away, so they are left out; Geeks Who Drink, The Strand, Greenlight, Barnes & Noble, Film at Lincoln Center,
-Juilliard, BRIC, The Public Theater and TV Eye turn automated visits away. Nowadays lists its nights only on
+Juilliard, BRIC, The Public Theater and TV Eye turn automated visits away. IFC Center's owner (AMC Networks) forbids
+republishing its content, and Angelika's showtimes come only from a private API, so neither cinema is read here. Nowadays lists its nights only on
 Resident Advisor, and Trans-Pecos only through VenuePilot, so neither is read here.
 
 ### Astoria venues
@@ -368,6 +399,45 @@ and the same show listed on several sites is merged by title, venue and start ti
 - Shorelines and the map's edges come from `tools/build_land.py`, which turns the city's borough boundaries
   and the census county shapes around them into `src/scripts/map/land.json`. The map covers all five boroughs;
   change `BOUNDS` there and rerun it (`python3 tools/build_land.py`) to move the edges.
-- Parks, airports, beaches and small islands are `[lat, lng]` polygons at the top of `geo.js`.
+- Parks, roads and lakes: `tools/build_detail.py` reads the NYC Parks properties and the city's street centerline
+  file from NYC Open Data and writes `src/scripts/map/detail.json`, which splits every tile into 4 x 4 finer pixels.
+  The streets drawn are every highway plus `MAJOR_STREETS` in the script; lakes and runways are traced by hand there.
+  Rerun it (`python3 tools/build_detail.py`) after changing them. A tile that is mostly park becomes a park tile (no
+  buildings, trees), and a tile a highway or major street crosses is kept clear of buildings.
+- Parks the city data leaves out (federal, state and New Jersey parks), airports, beaches and small islands are
+  `[lat, lng]` polygons at the top of `geo.js`.
+- Landmarks: the older ones are `LANDMARKS` in `geo.js`, the newer ones `PLACES` in `places.js`, each with a small
+  model function made of boxes. `clear` empties the tiles around it of generic buildings and `top` is where event
+  pins on those tiles sit.
+- Layers: the renderer keeps the map in layers (`ground`, `roads`, `buildings`, `landmarks`, `labels`, `overlay`,
+  `pins`). An overlay such as a subway map can draw lines with `map.addOverlayLine(points, { color, width })`, fade
+  the city under it with `map.dimBase(0.6)`, hide a layer with `map.setLayerVisible('roads', false)` and add or
+  remove text tags with `map.addAnchor` / `map.removeAnchor`. Pins always stay on top.
+- Subway: the + menu's Subway section has SUBWAY MAP (every line and station, a few pixels wide at any zoom) and
+  the lines hit by ACTIVE ALERTS / DELAYS or PLANNED WORK, from `/api/subway-alerts` (`worker/index.js`, which reads
+  the MTA's live alerts feed and keeps it for two minutes). A headline like "No [L] trains between 8 Av and Bedford
+  Av" is matched to the line's stations (`src/scripts/subway-spans.js`) and that stretch is drawn red with a ! pin
+  that shows the alert. The lines and stations are `src/scripts/map/subway.json`, written by `tools/build_subway.py`
+  from the MTA's subway GTFS before every dev build; the copy in git is empty, so a local build lists the lines
+  without drawing them unless you run the script first. `node tools/check_subway_spans.mjs alerts.json` shows how
+  the live alerts match.
+- Weather: the button at the bottom left asks `/api/weather` (the National Weather Service's hourly forecast for
+  Central Park, kept 15 minutes) and its card has the chance of rain, the umbrella answer and WINTER MODE, which
+  covers the streets, roofs and trees in snow (`map.setWinter`, `src/scripts/weather.js`).
+- Alternate side parking: the + menu shows today and tomorrow from `src/scripts/asp.json`, written by
+  `tools/build_asp.py` from NYC DOT's yearly calendar (refreshed before every dev build), and the #asp modal shows the
+  whole year (`src/components/AspCalendar.astro`). SHOW ON MAP keeps a chip at the bottom left.
+- Airport security: shield pins over JFK, LaGuardia and Newark open a card with each terminal's general and PreCheck
+  wait from `/api/airport-security` (the Port Authority's checkpoint feed, kept five minutes). Pins that are not
+  events go through `map.setExtraPins` (`src/scripts/airport-security.js`).
+- New Year's Eve: from 11:50 pm on December 31 (New York time) a countdown floats over the Times Square ball, which
+  drops over the last minute, then ten minutes of fireworks; on January 1st tapping the ball drops it again
+  (`src/scripts/new-year.js`). `?nye=90` sets the clock 90 seconds before midnight to try it.
+- Zoomers: the easter egg characters that appear when the map is zoomed all the way in on their spot
+  (`src/scripts/zoomers/`): Times Square's caped hero, masked wrestler, orange furry character and tourists; the subway dancers
+  on a train over the Manhattan Bridge; a cyclist on the plaza by Central Park South; the two guys on beach chairs in McCarren Park; the giant pigeon at the Museum of the Moving Image; and the Staten Island Ferry, which sails all day. `kit.js` builds the voxel people, walk cycles and
+  speech bubbles, and shows a Zoomer as a pale ghost where a building hides it. A new Zoomer is a `start(map, spot)`
+  that returns `{ step(dt), dispose() }`, hooked up with `zoomer()` or `watchZoomEgg`.
+- `?at=lat,lng,zoom` in the address opens the map on that spot, e.g. `/?at=40.7499,-73.8467,3.5` for the US Open.
 - Skyline heights come from `PEAKS` in `geo.js` (centre, spread, height).
 - Tile size is `CELL` in `tools/build_land.py`; pixel chunkiness is the PX button (2x by default, then 3x, 4x).

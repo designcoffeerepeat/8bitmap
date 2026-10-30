@@ -79,3 +79,15 @@ from the build, and almost none of its venues publish their own calendar: they e
 would still be reading DICE's data. Public Records was the one venue with its own calendar and is now in
 `tools/fetch_venues.py`. MK is emailing DICE (draft in the project's research/emails/email-dice.txt). To bring DICE
 back, follow the steps above with `fetch_dice.py` and `dice.js`; its README section is in git history.
+
+## Parked on 2026-10-28: Luma
+
+Luma came off for its terms (MK's call, after the site legal review): `fetch_luma.py` read Luma's undocumented
+discover API (api.lu.ma), and Luma's terms forbid access "by any means other than our publicly supported interfaces"
+and need written permission for reuse. Its official API only covers calendars you own. An email asking permission is
+drafted in the project's research/emails/email-luma.txt. To bring it back, follow the steps above with
+`fetch_luma.py` and `luma.js`; its id is `luma` and its name goes back in the page and legal source lists.
+
+How it worked: `fetch_luma.py` read the discover API behind https://luma.com/nyc. Events come with coordinates. Hosts
+can keep an address for registered guests only, and Luma then gives a shifted position, so those events were left off
+the map.
