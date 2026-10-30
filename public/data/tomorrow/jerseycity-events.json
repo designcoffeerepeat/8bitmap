@@ -3,14 +3,118 @@
   "name": "Jersey City calendars",
   "url": "https://jerseycityculture.org/events/calendar/"
  },
- "date": "2026-10-30",
- "fetchedAt": "2026-10-29T14:57:59-04:00",
+ "date": "2026-10-31",
+ "fetchedAt": "2026-10-30T05:34:19-04:00",
  "events": [
   {
-   "id": "jc-art-house-productions-202610302000-night-of-the-living-dead",
-   "title": "Night of the Living Dead",
+   "id": "jc-lincoln-park-202610311030-halloween-parade",
+   "title": "Halloween Parade",
+   "category": "community",
+   "start": "2026-10-31T10:30:00-04:00",
+   "end": "2026-10-31T12:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Lincoln Park",
+    "address": "West Side Ave and Belmont Ave, Jersey City, NJ",
+    "neighborhood": "Jersey City",
+    "lat": 40.7253,
+    "lng": -74.079
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://jerseycityculture.org/event/halloween-parade-2026/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-jersey-city-culture",
+    "name": "Jersey City Culture",
+    "url": "https://jerseycityculture.org/events/calendar/"
+   }
+  },
+  {
+   "id": "jc-west-bergen-branch-library-202610311100-paper-architects",
+   "title": "Paper Architects",
+   "category": "community",
+   "start": "2026-10-31T11:00:00-04:00",
+   "end": "2026-10-31T12:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "West Bergen Branch Library",
+    "address": "546 West Side Ave, Jersey City, NJ",
+    "neighborhood": "Jersey City",
+    "lat": 40.719494,
+    "lng": -74.082419
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://jerseycityculture.org/event/paper-architects-2026-4/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-jersey-city-culture",
+    "name": "Jersey City Culture",
+    "url": "https://jerseycityculture.org/events/calendar/"
+   }
+  },
+  {
+   "id": "jc-mary-mcleod-bethune-park-202610311200-the-annual-fall-festival",
+   "title": "The Annual Fall Festival",
+   "category": "community",
+   "start": "2026-10-31T12:00:00-04:00",
+   "end": "2026-10-31T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Mary McLeod Bethune Park",
+    "address": "43 Martin Luther King Drive, Jersey City, NJ",
+    "neighborhood": "Jersey City",
+    "lat": 40.701813,
+    "lng": -74.089713
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://jerseycityculture.org/event/the-annual-fall-festival-2026/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-jersey-city-culture",
+    "name": "Jersey City Culture",
+    "url": "https://jerseycityculture.org/events/calendar/"
+   }
+  },
+  {
+   "id": "jc-columbia-park-202610311300-trunk-or-treat-at-columbia-park",
+   "title": "Trunk or Treat at Columbia Park",
+   "category": "community",
+   "start": "2026-10-31T13:00:00-04:00",
+   "end": "2026-10-31T16:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Columbia Park",
+    "address": "118 Bartholdi Ave, Jersey City, NJ",
+    "neighborhood": "Jersey City",
+    "lat": 40.696443,
+    "lng": -74.096366
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://jerseycityculture.org/event/trunk-or-treat-at-columbia-park-2026/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-jersey-city-culture",
+    "name": "Jersey City Culture",
+    "url": "https://jerseycityculture.org/events/calendar/"
+   }
+  },
+  {
+   "id": "jc-art-house-productions-202610311930-ghost-of-uncle-joe-s-halloween-party",
+   "title": "Ghost of Uncle Joe's Halloween Party",
    "category": "music",
-   "start": "2026-10-30T20:00:00-04:00",
+   "start": "2026-10-31T19:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -21,14 +125,14 @@
     "lng": -74.0388
    },
    "price": {
-    "min": 25,
-    "max": 35,
+    "min": 20,
+    "max": 30,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://www.arthouseproductions.org/products/night-of-the-living-dead-october-30-2026",
+   "url": "https://www.arthouseproductions.org/products/ghost-of-uncle-joes-halloween-party-october-31-2026",
    "tags": [],
    "publisher": {
     "id": "venue-art-house-productions",
@@ -39,9 +143,9 @@
  ],
  "unplaced": [
   {
-   "title": "JCPD South District Trunk or Treat",
-   "venue": "PS #41 MARTIN CENTER FOR THE ARTS",
-   "address": "59 WILKINSON AVENUE"
+   "title": "Haunted Jersey City Halloween 5K",
+   "venue": "JC WATER FRONT",
+   "address": ""
   }
  ]
 }

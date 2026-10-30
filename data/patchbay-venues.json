@@ -1,9 +1,21 @@
 {
+ "20 Meadow": {
+  "address": "20 Meadow St, Brooklyn",
+  "checked": "2026-10-30",
+  "lat": 40.710447,
+  "lng": -73.936367
+ },
  "3 Dollar Bill": {
   "address": "260 Meserole Street, Brooklyn",
   "checked": "2026-10-24",
   "lat": 40.708294,
   "lng": -73.937971
+ },
+ "31 Chambers Surrogate's Court": {
+  "address": "31 Chambers St",
+  "checked": "2026-10-30",
+  "lat": 40.713591,
+  "lng": -74.004239
  },
  "314 Scholes": {
   "address": "314 Scholes Street, Brooklyn",
@@ -40,6 +52,12 @@
   "checked": "2026-10-22",
   "lat": 40.679065,
   "lng": -73.417396
+ },
+ "Art X": {
+  "address": "409 W 14th St, New York, NY 10014",
+  "checked": "2026-10-30",
+  "lat": 40.741536,
+  "lng": -74.005975
  },
  "ArtSpace": {
   "address": "215 Chrystie St",
@@ -83,6 +101,12 @@
   "lat": 40.672098,
   "lng": -74.213974
  },
+ "Barchef": {
+  "address": "21 West 35th Street",
+  "checked": "2026-10-30",
+  "lat": 40.749813,
+  "lng": -73.985133
+ },
  "Barclays Center": {
   "address": "620 Atlantic Avenue, Brooklyn",
   "checked": "2026-10-22",
@@ -118,6 +142,12 @@
   "checked": "2026-10-25",
   "lat": 40.730952,
   "lng": -74.000633
+ },
+ "Boat - Liberty Belle": {
+  "address": "",
+  "checked": "2026-10-30",
+  "lat": null,
+  "lng": null
  },
  "Bogart House": {
   "address": "230 Bogart St, Brooklyn",
@@ -238,6 +268,18 @@
   "checked": "2026-10-29",
   "lat": 40.713591,
   "lng": -74.004239
+ },
+ "Ciao Ciao": {
+  "address": "97 N 10th St, Brooklyn",
+  "checked": "2026-10-30",
+  "lat": 40.721023,
+  "lng": -73.957822
+ },
+ "Cipriani Wall Street": {
+  "address": "55 Wall St, New York, NY 10005",
+  "checked": "2026-10-30",
+  "lat": 40.70595,
+  "lng": -74.009323
  },
  "City Winery NYC": {
   "address": "25 11th Avenue",
@@ -479,6 +521,12 @@
   "lat": 40.349176,
   "lng": -74.070002
  },
+ "Harbor": {
+  "address": "621 West 46th Street",
+  "checked": "2026-10-30",
+  "lat": 40.764042,
+  "lng": -73.997574
+ },
  "Hart Bar": {
   "address": "538 Hart Street, Brooklyn",
   "checked": "2026-10-27",
@@ -532,6 +580,12 @@
   "checked": "2026-10-22",
   "lat": 40.734928,
   "lng": -73.988455
+ },
+ "Jade": {
+  "address": "4 Stuyvesant Ave, Brooklyn",
+  "checked": "2026-10-30",
+  "lat": 40.696601,
+  "lng": -73.935002
  },
  "Jolene Sound Room Brooklyn": {
   "address": "353 Bedford Ave, Brooklyn",
@@ -701,6 +755,12 @@
   "lat": 40.719161,
   "lng": -73.961785
  },
+ "Musica Club NYC": {
+  "address": "637 W 50th Street",
+  "checked": "2026-10-30",
+  "lat": 40.766776,
+  "lng": -73.996151
+ },
  "National Sawdust": {
   "address": "80 N 6th St, Brooklyn",
   "checked": "2026-10-22",
@@ -737,6 +797,12 @@
   "lat": 40.725862,
   "lng": -73.984038
  },
+ "Nightclub 101": {
+  "address": "101 Avenue A, New York, NY 10009",
+  "checked": "2026-10-30",
+  "lat": 40.725862,
+  "lng": -73.984038
+ },
  "Nowadays": {
   "address": "56-06 Cooper Avenue, Queens",
   "checked": "2026-10-22",
@@ -770,6 +836,12 @@
  "Palladium Times Square": {
   "address": "1515 Broadway",
   "checked": "2026-10-23",
+  "lat": 40.757925,
+  "lng": -73.986425
+ },
+ "Palladium Times Square ": {
+  "address": "1515 Broadway",
+  "checked": "2026-10-30",
   "lat": 40.757925,
   "lng": -73.986425
  },
@@ -827,6 +899,12 @@
   "lat": 40.732991,
   "lng": -74.172745
  },
+ "Public Arts": {
+  "address": "215 Chrystie St, New York, NY 10002, USA",
+  "checked": "2026-10-30",
+  "lat": 40.723055,
+  "lng": -73.992023
+ },
  "Public Records": {
   "address": "233 Butler Street, Brooklyn",
   "checked": "2026-10-22",
@@ -842,6 +920,12 @@
  "Racket": {
   "address": "431 West 16th Street",
   "checked": "2026-10-22",
+  "lat": 40.743081,
+  "lng": -74.00572
+ },
+ "Racket NY": {
+  "address": "431 West 16th Street",
+  "checked": "2026-10-30",
   "lat": 40.743081,
   "lng": -74.00572
  },
@@ -916,6 +1000,12 @@
   "checked": "2026-10-22",
   "lat": 40.707125,
   "lng": -73.921948
+ },
+ "Seventh Heaven": {
+  "address": "4 Irving Avenue, Brooklyn",
+  "checked": "2026-10-30",
+  "lat": 40.70545,
+  "lng": -73.925967
  },
  "Signal": {
   "address": "175 Morgan Ave, Brooklyn",
@@ -995,6 +1085,12 @@
   "lat": null,
   "lng": null
  },
+ "TBA -  Secret Location": {
+  "address": "",
+  "checked": "2026-10-30",
+  "lat": null,
+  "lng": null
+ },
  "TBA - 333": {
   "address": "",
   "checked": "2026-10-23",
@@ -1016,6 +1112,12 @@
  "TBA - Club House on Fulton": {
   "address": "",
   "checked": "2026-10-24",
+  "lat": null,
+  "lng": null
+ },
+ "TBA - East Williamsburg": {
+  "address": "",
+  "checked": "2026-10-30",
   "lat": null,
   "lng": null
  },
@@ -1061,11 +1163,23 @@
   "lat": null,
   "lng": null
  },
+ "TBA - WAREHOUSE TBA ": {
+  "address": "",
+  "checked": "2026-10-30",
+  "lat": null,
+  "lng": null
+ },
  "TV Eye": {
   "address": "1647 Weirfield Street, Ridgewood",
   "checked": "2026-10-22",
   "lat": 40.697919,
   "lng": -73.905335
+ },
+ "Talon Bar": {
+  "address": "220 Wyckoff Ave, Brooklyn",
+  "checked": "2026-10-30",
+  "lat": 40.70108,
+  "lng": -73.914402
  },
  "Tarrytown Music Hall": {
   "address": "13 Main St, Tarrytown",
@@ -1126,6 +1240,18 @@
   "checked": "2026-10-22",
   "lat": 40.761757,
   "lng": -73.983274
+ },
+ "The Keep": {
+  "address": "205 Cypress Ave, Ridgewood, NY 11385, Queens",
+  "checked": "2026-10-30",
+  "lat": 40.708267,
+  "lng": -73.919589
+ },
+ "The Loft": {
+  "address": "1604 Broadway, 4th Floor",
+  "checked": "2026-10-30",
+  "lat": 40.760514,
+  "lng": -73.984252
  },
  "The Meadows": {
   "address": "17 Meadow Street, Brooklyn",
@@ -1193,6 +1319,12 @@
   "lat": 40.812659,
   "lng": -74.216211
  },
+ "The Woods": {
+  "address": "48 S 4th St, Brooklyn, NY 11211, Brooklyn",
+  "checked": "2026-10-30",
+  "lat": 40.712836,
+  "lng": -73.966358
+ },
  "The Woodshop": {
   "address": "21A Meadow St, Brooklyn, NY 11206, Brooklyn",
   "checked": "2026-10-23",
@@ -1246,6 +1378,12 @@
   "checked": "2026-10-29",
   "lat": 40.76258,
   "lng": -73.989243
+ },
+ "VESPER": {
+  "address": "25 Kent Ave",
+  "checked": "2026-10-30",
+  "lat": 40.722956,
+  "lng": -73.95781
  },
  "Virgo": {
   "address": "324 Grand St",

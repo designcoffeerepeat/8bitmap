@@ -3,14 +3,14 @@
   "name": "Venue calendars",
   "url": "https://filmforum.org/"
  },
- "date": "2026-10-29",
- "fetchedAt": "2026-10-29T14:56:39-04:00",
+ "date": "2026-10-30",
+ "fetchedAt": "2026-10-30T05:33:17-04:00",
  "events": [
   {
-   "id": "film-forum-202610291225-fatherland",
-   "title": "FATHERLAND",
+   "id": "film-forum-202610301300-citizen-ruth",
+   "title": "CITIZEN RUTH",
    "category": "film",
-   "start": "2026-10-29T12:25:00-04:00",
+   "start": "2026-10-30T13:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -22,7 +22,33 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 12:25 pm, 2:25 pm, 4:30 pm, 6:30 pm, 8:30 pm",
+   "description": "Showtimes: 1:00 pm, 3:20 pm, 5:40 pm, 8:00 pm",
+   "details": "",
+   "url": "https://filmforum.org/film/citizen-ruth",
+   "tags": [],
+   "publisher": {
+    "id": "venue-film-forum",
+    "name": "Film Forum",
+    "url": "https://filmforum.org/"
+   }
+  },
+  {
+   "id": "film-forum-202610301225-fatherland",
+   "title": "FATHERLAND",
+   "category": "film",
+   "start": "2026-10-30T12:25:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Film Forum",
+    "address": "209 West Houston Street",
+    "neighborhood": "",
+    "lat": 40.728219,
+    "lng": -74.004492
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 12:25 pm, 2:25 pm, 4:15 pm, 4:30 pm, 6:30 pm, 8:30 pm",
    "details": "",
    "url": "https://filmforum.org/film/fatherland",
    "tags": [],
@@ -33,10 +59,10 @@
    }
   },
   {
-   "id": "film-forum-202610291215-once-upon-a-time-in-harlem",
+   "id": "film-forum-202610301215-once-upon-a-time-in-harlem",
    "title": "ONCE UPON A TIME IN HARLEM",
    "category": "film",
-   "start": "2026-10-29T12:15:00-04:00",
+   "start": "2026-10-30T12:15:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -48,7 +74,7 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 12:15 pm, 2:30 pm, 4:45 pm, 6:00 pm, 7:00 pm, 8:15 pm, 9:15 pm",
+   "description": "Showtimes: 12:15 pm, 2:30 pm, 4:45 pm, 8:10 pm, 9:15 pm",
    "details": "",
    "url": "https://filmforum.org/film/once-upon-a-time-in-harlem",
    "tags": [],
@@ -59,10 +85,10 @@
    }
   },
   {
-   "id": "film-forum-202610291230-my-undesirable-friends-part-ii-exile-cha",
-   "title": "MY UNDESIRABLE FRIENDS: PART II – EXILE: Chapters 4-5",
+   "id": "film-forum-202610301230-my-undesirable-friends-part-ii-exile-cha",
+   "title": "MY UNDESIRABLE FRIENDS: PART II – EXILE: Chapters 1-3",
    "category": "film",
-   "start": "2026-10-29T12:30:00-04:00",
+   "start": "2026-10-30T12:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -85,10 +111,10 @@
    }
   },
   {
-   "id": "film-forum-202610291615-unzipped",
+   "id": "film-forum-202610301820-unzipped",
    "title": "UNZIPPED",
    "category": "film",
-   "start": "2026-10-29T16:15:00-04:00",
+   "start": "2026-10-30T18:20:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -100,7 +126,7 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 4:15 pm",
+   "description": "Showtimes: 6:20 pm",
    "details": "",
    "url": "https://filmforum.org/film/unzipped-2026",
    "tags": [],
@@ -111,166 +137,10 @@
    }
   },
   {
-   "id": "film-forum-202610291300-nationtime",
-   "title": "NATIONTIME",
-   "category": "film",
-   "start": "2026-10-29T13:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Film Forum",
-    "address": "209 West Houston Street",
-    "neighborhood": "",
-    "lat": 40.728219,
-    "lng": -74.004492
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 1:00 pm",
-   "details": "",
-   "url": "https://filmforum.org/film/nationtime-william-greaves-100",
-   "tags": [],
-   "publisher": {
-    "id": "venue-film-forum",
-    "name": "Film Forum",
-    "url": "https://filmforum.org/"
-   }
-  },
-  {
-   "id": "film-forum-202610291510-lost-boundaries",
-   "title": "LOST BOUNDARIES",
-   "category": "film",
-   "start": "2026-10-29T15:10:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Film Forum",
-    "address": "209 West Houston Street",
-    "neighborhood": "",
-    "lat": 40.728219,
-    "lng": -74.004492
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 3:10 pm",
-   "details": "",
-   "url": "https://filmforum.org/film/lost-boundaries-william-greaves-100",
-   "tags": [],
-   "publisher": {
-    "id": "venue-film-forum",
-    "name": "Film Forum",
-    "url": "https://filmforum.org/"
-   }
-  },
-  {
-   "id": "film-forum-202610291720-where-dreams-come-true-and-space-for-wom",
-   "title": "WHERE DREAMS COME TRUE and SPACE FOR WOMEN",
-   "category": "film",
-   "start": "2026-10-29T17:20:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Film Forum",
-    "address": "209 West Houston Street",
-    "neighborhood": "",
-    "lat": 40.728219,
-    "lng": -74.004492
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 5:20 pm",
-   "details": "",
-   "url": "https://filmforum.org/film/where-dreams-come-true-space-for-women-william-greaves-100-william-greaves-100",
-   "tags": [],
-   "publisher": {
-    "id": "venue-film-forum",
-    "name": "Film Forum",
-    "url": "https://filmforum.org/"
-   }
-  },
-  {
-   "id": "film-forum-202610291845-symbiopsychotaxiplasm-take-one",
-   "title": "SYMBIOPSYCHOTAXIPLASM: TAKE ONE",
-   "category": "film",
-   "start": "2026-10-29T18:45:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Film Forum",
-    "address": "209 West Houston Street",
-    "neighborhood": "",
-    "lat": 40.728219,
-    "lng": -74.004492
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 6:45 pm",
-   "details": "",
-   "url": "https://filmforum.org/film/symbiopsychotaxiplasm-take-one-william-greaves-100",
-   "tags": [],
-   "publisher": {
-    "id": "venue-film-forum",
-    "name": "Film Forum",
-    "url": "https://filmforum.org/"
-   }
-  },
-  {
-   "id": "film-forum-202610292020-the-harder-they-come",
-   "title": "THE HARDER THEY COME",
-   "category": "film",
-   "start": "2026-10-29T20:20:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Film Forum",
-    "address": "209 West Houston Street",
-    "neighborhood": "",
-    "lat": 40.728219,
-    "lng": -74.004492
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 8:20 pm",
-   "details": "",
-   "url": "https://filmforum.org/film/the-harder-they-come",
-   "tags": [],
-   "publisher": {
-    "id": "venue-film-forum",
-    "name": "Film Forum",
-    "url": "https://filmforum.org/"
-   }
-  },
-  {
-   "id": "nitehawk-williamsburg-202610291500-primetime",
-   "title": "Primetime",
-   "category": "film",
-   "start": "2026-10-29T15:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Williamsburg",
-    "address": "136 Metropolitan Avenue",
-    "neighborhood": "",
-    "lat": 40.715985,
-    "lng": -73.962586
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 3:00 pm, 9:45 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/williamsburg/movies/primetime/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-williamsburg",
-    "name": "Nitehawk Williamsburg",
-    "url": "https://nitehawkcinema.com/williamsburg/"
-   }
-  },
-  {
-   "id": "nitehawk-williamsburg-202610291515-you-can-see-everything",
+   "id": "nitehawk-williamsburg-202610301600-you-can-see-everything",
    "title": "You Can See Everything",
    "category": "film",
-   "start": "2026-10-29T15:15:00-04:00",
+   "start": "2026-10-30T16:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -282,7 +152,7 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 3:15 pm, 5:35 pm, 5:50 pm, 9:15 pm",
+   "description": "Showtimes: 4:00 pm, 4:15 pm, 4:45 pm, 7:35 pm, 8:05 pm, 8:30 pm, 11:10 pm",
    "details": "",
    "url": "https://nitehawkcinema.com/williamsburg/movies/you-can-see-everything/",
    "tags": [],
@@ -293,10 +163,10 @@
    }
   },
   {
-   "id": "nitehawk-williamsburg-202610291515-the-social-reckoning",
-   "title": "The Social Reckoning",
+   "id": "nitehawk-williamsburg-202610302355-begotten",
+   "title": "Begotten",
    "category": "film",
-   "start": "2026-10-29T15:15:00-04:00",
+   "start": "2026-10-30T23:55:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -308,9 +178,9 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 3:15 pm, 7:00 pm",
+   "description": "Showtimes: 11:55 pm",
    "details": "",
-   "url": "https://nitehawkcinema.com/williamsburg/movies/the-social-reckoning/",
+   "url": "https://nitehawkcinema.com/williamsburg/showtimes/begotten-10-30-26-1155-pm/",
    "tags": [],
    "publisher": {
     "id": "venue-nitehawk-williamsburg",
@@ -319,10 +189,10 @@
    }
   },
   {
-   "id": "nitehawk-williamsburg-202610292130-zombie-bloodbath",
-   "title": "Zombie Bloodbath",
+   "id": "nitehawk-williamsburg-202610302355-halloween-1978-",
+   "title": "Halloween (1978)",
    "category": "film",
-   "start": "2026-10-29T21:30:00-04:00",
+   "start": "2026-10-30T23:55:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -334,9 +204,9 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 9:30 pm",
+   "description": "Showtimes: 11:55 pm",
    "details": "",
-   "url": "https://nitehawkcinema.com/williamsburg/showtimes/zombie-bloodbath-10-29-26-930-pm/",
+   "url": "https://nitehawkcinema.com/williamsburg/showtimes/halloween-1978-10-30-26-1155-pm/",
    "tags": [],
    "publisher": {
     "id": "venue-nitehawk-williamsburg",
@@ -345,192 +215,10 @@
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610291445-you-can-see-everything",
-   "title": "You Can See Everything",
-   "category": "film",
-   "start": "2026-10-29T14:45:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
-    "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 2:45 pm, 5:30 pm, 6:30 pm, 9:15 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/you-can-see-everything/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
-   }
-  },
-  {
-   "id": "nitehawk-prospect-park-202610291500-the-history-of-concrete",
-   "title": "The History of Concrete",
-   "category": "film",
-   "start": "2026-10-29T15:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
-    "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 3:00 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/the-history-of-concrete/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
-   }
-  },
-  {
-   "id": "nitehawk-prospect-park-202610291515-klara-and-the-sun",
-   "title": "Klara and the Sun",
-   "category": "film",
-   "start": "2026-10-29T15:15:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
-    "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 3:15 pm, 7:00 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/klara-and-the-sun/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
-   }
-  },
-  {
-   "id": "nitehawk-prospect-park-202610291530-the-social-reckoning",
-   "title": "The Social Reckoning",
-   "category": "film",
-   "start": "2026-10-29T15:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
-    "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 3:30 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/the-social-reckoning/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
-   }
-  },
-  {
-   "id": "nitehawk-prospect-park-202610291545-fjord",
-   "title": "Fjord",
-   "category": "film",
-   "start": "2026-10-29T15:45:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
-    "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 3:45 pm, 6:00 pm, 8:45 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/fjord/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
-   }
-  },
-  {
-   "id": "nitehawk-prospect-park-202610291600-clayface",
-   "title": "Clayface",
-   "category": "film",
-   "start": "2026-10-29T16:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
-    "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 4:00 pm, 6:15 pm, 10:00 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/clayface/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
-   }
-  },
-  {
-   "id": "nitehawk-prospect-park-202610291615-wildwood",
-   "title": "Wildwood",
-   "category": "film",
-   "start": "2026-10-29T16:15:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
-    "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 4:15 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/wildwood/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
-   }
-  },
-  {
-   "id": "nitehawk-prospect-park-202610291845-the-only-living-pickpocket-in-new-york",
+   "id": "nitehawk-prospect-park-202610301415-the-only-living-pickpocket-in-new-york",
    "title": "The Only Living Pickpocket in New York",
    "category": "film",
-   "start": "2026-10-29T18:45:00-04:00",
+   "start": "2026-10-30T14:15:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -542,7 +230,7 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 6:45 pm, 9:00 pm",
+   "description": "Showtimes: 2:15 pm, 8:00 pm, 10:00 pm",
    "details": "",
    "url": "https://nitehawkcinema.com/prospectpark/movies/the-only-living-pickpocket-in-new-york/",
    "tags": [],
@@ -553,10 +241,10 @@
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610291915-primetime",
-   "title": "Primetime",
+   "id": "nitehawk-prospect-park-202610301415-you-can-see-everything",
+   "title": "You Can See Everything",
    "category": "film",
-   "start": "2026-10-29T19:15:00-04:00",
+   "start": "2026-10-30T14:15:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -568,7 +256,241 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 7:15 pm, 9:45 pm",
+   "description": "Showtimes: 2:15 pm, 2:45 pm, 5:00 pm, 6:00 pm, 8:45 pm, 9:15 pm, 9:45 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/you-can-see-everything/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610301430-chronovisor",
+   "title": "Chronovisor",
+   "category": "film",
+   "start": "2026-10-30T14:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 2:30 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/chronovisor/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610301430-klara-and-the-sun",
+   "title": "Klara and the Sun",
+   "category": "film",
+   "start": "2026-10-30T14:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 2:30 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/klara-and-the-sun/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610301530-wicker",
+   "title": "Wicker",
+   "category": "film",
+   "start": "2026-10-30T15:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 3:30 pm, 5:15 pm, 9:30 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/wicker/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610301600-clayface",
+   "title": "Clayface",
+   "category": "film",
+   "start": "2026-10-30T16:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 4:00 pm, 6:15 pm, 10:15 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/clayface/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610301630-wildwood",
+   "title": "Wildwood",
+   "category": "film",
+   "start": "2026-10-30T16:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 4:30 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/wildwood/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610301830-wild-horse-nine",
+   "title": "Wild Horse Nine",
+   "category": "film",
+   "start": "2026-10-30T18:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 6:30 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/wild-horse-nine/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610301845-fjord",
+   "title": "Fjord",
+   "category": "film",
+   "start": "2026-10-30T18:45:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 6:45 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/fjord/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610301930-edie-arnold-is-a-loser",
+   "title": "Edie Arnold Is a Loser",
+   "category": "film",
+   "start": "2026-10-30T19:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 7:30 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/edie-arnold-is-a-loser/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202610302100-primetime",
+   "title": "Primetime",
+   "category": "film",
+   "start": "2026-10-30T21:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 9:00 pm",
    "details": "",
    "url": "https://nitehawkcinema.com/prospectpark/movies/primetime/",
    "tags": [],
@@ -579,62 +501,40 @@
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610292115-wishmaster",
-   "title": "Wishmaster",
-   "category": "film",
-   "start": "2026-10-29T21:15:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
-    "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 9:15 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/wishmaster/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
-   }
-  },
-  {
-   "id": "nitehawk-prospect-park-202610292215-other-mommy",
-   "title": "Other Mommy",
-   "category": "film",
-   "start": "2026-10-29T22:15:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
-    "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 10:15 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/other-mommy/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
-   }
-  },
-  {
-   "id": "new-york-comedy-club-202610291800-gurleen-pannu-monster-in-hindi-",
-   "title": "Gurleen Pannu: Monster (IN HINDI)",
+   "id": "new-york-comedy-club-upper-west-side-202610301815-jamie-wolf-leclerc-meka-mo-sarah-adelman",
+   "title": "Jamie Wolf, LeClerc, Meka Mo, Sarah Adelman",
    "category": "comedy",
-   "start": "2026-10-29T18:00:00-04:00",
+   "start": "2026-10-30T18:15:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New York Comedy Club Upper West Side",
+    "address": "236 West 78th Street",
+    "neighborhood": "",
+    "lat": 40.782823,
+    "lng": -73.980169
+   },
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://newyorkcomedyclub.com/events/jamie-wolf-leclerc-meka-mo-sarah-adelman",
+   "tags": [],
+   "publisher": {
+    "id": "venue-new-york-comedy-club-upper-west-side",
+    "name": "New York Comedy Club Upper West Side",
+    "url": "https://newyorkcomedyclub.com/"
+   }
+  },
+  {
+   "id": "new-york-comedy-club-202610301900-mark-normand-chuck-nice-jackie-fabulous-",
+   "title": "Mark Normand, Chuck Nice, Jackie Fabulous, Tom Cassidy",
+   "category": "comedy",
+   "start": "2026-10-30T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -645,14 +545,14 @@
     "lng": -73.980785
    },
    "price": {
-    "min": 40,
-    "max": 40,
+    "min": 25,
+    "max": 25,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/gurleen-pannu-monster",
+   "url": "https://newyorkcomedyclub.com/events/mark-normand-chuck-nice-jackie-fabulous-tom-cassidy",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club",
@@ -661,10 +561,40 @@
    }
   },
   {
-   "id": "new-york-comedy-club-upper-west-side-202610291930-laugh-run-with-tommy-mcclellan-willard",
-   "title": "Laugh & Run with Tommy McClellan-Willard",
+   "id": "new-york-comedy-club-on-4th-street-202610302000-erin-jackson-isiah-kelly-mike-britt-eric",
+   "title": "Erin Jackson, Isiah Kelly, Mike Britt, Eric Neumann",
    "category": "comedy",
-   "start": "2026-10-29T19:30:00-04:00",
+   "start": "2026-10-30T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New York Comedy Club on 4th Street",
+    "address": "85 East 4th Street",
+    "neighborhood": "",
+    "lat": 40.726592,
+    "lng": -73.989808
+   },
+   "price": {
+    "min": 45,
+    "max": 45,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://newyorkcomedyclub.com/events/erin-jackson-isiah-kelly-mike-britt-eric-neumann",
+   "tags": [],
+   "publisher": {
+    "id": "venue-new-york-comedy-club-on-4th-street",
+    "name": "New York Comedy Club on 4th Street",
+    "url": "https://newyorkcomedyclub.com/"
+   }
+  },
+  {
+   "id": "new-york-comedy-club-upper-west-side-202610302030-mark-normand-marion-grodin-chuck-nice-er",
+   "title": "Mark Normand, Marion Grodin, Chuck Nice, Erin Maguire, Chris Pattwell",
+   "category": "comedy",
+   "start": "2026-10-30T20:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -682,7 +612,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/laugh-run-with-tommy-mcclellan-willard",
+   "url": "https://newyorkcomedyclub.com/events/mark-normand-marion-grodin-chuck-nice-erin-maguire-chris-pattwell",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club-upper-west-side",
@@ -691,40 +621,10 @@
    }
   },
   {
-   "id": "new-york-comedy-club-on-4th-street-202610292000-corinne-fisher-mike-britt-amos-gill-max-",
-   "title": "Corinne Fisher, Mike Britt, Amos Gill, Max Antonucci, Eagle Witt",
+   "id": "new-york-comedy-club-202610302115-mike-britt-richie-redding-erin-jackson-t",
+   "title": "Mike Britt, Richie Redding, Erin Jackson, Tom Cassidy",
    "category": "comedy",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New York Comedy Club on 4th Street",
-    "address": "85 East 4th Street",
-    "neighborhood": "",
-    "lat": 40.726592,
-    "lng": -73.989808
-   },
-   "price": {
-    "min": 20,
-    "max": 20,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://newyorkcomedyclub.com/events/corinne-fisher-mike-britt-amos-gill-max-antonucci-eagle-witt",
-   "tags": [],
-   "publisher": {
-    "id": "venue-new-york-comedy-club-on-4th-street",
-    "name": "New York Comedy Club on 4th Street",
-    "url": "https://newyorkcomedyclub.com/"
-   }
-  },
-  {
-   "id": "new-york-comedy-club-202610292030-elle-orlando-sean-donnelly-mike-britt-ju",
-   "title": "Elle Orlando, Sean Donnelly, Mike Britt, Julian McCullough, Mike Figs",
-   "category": "comedy",
-   "start": "2026-10-29T20:30:00-04:00",
+   "start": "2026-10-30T21:15:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -735,14 +635,14 @@
     "lng": -73.980785
    },
    "price": {
-    "min": 20,
-    "max": 20,
+    "min": 45,
+    "max": 45,
     "currency": "USD"
    },
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/elle-orlando-sean-donnelly-mike-britt-julian-mccullough-mike-figs",
+   "url": "https://newyorkcomedyclub.com/events/mike-britt-richie-redding-erin-jackson-tom-cassidy",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club",
@@ -751,10 +651,40 @@
    }
   },
   {
-   "id": "new-york-comedy-club-upper-west-side-202610292145-aaron-mccann-emma-willmann-dan-ahdoot-ea",
-   "title": "Aaron McCann, Emma Willmann, Dan Ahdoot, Eagle Witt, Riley Lassin",
+   "id": "new-york-comedy-club-on-4th-street-202610302230-chuck-nice-mike-britt-adam-nate-levine-p",
+   "title": "Chuck Nice, Mike Britt, Adam Nate Levine, Paula J. Leon",
    "category": "comedy",
-   "start": "2026-10-29T21:45:00-04:00",
+   "start": "2026-10-30T22:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "New York Comedy Club on 4th Street",
+    "address": "85 East 4th Street",
+    "neighborhood": "",
+    "lat": 40.726592,
+    "lng": -73.989808
+   },
+   "price": {
+    "min": 25,
+    "max": 25,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://newyorkcomedyclub.com/events/chuck-nice-mike-britt-adam-nate-levine-paula-j-leon",
+   "tags": [],
+   "publisher": {
+    "id": "venue-new-york-comedy-club-on-4th-street",
+    "name": "New York Comedy Club on 4th Street",
+    "url": "https://newyorkcomedyclub.com/"
+   }
+  },
+  {
+   "id": "new-york-comedy-club-upper-west-side-202610302245-marion-grodin-isiah-kelly-jackie-fabulou",
+   "title": "Marion Grodin, Isiah Kelly, Jackie Fabulous, TaTa Sherise",
+   "category": "comedy",
+   "start": "2026-10-30T22:45:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -764,11 +694,15 @@
     "lat": 40.782823,
     "lng": -73.980169
    },
-   "price": null,
-   "priceUnknown": true,
+   "price": {
+    "min": 20,
+    "max": 20,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/aaron-mccann-emma-willmann-dan-ahdoot-eagle-witt-riley-lassin",
+   "url": "https://newyorkcomedyclub.com/events/marion-grodin-isiah-kelly-jackie-fabulous-tata-sherise",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club-upper-west-side",
@@ -777,40 +711,10 @@
    }
   },
   {
-   "id": "new-york-comedy-club-on-4th-street-202610292215-caitlin-peluffo-kevin-dombrowski-james-d",
-   "title": "Caitlin Peluffo, Kevin Dombrowski, James Davis, Max Antonucci, Aaron McCann",
+   "id": "new-york-comedy-club-202610302330-eeland-stribling-tom-cassidy-olga-namer-",
+   "title": "Eeland Stribling, Tom Cassidy, Olga Namer, Ontonio Kareem",
    "category": "comedy",
-   "start": "2026-10-29T22:15:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "New York Comedy Club on 4th Street",
-    "address": "85 East 4th Street",
-    "neighborhood": "",
-    "lat": 40.726592,
-    "lng": -73.989808
-   },
-   "price": {
-    "min": 15,
-    "max": 15,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://newyorkcomedyclub.com/events/caitlin-peluffo-kevin-dombrowski-james-davis-max-antonucci-aaron-mccann",
-   "tags": [],
-   "publisher": {
-    "id": "venue-new-york-comedy-club-on-4th-street",
-    "name": "New York Comedy Club on 4th Street",
-    "url": "https://newyorkcomedyclub.com/"
-   }
-  },
-  {
-   "id": "new-york-comedy-club-202610292230-ashley-austin-morris-kevin-dombrowski-ea",
-   "title": "Ashley Austin Morris, Kevin Dombrowski, Eagle Witt, Oscar Aydin, Mike Figs",
-   "category": "comedy",
-   "start": "2026-10-29T22:30:00-04:00",
+   "start": "2026-10-30T23:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -828,7 +732,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://newyorkcomedyclub.com/events/ashley-austin-morris-kevin-dombrowski-eagle-witt-oscar-aydin-mike-figs",
+   "url": "https://newyorkcomedyclub.com/events/eeland-stribling-tom-cassidy-olga-namer-ontonio-kareem",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-comedy-club",
@@ -837,10 +741,100 @@
    }
   },
   {
-   "id": "eastville-comedy-club-202610291800-6pm-weekday-open-mics-eastville-comedy",
-   "title": "6PM Weekday Open Mics @ Eastville Comedy",
+   "id": "eastville-comedy-club-202610301800-anthony-moore-soo-ra-talal-alyan-peter-s",
+   "title": "Anthony Moore, Soo Ra, Talal Alyan, Peter Stewart, Julia Barnard, DJ Hairston",
    "category": "comedy",
-   "start": "2026-10-29T18:00:00-04:00",
+   "start": "2026-10-30T18:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Eastville Comedy Club",
+    "address": "487 Atlantic Avenue",
+    "neighborhood": "",
+    "lat": 40.685915,
+    "lng": -73.981622
+   },
+   "price": {
+    "min": 30,
+    "max": 30,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://www.eastvillecomedy.com/events/anthony-moore-soo-ra-talal-alyan-peter-stewart-julia-barnard-dj-hairston",
+   "tags": [],
+   "publisher": {
+    "id": "venue-eastville-comedy-club",
+    "name": "Eastville Comedy Club",
+    "url": "https://www.eastvillecomedy.com/"
+   }
+  },
+  {
+   "id": "eastville-comedy-club-202610302000-james-mattern-santiago-angel-tom-zappia-",
+   "title": "James Mattern, Santiago Angel, Tom Zappia, Mike Agunbiade, Shaunak Godkhindi, Cesh Reyes, Napoleon Emill",
+   "category": "comedy",
+   "start": "2026-10-30T20:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Eastville Comedy Club",
+    "address": "487 Atlantic Avenue",
+    "neighborhood": "",
+    "lat": 40.685915,
+    "lng": -73.981622
+   },
+   "price": {
+    "min": 30,
+    "max": 30,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://www.eastvillecomedy.com/events/james-mattern-santiago-angel-tom-zappia-mike-agunbiade-shaunak-godkhindi-cesh-reyes-napoleon-emill",
+   "tags": [],
+   "publisher": {
+    "id": "venue-eastville-comedy-club",
+    "name": "Eastville Comedy Club",
+    "url": "https://www.eastvillecomedy.com/"
+   }
+  },
+  {
+   "id": "eastville-comedy-club-202610302200-dara-jemmott-talal-alyan-liam-dalton-jac",
+   "title": "Dara Jemmott, Talal Alyan, Liam Dalton, Jaclyn Lore-Edwards, Mike Agunbiade, Jessica Levin",
+   "category": "comedy",
+   "start": "2026-10-30T22:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Eastville Comedy Club",
+    "address": "487 Atlantic Avenue",
+    "neighborhood": "",
+    "lat": 40.685915,
+    "lng": -73.981622
+   },
+   "price": {
+    "min": 30,
+    "max": 30,
+    "currency": "USD"
+   },
+   "priceUnknown": false,
+   "description": "",
+   "details": "",
+   "url": "https://www.eastvillecomedy.com/events/dara-jemmott-talal-alyan-liam-dalton-jaclyn-lore-edwards-mike-agunbiade-jessica-levin",
+   "tags": [],
+   "publisher": {
+    "id": "venue-eastville-comedy-club",
+    "name": "Eastville Comedy Club",
+    "url": "https://www.eastvillecomedy.com/"
+   }
+  },
+  {
+   "id": "eastville-comedy-club-202610302330-the-get-it-goin-amateur-show",
+   "title": "The Get It Goin Amateur Show",
+   "category": "comedy",
+   "start": "2026-10-30T23:30:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -858,7 +852,7 @@
    "priceUnknown": false,
    "description": "",
    "details": "",
-   "url": "https://www.eastvillecomedy.com/events/6pm-weekday-open-mics-eastville-comedy-2026-10-29180000",
+   "url": "https://www.eastvillecomedy.com/events/the-get-it-goin-amateur-show-2026-10-30233000",
    "tags": [],
    "publisher": {
     "id": "venue-eastville-comedy-club",
@@ -867,70 +861,10 @@
    }
   },
   {
-   "id": "eastville-comedy-club-202610292000-brotaku",
-   "title": "Brotaku",
+   "id": "the-pit-202610301700-friday-feel-good-improv-jam",
+   "title": "Friday Feel-GOOD IMPROV JAM",
    "category": "comedy",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Eastville Comedy Club",
-    "address": "487 Atlantic Avenue",
-    "neighborhood": "",
-    "lat": 40.685915,
-    "lng": -73.981622
-   },
-   "price": {
-    "min": 18,
-    "max": 18,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://www.eastvillecomedy.com/events/brotaku-1",
-   "tags": [],
-   "publisher": {
-    "id": "venue-eastville-comedy-club",
-    "name": "Eastville Comedy Club",
-    "url": "https://www.eastvillecomedy.com/"
-   }
-  },
-  {
-   "id": "eastville-comedy-club-202610292200-lasergooch-featuring-carmen-lagala",
-   "title": "LASERGOOCH Featuring Carmen Lagala",
-   "category": "comedy",
-   "start": "2026-10-29T22:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Eastville Comedy Club",
-    "address": "487 Atlantic Avenue",
-    "neighborhood": "",
-    "lat": 40.685915,
-    "lng": -73.981622
-   },
-   "price": {
-    "min": 20,
-    "max": 20,
-    "currency": "USD"
-   },
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://www.eastvillecomedy.com/events/lasergooch-featuring-carmen-lagala",
-   "tags": [],
-   "publisher": {
-    "id": "venue-eastville-comedy-club",
-    "name": "Eastville Comedy Club",
-    "url": "https://www.eastvillecomedy.com/"
-   }
-  },
-  {
-   "id": "the-pit-202610291630-thursyay-improv-jam",
-   "title": "ThursYAY Improv Jam",
-   "category": "comedy",
-   "start": "2026-10-29T16:30:00-04:00",
+   "start": "2026-10-30T17:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -944,7 +878,7 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://thepit-nyc.com/events/thursyay/",
+   "url": "https://thepit-nyc.com/events/improv-jam/",
    "tags": [],
    "publisher": {
     "id": "venue-the-pit",
@@ -953,128 +887,24 @@
    }
   },
   {
-   "id": "the-pit-202610291800-pit-ensembles-psychopomp-half-priced-dri",
-   "title": "PIT ENSEMBLES: Psychopomp & Half Priced Drinks",
-   "category": "comedy",
-   "start": "2026-10-29T18:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The PIT",
-    "address": "154 West 29th Street",
-    "neighborhood": "",
-    "lat": 40.747369,
-    "lng": -73.992295
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://thepit-nyc.com/events/pit-ensembles-6pm/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-the-pit",
-    "name": "The PIT",
-    "url": "https://thepit-nyc.com/"
-   }
-  },
-  {
-   "id": "the-pit-202610291900-pit-ensembles-dot-com-the-bellhops",
-   "title": "PIT ENSEMBLES: dot com & The Bellhops",
-   "category": "comedy",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The PIT",
-    "address": "154 West 29th Street",
-    "neighborhood": "",
-    "lat": 40.747369,
-    "lng": -73.992295
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://thepit-nyc.com/events/pit-ensembles-7pm/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-the-pit",
-    "name": "The PIT",
-    "url": "https://thepit-nyc.com/"
-   }
-  },
-  {
-   "id": "the-pit-202610292000-pit-ensembles-snake-boy-kind-regards",
-   "title": "PIT ENSEMBLES: Snake Boy! & Kind Regards",
-   "category": "comedy",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The PIT",
-    "address": "154 West 29th Street",
-    "neighborhood": "",
-    "lat": 40.747369,
-    "lng": -73.992295
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://thepit-nyc.com/events/pit-ensembles-8pm/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-the-pit",
-    "name": "The PIT",
-    "url": "https://thepit-nyc.com/"
-   }
-  },
-  {
-   "id": "the-pit-202610292100-pit-ensembles-moonwalk-butt-dial",
-   "title": "PIT ENSEMBLES: Moonwalk & Butt Dial",
-   "category": "comedy",
-   "start": "2026-10-29T21:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The PIT",
-    "address": "154 West 29th Street",
-    "neighborhood": "",
-    "lat": 40.747369,
-    "lng": -73.992295
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://thepit-nyc.com/events/pit-ensembles-9pm/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-the-pit",
-    "name": "The PIT",
-    "url": "https://thepit-nyc.com/"
-   }
-  },
-  {
-   "id": "american-whiskey-202610291900-trivia-at-american-whiskey",
-   "title": "Trivia at American Whiskey",
+   "id": "blondie-s-sports-202610302000-trivia-at-blondie-s-sports",
+   "title": "Trivia at Blondie’s Sports",
    "category": "trivia",
-   "start": "2026-10-29T19:00:00-04:00",
+   "start": "2026-10-30T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "American Whiskey",
+    "name": "Blondie’s Sports",
     "address": "",
-    "neighborhood": "Midtown",
-    "lat": 40.74823,
-    "lng": -73.992668
+    "neighborhood": "Upper West Side",
+    "lat": 40.78321,
+    "lng": -73.979158
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://nyctrivialeague.com/listings/american-whiskey/",
+   "url": "https://nyctrivialeague.com/listings/blondies/",
    "tags": [],
    "publisher": {
     "id": "venue-nyc-trivia-league",
@@ -1083,492 +913,24 @@
    }
   },
   {
-   "id": "the-bier-cheese-collective-202610291900-trivia-at-the-bier-cheese-collective",
-   "title": "Trivia at The Bier & Cheese Collective",
+   "id": "sanger-hall-202610302000-trivia-at-sanger-hall",
+   "title": "Trivia at Sanger Hall",
    "category": "trivia",
-   "start": "2026-10-29T19:00:00-04:00",
+   "start": "2026-10-30T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "The Bier & Cheese Collective",
-    "address": "",
-    "neighborhood": "Astoria",
-    "lat": 40.774768,
-    "lng": -73.90831
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/astoria-bier-cheese-ditmars/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "the-broadway-tavern-202610291930-trivia-at-the-broadway-tavern",
-   "title": "Trivia at The Broadway Tavern",
-   "category": "trivia",
-   "start": "2026-10-29T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Broadway Tavern",
-    "address": "",
-    "neighborhood": "Hamilton Heights",
-    "lat": 40.825053,
-    "lng": -73.951909
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/the-broadway-tavern/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "ella-s-cafe-202610291900-trivia-at-ella-s-cafe",
-   "title": "Trivia at Ella’s Cafe",
-   "category": "trivia",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Ella’s Cafe",
-    "address": "",
-    "neighborhood": "Upper East Side",
-    "lat": 40.771647,
-    "lng": -73.956091
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/ellas/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "emmy-squared-pizza-midtown-west-202610291900-trivia-at-emmy-squared-pizza-midtown-wes",
-   "title": "Trivia at Emmy Squared Pizza — Midtown West",
-   "category": "trivia",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Emmy Squared Pizza — Midtown West",
-    "address": "",
-    "neighborhood": "Midtown West",
-    "lat": 40.77096,
-    "lng": -73.98754
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/emmy-squared-midtown-west/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "farm-one-202610291900-trivia-at-farm-one",
-   "title": "Trivia at Farm.One",
-   "category": "trivia",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Farm.One",
-    "address": "",
-    "neighborhood": "Prospect Heights",
-    "lat": 40.679678,
-    "lng": -73.968912
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/farm-one/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "finback-brewery-brooklyn-202610291900-trivia-at-finback-brewery-brooklyn",
-   "title": "Trivia at Finback Brewery — Brooklyn",
-   "category": "trivia",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Finback Brewery — Brooklyn",
-    "address": "",
-    "neighborhood": "Gowanus",
-    "lat": 40.677406,
-    "lng": -73.984774
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/finback-brewery-brooklyn/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "the-five-lamps-nyc-202610291930-trivia-at-the-five-lamps-nyc",
-   "title": "Trivia at The Five Lamps NYC",
-   "category": "trivia",
-   "start": "2026-10-29T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Five Lamps NYC",
-    "address": "",
-    "neighborhood": "Upper East Side",
-    "lat": 40.774224,
-    "lng": -73.948037
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/the-five-lamps/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "the-gaf-astoria-202610292030-trivia-at-the-gaf-astoria",
-   "title": "Trivia at The Gaf Astoria",
-   "category": "trivia",
-   "start": "2026-10-29T20:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Gaf Astoria",
-    "address": "",
-    "neighborhood": "Astoria",
-    "lat": 40.760842,
-    "lng": -73.908819
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/the-gaf-astoria/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "the-hairy-lemon-202610292000-trivia-at-the-hairy-lemon",
-   "title": "Trivia at The Hairy Lemon",
-   "category": "trivia",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Hairy Lemon",
-    "address": "",
-    "neighborhood": "East Village",
-    "lat": 40.72248,
-    "lng": -73.983386
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/thehairylemon/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "the-huntress-lic-202610292000-trivia-at-the-huntress-lic",
-   "title": "Trivia at The Huntress LIC",
-   "category": "trivia",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Huntress LIC",
-    "address": "",
-    "neighborhood": "Long Island City",
-    "lat": 40.752672,
-    "lng": -73.93961
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/the-huntress-lic/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "lily-s-202610291900-trivia-at-lily-s",
-   "title": "Trivia at Lily’s",
-   "category": "trivia",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Lily’s",
-    "address": "",
-    "neighborhood": "Astoria",
-    "lat": 40.763714,
-    "lng": -73.921562
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/lilys/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "other-half-brewing-co-gowanus-202610291900-trivia-at-other-half-brewing-co-gowanus",
-   "title": "Trivia at Other Half Brewing Co. — Gowanus",
-   "category": "trivia",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Other Half Brewing Co. — Gowanus",
-    "address": "",
-    "neighborhood": "Carroll Gardens",
-    "lat": 40.673809,
-    "lng": -73.999295
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/other-half-brewing/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "overlook-202610291900-trivia-at-overlook",
-   "title": "Trivia at Overlook",
-   "category": "trivia",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Overlook",
-    "address": "",
-    "neighborhood": "Midtown East",
-    "lat": 40.751691,
-    "lng": -73.972293
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/overlook/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "phoenix-bar-nyc-202610292000-trivia-at-phoenix-bar-nyc",
-   "title": "Trivia at Phoenix Bar NYC",
-   "category": "trivia",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Phoenix Bar NYC",
-    "address": "",
-    "neighborhood": "East Village",
-    "lat": 40.730016,
-    "lng": -73.981184
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/phoenix-bar/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "rockaway-brewing-co-202610292000-trivia-at-rockaway-brewing-co-",
-   "title": "Trivia at Rockaway Brewing Co.",
-   "category": "trivia",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Rockaway Brewing Co.",
-    "address": "",
-    "neighborhood": "Long Island City",
-    "lat": 40.747177,
-    "lng": -73.954912
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/rockaway-brewing-lic/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "rose-s-r-r-bar-202610291900-trivia-at-rose-s-r-r-bar",
-   "title": "Trivia at Rose’s R&R Bar",
-   "category": "trivia",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Rose’s R&R Bar",
-    "address": "",
-    "neighborhood": "Williamsburg",
-    "lat": 40.718979,
-    "lng": -73.945515
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/roses-bar/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "rossi-s-lounge-202610292000-trivia-at-rossi-s-lounge",
-   "title": "Trivia at Rossi’s Lounge",
-   "category": "trivia",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Rossi’s Lounge",
-    "address": "",
-    "neighborhood": "Williamsburg",
-    "lat": 40.710891,
-    "lng": -73.96782
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/rossis/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "sadie-s-ward-202610291900-trivia-at-sadie-s-ward",
-   "title": "Trivia at Sadie’s Ward",
-   "category": "trivia",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Sadie’s Ward",
-    "address": "",
-    "neighborhood": "LES",
-    "lat": 40.71627,
-    "lng": -73.987587
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/sadies-ward/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "the-skillman-202610291900-trivia-at-the-skillman",
-   "title": "Trivia at The Skillman",
-   "category": "trivia",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "The Skillman",
+    "name": "Sanger Hall",
     "address": "",
     "neighborhood": "Sunnyside",
-    "lat": 40.746403,
-    "lng": -73.918193
+    "lat": 40.746081,
+    "lng": -73.915443
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://nyctrivialeague.com/listings/the-skillman/",
+   "url": "https://nyctrivialeague.com/listings/sanger-hall-queens/",
    "tags": [],
    "publisher": {
     "id": "venue-nyc-trivia-league",
@@ -1577,196 +939,14 @@
    }
   },
   {
-   "id": "stretch-pizza-domino-park-202610292000-trivia-at-stretch-pizza-domino-park",
-   "title": "Trivia at Stretch Pizza — Domino Park",
+   "id": "singlecut-beersmiths-202610302000-trivia-at-singlecut-beersmiths",
+   "title": "Trivia at SingleCut Beersmiths",
    "category": "trivia",
-   "start": "2026-10-29T20:00:00-04:00",
+   "start": "2026-10-30T20:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "Stretch Pizza — Domino Park",
-    "address": "",
-    "neighborhood": "Williamsburg",
-    "lat": 40.713779,
-    "lng": -73.967322
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/stretch-pizza-williamsburg/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "tortoise-hare-202610291930-trivia-at-tortoise-hare",
-   "title": "Trivia at Tortoise & Hare",
-   "category": "trivia",
-   "start": "2026-10-29T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Tortoise & Hare",
-    "address": "",
-    "neighborhood": "The Bronx",
-    "lat": 40.894169,
-    "lng": -73.896758
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/tortoise-and-hare/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "clinton-hall-51st-st-202610291900-mixtape-bingo-at-clinton-hall-51st-st",
-   "title": "Mixtape Bingo at Clinton Hall 51st St",
-   "category": "trivia",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Clinton Hall 51st St",
-    "address": "",
-    "neighborhood": "Midtown",
-    "lat": 40.755744,
-    "lng": -73.969169
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/clinton-hall-51/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "dolly-s-202610292000-mixtape-bingo-at-dolly-s",
-   "title": "Mixtape Bingo at Dolly’s",
-   "category": "trivia",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Dolly’s",
-    "address": "",
-    "neighborhood": "Hell’s Kitchen",
-    "lat": 40.763056,
-    "lng": -73.98622
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/dollys/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "judy-punch-202610292000-mixtape-bingo-at-judy-punch",
-   "title": "Mixtape Bingo at Judy & Punch",
-   "category": "trivia",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Judy & Punch",
-    "address": "",
-    "neighborhood": "Astoria",
-    "lat": 40.765499,
-    "lng": -73.918813
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/judy-and-punch/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "oliver-s-202610292000-mixtape-bingo-at-oliver-s",
-   "title": "Mixtape Bingo at Oliver’s",
-   "category": "trivia",
-   "start": "2026-10-29T20:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Oliver’s",
-    "address": "",
-    "neighborhood": "Astoria",
-    "lat": 40.759588,
-    "lng": -73.919761
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/olivers-astoria-2/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "scrappleland-202610291900-mixtape-bingo-at-scrappleland",
-   "title": "Mixtape Bingo at Scrappleland",
-   "category": "trivia",
-   "start": "2026-10-29T19:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Scrappleland",
-    "address": "",
-    "neighborhood": "Greenpoint",
-    "lat": 40.728111,
-    "lng": -73.951248
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://nyctrivialeague.com/listings/scrappleland/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nyc-trivia-league",
-    "name": "NYC Trivia League",
-    "url": "https://nyctrivialeague.com/"
-   }
-  },
-  {
-   "id": "singlecut-queens-202610291930-mixtape-bingo-at-singlecut-queens",
-   "title": "Mixtape Bingo at SingleCut Queens",
-   "category": "trivia",
-   "start": "2026-10-29T19:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "SingleCut Queens",
+    "name": "SingleCut Beersmiths",
     "address": "",
     "neighborhood": "Astoria",
     "lat": 40.778301,
@@ -1785,10 +965,62 @@
    }
   },
   {
-   "id": "h0l0-202610292200-akata",
-   "title": "AKATA",
+   "id": "keg-lantern-brewing-202610301900-mixtape-bingo-at-keg-lantern-brewing",
+   "title": "Mixtape Bingo at Keg & Lantern Brewing",
+   "category": "trivia",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Keg & Lantern Brewing",
+    "address": "",
+    "neighborhood": "Red Hook",
+    "lat": 40.675726,
+    "lng": -74.015805
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://nyctrivialeague.com/listings/keg-lantern-brewing-co-red-hook/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nyc-trivia-league",
+    "name": "NYC Trivia League",
+    "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
+   "id": "pig-beach-queens-202610301900-mixtape-bingo-at-pig-beach-queens",
+   "title": "Mixtape Bingo at Pig Beach Queens",
+   "category": "trivia",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Pig Beach Queens",
+    "address": "",
+    "neighborhood": "Astoria",
+    "lat": 40.755105,
+    "lng": -73.92527
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://nyctrivialeague.com/listings/pig-beach-queens/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nyc-trivia-league",
+    "name": "NYC Trivia League",
+    "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
+   "id": "h0l0-202610302200-elsewhere-x-h0l0-machine-girl-5-yr-nyc-h",
+   "title": "Elsewhere x H0L0: Machine Girl 5 Yr NYC Halloween Anniversary Afterparty",
    "category": "nightlife",
-   "start": "2026-10-29T22:00:00-04:00",
+   "start": "2026-10-30T22:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -1800,9 +1032,9 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Ase Manual, Amarji King, JESSICUNT, UBABU",
+   "description": "Elsewhere Presents: Machine Girl @ H0L0 in Brooklyn on 10.30! Tickets start at $18 • 10:00pm • 21+ | Genre: House, Electronic",
    "details": "",
-   "url": "https://ra.co/events/2560167",
+   "url": "https://ra.co/events/2570933",
    "tags": [],
    "publisher": {
     "id": "venue-h0l0",
@@ -1811,10 +1043,62 @@
    }
   },
   {
-   "id": "public-records-202610291900-international-anthem-presents-jeremiah-c",
-   "title": "International Anthem presents Jeremiah Chiu – ‘Edge Conditions’ Album Release",
+   "id": "public-records-202610301730-unsound-new-york-listening-session-jim-o",
+   "title": "Unsound New York: Listening session: Jim O’Rourke and Eiko Ishibashi present ‘Kotonski Reworked’",
+   "category": "community",
+   "start": "2026-10-30T17:30:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Public Records",
+    "address": "233 Butler Street",
+    "neighborhood": "Gowanus",
+    "lat": 40.682176,
+    "lng": -73.98639
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Upstairs",
+   "details": "",
+   "url": "https://link.dice.fm/J6525df977dd",
+   "tags": [],
+   "publisher": {
+    "id": "venue-public-records",
+    "name": "Public Records",
+    "url": "https://publicrecords.nyc/"
+   }
+  },
+  {
+   "id": "public-records-202610301845-unsound-new-york-memoir-grief-music-matt",
+   "title": "Unsound New York: Memoir, Grief & Music: Matthew Schnipper in conversation with Emily Witt",
+   "category": "community",
+   "start": "2026-10-30T18:45:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Public Records",
+    "address": "233 Butler Street",
+    "neighborhood": "Gowanus",
+    "lat": 40.682176,
+    "lng": -73.98639
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Upstairs",
+   "details": "",
+   "url": "https://link.dice.fm/b6924d5d7e3f",
+   "tags": [],
+   "publisher": {
+    "id": "venue-public-records",
+    "name": "Public Records",
+    "url": "https://publicrecords.nyc/"
+   }
+  },
+  {
+   "id": "public-records-202610301900-shungu-faith-in-the-unknown-live-film-sc",
+   "title": "Shungu – FAITH IN THE UNKNOWN Live Film & Score, Ruqqiyah",
    "category": "music",
-   "start": "2026-10-29T19:00:00-04:00",
+   "start": "2026-10-30T19:00:00-04:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -1828,7 +1112,7 @@
    "priceUnknown": true,
    "description": "Sound Room",
    "details": "",
-   "url": "https://link.dice.fm/Kb1f10e60ca5",
+   "url": "https://link.dice.fm/Nf5461b24901",
    "tags": [],
    "publisher": {
     "id": "venue-public-records",
@@ -1837,29 +1121,55 @@
    }
   },
   {
-   "id": "the-cooper-union-202610291830-the-diane-lewis-student-lecture-series-c",
-   "title": "The Diane Lewis Student Lecture Series | Christine Chang: Dialogue as Method — Objects,Thresholds & Off-Modern Ruins",
-   "category": "community",
-   "start": "2026-10-29T18:30:00-04:00",
-   "end": "2026-10-29T20:30:00-04:00",
+   "id": "public-records-202610302300-mark-broom-julia-govor-blue-hour-neel-ya",
+   "title": "Mark Broom, Julia Govor / Blue Hour, Neel / Yasmeenah",
+   "category": "nightlife",
+   "start": "2026-10-30T23:00:00-04:00",
+   "end": null,
    "allDay": false,
    "venue": {
-    "name": "The Cooper Union",
-    "address": "7 East 7th Street",
-    "neighborhood": "East Village",
-    "lat": 40.729377,
-    "lng": -73.99043
+    "name": "Public Records",
+    "address": "233 Butler Street",
+    "neighborhood": "Gowanus",
+    "lat": 40.682176,
+    "lng": -73.98639
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Sound Room",
+   "details": "",
+   "url": "https://link.dice.fm/Mf0c017f534f",
+   "tags": [],
+   "publisher": {
+    "id": "venue-public-records",
+    "name": "Public Records",
+    "url": "https://publicrecords.nyc/"
+   }
+  },
+  {
+   "id": "kingsland-homestead-202610301900-bill-blyer-presents-long-island-and-the-",
+   "title": "Bill Blyer Presents Long Island and The Civil War",
+   "category": "community",
+   "start": "2026-10-30T19:00:00-04:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Kingsland Homestead",
+    "address": "143-35 37th Avenue",
+    "neighborhood": "Flushing",
+    "lat": 40.763622,
+    "lng": -73.824159
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://cooper.edu/events-and-exhibitions/events/diane-lewis-student-lecture-series-christine-chang-dialogue-method",
+   "url": "https://queenshistoricalsociety.org/events/bill-blyer-presents-long-island-and-the-civil-war/",
    "tags": [],
    "publisher": {
-    "id": "venue-the-cooper-union",
-    "name": "The Cooper Union",
-    "url": "https://cooper.edu/events-and-exhibitions/events"
+    "id": "venue-kingsland-homestead",
+    "name": "Kingsland Homestead",
+    "url": "https://queenshistoricalsociety.org/visit/events"
    }
   }
  ],
