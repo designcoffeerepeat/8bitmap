@@ -33,8 +33,8 @@ const REDUCED_MOTION = window.matchMedia?.('(prefers-reduced-motion: reduce)').m
 
 const NEON = ['#ff5c8a', '#4dd2ff', '#ffd23f', '#7cf07c'];
 const SPARKLE = ['#ffffff', '#e8eef9', '#c5d6f2', '#4dd2ff', '#ff5c8a', '#ffd23f'];
-const NIGHT = '#000000';
-const COIN = '#ff8800';
+const NIGHT = '#0c0112';
+const COIN = '#ffb700';
 
 // 3 x 5 pixel letters for the small billboard faces
 const GLYPHS = {

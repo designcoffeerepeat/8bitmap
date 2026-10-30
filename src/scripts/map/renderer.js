@@ -1285,7 +1285,7 @@ function makePinTexture(catHex, state, icon = null) {
   // the whole pin wears its category colour; a selected pin gets a dark eye of the same colour
   const body = catHex;
   const shade = '#' + color(catHex).multiplyScalar(0.7).getHexString();
-  const outline = state === 'idle' ? '#000000' : '#ffffff';
+  const outline = state === 'idle' ? '#0c0112' : '#ffffff';
   const fills = { X: outline, R: body, D: shade, C: state === 'selected' ? '#' + color(catHex).multiplyScalar(0.4).getHexString() : body };
   PIN.forEach((line, y) => {
     [...line].forEach((ch, x) => {
@@ -1295,7 +1295,7 @@ function makePinTexture(catHex, state, icon = null) {
     });
   });
   if (icon) {
-    ctx.fillStyle = '#000000';
+    ctx.fillStyle = '#0c0112';
     icon.forEach((line, y) => [...line].forEach((ch, x) => ch === '#' && ctx.fillRect((x + 4 + pad) * scale, (y + 4 + pad) * scale, scale, scale)));
   }
   if (state !== 'idle') {
@@ -1307,7 +1307,7 @@ function makePinTexture(catHex, state, icon = null) {
       for (let x = 0; x < cv.width; x++) {
         const k = (y * cv.width + x) * 4;
         if (!a(x, y) && (a(x + 1, y) || a(x - 1, y) || a(x, y + 1) || a(x, y - 1))) {
-          out.data[k] = 0; out.data[k + 1] = 0; out.data[k + 2] = 0; out.data[k + 3] = 255;
+          out.data[k] = 12; out.data[k + 1] = 1; out.data[k + 2] = 18; out.data[k + 3] = 255;
         }
       }
     }
@@ -1334,7 +1334,7 @@ function makeLabelTexture(text, water) {
   ctx.textBaseline = 'top';
   ctx.imageSmoothingEnabled = false;
   const fg = water ? '#e9fbff' : '#ffffff';
-  const bg = water ? '#2a7fa8' : '#000000';
+  const bg = water ? '#2a7fa8' : '#0c0112';
   // hard 1px outline, drawn by offsetting the text in 8 directions
   ctx.fillStyle = bg;
   // lines are centred; a single line fills the canvas exactly as before
