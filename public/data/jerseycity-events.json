@@ -4,8 +4,34 @@
   "url": "https://jerseycityculture.org/events/calendar/"
  },
  "date": "2026-10-30",
- "fetchedAt": "2026-10-30T05:31:31-04:00",
+ "fetchedAt": "2026-10-30T13:13:38-04:00",
  "events": [
+  {
+   "id": "jc-jersey-city-hall-202610300900-toy-drive-donations",
+   "title": "Toy Drive Donations",
+   "category": "community",
+   "start": "2026-10-30T09:00:00-04:00",
+   "end": "2026-10-30T17:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Jersey City Hall",
+    "address": "280 Grove St, Jersey City, NJ",
+    "neighborhood": "Jersey City",
+    "lat": 40.7178,
+    "lng": -74.0435
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://jerseycityculture.org/event/toy-drive-donations-2026/2026-10-30/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-jersey-city-culture",
+    "name": "Jersey City Culture",
+    "url": "https://jerseycityculture.org/events/calendar/"
+   }
+  },
   {
    "id": "jc-art-house-productions-202610302000-night-of-the-living-dead",
    "title": "Night of the Living Dead",
