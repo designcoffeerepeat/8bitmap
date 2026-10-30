@@ -435,7 +435,7 @@ and the same show listed on several sites is merged by title, venue and start ti
   (`src/scripts/new-year.js`). `?nye=90` sets the clock 90 seconds before midnight to try it.
 - Zoomers: the easter egg characters that appear when the map is zoomed all the way in on their spot
   (`src/scripts/zoomers/`): Times Square's caped hero, masked wrestler, orange furry character and tourists; the subway dancers
-  on a train over the Manhattan Bridge; Bill Cunningham on the plaza by Central Park South; the two guys on beach chairs in McCarren Park; the giant pigeon at the Museum of the Moving Image; and the Staten Island Ferry, which sails all day. `kit.js` builds the voxel people, walk cycles and
+  on a train over the Manhattan Bridge; a cyclist on the plaza by Central Park South; the two guys on beach chairs in McCarren Park; the giant pigeon at the Museum of the Moving Image; and the Staten Island Ferry, which sails all day. `kit.js` builds the voxel people, walk cycles and
   speech bubbles, and shows a Zoomer as a pale ghost where a building hides it. A new Zoomer is a `start(map, spot)`
   that returns `{ step(dt), dispose() }`, hooked up with `zoomer()` or `watchZoomEgg`.
 - `?at=lat,lng,zoom` in the address opens the map on that spot, e.g. `/?at=40.7499,-73.8467,3.5` for the US Open.

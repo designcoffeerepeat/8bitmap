@@ -16,7 +16,7 @@ Worker were then taken down. The `aul` branch is kept as is, so its last state (
   New Year's Eve countdown, ball drop and fireworks; security wait pins over JFK, LaGuardia and Newark.
 - aul v5: the red TKTS steps back in Times Square, and the first Zoomers (easter egg characters at full zoom):
   Times Square performers and tourists, the woman in green in Carroll Gardens, the subway dancers on the Manhattan
-  Bridge, Bill Cunningham, the Rent Is Too Damn High guy, the hero in Hunters Point, the McCarren Park pair, the
+  Bridge, a cyclist, the Rent Is Too Damn High guy, the hero in Hunters Point, the McCarren Park pair, the
   Staten Island Ferry, and the big yellow bird and brown elephant at the Museum of the Moving Image.
 - aul v6: Zoomers draw solid, with no white skeleton showing through.
 

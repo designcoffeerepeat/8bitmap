@@ -1,5 +1,5 @@
 // Zoomers out on the street, each starting when the map sits zoomed all the way in on its spot:
-//   The plaza by Central Park South, beside the park's pool: Bill Cunningham in his blue jacket rides his bike and stops to take photos.
+//   The plaza by Central Park South, beside the park's pool: a cyclist in a green jacket and red beanie rides back and forth and stops to wave.
 //   McCarren Park: a guy in a black cap and a blonde guy in sunglasses on beach chairs share a can of soda back and forth.
 //   Museum of the Moving Image: a giant pigeon struts around outside.
 
@@ -10,7 +10,7 @@ import { kit, person, standPose, sitPose, loop, openSpot, VOX, STRIDE, WALK } fr
 
 export function initStreetZoomers(map) {
   // on the light plaza paving south of Central Park, beside the park's pool, between the towers
-  near(map, 40.7647, -73.9791, billCunningham, { paved: true });
+  near(map, 40.7647, -73.9791, cyclist, { paved: true });
   const park = latLngToWorld(40.7212, -73.9512);
   at(map, { pos: new THREE.Vector3(park.x, map.groundAt(park.x, park.z), park.z) }, mccarren);
   near(map, 40.7563, -73.9239, movingImage);
@@ -42,8 +42,8 @@ function stage(map, spot) {
 // a local point on a stage, in world units
 const v = (x, z, y = 0) => new THREE.Vector3(x, y, z);
 
-// ---- Bill Cunningham -----------------------------------------------------------------------------
-function billCunningham(map, spot) {
+// ---- Cyclist -------------------------------------------------------------------------------------
+function cyclist(map, spot) {
   const k = kit();
   const root = new THREE.Group();
   map.world.add(root);
@@ -65,19 +65,16 @@ function billCunningham(map, spot) {
   k.box(bike, 0.3, 1.8, 0.3, 0, 3.6, 1.8, '#3a3a42'); // stem
   k.box(bike, 2.4, 0.3, 0.3, 0, 4.5, 1.8, '#1d1d22'); // handlebars
   k.box(bike, 1.4, 1, 1.2, 0, 4.1, 2.4, '#8a5a32'); // basket
-  const bill = person(k, { skin: '#f0c9a8', top: '#3b6fd1', bottom: '#c8b58a', shoe: '#2b2b30', hair: '#f4f4f2' });
-  bill.root.position.set(0, 1.4 * VOX, -1.2 * VOX);
-  root.add(bill.root);
-  k.box(bill.arms[1].userData.hand, 1, 0.7, 0.7, 0, 0.1, 0.3, '#1d1d22');
-  const flash = k.box(bill.arms[1].userData.hand, 0.5, 0.3, 0.2, 0, 0.15, 0.72, '#ffffff', true);
-  flash.visible = false;
+  const rider = person(k, { skin: '#8d5a3b', top: '#3f9e5a', bottom: '#26262c', shoe: '#2b2b30', hair: '#1d1d22', hat: 'beanie', hatColor: '#d8452f' });
+  rider.root.position.set(0, 1.4 * VOX, -1.2 * VOX);
+  root.add(rider.root);
 
   const RIDE = 3.2; // seconds per ride from end to end
-  const SNAP = 2.2; // seconds stopped for a photo
+  const STOP = 2.2; // seconds stopped to wave
   let t = 0;
   function step(dt) {
     t += dt;
-    const lap = RIDE + SNAP;
+    const lap = RIDE + STOP;
     const n = Math.floor(t / lap);
     const u = t % lap;
     const a = ends[n % 2];
@@ -86,23 +83,20 @@ function billCunningham(map, spot) {
     const riding = u < RIDE;
     root.position.lerpVectors(a, b, riding ? THREE.MathUtils.smoothstep(u, 0, RIDE) : 1);
     root.rotation.y = heading;
-    standPose(bill);
+    standPose(rider);
     const pedal = t * 7;
-    bill.legs[0].rotation.x = -1.2 + Math.sin(pedal) * (riding ? 0.5 : 0);
-    bill.legs[1].rotation.x = -1.2 - Math.sin(pedal) * (riding ? 0.5 : 0);
-    bill.hips.position.y = 3;
+    rider.legs[0].rotation.x = -1.2 + Math.sin(pedal) * (riding ? 0.5 : 0);
+    rider.legs[1].rotation.x = -1.2 - Math.sin(pedal) * (riding ? 0.5 : 0);
+    rider.hips.position.y = 3;
     if (riding) {
-      bill.upper.rotation.x = 0.35;
-      bill.arms[0].rotation.x = -1.1;
-      bill.arms[1].rotation.x = -1.1;
-      flash.visible = false;
+      rider.upper.rotation.x = 0.35;
+      rider.arms[0].rotation.x = -1.1;
+      rider.arms[1].rotation.x = -1.1;
     } else {
-      // turn to a passer-by and take the shot
-      bill.upper.rotation.set(0, 0.9, 0);
-      bill.arms[1].rotation.set(-Math.PI / 2 - 0.4, 0, 0.4);
-      bill.arms[0].rotation.set(-Math.PI / 2 - 0.4, 0, -0.4);
-      const s = u - RIDE;
-      flash.visible = s > 1 && s < 1.15;
+      // turn to a passer-by and wave
+      rider.upper.rotation.set(0, 0.9, 0);
+      rider.arms[0].rotation.set(-1.1, 0, 0);
+      rider.arms[1].rotation.set(-Math.PI + 0.2, 0, 0.3 + Math.sin((u - RIDE) * 10) * 0.35);
     }
   }
   step(0);
