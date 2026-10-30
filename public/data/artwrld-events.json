@@ -4,7 +4,7 @@
   "url": "https://www.artwrld.com/city/new-york/openings"
  },
  "date": "2026-10-30",
- "fetchedAt": "2026-10-30T05:30:31-04:00",
+ "fetchedAt": "2026-10-30T13:18:34-04:00",
  "events": [
   {
    "id": "89466",
@@ -283,7 +283,7 @@
    ]
   },
   {
-   "id": "88177",
+   "id": "89684",
    "title": "Sung Jang: Shape of Land",
    "category": "art",
    "start": "2026-10-30T00:00:00-04:00",
@@ -393,29 +393,6 @@
    "description": "Exhibition opening, on view until Dec 19",
    "details": "",
    "url": "https://www.artwrld.com/exhibit/grace-carney-to-the-bone-ppow",
-   "tags": [
-    "opening"
-   ]
-  },
-  {
-   "id": "88857",
-   "title": "Mickey Aloisio: Paul Plays Harry",
-   "category": "art",
-   "start": "2026-10-30T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Ptolemy",
-    "address": "",
-    "neighborhood": "Queens",
-    "lat": 40.70358,
-    "lng": -73.886
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Exhibition opening, on view until Nov 29",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/mickey-aloisio-paul-plays-harry",
    "tags": [
     "opening"
    ]
@@ -651,7 +628,7 @@
    ]
   },
   {
-   "id": "88383",
+   "id": "89681",
    "title": "Rainbow Room",
    "category": "art",
    "start": "2026-10-30T18:00:00-04:00",
@@ -715,6 +692,29 @@
    "description": "Exhibition opening, on view until Dec 12",
    "details": "",
    "url": "https://www.artwrld.com/exhibit/999",
+   "tags": [
+    "opening"
+   ]
+  },
+  {
+   "id": "89688",
+   "title": "Mickey Aloisio: Paul Plays Harry",
+   "category": "art",
+   "start": "2026-10-30T18:30:00-04:00",
+   "end": "2026-10-30T20:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Ptolemy",
+    "address": "",
+    "neighborhood": "Queens",
+    "lat": 40.70358,
+    "lng": -73.886
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Exhibition opening, on view until Nov 29",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/mickey-aloisio-paul-plays-harry",
    "tags": [
     "opening"
    ]

@@ -4,7 +4,7 @@
   "url": "https://data.cityofnewyork.us/d/tvpp-9vvx"
  },
  "date": "2026-10-31",
- "fetchedAt": "2026-10-30T05:43:47-04:00",
+ "fetchedAt": "2026-10-30T13:22:48-04:00",
  "events": [
   {
    "id": "972601",
@@ -490,6 +490,29 @@
    ]
   },
   {
+   "id": "972696",
+   "title": "Harlem Grown Haunted Harvest Festival",
+   "category": "community",
+   "start": "2026-10-31T10:00:00-04:00",
+   "end": "2026-10-31T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "West 134 Street",
+    "address": "West 134 Street Between Lenox Avenue And 7 Avenue",
+    "neighborhood": "Manhattan",
+    "lat": 40.813897,
+    "lng": -73.941523
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
+   ]
+  },
+  {
    "id": "983503",
    "title": "Steinway Halloween Parade for Tots",
    "category": "community",
@@ -533,29 +556,6 @@
    "url": null,
    "tags": [
     "Plaza Partner Event"
-   ]
-  },
-  {
-   "id": "972696",
-   "title": "Harlem Grown Haunted Harvest Festival",
-   "category": "community",
-   "start": "2026-10-31T10:00:00-04:00",
-   "end": "2026-10-31T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "West 134 Street",
-    "address": "West 134 Street Between Lenox Avenue And 7 Avenue",
-    "neighborhood": "Manhattan",
-    "lat": 40.813897,
-    "lng": -73.941523
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
    ]
   },
   {
@@ -605,52 +605,6 @@
    ]
   },
   {
-   "id": "974809",
-   "title": "14th Annual Miss Abbies Childrens Halloween Extravaganza",
-   "category": "community",
-   "start": "2026-10-31T11:00:00-04:00",
-   "end": "2026-10-31T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Decatur Avenue",
-    "address": "Decatur Avenue Between East Fordham Road And East 193 Street",
-    "neighborhood": "Bronx",
-    "lat": 40.862127,
-    "lng": -73.89192
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "979644",
-   "title": "The CORE FEC Trick-Or-Streets",
-   "category": "community",
-   "start": "2026-10-31T11:00:00-04:00",
-   "end": "2026-10-31T15:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Manor Avenue - East 172 Street To Westchester Avenue",
-    "address": "Manor Avenue - East 172 Street To Westchester Avenue: Manor Avenue - East 172 Street To Westchester Avenue",
-    "neighborhood": "Bronx",
-    "lat": 40.831787,
-    "lng": -73.876789
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Open Street Partner Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Open Street Partner Event"
-   ]
-  },
-  {
    "id": "972732",
    "title": "Immigration Fair: Dia de Muertos",
    "category": "community",
@@ -697,18 +651,18 @@
    ]
   },
   {
-   "id": "978797",
-   "title": "Fall Festival of Diasporas: Gleane Street Trick-Or-Streets",
+   "id": "974809",
+   "title": "14th Annual Miss Abbies Childrens Halloween Extravaganza",
    "category": "community",
    "start": "2026-10-31T11:00:00-04:00",
-   "end": "2026-10-31T21:00:00-04:00",
+   "end": "2026-10-31T17:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Gleane Street",
-    "address": "Gleane Street Between Baxter Avenue And Britton Avenue",
-    "neighborhood": "Queens",
-    "lat": 40.747437,
-    "lng": -73.88234
+    "name": "Decatur Avenue",
+    "address": "Decatur Avenue Between East Fordham Road And East 193 Street",
+    "neighborhood": "Bronx",
+    "lat": 40.862127,
+    "lng": -73.89192
    },
    "price": null,
    "priceUnknown": false,
@@ -717,6 +671,29 @@
    "url": null,
    "tags": [
     "Street Event"
+   ]
+  },
+  {
+   "id": "979644",
+   "title": "The CORE FEC Trick-Or-Streets",
+   "category": "community",
+   "start": "2026-10-31T11:00:00-04:00",
+   "end": "2026-10-31T15:30:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Manor Avenue - East 172 Street To Westchester Avenue",
+    "address": "Manor Avenue - East 172 Street To Westchester Avenue: Manor Avenue - East 172 Street To Westchester Avenue",
+    "neighborhood": "Bronx",
+    "lat": 40.831787,
+    "lng": -73.876789
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Open Street Partner Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Open Street Partner Event"
    ]
   },
   {
@@ -766,6 +743,29 @@
    ]
   },
   {
+   "id": "978797",
+   "title": "Fall Festival of Diasporas: Gleane Street Trick-Or-Streets",
+   "category": "community",
+   "start": "2026-10-31T11:00:00-04:00",
+   "end": "2026-10-31T21:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Gleane Street",
+    "address": "Gleane Street Between Baxter Avenue And Britton Avenue",
+    "neighborhood": "Queens",
+    "lat": 40.747437,
+    "lng": -73.88234
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
+   ]
+  },
+  {
    "id": "963356",
    "title": "2026 Halloween Parade",
    "category": "community",
@@ -809,6 +809,29 @@
    "url": null,
    "tags": [
     "Plaza Event"
+   ]
+  },
+  {
+   "id": "977997",
+   "title": "42nd Council District Deputy Leader Council Member Chris Banks Annual Trick A Trunk Event 2026",
+   "category": "community",
+   "start": "2026-10-31T12:00:00-04:00",
+   "end": "2026-10-31T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Vermont Street",
+    "address": "Vermont Street Between Linden Boulevard And Stanley Avenue",
+    "neighborhood": "Brooklyn",
+    "lat": 40.659627,
+    "lng": -73.889932
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
    ]
   },
   {
@@ -881,98 +904,6 @@
    ]
   },
   {
-   "id": "980244",
-   "title": "Trick or Streets - Amsterdam Open Streets",
-   "category": "community",
-   "start": "2026-10-31T12:00:00-04:00",
-   "end": "2026-10-31T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Amsterdam Avenue",
-    "address": "Amsterdam Avenue Between West 106 Street And Cathedral Parkway",
-    "neighborhood": "Manhattan",
-    "lat": 40.801216,
-    "lng": -73.965755
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "923907",
-   "title": "Little Caribbean Night Market",
-   "category": "food",
-   "start": "2026-10-31T12:00:00-04:00",
-   "end": "2026-10-31T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Washington Empire Plaza",
-    "address": "Washington Empire Plaza: Washington Empire Plaza Washington Avenue Between Empire Boulevard And Sterling Street",
-    "neighborhood": "Brooklyn",
-    "lat": 40.663613,
-    "lng": -73.960775
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Plaza Partner Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Plaza Partner Event"
-   ]
-  },
-  {
-   "id": "980654",
-   "title": "Throggs Neck Halloween Parade",
-   "category": "community",
-   "start": "2026-10-31T12:00:00-04:00",
-   "end": "2026-10-31T13:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "2962 Harding Avenue, Harding Avenue",
-    "address": "2962 Harding Avenue, Harding Avenue Between Throgs Neck Boulevard And Hollywood Avenue, Harding Avenue Between Hollywood Avenue And East Tremont Avenue, East Tremont Avenue Between Harding Avenue And Sampson Avenue, Sampson Avenue Between East Tremont Avenue And Cross Bronx Service Road South, Cross Bronx Service Road South Between Sampson Avenue And Throgs Neck Blvd, Throgs Neck Boulevard Between Cross Bronx Expressway South And Harding Ave, Harding Avenue Between Throgs Neck Boulevard And Hollywood Avenue",
-    "neighborhood": "Bronx",
-    "lat": 40.816127,
-    "lng": -73.812989
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Parade",
-   "details": "Permit from Police Department.",
-   "url": null,
-   "tags": [
-    "Parade"
-   ]
-  },
-  {
-   "id": "977997",
-   "title": "42nd Council District Deputy Leader Council Member Chris Banks Annual Trick A Trunk Event 2026",
-   "category": "community",
-   "start": "2026-10-31T12:00:00-04:00",
-   "end": "2026-10-31T18:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Vermont Street",
-    "address": "Vermont Street Between Linden Boulevard And Stanley Avenue",
-    "neighborhood": "Brooklyn",
-    "lat": 40.659627,
-    "lng": -73.889932
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
    "id": "978441",
    "title": "Fete O Ween",
    "category": "community",
@@ -1019,6 +950,52 @@
    ]
   },
   {
+   "id": "980244",
+   "title": "Trick or Streets - Amsterdam Open Streets",
+   "category": "community",
+   "start": "2026-10-31T12:00:00-04:00",
+   "end": "2026-10-31T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Amsterdam Avenue",
+    "address": "Amsterdam Avenue Between West 106 Street And Cathedral Parkway",
+    "neighborhood": "Manhattan",
+    "lat": 40.801216,
+    "lng": -73.965755
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
+   ]
+  },
+  {
+   "id": "923907",
+   "title": "Little Caribbean Night Market",
+   "category": "food",
+   "start": "2026-10-31T12:00:00-04:00",
+   "end": "2026-10-31T18:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Washington Empire Plaza",
+    "address": "Washington Empire Plaza: Washington Empire Plaza Washington Avenue Between Empire Boulevard And Sterling Street",
+    "neighborhood": "Brooklyn",
+    "lat": 40.663613,
+    "lng": -73.960775
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Plaza Partner Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Plaza Partner Event"
+   ]
+  },
+  {
    "id": "960288",
    "title": "Halloween 2026",
    "category": "community",
@@ -1062,6 +1039,29 @@
    "url": null,
    "tags": [
     "Street Event"
+   ]
+  },
+  {
+   "id": "980654",
+   "title": "Throggs Neck Halloween Parade",
+   "category": "community",
+   "start": "2026-10-31T12:00:00-04:00",
+   "end": "2026-10-31T13:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "2962 Harding Avenue, Harding Avenue",
+    "address": "2962 Harding Avenue, Harding Avenue Between Throgs Neck Boulevard And Hollywood Avenue, Harding Avenue Between Hollywood Avenue And East Tremont Avenue, East Tremont Avenue Between Harding Avenue And Sampson Avenue, Sampson Avenue Between East Tremont Avenue And Cross Bronx Service Road South, Cross Bronx Service Road South Between Sampson Avenue And Throgs Neck Blvd, Throgs Neck Boulevard Between Cross Bronx Expressway South And Harding Ave, Harding Avenue Between Throgs Neck Boulevard And Hollywood Avenue",
+    "neighborhood": "Bronx",
+    "lat": 40.816127,
+    "lng": -73.812989
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Parade",
+   "details": "Permit from Police Department.",
+   "url": null,
+   "tags": [
+    "Parade"
    ]
   },
   {
@@ -1134,29 +1134,6 @@
    ]
   },
   {
-   "id": "968190",
-   "title": "Halloween @ The Square 2026",
-   "category": "community",
-   "start": "2026-10-31T13:00:00-04:00",
-   "end": "2026-10-31T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "St Raymond Avenue",
-    "address": "St Raymond Avenue Between Benson Street And East Tremont Avenue",
-    "neighborhood": "Bronx",
-    "lat": 40.842661,
-    "lng": -73.84634
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
    "id": "974307",
    "title": "Halloween Doggy Day Hike",
    "category": "community",
@@ -1180,6 +1157,29 @@
    ]
   },
   {
+   "id": "968190",
+   "title": "Halloween @ The Square 2026",
+   "category": "community",
+   "start": "2026-10-31T13:00:00-04:00",
+   "end": "2026-10-31T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "St Raymond Avenue",
+    "address": "St Raymond Avenue Between Benson Street And East Tremont Avenue",
+    "neighborhood": "Bronx",
+    "lat": 40.842661,
+    "lng": -73.84634
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
+   ]
+  },
+  {
    "id": "973015",
    "title": "Trick or Streets Open Streets",
    "category": "community",
@@ -1192,29 +1192,6 @@
     "neighborhood": "Brooklyn",
     "lat": 40.693598,
     "lng": -73.998219
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
-   "id": "980163",
-   "title": "E8th St Halloween Event",
-   "category": "community",
-   "start": "2026-10-31T13:00:00-04:00",
-   "end": "2026-10-31T15:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "East 8 Street",
-    "address": "East 8 Street Between Caton Place And Ocean Parkway",
-    "neighborhood": "Brooklyn",
-    "lat": 40.649517,
-    "lng": -73.973795
    },
    "price": null,
    "priceUnknown": false,
@@ -1246,6 +1223,29 @@
    "url": null,
    "tags": [
     "Special Event"
+   ]
+  },
+  {
+   "id": "980163",
+   "title": "E8th St Halloween Event",
+   "category": "community",
+   "start": "2026-10-31T13:00:00-04:00",
+   "end": "2026-10-31T15:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "East 8 Street",
+    "address": "East 8 Street Between Caton Place And Ocean Parkway",
+    "neighborhood": "Brooklyn",
+    "lat": 40.649517,
+    "lng": -73.973795
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
    ]
   },
   {
@@ -1341,29 +1341,6 @@
    ]
   },
   {
-   "id": "970088",
-   "title": "2026 Tashane Way Foundations Trunk or Treat",
-   "category": "community",
-   "start": "2026-10-31T14:00:00-04:00",
-   "end": "2026-10-31T17:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Forest Avenue",
-    "address": "Forest Avenue Between East 156 Street And Westchester Avenue",
-    "neighborhood": "Bronx",
-    "lat": 40.818894,
-    "lng": -73.905397
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "Street Event",
-   "details": "Permit from Street Activity Permit Office.",
-   "url": null,
-   "tags": [
-    "Street Event"
-   ]
-  },
-  {
    "id": "962870",
    "title": "Movies in the Park at Halloween on the Waterfront",
    "category": "community",
@@ -1387,18 +1364,18 @@
    ]
   },
   {
-   "id": "978715",
-   "title": "2026 Halloween Spook-tacular Trick or Treating",
+   "id": "970088",
+   "title": "2026 Tashane Way Foundations Trunk or Treat",
    "category": "community",
    "start": "2026-10-31T14:00:00-04:00",
-   "end": "2026-10-31T19:00:00-04:00",
+   "end": "2026-10-31T17:00:00-04:00",
    "allDay": false,
    "venue": {
-    "name": "Hart Street",
-    "address": "Hart Street Between Wyckoff Avenue And St Nicholas Avenue",
-    "neighborhood": "Brooklyn",
-    "lat": 40.703271,
-    "lng": -73.92055
+    "name": "Forest Avenue",
+    "address": "Forest Avenue Between East 156 Street And Westchester Avenue",
+    "neighborhood": "Bronx",
+    "lat": 40.818894,
+    "lng": -73.905397
    },
    "price": null,
    "priceUnknown": false,
@@ -1430,6 +1407,29 @@
    "url": null,
    "tags": [
     "Special Event"
+   ]
+  },
+  {
+   "id": "978715",
+   "title": "2026 Halloween Spook-tacular Trick or Treating",
+   "category": "community",
+   "start": "2026-10-31T14:00:00-04:00",
+   "end": "2026-10-31T19:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hart Street",
+    "address": "Hart Street Between Wyckoff Avenue And St Nicholas Avenue",
+    "neighborhood": "Brooklyn",
+    "lat": 40.703271,
+    "lng": -73.92055
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "Street Event",
+   "details": "Permit from Street Activity Permit Office.",
+   "url": null,
+   "tags": [
+    "Street Event"
    ]
   },
   {
@@ -2089,14 +2089,6 @@
    "address": "NOSTRAND AVENUE between FLATBUSH AVENUE and GLENWOOD ROAD"
   },
   {
-   "title": "Trick-or-Streets Signature event: James Baldwin Plaza, The Bronx",
-   "address": "James Baldwin Plaza: James Baldwin Plaza Goulden Avenue between Mosholu Parkway and W Mosholu Parkway"
-  },
-  {
-   "title": "VILLAGE FALL FAIR",
-   "address": "BROADWAY between EAST    8 STREET and EAST   14 STREET"
-  },
-  {
    "title": "Lume Sampling",
    "address": "BROADWAY between EAST HOUSTON STREET and PRINCE STREET"
   },
@@ -2107,6 +2099,14 @@
   {
    "title": "Toddler Halloween class gathering",
    "address": "Chelsea Green Park: Plaza Gathering Space"
+  },
+  {
+   "title": "Trick-or-Streets Signature event: James Baldwin Plaza, The Bronx",
+   "address": "James Baldwin Plaza: James Baldwin Plaza Goulden Avenue between Mosholu Parkway and W Mosholu Parkway"
+  },
+  {
+   "title": "VILLAGE FALL FAIR",
+   "address": "BROADWAY between EAST    8 STREET and EAST   14 STREET"
   },
   {
    "title": "Community Halloween Event",
@@ -2157,36 +2157,36 @@
    "address": "Dr. Charles R. (Drew Park): Dr. Charles R. (Drew Park)   ,Dr. Charles R. (Drew Park): Baseball-01 ,Dr. Charles R. (Drew Park): Softball-02"
   },
   {
-   "title": "Trick-or-Streets: Halloween on Hoyt Street",
-   "address": "HOYT STREET between ATLANTIC AVENUE and STATE STREET"
+   "title": "BAMboo 2026",
+   "address": "LAFAYETTE AVENUE between SAINT FELIX STREET and ASHLAND PLACE"
   },
   {
-   "title": "Halloween on Myrtle",
-   "address": "71st Avenue Plaza: Herman Hochberg Plaza 71 Avenue between Myrtle Avenue and Stephen Street"
+   "title": "Trick-or-Streets: Halloween on Hoyt Street",
+   "address": "HOYT STREET between ATLANTIC AVENUE and STATE STREET"
   },
   {
    "title": "Trick-or-Streets Fall Fest",
    "address": "EAST   19 STREET between SHORE PARKWAY and EMMONS AVENUE"
   },
   {
-   "title": "BAMboo 2026",
-   "address": "LAFAYETTE AVENUE between SAINT FELIX STREET and ASHLAND PLACE"
-  },
-  {
    "title": "Costume Carnival",
    "address": "THIRD AVENUE between EAST 134 STREET and BRUCKNER BOULEVARD"
+  },
+  {
+   "title": "Halloween on Myrtle",
+   "address": "71st Avenue Plaza: Herman Hochberg Plaza 71 Avenue between Myrtle Avenue and Stephen Street"
   },
   {
    "title": "Bed-Stuy Gateway Trick or Streets",
    "address": "MARCY AVENUE between MAC DONOUGH STREET and FULTON STREET"
   },
   {
-   "title": "Bed-Stuy Gateway BID Trick or Street",
-   "address": "Marcy Avenue Plaza: Marcy Avenue Plaza Marcy Avenue between Fulton Street and Macdonough Street"
-  },
-  {
    "title": "All Angels Hallowfest Event",
    "address": "WEST   80 STREET between BROADWAY and WEST END AVENUE"
+  },
+  {
+   "title": "Bed-Stuy Gateway BID Trick or Street",
+   "address": "Marcy Avenue Plaza: Marcy Avenue Plaza Marcy Avenue between Fulton Street and Macdonough Street"
   },
   {
    "title": "Trunk or Treat",
