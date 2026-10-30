@@ -203,7 +203,7 @@ export function initSubway(map) {
     const pts = Object.values(SUBWAY.stations ?? {}).map(([, lat, lng]) => [lat, lng]);
     if (!pts.length) return;
     ops.push(() => {
-      map.addOverlayPoints(pts, { color: '#1d2340', size: 4, order: 2 });
+      map.addOverlayPoints(pts, { color: '#000000', size: 4, order: 2 });
       map.addOverlayPoints(pts, { color: '#ffffff', size: 2, order: 2.5 });
     });
     ops.at(-1)();

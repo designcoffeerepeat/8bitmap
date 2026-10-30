@@ -1,7 +1,7 @@
 // One palette for the whole city, borrowed from 16-bit overworld maps:
 // pastel towers, sandy shores, bright bay water.
 export const PALETTE = {
-  sky: '#1d2340',
+  sky: '#000000',
   water: ['#4fb8dc', '#57c0e2'],
   waterShore: '#8ddcf0',
   land: { manhattan: '#f5efe2', bronx: '#f5efe2', li: '#f5efe2', nj: '#f5efe2', island: '#f5efe2' },

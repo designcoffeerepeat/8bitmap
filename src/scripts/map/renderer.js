@@ -760,10 +760,10 @@ function place(mesh, idx, x, y, z, sx, sy, sz, hex, rotY = 0) {
 
 // A thick slab under the map so the city reads as a diorama.
 function buildBase(world) {
-  const slab = new THREE.Mesh(new THREE.BoxGeometry(COLS + 2, 4, ROWS + 2), lambert({ color: '#2b335e' }));
+  const slab = new THREE.Mesh(new THREE.BoxGeometry(COLS + 2, 4, ROWS + 2), lambert({ color: '#373942' }));
   slab.position.y = -2.05;
   world.add(slab);
-  const rim = new THREE.Mesh(new THREE.BoxGeometry(COLS + 2.6, 0.6, ROWS + 2.6), lambert({ color: '#151a33' }));
+  const rim = new THREE.Mesh(new THREE.BoxGeometry(COLS + 2.6, 0.6, ROWS + 2.6), lambert({ color: '#1c1d22' }));
   rim.position.y = -4.2;
   world.add(rim);
 }
@@ -1285,7 +1285,7 @@ function makePinTexture(catHex, state, icon = null) {
   // the whole pin wears its category colour; a selected pin gets a dark eye of the same colour
   const body = catHex;
   const shade = '#' + color(catHex).multiplyScalar(0.7).getHexString();
-  const outline = state === 'idle' ? '#1d2340' : '#ffffff';
+  const outline = state === 'idle' ? '#000000' : '#ffffff';
   const fills = { X: outline, R: body, D: shade, C: state === 'selected' ? '#' + color(catHex).multiplyScalar(0.4).getHexString() : body };
   PIN.forEach((line, y) => {
     [...line].forEach((ch, x) => {
@@ -1295,7 +1295,7 @@ function makePinTexture(catHex, state, icon = null) {
     });
   });
   if (icon) {
-    ctx.fillStyle = '#1d2340';
+    ctx.fillStyle = '#000000';
     icon.forEach((line, y) => [...line].forEach((ch, x) => ch === '#' && ctx.fillRect((x + 4 + pad) * scale, (y + 4 + pad) * scale, scale, scale)));
   }
   if (state !== 'idle') {
@@ -1307,7 +1307,7 @@ function makePinTexture(catHex, state, icon = null) {
       for (let x = 0; x < cv.width; x++) {
         const k = (y * cv.width + x) * 4;
         if (!a(x, y) && (a(x + 1, y) || a(x - 1, y) || a(x, y + 1) || a(x, y - 1))) {
-          out.data[k] = 29; out.data[k + 1] = 35; out.data[k + 2] = 64; out.data[k + 3] = 255;
+          out.data[k] = 0; out.data[k + 1] = 0; out.data[k + 2] = 0; out.data[k + 3] = 255;
         }
       }
     }
@@ -1334,7 +1334,7 @@ function makeLabelTexture(text, water) {
   ctx.textBaseline = 'top';
   ctx.imageSmoothingEnabled = false;
   const fg = water ? '#e9fbff' : '#ffffff';
-  const bg = water ? '#2a7fa8' : '#1d2340';
+  const bg = water ? '#2a7fa8' : '#000000';
   // hard 1px outline, drawn by offsetting the text in 8 directions
   ctx.fillStyle = bg;
   // lines are centred; a single line fills the canvas exactly as before

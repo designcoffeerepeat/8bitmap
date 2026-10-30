@@ -2,13 +2,13 @@
    today's list docked right (a bottom sheet on phones), event card bottom-left.
    Single dark arcade look by design; the map supplies the colour. */
 :root {
-  --night: #1d2340;     /* page + dialogue box ground */
-  --night-2: #2b335e;   /* raised rows */
+  --night: #000000;     /* page + dialogue box ground */
+  --night-2: #373942;   /* raised rows */
   --ink: #f4f1ff;       /* text */
-  --dim: #a9aed8;       /* secondary text */
+  --dim: #a9c8d8;       /* secondary text */
   --frame: #ffffff;     /* pixel borders */
-  --coin: #ffd23f;      /* accent: selection, focus */
-  --pin: #ed1c24;       /* map pin red */
+  --coin: #ff8800;      /* accent: selection, focus */
+  --pin: #d82b14;       /* map pin red */
   --font-pixel: "Press Start 2P", "Courier New", monospace;
   --font-body: "VT323", "Courier New", monospace;
   --panel-w: 360px;
@@ -311,7 +311,7 @@ button, a { font: inherit; color: inherit; }
   padding: 0; color: var(--ink); overflow: hidden; flex-direction: column;
 }
 .modal[open] { display: flex; }
-.modal::backdrop { background: rgba(10, 12, 30, .72); }
+.modal::backdrop { background: rgba(0, 0, 0, .72); }
 .modal-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 14px 12px 20px; border-bottom: 3px solid var(--night-2); }
 .modal-head h2 { margin: 0; font: 12px/1.3 var(--font-pixel); letter-spacing: 1px; color: var(--coin); }
 .modal-close { flex: none; width: 30px; height: 30px; cursor: pointer; font: 10px/1 var(--font-pixel); background: var(--night-2); border: 0; }
