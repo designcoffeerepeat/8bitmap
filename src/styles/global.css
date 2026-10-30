@@ -525,7 +525,8 @@ button, a { font: inherit; color: inherit; }
 .wx-winter[aria-pressed="true"], #asp-show[aria-pressed="true"] { border-color: var(--coin); }
 .wx-winter[aria-pressed="true"] b, #asp-show[aria-pressed="true"] b { color: var(--coin); }
 @media (max-width: 760px) {
-  .corner { bottom: calc(78px + env(safe-area-inset-bottom, 0px)); }
+  /* under the tray (z-index 1) so the open event list covers the weather button */
+  .corner { z-index: 0; bottom: calc(78px + env(safe-area-inset-bottom, 0px)); }
   .wx-btn { padding: 5px 8px 5px 5px; font-size: 9px; }
   .wx-btn svg { width: 24px; height: 24px; }
   .wx-card { width: min(270px, calc(100vw - 32px)); }
