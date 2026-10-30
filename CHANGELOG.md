@@ -2,6 +2,27 @@
 
 Each release from dev to the live site (main) gets a version number here, so it can be referred to later.
 
+## v1.40 (2026-10-30)
+
+Everything on dev since v1.8 (dev versions v1.9 to v1.40) goes live together as v1.40. doNYC, Resident Advisor and
+The Skint stay parked.
+
+- The event list follows the map view, with a Reset button, and hovering a pin scrolls to its listing. (v1.9, v1.10)
+- A + dropdown flies the map to a neighborhood. (v1.11)
+- Phone layout: full width event card and header; the open event tray covers the weather button. (v1.12, v1.13, v1.37)
+- IMAX showings at AMC Lincoln Square. (v1.14)
+- Everything from aul: the detailed map, weather and winter mode, alternate side parking, the subway map and alerts,
+  airport security waits, the New Year's Eve countdown, the Disclaimer page and the Zoomers. (v1.15)
+- Monster attack moves into the + menu, with the UFO, the robot and the giant marshmallow, plus character colour
+  tweaks. (v1.16 to v1.26, v1.30, v1.31)
+- Site menu small links. (v1.19, v1.23)
+- Subway station names on hover and tap. (v1.27, v1.38)
+- Legal clean-up: original characters, Luma parked, Accessibility page. (v1.28)
+- The Cooper Union's public lectures and talks. (v1.29)
+- Eventbrite organizers and NYC Council hearings. (v1.32 to v1.36)
+- The neighborhoods in view show under the IN VIEW count. (v1.39)
+- The Central Park South Zoomer is an original cyclist who stops to wave. (v1.40)
+
 ## aul (2026-10-26 to 2026-10-28, retired)
 
 aul was a separate, more detailed version of the map at https://aul.8bit.nyc, built on the `aul` branch and
