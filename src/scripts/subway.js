@@ -5,7 +5,7 @@
 // drawn in red with a warning pin; tapping the pin shows the alert. Line paths and stations come from
 // src/scripts/map/subway.json (tools/build_subway.py), alerts from /api/subway-alerts in worker/index.js.
 // The chip beside the + button says what is shown and hides it when tapped. With the map on, hovering a
-// station shows its name and the lines that stop there.
+// station (or tapping one on a phone) shows its name and the lines that stop there.
 
 import * as THREE from 'three';
 import SUBWAY from './map/subway.json';
@@ -26,6 +26,8 @@ const COLORS = {
   G: '#6CBE45', J: '#996633', Z: '#996633', L: '#A7A9AC', N: '#FCCC0A', Q: '#FCCC0A', R: '#FCCC0A', W: '#FCCC0A',
 };
 
+// phones tap a station for its name, mice point at it
+const stationHint = () => (matchMedia('(hover: none)').matches ? 'tap' : 'point at');
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const rank = (r) => { const k = ORDER.indexOf(r); return k < 0 ? 99 : k; };
 const colorOf = (r) => SUBWAY.routes[r]?.color ?? COLORS[BULLET[r] ?? r] ?? '#808183';
@@ -210,12 +212,12 @@ export function initSubway(map) {
   function render() {
     const link = `<a class="sub-link" href="${MTA_ALERTS_PAGE}" target="_blank" rel="noopener">MORE INFO AT MTA.INFO</a>`;
     if (!data) {
-      out.innerHTML = `<p class="sub-note">${mode === 'map' ? 'Every line and station. ' : ''}Subway alerts are not available right now.</p>${link}`;
+      out.innerHTML = `<p class="sub-note">${mode === 'map' ? `Every line and station; ${stationHint()} a station for its name. ` : ''}Subway alerts are not available right now.</p>${link}`;
       return;
     }
     if (mode === 'map') {
       const n = outages(data.active.filter((a) => a.live)).length;
-      out.innerHTML = `<p class="sub-note">Every line and station.${n ? ` <b class="sub-out-n">${n} stretch${n === 1 ? '' : 'es'} out of service</b>, in red; tap a ! pin for details.` : ' No lines are out of service right now.'}</p>${link}`;
+      out.innerHTML = `<p class="sub-note">Every line and station; ${stationHint()} a station for its name.${n ? ` <b class="sub-out-n">${n} stretch${n === 1 ? '' : 'es'} out of service</b>, in red; tap a ! pin for details.` : ' No lines are out of service right now.'}</p>${link}`;
       return;
     }
     const routes = byRoute(data[mode]);
@@ -228,8 +230,10 @@ export function initSubway(map) {
     </ul>${link}`;
   }
 
-  // Hovering a station on the subway map shows its name and the lines that stop there.
+  // Hovering a station on the subway map shows its name and the lines that stop there; on a phone,
+  // tapping one does, and a tap anywhere else puts it away.
   const HOVER_PX = 9; // how near the pointer has to be, in screen pixels
+  const TAP_PX = 18; // a finger is less exact
   const tip = document.createElement('div');
   tip.className = 'sub-tip';
   tip.hidden = true;
@@ -244,29 +248,50 @@ export function initSubway(map) {
   });
   let shown = null;
   const hideTip = () => { tip.hidden = true; shown = null; };
-  map.canvas.addEventListener('pointermove', (e) => {
-    // not while dragging, on touch, or over an event pin (which shows its own label)
-    if (mode !== 'map' || e.buttons || e.pointerType === 'touch' || map.canvas.style.cursor === 'pointer') { hideTip(); return; }
+  // the station nearest a pointer event, within px screen pixels
+  function stationAt(e, px) {
     const box = map.canvas.getBoundingClientRect();
     const x = e.clientX - box.left;
     const y = e.clientY - box.top;
     let best = null;
-    let bestD = HOVER_PX * HOVER_PX;
+    let bestD = px * px;
     for (const st of stations) {
       const q = map.toScreen(st.pos);
       if (q.behind) continue;
       const d = (q.x - x) ** 2 + (q.y - y) ** 2;
       if (d < bestD) { bestD = d; best = { st, q }; }
     }
-    if (!best) { hideTip(); return; }
+    return best;
+  }
+  function showTip(best) {
     if (shown !== best.st) {
       shown = best.st;
       tip.innerHTML = `<b>${esc(best.st.name)}</b>${best.st.routes.length ? `<span>${best.st.routes.map(bullet).join('')}</span>` : ''}`;
     }
     tip.hidden = false;
-    tip.style.transform = `translate(${Math.round(best.q.x)}px, ${Math.round(best.q.y - 8)}px) translate(-50%, -100%)`;
+    // kept on screen, since a station near the edge would push half of it off
+    const half = tip.offsetWidth / 2;
+    const x = THREE.MathUtils.clamp(best.q.x, half + 4, map.canvas.clientWidth - half - 4);
+    tip.style.transform = `translate(${Math.round(x)}px, ${Math.round(best.q.y - 8)}px) translate(-50%, -100%)`;
+  }
+  map.canvas.addEventListener('pointermove', (e) => {
+    if (e.pointerType === 'touch') return;
+    // not while dragging, or over an event pin (which shows its own label)
+    if (mode !== 'map' || e.buttons || map.canvas.style.cursor === 'pointer') { hideTip(); return; }
+    const best = stationAt(e, HOVER_PX);
+    if (best) showTip(best); else hideTip();
   });
-  map.canvas.addEventListener('pointerleave', hideTip);
+  let touchAt = null;
+  map.canvas.addEventListener('pointerdown', (e) => { touchAt = e.pointerType === 'touch' ? { x: e.clientX, y: e.clientY } : null; });
+  map.canvas.addEventListener('pointerup', (e) => {
+    if (!touchAt || mode !== 'map') return;
+    const moved = Math.hypot(e.clientX - touchAt.x, e.clientY - touchAt.y) > 10;
+    touchAt = null;
+    if (moved) return; // a drag, not a tap
+    const best = stationAt(e, TAP_PX);
+    if (best) showTip(best); else hideTip();
+  });
+  map.canvas.addEventListener('pointerleave', (e) => { if (e.pointerType !== 'touch') hideTip(); });
   map.on('view', hideTip);
   for (const b of [...modeBtns, chip]) b.addEventListener('click', hideTip);
 
