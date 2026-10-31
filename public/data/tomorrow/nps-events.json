@@ -3,15 +3,15 @@
   "name": "National Park Service",
   "url": "https://www.nps.gov/state/ny/index.htm"
  },
- "date": "2026-10-31",
- "fetchedAt": "2026-10-30T13:22:08-04:00",
+ "date": "2026-11-01",
+ "fetchedAt": "2026-10-31T05:17:16-04:00",
  "events": [
   {
    "id": "E2214AE5-F7F6-297F-3131D768ACD7CEB2",
    "title": "Ranger-Guided Tour of Federal Hall",
    "category": "community",
-   "start": "2026-10-31T10:30:00-04:00",
-   "end": "2026-10-31T11:30:00-04:00",
+   "start": "2026-11-01T10:30:00-05:00",
+   "end": "2026-11-01T11:30:00-05:00",
    "allDay": false,
    "venue": {
     "name": "Federal Hall National Memorial",
@@ -33,7 +33,7 @@
    "id": "0D25A738-155D-451F-67D31ADD6827D16D",
    "title": "Castle Clinton Guided tour",
    "category": "community",
-   "start": "2026-10-31T10:00:00-04:00",
+   "start": "2026-11-01T10:00:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -56,7 +56,7 @@
    "id": "6EDF053C-C210-BD98-EB826C1AD4526045",
    "title": "House Tour",
    "category": "community",
-   "start": "2026-10-31T11:00:00-04:00",
+   "start": "2026-11-01T11:00:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -76,11 +76,11 @@
    ]
   },
   {
-   "id": "B9A4EB4F-EC82-87B9-DE598C80AC5F99F0",
+   "id": "B8A5C90F-B321-12E1-476C9293B76D30B8",
    "title": "\"Ranger's Choice\" Guided Walk at Jamaica Bay Wildlife Refuge",
    "category": "community",
-   "start": "2026-10-31T10:30:00-04:00",
-   "end": "2026-10-31T11:30:00-04:00",
+   "start": "2026-11-01T10:30:00-05:00",
+   "end": "2026-11-01T11:30:00-05:00",
    "allDay": false,
    "venue": {
     "name": "Gateway National Recreation Area",
@@ -92,8 +92,8 @@
    "price": null,
    "priceUnknown": false,
    "description": "Join us for a park ranger-led program highlighting the nature and history of Jamaica Bay. For more information about a week's tour, call the Jamaica Bay Wildlife Refuge Visitor Center at 718-318-4340.",
-   "details": "Join us for a park ranger-led program highlighting the nature and history of Jamaica Bay. For more information about a week's tour, call the Jamaica Bay Wildlife Refuge Visitor Center at 718-318-4340.\n\nSaturday, 10/3: Junior Ranger Birding Buddies Join us on our Junior Ranger Birding Buddies' program, made for our Junior Rangers who are new to birding. We will learn the skills and tools used to have a fun outdoor adventure!   \n\nSunday, 10/4: Birding for Beginners Interested in birds, but feel intimidated about getting into birding? No problem, this is birding for beginners! Together we will take a nature walk, talk about what makes Jamaica Bay such a great place for birds, and give you the tools to learn the basics of bird identification and appreciation. Bug spray and sunscreen are recommended, binoculars available. \n\nSaturday, 10/10: Junior Ranger Walk: Bees and Butterflies of Jamaica Bay Bees and butterflies are a welcome summer sight in our gardens, yards, and parks! These little bugs are important pollinators who keep our environment in good working order. Join a ranger on a guided walk to learn all about the bees and butterflies that inhabit Jamaica Bay. \n\nSunday, 10/11: Soil",
-   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=B9A4EB4F-EC82-87B9-DE598C80AC5F99F0",
+   "details": "Join us for a park ranger-led program highlighting the nature and history of Jamaica Bay. For more information about a week's tour, call the Jamaica Bay Wildlife Refuge Visitor Center at 718-318-4340.",
+   "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=B8A5C90F-B321-12E1-476C9293B76D30B8",
    "tags": [
     "Guided Tour",
     "Walk"
@@ -103,7 +103,7 @@
    "id": "264950A1-03F1-BBFD-1EC3FA6F6DDAE2A7",
    "title": "Ranger-led Program",
    "category": "community",
-   "start": "2026-10-31T11:00:00-04:00",
+   "start": "2026-11-01T11:00:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -130,20 +130,8 @@
    "address": "Sandy Hook History House, Building 1"
   },
   {
-   "title": "Sandy Hook Lighthouse Tours",
-   "address": "Sandy Hook Lighthouse"
-  },
-  {
-   "title": "Spermaceti Cove No. 2 Life-Saving Service Station",
-   "address": "Spermaceti Cove No. 2 Life Saving Service Station"
-  },
-  {
-   "title": "Fort Hancock Museum",
-   "address": "Building 28, Sandy Hook"
-  },
-  {
-   "title": "Bats of New Jersey Pop-Up",
-   "address": "Sandy Hook Lighthouse"
+   "title": "Sandy Hook Birding Club",
+   "address": "Parking Lot M, Sandy Hook, NJ"
   }
  ]
 }

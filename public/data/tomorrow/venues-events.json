@@ -3,14 +3,14 @@
   "name": "Venue calendars",
   "url": "https://filmforum.org/"
  },
- "date": "2026-10-31",
- "fetchedAt": "2026-10-30T13:23:33-04:00",
+ "date": "2026-11-01",
+ "fetchedAt": "2026-10-31T05:18:59-04:00",
  "events": [
   {
-   "id": "film-forum-202610311300-citizen-ruth",
-   "title": "CITIZEN RUTH",
+   "id": "film-forum-202611011100-coco",
+   "title": "COCO",
    "category": "film",
-   "start": "2026-10-31T13:00:00-04:00",
+   "start": "2026-11-01T11:00:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -22,7 +22,33 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 1:00 pm, 3:20 pm, 5:40 pm, 8:00 pm",
+   "description": "Showtimes: 11:00 am",
+   "details": "",
+   "url": "https://filmforum.org/film/coco-ffjr-2026",
+   "tags": [],
+   "publisher": {
+    "id": "venue-film-forum",
+    "name": "Film Forum",
+    "url": "https://filmforum.org/"
+   }
+  },
+  {
+   "id": "film-forum-202611011320-citizen-ruth",
+   "title": "CITIZEN RUTH",
+   "category": "film",
+   "start": "2026-11-01T13:20:00-05:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Film Forum",
+    "address": "209 West Houston Street",
+    "neighborhood": "",
+    "lat": 40.728219,
+    "lng": -74.004492
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 1:20 pm, 3:40 pm, 6:00 pm, 8:20 pm",
    "details": "",
    "url": "https://filmforum.org/film/citizen-ruth",
    "tags": [],
@@ -33,10 +59,10 @@
    }
   },
   {
-   "id": "film-forum-202610311225-fatherland",
+   "id": "film-forum-202611011225-fatherland",
    "title": "FATHERLAND",
    "category": "film",
-   "start": "2026-10-31T12:25:00-04:00",
+   "start": "2026-11-01T12:25:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -48,7 +74,7 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 12:25 pm, 4:15 pm, 4:30 pm, 6:30 pm, 8:30 pm",
+   "description": "Showtimes: 12:25 pm, 4:30 pm, 6:30 pm, 8:30 pm",
    "details": "",
    "url": "https://filmforum.org/film/fatherland",
    "tags": [],
@@ -59,10 +85,10 @@
    }
   },
   {
-   "id": "film-forum-202610311430-once-upon-a-time-in-harlem",
+   "id": "film-forum-202611011430-once-upon-a-time-in-harlem",
    "title": "ONCE UPON A TIME IN HARLEM",
    "category": "film",
-   "start": "2026-10-31T14:30:00-04:00",
+   "start": "2026-11-01T14:30:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -74,7 +100,7 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 2:30 pm, 4:45 pm, 7:00 pm, 8:10 pm, 9:15 pm",
+   "description": "Showtimes: 2:30 pm, 4:45 pm, 7:00 pm, 9:15 pm",
    "details": "",
    "url": "https://filmforum.org/film/once-upon-a-time-in-harlem",
    "tags": [],
@@ -85,10 +111,10 @@
    }
   },
   {
-   "id": "film-forum-202610311230-my-undesirable-friends-part-ii-exile-cha",
+   "id": "film-forum-202611011230-my-undesirable-friends-part-ii-exile-cha",
    "title": "MY UNDESIRABLE FRIENDS: PART II – EXILE: Chapters 1-3",
    "category": "film",
-   "start": "2026-10-31T12:30:00-04:00",
+   "start": "2026-11-01T12:30:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -111,10 +137,10 @@
    }
   },
   {
-   "id": "film-forum-202610311820-unzipped",
-   "title": "UNZIPPED",
+   "id": "film-forum-202611011620-my-undesirable-friends-part-ii-exile-cha",
+   "title": "MY UNDESIRABLE FRIENDS: PART II – EXILE: Chapters 4-5",
    "category": "film",
-   "start": "2026-10-31T18:20:00-04:00",
+   "start": "2026-11-01T16:20:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -126,9 +152,9 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 6:20 pm",
+   "description": "Showtimes: 4:20 pm",
    "details": "",
-   "url": "https://filmforum.org/film/unzipped-2026",
+   "url": "https://filmforum.org/film/my-undesirable-friends-part-ii-exile",
    "tags": [],
    "publisher": {
     "id": "venue-film-forum",
@@ -137,10 +163,10 @@
    }
   },
   {
-   "id": "nitehawk-williamsburg-202610311100-you-can-see-everything",
+   "id": "nitehawk-williamsburg-202611011100-you-can-see-everything",
    "title": "You Can See Everything",
    "category": "film",
-   "start": "2026-10-31T11:00:00-04:00",
+   "start": "2026-11-01T11:00:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -152,7 +178,7 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 11:00 am, 1:10 pm, 1:25 pm, 2:45 pm, 4:45 pm, 5:00 pm, 6:30 pm, 8:20 pm, 8:35 pm, 10:15 pm",
+   "description": "Showtimes: 11:00 am, 1:15 pm, 1:30 pm, 2:35 pm, 5:00 pm, 5:15 pm, 6:10 pm, 8:45 pm, 9:00 pm, 9:45 pm",
    "details": "",
    "url": "https://nitehawkcinema.com/williamsburg/movies/you-can-see-everything/",
    "tags": [],
@@ -163,10 +189,10 @@
    }
   },
   {
-   "id": "nitehawk-williamsburg-202610311100-hocus-pocus",
+   "id": "nitehawk-williamsburg-202611011100-hocus-pocus",
    "title": "Hocus Pocus",
    "category": "film",
-   "start": "2026-10-31T11:00:00-04:00",
+   "start": "2026-11-01T11:00:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -189,10 +215,10 @@
    }
   },
   {
-   "id": "nitehawk-williamsburg-202610311115-cat-people-1942-",
+   "id": "nitehawk-williamsburg-202611011115-cat-people-1942-",
    "title": "Cat People (1942)",
    "category": "film",
-   "start": "2026-10-31T11:15:00-04:00",
+   "start": "2026-11-01T11:15:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -215,62 +241,10 @@
    }
   },
   {
-   "id": "nitehawk-williamsburg-202610312355-begotten",
-   "title": "Begotten",
+   "id": "nitehawk-prospect-park-202611011100-wildwood",
+   "title": "Wildwood",
    "category": "film",
-   "start": "2026-10-31T23:55:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Williamsburg",
-    "address": "136 Metropolitan Avenue",
-    "neighborhood": "",
-    "lat": 40.715985,
-    "lng": -73.962586
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 11:55 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/williamsburg/showtimes/begotten-10-31-26-1155-pm/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-williamsburg",
-    "name": "Nitehawk Williamsburg",
-    "url": "https://nitehawkcinema.com/williamsburg/"
-   }
-  },
-  {
-   "id": "nitehawk-williamsburg-202610312355-halloween-1978-",
-   "title": "Halloween (1978)",
-   "category": "film",
-   "start": "2026-10-31T23:55:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Williamsburg",
-    "address": "136 Metropolitan Avenue",
-    "neighborhood": "",
-    "lat": 40.715985,
-    "lng": -73.962586
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 11:55 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/williamsburg/showtimes/halloween-1978-10-31-26-1155-pm/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-williamsburg",
-    "name": "Nitehawk Williamsburg",
-    "url": "https://nitehawkcinema.com/williamsburg/"
-   }
-  },
-  {
-   "id": "nitehawk-prospect-park-202610311100-the-only-living-pickpocket-in-new-york",
-   "title": "The Only Living Pickpocket in New York",
-   "category": "film",
-   "start": "2026-10-31T11:00:00-04:00",
+   "start": "2026-11-01T11:00:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -282,9 +256,9 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 11:00 am, 2:10 pm, 7:20 pm, 10:00 pm",
+   "description": "Showtimes: 11:00 am, 3:25 pm",
    "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/the-only-living-pickpocket-in-new-york/",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/wildwood/",
    "tags": [],
    "publisher": {
     "id": "venue-nitehawk-prospect-park",
@@ -293,10 +267,10 @@
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610311100-godzilla-1954-",
+   "id": "nitehawk-prospect-park-202611011100-godzilla-1954-",
    "title": "Godzilla (1954)",
    "category": "film",
-   "start": "2026-10-31T11:00:00-04:00",
+   "start": "2026-11-01T11:00:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -319,10 +293,10 @@
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610311115-wildwood",
-   "title": "Wildwood",
+   "id": "nitehawk-prospect-park-202611011115-wicker",
+   "title": "Wicker",
    "category": "film",
-   "start": "2026-10-31T11:15:00-04:00",
+   "start": "2026-11-01T11:15:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -334,9 +308,9 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 11:15 am, 2:45 pm",
+   "description": "Showtimes: 11:15 am, 1:45 pm, 4:30 pm, 9:15 pm",
    "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/wildwood/",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/wicker/",
    "tags": [],
    "publisher": {
     "id": "venue-nitehawk-prospect-park",
@@ -345,10 +319,10 @@
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610311115-klara-and-the-sun",
-   "title": "Klara and the Sun",
+   "id": "nitehawk-prospect-park-202611011130-the-only-living-pickpocket-in-new-york",
+   "title": "The Only Living Pickpocket in New York",
    "category": "film",
-   "start": "2026-10-31T11:15:00-04:00",
+   "start": "2026-11-01T11:30:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -360,9 +334,9 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 11:15 am, 3:45 pm",
+   "description": "Showtimes: 11:30 am, 2:30 pm, 7:00 pm, 9:45 pm",
    "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/klara-and-the-sun/",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/the-only-living-pickpocket-in-new-york/",
    "tags": [],
    "publisher": {
     "id": "venue-nitehawk-prospect-park",
@@ -371,10 +345,36 @@
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610311200-halloween-1978-",
+   "id": "nitehawk-prospect-park-202611011145-you-can-see-everything",
+   "title": "You Can See Everything",
+   "category": "film",
+   "start": "2026-11-01T11:45:00-05:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 11:45 am, 12:15 pm, 2:15 pm, 4:00 pm, 5:00 pm, 6:00 pm, 7:45 pm, 8:45 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/you-can-see-everything/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202611011200-halloween-1978-",
    "title": "Halloween (1978)",
    "category": "film",
-   "start": "2026-10-31T12:00:00-04:00",
+   "start": "2026-11-01T12:00:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -397,36 +397,10 @@
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610311215-you-can-see-everything",
-   "title": "You Can See Everything",
-   "category": "film",
-   "start": "2026-10-31T12:15:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
-    "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 12:15 pm, 1:30 pm, 2:30 pm, 4:25 pm, 5:15 pm, 6:15 pm, 8:15 pm, 9:00 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/you-can-see-everything/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
-   }
-  },
-  {
-   "id": "nitehawk-prospect-park-202610311315-clayface",
+   "id": "nitehawk-prospect-park-202611011330-clayface",
    "title": "Clayface",
    "category": "film",
-   "start": "2026-10-31T13:15:00-04:00",
+   "start": "2026-11-01T13:30:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -438,7 +412,7 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 1:15 pm, 4:00 pm, 6:40 pm, 10:15 pm",
+   "description": "Showtimes: 1:30 pm, 4:15 pm, 7:30 pm, 9:30 pm",
    "details": "",
    "url": "https://nitehawkcinema.com/prospectpark/movies/clayface/",
    "tags": [],
@@ -449,10 +423,10 @@
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610311355-wicker",
-   "title": "Wicker",
+   "id": "nitehawk-prospect-park-202611011400-klara-and-the-sun",
+   "title": "Klara and the Sun",
    "category": "film",
-   "start": "2026-10-31T13:55:00-04:00",
+   "start": "2026-11-01T14:00:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -464,9 +438,9 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 1:55 pm, 4:40 pm, 7:35 pm, 9:30 pm",
+   "description": "Showtimes: 2:00 pm, 4:45 pm",
    "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/wicker/",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/klara-and-the-sun/",
    "tags": [],
    "publisher": {
     "id": "venue-nitehawk-prospect-park",
@@ -475,62 +449,10 @@
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610311740-edie-arnold-is-a-loser",
-   "title": "Edie Arnold Is a Loser",
-   "category": "film",
-   "start": "2026-10-31T17:40:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
-    "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 5:40 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/edie-arnold-is-a-loser/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
-   }
-  },
-  {
-   "id": "nitehawk-prospect-park-202610311830-fjord",
-   "title": "Fjord",
-   "category": "film",
-   "start": "2026-10-31T18:30:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Nitehawk Prospect Park",
-    "address": "188 Prospect Park West",
-    "neighborhood": "",
-    "lat": 40.661628,
-    "lng": -73.979854
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Showtimes: 6:30 pm",
-   "details": "",
-   "url": "https://nitehawkcinema.com/prospectpark/movies/fjord/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-nitehawk-prospect-park",
-    "name": "Nitehawk Prospect Park",
-    "url": "https://nitehawkcinema.com/prospectpark/"
-   }
-  },
-  {
-   "id": "nitehawk-prospect-park-202610312115-primetime",
+   "id": "nitehawk-prospect-park-202611011825-primetime",
    "title": "Primetime",
    "category": "film",
-   "start": "2026-10-31T21:15:00-04:00",
+   "start": "2026-11-01T18:25:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -542,7 +464,7 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 9:15 pm",
+   "description": "Showtimes: 6:25 pm",
    "details": "",
    "url": "https://nitehawkcinema.com/prospectpark/movies/primetime/",
    "tags": [],
@@ -553,10 +475,10 @@
    }
   },
   {
-   "id": "nitehawk-prospect-park-202610312145-chronovisor",
-   "title": "Chronovisor",
+   "id": "nitehawk-prospect-park-202611011915-edie-arnold-is-a-loser",
+   "title": "Edie Arnold Is a Loser",
    "category": "film",
-   "start": "2026-10-31T21:45:00-04:00",
+   "start": "2026-11-01T19:15:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -568,7 +490,59 @@
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Showtimes: 9:45 pm",
+   "description": "Showtimes: 7:15 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/edie-arnold-is-a-loser/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202611012100-fjord",
+   "title": "Fjord",
+   "category": "film",
+   "start": "2026-11-01T21:00:00-05:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 9:00 pm",
+   "details": "",
+   "url": "https://nitehawkcinema.com/prospectpark/movies/fjord/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nitehawk-prospect-park",
+    "name": "Nitehawk Prospect Park",
+    "url": "https://nitehawkcinema.com/prospectpark/"
+   }
+  },
+  {
+   "id": "nitehawk-prospect-park-202611012200-chronovisor",
+   "title": "Chronovisor",
+   "category": "film",
+   "start": "2026-11-01T22:00:00-05:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Nitehawk Prospect Park",
+    "address": "188 Prospect Park West",
+    "neighborhood": "",
+    "lat": 40.661628,
+    "lng": -73.979854
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Showtimes: 10:00 pm",
    "details": "",
    "url": "https://nitehawkcinema.com/prospectpark/movies/chronovisor/",
    "tags": [],
@@ -579,10 +553,10 @@
    }
   },
   {
-   "id": "the-pit-202610311830-ladies-stand-up-men-sit-down-open-mic",
-   "title": "Ladies Stand-Up! (Men Sit Down) Open Mic",
+   "id": "the-pit-202611012000-the-sunday-jam",
+   "title": "The SUNDAY JAM",
    "category": "comedy",
-   "start": "2026-10-31T18:30:00-04:00",
+   "start": "2026-11-01T20:00:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -596,7 +570,7 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://thepit-nyc.com/events/ladies-stand-up-men-sit-down-open-mic/",
+   "url": "https://thepit-nyc.com/events/the-sunday-jam/",
    "tags": [],
    "publisher": {
     "id": "venue-the-pit",
@@ -605,89 +579,323 @@
    }
   },
   {
-   "id": "h0l0-202610312200-resolute-presents-why-so-serious-",
-   "title": "ReSolute presents: Why So Serious!?",
-   "category": "nightlife",
-   "start": "2026-10-31T22:00:00-04:00",
+   "id": "the-alvin-public-house-202611011800-trivia-at-the-alvin-public-house",
+   "title": "Trivia at The Alvin Public House",
+   "category": "trivia",
+   "start": "2026-11-01T18:00:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
-    "name": "H0L0",
-    "address": "1090 Wyckoff Avenue",
-    "neighborhood": "",
-    "lat": 40.694228,
-    "lng": -73.902251
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "The madness returns and we can’t wait! Why So Serious!? is around the corner, and we’re bringing 30+ hours of nonstop music and mayhem across four stages from Saturday night and all day Sunday.",
-   "details": "",
-   "url": "https://ra.co/events/2488860",
-   "tags": [],
-   "publisher": {
-    "id": "venue-h0l0",
-    "name": "H0L0",
-    "url": "https://h0l0.nyc/"
-   }
-  },
-  {
-   "id": "public-records-202610312300-dope-jams-halloween-ball-turtle-bugg-4am",
-   "title": "Dope Jams Halloween Ball / Turtle Bugg, 4AM NYC / GE-OLOGY",
-   "category": "nightlife",
-   "start": "2026-10-31T23:00:00-04:00",
-   "end": null,
-   "allDay": false,
-   "venue": {
-    "name": "Public Records",
-    "address": "233 Butler Street",
-    "neighborhood": "Gowanus",
-    "lat": 40.682176,
-    "lng": -73.98639
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Sound Room",
-   "details": "",
-   "url": "https://link.dice.fm/Tc4c985491b0",
-   "tags": [],
-   "publisher": {
-    "id": "venue-public-records",
-    "name": "Public Records",
-    "url": "https://publicrecords.nyc/"
-   }
-  },
-  {
-   "id": "queens-botanical-garden-202610311200-farm-stand",
-   "title": "Farm Stand",
-   "category": "food",
-   "start": "2026-10-31T12:00:00-04:00",
-   "end": "2026-10-31T14:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Queens Botanical Garden",
-    "address": "43-50 Main Street",
-    "neighborhood": "Flushing",
-    "lat": 40.751085,
-    "lng": -73.827732
+    "name": "The Alvin Public House",
+    "address": "",
+    "neighborhood": "Upper East Side",
+    "lat": 40.762336,
+    "lng": -73.959168
    },
    "price": null,
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://queensbotanical.org/event/farm-stand-2-2026-10-31/",
+   "url": "https://nyctrivialeague.com/listings/the-alvin-public-house/",
    "tags": [],
    "publisher": {
-    "id": "venue-queens-botanical-garden",
-    "name": "Queens Botanical Garden",
-    "url": "https://queensbotanical.org/calendar/"
+    "id": "venue-nyc-trivia-league",
+    "name": "NYC Trivia League",
+    "url": "https://nyctrivialeague.com/"
    }
   },
   {
-   "id": "queens-botanical-garden-202610311200-halloween-at-the-garden",
-   "title": "Halloween at the Garden",
+   "id": "bird-in-hand-202611011930-trivia-at-bird-in-hand",
+   "title": "Trivia at Bird In Hand",
+   "category": "trivia",
+   "start": "2026-11-01T19:30:00-05:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Bird In Hand",
+    "address": "",
+    "neighborhood": "Hamilton Heights",
+    "lat": 40.827527,
+    "lng": -73.950172
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://nyctrivialeague.com/listings/bird-in-hand-nyc/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nyc-trivia-league",
+    "name": "NYC Trivia League",
+    "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
+   "id": "black-forest-fulton-street-202611011900-trivia-at-black-forest-fulton-street",
+   "title": "Trivia at Black Forest — Fulton Street",
+   "category": "trivia",
+   "start": "2026-11-01T19:00:00-05:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Black Forest — Fulton Street",
+    "address": "",
+    "neighborhood": "Fort Greene",
+    "lat": 40.686762,
+    "lng": -73.975098
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://nyctrivialeague.com/listings/black-forest-fulton-street/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nyc-trivia-league",
+    "name": "NYC Trivia League",
+    "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
+   "id": "black-forest-smith-street-202611011900-trivia-at-black-forest-smith-street",
+   "title": "Trivia at Black Forest — Smith Street",
+   "category": "trivia",
+   "start": "2026-11-01T19:00:00-05:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Black Forest — Smith Street",
+    "address": "",
+    "neighborhood": "Carroll Gardens",
+    "lat": 40.685623,
+    "lng": -73.991015
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://nyctrivialeague.com/listings/black-forest-smith-st/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nyc-trivia-league",
+    "name": "NYC Trivia League",
+    "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
+   "id": "faces-names-202611011900-trivia-at-faces-names",
+   "title": "Trivia at Faces & Names",
+   "category": "trivia",
+   "start": "2026-11-01T19:00:00-05:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Faces & Names",
+    "address": "",
+    "neighborhood": "Midtown",
+    "lat": 40.763589,
+    "lng": -73.980925
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://nyctrivialeague.com/listings/faces-names/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nyc-trivia-league",
+    "name": "NYC Trivia League",
+    "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
+   "id": "the-hamilton-202611011830-trivia-at-the-hamilton",
+   "title": "Trivia at The Hamilton",
+   "category": "trivia",
+   "start": "2026-11-01T18:30:00-05:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Hamilton",
+    "address": "",
+    "neighborhood": "Upper West Side",
+    "lat": 40.802773,
+    "lng": -73.96439
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://nyctrivialeague.com/listings/the-hamilton/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nyc-trivia-league",
+    "name": "NYC Trivia League",
+    "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
+   "id": "little-rebel-202611011900-trivia-at-little-rebel",
+   "title": "Trivia at Little Rebel",
+   "category": "trivia",
+   "start": "2026-11-01T19:00:00-05:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Little Rebel",
+    "address": "",
+    "neighborhood": "East Village",
+    "lat": 40.732041,
+    "lng": -73.985466
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://nyctrivialeague.com/listings/little-rebel/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nyc-trivia-league",
+    "name": "NYC Trivia League",
+    "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
+   "id": "mosaic-202611011800-trivia-at-mosaic",
+   "title": "Trivia at Mosaic",
+   "category": "trivia",
+   "start": "2026-11-01T18:00:00-05:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Mosaic",
+    "address": "",
+    "neighborhood": "Astoria",
+    "lat": 40.774621,
+    "lng": -73.918472
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://nyctrivialeague.com/listings/mosaic/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nyc-trivia-league",
+    "name": "NYC Trivia League",
+    "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
+   "id": "pubkey-nyc-202611011900-trivia-at-pubkey-nyc",
+   "title": "Trivia at Pubkey NYC",
+   "category": "trivia",
+   "start": "2026-11-01T19:00:00-05:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Pubkey NYC",
+    "address": "",
+    "neighborhood": "Greenwich Village",
+    "lat": 40.732218,
+    "lng": -74.000024
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://nyctrivialeague.com/listings/pubkey/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nyc-trivia-league",
+    "name": "NYC Trivia League",
+    "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
+   "id": "scrappleland-202611011900-trivia-at-scrappleland",
+   "title": "Trivia at Scrappleland",
+   "category": "trivia",
+   "start": "2026-11-01T19:00:00-05:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Scrappleland",
+    "address": "",
+    "neighborhood": "Greenpoint",
+    "lat": 40.728111,
+    "lng": -73.951248
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://nyctrivialeague.com/listings/scrappleland/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nyc-trivia-league",
+    "name": "NYC Trivia League",
+    "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
+   "id": "the-factory-380-202611011930-mixtape-bingo-at-the-factory-380",
+   "title": "Mixtape Bingo at The Factory 380",
+   "category": "trivia",
+   "start": "2026-11-01T19:30:00-05:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "The Factory 380",
+    "address": "",
+    "neighborhood": "Kips Bay",
+    "lat": 40.741704,
+    "lng": -73.98147
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://nyctrivialeague.com/listings/the-factory-380/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nyc-trivia-league",
+    "name": "NYC Trivia League",
+    "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
+   "id": "vacations-bar-202611011800-mixtape-bingo-at-vacations-bar",
+   "title": "Mixtape Bingo at Vacations Bar",
+   "category": "trivia",
+   "start": "2026-11-01T18:00:00-05:00",
+   "end": null,
+   "allDay": false,
+   "venue": {
+    "name": "Vacations Bar",
+    "address": "",
+    "neighborhood": "Bushwick",
+    "lat": 40.7083,
+    "lng": -73.920274
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://nyctrivialeague.com/listings/vacations/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-nyc-trivia-league",
+    "name": "NYC Trivia League",
+    "url": "https://nyctrivialeague.com/"
+   }
+  },
+  {
+   "id": "queens-botanical-garden-202611011000-e-waste-textiles-and-paint-collection-wi",
+   "title": "E-Waste, Textiles, and Paint Collection With Lower East Side Ecology Center",
    "category": "community",
-   "start": "2026-10-31T12:00:00-04:00",
-   "end": "2026-10-31T17:00:00-04:00",
+   "start": "2026-11-01T10:00:00-05:00",
+   "end": "2026-11-01T14:00:00-05:00",
    "allDay": false,
    "venue": {
     "name": "Queens Botanical Garden",
@@ -700,7 +908,7 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://queensbotanical.org/event/halloween-at-the-garden-2026/",
+   "url": "https://queensbotanical.org/event/e-waste-textiles-and-paint-collection-with-lower-east-side-ecology-center-3/",
    "tags": [],
    "publisher": {
     "id": "venue-queens-botanical-garden",
@@ -709,10 +917,36 @@
    }
   },
   {
-   "id": "new-york-hall-of-science-202610311100-the-nightmare-before-christmas-saturday-",
-   "title": "The Nightmare Before Christmas® Saturday Sing-Along Screening",
+   "id": "queens-botanical-garden-202611011100-pumpkin-smash",
+   "title": "Pumpkin Smash",
+   "category": "community",
+   "start": "2026-11-01T11:00:00-05:00",
+   "end": "2026-11-01T15:00:00-05:00",
+   "allDay": false,
+   "venue": {
+    "name": "Queens Botanical Garden",
+    "address": "43-50 Main Street",
+    "neighborhood": "Flushing",
+    "lat": 40.751085,
+    "lng": -73.827732
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://queensbotanical.org/event/pumpkin-smash-2026/",
+   "tags": [],
+   "publisher": {
+    "id": "venue-queens-botanical-garden",
+    "name": "Queens Botanical Garden",
+    "url": "https://queensbotanical.org/calendar/"
+   }
+  },
+  {
+   "id": "new-york-hall-of-science-202611011100-the-nightmare-before-christmas-sunday-si",
+   "title": "The Nightmare Before Christmas® Sunday Sing-Along Screening",
    "category": "film",
-   "start": "2026-10-31T11:00:00-04:00",
+   "start": "2026-11-01T11:00:00-05:00",
    "end": null,
    "allDay": false,
    "venue": {
@@ -726,38 +960,12 @@
    "priceUnknown": true,
    "description": "Times: 11:00 am, 2:00 pm, 3:30 pm",
    "details": "",
-   "url": "https://nysci.org/nysci-events/saturday-halloween-movie-magic",
+   "url": "https://nysci.org/nysci-events/sunday-halloween-movie-magic",
    "tags": [],
    "publisher": {
     "id": "venue-new-york-hall-of-science",
     "name": "New York Hall of Science",
     "url": "https://nysci.org/nysci-events"
-   }
-  },
-  {
-   "id": "queens-night-market-202610311600-queens-night-market",
-   "title": "Queens Night Market",
-   "category": "food",
-   "start": "2026-10-31T16:00:00-04:00",
-   "end": "2026-11-01T00:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Queens Night Market",
-    "address": "47-01 111th Street",
-    "neighborhood": "Flushing Meadows",
-    "lat": 40.747359,
-    "lng": -73.851695
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://queensnightmarket.com/",
-   "tags": [],
-   "publisher": {
-    "id": "venue-queens-night-market",
-    "name": "Queens Night Market",
-    "url": "https://queensnightmarket.com/"
    }
   }
  ],

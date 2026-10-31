@@ -3,93 +3,15 @@
   "name": "Hoboken calendars",
   "url": "https://hobokenmuseum.org/events/"
  },
- "date": "2026-10-30",
- "fetchedAt": "2026-10-30T13:19:32-04:00",
+ "date": "2026-10-31",
+ "fetchedAt": "2026-10-31T05:14:39-04:00",
  "events": [
   {
-   "id": "hoboken-public-library-202610301030-nj-family-leave-insurance-workshop",
-   "title": "NJ Family Leave Insurance Workshop",
+   "id": "hoboken-public-library-202610311030-toddler-story-time",
+   "title": "Toddler Story Time",
    "category": "community",
-   "start": "2026-10-30T10:30:00-04:00",
-   "end": "2026-10-30T12:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Hoboken Public Library",
-    "address": "500 Park Avenue, Hoboken, NJ",
-    "neighborhood": "Hoboken",
-    "lat": 40.7429,
-    "lng": -74.0311
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "",
-   "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17371027",
-   "tags": [],
-   "publisher": {
-    "id": "venue-hoboken-public-library",
-    "name": "Hoboken Public Library",
-    "url": "https://hobokenlibrary.libnet.info/events"
-   }
-  },
-  {
-   "id": "hoboken-library-grand-street-branch-202610301530-feel-good-friday",
-   "title": "Feel Good Friday",
-   "category": "community",
-   "start": "2026-10-30T15:30:00-04:00",
-   "end": "2026-10-30T16:30:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Hoboken Library, Grand Street Branch",
-    "address": "124 Grand Street, Hoboken, NJ",
-    "neighborhood": "Hoboken",
-    "lat": 40.7374,
-    "lng": -74.0353
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "For teens/tweens, kids",
-   "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17503252",
-   "tags": [],
-   "publisher": {
-    "id": "venue-hoboken-public-library",
-    "name": "Hoboken Public Library",
-    "url": "https://hobokenlibrary.libnet.info/events"
-   }
-  },
-  {
-   "id": "hoboken-public-library-202610301545-teen-led-debate-club",
-   "title": "Teen-Led Debate Club",
-   "category": "community",
-   "start": "2026-10-30T15:45:00-04:00",
-   "end": "2026-10-30T16:45:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Hoboken Public Library",
-    "address": "500 Park Avenue, Hoboken, NJ",
-    "neighborhood": "Hoboken",
-    "lat": 40.7429,
-    "lng": -74.0311
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "For teens/tweens",
-   "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17500969",
-   "tags": [],
-   "publisher": {
-    "id": "venue-hoboken-public-library",
-    "name": "Hoboken Public Library",
-    "url": "https://hobokenlibrary.libnet.info/events"
-   }
-  },
-  {
-   "id": "hoboken-public-library-202610301600-wonder-worksheets",
-   "title": "Wonder Worksheets",
-   "category": "community",
-   "start": "2026-10-30T16:00:00-04:00",
-   "end": "2026-10-30T16:30:00-04:00",
+   "start": "2026-10-31T10:30:00-04:00",
+   "end": "2026-10-31T11:00:00-04:00",
    "allDay": false,
    "venue": {
     "name": "Hoboken Public Library",
@@ -102,7 +24,59 @@
    "priceUnknown": false,
    "description": "For kids",
    "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17433155",
+   "url": "https://hobokenlibrary.libnet.info/event/17434121",
+   "tags": [],
+   "publisher": {
+    "id": "venue-hoboken-public-library",
+    "name": "Hoboken Public Library",
+    "url": "https://hobokenlibrary.libnet.info/events"
+   }
+  },
+  {
+   "id": "hoboken-library-grand-street-branch-202610311400-candy-land-halloween-party",
+   "title": "Candy Land Halloween Party",
+   "category": "community",
+   "start": "2026-10-31T14:00:00-04:00",
+   "end": "2026-10-31T16:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hoboken Library, Grand Street Branch",
+    "address": "124 Grand Street, Hoboken, NJ",
+    "neighborhood": "Hoboken",
+    "lat": 40.7374,
+    "lng": -74.0353
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "For kids",
+   "details": "",
+   "url": "https://hobokenlibrary.libnet.info/event/17566385",
+   "tags": [],
+   "publisher": {
+    "id": "venue-hoboken-public-library",
+    "name": "Hoboken Public Library",
+    "url": "https://hobokenlibrary.libnet.info/events"
+   }
+  },
+  {
+   "id": "hoboken-public-library-202610311530-scary-stories-to-tell-in-the-dark",
+   "title": "Scary Stories to Tell in the Dark",
+   "category": "community",
+   "start": "2026-10-31T15:30:00-04:00",
+   "end": "2026-10-31T16:00:00-04:00",
+   "allDay": false,
+   "venue": {
+    "name": "Hoboken Public Library",
+    "address": "500 Park Avenue, Hoboken, NJ",
+    "neighborhood": "Hoboken",
+    "lat": 40.7429,
+    "lng": -74.0311
+   },
+   "price": null,
+   "priceUnknown": false,
+   "description": "For kids",
+   "details": "",
+   "url": "https://hobokenlibrary.libnet.info/event/17458578",
    "tags": [],
    "publisher": {
     "id": "venue-hoboken-public-library",
