@@ -3,85 +3,33 @@
   "name": "Hoboken calendars",
   "url": "https://hobokenmuseum.org/events/"
  },
- "date": "2026-10-31",
- "fetchedAt": "2026-10-30T13:16:17-04:00",
+ "date": "2026-11-01",
+ "fetchedAt": "2026-10-31T05:11:45-04:00",
  "events": [
   {
-   "id": "hoboken-public-library-202610311030-toddler-story-time",
-   "title": "Toddler Story Time",
+   "id": "hoboken-historical-museum-202611011600-camera-club-photographers-of-new-jersey-",
+   "title": "Camera Club Photographers of New Jersey: From Hoboken to Trenton A Free Lecture with Gary Saretzky",
    "category": "community",
-   "start": "2026-10-31T10:30:00-04:00",
-   "end": "2026-10-31T11:00:00-04:00",
+   "start": "2026-11-01T16:00:00-05:00",
+   "end": "2026-11-01T17:00:00-05:00",
    "allDay": false,
    "venue": {
-    "name": "Hoboken Public Library",
-    "address": "500 Park Avenue, Hoboken, NJ",
+    "name": "Hoboken Historical Museum",
+    "address": "1301 Hudson Street, Hoboken, NJ",
     "neighborhood": "Hoboken",
-    "lat": 40.7429,
-    "lng": -74.0311
+    "lat": 40.75385,
+    "lng": -74.0259
    },
    "price": null,
    "priceUnknown": false,
-   "description": "For kids",
+   "description": "",
    "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17434121",
+   "url": "https://hobokenmuseum.org/event/camera-club-photographers-of-new-jersey-from-hoboken-to-trenton-a-free-lecture-with-gary-saretzky/",
    "tags": [],
    "publisher": {
-    "id": "venue-hoboken-public-library",
-    "name": "Hoboken Public Library",
-    "url": "https://hobokenlibrary.libnet.info/events"
-   }
-  },
-  {
-   "id": "hoboken-library-grand-street-branch-202610311400-candy-land-halloween-party",
-   "title": "Candy Land Halloween Party",
-   "category": "community",
-   "start": "2026-10-31T14:00:00-04:00",
-   "end": "2026-10-31T16:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Hoboken Library, Grand Street Branch",
-    "address": "124 Grand Street, Hoboken, NJ",
-    "neighborhood": "Hoboken",
-    "lat": 40.7374,
-    "lng": -74.0353
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "For kids",
-   "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17566385",
-   "tags": [],
-   "publisher": {
-    "id": "venue-hoboken-public-library",
-    "name": "Hoboken Public Library",
-    "url": "https://hobokenlibrary.libnet.info/events"
-   }
-  },
-  {
-   "id": "hoboken-public-library-202610311530-scary-stories-to-tell-in-the-dark",
-   "title": "Scary Stories to Tell in the Dark",
-   "category": "community",
-   "start": "2026-10-31T15:30:00-04:00",
-   "end": "2026-10-31T16:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Hoboken Public Library",
-    "address": "500 Park Avenue, Hoboken, NJ",
-    "neighborhood": "Hoboken",
-    "lat": 40.7429,
-    "lng": -74.0311
-   },
-   "price": null,
-   "priceUnknown": false,
-   "description": "For kids",
-   "details": "",
-   "url": "https://hobokenlibrary.libnet.info/event/17458578",
-   "tags": [],
-   "publisher": {
-    "id": "venue-hoboken-public-library",
-    "name": "Hoboken Public Library",
-    "url": "https://hobokenlibrary.libnet.info/events"
+    "id": "venue-hoboken-historical-museum",
+    "name": "Hoboken Historical Museum",
+    "url": "https://hobokenmuseum.org/events/"
    }
   }
  ],

@@ -3,41 +3,15 @@
   "name": "Red Hook calendars",
   "url": "https://pioneerworks.org/calendar"
  },
- "date": "2026-10-31",
- "fetchedAt": "2026-10-30T13:17:28-04:00",
+ "date": "2026-11-01",
+ "fetchedAt": "2026-10-31T05:13:02-04:00",
  "events": [
   {
-   "id": "pioneer-works-202610311200-fall-saturdays",
-   "title": "Fall Saturdays",
-   "category": "art",
-   "start": "2026-10-31T12:00:00-04:00",
-   "end": "2026-10-31T20:00:00-04:00",
-   "allDay": false,
-   "venue": {
-    "name": "Pioneer Works",
-    "address": "159 Pioneer Street",
-    "neighborhood": "",
-    "lat": 40.679224,
-    "lng": -74.012128
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "",
-   "details": "",
-   "url": "https://pioneerworks.org/programs/fall-saturdays2",
-   "tags": [],
-   "publisher": {
-    "id": "venue-pioneer-works",
-    "name": "Pioneer Works",
-    "url": "https://pioneerworks.org/"
-   }
-  },
-  {
-   "id": "sunny-s-bar-202610312000-tone-s-bluegrass-jam",
-   "title": "Tone's Bluegrass Jam",
+   "id": "sunny-s-bar-202611010000-edith-s-agnostic-gospel-jam",
+   "title": "Edith's Agnostic Gospel Jam",
    "category": "music",
-   "start": "2026-10-31T20:00:00-04:00",
-   "end": "2026-10-31T23:59:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": "2026-11-01T02:30:00-05:00",
    "allDay": false,
    "venue": {
     "name": "Sunny's Bar",
@@ -50,7 +24,33 @@
    "priceUnknown": true,
    "description": "",
    "details": "",
-   "url": "https://tockify.com/sunnysmusic/detail/277/1793491200000",
+   "url": "https://tockify.com/sunnysmusic/detail/279/1793507400000",
+   "tags": [],
+   "publisher": {
+    "id": "venue-sunny-s-bar",
+    "name": "Sunny's Bar",
+    "url": "https://www.sunnysredhook.com/calendar2/"
+   }
+  },
+  {
+   "id": "sunny-s-bar-202611012000-ken-and-friends-featuring-eveline-o-rour",
+   "title": "Ken and Friends featuring Eveline O'Rourke and Aidan O'Donnell",
+   "category": "music",
+   "start": "2026-11-01T20:00:00-05:00",
+   "end": "2026-11-01T22:00:00-05:00",
+   "allDay": false,
+   "venue": {
+    "name": "Sunny's Bar",
+    "address": "253 Conover Street",
+    "neighborhood": "",
+    "lat": 40.675626,
+    "lng": -74.016798
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "",
+   "details": "",
+   "url": "https://tockify.com/sunnysmusic/detail/292/1793581200000",
    "tags": [],
    "publisher": {
     "id": "venue-sunny-s-bar",

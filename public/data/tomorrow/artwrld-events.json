@@ -3,60 +3,14 @@
   "name": "Artwrld",
   "url": "https://www.artwrld.com/city/new-york/openings"
  },
- "date": "2026-10-31",
- "fetchedAt": "2026-10-30T13:15:22-04:00",
+ "date": "2026-11-01",
+ "fetchedAt": "2026-10-31T05:10:57-04:00",
  "events": [
-  {
-   "id": "88483",
-   "title": "Maureen O'Leary: The Linden Trees",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Cristin Tierney Gallery",
-    "address": "",
-    "neighborhood": "Tribeca / SoHo",
-    "lat": 40.71891,
-    "lng": -74.00356
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Exhibition opening, on view until Dec 19",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/maureen-oleary-the-linden-trees",
-   "tags": [
-    "opening"
-   ]
-  },
-  {
-   "id": "88097",
-   "title": "Shota Nakamura",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Mendes Wood DM",
-    "address": "",
-    "neighborhood": "Tribeca / SoHo",
-    "lat": 40.71891,
-    "lng": -74.00373
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Exhibition opening, on view until Jan 16",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/shota-nakamura",
-   "tags": [
-    "opening"
-   ]
-  },
   {
    "id": "88004",
    "title": "John Procario: Freeforms",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -76,10 +30,33 @@
    ]
   },
   {
+   "id": "88002",
+   "title": "Rembrandt’s Lions: Art and Exile in the Dutch Republic",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "The Morgan Library & Museum",
+    "address": "",
+    "neighborhood": "NoMad / Flatiron",
+    "lat": 40.74922,
+    "lng": -73.98139
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jan 31",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/rembrandts-lions-art-and-exile-in-the-dutch-republic",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
    "id": "88005",
    "title": "Fantasy and Reality: The Art of Johan Tobias Sergel",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -102,7 +79,7 @@
    "id": "88060",
    "title": "Laia Abril: On Rape and Institutional Failure",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -122,33 +99,10 @@
    ]
   },
   {
-   "id": "88002",
-   "title": "Rembrandt’s Lions: Art and Exile in the Dutch Republic",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "The Morgan Library & Museum",
-    "address": "",
-    "neighborhood": "NoMad / Flatiron",
-    "lat": 40.74922,
-    "lng": -73.98139
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jan 31",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/rembrandts-lions-art-and-exile-in-the-dutch-republic",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
    "id": "85997",
    "title": "Siena: The Art of Bronze, 1450–1500",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -171,7 +125,7 @@
    "id": "86569",
    "title": "Roy Lichtenstein: Like New",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -194,7 +148,7 @@
    "id": "86509",
    "title": "Saya Woolfalk: The WoodsWoman Method",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -217,7 +171,7 @@
    "id": "86534",
    "title": "Charles Burchfield: Elemental",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -237,33 +191,10 @@
    ]
   },
   {
-   "id": "89319",
-   "title": "Parlor Games",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Morgan Lehman Gallery",
-    "address": "",
-    "neighborhood": "Chelsea",
-    "lat": 40.75005,
-    "lng": -74.00426
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Dec 19",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/parlor-games",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
    "id": "89339",
    "title": "Jason Stopa: Open Window",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -283,10 +214,33 @@
    ]
   },
   {
+   "id": "89319",
+   "title": "Parlor Games",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Morgan Lehman Gallery",
+    "address": "",
+    "neighborhood": "Chelsea",
+    "lat": 40.75005,
+    "lng": -74.00426
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Dec 19",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/parlor-games",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
    "id": "88065",
    "title": "Form, Shadow, Motion: Selections from the Burger Collection, Hong Kong",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -306,102 +260,10 @@
    ]
   },
   {
-   "id": "84093",
-   "title": "Precious Okoyomon: Courtyard Commission",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "MoMA PS1",
-    "address": "",
-    "neighborhood": "Queens",
-    "lat": 40.7455,
-    "lng": -73.9474
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jul 1",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/courtyard-commission-precious-okoyomon",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "89377",
-   "title": "I'm So Happy You Are Here: Japanese Women Photographers from the 1950s to Now",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "International Center of Photography",
-    "address": "",
-    "neighborhood": "Lower East Side / East Village",
-    "lat": 40.7188,
-    "lng": -73.989
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jan 11",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/im-so-happy-you-are-here-japanese-women-photographers-from-the-1950s-to-now",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "88321",
-   "title": "Isamu Noguchi at Lever House",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "The Noguchi Museum",
-    "address": "",
-    "neighborhood": "Queens",
-    "lat": 40.76681,
-    "lng": -73.93805
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Aug 31",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/isamu-noguchi-at-lever-house",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "86607",
-   "title": "Roy Lichtenstein: 1997",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Whitney Museum of American Art",
-    "address": "",
-    "neighborhood": "West Village / Union Square / Meatpacking",
-    "lat": 40.73958,
-    "lng": -74.00886
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jun 1",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/roy-lichtenstein-1997",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
    "id": "85497",
    "title": "Taryn Simon: Father Country I Do Love You",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -421,10 +283,33 @@
    ]
   },
   {
+   "id": "86607",
+   "title": "Roy Lichtenstein: 1997",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Whitney Museum of American Art",
+    "address": "",
+    "neighborhood": "West Village / Union Square / Meatpacking",
+    "lat": 40.73958,
+    "lng": -74.00886
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jun 1",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/roy-lichtenstein-1997",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
    "id": "89403",
    "title": "A sustained becoming: Studio Museum Artists in Residence 2026",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -444,56 +329,10 @@
    ]
   },
   {
-   "id": "84300",
-   "title": "Shu Lea Cheang: LOVER LOVE",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Leslie-Lohman Museum of Art",
-    "address": "",
-    "neighborhood": "Tribeca / SoHo",
-    "lat": 40.72166,
-    "lng": -74.00309
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jan 3",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/lover-love",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "89359",
-   "title": "Sacred Splendor: Jewish Ritual Art and Christian Treasures from St. Vitus Cathedral in Prague",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "The Jewish Museum",
-    "address": "",
-    "neighborhood": "Uptown",
-    "lat": 40.78533,
-    "lng": -73.95735
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Feb 7",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/sacred-splendor-jewish-ritual-art-and-christian-treasures-from-st-vitus-cathedral-in-prague",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
    "id": "88759",
    "title": "Tone",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -513,24 +352,70 @@
    ]
   },
   {
-   "id": "89331",
-   "title": "Nike: Form Follows Motion",
+   "id": "84300",
+   "title": "Shu Lea Cheang: LOVER LOVE",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
-    "name": "Museum of Arts and Design",
+    "name": "Leslie-Lohman Museum of Art",
     "address": "",
-    "neighborhood": "Uptown",
-    "lat": 40.76737,
-    "lng": -73.98194
+    "neighborhood": "Tribeca / SoHo",
+    "lat": 40.72166,
+    "lng": -74.00309
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Museum exhibition",
+   "description": "Museum exhibition, on view until Jan 3",
    "details": "",
-   "url": "https://www.artwrld.com/exhibit/nike-form-follows-motion",
+   "url": "https://www.artwrld.com/exhibit/lover-love",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "88321",
+   "title": "Isamu Noguchi at Lever House",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "The Noguchi Museum",
+    "address": "",
+    "neighborhood": "Queens",
+    "lat": 40.76681,
+    "lng": -73.93805
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Aug 31",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/isamu-noguchi-at-lever-house",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "84093",
+   "title": "Precious Okoyomon: Courtyard Commission",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "MoMA PS1",
+    "address": "",
+    "neighborhood": "Queens",
+    "lat": 40.7455,
+    "lng": -73.9474
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jul 1",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/courtyard-commission-precious-okoyomon",
    "tags": [
     "exhibition"
    ]
@@ -539,7 +424,7 @@
    "id": "83731",
    "title": "Costume Art",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -559,24 +444,116 @@
    ]
   },
   {
-   "id": "83464",
-   "title": "Teresa Margolles",
+   "id": "89377",
+   "title": "I'm So Happy You Are Here: Japanese Women Photographers from the 1950s to Now",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
-    "name": "MoMA PS1",
+    "name": "International Center of Photography",
     "address": "",
-    "neighborhood": "Queens",
-    "lat": 40.7455,
-    "lng": -73.9474
+    "neighborhood": "Lower East Side / East Village",
+    "lat": 40.7188,
+    "lng": -73.989
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jan 11",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/im-so-happy-you-are-here-japanese-women-photographers-from-the-1950s-to-now",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "89359",
+   "title": "Sacred Splendor: Jewish Ritual Art and Christian Treasures from St. Vitus Cathedral in Prague",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "The Jewish Museum",
+    "address": "",
+    "neighborhood": "Uptown",
+    "lat": 40.78533,
+    "lng": -73.95735
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Feb 7",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/sacred-splendor-jewish-ritual-art-and-christian-treasures-from-st-vitus-cathedral-in-prague",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "89331",
+   "title": "Nike: Form Follows Motion",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Museum of Arts and Design",
+    "address": "",
+    "neighborhood": "Uptown",
+    "lat": 40.76737,
+    "lng": -73.98194
    },
    "price": null,
    "priceUnknown": true,
    "description": "Museum exhibition",
    "details": "",
-   "url": "https://www.artwrld.com/exhibit/teresa-margolles-1",
+   "url": "https://www.artwrld.com/exhibit/nike-form-follows-motion",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "89336",
+   "title": "Esperanza Cortés: Embroidered Allegories",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Hispanic Society Museum & Library",
+    "address": "",
+    "neighborhood": "Uptown",
+    "lat": 40.83318,
+    "lng": -73.94609
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Nov 1",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/exhibitions-ceyfn13rotohubh1yw6ft93p",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "86005",
+   "title": "Screens Series: Umi Ishihara",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "New Museum",
+    "address": "",
+    "neighborhood": "Lower East Side / East Village",
+    "lat": 40.72233,
+    "lng": -73.99289
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jan 31",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/screens-series-umi-ishihara",
    "tags": [
     "exhibition"
    ]
@@ -585,7 +562,7 @@
    "id": "85210",
    "title": "The Genesis Facade Commission: Liu Wei",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -608,7 +585,7 @@
    "id": "88978",
    "title": "Alex Da Corte: Hotdog With Ketchup",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -628,56 +605,10 @@
    ]
   },
   {
-   "id": "89336",
-   "title": "Esperanza Cortés: Embroidered Allegories",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Hispanic Society Museum & Library",
-    "address": "",
-    "neighborhood": "Uptown",
-    "lat": 40.83318,
-    "lng": -73.94609
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Nov 1",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/exhibitions-ceyfn13rotohubh1yw6ft93p",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "86377",
-   "title": "Diego Marcon: Arrivederci, Piggies!",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "New Museum",
-    "address": "",
-    "neighborhood": "Lower East Side / East Village",
-    "lat": 40.72233,
-    "lng": -73.99289
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jan 31",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/diego-marcon-arrivederci-piggies",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
    "id": "89209",
    "title": "Hyundai Translocal Series: Ho Tzu Nyen",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -697,33 +628,10 @@
    ]
   },
   {
-   "id": "86005",
-   "title": "Screens Series: Umi Ishihara",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "New Museum",
-    "address": "",
-    "neighborhood": "Lower East Side / East Village",
-    "lat": 40.72233,
-    "lng": -73.99289
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jan 31",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/screens-series-umi-ishihara",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
    "id": "86626",
    "title": "Arthur Jafa: I Am Tony",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -743,10 +651,56 @@
    ]
   },
   {
+   "id": "83464",
+   "title": "Teresa Margolles",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "MoMA PS1",
+    "address": "",
+    "neighborhood": "Queens",
+    "lat": 40.7455,
+    "lng": -73.9474
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/teresa-margolles-1",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "86377",
+   "title": "Diego Marcon: Arrivederci, Piggies!",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "New Museum",
+    "address": "",
+    "neighborhood": "Lower East Side / East Village",
+    "lat": 40.72233,
+    "lng": -73.99289
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jan 31",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/diego-marcon-arrivederci-piggies",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
    "id": "86839",
    "title": "The Bowery: Devil’s Mile",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -766,33 +720,10 @@
    ]
   },
   {
-   "id": "88213",
-   "title": "Locating Girlhood: Place and Identity in Early American \"Schoolgirl\" Art",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "American Folk Art Museum",
-    "address": "",
-    "neighborhood": "Uptown",
-    "lat": 40.77323,
-    "lng": -73.98148
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Feb 28",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/exhibitions-tpcqpifiynuzhn0i590xwq2s",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
    "id": "85002",
    "title": "Melissa Ann Pinney: What's Ms. Pinney Doing Here?",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -812,10 +743,10 @@
    ]
   },
   {
-   "id": "84665",
-   "title": "Folk Nation: Crafting Patriotism in the United States",
+   "id": "88213",
+   "title": "Locating Girlhood: Place and Identity in Early American \"Schoolgirl\" Art",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -829,7 +760,7 @@
    "priceUnknown": true,
    "description": "Museum exhibition, on view until Feb 28",
    "details": "",
-   "url": "https://www.artwrld.com/exhibit/exhibitions-mr41nnjmgvr2o10rpdijzk8v",
+   "url": "https://www.artwrld.com/exhibit/exhibitions-tpcqpifiynuzhn0i590xwq2s",
    "tags": [
     "exhibition"
    ]
@@ -838,7 +769,7 @@
    "id": "89390",
    "title": "Tête-à-tête",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -858,70 +789,24 @@
    ]
   },
   {
-   "id": "83971",
-   "title": "Art of Manga",
+   "id": "84665",
+   "title": "Folk Nation: Crafting Patriotism in the United States",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
-    "name": "Brooklyn Museum",
-    "address": "",
-    "neighborhood": "Brooklyn",
-    "lat": 40.6713,
-    "lng": -73.9639
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jan 31",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/art-of-manga-1",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "84033",
-   "title": "Marianne Wex: Taking Back Our Space: Photographic Perspectives",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "MoMA",
+    "name": "American Folk Art Museum",
     "address": "",
     "neighborhood": "Uptown",
-    "lat": 40.76143,
-    "lng": -73.97762
+    "lat": 40.77323,
+    "lng": -73.98148
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Museum exhibition, on view until May 2",
+   "description": "Museum exhibition, on view until Feb 28",
    "details": "",
-   "url": "https://www.artwrld.com/exhibit/taking-back-our-space-photographic-perspectives",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "86381",
-   "title": "Focus Gallery: Afruz Amighi: Sounding Shell",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "The Jewish Museum",
-    "address": "",
-    "neighborhood": "Uptown",
-    "lat": 40.78533,
-    "lng": -73.95735
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Feb 7",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/focus-gallery-afruz-amighi-sounding-shell",
+   "url": "https://www.artwrld.com/exhibit/exhibitions-mr41nnjmgvr2o10rpdijzk8v",
    "tags": [
     "exhibition"
    ]
@@ -930,7 +815,7 @@
    "id": "85820",
    "title": "Coumba Samba: Stars and Stripes",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -950,79 +835,10 @@
    ]
   },
   {
-   "id": "83967",
-   "title": "Cézanne to Modigliani: Gifts of Modern Art from the Pearlman Collection",
+   "id": "86381",
+   "title": "Focus Gallery: Afruz Amighi: Sounding Shell",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Brooklyn Museum",
-    "address": "",
-    "neighborhood": "Brooklyn",
-    "lat": 40.6713,
-    "lng": -73.9639
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Apr 18",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/cezanne-to-modigliani-gifts-of-modern-art-from-the-pearlman-collection",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "83739",
-   "title": "A King's Carpet: Louis XIV and the Savonnerie",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "The Metropolitan Museum of Art",
-    "address": "",
-    "neighborhood": "Uptown",
-    "lat": 40.779434,
-    "lng": -73.963402
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Mar 5",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/a-king-s-carpet-louis-xiv-and-the-savonnerie",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "83922",
-   "title": "Overexposed: Art, Technology, and the Body",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Museum of the Moving Image",
-    "address": "",
-    "neighborhood": "Queens",
-    "lat": 40.756345,
-    "lng": -73.92395
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Mar 7",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/overexposed-art-technology-and-the-body",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "86853",
-   "title": "Focus Gallery: Hannah Altman: Not a Circle but a Spiral",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1036,122 +852,7 @@
    "priceUnknown": true,
    "description": "Museum exhibition, on view until Feb 7",
    "details": "",
-   "url": "https://www.artwrld.com/exhibit/focus-gallery-hannah-altman-not-a-circle-but-a-spiral",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "85045",
-   "title": "Dreams of This Future: The Collection of Peggy Cooper Cafritz",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Studio Museum Harlem",
-    "address": "",
-    "neighborhood": "Uptown",
-    "lat": 40.80828,
-    "lng": -73.94769
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Feb 28",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/dreams-of-this-future-the-collection-of-peggy-cooper-cafritz",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "86528",
-   "title": "Lifelong Studio Exhibition: Transcending the Form—Abstract Figurative Painting",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "The Bronx Museum of the Arts",
-    "address": "",
-    "neighborhood": "Uptown",
-    "lat": 40.83111,
-    "lng": -73.91985
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Dec 30",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/lifelong-studio-exhibition-transcending-the-formabstract-figurative-painting-bronx-museum",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "83813",
-   "title": "Flip Sides: Seeing Korean Art Anew",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "The Metropolitan Museum of Art",
-    "address": "",
-    "neighborhood": "Uptown",
-    "lat": 40.779434,
-    "lng": -73.963402
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until May 31",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/flip-sides-seeing-korean-art-anew",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "89353",
-   "title": "Geometries",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Studio Museum Harlem",
-    "address": "",
-    "neighborhood": "Uptown",
-    "lat": 40.80828,
-    "lng": -73.94769
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jan 31",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/geometries",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "85051",
-   "title": "Guggenheim Pop",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Guggenheim",
-    "address": "",
-    "neighborhood": "Uptown",
-    "lat": 40.78297,
-    "lng": -73.95897
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jan 10",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/guggenheim-pop",
+   "url": "https://www.artwrld.com/exhibit/focus-gallery-afruz-amighi-sounding-shell",
    "tags": [
     "exhibition"
    ]
@@ -1160,7 +861,7 @@
    "id": "85048",
    "title": "Uptown Visions",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1180,10 +881,240 @@
    ]
   },
   {
+   "id": "83971",
+   "title": "Art of Manga",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Brooklyn Museum",
+    "address": "",
+    "neighborhood": "Brooklyn",
+    "lat": 40.6713,
+    "lng": -73.9639
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jan 31",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/art-of-manga-1",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "83922",
+   "title": "Overexposed: Art, Technology, and the Body",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Museum of the Moving Image",
+    "address": "",
+    "neighborhood": "Queens",
+    "lat": 40.756345,
+    "lng": -73.92395
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Mar 7",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/overexposed-art-technology-and-the-body",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "83739",
+   "title": "A King's Carpet: Louis XIV and the Savonnerie",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "The Metropolitan Museum of Art",
+    "address": "",
+    "neighborhood": "Uptown",
+    "lat": 40.779434,
+    "lng": -73.963402
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Mar 5",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/a-king-s-carpet-louis-xiv-and-the-savonnerie",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "86853",
+   "title": "Focus Gallery: Hannah Altman: Not a Circle but a Spiral",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "The Jewish Museum",
+    "address": "",
+    "neighborhood": "Uptown",
+    "lat": 40.78533,
+    "lng": -73.95735
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Feb 7",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/focus-gallery-hannah-altman-not-a-circle-but-a-spiral",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "84033",
+   "title": "Marianne Wex: Taking Back Our Space: Photographic Perspectives",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "MoMA",
+    "address": "",
+    "neighborhood": "Uptown",
+    "lat": 40.76143,
+    "lng": -73.97762
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until May 2",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/taking-back-our-space-photographic-perspectives",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "89353",
+   "title": "Geometries",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Studio Museum Harlem",
+    "address": "",
+    "neighborhood": "Uptown",
+    "lat": 40.80828,
+    "lng": -73.94769
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jan 31",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/geometries",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "83813",
+   "title": "Flip Sides: Seeing Korean Art Anew",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "The Metropolitan Museum of Art",
+    "address": "",
+    "neighborhood": "Uptown",
+    "lat": 40.779434,
+    "lng": -73.963402
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until May 31",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/flip-sides-seeing-korean-art-anew",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "85045",
+   "title": "Dreams of This Future: The Collection of Peggy Cooper Cafritz",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Studio Museum Harlem",
+    "address": "",
+    "neighborhood": "Uptown",
+    "lat": 40.80828,
+    "lng": -73.94769
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Feb 28",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/dreams-of-this-future-the-collection-of-peggy-cooper-cafritz",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "85051",
+   "title": "Guggenheim Pop",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Guggenheim",
+    "address": "",
+    "neighborhood": "Uptown",
+    "lat": 40.78297,
+    "lng": -73.95897
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jan 10",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/guggenheim-pop",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "83967",
+   "title": "Cézanne to Modigliani: Gifts of Modern Art from the Pearlman Collection",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Brooklyn Museum",
+    "address": "",
+    "neighborhood": "Brooklyn",
+    "lat": 40.6713,
+    "lng": -73.9639
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Apr 18",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/cezanne-to-modigliani-gifts-of-modern-art-from-the-pearlman-collection",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
    "id": "84105",
    "title": "Hopi Kachina Dolls: Blessings for a Balanced World",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1203,10 +1134,56 @@
    ]
   },
   {
+   "id": "86528",
+   "title": "Lifelong Studio Exhibition: Transcending the Form—Abstract Figurative Painting",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "The Bronx Museum of the Arts",
+    "address": "",
+    "neighborhood": "Uptown",
+    "lat": 40.83111,
+    "lng": -73.91985
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Dec 30",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/lifelong-studio-exhibition-transcending-the-formabstract-figurative-painting-bronx-museum",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "89413",
+   "title": "Minnie Evans: The Lost World",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Whitney Museum of American Art",
+    "address": "",
+    "neighborhood": "West Village / Union Square / Meatpacking",
+    "lat": 40.73958,
+    "lng": -74.00886
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jan 10",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/the-lost-world",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
    "id": "88054",
    "title": "Alex Strada: Public Address",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1229,7 +1206,7 @@
    "id": "89254",
    "title": "Halumii Ktapihna: Lenape Legacies and Futures",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1249,33 +1226,10 @@
    ]
   },
   {
-   "id": "89413",
-   "title": "Minnie Evans: The Lost World",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Whitney Museum of American Art",
-    "address": "",
-    "neighborhood": "West Village / Union Square / Meatpacking",
-    "lat": 40.73958,
-    "lng": -74.00886
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jan 10",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/the-lost-world",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
    "id": "88162",
    "title": "Raise Your Voice",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1295,33 +1249,10 @@
    ]
   },
   {
-   "id": "84154",
-   "title": "Reframing the Slasher: Teenage Sex and Death at Camp Miasma",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Museum of the Moving Image",
-    "address": "",
-    "neighborhood": "Queens",
-    "lat": 40.756345,
-    "lng": -73.92395
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Nov 8",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/reframing-the-slasher-teenage-sex-and-death-at-camp-miasma",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
    "id": "86541",
    "title": "A Collection Without Borders",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1341,10 +1272,33 @@
    ]
   },
   {
+   "id": "84154",
+   "title": "Reframing the Slasher: Teenage Sex and Death at Camp Miasma",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Museum of the Moving Image",
+    "address": "",
+    "neighborhood": "Queens",
+    "lat": 40.756345,
+    "lng": -73.92395
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Nov 8",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/reframing-the-slasher-teenage-sex-and-death-at-camp-miasma",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
    "id": "87435",
    "title": "Beyond the Margins: Bronx Museum Teens Activate the Permanent Collection",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1367,7 +1321,7 @@
    "id": "88727",
    "title": "Louise Bourgeois: The Architecture of Memory",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1390,7 +1344,7 @@
    "id": "85874",
    "title": "Mark Bradford: Untitled (A–Z), 2010",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1413,7 +1367,7 @@
    "id": "88376",
    "title": "Jessica Lichtenstein: Rewilding",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1433,33 +1387,10 @@
    ]
   },
   {
-   "id": "75568",
-   "title": "“Untitled” (America)",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Whitney Museum of American Art",
-    "address": "",
-    "neighborhood": "West Village / Union Square / Meatpacking",
-    "lat": 40.73958,
-    "lng": -74.00886
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jul 5",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/untitled-america",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
    "id": "79078",
    "title": "Expanding the Walls 2026 artists: Through Motion and Repose: Expanding the Walls 2026",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1479,70 +1410,24 @@
    ]
   },
   {
-   "id": "71927",
-   "title": "Celebrating the Year of the Horse",
+   "id": "75568",
+   "title": "“Untitled” (America)",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
-    "name": "The Metropolitan Museum of Art",
+    "name": "Whitney Museum of American Art",
     "address": "",
-    "neighborhood": "Uptown",
-    "lat": 40.779434,
-    "lng": -73.963402
+    "neighborhood": "West Village / Union Square / Meatpacking",
+    "lat": 40.73958,
+    "lng": -74.00886
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jan 26",
+   "description": "Museum exhibition, on view until Jul 5",
    "details": "",
-   "url": "https://www.artwrld.com/exhibit/celebrating-the-year-of-the-horse",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "88927",
-   "title": "Klára Hosnedlová: Shelter",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "New Museum",
-    "address": "",
-    "neighborhood": "Lower East Side / East Village",
-    "lat": 40.72233,
-    "lng": -73.99289
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/shelter",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "84244",
-   "title": "Alexandra Daisy Ginsberg: The Substitute",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Cooper Hewitt Museum",
-    "address": "",
-    "neighborhood": "Uptown",
-    "lat": 40.78439,
-    "lng": -73.95787
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jan 31",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/the-substitute",
+   "url": "https://www.artwrld.com/exhibit/untitled-america",
    "tags": [
     "exhibition"
    ]
@@ -1551,7 +1436,7 @@
    "id": "76928",
    "title": "Light and Stone: Revisiting Noguchi's 1986 Venice Biennale",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1571,102 +1456,10 @@
    ]
   },
   {
-   "id": "88791",
-   "title": "Sarah Lucas: VENUS VICTORIA",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "New Museum",
-    "address": "",
-    "neighborhood": "Lower East Side / East Village",
-    "lat": 40.72233,
-    "lng": -73.99289
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/venus-victoria",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "76946",
-   "title": "Design Across Time",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "Cooper Hewitt Museum",
-    "address": "",
-    "neighborhood": "Uptown",
-    "lat": 40.78439,
-    "lng": -73.95787
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Oct 22",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/design-across-time-exploring-the-smithsonian-s-design-collection",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "88971",
-   "title": "Tschabalala Self: Art Lovers",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "New Museum",
-    "address": "",
-    "neighborhood": "Lower East Side / East Village",
-    "lat": 40.72233,
-    "lng": -73.99289
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/art-lovers",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
-   "id": "66549",
-   "title": "Household Gods: Hindu Devotional Prints, 1860–1930",
-   "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
-   "end": null,
-   "allDay": true,
-   "venue": {
-    "name": "The Metropolitan Museum of Art",
-    "address": "",
-    "neighborhood": "Uptown",
-    "lat": 40.779434,
-    "lng": -73.963402
-   },
-   "price": null,
-   "priceUnknown": true,
-   "description": "Museum exhibition, on view until Jun 27",
-   "details": "",
-   "url": "https://www.artwrld.com/exhibit/household-gods-hindu-devotional-prints-1860-1930",
-   "tags": [
-    "exhibition"
-   ]
-  },
-  {
    "id": "79068",
    "title": "Focus Gallery: Oded Halahmy: Models in Wood",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1686,24 +1479,93 @@
    ]
   },
   {
-   "id": "88257",
-   "title": "Joaquín Sorolla's Vision of Spain",
+   "id": "71927",
+   "title": "Celebrating the Year of the Horse",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
-    "name": "Hispanic Society Museum & Library",
+    "name": "The Metropolitan Museum of Art",
     "address": "",
     "neighborhood": "Uptown",
-    "lat": 40.83318,
-    "lng": -73.94609
+    "lat": 40.779434,
+    "lng": -73.963402
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jan 26",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/celebrating-the-year-of-the-horse",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "88791",
+   "title": "Sarah Lucas: VENUS VICTORIA",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "New Museum",
+    "address": "",
+    "neighborhood": "Lower East Side / East Village",
+    "lat": 40.72233,
+    "lng": -73.99289
    },
    "price": null,
    "priceUnknown": true,
    "description": "Museum exhibition",
    "details": "",
-   "url": "https://www.artwrld.com/exhibit/joaquin-sorollas-vision-of-spain",
+   "url": "https://www.artwrld.com/exhibit/venus-victoria",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "88971",
+   "title": "Tschabalala Self: Art Lovers",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "New Museum",
+    "address": "",
+    "neighborhood": "Lower East Side / East Village",
+    "lat": 40.72233,
+    "lng": -73.99289
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/art-lovers",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "84244",
+   "title": "Alexandra Daisy Ginsberg: The Substitute",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Cooper Hewitt Museum",
+    "address": "",
+    "neighborhood": "Uptown",
+    "lat": 40.78439,
+    "lng": -73.95787
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jan 31",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/the-substitute",
    "tags": [
     "exhibition"
    ]
@@ -1712,7 +1574,7 @@
    "id": "70687",
    "title": "About Us: The American Imaginary",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1732,24 +1594,24 @@
    ]
   },
   {
-   "id": "76835",
-   "title": "A Living Vision: the Sorolla Gallery at 100",
+   "id": "76946",
+   "title": "Design Across Time",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
-    "name": "Hispanic Society Museum & Library",
+    "name": "Cooper Hewitt Museum",
     "address": "",
     "neighborhood": "Uptown",
-    "lat": 40.83318,
-    "lng": -73.94609
+    "lat": 40.78439,
+    "lng": -73.95787
    },
    "price": null,
    "priceUnknown": true,
-   "description": "Museum exhibition, on view until May 27",
+   "description": "Museum exhibition, on view until Oct 22",
    "details": "",
-   "url": "https://www.artwrld.com/exhibit/a-living-vision-the-sorolla-gallery-at-100",
+   "url": "https://www.artwrld.com/exhibit/design-across-time-exploring-the-smithsonian-s-design-collection",
    "tags": [
     "exhibition"
    ]
@@ -1758,7 +1620,7 @@
    "id": "86460",
    "title": "Modernity and Opulence: Women of the Wiener Werkstätte",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1778,10 +1640,56 @@
    ]
   },
   {
+   "id": "88927",
+   "title": "Klára Hosnedlová: Shelter",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "New Museum",
+    "address": "",
+    "neighborhood": "Lower East Side / East Village",
+    "lat": 40.72233,
+    "lng": -73.99289
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/shelter",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "66549",
+   "title": "Household Gods: Hindu Devotional Prints, 1860–1930",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "The Metropolitan Museum of Art",
+    "address": "",
+    "neighborhood": "Uptown",
+    "lat": 40.779434,
+    "lng": -73.963402
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until Jun 27",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/household-gods-hindu-devotional-prints-1860-1930",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
    "id": "89190",
    "title": "Identity, Culture, and Community: Stories from the Collection of the Jewish Museum and Pruzan Family Center for Learning",
    "category": "art",
-   "start": "2026-10-31T00:00:00-04:00",
+   "start": "2026-11-01T00:00:00-04:00",
    "end": null,
    "allDay": true,
    "venue": {
@@ -1796,6 +1704,52 @@
    "description": "Museum exhibition",
    "details": "",
    "url": "https://www.artwrld.com/exhibit/identity-culture-and-community-stories-from-the-collection-of-the-jewish-museum-and-pruzan-family-center-for-learning",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "76835",
+   "title": "A Living Vision: the Sorolla Gallery at 100",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Hispanic Society Museum & Library",
+    "address": "",
+    "neighborhood": "Uptown",
+    "lat": 40.83318,
+    "lng": -73.94609
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition, on view until May 27",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/a-living-vision-the-sorolla-gallery-at-100",
+   "tags": [
+    "exhibition"
+   ]
+  },
+  {
+   "id": "88257",
+   "title": "Joaquín Sorolla's Vision of Spain",
+   "category": "art",
+   "start": "2026-11-01T00:00:00-04:00",
+   "end": null,
+   "allDay": true,
+   "venue": {
+    "name": "Hispanic Society Museum & Library",
+    "address": "",
+    "neighborhood": "Uptown",
+    "lat": 40.83318,
+    "lng": -73.94609
+   },
+   "price": null,
+   "priceUnknown": true,
+   "description": "Museum exhibition",
+   "details": "",
+   "url": "https://www.artwrld.com/exhibit/joaquin-sorollas-vision-of-spain",
    "tags": [
     "exhibition"
    ]

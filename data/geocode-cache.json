@@ -239,6 +239,11 @@
   "lat": 40.757744,
   "lng": -73.828843
  },
+ "42-80 Crommelin Street | Queens": {
+  "label": "42-69 CROMMELIN STREET, Flushing, NY, USA",
+  "lat": 40.752357,
+  "lng": -73.83088
+ },
  "4211 14 AVENUE Brooklyn | Brooklyn": {
   "label": "14 BROOKLYN AVENUE, Brooklyn, NY, USA",
   "lat": 40.679723,
@@ -416,6 +421,7 @@
  "Alfred E. Smith Recreation Center in Alfred E. Smith Recreation Center | Manhattan": null,
  "Alley Pond Adventure Course in Alley Pond Park | Queens": null,
  "Amboy Street Garden | Brooklyn": null,
+ "American Veterans Memorial Pier | Brooklyn": null,
  "Amsterdam Ave (between W. 110th & W. 109th Sts) | Manhattan": null,
  "Anne Loftus Playground in Fort Tryon Park | Manhattan": null,
  "Anthem BlueCross Blue Shield HP, 32 Richmond Terrence | Staten Island": null,
@@ -511,6 +517,7 @@
  "Crotona Nature Center - Crotona Park East and Charlotte Street | Bronx": null,
  "Crotona Nature Center in Crotona Park | Bronx": null,
  "Crotona Park - Crotona Park East and Charlotte Street | Bronx": null,
+ "Crotona Park East and Charlotte Street | Bronx": null,
  "Cunningham Park (196-00 Union Turnpike), Queens, NY | Queens": null,
  "Cunningham Park Parking Lot in Cunningham Park | Queens": null,
  "DRIGGS AVENUE between DIAMOND STREET and NEWELL STREET Brooklyn | Brooklyn": {
@@ -639,6 +646,7 @@
  "Herbert Von King Cultural Arts Center in Herbert Von King Cultural Arts Center | Brooklyn": null,
  "Herbert Von King Park | Brooklyn": null,
  "Hillel Place,\\nKenilworth Place to Flatbush Avenue | Brooklyn": null,
+ "Holten Ave. and Purdy Place in Wolfe's Pond Park | Staten Island": null,
  "Howard Garden | Brooklyn": null,
  "INDEPENDENCE AVENUE between WEST 246 STREET and WEST 239 STREET Bronx | Bronx": {
   "label": "INDEPENDENCE AVENUE & WEST 246 STREET",
@@ -849,6 +857,7 @@
  "Salt Marsh Nature Center in Marine Park | Brooklyn": null,
  "Samuel Seabury Playground | Manhattan": null,
  "Seaman Avenue and Isham Street Entrance in Inwood Hill Park | Manhattan": null,
+ "Seaman Avenue and Isham Street in Inwood Hill Park | Manhattan": null,
  "Section 2 Orchard Beach in Pelham Bay Park | Bronx": null,
  "Snug Harbor | Staten Island": null,
  "Sol Lain Playground in Sol Lain Plgd | Manhattan": null,
@@ -884,6 +893,7 @@
  "Van Cortlandt Golf House in Van Cortlandt Park | Bronx": null,
  "Van Cortlandt House Museum in Van Cortlandt Park | Bronx": null,
  "Van Cortlandt Nature Center in Van Cortlandt Park | Bronx": null,
+ "Vermont Place Parking Lot in Highland Park | Queens": null,
  "Victory Boulevard and Alberta Avenue in Sylvan Grove Cemetery | Staten Island": null,
  "Victory Field in Forest Park | Queens": null,
  "Vinegar Hill Community Garden | Brooklyn": null,
@@ -1086,6 +1096,10 @@
  "census: 1841 JFK BLVD.": {
   "lat": 40.70287,
   "lng": -74.09126
+ },
+ "census: 200 MONTICELLO AVENUE": {
+  "lat": 40.721394,
+  "lng": -74.069967
  },
  "census: 222 JERSEY CIYT BOULEVARD": null,
  "census: 360 Martin Luther King Dr.": {
@@ -3209,6 +3223,11 @@
  },
  "permit place: 6 AVENUE between WEST   34 STREET and WEST   42 STREET | Manhattan": null,
  "permit place: 60 STREET between 3 AVENUE and 4 AVENUE | Brooklyn": null,
+ "permit place: 63 DRIVE between QUEENS BOULEVARD and AUSTIN STREET | Queens": {
+  "label": "63rd DRIVE & QUEENS BOULEVARD",
+  "lat": 40.729879,
+  "lng": -73.862918
+ },
  "permit place: 65 STREET between MYRTLE AVENUE and CENTRAL AVENUE | Queens": {
   "label": "65th STREET & MYRTLE AVENUE",
   "lat": 40.701958,
@@ -3239,6 +3258,11 @@
   "label": "72nd STREET & 43rd AVENUE",
   "lat": 40.741701,
   "lng": -73.892853
+ },
+ "permit place: 74 STREET between 37 AVENUE and 37 ROAD | Queens": {
+  "label": "74th STREET & 37th AVENUE",
+  "lat": 40.749815999999996,
+  "lng": -73.89254
  },
  "permit place: 79 STREET between NORTHERN BOULEVARD and 34 AVENUE | Queens": {
   "label": "79th STREET & NORTHERN BOULEVARD",
@@ -3282,6 +3306,7 @@
   "lat": 40.646809,
   "lng": -73.967101
  },
+ "permit place: AMSTERDAM AVENUE between WEST   74 STREET and WEST   75 STREET | Manhattan": null,
  "permit place: AMSTERDAM AVENUE between WEST  106 STREET and CATHEDRAL PARKWAY | Manhattan": {
   "label": "AMSTERDAM AVENUE & WEST 106th STREET",
   "lat": 40.801216,
@@ -3600,10 +3625,21 @@
   "lat": 40.49927,
   "lng": -74.24786
  },
+ "permit place: Corlears Hook Park | Manhattan": {
+  "label": "CORLEARS HOOK PARK, New York, NY, USA",
+  "lat": 40.71178,
+  "lng": -73.97951
+ },
+ "permit place: Corona Plaza Roosevelt Avenue between National Street and 104 Street | Queens": null,
  "permit place: Crocheron Park | Queens": {
   "label": "CROCHERON PARK, Bayside, NY, USA",
   "lat": 40.77153,
   "lng": -73.76755
+ },
+ "permit place: Crotona Park | Bronx": {
+  "label": "CROTONA PARK, Bronx, NY, USA",
+  "lat": 40.83854,
+  "lng": -73.89299
  },
  "permit place: Cunningham Park | Queens": {
   "label": "CUNNINGHAM PARK, Cunningham Park, NY, USA",
@@ -4509,6 +4545,11 @@
   "lat": 40.78136,
   "lng": -73.97406
  },
+ "permit place: Thomas Greene Playground | Brooklyn": {
+  "label": "THOMAS GREENE PLAYGROUND, Brooklyn, NY, USA",
+  "lat": 40.68032,
+  "lng": -73.98535
+ },
  "permit place: Thomas Paine Park (Foley Square) | Manhattan": null,
  "permit place: Tompkins Square Park | Manhattan": {
   "label": "TOMPKINS SQUARE PARK, New York, NY, USA",
@@ -4543,6 +4584,7 @@
   "lat": 40.747041,
   "lng": -73.95289
  },
+ "permit place: VERRAZZANO BR   92 ST ENTRANCE between GATLING PLACE and 92ND STREET | Brooklyn": null,
  "permit place: Van Cortlandt Park | Bronx": {
   "label": "VAN CORTLANDT PARK, Bronx, NY, USA",
   "lat": 40.9,
